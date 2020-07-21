@@ -1,0 +1,17 @@
+{
+    "name": "00.Unity.Module.Common.Define",
+    "references": [
+        "00.Unity.Module.Common.Externals",
+        "MessagePack",
+        "GoogleMobileAds"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
