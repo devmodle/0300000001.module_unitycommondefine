@@ -227,10 +227,10 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABSOLUTE_DIR_PATH_ASSETS = string.Format("{0}/", Application.dataPath);
 	public static readonly string B_ABSOLUTE_DIR_PATH_UNITY_ENGINE = string.Format("{0}/", EditorApplication.applicationPath);
-	public static readonly string B_ABSOLUTE_DIR_PATH_SAMPLE_SCENE = string.Format("{0}../Packages/.00.UnityModule.Common/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
-	public static readonly string B_ABSOLUTE_DIR_PATH_STUDY_SAMPLE_SCENE = string.Format("{0}../Packages/.00.UnityModule.Study/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ABSOLUTE_DIR_PATH_SAMPLE_SCENE = string.Format("{0}../Packages/.UnityModule.Common/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ABSOLUTE_DIR_PATH_STUDY_SAMPLE_SCENE = string.Format("{0}../Packages/.UnityModule.Study/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
 
-	public static readonly string B_ABSOLUTE_DIR_PATH_TEMPLATES = string.Format("{0}../Packages/.00.UnityModule.Common/Templates/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ABSOLUTE_DIR_PATH_TEMPLATES = string.Format("{0}../Packages/.UnityModule.Common/Templates/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
 	public static readonly string B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES = string.Format("{0}Datas/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES = string.Format("{0}Prefabs/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
@@ -393,11 +393,11 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_FXSnd.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_FX_SND)),
 
-		new KeyValuePair<string, string>(string.Format("{0}../Packages/.00.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS),
+		new KeyValuePair<string, string>(string.Format("{0}../Packages/.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_SS_TIMER_MANAGER)),
 
 #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
-		new KeyValuePair<string, string>(string.Format("{0}../Packages/.00.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS),
+		new KeyValuePair<string, string>(string.Format("{0}../Packages/.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_SS_FPS_COUNTER)),
 #endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	};
