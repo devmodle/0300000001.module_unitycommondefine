@@ -7,6 +7,6 @@
 		"email": "are2341@nate.com"
 	},
 	"dependencies": {
-		"00.unity.module.common.externals": "v1.0.0"
+		"00.unity.module.common.externals": "https://gitlab.com/9tap.repository/unitymodule_common_externals_client.git#v1.0.0"
 	}
 }
