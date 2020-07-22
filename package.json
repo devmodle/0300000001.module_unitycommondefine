@@ -1,12 +1,12 @@
 {
-	"name": "00.unity.module.common.define",
-	"version": "1.0.0",
-	"displayName": "00.Unity.Module.Common.Define",
-	"author": {
-		"name": "dante",
-		"email": "are2341@nate.com"
-	},
-	"dependencies": {
-		"00.unity.module.common.externals": "https://gitlab.com/9tap.repository/unitymodule_common_externals_client.git#1.0.0"
-	}
+  "name": "00.unitymodule.common.define",
+  "version": "1.0.0",
+  "displayName": "00.UnityModule.Common.Define",
+  "author": {
+    "name": "dante",
+    "email": "are2341@nate.com"
+  },
+  "dependencies": {
+    "00.unitymodule.common.externals": "https://gitlab.com/9tap.repository/unitymodule_common_externals_client.git#1.0.0"
+  }
 }
