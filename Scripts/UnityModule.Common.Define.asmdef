@@ -1,7 +1,6 @@
 {
     "name": "UnityModule.Common.Define",
     "references": [
-        "UnityModule.Common.Externals",
         "MessagePack",
         "GoogleMobileAds"
     ],

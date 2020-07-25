@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+
+#if UNITY_EDITOR
 using UnityEditor;
 
 //! 에디터 기본 상수
@@ -121,7 +123,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_DIR_PATH_ASSETS = "Assets/";
 	public const string B_DIR_PATH_AUTO_CREATE = "00.AutoCreate/";
-	public const string B_DIR_PATH_PROJECT_SETTINGS = "ProjectSettings/";
+	public const string B_DIR_PATH_PROJ_SETTINGS = "ProjectSettings/";
 
 	public const string B_DIR_PATH_EXPORT_IMG_BASE = "Export/Images/";
 	// 경로 }
@@ -140,8 +142,8 @@ public static partial class KCEditorDefine {
 	// 젠킨스 {
 	public const string B_JENKINS_KEY_BRANCH = "Branch";
 	public const string B_JENKINS_KEY_SOURCE = "Source";
-	public const string B_JENKINS_KEY_PROJECT_NAME = "ProjectName";
-	public const string B_JENKINS_KEY_PROJECT_PATH = "ProjectPath";
+	public const string B_JENKINS_KEY_PROJ_NAME = "ProjName";
+	public const string B_JENKINS_KEY_PROJ_PATH = "ProjPath";
 	public const string B_JENKINS_KEY_DISTRIBUTION_PATH = "DistributionPath";
 	public const string B_JENKINS_KEY_BUNDLE_ID = "BundleID";
 	public const string B_JENKINS_KEY_PROFILE_ID = "ProfileID";
@@ -160,12 +162,12 @@ public static partial class KCEditorDefine {
 	public const string B_JENKINS_BUILD_CMD_FORMAT = "curl -X POST {0} --user {1}:{2} --data token={3}";
 
 	public const string B_JENKINS_SOURCE_FORMAT = "{0}/{1}";
-	public const string B_JENKINS_PROJECT_PATH_FORMAT = "{0}/{1}/{2}";
+	public const string B_JENKINS_PROJ_PATH_FORMAT = "{0}/{1}/{2}";
 	public const string B_JENKINS_ANALYTICS_FORMAT = "{0}/00.Analytics";
 
-	public const string B_JENKINS_STANDALONE_BUILD_PROJECT_NAME = "41.Standalone";
-	public const string B_JENKINS_IOS_BUILD_PROJECT_NAME = "01.iOS";
-	public const string B_JENKINS_ANDROID_BUILD_PROJECT_NAME = "11.Android";
+	public const string B_JENKINS_STANDALONE_BUILD_PROJ_NAME = "41.Standalone";
+	public const string B_JENKINS_IOS_BUILD_PROJ_NAME = "01.iOS";
+	public const string B_JENKINS_ANDROID_BUILD_PROJ_NAME = "11.Android";
 
 	public const string B_JENKINS_DEBUG_BUILD_FUNC = "Debug";
 	public const string B_JENKINS_RELEASE_BUILD_FUNC = "Release";
@@ -230,15 +232,19 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABSOLUTE_DIR_PATH_SAMPLE_SCENE = string.Format("{0}../Packages/.UnityModule.Common/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
 	public static readonly string B_ABSOLUTE_DIR_PATH_STUDY_SAMPLE_SCENE = string.Format("{0}../Packages/.UnityModule.Study/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
 
+	public static readonly string B_ABSOLUTE_DIR_PATH_PLUGINS = string.Format("{0}/Plugins/", Application.dataPath);
+	public static readonly string B_ABSOLUTE_DIR_PATH_IOS_PLUGINS = string.Format("{0}iOS/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PLUGINS);
+	public static readonly string B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS = string.Format("{0}Android/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PLUGINS);
+
 	public static readonly string B_ABSOLUTE_DIR_PATH_TEMPLATES = string.Format("{0}../Packages/.UnityModule.Common/Templates/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
 	public static readonly string B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES = string.Format("{0}Datas/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES = string.Format("{0}Prefabs/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES = string.Format("{0}Scriptables/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES = string.Format("{0}Tables/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
-
-	public static readonly string B_ASSET_PATH_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_PATH_PROJECT_SETTINGS);
-	public static readonly string B_ASSET_PATH_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_PATH_PROJECT_SETTINGS);
+	
+	public static readonly string B_ASSET_PATH_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
+	public static readonly string B_ASSET_PATH_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
 
 	public static readonly string B_DIR_PATH_SCENES = string.Format("{0}01.UnityProject/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
 	public static readonly string B_DIR_PATH_AUTO_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
@@ -261,7 +267,18 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_SERVICE_TEXT)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT)),
+
+#if ADS_ENABLE && ADMOB_ENABLE
+		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT)),
+
+		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT)),
+
+		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT))
+#endif			// #if ADS_ENABLE && ADMOB_ENABLE
 	};
 	
 	public static readonly KeyValuePair<string, string>[] B_PATH_SCRIPT_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
@@ -300,6 +317,9 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+GameCenter.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+GameCenter.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+			
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Base/T_CBaseInfo.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Base/CBaseInfo.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/External/T_CMessagePackRegister.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/External/CMessagePackRegister.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
@@ -429,8 +449,8 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}T_DeviceInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_DEVICE_INFO_TABLE)),
 		
-		new KeyValuePair<string, string>(string.Format("{0}T_ProjectInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_PROJECT_INFO_TABLE)),
+		new KeyValuePair<string, string>(string.Format("{0}T_ProjInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_PROJ_INFO_TABLE)),
 
 #if ADS_ENABLE || TENJIN_ENABLE || FLURRY_ENABLE || FIREBASE_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_PluginInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
@@ -503,7 +523,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_IOS_ABSOLUTE_BUILD_PATH = string.Format("{0}../Builds/iOS", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
 
 	public static readonly string B_IOS_SRC_PLUGIN_PATH = string.Format("{0}../PluginProjects/iOS/Classes/Plugin/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
-	public static readonly string B_IOS_DEST_PLUGIN_PATH = string.Format("{0}Plugins/iOS/CustomiOSPlugin/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_IOS_DEST_PLUGIN_PATH = string.Format("{0}CustomiOSPlugin/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_IOS_PLUGINS);
 
 	public static readonly GraphicsDeviceType[] B_IOS_DEVICE_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Metal
@@ -518,16 +538,16 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ANDROID_ABSOLUTE_BUILD_PATH_FORMAT = string.Format("{0}../Builds/Android/{1}", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, "{0}");
 
 	public static readonly string B_ANDROID_SRC_PLUGIN_PATH = string.Format("{0}../PluginProjects/Android/plugin/build/intermediates/packaged-classes/release/classes.jar", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
-	public static readonly string B_ANDROID_DEST_PLUGIN_PATH = string.Format("{0}Plugins/Android/libs/CustomAndroidPlugin.jar", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ANDROID_DEST_PLUGIN_PATH = string.Format("{0}libs/CustomAndroidPlugin.jar", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_MANIFEST_PATH = string.Format("{0}../Packages/Builds/Options/Android/AndroidManifest.xml", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
-	public static readonly string B_ANDROID_DEST_MANIFEST_PATH = string.Format("{0}Plugins/Android/AndroidManifest.xml", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ANDROID_DEST_MANIFEST_PATH = string.Format("{0}AndroidManifest.xml", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}../Packages/Builds/Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
-	public static readonly string B_ANDROID_DEST_MAIN_TEMPLATE_PATH = string.Format("{0}Plugins/Android/mainTemplate.gradle", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ANDROID_DEST_MAIN_TEMPLATE_PATH = string.Format("{0}mainTemplate.gradle", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_PROGUARD_PATH = string.Format("{0}../Packages/Builds/Options/Android/proguard-user.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
-	public static readonly string B_ANDROID_DEST_PROGUARD_PATH = string.Format("{0}Plugins/Android/proguard-user.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ANDROID_DEST_PROGUARD_PATH = string.Format("{0}proguard-user.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_UNITY_PLUGIN_PATH = string.Format("{0}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar", KCEditorDefine.B_ABSOLUTE_DIR_PATH_UNITY_ENGINE);
 	public static readonly string B_ANDROID_DEST_UNITY_PLUGIN_PATH = string.Format("{0}../PluginProjects/Android/plugin/libs/classes.jar", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
@@ -574,3 +594,4 @@ public static partial class KCEditorDefine {
 #endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 런타임 상수
 }
+#endif			// #if UNITY_EDITOR
