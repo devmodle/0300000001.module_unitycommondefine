@@ -17,12 +17,9 @@ public static partial class KCEditorDefine {
 	public const float B_HIERARCHY_WIDTH = 250.0f;
 	public const float B_HIERARCHY_OFFSET_X = 125.0f;
 
-	// 크기 {
-	public const float B_WIDTH_EDITOR_W_NAME_TEXT_FIELD = 100.0f;
-	public const float B_TOTAL_WIDTH_EDITOR_W_NAME_TEXT_FIELD = 200.0f;
-
+	// 크기
+	public const float B_WIDTH_EDITOR_W_NAME_TEXT_FIELD = 300.0f;
 	public const float B_WIDTH_EDITOR_W_APPLY_BTN = 100.0f;
-	// 크기 }
 
 	// 토큰
 	public const string B_TOKEN_DEFINE_SYMBOL = ";";
@@ -127,6 +124,16 @@ public static partial class KCEditorDefine {
 
 	public const string B_DIR_PATH_EXPORT_IMG_BASE = "Export/Images/";
 	// 경로 }
+
+	// 유니티 패키지 {
+	public const string B_UNITY_PKGS_NAME_KEY = "name";
+	public const string B_UNITY_PKGS_URL_KEY = "url";
+	public const string B_UNITY_PKGS_SCOPES_KEY = "scopes";
+	public const string B_UNITY_PKGS_SCOPED_REGISTRIES_KEY = "scopedRegistries";
+
+	public const string B_UNITY_PKGS_ID_FORMAT = "{0}@{1}";
+	public const string B_UNITY_PKGS_GOOGLE_REGISTRY_NAME = "Game Package Registry by Google";
+	// 유니티 패키지 }
 	
 	// 에디터 옵션 {
 	public const string B_EDITOR_OPTION_IOS_REMOTE_DEVICE = "Any iOS Device";
@@ -228,33 +235,36 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_PATH_AUTO_CREATE_RESES = string.Format("{0}{1}Resources", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
 
 	public static readonly string B_ABSOLUTE_DIR_PATH_ASSETS = string.Format("{0}/", Application.dataPath);
+	public static readonly string B_ABSOLUTE_DIR_PATH_PACKAGES = string.Format("{0}../Packages/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
 	public static readonly string B_ABSOLUTE_DIR_PATH_UNITY_ENGINE = string.Format("{0}/", EditorApplication.applicationPath);
-	public static readonly string B_ABSOLUTE_DIR_PATH_SAMPLE_SCENE = string.Format("{0}../Packages/.UnityModule.Common/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
-	public static readonly string B_ABSOLUTE_DIR_PATH_STUDY_SAMPLE_SCENE = string.Format("{0}../Packages/.UnityModule.Study/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+
+	public static readonly string B_ABSOLUTE_DIR_PATH_SAMPLE_SCENE = string.Format("{0}.UnityModule.Common/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES);
+	public static readonly string B_ABSOLUTE_DIR_PATH_STUDY_SAMPLE_SCENE = string.Format("{0}.UnityModule.Study/Scenes/SampleScene.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES);
 
 	public static readonly string B_ABSOLUTE_DIR_PATH_PLUGINS = string.Format("{0}/Plugins/", Application.dataPath);
 	public static readonly string B_ABSOLUTE_DIR_PATH_IOS_PLUGINS = string.Format("{0}iOS/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PLUGINS);
 	public static readonly string B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS = string.Format("{0}Android/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PLUGINS);
 
-	public static readonly string B_ABSOLUTE_DIR_PATH_TEMPLATES = string.Format("{0}../Packages/.UnityModule.Common/Templates/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ABSOLUTE_DIR_PATH_TEMPLATES = string.Format("{0}.UnityModule.Common/Templates/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES = string.Format("{0}Datas/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES = string.Format("{0}Prefabs/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES = string.Format("{0}Scriptables/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES = string.Format("{0}Tables/", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TEMPLATES);
-	
-	public static readonly string B_ASSET_PATH_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
-	public static readonly string B_ASSET_PATH_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
 
 	public static readonly string B_DIR_PATH_SCENES = string.Format("{0}01.UnityProject/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
 	public static readonly string B_DIR_PATH_AUTO_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
 	public static readonly string B_DIR_PATH_EDITOR_SCENES = string.Format("{0}01.UnityProject_Editor/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
 
+	public static readonly string B_ASSET_PATH_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
+	public static readonly string B_ASSET_PATH_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
+	public static readonly string B_ASSET_PATH_FORMAT_DEFINE_SYMBOL_OUTPUT = string.Format("{0}/BuildOutput/{1}", KCDefine.B_DIR_PATH_WRITABLE, "{0}DefineSymbol.txt");
+
 	public static readonly string B_IMG_PATH_FORMAT_TEXTURE_TO_IMG = string.Format("{0}{1}", KCEditorDefine.B_DIR_PATH_EXPORT_IMG_BASE, "Textures/{0}.png");
 	public static readonly string B_IMG_PATH_FORMAT_SPRITE_TO_IMG = string.Format("{0}{1}", KCEditorDefine.B_DIR_PATH_EXPORT_IMG_BASE, "Sprites/{0}.png");
 
-	public static readonly string B_PATH_FORMAT_SCRIPTABLE_OBJ = string.Format("{0}{1}", KCEditorDefine.B_DIR_PATH_ASSETS, "{0}.asset");
-	public static readonly string B_ASSET_PATH_FORMAT_DEFINE_SYMBOL_OUTPUT = string.Format("{0}/BuildOutput/{1}", KCDefine.B_DIR_PATH_WRITABLE, "{0}DefineSymbol.txt");
+	public static readonly string B_DATA_PATH_UNITY_PKGS = string.Format("{0}manifest.json", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES);
+	public static readonly string B_ASSET_PATH_FORMAT_SCRIPTABLE_OBJ = string.Format("{0}{1}", KCEditorDefine.B_DIR_PATH_ASSETS, "{0}.asset");
 		
 	public static readonly KeyValuePair<string, string>[] B_PATH_DATA_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_Service_KO.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
@@ -321,8 +331,11 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Base/T_CBaseInfo.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Base/CBaseInfo.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/External/T_CMessagePackRegister.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Utility/External/CMessagePackRegister.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_CLogFunc.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Function/CLogFunc.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/External/T_CMsgPackRegister.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Utility/External/CMsgPackRegister.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubInitSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubInitScene/CSubInitSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
@@ -413,11 +426,11 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_FXSnd.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_FX_SND)),
 
-		new KeyValuePair<string, string>(string.Format("{0}../Packages/.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS),
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_SS_TIMER_MANAGER)),
 
 #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
-		new KeyValuePair<string, string>(string.Format("{0}../Packages/.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS),
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_SS_FPS_COUNTER)),
 #endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	};
@@ -492,6 +505,21 @@ public static partial class KCEditorDefine {
 	};
 	// 경로 }
 
+	// 유니티 패키지 {
+	public static readonly Dictionary<string, string> B_UNITY_PKGS_DEPENDENCY_LIST = new Dictionary<string, string>() {
+		["com.unity.2d.sprite"] = "1.0.0",
+		["com.unity.2d.tilemap"] = "1.0.0",
+    	["com.unity.assetbundlebrowser"] = "1.7.0",
+		["com.unity.mobile.android-logcat"] = "1.1.1",
+		["com.unity.render-pipelines.universal"] = "7.3.1",
+		["com.google.external-dependency-manager"] = "1.2.156",
+	};
+
+	public static readonly Dictionary<string, string> B_UNITY_PKGS_SCOPED_REGISTRY_LIST = new Dictionary<string, string>() {
+		[KCEditorDefine.B_UNITY_PKGS_GOOGLE_REGISTRY_NAME] = string.Format("{0}../UnityPackages/Options/Project/GoogleRegistry.json", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS)
+	};
+	// 유니티 패키지 }
+
 	// 에디터 옵션
 	public static readonly string[] B_EDITOR_OPTION_EXTENSIONS = new string[] {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
@@ -540,13 +568,13 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ANDROID_SRC_PLUGIN_PATH = string.Format("{0}../PluginProjects/Android/plugin/build/intermediates/packaged-classes/release/classes.jar", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
 	public static readonly string B_ANDROID_DEST_PLUGIN_PATH = string.Format("{0}libs/CustomAndroidPlugin.jar", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS);
 
-	public static readonly string B_ANDROID_SRC_MANIFEST_PATH = string.Format("{0}../Packages/Builds/Options/Android/AndroidManifest.xml", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ANDROID_SRC_MANIFEST_PATH = string.Format("{0}Options/Android/AndroidManifest.xml", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_MANIFEST_PATH = string.Format("{0}AndroidManifest.xml", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS);
 
-	public static readonly string B_ANDROID_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}../Packages/Builds/Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ANDROID_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_MAIN_TEMPLATE_PATH = string.Format("{0}mainTemplate.gradle", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS);
 
-	public static readonly string B_ANDROID_SRC_PROGUARD_PATH = string.Format("{0}../Packages/Builds/Options/Android/proguard-user.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS);
+	public static readonly string B_ANDROID_SRC_PROGUARD_PATH = string.Format("{0}Options/Android/proguard-user.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_PROGUARD_PATH = string.Format("{0}proguard-user.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_UNITY_PLUGIN_PATH = string.Format("{0}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar", KCEditorDefine.B_ABSOLUTE_DIR_PATH_UNITY_ENGINE);
@@ -576,7 +604,7 @@ public static partial class KCEditorDefine {
 
 #if FILE_BROWSER_ENABLE
 	// 비율
-	public const float B_SCALE_FILE_BROWSER_WINDOW = 1.25f;
+	public const float B_SCALE_FILE_BROWSER_WINDOW = 1.5f;
 
 	// 이름
 	public const string B_OBJ_NAME_FILE_BROWSER_WINDOW = "SimpleFileBrowserWindow";

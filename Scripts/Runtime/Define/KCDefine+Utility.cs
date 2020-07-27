@@ -179,6 +179,7 @@ public static partial class KCDefine {
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
 	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
 
+	public const string U_KEY_DIALOG_TOUCH_RESPONDER = "DialogTouchResponder";
 	public const string U_KEY_FORMAT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 	// 키 }
 
@@ -747,14 +748,14 @@ public static partial class KCDefine {
 	public const string U_AUTH_CODE_GAME_CM_UNKNOWN = "Unknown";
 #endif			// #if GAME_CENTER_ENABLE
 
-#if !MESSAGE_PACK_ENABLE
+#if !MSG_PACK_ENABLE
 	// 메세지
-	public const string U_MSG_NEED_MESSAGE_PACK = "MessagePack 라이브러리가 필요합니다.";
+	public const string U_MSG_NEED_MSG_PACK = "MsgPack 라이브러리가 필요합니다.";
 #else
 	// 버전
 	public const string U_VERSION_APP_INFO = "1.0.0";
 	public const string U_VERSION_USER_INFO = "1.0.0";
-#endif			// #if !MESSAGE_PACK_ENABLE
+#endif			// #if !MSG_PACK_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수

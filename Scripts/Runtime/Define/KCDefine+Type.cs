@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-#if MESSAGE_PACK_ENABLE
+#if MSG_PACK_ENABLE
 using MessagePack;
-#endif			// #if MESSAGE_PACK_ENABLE
+#endif			// #if MSG_PACK_ENABLE
 
 #if ADS_ENABLE
 //! 광고 보상 정보
@@ -14,7 +14,7 @@ public struct STAdsRewardInfo {
 }
 #endif			// #if ADS_ENABLE
 
-#if MESSAGE_PACK_ENABLE
+#if MSG_PACK_ENABLE
 //! 버전 정보
 [MessagePackObject]
 [System.Serializable]
@@ -33,4 +33,4 @@ public struct STCustomTypeWrapper {
 	[Key(3)] public Dictionary<string, float> m_oFloatMapList;
 	[Key(4)] public Dictionary<string, string> m_oStringMapList;
 }
-#endif			// #if MESSAGE_PACK_ENABLE
+#endif			// #if MSG_PACK_ENABLE
