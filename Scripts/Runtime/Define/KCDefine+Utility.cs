@@ -180,7 +180,9 @@ public static partial class KCDefine {
 	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
 
 	public const string U_KEY_DIALOG_TOUCH_RESPONDER = "DialogTouchResponder";
+
 	public const string U_KEY_FORMAT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
+	public const string U_KEY_FORMAT_TASK_M_ASYNC_TASK_CALLBACK = "TaskMAsyncTaskCallback_{0}";
 	// 키 }
 
 	// 이름 {
@@ -633,18 +635,20 @@ public static partial class KCDefine {
 	public const string U_LOG_KEY_LOG_TIME = "LogTime";
 	public const string U_LOG_KEY_INSTALL_TIME = "InstallTime";
 
-	public const string U_LOG_KEY_USER_INFO = "UserInfo";
 	public const string U_LOG_KEY_USER_TYPE = "UserType";
 	public const string U_LOG_KEY_DEVICE_ID = "DeviceID";
 	public const string U_LOG_KEY_COUNTRY_CODE = "CountryCode";
 
-	public const string U_LOG_KEY_PARAMETER_A = "ParameterA";
-	public const string U_LOG_KEY_PARAMETER_B = "ParameterB";
-	public const string U_LOG_KEY_PARAMETER_C = "ParameterC";
-	public const string U_LOG_KEY_PARAMETER_D = "ParameterD";
-	public const string U_LOG_KEY_PARAMETER_E = "ParameterE";
-	public const string U_LOG_KEY_PARAMETER_F = "ParameterF";
+	public const string U_LOG_KEY_PARAM_A = "ParamA";
+	public const string U_LOG_KEY_PARAM_B = "ParamB";
+	public const string U_LOG_KEY_PARAM_C = "ParamC";
+	public const string U_LOG_KEY_PARAM_D = "ParamD";
+	public const string U_LOG_KEY_PARAM_E = "ParamE";
+	public const string U_LOG_KEY_PARAM_F = "ParamF";
 	// 키 }
+
+	// 매개 변수
+	public const string U_LOG_PARAM_USER_INFO = "UserInfo";
 
 #if FLURRY_ENABLE && FLURRY_ANALYTICS_ENABLE
 	// 토큰
@@ -665,10 +669,10 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_ENABLE
 
 #if FIREBASE_ENABLE
-#if FIREBASE_REMOTE_CONFIG_ENABLE
-	// 시간
-	public const System.TimeSpan U_DEF_TIMEOUT_FIREBASE_FETCH_CONFIG_DATA = new System.TimeSpan(0, 0, 30);
-#endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
+#if FIREBASE_ANALYTICS_ENABLE
+	// 토큰
+	public const string U_TOKEN_FIREBASE_ANALYTICS_LOG_DATA = ",";
+#endif			// #if FIREBASE_ANALYTICS_ENABLE
 
 #if FIREBASE_DATABASE_ENABLE
 	// 노드 이름
@@ -710,10 +714,11 @@ public static partial class KCDefine {
 	// 키 }
 #endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 
-#if FIREBASE_ANALYTICS_ENABLE
-	// 토큰
-	public const string U_TOKEN_FIREBASE_ANALYTICS_LOG_DATA = ",";
-#endif			// #if FIREBASE_ANALYTICS_ENABLE
+#if FIREBASE_MSG_ENABLE
+	// 키
+	public const string U_KEY_FIREBASE_M_TOKEN_CALLBACK = "FirebaseMTokenCallback";
+	public const string U_KEY_FIREBASE_M_MSG_CALLBACK = "FirebaseMMsgCallback";
+#endif			// #if FIREBASE_MSG_ENABLE
 #endif			// #if FIREBASE_ENABLE
 
 #if UNITY_SERVICE_ENABLE
@@ -788,10 +793,10 @@ public static partial class KCDefine {
 #endif			// #if IRON_SOURCE_ENABLE
 #endif			// #if ADS_ENABLE
 
-#if ADS_ENABLE || TENJIN_ENABLE || FLURRY_ENABLE || FIREBASE_ENABLE
+#if ADS_ENABLE || FLURRY_ENABLE || TENJIN_ENABLE || FIREBASE_ENABLE
 	// 경로
 	public static readonly string U_SCRIPTABLE_PATH_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-#endif			// #if ADS_ENABLE || TENJIN_ENABLE || FLURRY_ENABLE || FIREBASE_ENABLE
+#endif			// #if ADS_ENABLE || FLURRY_ENABLE || TENJIN_ENABLE || FIREBASE_ENABLE
 
 #if FACEBOOK_ENABLE
 	// 권한
@@ -799,6 +804,11 @@ public static partial class KCDefine {
 		"public_profile", "email"
 	};
 #endif			// #if FACEBOOK_ENABLE
+
+#if FIREBASE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
+	// 시간
+	public static readonly System.TimeSpan U_DEF_TIMEOUT_FIREBASE_FETCH_CONFIG_DATA = new System.TimeSpan(0, 0, 30);
+#endif			// #if FIREBASE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 
 #if PURCHASE_ENABLE
 	// 경로

@@ -28,8 +28,8 @@ public static partial class KCEditorDefine {
 	public const string B_SORTING_ORDER_INFO_FORMAT = "[{0}:{1}]";
 
 	// 커맨드 라인
-	public const string B_CMDLINE_PARAMETER_FORMAT_SHELL = "-c \"{0}\"";
-	public const string B_CMDLINE_PARAMETER_FORMAT_CMD_PROMPT = "/c \"{0}\"";
+	public const string B_CMDLINE_PARAM_FORMAT_SHELL = "-c \"{0}\"";
+	public const string B_CMDLINE_PARAM_FORMAT_CMD_PROMPT = "/c \"{0}\"";
 
 	// 알림 팝업 {
 	public const string B_ALERT_P_TITLE = "알림";
@@ -162,8 +162,8 @@ public static partial class KCEditorDefine {
 	public const string B_JENKINS_KEY_IPA_EXPORT_METHOD = "IPAExportMethod";
 	public const string B_JENKINS_KEY_BUILD_FILE_EXTENSION = "BuildFileExtension";
 
+	public const string B_JENKINS_BUILD_PARAM_TOKEN = " ";
 	public const string B_JENKINS_PIPELINE_GROUP_NAME = "job/00001.Common/job/01.Pipelines/job";
-	public const string B_JENKINS_BUILD_PARAMETER_TOKEN = " ";
 
 	public const string B_JENKINS_BUILD_DATA_FORMAT = "--data {0}={1}";
 	public const string B_JENKINS_BUILD_CMD_FORMAT = "curl -X POST {0} --user {1}:{2} --data token={3}";
@@ -267,163 +267,158 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_PATH_FORMAT_SCRIPTABLE_OBJ = string.Format("{0}{1}", KCEditorDefine.B_DIR_PATH_ASSETS, "{0}.asset");
 		
 	public static readonly KeyValuePair<string, string>[] B_PATH_DATA_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}T_Service_KO.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_Service_KO.txt.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_KOREAN_SERVICE_TEXT)),
 
-		new KeyValuePair<string, string>(string.Format("{0}T_Personal_KO.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_Personal_KO.txt.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_KOREAN_PERSONAL_TEXT)),
 
-		new KeyValuePair<string, string>(string.Format("{0}T_Service_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_Service_EN.txt.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_SERVICE_TEXT)),
 
-		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT)),
-
-#if ADS_ENABLE && ADMOB_ENABLE
-		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT)),
-
-		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT)),
-
-		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT))
-#endif			// #if ADS_ENABLE && ADMOB_ENABLE
 	};
 	
 	public static readonly KeyValuePair<string, string>[] B_PATH_SCRIPT_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}Editor/Define/T_KACEditorDefine.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Editor/Global/Define/KACEditorDefine.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		new KeyValuePair<string, string>(string.Format("{0}Editor/Define/T_KEditorDefine.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Editor/Global/Define/KEditorDefine.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Editor/Build/T_CPlatformBuildHandler.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Editor/Build/T_CPlatformBuildHandler.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/Global/Utility/Build/CPlatformBuildHandler.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Editor/Manager/T_CScriptManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Editor/Manager/T_CScriptManager.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/Global/Utility/Manager/CScriptManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+InitScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+InitScene.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+InitScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SetupScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SetupScene.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+SetupScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StartScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StartScene.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+StartScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+LoadingScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+LoadingScene.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+LoadingScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SplashScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SplashScene.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+SplashScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+AgreeScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+AgreeScene.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+AgreeScene.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StringTable.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StringTable.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+StringTable.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+ValueTable.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+ValueTable.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+ValueTable.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+GameCenter.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+GameCenter.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+GameCenter.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+Type.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+Type.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 			
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Base/T_CBaseInfo.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Base/T_CBaseInfo.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Base/CBaseInfo.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_CLogFunc.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_CLogFunc.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Function/CLogFunc.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/External/T_CMsgPackRegister.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/External/T_CMsgPackRegister.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/External/CMsgPackRegister.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubInitSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubInitSceneManager.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubInitScene/CSubInitSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubSetupSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubSetupSceneManager.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubSetupScene/CSubSetupSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubStartSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubStartSceneManager.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubStartScene/CSubStartSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubLoadingSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubLoadingSceneManager.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubLoadingScene/CSubLoadingSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubSplashSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubSplashSceneManager.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubSplashScene/CSubSplashSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubAgreeSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubAgreeSceneManager.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubAgreeScene/CSubAgreeSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubIntroSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubIntroSceneManager.cs.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubIntroScene/CSubIntroSceneManager.cs", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE))
 	};
 	
 	public static readonly KeyValuePair<string, string>[] B_PATH_PREFAB_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_Text.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_TEXT_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_Text.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_TEXT_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TEXT)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_TextBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_TextBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TEXT_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_Img.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_IMAGE_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_Img.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_IMAGE_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_IMG)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_RawImg.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_IMAGE_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_RawImg.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_IMAGE_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_RAW_IMG)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_TextScaleBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_TextScaleBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TEXT_SCALE_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_LocalizeText.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_TEXT_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LocalizeText.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_TEXT_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_LOCALIZE_TEXT)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_LocalizeTextBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LocalizeTextBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_LOCALIZE_TEXT_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_LocalizeTextScaleBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LocalizeTextScaleBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_LOCALIZE_TEXT_SCALE_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_IMG_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgScaleBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgScaleBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_IMG_SCALE_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgTextBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgTextBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_IMG_TEXT_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgTextScaleBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgTextScaleBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_IMG_TEXT_SCALE_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgLocalizeTextBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgLocalizeTextBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_IMG_LOCALIZE_TEXT_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgLocalizeTextScaleBtn.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ImgLocalizeTextScaleBtn.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_BUTTON_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_IMG_LOCALIZE_TEXT_SCALE_BTN)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ScrollView.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SCROLL_VIEW_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ScrollView.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SCROLL_VIEW_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_SCROLL_VIEW)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_PageScrollView.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SCROLL_VIEW_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_PageScrollView.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SCROLL_VIEW_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_PAGE_SCROLL_VIEW)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_DragResponder.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_DragResponder.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DRAG_RESPONDER)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_TouchResponder.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_TouchResponder.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TOUCH_RESPONDER)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_AlertPopup.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_AlertPopup.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_ALERT_POPUP)),
 			
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ToastPopup.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ToastPopup.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TOAST_POPUP)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_BGSnd.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_BGSnd.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_BG_SND)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_FXSnd.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_FXSnd.prefab.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_FX_SND)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES),
@@ -436,42 +431,42 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_PATH_TABLE_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ValueTable_Common.csv", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_VALUE_INFO_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ValueTable_Common.csv.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_VALUE_INFO_BASE),
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_COMMON_VALUE_TABLE)),
 			
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common.csv", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common.csv.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_BASE),
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_COMMON_STRING_TABLE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common_KO.csv", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common_KO.csv.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_BASE),
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_KOREAN_COMMON_STRING_TABLE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common_EN.csv", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_BASE),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common_EN.csv.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_BASE),
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_ENGLISH_COMMON_STRING_TABLE))
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_PATH_SCRIPTABLE_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_BUILD_INFO_TABLE)),
 			
-		new KeyValuePair<string, string>(string.Format("{0}T_BuildOptionTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_BuildOptionTable.asset.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_BUILD_OPTION_TABLE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}T_DefineSymbolTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_DefineSymbolTable.asset.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_DEFINE_SYMBOL_TABLE)),
 			
-		new KeyValuePair<string, string>(string.Format("{0}T_DeviceInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_DeviceInfoTable.asset.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_DEVICE_INFO_TABLE)),
 		
-		new KeyValuePair<string, string>(string.Format("{0}T_ProjInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_ProjInfoTable.asset.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_PROJ_INFO_TABLE)),
 
-#if ADS_ENABLE || TENJIN_ENABLE || FLURRY_ENABLE || FIREBASE_ENABLE
-		new KeyValuePair<string, string>(string.Format("{0}T_PluginInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
+#if ADS_ENABLE || FLURRY_ENABLE || TENJIN_ENABLE || FIREBASE_ENABLE
+		new KeyValuePair<string, string>(string.Format("{0}T_PluginInfoTable.asset.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_PLUGIN_INFO_TABLE)),
-#endif			// #if ADS_ENABLE || TENJIN_ENABLE || FLURRY_ENABLE || FIREBASE_ENABLE
+#endif			// #if ADS_ENABLE || FLURRY_ENABLE || TENJIN_ENABLE || FIREBASE_ENABLE
 
 #if PURCHASE_ENABLE			
-		new KeyValuePair<string, string>(string.Format("{0}T_ProductInfoTable.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
+		new KeyValuePair<string, string>(string.Format("{0}T_ProductInfoTable.asset.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_PRODUCT_INFO_TABLE))
 #endif			// #if PURCHASE_ENABLE
 	};
@@ -502,6 +497,23 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABSOLUTE_DIR_PATH_STUDY_SAMPLE_SCENE,
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_MENU))
 #endif			// #if STUDY_MODULE_ENABLE
+	};
+
+	public static readonly KeyValuePair<string, string>[] B_PATH_ASSEMBLY_DEFINITION_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+#if FLURRY_ENABLE
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Flurry/Templates/T_UnityModule.FlurrySDK.asmdef.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES),
+			string.Format("{0}Plugins/FlurrySDK/UnityModule.FlurrySDK.asmdef", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS)),
+#endif			// #if FLURRY_ENABLE
+
+#if TENJIN_ENABLE
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Tenjin/Templates/T_UnityModule.Tenjin.asmdef.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES),
+			string.Format("{0}Tenjin/UnityModule.Tenjin.asmdef", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS)),
+#endif			// #if TENJIN_ENABLE
+
+#if GAME_CENTER_ENABLE
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.GameCenter/Templates/T_UnityModule.GooglePlayGames.asmdef.template", KCEditorDefine.B_ABSOLUTE_DIR_PATH_PACKAGES),
+			string.Format("{0}GooglePlayGames/UnityModule.GooglePlayGames.asmdef", KCEditorDefine.B_ABSOLUTE_DIR_PATH_ASSETS))
+#endif			// #if GAME_CENTER_ENABLE
 	};
 	// 경로 }
 

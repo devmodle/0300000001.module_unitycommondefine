@@ -23,9 +23,9 @@ public struct STVersionInfo {
 	[Key(1)] public Dictionary<string, string> m_oExtraInfoList;
 }
 
-//! 커스텀 타입 래퍼
+//! 공용 커스텀 타입 래퍼
 [MessagePackObject]
-public struct STCustomTypeWrapper {
+public struct STCommonCustomTypeWrapper {
 	[Key(0)] public List<string> m_oStringList;
 
 	[Key(1)] public Dictionary<string, bool> m_oBoolMapList;
