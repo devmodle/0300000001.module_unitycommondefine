@@ -32,7 +32,7 @@ public static partial class KCDefine {
 	// 정렬 순서 {
 	public const int U_SORTING_ORDER_SCREEN_POPUP_UI = 0;
 	public const int U_SORTING_ORDER_SCREEN_TOPMOST_UI = 1;
-	public const int U_SORTING_ORDER_SCREEN_ABSOLUTE_UI = 2;
+	public const int U_SORTING_ORDER_SCREEN_ABS_UI = 2;
 	public const int U_SORTING_ORDER_SCREEN_BLIND_UI = 3;
 	public const int U_SORTING_ORDER_SCREEN_DEBUG_UI = 4;
 
@@ -130,7 +130,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_LAYER_OVERGROUND = "Overground";
 	public const string U_SORTING_LAYER_TOP = "Top";
 	public const string U_SORTING_LAYER_TOPMOST = "Topmost";
-	public const string U_SORTING_LAYER_ABSOLUTE = "Absolute";
+	public const string U_SORTING_LAYER_ABS = "Abs";
 
 #if !CAMERA_STACK_ENABLE
 	public const string U_SORTING_LAYER_UNDERGROUND_UI = "UndergroundUI";
@@ -140,7 +140,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_LAYER_OVERGROUND_UI = "OvergroundUI";
 	public const string U_SORTING_LAYER_TOP_UI = "TopUI";
 	public const string U_SORTING_LAYER_TOPMOST_UI = "TopmostUI";
-	public const string U_SORTING_LAYER_ABSOLUTE_UI = "AbsoluteUI";
+	public const string U_SORTING_LAYER_ABS_UI = "AbsUI";
 #endif			// #if !CAMERA_STACK_ENABLE
 	// 정렬 레이어 }
 
@@ -221,7 +221,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_NAME_SCREEN_BLIND_UI_ROOT = "ScreenBlindUIs";
 	public const string U_OBJ_NAME_SCREEN_POPUP_UI_ROOT = "ScreenPopupUIs";
 	public const string U_OBJ_NAME_SCREEN_TOPMOST_UI_ROOT = "ScreenTopmostUIs";
-	public const string U_OBJ_NAME_SCREEN_ABSOLUTE_UI_ROOT = "ScreenAbsoluteUIs";
+	public const string U_OBJ_NAME_SCREEN_ABS_UI_ROOT = "ScreenAbsUIs";
 
 	public const string U_OBJ_NAME_LEFT_BLIND_IMG = "LeftBlindImg";
 	public const string U_OBJ_NAME_RIGHT_BLIND_IMG = "RightBlindImg";
@@ -342,7 +342,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_LAYER_OVERGROUND,
 		KCDefine.U_SORTING_LAYER_TOP,
 		KCDefine.U_SORTING_LAYER_TOPMOST,
-		KCDefine.U_SORTING_LAYER_ABSOLUTE,
+		KCDefine.U_SORTING_LAYER_ABS,
 
 #if !CAMERA_STACK_ENABLE
 		KCDefine.U_SORTING_LAYER_UNDERGROUND_UI,
@@ -352,7 +352,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_LAYER_OVERGROUND_UI,
 		KCDefine.U_SORTING_LAYER_TOP_UI,
 		KCDefine.U_SORTING_LAYER_TOPMOST_UI,
-		KCDefine.U_SORTING_LAYER_ABSOLUTE_UI
+		KCDefine.U_SORTING_LAYER_ABS_UI
 #endif			// #if !CAMERA_STACK_ENABLE
 	};
 

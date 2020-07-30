@@ -15,7 +15,7 @@ public static partial class KCDefine {
 	public static readonly string IS_PATH_SCREEN_BLIND_UI = string.Format("{0}{1}IS_ScreenBlindUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_INIT_SCENE_BASE);
 	public static readonly string IS_PATH_SCREEN_POPUP_UI = string.Format("{0}{1}IS_ScreenPopupUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_INIT_SCENE_BASE);
 	public static readonly string IS_PATH_SCREEN_TOPMOST_UI = string.Format("{0}{1}IS_ScreenTopmostUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_INIT_SCENE_BASE);
-	public static readonly string IS_PATH_SCREEN_ABSOLUTE_UI = string.Format("{0}{1}IS_ScreenAbsoluteUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_INIT_SCENE_BASE);
+	public static readonly string IS_PATH_SCREEN_ABS_UI = string.Format("{0}{1}IS_ScreenAbsUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_INIT_SCENE_BASE);
 
 	public static readonly string IS_PATH_SCREEN_BLIND_IMG = string.Format("{0}{1}IS_ScreenBlindImg", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_INIT_SCENE_BASE);
 	// 경로 }

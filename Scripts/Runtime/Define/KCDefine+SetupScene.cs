@@ -8,7 +8,7 @@ public static partial class KCDefine {
 	// 이름 {
 	public const string SS_NAME_POPUP_UI = "PopupUI";
 	public const string SS_NAME_TOPMOST_UI = "TopmostUI";
-	public const string SS_NAME_ABSOLUTE_UI = "AbsoluteUI";
+	public const string SS_NAME_ABS_UI = "AbsUI";
 
 	public const string SS_NAME_TIMER_MANAGER = "TimerManager";
 	// 이름 }
