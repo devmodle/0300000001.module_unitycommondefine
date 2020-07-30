@@ -11,6 +11,7 @@ public static partial class KCEditorDefine {
 	#region 기본
 	// 시간
 	public const float B_DELTA_TIME_HIERARCHY_UPDATE = 1.0f;
+	public const float B_DELTA_TIME_SCRIPT_M_SCENE_UPDATE = 1.0f;
 	public const float B_DELTA_TIME_EDITOR_SM_SCENE_UPDATE = 0.25f;
 
 	// 계층 뷰
@@ -284,8 +285,8 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Editor/Define/T_KEditorDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/Global/Define/KEditorDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Editor/Build/T_CPlatformBuildHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Editor/Global/Utility/Build/CPlatformBuildHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		new KeyValuePair<string, string>(string.Format("{0}Editor/Build/T_CBuildProcessHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Editor/Global/Utility/Build/CBuildProcessHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Editor/Manager/T_CScriptManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/Global/Utility/Manager/CScriptManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
