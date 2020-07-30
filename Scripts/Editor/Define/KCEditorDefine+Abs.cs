@@ -529,6 +529,9 @@ public static partial class KCEditorDefine {
 	// 경로 }
 
 	// 유니티 패키지 {
+	public static readonly string B_UNITY_PKG_SRC_GOOGLE_SCOPED_REGISTRY_PATH = string.Format("{0}../UnityPackages/Options/Project/GoogleScopedRegistry.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
+	public static readonly string B_UNITY_PKG_DEST_GOOGLE_SCOPED_REGISTRY_PATH = string.Format("{0}Options/Project/GoogleScopedRegistry.json", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+
 	public static readonly Dictionary<string, string> B_UNITY_PKGS_DEPENDENCY_LIST = new Dictionary<string, string>() {
 		["com.unity.2d.sprite"] = "1.0.0",
 		["com.unity.2d.tilemap"] = "1.0.0",
@@ -539,7 +542,7 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly Dictionary<string, string> B_UNITY_PKGS_SCOPED_REGISTRY_LIST = new Dictionary<string, string>() {
-		[KCEditorDefine.B_UNITY_PKGS_GOOGLE_REGISTRY_NAME] = string.Format("{0}../UnityPackages/Options/Project/GoogleRegistry.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)
+		[KCEditorDefine.B_UNITY_PKGS_GOOGLE_REGISTRY_NAME] = KCEditorDefine.B_UNITY_PKG_DEST_GOOGLE_SCOPED_REGISTRY_PATH
 	};
 	// 유니티 패키지 }
 
@@ -592,12 +595,15 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ANDROID_DEST_PLUGIN_PATH = string.Format("{0}libs/CustomAndroidPlugin.jar", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_MANIFEST_PATH = string.Format("{0}Options/Android/AndroidManifest.xml", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_MANIFEST_PATH = string.Format("{0}../UnityPackages/Options/Android/AndroidManifest.xml", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_MANIFEST_PATH = string.Format("{0}AndroidManifest.xml", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_MAIN_TEMPLATE_PATH = string.Format("{0}mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_PROGUARD_PATH = string.Format("{0}Options/Android/proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_PROGUARD_PATH = string.Format("{0}../UnityPackages/Options/Android/proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_PROGUARD_PATH = string.Format("{0}proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_UNITY_PLUGIN_PATH = string.Format("{0}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar", KCEditorDefine.B_ABS_DIR_PATH_UNITY_ENGINE);
