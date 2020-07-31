@@ -650,30 +650,15 @@ public static partial class KCDefine {
 	// 매개 변수
 	public const string U_LOG_PARAM_USER_INFO = "UserInfo";
 
-#if FLURRY_ENABLE && FLURRY_ANALYTICS_ENABLE
-	// 토큰
-	public const string U_TOKEN_FLURRY_ANALYTICS_LOG_DATA = ",";
-#endif			// #if FLURRY_ENABLE && FLURRY_ANALYTICS_ENABLE
-
 #if FACEBOOK_ENABLE
 	// 키
 	public const string U_KEY_FACEBOOK_M_INIT_CALLBACK = "FacebookMInitCallback";
 	public const string U_KEY_FACEBOOK_M_LOGIN_CALLBACK = "FacebookMLoginCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_SHOW_CALLBACK = "FacebookMViewStateShowCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_CLOSE_CALLBACK = "FacebookMViewStateCloseCallback";
-
-#if FACEBOOK_ANALYTICS_ENABLE
-	// 토큰
-	public const string U_TOKEN_FACEBOOK_ANALYTICS_LOG_DATA = ",";
-#endif			// #if FACEBOOK_ANALYTICS_ENABLE
 #endif			// #if FACEBOOK_ENABLE
 
 #if FIREBASE_ENABLE
-#if FIREBASE_ANALYTICS_ENABLE
-	// 토큰
-	public const string U_TOKEN_FIREBASE_ANALYTICS_LOG_DATA = ",";
-#endif			// #if FIREBASE_ANALYTICS_ENABLE
-
 #if FIREBASE_DATABASE_ENABLE
 	// 노드 이름
 	public const string U_NODE_NAME_FIREBASE_USER_INFO_LIST = "UserInfoList";
@@ -726,11 +711,6 @@ public static partial class KCDefine {
 	// 크기
 	public const uint U_SIZE_UNITY_SERVICE_CRASH_LOG_BUFFER = 50;
 #endif			// #if UNITY_SERVICE_CRASHLYTICS_ENABLE
-
-#if UNITY_SERVICE_ANALYTICS_ENABLE
-	// 토큰
-	public const string U_TOKEN_UNITY_SERVICE_ANALYTICS_LOG_DATA = ",";
-#endif			// #if UNITY_SERVICE_ANALYTICS_ENABLE
 #endif			// #if UNITY_SERVICE_ENABLE
 #endif			// #if FLURRY_ENABLE || FACEBOOK_ENABLE || FIREBASE_ENABLE || UNITY_SERVICE_ENABLE
 

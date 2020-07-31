@@ -94,29 +94,6 @@ public enum EAgreeSceneManagerEventType {
 	LOAD_NEXT_SCENE,
 	MAX_VALUE
 }
-
-//! 광고 타입
-public enum EAdsType {
-	NONE = -1,
-
-#if ADMOB_ENABLE
-	ADMOB,
-#endif			// #if ADMOB_ENABLE
-
-#if UNITY_ADS_ENABLE
-	UNITY_ADS,
-#endif			// #if UNITY_ADS_ENABLE
-
-#if IRON_SOURCE_ENABLE
-	IRON_SOURCE,
-#endif			// #if IRON_SOURCE_ENABLE
-
-#if APP_LOVIN_ENABLE
-	APP_LOVIN,
-#endif			// #if APP_LOVIN_ENABLE
-
-	MAX_VALUE
-}
 #endregion			// 기본
 
 #region 조건부 상수
@@ -185,4 +162,29 @@ public enum ETextureCompressionType {
 	MAX_VALUE
 }
 #endif			// #if UNITY_EDITOR
+
+#if ADS_ENABLE
+//! 광고 타입
+public enum EAdsType {
+	NONE = -1,
+
+#if ADMOB_ENABLE
+	ADMOB,
+#endif			// #if ADMOB_ENABLE
+
+#if UNITY_ADS_ENABLE
+	UNITY_ADS,
+#endif			// #if UNITY_ADS_ENABLE
+
+#if IRON_SOURCE_ENABLE
+	IRON_SOURCE,
+#endif			// #if IRON_SOURCE_ENABLE
+
+#if APP_LOVIN_ENABLE
+	APP_LOVIN,
+#endif			// #if APP_LOVIN_ENABLE
+
+	MAX_VALUE
+}
+#endif			// #if ADS_ENABLE
 #endregion			// 조건부 상수
