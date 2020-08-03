@@ -290,7 +290,7 @@ public static partial class KCDefine {
 	
 	public static readonly Color U_DEF_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
 	public static readonly Color U_DEF_COLOR_CAMERA_BG = Color.black;
-	public static readonly Color U_DEF_COLOR_ACTIVITY_INDICATOR_BG = Color.black;
+	public static readonly Color U_DEF_COLOR_ACTIVITY_INDICATOR_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
 	// 색상 }
 
 	// 정렬 순서 정보 {
