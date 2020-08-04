@@ -137,14 +137,14 @@ public static partial class KCEditorDefine {
 	// 유니티 패키지 }
 	
 	// 에디터 옵션 {
-	public const string B_EDITOR_OPTION_IOS_REMOTE_DEVICE = "Any iOS Device";
-	public const string B_EDITOR_OPTION_ANDROID_REMOTE_DEVICE = "Any Android Device";
-	public const string B_EDITOR_OPTION_DISABLE_REMOTE_DEVICE = "None";
+	public const string B_EDITOR_OPT_IOS_REMOTE_DEVICE = "Any iOS Device";
+	public const string B_EDITOR_OPT_ANDROID_REMOTE_DEVICE = "Any Android Device";
+	public const string B_EDITOR_OPT_DISABLE_REMOTE_DEVICE = "None";
 
-	public const string B_EDITOR_OPTION_REMOTE_COMPRESSION = "JPEG";
-	public const string B_EDITOR_OPTION_REMOTE_RESOLUTION = "Downsize";
-	public const string B_EDITOR_OPTION_VERSION_CONTROL = "Visible Meta Files";
-	public const string B_EDITOR_OPTION_JOYSTIC_SOURCE = "Remote";
+	public const string B_EDITOR_OPT_REMOTE_COMPRESSION = "JPEG";
+	public const string B_EDITOR_OPT_REMOTE_RESOLUTION = "Downsize";
+	public const string B_EDITOR_OPT_VERSION_CONTROL = "Visible Meta Files";
+	public const string B_EDITOR_OPT_JOYSTIC_SOURCE = "Remote";
 	// 에디터 옵션 }
 
 	// 젠킨스 {
@@ -452,8 +452,8 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_BUILD_INFO_TABLE)),
 			
-		new KeyValuePair<string, string>(string.Format("{0}T_BuildOptionTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_BUILD_OPTION_TABLE)),
+		new KeyValuePair<string, string>(string.Format("{0}T_BuildOptTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_BUILD_OPT_TABLE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_DefineSymbolTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_DEFINE_SYMBOL_TABLE)),
@@ -548,7 +548,7 @@ public static partial class KCEditorDefine {
 	// 유니티 패키지 }
 
 	// 에디터 옵션
-	public static readonly string[] B_EDITOR_OPTION_EXTENSIONS = new string[] {
+	public static readonly string[] B_EDITOR_OPT_EXTENSIONS = new string[] {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
 	};
 

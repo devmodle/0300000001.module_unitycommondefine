@@ -393,7 +393,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_PATH_SS_TIMER_MANAGER = string.Format("{0}{1}SS_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE_BASE);
 
 	public static readonly string U_SCRIPTABLE_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_SCRIPTABLE_PATH_G_BUILD_OPTION_TABLE = string.Format("{0}{1}G_BuildOptionTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_SCRIPTABLE_PATH_G_BUILD_OPT_TABLE = string.Format("{0}{1}G_BuildOptTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_SCRIPTABLE_PATH_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_SCRIPTABLE_PATH_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_SCRIPTABLE_PATH_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);

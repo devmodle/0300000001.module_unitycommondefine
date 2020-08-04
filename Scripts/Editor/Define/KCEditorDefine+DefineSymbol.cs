@@ -143,8 +143,8 @@ public static partial class KCEditorDefine {
 	// 기타
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
-	public const string DS_DEFINE_S_USE_CUSTOM_PROJ_OPTION = "USE_CUSTOM_PROJ_OPTION";
-	public const string DS_DEFINE_S_NOT_USE_CUSTOM_PROJ_OPTION = "!USE_CUSTOM_PROJ_OPTION";
+	public const string DS_DEFINE_S_USE_CUSTOM_PROJ_OPT = "USE_CUSTOM_PROJ_OPT";
+	public const string DS_DEFINE_S_NOT_USE_CUSTOM_PROJ_OPT = "!USE_CUSTOM_PROJ_OPT";
 	#endregion			// 기본
 }
 #endif			// #if UNITY_EDITOR
