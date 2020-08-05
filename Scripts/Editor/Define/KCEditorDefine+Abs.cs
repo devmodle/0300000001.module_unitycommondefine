@@ -78,7 +78,6 @@ public static partial class KCEditorDefine {
 	public const string B_OBJ_NAME_SCENE_EDITOR_LIGHT = "SceneLight";
 	
 	public const string B_PROPERTY_NAME_CATEGORY = "applicationCategoryType";
-	public const string B_PROPERTY_NAME_OPTIMIZE_FRAME_PACING = "optimizedFramePacing";
 	public const string B_PROPERTY_NAME_REQUIRE_AR_KIT_SUPPORT = "requiresARKitSupport";
 	public const string B_PROPERTY_NAME_APPLE_ENABLE_PRO_MOTION = "appleEnableProMotion";
 	public const string B_PROPERTY_NAME_AUTO_ADD_CAPABILITIES = "automaticallyDetectAndAddCapabilities";

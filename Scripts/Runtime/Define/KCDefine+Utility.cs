@@ -548,10 +548,7 @@ public static partial class KCDefine {
 #if ADS_ENABLE
 	// 횟수
 	public const int U_MAX_TIMES_ADS_LOAD_TRY = 15;
-
-	// 간격
-	public const float U_OFFSET_BANNER_ADS = 110.0f;
-
+	
 	// 키 {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
