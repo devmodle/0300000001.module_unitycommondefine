@@ -737,8 +737,8 @@ public static partial class KCDefine {
 	public const string U_MSG_NEED_MSG_PACK = "MsgPack 라이브러리가 필요합니다.";
 #else
 	// 버전
-	public const string U_VERSION_APP_INFO = "1.0.0";
-	public const string U_VERSION_USER_INFO = "1.0.0";
+	public const string U_VERSION_COMMON_APP_INFO = "1.0.0";
+	public const string U_VERSION_COMMON_USER_INFO = "1.0.0";
 #endif			// #if !MSG_PACK_ENABLE
 	#endregion			// 조건부 상수
 
