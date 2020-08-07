@@ -100,7 +100,6 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_NAME_SND_M_VIRTUALIZE_EFFECT = "m_VirtualizeEffects";
 
 	public const string B_PROPERTY_NAME_ENABLE_BAKE_LIGHTMAPS = "m_GISettings.m_EnableBakedLightmaps";
-	public const string B_PROPERTY_NAME_ENABLE_REALTIME_LIGHTMAPS = "m_GISettings.m_EnableRealtimeLightmaps";
 
 	public const string B_FUNC_NAME_GET_LIGHTMAP_SETTINGS = "GetLightmapSettings";
 	public const string B_FUNC_NAME_SET_COMPRESSION_TYPE = "SetCompressionType";
