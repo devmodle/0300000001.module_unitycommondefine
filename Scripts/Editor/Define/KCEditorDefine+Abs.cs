@@ -538,7 +538,7 @@ public static partial class KCEditorDefine {
     	["com.unity.assetbundlebrowser"] = "1.7.0",
 		["com.unity.mobile.android-logcat"] = "1.1.1",
 		["com.unity.render-pipelines.universal"] = "7.3.1",
-		["com.google.external-dependency-manager"] = "1.2.156",
+		["com.google.external-dependency-manager"] = "1.2.157",
 	};
 
 	public static readonly Dictionary<string, string> B_UNITY_PKGS_SCOPED_REGISTRY_LIST = new Dictionary<string, string>() {
