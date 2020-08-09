@@ -123,16 +123,6 @@ public static partial class KCEditorDefine {
 
 	public const string B_DIR_PATH_EXPORT_IMG_BASE = "Export/Images/";
 	// 경로 }
-
-	// 유니티 패키지 {
-	public const string B_UNITY_PKGS_NAME_KEY = "name";
-	public const string B_UNITY_PKGS_URL_KEY = "url";
-	public const string B_UNITY_PKGS_SCOPES_KEY = "scopes";
-	public const string B_UNITY_PKGS_SCOPED_REGISTRIES_KEY = "scopedRegistries";
-
-	public const string B_UNITY_PKGS_ID_FORMAT = "{0}@{1}";
-	public const string B_UNITY_PKGS_GOOGLE_REGISTRY_NAME = "Game Package Registry by Google";
-	// 유니티 패키지 }
 	
 	// 에디터 옵션 {
 	public const string B_EDITOR_OPT_IOS_REMOTE_DEVICE = "Any iOS Device";
@@ -286,8 +276,11 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Editor/Build/T_CBuildProcessHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/Global/Utility/Build/CBuildProcessHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Editor/Manager/T_CScriptManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Editor/Global/Utility/Manager/CScriptManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		new KeyValuePair<string, string>(string.Format("{0}Editor/Scene/T_CEditorSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Editor/EditorScene/CEditorSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Editor/Scene/T_CEditorSceneManager+Setup.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Editor/EditorScene/CEditorSceneManager+Setup.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
@@ -524,24 +517,6 @@ public static partial class KCEditorDefine {
 			string.Format("{0}Plugins/UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS))
 	};
 	// 경로 }
-
-	// 유니티 패키지 {
-	public static readonly string B_UNITY_PKG_SRC_GOOGLE_SCOPED_REGISTRY_PATH = string.Format("{0}../UnityPackages/Options/Project/GoogleScopedRegistry.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
-	public static readonly string B_UNITY_PKG_DEST_GOOGLE_SCOPED_REGISTRY_PATH = string.Format("{0}Options/Project/GoogleScopedRegistry.json", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-
-	public static readonly Dictionary<string, string> B_UNITY_PKGS_DEPENDENCY_LIST = new Dictionary<string, string>() {
-		["com.unity.2d.sprite"] = "1.0.0",
-		["com.unity.2d.tilemap"] = "1.0.0",
-    	["com.unity.assetbundlebrowser"] = "1.7.0",
-		["com.unity.mobile.android-logcat"] = "1.1.1",
-		["com.unity.render-pipelines.universal"] = "7.3.1",
-		["com.google.external-dependency-manager"] = "1.2.157",
-	};
-
-	public static readonly Dictionary<string, string> B_UNITY_PKGS_SCOPED_REGISTRY_LIST = new Dictionary<string, string>() {
-		[KCEditorDefine.B_UNITY_PKGS_GOOGLE_REGISTRY_NAME] = KCEditorDefine.B_UNITY_PKG_DEST_GOOGLE_SCOPED_REGISTRY_PATH
-	};
-	// 유니티 패키지 }
 
 	// 에디터 옵션
 	public static readonly string[] B_EDITOR_OPT_EXTENSIONS = new string[] {
