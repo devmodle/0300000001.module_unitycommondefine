@@ -183,6 +183,8 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FORMAT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 	public const string U_KEY_FORMAT_TASK_M_ASYNC_TASK_CALLBACK = "TaskMAsyncTaskCallback_{0}";
+
+	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
 	// 키 }
 
 	// 이름 {
