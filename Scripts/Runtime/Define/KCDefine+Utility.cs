@@ -73,7 +73,7 @@ public static partial class KCDefine {
 	public const float U_MAX_DELTA_TIME_PERMISSION_CHECK = 15.0f;
 
 	public const float U_DEF_DURATION_ANI = 0.25f;
-	public const float U_DEF_DURATION_POPUP_ANI = 0.15f;
+	public const float U_DEF_DURATION_POPUP_ANI = 0.25f;
 	public const float U_DEF_DURATION_SCROLL_ANI = 0.25f;
 	public const float U_DEF_DURATION_SCREEN_FADE_IN_ANI = 0.15f;
 	public const float U_DEF_DURATION_SCREEN_FADE_OUT_ANI = 0.15f;
