@@ -698,11 +698,11 @@ public static partial class KCDefine {
 	// 키 }
 #endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 
-#if FIREBASE_MSG_ENABLE
+#if FIREBASE_CLOUD_MSG_ENABLE
 	// 키
 	public const string U_KEY_FIREBASE_M_TOKEN_CALLBACK = "FirebaseMTokenCallback";
 	public const string U_KEY_FIREBASE_M_MSG_CALLBACK = "FirebaseMMsgCallback";
-#endif			// #if FIREBASE_MSG_ENABLE
+#endif			// #if FIREBASE_CLOUD_MSG_ENABLE
 #endif			// #if FIREBASE_ENABLE
 
 #if UNITY_SERVICE_ENABLE
