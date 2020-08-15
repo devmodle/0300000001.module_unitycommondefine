@@ -37,7 +37,6 @@ public static partial class KCDefine {
 	public const int U_SORTING_ORDER_SCREEN_DEBUG_UI = 4;
 
 	public const int U_SORTING_ORDER_FPS_COUNTER = 5;
-	public const int U_SORTING_ORDER_FILE_BROWSER_UI = short.MaxValue;
 	// 정렬 순서 }
 
 	// 세기
@@ -742,6 +741,14 @@ public static partial class KCDefine {
 	public const string U_VERSION_COMMON_APP_INFO = "1.0.0";
 	public const string U_VERSION_COMMON_USER_INFO = "1.0.0";
 #endif			// #if !MSG_PACK_ENABLE
+
+#if FILE_BROWSER_ENABLE
+	// 정렬 순서
+	public const int U_SORTING_ORDER_FILE_BROWSER_UI = short.MaxValue;
+
+	// 이름
+	public const string U_OBJ_NAME_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";
+#endif			// #if FILE_BROWSER_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
