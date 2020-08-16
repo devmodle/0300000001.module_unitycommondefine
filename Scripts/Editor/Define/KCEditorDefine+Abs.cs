@@ -592,9 +592,13 @@ public static partial class KCEditorDefine {
 
 	#region 조건부 상수
 #if UNITY_IOS
-	// 프로퍼티
+	// 프로퍼티 {
 	public const string B_PROPERTY_NAME_ENABLE_BITCODE = "ENABLE_BITCODE";
+	public const string B_PROPERTY_NAME_ENABLE_DEBUG_SYMBOL = "DEBUG_INFORMATION_FORMAT";
+
 	public const string B_PROPERTY_VALUE_ENABLE_BITCODE = "NO";
+	public const string B_PROPERTY_VALUE_ENABLE_DEBUG_SYMBOL = "dwarf-with-dsym";
+	// 프로퍼티 }
 
 	// 경로
 	public const string B_PATH_CAPABILITY_ENTITLEMENTS_IOS = "Capabilities.entitlements";
