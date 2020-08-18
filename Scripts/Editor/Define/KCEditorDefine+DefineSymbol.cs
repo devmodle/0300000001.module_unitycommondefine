@@ -26,7 +26,7 @@ public static partial class KCEditorDefine {
 	// 플러그인
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 	public const string DS_DEFINE_S_FILE_BROWSER_ENABLE = "FILE_BROWSER_ENABLE";
-	public const string DS_DEFINE_S_DOTWEEN_PLUGIN_ENABLE = "DOTWEEN_PLUGIN_ENABLE";
+	public const string DS_DEFINE_S_DOTWEEN_MODULE__ENABLE = "DOTWEEN_MODULE__ENABLE";
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
 
 	// 광고 {
@@ -180,5 +180,49 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_USE_CUSTOM_PROJ_OPT = "USE_CUSTOM_PROJ_OPT";
 	public const string DS_DEFINE_S_NOT_USE_CUSTOM_PROJ_OPT = "!USE_CUSTOM_PROJ_OPT";
 	#endregion			// 기본
+
+	#region 런타임 상수
+	public static readonly Dictionary<string, string> DS_REPLACE_DEFINE_S_MODULE_LIST = new Dictionary<string, string> {
+#if ADS_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_ADS_ENABLE] = KCEditorDefine.DS_DEFINE_S_ADS_MODULE_ENABLE,
+#endif			// #if ADS_ENABLE
+
+#if FLURRY_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_FLURRY_ENABLE] = KCEditorDefine.DS_DEFINE_S_FLURRY_MODULE_ENABLE,
+#endif			// #if FLURRY_ENABLE
+
+#if TENJIN_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_TENJIN_ENABLE] = KCEditorDefine.DS_DEFINE_S_TENJIN_MODULE_ENABLE,
+#endif			// #if TENJIN_ENABLE
+
+#if FACEBOOK_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_FACEBOOK_ENABLE] = KCEditorDefine.DS_DEFINE_S_FACEBOOK_MODULE_ENABLE,
+#endif			// #if FACEBOOK_ENABLE
+
+#if FIREBASE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_FIREBASE_ENABLE] = KCEditorDefine.DS_DEFINE_S_FIREBASE_MODULE_ENABLE,
+#endif			// #if FIREBASE_ENABLE
+
+#if UNITY_SERVICE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_UNITY_SERVICE_ENABLE] = KCEditorDefine.DS_DEFINE_S_UNITY_SERVICE_MODULE_ENABLE,
+#endif			// #if UNITY_SERVICE_ENABLE
+
+#if SINGULAR_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_SINGULAR_ENABLE] = KCEditorDefine.DS_DEFINE_S_SINGULAR_MODULE_ENABLE,
+#endif			// #if SINGULAR_ENABLE
+
+#if GAME_CENTER_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_GAME_CENTER_ENABLE] = KCEditorDefine.DS_DEFINE_S_GAME_CENTER_MODULE_ENABLE,
+#endif			// #if GAME_CENTER_ENABLE
+
+#if PURCHASE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_PURCHASE_ENABLE] = KCEditorDefine.DS_DEFINE_S_PURCHASE_MODULE_ENABLE,
+#endif			// #if PURCHASE_ENABLE
+
+#if LOCAL_NOTI_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_LOCAL_NOTI_ENABLE] = KCEditorDefine.DS_DEFINE_S_LOCAL_NOTI_MODULE_ENABLE
+#endif			// #if LOCAL_NOTI_ENABLE
+	};
+	#endregion			// 런타임 상수
 }
 #endif			// #if UNITY_EDITOR
