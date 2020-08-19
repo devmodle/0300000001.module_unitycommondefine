@@ -163,7 +163,7 @@ public enum ETextureCompressionType {
 }
 #endif			// #if UNITY_EDITOR
 
-#if ADS_ENABLE
+#if ADS_MODULE_ENABLE
 //! 광고 타입
 public enum EAdsType {
 	NONE = -1,
@@ -186,5 +186,5 @@ public enum EAdsType {
 
 	MAX_VALUE
 }
-#endif			// #if ADS_ENABLE
+#endif			// #if ADS_MODULE_ENABLE
 #endregion			// 조건부 상수

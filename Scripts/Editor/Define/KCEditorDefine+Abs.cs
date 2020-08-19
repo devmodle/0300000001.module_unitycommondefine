@@ -222,7 +222,8 @@ public static partial class KCEditorDefine {
 	public static readonly Vector2 B_MIN_SIZE_EDITOR_WINDOW = new Vector2(350.0f, 350.0f);
 
 	// 경로 {
-	public static readonly string B_DIR_PATH_AUTO_CREATE_RESES = string.Format("{0}{1}Resources", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
+	public static readonly string B_DIR_PATH_AUTO_CREATE_RESES = string.Format("{0}{1}Resources/", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
+	public static readonly string B_DIR_PATH_FILTER_AUTO_CREATE_RESES = string.Format("{0}{1}Resources", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
 
 	public static readonly string B_ABS_DIR_PATH_ASSETS = string.Format("{0}/", Application.dataPath);
 	public static readonly string B_ABS_DIR_PATH_PACKAGES = string.Format("{0}../Packages/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
@@ -255,6 +256,8 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_DATA_PATH_UNITY_PKGS = string.Format("{0}manifest.json", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ASSET_PATH_FORMAT_SCRIPTABLE_OBJ = string.Format("{0}{1}", KCEditorDefine.B_DIR_PATH_ASSETS, "{0}.asset");
+
+	public static readonly string B_SCRIPTABLE_PATH_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}{2}G_DefineSymbolTable.asset", KCEditorDefine.B_DIR_PATH_AUTO_CREATE_RESES, KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 		
 	public static readonly KeyValuePair<string, string>[] B_PATH_DATA_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_Service_KO.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
@@ -465,15 +468,15 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}T_ProjInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_PROJ_INFO_TABLE)),
 
-#if ADS_ENABLE || FLURRY_ENABLE || TENJIN_ENABLE || FIREBASE_ENABLE
+#if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_PluginInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_PLUGIN_INFO_TABLE)),
-#endif			// #if ADS_ENABLE || FLURRY_ENABLE || TENJIN_ENABLE || FIREBASE_ENABLE
+#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE
 
-#if PURCHASE_ENABLE			
+#if PURCHASE_MODULE_ENABLE			
 		new KeyValuePair<string, string>(string.Format("{0}T_ProductInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_SCRIPTABLE_PATH_G_PRODUCT_INFO_TABLE))
-#endif			// #if PURCHASE_ENABLE
+#endif			// #if PURCHASE_MODULE_ENABLE
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_PATH_SCENE_FILEPATH_INFOS = new KeyValuePair<string, string>[] {

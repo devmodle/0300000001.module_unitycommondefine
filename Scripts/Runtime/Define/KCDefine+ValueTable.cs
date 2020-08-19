@@ -28,5 +28,8 @@ public static partial class KCDefine {
 	public const string VT_KEY_V_OFFSET_ALERT_P_BG = "V_OFFSET_ALERT_P_BG";
 	public const string VT_KEY_H_OFFSET_ALERT_P_BG = "H_OFFSET_ALERT_P_BG";
 	// 알림 팝업 간격 }
+
+	// 게임 정보 저장소
+	public const string VT_KEY_DELAY_COMMON_GIS_ADS = "DELAY_COMMON_GIS_ADS";
 	#endregion			// 기본
 }

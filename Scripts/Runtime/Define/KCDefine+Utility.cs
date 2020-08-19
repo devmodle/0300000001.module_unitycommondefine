@@ -6,9 +6,9 @@ using UnityEngine;
 using UnityEngine.iOS;
 #endif			// #if UNITY_IOS
 
-#if ADS_ENABLE && ADMOB_ENABLE
+#if ADS_MODULE_ENABLE && ADMOB_ENABLE
 using GoogleMobileAds.Api;
-#endif			// #if ADS_ENABLE && ADMOB_ENABLE
+#endif			// #if ADS_MODULE_ENABLE && ADMOB_ENABLE
 
 //! 유틸리티 상수
 public static partial class KCDefine {
@@ -458,7 +458,7 @@ public static partial class KCDefine {
 #endif			// #if DIRECTIONAL_LIGHT_REALTIME_LIGHTMAP_BAKE_ENABLE
 	// 광원 }
 
-#if UNIVERSAL_RENDER_PIPELINE_ENABLE
+#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 	// 개수
 	public const int U_MAX_NUM_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ = 4;
 
@@ -483,7 +483,7 @@ public static partial class KCDefine {
 	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
 	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
 	// 이름 }
-#endif			// #if UNIVERSAL_RENDER_PIPELINE_ENABLE
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
 #if UNITY_IOS
@@ -539,14 +539,14 @@ public static partial class KCDefine {
 	// 이름 }
 #endif			// #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 
-#if TENJIN_ENABLE
+#if TENJIN_MODULE_ENABLE
 	// 키
 	public const string U_KEY_TENJIN_M_RECEIPT = "json";
 	public const string U_KEY_TENJIN_M_PAYLOAD = "Payload";
 	public const string U_KEY_TENJIN_M_SIGNATURE = "signature";
-#endif			// #if TENJIN_ENABLE
+#endif			// #if TENJIN_MODULE_ENABLE
 
-#if ADS_ENABLE
+#if ADS_MODULE_ENABLE
 	// 횟수
 	public const int U_MAX_TIMES_ADS_LOAD_TRY = 15;
 	
@@ -618,9 +618,9 @@ public static partial class KCDefine {
 	public const string U_TEST_ADS_ID_ADMOB_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
 #endif			// #if ADMOB_ENABLE
 	// 식별자 }
-#endif			// #if ADS_ENABLE
+#endif			// #if ADS_MODULE_ENABLE
 
-#if FLURRY_ENABLE || FACEBOOK_ENABLE || FIREBASE_ENABLE || UNITY_SERVICE_ENABLE
+#if FLURRY_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || UNITY_SERVICE_MODULE_ENABLE
 	// 시간
 	public const float U_TIMEOUT_FLURRY_NETWORK_CONNECTION = 60.0f;
 
@@ -648,15 +648,15 @@ public static partial class KCDefine {
 	// 매개 변수
 	public const string U_LOG_PARAM_USER_INFO = "UserInfo";
 
-#if FACEBOOK_ENABLE
+#if FACEBOOK_MODULE_ENABLE
 	// 키
 	public const string U_KEY_FACEBOOK_M_INIT_CALLBACK = "FacebookMInitCallback";
 	public const string U_KEY_FACEBOOK_M_LOGIN_CALLBACK = "FacebookMLoginCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_SHOW_CALLBACK = "FacebookMViewStateShowCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_CLOSE_CALLBACK = "FacebookMViewStateCloseCallback";
-#endif			// #if FACEBOOK_ENABLE
+#endif			// #if FACEBOOK_MODULE_ENABLE
 
-#if FIREBASE_ENABLE
+#if FIREBASE_MODULE_ENABLE
 #if FIREBASE_DATABASE_ENABLE
 	// 노드 이름
 	public const string U_NODE_NAME_FIREBASE_USER_INFO_LIST = "UserInfoList";
@@ -702,27 +702,17 @@ public static partial class KCDefine {
 	public const string U_KEY_FIREBASE_M_TOKEN_CALLBACK = "FirebaseMTokenCallback";
 	public const string U_KEY_FIREBASE_M_MSG_CALLBACK = "FirebaseMMsgCallback";
 #endif			// #if FIREBASE_CLOUD_MSG_ENABLE
-#endif			// #if FIREBASE_ENABLE
+#endif			// #if FIREBASE_MODULE_ENABLE
 
-#if UNITY_SERVICE_ENABLE
+#if UNITY_SERVICE_MODULE_ENABLE
 #if UNITY_SERVICE_CRASHLYTICS_ENABLE
 	// 크기
 	public const uint U_SIZE_UNITY_SERVICE_CRASH_LOG_BUFFER = 50;
 #endif			// #if UNITY_SERVICE_CRASHLYTICS_ENABLE
-#endif			// #if UNITY_SERVICE_ENABLE
-#endif			// #if FLURRY_ENABLE || FACEBOOK_ENABLE || FIREBASE_ENABLE || UNITY_SERVICE_ENABLE
+#endif			// #if UNITY_SERVICE_MODULE_ENABLE
+#endif			// #if FLURRY_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || UNITY_SERVICE_MODULE_ENABLE
 
-#if PURCHASE_ENABLE
-	// 메세지
-	public const string U_MSG_INVALID_PRODUCT_TYPE = "해당 상품 타입을 지원하지않습니다.";
-
-	// 키
-	public const string U_KEY_PURCHASE_M_CONFIRM_CALLBACK = "PurchaseMConfirmCallback";
-	public const string U_KEY_PURCHASE_M_RESTORE_CALLBACK = "PurchaseMRestoreCallback";
-	public const string U_KEY_PURCHASE_M_PURCHASE_RESULT_CALLBACK = "PurchaseMPurchaseResultCallback";
-#endif			// #if PURCHASE_ENABLE
-
-#if GAME_CENTER_ENABLE
+#if GAME_CENTER_MODULE_ENABLE
 	// 키
 	public const string U_KEY_GAME_CM_LOGIN_CALLBACK = "GameCMLoginCallback";
 	public const string U_KEY_GAME_CM_LOAD_SCORES_CALLBACK = "GameCMLoadScoresCallback";
@@ -731,7 +721,17 @@ public static partial class KCDefine {
 
 	// 코드
 	public const string U_AUTH_CODE_GAME_CM_UNKNOWN = "Unknown";
-#endif			// #if GAME_CENTER_ENABLE
+#endif			// #if GAME_CENTER_MODULE_ENABLE
+
+#if PURCHASE_MODULE_ENABLE
+	// 메세지
+	public const string U_MSG_INVALID_PRODUCT_TYPE = "해당 상품 타입을 지원하지않습니다.";
+
+	// 키
+	public const string U_KEY_PURCHASE_M_CONFIRM_CALLBACK = "PurchaseMConfirmCallback";
+	public const string U_KEY_PURCHASE_M_RESTORE_CALLBACK = "PurchaseMRestoreCallback";
+	public const string U_KEY_PURCHASE_M_PURCHASE_RESULT_CALLBACK = "PurchaseMPurchaseResultCallback";
+#endif			// #if PURCHASE_MODULE_ENABLE
 
 #if !MSG_PACK_ENABLE
 	// 메세지
@@ -769,7 +769,7 @@ public static partial class KCDefine {
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
 #endif			// #if UNITY_IOS
 
-#if ADS_ENABLE
+#if ADS_MODULE_ENABLE
 #if ADMOB_ENABLE
 	// 크기
 	public static readonly AdSize U_SIZE_ADMOB_BANNER = new AdSize(AdSize.FullWidth, 50);
@@ -779,29 +779,29 @@ public static partial class KCDefine {
 	// 크기
 	public static readonly IronSourceBannerSize U_SIZE_IRON_SOURCE_BANNER = new IronSourceBannerSize(320, 50);
 #endif			// #if IRON_SOURCE_ENABLE
-#endif			// #if ADS_ENABLE
+#endif			// #if ADS_MODULE_ENABLE
 
-#if ADS_ENABLE || FLURRY_ENABLE || TENJIN_ENABLE || FIREBASE_ENABLE
+#if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE
 	// 경로
 	public static readonly string U_SCRIPTABLE_PATH_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-#endif			// #if ADS_ENABLE || FLURRY_ENABLE || TENJIN_ENABLE || FIREBASE_ENABLE
+#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE
 
-#if FACEBOOK_ENABLE
+#if FACEBOOK_MODULE_ENABLE
 	// 권한
 	public static readonly string[] U_DEF_PERMISSIONS_FACEBOOK = new string[] {
 		"public_profile", "email"
 	};
-#endif			// #if FACEBOOK_ENABLE
+#endif			// #if FACEBOOK_MODULE_ENABLE
 
-#if FIREBASE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
+#if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 	// 시간
 	public static readonly System.TimeSpan U_DEF_TIMEOUT_FIREBASE_FETCH_CONFIG_DATA = new System.TimeSpan(0, 0, 30);
-#endif			// #if FIREBASE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
+#endif			// #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 
-#if PURCHASE_ENABLE
+#if PURCHASE_MODULE_ENABLE
 	// 경로
 	public static readonly string U_DATA_PATH_PURCHASE_M_PRODUCT_ID_LIST = string.Format("{0}PurchaseProductIDList.bytes", KCDefine.B_DIR_PATH_WRITABLE);
 	public static readonly string U_SCRIPTABLE_PATH_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-#endif			// #if PURCHASE_ENABLE
+#endif			// #if PURCHASE_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }

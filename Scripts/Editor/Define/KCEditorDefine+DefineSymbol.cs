@@ -26,7 +26,7 @@ public static partial class KCEditorDefine {
 	// 플러그인
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 	public const string DS_DEFINE_S_FILE_BROWSER_ENABLE = "FILE_BROWSER_ENABLE";
-	public const string DS_DEFINE_S_DOTWEEN_MODULE__ENABLE = "DOTWEEN_MODULE__ENABLE";
+	public const string DS_DEFINE_S_DOTWEEN_MODULE_ENABLE = "DOTWEEN_MODULE_ENABLE";
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
 
 	// 광고 {
@@ -81,6 +81,13 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_UNITY_SERVICE_CRASHLYTICS_ENABLE = "UNITY_SERVICE_CRASHLYTICS_ENABLE";
 	// 유니티 서비스 }
 
+	// 싱귤러 {
+	public const string DS_DEFINE_S_SINGULAR_ENABLE = "SINGULAR_ENABLE";
+	public const string DS_DEFINE_S_SINGULAR_MODULE_ENABLE = "SINGULAR_MODULE_ENABLE";
+
+	public const string DS_DEFINE_S_SINGULAR_ANALYTICS_ENABLE = "SINGULAR_ANALYTICS_ENABLE";
+	// 싱귤러 }
+
 	// 게임 센터 {
 	public const string DS_DEFINE_S_GAME_CENTER_ENABLE = "GAME_CENTER_ENABLE";
 	public const string DS_DEFINE_S_GAME_CENTER_MODULE_ENABLE = "GAME_CENTER_MODULE_ENABLE";
@@ -96,8 +103,8 @@ public static partial class KCEditorDefine {
 	// 결제 }
 
 	// 알림
-	public const string GS_DEFINE_S_LOCAL_NOTI_ENABLE = "LOCAL_NOTI_ENABLE";
-	public const string GS_DEFINE_S_LOCAL_NOTI_MODULE_ENABLE = "LOCAL_NOTI_MODULE_ENABLE";
+	public const string DS_DEFINE_S_LOCAL_NOTI_ENABLE = "LOCAL_NOTI_ENABLE";
+	public const string DS_DEFINE_S_LOCAL_NOTI_MODULE_ENABLE = "LOCAL_NOTI_MODULE_ENABLE";
 
 	// 렌더링 {
 	public const string DS_DEFINE_S_UNIVERSAL_RENDER_PIPELINE_ENABLE = "UNIVERSAL_RENDER_PIPELINE_ENABLE";
@@ -108,6 +115,7 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_CAMERA_STACK_ENABLE = "CAMERA_STACK_ENABLE";
 	public const string DS_DEFINE_S_PIXEL_PERFECT_ENABLE = "PIXEL_PERFECT_ENABLE";
+	public const string DS_DEFINE_S_CINEMACHINE_ENABLE = "CINEMACHINE_ENABLE";
 	public const string DS_DEFINE_S_POST_PROCESSING_ENABLE = "POST_PROCESSING_ENABLE";
 	public const string DS_DEFINE_S_DYNAMIC_BATCHING_ENABLE = "DYNAMIC_BATCHING_ENABLE";
 	// 렌더링 }
@@ -220,8 +228,12 @@ public static partial class KCEditorDefine {
 #endif			// #if PURCHASE_ENABLE
 
 #if LOCAL_NOTI_ENABLE
-		[KCEditorDefine.DS_DEFINE_S_LOCAL_NOTI_ENABLE] = KCEditorDefine.DS_DEFINE_S_LOCAL_NOTI_MODULE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_LOCAL_NOTI_ENABLE] = KCEditorDefine.DS_DEFINE_S_LOCAL_NOTI_MODULE_ENABLE,
 #endif			// #if LOCAL_NOTI_ENABLE
+
+#if UNIVERSAL_RENDER_PIPELINE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_UNIVERSAL_RENDER_PIPELINE_ENABLE] = KCEditorDefine.DS_DEFINE_S_UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_ENABLE
 	};
 	#endregion			// 런타임 상수
 }

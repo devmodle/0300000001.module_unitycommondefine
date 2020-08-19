@@ -6,13 +6,13 @@ using UnityEngine;
 using MessagePack;
 #endif			// #if MSG_PACK_ENABLE
 
-#if ADS_ENABLE
+#if ADS_MODULE_ENABLE
 //! 광고 보상 정보
 public struct STAdsRewardInfo {
 	public string m_oName;
 	public string m_oValue;
 }
-#endif			// #if ADS_ENABLE
+#endif			// #if ADS_MODULE_ENABLE
 
 #if MSG_PACK_ENABLE
 //! 버전 정보
