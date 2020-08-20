@@ -598,10 +598,7 @@ public static partial class KCEditorDefine {
 #if UNITY_IOS
 	// 프로퍼티
 	public const string B_PROPERTY_NAME_ENABLE_BITCODE = "ENABLE_BITCODE";
-	public const string B_PROPERTY_VALUE_ENABLE_BITCODE = "NO";
-
-	// 경로
-	public const string B_PATH_CAPABILITY_ENTITLEMENTS_IOS = "Capabilities.entitlements";
+	public const string B_PROPERTY_VALUE_ENABLE_BITCODE = "YES";
 #endif			// #if UNITY_IOS
 
 #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
@@ -627,6 +624,11 @@ public static partial class KCEditorDefine {
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
+#if UNITY_IOS
+	// 경로
+	public static readonly string B_PATH_CAPABILITY_ENTITLEMENTS_IOS = string.Format("{0}.entitlements", Application.productName);
+#endif			// #if UNITY_IOS
+
 #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	// 위치
 	public static readonly Vector2 B_POSITION_STATIC_TEXT = new Vector2(-10.0f, 0.0f);
