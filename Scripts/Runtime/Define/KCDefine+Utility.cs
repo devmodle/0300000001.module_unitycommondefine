@@ -15,7 +15,7 @@ public static partial class KCDefine {
 	#region 기본
 	// 개수
 	public const int U_MAX_NUM_LAYERS = 32;
-	public const int U_MAX_NUM_DUPLICATE_FX_SNDS = 5;
+	public const int U_MAX_NUM_DUPLICATE_FX_SNDS = 10;
 
 	// 길이
 	public const int U_MAX_LENGTH_LOG = 100000000;
