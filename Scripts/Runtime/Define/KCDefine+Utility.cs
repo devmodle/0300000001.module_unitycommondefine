@@ -184,6 +184,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FORMAT_TASK_M_ASYNC_TASK_CALLBACK = "TaskMAsyncTaskCallback_{0}";
 
 	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
+	public const string U_KEY_FORMAT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
 	// 키 }
 
 	// 이름 {
