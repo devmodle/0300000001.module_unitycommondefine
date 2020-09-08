@@ -83,6 +83,7 @@ public static partial class KCDefine {
 	public const float U_DEF_DURATION_HEAVY_VIBRATE = 0.15f;
 
 	public const float U_DELAY_INIT = 0.15f;
+	public const float U_DELAY_NEXT_SCENE_LOAD = 1.5f;
 	public const float U_DEF_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_TIME_INTERMEDIATE;
 
 	public const float U_DEF_TIMEOUT_NETWORK_CONNECTION = 30.0f;
@@ -102,7 +103,7 @@ public static partial class KCDefine {
 
 	// 회전
 	public static readonly Vector3 U_DEF_ROTATION_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
-
+	
 	// 형식
 	public const string U_FORMAT_LOG_M_LOG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
 
@@ -179,9 +180,7 @@ public static partial class KCDefine {
 	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
 
 	public const string U_KEY_DIALOG_TOUCH_RESPONDER = "DialogTouchResponder";
-
 	public const string U_KEY_FORMAT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
-	public const string U_KEY_FORMAT_TASK_M_ASYNC_TASK_CALLBACK = "TaskMAsyncTaskCallback_{0}";
 
 	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
 	public const string U_KEY_FORMAT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
@@ -258,12 +257,12 @@ public static partial class KCDefine {
 	public const string U_OBJ_NAME_SCREEN_F_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
 	public const string U_OBJ_NAME_ACTIVITY_I_TOUCH_RESPONDER = "ActivityIndicatorTouchResponder";
 
-	public const string U_IMG_NAME_DEF_SPRITE = "DefaultSprite";
+	public const string U_IMG_NAME_DEF_SPRITE = "DefSprite";
 	public const string U_IMG_NAME_SPRITE_CLONE = "(Clone)";
 
-	public const string U_MESH_NAME_DEF_MESH = "DefaultMesh";
+	public const string U_MESH_NAME_DEF_MESH = "DefMesh";
 
-	public const string U_CLS_NAME_UNITY_MS_MSG_RECEIVER = "dante.distribution.plugin.CAndroidPlugin";
+	public const string U_CLS_NAME_UNITY_MS_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
 	public const string U_FUNC_NAME_UNITY_MS_MSG_HANDLER = "handleUnityMsg";
 
 	public const string U_FUNC_NAME_ON_DRAG = "OnDrag";
@@ -308,6 +307,7 @@ public static partial class KCDefine {
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
 	public static readonly object U_LOCK_OBJ_SCHEDULE_M_UPDATE = new object();
+	public static readonly object U_LOCK_OBJ_TASK_M_UPDATE = new object();
 
 	// 레이어 마스크 {
 	public static readonly int[] U_DEF_LAYER_MASK_UI_CAMERA = new int[] {
@@ -391,20 +391,26 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_PATH_BG_SND = string.Format("{0}{1}{2}U_BGSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_SOUND_BASE);
 	public static readonly string U_OBJ_PATH_FX_SND = string.Format("{0}{1}{2}U_FXSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_SOUND_BASE);
 
-	public static readonly string U_OBJ_PATH_SS_FPS_COUNTER = string.Format("{0}{1}SS_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE_BASE);
-	public static readonly string U_OBJ_PATH_SS_TIMER_MANAGER = string.Format("{0}{1}SS_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE_BASE);
+	public static readonly string U_OBJ_PATH_FPS_COUNTER = string.Format("{0}{1}U_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+	public static readonly string U_OBJ_PATH_TIMER_MANAGER = string.Format("{0}{1}U_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
 
-	public static readonly string U_SCRIPTABLE_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_SCRIPTABLE_PATH_G_BUILD_OPT_TABLE = string.Format("{0}{1}G_BuildOptTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_SCRIPTABLE_PATH_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_SCRIPTABLE_PATH_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_SCRIPTABLE_PATH_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_BUILD_OPT_TABLE = string.Format("{0}{1}G_BuildOptTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	
+	public static readonly string U_ASSET_PATH_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_PATH_SETTINGS, KCDefine.B_DIR_PATH_UTILITY_BASE);
 
-	public static readonly string U_TABLE_PATH_G_COMMON_VALUE_TABLE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_VALUE_INFO_BASE);
-	public static readonly string U_TABLE_PATH_G_COMMON_STRING_TABLE = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_STRING_INFO_BASE);
+	public static readonly string U_TABLE_PATH_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_VALUE_INFO_BASE);
+	public static readonly string U_TABLE_PATH_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_STRING_INFO_BASE);
 
-	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING_TABLE = string.Format("{0}{1}{2}G_StringTable_Common_KO", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_STRING_INFO_BASE);
-	public static readonly string U_TABLE_PATH_G_ENGLISH_COMMON_STRING_TABLE = string.Format("{0}{1}{2}G_StringTable_Common_EN", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_STRING_INFO_BASE);
+	public static readonly string U_TABLE_PATH_FORMAT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_STRING_INFO_BASE, KCDefine.B_FILENAME_FORMAT_LOCALIZE);
+	public static readonly string U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
+
+	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
+	public static readonly string U_TABLE_PATH_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
+	public static readonly string U_TABLE_PATH_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_PATH_G_COMMON_STRING;
 
 	public static readonly string U_SND_PATH_G_TOUCH_BEGAN = string.Format("{0}{1}G_TouchBegan", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_SND_PATH_G_TOUCH_ENDED = string.Format("{0}{1}G_TouchEnded", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
@@ -448,18 +454,19 @@ public static partial class KCDefine {
 	public const int U_SCRIPT_ORDER_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_ORDER_SPLASH_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_ORDER_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_ORDER_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_ORDER_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 2;
 	// 스크립트 순서 }
 
 	// 광원 {
-#if DIRECTIONAL_LIGHT_REALTIME_LIGHTMAP_BAKE_ENABLE
+#if REALTIME_LIGHTMAP_BAKE_ENABLE
 	public const LightmapBakeType U_DEF_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Realtime;
 #else
 	public const LightmapBakeType U_DEF_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Mixed;
-#endif			// #if DIRECTIONAL_LIGHT_REALTIME_LIGHTMAP_BAKE_ENABLE
+#endif			// #if REALTIME_LIGHTMAP_BAKE_ENABLE
 	// 광원 }
 
-#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+#if UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 개수
 	public const int U_MAX_NUM_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ = 4;
 
@@ -484,7 +491,7 @@ public static partial class KCDefine {
 	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
 	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
 	// 이름 }
-#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
 #if UNITY_IOS
@@ -500,6 +507,11 @@ public static partial class KCDefine {
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
 	// 이름 }
 #endif			// #if UNITY_IOS
+
+#if SINGULAR_ENABLE || SINGULAR_MODULE_ENABLE
+	// 이름
+	public const string U_OBJ_NAME_SINGULAR_SDK = "SingularSDK";
+#endif			// #if SINGULAR_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	// 시간
@@ -773,18 +785,18 @@ public static partial class KCDefine {
 #if ADS_MODULE_ENABLE
 #if ADMOB_ENABLE
 	// 크기
-	public static readonly AdSize U_SIZE_ADMOB_BANNER = new AdSize(AdSize.FullWidth, 50);
+	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize(AdSize.FullWidth, 50);
 #endif			// #if ADMOB_ENABLE
 
 #if IRON_SOURCE_ENABLE
 	// 크기
-	public static readonly IronSourceBannerSize U_SIZE_IRON_SOURCE_BANNER = new IronSourceBannerSize(320, 50);
+	public static readonly IronSourceBannerSize U_SIZE_IRON_SOURCE_BANNER_ADS = IronSourceBannerSize.BANNER;
 #endif			// #if IRON_SOURCE_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE
 	// 경로
-	public static readonly string U_SCRIPTABLE_PATH_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 #endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE
 
 #if FACEBOOK_MODULE_ENABLE
@@ -799,10 +811,15 @@ public static partial class KCDefine {
 	public static readonly System.TimeSpan U_DEF_TIMEOUT_FIREBASE_FETCH_CONFIG_DATA = new System.TimeSpan(0, 0, 30);
 #endif			// #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 
+#if SINGULAR_ENABLE || SINGULAR_MODULE_ENABLE
+	// 경로
+	public static readonly string U_OBJ_PATH_SINGULAR_SDK = string.Format("{0}{1}U_SingularSDK", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+#endif			// #if SINGULAR_ENABLE || SINGULAR_MODULE_ENABLE
+
 #if PURCHASE_MODULE_ENABLE
 	// 경로
 	public static readonly string U_DATA_PATH_PURCHASE_M_PRODUCT_ID_LIST = string.Format("{0}PurchaseProductIDList.bytes", KCDefine.B_DIR_PATH_WRITABLE);
-	public static readonly string U_SCRIPTABLE_PATH_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 #endif			// #if PURCHASE_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }

@@ -7,6 +7,7 @@ using UnityEngine;
 public static partial class KCDefine {
 	#region 기본
 	// 인덱스
+	public const int B_INDEX_FIRST = 0;
 	public const int B_INDEX_INVALID = -1;
 
 	// 비교 결과
@@ -41,6 +42,8 @@ public static partial class KCDefine {
 	public const int B_SCREEN_HEIGHT = 720;
 #endif			// #if PORTRAIT_ENABLE
 
+	public const int B_DEF_TARGET_FRAME_RATE = 30;
+
 	public const float B_UNIT_SCALE = 0.01f;
 	public const float B_REF_PIXELS_UNIT = 1.0f;
 	public const float B_DEF_FIXED_DELTA_TIME = 0.02f;
@@ -54,9 +57,13 @@ public static partial class KCDefine {
 	public const string B_VERSION_STRING_FORMAT = "Ver.{0}";
 	// 디바이스 }
 
-	// 국가 코드
+	// 국가 코드 {
 	public const string B_KOREA_COUNTRY_CODE = "KR";
+	public const string B_JAPAN_COUNTRY_CODE = "JP";
+	public const string B_CHINA_COUNTRY_CODE = "CN";
+	
 	public const string B_UNKNOWN_COUNTRY_CODE = "Unknown";
+	// 국가 코드 }
 
 	// 이름 {
 	public const string B_DIR_NAME_BACKUP = "Backup";
@@ -80,6 +87,7 @@ public static partial class KCDefine {
 	public const string B_SCENE_NAME_LOADING = "01.LoadingScene";
 	public const string B_SCENE_NAME_SPLASH = "01.SplashScene";
 	public const string B_SCENE_NAME_AGREE = "01.AgreeScene";
+	public const string B_SCENE_NAME_LATE_SETUP = "01.LateSetupScene";
 	public const string B_SCENE_NAME_INTRO = "01.IntroScene";
 	// 씬 이름 }
 
@@ -98,11 +106,11 @@ public static partial class KCDefine {
 	// 명령어
 	public const string B_CMD_GET_DEVICE_ID = "GetDeviceID";
 	public const string B_CMD_GET_COUNTRY_CODE = "GetCountryCode";
-	public const string B_CMD_GET_SYSTEM_VERSION = "GetSystemVersion";
 	public const string B_CMD_GET_STORE_VERSION = "GetStoreVersion";
 	public const string B_CMD_SET_BUILD_MODE = "SetBuildMode";
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
+	public const string B_CMD_SHOW_RATING = "ShowRating";
 	public const string B_CMD_VIBRATE = "Vibrate";
 	public const string B_CMD_ACTIVITY_INDICATOR = "ActivityIndicator";
 
@@ -118,12 +126,14 @@ public static partial class KCDefine {
 	public const string B_DIR_PATH_PIPELINES = "Pipelines/";
 	public const string B_DIR_PATH_SCRIPTABLES = "Scriptables/";
 	public const string B_DIR_PATH_SPRITE_ATLASES = "SpriteAtlases/";
+	public const string B_DIR_PATH_SETTINGS = "Settings/";
 
 	public const string B_DIR_PATH_GLOBAL_BASE = "Global/";
 	public const string B_DIR_PATH_UTILITY_BASE = "Utility/";
 	public const string B_DIR_PATH_TUTORIAL_BASE = "Tutorial/";
 	public const string B_DIR_PATH_INIT_SCENE_BASE = "InitScene/";
 	public const string B_DIR_PATH_SETUP_SCENE_BASE = "SetupScene/";
+	public const string B_DIR_PATH_START_SCENE_BASE = "StartScene/";
 	public const string B_DIR_PATH_LOADING_SCENE_BASE = "LoadingScene/";
 	public const string B_DIR_PATH_SPLASH_SCENE_BASE = "SplashScene/";
 	public const string B_DIR_PATH_AGREE_SCENE_BASE = "AgreeScene/";
@@ -146,7 +156,8 @@ public static partial class KCDefine {
 	public const string B_DICTIONARY_FORMAT_STRING = "[{0}]{1}";
 
 	public const string B_NAME_FORMAT_BACKUP = "yyyy_MM_dd HH_mm_ss";
-	public const string B_FILE_NAME_FORMAT_BACKUP = "{0} ({1})";
+	public const string B_FILENAME_FORMAT_BACKUP = "{0} ({1})";
+	public const string B_FILENAME_FORMAT_LOCALIZE = "{0}_{1}";
 
 	public const string B_DATE_TIME_FORMAT_YYYY_MM_DD = "yyyyMMdd";
 	public const string B_DATE_TIME_FORMAT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
@@ -171,11 +182,10 @@ public static partial class KCDefine {
 	// 디바이스 }
 
 	// 색상 {
-	public static readonly Color B_LOG_COLOR_INFO = Color.black;
 	public static readonly Color B_LOG_COLOR_WARNING = new Color(0xff / 255.0f, 0xa5 / 255.0f, 0.0f, 1.0f);
 	public static readonly Color B_LOG_COLOR_ERROR = Color.red;
 
-	public static readonly Color B_LOG_COLOR_SETUP = Color.blue;
+	public static readonly Color B_LOG_COLOR_SETUP = Color.magenta;
 	public static readonly Color B_LOG_COLOR_PLUGIN = Color.yellow;
 	public static readonly Color B_LOG_COLOR_PLATFORM_INFO = Color.red;
 	// 색상 }

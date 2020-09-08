@@ -2,7 +2,8 @@
     "name": "UnityModule.Common.Define",
     "references": [
         "MessagePack",
-        "GoogleMobileAds"
+        "GoogleMobileAds",
+        "UnityModule.IronSource"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
