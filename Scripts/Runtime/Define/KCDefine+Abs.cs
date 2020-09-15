@@ -52,16 +52,15 @@ public static partial class KCDefine {
 	public const float B_WORLD_SCREEN_HEIGHT = KCDefine.B_SCREEN_HEIGHT * KCDefine.B_UNIT_SCALE;
 	
 	public const string B_EMPTY_STRING = "";
-	public const string B_UNKNOWN_ERROR_MSG = "Unknown";
-	public const string B_UNKNOWN_DEVICE_ID = "Unknown";
+	public const string B_UNKNOWN_STRING = "Unknown";
+	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STRING;
+	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STRING;
+	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STRING;
 	public const string B_VERSION_STRING_FORMAT = "Ver.{0}";
 	// 디바이스 }
 
 	// 국가 코드 {
 	public const string B_KOREA_COUNTRY_CODE = "KR";
-	public const string B_JAPAN_COUNTRY_CODE = "JP";
-	public const string B_CHINA_COUNTRY_CODE = "CN";
-	
 	public const string B_UNKNOWN_COUNTRY_CODE = "Unknown";
 	// 국가 코드 }
 

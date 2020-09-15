@@ -164,6 +164,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_ROBO_TEST_ENABLE = "ROBO_TEST_ENABLE";
 	public const string DS_DEFINE_S_PLAY_TEST_ENABLE = "PLAY_TEST_ENABLE";
 	public const string DS_DEFINE_S_LOGIC_TEST_ENABLE = "LOGIC_TEST_ENABLE";
+	public const string DS_DEFINE_S_LOCALIZE_TEST_ENABLE = "LOCALIZE_TEST_ENABLE";
 	public const string DS_DEFINE_S_ANALYTICS_TEST_ENABLE = "ANALYTICS_TEST_ENABLE";
 
 	public const string DS_DEFINE_S_AB_TEST_A_ENABLE = "AB_TEST_A_ENABLE";

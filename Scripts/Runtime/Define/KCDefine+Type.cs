@@ -16,12 +16,15 @@ public struct STVersionInfo {
 //! 공용 커스텀 타입 래퍼
 [MessagePackObject]
 public struct STCommonCustomTypeWrapper {
-	[Key(0)] public List<string> m_oStringList;
+	[Key(0)] public List<bool> m_oBoolList;
+	[Key(1)] public List<int> m_oIntList;
+	[Key(2)] public List<float> m_oFloatList;
+	[Key(3)] public List<string> m_oStringList;
 
-	[Key(1)] public Dictionary<string, bool> m_oBoolMapList;
-	[Key(2)] public Dictionary<string, int> m_oIntMapList;
-	[Key(3)] public Dictionary<string, float> m_oFloatMapList;
-	[Key(4)] public Dictionary<string, string> m_oStringMapList;
+	[Key(4)] public Dictionary<string, bool> m_oBoolMapList;
+	[Key(5)] public Dictionary<string, int> m_oIntMapList;
+	[Key(6)] public Dictionary<string, float> m_oFloatMapList;
+	[Key(7)] public Dictionary<string, string> m_oStringMapList;
 }
 #endif			// #if MSG_PACK_ENABLE
 

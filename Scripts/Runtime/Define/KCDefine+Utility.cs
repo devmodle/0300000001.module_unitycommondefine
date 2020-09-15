@@ -410,7 +410,7 @@ public static partial class KCDefine {
 
 	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
 	public static readonly string U_TABLE_PATH_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
-	public static readonly string U_TABLE_PATH_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_PATH_G_COMMON_STRING;
+	public static readonly string U_BASE_TABLE_PATH_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_PATH_G_COMMON_STRING;
 
 	public static readonly string U_SND_PATH_G_TOUCH_BEGAN = string.Format("{0}{1}G_TouchBegan", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_SND_PATH_G_TOUCH_ENDED = string.Format("{0}{1}G_TouchEnded", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
