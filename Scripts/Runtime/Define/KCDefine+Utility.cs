@@ -86,6 +86,7 @@ public static partial class KCDefine {
 	public const float U_DELAY_NEXT_SCENE_LOAD = 1.5f;
 	public const float U_DEF_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_TIME_INTERMEDIATE;
 
+	public const float U_DEF_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_DEF_TIMEOUT_NETWORK_CONNECTION = 30.0f;
 	// 시간 }
 
@@ -560,18 +561,22 @@ public static partial class KCDefine {
 #endif			// #if TENJIN_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE
-	// 횟수
-	public const int U_MAX_TIMES_ADS_LOAD_TRY = 15;
-	
+	// 시간
+	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 10.0f;
+	public const float U_DELTA_TIME_REWARD_ATI_UPDATE = 0.5f;
+
+	// 키
+	public const string U_KEY_FORMAT_ADS_M_BANNER_ADS_LOADER_INFO = "AdsMBannerAdsLoaderInfo_{0}";
+	public const string U_KEY_FORMAT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
+	public const string U_KEY_FORMAT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
+
+	// 식별자
+	public const string U_ADS_ID_UNKNOWN = KCDefine.B_UNKNOWN_STRING;
+
 	// 키 {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
-	public const string U_KEY_ADS_M_NATIVE_ADS_ID = "AdsMNativeAdsID";
-
-	public const string U_KEY_ADS_M_BANNER_ADS_PLACEMENT = "AdsMBannerAdsPlacement";
-	public const string U_KEY_ADS_M_REWARD_ADS_PLACEMENT = "AdsMRewardAdsPlacement";
-	public const string U_KEY_ADS_M_FULLSCREEN_ADS_PLACEMENT = "AdsMFullscreenAdsPlacement";
 
 #if ADMOB_ENABLE
 	public const float U_OFFSET_ADMOB_BANNER_ADS = 5.0f;
@@ -586,19 +591,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAdmobFullscreenAdsCloseCallback";
-
-	public const string U_KEY_ADS_M_ADMOB_NATIVE_ADS_LOAD_CALLBACK = "AdsMAdmobNativeAdsLoadCallback";
-	public const string U_KEY_ADS_M_ADMOB_NATIVE_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobNativeAdsLoadFailCallback";
 #endif			// #if ADMOB_ENABLE
-
-#if UNITY_ADS_ENABLE
-	public const string U_KEY_ADS_M_UNITY_ADS_BANNER_ADS_LOAD_CALLBACK = "AdsMUnityAdsBannerAdsLoadCallback";
-	public const string U_KEY_ADS_M_UNITY_ADS_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMUnityAdsBannerAdsLoadFailCallback";
-
-	public const string U_KEY_ADS_M_UNITY_ADS_LOAD_CALLBACK = "AdsMUnityAdsLoadCallback";
-	public const string U_KEY_ADS_M_UNITY_ADS_LOAD_FAIL_CALLBACK = "AdsMUnityAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_UNITY_ADS_CLOSE_CALLBACK = "AdsMUnityAdsCloseCallback";
-#endif			// #if UNITY_ADS_ENABLE
 
 #if IRON_SOURCE_ENABLE
 	public const string U_KEY_ADS_M_IRON_SOURCE_BANNER_ADS_LOAD_CALLBACK = "AdsMIronSourceBannerAdsLoadCallback";
@@ -614,6 +607,9 @@ public static partial class KCDefine {
 #endif			// #if IRON_SOURCE_ENABLE
 
 #if APP_LOVIN_ENABLE
+	public const string U_KEY_ADS_M_APP_LOVIN_BANNER_ADS_LOAD_CALLBACK = "AdsMAppLovinBannerAdsLoadCallback";
+	public const string U_KEY_ADS_M_APP_LOVIN_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinBannerAdsLoadFailCallback";
+
 	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinRewardAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_CLOSE_CALLBACK = "AdsMAppLovinRewardAdsCloseCallback";
 	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_RECEIVE_REWARD_CALLBACK = "AdsMAppLovinRewardAdsReceiveRewardCallback";
@@ -627,7 +623,6 @@ public static partial class KCDefine {
 #if ADMOB_ENABLE
 	public const string U_TEST_ADS_ID_ADMOB_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
 	public const string U_TEST_ADS_ID_ADMOB_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
-	public const string U_TEST_ADS_ID_ADMOB_NATIVE_ADS = "ca-app-pub-3940256099942544/2247696110";
 	public const string U_TEST_ADS_ID_ADMOB_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
 #endif			// #if ADMOB_ENABLE
 	// 식별자 }
@@ -792,6 +787,15 @@ public static partial class KCDefine {
 	// 크기
 	public static readonly IronSourceBannerSize U_SIZE_IRON_SOURCE_BANNER_ADS = IronSourceBannerSize.BANNER;
 #endif			// #if IRON_SOURCE_ENABLE
+
+#if APP_LOVIN_ENABLE
+	// 크기
+	public static readonly float U_HEIGHT_APP_LOVIN_PHONE_BANNER = 50.0f;
+	public static readonly float U_HEIGHT_APP_LOVIN_TABLE_BANNER = 90.0f;
+
+	// 색상
+	public static readonly Color U_COLOR_APP_LOVIN_BANNER_BG = Color.black;
+#endif			// #if APP_LOVIN_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE

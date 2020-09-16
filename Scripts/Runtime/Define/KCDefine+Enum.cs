@@ -171,10 +171,6 @@ public enum EAdsType {
 	ADMOB,
 #endif			// #if ADMOB_ENABLE
 
-#if UNITY_ADS_ENABLE
-	UNITY_ADS,
-#endif			// #if UNITY_ADS_ENABLE
-
 #if IRON_SOURCE_ENABLE
 	IRON_SOURCE,
 #endif			// #if IRON_SOURCE_ENABLE
