@@ -200,13 +200,13 @@ public static partial class KCEditorDefine {
 	public const string B_JENKINS_ANDROID_STORE_PIPELINE_NAME = "14.iOSStore";
 	// 젠킨스 }
 
-	// 맥
+	// 맥 플랫폼
 	public const string B_MAC_BUILD_PATH = "Builds/Standalone/Mac/MacBuildOutput.app";
 
-	// 윈도우즈
+	// 윈도우즈 플랫폼
 	public const string B_WINDOWS_BUILD_PATH = "Builds/Standalone/Windows";
 
-	// iOS {
+	// iOS 플랫폼 {
 	public const string B_IOS_DEV_IPA_EXPORT_METHOD = "development";
 	public const string B_IOS_ADHOC_IPA_EXPORT_METHOD = "ad-hoc";
 	public const string B_IOS_STORE_IPA_EXPORT_METHOD = "app-store";
@@ -215,15 +215,15 @@ public static partial class KCEditorDefine {
 	public const string B_IOS_INFO_PLIST_PATH_FORMAT = "{0}/Info.plist";
 
 	public const string B_IOS_ENCRYPTION_ENABLE_KEY = "ITSAppUsesNonExemptEncryption";
-	// iOS }
+	// iOS 플랫폼 }
 
-	// 안드로이드 {
+	// 안드로이드 플랫폼 {
 	public const string B_ANDROID_APK_BUILD_FILE_EXTENSION = "apk";
 	public const string B_ANDROID_AAB_BUILD_FILE_EXTENSION = "aab";
 
 	public const string B_ANDROID_BUILD_PATH_FORMAT = "Builds/Android/{0}/{1}.{2}";
 	public const string B_ANDROID_BUILD_FILENAME_FORMAT = "{0}BuildOutput";
-	// 안드로이드 }
+	// 안드로이드 플랫폼 }
 	#endregion			// 기본
 
 	#region 런타임 상수
@@ -567,12 +567,12 @@ public static partial class KCEditorDefine {
 	// 독립 플랫폼
 	public static readonly string B_STANDALONE_ABS_BUILD_PATH_FORMAT = string.Format("{0}../Builds/Standalone/{1}", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, "{0}");
 
-	// 맥
+	// 맥 플랫폼
 	public static readonly GraphicsDeviceType[] B_MAC_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Metal, GraphicsDeviceType.OpenGLCore
 	};
 
-	// 윈도우즈
+	// 윈도우즈 플랫폼
 	public static readonly GraphicsDeviceType[] B_WINDOWS_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 #if DIRECT_3D_12_ENABLE
 		GraphicsDeviceType.Direct3D12, 
@@ -581,7 +581,7 @@ public static partial class KCEditorDefine {
 		GraphicsDeviceType.Direct3D11
 	};
 
-	// iOS {
+	// iOS 플랫폼 {
 	public static readonly string B_IOS_ABS_BUILD_PATH = string.Format("{0}../Builds/iOS", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
 
 	public static readonly string B_IOS_SRC_PLUGIN_PATH = string.Format("{0}../PluginProjects/iOS/Classes/Plugin/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
@@ -594,9 +594,9 @@ public static partial class KCEditorDefine {
 	public static readonly GraphicsDeviceType[] B_IOS_SIMULATOR_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 		GraphicsDeviceType.OpenGLES2
 	};
-	// iOS }
+	// iOS 플랫폼 }
 
-	// 안드로이드 {
+	// 안드로이드 플랫폼 {
 	public static readonly string B_ANDROID_ABS_BUILD_PATH_FORMAT = string.Format("{0}../Builds/Android/{1}", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, "{0}");
 
 	public static readonly string B_ANDROID_SRC_PLUGIN_PATH = string.Format("{0}../PluginProjects/Android/app/build/outputs/aar/app-release.aar", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
@@ -624,7 +624,7 @@ public static partial class KCEditorDefine {
 	public static readonly GraphicsDeviceType[] B_ANDROID_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3, GraphicsDeviceType.OpenGLES2
 	};
-	// 안드로이드 }
+	// 안드로이드 플랫폼 }
 	#endregion			// 런타임 상수
 
 	#region 조건부 상수

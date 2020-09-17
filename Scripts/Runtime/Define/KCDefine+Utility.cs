@@ -562,7 +562,7 @@ public static partial class KCDefine {
 
 #if ADS_MODULE_ENABLE
 	// 시간
-	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 10.0f;
+	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 5.0f;
 	public const float U_DELTA_TIME_REWARD_ATI_UPDATE = 0.5f;
 
 	// 키
