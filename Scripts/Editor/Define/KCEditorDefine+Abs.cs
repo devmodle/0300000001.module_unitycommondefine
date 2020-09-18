@@ -6,6 +6,11 @@ using UnityEngine.Rendering;
 #if UNITY_EDITOR
 using UnityEditor;
 
+#if LOCAL_NOTI_MODULE_ENABLE
+using Unity.Notifications.iOS;
+using Unity.Notifications.Android;
+#endif			// #if LOCAL_NOTI_MODULE_ENABLE
+
 //! 에디터 기본 상수
 public static partial class KCEditorDefine {
 	#region 기본
@@ -610,6 +615,10 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ANDROID_ORIGIN_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_MAIN_TEMPLATE_PATH = string.Format("{0}mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
+	public static readonly string B_ANDROID_SRC_LAUNCHER_TEMPLATE_PATH = string.Format("{0}Options/Android/launcherTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_LAUNCHER_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Options/Android/launcherTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_DEST_LAUNCHER_TEMPLATE_PATH = string.Format("{0}launcherTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
+
 	public static readonly string B_ANDROID_SRC_PROGUARD_PATH = string.Format("{0}Options/Android/proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_ORIGIN_SRC_PROGUARD_PATH = string.Format("{0}../UnityPackages/Options/Android/proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_PROGUARD_PATH = string.Format("{0}proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
@@ -633,6 +642,11 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_NAME_ENABLE_BITCODE = "ENABLE_BITCODE";
 	public const string B_PROPERTY_VALUE_ENABLE_BITCODE = "YES";
 #endif			// #if UNITY_IOS
+
+#if LOCAL_NOTI_MODULE_ENABLE
+	public const PresentationOption B_NOTI_OPTS_LOCAL = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
+	public const PresentationOption B_NOTI_OPTS_REMOTE = KCEditorDefine.B_NOTI_OPTS_LOCAL;
+#endif			// #if LOCAL_NOTI_MODULE_ENABLE
 
 #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	// 크기
@@ -661,6 +675,11 @@ public static partial class KCEditorDefine {
 	// 경로
 	public static readonly string B_PATH_CAPABILITY_ENTITLEMENTS_IOS = string.Format("{0}.entitlements", Application.productName);
 #endif			// #if UNITY_IOS
+
+#if LOCAL_NOTI_MODULE_ENABLE
+	// 경로
+	public static readonly string B_ASSET_PATH_NOTI_SETTINGS = string.Format("{0}NotificationsSettings.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
+#endif			// #if LOCAL_NOTI_MODULE_ENABLE
 
 #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	// 위치

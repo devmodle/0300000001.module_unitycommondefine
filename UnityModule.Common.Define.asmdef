@@ -3,6 +3,8 @@
     "references": [
         "MessagePack",
         "GoogleMobileAds",
+        "Unity.Notifications.iOS",
+        "Unity.Notifications.Android",
         "UnityModule.IronSource"
     ],
     "includePlatforms": [],

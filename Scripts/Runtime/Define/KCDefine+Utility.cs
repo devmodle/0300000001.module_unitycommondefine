@@ -10,6 +10,14 @@ using UnityEngine.iOS;
 using GoogleMobileAds.Api;
 #endif			// #if ADS_MODULE_ENABLE && ADMOB_ENABLE
 
+#if LOCAL_NOTI_MODULE_ENABLE
+#if UNITY_IOS
+using Unity.Notifications.iOS;
+#elif UNITY_ANDROID
+using Unity.Notifications.Android;
+#endif			// #if UNITY_IOS
+#endif			// #if LOCAL_NOTI_MODULE_ENABLE
+
 //! 유틸리티 상수
 public static partial class KCDefine {
 	#region 기본
@@ -65,11 +73,6 @@ public static partial class KCDefine {
 	// 시간 {
 	public const float U_DEF_TIME_SCALE = 1.0f;
 	public const float U_ZERO_TIME_SCALE = 0.0f;
-
-	public const float U_DELTA_TIME_GC = 10.0f;
-
-	public const float U_DELTA_TIME_PERMISSION_CHECK = 0.15f;
-	public const float U_MAX_DELTA_TIME_PERMISSION_CHECK = 15.0f;
 
 	public const float U_DEF_DURATION_ANI = 0.25f;
 	public const float U_DEF_DURATION_POPUP_ANI = 0.25f;
@@ -509,6 +512,12 @@ public static partial class KCDefine {
 	// 이름 }
 #endif			// #if UNITY_IOS
 
+#if UNITY_ANDROID
+	// 시간
+	public const float U_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 0.15f;
+	public const float U_MAX_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 15.0f;
+#endif			// #if UNITY_ANDROID
+
 #if SINGULAR_ENABLE || SINGULAR_MODULE_ENABLE
 	// 이름
 	public const string U_OBJ_NAME_SINGULAR_SDK = "SingularSDK";
@@ -740,6 +749,25 @@ public static partial class KCDefine {
 	public const string U_KEY_PURCHASE_M_RESTORE_CALLBACK = "PurchaseMRestoreCallback";
 	public const string U_KEY_PURCHASE_M_PURCHASE_RESULT_CALLBACK = "PurchaseMPurchaseResultCallback";
 #endif			// #if PURCHASE_MODULE_ENABLE
+
+#if LOCAL_NOTI_MODULE_ENABLE
+	// 시간
+	public const float U_DELTA_TIME_LOCAL_NM_REQUEST_CHECK = 0.15f;
+	public const float U_MAX_DELTA_TIME_LOCAL_NM_REQUEST_CHECK = KCDefine.B_DELTA_TIME_INFINITE;
+
+#if UNITY_IOS
+	// 옵션
+	public const AuthorizationOption U_DEF_NOTI_OPTS_LOCAL_NM = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
+#elif UNITY_ANDROID
+	// 그룹 정보 {
+	public const Importance U_DEF_IMPORTANCE_LOCAL_NM = Importance.Default;
+
+	public const string U_DEF_GROUP_ID_LOCAL_NM = "DefLocalNoti";
+	public const string U_DEF_GROUP_NAME_LOCAL_NM = "Default Local Notification";
+	public const string U_DEF_GROUP_DESC_LOCAL_NM = "Default Local Notification";
+	// 그룹 정보 }
+#endif			// #if UNITY_IOS
+#endif			// #if LOCAL_NOTI_ENABLE
 
 #if !MSG_PACK_ENABLE
 	// 메세지

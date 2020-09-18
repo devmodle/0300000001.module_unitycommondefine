@@ -35,3 +35,18 @@ public struct STAdsRewardInfo {
 	public string m_oValue;
 }
 #endif			// #if ADS_MODULE_ENABLE
+
+#if LOCAL_NOTI_MODULE_ENABLE
+//! 로컬 알림 정보
+public struct STLocalNotiInfo {
+	public string m_oTitle;
+	public string m_oMsg;
+
+#if UNITY_IOS
+
+#else
+	public int m_nID;
+	public System.DateTime m_stNotiTime;
+#endif			// #if UNITY_IOS
+}
+#endif			// #if LOCAL_NOTI_MODULE_ENABLE
