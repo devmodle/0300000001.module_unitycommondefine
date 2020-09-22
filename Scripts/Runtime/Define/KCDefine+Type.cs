@@ -4,11 +4,23 @@ using UnityEngine;
 
 #if MSG_PACK_ENABLE
 using MessagePack;
+#endif			// #if MSG_PACK_ENABLE
 
-//! 버전 정보
+#region 기본
+//! 빌드 버전
+[System.Serializable]
+public struct STBuildVersion {
+	public int m_nNumber;
+	public string m_oVersion;
+}
+#endregion			// 기본
+
+#region 조건부 타입
+#if MSG_PACK_ENABLE
+//! 버전
 [MessagePackObject]
 [System.Serializable]
-public struct STVersionInfo {
+public struct STVersion {
 	[Key(0)] public string m_oVersion;
 	[Key(1)] public Dictionary<string, string> m_oExtraInfoList;
 }
@@ -36,6 +48,28 @@ public struct STAdsRewardInfo {
 }
 #endif			// #if ADS_MODULE_ENABLE
 
+#if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
+//! 디바이스 속성
+[System.Serializable]
+public struct STDeviceConfig {
+	public List<string> m_oiOSAdsIDList;
+	public List<string> m_oAndroidAdsIDList;
+}
+
+//! 빌드 버전 속성
+[System.Serializable]
+public struct STBuildVersionConfig {
+	public STBuildVersion m_stMacVersion;
+	public STBuildVersion m_stWindowsVersion;
+
+	public STBuildVersion m_stiOSVersion;
+
+	public STBuildVersion m_stGoogleVersion;
+	public STBuildVersion m_stOneStoreVersion;
+	public STBuildVersion m_stGalaxyStoreVersion;
+}
+#endif			// #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
+
 #if LOCAL_NOTI_MODULE_ENABLE
 //! 로컬 알림 정보
 public struct STLocalNotiInfo {
@@ -43,10 +77,11 @@ public struct STLocalNotiInfo {
 	public string m_oMsg;
 
 #if UNITY_IOS
-
+	public System.TimeSpan m_stDeltaTime;
 #else
 	public int m_nID;
 	public System.DateTime m_stNotiTime;
 #endif			// #if UNITY_IOS
 }
 #endif			// #if LOCAL_NOTI_MODULE_ENABLE
+#endregion			// 조건부 타입

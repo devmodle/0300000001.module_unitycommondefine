@@ -143,7 +143,7 @@ public enum EStandalonePlatformType {
 	MAX_VALUE
 }
 
-//! 안드로이드 플랫폼 타입
+//! 안드로이드 타입
 public enum EAndroidPlatformType {
 	NONE = -1,
 	GOOGLE,

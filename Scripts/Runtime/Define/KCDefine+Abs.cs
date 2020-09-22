@@ -10,6 +10,9 @@ public static partial class KCDefine {
 	public const int B_INDEX_FIRST = 0;
 	public const int B_INDEX_INVALID = -1;
 
+	// 빌드 번호
+	public const int B_MIN_BUILD_NUMBER = 1;
+
 	// 비교 결과
 	public const int B_COMPARE_RESULT_LESS = -1;
 	public const int B_COMPARE_RESULT_EQUALS = 0;
@@ -72,6 +75,7 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_NAME_WINDOWS = "Windows";
 
 	public const string B_PLATFORM_NAME_IOS = "iOS";
+	public const string B_PLATFORM_NAME_ANDROID = "Android";
 
 	public const string B_PLATFORM_NAME_GOOGLE = "Google";
 	public const string B_PLATFORM_NAME_ONE_STORE = "OneStore";

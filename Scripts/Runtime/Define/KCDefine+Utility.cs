@@ -285,13 +285,14 @@ public static partial class KCDefine {
 	public static readonly Rect U_RECT_MAIN_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
 
 	// 색상 {
+	public static readonly Color U_COLOR_SCREEN_FADE = Color.black;
+	public static readonly Color U_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
+
 	public static readonly Color U_DEF_COLOR_NORMAL = Color.white;
 	public static readonly Color U_DEF_COLOR_SELECT = new Color(0.5f, 0.5f, 0.5f, 1.0f);
 	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.5f, 0.5f, 0.5f, 1.0f);
-	public static readonly Color U_DEF_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
 	public static readonly Color U_DEF_COLOR_BLIND_UI = Color.black;
-	public static readonly Color U_DEF_COLOR_SCREEN_FADE = Color.black;
 	
 	public static readonly Color U_DEF_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
 	public static readonly Color U_DEF_COLOR_CAMERA_BG = Color.black;
@@ -464,9 +465,9 @@ public static partial class KCDefine {
 
 	// 광원 {
 #if REALTIME_LIGHTMAP_BAKE_ENABLE
-	public const LightmapBakeType U_DEF_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Realtime;
+	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Realtime;
 #else
-	public const LightmapBakeType U_DEF_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Mixed;
+	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Mixed;
 #endif			// #if REALTIME_LIGHTMAP_BAKE_ENABLE
 	// 광원 }
 
@@ -681,37 +682,10 @@ public static partial class KCDefine {
 #endif			// #if FIREBASE_DATABASE_ENABLE
 
 #if FIREBASE_REMOTE_CONFIG_ENABLE
-	// 키 {
-	public const string U_CONFIG_KEY_FIREBASE_MAC_VERSION_INFO = "MacVersionInfo";
-	public const string U_CONFIG_KEY_FIREBASE_WINDOWS_VERSION_INFO = "WindowsVersionInfo";
-
-	public const string U_CONFIG_KEY_FIREBASE_IOS_VERSION_INFO = "iOSVersionInfo";
-
-	public const string U_CONFIG_KEY_FIREBASE_GOOGLE_VERSION_INFO = "AndroidVersionInfo";
-	public const string U_CONFIG_KEY_FIREBASE_ONE_STORE_VERSION_INFO = "OneStoreVersionInfo";
-	public const string U_CONFIG_KEY_FIREBASE_GALAXY_STORE_VERSION_INFO = "GalaxyStoreVersionInfo";
-
-	public const string U_CONFIG_KEY_FIREBASE_BUILD_NUMBER = "BuildNumber";
-	public const string U_CONFIG_KEY_FIREBASE_BUILD_VERSION = "BuildVersion";
-
-#if UNITY_IOS
-	public const string U_CONFIG_KEY_FIREBASE_VERSION_INFO = KCDefine.U_CONFIG_KEY_FIREBASE_IOS_VERSION_INFO;
-#elif UNITY_ANDROID
-#if ONE_STORE_PLATFORM
-	public const string U_CONFIG_KEY_FIREBASE_VERSION_INFO = KCDefine.U_CONFIG_KEY_FIREBASE_ONE_STORE_VERSION_INFO;
-#elif GALAXY_STORE_PLATFORM
-	public const string U_CONFIG_KEY_FIREBASE_VERSION_INFO = KCDefine.U_CONFIG_KEY_FIREBASE_GALAXY_STORE_VERSION_INFO;
-#else
-	public const string U_CONFIG_KEY_FIREBASE_VERSION_INFO = KCDefine.U_CONFIG_KEY_FIREBASE_GOOGLE_VERSION_INFO;
-#endif			// #if ONE_STORE_PLATFORM
-#else
-#if UNITY_STANDALONE_WIN
-	public const string U_CONFIG_KEY_FIREBASE_VERSION_INFO = KCDefine.U_CONFIG_KEY_FIREBASE_WINDOWS_VERSION_INFO;
-#else
-	public const string U_CONFIG_KEY_FIREBASE_VERSION_INFO = KCDefine.U_CONFIG_KEY_FIREBASE_MAC_VERSION_INFO;
-#endif			// #if UNITY_STANDALONE_WIN
-#endif			// #if UNITY_IOS
-	// 키 }
+	// 키
+	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
+	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
+	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VERSION = "BuildVersionConfig";
 #endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 
 #if FIREBASE_CLOUD_MSG_ENABLE
@@ -840,7 +814,12 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 	// 시간
-	public static readonly System.TimeSpan U_DEF_TIMEOUT_FIREBASE_FETCH_CONFIG_DATA = new System.TimeSpan(0, 0, 30);
+	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG_DATA = new System.TimeSpan(0, 0, 30);
+
+	// 경로
+	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_DATA_PATH_G_DEVICE_CONFIG = string.Format("{0}{1}G_DeviceConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_DATA_PATH_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 #endif			// #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 
 #if SINGULAR_ENABLE || SINGULAR_MODULE_ENABLE

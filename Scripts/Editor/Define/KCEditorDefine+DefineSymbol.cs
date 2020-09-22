@@ -8,6 +8,7 @@ using UnityEditor;
 //! 에디터 전처리기 심볼 상수
 public static partial class KCEditorDefine {
 	#region 기본
+	public const string DS_DEFINE_S_NO_GPGS = "NO_GPGS";
 	public const string DS_DEFINE_S_IL2CPP_ENABLE = "ENABLE_IL2CPP";
 	public const string DS_DEFINE_S_EDITOR_ENABLE = "EDITOR_ENABLE";
 	public const string DS_DEFINE_S_MODE_2D_ENABLE = "MODE_2D_ENABLE";
