@@ -814,7 +814,7 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 	// 시간
-	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG_DATA = new System.TimeSpan(0, 0, 30);
+	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG = new System.TimeSpan(0, 0, 30);
 
 	// 경로
 	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);

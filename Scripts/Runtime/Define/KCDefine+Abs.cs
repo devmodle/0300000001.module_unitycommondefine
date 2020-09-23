@@ -114,7 +114,6 @@ public static partial class KCDefine {
 	public const string B_CMD_SET_BUILD_MODE = "SetBuildMode";
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
-	public const string B_CMD_SHOW_RATING = "ShowRating";
 	public const string B_CMD_VIBRATE = "Vibrate";
 	public const string B_CMD_ACTIVITY_INDICATOR = "ActivityIndicator";
 
