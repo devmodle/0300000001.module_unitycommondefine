@@ -300,12 +300,21 @@ public static partial class KCDefine {
 	// 색상 }
 
 	// 정렬 순서 정보 {
-	public static readonly KeyValuePair<string, int> U_SORTING_ORDER_INFO_OBJ_CANVAS = new KeyValuePair<string, int>(KCDefine.U_SORTING_LAYER_DEF, 0);
+	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_OBJ_CANVAS = new STSortingOrderInfo() {
+		m_nOrder = 0,
+		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
+	};
 
 #if CAMERA_STACK_ENABLE
-	public static readonly KeyValuePair<string, int> U_SORTING_ORDER_INFO_UI_CANVAS = new KeyValuePair<string, int>(KCDefine.U_SORTING_LAYER_DEF, 0);
+	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
+		m_nOrder = 0,
+		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
+	};
 #else
-	public static readonly KeyValuePair<string, int> U_SORTING_ORDER_INFO_UI_CANVAS = new KeyValuePair<string, int>(KCDefine.U_SORTING_LAYER_DEF_UI, 0);
+	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
+		m_nOrder = 0,
+		m_oLayer = KCDefine.U_SORTING_LAYER_DEF_UI
+	};
 #endif			// #if CAMERA_STACK_ENABLE
 	// 정렬 순서 정보 }
 

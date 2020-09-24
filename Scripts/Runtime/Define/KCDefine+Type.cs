@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using DG.Tweening;
 
 #if MSG_PACK_ENABLE
 using MessagePack;
@@ -12,6 +14,36 @@ using MessagePack;
 public struct STBuildVersion {
 	public int m_nNumber;
 	public string m_oVersion;
+}
+
+//! 작업 정보
+public struct STTaskInfo {
+	public Task m_oTask;
+	public System.Action<Task> m_oCallback;
+}
+
+//! 콜백 정보
+public struct STCallbackInfo {
+	public string m_oKey;
+	public System.Action m_oCallback;
+}
+
+//! 컴포넌트 정보
+public struct STComponentInfo {
+	public int m_nID;
+	public Component m_oComponent;
+}
+
+//! 정렬 순서 정보
+public struct STSortingOrderInfo {
+	public int m_nOrder;
+	public string m_oLayer;
+}
+
+//! 시퀀스 애니메이션 정보
+public struct STSequenceAniInfo {
+	public Sequence m_oSequence;
+	public GameObject m_oObj;
 }
 #endregion			// 기본
 

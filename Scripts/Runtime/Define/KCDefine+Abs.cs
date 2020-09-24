@@ -22,7 +22,10 @@ public static partial class KCDefine {
 	public const int B_MAX_NUM_BACKUP_FILES = 50;
 
 	// 횟수
+	public const int B_TIMES_INT_ONCE = 1;
 	public const int B_TIMES_INT_INFINITE = -1;
+
+	public const uint B_TIMES_UINT_ONCE = 1;
 	public const uint B_TIMES_UINT_INFINITE = uint.MaxValue;
 
 	// 시간 {
