@@ -205,10 +205,10 @@ public static partial class KCEditorDefine {
 	public const string B_JENKINS_ANDROID_STORE_PIPELINE_NAME = "14.iOSStore";
 	// 젠킨스 }
 
-	// 맥 플랫폼
+	// 맥
 	public const string B_MAC_BUILD_PATH = "Builds/Standalone/Mac/MacBuildOutput.app";
 
-	// 윈도우즈 플랫폼
+	// 윈도우즈
 	public const string B_WINDOWS_BUILD_PATH = "Builds/Standalone/Windows";
 
 	// iOS {
@@ -581,12 +581,12 @@ public static partial class KCEditorDefine {
 	// 독립 플랫폼
 	public static readonly string B_STANDALONE_ABS_BUILD_PATH_FORMAT = string.Format("{0}../Builds/Standalone/{1}", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, "{0}");
 
-	// 맥 플랫폼
+	// 맥
 	public static readonly GraphicsDeviceType[] B_MAC_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Metal, GraphicsDeviceType.OpenGLCore
 	};
 
-	// 윈도우즈 플랫폼
+	// 윈도우즈
 	public static readonly GraphicsDeviceType[] B_WINDOWS_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 #if DIRECT_3D_12_ENABLE
 		GraphicsDeviceType.Direct3D12, 
