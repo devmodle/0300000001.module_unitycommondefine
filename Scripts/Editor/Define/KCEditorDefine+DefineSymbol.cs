@@ -145,12 +145,12 @@ public static partial class KCEditorDefine {
 	// 광원 }
 
 	// 플랫폼 {
-	public const string DS_DEFINE_S_MAC_PLATFORM = "MAC_PLATFORM";
-	public const string DS_DEFINE_S_WINDOWS_PLATFORM = "WINDOWS_PLATFORM";
+	public const string DS_DEFINE_S_MAC = "MAC";
+	public const string DS_DEFINE_S_WINDOWS = "WINDOWS";
 
-	public const string DS_DEFINE_S_GOOGLE_PLATFORM = "GOOGLE_PLATFORM";
-	public const string DS_DEFINE_S_ONE_STORE_PLATFORM = "ONE_STORE_PLATFORM";
-	public const string DS_DEFINE_S_GALAXY_STORE_PLATFORM = "GALAXY_STORE_PLATFORM";
+	public const string DS_DEFINE_S_GOOGLE = "GOOGLE";
+	public const string DS_DEFINE_S_ONE_STORE = "ONE_STORE";
+	public const string DS_DEFINE_S_GALAXY_STORE = "GALAXY_STORE";
 
 	public const string DS_DEFINE_S_DIRECT_3D_12_ENABLE = "DIRECT_3D_12_ENABLE";
 	// 플랫폼 }

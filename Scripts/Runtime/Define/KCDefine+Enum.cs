@@ -136,7 +136,7 @@ public enum ELightmapEncodingQuality {
 }
 
 //! 독립 플랫폼 타입
-public enum EStandalonePlatformType {
+public enum EStandaloneType {
 	NONE = -1,
 	MAC,
 	WINDOWS,
@@ -144,7 +144,7 @@ public enum EStandalonePlatformType {
 }
 
 //! 안드로이드 타입
-public enum EAndroidPlatformType {
+public enum EAndroidType {
 	NONE = -1,
 	GOOGLE,
 	ONE_STORE,
