@@ -293,10 +293,7 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(string.Format("{0}T_GameConfig.json", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_DATA_PATH_G_GAME_CONFIG)),
-
-		new KeyValuePair<string, string>(string.Format("{0}T_DeviceConfig.json", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_DATA_PATH_G_DEVICE_CONFIG)),
-
+			
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildVersionConfig.json", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_DATA_PATH_G_BUILD_VERSION_CONFIG))
 	};

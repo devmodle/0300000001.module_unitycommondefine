@@ -827,7 +827,6 @@ public static partial class KCDefine {
 
 	// 경로
 	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_DATA_PATH_G_DEVICE_CONFIG = string.Format("{0}{1}G_DeviceConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_DATA_PATH_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 #endif			// #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 

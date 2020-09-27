@@ -16,6 +16,32 @@ public struct STBuildVersion {
 	public string m_oVersion;
 }
 
+//! 디바이스 정보
+[System.Serializable]
+public struct STDeviceInfo {
+#if ADS_MODULE_ENABLE && ADMOB_ENABLE
+	public List<string> m_oiOSAdmobIDList;
+	public List<string> m_oAndroidAdmobIDList;
+#endif			// #if ADS_MODULE_ENABLE && ADMOB_ENABLE
+}
+
+//! 디바이스 속성
+[System.Serializable]
+public struct STDeviceConfig {
+	public List<string> m_oiOSAdsIDList;
+	public List<string> m_oAndroidAdsIDList;
+}
+
+//! 빌드 버전 속성
+[System.Serializable]
+public struct STBuildVersionConfig {
+	public STBuildVersion m_stiOSVersion;
+
+	public STBuildVersion m_stGoogleVersion;
+	public STBuildVersion m_stOneStoreVersion;
+	public STBuildVersion m_stGalaxyStoreVersion;
+}
+
 //! 작업 정보
 public struct STTaskInfo {
 	public Task m_oTask;
@@ -79,28 +105,6 @@ public struct STAdsRewardInfo {
 	public string m_oValue;
 }
 #endif			// #if ADS_MODULE_ENABLE
-
-#if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
-//! 디바이스 속성
-[System.Serializable]
-public struct STDeviceConfig {
-	public List<string> m_oiOSAdsIDList;
-	public List<string> m_oAndroidAdsIDList;
-}
-
-//! 빌드 버전 속성
-[System.Serializable]
-public struct STBuildVersionConfig {
-	public STBuildVersion m_stMacVersion;
-	public STBuildVersion m_stWindowsVersion;
-
-	public STBuildVersion m_stiOSVersion;
-
-	public STBuildVersion m_stGoogleVersion;
-	public STBuildVersion m_stOneStoreVersion;
-	public STBuildVersion m_stGalaxyStoreVersion;
-}
-#endif			// #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 
 #if LOCAL_NOTI_MODULE_ENABLE
 //! 로컬 알림 정보
