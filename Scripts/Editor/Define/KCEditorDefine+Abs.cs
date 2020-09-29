@@ -190,6 +190,8 @@ public static partial class KCEditorDefine {
 	public const string B_JENKINS_RELEASE_BUILD_FUNC = "Release";
 	public const string B_JENKINS_ADHOC_BUILD_FUNC = "Adhoc";
 	public const string B_JENKINS_STORE_BUILD_FUNC = "Store";
+	public const string B_JENKINS_STORE_TEST_BUILD_FUNC = "StoreTest";
+	public const string B_JENKINS_STORE_UPLOAD_BUILD_FUNC = "StoreUpload";
 
 	public const string B_JENKINS_STANDALONE_DEBUG_PIPELINE_NAME = "41.StandaloneDebug";
 	public const string B_JENKINS_STANDALONE_RELEASE_PIPELINE_NAME = "42.StandaloneRelease";
