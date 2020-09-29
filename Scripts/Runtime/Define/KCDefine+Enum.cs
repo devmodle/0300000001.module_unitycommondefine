@@ -135,6 +135,16 @@ public enum ELightmapEncodingQuality {
 	MAX_VALUE
 }
 
+//! 빌드 타입
+public enum EBuildType {
+	NONE = -1,
+	DEBUG,
+	RELEASE,
+	ADHOC,
+	STORE,
+	MAX_VALUE
+}
+
 //! 독립 플랫폼 타입
 public enum EStandaloneType {
 	NONE = -1,

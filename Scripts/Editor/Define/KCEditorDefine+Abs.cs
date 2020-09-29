@@ -161,7 +161,7 @@ public static partial class KCEditorDefine {
 	public const string B_JENKINS_KEY_SOURCE = "Source";
 	public const string B_JENKINS_KEY_PROJ_NAME = "ProjName";
 	public const string B_JENKINS_KEY_PROJ_PATH = "ProjPath";
-	public const string B_JENKINS_KEY_DISTRIBUTION_PATH = "DistributionPath";
+	public const string B_JENKINS_KEY_DIST_PATH = "DistPath";
 	public const string B_JENKINS_KEY_BUNDLE_ID = "BundleID";
 	public const string B_JENKINS_KEY_PROFILE_ID = "ProfileID";
 	public const string B_JENKINS_KEY_PLATFORM = "Platform";
@@ -600,10 +600,6 @@ public static partial class KCEditorDefine {
 
 	public static readonly GraphicsDeviceType[] B_IOS_DEVICE_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Metal
-	};
-
-	public static readonly GraphicsDeviceType[] B_IOS_SIMULATOR_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
-		GraphicsDeviceType.OpenGLES2
 	};
 	// iOS }
 
