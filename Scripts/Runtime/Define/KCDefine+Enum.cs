@@ -56,6 +56,7 @@ public enum EValueType {
 	BOOL,
 	INT,
 	FLOAT,
+	STRING,
 	MAX_VALUE
 }
 

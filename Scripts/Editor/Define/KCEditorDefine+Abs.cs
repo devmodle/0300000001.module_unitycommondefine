@@ -15,8 +15,8 @@ using Unity.Notifications.Android;
 public static partial class KCEditorDefine {
 	#region 기본
 	// 시간
+	public const float B_DELTA_TIME_OPT_UPDATE = 1.0f;
 	public const float B_DELTA_TIME_HIERARCHY_UPDATE = 1.0f;
-	public const float B_DELTA_TIME_PLATFORM_OS_UPDATE = 1.0f;
 	public const float B_DELTA_TIME_SCRIPT_M_SCENE_UPDATE = 1.0f;
 	public const float B_DELTA_TIME_EDITOR_SM_SCENE_UPDATE = 1.0f;
 
