@@ -28,6 +28,8 @@ public static partial class KCEditorDefine {
 	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
 	public const int B_FONT_SIZE_FPS_C_DYNAMIC_TEXT = 24;
 
+	public const int B_FONT_SIZE_DEBUG_C_TEXT = 30;
+
 	public const float B_WIDTH_EDITOR_W_NAME_TEXT_FIELD = 300.0f;
 	public const float B_WIDTH_EDITOR_W_APPLY_BTN = 100.0f;
 	// 크기 }
@@ -86,9 +88,6 @@ public static partial class KCEditorDefine {
 
 	public const string B_OBJ_NAME_SCENE_EDITOR_CAMERA = "SceneCamera";
 	public const string B_OBJ_NAME_SCENE_EDITOR_LIGHT = "SceneLight";
-
-	public const string B_OBJ_NAME_FPS_C_STATIC_TEXT = "StaticInfoText";
-	public const string B_OBJ_NAME_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
 	
 	public const string B_PROPERTY_NAME_CATEGORY = "applicationCategoryType";
 	public const string B_PROPERTY_NAME_REQUIRE_AR_KIT_SUPPORT = "requiresARKitSupport";
@@ -111,6 +110,8 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_NAME_SND_M_DOPPLER_FACTOR = "Doppler Factor";
 	public const string B_PROPERTY_NAME_SND_M_DISABLE_AUDIO = "m_DisableAudio";
 	public const string B_PROPERTY_NAME_SND_M_VIRTUALIZE_EFFECT = "m_VirtualizeEffects";
+
+	public const string B_PROPERTY_NAME_DEBUG_C_LOG_ITEM_PREFAB = "logItemPrefab";
 	
 	public const string B_FUNC_NAME_SET_COMPRESSION_TYPE = "SetCompressionType";
 	public const string B_FUNC_NAME_SET_LIGHTMAP_ENCODING_QUALITY = "SetLightmapEncodingQualityForPlatformGroup";
@@ -248,6 +249,7 @@ public static partial class KCEditorDefine {
 	public static readonly Color B_COLOR_UNITY_LOGO_BG = Color.black;
 
 	// 크기
+	public static readonly Vector2 B_SIZE_DEBUG_C_LOG_ITEM = new Vector2(0.0f, 80.0f);
 	public static readonly Vector2 B_MIN_SIZE_EDITOR_WINDOW = new Vector2(350.0f, 350.0f);
 
 	// 위치
@@ -256,7 +258,10 @@ public static partial class KCEditorDefine {
 
 	// 경로 {
 	public static readonly string B_DIR_PATH_AUTO_CREATE_RESES = string.Format("{0}{1}Resources/", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
+	
 	public static readonly string B_DIR_PATH_FILTER_FPS_COUNTER = string.Format("{0}UnityModule.Common.Externals/Resources", KCEditorDefine.B_DIR_PATH_PACKAGES);
+	public static readonly string B_DIR_PATH_FILTER_DEBUG_CONSOLE = string.Format("{0}UnityModule.Common.Externals/Resources", KCEditorDefine.B_DIR_PATH_PACKAGES);
+	public static readonly string B_DIR_PATH_FILTER_DEBUG_LOG_ITEM = string.Format("{0}UnityModule.Common.Externals/Resources", KCEditorDefine.B_DIR_PATH_PACKAGES);
 
 	public static readonly string B_ABS_DIR_PATH_ASSETS = string.Format("{0}/", Application.dataPath);
 	public static readonly string B_ABS_DIR_PATH_PACKAGES = string.Format("{0}../Packages/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
@@ -483,7 +488,13 @@ public static partial class KCEditorDefine {
 			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_FPS_COUNTER)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_TIMER_MANAGER))
+			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_TIMER_MANAGER)),
+
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_DEBUG_CONSOLE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_DEBUG_LOG_ITEM))
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_PATH_TABLE_FILEPATH_INFOS = new KeyValuePair<string, string>[] {

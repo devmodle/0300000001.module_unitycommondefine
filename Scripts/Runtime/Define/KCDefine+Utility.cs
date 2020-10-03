@@ -45,6 +45,7 @@ public static partial class KCDefine {
 	public const int U_SORTING_ORDER_SCREEN_DEBUG_UI = 4;
 
 	public const int U_SORTING_ORDER_FPS_COUNTER = 5;
+	public const int U_SORTING_ORDER_DEBUG_CONSOLE = 6;
 	// 정렬 순서 }
 
 	// 세기
@@ -148,6 +149,9 @@ public static partial class KCDefine {
 #endif			// #if !CAMERA_STACK_ENABLE
 	// 정렬 레이어 }
 
+	// 식별자
+	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
+
 	// 키 {
 	public const string U_KEY_DEVICE_CMD = "Cmd";
 	public const string U_KEY_DEVICE_MSG = "Msg";
@@ -195,6 +199,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_NAME_SCENE_UI_BASE = "Canvas";
 	public const string U_OBJ_NAME_SCENE_UI_ROOT = "UIs";
 	public const string U_OBJ_NAME_SCENE_FIX_UI_ROOT = "FixUIs";
+	public const string U_OBJ_NAME_SCENE_EVENT_SYSTEM = "EventSystem";
 
 	public const string U_OBJ_NAME_SCENE_LEFT_UI_ROOT = "LeftUIs";
 	public const string U_OBJ_NAME_SCENE_RIGHT_UI_ROOT = "RightUIs";
@@ -298,6 +303,9 @@ public static partial class KCDefine {
 	public static readonly Color U_DEF_COLOR_CAMERA_BG = Color.black;
 	public static readonly Color U_DEF_COLOR_ACTIVITY_INDICATOR_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
 	// 색상 }
+
+	// 위치
+	public static readonly Vector2 U_POS_DEBUG_C_DEBUG_LOG_POPUP = new Vector2(36.0f, -36.0f);
 
 	// 정렬 순서 정보 {
 	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_OBJ_CANVAS = new STSortingOrderInfo() {
@@ -407,6 +415,9 @@ public static partial class KCDefine {
 
 	public static readonly string U_OBJ_PATH_FPS_COUNTER = string.Format("{0}{1}U_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
 	public static readonly string U_OBJ_PATH_TIMER_MANAGER = string.Format("{0}{1}U_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+
+	public static readonly string U_OBJ_PATH_DEBUG_CONSOLE = string.Format("{0}{1}U_DebugConsole", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+	public static readonly string U_OBJ_PATH_DEBUG_LOG_ITEM = string.Format("{0}{1}U_DebugLogItem", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
 
 	public static readonly string U_ASSET_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_ASSET_PATH_G_BUILD_OPT_TABLE = string.Format("{0}{1}G_BuildOptTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
@@ -538,37 +549,40 @@ public static partial class KCDefine {
 	public const float U_DELTA_TIME_DYNAMIC_DEBUG = 1.0f;
 
 	// 형식 {
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_MSG = "{0}\n\n{1}";
-	public const string U_FORMAT_SCENE_M_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
+	public const string U_FORMAT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
+	public const string U_FORMAT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
 
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_INFO_A = "Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_INFO_B = "Design Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_INFO_C = "Canvas Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_INFO_D = "UI Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_INFO_E = "Object Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_INFO_F = "UI Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_INFO_G = "Object Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_SCENE_M_STATIC_DEBUG_INFO_H = "Safe Area: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_A = "Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_B = "Design Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_C = "Canvas Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_D = "UI Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_E = "Object Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_F = "UI Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_G = "Object Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_H = "Safe Area: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>";
 
-	public const string U_FORMAT_SCENE_M_DYNAMIC_DEBUG_INFO_A = "GC: <color=orange>{0:0.0}</color> MB, Used Heap: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_SCENE_M_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_SCENE_M_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_SCENE_M_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_SCENE_M_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB";
+	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_A = "GC: <color=orange>{0:0.0}</color> MB, Used Heap: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB";
 	// 형식 }
 
 	// 이름 {
-	public const string U_NAME_SCREEN_DEBUG_UI_ROOT = "ScreenDebugUIs";
-	public const string U_NAME_SCREEN_DEBUG_TEXT_ROOT = "DebugTexts";
+	public const string U_OBJ_NAME_SCREEN_DEBUG_UI_ROOT = "ScreenDebugUIs";
+	public const string U_OBJ_NAME_SCREEN_DEBUG_TEXT_ROOT = "DebugTexts";
 
-	public const string U_NAME_SCREEN_STATIC_FPS_TEXT = "StaticInfoText";
-	public const string U_NAME_SCREEN_DYNAMIC_FPS_TEXT = "DynamicInfoText";
+	public const string U_OBJ_NAME_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
+	public const string U_OBJ_NAME_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
 
-	public const string U_NAME_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
-	public const string U_NAME_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
+	public const string U_OBJ_NAME_SCREEN_FPS_BTN = "FPSBtn";
+	public const string U_OBJ_NAME_SCREEN_DEBUG_BTN = "DebugBtn";
 
-	public const string U_NAME_SCREEN_FPS_BTN = "FPSBtn";
-	public const string U_NAME_SCREEN_DEBUG_BTN = "DebugBtn";
+	public const string U_OBJ_NAME_FPS_C_STATIC_TEXT = "StaticInfoText";
+	public const string U_OBJ_NAME_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
+
+	public const string U_OBJ_NAME_DEBUG_C_LOG_WINDOW = "DebugLogWindow";
+	public const string U_OBJ_NAME_DEBUG_C_LOG_POPUP = "DebugLogPopup";
 	// 이름 }
 #endif			// #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 

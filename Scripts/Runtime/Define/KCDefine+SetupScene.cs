@@ -11,6 +11,7 @@ public static partial class KCDefine {
 	public const string SS_OBJ_NAME_ABS_UI = "AbsUI";
 
 	public const string SS_OBJ_NAME_TIMER_MANAGER = "TimerManager";
+	public const string SS_OBJ_NAME_DEBUG_CONSOLE = "DebugConsole";
 	// 이름 }
 	#endregion			// 기본
 
