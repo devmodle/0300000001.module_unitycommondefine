@@ -34,6 +34,9 @@ public static partial class KCEditorDefine {
 	public const float B_WIDTH_EDITOR_W_APPLY_BTN = 100.0f;
 	// 크기 }
 
+	// 비율
+	public const float B_SCALE_FILE_BROWSER_WINDOW = 1.5f;
+
 	// 토큰
 	public const string B_TOKEN_DEFINE_SYMBOL = ";";
 
@@ -58,6 +61,7 @@ public static partial class KCEditorDefine {
 	// 이름 {
 	public const string B_OBJ_NAME_GAME_OBJ = "GameObj";
 	public const string B_OBJ_NAME_OBJ_NAME_EDITOR_POPUP = "ObjNameEditorPopup";
+	public const string B_OBJ_NAME_FILE_BROWSER_WINDOW = "SimpleFileBrowserWindow";
 
 	public const string B_OBJ_NAME_TEXT = "Text";
 	public const string B_OBJ_NAME_LOCALIZE_TEXT = "LocalizeText";
@@ -135,6 +139,8 @@ public static partial class KCEditorDefine {
 
 	public const string B_DIR_PATH_EXPORT_IMG_BASE = "Export/Images/";
 	public const string B_ASSET_PATH_FORMAT_LIGHTING_SETTINGS = "{0}/{1}Settings.lighting";
+
+	public const string B_OBJ_PATH_FILE_BROWSER_UI = "SimpleFileBrowserCanvas";
 	// 경로 }
 	
 	// 에디터 옵션 {
@@ -680,17 +686,6 @@ public static partial class KCEditorDefine {
 	public const PresentationOption B_NOTI_OPTS_LOCAL = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
 	public const PresentationOption B_NOTI_OPTS_REMOTE = KCEditorDefine.B_NOTI_OPTS_LOCAL;
 #endif			// #if LOCAL_NOTI_MODULE_ENABLE
-
-#if FILE_BROWSER_ENABLE
-	// 비율
-	public const float B_SCALE_FILE_BROWSER_WINDOW = 1.5f;
-
-	// 이름
-	public const string B_OBJ_NAME_FILE_BROWSER_WINDOW = "SimpleFileBrowserWindow";
-
-	// 경로
-	public const string B_OBJ_PATH_FILE_BROWSER_UI = "SimpleFileBrowserCanvas";
-#endif			// #if FILE_BROWSER_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수

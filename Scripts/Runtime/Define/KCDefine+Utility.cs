@@ -27,7 +27,7 @@ public static partial class KCDefine {
 
 	// 길이
 	public const int U_MAX_LENGTH_LOG = 100000000;
-	public const float U_MAX_PERCENT_ASYNC_SCENE_LOAD = 0.9f;
+	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
 
 	// 레이어
 	public const int U_LAYER_DEF = 0;
@@ -45,7 +45,8 @@ public static partial class KCDefine {
 	public const int U_SORTING_ORDER_SCREEN_DEBUG_UI = 4;
 
 	public const int U_SORTING_ORDER_FPS_COUNTER = 5;
-	public const int U_SORTING_ORDER_DEBUG_CONSOLE = 6;
+	public const int U_SORTING_ORDER_FILE_BROWSER_UI = 6;
+	public const int U_SORTING_ORDER_DEBUG_CONSOLE = 7;
 	// 정렬 순서 }
 
 	// 세기
@@ -265,6 +266,8 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_NAME_SCREEN_F_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
 	public const string U_OBJ_NAME_ACTIVITY_I_TOUCH_RESPONDER = "ActivityIndicatorTouchResponder";
+	
+	public const string U_OBJ_NAME_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";
 
 	public const string U_IMG_NAME_DEF_SPRITE = "DefSprite";
 	public const string U_IMG_NAME_SPRITE_CLONE = "(Clone)";
@@ -609,7 +612,7 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
 
 #if ADMOB_ENABLE
-	public const float U_OFFSET_ADMOB_BANNER_ADS = 5.0f;
+	public const string U_KEY_ADS_M_ADMOB_INIT_CALLBACK = "AdsMAdmobInitCallback";
 
 	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_LOAD_CALLBACK = "AdsMAdmobBannerAdsLoadCallback";
 	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobBannerAdsLoadFailCallback";
@@ -624,6 +627,8 @@ public static partial class KCDefine {
 #endif			// #if ADMOB_ENABLE
 
 #if IRON_SOURCE_ENABLE
+	public const string U_KEY_ADS_M_IRON_SOURCE_INIT_CALLBACK = "AdsMIronSourceInitCallback";
+
 	public const string U_KEY_ADS_M_IRON_SOURCE_BANNER_ADS_LOAD_CALLBACK = "AdsMIronSourceBannerAdsLoadCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSourceBannerAdsLoadFailCallback";
 
@@ -637,6 +642,8 @@ public static partial class KCDefine {
 #endif			// #if IRON_SOURCE_ENABLE
 
 #if APP_LOVIN_ENABLE
+	public const string U_KEY_ADS_M_APP_LOVIN_INIT_CALLBACK = "AdsMAppLovinInitCallback";
+
 	public const string U_KEY_ADS_M_APP_LOVIN_BANNER_ADS_LOAD_CALLBACK = "AdsMAppLovinBannerAdsLoadCallback";
 	public const string U_KEY_ADS_M_APP_LOVIN_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinBannerAdsLoadFailCallback";
 
@@ -660,7 +667,7 @@ public static partial class KCDefine {
 
 #if FLURRY_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || UNITY_SERVICE_MODULE_ENABLE
 	// 시간
-	public const float U_TIMEOUT_FLURRY_NETWORK_CONNECTION = 60.0f;
+	public const long U_TIMEOUT_FLURRY_NETWORK_CONNECTION = 60000;
 
 	// 이름
 	public const string U_LOG_NAME_APP_LAUNCH = "AppLaunch";
@@ -771,14 +778,6 @@ public static partial class KCDefine {
 	public const string U_VERSION_COMMON_APP_INFO = "1.0.0";
 	public const string U_VERSION_COMMON_USER_INFO = "1.0.0";
 #endif			// #if !MSG_PACK_ENABLE
-
-#if FILE_BROWSER_ENABLE
-	// 정렬 순서
-	public const int U_SORTING_ORDER_FILE_BROWSER_UI = short.MaxValue;
-
-	// 이름
-	public const string U_OBJ_NAME_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";
-#endif			// #if FILE_BROWSER_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
