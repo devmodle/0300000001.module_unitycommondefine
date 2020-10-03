@@ -90,8 +90,10 @@ public enum ENavStackEvent {
 //! 시작 씬 이벤트 타입
 public enum EStartSceneEvent {
 	NONE = -1,
-	SHOW_AGREE_POPUP,
-	LOAD_NEXT_SCENE,
+	LOAD_SETUP_SCENE,
+	LOAD_AGREE_SCENE,
+	LOAD_LATE_SETUP_SCENE,
+	LOAD_INTRO_SCENE,
 	MAX_VALUE
 }
 #endregion			// 기본

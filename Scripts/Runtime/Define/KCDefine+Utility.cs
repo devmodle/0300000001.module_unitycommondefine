@@ -588,10 +588,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FORMAT_ADS_M_BANNER_ADS_LOADER_INFO = "AdsMBannerAdsLoaderInfo_{0}";
 	public const string U_KEY_FORMAT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
 	public const string U_KEY_FORMAT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
-
-	// 식별자
-	public const string U_ADS_ID_UNKNOWN = KCDefine.B_UNKNOWN_STRING;
-
+	
 	// 키 {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";

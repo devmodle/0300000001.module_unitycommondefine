@@ -24,9 +24,13 @@ public static partial class KCEditorDefine {
 	public const float B_HIERARCHY_WIDTH = 250.0f;
 	public const float B_HIERARCHY_OFFSET_X = 125.0f;
 
-	// 크기
+	// 크기 {
+	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
+	public const int B_FONT_SIZE_FPS_C_DYNAMIC_TEXT = 24;
+
 	public const float B_WIDTH_EDITOR_W_NAME_TEXT_FIELD = 300.0f;
 	public const float B_WIDTH_EDITOR_W_APPLY_BTN = 100.0f;
+	// 크기 }
 
 	// 토큰
 	public const string B_TOKEN_DEFINE_SYMBOL = ";";
@@ -82,6 +86,9 @@ public static partial class KCEditorDefine {
 
 	public const string B_OBJ_NAME_SCENE_EDITOR_CAMERA = "SceneCamera";
 	public const string B_OBJ_NAME_SCENE_EDITOR_LIGHT = "SceneLight";
+
+	public const string B_OBJ_NAME_FPS_C_STATIC_TEXT = "StaticInfoText";
+	public const string B_OBJ_NAME_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
 	
 	public const string B_PROPERTY_NAME_CATEGORY = "applicationCategoryType";
 	public const string B_PROPERTY_NAME_REQUIRE_AR_KIT_SUPPORT = "requiresARKitSupport";
@@ -243,8 +250,13 @@ public static partial class KCEditorDefine {
 	// 크기
 	public static readonly Vector2 B_MIN_SIZE_EDITOR_WINDOW = new Vector2(350.0f, 350.0f);
 
+	// 위치
+	public static readonly Vector2 B_POS_FPS_C_STATIC_TEXT = new Vector2(-10.0f, 0.0f);
+	public static readonly Vector2 B_POS_FPS_C_DYNAMIC_TEXT = new Vector2(-10.0f, 140.0f);
+
 	// 경로 {
 	public static readonly string B_DIR_PATH_AUTO_CREATE_RESES = string.Format("{0}{1}Resources/", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
+	public static readonly string B_DIR_PATH_FILTER_FPS_COUNTER = string.Format("{0}UnityModule.Common.Externals/Resources", KCEditorDefine.B_DIR_PATH_PACKAGES);
 
 	public static readonly string B_ABS_DIR_PATH_ASSETS = string.Format("{0}/", Application.dataPath);
 	public static readonly string B_ABS_DIR_PATH_PACKAGES = string.Format("{0}../Packages/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
@@ -461,13 +473,17 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_FXSnd.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_BASE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_FX_SND)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_TIMER_MANAGER)),
-			
-#if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LoadingText.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_START_SCENE_BASE),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.SS_OBJ_PATH_LOADING_TEXT)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LoadingImgObj.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_START_SCENE_BASE),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.SS_OBJ_PATH_LOADING_IMG_OBJ)),
+
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_FPS_COUNTER))
-#endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
+			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_FPS_COUNTER)),
+
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_TIMER_MANAGER))
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_PATH_TABLE_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
@@ -654,16 +670,6 @@ public static partial class KCEditorDefine {
 	public const PresentationOption B_NOTI_OPTS_REMOTE = KCEditorDefine.B_NOTI_OPTS_LOCAL;
 #endif			// #if LOCAL_NOTI_MODULE_ENABLE
 
-#if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
-	// 크기
-	public const int B_FONT_SIZE_STATIC_TEXT = 24;
-	public const int B_FONT_SIZE_DYNAMIC_TEXT = 24;
-
-	// 이름
-	public const string B_OBJ_NAME_STATIC_TEXT = "StaticInfoText";
-	public const string B_OBJ_NAME_DYNAMIC_TEXT = "DynamicInfoText";
-#endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
-
 #if FILE_BROWSER_ENABLE
 	// 비율
 	public const float B_SCALE_FILE_BROWSER_WINDOW = 1.5f;
@@ -686,15 +692,6 @@ public static partial class KCEditorDefine {
 	// 경로
 	public static readonly string B_ASSET_PATH_NOTI_SETTINGS = string.Format("{0}NotificationsSettings.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
 #endif			// #if LOCAL_NOTI_MODULE_ENABLE
-
-#if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
-	// 위치
-	public static readonly Vector2 B_POSITION_STATIC_TEXT = new Vector2(-10.0f, 0.0f);
-	public static readonly Vector2 B_POSITION_DYNAMIC_TEXT = new Vector2(-10.0f, 140.0f);
-
-	// 경로
-	public static readonly string B_DIR_PATH_FILTER_FPS_COUNTER = string.Format("{0}UnityModule.Common.Externals/Resources", KCEditorDefine.B_DIR_PATH_PACKAGES);
-#endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 런타임 상수
 }
 #endif			// #if UNITY_EDITOR

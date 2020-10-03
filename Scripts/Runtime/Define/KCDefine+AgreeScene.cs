@@ -4,10 +4,6 @@ using UnityEngine;
 
 //! 약관 동의 씬 상수
 public static partial class KCDefine {
-	#region 기본
-	public const string AS_FUNC_NAME_AGREE_SCENE_MANAGER_EVENT = "OnReceiveStartSceneEvent";
-	#endregion			// 기본
-
 	#region 런타임 상수
 	// 경로 {
 	public static readonly string AS_DATA_PATH_KOREAN_SERVICE_TEXT = string.Format("{0}{1}AS_Service_KO", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_AGREE_SCENE_BASE);

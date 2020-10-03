@@ -28,6 +28,10 @@ public static partial class KCDefine {
 	public const uint B_TIMES_UINT_ONCE = 1;
 	public const uint B_TIMES_UINT_INFINITE = uint.MaxValue;
 
+	// 값
+	public const float B_MIN_VALUE_NORMAL = 0.0f;
+	public const float B_MAX_VALUE_NORMAL = 1.0f;
+
 	// 시간 {
 	public const float B_DELTA_TIME_INFINITE = float.MaxValue;
 	public const float B_DELTA_TIME_INTERMEDIATE = float.Epsilon;
