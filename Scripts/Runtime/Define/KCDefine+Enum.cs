@@ -79,7 +79,7 @@ public enum EVibrateStyle {
 }
 
 //! 내비게이션 스택 이벤트 타입
-public enum ENavStackEventType {
+public enum ENavStackEvent {
 	NONE = -1,
 	TOP,
 	REMOVE,
@@ -87,8 +87,8 @@ public enum ENavStackEventType {
 	MAX_VALUE
 }
 
-//! 약관 동의 씬 관리자 이벤트 타입
-public enum EAgreeSceneManagerEventType {
+//! 시작 씬 이벤트 타입
+public enum EStartSceneEvent {
 	NONE = -1,
 	SHOW_AGREE_POPUP,
 	LOAD_NEXT_SCENE,

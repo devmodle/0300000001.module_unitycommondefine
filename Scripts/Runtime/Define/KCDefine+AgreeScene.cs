@@ -5,7 +5,7 @@ using UnityEngine;
 //! 약관 동의 씬 상수
 public static partial class KCDefine {
 	#region 기본
-	public const string AS_FUNC_NAME_AGREE_SCENE_MANAGER_EVENT = "OnReceiveAgreeSceneManagerEvent";
+	public const string AS_FUNC_NAME_AGREE_SCENE_MANAGER_EVENT = "OnReceiveStartSceneEvent";
 	#endregion			// 기본
 
 	#region 런타임 상수
