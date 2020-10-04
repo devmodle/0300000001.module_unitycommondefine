@@ -28,9 +28,13 @@ public static partial class KCDefine {
 	public const uint B_TIMES_UINT_ONCE = 1;
 	public const uint B_TIMES_UINT_INFINITE = uint.MaxValue;
 
-	// 값
+	// 값 {
+	public const int B_ZERO_VALUE_INT = 0;
+	public const float B_ZERO_VALUE_FLOAT = 0.0f;
+	
 	public const float B_MIN_VALUE_NORMAL = 0.0f;
 	public const float B_MAX_VALUE_NORMAL = 1.0f;
+	// 값 }
 
 	// 시간 {
 	public const float B_DELTA_TIME_INFINITE = float.MaxValue;
@@ -57,6 +61,8 @@ public static partial class KCDefine {
 
 	public const float B_UNIT_SCALE = 0.01f;
 	public const float B_REF_PIXELS_UNIT = 1.0f;
+
+	public const float B_DEF_DPI = 160.0f;
 	public const float B_DEF_FIXED_DELTA_TIME = 0.02f;
 
 	public const float B_WORLD_SCREEN_WIDTH = KCDefine.B_SCREEN_WIDTH * KCDefine.B_UNIT_SCALE;
@@ -64,9 +70,14 @@ public static partial class KCDefine {
 	
 	public const string B_EMPTY_STRING = "";
 	public const string B_UNKNOWN_STRING = "Unknown";
+
+	public const string B_ZERO_INT_STRING = "0";
+	public const string B_ZERO_FLOAT_STRING = "0.0";
+
 	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STRING;
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STRING;
 	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STRING;
+
 	public const string B_VERSION_STRING_FORMAT = "Ver.{0}";
 	// 디바이스 }
 

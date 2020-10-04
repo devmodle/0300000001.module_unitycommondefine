@@ -266,7 +266,10 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_NAME_SCREEN_F_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
 	public const string U_OBJ_NAME_ACTIVITY_I_TOUCH_RESPONDER = "ActivityIndicatorTouchResponder";
-	
+
+	public const string U_OBJ_NAME_DEBUG_C_LOG_WINDOW = "DebugLogWindow";
+	public const string U_OBJ_NAME_DEBUG_C_LOG_POPUP = "DebugLogPopup";
+
 	public const string U_OBJ_NAME_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";
 
 	public const string U_IMG_NAME_DEF_SPRITE = "DefSprite";
@@ -583,9 +586,6 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_NAME_FPS_C_STATIC_TEXT = "StaticInfoText";
 	public const string U_OBJ_NAME_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
-
-	public const string U_OBJ_NAME_DEBUG_C_LOG_WINDOW = "DebugLogWindow";
-	public const string U_OBJ_NAME_DEBUG_C_LOG_POPUP = "DebugLogPopup";
 	// 이름 }
 #endif			// #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 
@@ -598,7 +598,7 @@ public static partial class KCDefine {
 
 #if ADS_MODULE_ENABLE
 	// 시간
-	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 5.0f;
+	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 2.5f;
 	public const float U_DELTA_TIME_REWARD_ATI_UPDATE = 0.5f;
 
 	// 키
@@ -618,10 +618,12 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobBannerAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_CLOSE_CALLBACK = "AdsMAdmobBannerAdsCloseCallback";
 
+	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_LOAD_CALLBACK = "AdsMAdmobRewardAdsLoadCallback";
 	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobRewardAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_CLOSE_CALLBACK = "AdsMAdmobRewardAdsCloseCallback";
 	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_RECEIVE_REWARD_CALLBACK = "AdsMAdmobRewardAdsReceiveRewardCallback";
 
+	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMAdmobFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAdmobFullscreenAdsCloseCallback";
 #endif			// #if ADMOB_ENABLE
@@ -632,11 +634,11 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_IRON_SOURCE_BANNER_ADS_LOAD_CALLBACK = "AdsMIronSourceBannerAdsLoadCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSourceBannerAdsLoadFailCallback";
 
-	public const string U_KEY_ADS_M_IRON_SOURCE_REWARD_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSourceRewardAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_REWARD_ADS_CLOSE_CALLBACK = "AdsMIronSourceRewardAdsCloseCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_REWARD_ADS_RECEIVE_REWARD_CALLBACK = "AdsMIronSourceRewardAdsReceiveRewardCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_REWARD_ADS_CHANGE_STATE_CALLBACK = "AdsMIronSourceRewardAdsChangeStateCallback";
 
+	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSourceFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSourceFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSourceFullscreenAdsCloseCallback";
 #endif			// #if IRON_SOURCE_ENABLE
@@ -806,16 +808,16 @@ public static partial class KCDefine {
 
 #if IRON_SOURCE_ENABLE
 	// 크기
-	public static readonly IronSourceBannerSize U_SIZE_IRON_SOURCE_BANNER_ADS = IronSourceBannerSize.BANNER;
+	public static readonly IronSourceBannerSize U_SIZE_IRON_SOURCE_BANNER_ADS = new IronSourceBannerSize(320, 50);
 #endif			// #if IRON_SOURCE_ENABLE
 
 #if APP_LOVIN_ENABLE
-	// 크기
-	public static readonly float U_HEIGHT_APP_LOVIN_PHONE_BANNER = 50.0f;
-	public static readonly float U_HEIGHT_APP_LOVIN_TABLE_BANNER = 90.0f;
-
 	// 색상
 	public static readonly Color U_COLOR_APP_LOVIN_BANNER_BG = Color.black;
+
+	// 크기
+	public static readonly Vector2 U_SIZE_APP_LOVIN_PHONE_BANNER_ADS = new Vector2(320.0f, 50.0f);
+	public static readonly Vector2 U_SIZE_APP_LOVIN_TABLE_BANNER_ADS = new Vector2(728.0f, 90.0f);
 #endif			// #if APP_LOVIN_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
