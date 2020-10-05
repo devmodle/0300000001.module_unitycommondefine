@@ -14,11 +14,14 @@ using Unity.Notifications.Android;
 //! 에디터 기본 상수
 public static partial class KCEditorDefine {
 	#region 기본
-	// 시간
-	public const float B_DELTA_TIME_OPT_UPDATE = 1.0f;
+	// 시간 {
+	public const float B_DELAY_DEFINE_S_UPDATE = 5.0f;
+	public const float B_DELTA_TIME_DEFINE_S_UPDATE = 1.0f;
+
 	public const float B_DELTA_TIME_HIERARCHY_UPDATE = 1.0f;
 	public const float B_DELTA_TIME_SCRIPT_M_SCENE_UPDATE = 1.0f;
 	public const float B_DELTA_TIME_EDITOR_SM_SCENE_UPDATE = 1.0f;
+	// 시간 }
 
 	// 계층 뷰
 	public const float B_HIERARCHY_WIDTH = 250.0f;
@@ -165,11 +168,11 @@ public static partial class KCEditorDefine {
 #endif			// #if GPU_LIGHTMAPPER_ENABLE
 
 #if LIGHTMAP_SHADOW_BAKE_ENABLE
-#if UNIVERSAL_PIPELINE_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if UNIVERSAL_PIPELINE_ENABLE
 	public const MixedLightingMode B_EDITOR_OPT_LIGHTMAP_BAKE_MODE = MixedLightingMode.Subtractive;
 #else
 	public const MixedLightingMode B_EDITOR_OPT_LIGHTMAP_BAKE_MODE = MixedLightingMode.Shadowmask;
-#endif			// #if UNIVERSAL_PIPELINE_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_ENABLE
 #else
 	public const MixedLightingMode B_EDITOR_OPT_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE

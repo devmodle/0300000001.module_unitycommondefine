@@ -497,7 +497,7 @@ public static partial class KCDefine {
 #endif			// #if REALTIME_LIGHTMAP_BAKE_ENABLE
 	// 광원 }
 
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if UNIVERSAL_PIPELINE_ENABLE
 	// 개수
 	public const int U_MAX_NUM_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ = 4;
 
@@ -522,7 +522,7 @@ public static partial class KCDefine {
 	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
 	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
 	// 이름 }
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_ENABLE
 #endif			// #if UNITY_EDITOR
 
 #if UNITY_IOS
