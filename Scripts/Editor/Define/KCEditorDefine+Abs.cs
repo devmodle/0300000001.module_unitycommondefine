@@ -59,6 +59,8 @@ public static partial class KCEditorDefine {
 	// 알림 팝업 }
 
 	// 이름 {
+	public const string B_CLS_NAME_LOG_ENTRIES = "UnityEditorInternal.LogEntries";
+
 	public const string B_OBJ_NAME_GAME_OBJ = "GameObj";
 	public const string B_OBJ_NAME_OBJ_NAME_EDITOR_POPUP = "ObjNameEditorPopup";
 	public const string B_OBJ_NAME_FILE_BROWSER_WINDOW = "SimpleFileBrowserWindow";
@@ -117,6 +119,9 @@ public static partial class KCEditorDefine {
 
 	public const string B_PROPERTY_NAME_DEBUG_C_LOG_ITEM_PREFAB = "logItemPrefab";
 	
+	public const string B_FUNC_NAME_LOG_ENTRIES_CLEAR = "Clear";
+	public const string B_FUNC_NAME_LOG_ENTRIES_GET_COUNT = "GetCount";
+
 	public const string B_FUNC_NAME_SET_COMPRESSION_TYPE = "SetCompressionType";
 	public const string B_FUNC_NAME_SET_LIGHTMAP_ENCODING_QUALITY = "SetLightmapEncodingQualityForPlatformGroup";
 	public const string B_FUNC_NAME_SET_LIGHTMAP_STREAMING_ENABLE = "SetLightmapStreamingEnabledForPlatformGroup";
