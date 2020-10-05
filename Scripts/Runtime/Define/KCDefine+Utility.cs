@@ -199,7 +199,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_NAME_SCENE_UI_TOP = "UIRoot";
 	public const string U_OBJ_NAME_SCENE_UI_BASE = "Canvas";
 	public const string U_OBJ_NAME_SCENE_UI_ROOT = "UIs";
-	public const string U_OBJ_NAME_SCENE_FIX_UI_ROOT = "FixUIs";
+	public const string U_OBJ_NAME_SCENE_ANCHOR_UI_ROOT = "AnchorUIs";
 	public const string U_OBJ_NAME_SCENE_EVENT_SYSTEM = "EventSystem";
 
 	public const string U_OBJ_NAME_SCENE_LEFT_UI_ROOT = "LeftUIs";
@@ -213,7 +213,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_NAME_SCENE_BASE = "Base";
 	public const string U_OBJ_NAME_SCENE_OBJ_BASE = "ObjRoot";
 	public const string U_OBJ_NAME_SCENE_OBJ_ROOT = "Objs";
-	public const string U_OBJ_NAME_SCENE_FIX_OBJ_ROOT = "FixObjs";
+	public const string U_OBJ_NAME_SCENE_ANCHOR_OBJ_ROOT = "AnchorObjs";
 
 	public const string U_OBJ_NAME_SCENE_LEFT_OBJ_ROOT = "LeftObjs";
 	public const string U_OBJ_NAME_SCENE_RIGHT_OBJ_ROOT = "RightObjs";
