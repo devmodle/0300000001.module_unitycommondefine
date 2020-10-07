@@ -7,8 +7,8 @@ using UnityEngine;
 public static partial class KCDefine {
 	#region 기본
 	// 인덱스
-	public const int B_INDEX_FIRST = 0;
-	public const int B_INDEX_INVALID = -1;
+	public const int B_INDEX_START = 0;
+	public const int B_INDEX_INVALID = KCDefine.B_INDEX_START - 1;
 
 	// 빌드 번호
 	public const int B_MIN_BUILD_NUMBER = 1;
