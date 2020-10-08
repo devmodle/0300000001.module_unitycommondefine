@@ -14,14 +14,10 @@ using Unity.Notifications.Android;
 //! 에디터 기본 상수
 public static partial class KCEditorDefine {
 	#region 기본
-	// 시간 {
-	public const float B_DELAY_DEFINE_S_UPDATE = 5.0f;
-	public const float B_DELTA_TIME_DEFINE_S_UPDATE = 1.0f;
-
+	// 시간
 	public const float B_DELTA_TIME_HIERARCHY_UPDATE = 1.0f;
 	public const float B_DELTA_TIME_SCRIPT_M_SCENE_UPDATE = 1.0f;
 	public const float B_DELTA_TIME_EDITOR_SM_SCENE_UPDATE = 1.0f;
-	// 시간 }
 
 	// 계층 뷰
 	public const float B_HIERARCHY_WIDTH = 250.0f;
