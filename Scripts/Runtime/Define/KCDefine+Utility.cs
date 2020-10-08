@@ -691,10 +691,7 @@ public static partial class KCDefine {
 	public const string U_LOG_KEY_PARAM_E = "ParamE";
 	public const string U_LOG_KEY_PARAM_F = "ParamF";
 	// 키 }
-
-	// 매개 변수
-	public const string U_LOG_PARAM_USER_INFO = "UserInfo";
-
+	
 #if FACEBOOK_MODULE_ENABLE
 	// 키
 	public const string U_KEY_FACEBOOK_M_INIT_CALLBACK = "FacebookMInitCallback";
