@@ -705,9 +705,9 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE
 #if FIREBASE_DATABASE_ENABLE
-	// 노드 이름
-	public const string U_NODE_NAME_FIREBASE_USER_INFO_LIST = "UserInfoList";
-	public const string U_NODE_NAME_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
+	// 노드
+	public const string U_NODE_FIREBASE_USER_INFO_LIST = "UserInfoList";
+	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
 #endif			// #if FIREBASE_DATABASE_ENABLE
 
 #if FIREBASE_REMOTE_CONFIG_ENABLE

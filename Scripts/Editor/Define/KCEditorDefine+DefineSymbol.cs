@@ -92,7 +92,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_GAME_CENTER_ENABLE = "GAME_CENTER_ENABLE";
 	public const string DS_DEFINE_S_GAME_CENTER_MODULE_ENABLE = "GAME_CENTER_MODULE_ENABLE";
 
-	public const string DS_DEFINE_S_SAVED_GAME_ENABLE = "SAVED_GAME_ENABLE";
+	public const string DS_DEFINE_S_GAME_CENTER_SAVE_ENABLE = "GAME_CENTER_SAVE_ENABLE";
 	// 게임 센터 }
 
 	// 결제 {

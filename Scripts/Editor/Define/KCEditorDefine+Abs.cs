@@ -309,17 +309,11 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DATA_PATH_UNITY_PKGS = string.Format("{0}manifest.json", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 
 	public static readonly KeyValuePair<string, string>[] B_PATH_DATA_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}T_Service_KO.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_KOREAN_SERVICE_TEXT)),
+		new KeyValuePair<string, string>(string.Format("{0}T_Service_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_SERVICE_TEXT)),
 
-		new KeyValuePair<string, string>(string.Format("{0}T_Personal_KO.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_KOREAN_PERSONAL_TEXT)),
-
-		new KeyValuePair<string, string>(string.Format("{0}T_Service_EN.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_SERVICE_TEXT)),
-
-		new KeyValuePair<string, string>(string.Format("{0}T_Personal_EN.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_ENGLISH_PERSONAL_TEXT)),
+		new KeyValuePair<string, string>(string.Format("{0}T_Personal_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_PERSONAL_TEXT)),
 
 #if FIREBASE_MODULE_ENABLE && FIREBASE_REMOTE_CONFIG_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_GameConfig.json", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
