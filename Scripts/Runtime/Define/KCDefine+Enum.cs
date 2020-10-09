@@ -133,7 +133,7 @@ public enum EAccelerometerFrequency {
 public enum ELightmapEncodingQuality {
 	NONE = -1,
 	LOW,
-	NORMAL,
+	NORM,
 	HIGH,
 	MAX_VALUE
 }

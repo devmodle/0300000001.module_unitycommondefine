@@ -6,6 +6,14 @@ using UnityEngine;
 //! 기본 상수
 public static partial class KCDefine {
 	#region 기본
+	// 유닛 {
+	public const int B_UNIT_SEC_TO_MILLISEC = 1000;
+	public const int B_UNIT_NORM_VALUE_TO_BYTE = 255;
+
+	public const float B_UNIT_SCALE = 0.01f;
+	public const float B_REF_PIXELS_UNIT = 1.0f;
+	// 유닛 }
+
 	// 인덱스
 	public const int B_INDEX_START = 0;
 	public const int B_INDEX_INVALID = KCDefine.B_INDEX_START - 1;
@@ -32,8 +40,8 @@ public static partial class KCDefine {
 	public const int B_ZERO_VALUE_INT = 0;
 	public const float B_ZERO_VALUE_FLOAT = 0.0f;
 	
-	public const float B_MIN_VALUE_NORMAL = 0.0f;
-	public const float B_MAX_VALUE_NORMAL = 1.0f;
+	public const float B_MIN_VALUE_NORM = 0.0f;
+	public const float B_MAX_VALUE_NORM = 1.0f;
 	// 값 }
 
 	// 시간 {
@@ -58,9 +66,6 @@ public static partial class KCDefine {
 #endif			// #if PORTRAIT_ENABLE
 
 	public const int B_DEF_TARGET_FRAME_RATE = 30;
-
-	public const float B_UNIT_SCALE = 0.01f;
-	public const float B_REF_PIXELS_UNIT = 1.0f;
 
 	public const float B_DEF_DPI = 160.0f;
 	public const float B_DEF_FIXED_DELTA_TIME = 0.02f;
@@ -226,7 +231,7 @@ public static partial class KCDefine {
 	// 앵커 }
 
 	// 비율
-	public static readonly Vector3 B_SCALE_NORMAL = new Vector3(1.0f, 1.0f, 1.0f);
+	public static readonly Vector3 B_SCALE_NORM = new Vector3(1.0f, 1.0f, 1.0f);
 
 	// 위치 {
 	public static readonly Vector3 B_POS_TOP_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT, 0.0f);

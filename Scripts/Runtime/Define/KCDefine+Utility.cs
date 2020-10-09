@@ -299,7 +299,7 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_SCREEN_FADE = Color.black;
 	public static readonly Color U_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
-	public static readonly Color U_DEF_COLOR_NORMAL = Color.white;
+	public static readonly Color U_DEF_COLOR_NORM = Color.white;
 	public static readonly Color U_DEF_COLOR_SELECT = new Color(0.5f, 0.5f, 0.5f, 1.0f);
 	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.5f, 0.5f, 0.5f, 1.0f);
 
@@ -701,11 +701,11 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_MODULE_ENABLE
 
 #if FIREBASE_MODULE_ENABLE
-#if FIREBASE_DATABASE_ENABLE
+#if FIREBASE_DATABASE_ENABLE || FIREBASE_FIRESTORE_ENABLE
 	// 노드
 	public const string U_NODE_FIREBASE_USER_INFO_LIST = "UserInfoList";
 	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
-#endif			// #if FIREBASE_DATABASE_ENABLE
+#endif			// #if FIREBASE_DATABASE_ENABLE || FIREBASE_FIRESTORE_ENABLE
 
 #if FIREBASE_REMOTE_CONFIG_ENABLE
 	// 키
