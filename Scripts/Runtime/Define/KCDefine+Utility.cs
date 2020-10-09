@@ -109,6 +109,10 @@ public static partial class KCDefine {
 
 	// 회전
 	public static readonly Vector3 U_DEF_ROTATION_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
+
+	// 버전
+	public const string U_VERSION_COMMON_APP_INFO = "1.0.0";
+	public const string U_VERSION_COMMON_USER_INFO = "1.0.0";
 	
 	// 형식
 	public const string U_FORMAT_LOG_M_LOG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
@@ -768,15 +772,6 @@ public static partial class KCDefine {
 	// 그룹 정보 }
 #endif			// #if UNITY_IOS
 #endif			// #if LOCAL_NOTI_ENABLE
-
-#if !MSG_PACK_ENABLE
-	// 메세지
-	public const string U_MSG_NEED_MSG_PACK = "MsgPack 라이브러리가 필요합니다.";
-#else
-	// 버전
-	public const string U_VERSION_COMMON_APP_INFO = "1.0.0";
-	public const string U_VERSION_COMMON_USER_INFO = "1.0.0";
-#endif			// #if !MSG_PACK_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수

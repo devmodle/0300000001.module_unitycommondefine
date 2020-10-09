@@ -3,12 +3,47 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using DG.Tweening;
-
-#if MSG_PACK_ENABLE
 using MessagePack;
-#endif			// #if MSG_PACK_ENABLE
 
 #region 기본
+//! 작업 정보
+public struct STTaskInfo {
+	public Task m_oTask;
+	public System.Action<Task> m_oCallback;
+}
+
+//! 콜백 정보
+public struct STCallbackInfo {
+	public string m_oKey;
+	public System.Action m_oCallback;
+}
+
+//! 컴포넌트 정보
+public struct STComponentInfo {
+	public int m_nID;
+	public Component m_oComponent;
+}
+
+//! 정렬 순서 정보
+public struct STSortingOrderInfo {
+	public int m_nOrder;
+	public string m_oLayer;
+}
+
+//! 시퀀스 애니메이션 정보
+public struct STSequenceAniInfo {
+	public Sequence m_oSequence;
+	public GameObject m_oObj;
+}
+
+//! 버전
+[MessagePackObject]
+[System.Serializable]
+public struct STVersion {
+	[Key(0)] public string m_oVersion;
+	[Key(1)] public Dictionary<string, string> m_oExtraInfoList;
+}
+
 //! 빌드 버전
 [System.Serializable]
 public struct STBuildVersion {
@@ -42,47 +77,6 @@ public struct STBuildVersionConfig {
 	public STBuildVersion m_stGalaxyStoreVersion;
 }
 
-//! 작업 정보
-public struct STTaskInfo {
-	public Task m_oTask;
-	public System.Action<Task> m_oCallback;
-}
-
-//! 콜백 정보
-public struct STCallbackInfo {
-	public string m_oKey;
-	public System.Action m_oCallback;
-}
-
-//! 컴포넌트 정보
-public struct STComponentInfo {
-	public int m_nID;
-	public Component m_oComponent;
-}
-
-//! 정렬 순서 정보
-public struct STSortingOrderInfo {
-	public int m_nOrder;
-	public string m_oLayer;
-}
-
-//! 시퀀스 애니메이션 정보
-public struct STSequenceAniInfo {
-	public Sequence m_oSequence;
-	public GameObject m_oObj;
-}
-#endregion			// 기본
-
-#region 조건부 타입
-#if MSG_PACK_ENABLE
-//! 버전
-[MessagePackObject]
-[System.Serializable]
-public struct STVersion {
-	[Key(0)] public string m_oVersion;
-	[Key(1)] public Dictionary<string, string> m_oExtraInfoList;
-}
-
 //! 공용 커스텀 타입 래퍼
 [MessagePackObject]
 public struct STCommonCustomTypeWrapper {
@@ -96,8 +90,9 @@ public struct STCommonCustomTypeWrapper {
 	[Key(6)] public Dictionary<string, float> m_oFloatMapList;
 	[Key(7)] public Dictionary<string, string> m_oStringMapList;
 }
-#endif			// #if MSG_PACK_ENABLE
+#endregion			// 기본
 
+#region 조건부 타입
 #if ADS_MODULE_ENABLE
 //! 광고 보상 정보
 public struct STAdsRewardInfo {

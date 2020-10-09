@@ -26,7 +26,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
 
 	// 플러그인
-	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 	public const string DS_DEFINE_S_DOTWEEN_MODULE_ENABLE = "DOTWEEN_MODULE_ENABLE";
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
 
