@@ -453,12 +453,10 @@ public static partial class KCDefine {
 	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY_BASE);
 	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY_BASE);
 
-	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}Screenshot.png", KCDefine.B_DIR_PATH_WRITABLE);
-
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-	public static readonly string U_IMG_RELATIVE_PATH_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_PATH_WRITABLE);
+	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_PATH_WRITABLE);
 #else
-	public static readonly string U_IMG_RELATIVE_PATH_SCREENSHOT = string.Format("{0}Screenshot.png", KCDefine.B_DIR_PATH_WRITABLE);
+	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}Screenshot.png", KCDefine.B_DIR_PATH_WRITABLE);
 #endif			// #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	// 경로 }
 	#endregion			// 런타임 상수

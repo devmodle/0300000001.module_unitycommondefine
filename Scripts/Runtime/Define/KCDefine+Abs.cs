@@ -76,8 +76,8 @@ public static partial class KCDefine {
 	public const string B_EMPTY_STRING = "";
 	public const string B_UNKNOWN_STRING = "Unknown";
 
-	public const string B_ZERO_INT_STRING = "0";
-	public const string B_ZERO_FLOAT_STRING = "0.0";
+	public const string B_ZERO_STRING_INT = "0";
+	public const string B_ZERO_STRING_FLOAT = "0.0";
 
 	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STRING;
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STRING;
