@@ -109,7 +109,7 @@ public struct STLocalNotiInfo {
 
 #if UNITY_IOS
 	public System.TimeSpan m_stDeltaTime;
-#else
+#elif UNITY_ANDROID
 	public int m_nID;
 	public System.DateTime m_stNotiTime;
 #endif			// #if UNITY_IOS

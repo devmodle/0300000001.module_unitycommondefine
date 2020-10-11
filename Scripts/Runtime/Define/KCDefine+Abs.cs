@@ -10,6 +10,9 @@ public static partial class KCDefine {
 	public const int B_UNIT_SEC_TO_MILLISEC = 1000;
 	public const int B_UNIT_NORM_VALUE_TO_BYTE = 255;
 
+	public const float B_UNIT_BYTE_TO_KILO_BYTE = 1024.0f;
+	public const float B_UNIT_BYTE_TO_MEGA_BYTE = 1024.0f * 1024.0f;
+
 	public const float B_UNIT_SCALE = 0.01f;
 	public const float B_REF_PIXELS_UNIT = 1.0f;
 	// 유닛 }
@@ -38,7 +41,6 @@ public static partial class KCDefine {
 
 	// 값 {
 	public const int B_ZERO_VALUE_INT = 0;
-	public const float B_ZERO_VALUE_FLOAT = 0.0f;
 	
 	public const float B_MIN_VALUE_NORM = 0.0f;
 	public const float B_MAX_VALUE_NORM = 1.0f;

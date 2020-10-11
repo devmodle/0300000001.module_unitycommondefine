@@ -8,7 +8,6 @@ using UnityEditor;
 
 #if LOCAL_NOTI_MODULE_ENABLE
 using Unity.Notifications.iOS;
-using Unity.Notifications.Android;
 #endif			// #if LOCAL_NOTI_MODULE_ENABLE
 
 //! 에디터 기본 상수
@@ -148,29 +147,29 @@ public static partial class KCEditorDefine {
 	// 경로 }
 	
 	// 에디터 옵션 {
-	public const string B_EDITOR_OPT_IOS_REMOTE_DEVICE = "Any iOS Device";
-	public const string B_EDITOR_OPT_ANDROID_REMOTE_DEVICE = "Any Android Device";
-	public const string B_EDITOR_OPT_DISABLE_REMOTE_DEVICE = "None";
+	public const string B_EDITOR_OPTS_IOS_REMOTE_DEVICE = "Any iOS Device";
+	public const string B_EDITOR_OPTS_ANDROID_REMOTE_DEVICE = "Any Android Device";
+	public const string B_EDITOR_OPTS_DISABLE_REMOTE_DEVICE = "None";
 
-	public const string B_EDITOR_OPT_REMOTE_COMPRESSION = "JPEG";
-	public const string B_EDITOR_OPT_REMOTE_RESOLUTION = "Downsize";
-	public const string B_EDITOR_OPT_VERSION_CONTROL = "Visible Meta Files";
-	public const string B_EDITOR_OPT_JOYSTIC_SOURCE = "Remote";
+	public const string B_EDITOR_OPTS_REMOTE_COMPRESSION = "JPEG";
+	public const string B_EDITOR_OPTS_REMOTE_RESOLUTION = "Downsize";
+	public const string B_EDITOR_OPTS_VERSION_CONTROL = "Visible Meta Files";
+	public const string B_EDITOR_OPTS_JOYSTIC_SOURCE = "Remote";
 
 #if GPU_LIGHTMAPPER_ENABLE
-	public const LightingSettings.Lightmapper B_EDITOR_OPT_LIGHTMAPPER = LightingSettings.Lightmapper.ProgressiveGPU;
+	public const LightingSettings.Lightmapper B_EDITOR_OPTS_LIGHTMAPPER = LightingSettings.Lightmapper.ProgressiveGPU;
 #else
-	public const LightingSettings.Lightmapper B_EDITOR_OPT_LIGHTMAPPER = LightingSettings.Lightmapper.ProgressiveCPU;
+	public const LightingSettings.Lightmapper B_EDITOR_OPTS_LIGHTMAPPER = LightingSettings.Lightmapper.ProgressiveCPU;
 #endif			// #if GPU_LIGHTMAPPER_ENABLE
 
 #if LIGHTMAP_SHADOW_BAKE_ENABLE
 #if UNIVERSAL_PIPELINE_ENABLE
-	public const MixedLightingMode B_EDITOR_OPT_LIGHTMAP_BAKE_MODE = MixedLightingMode.Subtractive;
+	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Subtractive;
 #else
-	public const MixedLightingMode B_EDITOR_OPT_LIGHTMAP_BAKE_MODE = MixedLightingMode.Shadowmask;
+	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Shadowmask;
 #endif			// #if UNIVERSAL_PIPELINE_ENABLE
 #else
-	public const MixedLightingMode B_EDITOR_OPT_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
+	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
 	// 에디터 옵션 }
 
@@ -520,8 +519,8 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_BUILD_INFO_TABLE)),
 			
-		new KeyValuePair<string, string>(string.Format("{0}T_BuildOptTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_BUILD_OPT_TABLE)),
+		new KeyValuePair<string, string>(string.Format("{0}T_BuildOptsTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_BUILD_OPTS_TABLE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_DefineSymbolTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE)),
@@ -532,10 +531,10 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}T_ProjInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_PROJ_INFO_TABLE)),
 
-#if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE
+#if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_PluginInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_PLUGIN_INFO_TABLE)),
-#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE
+#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE			
 		new KeyValuePair<string, string>(string.Format("{0}T_ProductInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
@@ -602,7 +601,7 @@ public static partial class KCEditorDefine {
 	// 경로 }
 
 	// 에디터 옵션
-	public static readonly string[] B_EDITOR_OPT_EXTENSIONS = new string[] {
+	public static readonly string[] B_EDITOR_OPTS_EXTENSIONS = new string[] {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
 	};
 
@@ -682,8 +681,8 @@ public static partial class KCEditorDefine {
 #endif			// #if UNITY_IOS
 
 #if LOCAL_NOTI_MODULE_ENABLE
-	public const PresentationOption B_NOTI_OPTS_LOCAL = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
-	public const PresentationOption B_NOTI_OPTS_REMOTE = KCEditorDefine.B_NOTI_OPTS_LOCAL;
+	public const PresentationOption B_PRESENT_OPTS_LOCAL_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
+	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = KCEditorDefine.B_PRESENT_OPTS_LOCAL_NOTI;
 #endif			// #if LOCAL_NOTI_MODULE_ENABLE
 	#endregion			// 조건부 상수
 

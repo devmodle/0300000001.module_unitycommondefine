@@ -190,8 +190,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
-	public const string DS_DEFINE_S_USE_CUSTOM_PROJ_OPT = "USE_CUSTOM_PROJ_OPT";
-	public const string DS_DEFINE_S_NOT_USE_CUSTOM_PROJ_OPT = "!USE_CUSTOM_PROJ_OPT";
+	public const string DS_DEFINE_S_USE_CUSTOM_PROJ_OPTS = "USE_CUSTOM_PROJ_OPTS";
 	#endregion			// 기본
 
 	#region 런타임 상수
