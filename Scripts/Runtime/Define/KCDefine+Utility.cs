@@ -763,7 +763,7 @@ public static partial class KCDefine {
 #elif UNITY_ANDROID
 	// 그룹 정보 {
 	public const Importance U_IMPORTANCE_LOCAL_NOTI = Importance.Default;
-
+	
 	public const string U_GROUP_ID_LOCAL_NOTI = "DefLocalNoti";
 	public const string U_GROUP_NAME_LOCAL_NOTI = KCDefine.U_GROUP_ID_LOCAL_NOTI;
 	public const string U_GROUP_DESC_LOCAL_NOTI = KCDefine.U_GROUP_ID_LOCAL_NOTI;

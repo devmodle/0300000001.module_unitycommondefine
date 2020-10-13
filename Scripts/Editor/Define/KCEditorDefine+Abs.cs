@@ -683,6 +683,8 @@ public static partial class KCEditorDefine {
 #if LOCAL_NOTI_MODULE_ENABLE
 	public const PresentationOption B_PRESENT_OPTS_LOCAL_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
 	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = KCEditorDefine.B_PRESENT_OPTS_LOCAL_NOTI;
+	
+	public const string B_ACTIVITY_NAME_LOCAL_NOTI = "com.unity3d.player.UnityPlayerActivity";
 #endif			// #if LOCAL_NOTI_MODULE_ENABLE
 	#endregion			// 조건부 상수
 

@@ -107,12 +107,8 @@ public struct STLocalNotiInfo {
 	public string m_oTitle;
 	public string m_oMsg;
 
-#if UNITY_IOS
-	public System.TimeSpan m_stDeltaTime;
-#elif UNITY_ANDROID
-	public int m_nID;
+	public bool m_bIsRepeat;
 	public System.DateTime m_stNotiTime;
-#endif			// #if UNITY_IOS
 }
 #endif			// #if LOCAL_NOTI_MODULE_ENABLE
 #endregion			// 조건부 타입
