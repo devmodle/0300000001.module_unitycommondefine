@@ -671,7 +671,7 @@ public static partial class KCDefine {
 
 #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || UNITY_SERVICE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 	// 시간
-	public const long U_TIMEOUT_FLURRY_NETWORK_CONNECTION = 60000;
+	public const long U_TIMEOUT_FLURRY_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_SEC_TO_MILLISEC;
 
 	// 이름
 	public const string U_LOG_NAME_APP_LAUNCH = "AppLaunch";
@@ -703,17 +703,44 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_MODULE_ENABLE
 
 #if FIREBASE_MODULE_ENABLE
-#if FIREBASE_DATABASE_ENABLE || FIREBASE_FIRESTORE_ENABLE
+	// 키
+	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
+
+#if FIREBASE_AUTH_ENABLE
+	// 키 {
+	public const string U_KEY_FIREBASE_M_LOGIN_CALLBACK = "FirebaseMLoginCallback";	
+
+#if UNITY_IOS
+	public const string U_KEY_FIREBASE_M_GAME_CENTER_CALLBACK = "FirebaseMGameCenterCallback";
+#endif			// #if UNITY_IOS
+	// 키 }
+#endif			// #if FIREBASE_AUTH_ENABLE
+
+#if FIREBASE_DB_ENABLE || FIREBASE_FIRESTORE_ENABLE
 	// 노드
 	public const string U_NODE_FIREBASE_USER_INFO_LIST = "UserInfoList";
 	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
-#endif			// #if FIREBASE_DATABASE_ENABLE || FIREBASE_FIRESTORE_ENABLE
+
+#if FIREBASE_DB_ENABLE
+	public const string U_KEY_FIREBASE_M_SAVE_DB_CALLBACK = "FirebaseMSaveDBCallback";
+	public const string U_KEY_FIREBASE_M_LOAD_DB_CALLBACK = "FirebaseMLoadDBCallback";
+#endif			// #if FIREBASE_DB_ENABLE
+
+#if FIREBASE_FIRESTORE_ENABLE
+	public const string U_KEY_FIREBASE_M_SAVE_FIRESTORE_CALLBACK = "FirebaseMSaveFirestoreCallback";
+	public const string U_KEY_FIREBASE_M_LOAD_FIRESTORE_CALLBACK = "FirebaseMLoadFirestoreCallback";
+#endif			// #if FIREBASE_FIRESTORE_ENABLE
+	// 키 }
+#endif			// #if FIREBASE_DB_ENABLE || FIREBASE_FIRESTORE_ENABLE
 
 #if FIREBASE_REMOTE_CONFIG_ENABLE
-	// 키
+	// 키 {
+	public const string U_KEY_FIREBASE_M_LOAD_CONFIG_CALLBACK = "FirebaseMLoadConfigCallback";
+
 	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
 	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
 	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VERSION = "BuildVersionConfig";
+	// 키 }
 #endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 
 #if FIREBASE_CLOUD_MSG_ENABLE
@@ -824,12 +851,19 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_MODULE_ENABLE
 
 #if FIREBASE_MODULE_ENABLE
-	// 시간
-	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG = new System.TimeSpan(0, 0, 30);
-
 	// 경로
 	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_DATA_PATH_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+
+#if FIREBASE_ANALYTICS_ENABLE
+	// 시간
+	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_SESSION = new System.TimeSpan(0, 0, 60);
+#endif			// #if FIREBASE_ANALYTICS_ENABLE
+
+#if FIREBASE_REMOTE_CONFIG_ENABLE
+	// 시간
+	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG = new System.TimeSpan(0, 0, 30);
+#endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if SINGULAR_MODULE_ENABLE
