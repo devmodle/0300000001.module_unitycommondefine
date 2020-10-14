@@ -15,7 +15,7 @@ public static partial class KCDefine {
 	public const string VT_KEY_HANDHELD_CONSOLE_TARGET_FRAME_RATE = "HANDHELD_CONSOLE_TARGET_FRAME_RATE";
 	// 디바이스 }
 
-	// 알림 팝업 간격 {
+	// 경고 팝업 간격 {
 	public const string VT_KEY_V_OFFSET_ALERT_P_TITLE = "V_OFFSET_ALERT_P_TITLE";
 
 	public const string VT_KEY_V_OFFSET_ALERT_P_BTN = "V_OFFSET_ALERT_P_BTN";
@@ -27,7 +27,7 @@ public static partial class KCDefine {
 
 	public const string VT_KEY_V_OFFSET_ALERT_P_BG = "V_OFFSET_ALERT_P_BG";
 	public const string VT_KEY_H_OFFSET_ALERT_P_BG = "H_OFFSET_ALERT_P_BG";
-	// 알림 팝업 간격 }
+	// 경고 팝업 간격 }
 
 	// 게임 정보 저장소
 	public const string VT_KEY_DEF_DELAY_ADS = "DEF_DELAY_ADS";

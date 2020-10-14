@@ -102,8 +102,8 @@ public static partial class KCEditorDefine {
 	// 결제 }
 
 	// 알림
-	public const string DS_DEFINE_S_LOCAL_NOTI_ENABLE = "LOCAL_NOTI_ENABLE";
-	public const string DS_DEFINE_S_LOCAL_NOTI_MODULE_ENABLE = "LOCAL_NOTI_MODULE_ENABLE";
+	public const string DS_DEFINE_S_NOTI_ENABLE = "NOTI_ENABLE";
+	public const string DS_DEFINE_S_NOTI_MODULE_ENABLE = "NOTI_MODULE_ENABLE";
 
 	// 렌더링 {
 	public const string DS_DEFINE_S_UNIVERSAL_PIPELINE_ENABLE = "UNIVERSAL_PIPELINE_ENABLE";
@@ -235,9 +235,9 @@ public static partial class KCEditorDefine {
 		[KCEditorDefine.DS_DEFINE_S_PURCHASE_ENABLE] = KCEditorDefine.DS_DEFINE_S_PURCHASE_MODULE_ENABLE,
 #endif			// #if PURCHASE_ENABLE || PURCHASE_MODULE_ENABLE
 
-#if LOCAL_NOTI_ENABLE || LOCAL_NOTI_MODULE_ENABLE
-		[KCEditorDefine.DS_DEFINE_S_LOCAL_NOTI_ENABLE] = KCEditorDefine.DS_DEFINE_S_LOCAL_NOTI_MODULE_ENABLE
-#endif			// #if LOCAL_NOTI_ENABLE || LOCAL_NOTI_MODULE_ENABLE
+#if NOTI_ENABLE || NOTI_MODULE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_NOTI_ENABLE] = KCEditorDefine.DS_DEFINE_S_NOTI_MODULE_ENABLE
+#endif			// #if NOTI_ENABLE || NOTI_MODULE_ENABLE
 	};
 	#endregion			// 런타임 상수
 }

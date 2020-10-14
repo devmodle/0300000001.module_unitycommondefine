@@ -101,14 +101,14 @@ public struct STAdsRewardInfo {
 }
 #endif			// #if ADS_MODULE_ENABLE
 
-#if LOCAL_NOTI_MODULE_ENABLE
-//! 로컬 알림 정보
-public struct STLocalNotiInfo {
+#if NOTI_MODULE_ENABLE
+//! 알림 정보
+public struct STNotiInfo {
 	public string m_oTitle;
 	public string m_oMsg;
 
 	public bool m_bIsRepeat;
 	public System.DateTime m_stNotiTime;
 }
-#endif			// #if LOCAL_NOTI_MODULE_ENABLE
+#endif			// #if NOTI_MODULE_ENABLE
 #endregion			// 조건부 타입

@@ -6,9 +6,9 @@ using UnityEngine.Rendering;
 #if UNITY_EDITOR
 using UnityEditor;
 
-#if LOCAL_NOTI_MODULE_ENABLE
+#if NOTI_MODULE_ENABLE
 using Unity.Notifications.iOS;
-#endif			// #if LOCAL_NOTI_MODULE_ENABLE
+#endif			// #if NOTI_MODULE_ENABLE
 
 //! 에디터 기본 상수
 public static partial class KCEditorDefine {
@@ -45,7 +45,7 @@ public static partial class KCEditorDefine {
 	public const string B_CMDLINE_PARAM_FORMAT_SHELL = "-c \"{0}\"";
 	public const string B_CMDLINE_PARAM_FORMAT_CMD_PROMPT = "/c \"{0}\"";
 
-	// 알림 팝업 {
+	// 경고 팝업 {
 	public const string B_ALERT_P_TITLE = "알림";
 	public const string B_ALERT_P_OK_BTN_TEXT = "확인";
 	public const string B_ALERT_P_CANCEL_BTN_TEXT = "취소";
@@ -54,7 +54,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_ALERT_P_EXPORT_TEXTURE_FAIL_MSG = "텍스처를 선택해주세요.";
 	public const string B_ALERT_P_EXPORT_SPRITE_FAIL_MSG = "스프라이트를 선택해주세요.";
-	// 알림 팝업 }
+	// 경고 팝업 }
 
 	// 이름 {
 	public const string B_CLS_NAME_LOG_ENTRIES = "UnityEditorInternal.LogEntries";
@@ -680,12 +680,12 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_VALUE_ENABLE_BITCODE = "YES";
 #endif			// #if UNITY_IOS
 
-#if LOCAL_NOTI_MODULE_ENABLE
-	public const PresentationOption B_PRESENT_OPTS_LOCAL_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
-	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = KCEditorDefine.B_PRESENT_OPTS_LOCAL_NOTI;
+#if NOTI_MODULE_ENABLE
+	public const PresentationOption B_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
+	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = KCEditorDefine.B_PRESENT_OPTS_NOTI;
 	
-	public const string B_ACTIVITY_NAME_LOCAL_NOTI = "com.unity3d.player.UnityPlayerActivity";
-#endif			// #if LOCAL_NOTI_MODULE_ENABLE
+	public const string B_ACTIVITY_NAME_NOTI = "com.unity3d.player.UnityPlayerActivity";
+#endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
@@ -694,10 +694,10 @@ public static partial class KCEditorDefine {
 	public static readonly string B_PATH_CAPABILITY_ENTITLEMENTS_IOS = string.Format("{0}.entitlements", Application.productName);
 #endif			// #if UNITY_IOS
 
-#if LOCAL_NOTI_MODULE_ENABLE
+#if NOTI_MODULE_ENABLE
 	// 경로
 	public static readonly string B_ASSET_PATH_NOTI_SETTINGS = string.Format("{0}NotificationsSettings.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
-#endif			// #if LOCAL_NOTI_MODULE_ENABLE
+#endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }
 #endif			// #if UNITY_EDITOR

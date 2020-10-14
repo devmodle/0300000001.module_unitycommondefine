@@ -10,13 +10,13 @@ using UnityEngine.iOS;
 using GoogleMobileAds.Api;
 #endif			// #if ADS_MODULE_ENABLE && ADMOB_ENABLE
 
-#if LOCAL_NOTI_MODULE_ENABLE
+#if NOTI_MODULE_ENABLE
 #if UNITY_IOS
 using Unity.Notifications.iOS;
 #elif UNITY_ANDROID
 using Unity.Notifications.Android;
 #endif			// #if UNITY_IOS
-#endif			// #if LOCAL_NOTI_MODULE_ENABLE
+#endif			// #if NOTI_MODULE_ENABLE
 
 //! 유틸리티 상수
 public static partial class KCDefine {
@@ -779,24 +779,24 @@ public static partial class KCDefine {
 	public const string U_KEY_PURCHASE_M_PURCHASE_RESULT_CALLBACK = "PurchaseMPurchaseResultCallback";
 #endif			// #if PURCHASE_MODULE_ENABLE
 
-#if LOCAL_NOTI_MODULE_ENABLE
+#if NOTI_MODULE_ENABLE
 	// 시간
 	public const float U_DELTA_TIME_LOCAL_NM_REQUEST_CHECK = 0.15f;
 	public const float U_MAX_DELTA_TIME_LOCAL_NM_REQUEST_CHECK = KCDefine.B_DELTA_TIME_INFINITE;
 
 #if UNITY_IOS
 	// 옵션
-	public const AuthorizationOption U_AUTH_OPTS_LOCAL_NOTI = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
+	public const AuthorizationOption U_AUTH_OPTS_NOTI = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
 #elif UNITY_ANDROID
 	// 그룹 정보 {
-	public const Importance U_IMPORTANCE_LOCAL_NOTI = Importance.Default;
+	public const Importance U_IMPORTANCE_NOTI = Importance.Default;
 	
-	public const string U_GROUP_ID_LOCAL_NOTI = "DefLocalNoti";
-	public const string U_GROUP_NAME_LOCAL_NOTI = KCDefine.U_GROUP_ID_LOCAL_NOTI;
-	public const string U_GROUP_DESC_LOCAL_NOTI = KCDefine.U_GROUP_ID_LOCAL_NOTI;
+	public const string U_GROUP_ID_NOTI = "DefNoti";
+	public const string U_GROUP_NAME_NOTI = KCDefine.U_GROUP_ID_NOTI;
+	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_ID_NOTI;
 	// 그룹 정보 }
 #endif			// #if UNITY_IOS
-#endif			// #if LOCAL_NOTI_ENABLE
+#endif			// #if NOTI_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
