@@ -77,6 +77,7 @@ public static partial class KCDefine {
 	
 	public const string B_EMPTY_STRING = "";
 	public const string B_UNKNOWN_STRING = "Unknown";
+	public const string B_NEW_LINE_STRING = "\n";
 
 	public const string B_ZERO_STRING_INT = "0";
 	public const string B_ZERO_STRING_FLOAT = "0.0";
