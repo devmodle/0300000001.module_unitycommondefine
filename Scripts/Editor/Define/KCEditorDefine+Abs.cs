@@ -679,18 +679,12 @@ public static partial class KCEditorDefine {
 
 	#region 조건부 상수
 #if UNITY_IOS
-	// 경로
-	public const string B_IOS_PODS_PATH_FORMAT = "{0}/Podfile";
-
-	// 프로퍼티
+	// 프로퍼티 {
 	public const string B_IOS_PROPERTY_NAME_ENABLE_BITCODE = "ENABLE_BITCODE";
-	public const string B_IOS_PROPERTY_VALUE_ENABLE_BITCODE = "YES";
+	public const string B_IOS_PROPERTY_NAME_PREPROCESSOR_DEFINITIONS = "GCC_PREPROCESSOR_DEFINITIONS";
 
-#if FIREBASE_MODULE_ENABLE
-	// 이름
-	public const string B_IOS_FIREBASE_MODULE_NAME_PREFIX = "pod 'Firebase/";
-	public const string B_IOS_FIREBASE_PERFORMANCE_MODULE_NAME = "pod 'Firebase/Performance'";
-#endif			// #if FIREBASE_MODULE_ENABLE
+	public const string B_IOS_PROPERTY_VALUE_ENABLE_BITCODE = "YES";
+	// 프로퍼티 }
 #endif			// #if UNITY_IOS
 
 #if NOTI_MODULE_ENABLE
