@@ -247,7 +247,10 @@ public static partial class KCEditorDefine {
 	public const string B_ANDROID_AAB_BUILD_FILE_EXTENSION = "aab";
 
 	public const string B_ANDROID_BUILD_PATH_FORMAT = "Builds/Android/{0}/{1}.{2}";
+	public const string B_ANDROID_DEST_LIBRARY_PATH_FORMAT = "Builds/Android/{0}/{1}";
+
 	public const string B_ANDROID_BUILD_FILENAME_FORMAT = "{0}BuildOutput";
+	public const string B_ANDROID_LIBRARY_DIRNAME_FORMAT = "{0}LibraryOutput";
 	// 안드로이드 }
 	#endregion			// 기본
 
@@ -639,6 +642,7 @@ public static partial class KCEditorDefine {
 	// iOS }
 
 	// 안드로이드 {
+	public static readonly string B_ANDROID_SRC_LIBRARY_PATH = string.Format("{0}../Temp/StagingArea/libs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
 	public static readonly string B_ANDROID_ABS_BUILD_PATH_FORMAT = string.Format("{0}../Builds/Android/{1}", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, "{0}");
 
 	public static readonly string B_ANDROID_SRC_PLUGIN_PATH = string.Format("{0}../PluginProjects/Android/app/build/outputs/aar/app-release.aar", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
