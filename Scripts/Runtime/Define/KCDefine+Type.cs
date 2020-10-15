@@ -51,6 +51,13 @@ public struct STBuildVersion {
 	public string m_oVersion;
 }
 
+//! 지급 아이템
+[System.Serializable]
+public struct STPostItem {
+	public string m_oID;
+	public string m_oValue;
+}
+
 //! 디바이스 정보
 [System.Serializable]
 public struct STDeviceInfo {
@@ -93,14 +100,6 @@ public struct STCommonCustomTypeWrapper {
 #endregion			// 기본
 
 #region 조건부 타입
-#if ADS_MODULE_ENABLE
-//! 광고 보상 정보
-public struct STAdsRewardInfo {
-	public string m_oName;
-	public string m_oValue;
-}
-#endif			// #if ADS_MODULE_ENABLE
-
 #if NOTI_MODULE_ENABLE
 //! 알림 정보
 public struct STNotiInfo {

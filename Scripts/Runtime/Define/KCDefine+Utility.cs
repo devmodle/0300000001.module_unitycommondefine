@@ -716,22 +716,16 @@ public static partial class KCDefine {
 	// 키 }
 #endif			// #if FIREBASE_AUTH_ENABLE
 
-#if FIREBASE_DB_ENABLE || FIREBASE_FIRESTORE_ENABLE
-	// 노드
-	public const string U_NODE_FIREBASE_USER_INFO_LIST = "UserInfoList";
-	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
-
 #if FIREBASE_DB_ENABLE
+	// 키
 	public const string U_KEY_FIREBASE_M_SAVE_DB_CALLBACK = "FirebaseMSaveDBCallback";
 	public const string U_KEY_FIREBASE_M_LOAD_DB_CALLBACK = "FirebaseMLoadDBCallback";
-#endif			// #if FIREBASE_DB_ENABLE
 
-#if FIREBASE_FIRESTORE_ENABLE
-	public const string U_KEY_FIREBASE_M_SAVE_FIRESTORE_CALLBACK = "FirebaseMSaveFirestoreCallback";
-	public const string U_KEY_FIREBASE_M_LOAD_FIRESTORE_CALLBACK = "FirebaseMLoadFirestoreCallback";
-#endif			// #if FIREBASE_FIRESTORE_ENABLE
-	// 키 }
-#endif			// #if FIREBASE_DB_ENABLE || FIREBASE_FIRESTORE_ENABLE
+	// 노드
+	public const string U_NODE_FIREBASE_POST_ITEM_LIST = "PostItemList";
+	public const string U_NODE_FIREBASE_USER_INFO_LIST = "UserInfoList";
+	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
+#endif			// #if FIREBASE_DB_ENABLE
 
 #if FIREBASE_REMOTE_CONFIG_ENABLE
 	// 키 {
