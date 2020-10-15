@@ -106,6 +106,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_NOTI_MODULE_ENABLE = "NOTI_MODULE_ENABLE";
 
 	// 렌더링 {
+	public const string DS_DEFINE_S_VISUAL_FX_GRAPH_ENABLE = "VISUAL_FX_GRAPH_ENABLE";
 	public const string DS_DEFINE_S_UNIVERSAL_PIPELINE_ENABLE = "UNIVERSAL_PIPELINE_ENABLE";
 
 	public const string DS_DEFINE_S_POST_PROCESSING_ENABLE = "POST_PROCESSING_ENABLE";
@@ -155,6 +156,7 @@ public static partial class KCEditorDefine {
 	// 테스트 {
 	public const string DS_DEFINE_S_FPS_ENABLE = "FPS_ENABLE";
 	public const string DS_DEFINE_S_PROFILER_ENABLE = "PROFILER_ENABLE";
+	public const string DS_DEFINE_S_ML_AGENTS_ENABLE = "ML_AGENTS_ENABLE";
 
 	public const string DS_DEFINE_S_AB_TEST_ENABLE = "AB_TEST_ENABLE";
 	public const string DS_DEFINE_S_ADS_TEST_ENABLE = "ADS_TEST_ENABLE";
