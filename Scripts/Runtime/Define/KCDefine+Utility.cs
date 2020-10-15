@@ -784,18 +784,23 @@ public static partial class KCDefine {
 	public const float U_DELTA_TIME_LOCAL_NM_REQUEST_CHECK = 0.15f;
 	public const float U_MAX_DELTA_TIME_LOCAL_NM_REQUEST_CHECK = KCDefine.B_DELTA_TIME_INFINITE;
 
+	// 그룹
+	public const string U_DEF_GROUP_ID_NOTI = "DefNotiGroup";
+
 #if UNITY_IOS
 	// 옵션
 	public const AuthorizationOption U_AUTH_OPTS_NOTI = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
-#elif UNITY_ANDROID
+	public const PresentationOption U_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Sound;
+#endif			// #if UNITY_IOS
+
+#if UNITY_ANDROID
 	// 그룹 정보 {
 	public const Importance U_IMPORTANCE_NOTI = Importance.Default;
 	
-	public const string U_GROUP_ID_NOTI = "DefNoti";
-	public const string U_GROUP_NAME_NOTI = KCDefine.U_GROUP_ID_NOTI;
-	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_ID_NOTI;
+	public const string U_DEF_GROUP_NAME_NOTI = KCDefine.U_DEF_GROUP_ID_NOTI;
+	public const string U_DEF_GROUP_DESC_NOTI = KCDefine.U_DEF_GROUP_ID_NOTI;
 	// 그룹 정보 }
-#endif			// #if UNITY_IOS
+#endif			// #if UNITY_ANDROID
 #endif			// #if NOTI_ENABLE
 	#endregion			// 조건부 상수
 

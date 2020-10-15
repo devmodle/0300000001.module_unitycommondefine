@@ -104,10 +104,13 @@ public struct STAdsRewardInfo {
 #if NOTI_MODULE_ENABLE
 //! 알림 정보
 public struct STNotiInfo {
+	public bool m_bIsRepeat;
+	public bool m_bIsShowForeground;
+
 	public string m_oTitle;
+	public string m_oSubTitle;
 	public string m_oMsg;
 
-	public bool m_bIsRepeat;
 	public System.DateTime m_stNotiTime;
 }
 #endif			// #if NOTI_MODULE_ENABLE
