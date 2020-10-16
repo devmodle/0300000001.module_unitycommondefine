@@ -142,7 +142,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_LAYER_TOPMOST = "Topmost";
 	public const string U_SORTING_LAYER_ABS = "Abs";
 
-#if !CAMERA_STACK_ENABLE
+#if UNIVERSAL_PIPELINE_ENABLE
 	public const string U_SORTING_LAYER_UNDERGROUND_UI = "UndergroundUI";
 	public const string U_SORTING_LAYER_BACKGROUND_UI = "BackgroundUI";
 	public const string U_SORTING_LAYER_DEF_UI = "DefaultUI";
@@ -151,7 +151,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_LAYER_TOP_UI = "TopUI";
 	public const string U_SORTING_LAYER_TOPMOST_UI = "TopmostUI";
 	public const string U_SORTING_LAYER_ABS_UI = "AbsUI";
-#endif			// #if !CAMERA_STACK_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_ENABLE
 	// 정렬 레이어 }
 
 	// 식별자
@@ -323,17 +323,17 @@ public static partial class KCDefine {
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
 	};
 
-#if CAMERA_STACK_ENABLE
-	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
-	};
-#else
+#if UNIVERSAL_PIPELINE_ENABLE
 	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF_UI
 	};
-#endif			// #if CAMERA_STACK_ENABLE
+#else
+	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
+		m_nOrder = 0,
+		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
+	};
+#endif			// #if UNIVERSAL_PIPELINE_ENABLE
 	// 정렬 순서 정보 }
 
 	// 동기화 객체
@@ -352,9 +352,9 @@ public static partial class KCDefine {
 		KCDefine.U_LAYER_IGNORE_RAYCAST,
 		KCDefine.U_LAYER_WATER,
 
-#if !CAMERA_STACK_ENABLE
+#if UNIVERSAL_PIPELINE_ENABLE
 		KCDefine.U_LAYER_UI
-#endif			// #if !CAMERA_STACK_ENABLE	
+#endif			// #if UNIVERSAL_PIPELINE_ENABLE
 	};
 	// 레이어 마스크 }
 
@@ -378,7 +378,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_LAYER_TOPMOST,
 		KCDefine.U_SORTING_LAYER_ABS,
 
-#if !CAMERA_STACK_ENABLE
+#if UNIVERSAL_PIPELINE_ENABLE
 		KCDefine.U_SORTING_LAYER_UNDERGROUND_UI,
 		KCDefine.U_SORTING_LAYER_BACKGROUND_UI,
 		KCDefine.U_SORTING_LAYER_DEF_UI,
@@ -387,7 +387,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_LAYER_TOP_UI,
 		KCDefine.U_SORTING_LAYER_TOPMOST_UI,
 		KCDefine.U_SORTING_LAYER_ABS_UI
-#endif			// #if !CAMERA_STACK_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_ENABLE
 	};
 
 	// 경로 {
