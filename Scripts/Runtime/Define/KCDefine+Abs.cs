@@ -17,9 +17,16 @@ public static partial class KCDefine {
 	public const float B_REF_PIXELS_UNIT = 1.0f;
 	// 유닛 }
 
+	// 값 {
+	public const int B_VALUE_INT_0 = 0;
+	public const int B_VALUE_INT_1 = 1;
+	
+	public const float B_MIN_VALUE_NORM = 0.0f;
+	public const float B_MAX_VALUE_NORM = 1.0f;
+	// 값 }
+
 	// 인덱스
-	public const int B_INDEX_START = 0;
-	public const int B_INDEX_INVALID = KCDefine.B_INDEX_START - 1;
+	public const int B_INDEX_INVALID = -1;
 
 	// 빌드 번호
 	public const int B_MIN_BUILD_NUMBER = 1;
@@ -38,13 +45,6 @@ public static partial class KCDefine {
 
 	public const uint B_TIMES_UINT_ONCE = 1;
 	public const uint B_TIMES_UINT_INFINITE = uint.MaxValue;
-
-	// 값 {
-	public const int B_ZERO_VALUE_INT = 0;
-	
-	public const float B_MIN_VALUE_NORM = 0.0f;
-	public const float B_MAX_VALUE_NORM = 1.0f;
-	// 값 }
 
 	// 시간 {
 	public const float B_DELTA_TIME_INFINITE = float.MaxValue;
