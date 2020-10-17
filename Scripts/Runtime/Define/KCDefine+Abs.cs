@@ -59,13 +59,13 @@ public static partial class KCDefine {
 	public const BindingFlags B_BINDING_FLAG_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
 
 	// 디바이스 {
-#if PORTRAIT_ENABLE
+#if MODE_PORTRAIT_ENABLE
 	public const int B_SCREEN_WIDTH = 720;
 	public const int B_SCREEN_HEIGHT = 1280;
 #else
 	public const int B_SCREEN_WIDTH = 1280;
 	public const int B_SCREEN_HEIGHT = 720;
-#endif			// #if PORTRAIT_ENABLE
+#endif			// #if MODE_PORTRAIT_ENABLE
 
 	public const int B_DEF_TARGET_FRAME_RATE = 30;
 
@@ -198,13 +198,13 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 디바이스 {
-#if PORTRAIT_ENABLE
+#if MODE_PORTRAIT_ENABLE
 	public static readonly int B_DESKTOP_WINDOW_WIDTH = (int)((Screen.currentResolution.height * 0.9f) * (KCDefine.B_SCREEN_WIDTH / (float)KCDefine.B_SCREEN_HEIGHT));
 	public static readonly int B_DESKTOP_WINDOW_HEIGHT = (int)(Screen.currentResolution.height * 0.9f);
 #else
 	public static readonly int B_DESKTOP_WINDOW_WIDTH = (int)(Screen.currentResolution.width * 0.9f);
 	public static readonly int B_DESKTOP_WINDOW_HEIGHT = (int)((Screen.currentResolution.width * 0.9f) * (KCDefine.B_SCREEN_HEIGHT / (float)KCDefine.B_SCREEN_WIDTH));
-#endif			// #if PORTRAIT_ENABLE
+#endif			// #if MODE_PORTRAIT_ENABLE
 
 	public static readonly Vector2 B_SCREEN_SIZE = new Vector2(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT);
 	public static readonly Vector2 B_WORLD_SCREEN_SIZE = new Vector2(KCDefine.B_WORLD_SCREEN_WIDTH, KCDefine.B_WORLD_SCREEN_HEIGHT);

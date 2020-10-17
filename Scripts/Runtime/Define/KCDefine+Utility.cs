@@ -142,7 +142,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_LAYER_TOPMOST = "Topmost";
 	public const string U_SORTING_LAYER_ABS = "Abs";
 
-#if UNIVERSAL_PIPELINE_ENABLE
+#if UNIVERSAL_PIPELINE_MODULE_ENABLE
 	public const string U_SORTING_LAYER_UNDERGROUND_UI = "UndergroundUI";
 	public const string U_SORTING_LAYER_BACKGROUND_UI = "BackgroundUI";
 	public const string U_SORTING_LAYER_DEF_UI = "DefaultUI";
@@ -151,7 +151,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_LAYER_TOP_UI = "TopUI";
 	public const string U_SORTING_LAYER_TOPMOST_UI = "TopmostUI";
 	public const string U_SORTING_LAYER_ABS_UI = "AbsUI";
-#endif			// #if UNIVERSAL_PIPELINE_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 레이어 }
 
 	// 식별자
@@ -323,7 +323,7 @@ public static partial class KCDefine {
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
 	};
 
-#if UNIVERSAL_PIPELINE_ENABLE
+#if UNIVERSAL_PIPELINE_MODULE_ENABLE
 	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF_UI
@@ -333,7 +333,7 @@ public static partial class KCDefine {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
 	};
-#endif			// #if UNIVERSAL_PIPELINE_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 순서 정보 }
 
 	// 동기화 객체
@@ -352,9 +352,9 @@ public static partial class KCDefine {
 		KCDefine.U_LAYER_IGNORE_RAYCAST,
 		KCDefine.U_LAYER_WATER,
 
-#if UNIVERSAL_PIPELINE_ENABLE
+#if UNIVERSAL_PIPELINE_MODULE_ENABLE
 		KCDefine.U_LAYER_UI
-#endif			// #if UNIVERSAL_PIPELINE_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
 	// 레이어 마스크 }
 
@@ -378,7 +378,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_LAYER_TOPMOST,
 		KCDefine.U_SORTING_LAYER_ABS,
 
-#if UNIVERSAL_PIPELINE_ENABLE
+#if UNIVERSAL_PIPELINE_MODULE_ENABLE
 		KCDefine.U_SORTING_LAYER_UNDERGROUND_UI,
 		KCDefine.U_SORTING_LAYER_BACKGROUND_UI,
 		KCDefine.U_SORTING_LAYER_DEF_UI,
@@ -387,7 +387,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_LAYER_TOP_UI,
 		KCDefine.U_SORTING_LAYER_TOPMOST_UI,
 		KCDefine.U_SORTING_LAYER_ABS_UI
-#endif			// #if UNIVERSAL_PIPELINE_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
 
 	// 경로 {
@@ -499,7 +499,7 @@ public static partial class KCDefine {
 #endif			// #if REALTIME_LIGHTMAP_BAKE_ENABLE
 	// 광원 }
 
-#if UNIVERSAL_PIPELINE_ENABLE
+#if UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 개수
 	public const int U_MAX_NUM_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ = 4;
 
@@ -524,7 +524,7 @@ public static partial class KCDefine {
 	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
 	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
 	// 이름 }
-#endif			// #if UNIVERSAL_PIPELINE_ENABLE
+#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
 #if UNITY_IOS
@@ -818,6 +818,10 @@ public static partial class KCDefine {
 #endif			// #if UNITY_IOS
 
 #if ADS_MODULE_ENABLE
+	// 크기
+	public static readonly Vector2 U_SIZE_PHONE_BANNER_ADS = new Vector2(320.0f, 50.0f);
+	public static readonly Vector2 U_SIZE_TABLET_BANNER_ADS = new Vector2(728.0f, 90.0f);
+
 #if ADMOB_ENABLE
 	// 크기
 	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize(AdSize.FullWidth, 50);
@@ -831,10 +835,6 @@ public static partial class KCDefine {
 #if APP_LOVIN_ENABLE
 	// 색상
 	public static readonly Color U_COLOR_APP_LOVIN_BANNER_BG = Color.black;
-
-	// 크기
-	public static readonly Vector2 U_SIZE_APP_LOVIN_PHONE_BANNER_ADS = new Vector2(320.0f, 50.0f);
-	public static readonly Vector2 U_SIZE_APP_LOVIN_TABLE_BANNER_ADS = new Vector2(728.0f, 90.0f);
 #endif			// #if APP_LOVIN_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
