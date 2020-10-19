@@ -703,8 +703,18 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_MODULE_ENABLE
 
 #if FIREBASE_MODULE_ENABLE
-	// 키
+	// 키 {
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
+
+	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
+	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
+	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VERSION = "BuildVersionConfig";
+	// 키 }
+
+	// 노드
+	public const string U_NODE_FIREBASE_POST_ITEM_LIST = "PostItemList";
+	public const string U_NODE_FIREBASE_USER_INFO_LIST = "UserInfoList";
+	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
 
 #if FIREBASE_AUTH_ENABLE
 	// 키 {
@@ -720,21 +730,11 @@ public static partial class KCDefine {
 	// 키
 	public const string U_KEY_FIREBASE_M_SAVE_DB_CALLBACK = "FirebaseMSaveDBCallback";
 	public const string U_KEY_FIREBASE_M_LOAD_DB_CALLBACK = "FirebaseMLoadDBCallback";
-
-	// 노드
-	public const string U_NODE_FIREBASE_POST_ITEM_LIST = "PostItemList";
-	public const string U_NODE_FIREBASE_USER_INFO_LIST = "UserInfoList";
-	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
 #endif			// #if FIREBASE_DB_ENABLE
 
 #if FIREBASE_REMOTE_CONFIG_ENABLE
-	// 키 {
+	// 키
 	public const string U_KEY_FIREBASE_M_LOAD_CONFIG_CALLBACK = "FirebaseMLoadConfigCallback";
-
-	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
-	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
-	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VERSION = "BuildVersionConfig";
-	// 키 }
 #endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 
 #if FIREBASE_CLOUD_MSG_ENABLE
