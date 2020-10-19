@@ -709,11 +709,6 @@ public static partial class KCEditorDefine {
 	// 경로
 	public static readonly string B_IOS_CAPABILITY_ENTITLEMENTS_PATH = string.Format("{0}.entitlements", Application.productName);
 #endif			// #if UNITY_IOS
-
-#if NOTI_MODULE_ENABLE
-	// 경로
-	public static readonly string B_ASSET_PATH_NOTI_SETTINGS = string.Format("{0}NotificationsSettings.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
-#endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }
 #endif			// #if UNITY_EDITOR
