@@ -122,6 +122,7 @@ public static partial class KCDefine {
 	public const string B_SCENE_NAME_AGREE = "01.AgreeScene";
 	public const string B_SCENE_NAME_LATE_SETUP = "01.LateSetupScene";
 	public const string B_SCENE_NAME_INTRO = "01.IntroScene";
+	public const string B_SCENE_NAME_MENU = "01.MenuScene";
 	// 씬 이름 }
 
 	// 키
@@ -284,11 +285,4 @@ public static partial class KCDefine {
 	public static readonly string B_DATA_PATH_COMMON_USER_INFO = string.Format("{0}CommonUserInfo.bytes", KCDefine.B_DIR_PATH_WRITABLE);
 	// 경로 }
 	#endregion			// 런타임 상수
-
-	#region 조건부 상수
-#if STUDY_MODULE_ENABLE
-	// 씬 이름
-	public const string B_SCENE_NAME_MENU = "01.MenuScene";
-#endif			// #if STUDY_MODULE_ENABLE
-	#endregion			// 조건부 상수
 }

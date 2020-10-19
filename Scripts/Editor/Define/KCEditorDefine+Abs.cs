@@ -324,13 +324,11 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}T_CustomDependencies.xml.t", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}Editor/CustomDependencies.xml", KCEditorDefine.B_ABS_DIR_PATH_PLUGINS)),
 
-#if FIREBASE_REMOTE_CONFIG_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_GameConfig.json", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_DATA_PATH_G_GAME_CONFIG)),
 			
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildVersionConfig.json", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_DATA_PATH_G_BUILD_VERSION_CONFIG))
-#endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 #endif			// #if FIREBASE_MODULE_ENABLE
 	};
 	
@@ -383,11 +381,14 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Base/T_CBaseInfo.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Base/CBaseInfo.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_Func.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Function/Func.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_Access+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Access/Access+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_LogFunc.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Function/LogFunc.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_Func+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Function/Func+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_LogFunc+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Function/LogFunc+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Storage/T_CAppInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Storage/CAppInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),

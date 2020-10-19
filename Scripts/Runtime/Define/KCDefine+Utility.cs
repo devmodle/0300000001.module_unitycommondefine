@@ -568,7 +568,8 @@ public static partial class KCDefine {
 	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB";
+	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB, Screen DPI: <color=orange>{1:0.0}</color> DPI\n";
+	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_F = "Banner Ads Height: <color=orange>{0:0.0}</color> PX";
 	// 형식 }
 
 	// 이름 {
@@ -603,17 +604,23 @@ public static partial class KCDefine {
 	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 2.5f;
 	public const float U_DELTA_TIME_REWARD_ATI_UPDATE = 0.5f;
 
-	// 키
-	public const string U_KEY_FORMAT_ADS_M_BANNER_ADS_LOADER_INFO = "AdsMBannerAdsLoaderInfo_{0}";
-	public const string U_KEY_FORMAT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
-	public const string U_KEY_FORMAT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
-	
+	// 식별자
+	public const string U_TEST_ADS_ID_ADMOB_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
+	public const string U_TEST_ADS_ID_ADMOB_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
+	public const string U_TEST_ADS_ID_ADMOB_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
+
 	// 키 {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
 
+	public const string U_KEY_FORMAT_ADS_M_BANNER_ADS_LOADER_INFO = "AdsMBannerAdsLoaderInfo_{0}";
+	public const string U_KEY_FORMAT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
+	public const string U_KEY_FORMAT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
+	// 키 }
+
 #if ADMOB_ENABLE
+	// 키 {
 	public const string U_KEY_ADS_M_ADMOB_INIT_CALLBACK = "AdsMAdmobInitCallback";
 
 	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_LOAD_CALLBACK = "AdsMAdmobBannerAdsLoadCallback";
@@ -628,9 +635,11 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMAdmobFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAdmobFullscreenAdsCloseCallback";
+	// 키 }
 #endif			// #if ADMOB_ENABLE
 
 #if IRON_SOURCE_ENABLE
+	// 키 {
 	public const string U_KEY_ADS_M_IRON_SOURCE_INIT_CALLBACK = "AdsMIronSourceInitCallback";
 
 	public const string U_KEY_ADS_M_IRON_SOURCE_BANNER_ADS_LOAD_CALLBACK = "AdsMIronSourceBannerAdsLoadCallback";
@@ -643,9 +652,11 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSourceFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSourceFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSourceFullscreenAdsCloseCallback";
+	// 키 }
 #endif			// #if IRON_SOURCE_ENABLE
 
 #if APP_LOVIN_ENABLE
+	// 키 {
 	public const string U_KEY_ADS_M_APP_LOVIN_INIT_CALLBACK = "AdsMAppLovinInitCallback";
 
 	public const string U_KEY_ADS_M_APP_LOVIN_BANNER_ADS_LOAD_CALLBACK = "AdsMAppLovinBannerAdsLoadCallback";
@@ -657,19 +668,11 @@ public static partial class KCDefine {
 
 	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAppLovinFullscreenAdsCloseCallback";
-#endif			// #if APP_LOVIN_ENABLE
 	// 키 }
-
-	// 식별자 {
-#if ADMOB_ENABLE
-	public const string U_TEST_ADS_ID_ADMOB_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
-	public const string U_TEST_ADS_ID_ADMOB_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
-	public const string U_TEST_ADS_ID_ADMOB_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
-#endif			// #if ADMOB_ENABLE
-	// 식별자 }
+#endif			// #if APP_LOVIN_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
-#if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || UNITY_SERVICE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
+#if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 	// 시간
 	public const long U_TIMEOUT_FLURRY_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_SEC_TO_MILLISEC;
 
@@ -743,14 +746,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FIREBASE_M_MSG_CALLBACK = "FirebaseMMsgCallback";
 #endif			// #if FIREBASE_CLOUD_MSG_ENABLE
 #endif			// #if FIREBASE_MODULE_ENABLE
-
-#if UNITY_SERVICE_MODULE_ENABLE
-#if UNITY_SERVICE_CRASHLYTICS_ENABLE
-	// 크기
-	public const uint U_SIZE_UNITY_SERVICE_CRASH_LOG_BUFFER = 50;
-#endif			// #if UNITY_SERVICE_CRASHLYTICS_ENABLE
-#endif			// #if UNITY_SERVICE_MODULE_ENABLE
-#endif			// #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || UNITY_SERVICE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
+#endif			// #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if GAME_CENTER_MODULE_ENABLE
 	// 키
@@ -851,19 +847,13 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_MODULE_ENABLE
 
 #if FIREBASE_MODULE_ENABLE
+	// 시간
+	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_SESSION = new System.TimeSpan(0, 0, 60);
+	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG = new System.TimeSpan(0, 0, 30);
+
 	// 경로
 	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
 	public static readonly string U_DATA_PATH_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-
-#if FIREBASE_ANALYTICS_ENABLE
-	// 시간
-	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_SESSION = new System.TimeSpan(0, 0, 60);
-#endif			// #if FIREBASE_ANALYTICS_ENABLE
-
-#if FIREBASE_REMOTE_CONFIG_ENABLE
-	// 시간
-	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG = new System.TimeSpan(0, 0, 30);
-#endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if SINGULAR_MODULE_ENABLE
