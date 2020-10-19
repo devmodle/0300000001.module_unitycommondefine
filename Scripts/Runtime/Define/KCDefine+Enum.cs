@@ -41,6 +41,14 @@ public enum EUserType {
 	MAX_VALUE
 }
 
+//! 모바일 타입
+public enum EMobileType {
+	NONE = -1,
+	PHONE,
+	TABLET,
+	MAX_VALUE
+}
+
 //! 수직 동기화 타입
 public enum EVSyncType {
 	NONE = -1,

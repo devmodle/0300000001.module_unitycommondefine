@@ -21,8 +21,8 @@ public static partial class KCDefine {
 	public const int B_VALUE_INT_0 = 0;
 	public const int B_VALUE_INT_1 = 1;
 	
-	public const float B_MIN_VALUE_NORM = 0.0f;
-	public const float B_MAX_VALUE_NORM = 1.0f;
+	public const float B_VALUE_FLOAT_0 = 0.0f;
+	public const float B_VALUE_FLOAT_1 = 1.0f;
 	// 값 }
 
 	// 인덱스
@@ -79,8 +79,11 @@ public static partial class KCDefine {
 	public const string B_UNKNOWN_STRING = "Unknown";
 	public const string B_NEW_LINE_STRING = "\n";
 
-	public const string B_ZERO_STRING_INT = "0";
-	public const string B_ZERO_STRING_FLOAT = "0.0";
+	public const string B_STRING_INT_0 = "0";
+	public const string B_STRING_INT_1 = "1";
+
+	public const string B_STRING_FLOAT_0 = "0.0";
+	public const string B_STRING_FLOAT_1 = "1.0";
 
 	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STRING;
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STRING;
@@ -134,6 +137,7 @@ public static partial class KCDefine {
 	public const string B_BUILD_MODE_RELEASE = "Release";
 
 	// 명령어
+	public const string B_CMD_GET_MOBILE_TYPE = "GetMobileType";
 	public const string B_CMD_GET_DEVICE_ID = "GetDeviceID";
 	public const string B_CMD_GET_COUNTRY_CODE = "GetCountryCode";
 	public const string B_CMD_GET_STORE_VERSION = "GetStoreVersion";
