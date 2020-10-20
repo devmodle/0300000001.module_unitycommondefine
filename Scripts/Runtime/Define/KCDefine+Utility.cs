@@ -29,6 +29,10 @@ public static partial class KCDefine {
 	public const int U_MAX_LENGTH_LOG = 100000000;
 	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
 
+	// 유닛
+	public const float U_UNIT_TABLET_INCHES = 7.0f;
+	public const float U_UNIT_TABLET_ASPECT = 2.0f;
+
 	// 레이어
 	public const int U_LAYER_DEF = 0;
 	public const int U_LAYER_TRANSPARENT_FX = 1;
@@ -537,6 +541,7 @@ public static partial class KCDefine {
 
 #if HAPTIC_FEEDBACK_ENABLE
 	public const string U_MODEL_NAME_IPHONE = "iPhone";
+	public const string U_MODEL_NAME_IPAD = "iPad";
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
 	// 이름 }
 #endif			// #if UNITY_IOS

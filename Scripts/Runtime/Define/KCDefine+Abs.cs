@@ -138,7 +138,6 @@ public static partial class KCDefine {
 	public const string B_BUILD_MODE_RELEASE = "Release";
 
 	// 명령어
-	public const string B_CMD_GET_MOBILE_TYPE = "GetMobileType";
 	public const string B_CMD_GET_DEVICE_ID = "GetDeviceID";
 	public const string B_CMD_GET_COUNTRY_CODE = "GetCountryCode";
 	public const string B_CMD_GET_STORE_VERSION = "GetStoreVersion";

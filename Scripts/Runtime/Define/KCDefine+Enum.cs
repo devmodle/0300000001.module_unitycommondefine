@@ -41,8 +41,8 @@ public enum EUserType {
 	MAX_VALUE
 }
 
-//! 모바일 타입
-public enum EMobileType {
+//! 디바이스 타입
+public enum EDeviceType {
 	NONE = -1,
 	PHONE,
 	TABLET,
