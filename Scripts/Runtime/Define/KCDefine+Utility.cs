@@ -494,6 +494,7 @@ public static partial class KCDefine {
 	public const int U_SCRIPT_ORDER_SPLASH_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_ORDER_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_ORDER_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_ORDER_PERMISSION_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_ORDER_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 2;
 	// 스크립트 순서 }
 
@@ -569,14 +570,14 @@ public static partial class KCDefine {
 	public const string U_FORMAT_STATIC_DEBUG_INFO_E = "Object Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_FORMAT_STATIC_DEBUG_INFO_F = "UI Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_FORMAT_STATIC_DEBUG_INFO_G = "Object Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_H = "Safe Area: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_H = "Safe Area: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FORMAT_STATIC_DEBUG_INFO_I = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>";
 
 	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_A = "GC: <color=orange>{0:0.0}</color> MB, Used Heap: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB, Screen DPI: <color=orange>{1:0.0}</color> DPI\n";
-	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_F = "Banner Ads Height: <color=orange>{0:0.0}</color> PX";
+	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB";
 	// 형식 }
 
 	// 이름 {
