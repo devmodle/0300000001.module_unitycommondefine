@@ -161,26 +161,26 @@ public static partial class KCDefine {
 	public const string B_DIR_PATH_SPRITE_ATLASES = "SpriteAtlases/";
 	public const string B_DIR_PATH_SETTINGS = "Settings/";
 
-	public const string B_DIR_PATH_GLOBAL_BASE = "Global/";
-	public const string B_DIR_PATH_UTILITY_BASE = "Utility/";
-	public const string B_DIR_PATH_TUTORIAL_BASE = "Tutorial/";
-	public const string B_DIR_PATH_INIT_SCENE_BASE = "InitScene/";
-	public const string B_DIR_PATH_SETUP_SCENE_BASE = "SetupScene/";
-	public const string B_DIR_PATH_START_SCENE_BASE = "StartScene/";
-	public const string B_DIR_PATH_LOADING_SCENE_BASE = "LoadingScene/";
-	public const string B_DIR_PATH_SPLASH_SCENE_BASE = "SplashScene/";
-	public const string B_DIR_PATH_AGREE_SCENE_BASE = "AgreeScene/";
-	public const string B_DIR_PATH_INTRO_SCENE_BASE = "IntroScene/";
+	public const string B_DIR_PATH_GLOBAL = "Global/";
+	public const string B_DIR_PATH_UTILITY = "Utility/";
+	public const string B_DIR_PATH_TUTORIAL = "Tutorial/";
+	public const string B_DIR_PATH_INIT_SCENE = "InitScene/";
+	public const string B_DIR_PATH_SETUP_SCENE = "SetupScene/";
+	public const string B_DIR_PATH_START_SCENE = "StartScene/";
+	public const string B_DIR_PATH_LOADING_SCENE = "LoadingScene/";
+	public const string B_DIR_PATH_SPLASH_SCENE = "SplashScene/";
+	public const string B_DIR_PATH_AGREE_SCENE = "AgreeScene/";
+	public const string B_DIR_PATH_INTRO_SCENE = "IntroScene/";
 
-	public const string B_DIR_PATH_TEXT_BASE = "Text/";
-	public const string B_DIR_PATH_IMAGE_BASE = "Image/";
-	public const string B_DIR_PATH_BUTTON_BASE = "Button/";
-	public const string B_DIR_PATH_SCROLL_VIEW_BASE = "ScrollView/";
-	public const string B_DIR_PATH_POPUP_BASE = "Popup/";
-	public const string B_DIR_PATH_RESPONDER_BASE = "Responder/";
-	public const string B_DIR_PATH_SOUND_BASE = "Sound/";
-	public const string B_DIR_PATH_STRING_INFO_BASE = "StringInfo/";
-	public const string B_DIR_PATH_VALUE_INFO_BASE = "ValueInfo/";
+	public const string B_DIR_PATH_TEXT_ROOT = "Text/";
+	public const string B_DIR_PATH_IMAGE_ROOT = "Image/";
+	public const string B_DIR_PATH_BUTTON_ROOT = "Button/";
+	public const string B_DIR_PATH_SCROLL_VIEW_ROOT = "ScrollView/";
+	public const string B_DIR_PATH_POPUP_ROOT = "Popup/";
+	public const string B_DIR_PATH_RESPONDER_ROOT = "Responder/";
+	public const string B_DIR_PATH_SOUND_ROOT = "Sound/";
+	public const string B_DIR_PATH_STRING_INFO_ROOT = "StringInfo/";
+	public const string B_DIR_PATH_VALUE_INFO_ROOT = "ValueInfo/";
 	// 경로 }
 
 	// 형식 {

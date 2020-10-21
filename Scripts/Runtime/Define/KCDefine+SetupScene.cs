@@ -17,10 +17,10 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 경로
-	public static readonly string SS_OBJ_PATH_SCREEN_DEBUG_UI = string.Format("{0}{1}SS_ScreenDebugUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE_BASE);
-	public static readonly string SS_OBJ_PATH_SCREEN_POPUP_UI = string.Format("{0}{1}SS_ScreenPopupUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE_BASE);
-	public static readonly string SS_OBJ_PATH_SCREEN_TOPMOST_UI = string.Format("{0}{1}SS_ScreenTopmostUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE_BASE);
-	public static readonly string SS_OBJ_PATH_SCREEN_ABS_UI = string.Format("{0}{1}SS_ScreenAbsUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE_BASE);
+	public static readonly string SS_OBJ_PATH_SCREEN_DEBUG_UI = string.Format("{0}{1}SS_ScreenDebugUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE);
+	public static readonly string SS_OBJ_PATH_SCREEN_POPUP_UI = string.Format("{0}{1}SS_ScreenPopupUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE);
+	public static readonly string SS_OBJ_PATH_SCREEN_TOPMOST_UI = string.Format("{0}{1}SS_ScreenTopmostUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE);
+	public static readonly string SS_OBJ_PATH_SCREEN_ABS_UI = string.Format("{0}{1}SS_ScreenAbsUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_SETUP_SCENE);
 	#endregion			// 런타임 상수
 
 	#region 조건부 상수

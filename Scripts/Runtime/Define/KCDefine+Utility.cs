@@ -395,67 +395,69 @@ public static partial class KCDefine {
 	};
 
 	// 경로 {
-	public static readonly string U_OBJ_PATH_TEXT = string.Format("{0}{1}{2}U_Text", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_TEXT_BASE);
-	public static readonly string U_OBJ_PATH_TEXT_BTN = string.Format("{0}{1}{2}U_TextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
-	public static readonly string U_OBJ_PATH_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_TextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
+	public static readonly string U_OBJ_PATH_TEXT = string.Format("{0}{1}{2}U_Text", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_TEXT_ROOT);
+	public static readonly string U_OBJ_PATH_TEXT_BTN = string.Format("{0}{1}{2}U_TextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_PATH_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_TextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT = string.Format("{0}{1}{2}U_LocalizeText", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_TEXT_BASE);
-	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_LocalizeTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
-	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_LocalizeTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
+	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT = string.Format("{0}{1}{2}U_LocalizeText", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_TEXT_ROOT);
+	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_LocalizeTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_LocalizeTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_IMG = string.Format("{0}{1}{2}U_Img", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_IMAGE_BASE);
-	public static readonly string U_OBJ_PATH_RAW_IMG = string.Format("{0}{1}{2}U_RawImg", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_IMAGE_BASE);
+	public static readonly string U_OBJ_PATH_IMG = string.Format("{0}{1}{2}U_Img", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_IMAGE_ROOT);
+	public static readonly string U_OBJ_PATH_RAW_IMG = string.Format("{0}{1}{2}U_RawImg", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_IMAGE_ROOT);
 
-	public static readonly string U_OBJ_PATH_IMG_BTN = string.Format("{0}{1}{2}U_ImgBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
-	public static readonly string U_OBJ_PATH_IMG_SCALE_BTN = string.Format("{0}{1}{2}U_ImgScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
+	public static readonly string U_OBJ_PATH_IMG_BTN = string.Format("{0}{1}{2}U_ImgBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_PATH_IMG_SCALE_BTN = string.Format("{0}{1}{2}U_ImgScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_IMG_TEXT_BTN = string.Format("{0}{1}{2}U_ImgTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
-	public static readonly string U_OBJ_PATH_IMG_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
+	public static readonly string U_OBJ_PATH_IMG_TEXT_BTN = string.Format("{0}{1}{2}U_ImgTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_PATH_IMG_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_IMG_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
-	public static readonly string U_OBJ_PATH_IMG_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_BUTTON_BASE);
+	public static readonly string U_OBJ_PATH_IMG_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_PATH_IMG_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_SCROLL_VIEW = string.Format("{0}{1}{2}U_ScrollView", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_SCROLL_VIEW_BASE);
-	public static readonly string U_OBJ_PATH_PAGE_SCROLL_VIEW = string.Format("{0}{1}{2}U_PageScrollView", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_SCROLL_VIEW_BASE);
+	public static readonly string U_OBJ_PATH_SCROLL_VIEW = string.Format("{0}{1}{2}U_ScrollView", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SCROLL_VIEW_ROOT);
+	public static readonly string U_OBJ_PATH_PAGE_SCROLL_VIEW = string.Format("{0}{1}{2}U_PageScrollView", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SCROLL_VIEW_ROOT);
 
-	public static readonly string U_OBJ_PATH_ALERT_POPUP = string.Format("{0}{1}{2}U_AlertPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_POPUP_BASE);
-	public static readonly string U_OBJ_PATH_TOAST_POPUP = string.Format("{0}{1}{2}U_ToastPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_POPUP_BASE);
+	public static readonly string U_OBJ_PATH_ALERT_POPUP = string.Format("{0}{1}{2}U_AlertPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_POPUP_ROOT);
+	public static readonly string U_OBJ_PATH_TOAST_POPUP = string.Format("{0}{1}{2}U_ToastPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_POPUP_ROOT);
 
-	public static readonly string U_OBJ_PATH_DRAG_RESPONDER = string.Format("{0}{1}{2}U_DragResponder", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_RESPONDER_BASE);
-	public static readonly string U_OBJ_PATH_TOUCH_RESPONDER = string.Format("{0}{1}{2}U_TouchResponder", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_RESPONDER_BASE);
+	public static readonly string U_OBJ_PATH_DRAG_RESPONDER = string.Format("{0}{1}{2}U_DragResponder", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_RESPONDER_ROOT);
+	public static readonly string U_OBJ_PATH_TOUCH_RESPONDER = string.Format("{0}{1}{2}U_TouchResponder", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_RESPONDER_ROOT);
 
-	public static readonly string U_OBJ_PATH_BG_SND = string.Format("{0}{1}{2}U_BGSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_SOUND_BASE);
-	public static readonly string U_OBJ_PATH_FX_SND = string.Format("{0}{1}{2}U_FXSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE, KCDefine.B_DIR_PATH_SOUND_BASE);
+	public static readonly string U_OBJ_PATH_BG_SND = string.Format("{0}{1}{2}U_BGSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SOUND_ROOT);
+	public static readonly string U_OBJ_PATH_FX_SND = string.Format("{0}{1}{2}U_FXSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SOUND_ROOT);
 
-	public static readonly string U_OBJ_PATH_FPS_COUNTER = string.Format("{0}{1}U_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
-	public static readonly string U_OBJ_PATH_TIMER_MANAGER = string.Format("{0}{1}U_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+	public static readonly string U_OBJ_PATH_FPS_COUNTER = string.Format("{0}{1}U_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
+	public static readonly string U_OBJ_PATH_TIMER_MANAGER = string.Format("{0}{1}U_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 
-	public static readonly string U_OBJ_PATH_DEBUG_CONSOLE = string.Format("{0}{1}U_DebugConsole", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
-	public static readonly string U_OBJ_PATH_DEBUG_LOG_ITEM = string.Format("{0}{1}U_DebugLogItem", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+	public static readonly string U_OBJ_PATH_DEBUG_CONSOLE = string.Format("{0}{1}U_DebugConsole", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
+	public static readonly string U_OBJ_PATH_DEBUG_LOG_ITEM = string.Format("{0}{1}U_DebugLogItem", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 
-	public static readonly string U_ASSET_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_ASSET_PATH_G_BUILD_OPTS_TABLE = string.Format("{0}{1}G_BuildOptsTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_ASSET_PATH_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_ASSET_PATH_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_ASSET_PATH_G_BUILD_OPTS_TABLE = string.Format("{0}{1}G_BuildOptsTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_ASSET_PATH_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_ASSET_PATH_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	
-	public static readonly string U_ASSET_PATH_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_PATH_SETTINGS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+	public static readonly string U_ASSET_PATH_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_PATH_SETTINGS, KCDefine.B_DIR_PATH_UTILITY);
 
-	public static readonly string U_TABLE_PATH_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_VALUE_INFO_BASE);
-	public static readonly string U_TABLE_PATH_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_STRING_INFO_BASE);
+	public static readonly string U_TABLE_PATH_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_VALUE_INFO_ROOT);
+	public static readonly string U_TABLE_PATH_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_STRING_INFO_ROOT);
 
-	public static readonly string U_TABLE_PATH_FORMAT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE, KCDefine.B_DIR_PATH_STRING_INFO_BASE, KCDefine.B_FILENAME_FORMAT_LOCALIZE);
+	public static readonly string U_TABLE_PATH_FORMAT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_STRING_INFO_ROOT, KCDefine.B_FILENAME_FORMAT_LOCALIZE);
 	public static readonly string U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
 
 	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
 	public static readonly string U_TABLE_PATH_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
 	public static readonly string U_BASE_TABLE_PATH_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_PATH_G_COMMON_STRING;
 
-	public static readonly string U_SND_PATH_G_TOUCH_BEGAN = string.Format("{0}{1}G_TouchBegan", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_SND_PATH_G_TOUCH_ENDED = string.Format("{0}{1}G_TouchEnded", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_SND_PATH_G_TOUCH_BEGAN = string.Format("{0}{1}G_TouchBegan", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_SND_PATH_G_TOUCH_ENDED = string.Format("{0}{1}G_TouchEnded", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
 
-	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY_BASE);
-	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY_BASE);
+	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY);
+	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY);
+
+	public static readonly string U_IMG_PATH_WHITE = string.Format("{0}{1}UnityWhite", KCDefine.B_DIR_PATH_IMAGES, KCDefine.B_DIR_PATH_GLOBAL);
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_PATH_WRITABLE);
@@ -806,7 +808,7 @@ public static partial class KCDefine {
 	public static readonly System.Version U_MIN_VERSION_LOGIN_WITH_APPLE = new System.Version(13, 0, 0);
 
 	// 경로
-	public static readonly string U_OBJ_PATH_LOGIN_WITH_APPLE = string.Format("{0}{1}U_LogInWithApple", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+	public static readonly string U_OBJ_PATH_LOGIN_WITH_APPLE = string.Format("{0}{1}U_LogInWithApple", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 
 #if HAPTIC_FEEDBACK_ENABLE
 	// 햅틱 피드백 지원 모델
@@ -841,7 +843,7 @@ public static partial class KCDefine {
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 	// 경로
-	public static readonly string U_ASSET_PATH_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 #endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if FACEBOOK_MODULE_ENABLE
@@ -857,19 +859,19 @@ public static partial class KCDefine {
 	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG = new System.TimeSpan(0, 0, 30);
 
 	// 경로
-	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
-	public static readonly string U_DATA_PATH_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_DATA_PATH_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL);
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if SINGULAR_MODULE_ENABLE
 	// 경로
-	public static readonly string U_OBJ_PATH_SINGULAR_SDK = string.Format("{0}{1}U_SingularSDK", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY_BASE);
+	public static readonly string U_OBJ_PATH_SINGULAR_SDK = string.Format("{0}{1}U_SingularSDK", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 #endif			// #if SINGULAR_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
 	// 경로
 	public static readonly string U_DATA_PATH_PURCHASE_M_PRODUCT_ID_LIST = string.Format("{0}PurchaseProductIDList.bytes", KCDefine.B_DIR_PATH_WRITABLE);
-	public static readonly string U_ASSET_PATH_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL_BASE);
+	public static readonly string U_ASSET_PATH_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 #endif			// #if PURCHASE_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }
