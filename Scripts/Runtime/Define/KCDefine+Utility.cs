@@ -609,7 +609,7 @@ public static partial class KCDefine {
 
 #if ADS_MODULE_ENABLE
 	// 시간
-	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 2.5f;
+	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 5.0f;
 	public const float U_DELTA_TIME_REWARD_ATI_UPDATE = 0.5f;
 
 	// 식별자
@@ -779,8 +779,8 @@ public static partial class KCDefine {
 
 #if NOTI_MODULE_ENABLE
 	// 시간
-	public const float U_DELTA_TIME_LOCAL_NM_REQUEST_CHECK = 0.15f;
-	public const float U_MAX_DELTA_TIME_LOCAL_NM_REQUEST_CHECK = KCDefine.B_DELTA_TIME_INFINITE;
+	public const float U_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.15f;
+	public const float U_MAX_DELTA_TIME_NOTI_M_REQUEST_CHECK = KCDefine.B_DELTA_TIME_INFINITE;
 
 	// 그룹
 	public const string U_DEF_GROUP_ID_NOTI = "DefNotiGroup";
