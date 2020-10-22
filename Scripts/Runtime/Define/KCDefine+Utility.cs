@@ -314,8 +314,13 @@ public static partial class KCDefine {
 	public static readonly Color U_DEF_COLOR_BLIND_UI = Color.black;
 	
 	public static readonly Color U_DEF_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
-	public static readonly Color U_DEF_COLOR_CAMERA_BG = Color.black;
 	public static readonly Color U_DEF_COLOR_ACTIVITY_INDICATOR_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
+
+#if UNITY_EDITOR
+	public static readonly Color U_DEF_COLOR_CAMERA_BG = new Color(0.35f, 0.35f, 0.35f, 1.0f);
+#else
+	public static readonly Color U_DEF_COLOR_CAMERA_BG = Color.black;
+#endif			// #if UNITY_EDITOR
 	// 색상 }
 
 	// 위치
@@ -438,7 +443,8 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
-	
+
+	public static readonly string U_ASSET_PATH_G_SPRITE_ATLAS_01 = string.Format("{0}{1}G_SpriteAtlas_01", KCDefine.B_DIR_PATH_SPRITE_ATLASES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_PATH_SETTINGS, KCDefine.B_DIR_PATH_UTILITY);
 
 	public static readonly string U_TABLE_PATH_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_VALUE_INFO_ROOT);

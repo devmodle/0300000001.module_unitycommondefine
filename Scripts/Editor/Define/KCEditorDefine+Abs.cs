@@ -292,6 +292,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_PATH_PREFAB_TEMPLATES = string.Format("{0}Prefabs/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES = string.Format("{0}Scriptables/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
+	public static readonly string B_ABS_DIR_PATH_SPRITE_ATLAS_TEMPLATES = string.Format("{0}SpriteAtlases/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_TABLE_TEMPLATES = string.Format("{0}Tables/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 
 	public static readonly string B_DIR_PATH_SCENES = string.Format("{0}01.UnityProject/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
@@ -530,7 +531,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_ENGLISH_COMMON_STRING))
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_SCRIPTABLE_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PATH_ASSET_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_BUILD_INFO_TABLE)),
 			
@@ -545,6 +546,9 @@ public static partial class KCEditorDefine {
 		
 		new KeyValuePair<string, string>(string.Format("{0}T_ProjInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_PROJ_INFO_TABLE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}T_SpriteAtlas_01.spriteatlas.t", KCEditorDefine.B_ABS_DIR_PATH_SPRITE_ATLAS_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.spriteatlas", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_SPRITE_ATLAS_01)),
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_PluginInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
