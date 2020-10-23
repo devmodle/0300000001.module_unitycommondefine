@@ -314,7 +314,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_DATA_PATH_UNITY_PKGS = string.Format("{0}manifest.json", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	
-	public static readonly KeyValuePair<string, string>[] B_PATH_DATA_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PATH_DATA_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_README.md", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}01.UnityProject/README.md", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
@@ -336,7 +336,7 @@ public static partial class KCEditorDefine {
 #endif			// #if FIREBASE_MODULE_ENABLE
 	};
 	
-	public static readonly KeyValuePair<string, string>[] B_PATH_SCRIPT_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PATH_SCRIPT_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}Editor/Define/T_KEditorDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/Global/Define/KEditorDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
@@ -448,7 +448,7 @@ public static partial class KCEditorDefine {
 #endif			// #if STUDY_MODULE_ENABLE
 	};
 	
-	public static readonly KeyValuePair<string, string>[] B_PATH_PREFAB_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PATH_PREFAB_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_Text.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_TEXT_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TEXT)),
 
@@ -534,7 +534,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}.UnityModule.Common.Externals/Resources/{1}.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.U_OBJ_PATH_DEBUG_LOG_ITEM))
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_TABLE_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PATH_TABLE_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_ValueTable_Common.csv", KCEditorDefine.B_ABS_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_VALUE_INFO_ROOT),
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_COMMON_VALUE)),
 			
@@ -548,7 +548,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_ENGLISH_COMMON_STRING))
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_ASSET_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PATH_ASSET_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_BUILD_INFO_TABLE)),
 			
@@ -578,7 +578,7 @@ public static partial class KCEditorDefine {
 #endif			// #if PURCHASE_MODULE_ENABLE
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_SCENE_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PATH_SCENE_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_INIT)),
 
@@ -612,7 +612,7 @@ public static partial class KCEditorDefine {
 #endif			// #if STUDY_MODULE_ENABLE
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_ASSEMBLY_DEFINITION_FILEPATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PATH_ASSEMBLY_DEFINITION_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Ads/Templates/T_UnityModule.IronSource.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
 			string.Format("{0}IronSource/UnityModule.IronSource.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
