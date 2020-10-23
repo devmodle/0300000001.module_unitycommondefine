@@ -21,9 +21,12 @@ using Unity.Notifications.Android;
 //! 유틸리티 상수
 public static partial class KCDefine {
 	#region 기본
-	// 개수
+	// 개수 {
+	public const int U_DEF_NUM_OBJS = 5;
+
 	public const int U_MAX_NUM_LAYERS = 32;
 	public const int U_MAX_NUM_DUPLICATE_FX_SNDS = 10;
+	// 개수 }
 
 	// 길이
 	public const int U_MAX_LENGTH_LOG = 100000000;
@@ -880,5 +883,10 @@ public static partial class KCDefine {
 	public static readonly string U_DATA_PATH_PURCHASE_M_PRODUCT_ID_LIST = string.Format("{0}PurchaseProductIDList.bytes", KCDefine.B_DIR_PATH_WRITABLE);
 	public static readonly string U_ASSET_PATH_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 #endif			// #if PURCHASE_MODULE_ENABLE
+
+#if WAVE_ANI_ENABLE
+	// 경로
+	public static readonly string U_OBJ_PATH_WAVE = string.Format("{0}{1}U_Wave", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
+#endif			// #if WAVE_ANI_ENABLE
 	#endregion			// 조건부 런타임 상수
 }

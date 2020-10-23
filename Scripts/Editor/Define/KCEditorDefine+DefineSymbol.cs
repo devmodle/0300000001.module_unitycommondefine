@@ -20,6 +20,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_CUSTOM_CAMERA_POS_ENABLE = "CUSTOM_CAMERA_POS_ENABLE";
 	public const string DS_DEFINE_S_AUTO_LOG_PARAMS_ENABLE = "AUTO_LOG_PARAMS_ENABLE";
 	public const string DS_DEFINE_S_LZ4_COMPRESS_ENABLE = "LZ4_COMPRESS_ENABLE";
+	public const string DS_DEFINE_S_WAVE_ANI_ENABLE = "WAVE_ANI_ENABLE";
 
 	// 배포
 	public const string DS_DEFINE_S_ADHOC_BUILD = "ADHOC_BUILD";
