@@ -558,7 +558,7 @@ public static partial class KCDefine {
 #if UNITY_ANDROID
 	// 시간
 	public const float U_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 0.25f;
-	public const float U_MAX_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 30.0f;
+	public const float U_MAX_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 2.5f;
 #endif			// #if UNITY_ANDROID
 
 #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
