@@ -435,11 +435,13 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_PATH_BG_SND = string.Format("{0}{1}{2}U_BGSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SOUND_ROOT);
 	public static readonly string U_OBJ_PATH_FX_SND = string.Format("{0}{1}{2}U_FXSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SOUND_ROOT);
 
-	public static readonly string U_OBJ_PATH_FPS_COUNTER = string.Format("{0}{1}U_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
-	public static readonly string U_OBJ_PATH_TIMER_MANAGER = string.Format("{0}{1}U_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
+	public static readonly string U_OBJ_PATH_WAVE = string.Format("{0}{1}{2}U_Wave", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
 
-	public static readonly string U_OBJ_PATH_DEBUG_CONSOLE = string.Format("{0}{1}U_DebugConsole", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
-	public static readonly string U_OBJ_PATH_DEBUG_LOG_ITEM = string.Format("{0}{1}U_DebugLogItem", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
+	public static readonly string U_OBJ_PATH_FPS_COUNTER = string.Format("{0}{1}{2}U_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_PATH_TIMER_MANAGER = string.Format("{0}{1}{2}U_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
+
+	public static readonly string U_OBJ_PATH_DEBUG_CONSOLE = string.Format("{0}{1}{2}U_DebugConsole", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_PATH_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}U_DebugLogItem", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
 
 	public static readonly string U_ASSET_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_G_BUILD_OPTS_TABLE = string.Format("{0}{1}G_BuildOptsTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
@@ -883,10 +885,5 @@ public static partial class KCDefine {
 	public static readonly string U_DATA_PATH_PURCHASE_M_PRODUCT_ID_LIST = string.Format("{0}PurchaseProductIDList.bytes", KCDefine.B_DIR_PATH_WRITABLE);
 	public static readonly string U_ASSET_PATH_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 #endif			// #if PURCHASE_MODULE_ENABLE
-
-#if WAVE_ANI_ENABLE
-	// 경로
-	public static readonly string U_OBJ_PATH_WAVE = string.Format("{0}{1}U_Wave", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
-#endif			// #if WAVE_ANI_ENABLE
 	#endregion			// 조건부 런타임 상수
 }

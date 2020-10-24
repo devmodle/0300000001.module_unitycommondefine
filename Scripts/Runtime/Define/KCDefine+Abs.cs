@@ -180,6 +180,7 @@ public static partial class KCDefine {
 	public const string B_DIR_PATH_POPUP_ROOT = "Popup/";
 	public const string B_DIR_PATH_RESPONDER_ROOT = "Responder/";
 	public const string B_DIR_PATH_SOUND_ROOT = "Sound/";
+	public const string B_DIR_PATH_EXTERNAL_ROOT = "External/";
 	public const string B_DIR_PATH_STRING_INFO_ROOT = "StringInfo/";
 	public const string B_DIR_PATH_VALUE_INFO_ROOT = "ValueInfo/";
 	// 경로 }
