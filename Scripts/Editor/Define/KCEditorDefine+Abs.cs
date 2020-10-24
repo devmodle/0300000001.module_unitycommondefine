@@ -521,6 +521,9 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_LoadingImgObj.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_START_SCENE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.SS_OBJ_PATH_LOADING_IMG_OBJ)),
 
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/UITween/Prefabs/Click Effect Pref/ClickedRound.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_WAVE)),
+
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_FPS_COUNTER)),
 
@@ -531,12 +534,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DEBUG_CONSOLE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DEBUG_LOG_ITEM)),
-
-#if WAVE_ANI_ENABLE
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/UITween/Prefabs/Click Effect Pref/ClickedRound.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_WAVE))
-#endif			// #if WAVE_ANI_ENABLE
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DEBUG_LOG_ITEM))
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_PATH_TABLE_PATH_INFOS = new KeyValuePair<string, string>[] {
