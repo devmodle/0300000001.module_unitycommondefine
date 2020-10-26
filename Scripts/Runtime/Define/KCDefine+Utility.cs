@@ -95,7 +95,7 @@ public static partial class KCDefine {
 	public const float U_DEF_DURATION_HEAVY_VIBRATE = 0.15f;
 
 	public const float U_DELAY_INIT = 0.15f;
-	public const float U_DELAY_NEXT_SCENE_LOAD = 1.5f;
+	public const float U_DELAY_NEXT_SCENE_LOAD = 0.75f;
 	public const float U_DEF_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_TIME_INTERMEDIATE;
 
 	public const float U_DEF_TIMEOUT_ASYNC_TASK = 30.0f;
@@ -468,7 +468,8 @@ public static partial class KCDefine {
 	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY);
 	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY);
 
-	public static readonly string U_IMG_PATH_WHITE = string.Format("{0}{1}UnityWhite", KCDefine.B_DIR_PATH_IMAGES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_IMG_PATH_G_SPLASH = string.Format("{0}{1}G_Splash", KCDefine.B_DIR_PATH_IMAGES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_IMG_PATH_G_WHITE = string.Format("{0}{1}G_UnityWhite", KCDefine.B_DIR_PATH_IMAGES, KCDefine.B_DIR_PATH_GLOBAL);
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_PATH_WRITABLE);

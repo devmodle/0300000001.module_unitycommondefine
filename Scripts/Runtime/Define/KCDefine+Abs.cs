@@ -201,7 +201,7 @@ public static partial class KCDefine {
 
 	// URL
 	public const string B_MAIL_URL_FORMAT = "mailto:{0}?subject={1}&body={2}";
-	public const string B_MAIL_URL_MSG_FORMAT = "Platform: {0}\nProcessor: {1}\nGraphics: {2} [{3}]\nOS: {4}\n\nPlease enter your inquiry: \n{5}";
+	public const string B_MAIL_URL_MSG_FORMAT = "Platform: {0}\nProcessor: {1}\nGraphics: {2} [{3}]\nOS: {4}\n\nPlease enter your inquiry: \n{5}\n\n";
 	#endregion			// 기본
 
 	#region 런타임 상수
