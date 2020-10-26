@@ -70,6 +70,7 @@ public static partial class KCDefine {
 	public const int B_DEF_TARGET_FRAME_RATE = 30;
 
 	public const float B_DEF_DPI = 160.0f;
+	public const float B_EDITOR_DPI = 320.0f;
 	public const float B_DEF_FIXED_DELTA_TIME = 0.02f;
 
 	public const float B_WORLD_SCREEN_WIDTH = KCDefine.B_SCREEN_WIDTH * KCDefine.B_UNIT_SCALE;
@@ -92,24 +93,24 @@ public static partial class KCDefine {
 	public const string B_VERSION_STRING_FORMAT = "Ver.{0}";
 	// 디바이스 }
 
-	// 국가 코드 {
+	// 국가 코드
 	public const string B_KOREA_COUNTRY_CODE = "KR";
 	public const string B_UNKNOWN_COUNTRY_CODE = "Unknown";
-	// 국가 코드 }
 
-	// 이름 {
+	// 플랫폼 {
+	public const string B_PLATFORM_MAC = "Mac";
+	public const string B_PLATFORM_WINDOWS = "Windows";
+
+	public const string B_PLATFORM_IOS = "iOS";
+	public const string B_PLATFORM_ANDROID = "Android";
+
+	public const string B_PLATFORM_GOOGLE = "Google";
+	public const string B_PLATFORM_ONE_STORE = "OneStore";
+	public const string B_PLATFORM_GALAXY_STORE = "GalaxyStore";
+	// 플랫폼 }
+
+	// 이름
 	public const string B_DIR_NAME_BACKUP = "Backup";
-
-	public const string B_PLATFORM_NAME_MAC = "Mac";
-	public const string B_PLATFORM_NAME_WINDOWS = "Windows";
-
-	public const string B_PLATFORM_NAME_IOS = "iOS";
-	public const string B_PLATFORM_NAME_ANDROID = "Android";
-
-	public const string B_PLATFORM_NAME_GOOGLE = "Google";
-	public const string B_PLATFORM_NAME_ONE_STORE = "OneStore";
-	public const string B_PLATFORM_NAME_GALAXY_STORE = "GalaxyStore";
-	// 이름 }
 
 	// 씬 이름 {
 	public const string B_SCENE_NAME_SAMPLE = "SampleScene";
@@ -200,6 +201,7 @@ public static partial class KCDefine {
 
 	// URL
 	public const string B_MAIL_URL_FORMAT = "mailto:{0}?subject={1}&body={2}";
+	public const string B_MAIL_URL_MSG_FORMAT = "Platform: {0}\nProcessor: {1}\nGraphics: {2} [{3}]\nOS: {4}\n\nPlease enter your inquiry: \n{5}";
 	#endregion			// 기본
 
 	#region 런타임 상수
