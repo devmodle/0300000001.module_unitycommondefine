@@ -12,6 +12,14 @@ public enum EMouseBtn {
 	MAX_VALUE
 }
 
+//! 방향
+public enum EOrientation {
+	NONE = -1,
+	PORTRAIT,
+	LANDSCAPE,
+	MAX_VALUE
+}
+
 //! 스크롤 방향
 public enum EScrollDirection {
 	NONE = -1,

@@ -139,15 +139,23 @@ public static partial class KCDefine {
 	public const string B_BUILD_MODE_DEBUG = "Debug";
 	public const string B_BUILD_MODE_RELEASE = "Release";
 
-	// 명령어
+	// 명령어 {
+	public const string B_CMD_INIT = "Init";
+
 	public const string B_CMD_GET_DEVICE_ID = "GetDeviceID";
 	public const string B_CMD_GET_COUNTRY_CODE = "GetCountryCode";
 	public const string B_CMD_GET_STORE_VERSION = "GetStoreVersion";
-	public const string B_CMD_SET_BUILD_MODE = "SetBuildMode";
+
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
+
 	public const string B_CMD_VIBRATE = "Vibrate";
 	public const string B_CMD_ACTIVITY_INDICATOR = "ActivityIndicator";
+
+	public const string B_CMD_SETUP_ADS = "SetupAds";
+	public const string B_CMD_LOAD_RESUME_ADS = "LoadResumeAds";
+	public const string B_CMD_SHOW_RESUME_ADS = "ShowResumeAds";
+	// 명령어 }
 
 	// 경로 {
 	public const string B_DIR_PATH_FONTS = "Fonts/";

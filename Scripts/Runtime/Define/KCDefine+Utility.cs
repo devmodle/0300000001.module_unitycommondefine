@@ -186,6 +186,9 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_VERSION = "Version";
 	public const string U_KEY_UNITY_MS_TIMEOUT = "Timeout";
 
+	public const string U_KEY_UNITY_MS_BUILD_MODE = "BuildMode";
+	public const string U_KEY_UNITY_MS_ORIENTATION = "Orientation";
+
 	public const string U_KEY_UNITY_MS_ALERT_TITLE = KCDefine.U_KEY_ALERT_P_TITLE;
 	public const string U_KEY_UNITY_MS_ALERT_MSG = KCDefine.U_KEY_ALERT_P_MSG;
 	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = KCDefine.U_KEY_ALERT_P_OK_BTN_TEXT;
@@ -195,6 +198,9 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_VIBRATE_STYLE = "Style";
 	public const string U_KEY_UNITY_MS_VIBRATE_DURATION = "Duration";
 	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
+
+	public const string U_KEY_UNITY_MS_ADMOB_IDS = "AdmobIDs";
+	public const string U_KEY_UNITY_MS_RESUME_ADS_ID = "ResumeAdsID";
 
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
 	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
@@ -628,6 +634,7 @@ public static partial class KCDefine {
 	public const string U_TEST_ADS_ID_ADMOB_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
 	public const string U_TEST_ADS_ID_ADMOB_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
 	public const string U_TEST_ADS_ID_ADMOB_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
+	public const string U_TEST_ADS_ID_ADMOB_RESUME_ADS = "ca-app-pub-3940256099942544/1033173712";
 
 	// 키 {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
