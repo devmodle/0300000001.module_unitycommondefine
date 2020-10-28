@@ -152,7 +152,7 @@ public static partial class KCDefine {
 	public const string B_CMD_VIBRATE = "Vibrate";
 	public const string B_CMD_ACTIVITY_INDICATOR = "ActivityIndicator";
 
-	public const string B_CMD_SETUP_ADS = "SetupAds";
+	public const string B_CMD_INIT_ADS = "InitAds";
 	public const string B_CMD_LOAD_RESUME_ADS = "LoadResumeAds";
 	public const string B_CMD_SHOW_RESUME_ADS = "ShowResumeAds";
 	// 명령어 }
