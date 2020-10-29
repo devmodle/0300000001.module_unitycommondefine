@@ -276,6 +276,10 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_PATH_FILTER_DEBUG_CONSOLE = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_PATH_AUTO_CREATE_RESES, KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 	public static readonly string B_DIR_PATH_FILTER_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_PATH_AUTO_CREATE_RESES, KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 
+	public static readonly string B_DIR_PATH_SCENES = string.Format("{0}01.UnityProject/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
+	public static readonly string B_DIR_PATH_AUTO_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
+	public static readonly string B_DIR_PATH_EDITOR_SCENES = string.Format("{0}01.UnityProject_Editor/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
+
 	public static readonly string B_ABS_DIR_PATH_ASSETS = string.Format("{0}/", Application.dataPath);
 	public static readonly string B_ABS_DIR_PATH_PACKAGES = string.Format("{0}../Packages/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
 	public static readonly string B_ABS_DIR_PATH_UNITY_ENGINE = string.Format("{0}/", EditorApplication.applicationPath);
@@ -297,10 +301,6 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABS_DIR_PATH_STUDY_TEMPLATES = string.Format("{0}.UnityModule.Study/Templates/", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ABS_DIR_PATH_STUDY_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABS_DIR_PATH_STUDY_TEMPLATES);
-
-	public static readonly string B_DIR_PATH_SCENES = string.Format("{0}01.UnityProject/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
-	public static readonly string B_DIR_PATH_AUTO_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
-	public static readonly string B_DIR_PATH_EDITOR_SCENES = string.Format("{0}01.UnityProject_Editor/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
 
 	public static readonly string B_ASSET_PATH_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
 	public static readonly string B_ASSET_PATH_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
@@ -671,6 +671,7 @@ public static partial class KCEditorDefine {
 
 	// iOS {
 	public static readonly string B_IOS_ABS_BUILD_PATH = string.Format("{0}../Builds/iOS", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
+	public static readonly string B_IOS_PLUGIN_PROJ_PTH = string.Format("{0}../PluginProjects/iOS", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
 
 	public static readonly string B_IOS_SRC_PLUGIN_PATH = string.Format("{0}../PluginProjects/iOS/Classes/Plugin/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
 	public static readonly string B_IOS_DEST_PLUGIN_PATH = string.Format("{0}CustomiOSPlugin/", KCEditorDefine.B_ABS_DIR_PATH_IOS_PLUGINS);
@@ -683,6 +684,9 @@ public static partial class KCEditorDefine {
 	// 안드로이드 {
 	public static readonly string B_ANDROID_SRC_LIBRARY_PATH = string.Format("{0}../Temp/StagingArea/libs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
 	public static readonly string B_ANDROID_ABS_BUILD_PATH_FORMAT = string.Format("{0}../Builds/Android/{1}", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, "{0}");
+
+	public static readonly string B_ANDROID_PLUGIN_PROJ_PATH = string.Format("{0}../PluginProjects/Android", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
+	public static readonly string B_ANDROID_PLUGIN_BUILD_CMD = string.Format("cd {0};./gradlew exportLibrary", KCEditorDefine.B_ANDROID_PLUGIN_PROJ_PATH);
 
 	public static readonly string B_ANDROID_SRC_PLUGIN_PATH = string.Format("{0}../PluginProjects/Android/app/build/outputs/aar/app-release.aar", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
 	public static readonly string B_ANDROID_DEST_PLUGIN_PATH = string.Format("{0}CustomAndroidPlugin.aar", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
