@@ -49,7 +49,7 @@ public static partial class KCDefine {
 	// 시간 {
 	public const float B_DELTA_TIME_INFINITE = float.MaxValue;
 	public const float B_DELTA_TIME_INTERMEDIATE = float.Epsilon;
-	public const float B_DELTA_TIME_ASYNC_OPERATION = 0.15f;
+	public const float B_DELTA_TIME_ASYNC_OPERATION = 0.25f;
 
 	public const double B_DELTA_TIME_UTC_TO_PST = -8.0;
 	// 시간 }
