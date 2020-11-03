@@ -283,7 +283,7 @@ public static partial class KCDefine {
 	// 국가 코드
 	public static readonly string[] B_EUROPEAN_UNION_COUNTRY_CODES = new string[] {
 		"BE", "BG", "CZ", "DK", "DE", "EE", "IE", 
-		"EL", "ES", "FR", "HR", "IT", "CY", "LV", 
+		"GR", "ES", "FR", "HR", "IT", "CY", "LV", 
 		"LT", "LU", "HU", "MT", "NL", "AT", "PL", 
 		"PT", "RO", "SI", "SK", "FI", "SE"
 	};
