@@ -256,7 +256,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_NAME_TOP_BLIND_IMG = "TopBlindImg";
 	public const string U_OBJ_NAME_BOTTOM_BLIND_IMG = "BottomBlindImg";
 
-	public const string U_OBJ_NAME_POPUP_CONTENT_ROOT = "Contents";
+	public const string U_OBJ_NAME_POPUP_CONTENTS = "Contents";
 	public const string U_OBJ_NAME_POPUP_CLOSE_BTN = "CloseBtn";
 	public const string U_OBJ_NAME_FORMAT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
@@ -317,8 +317,8 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
 	public static readonly Color U_DEF_COLOR_NORM = Color.white;
-	public static readonly Color U_DEF_COLOR_SELECT = new Color(0.5f, 0.5f, 0.5f, 1.0f);
-	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.25f, 0.25f, 0.25f, 1.0f);
+	public static readonly Color U_DEF_COLOR_SELECT = new Color(0.75f, 0.75f, 0.75f, 1.0f);
+	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.35f, 0.35f, 0.35f, 1.0f);
 
 	public static readonly Color U_DEF_COLOR_BLIND_UI = Color.black;
 	
@@ -630,17 +630,11 @@ public static partial class KCDefine {
 	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 5.0f;
 	public const float U_DELTA_TIME_REWARD_ATI_UPDATE = 0.5f;
 
-	// 식별자 {
+	// 식별자
 	public const string U_TEST_ADS_ID_ADMOB_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
 	public const string U_TEST_ADS_ID_ADMOB_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
 	public const string U_TEST_ADS_ID_ADMOB_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
-
-#if UNITY_IOS
-	public const string U_TEST_ADS_ID_ADMOB_RESUME_ADS = "ca-app-pub-3940256099942544/5662855259";
-#else
 	public const string U_TEST_ADS_ID_ADMOB_RESUME_ADS = "ca-app-pub-3940256099942544/1033173712";
-#endif			// #if UNITY_IOS
-	// 식별자 }
 
 	// 키 {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
@@ -811,7 +805,7 @@ public static partial class KCDefine {
 #if NOTI_MODULE_ENABLE
 	// 시간
 	public const float U_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.15f;
-	public const float U_MAX_DELTA_TIME_NOTI_M_REQUEST_CHECK = KCDefine.B_DELTA_TIME_INFINITE;
+	public const float U_MAX_DELTA_TIME_NOTI_M_REQUEST_CHECK = 2.5f;
 
 	// 그룹
 	public const string U_DEF_GROUP_ID_NOTI = "DefNotiGroup";

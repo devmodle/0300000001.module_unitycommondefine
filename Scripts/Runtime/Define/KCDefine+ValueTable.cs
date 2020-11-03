@@ -31,5 +31,6 @@ public static partial class KCDefine {
 
 	// 게임 정보 저장소
 	public const string VT_KEY_DEF_DELAY_FULLSCREEN_ADS = "DEF_DELAY_FULLSCREEN_ADS";
+	public const string VT_KEY_DEF_DELAY_RESUME_ADS = "DEF_DELAY_RESUME_ADS";
 	#endregion			// 기본
 }
