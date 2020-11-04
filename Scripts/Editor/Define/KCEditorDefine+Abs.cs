@@ -318,8 +318,8 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}T_README.md", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}01.UnityProject/README.md", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}T_Service_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_SERVICE_TEXT)),
+		new KeyValuePair<string, string>(string.Format("{0}T_Services_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_SERVICES_TEXT)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_Privacy_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
 			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_PRIVACY_TEXT)),
