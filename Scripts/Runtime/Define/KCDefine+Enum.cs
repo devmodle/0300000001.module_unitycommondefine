@@ -113,6 +113,14 @@ public enum EStartSceneEvent {
 	LOAD_INTRO_SCENE,
 	MAX_VALUE
 }
+
+//! 약관 동의 팝업 타입
+public enum EAgreePopupType {
+	NONE = -1,
+	NORM,
+	EU,
+	MAX_VALUE
+}
 #endregion			// 기본
 
 #region 조건부 상수

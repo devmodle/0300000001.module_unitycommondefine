@@ -281,7 +281,7 @@ public static partial class KCDefine {
 	// 월드 위치 }
 
 	// 국가 코드
-	public static readonly string[] B_EUROPEAN_UNION_COUNTRY_CODES = new string[] {
+	public static readonly string[] B_EU_COUNTRY_CODES = new string[] {
 		"BE", "BG", "CZ", "DK", "DE", "EE", "IE", 
 		"GR", "ES", "FR", "HR", "IT", "CY", "LV", 
 		"LT", "LU", "HU", "MT", "NL", "AT", "PL", 

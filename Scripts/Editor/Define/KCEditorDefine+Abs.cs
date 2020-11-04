@@ -319,10 +319,10 @@ public static partial class KCEditorDefine {
 			string.Format("{0}01.UnityProject/README.md", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_Services_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_SERVICES_TEXT)),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_SERVICES)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_Privacy_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_PRIVACY_TEXT)),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_PRIVACY)),
 
 #if FIREBASE_MODULE_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_CustomDependencies.xml.t", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
@@ -502,6 +502,9 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_TouchResponder.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TOUCH_RESPONDER)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_AgreePopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_OBJ_PATH_AGREE_POPUP)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_AlertPopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_ALERT_POPUP)),
