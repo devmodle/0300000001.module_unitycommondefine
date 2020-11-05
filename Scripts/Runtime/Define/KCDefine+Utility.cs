@@ -705,10 +705,7 @@ public static partial class KCDefine {
 #endif			// #if APP_LOVIN_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
-#if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
-	// 시간
-	public const long U_TIMEOUT_FLURRY_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_SEC_TO_MILLISEC;
-
+#if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || UNITY_SERVICES_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 	// 이름
 	public const string U_LOG_NAME_APP_LAUNCH = "AppLaunch";
 
@@ -729,6 +726,19 @@ public static partial class KCDefine {
 	public const string U_LOG_KEY_PARAM_E = "ParamE";
 	public const string U_LOG_KEY_PARAM_F = "ParamF";
 	// 키 }
+
+#if FLURRY_MODULE_ENABLE
+	// 시간
+	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_SEC_TO_MILLISEC;
+
+	// 키
+	public const string U_KEY_FLURRY_M_INIT_CALLBACK = "FlurryMInitCallback";
+#endif			// #if FLURRY_MODULE_ENABLE
+
+#if TENJIN_MODULE_ENABLE
+	// 키
+	public const string U_KEY_TENJIN_M_INIT_CALLBACK = "TenjinMInitCallback";
+#endif			// #if TENJIN_MODULE_ENABLE
 	
 #if FACEBOOK_MODULE_ENABLE
 	// 키
@@ -779,10 +789,21 @@ public static partial class KCDefine {
 	public const string U_KEY_FIREBASE_M_MSG_CALLBACK = "FirebaseMMsgCallback";
 #endif			// #if FIREBASE_CLOUD_MSG_ENABLE
 #endif			// #if FIREBASE_MODULE_ENABLE
-#endif			// #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
+
+#if UNITY_SERVICES_MODULE_ENABLE
+	// 키
+	public const string U_KEY_UNITY_SM_INIT_CALLBACK = "UnitySMInitCallback";
+#endif			// #if UNITY_SERVICES_MODULE_ENABLE
+
+#if SINGULAR_MODULE_ENABLE
+	// 키
+	public const string U_KEY_SINGULAR_M_INIT_CALLBACK = "SingularMInitCallback";
+#endif			// #if SINGULAR_MODULE_ENABLE
+#endif			// #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || UNITY_SERVICES_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if GAME_CENTER_MODULE_ENABLE
 	// 키
+	public const string U_KEY_GAME_CM_INIT_CALLBACK = "GameCMInitCallback";
 	public const string U_KEY_GAME_CM_LOGIN_CALLBACK = "GameCMLoginCallback";
 	public const string U_KEY_GAME_CM_LOAD_SCORES_CALLBACK = "GameCMLoadScoresCallback";
 	public const string U_KEY_GAME_CM_UPDATE_SCORE_CALLBACK = "GameCMUpdateScoreCallback";
@@ -796,16 +817,24 @@ public static partial class KCDefine {
 	// 메세지
 	public const string U_MSG_INVALID_PRODUCT_TYPE = "해당 상품 타입을 지원하지않습니다.";
 
-	// 키
+	// 키 {
+	public const string U_KEY_PURCHASE_M_INIT_CALLBACK = "PurchaseMInitCallback";
+	public const string U_KEY_PURCHASE_M_INIT_FAIL_CALLBACK = "PurchaseMInitFailCallback";
+	public const string U_KEY_PURCHASE_M_PURCHASE_FAIL_CALLBACK = "PurchaseMPurchaseFailCallback";
+
 	public const string U_KEY_PURCHASE_M_CONFIRM_CALLBACK = "PurchaseMConfirmCallback";
 	public const string U_KEY_PURCHASE_M_RESTORE_CALLBACK = "PurchaseMRestoreCallback";
 	public const string U_KEY_PURCHASE_M_PURCHASE_RESULT_CALLBACK = "PurchaseMPurchaseResultCallback";
+	// 키 }
 #endif			// #if PURCHASE_MODULE_ENABLE
 
 #if NOTI_MODULE_ENABLE
 	// 시간
 	public const float U_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.15f;
 	public const float U_MAX_DELTA_TIME_NOTI_M_REQUEST_CHECK = 2.5f;
+
+	// 키
+	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
 
 	// 그룹
 	public const string U_DEF_GROUP_ID_NOTI = "DefNotiGroup";

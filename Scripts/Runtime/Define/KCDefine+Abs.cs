@@ -54,9 +54,12 @@ public static partial class KCDefine {
 	public const double B_DELTA_TIME_UTC_TO_PST = -8.0;
 	// 시간 }
 
-	// 플래그
+	// 플래그 {
 	public const BindingFlags B_BINDING_FLAG_PUBLIC_INSTANCE = BindingFlags.Public | BindingFlags.Instance;
+
+	public const BindingFlags B_BINDING_FLAG_PUBLIC_STATIC = BindingFlags.Public | BindingFlags.Static;
 	public const BindingFlags B_BINDING_FLAG_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
+	// 플래그 }
 
 	// 디바이스 {
 #if MODE_PORTRAIT_ENABLE
