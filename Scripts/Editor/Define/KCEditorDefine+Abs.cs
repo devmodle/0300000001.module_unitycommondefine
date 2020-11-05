@@ -695,27 +695,27 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ANDROID_DEST_PLUGIN_PATH = string.Format("{0}CustomAndroidPlugin.aar", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_MANIFEST_PATH = string.Format("{0}Options/Android/AndroidManifest.xml", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-	public static readonly string B_ANDROID_ORIGIN_SRC_MANIFEST_PATH = string.Format("{0}../UnityPackages/Options/Android/AndroidManifest.xml", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_MANIFEST_PATH = string.Format("{0}../UnityPackages/Templates/Options/Android/AndroidManifest.xml", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_MANIFEST_PATH = string.Format("{0}AndroidManifest.xml", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-	public static readonly string B_ANDROID_ORIGIN_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_MAIN_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Templates/Options/Android/mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_MAIN_TEMPLATE_PATH = string.Format("{0}mainTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_LAUNCHER_TEMPLATE_PATH = string.Format("{0}Options/Android/launcherTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-	public static readonly string B_ANDROID_ORIGIN_SRC_LAUNCHER_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Options/Android/launcherTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_LAUNCHER_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Templates/Options/Android/launcherTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_LAUNCHER_TEMPLATE_PATH = string.Format("{0}launcherTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_BASE_PROJ_TEMPLATE_PATH = string.Format("{0}Options/Android/baseProjectTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-	public static readonly string B_ANDROID_ORIGIN_SRC_BASE_PROJ_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Options/Android/baseProjectTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_BASE_PROJ_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Templates/Options/Android/baseProjectTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_BASE_PROJ_TEMPLATE_PATH = string.Format("{0}baseProjectTemplate.gradle", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_PROGUARD_PATH = string.Format("{0}Options/Android/proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-	public static readonly string B_ANDROID_ORIGIN_SRC_PROGUARD_PATH = string.Format("{0}../UnityPackages/Options/Android/proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_PROGUARD_PATH = string.Format("{0}../UnityPackages/Templates/Options/Android/proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_PROGUARD_PATH = string.Format("{0}proguard-user.txt", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_GRADLE_TEMPLATE_PATH = string.Format("{0}Options/Android/gradleTemplate.properties", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-	public static readonly string B_ANDROID_ORIGIN_SRC_GRADLE_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Options/Android/gradleTemplate.properties", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ANDROID_ORIGIN_SRC_GRADLE_TEMPLATE_PATH = string.Format("{0}../UnityPackages/Templates/Options/Android/gradleTemplate.properties", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ANDROID_DEST_GRADLE_TEMPLATE_PATH = string.Format("{0}gradleTemplate.properties", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS);
 
 	public static readonly string B_ANDROID_SRC_UNITY_PLUGIN_PATH = string.Format("{0}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar", KCEditorDefine.B_ABS_DIR_PATH_UNITY_ENGINE);
