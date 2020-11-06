@@ -200,6 +200,10 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_VIBRATE_DURATION = "Duration";
 	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
 
+	public const string U_KEY_UNITY_MS_TRACKING_NAME = "Name";
+	public const string U_KEY_UNITY_MS_TRACKING_DATAS = "Datas";
+	public const string U_KEY_UNITY_MS_TRACKING_IS_START = "IsStart";
+
 	public const string U_KEY_UNITY_MS_ADMOB_IDS = "AdmobIDs";
 	public const string U_KEY_UNITY_MS_RESUME_ADS_ID = "ResumeAdsID";
 
@@ -750,6 +754,9 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_MODULE_ENABLE
 
 #if FIREBASE_MODULE_ENABLE
+	// 이름
+	public const string U_TRACKING_NAME_APP_START = "_app_start";
+	
 	// 키 {
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
 
