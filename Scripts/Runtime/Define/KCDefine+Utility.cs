@@ -82,6 +82,7 @@ public static partial class KCDefine {
 	// 시간 {
 	public const float U_DEF_TIME_SCALE = 1.0f;
 	public const float U_ZERO_TIME_SCALE = 0.0f;
+	public const float U_DELTA_TIME_SCHEDULE_M_CALLBACK = 0.15f;
 
 	public const float U_DEF_DURATION_ANI = 0.25f;
 	public const float U_DEF_DURATION_POPUP_ANI = 0.25f;
@@ -95,7 +96,7 @@ public static partial class KCDefine {
 	public const float U_DEF_DURATION_HEAVY_VIBRATE = 0.15f;
 
 	public const float U_DELAY_INIT = 0.15f;
-	public const float U_DELAY_NEXT_SCENE_LOAD = 0.75f;
+	public const float U_DELAY_NEXT_SCENE_LOAD = 1.0f;
 	public const float U_DEF_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_TIME_INTERMEDIATE;
 
 	public const float U_DEF_TIMEOUT_ASYNC_TASK = 30.0f;
