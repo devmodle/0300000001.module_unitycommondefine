@@ -175,7 +175,7 @@ public static partial class KCEditorDefine {
 
 	// 젠킨스 {
 	public const string B_JENKINS_KEY_BRANCH = "Branch";
-	public const string B_JENKINS_KEY_SRC = "Source";
+	public const string B_JENKINS_KEY_SRC = "Src";
 	public const string B_JENKINS_KEY_PROJ_NAME = "ProjName";
 	public const string B_JENKINS_KEY_PROJ_PATH = "ProjPath";
 	public const string B_JENKINS_KEY_DIST_PATH = "DistPath";
