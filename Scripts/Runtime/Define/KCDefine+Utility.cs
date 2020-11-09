@@ -575,7 +575,7 @@ public static partial class KCDefine {
 #if UNITY_ANDROID
 	// 시간
 	public const float U_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 0.25f;
-	public const float U_MAX_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 2.5f;
+	public const float U_MAX_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 0.5f;
 #endif			// #if UNITY_ANDROID
 
 #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
@@ -839,7 +839,7 @@ public static partial class KCDefine {
 #if NOTI_MODULE_ENABLE
 	// 시간
 	public const float U_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.15f;
-	public const float U_MAX_DELTA_TIME_NOTI_M_REQUEST_CHECK = 2.5f;
+	public const float U_MAX_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.5f;
 
 	// 키
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
