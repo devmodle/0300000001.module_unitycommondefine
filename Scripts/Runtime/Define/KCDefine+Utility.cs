@@ -96,7 +96,7 @@ public static partial class KCDefine {
 	public const float U_DEF_DURATION_HEAVY_VIBRATE = 0.15f;
 
 	public const float U_DELAY_INIT = 0.15f;
-	public const float U_DELAY_NEXT_SCENE_LOAD = 1.0f;
+	public const float U_DELAY_NEXT_SCENE_LOAD = 0.5f;
 	public const float U_DEF_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_TIME_INTERMEDIATE;
 
 	public const float U_DEF_TIMEOUT_ASYNC_TASK = 30.0f;
@@ -716,20 +716,20 @@ public static partial class KCDefine {
 
 	// 키 {
 	public const string U_LOG_KEY_USER_ID = "UserID";
+	public const string U_LOG_KEY_COUNTRY_CODE = "CountryCode";
+
+	public const string U_LOG_KEY_DEVICE_ID = "DeviceID";
 	public const string U_LOG_KEY_PLATFORM = "Platform";
+	public const string U_LOG_KEY_USER_TYPE = "UserType";
 	public const string U_LOG_KEY_LOG_TIME = "LogTime";
 	public const string U_LOG_KEY_INSTALL_TIME = "InstallTime";
 
-	public const string U_LOG_KEY_USER_TYPE = "UserType";
-	public const string U_LOG_KEY_DEVICE_ID = "DeviceID";
-	public const string U_LOG_KEY_COUNTRY_CODE = "CountryCode";
-
-	public const string U_LOG_KEY_PARAM_A = "ParamA";
-	public const string U_LOG_KEY_PARAM_B = "ParamB";
-	public const string U_LOG_KEY_PARAM_C = "ParamC";
-	public const string U_LOG_KEY_PARAM_D = "ParamD";
-	public const string U_LOG_KEY_PARAM_E = "ParamE";
-	public const string U_LOG_KEY_PARAM_F = "ParamF";
+	public const string U_LOG_KEY_PARAMS_A = "ParamsA";
+	public const string U_LOG_KEY_PARAMS_B = "ParamsB";
+	public const string U_LOG_KEY_PARAMS_C = "ParamsC";
+	public const string U_LOG_KEY_PARAMS_D = "ParamsD";
+	public const string U_LOG_KEY_PARAMS_E = "ParamsE";
+	public const string U_LOG_KEY_PARAMS_F = "ParamsF";
 	// 키 }
 
 #if FLURRY_MODULE_ENABLE
@@ -755,7 +755,7 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE
 	// 이름
-	public const string U_TRACKING_NAME_APP_START = "_app_start";
+	public const string U_TRACKING_NAME_APP_LAUNCH = KCDefine.U_LOG_NAME_APP_LAUNCH;
 	
 	// 키 {
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
@@ -763,6 +763,17 @@ public static partial class KCDefine {
 	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
 	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
 	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VERSION = "BuildVersionConfig";
+
+	public const string U_TRACKING_KEY_DEVICE_ID = KCDefine.U_LOG_KEY_DEVICE_ID;
+	public const string U_TRACKING_KEY_PLATFORM = KCDefine.U_LOG_KEY_PLATFORM;
+	public const string U_TRACKING_KEY_USER_TYPE = KCDefine.U_LOG_KEY_USER_TYPE;
+
+	public const string U_TRACKING_KEY_PARAMS_A = KCDefine.U_LOG_KEY_PARAMS_A;
+	public const string U_TRACKING_KEY_PARAMS_B = KCDefine.U_LOG_KEY_PARAMS_B;
+	public const string U_TRACKING_KEY_PARAMS_C = KCDefine.U_LOG_KEY_PARAMS_C;
+	public const string U_TRACKING_KEY_PARAMS_D = KCDefine.U_LOG_KEY_PARAMS_D;
+	public const string U_TRACKING_KEY_PARAMS_E = KCDefine.U_LOG_KEY_PARAMS_E;
+	public const string U_TRACKING_KEY_PARAMS_F = KCDefine.U_LOG_KEY_PARAMS_F;
 	// 키 }
 
 	// 노드

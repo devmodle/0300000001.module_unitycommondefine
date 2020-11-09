@@ -189,7 +189,7 @@ public static partial class KCEditorDefine {
 	public const string B_JENKINS_KEY_IPA_EXPORT_METHOD = "IPAExportMethod";
 	public const string B_JENKINS_KEY_BUILD_FILE_EXTENSION = "BuildFileExtension";
 
-	public const string B_JENKINS_BUILD_PARAM_TOKEN = " ";
+	public const string B_JENKINS_BUILD_PARAMS_TOKEN = " ";
 	public const string B_JENKINS_PIPELINE_GROUP_NAME = "job/00001.Common/job/01.Pipelines/job";
 
 	public const string B_JENKINS_BUILD_DATA_FORMAT = "--data {0}={1}";
@@ -504,8 +504,11 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_TouchResponder.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TOUCH_RESPONDER)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_AgreePopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_OBJ_PATH_AGREE_POPUP)),
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LandscapeAgreePopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_OBJ_PATH_LANDSCAPE_AGREE_POPUP)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_PortraitAgreePopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_OBJ_PATH_PORTRAIT_AGREE_POPUP)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_AlertPopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_ALERT_POPUP)),
