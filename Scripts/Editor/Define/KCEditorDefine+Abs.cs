@@ -154,7 +154,7 @@ public static partial class KCEditorDefine {
 	public const string B_EDITOR_OPTS_REMOTE_COMPRESSION = "JPEG";
 	public const string B_EDITOR_OPTS_REMOTE_RESOLUTION = "Downsize";
 	public const string B_EDITOR_OPTS_VERSION_CONTROL = "Visible Meta Files";
-	public const string B_EDITOR_OPTS_JOYSTIC_SOURCE = "Remote";
+	public const string B_EDITOR_OPTS_JOYSTIC_SRC = "Remote";
 
 #if GPU_LIGHTMAPPER_ENABLE
 	public const LightingSettings.Lightmapper B_EDITOR_OPTS_LIGHTMAPPER = LightingSettings.Lightmapper.ProgressiveGPU;
@@ -195,7 +195,7 @@ public static partial class KCEditorDefine {
 	public const string B_JENKINS_BUILD_DATA_FORMAT = "--data {0}={1}";
 	public const string B_JENKINS_BUILD_CMD_FORMAT = "curl -X POST {0} --user {1}:{2} --data token={3}";
 
-	public const string B_JENKINS_SOURCE_FORMAT = "{0}/{1}";
+	public const string B_JENKINS_SRC_FORMAT = "{0}/{1}";
 	public const string B_JENKINS_PROJ_PATH_FORMAT = "{0}/{1}/{2}";
 	public const string B_JENKINS_ANALYTICS_FORMAT = "{0}/00.Analytics";
 
@@ -292,6 +292,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_PATH_ANDROID_PLUGINS = string.Format("{0}Android/", KCEditorDefine.B_ABS_DIR_PATH_PLUGINS);
 
 	public static readonly string B_ABS_DIR_PATH_TEMPLATES = string.Format("{0}.UnityModule.Common/Templates/", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ABS_DIR_PATH_ICON_TEMPLATES = string.Format("{0}Icons/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_DATA_TEMPLATES = string.Format("{0}Datas/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_PREFAB_TEMPLATES = string.Format("{0}Prefabs/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
@@ -314,7 +315,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_DATA_PATH_UNITY_PKGS = string.Format("{0}manifest.json", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	
-	public static readonly KeyValuePair<string, string>[] B_PATH_DATA_PATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_DATA_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_README.md", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}01.UnityProject/README.md", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
@@ -336,7 +337,7 @@ public static partial class KCEditorDefine {
 #endif			// #if FIREBASE_MODULE_ENABLE
 	};
 	
-	public static readonly KeyValuePair<string, string>[] B_PATH_SCRIPT_PATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_SCRIPT_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}Editor/Define/T_KEditorDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/Global/Define/KEditorDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
@@ -448,7 +449,7 @@ public static partial class KCEditorDefine {
 #endif			// #if STUDY_MODULE_ENABLE
 	};
 	
-	public static readonly KeyValuePair<string, string>[] B_PATH_PREFAB_PATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_PREFAB_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_Text.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_TEXT_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TEXT)),
 
@@ -540,7 +541,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DEBUG_LOG_ITEM))
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_TABLE_PATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_TABLE_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_ValueTable_Common.csv", KCEditorDefine.B_ABS_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_VALUE_INFO_ROOT),
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_COMMON_VALUE)),
 			
@@ -554,7 +555,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_ENGLISH_COMMON_STRING))
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_ASSET_PATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_ASSET_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_BUILD_INFO_TABLE)),
 			
@@ -584,7 +585,7 @@ public static partial class KCEditorDefine {
 #endif			// #if PURCHASE_MODULE_ENABLE
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_SCENE_PATH_INFOS = new KeyValuePair<string, string>[] {
+	public static readonly KeyValuePair<string, string>[] B_SCENE_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_INIT)),
 
@@ -618,12 +619,12 @@ public static partial class KCEditorDefine {
 #endif			// #if STUDY_MODULE_ENABLE
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_PATH_ASSEMBLY_DEFINITION_PATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Ads/Templates/T_UnityModule.IronSource.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}IronSource/UnityModule.IronSource.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+	public static readonly KeyValuePair<string, string>[] B_ASSEMBLY_DEFINITION_PATH_INFOS = new KeyValuePair<string, string>[] {
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Ads/Templates/T_UnityModule.IronSrc.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+			string.Format("{0}IronSource/UnityModule.IronSrc.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Ads/Templates/T_UnityModule.IronSource.Editor.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}IronSource/Editor/UnityModule.IronSource.Editor.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Ads/Templates/T_UnityModule.IronSrc.Editor.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+			string.Format("{0}IronSource/Editor/UnityModule.IronSrc.Editor.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Flurry/Templates/T_UnityModule.Flurry.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
 			string.Format("{0}Plugins/FlurrySDK/UnityModule.Flurry.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
@@ -642,6 +643,84 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Purchase/Templates/T_UnityModule.UnityPurchasing.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
 			string.Format("{0}Resources/UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS))
+	};
+
+	public static readonly KeyValuePair<string, string>[] B_ICON_PATH_INFOS = new KeyValuePair<string, string>[] {
+		// iOS {
+		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon76x76.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon76x76.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon120x120.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon120x120.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon152x152.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon152x152.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon167x167.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon167x167.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon180x180.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon180x180.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon1024x1024.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon1024x1024.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+		// iOS }
+
+		// 안드로이드 {
+		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon144x144.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon144x144.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon192x192.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon192x192.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon512x512.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon512x512.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+		// 안드로이드 }
+
+#if NOTI_MODULE_ENABLE || (FIREBASE_MODULE_ENABLE && FIREBASE_CLOUD_MSG_ENABLE)
+		// iOS {
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/Notification/Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/Notification/Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/iOS/Notification/Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+		// iOS }
+
+		// 안드로이드 {
+		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon24x24.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon24x24.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon256x256.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon256x256.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS))
+		// 안드로이드 }
+#endif			// #if NOTI_MODULE_ENABLE || (FIREBASE_MODULE_ENABLE && FIREBASE_CLOUD_MSG_ENABLE)
 	};
 	// 경로 }
 

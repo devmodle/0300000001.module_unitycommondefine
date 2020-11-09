@@ -676,22 +676,22 @@ public static partial class KCDefine {
 	// 키 }
 #endif			// #if ADMOB_ENABLE
 
-#if IRON_SOURCE_ENABLE
+#if IRON_SRC_ENABLE
 	// 키 {
-	public const string U_KEY_ADS_M_IRON_SOURCE_INIT_CALLBACK = "AdsMIronSourceInitCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_INIT_CALLBACK = "AdsMIronSrcInitCallback";
 
-	public const string U_KEY_ADS_M_IRON_SOURCE_BANNER_ADS_LOAD_CALLBACK = "AdsMIronSourceBannerAdsLoadCallback";
-	public const string U_KEY_ADS_M_IRON_SOURCE_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSourceBannerAdsLoadFailCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_BANNER_ADS_LOAD_CALLBACK = "AdsMIronSrcBannerAdsLoadCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcBannerAdsLoadFailCallback";
 
-	public const string U_KEY_ADS_M_IRON_SOURCE_REWARD_ADS_CLOSE_CALLBACK = "AdsMIronSourceRewardAdsCloseCallback";
-	public const string U_KEY_ADS_M_IRON_SOURCE_REWARD_ADS_RECEIVE_REWARD_CALLBACK = "AdsMIronSourceRewardAdsReceiveRewardCallback";
-	public const string U_KEY_ADS_M_IRON_SOURCE_REWARD_ADS_CHANGE_STATE_CALLBACK = "AdsMIronSourceRewardAdsChangeStateCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_CLOSE_CALLBACK = "AdsMIronSrcRewardAdsCloseCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_RECEIVE_REWARD_CALLBACK = "AdsMIronSrcRewardAdsReceiveRewardCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_CHANGE_STATE_CALLBACK = "AdsMIronSrcRewardAdsChangeStateCallback";
 
-	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSourceFullscreenAdsLoadCallback";
-	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSourceFullscreenAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_IRON_SOURCE_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSourceFullscreenAdsCloseCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSrcFullscreenAdsLoadCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcFullscreenAdsLoadFailCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSrcFullscreenAdsCloseCallback";
 	// 키 }
-#endif			// #if IRON_SOURCE_ENABLE
+#endif			// #if IRON_SRC_ENABLE
 
 #if APP_LOVIN_ENABLE
 	// 키 {
@@ -893,10 +893,10 @@ public static partial class KCDefine {
 	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize(AdSize.FullWidth, 50);
 #endif			// #if ADMOB_ENABLE
 
-#if IRON_SOURCE_ENABLE
+#if IRON_SRC_ENABLE
 	// 크기
-	public static readonly IronSourceBannerSize U_SIZE_IRON_SOURCE_BANNER_ADS = new IronSourceBannerSize(320, 50);
-#endif			// #if IRON_SOURCE_ENABLE
+	public static readonly IronSourceBannerSize U_SIZE_IRON_SRC_BANNER_ADS = new IronSourceBannerSize(320, 50);
+#endif			// #if IRON_SRC_ENABLE
 
 #if APP_LOVIN_ENABLE
 	// 색상

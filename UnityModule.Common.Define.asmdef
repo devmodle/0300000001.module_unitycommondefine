@@ -5,7 +5,7 @@
         "GoogleMobileAds",
         "Unity.Notifications.iOS",
         "Unity.Notifications.Android",
-        "UnityModule.IronSource"
+        "UnityModule.IronSrc"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

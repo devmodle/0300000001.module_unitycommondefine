@@ -36,7 +36,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_ADS_MODULE_ENABLE = "ADS_MODULE_ENABLE";
 
 	public const string DS_DEFINE_S_ADMOB_ENABLE = "ADMOB_ENABLE";
-	public const string DS_DEFINE_S_IRON_SOURCE_ENABLE = "IRON_SOURCE_ENABLE";
+	public const string DS_DEFINE_S_IRON_SRC_ENABLE = "IRON_SRC_ENABLE";
 	public const string DS_DEFINE_S_APP_LOVIN_ENABLE = "APP_LOVIN_ENABLE";
 	// 광고 }
 

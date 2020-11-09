@@ -209,9 +209,9 @@ public enum EAdsType {
 	ADMOB,
 #endif			// #if ADMOB_ENABLE
 
-#if IRON_SOURCE_ENABLE
-	IRON_SOURCE,
-#endif			// #if IRON_SOURCE_ENABLE
+#if IRON_SRC_ENABLE
+	IRON_SRC,
+#endif			// #if IRON_SRC_ENABLE
 
 #if APP_LOVIN_ENABLE
 	APP_LOVIN,
