@@ -120,14 +120,15 @@ public static partial class KCDefine {
 
 	public const string B_SCENE_NAME_INIT = "00.InitScene";
 	public const string B_SCENE_NAME_SETUP = "00.SetupScene";
-	public const string B_SCENE_NAME_START = "01.StartScene";
 	public const string B_SCENE_NAME_LOADING = "01.LoadingScene";
 	public const string B_SCENE_NAME_SPLASH = "01.SplashScene";
 	public const string B_SCENE_NAME_AGREE = "01.AgreeScene";
 	public const string B_SCENE_NAME_LATE_SETUP = "01.LateSetupScene";
 	public const string B_SCENE_NAME_PERMISSION = "01.PermissionScene";
-	public const string B_SCENE_NAME_INTRO = "01.IntroScene";
-	public const string B_SCENE_NAME_MENU = "01.MenuScene";
+	
+	public const string B_SCENE_NAME_START = "00.StartScene";
+	public const string B_SCENE_NAME_INTRO = "00.IntroScene";
+	public const string B_SCENE_NAME_MENU = "00.MenuScene";
 	// 씬 이름 }
 
 	// 키

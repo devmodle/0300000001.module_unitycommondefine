@@ -138,6 +138,8 @@ public static partial class KCEditorDefine {
 	public const string B_DIR_PATH_ASSETS = "Assets/";
 	public const string B_DIR_PATH_PACKAGES = "Packages/";
 	public const string B_DIR_PATH_AUTO_CREATE = "00.AutoCreate/";
+	public const string B_DIR_PATH_UNITY_PROJ = "01.UnityProject/";
+	public const string B_DIR_PATH_UNITY_PROJ_EDITOR = "02.UnityProjectEditor/";
 	public const string B_DIR_PATH_PROJ_SETTINGS = "ProjectSettings/";
 
 	public const string B_DIR_PATH_EXPORT_IMG_BASE = "Export/Images/";
@@ -276,9 +278,9 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_PATH_FILTER_DEBUG_CONSOLE = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_PATH_AUTO_CREATE_RESES, KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 	public static readonly string B_DIR_PATH_FILTER_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_PATH_AUTO_CREATE_RESES, KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 
-	public static readonly string B_DIR_PATH_SCENES = string.Format("{0}01.UnityProject/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
+	public static readonly string B_DIR_PATH_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ);
 	public static readonly string B_DIR_PATH_AUTO_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
-	public static readonly string B_DIR_PATH_EDITOR_SCENES = string.Format("{0}01.UnityProject_Editor/Scenes", KCEditorDefine.B_DIR_PATH_ASSETS);
+	public static readonly string B_DIR_PATH_EDITOR_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ_EDITOR);
 
 	public static readonly string B_ABS_DIR_PATH_ASSETS = string.Format("{0}/", Application.dataPath);
 	public static readonly string B_ABS_DIR_PATH_PACKAGES = string.Format("{0}../Packages/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
@@ -317,23 +319,23 @@ public static partial class KCEditorDefine {
 	
 	public static readonly KeyValuePair<string, string>[] B_DATA_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_README.md", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}01.UnityProject/README.md", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}README.md", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_Services_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_SERVICES)),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.AS_DATA_PATH_SERVICES)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_Privacy_{1}.txt", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES, SystemLanguage.Korean),
-			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_DATA_PATH_PRIVACY)),
+			string.Format("{0}{1}Resources/{2}.txt", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.AS_DATA_PATH_PRIVACY)),
 
 #if FIREBASE_MODULE_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_CustomDependencies.xml.t", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}Editor/CustomDependencies.xml", KCEditorDefine.B_ABS_DIR_PATH_PLUGINS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_GameConfig.json", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_DATA_PATH_G_GAME_CONFIG)),
+			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_DATA_PATH_G_GAME_CONFIG)),
 			
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildVersionConfig.json", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_DATA_PATH_G_BUILD_VERSION_CONFIG))
+			string.Format("{0}{1}Resources/{2}.json", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_DATA_PATH_G_BUILD_VERSION_CONFIG))
 #endif			// #if FIREBASE_MODULE_ENABLE
 	};
 	
@@ -353,44 +355,26 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+InitScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+InitScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+SetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StartScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+StartScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+LoadingScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+LoadingScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SplashScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+SplashScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+AgreeScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+AgreeScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+LateSetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+LateSetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+PermissionScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+PermissionScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+IntroScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+IntroScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+ValueTable.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+ValueTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+App.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+App.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+GameCenter.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+GameCenter.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+GameCenter.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+Type.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+Type.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+Type.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+ValueTable.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+ValueTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 			
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Base/T_CBaseInfo.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Base/CBaseInfo.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
@@ -441,12 +425,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Scripts/Runtime/SubPermissionScene/CSubPermissionSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubIntroSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/SubIntroScene/CSubIntroSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-#if STUDY_MODULE_ENABLE
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+MenuScene.cs", KCEditorDefine.B_ABS_DIR_PATH_STUDY_SCRIPT_TEMPLATES), 
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+MenuScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE))
-#endif			// #if STUDY_MODULE_ENABLE
+			string.Format("{0}{1}Scripts/Runtime/SubIntroScene/CSubIntroSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE))
 	};
 	
 	public static readonly KeyValuePair<string, string>[] B_PREFAB_PATH_INFOS = new KeyValuePair<string, string>[] {
@@ -504,33 +483,6 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_TouchResponder.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TOUCH_RESPONDER)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_LandscapeAgreePopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_OBJ_PATH_LANDSCAPE_AGREE_POPUP)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_PortraitAgreePopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.AS_OBJ_PATH_PORTRAIT_AGREE_POPUP)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_AlertPopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_ALERT_POPUP)),
-			
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_ToastPopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TOAST_POPUP)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_BGSnd.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_BG_SND)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_FXSnd.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_FX_SND)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_LoadingText.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_START_SCENE),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.SS_OBJ_PATH_LOADING_TEXT)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_LoadingImgObj.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_START_SCENE),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.SS_OBJ_PATH_LOADING_IMG_OBJ)),
-
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/UITween/Prefabs/Click Effect Pref/ClickedRound.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_WAVE)),
-
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_FPS_COUNTER)),
 
@@ -541,50 +493,77 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DEBUG_CONSOLE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DEBUG_LOG_ITEM))
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DEBUG_LOG_ITEM)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LandscapeAgreePopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.AS_OBJ_PATH_LANDSCAPE_AGREE_POPUP)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_PortraitAgreePopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.AS_OBJ_PATH_PORTRAIT_AGREE_POPUP)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_AlertPopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_OBJ_PATH_G_ALERT_POPUP)),
+			
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ToastPopup.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_POPUP_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_OBJ_PATH_G_TOAST_POPUP)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_BGSnd.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_OBJ_PATH_G_BG_SND)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_FXSnd.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SOUND_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_OBJ_PATH_G_FX_SND)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LoadingText.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_START_SCENE),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.SS_OBJ_PATH_LOADING_TEXT)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_LoadingImgObj.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_START_SCENE),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.SS_OBJ_PATH_LOADING_IMG_OBJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/UITween/Prefabs/Click Effect Pref/ClickedRound.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_OBJ_PATH_G_WAVE))
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_TABLE_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_ValueTable_Common.csv", KCEditorDefine.B_ABS_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_VALUE_INFO_ROOT),
-			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_COMMON_VALUE)),
+			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_TABLE_PATH_G_COMMON_VALUE)),
 			
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common.csv", KCEditorDefine.B_ABS_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_ROOT),
-			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_COMMON_STRING)),
+			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_TABLE_PATH_G_COMMON_STRING)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common_{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_ROOT, SystemLanguage.Korean),
-			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_KOREAN_COMMON_STRING)),
+			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_TABLE_PATH_G_KOREAN_COMMON_STRING)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_StringTable_Common_{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_TABLE_TEMPLATES, KCDefine.B_DIR_PATH_STRING_INFO_ROOT, SystemLanguage.English),
-			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_TABLE_PATH_G_ENGLISH_COMMON_STRING))
+			string.Format("{0}{1}Resources/{2}.csv", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_TABLE_PATH_G_ENGLISH_COMMON_STRING))
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_ASSET_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_BUILD_INFO_TABLE)),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_BUILD_INFO_TABLE)),
 			
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildOptsTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_BUILD_OPTS_TABLE)),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_BUILD_OPTS_TABLE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_DefineSymbolTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE)),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE)),
 			
 		new KeyValuePair<string, string>(string.Format("{0}T_DeviceInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_DEVICE_INFO_TABLE)),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_DEVICE_INFO_TABLE)),
 		
 		new KeyValuePair<string, string>(string.Format("{0}T_ProjInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_PROJ_INFO_TABLE)),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_PROJ_INFO_TABLE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_SpriteAtlas_01.spriteatlas.t", KCEditorDefine.B_ABS_DIR_PATH_SPRITE_ATLAS_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.spriteatlas", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_SPRITE_ATLAS_01)),
+			string.Format("{0}{1}Resources/{2}.spriteatlas", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_SPRITE_ATLAS_01)),
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 		new KeyValuePair<string, string>(string.Format("{0}T_PluginInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_PLUGIN_INFO_TABLE)),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_PLUGIN_INFO_TABLE)),
 #endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE			
 		new KeyValuePair<string, string>(string.Format("{0}T_ProductInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_ASSET_PATH_G_PRODUCT_INFO_TABLE))
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_PRODUCT_INFO_TABLE))
 #endif			// #if PURCHASE_MODULE_ENABLE
 	};
 
@@ -594,9 +573,6 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_SETUP)),
-
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_START)),
 
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_LOADING)),
@@ -614,11 +590,14 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_PERMISSION)),
 
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_INTRO)),
+			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_START)),
+
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
+			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_INTRO)),
 
 #if STUDY_MODULE_ENABLE
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_STUDY_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_MENU))
+			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_MENU))
 #endif			// #if STUDY_MODULE_ENABLE
 	};
 
@@ -651,77 +630,77 @@ public static partial class KCEditorDefine {
 	public static readonly KeyValuePair<string, string>[] B_ICON_PATH_INFOS = new KeyValuePair<string, string>[] {
 		// iOS {
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon76x76.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon76x76.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/App/Icon76x76.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon120x120.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon120x120.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/App/Icon120x120.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon152x152.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon152x152.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/App/Icon152x152.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon167x167.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon167x167.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/App/Icon167x167.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon180x180.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon180x180.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/App/Icon180x180.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon1024x1024.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/App/Icon1024x1024.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/App/Icon1024x1024.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 		// iOS }
 
 		// 안드로이드 {
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/App/Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/App/Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/App/Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/App/Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon144x144.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon144x144.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/App/Icon144x144.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon192x192.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon192x192.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/App/Icon192x192.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon512x512.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/App/Icon512x512.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/App/Icon512x512.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 		// 안드로이드 }
 
 #if NOTI_MODULE_ENABLE || (FIREBASE_MODULE_ENABLE && FIREBASE_CLOUD_MSG_ENABLE)
 		// iOS {
 		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/Notification/Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/Notification/Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/Notification/Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/Notification/Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/iOS/Notification/Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/iOS/Notification/Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 		// iOS }
 
 		// 안드로이드 {
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon24x24.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon24x24.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon24x24.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
+			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon256x256.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}01.UnityProject/Resources/Icons/Android/Notification/Icon256x256.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS))
+			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon256x256.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ))
 		// 안드로이드 }
 #endif			// #if NOTI_MODULE_ENABLE || (FIREBASE_MODULE_ENABLE && FIREBASE_CLOUD_MSG_ENABLE)
 	};

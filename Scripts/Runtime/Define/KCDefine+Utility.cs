@@ -436,17 +436,9 @@ public static partial class KCDefine {
 
 	public static readonly string U_OBJ_PATH_SCROLL_VIEW = string.Format("{0}{1}{2}U_ScrollView", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SCROLL_VIEW_ROOT);
 	public static readonly string U_OBJ_PATH_PAGE_SCROLL_VIEW = string.Format("{0}{1}{2}U_PageScrollView", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SCROLL_VIEW_ROOT);
-	
-	public static readonly string U_OBJ_PATH_ALERT_POPUP = string.Format("{0}{1}{2}U_AlertPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_POPUP_ROOT);
-	public static readonly string U_OBJ_PATH_TOAST_POPUP = string.Format("{0}{1}{2}U_ToastPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_POPUP_ROOT);
 
 	public static readonly string U_OBJ_PATH_DRAG_RESPONDER = string.Format("{0}{1}{2}U_DragResponder", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_RESPONDER_ROOT);
 	public static readonly string U_OBJ_PATH_TOUCH_RESPONDER = string.Format("{0}{1}{2}U_TouchResponder", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_RESPONDER_ROOT);
-
-	public static readonly string U_OBJ_PATH_BG_SND = string.Format("{0}{1}{2}U_BGSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SOUND_ROOT);
-	public static readonly string U_OBJ_PATH_FX_SND = string.Format("{0}{1}{2}U_FXSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SOUND_ROOT);
-
-	public static readonly string U_OBJ_PATH_WAVE = string.Format("{0}{1}{2}U_Wave", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
 
 	public static readonly string U_OBJ_PATH_FPS_COUNTER = string.Format("{0}{1}{2}U_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
 	public static readonly string U_OBJ_PATH_TIMER_MANAGER = string.Format("{0}{1}{2}U_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
@@ -454,12 +446,20 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_PATH_DEBUG_CONSOLE = string.Format("{0}{1}{2}U_DebugConsole", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
 	public static readonly string U_OBJ_PATH_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}U_DebugLogItem", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
 
+	public static readonly string U_OBJ_PATH_G_WAVE = string.Format("{0}{1}{2}G_Wave", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
+
+	public static readonly string U_OBJ_PATH_G_BG_SND = string.Format("{0}{1}{2}G_BGSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_SOUND_ROOT);
+	public static readonly string U_OBJ_PATH_G_FX_SND = string.Format("{0}{1}{2}G_FXSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_SOUND_ROOT);
+
+	public static readonly string U_OBJ_PATH_G_ALERT_POPUP = string.Format("{0}{1}{2}G_AlertPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_POPUP_ROOT);
+	public static readonly string U_OBJ_PATH_G_TOAST_POPUP = string.Format("{0}{1}{2}G_ToastPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_POPUP_ROOT);
+
 	public static readonly string U_ASSET_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_G_BUILD_OPTS_TABLE = string.Format("{0}{1}G_BuildOptsTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
-
+	
 	public static readonly string U_ASSET_PATH_G_SPRITE_ATLAS_01 = string.Format("{0}{1}G_SpriteAtlas_01", KCDefine.B_DIR_PATH_SPRITE_ATLASES, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_ASSET_PATH_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_PATH_SETTINGS, KCDefine.B_DIR_PATH_UTILITY);
 
