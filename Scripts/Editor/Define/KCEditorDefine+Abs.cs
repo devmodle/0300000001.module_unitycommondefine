@@ -430,9 +430,6 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_Access.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Access/Access.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_AccessExtension.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Access/AccessExtension.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Factory/T_Factory.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Factory/Factory.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
