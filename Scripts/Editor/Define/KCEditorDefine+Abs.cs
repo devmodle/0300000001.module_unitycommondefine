@@ -286,8 +286,8 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_PATH_PACKAGES = string.Format("{0}../Packages/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
 	public static readonly string B_ABS_DIR_PATH_UNITY_ENGINE = string.Format("{0}/", EditorApplication.applicationPath);
 
-	public static readonly string B_ABS_DIR_PATH_SAMPLE_SCENE = string.Format("{0}.UnityModule.Common/Scenes/SampleScene.unity", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-	public static readonly string B_ABS_DIR_PATH_STUDY_SAMPLE_SCENE = string.Format("{0}.UnityModule.Study/Scenes/SampleScene.unity", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ABS_DIR_PATH_SAMPLE_SCENE = string.Format("{0}.UnityModule.Common/Scenes/{1}.unity", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.B_SCENE_NAME_SAMPLE);
+	public static readonly string B_ABS_DIR_PATH_STUDY_SAMPLE_SCENE = string.Format("{0}.UnityModule.Study/Scenes/{1}.unity", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES, KCDefine.B_SCENE_NAME_SAMPLE);
 
 	public static readonly string B_ABS_DIR_PATH_PLUGINS = string.Format("{0}/Plugins/", Application.dataPath);
 	public static readonly string B_ABS_DIR_PATH_IOS_PLUGINS = string.Format("{0}iOS/", KCEditorDefine.B_ABS_DIR_PATH_PLUGINS);
@@ -341,122 +341,147 @@ public static partial class KCEditorDefine {
 	
 	public static readonly KeyValuePair<string, string>[] B_SCRIPT_PATH_INFOS = new KeyValuePair<string, string>[] {
 		// 00.AutoCreate {
+		// 에디터 상수
 		new KeyValuePair<string, string>(string.Format("{0}Editor/Define/T_KEditorDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/Global/Define/KEditorDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Editor/Build/T_CBuildProcessHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Editor/Global/Utility/Build/CBuildProcessHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
+		// 에디터 씬 관리자 {
 		new KeyValuePair<string, string>(string.Format("{0}Editor/Scene/T_CEditorSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/EditorScene/CEditorSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Editor/Scene/T_CEditorSceneManager+Setup.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Editor/EditorScene/CEditorSceneManager+Setup.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		// 에디터 씬 관리자 }
+
+		// 에디터 유틸리티 {
+		new KeyValuePair<string, string>(string.Format("{0}Editor/Build/T_CBuildProcessHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Editor/Global/Utility/Build/CBuildProcessHandler.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/External/T_CMsgPackRegister.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Utility/External/CMsgPackRegister.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		// 에디터 유틸리티 }
 
+		// 상수 {
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+InitScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+InitScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+SetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+AgreeScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+AgreeScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+LateSetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+LateSetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		// 상수 }
+
+		// 씬 관리자 {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubInitSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubInitScene/CSubInitSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubSetupSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubSetupScene/CSubSetupSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubStartSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/SubStartScene/CSubStartSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubLoadingSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/SubLoadingScene/CSubLoadingSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubSplashSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/SubSplashScene/CSubSplashSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubAgreeSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubAgreeScene/CSubAgreeSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubLateSetupSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/SubLateSetupScene/CSubLateSetupSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubPermissionSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/SubPermissionScene/CSubPermissionSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubIntroSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/SubIntroScene/CSubIntroSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE)),
+		// 씬 관리자 }
 		// 00.AutoCreate }
 
 		// 01.UnityProject {
+		// 상수 {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+InitScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+InitScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+SetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+Abs.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+LoadingScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+LoadingScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+LoadingScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+SplashScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+SplashScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+AgreeScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+AgreeScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+LateSetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+LateSetupScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+SplashScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+PermissionScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+PermissionScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+PermissionScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StartScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+StartScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+StartScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+IntroScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+IntroScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+IntroScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+GameCenter.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+GameCenter.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+GameCenter.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+Type.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+Type.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+Type.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+ValueTable.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+ValueTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+ValueTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+		// 상수 }
 
+		// 접근자
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_Access.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Access/Access.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Access/Access.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
+		// 팩토리
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Factory/T_Factory.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Factory/Factory.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Factory/Factory.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
+		// 확장 클래스
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Extension/T_Extension.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Extension/Extension.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Extension/Extension.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
+		// 함수 {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_Func.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Function/Func.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Function/Func.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_LogFunc.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Function/LogFunc.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Function/LogFunc.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+		// 함수 }
 
+		// 저장소 {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Base/T_CBaseInfo.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Base/CBaseInfo.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Utility/Base/CBaseInfo.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Storage/T_CAppInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Storage/CAppInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Utility/Storage/CAppInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Storage/T_CUserInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Storage/CUserInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Utility/Storage/CUserInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Storage/T_CGameInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Utility/Storage/CGameInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Utility/Storage/CGameInfoStorage.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+		// 저장소 }
+
+		// 씬 관리자 {
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubLoadingSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/SubLoadingScene/CSubLoadingSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubSplashSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/SubSplashScene/CSubSplashSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubPermissionSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/SubPermissionScene/CSubPermissionSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubStartSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/SubStartScene/CSubStartSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubIntroSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/SubIntroScene/CSubIntroSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+		// 씬 관리자 }
 
 #if STUDY_MODULE_ENABLE
-		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+MenuScene.cs", KCEditorDefine.B_ABS_DIR_PATH_STUDY_SCRIPT_TEMPLATES),
-			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+MenuScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ))
+		// 상수
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+MenuScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+MenuScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		// 씬 관리자
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubMenuSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_STUDY_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/SubMenuScene/CSubMenuSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ))
 #endif			// #if STUDY_MODULE_ENABLE
 		// 01.UnityProject }
 	};
@@ -613,31 +638,31 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_SETUP)),
 
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_LOADING)),
-
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_SPLASH)),
-
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_AGREE)),
 
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
 			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_LATE_SETUP)),
-
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.B_SCENE_NAME_PERMISSION)),
 		// 00.AutoCreate }
 
 		// 01.UnityProject {
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_START)),
+			string.Format("{0}{1}Scenes/00.AutoCreate/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_START)),
 
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_INTRO)),
+			string.Format("{0}{1}Scenes/00.AutoCreate/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_SPLASH)),
 
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
+			string.Format("{0}{1}Scenes/00.AutoCreate/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_PERMISSION)),
+
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
+			string.Format("{0}{1}Scenes/00.AutoCreate/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_LOADING)),
+
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_SAMPLE_SCENE,
+			string.Format("{0}{1}Scenes/00.AutoCreate/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_INTRO)),
+			
 #if STUDY_MODULE_ENABLE
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_PATH_STUDY_SAMPLE_SCENE,
-			string.Format("{0}{1}Scenes/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_MENU))
+			string.Format("{0}{1}Scenes/00.AutoCreate/{2}.unity", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.B_SCENE_NAME_MENU))
 #endif			// #if STUDY_MODULE_ENABLE
 		// 01.UnityProject }
 	};
