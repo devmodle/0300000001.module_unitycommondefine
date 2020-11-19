@@ -536,12 +536,6 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_PageScrollView.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_SCROLL_VIEW_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_PAGE_SCROLL_VIEW)),
 
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_DragResponder.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_DRAG_RESPONDER)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}T_TouchResponder.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_TOUCH_RESPONDER)),
-
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE, KCDefine.U_OBJ_PATH_FPS_COUNTER)),
 
@@ -579,6 +573,12 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_LoadingImgObj.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_START_SCENE),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.SS_OBJ_PATH_LOADING_IMG_OBJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_DragResponder.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_OBJ_PATH_G_DRAG_RESPONDER)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_TouchResponder.prefab", KCEditorDefine.B_ABS_DIR_PATH_PREFAB_TEMPLATES, KCDefine.B_DIR_PATH_RESPONDER_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_OBJ_PATH_G_TOUCH_RESPONDER)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/UITween/Prefabs/Click Effect Pref/ClickedRound.prefab", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_OBJ_PATH_G_WAVE))
