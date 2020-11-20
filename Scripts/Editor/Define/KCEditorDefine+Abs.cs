@@ -33,7 +33,7 @@ public static partial class KCEditorDefine {
 	// 크기 }
 
 	// 비율
-	public const float B_SCALE_FILE_BROWSER_WINDOW = 1.5f;
+	public const float B_SCALE_FILE_BROWSER_WINDOW = 1.25f;
 
 	// 토큰
 	public const string B_TOKEN_DEFINE_SYMBOL = ";";

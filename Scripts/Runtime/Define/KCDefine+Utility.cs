@@ -286,8 +286,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_NAME_SCROLL_V_CONTENT = "Content";
 	public const string U_OBJ_NAME_SCROLL_V_VIEWPORT = "Viewport";
 
-	public const string U_OBJ_NAME_SCREEN_F_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
-	public const string U_OBJ_NAME_ACTIVITY_I_TOUCH_RESPONDER = "ActivityIndicatorTouchResponder";
+	public const string U_OBJ_NAME_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
+	public const string U_OBJ_NAME_ACTIVITY_I_TOUCH_RESPONDER = "ActivityITouchResponder";
 
 	public const string U_OBJ_NAME_DEBUG_C_LOG_WINDOW = "DebugLogWindow";
 	public const string U_OBJ_NAME_DEBUG_C_LOG_POPUP = "DebugLogPopup";
@@ -318,7 +318,6 @@ public static partial class KCDefine {
 	public static readonly Rect U_RECT_MAIN_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
 
 	// 색상 {
-	public static readonly Color U_COLOR_SCREEN_FADE = Color.black;
 	public static readonly Color U_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
 	public static readonly Color U_DEF_COLOR_NORM = Color.white;
@@ -326,9 +325,11 @@ public static partial class KCDefine {
 	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.35f, 0.35f, 0.35f, 1.0f);
 
 	public static readonly Color U_DEF_COLOR_BLIND_UI = Color.black;
+	public static readonly Color U_DEF_COLOR_SCREEN_FADE_IN = Color.black;
+	public static readonly Color U_DEF_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
 	
 	public static readonly Color U_DEF_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
-	public static readonly Color U_DEF_COLOR_ACTIVITY_INDICATOR_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
+	public static readonly Color U_DEF_COLOR_ACTIVITY_I_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
 
 #if UNITY_EDITOR
 	public static readonly Color U_DEF_COLOR_CAMERA_BG = new Color(0.35f, 0.35f, 0.35f, 1.0f);
