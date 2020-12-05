@@ -21,12 +21,12 @@ using Unity.Notifications.Android;
 //! 유틸리티 상수
 public static partial class KCDefine {
 	#region 기본
-	// 개수 {
-	public const int U_DEF_NUM_OBJS = 5;
-
+	// 개수
 	public const int U_MAX_NUM_LAYERS = 32;
 	public const int U_MAX_NUM_DUPLICATE_FX_SNDS = 10;
-	// 개수 }
+
+	// 크기
+	public const int U_DEF_SIZE_OBJ_POOL = 10;
 
 	// 길이
 	public const int U_MAX_LENGTH_LOG = 100000000;
@@ -150,7 +150,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_LAYER_TOPMOST = "Topmost";
 	public const string U_SORTING_LAYER_ABS = "Abs";
 
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	public const string U_SORTING_LAYER_UNDERGROUND_UI = "UndergroundUI";
 	public const string U_SORTING_LAYER_BACKGROUND_UI = "BackgroundUI";
 	public const string U_SORTING_LAYER_DEF_UI = "DefaultUI";
@@ -159,7 +159,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_LAYER_TOP_UI = "TopUI";
 	public const string U_SORTING_LAYER_TOPMOST_UI = "TopmostUI";
 	public const string U_SORTING_LAYER_ABS_UI = "AbsUI";
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 레이어 }
 
 	// 식별자
@@ -207,14 +207,14 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_ADMOB_IDS = "AdmobIDs";
 	public const string U_KEY_UNITY_MS_RESUME_ADS_ID = "ResumeAdsID";
 
+	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
+	
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
 	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
-
-	public const string U_KEY_DIALOG_TOUCH_RESPONDER = "DialogTouchResponder";
-	public const string U_KEY_FORMAT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
-
-	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
 	public const string U_KEY_FORMAT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
+
+	public const string U_KEY_SCENE_M_DIALOG_TOUCH_RESPONDER = "SceneMDialogTouchResponder";
+	public const string U_KEY_FORMAT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 	// 키 }
 
 	// 이름 {
@@ -347,7 +347,7 @@ public static partial class KCDefine {
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
 	};
 
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF_UI
@@ -357,7 +357,7 @@ public static partial class KCDefine {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
 	};
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 순서 정보 }
 
 	// 동기화 객체
@@ -376,9 +376,9 @@ public static partial class KCDefine {
 		KCDefine.U_LAYER_IGNORE_RAYCAST,
 		KCDefine.U_LAYER_WATER,
 
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 		KCDefine.U_LAYER_UI
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
 	// 레이어 마스크 }
 
@@ -402,7 +402,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_LAYER_TOPMOST,
 		KCDefine.U_SORTING_LAYER_ABS,
 
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 		KCDefine.U_SORTING_LAYER_UNDERGROUND_UI,
 		KCDefine.U_SORTING_LAYER_BACKGROUND_UI,
 		KCDefine.U_SORTING_LAYER_DEF_UI,
@@ -411,7 +411,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_LAYER_TOP_UI,
 		KCDefine.U_SORTING_LAYER_TOPMOST_UI,
 		KCDefine.U_SORTING_LAYER_ABS_UI
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
 
 	// 경로 {
@@ -473,6 +473,8 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
 	public static readonly string U_TABLE_PATH_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
 	public static readonly string U_BASE_TABLE_PATH_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_PATH_G_COMMON_STRING;
+
+	public static readonly string U_FONT_PATH_G_THAI = string.Format("{0}{1}G_ThaiFont", KCDefine.B_DIR_PATH_FONTS, KCDefine.B_DIR_PATH_GLOBAL);
 
 	public static readonly string U_SND_PATH_G_TOUCH_BEGIN = string.Format("{0}{1}G_TouchBegin", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_SND_PATH_G_TOUCH_END = string.Format("{0}{1}G_TouchEnd", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);

@@ -295,6 +295,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABS_DIR_PATH_TEMPLATES = string.Format("{0}.UnityModule.Common/Templates/", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ABS_DIR_PATH_ICON_TEMPLATES = string.Format("{0}Icons/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
+	public static readonly string B_ABS_DIR_PATH_FONT_TEMPLATES = string.Format("{0}Fonts/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_DATA_TEMPLATES = string.Format("{0}Datas/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_PREFAB_TEMPLATES = string.Format("{0}Prefabs/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
@@ -600,6 +601,9 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_ASSET_PATH_INFOS = new KeyValuePair<string, string>[] {
+		new KeyValuePair<string, string>(string.Format("{0}T_ThaiFont.ttf", KCEditorDefine.B_ABS_DIR_PATH_FONT_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.ttf", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_FONT_PATH_G_THAI)),
+
 		new KeyValuePair<string, string>(string.Format("{0}T_BuildInfoTable.asset", KCEditorDefine.B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCDefine.U_ASSET_PATH_G_BUILD_INFO_TABLE)),
 			
@@ -690,7 +694,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}GooglePlayGames/Editor/UnityModule.GooglePlayGames.Editor.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Purchase/Templates/T_UnityModule.UnityPurchasing.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}Resources/UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS))
+			string.Format("{0}UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef", KCEditorDefine.B_ABS_DIR_PATH_PLUGINS))
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_ICON_PATH_INFOS = new KeyValuePair<string, string>[] {
