@@ -302,6 +302,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_PATH_SCRIPTABLE_TEMPLATES = string.Format("{0}Scriptables/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_SPRITE_ATLAS_TEMPLATES = string.Format("{0}SpriteAtlases/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_TABLE_TEMPLATES = string.Format("{0}Tables/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
+	public static readonly string B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES = string.Format("{0}AssemblyDefines/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 
 	public static readonly string B_ABS_DIR_PATH_STUDY_TEMPLATES = string.Format("{0}.UnityModule.Study/Templates/", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ABS_DIR_PATH_STUDY_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABS_DIR_PATH_STUDY_TEMPLATES);
@@ -671,29 +672,29 @@ public static partial class KCEditorDefine {
 		// 01.UnityProject }
 	};
 
-	public static readonly KeyValuePair<string, string>[] B_ASSEMBLY_DEFINITION_PATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Ads/Templates/T_UnityModule.IronSrc.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+	public static readonly KeyValuePair<string, string>[] B_ASSEMBLY_DEFINE_PATH_INFOS = new KeyValuePair<string, string>[] {
+		new KeyValuePair<string, string>(string.Format("{0}T_UnityModule.IronSrc.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES),
 			string.Format("{0}IronSource/UnityModule.IronSrc.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Ads/Templates/T_UnityModule.IronSrc.Editor.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+		new KeyValuePair<string, string>(string.Format("{0}T_UnityModule.IronSrc.Editor.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES),
 			string.Format("{0}IronSource/Editor/UnityModule.IronSrc.Editor.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Flurry/Templates/T_UnityModule.Flurry.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+		new KeyValuePair<string, string>(string.Format("{0}T_UnityModule.Flurry.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES),
 			string.Format("{0}Plugins/FlurrySDK/UnityModule.Flurry.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Tenjin/Templates/T_UnityModule.Tenjin.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+		new KeyValuePair<string, string>(string.Format("{0}T_UnityModule.Tenjin.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES),
 			string.Format("{0}Tenjin/UnityModule.Tenjin.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Singular/Templates/T_UnityModule.Singular.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+		new KeyValuePair<string, string>(string.Format("{0}T_UnityModule.Singular.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES),
 			string.Format("{0}Code/UnityModule.Singular.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.GameCenter/Templates/T_UnityModule.GooglePlayGames.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+		new KeyValuePair<string, string>(string.Format("{0}T_UnityModule.GooglePlayGames.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES),
 			string.Format("{0}GooglePlayGames/UnityModule.GooglePlayGames.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.GameCenter/Templates/T_UnityModule.GooglePlayGames.Editor.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+		new KeyValuePair<string, string>(string.Format("{0}T_UnityModule.GooglePlayGames.Editor.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES),
 			string.Format("{0}GooglePlayGames/Editor/UnityModule.GooglePlayGames.Editor.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Purchase/Templates/T_UnityModule.UnityPurchasing.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
+		new KeyValuePair<string, string>(string.Format("{0}T_UnityModule.UnityPurchasing.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_ASSEMBLY_DEFINE_TEMPLATES),
 			string.Format("{0}UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef", KCEditorDefine.B_ABS_DIR_PATH_PLUGINS))
 	};
 
