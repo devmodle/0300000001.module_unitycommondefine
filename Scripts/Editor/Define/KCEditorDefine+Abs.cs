@@ -418,6 +418,9 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+Type.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+Type.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+Enum.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+Enum.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+StringTable.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
