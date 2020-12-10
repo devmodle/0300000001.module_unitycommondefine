@@ -296,9 +296,7 @@ public static partial class KCDefine {
 
 	public const string U_IMG_NAME_DEF_SPRITE = "DefSprite";
 	public const string U_IMG_NAME_SPRITE_CLONE = "(Clone)";
-
-	public const string U_MESH_NAME_DEF_MESH = "DefMesh";
-
+	
 	public const string U_CLS_NAME_UNITY_MS_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
 	public const string U_FUNC_NAME_UNITY_MS_MSG_HANDLER = "handleUnityMsg";
 
@@ -883,10 +881,7 @@ public static partial class KCDefine {
 	// 버전
 	public static readonly System.Version U_MIN_VERSION_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
 	public static readonly System.Version U_MIN_VERSION_LOGIN_WITH_APPLE = new System.Version(13, 0, 0);
-
-	// 경로
-	public static readonly string U_OBJ_PATH_LOGIN_WITH_APPLE = string.Format("{0}{1}U_LogInWithApple", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
-
+	
 #if HAPTIC_FEEDBACK_ENABLE
 	// 햅틱 피드백 지원 모델
 	public static readonly DeviceGeneration[] U_HAPTIC_FEEDBACK_SUPPORT_MODELS = new DeviceGeneration[] {
@@ -939,11 +934,6 @@ public static partial class KCDefine {
 	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_DATA_PATH_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL);
 #endif			// #if FIREBASE_MODULE_ENABLE
-
-#if SINGULAR_MODULE_ENABLE
-	// 경로
-	public static readonly string U_OBJ_PATH_SINGULAR_SDK = string.Format("{0}{1}U_SingularSDK", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
-#endif			// #if SINGULAR_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
 	// 경로

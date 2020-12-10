@@ -273,6 +273,7 @@ public static partial class KCEditorDefine {
 
 	// 경로 {
 	public static readonly string B_DIR_PATH_AUTO_CREATE_RESES = string.Format("{0}{1}Resources/", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_AUTO_CREATE);
+	public static readonly string B_DIR_PATH_UNITY_PROJ_RESES = string.Format("{0}{1}Resources/", KCEditorDefine.B_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ);
 	
 	public static readonly string B_DIR_PATH_FILTER_FPS_COUNTER = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_PATH_AUTO_CREATE_RESES, KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
 	public static readonly string B_DIR_PATH_FILTER_DEBUG_CONSOLE = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_PATH_AUTO_CREATE_RESES, KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY);
@@ -309,7 +310,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ASSET_PATH_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
 	public static readonly string B_ASSET_PATH_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
-	public static readonly string B_ASSET_PATH_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}{2}G_DefineSymbolTable.asset", KCEditorDefine.B_DIR_PATH_AUTO_CREATE_RESES, KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string B_ASSET_PATH_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}{2}G_DefineSymbolTable.asset", KCEditorDefine.B_DIR_PATH_UNITY_PROJ_RESES, KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
 	
 	public static readonly string B_ASSET_PATH_FORMAT_SCRIPTABLE_OBJ = string.Format("{0}{1}", KCEditorDefine.B_DIR_PATH_ASSETS, "{0}.asset");
 	public static readonly string B_ASSET_PATH_FORMAT_DEFINE_SYMBOL_OUTPUT = string.Format("{0}/BuildOutput/{1}", KCDefine.B_DIR_PATH_WRITABLE, "{0}DefineSymbol.txt");
