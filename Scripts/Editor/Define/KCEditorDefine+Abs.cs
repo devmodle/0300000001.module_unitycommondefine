@@ -318,7 +318,34 @@ public static partial class KCEditorDefine {
 	public static readonly string B_IMG_PATH_FORMAT_SPRITE_TO_IMG = string.Format("{0}{1}", KCEditorDefine.B_DIR_PATH_EXPORT_IMG_BASE, "Sprites/{0}.png");
 
 	public static readonly string B_DATA_PATH_UNITY_PKGS = string.Format("{0}manifest.json", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
-	
+	public static readonly string B_ICON_PATH_STANDALONE_APP = string.Format("{0}Standalone/App/Icon", KCDefine.B_DIR_PATH_ICONS);
+
+	public static readonly string B_ICON_PATH_IOS_APP_76x76 = string.Format("{0}iOS/App/Icon76x76", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_IOS_APP_120x120 = string.Format("{0}iOS/App/Icon120x120", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_IOS_APP_152x152 = string.Format("{0}iOS/App/Icon152x152", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_IOS_APP_167x167 = string.Format("{0}iOS/App/Icon167x167", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_IOS_APP_180x180 = string.Format("{0}iOS/App/Icon180x180", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_IOS_APP_1024x1024 = string.Format("{0}iOS/App/Icon1024x1024", KCDefine.B_DIR_PATH_ICONS);
+
+	public static readonly string B_ICON_PATH_IOS_NOTI_20x20 = string.Format("{0}iOS/Notification/Icon20x20", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_IOS_NOTI_40x40 = string.Format("{0}iOS/Notification/Icon40x40", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_IOS_NOTI_60x60 = string.Format("{0}iOS/Notification/Icon60x60", KCDefine.B_DIR_PATH_ICONS);
+
+	public static readonly string B_ICON_PATH_ANDROID_APP_36x36 = string.Format("{0}Android/App/Icon36x36", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_APP_48x48 = string.Format("{0}Android/App/Icon48x48", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_APP_72x72 = string.Format("{0}Android/App/Icon72x72", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_APP_96x96 = string.Format("{0}Android/App/Icon96x96", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_APP_144x144 = string.Format("{0}Android/App/Icon144x144", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_APP_192x192 = string.Format("{0}Android/App/Icon192x192", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_APP_512x512 = string.Format("{0}Android/App/Icon512x512", KCDefine.B_DIR_PATH_ICONS);
+
+	public static readonly string B_ICON_PATH_ANDROID_NOTI_24x24 = string.Format("{0}Android/Notification/Icon24x24", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_NOTI_36x36 = string.Format("{0}Android/Notification/Icon36x36", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_NOTI_48x48 = string.Format("{0}Android/Notification/Icon48x48", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_NOTI_72x72 = string.Format("{0}Android/Notification/Icon72x72", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_NOTI_96x96 = string.Format("{0}Android/Notification/Icon96x96", KCDefine.B_DIR_PATH_ICONS);
+	public static readonly string B_ICON_PATH_ANDROID_NOTI_256x256 = string.Format("{0}Android/Notification/Icon256x256", KCDefine.B_DIR_PATH_ICONS);
+
 	public static readonly KeyValuePair<string, string>[] B_DATA_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}T_README.md", KCEditorDefine.B_ABS_DIR_PATH_DATA_TEMPLATES),
 			string.Format("{0}{1}README.md", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
@@ -709,81 +736,79 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_ICON_PATH_INFOS = new KeyValuePair<string, string>[] {
+		// 독립 플랫폼
+		new KeyValuePair<string, string>(string.Format("{0}Standalone/App/T_Icon.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_STANDALONE_APP)),
+
 		// iOS {
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon76x76.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/App/Icon76x76.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_APP_76x76)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon120x120.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/App/Icon120x120.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_APP_120x120)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon152x152.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/App/Icon152x152.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_APP_152x152)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon167x167.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/App/Icon167x167.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_APP_167x167)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon180x180.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/App/Icon180x180.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_APP_180x180)),
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon1024x1024.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/App/Icon1024x1024.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_APP_1024x1024)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_20x20)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_40x40)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_60x60)),
 		// iOS }
 
 		// 안드로이드 {
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/App/Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_APP_36x36)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/App/Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_APP_48x48)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/App/Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_APP_72x72)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/App/Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_APP_96x96)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon144x144.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/App/Icon144x144.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_APP_144x144)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon192x192.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/App/Icon192x192.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_APP_192x192)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon512x512.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/App/Icon512x512.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-		// 안드로이드 }
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_APP_512x512)),
 
-#if NOTI_MODULE_ENABLE || (FIREBASE_MODULE_ENABLE && FIREBASE_CLOUD_MSG_ENABLE)
-		// iOS {
-		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/Notification/Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-
-		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/Notification/Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-
-		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/iOS/Notification/Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
-		// iOS }
-
-		// 안드로이드 {
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon24x24.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon24x24.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_24x24)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon36x36.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_36x36)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon48x48.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_48x48)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon72x72.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_72x72)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon96x96.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_96x96)),
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon256x256.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/Icons/Android/Notification/Icon256x256.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ))
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_256x256))
 		// 안드로이드 }
-#endif			// #if NOTI_MODULE_ENABLE || (FIREBASE_MODULE_ENABLE && FIREBASE_CLOUD_MSG_ENABLE)
 	};
 	// 경로 }
 
@@ -880,9 +905,11 @@ public static partial class KCEditorDefine {
 #endif			// #if UNITY_IOS
 
 #if NOTI_MODULE_ENABLE
+	// 옵션
 	public const PresentationOption B_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
 	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = KCEditorDefine.B_PRESENT_OPTS_NOTI;
-	
+
+	// 이름
 	public const string B_ACTIVITY_NAME_NOTI = "com.unity3d.player.UnityPlayerActivity";
 #endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 상수

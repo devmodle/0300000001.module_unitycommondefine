@@ -163,6 +163,7 @@ public static partial class KCDefine {
 	// 명령어 }
 
 	// 경로 {
+	public const string B_DIR_PATH_ICONS = "Icons/";
 	public const string B_DIR_PATH_FONTS = "Fonts/";
 	public const string B_DIR_PATH_DATAS = "Datas/";
 	public const string B_DIR_PATH_IMAGES = "Images/";
