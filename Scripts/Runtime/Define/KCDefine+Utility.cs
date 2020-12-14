@@ -465,7 +465,7 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_PATH_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_VALUE_INFO_ROOT);
 	public static readonly string U_TABLE_PATH_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_STRING_INFO_ROOT);
 
-	public static readonly string U_TABLE_PATH_FORMAT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_STRING_INFO_ROOT, KCDefine.B_FILENAME_FORMAT_LOCALIZE);
+	public static readonly string U_TABLE_PATH_FORMAT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_STRING_INFO_ROOT, KCDefine.B_FILE_NAME_FORMAT_LOCALIZE);
 	public static readonly string U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
 
 	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);

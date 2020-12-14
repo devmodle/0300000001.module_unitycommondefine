@@ -23,6 +23,9 @@ public static partial class KCDefine {
 	
 	public const float B_VALUE_FLOAT_0 = 0.0f;
 	public const float B_VALUE_FLOAT_1 = 1.0f;
+
+	public const double B_VALUE_DOUBLE_0 = 0.0;
+	public const double B_VALUE_DOUBLE_1 = 1.0;
 	// 값 }
 
 	// 인덱스
@@ -206,8 +209,8 @@ public static partial class KCDefine {
 	public const string B_DICTIONARY_FORMAT_STRING = "[{0}]{1}";
 
 	public const string B_NAME_FORMAT_BACKUP = "yyyy_MM_dd HH_mm_ss";
-	public const string B_FILENAME_FORMAT_BACKUP = "{0} ({1})";
-	public const string B_FILENAME_FORMAT_LOCALIZE = "{0}_{1}";
+	public const string B_FILE_NAME_FORMAT_BACKUP = "{0} ({1})";
+	public const string B_FILE_NAME_FORMAT_LOCALIZE = "{0}_{1}";
 
 	public const string B_DATE_TIME_FORMAT_YYYY_MM_DD = "yyyyMMdd";
 	public const string B_DATE_TIME_FORMAT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";

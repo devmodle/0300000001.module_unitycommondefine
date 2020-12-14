@@ -251,8 +251,8 @@ public static partial class KCEditorDefine {
 	public const string B_ANDROID_BUILD_PATH_FORMAT = "Builds/Android/{0}/{1}.{2}";
 	public const string B_ANDROID_DEST_LIBRARY_PATH_FORMAT = "Builds/Android/{0}/{1}";
 
-	public const string B_ANDROID_BUILD_FILENAME_FORMAT = "{0}BuildOutput";
-	public const string B_ANDROID_LIBRARY_DIRNAME_FORMAT = "{0}LibraryOutput";
+	public const string B_ANDROID_BUILD_FILE_NAME_FORMAT = "{0}BuildOutput";
+	public const string B_ANDROID_LIBRARY_DIR_NAME_FORMAT = "{0}LibraryOutput";
 	// 안드로이드 }
 	#endregion			// 기본
 
@@ -457,17 +457,29 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Scripts/Runtime/Global/Define/KDefine+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 		// 상수 }
 
-		// 접근자
+		// 접근자 {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_Access.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Access/Access.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
-		// 팩토리
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_Access+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Access/Access+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+		// 접근자 }
+
+		// 팩토리 {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Factory/T_Factory.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Factory/Factory.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
-		// 확장 클래스
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Factory/T_Factory+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Factory/Factory+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+		// 팩토리 }
+
+		// 확장 클래스 {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Extension/T_Extension.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Extension/Extension.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Extension/T_Extension+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Extension/Extension+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+		// 확장 클래스 }
 
 		// 함수 {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Function/T_Func.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
