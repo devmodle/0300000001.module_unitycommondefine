@@ -42,8 +42,8 @@ public static partial class KCEditorDefine {
 	public const string B_SORTING_ORDER_INFO_FORMAT = "[{0}:{1}]";
 
 	// 커맨드 라인
-	public const string B_CMDLINE_PARAM_FORMAT_SHELL = "-c \"{0}\"";
-	public const string B_CMDLINE_PARAM_FORMAT_CMD_PROMPT = "/c \"{0}\"";
+	public const string B_CMD_LINE_PARAMS_FORMAT_SHELL = "-c \"{0}\"";
+	public const string B_CMD_LINE_PARAMS_FORMAT_CMD_PROMPT = "/c \"{0}\"";
 
 	// 경고 팝업 {
 	public const string B_ALERT_P_TITLE = "알림";

@@ -124,9 +124,10 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_LINEAR_PIPELINE_ENABLE = "LINEAR_PIPELINE_ENABLE";
 	public const string DS_DEFINE_S_ULTRA_QUALITY_LEVEL_ENABLE = "ULTRA_QUALITY_LEVEL_ENABLE";
-	
-	public const string DS_DEFINE_S_PIXELS_PERFECT_ENABLE = "PIXELS_PERFECT_ENABLE";
+
 	public const string DS_DEFINE_S_CINEMACHINE_ENABLE = "CINEMACHINE_ENABLE";
+	public const string DS_DEFINE_S_SPRITE_SHAPES_ENABLE = "SPRITE_SHAPES_ENABLE";
+	public const string DS_DEFINE_S_PIXELS_PERFECT_ENABLE = "PIXELS_PERFECT_ENABLE";
 	public const string DS_DEFINE_S_DYNAMIC_BATCHING_ENABLE = "DYNAMIC_BATCHING_ENABLE";
 	// 렌더링 }
 
@@ -200,11 +201,19 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_LOGIC_TEST_F_ENABLE = "LOGIC_TEST_F_ENABLE";
 	// 테스트 }
 
-	// 기타
+	// 기타 {
+	public const string DS_DEFINE_S_STUDY_ENABLE = "STUDY_ENABLE";
+	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
+
+	public const string DS_DEFINE_S_POLY_BRUSH_ENABLE = "POLY_BRUSH_ENABLE";
+	public const string DS_DEFINE_S_PRO_BUILDER_ENABLE = "PRO_BUILDER_ENABLE";
+	public const string DS_DEFINE_S_ASSET_BUNDLE_ENABLE = "ASSET_BUNDLE_ENABLE";
+	public const string DS_DEFINE_S_ADAPTIVE_PERFORMANCE_ENABLE = "ADAPTIVE_PERFORMANCE_ENABLE";
+
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
-	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
 	public const string DS_DEFINE_S_USE_CUSTOM_PROJ_OPTS = "USE_CUSTOM_PROJ_OPTS";
+	// 기타 }
 	#endregion			// 기본
 
 	#region 런타임 상수
@@ -258,8 +267,12 @@ public static partial class KCEditorDefine {
 #endif			// #if PURCHASE_ENABLE || PURCHASE_MODULE_ENABLE
 
 #if NOTI_ENABLE || NOTI_MODULE_ENABLE
-		[KCEditorDefine.DS_DEFINE_S_NOTI_ENABLE] = KCEditorDefine.DS_DEFINE_S_NOTI_MODULE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_NOTI_ENABLE] = KCEditorDefine.DS_DEFINE_S_NOTI_MODULE_ENABLE,
 #endif			// #if NOTI_ENABLE || NOTI_MODULE_ENABLE
+
+#if STUDY_ENABLE || STUDY_MODULE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_STUDY_ENABLE] = KCEditorDefine.DS_DEFINE_S_STUDY_MODULE_ENABLE
+#endif			// #if STUDY_ENABLE || STUDY_MODULE_ENABLE
 	};
 	#endregion			// 런타임 상수
 }
