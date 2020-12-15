@@ -20,6 +20,9 @@ public static partial class KCDefine {
 	// 값 {
 	public const int B_VALUE_INT_0 = 0;
 	public const int B_VALUE_INT_1 = 1;
+
+	public const long B_VALUE_LONG_0 = 0L;
+	public const long B_VALUE_LONG_1 = 1L;
 	
 	public const float B_VALUE_FLOAT_0 = 0.0f;
 	public const float B_VALUE_FLOAT_1 = 1.0f;

@@ -11,6 +11,9 @@ public static partial class KCDefine {
 	// 시간
 	public const float SS_DELTA_TIME_UPDATE_STATE = 0.5f;
 
+	// 텍스트
+	public const string SS_TEXT_LOADING = "Loading...";
+
 	// 이름 {
 	public const string SS_OBJ_NAME_LOADING_TEXT = "LoadingText";
 	public const string SS_OBJ_NAME_LOADING_IMG_OBJ = "LoadingImgObj";

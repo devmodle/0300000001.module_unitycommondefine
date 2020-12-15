@@ -11,7 +11,6 @@ public static partial class KCDefine {
 	public const string SS_OBJ_NAME_ABS_UI = "AbsUI";
 
 	public const string SS_OBJ_NAME_TIMER_MANAGER = "TimerManager";
-	public const string SS_OBJ_NAME_DEBUG_CONSOLE = "DebugConsole";
 	// 이름 }
 	#endregion			// 기본
 
@@ -27,6 +26,7 @@ public static partial class KCDefine {
 #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
 	public const string SS_OBJ_NAME_DEBUG_UI = "DebugUI";
+	public const string SS_OBJ_NAME_DEBUG_CONSOLE = "DebugConsole";
 #endif			// #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 
 #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
