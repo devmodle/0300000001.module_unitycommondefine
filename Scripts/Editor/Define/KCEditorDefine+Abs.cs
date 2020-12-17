@@ -823,6 +823,26 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_256x256))
 		// 안드로이드 }
 	};
+
+	public static readonly KeyValuePair<string, string>[] B_NOTI_ICON_PATH_INFOS = new KeyValuePair<string, string>[] {
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_24x24),
+			string.Format("{0}res/drawable-mdpi/icon24", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_36x36),
+			string.Format("{0}res/drawable-hdpi/icon36", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_48x48),
+			string.Format("{0}res/drawable-xhdpi/icon48", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_72x72),
+			string.Format("{0}res/drawable-xxhdpi/icon72", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_96x96),
+			string.Format("{0}res/drawable-xxxhdpi/icon96", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_256x256),
+			string.Format("{0}res/drawable/icon256", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS))
+	};
 	// 경로 }
 
 	// 에디터 옵션
