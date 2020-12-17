@@ -476,6 +476,7 @@ public static partial class KCDefine {
 
 	public static readonly string U_SND_PATH_G_TOUCH_BEGIN = string.Format("{0}{1}G_TouchBegin", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
 	public static readonly string U_SND_PATH_G_TOUCH_END = string.Format("{0}{1}G_TouchEnd", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_SND_PATH_G_POPUP_CLOSE = string.Format("{0}{1}G_PopupClose", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
 
 	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY);
 	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY);
