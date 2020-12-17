@@ -526,7 +526,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/SubIntroScene/CSubIntroSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 		// 씬 관리자 }
 
-#if STUDY_MODULE_ENABLE
+#if STUDY_ENABLE || STUDY_MODULE_ENABLE
 		// 상수
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Define/T_KDefine+MenuScene.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Define/KDefine+MenuScene.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
@@ -534,7 +534,7 @@ public static partial class KCEditorDefine {
 		// 씬 관리자
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Scene/T_CSubMenuSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_STUDY_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/SubMenuScene/CSubMenuSceneManager.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ))
-#endif			// #if STUDY_MODULE_ENABLE
+#endif			// #if STUDY_ENABLE || STUDY_MODULE_ENABLE
 		// 01.UnityProject }
 	};
 	
