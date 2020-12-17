@@ -771,15 +771,6 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(string.Format("{0}iOS/App/T_Icon1024x1024.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_APP_1024x1024)),
-
-		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_20x20)),
-
-		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_40x40)),
-
-		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_60x60)),
 		// iOS }
 
 		// 안드로이드 {
@@ -803,7 +794,21 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(string.Format("{0}Android/App/T_Icon512x512.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_APP_512x512)),
+		// 안드로이드 }
 
+#if NOTI_MODULE_ENABLE
+		// iOS {
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon20x20.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_20x20)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon40x40.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_40x40)),
+
+		new KeyValuePair<string, string>(string.Format("{0}iOS/Notification/T_Icon60x60.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_IOS_NOTI_60x60)),
+		// iOS }
+
+		// 안드로이드 {
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon24x24.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_24x24)),
 
@@ -822,26 +827,7 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Android/Notification/T_Icon256x256.png", KCEditorDefine.B_ABS_DIR_PATH_ICON_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_256x256))
 		// 안드로이드 }
-	};
-
-	public static readonly KeyValuePair<string, string>[] B_NOTI_ICON_PATH_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_24x24),
-			string.Format("{0}res/drawable-mdpi/icon24", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_36x36),
-			string.Format("{0}res/drawable-hdpi/icon36", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_48x48),
-			string.Format("{0}res/drawable-xhdpi/icon48", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_72x72),
-			string.Format("{0}res/drawable-xxhdpi/icon72", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_96x96),
-			string.Format("{0}res/drawable-xxxhdpi/icon96", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
-
-		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_256x256),
-			string.Format("{0}res/drawable/icon256", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS))
+#endif			// #if NOTI_MODULE_ENABLE
 	};
 	// 경로 }
 
@@ -944,6 +930,27 @@ public static partial class KCEditorDefine {
 
 	// 이름
 	public const string B_ACTIVITY_NAME_NOTI = "com.unity3d.player.UnityPlayerActivity";
+
+	// 경로
+	public static readonly KeyValuePair<string, string>[] B_NOTI_ICON_PATH_INFOS = new KeyValuePair<string, string>[] {
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_24x24),
+			string.Format("{0}res/drawable-mdpi/icon24", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_36x36),
+			string.Format("{0}res/drawable-hdpi/icon36", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_48x48),
+			string.Format("{0}res/drawable-xhdpi/icon48", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_72x72),
+			string.Format("{0}res/drawable-xxhdpi/icon72", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_96x96),
+			string.Format("{0}res/drawable-xxxhdpi/icon96", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_256x256),
+			string.Format("{0}res/drawable/icon256", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS))
+	};
 #endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 상수
 
