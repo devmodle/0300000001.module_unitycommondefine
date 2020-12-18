@@ -635,7 +635,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}GooglePlayGames/Editor/UnityModule.GooglePlayGames.Editor.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common/Templates/AssemblyDefine/T_UnityModule.UnityPurchasing.asmdef.t", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES),
-			string.Format("{0}Resources/UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS))
+			string.Format("{0}Plugins/UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef", KCEditorDefine.B_ABS_DIR_PATH_ASSETS))
 	};
 	// 경로 }
 
