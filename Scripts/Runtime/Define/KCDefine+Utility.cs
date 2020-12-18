@@ -339,24 +339,24 @@ public static partial class KCDefine {
 	// 위치
 	public static readonly Vector2 U_POS_DEBUG_C_DEBUG_LOG_POPUP = new Vector2(36.0f, -36.0f);
 
-	// 정렬 순서 정보 {
-	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_OBJ_CANVAS = new STSortingOrderInfo() {
+	// 정렬 순서 {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_ORDER_INFO_OBJ_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
 	};
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF_UI
 	};
 #else
-	public static readonly STSortingOrderInfo U_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
 	};
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	// 정렬 순서 정보 }
+	// 정렬 순서 }
 
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
