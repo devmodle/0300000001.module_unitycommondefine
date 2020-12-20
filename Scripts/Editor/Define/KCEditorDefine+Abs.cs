@@ -19,8 +19,7 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_TIME_EDITOR_SM_SCENE_UPDATE = 1.0f;
 
 	// 계층 뷰
-	public const float B_HIERARCHY_WIDTH = 250.0f;
-	public const float B_HIERARCHY_OFFSET_X = 125.0f;
+	public const float B_HIERARCHY_OFFSET_X = 15.0f;
 
 	// 크기 {
 	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
