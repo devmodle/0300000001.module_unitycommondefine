@@ -294,6 +294,8 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_PATH_ANDROID_PLUGINS = string.Format("{0}Android/", KCEditorDefine.B_ABS_DIR_PATH_PLUGINS);
 
 	public static readonly string B_ABS_DIR_PATH_TEMPLATES = string.Format("{0}.UnityModule.Common/Templates/", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+	public static readonly string B_ABS_DIR_PATH_UNITY_PACKAGES = string.Format("{0}.UnityModule.Common/UnityPackages/", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
+
 	public static readonly string B_ABS_DIR_PATH_ICON_TEMPLATES = string.Format("{0}Icons/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_FONT_TEMPLATES = string.Format("{0}Fonts/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
 	public static readonly string B_ABS_DIR_PATH_DATA_TEMPLATES = string.Format("{0}Datas/", KCEditorDefine.B_ABS_DIR_PATH_TEMPLATES);
@@ -306,6 +308,9 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABS_DIR_PATH_STUDY_TEMPLATES = string.Format("{0}.UnityModule.Study/Templates/", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ABS_DIR_PATH_STUDY_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABS_DIR_PATH_STUDY_TEMPLATES);
+
+	public static readonly string B_ABS_PKG_PATH_ODIN_INSPECTOR = string.Format("{0}/OdinInspector-v3.0.3.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
+	public static readonly string B_ABS_PKG_PATH_BUILD_REPORT_TOOL = string.Format("{0}/BuildReportTool-v3.5.2.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
 
 	public static readonly string B_ASSET_PATH_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
 	public static readonly string B_ASSET_PATH_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
@@ -926,29 +931,29 @@ public static partial class KCEditorDefine {
 	// 옵션
 	public const PresentationOption B_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
 	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = KCEditorDefine.B_PRESENT_OPTS_NOTI;
-
+	
 	// 이름
 	public const string B_ACTIVITY_NAME_NOTI = "com.unity3d.player.UnityPlayerActivity";
 
 	// 경로
 	public static readonly KeyValuePair<string, string>[] B_NOTI_ICON_PATH_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_24x24),
-			string.Format("{0}res/drawable-mdpi/icon24", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+			string.Format("{0}res/drawable-mdpi/icon24.png", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_36x36),
-			string.Format("{0}res/drawable-hdpi/icon36", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+			string.Format("{0}res/drawable-hdpi/icon36.png", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_48x48),
-			string.Format("{0}res/drawable-xhdpi/icon48", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+			string.Format("{0}res/drawable-xhdpi/icon48.png", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_72x72),
-			string.Format("{0}res/drawable-xxhdpi/icon72", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+			string.Format("{0}res/drawable-xxhdpi/icon72.png", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_96x96),
-			string.Format("{0}res/drawable-xxxhdpi/icon96", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
+			string.Format("{0}res/drawable-xxxhdpi/icon96.png", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}Resources/{2}.png", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ, KCEditorDefine.B_ICON_PATH_ANDROID_NOTI_256x256),
-			string.Format("{0}res/drawable/icon256", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS))
+			string.Format("{0}res/drawable/icon256.png", KCEditorDefine.B_ABS_DIR_PATH_ANDROID_PLUGINS))
 	};
 #endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 상수

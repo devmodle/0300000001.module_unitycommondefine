@@ -307,6 +307,10 @@ public static partial class KCDefine {
 	public const string U_FUNC_NAME_ON_POINTER_EXIT = "OnPointerExit";
 
 	public const string U_FUNC_NAME_RESET_LOCALIZE = "ResetLocalize";
+
+	public const string U_INPUT_NAME_JUMP = "Jump";
+	public const string U_INPUT_NAME_VERTICAL = "Vertical";
+	public const string U_INPUT_NAME_HORIZONTAL = "Horizontal";
 	// 이름 }
 	#endregion			// 기본
 

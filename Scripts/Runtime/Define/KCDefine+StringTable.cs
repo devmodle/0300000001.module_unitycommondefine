@@ -7,9 +7,14 @@ public static partial class KCDefine {
 	#region 기본
 	// 경고 팝업
 	public const string ST_KEY_ALERT_P_TITLE = "ALERT_P_TITLE";
-	public const string ST_KEY_ALERT_P_MSG = "ALERT_P_MSG";
 	public const string ST_KEY_ALERT_P_OK_BTN_TEXT = "ALERT_P_OK_BTN_TEXT";
 	public const string ST_KEY_ALERT_P_CANCEL_BTN_TEXT = "ALERT_P_CANCEL_BTN_TEXT";
+
+	// 종료 팝업
+	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
+	
+	// 업데이트 팝업
+	public const string ST_KEY_UPDATE_P_MSG = "UPDATE_P_MSG";
 
 	// 시작 씬 관리자
 	public const string ST_KEY_START_SM_DOT_TEXT = "START_SM_DOT_TEXT";
