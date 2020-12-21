@@ -61,10 +61,8 @@ public struct STPostItem {
 //! 디바이스 정보
 [System.Serializable]
 public struct STDeviceInfo {
-#if ADS_MODULE_ENABLE && ADMOB_ENABLE
 	public List<string> m_oiOSAdmobIDList;
 	public List<string> m_oAndroidAdmobIDList;
-#endif			// #if ADS_MODULE_ENABLE && ADMOB_ENABLE
 }
 
 //! 디바이스 속성
