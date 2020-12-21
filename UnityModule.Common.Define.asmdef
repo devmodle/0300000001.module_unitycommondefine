@@ -1,11 +1,12 @@
 {
     "name": "UnityModule.Common.Define",
+    "rootNamespace": "",
     "references": [
+        "UnityModule.IronSrc",
         "MessagePack",
         "GoogleMobileAds",
         "Unity.Notifications.iOS",
-        "Unity.Notifications.Android",
-        "UnityModule.IronSrc"
+        "Unity.Notifications.Android"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
