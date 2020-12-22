@@ -309,8 +309,12 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_PATH_STUDY_TEMPLATES = string.Format("{0}.UnityModule.Study/Templates/", KCEditorDefine.B_ABS_DIR_PATH_PACKAGES);
 	public static readonly string B_ABS_DIR_PATH_STUDY_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABS_DIR_PATH_STUDY_TEMPLATES);
 
-	public static readonly string B_ABS_PKG_PATH_ODIN_INSPECTOR = string.Format("{0}/OdinInspector-v3.0.3.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
+	public static readonly string B_ABS_PKG_PATH_2D_TOOLKIT = string.Format("{0}/2DToolkit-v2.5.8.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
+	public static readonly string B_ABS_PKG_PATH_BITMAP_FONT_IMPORTER = string.Format("{0}/BitmapFontImporter-v2.4.1.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
 	public static readonly string B_ABS_PKG_PATH_BUILD_REPORT_TOOL = string.Format("{0}/BuildReportTool-v3.5.2.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
+	public static readonly string B_ABS_PKG_PATH_NGUI = string.Format("{0}/NGUI-v2020.2.0.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
+	public static readonly string B_ABS_PKG_PATH_ODIN_INSPECTOR = string.Format("{0}/OdinInspector-v3.0.3.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
+	public static readonly string B_ABS_PKG_PATH_ZENJECT = string.Format("{0}/Zenject-v9.2.0.unitypackage", KCEditorDefine.B_ABS_DIR_PATH_UNITY_PACKAGES);
 
 	public static readonly string B_ASSET_PATH_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
 	public static readonly string B_ASSET_PATH_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_PATH_PROJ_SETTINGS);
