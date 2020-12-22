@@ -121,6 +121,7 @@ public static partial class KCDefine {
 	// 버전
 	public const string U_VERSION_COMMON_APP_INFO = "1.0.0";
 	public const string U_VERSION_COMMON_USER_INFO = "1.0.0";
+	public const string U_VERSION_COMMON_GAME_INFO = "1.0.0";
 	
 	// 형식
 	public const string U_FORMAT_LOG_M_LOG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
@@ -417,6 +418,10 @@ public static partial class KCDefine {
 	};
 
 	// 경로 {
+	public static readonly string U_DATA_PATH_COMMON_APP_INFO = string.Format("{0}CommonAppInfo.bytes", KCDefine.B_DIR_PATH_WRITABLE);
+	public static readonly string U_DATA_PATH_COMMON_USER_INFO = string.Format("{0}CommonUserInfo.bytes", KCDefine.B_DIR_PATH_WRITABLE);
+	public static readonly string U_DATA_PATH_COMMON_GAME_INFO = string.Format("{0}CommonGameInfo.bytes", KCDefine.B_DIR_PATH_WRITABLE);
+
 	public static readonly string U_OBJ_PATH_TEXT = string.Format("{0}{1}{2}U_Text", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_TEXT_ROOT);
 	public static readonly string U_OBJ_PATH_TEXT_BTN = string.Format("{0}{1}{2}U_TextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
 	public static readonly string U_OBJ_PATH_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_TextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
