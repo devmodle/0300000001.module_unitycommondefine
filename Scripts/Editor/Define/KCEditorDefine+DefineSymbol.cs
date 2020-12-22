@@ -93,6 +93,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_PURCHASE_ENABLE = "PURCHASE_ENABLE";
 	public const string DS_DEFINE_S_PURCHASE_MODULE_ENABLE = "PURCHASE_MODULE_ENABLE";
 
+	public const string DS_DEFINE_S_UNITY_PURCHASING = "UNITY_PURCHASING";
 	public const string DS_DEFINE_S_RECEIPT_CHECK_ENABLE = "RECEIPT_CHECK_ENABLE";
 	// 결제 }
 
