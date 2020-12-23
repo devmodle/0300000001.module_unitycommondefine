@@ -139,6 +139,7 @@ public static partial class KCDefine {
 
 	// 키
 	public const string B_KEY_JSON_ROOT_DATA = "Root";
+	public const string B_KEY_JSON_COMMON_DATA = "Common";
 
 	// 토큰
 	public const string B_TOKEN_CSV_STRING = ",";
@@ -300,8 +301,11 @@ public static partial class KCDefine {
 		"PT", "RO", "SI", "SK", "FI", "SE"
 	};
 
-	// 경로
+	// 경로 {
 	public static readonly string B_DIR_PATH_WRITABLE = string.Format("{0}/{1}/", Application.persistentDataPath, Application.identifier);
+	public static readonly string B_ABS_DIR_PATH_EXTERNAL_DATAS = string.Format("{0}../ExternalDatas/", KCEditorDefine.B_ABS_DIR_PATH_ASSETS);
+
 	public static readonly string B_DATA_PATH_LOG = string.Format("{0}Log.txt", KCDefine.B_DIR_PATH_WRITABLE);
+	// 경로 }
 	#endregion			// 런타임 상수
 }
