@@ -129,8 +129,8 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_EXTRA_TAG_ENABLE = "EXTRA_TAG_ENABLE";
 	public const string DS_DEFINE_S_CUSTOM_TAG_ENABLE = "CUSTOM_TAG_ENABLE";
 
-	public const string DS_DEFINE_S_EXTRA_SORTING_LAYER_ENABLE = "EXTRA_SORTING_LAYER_ENABLE";
-	public const string DS_DEFINE_S_CUSTOM_SORTING_LAYER_ENABLE = "CUSTOM_SORTING_LAYER_ENABLE";
+	public const string DS_DEFINE_S_EXTRA_SORTING_L_ENABLE = "EXTRA_SORTING_L_ENABLE";
+	public const string DS_DEFINE_S_CUSTOM_SORTING_L_ENABLE = "CUSTOM_SORTING_L_ENABLE";
 	// 태그 관리자 }
 
 	// 광원 {

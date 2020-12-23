@@ -45,15 +45,15 @@ public static partial class KCDefine {
 	public const int U_LAYER_CUSTOM = 8;
 
 	// 정렬 순서 {
-	public const int U_SORTING_ORDER_SCREEN_POPUP_UI = 0;
-	public const int U_SORTING_ORDER_SCREEN_TOPMOST_UI = 1;
-	public const int U_SORTING_ORDER_SCREEN_ABS_UI = 2;
-	public const int U_SORTING_ORDER_SCREEN_BLIND_UI = 3;
-	public const int U_SORTING_ORDER_SCREEN_DEBUG_UI = 4;
+	public const int U_SORTING_O_SCREEN_POPUP_UI = 0;
+	public const int U_SORTING_O_SCREEN_TOPMOST_UI = 1;
+	public const int U_SORTING_O_SCREEN_ABS_UI = 2;
+	public const int U_SORTING_O_SCREEN_BLIND_UI = 3;
+	public const int U_SORTING_O_SCREEN_DEBUG_UI = 4;
 
-	public const int U_SORTING_ORDER_FPS_COUNTER = 5;
-	public const int U_SORTING_ORDER_FILE_BROWSER_UI = 6;
-	public const int U_SORTING_ORDER_DEBUG_CONSOLE = 7;
+	public const int U_SORTING_O_FPS_COUNTER = 5;
+	public const int U_SORTING_O_FILE_BROWSER_UI = 6;
+	public const int U_SORTING_O_DEBUG_CONSOLE = 7;
 	// 정렬 순서 }
 
 	// 세기
@@ -82,7 +82,7 @@ public static partial class KCDefine {
 	// 시간 {
 	public const float U_DEF_TIME_SCALE = 1.0f;
 	public const float U_ZERO_TIME_SCALE = 0.0f;
-	public const float U_DELTA_TIME_SCHEDULE_M_CALLBACK = 0.15f;
+	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
 
 	public const float U_DEF_DURATION_ANI = 0.25f;
 	public const float U_DEF_DURATION_POPUP_ANI = 0.25f;
@@ -97,7 +97,7 @@ public static partial class KCDefine {
 
 	public const float U_DELAY_INIT = 0.15f;
 	public const float U_DELAY_NEXT_SCENE_LOAD = 0.5f;
-	public const float U_DEF_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_TIME_INTERMEDIATE;
+	public const float U_DEF_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
 
 	public const float U_DEF_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_DEF_TIMEOUT_NETWORK_CONNECTION = 30.0f;
@@ -124,7 +124,7 @@ public static partial class KCDefine {
 	public const string U_VERSION_COMMON_GAME_INFO = "1.0.0";
 	
 	// 형식
-	public const string U_FORMAT_LOG_M_LOG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
+	public const string U_FMT_LOG_MSG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
 
 	// 태그 {
 	public const string U_TAG_PLAYER = "Player";
@@ -142,24 +142,24 @@ public static partial class KCDefine {
 	// 태그 }
 
 	// 정렬 레이어 {
-	public const string U_SORTING_LAYER_UNDERGROUND = "Underground";
-	public const string U_SORTING_LAYER_BACKGROUND = "Background";
-	public const string U_SORTING_LAYER_DEF = "Default";
-	public const string U_SORTING_LAYER_FOREGROUND = "Foreground";
-	public const string U_SORTING_LAYER_OVERGROUND = "Overground";
-	public const string U_SORTING_LAYER_TOP = "Top";
-	public const string U_SORTING_LAYER_TOPMOST = "Topmost";
-	public const string U_SORTING_LAYER_ABS = "Abs";
+	public const string U_SORTING_L_UNDERGROUND = "Underground";
+	public const string U_SORTING_L_BACKGROUND = "Background";
+	public const string U_SORTING_L_DEF = "Default";
+	public const string U_SORTING_L_FOREGROUND = "Foreground";
+	public const string U_SORTING_L_OVERGROUND = "Overground";
+	public const string U_SORTING_L_TOP = "Top";
+	public const string U_SORTING_L_TOPMOST = "Topmost";
+	public const string U_SORTING_L_ABS = "Abs";
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public const string U_SORTING_LAYER_UNDERGROUND_UI = "UndergroundUI";
-	public const string U_SORTING_LAYER_BACKGROUND_UI = "BackgroundUI";
-	public const string U_SORTING_LAYER_DEF_UI = "DefaultUI";
-	public const string U_SORTING_LAYER_FOREGROUND_UI = "ForegroundUI";
-	public const string U_SORTING_LAYER_OVERGROUND_UI = "OvergroundUI";
-	public const string U_SORTING_LAYER_TOP_UI = "TopUI";
-	public const string U_SORTING_LAYER_TOPMOST_UI = "TopmostUI";
-	public const string U_SORTING_LAYER_ABS_UI = "AbsUI";
+	public const string U_SORTING_L_UNDERGROUND_UI = "UndergroundUI";
+	public const string U_SORTING_L_BACKGROUND_UI = "BackgroundUI";
+	public const string U_SORTING_L_DEF_UI = "DefaultUI";
+	public const string U_SORTING_L_FOREGROUND_UI = "ForegroundUI";
+	public const string U_SORTING_L_OVERGROUND_UI = "OvergroundUI";
+	public const string U_SORTING_L_TOP_UI = "TopUI";
+	public const string U_SORTING_L_TOPMOST_UI = "TopmostUI";
+	public const string U_SORTING_L_ABS_UI = "AbsUI";
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 레이어 }
 
@@ -211,102 +211,102 @@ public static partial class KCDefine {
 	
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
 	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
-	public const string U_KEY_FORMAT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
+	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
 
 	public const string U_KEY_SCENE_M_DIALOG_TOUCH_RESPONDER = "SceneMDialogTouchResponder";
-	public const string U_KEY_FORMAT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
+	public const string U_KEY_FMT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 	// 식별자 }
 
 	// 이름 {
-	public const string U_OBJ_NAME_SCENE_UI_TOP = "UIRoot";
-	public const string U_OBJ_NAME_SCENE_UI_BASE = "Canvas";
-	public const string U_OBJ_NAME_SCENE_UI_ROOT = "UIs";
-	public const string U_OBJ_NAME_SCENE_ANCHOR_UI_ROOT = "AnchorUIs";
-	public const string U_OBJ_NAME_SCENE_EVENT_SYSTEM = "EventSystem";
+	public const string U_OBJ_N_SCENE_UI_TOP = "UIRoot";
+	public const string U_OBJ_N_SCENE_UI_BASE = "Canvas";
+	public const string U_OBJ_N_SCENE_UI_ROOT = "UIs";
+	public const string U_OBJ_N_SCENE_ANCHOR_UI_ROOT = "AnchorUIs";
+	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
 
-	public const string U_OBJ_NAME_SCENE_LEFT_UI_ROOT = "LeftUIs";
-	public const string U_OBJ_NAME_SCENE_RIGHT_UI_ROOT = "RightUIs";
-	public const string U_OBJ_NAME_SCENE_TOP_UI_ROOT = "TopUIs";
-	public const string U_OBJ_NAME_SCENE_BOTTOM_UI_ROOT = "BottomUIs";
+	public const string U_OBJ_N_SCENE_LEFT_UI_ROOT = "LeftUIs";
+	public const string U_OBJ_N_SCENE_RIGHT_UI_ROOT = "RightUIs";
+	public const string U_OBJ_N_SCENE_TOP_UI_ROOT = "TopUIs";
+	public const string U_OBJ_N_SCENE_BOTTOM_UI_ROOT = "BottomUIs";
 
-	public const string U_OBJ_NAME_SCENE_POPUP_UI_ROOT = "PopupUIs";
-	public const string U_OBJ_NAME_SCENE_TOPMOST_UI_ROOT = "TopmostUIs";
+	public const string U_OBJ_N_SCENE_POPUP_UI_ROOT = "PopupUIs";
+	public const string U_OBJ_N_SCENE_TOPMOST_UI_ROOT = "TopmostUIs";
 
-	public const string U_OBJ_NAME_SCENE_BASE = "Base";
-	public const string U_OBJ_NAME_SCENE_OBJ_BASE = "ObjRoot";
-	public const string U_OBJ_NAME_SCENE_OBJ_ROOT = "Objs";
-	public const string U_OBJ_NAME_SCENE_ANCHOR_OBJ_ROOT = "AnchorObjs";
+	public const string U_OBJ_N_SCENE_BASE = "Base";
+	public const string U_OBJ_N_SCENE_OBJ_BASE = "ObjRoot";
+	public const string U_OBJ_N_SCENE_OBJ_ROOT = "Objs";
+	public const string U_OBJ_N_SCENE_ANCHOR_OBJ_ROOT = "AnchorObjs";
 
-	public const string U_OBJ_NAME_SCENE_LEFT_OBJ_ROOT = "LeftObjs";
-	public const string U_OBJ_NAME_SCENE_RIGHT_OBJ_ROOT = "RightObjs";
-	public const string U_OBJ_NAME_SCENE_TOP_OBJ_ROOT = "TopObjs";
-	public const string U_OBJ_NAME_SCENE_BOTTOM_OBJ_ROOT = "BottomObjs";
+	public const string U_OBJ_N_SCENE_LEFT_OBJ_ROOT = "LeftObjs";
+	public const string U_OBJ_N_SCENE_RIGHT_OBJ_ROOT = "RightObjs";
+	public const string U_OBJ_N_SCENE_TOP_OBJ_ROOT = "TopObjs";
+	public const string U_OBJ_N_SCENE_BOTTOM_OBJ_ROOT = "BottomObjs";
 
-	public const string U_OBJ_NAME_SCENE_OBJ_CANVAS_TOP = "ObjCanvasRoot";
-	public const string U_OBJ_NAME_SCENE_OBJ_CANVAS_BASE = "ObjCanvas";
-	public const string U_OBJ_NAME_SCENE_CANVAS_OBJ_ROOT = "CanvasObjs";
+	public const string U_OBJ_N_SCENE_OBJ_CANVAS_TOP = "ObjCanvasRoot";
+	public const string U_OBJ_N_SCENE_OBJ_CANVAS_BASE = "ObjCanvas";
+	public const string U_OBJ_N_SCENE_CANVAS_OBJ_ROOT = "CanvasObjs";
 
-	public const string U_OBJ_NAME_SCENE_UI_CAMERA = "UI Camera";
-	public const string U_OBJ_NAME_SCENE_MAIN_CAMERA = "Main Camera";
-	public const string U_OBJ_NAME_SCENE_MAIN_LIGHT = "Directional Light";
-	public const string U_OBJ_NAME_SCENE_SCENE_MANAGER = "SceneManager";
+	public const string U_OBJ_N_SCENE_UI_CAMERA = "UI Camera";
+	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "Main Camera";
+	public const string U_OBJ_N_SCENE_MAIN_LIGHT = "Directional Light";
+	public const string U_OBJ_N_SCENE_MANAGER = "SceneManager";
 
-	public const string U_OBJ_NAME_SCREEN_BLIND_UI_ROOT = "ScreenBlindUIs";
-	public const string U_OBJ_NAME_SCREEN_POPUP_UI_ROOT = "ScreenPopupUIs";
-	public const string U_OBJ_NAME_SCREEN_TOPMOST_UI_ROOT = "ScreenTopmostUIs";
-	public const string U_OBJ_NAME_SCREEN_ABS_UI_ROOT = "ScreenAbsUIs";
+	public const string U_OBJ_N_SCREEN_BLIND_UI_ROOT = "ScreenBlindUIs";
+	public const string U_OBJ_N_SCREEN_POPUP_UI_ROOT = "ScreenPopupUIs";
+	public const string U_OBJ_N_SCREEN_TOPMOST_UI_ROOT = "ScreenTopmostUIs";
+	public const string U_OBJ_N_SCREEN_ABS_UI_ROOT = "ScreenAbsUIs";
 
-	public const string U_OBJ_NAME_LEFT_BLIND_IMG = "LeftBlindImg";
-	public const string U_OBJ_NAME_RIGHT_BLIND_IMG = "RightBlindImg";
-	public const string U_OBJ_NAME_TOP_BLIND_IMG = "TopBlindImg";
-	public const string U_OBJ_NAME_BOTTOM_BLIND_IMG = "BottomBlindImg";
+	public const string U_OBJ_N_LEFT_BLIND_IMG = "LeftBlindImg";
+	public const string U_OBJ_N_RIGHT_BLIND_IMG = "RightBlindImg";
+	public const string U_OBJ_N_TOP_BLIND_IMG = "TopBlindImg";
+	public const string U_OBJ_N_BOTTOM_BLIND_IMG = "BottomBlindImg";
 
-	public const string U_OBJ_NAME_POPUP_CONTENTS = "Contents";
-	public const string U_OBJ_NAME_POPUP_CLOSE_BTN = "CloseBtn";
-	public const string U_OBJ_NAME_FORMAT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
+	public const string U_OBJ_N_POPUP_CONTENTS = "Contents";
+	public const string U_OBJ_N_POPUP_CLOSE_BTN = "CloseBtn";
+	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
-	public const string U_OBJ_NAME_ALERT_POPUP = "AlertPopup";
-	public const string U_OBJ_NAME_TOAST_POPUP = "ToastPopup";
+	public const string U_OBJ_N_ALERT_POPUP = "AlertPopup";
+	public const string U_OBJ_N_TOAST_POPUP = "ToastPopup";
 
-	public const string U_OBJ_NAME_ALERT_P_TITLE_TEXT = "TitleText";
-	public const string U_OBJ_NAME_ALERT_P_MSG_TEXT = "MsgText";
-	public const string U_OBJ_NAME_ALERT_P_BTN_TEXT = "Text";
+	public const string U_OBJ_N_ALERT_P_TITLE_TEXT = "TitleText";
+	public const string U_OBJ_N_ALERT_P_MSG_TEXT = "MsgText";
+	public const string U_OBJ_N_ALERT_P_BTN_TEXT = "Text";
 
-	public const string U_OBJ_NAME_ALERT_P_BG_IMG = "BGImg";
+	public const string U_OBJ_N_ALERT_P_BG_IMG = "BGImg";
 
-	public const string U_OBJ_NAME_ALERT_P_OK_BTN = "OKBtn";
-	public const string U_OBJ_NAME_ALERT_P_CANCEL_BTN = "CancelBtn";
+	public const string U_OBJ_N_ALERT_P_OK_BTN = "OKBtn";
+	public const string U_OBJ_N_ALERT_P_CANCEL_BTN = "CancelBtn";
 
-	public const string U_OBJ_NAME_TOAST_P_MSG_TEXT = "MsgText";
-	public const string U_OBJ_NAME_TOAST_P_TOAST_POPUP = "ToastPopup";
+	public const string U_OBJ_N_TOAST_P_MSG_TEXT = "MsgText";
+	public const string U_OBJ_N_TOAST_P_TOAST_POPUP = "ToastPopup";
 
-	public const string U_OBJ_NAME_SND_M_BG_SND = "BGSnd";
-	public const string U_OBJ_NAME_SND_M_FX_SND = "FXSnd";
+	public const string U_OBJ_N_SND_M_BG_SND = "BGSnd";
+	public const string U_OBJ_N_SND_M_FX_SND = "FXSnd";
 
-	public const string U_OBJ_NAME_SCROLL_V_CONTENT = "Content";
-	public const string U_OBJ_NAME_SCROLL_V_VIEWPORT = "Viewport";
+	public const string U_OBJ_N_SCROLL_V_CONTENT = "Content";
+	public const string U_OBJ_N_SCROLL_V_VIEWPORT = "Viewport";
 
-	public const string U_OBJ_NAME_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
-	public const string U_OBJ_NAME_ACTIVITY_I_TOUCH_RESPONDER = "ActivityITouchResponder";
+	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
+	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
 
-	public const string U_OBJ_NAME_DEBUG_C_LOG_WINDOW = "DebugLogWindow";
-	public const string U_OBJ_NAME_DEBUG_C_LOG_POPUP = "DebugLogPopup";
+	public const string U_OBJ_N_DEBUG_C_LOG_WINDOW = "DebugLogWindow";
+	public const string U_OBJ_N_DEBUG_C_LOG_POPUP = "DebugLogPopup";
 
-	public const string U_OBJ_NAME_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";
+	public const string U_OBJ_N_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";
 
-	public const string U_IMG_NAME_DEF_SPRITE = "DefSprite";
-	public const string U_IMG_NAME_SPRITE_CLONE = "(Clone)";
+	public const string U_IMG_N_DEF_SPRITE = "DefSprite";
+	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
 	
-	public const string U_CLS_NAME_UNITY_MS_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
-	public const string U_FUNC_NAME_UNITY_MS_MSG_HANDLER = "handleUnityMsg";
+	public const string U_CLS_N_UNITY_MS_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
+	public const string U_FUNC_N_UNITY_MS_MSG_HANDLER = "handleUnityMsg";
 
-	public const string U_FUNC_NAME_ON_DRAG = "OnDrag";
-	public const string U_FUNC_NAME_ON_POINTER_UP = "OnPointerUp";
-	public const string U_FUNC_NAME_ON_POINTER_DOWN = "OnPointerDown";
-	public const string U_FUNC_NAME_ON_POINTER_ENTER = "OnPointerEnter";
-	public const string U_FUNC_NAME_ON_POINTER_EXIT = "OnPointerExit";
+	public const string U_FUNC_N_ON_DRAG = "OnDrag";
+	public const string U_FUNC_N_ON_POINTER_UP = "OnPointerUp";
+	public const string U_FUNC_N_ON_POINTER_DOWN = "OnPointerDown";
+	public const string U_FUNC_N_ON_POINTER_ENTER = "OnPointerEnter";
+	public const string U_FUNC_N_ON_POINTER_EXIT = "OnPointerExit";
 
-	public const string U_FUNC_NAME_RESET_LOCALIZE = "ResetLocalize";
+	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
 
 	public const string U_INPUT_NAME_JUMP = "Jump";
 	public const string U_INPUT_NAME_VERTICAL = "Vertical";
@@ -331,7 +331,7 @@ public static partial class KCDefine {
 	public static readonly Color U_DEF_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
 	
 	public static readonly Color U_DEF_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
-	public static readonly Color U_DEF_COLOR_ACTIVITY_I_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
+	public static readonly Color U_DEF_COLOR_INDICATOR_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
 
 #if UNITY_EDITOR
 	public static readonly Color U_DEF_COLOR_CAMERA_BG = new Color(0.35f, 0.35f, 0.35f, 1.0f);
@@ -344,20 +344,20 @@ public static partial class KCDefine {
 	public static readonly Vector2 U_POS_DEBUG_C_DEBUG_LOG_POPUP = new Vector2(36.0f, -36.0f);
 
 	// 정렬 순서 {
-	public static readonly STSortingOrderInfo U_DEF_SORTING_ORDER_INFO_OBJ_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_OBJ_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
+		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public static readonly STSortingOrderInfo U_DEF_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_LAYER_DEF_UI
+		m_oLayer = KCDefine.U_SORTING_L_DEF_UI
 	};
 #else
-	public static readonly STSortingOrderInfo U_DEF_SORTING_ORDER_INFO_UI_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_LAYER_DEF
+		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 순서 }
@@ -395,107 +395,107 @@ public static partial class KCDefine {
 
 	// 정렬 레이어
 	public static readonly string[] U_SORTING_LAYERS = new string[] {
-		KCDefine.U_SORTING_LAYER_UNDERGROUND,
-		KCDefine.U_SORTING_LAYER_BACKGROUND,
-		KCDefine.U_SORTING_LAYER_DEF,
-		KCDefine.U_SORTING_LAYER_FOREGROUND,
-		KCDefine.U_SORTING_LAYER_OVERGROUND,
-		KCDefine.U_SORTING_LAYER_TOP,
-		KCDefine.U_SORTING_LAYER_TOPMOST,
-		KCDefine.U_SORTING_LAYER_ABS,
+		KCDefine.U_SORTING_L_UNDERGROUND,
+		KCDefine.U_SORTING_L_BACKGROUND,
+		KCDefine.U_SORTING_L_DEF,
+		KCDefine.U_SORTING_L_FOREGROUND,
+		KCDefine.U_SORTING_L_OVERGROUND,
+		KCDefine.U_SORTING_L_TOP,
+		KCDefine.U_SORTING_L_TOPMOST,
+		KCDefine.U_SORTING_L_ABS,
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-		KCDefine.U_SORTING_LAYER_UNDERGROUND_UI,
-		KCDefine.U_SORTING_LAYER_BACKGROUND_UI,
-		KCDefine.U_SORTING_LAYER_DEF_UI,
-		KCDefine.U_SORTING_LAYER_FOREGROUND_UI,
-		KCDefine.U_SORTING_LAYER_OVERGROUND_UI,
-		KCDefine.U_SORTING_LAYER_TOP_UI,
-		KCDefine.U_SORTING_LAYER_TOPMOST_UI,
-		KCDefine.U_SORTING_LAYER_ABS_UI
+		KCDefine.U_SORTING_L_UNDERGROUND_UI,
+		KCDefine.U_SORTING_L_BACKGROUND_UI,
+		KCDefine.U_SORTING_L_DEF_UI,
+		KCDefine.U_SORTING_L_FOREGROUND_UI,
+		KCDefine.U_SORTING_L_OVERGROUND_UI,
+		KCDefine.U_SORTING_L_TOP_UI,
+		KCDefine.U_SORTING_L_TOPMOST_UI,
+		KCDefine.U_SORTING_L_ABS_UI
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
 
 	// 경로 {
-	public static readonly string U_DATA_PATH_COMMON_APP_INFO = string.Format("{0}CommonAppInfo.bytes", KCDefine.B_DIR_PATH_WRITABLE);
-	public static readonly string U_DATA_PATH_COMMON_USER_INFO = string.Format("{0}CommonUserInfo.bytes", KCDefine.B_DIR_PATH_WRITABLE);
-	public static readonly string U_DATA_PATH_COMMON_GAME_INFO = string.Format("{0}CommonGameInfo.bytes", KCDefine.B_DIR_PATH_WRITABLE);
+	public static readonly string U_DATA_P_COMMON_APP_INFO = string.Format("{0}CommonAppInfo.bytes", KCDefine.B_DIR_P_WRITABLE);
+	public static readonly string U_DATA_P_COMMON_USER_INFO = string.Format("{0}CommonUserInfo.bytes", KCDefine.B_DIR_P_WRITABLE);
+	public static readonly string U_DATA_P_COMMON_GAME_INFO = string.Format("{0}CommonGameInfo.bytes", KCDefine.B_DIR_P_WRITABLE);
 
-	public static readonly string U_OBJ_PATH_TEXT = string.Format("{0}{1}{2}U_Text", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_TEXT_ROOT);
-	public static readonly string U_OBJ_PATH_TEXT_BTN = string.Format("{0}{1}{2}U_TextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
-	public static readonly string U_OBJ_PATH_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_TextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_TEXT = string.Format("{0}{1}{2}U_Text", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_TEXT_ROOT);
+	public static readonly string U_OBJ_P_TEXT_BTN = string.Format("{0}{1}{2}U_TextBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_TextScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT = string.Format("{0}{1}{2}U_LocalizeText", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_TEXT_ROOT);
-	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_LocalizeTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
-	public static readonly string U_OBJ_PATH_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_LocalizeTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_LOCALIZE_TEXT = string.Format("{0}{1}{2}U_LocalizeText", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_TEXT_ROOT);
+	public static readonly string U_OBJ_P_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_LocalizeTextBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_LocalizeTextScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_IMG = string.Format("{0}{1}{2}U_Img", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_IMAGE_ROOT);
-	public static readonly string U_OBJ_PATH_RAW_IMG = string.Format("{0}{1}{2}U_RawImg", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_IMAGE_ROOT);
+	public static readonly string U_OBJ_P_IMG = string.Format("{0}{1}{2}U_Img", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_IMAGE_ROOT);
+	public static readonly string U_OBJ_P_RAW_IMG = string.Format("{0}{1}{2}U_RawImg", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_IMAGE_ROOT);
 
-	public static readonly string U_OBJ_PATH_IMG_BTN = string.Format("{0}{1}{2}U_ImgBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
-	public static readonly string U_OBJ_PATH_IMG_SCALE_BTN = string.Format("{0}{1}{2}U_ImgScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_BTN = string.Format("{0}{1}{2}U_ImgBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_SCALE_BTN = string.Format("{0}{1}{2}U_ImgScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_IMG_TEXT_BTN = string.Format("{0}{1}{2}U_ImgTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
-	public static readonly string U_OBJ_PATH_IMG_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_TEXT_BTN = string.Format("{0}{1}{2}U_ImgTextBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgTextScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_IMG_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
-	public static readonly string U_OBJ_PATH_IMG_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextScaleBtn", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
 
-	public static readonly string U_OBJ_PATH_SCROLL_VIEW = string.Format("{0}{1}{2}U_ScrollView", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SCROLL_VIEW_ROOT);
-	public static readonly string U_OBJ_PATH_PAGE_SCROLL_VIEW = string.Format("{0}{1}{2}U_PageScrollView", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_SCROLL_VIEW_ROOT);
+	public static readonly string U_OBJ_P_SCROLL_VIEW = string.Format("{0}{1}{2}U_ScrollView", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_SCROLL_VIEW_ROOT);
+	public static readonly string U_OBJ_P_PAGE_SCROLL_VIEW = string.Format("{0}{1}{2}U_PageScrollView", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_SCROLL_VIEW_ROOT);
 
-	public static readonly string U_OBJ_PATH_FPS_COUNTER = string.Format("{0}{1}{2}U_FPSCounter", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
-	public static readonly string U_OBJ_PATH_TIMER_MANAGER = string.Format("{0}{1}{2}U_TimerManager", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_P_FPS_COUNTER = string.Format("{0}{1}{2}U_FPSCounter", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_P_TIMER_MANAGER = string.Format("{0}{1}{2}U_TimerManager", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
 
-	public static readonly string U_OBJ_PATH_DEBUG_CONSOLE = string.Format("{0}{1}{2}U_DebugConsole", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
-	public static readonly string U_OBJ_PATH_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}U_DebugLogItem", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_UTILITY, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_P_DEBUG_CONSOLE = string.Format("{0}{1}{2}U_DebugConsole", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_P_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}U_DebugLogItem", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
 
-	public static readonly string U_OBJ_PATH_G_WAVE = string.Format("{0}{1}{2}G_Wave", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_P_G_WAVE = string.Format("{0}{1}{2}G_Wave", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_EXTERNAL_ROOT);
 
-	public static readonly string U_OBJ_PATH_G_BG_SND = string.Format("{0}{1}{2}G_BGSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_SOUND_ROOT);
-	public static readonly string U_OBJ_PATH_G_FX_SND = string.Format("{0}{1}{2}G_FXSnd", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_SOUND_ROOT);
+	public static readonly string U_OBJ_P_G_BG_SND = string.Format("{0}{1}{2}G_BGSnd", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_SOUND_ROOT);
+	public static readonly string U_OBJ_P_G_FX_SND = string.Format("{0}{1}{2}G_FXSnd", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_SOUND_ROOT);
 
-	public static readonly string U_OBJ_PATH_G_ALERT_POPUP = string.Format("{0}{1}{2}G_AlertPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_POPUP_ROOT);
-	public static readonly string U_OBJ_PATH_G_TOAST_POPUP = string.Format("{0}{1}{2}G_ToastPopup", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_POPUP_ROOT);
+	public static readonly string U_OBJ_P_G_ALERT_POPUP = string.Format("{0}{1}{2}G_AlertPopup", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_POPUP_ROOT);
+	public static readonly string U_OBJ_P_G_TOAST_POPUP = string.Format("{0}{1}{2}G_ToastPopup", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_POPUP_ROOT);
 
-	public static readonly string U_OBJ_PATH_G_DRAG_RESPONDER = string.Format("{0}{1}{2}G_DragResponder", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_RESPONDER_ROOT);
-	public static readonly string U_OBJ_PATH_G_TOUCH_RESPONDER = string.Format("{0}{1}{2}G_TouchResponder", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_RESPONDER_ROOT);
+	public static readonly string U_OBJ_P_G_DRAG_RESPONDER = string.Format("{0}{1}{2}G_DragResponder", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_RESPONDER_ROOT);
+	public static readonly string U_OBJ_P_G_TOUCH_RESPONDER = string.Format("{0}{1}{2}G_TouchResponder", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_RESPONDER_ROOT);
 
-	public static readonly string U_ASSET_PATH_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_ASSET_PATH_G_BUILD_OPTS_TABLE = string.Format("{0}{1}G_BuildOptsTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_ASSET_PATH_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_ASSET_PATH_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_ASSET_PATH_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_ASSET_P_G_BUILD_OPTS_TABLE = string.Format("{0}{1}G_BuildOptsTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_ASSET_P_G_DEFINE_S_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
 	
-	public static readonly string U_ASSET_PATH_G_SPRITE_ATLAS_01 = string.Format("{0}{1}G_SpriteAtlas_01", KCDefine.B_DIR_PATH_SPRITE_ATLASES, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_ASSET_PATH_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_PATH_SETTINGS, KCDefine.B_DIR_PATH_UTILITY);
+	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_01 = string.Format("{0}{1}G_SpriteAtlas_01", KCDefine.B_DIR_P_SPRITE_ATLASES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_ASSET_P_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_P_SETTINGS, KCDefine.B_DIR_P_UTILITY);
 
-	public static readonly string U_TABLE_PATH_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_VALUE_INFO_ROOT);
-	public static readonly string U_TABLE_PATH_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_STRING_INFO_ROOT);
+	public static readonly string U_TABLE_PATH_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_VALUE_INFO_ROOT);
+	public static readonly string U_TABLE_PATH_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_STRING_INFO_ROOT);
 
-	public static readonly string U_TABLE_PATH_FORMAT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_PATH_TABLES, KCDefine.B_DIR_PATH_GLOBAL, KCDefine.B_DIR_PATH_STRING_INFO_ROOT, KCDefine.B_FILE_NAME_FORMAT_LOCALIZE);
-	public static readonly string U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
+	public static readonly string U_TABLE_PATH_FMT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_STRING_INFO_ROOT, KCDefine.B_FILE_N_FMT_LOCALIZE);
+	public static readonly string U_TABLE_PATH_FMT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FMT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
 
-	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
-	public static readonly string U_TABLE_PATH_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FORMAT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
+	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
+	public static readonly string U_TABLE_PATH_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
 	public static readonly string U_BASE_TABLE_PATH_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_PATH_G_COMMON_STRING;
 
-	public static readonly string U_FONT_PATH_G_THAI = string.Format("{0}{1}G_ThaiFont", KCDefine.B_DIR_PATH_FONTS, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_FONT_PATH_G_THAI = string.Format("{0}{1}G_ThaiFont", KCDefine.B_DIR_P_FONTS, KCDefine.B_DIR_P_GLOBAL);
 
-	public static readonly string U_SND_PATH_G_TOUCH_BEGIN = string.Format("{0}{1}G_TouchBegin", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_SND_PATH_G_TOUCH_END = string.Format("{0}{1}G_TouchEnd", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_SND_PATH_G_POPUP_CLOSE = string.Format("{0}{1}G_PopupClose", KCDefine.B_DIR_PATH_SOUNDS, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_SND_PATH_G_TOUCH_BEGIN = string.Format("{0}{1}G_TouchBegin", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_SND_PATH_G_TOUCH_END = string.Format("{0}{1}G_TouchEnd", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_SND_PATH_G_POPUP_CLOSE = string.Format("{0}{1}G_PopupClose", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
 
-	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY);
-	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_PATH_PIPELINES, KCDefine.B_DIR_PATH_UTILITY);
+	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_UTILITY);
+	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_UTILITY);
 
-	public static readonly string U_IMG_PATH_G_SPLASH = string.Format("{0}{1}G_Splash", KCDefine.B_DIR_PATH_IMAGES, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_IMG_PATH_G_WHITE = string.Format("{0}{1}G_UnityWhite", KCDefine.B_DIR_PATH_IMAGES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_IMG_PATH_G_SPLASH = string.Format("{0}{1}G_Splash", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_IMG_PATH_G_WHITE = string.Format("{0}{1}G_UnityWhite", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_PATH_WRITABLE);
+	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_P_WRITABLE);
 #else
-	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}Screenshot.png", KCDefine.B_DIR_PATH_WRITABLE);
+	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}Screenshot.png", KCDefine.B_DIR_P_WRITABLE);
 #endif			// #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	// 경로 }
 	#endregion			// 런타임 상수
@@ -517,18 +517,18 @@ public static partial class KCDefine {
 	// 퀄리티 }
 
 	// 스크립트 순서 {
-	public const int U_SCRIPT_ORDER_SINGLETON = -10;
-	public const int U_SCRIPT_ORDER_BANNER_ADS_CORRECTOR = 5;
+	public const int U_SCRIPT_O_SINGLETON = -10;
+	public const int U_SCRIPT_O_BANNER_ADS_CORRECTOR = 5;
 
-	public const int U_SCRIPT_ORDER_INIT_SCENE_MANAGER = -20;
-	public const int U_SCRIPT_ORDER_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_ORDER_START_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_ORDER_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_ORDER_SPLASH_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_ORDER_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_ORDER_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_ORDER_PERMISSION_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_ORDER_SCENE_MANAGER = KCDefine.U_SCRIPT_ORDER_INIT_SCENE_MANAGER + 2;
+	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = -20;
+	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_START_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_SPLASH_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_PERMISSION_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
 	// 스크립트 순서 }
 
 	// 광원 {
@@ -573,7 +573,7 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_GET_CREDENTIAL_STATE_CALLBACK = "UnityMSGetCredentialStateCallback";
 
 	// 이름 {
-	public const string U_OBJ_NAME_LOGIN_WITH_APPLE = "LoginWithApple";
+	public const string U_OBJ_N_LOGIN_WITH_APPLE = "LoginWithApple";
 
 #if HAPTIC_FEEDBACK_ENABLE
 	public const string U_MODEL_NAME_IPHONE = "iPhone";
@@ -584,47 +584,47 @@ public static partial class KCDefine {
 
 #if UNITY_ANDROID
 	// 시간
-	public const float U_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 0.25f;
-	public const float U_MAX_DELTA_TIME_PERMISSION_M_REQUEST_CHECK = 0.5f;
+	public const float U_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
+	public const float U_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.5f;
 #endif			// #if UNITY_ANDROID
 
 #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	// 시간
-	public const float U_DELTA_TIME_DYNAMIC_DEBUG = 1.0f;
+	public const float U_DELTA_T_DYNAMIC_DEBUG = 1.0f;
 
 	// 형식 {
-	public const string U_FORMAT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
-	public const string U_FORMAT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
+	public const string U_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
+	public const string U_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
 
-	public const string U_FORMAT_STATIC_DEBUG_INFO_A = "Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_B = "Design Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_C = "Canvas Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_D = "UI Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_E = "Object Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_F = "UI Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_G = "Object Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_H = "Safe Area: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_FORMAT_STATIC_DEBUG_INFO_I = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>";
+	public const string U_FMT_STATIC_DEBUG_INFO_A = "Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
+	public const string U_FMT_STATIC_DEBUG_INFO_B = "Design Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
+	public const string U_FMT_STATIC_DEBUG_INFO_C = "Canvas Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
+	public const string U_FMT_STATIC_DEBUG_INFO_D = "UI Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FMT_STATIC_DEBUG_INFO_E = "Object Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FMT_STATIC_DEBUG_INFO_F = "UI Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FMT_STATIC_DEBUG_INFO_G = "Object Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FMT_STATIC_DEBUG_INFO_H = "Safe Area: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_FMT_STATIC_DEBUG_INFO_I = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>";
 
-	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_A = "GC: <color=orange>{0:0.0}</color> MB, Used Heap: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FORMAT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB";
+	public const string U_FMT_DYNAMIC_DEBUG_INFO_A = "GC: <color=orange>{0:0.0}</color> MB, Used Heap: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_FMT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_FMT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_FMT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_FMT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB";
 	// 형식 }
 
 	// 이름 {
-	public const string U_OBJ_NAME_SCREEN_DEBUG_UI_ROOT = "ScreenDebugUIs";
-	public const string U_OBJ_NAME_SCREEN_DEBUG_TEXT_ROOT = "DebugTexts";
+	public const string U_OBJ_N_SCREEN_DEBUG_UI_ROOT = "ScreenDebugUIs";
+	public const string U_OBJ_N_SCREEN_DEBUG_TEXT_ROOT = "DebugTexts";
 
-	public const string U_OBJ_NAME_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
-	public const string U_OBJ_NAME_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
+	public const string U_OBJ_N_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
+	public const string U_OBJ_N_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
 
-	public const string U_OBJ_NAME_SCREEN_FPS_BTN = "FPSBtn";
-	public const string U_OBJ_NAME_SCREEN_DEBUG_BTN = "DebugBtn";
+	public const string U_OBJ_N_SCREEN_FPS_BTN = "FPSBtn";
+	public const string U_OBJ_N_SCREEN_DEBUG_BTN = "DebugBtn";
 
-	public const string U_OBJ_NAME_FPS_C_STATIC_TEXT = "StaticInfoText";
-	public const string U_OBJ_NAME_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
+	public const string U_OBJ_N_FPS_C_STATIC_TEXT = "StaticInfoText";
+	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
 	// 이름 }
 #endif			// #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 
@@ -637,13 +637,13 @@ public static partial class KCDefine {
 
 #if SINGULAR_MODULE_ENABLE
 	// 이름
-	public const string U_OBJ_NAME_SINGULAR_SDK = "SingularSDK";
+	public const string U_OBJ_N_SINGULAR_SDK = "SingularSDK";
 #endif			// #if SINGULAR_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE
 	// 시간
-	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 5.0f;
-	public const float U_DELTA_TIME_REWARD_ATI_UPDATE = 0.5f;
+	public const float U_DELTA_T_ADS_M_ADS_LOAD = 5.0f;
+	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;
 
 	// 식별자 {
 	public const string U_TEST_ADS_ID_ADMOB_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
@@ -656,10 +656,10 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
 	public const string U_KEY_ADS_M_RESUME_ADS_ID = "AdsMResumeAdsID";
 
-	public const string U_KEY_FORMAT_ADS_M_BANNER_ADS_LOADER_INFO = "AdsMBannerAdsLoaderInfo_{0}";
-	public const string U_KEY_FORMAT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
-	public const string U_KEY_FORMAT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
-	public const string U_KEY_FORMAT_ADS_M_RESUME_ADS_LOADER_INFO = "AdsMResumeAdsLoaderInfo_{0}";
+	public const string U_KEY_FMT_ADS_M_BANNER_ADS_LOADER_INFO = "AdsMBannerAdsLoaderInfo_{0}";
+	public const string U_KEY_FMT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
+	public const string U_KEY_FMT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
+	public const string U_KEY_FMT_ADS_M_RESUME_ADS_LOADER_INFO = "AdsMResumeAdsLoaderInfo_{0}";
 	// 식별자 }
 
 #if ADMOB_ENABLE
@@ -853,8 +853,8 @@ public static partial class KCDefine {
 
 #if NOTI_MODULE_ENABLE
 	// 시간
-	public const float U_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.15f;
-	public const float U_MAX_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.5f;
+	public const float U_DELTA_T_NOTI_M_REQUEST_CHECK = 0.15f;
+	public const float U_MAX_DELTA_T_NOTI_M_REQUEST_CHECK = 0.5f;
 
 	// 식별자
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
@@ -918,7 +918,7 @@ public static partial class KCDefine {
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 	// 경로
-	public static readonly string U_ASSET_PATH_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
 #endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if FACEBOOK_MODULE_ENABLE
@@ -934,14 +934,14 @@ public static partial class KCDefine {
 	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG = new System.TimeSpan(0, 0, 30);
 
 	// 경로
-	public static readonly string U_DATA_PATH_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL);
-	public static readonly string U_DATA_PATH_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_PATH_DATAS, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_DATA_P_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_P_DATAS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_DATA_P_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_P_DATAS, KCDefine.B_DIR_P_GLOBAL);
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
 	// 경로
-	public static readonly string U_DATA_PATH_PURCHASE_M_PRODUCT_ID_LIST = string.Format("{0}PurchaseProductIDList.bytes", KCDefine.B_DIR_PATH_WRITABLE);
-	public static readonly string U_ASSET_PATH_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_PATH_SCRIPTABLES, KCDefine.B_DIR_PATH_GLOBAL);
+	public static readonly string U_DATA_P_PURCHASE_M_PRODUCT_ID_LIST = string.Format("{0}PurchaseProductIDList.bytes", KCDefine.B_DIR_P_WRITABLE);
+	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
 #endif			// #if PURCHASE_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }

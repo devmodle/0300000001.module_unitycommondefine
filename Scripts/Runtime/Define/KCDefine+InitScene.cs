@@ -6,12 +6,12 @@ using UnityEngine;
 public static partial class KCDefine {
 	#region 기본
 	// 이름
-	public const string IS_OBJ_NAME_BLIND_UI = "BlindUI";
+	public const string IS_OBJ_N_BLIND_UI = "BlindUI";
 	#endregion			// 기본
 	
 	#region 런타임 상수
 	// 경로
-	public static readonly string IS_OBJ_PATH_SCREEN_BLIND_UI = string.Format("{0}{1}IS_ScreenBlindUI", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_INIT_SCENE);
-	public static readonly string IS_OBJ_PATH_SCREEN_BLIND_IMG = string.Format("{0}{1}IS_ScreenBlindImg", KCDefine.B_DIR_PATH_PREFABS, KCDefine.B_DIR_PATH_INIT_SCENE);
+	public static readonly string IS_OBJ_P_SCREEN_BLIND_UI = string.Format("{0}{1}IS_ScreenBlindUI", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_INIT_SCENE);
+	public static readonly string IS_OBJ_P_SCREEN_BLIND_IMG = string.Format("{0}{1}IS_ScreenBlindImg", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_INIT_SCENE);
 	#endregion			// 런타임 상수
 }

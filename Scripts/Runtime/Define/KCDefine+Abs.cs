@@ -24,11 +24,11 @@ public static partial class KCDefine {
 	public const long B_VALUE_LONG_0 = 0L;
 	public const long B_VALUE_LONG_1 = 1L;
 	
-	public const float B_VALUE_FLOAT_0 = 0.0f;
-	public const float B_VALUE_FLOAT_1 = 1.0f;
+	public const float B_VALUE_FLT_0 = 0.0f;
+	public const float B_VALUE_FLT_1 = 1.0f;
 
-	public const double B_VALUE_DOUBLE_0 = 0.0;
-	public const double B_VALUE_DOUBLE_1 = 1.0;
+	public const double B_VALUE_DBL_0 = 0.0;
+	public const double B_VALUE_DBL_1 = 1.0;
 	// 값 }
 
 	// 인덱스
@@ -38,9 +38,9 @@ public static partial class KCDefine {
 	public const int B_MIN_BUILD_NUMBER = 1;
 
 	// 비교 결과
-	public const int B_COMPARE_RESULT_LESS = -1;
-	public const int B_COMPARE_RESULT_EQUALS = 0;
-	public const int B_COMPARE_RESULT_GREATE = 1;
+	public const int B_COMPARE_R_LESS = -1;
+	public const int B_COMPARE_R_EQUALS = 0;
+	public const int B_COMPARE_R_GREATE = 1;
 
 	// 개수
 	public const int B_MAX_NUM_BACKUP_FILES = 50;
@@ -53,18 +53,18 @@ public static partial class KCDefine {
 	public const uint B_TIMES_UINT_INFINITE = uint.MaxValue;
 
 	// 시간 {
-	public const float B_DELTA_TIME_INFINITE = float.MaxValue;
-	public const float B_DELTA_TIME_INTERMEDIATE = float.Epsilon;
-	public const float B_DELTA_TIME_ASYNC_OPERATION = 0.25f;
+	public const float B_DELTA_T_INFINITE = float.MaxValue;
+	public const float B_DELTA_T_INTERMEDIATE = float.Epsilon;
+	public const float B_DELTA_T_ASYNC_OPERATION = 0.25f;
 
-	public const double B_DELTA_TIME_UTC_TO_PST = -8.0;
+	public const double B_DELTA_T_UTC_TO_PST = -8.0;
 	// 시간 }
 
 	// 플래그 {
-	public const BindingFlags B_BINDING_FLAG_PUBLIC_INSTANCE = BindingFlags.Public | BindingFlags.Instance;
+	public const BindingFlags B_BINDING_F_PUBLIC_INSTANCE = BindingFlags.Public | BindingFlags.Instance;
 
-	public const BindingFlags B_BINDING_FLAG_PUBLIC_STATIC = BindingFlags.Public | BindingFlags.Static;
-	public const BindingFlags B_BINDING_FLAG_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
+	public const BindingFlags B_BINDING_F_PUBLIC_STATIC = BindingFlags.Public | BindingFlags.Static;
+	public const BindingFlags B_BINDING_F_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
 	// 플래그 }
 
 	// 디바이스 {
@@ -119,22 +119,22 @@ public static partial class KCDefine {
 	// 플랫폼 }
 
 	// 이름
-	public const string B_DIR_NAME_BACKUP = "Backup";
+	public const string B_DIR_N_BACKUP = "Backup";
 
 	// 씬 이름 {
-	public const string B_SCENE_NAME_SAMPLE = "00.SampleScene";
+	public const string B_SCENE_N_SAMPLE = "00.SampleScene";
 
-	public const string B_SCENE_NAME_INIT = "00.InitScene";
-	public const string B_SCENE_NAME_SETUP = "01.SetupScene";
-	public const string B_SCENE_NAME_AGREE = "01.AgreeScene";
-	public const string B_SCENE_NAME_LATE_SETUP = "01.LateSetupScene";
+	public const string B_SCENE_N_INIT = "00.InitScene";
+	public const string B_SCENE_N_SETUP = "01.SetupScene";
+	public const string B_SCENE_N_AGREE = "01.AgreeScene";
+	public const string B_SCENE_N_LATE_SETUP = "01.LateSetupScene";
 	
-	public const string B_SCENE_NAME_START = "01.StartScene";
-	public const string B_SCENE_NAME_SPLASH = "01.SplashScene";
-	public const string B_SCENE_NAME_PERMISSION = "01.PermissionScene";
-	public const string B_SCENE_NAME_LOADING = "01.LoadingScene";
-	public const string B_SCENE_NAME_INTRO = "01.IntroScene";
-	public const string B_SCENE_NAME_MENU = "01.MenuScene";
+	public const string B_SCENE_N_START = "01.StartScene";
+	public const string B_SCENE_N_SPLASH = "01.SplashScene";
+	public const string B_SCENE_N_PERMISSION = "01.PermissionScene";
+	public const string B_SCENE_N_LOADING = "01.LoadingScene";
+	public const string B_SCENE_N_INTRO = "01.IntroScene";
+	public const string B_SCENE_N_MENU = "01.MenuScene";
 	// 씬 이름 }
 
 	// 식별자
@@ -170,59 +170,59 @@ public static partial class KCDefine {
 	// 명령어 }
 
 	// 경로 {
-	public const string B_DIR_PATH_ICONS = "Icons/";
-	public const string B_DIR_PATH_FONTS = "Fonts/";
-	public const string B_DIR_PATH_DATAS = "Datas/";
-	public const string B_DIR_PATH_IMAGES = "Images/";
-	public const string B_DIR_PATH_SOUNDS = "Sounds/";
-	public const string B_DIR_PATH_TABLES = "Tables/";
-	public const string B_DIR_PATH_PREFABS = "Prefabs/";
-	public const string B_DIR_PATH_TEXTURES = "Textures/";
-	public const string B_DIR_PATH_MATERIALS = "Materials/";
-	public const string B_DIR_PATH_PIPELINES = "Pipelines/";
-	public const string B_DIR_PATH_SCRIPTABLES = "Scriptables/";
-	public const string B_DIR_PATH_SPRITE_ATLASES = "SpriteAtlases/";
-	public const string B_DIR_PATH_SETTINGS = "Settings/";
+	public const string B_DIR_P_ICONS = "Icons/";
+	public const string B_DIR_P_FONTS = "Fonts/";
+	public const string B_DIR_P_DATAS = "Datas/";
+	public const string B_DIR_P_IMAGES = "Images/";
+	public const string B_DIR_P_SOUNDS = "Sounds/";
+	public const string B_DIR_P_TABLES = "Tables/";
+	public const string B_DIR_P_PREFABS = "Prefabs/";
+	public const string B_DIR_P_TEXTURES = "Textures/";
+	public const string B_DIR_P_MATERIALS = "Materials/";
+	public const string B_DIR_P_PIPELINES = "Pipelines/";
+	public const string B_DIR_P_SCRIPTABLES = "Scriptables/";
+	public const string B_DIR_P_SPRITE_ATLASES = "SpriteAtlases/";
+	public const string B_DIR_P_SETTINGS = "Settings/";
 
-	public const string B_DIR_PATH_GLOBAL = "Global/";
-	public const string B_DIR_PATH_UTILITY = "Utility/";
-	public const string B_DIR_PATH_TUTORIAL = "Tutorial/";
-	public const string B_DIR_PATH_INIT_SCENE = "InitScene/";
-	public const string B_DIR_PATH_SETUP_SCENE = "SetupScene/";
-	public const string B_DIR_PATH_START_SCENE = "StartScene/";
-	public const string B_DIR_PATH_LOADING_SCENE = "LoadingScene/";
-	public const string B_DIR_PATH_SPLASH_SCENE = "SplashScene/";
-	public const string B_DIR_PATH_AGREE_SCENE = "AgreeScene/";
-	public const string B_DIR_PATH_INTRO_SCENE = "IntroScene/";
+	public const string B_DIR_P_GLOBAL = "Global/";
+	public const string B_DIR_P_UTILITY = "Utility/";
+	public const string B_DIR_P_TUTORIAL = "Tutorial/";
+	public const string B_DIR_P_INIT_SCENE = "InitScene/";
+	public const string B_DIR_P_SETUP_SCENE = "SetupScene/";
+	public const string B_DIR_P_START_SCENE = "StartScene/";
+	public const string B_DIR_P_LOADING_SCENE = "LoadingScene/";
+	public const string B_DIR_P_SPLASH_SCENE = "SplashScene/";
+	public const string B_DIR_P_AGREE_SCENE = "AgreeScene/";
+	public const string B_DIR_P_INTRO_SCENE = "IntroScene/";
 
-	public const string B_DIR_PATH_TEXT_ROOT = "Text/";
-	public const string B_DIR_PATH_IMAGE_ROOT = "Image/";
-	public const string B_DIR_PATH_BUTTON_ROOT = "Button/";
-	public const string B_DIR_PATH_SCROLL_VIEW_ROOT = "ScrollView/";
-	public const string B_DIR_PATH_POPUP_ROOT = "Popup/";
-	public const string B_DIR_PATH_RESPONDER_ROOT = "Responder/";
-	public const string B_DIR_PATH_SOUND_ROOT = "Sound/";
-	public const string B_DIR_PATH_EXTERNAL_ROOT = "External/";
-	public const string B_DIR_PATH_STRING_INFO_ROOT = "StringInfo/";
-	public const string B_DIR_PATH_VALUE_INFO_ROOT = "ValueInfo/";
+	public const string B_DIR_P_TEXT_ROOT = "Text/";
+	public const string B_DIR_P_IMAGE_ROOT = "Image/";
+	public const string B_DIR_P_BUTTON_ROOT = "Button/";
+	public const string B_DIR_P_SCROLL_VIEW_ROOT = "ScrollView/";
+	public const string B_DIR_P_POPUP_ROOT = "Popup/";
+	public const string B_DIR_P_RESPONDER_ROOT = "Responder/";
+	public const string B_DIR_P_SOUND_ROOT = "Sound/";
+	public const string B_DIR_P_EXTERNAL_ROOT = "External/";
+	public const string B_DIR_P_STRING_INFO_ROOT = "StringInfo/";
+	public const string B_DIR_P_VALUE_INFO_ROOT = "ValueInfo/";
 	// 경로 }
 
 	// 형식 {
-	public const string B_SIZE_FORMAT_STRING = "<size={0}>{1}</size>";
-	public const string B_COLOR_FORMAT_STRING = "<color=#{0}>{1}</color>";
-	public const string B_DICTIONARY_FORMAT_STRING = "[{0}]{1}";
+	public const string B_SIZE_FMT_STRING = "<size={0}>{1}</size>";
+	public const string B_COLOR_FMT_STRING = "<color=#{0}>{1}</color>";
+	public const string B_DICTIONARY_FMT_STRING = "[{0}]{1}";
 
-	public const string B_NAME_FORMAT_BACKUP = "yyyy_MM_dd HH_mm_ss";
-	public const string B_FILE_NAME_FORMAT_BACKUP = "{0} ({1})";
-	public const string B_FILE_NAME_FORMAT_LOCALIZE = "{0}_{1}";
+	public const string B_NAME_FMT_BACKUP = "yyyy_MM_dd HH_mm_ss";
+	public const string B_FILE_N_FMT_BACKUP = "{0} ({1})";
+	public const string B_FILE_N_FMT_LOCALIZE = "{0}_{1}";
 
-	public const string B_DATE_TIME_FORMAT_YYYY_MM_DD = "yyyyMMdd";
-	public const string B_DATE_TIME_FORMAT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
+	public const string B_DATE_T_FMT_YYYY_MM_DD = "yyyyMMdd";
+	public const string B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
 	// 형식 }
 
 	// URL
-	public const string B_MAIL_URL_FORMAT = "mailto:{0}?subject={1}&body={2}";
-	public const string B_MAIL_URL_MSG_FORMAT = "Platform: {0}\nProcessor: {1}\nGraphics: {2} [{3}]\nOS: {4}\n\nPlease enter your inquiry: \n{5}";
+	public const string B_MAIL_URL_FMT = "mailto:{0}?subject={1}&body={2}";
+	public const string B_MAIL_MSG_FMT = "Platform: {0}\nProcessor: {1}\nGraphics: {2} [{3}]\nOS: {4}\n\nPlease enter your inquiry: \n{5}";
 	#endregion			// 기본
 
 	#region 런타임 상수
@@ -302,10 +302,10 @@ public static partial class KCDefine {
 	};
 
 	// 경로 {
-	public static readonly string B_DIR_PATH_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
-	public static readonly string B_ABS_DIR_PATH_EXTERNAL_DATAS = $"{Application.dataPath}/../ExternalDatas/";
+	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
+	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../ExternalDatas/";
 
-	public static readonly string B_DATA_PATH_LOG = $"{KCDefine.B_DIR_PATH_WRITABLE}Log.txt";
+	public static readonly string B_DATA_P_LOG = $"{KCDefine.B_DIR_P_WRITABLE}Log.txt";
 	// 경로 }
 	#endregion			// 런타임 상수
 }
