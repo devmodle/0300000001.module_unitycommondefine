@@ -19,7 +19,8 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_TIME_EDITOR_SM_SCENE_UPDATE = 1.0f;
 
 	// 계층 뷰
-	public const float B_HIERARCHY_OFFSET_X = 15.0f;
+	public const float B_HIERARCHY_TEXT_OFFSET_X = 15.0f;
+	public const float B_HIERARCHY_OUTLINE_OFFSET_X = 1.5f;
 
 	// 크기 {
 	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
@@ -258,6 +259,7 @@ public static partial class KCEditorDefine {
 	#region 런타임 상수
 	// 계층 뷰
 	public static readonly Color B_HIERARCHY_TEXT_COLOR = new Color(1.0f, 0.27f, 0.0f, 1.0f);
+	public static readonly Color B_HIERARCHY_OUTLINE_COLOR = Color.black;
 
 	// 색상
 	public static readonly Color B_COLOR_UNITY_LOGO_BG = Color.black;
