@@ -163,10 +163,9 @@ public static partial class KCDefine {
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 레이어 }
 
-	// 식별자
+	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
 
-	// 키 {
 	public const string U_KEY_DEVICE_CMD = "Cmd";
 	public const string U_KEY_DEVICE_MSG = "Msg";
 
@@ -216,7 +215,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_SCENE_M_DIALOG_TOUCH_RESPONDER = "SceneMDialogTouchResponder";
 	public const string U_KEY_FORMAT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
-	// 키 }
+	// 식별자 }
 
 	// 이름 {
 	public const string U_OBJ_NAME_SCENE_UI_TOP = "UIRoot";
@@ -569,7 +568,7 @@ public static partial class KCDefine {
 #endif			// #if UNITY_EDITOR
 
 #if UNITY_IOS
-	// 키
+	// 식별자
 	public const string U_KEY_UNITY_MS_LOGIN_WITH_APPLE_CALLBACK = "UnityMSLoginWithAppleCallback";
 	public const string U_KEY_UNITY_MS_GET_CREDENTIAL_STATE_CALLBACK = "UnityMSGetCredentialStateCallback";
 
@@ -630,7 +629,7 @@ public static partial class KCDefine {
 #endif			// #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 
 #if TENJIN_MODULE_ENABLE
-	// 키
+	// 식별자
 	public const string U_KEY_TENJIN_M_RECEIPT = "json";
 	public const string U_KEY_TENJIN_M_PAYLOAD = "Payload";
 	public const string U_KEY_TENJIN_M_SIGNATURE = "signature";
@@ -646,13 +645,12 @@ public static partial class KCDefine {
 	public const float U_DELTA_TIME_ADS_M_ADS_LOAD = 5.0f;
 	public const float U_DELTA_TIME_REWARD_ATI_UPDATE = 0.5f;
 
-	// 식별자
+	// 식별자 {
 	public const string U_TEST_ADS_ID_ADMOB_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
 	public const string U_TEST_ADS_ID_ADMOB_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
 	public const string U_TEST_ADS_ID_ADMOB_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
 	public const string U_TEST_ADS_ID_ADMOB_RESUME_ADS = "ca-app-pub-3940256099942544/1033173712";
 
-	// 키 {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
@@ -662,10 +660,10 @@ public static partial class KCDefine {
 	public const string U_KEY_FORMAT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
 	public const string U_KEY_FORMAT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
 	public const string U_KEY_FORMAT_ADS_M_RESUME_ADS_LOADER_INFO = "AdsMResumeAdsLoaderInfo_{0}";
-	// 키 }
+	// 식별자 }
 
 #if ADMOB_ENABLE
-	// 키 {
+	// 식별자 {
 	public const string U_KEY_ADS_M_ADMOB_INIT_CALLBACK = "AdsMAdmobInitCallback";
 
 	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_LOAD_CALLBACK = "AdsMAdmobBannerAdsLoadCallback";
@@ -684,11 +682,11 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_ADMOB_RESUME_ADS_LOAD_CALLBACK = "AdsMAdmobResumeAdsLoadCallback";
 	public const string U_KEY_ADS_M_ADMOB_RESUME_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobResumeAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_RESUME_ADS_CLOSE_CALLBACK = "AdsMAdmobResumeAdsCloseCallback";
-	// 키 }
+	// 식별자 }
 #endif			// #if ADMOB_ENABLE
 
 #if IRON_SRC_ENABLE
-	// 키 {
+	// 식별자 {
 	public const string U_KEY_ADS_M_IRON_SRC_INIT_CALLBACK = "AdsMIronSrcInitCallback";
 
 	public const string U_KEY_ADS_M_IRON_SRC_BANNER_ADS_LOAD_CALLBACK = "AdsMIronSrcBannerAdsLoadCallback";
@@ -701,11 +699,11 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSrcFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSrcFullscreenAdsCloseCallback";
-	// 키 }
+	// 식별자 }
 #endif			// #if IRON_SRC_ENABLE
 
 #if APP_LOVIN_ENABLE
-	// 키 {
+	// 식별자 {
 	public const string U_KEY_ADS_M_APP_LOVIN_INIT_CALLBACK = "AdsMAppLovinInitCallback";
 
 	public const string U_KEY_ADS_M_APP_LOVIN_BANNER_ADS_LOAD_CALLBACK = "AdsMAppLovinBannerAdsLoadCallback";
@@ -717,7 +715,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAppLovinFullscreenAdsCloseCallback";
-	// 키 }
+	// 식별자 }
 #endif			// #if APP_LOVIN_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
@@ -725,7 +723,7 @@ public static partial class KCDefine {
 	// 이름
 	public const string U_LOG_NAME_APP_LAUNCH = "AppLaunch";
 
-	// 키 {
+	// 식별자 {
 	public const string U_LOG_KEY_USER_ID = "UserID";
 	public const string U_LOG_KEY_COUNTRY_CODE = "CountryCode";
 
@@ -741,23 +739,23 @@ public static partial class KCDefine {
 	public const string U_LOG_KEY_PARAMS_D = "ParamsD";
 	public const string U_LOG_KEY_PARAMS_E = "ParamsE";
 	public const string U_LOG_KEY_PARAMS_F = "ParamsF";
-	// 키 }
+	// 식별자 }
 
 #if FLURRY_MODULE_ENABLE
 	// 시간
 	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_SEC_TO_MILLISEC;
 
-	// 키
+	// 식별자
 	public const string U_KEY_FLURRY_M_INIT_CALLBACK = "FlurryMInitCallback";
 #endif			// #if FLURRY_MODULE_ENABLE
 
 #if TENJIN_MODULE_ENABLE
-	// 키
+	// 식별자
 	public const string U_KEY_TENJIN_M_INIT_CALLBACK = "TenjinMInitCallback";
 #endif			// #if TENJIN_MODULE_ENABLE
 	
 #if FACEBOOK_MODULE_ENABLE
-	// 키
+	// 식별자
 	public const string U_KEY_FACEBOOK_M_INIT_CALLBACK = "FacebookMInitCallback";
 	public const string U_KEY_FACEBOOK_M_LOGIN_CALLBACK = "FacebookMLoginCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_SHOW_CALLBACK = "FacebookMViewStateShowCallback";
@@ -768,7 +766,7 @@ public static partial class KCDefine {
 	// 이름
 	public const string U_TRACKING_NAME_APP_LAUNCH = KCDefine.U_LOG_NAME_APP_LAUNCH;
 	
-	// 키 {
+	// 식별자 {
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
 
 	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
@@ -785,7 +783,7 @@ public static partial class KCDefine {
 	public const string U_TRACKING_KEY_PARAMS_D = KCDefine.U_LOG_KEY_PARAMS_D;
 	public const string U_TRACKING_KEY_PARAMS_E = KCDefine.U_LOG_KEY_PARAMS_E;
 	public const string U_TRACKING_KEY_PARAMS_F = KCDefine.U_LOG_KEY_PARAMS_F;
-	// 키 }
+	// 식별자 }
 
 	// 노드
 	public const string U_NODE_FIREBASE_POST_ITEM_LIST = "PostItemList";
@@ -793,41 +791,41 @@ public static partial class KCDefine {
 	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
 
 #if FIREBASE_AUTH_ENABLE
-	// 키 {
+	// 식별자 {
 	public const string U_KEY_FIREBASE_M_LOGIN_CALLBACK = "FirebaseMLoginCallback";	
 
 #if UNITY_IOS
 	public const string U_KEY_FIREBASE_M_GAME_CENTER_CALLBACK = "FirebaseMGameCenterCallback";
 #endif			// #if UNITY_IOS
-	// 키 }
+	// 식별자 }
 #endif			// #if FIREBASE_AUTH_ENABLE
 
 #if FIREBASE_DB_ENABLE
-	// 키
+	// 식별자
 	public const string U_KEY_FIREBASE_M_SAVE_DB_CALLBACK = "FirebaseMSaveDBCallback";
 	public const string U_KEY_FIREBASE_M_LOAD_DB_CALLBACK = "FirebaseMLoadDBCallback";
 #endif			// #if FIREBASE_DB_ENABLE
 
 #if FIREBASE_REMOTE_CONFIG_ENABLE
-	// 키
+	// 식별자
 	public const string U_KEY_FIREBASE_M_LOAD_CONFIG_CALLBACK = "FirebaseMLoadConfigCallback";
 #endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 
 #if FIREBASE_CLOUD_MSG_ENABLE
-	// 키
+	// 식별자
 	public const string U_KEY_FIREBASE_M_TOKEN_CALLBACK = "FirebaseMTokenCallback";
 	public const string U_KEY_FIREBASE_M_MSG_CALLBACK = "FirebaseMMsgCallback";
 #endif			// #if FIREBASE_CLOUD_MSG_ENABLE
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if SINGULAR_MODULE_ENABLE
-	// 키
+	// 식별자
 	public const string U_KEY_SINGULAR_M_INIT_CALLBACK = "SingularMInitCallback";
 #endif			// #if SINGULAR_MODULE_ENABLE
 #endif			// #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if GAME_CENTER_MODULE_ENABLE
-	// 키
+	// 식별자
 	public const string U_KEY_GAME_CM_INIT_CALLBACK = "GameCMInitCallback";
 	public const string U_KEY_GAME_CM_LOGIN_CALLBACK = "GameCMLoginCallback";
 	public const string U_KEY_GAME_CM_LOAD_SCORES_CALLBACK = "GameCMLoadScoresCallback";
@@ -842,7 +840,7 @@ public static partial class KCDefine {
 	// 메세지
 	public const string U_MSG_INVALID_PRODUCT_TYPE = "해당 상품 타입을 지원하지않습니다.";
 
-	// 키 {
+	// 식별자 {
 	public const string U_KEY_PURCHASE_M_INIT_CALLBACK = "PurchaseMInitCallback";
 	public const string U_KEY_PURCHASE_M_INIT_FAIL_CALLBACK = "PurchaseMInitFailCallback";
 	public const string U_KEY_PURCHASE_M_PURCHASE_FAIL_CALLBACK = "PurchaseMPurchaseFailCallback";
@@ -850,7 +848,7 @@ public static partial class KCDefine {
 	public const string U_KEY_PURCHASE_M_CONFIRM_CALLBACK = "PurchaseMConfirmCallback";
 	public const string U_KEY_PURCHASE_M_RESTORE_CALLBACK = "PurchaseMRestoreCallback";
 	public const string U_KEY_PURCHASE_M_PURCHASE_RESULT_CALLBACK = "PurchaseMPurchaseResultCallback";
-	// 키 }
+	// 식별자 }
 #endif			// #if PURCHASE_MODULE_ENABLE
 
 #if NOTI_MODULE_ENABLE
@@ -858,7 +856,7 @@ public static partial class KCDefine {
 	public const float U_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.15f;
 	public const float U_MAX_DELTA_TIME_NOTI_M_REQUEST_CHECK = 0.5f;
 
-	// 키
+	// 식별자
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
 
 	// 그룹

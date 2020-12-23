@@ -137,7 +137,7 @@ public static partial class KCDefine {
 	public const string B_SCENE_NAME_MENU = "01.MenuScene";
 	// 씬 이름 }
 
-	// 키
+	// 식별자
 	public const string B_KEY_JSON_ROOT_DATA = "Root";
 	public const string B_KEY_JSON_COMMON_DATA = "Common";
 
