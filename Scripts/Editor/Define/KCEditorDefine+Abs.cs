@@ -471,8 +471,14 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_Access.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Access/Access.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_AccessExtension.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/00.AutoCreate/Global/Access/AccessExtension.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
 		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_Access+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
 			string.Format("{0}{1}Scripts/Runtime/Global/Access/Access+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
+
+		new KeyValuePair<string, string>(string.Format("{0}Runtime/Access/T_AccessExtension+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_SCRIPT_TEMPLATES),
+			string.Format("{0}{1}Scripts/Runtime/Global/Access/AccessExtension+Global.cs", KCEditorDefine.B_ABS_DIR_PATH_ASSETS, KCEditorDefine.B_DIR_PATH_UNITY_PROJ)),
 		// 접근자 }
 
 		// 팩토리 {
