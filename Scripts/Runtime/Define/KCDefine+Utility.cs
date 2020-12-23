@@ -308,9 +308,9 @@ public static partial class KCDefine {
 
 	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
 
-	public const string U_INPUT_NAME_JUMP = "Jump";
-	public const string U_INPUT_NAME_VERTICAL = "Vertical";
-	public const string U_INPUT_NAME_HORIZONTAL = "Horizontal";
+	public const string U_INPUT_N_JUMP = "Jump";
+	public const string U_INPUT_N_VERTICAL = "Vertical";
+	public const string U_INPUT_N_HORIZONTAL = "Horizontal";
 	// 이름 }
 	#endregion			// 기본
 
@@ -470,32 +470,32 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_01 = string.Format("{0}{1}G_SpriteAtlas_01", KCDefine.B_DIR_P_SPRITE_ATLASES, KCDefine.B_DIR_P_GLOBAL);
 	public static readonly string U_ASSET_P_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_P_SETTINGS, KCDefine.B_DIR_P_UTILITY);
 
-	public static readonly string U_TABLE_PATH_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_VALUE_INFO_ROOT);
-	public static readonly string U_TABLE_PATH_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_STRING_INFO_ROOT);
+	public static readonly string U_TABLE_P_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_VALUE_INFO_ROOT);
+	public static readonly string U_TABLE_P_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_STRING_INFO_ROOT);
 
-	public static readonly string U_TABLE_PATH_FMT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_STRING_INFO_ROOT, KCDefine.B_FILE_N_FMT_LOCALIZE);
-	public static readonly string U_TABLE_PATH_FMT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FMT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
+	public static readonly string U_TABLE_P_FMT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_STRING_INFO_ROOT, KCDefine.B_FILE_N_FMT_LOCALIZE);
+	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
 
-	public static readonly string U_TABLE_PATH_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
-	public static readonly string U_TABLE_PATH_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_PATH_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
-	public static readonly string U_BASE_TABLE_PATH_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_PATH_G_COMMON_STRING;
+	public static readonly string U_TABLE_P_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
+	public static readonly string U_TABLE_P_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
+	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_P_G_COMMON_STRING;
 
-	public static readonly string U_FONT_PATH_G_THAI = string.Format("{0}{1}G_ThaiFont", KCDefine.B_DIR_P_FONTS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_FONT_P_G_THAI = string.Format("{0}{1}G_ThaiFont", KCDefine.B_DIR_P_FONTS, KCDefine.B_DIR_P_GLOBAL);
 
-	public static readonly string U_SND_PATH_G_TOUCH_BEGIN = string.Format("{0}{1}G_TouchBegin", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_SND_PATH_G_TOUCH_END = string.Format("{0}{1}G_TouchEnd", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_SND_PATH_G_POPUP_CLOSE = string.Format("{0}{1}G_PopupClose", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_SND_P_G_TOUCH_BEGIN = string.Format("{0}{1}G_TouchBegin", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_SND_P_G_TOUCH_END = string.Format("{0}{1}G_TouchEnd", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_SND_P_G_POPUP_CLOSE = string.Format("{0}{1}G_PopupClose", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
 
-	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_UTILITY);
-	public static readonly string U_PIPELINE_PATH_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_UTILITY);
+	public static readonly string U_PIPELINE_P_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_UTILITY);
+	public static readonly string U_PIPELINE_P_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_UTILITY);
 
-	public static readonly string U_IMG_PATH_G_SPLASH = string.Format("{0}{1}G_Splash", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_IMG_PATH_G_WHITE = string.Format("{0}{1}G_UnityWhite", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_IMG_P_G_SPLASH = string.Format("{0}{1}G_Splash", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_IMG_P_G_WHITE = string.Format("{0}{1}G_UnityWhite", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_P_WRITABLE);
+	public static readonly string U_IMG_P_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_P_WRITABLE);
 #else
-	public static readonly string U_IMG_PATH_SCREENSHOT = string.Format("{0}Screenshot.png", KCDefine.B_DIR_P_WRITABLE);
+	public static readonly string U_IMG_P_SCREENSHOT = string.Format("{0}Screenshot.png", KCDefine.B_DIR_P_WRITABLE);
 #endif			// #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	// 경로 }
 	#endregion			// 런타임 상수
@@ -550,19 +550,19 @@ public static partial class KCDefine {
 	public const float U_SCALE_UNIVERSAL_RP_RENDERING = 1.0f;
 
 	// 이름 {
-	public const string U_FIELD_NAME_UNIVERSAL_RP_DEBUG_LEVEL = "m_DebugLevel";
-	public const string U_FIELD_NAME_UNIVERSAL_RP_ANTI_ALIASING = "m_MSAA";
-	public const string U_FIELD_NAME_UNIVERSAL_RP_SUPPORT_SOFT_SHADOW = "m_SoftShadowsSupported";
-	public const string U_FIELD_NAME_UNIVERSAL_RP_SUPPORT_MIXED_LIGHTING = "m_MixedLightingSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_DEBUG_LEVEL = "m_DebugLevel";
+	public const string U_FIELD_N_UNIVERSAL_RP_ANTI_ALIASING = "m_MSAA";
+	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORT_SOFT_SHADOW = "m_SoftShadowsSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORT_MIXED_LIGHTING = "m_MixedLightingSupported";
 	
-	public const string U_FIELD_NAME_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
-	public const string U_FIELD_NAME_UNIVERSAL_RP_MAIN_LIGHT_SUPPORT_SHADOW = "m_MainLightShadowsSupported";
-	public const string U_FIELD_NAME_UNIVERSAL_RP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
+	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
+	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORT_SHADOW = "m_MainLightShadowsSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
 
-	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
-	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_SUPPORT_SHADOW = "m_AdditionalLightShadowsSupported";
-	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
-	public const string U_FIELD_NAME_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
+	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
+	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SUPPORT_SHADOW = "m_AdditionalLightShadowsSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
+	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
 	// 이름 }
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
@@ -576,8 +576,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LOGIN_WITH_APPLE = "LoginWithApple";
 
 #if HAPTIC_FEEDBACK_ENABLE
-	public const string U_MODEL_NAME_IPHONE = "iPhone";
-	public const string U_MODEL_NAME_IPAD = "iPad";
+	public const string U_MODEL_N_IPHONE = "iPhone";
+	public const string U_MODEL_N_IPAD = "iPad";
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
 	// 이름 }
 #endif			// #if UNITY_IOS
@@ -721,7 +721,7 @@ public static partial class KCDefine {
 
 #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 	// 이름
-	public const string U_LOG_NAME_APP_LAUNCH = "AppLaunch";
+	public const string U_LOG_N_APP_LAUNCH = "AppLaunch";
 
 	// 식별자 {
 	public const string U_LOG_KEY_USER_ID = "UserID";
@@ -764,7 +764,7 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE
 	// 이름
-	public const string U_TRACKING_NAME_APP_LAUNCH = KCDefine.U_LOG_NAME_APP_LAUNCH;
+	public const string U_TRACKING_N_APP_LAUNCH = KCDefine.U_LOG_N_APP_LAUNCH;
 	
 	// 식별자 {
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
@@ -872,7 +872,7 @@ public static partial class KCDefine {
 	// 그룹 정보 {
 	public const Importance U_IMPORTANCE_NOTI = Importance.Default;
 	
-	public const string U_DEF_GROUP_NAME_NOTI = KCDefine.U_DEF_GROUP_ID_NOTI;
+	public const string U_DEF_GROUP_N_NOTI = KCDefine.U_DEF_GROUP_ID_NOTI;
 	public const string U_DEF_GROUP_DESC_NOTI = KCDefine.U_DEF_GROUP_ID_NOTI;
 	// 그룹 정보 }
 #endif			// #if UNITY_ANDROID

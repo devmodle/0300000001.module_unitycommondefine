@@ -99,7 +99,7 @@ public static partial class KCDefine {
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STRING;
 	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STRING;
 
-	public const string B_VERSION_STRING_FORMAT = "Ver.{0}";
+	public const string B_VERSION_STRING_FMT = "Ver.{0}";
 	// 디바이스 }
 
 	// 국가 코드
