@@ -3,10 +3,12 @@
     "rootNamespace": "",
     "references": [
         "UnityModule.IronSrc",
-        "MessagePack",
-        "GoogleMobileAds",
         "Unity.Notifications.iOS",
-        "Unity.Notifications.Android"
+        "Unity.Notifications.Android",
+        "DOTween.Modules",
+        "DOTweenPro.Scripts",
+        "MessagePack",
+        "GoogleMobileAds"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
