@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 #if UNITY_IOS
 using UnityEngine.iOS;
@@ -102,6 +103,9 @@ public static partial class KCDefine {
 	public const float U_DEF_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_DEF_TIMEOUT_NETWORK_CONNECTION = 30.0f;
 	// 시간 }
+
+	// 애니메이션
+	public const Ease U_DEF_EASE = Ease.OutQuad;
 
 	// 광원 {
 #if LIGHT_ENABLE && SHADOW_ENABLE
