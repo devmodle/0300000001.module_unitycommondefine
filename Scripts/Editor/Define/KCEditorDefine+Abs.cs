@@ -20,7 +20,7 @@ public static partial class KCEditorDefine {
 
 	// 계층 뷰
 	public const float B_HIERARCHY_TEXT_OFFSET_X = 15.0f;
-	public const float B_HIERARCHY_OUTLINE_OFFSET_X = 1.5f;
+	public const float B_HIERARCHY_OUTLINE_OFFSET_X = 1.0f;
 
 	// 크기 {
 	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
