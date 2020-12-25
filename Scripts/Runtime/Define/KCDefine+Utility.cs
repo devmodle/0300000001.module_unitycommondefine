@@ -361,12 +361,12 @@ public static partial class KCDefine {
 
 	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_POPUP_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_TOP_UI
+		m_oLayer = KCDefine.U_SORTING_L_FOREGROUND_UI
 	};
 
 	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_TOPMOST_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_TOPMOST_UI
+		m_oLayer = KCDefine.U_SORTING_L_OVERGROUND_UI
 	};
 #else
 	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
@@ -376,12 +376,12 @@ public static partial class KCDefine {
 
 	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_POPUP_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_TOP
+		m_oLayer = KCDefine.U_SORTING_L_FOREGROUND
 	};
 
 	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_TOPMOST_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_TOPMOST
+		m_oLayer = KCDefine.U_SORTING_L_OVERGROUND
 	};
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 순서 }
