@@ -358,29 +358,9 @@ public static partial class KCDefine {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_L_DEF_UI
 	};
-
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_POPUP_UI_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_DEF_SORTING_OI_UI_CANVAS.m_nOrder + sbyte.MaxValue,
-		m_oLayer = KCDefine.U_SORTING_L_DEF_UI
-	};
-
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_TOPMOST_UI_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_DEF_SORTING_OI_UI_CANVAS.m_nOrder + byte.MaxValue,
-		m_oLayer = KCDefine.U_SORTING_L_DEF_UI
-	};
 #else
 	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_POPUP_UI_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_DEF_SORTING_OI_UI_CANVAS.m_nOrder + sbyte.MaxValue,
-		m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_TOPMOST_UI_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_DEF_SORTING_OI_UI_CANVAS.m_nOrder + byte.MaxValue,
 		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
