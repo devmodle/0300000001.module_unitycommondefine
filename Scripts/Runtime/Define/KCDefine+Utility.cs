@@ -105,7 +105,7 @@ public static partial class KCDefine {
 	// 시간 }
 
 	// 애니메이션
-	public const Ease U_DEF_EASE = Ease.OutQuad;
+	public const Ease U_DEF_EASE_ANI = Ease.OutQuad;
 
 	// 광원 {
 #if LIGHT_ENABLE && SHADOW_ENABLE
