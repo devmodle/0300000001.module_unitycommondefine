@@ -231,7 +231,7 @@ public static partial class KCEditorDefine {
 	public const string B_MAC_BUILD_PATH = "Builds/Standalone/Mac/MacBuildOutput.app";
 
 	// 윈도우즈
-	public const string B_WINDOWS_BUILD_PATH = "Builds/Standalone/Windows";
+	public const string B_WINDOWS_BUILD_PATH = "Builds/Standalone/Windows/WindowsBuildOutput.exe";
 
 	// iOS {
 	public const string B_IOS_DEV_IPA_EXPORT_METHOD = "development";
@@ -249,10 +249,7 @@ public static partial class KCEditorDefine {
 	public const string B_ANDROID_AAB_BUILD_FILE_EXTENSION = "aab";
 
 	public const string B_ANDROID_BUILD_P_FMT = "Builds/Android/{0}/{1}.{2}";
-	public const string B_ANDROID_DEST_LIBRARY_P_FMT = "Builds/Android/{0}/{1}";
-
 	public const string B_ANDROID_BUILD_FILE_N_FMT = "{0}BuildOutput";
-	public const string B_ANDROID_LIBRARY_DIR_N_FMT = "{0}LibraryOutput";
 	// 안드로이드 }
 	#endregion			// 기본
 

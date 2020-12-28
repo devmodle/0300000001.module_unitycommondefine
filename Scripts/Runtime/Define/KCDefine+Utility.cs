@@ -86,7 +86,6 @@ public static partial class KCDefine {
 	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
 
 	public const float U_DEF_DURATION_ANI = 0.25f;
-	public const float U_DEF_DURATION_POPUP_ANI = 0.25f;
 	public const float U_DEF_DURATION_SCROLL_ANI = 0.25f;
 	public const float U_DEF_DURATION_SCREEN_FADE_IN_ANI = 0.15f;
 	public const float U_DEF_DURATION_SCREEN_FADE_OUT_ANI = 0.15f;
@@ -102,6 +101,12 @@ public static partial class KCDefine {
 
 	public const float U_DEF_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_DEF_TIMEOUT_NETWORK_CONNECTION = 30.0f;
+
+#if MODE_PORTRAIT_ENABLE
+	public const float U_DEF_DURATION_POPUP_ANI = 0.5f;
+#else
+	public const float U_DEF_DURATION_POPUP_ANI = 0.35f;
+#endif			// #if MODE_PORTRAIT_ENABLE
 	// 시간 }
 
 	// 애니메이션
