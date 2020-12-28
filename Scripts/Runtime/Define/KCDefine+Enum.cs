@@ -41,6 +41,16 @@ public enum EQualityLevel {
 	MAX_VALUE
 }
 
+//! 그림자 옵션
+public enum EShadowCascadesOpts {
+	NONE = -1,
+	ONE_CASCADES,
+	TWO_CASCADES,
+	THREE_CASCADES,
+	FOUR_CASCADES,
+	MAX_VALUE
+}
+
 //! 유저 타입
 public enum EUserType {
 	NONE = -1,

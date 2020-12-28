@@ -305,6 +305,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_SCRIPT_TEMPLATES = string.Format("{0}Scripts/", KCEditorDefine.B_ABS_DIR_P_TEMPLATES);
 	public static readonly string B_ABS_DIR_P_SCRIPTABLE_TEMPLATES = string.Format("{0}Scriptables/", KCEditorDefine.B_ABS_DIR_P_TEMPLATES);
 	public static readonly string B_ABS_DIR_P_SPRITE_ATLAS_TEMPLATES = string.Format("{0}SpriteAtlases/", KCEditorDefine.B_ABS_DIR_P_TEMPLATES);
+	public static readonly string B_ABS_DIR_P_PIPELINE_TEMPLATES = string.Format("{0}Pipelines/", KCEditorDefine.B_ABS_DIR_P_TEMPLATES);
 	public static readonly string B_ABS_DIR_P_TABLE_TEMPLATES = string.Format("{0}Tables/", KCEditorDefine.B_ABS_DIR_P_TEMPLATES);
 	public static readonly string B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES = string.Format("{0}AssemblyDefines/", KCEditorDefine.B_ABS_DIR_P_TEMPLATES);
 
@@ -698,6 +699,14 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(string.Format("{0}T_ProductInfoTable.asset", KCEditorDefine.B_ABS_DIR_P_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_ASSET_P_G_PRODUCT_INFO_TABLE))
 #endif			// #if PURCHASE_MODULE_ENABLE
+	};
+
+	public static readonly KeyValuePair<string, string>[] B_PIPELINE_P_INFOS = new KeyValuePair<string, string>[] {
+		new KeyValuePair<string, string>(string.Format("{0}T_UniversalRPAsset.asset", KCEditorDefine.B_ABS_DIR_P_PIPELINE_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP)),
+
+		new KeyValuePair<string, string>(string.Format("{0}T_UniversalRPRenderer.asset", KCEditorDefine.B_ABS_DIR_P_PIPELINE_TEMPLATES),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP_RENDERER))
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_SCENE_P_INFOS = new KeyValuePair<string, string>[] {

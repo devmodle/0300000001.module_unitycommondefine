@@ -490,8 +490,8 @@ public static partial class KCDefine {
 	public static readonly string U_SND_P_G_TOUCH_END = string.Format("{0}{1}G_TouchEnd", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
 	public static readonly string U_SND_P_G_POPUP_CLOSE = string.Format("{0}{1}G_PopupClose", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
 
-	public static readonly string U_PIPELINE_P_UNIVERSAL_RENDER_PIPELINE = string.Format("{0}{1}U_UniversalRPAsset", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_UTILITY);
-	public static readonly string U_PIPELINE_P_UNIVERSAL_RENDER_PIPELINE_RENDERER = string.Format("{0}{1}U_UniversalRPRenderer", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_UTILITY);
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP = string.Format("{0}{1}G_UniversalRPAsset", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDERER = string.Format("{0}{1}G_UniversalRPRenderer", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_GLOBAL);
 
 	public static readonly string U_IMG_P_G_SPLASH = string.Format("{0}{1}G_Splash", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
 	public static readonly string U_IMG_P_G_WHITE = string.Format("{0}{1}G_UnityWhite", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
@@ -554,7 +554,6 @@ public static partial class KCDefine {
 	public const float U_SCALE_UNIVERSAL_RP_RENDERING = 1.0f;
 
 	// 이름 {
-	public const string U_FIELD_N_UNIVERSAL_RP_DEBUG_LEVEL = "m_DebugLevel";
 	public const string U_FIELD_N_UNIVERSAL_RP_ANTI_ALIASING = "m_MSAA";
 	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORT_SOFT_SHADOW = "m_SoftShadowsSupported";
 	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORT_MIXED_LIGHTING = "m_MixedLightingSupported";
