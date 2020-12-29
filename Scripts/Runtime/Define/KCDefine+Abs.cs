@@ -106,20 +106,19 @@ public static partial class KCDefine {
 	public const string B_KOREA_COUNTRY_CODE = "KR";
 	public const string B_UNKNOWN_COUNTRY_CODE = "Unknown";
 
-	// 플랫폼 {
-	public const string B_PLATFORM_MAC = "Mac";
-	public const string B_PLATFORM_WINDOWS = "Windows";
+	// 이름 {
+	public const string B_PLATFORM_N_MAC = "Mac";
+	public const string B_PLATFORM_N_WINDOWS = "Windows";
 
-	public const string B_PLATFORM_IOS = "iOS";
-	public const string B_PLATFORM_ANDROID = "Android";
+	public const string B_PLATFORM_N_IOS = "iOS";
+	public const string B_PLATFORM_N_ANDROID = "Android";
 
-	public const string B_PLATFORM_GOOGLE = "Google";
-	public const string B_PLATFORM_ONE_STORE = "OneStore";
-	public const string B_PLATFORM_GALAXY_STORE = "GalaxyStore";
-	// 플랫폼 }
-
-	// 이름
+	public const string B_PLATFORM_N_GOOGLE = "Google";
+	public const string B_PLATFORM_N_ONE_STORE = "OneStore";
+	public const string B_PLATFORM_N_GALAXY_STORE = "GalaxyStore";
+	
 	public const string B_DIR_N_BACKUP = "Backup";
+	// 이름 }
 
 	// 씬 이름 {
 	public const string B_SCENE_N_SAMPLE = "00.SampleScene";
