@@ -105,7 +105,7 @@ public static partial class KCDefine {
 #if MODE_PORTRAIT_ENABLE
 	public const float U_DEF_DURATION_POPUP_ANI = 0.5f;
 #else
-	public const float U_DEF_DURATION_POPUP_ANI = 0.35f;
+	public const float U_DEF_DURATION_POPUP_ANI = 0.45f;
 #endif			// #if MODE_PORTRAIT_ENABLE
 	// 시간 }
 
