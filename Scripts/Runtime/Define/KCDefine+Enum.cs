@@ -13,18 +13,18 @@ public enum EMouseBtn {
 }
 
 //! 방향
+public enum EDirection {
+	NONE = -1,
+	VERTICAL,
+	HORIZONTAL,
+	MAX_VALUE
+}
+
+//! 디바이스 방향
 public enum EOrientation {
 	NONE = -1,
 	PORTRAIT,
 	LANDSCAPE,
-	MAX_VALUE
-}
-
-//! 스크롤 방향
-public enum EScrollDirection {
-	NONE = -1,
-	VERTICAL,
-	HORIZONTAL,
 	MAX_VALUE
 }
 
