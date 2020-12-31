@@ -87,6 +87,8 @@ public static partial class KCEditorDefine {
 	public const string B_OBJ_N_SCROLL_VIEW = "ScrollView";
 	public const string B_OBJ_N_PAGE_SCROLL_VIEW = "PageScrollView";
 
+	public const string B_OBJ_N_PARTICLE_FX = "ParticleFX";
+
 	public const string B_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
 	public const string B_OBJ_N_DRAG_RESPONDER = "DragResponder";
 
@@ -601,6 +603,9 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_PageScrollView.prefab", KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES, KCDefine.B_DIR_P_SCROLL_VIEW_ROOT),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_AUTO_CREATE, KCDefine.U_OBJ_P_PAGE_SCROLL_VIEW)),
+
+		new KeyValuePair<string, string>(string.Format("{0}{1}T_ParticleFX.prefab", KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES, KCDefine.B_DIR_P_FX_ROOT),
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_AUTO_CREATE, KCDefine.U_OBJ_P_PARTICLE_FX)),
 
 		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", KCEditorDefine.B_ABS_DIR_P_PACKAGES),
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_AUTO_CREATE, KCDefine.U_OBJ_P_FPS_COUNTER)),

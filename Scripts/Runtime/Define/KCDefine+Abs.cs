@@ -201,6 +201,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_POPUP_ROOT = "Popup/";
 	public const string B_DIR_P_RESPONDER_ROOT = "Responder/";
 	public const string B_DIR_P_SOUND_ROOT = "Sound/";
+	public const string B_DIR_P_FX_ROOT = "FX/";
 	public const string B_DIR_P_EXTERNAL_ROOT = "External/";
 	public const string B_DIR_P_STRING_INFO_ROOT = "StringInfo/";
 	public const string B_DIR_P_VALUE_INFO_ROOT = "ValueInfo/";

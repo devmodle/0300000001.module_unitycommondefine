@@ -453,6 +453,8 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_SCROLL_VIEW = string.Format("{0}{1}{2}U_ScrollView", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_SCROLL_VIEW_ROOT);
 	public static readonly string U_OBJ_P_PAGE_SCROLL_VIEW = string.Format("{0}{1}{2}U_PageScrollView", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_SCROLL_VIEW_ROOT);
 
+	public static readonly string U_OBJ_P_PARTICLE_FX = string.Format("{0}{1}{2}U_ParticleFX", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_FX_ROOT);
+
 	public static readonly string U_OBJ_P_FPS_COUNTER = string.Format("{0}{1}{2}U_FPSCounter", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
 	public static readonly string U_OBJ_P_TIMER_MANAGER = string.Format("{0}{1}{2}U_TimerManager", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
 
