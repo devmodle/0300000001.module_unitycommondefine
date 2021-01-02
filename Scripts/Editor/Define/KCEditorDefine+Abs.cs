@@ -317,6 +317,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKG_P_NGUI = string.Format("{0}/NGUI-v2020.2.0.unitypackage", KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES);
 	public static readonly string B_ABS_PKG_P_ODIN_INSPECTOR = string.Format("{0}/OdinInspector-v3.0.3.unitypackage", KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES);
 	public static readonly string B_ABS_PKG_P_ZENJECT = string.Format("{0}/Zenject-v9.2.0.unitypackage", KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES);
+	public static readonly string B_ABS_PKG_P_SPINE = string.Format("{0}/Spine-v3.8.0.unitypackage", KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES);
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_P_PROJ_SETTINGS);
 	public static readonly string B_ASSET_P_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_P_PROJ_SETTINGS);
