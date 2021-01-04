@@ -346,17 +346,18 @@ public static partial class KCEditorDefine {
 
 	// 경로 {
 	public static readonly string B_DATA_P_BUILD_FUNC = $"{Application.dataPath}/../BuildFuncName.txt";
+	public static readonly string B_SCENE_P_INIT_SCENE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity";
 
-	public static readonly string B_DIR_P_AUTO_CREATE_RESES = string.Format("{0}{1}Resources/", KCEditorDefine.B_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_AUTO_CREATE);
-	public static readonly string B_DIR_P_UNITY_PROJ_RESES = string.Format("{0}{1}Resources/", KCEditorDefine.B_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ);
-	
-	public static readonly string B_DIR_P_FILTER_FPS_COUNTER = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES, KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY);
-	public static readonly string B_DIR_P_FILTER_DEBUG_CONSOLE = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES, KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY);
-	public static readonly string B_DIR_P_FILTER_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}External", KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES, KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY);
+	public static readonly string B_DIR_P_AUTO_CREATE_RESES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/";
+	public static readonly string B_DIR_P_UNITY_PROJ_RESES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
 
-	public static readonly string B_DIR_P_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ);
-	public static readonly string B_DIR_P_AUTO_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_AUTO_CREATE);
-	public static readonly string B_DIR_P_EDITOR_SCENES = string.Format("{0}{1}Scenes", KCEditorDefine.B_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR);
+	public static readonly string B_DIR_P_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes";
+	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes";
+	public static readonly string B_DIR_P_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes";
+
+	public static readonly string B_DIR_P_FILTER_FPS_COUNTER = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
+	public static readonly string B_DIR_P_FILTER_DEBUG_CONSOLE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
+	public static readonly string B_DIR_P_FILTER_DEBUG_LOG_ITEM = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
 
 	public static readonly string B_ABS_DIR_P_ASSETS = string.Format("{0}/", Application.dataPath);
 	public static readonly string B_ABS_DIR_P_PACKAGES = string.Format("{0}../Packages/", KCEditorDefine.B_ABS_DIR_P_ASSETS);
