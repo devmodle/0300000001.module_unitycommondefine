@@ -321,7 +321,11 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = string.Format("{0}TagManager.asset", KCEditorDefine.B_DIR_P_PROJ_SETTINGS);
 	public static readonly string B_ASSET_P_SND_MANAGER = string.Format("{0}AudioManager.asset", KCEditorDefine.B_DIR_P_PROJ_SETTINGS);
-	public static readonly string B_ASSET_P_DEFINE_S_TABLE = string.Format("{0}{1}{2}G_DefineSymbolTable.asset", KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES, KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+
+	public static readonly string B_ASSET_P_BUILD_INFO_TABLE = string.Format("{0}{1}.asset", KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES, KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE);
+	public static readonly string B_ASSET_P_BUILD_OPTS_TABLE = string.Format("{0}{1}.asset", KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES, KCDefine.U_ASSET_P_G_BUILD_OPTS_TABLE);
+	public static readonly string B_ASSET_P_PROJ_INFO_TABLE = string.Format("{0}{1}.asset", KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES, KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE);
+	public static readonly string B_ASSET_P_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}.asset", KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES, KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_TABLE);
 	
 	public static readonly string B_ASSET_P_FMT_SCRIPTABLE_OBJ = string.Format("{0}{1}", KCEditorDefine.B_DIR_P_ASSETS, "{0}.asset");
 	public static readonly string B_ASSET_P_FMT_DEFINE_S_OUTPUT = string.Format("{0}/BuildOutput/{1}", KCDefine.B_DIR_P_WRITABLE, "{0}DefineSymbol.txt");
@@ -650,10 +654,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_OBJ_P_G_DRAG_RESPONDER)),
 
 		new KeyValuePair<string, string>(string.Format("{0}{1}T_TouchResponder.prefab", KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES, KCDefine.B_DIR_P_RESPONDER_ROOT),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_OBJ_P_G_TOUCH_RESPONDER)),
-
-		new KeyValuePair<string, string>(string.Format("{0}.UnityModule.Common.Externals/Externals/UITween/Prefabs/Click Effect Pref/ClickedRound.prefab", KCEditorDefine.B_ABS_DIR_P_PACKAGES),
-			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_OBJ_P_G_WAVE))
+			string.Format("{0}{1}Resources/{2}.prefab", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_OBJ_P_G_TOUCH_RESPONDER))
 		// 01.UnityProject }
 	};
 
@@ -682,7 +683,7 @@ public static partial class KCEditorDefine {
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_ASSET_P_G_BUILD_OPTS_TABLE)),
 
 		new KeyValuePair<string, string>(string.Format("{0}T_DefineSymbolTable.asset", KCEditorDefine.B_ABS_DIR_P_SCRIPTABLE_TEMPLATES),
-			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_ASSET_P_G_DEFINE_S_TABLE)),
+			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_TABLE)),
 			
 		new KeyValuePair<string, string>(string.Format("{0}T_DeviceInfoTable.asset", KCEditorDefine.B_ABS_DIR_P_SCRIPTABLE_TEMPLATES),
 			string.Format("{0}{1}Resources/{2}.asset", KCEditorDefine.B_ABS_DIR_P_ASSETS, KCEditorDefine.B_DIR_P_UNITY_PROJ, KCDefine.U_ASSET_P_G_DEVICE_INFO_TABLE)),

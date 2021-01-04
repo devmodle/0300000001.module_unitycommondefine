@@ -461,8 +461,6 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_DEBUG_CONSOLE = string.Format("{0}{1}{2}U_DebugConsole", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
 	public static readonly string U_OBJ_P_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}U_DebugLogItem", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
 
-	public static readonly string U_OBJ_P_G_WAVE = string.Format("{0}{1}{2}G_Wave", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_EXTERNAL_ROOT);
-
 	public static readonly string U_OBJ_P_G_BG_SND = string.Format("{0}{1}{2}G_BGSnd", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_SOUND_ROOT);
 	public static readonly string U_OBJ_P_G_FX_SND = string.Format("{0}{1}{2}G_FXSnd", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_SOUND_ROOT);
 
@@ -474,7 +472,7 @@ public static partial class KCDefine {
 
 	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
 	public static readonly string U_ASSET_P_G_BUILD_OPTS_TABLE = string.Format("{0}{1}G_BuildOptsTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_ASSET_P_G_DEFINE_S_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
 	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
 	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
 	
