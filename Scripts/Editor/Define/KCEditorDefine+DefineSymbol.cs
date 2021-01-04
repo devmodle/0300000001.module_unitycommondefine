@@ -204,6 +204,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_UNITY_RECORDER_ENABLE = "UNITY_RECORDER_ENABLE";
 	public const string DS_DEFINE_S_ADAPTIVE_PERFORMANCE_ENABLE = "ADAPTIVE_PERFORMANCE_ENABLE";
 
+	public const string DS_DEFINE_S_ODIN_INSPECTOR = "ODIN_INSPECTOR";
+	public const string DS_DEFINE_S_ODIN_INSPECTOR_3 = "ODIN_INSPECTOR_3";
+
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_USE_CUSTOM_PROJ_OPTS = "USE_CUSTOM_PROJ_OPTS";
