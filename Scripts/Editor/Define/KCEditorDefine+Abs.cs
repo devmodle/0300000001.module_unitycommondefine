@@ -127,83 +127,6 @@ public static partial class KCEditorDefine {
 	public const string B_FUNC_N_SET_LIGHTMAP_ENCODING_QUALITY = "SetLightmapEncodingQualityForPlatformGroup";
 	public const string B_FUNC_N_SET_LIGHTMAP_STREAMING_ENABLE = "SetLightmapStreamingEnabledForPlatformGroup";
 	public const string B_FUNC_N_SET_LIGHTMAP_STREAMING_PRIORITY = "SetLightmapStreamingPriorityForPlatformGroup";
-
-	// 맥 {
-	public const string B_FUNC_N_MAC_DEBUG_BUILD = "BuildMacDebug";
-	public const string B_FUNC_N_MAC_DEBUG_WITH_AUTO_PLAY_BUILD = "BuildMacWithAutoPlayDebug";
-
-	public const string B_FUNC_N_MAC_RELEASE_BUILD = "BuildMacRelease";
-	public const string B_FUNC_N_MAC_RELEASE_WITH_AUTO_PLAY_BUILD = "BuildMacWithAutoPlayRelease";
-	public const string B_FUNC_N_MAC_RELEASE_WITH_AUTO_PLAY_DISABLE_FPS_BUILD = "BuildMacWithAutoPlayDisableFPSRelease";
-	// 맥 }
-
-	// 윈도우즈 {
-	public const string B_FUNC_N_WINDOWS_DEBUG_BUILD = "BuildWindowsDebug";
-	public const string B_FUNC_N_WINDOWS_DEBUG_WITH_AUTO_PLAY_BUILD = "BuildWindowsWithAutoPlayDebug";
-
-	public const string B_FUNC_N_WINDOWS_RELEASE_BUILD = "BuildWindowsRelease";
-	public const string B_FUNC_N_WINDOWS_RELEASE_WITH_AUTO_PLAY_BUILD = "BuildWindowsWithAutoPlayRelease";
-	public const string B_FUNC_N_WINDOWS_RELEASE_WITH_AUTO_PLAY_DISABLE_FPS_BUILD = "BuildWindowsWithAutoPlayDisableFPSRelease";
-	// 윈도우즈 }
-
-	// iOS {
-	public const string B_FUNC_N_IOS_DEBUG_BUILD = "BuildiOSDebug";
-	public const string B_FUNC_N_IOS_DEBUG_WITH_AUTO_PLAY_BUILD = "BuildiOSWithAutoPlayDebug";
-
-	public const string B_FUNC_N_IOS_RELEASE_BUILD = "BuildiOSRelease";
-	public const string B_FUNC_N_IOS_RELEASE_WITH_AUTO_PLAY_BUILD = "BuildiOSWithAutoPlayRelease";
-	public const string B_FUNC_N_IOS_RELEASE_WITH_AUTO_PLAY_DISABLE_FPS_BUILD = "BuildiOSWithAutoPlayDisableFPSRelease";
-
-	public const string B_FUNC_N_IOS_ADHOC_BUILD = "BuildiOSAdhoc";
-	public const string B_FUNC_N_IOS_ADHOC_WITH_ROBO_TEST_BUILD = "BuildiOSWithRoboTestAdhoc";
-
-	public const string B_FUNC_N_IOS_STORE_BUILD = "BuildiOSStore";
-	// iOS }
-
-	// 구글 {
-	public const string B_FUNC_N_GOOGLE_DEBUG_BUILD = "BuildGoogleDebug";
-	public const string B_FUNC_N_GOOGLE_DEBUG_WITH_AUTO_PLAY_BUILD = "BuildGoogleWithAutoPlayDebug";
-
-	public const string B_FUNC_N_GOOGLE_RELEASE_BUILD = "BuildGoogleRelease";
-	public const string B_FUNC_N_GOOGLE_RELEASE_WITH_AUTO_PLAY_BUILD = "BuildGoogleWithAutoPlayRelease";
-	public const string B_FUNC_N_GOOGLE_RELEASE_WITH_AUTO_PLAY_DISABLE_FPS_BUILD = "BuildGoogleWithAutoPlayDisableFPSRelease";
-
-	public const string B_FUNC_N_GOOGLE_ADHOC_BUILD = "BuildGoogleAdhoc";
-	public const string B_FUNC_N_GOOGLE_ADHOC_WITH_ROBO_TEST_BUILD = "BuildGoogleWithRoboTestAdhoc";
-
-	public const string B_FUNC_N_GOOGLE_STORE_BUILD = "BuildGoogleStore";
-	public const string B_FUNC_N_GOOGLE_STORE_TEST_BUILD = "BuildGoogleStoreTest";
-	// 구글 }
-
-	// 윈 스토어 {
-	public const string B_FUNC_N_ONE_STORE_DEBUG_BUILD = "BuildOneStoreDebug";
-	public const string B_FUNC_N_ONE_STORE_DEBUG_WITH_AUTO_PLAY_BUILD = "BuildOneStoreWithAutoPlayDebug";
-
-	public const string B_FUNC_N_ONE_STORE_RELEASE_BUILD = "BuildOneStoreRelease";
-	public const string B_FUNC_N_ONE_STORE_RELEASE_WITH_AUTO_PLAY_BUILD = "BuildOneStoreWithAutoPlayRelease";
-	public const string B_FUNC_N_ONE_STORE_RELEASE_WITH_AUTO_PLAY_DISABLE_FPS_BUILD = "BuildOneStoreWithAutoPlayDisableFPSRelease";
-
-	public const string B_FUNC_N_ONE_STORE_ADHOC_BUILD = "BuildOneStoreAdhoc";
-	public const string B_FUNC_N_ONE_STORE_ADHOC_WITH_ROBO_TEST_BUILD = "BuildOneStoreWithRoboTestAdhoc";
-
-	public const string B_FUNC_N_ONE_STORE_STORE_BUILD = "BuildOneStoreStore";
-	public const string B_FUNC_N_ONE_STORE_STORE_TEST_BUILD = "BuildOneStoreStoreTest";
-	// 윈 스토어 }
-
-	// 갤럭시 스토어 {
-	public const string B_FUNC_N_GALAXY_STORE_DEBUG_BUILD = "BuildGalaxyStoreDebug";
-	public const string B_FUNC_N_GALAXY_STORE_DEBUG_WITH_AUTO_PLAY_BUILD = "BuildGalaxyStoreWithAutoPlayDebug";
-
-	public const string B_FUNC_N_GALAXY_STORE_RELEASE_BUILD = "BuildGalaxyStoreRelease";
-	public const string B_FUNC_N_GALAXY_STORE_RELEASE_WITH_AUTO_PLAY_BUILD = "BuildGalaxyStoreWithAutoPlayRelease";
-	public const string B_FUNC_N_GALAXY_STORE_RELEASE_WITH_AUTO_PLAY_DISABLE_FPS_BUILD = "BuildGalaxyStoreWithAutoPlayDisableFPSRelease";
-
-	public const string B_FUNC_N_GALAXY_STORE_ADHOC_BUILD = "BuildGalaxyStoreAdhoc";
-	public const string B_FUNC_N_GALAXY_STORE_ADHOC_WITH_ROBO_TEST_BUILD = "BuildGalaxyStoreWithRoboTestAdhoc";
-
-	public const string B_FUNC_N_GALAXY_STORE_STORE_BUILD = "BuildGalaxyStoreStore";
-	public const string B_FUNC_N_GALAXY_STORE_STORE_TEST_BUILD = "BuildGalaxyStoreStoreTest";
-	// 갤럭시 스토어 }
 	// 이름 }
 
 	// 경로 {
@@ -345,7 +268,6 @@ public static partial class KCEditorDefine {
 	public static readonly Vector2 B_POS_FPS_C_DYNAMIC_TEXT = new Vector2(-10.0f, 140.0f);
 
 	// 경로 {
-	public static readonly string B_DATA_P_BUILD_FUNC = $"{Application.dataPath}/../BuildFuncName.txt";
 	public static readonly string B_SCENE_P_INIT_SCENE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity";
 
 	public static readonly string B_DIR_P_AUTO_CREATE_RESES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/";
