@@ -11,7 +11,6 @@ using Unity.Notifications.iOS;
 #endif			// #if NOTI_MODULE_ENABLE
 
 //! 에디터 기본 상수
-[InitializeOnLoad]
 public static partial class KCEditorDefine {
 	#region 기본
 	// 시간
