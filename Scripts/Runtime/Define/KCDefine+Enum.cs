@@ -17,6 +17,7 @@ public enum EDirection {
 	NONE = -1,
 	VERTICAL,
 	HORIZONTAL,
+	DIAGONAL,
 	MAX_VALUE
 }
 
