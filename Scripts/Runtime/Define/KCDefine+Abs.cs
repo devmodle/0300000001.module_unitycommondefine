@@ -238,8 +238,8 @@ public static partial class KCDefine {
 	public static readonly Vector2 B_SCREEN_SIZE = new Vector2(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT);
 	public static readonly Vector2 B_WORLD_SCREEN_SIZE = new Vector2(KCDefine.B_WORLD_SCREEN_WIDTH, KCDefine.B_WORLD_SCREEN_HEIGHT);
 
-	public static readonly Bounds B_SCREEN_BOUNDS = new Bounds(KCDefine.B_SCREEN_SIZE / 2.0f, KCDefine.B_SCREEN_SIZE);
-	public static readonly Bounds B_WORLD_SCREEN_BOUNDS = new Bounds(KCDefine.B_WORLD_SCREEN_SIZE / 2.0f, KCDefine.B_WORLD_SCREEN_SIZE);
+	public static readonly Bounds B_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_SCREEN_SIZE);
+	public static readonly Bounds B_WORLD_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_WORLD_SCREEN_SIZE);
 	// 디바이스 }
 
 	// 색상 {
