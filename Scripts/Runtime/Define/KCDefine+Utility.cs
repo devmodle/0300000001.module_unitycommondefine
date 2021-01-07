@@ -618,7 +618,8 @@ public static partial class KCDefine {
 	public const string U_FMT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_FMT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_FMT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_FMT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB";
+	public const string U_FMT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB\n";
+	public const string U_FMT_DYNAMIC_DEBUG_INFO_F = "Time Scale: <color=orange>{0:0.00000}</color>";
 	// 형식 }
 
 	// 이름 {
