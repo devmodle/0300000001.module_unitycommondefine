@@ -8,6 +8,7 @@
         "DOTween.Modules",
         "DOTweenPro.Scripts",
         "MessagePack",
+        "MessagePack.Annotations",
         "GoogleMobileAds"
     ],
     "includePlatforms": [],
