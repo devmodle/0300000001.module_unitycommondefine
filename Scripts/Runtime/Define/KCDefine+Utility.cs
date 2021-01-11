@@ -426,85 +426,90 @@ public static partial class KCDefine {
 	};
 
 	// 경로 {
-	public static readonly string U_DATA_P_COMMON_APP_INFO = string.Format("{0}CommonAppInfo.bytes", KCDefine.B_DIR_P_WRITABLE);
-	public static readonly string U_DATA_P_COMMON_USER_INFO = string.Format("{0}CommonUserInfo.bytes", KCDefine.B_DIR_P_WRITABLE);
-	public static readonly string U_DATA_P_COMMON_GAME_INFO = string.Format("{0}CommonGameInfo.bytes", KCDefine.B_DIR_P_WRITABLE);
+	public static readonly string U_DATA_P_COMMON_APP_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
+	public static readonly string U_DATA_P_COMMON_USER_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonUserInfo.bytes";
+	public static readonly string U_DATA_P_COMMON_GAME_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonGameInfo.bytes";
 
-	public static readonly string U_OBJ_P_TEXT = string.Format("{0}{1}{2}U_Text", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_TEXT_ROOT);
-	public static readonly string U_OBJ_P_TEXT_BTN = string.Format("{0}{1}{2}U_TextBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
-	public static readonly string U_OBJ_P_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_TextScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_TEXT_ROOT}U_Text";
+	public static readonly string U_OBJ_P_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_TextBtn";
+	public static readonly string U_OBJ_P_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_TextScaleBtn";
 
-	public static readonly string U_OBJ_P_LOCALIZE_TEXT = string.Format("{0}{1}{2}U_LocalizeText", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_TEXT_ROOT);
-	public static readonly string U_OBJ_P_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_LocalizeTextBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
-	public static readonly string U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_LocalizeTextScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_LOCALIZE_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_TEXT_ROOT}U_LocalizeText";
+	public static readonly string U_OBJ_P_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_LocalizeTextBtn";
+	public static readonly string U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_LocalizeTextScaleBtn";
 
-	public static readonly string U_OBJ_P_IMG = string.Format("{0}{1}{2}U_Img", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_IMAGE_ROOT);
-	public static readonly string U_OBJ_P_RAW_IMG = string.Format("{0}{1}{2}U_RawImg", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_IMAGE_ROOT);
+	public static readonly string U_OBJ_P_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_Img";
+	public static readonly string U_OBJ_P_RAW_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_RawImg";
 
-	public static readonly string U_OBJ_P_IMG_BTN = string.Format("{0}{1}{2}U_ImgBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
-	public static readonly string U_OBJ_P_IMG_SCALE_BTN = string.Format("{0}{1}{2}U_ImgScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgBtn";
+	public static readonly string U_OBJ_P_IMG_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgScaleBtn";
 
-	public static readonly string U_OBJ_P_IMG_TEXT_BTN = string.Format("{0}{1}{2}U_ImgTextBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
-	public static readonly string U_OBJ_P_IMG_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgTextScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgTextBtn";
+	public static readonly string U_OBJ_P_IMG_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgTextScaleBtn";
 
-	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
-	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN = string.Format("{0}{1}{2}U_ImgLocalizeTextScaleBtn", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_BUTTON_ROOT);
+	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgLocalizeTextBtn";
+	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgLocalizeTextScaleBtn";
 
-	public static readonly string U_OBJ_P_SCROLL_VIEW = string.Format("{0}{1}{2}U_ScrollView", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_SCROLL_VIEW_ROOT);
-	public static readonly string U_OBJ_P_PAGE_SCROLL_VIEW = string.Format("{0}{1}{2}U_PageScrollView", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_SCROLL_VIEW_ROOT);
+	public static readonly string U_OBJ_P_SCROLL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}U_ScrollView";
+	public static readonly string U_OBJ_P_PAGE_SCROLL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}U_PageScrollView";
 
-	public static readonly string U_OBJ_P_PARTICLE_FX = string.Format("{0}{1}{2}U_ParticleFX", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_FX_ROOT);
+	public static readonly string U_OBJ_P_PARTICLE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_ParticleFX";
 
-	public static readonly string U_OBJ_P_FPS_COUNTER = string.Format("{0}{1}{2}U_FPSCounter", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
-	public static readonly string U_OBJ_P_TIMER_MANAGER = string.Format("{0}{1}{2}U_TimerManager", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_P_FPS_COUNTER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_FPSCounter";
+	public static readonly string U_OBJ_P_TIMER_MANAGER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_TimerManager";
 
-	public static readonly string U_OBJ_P_DEBUG_CONSOLE = string.Format("{0}{1}{2}U_DebugConsole", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
-	public static readonly string U_OBJ_P_DEBUG_LOG_ITEM = string.Format("{0}{1}{2}U_DebugLogItem", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_UTILITY, KCDefine.B_DIR_P_EXTERNAL_ROOT);
+	public static readonly string U_OBJ_P_DEBUG_CONSOLE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_DebugConsole";
+	public static readonly string U_OBJ_P_DEBUG_LOG_ITEM = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_DebugLogItem";
 
-	public static readonly string U_OBJ_P_G_BG_SND = string.Format("{0}{1}{2}G_BGSnd", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_SOUND_ROOT);
-	public static readonly string U_OBJ_P_G_FX_SND = string.Format("{0}{1}{2}G_FXSnd", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_SOUND_ROOT);
+	public static readonly string U_OBJ_P_G_BG_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_BGSnd";
+	public static readonly string U_OBJ_P_G_FX_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_FXSnd";
 
-	public static readonly string U_OBJ_P_G_ALERT_POPUP = string.Format("{0}{1}{2}G_AlertPopup", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_POPUP_ROOT);
-	public static readonly string U_OBJ_P_G_TOAST_POPUP = string.Format("{0}{1}{2}G_ToastPopup", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_POPUP_ROOT);
+	public static readonly string U_OBJ_P_G_ALERT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP_ROOT}G_AlertPopup";
+	public static readonly string U_OBJ_P_G_TOAST_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP_ROOT}G_ToastPopup";
 
-	public static readonly string U_OBJ_P_G_DRAG_RESPONDER = string.Format("{0}{1}{2}G_DragResponder", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_RESPONDER_ROOT);
-	public static readonly string U_OBJ_P_G_TOUCH_RESPONDER = string.Format("{0}{1}{2}G_TouchResponder", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_RESPONDER_ROOT);
+	public static readonly string U_OBJ_P_G_DRAG_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_DragResponder";
+	public static readonly string U_OBJ_P_G_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_TouchResponder";
 
-	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = string.Format("{0}{1}G_BuildInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_ASSET_P_G_BUILD_OPTS_TABLE = string.Format("{0}{1}G_BuildOptsTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_TABLE = string.Format("{0}{1}G_DefineSymbolTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = string.Format("{0}{1}G_ProjInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = string.Format("{0}{1}G_DeviceInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
+	public static readonly string U_ASSET_P_G_BUILD_OPTS_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildOptsTable";
+	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DefineSymbolTable";
+	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProjInfoTable";
+	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
 	
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_01 = string.Format("{0}{1}G_SpriteAtlas_01", KCDefine.B_DIR_P_SPRITE_ATLASES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_ASSET_P_LIGHTING_SETTINGS = string.Format("{0}{1}U_LightingSettings", KCDefine.B_DIR_P_SETTINGS, KCDefine.B_DIR_P_UTILITY);
+	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_01";
+	public static readonly string U_ASSET_P_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_UTILITY}U_LightingSettings";
 
-	public static readonly string U_TABLE_P_G_COMMON_VALUE = string.Format("{0}{1}{2}G_ValueTable_Common", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_VALUE_INFO_ROOT);
-	public static readonly string U_TABLE_P_G_COMMON_STRING = string.Format("{0}{1}{2}G_StringTable_Common", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_STRING_INFO_ROOT);
+	public static readonly string U_TABLE_P_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValueTable_Common";
+	public static readonly string U_TABLE_P_G_COMMON_STRING = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StringTable_Common";
 
-	public static readonly string U_TABLE_P_FMT_G_COMMON_STRING = string.Format("{0}{1}{2}{3}", KCDefine.B_DIR_P_TABLES, KCDefine.B_DIR_P_GLOBAL, KCDefine.B_DIR_P_STRING_INFO_ROOT, KCDefine.B_FILE_N_FMT_LOCALIZE);
+	public static readonly string U_TABLE_P_FMT_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}{KCDefine.B_FILE_N_FMT_COMBINE}";
+	public static readonly string U_TABLE_P_FMT_G_COMMON_STRING = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}{KCDefine.B_FILE_N_FMT_COMBINE}";
+
+	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_VALUE = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_VALUE, "G_ValueTable_Common", "{0}");
 	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
 
 	public static readonly string U_TABLE_P_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
 	public static readonly string U_TABLE_P_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
+
+	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_VALUE = KCDefine.U_TABLE_P_G_COMMON_VALUE;
 	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_P_G_COMMON_STRING;
 
-	public static readonly string U_FONT_P_G_THAI = string.Format("{0}{1}G_ThaiFont", KCDefine.B_DIR_P_FONTS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_FONT_P_G_THAI = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_ThaiFont";
 
-	public static readonly string U_SND_P_G_TOUCH_BEGIN = string.Format("{0}{1}G_TouchBegin", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_SND_P_G_TOUCH_END = string.Format("{0}{1}G_TouchEnd", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_SND_P_G_POPUP_CLOSE = string.Format("{0}{1}G_PopupClose", KCDefine.B_DIR_P_SOUNDS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_SND_P_G_TOUCH_BEGIN = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchBegin";
+	public static readonly string U_SND_P_G_TOUCH_END = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchEnd";
+	public static readonly string U_SND_P_G_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_PopupClose";
 
-	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP = string.Format("{0}{1}G_UniversalRPAsset", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDERER = string.Format("{0}{1}G_UniversalRPRenderer", KCDefine.B_DIR_P_PIPELINES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPAsset";
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDERER = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPRenderer";
 
-	public static readonly string U_IMG_P_G_SPLASH = string.Format("{0}{1}G_Splash", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_IMG_P_G_WHITE = string.Format("{0}{1}G_UnityWhite", KCDefine.B_DIR_P_IMAGES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_IMG_P_G_SPLASH = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_Splash";
+	public static readonly string U_IMG_P_G_WHITE = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_UnityWhite";
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-	public static readonly string U_IMG_P_SCREENSHOT = string.Format("{0}/Screenshot.png", Application.identifier, KCDefine.B_DIR_P_WRITABLE);
+	public static readonly string U_IMG_P_SCREENSHOT = $"{Application.identifier}/Screenshot.png";
 #else
-	public static readonly string U_IMG_P_SCREENSHOT = string.Format("{0}Screenshot.png", KCDefine.B_DIR_P_WRITABLE);
+	public static readonly string U_IMG_P_SCREENSHOT = $"{KCDefine.B_DIR_P_WRITABLE}Screenshot.png";
 #endif			// #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	// 경로 }
 	#endregion			// 런타임 상수
@@ -927,7 +932,7 @@ public static partial class KCDefine {
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 	// 경로
-	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = string.Format("{0}{1}G_PluginInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_PluginInfoTable";
 #endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if FACEBOOK_MODULE_ENABLE
@@ -943,14 +948,14 @@ public static partial class KCDefine {
 	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_FETCH_CONFIG = new System.TimeSpan(0, 0, 30);
 
 	// 경로
-	public static readonly string U_DATA_P_G_GAME_CONFIG = string.Format("{0}{1}G_GameConfig", KCDefine.B_DIR_P_DATAS, KCDefine.B_DIR_P_GLOBAL);
-	public static readonly string U_DATA_P_G_BUILD_VERSION_CONFIG = string.Format("{0}{1}G_BuildVersionConfig", KCDefine.B_DIR_P_DATAS, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_GameConfig";
+	public static readonly string U_DATA_P_G_BUILD_VERSION_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_BuildVersionConfig";
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
 	// 경로
-	public static readonly string U_DATA_P_PURCHASE_M_PRODUCT_ID_LIST = string.Format("{0}PurchaseProductIDList.bytes", KCDefine.B_DIR_P_WRITABLE);
-	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = string.Format("{0}{1}G_ProductInfoTable", KCDefine.B_DIR_P_SCRIPTABLES, KCDefine.B_DIR_P_GLOBAL);
+	public static readonly string U_DATA_P_PURCHASE_M_PRODUCT_ID_LIST = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDList.bytes";
+	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
 #endif			// #if PURCHASE_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }

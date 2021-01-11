@@ -238,5 +238,13 @@ public enum EAdsType {
 
 	MAX_VALUE
 }
+
+//! 배너 광고 위치
+public enum EBannerAdsPos {
+	NONE = -1,
+	TOP,
+	BOTTOM,
+	MAX_VALUE
+}
 #endif			// #if ADS_MODULE_ENABLE
 #endregion			// 조건부 상수

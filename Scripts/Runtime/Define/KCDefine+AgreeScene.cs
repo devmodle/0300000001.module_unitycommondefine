@@ -25,11 +25,11 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 경로 {
-	public static readonly string AS_DATA_P_SERVICES = string.Format("{0}{1}AS_Services_{2}", KCDefine.B_DIR_P_DATAS, KCDefine.B_DIR_P_AGREE_SCENE, SystemLanguage.Korean);
-	public static readonly string AS_DATA_P_PRIVACY = string.Format("{0}{1}AS_Privacy_{2}", KCDefine.B_DIR_P_DATAS, KCDefine.B_DIR_P_AGREE_SCENE, SystemLanguage.Korean);
+	public static readonly string AS_DATA_P_SERVICES = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_Services_{SystemLanguage.Korean}";
+	public static readonly string AS_DATA_P_PRIVACY = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_Privacy_{SystemLanguage.Korean}";
 
-	public static readonly string AS_OBJ_P_LANDSCAPE_AGREE_POPUP = string.Format("{0}{1}AS_LandscapeAgreePopup", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_AGREE_SCENE);
-	public static readonly string AS_OBJ_P_PORTRAIT_AGREE_POPUP = string.Format("{0}{1}AS_PortraitAgreePopup", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_AGREE_SCENE);
+	public static readonly string AS_OBJ_P_LANDSCAPE_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_LandscapeAgreePopup";
+	public static readonly string AS_OBJ_P_PORTRAIT_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_PortraitAgreePopup";
 	// 경로 }
 	#endregion			// 런타임 상수
 }

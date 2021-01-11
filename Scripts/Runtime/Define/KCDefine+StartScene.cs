@@ -29,7 +29,7 @@ public static partial class KCDefine {
 	public static readonly Vector3 SS_POS_LOADING_IMG_OBJ = new Vector3(0.0f, -40.0f, 0.0f);
 	
 	// 경로
-	public static readonly string SS_OBJ_P_LOADING_TEXT = string.Format("{0}{1}SS_LoadingText", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_START_SCENE);
-	public static readonly string SS_OBJ_P_LOADING_IMG_OBJ = string.Format("{0}{1}SS_LoadingImgObj", KCDefine.B_DIR_P_PREFABS, KCDefine.B_DIR_P_START_SCENE);
+	public static readonly string SS_OBJ_P_LOADING_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingText";
+	public static readonly string SS_OBJ_P_LOADING_IMG_OBJ = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingImgObj";
 	#endregion			// 런타임 상수
 }

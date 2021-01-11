@@ -214,8 +214,8 @@ public static partial class KCDefine {
 
 	public const string B_NAME_FMT_BACKUP = "yyyy_MM_dd HH_mm_ss";
 	public const string B_FILE_N_FMT_BACKUP = "{0} ({1})";
-	public const string B_FILE_N_FMT_LOCALIZE = "{0}_{1}";
-
+	public const string B_FILE_N_FMT_COMBINE = "{0}_{1}";
+	
 	public const string B_DATE_T_FMT_YYYY_MM_DD = "yyyyMMdd";
 	public const string B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
 	// 형식 }
