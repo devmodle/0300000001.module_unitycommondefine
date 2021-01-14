@@ -147,7 +147,7 @@ public static partial class KCEditorDefine {
 
 	// 플랫폼 {
 	public const string DS_DEFINE_S_MAC = "MAC";
-	public const string DS_DEFINE_S_WINDOWS = "WINDOWS";
+	public const string DS_DEFINE_S_WNDS = "WNDS";
 
 	public const string DS_DEFINE_S_GOOGLE = "GOOGLE";
 	public const string DS_DEFINE_S_ONE_STORE = "ONE_STORE";

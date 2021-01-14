@@ -33,7 +33,7 @@ public static partial class KCEditorDefine {
 	// 크기 }
 
 	// 비율
-	public const float B_SCALE_FILE_BROWSER_WINDOW = 1.25f;
+	public const float B_SCALE_FILE_BROWSER_WND = 1.25f;
 
 	// 토큰
 	public const string B_TOKEN_DEFINE_SYMBOL = ";";
@@ -61,7 +61,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_OBJ_N_GAME_OBJ = "GameObj";
 	public const string B_OBJ_N_OBJ_N_EDITOR_POPUP = "ObjNameEditorPopup";
-	public const string B_OBJ_N_FILE_BROWSER_WINDOW = "SimpleFileBrowserWindow";
+	public const string B_OBJ_N_FILE_BROWSER_WND = "SimpleFileBrowserWindow";
 
 	public const string B_OBJ_N_TEXT = "Text";
 	public const string B_OBJ_N_LOCALIZE_TEXT = "LocalizeText";
@@ -119,9 +119,6 @@ public static partial class KCEditorDefine {
 
 	public const string B_PROPERTY_N_DEBUG_C_LOG_ITEM_PREFAB = "logItemPrefab";
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
-
-	public const string B_SCENE_N_PATTERN_EDITOR_A = "EditorMenu";
-	public const string B_SCENE_N_PATTERN_EDITOR_B = "EditorScene";
 
 	public const string B_FUNC_N_SET_COMPRESSION_TYPE = "SetCompressionType";
 	public const string B_FUNC_N_SET_LIGHTMAP_ENCODING_QUALITY = "SetLightmapEncodingQualityForPlatformGroup";
@@ -229,7 +226,7 @@ public static partial class KCEditorDefine {
 	public const string B_MAC_BUILD_PATH = "Builds/Standalone/Mac/MacBuildOutput.app";
 
 	// 윈도우즈
-	public const string B_WINDOWS_BUILD_PATH = "Builds/Standalone/Windows/WindowsBuildOutput.exe";
+	public const string B_WNDS_BUILD_PATH = "Builds/Standalone/Windows/WindowsBuildOutput.exe";
 
 	// iOS {
 	public const string B_IOS_DEV_IPA_EXPORT_METHOD = "development";
@@ -261,7 +258,7 @@ public static partial class KCEditorDefine {
 
 	// 크기
 	public static readonly Vector2 B_SIZE_DEBUG_C_LOG_ITEM = new Vector2(0.0f, 80.0f);
-	public static readonly Vector2 B_MIN_SIZE_EDITOR_WINDOW = new Vector2(350.0f, 350.0f);
+	public static readonly Vector2 B_MIN_SIZE_EDITOR_WND = new Vector2(350.0f, 350.0f);
 
 	// 위치
 	public static readonly Vector2 B_POS_FPS_C_STATIC_TEXT = new Vector2(-10.0f, 0.0f);
@@ -877,7 +874,7 @@ public static partial class KCEditorDefine {
 	};
 
 	// 윈도우즈
-	public static readonly GraphicsDeviceType[] B_WINDOWS_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
+	public static readonly GraphicsDeviceType[] B_WNDS_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
 #if DIRECT_3D_12_ENABLE
 		GraphicsDeviceType.Direct3D12, 
 #endif			// #if DIRECT_3D_12_ENABLE

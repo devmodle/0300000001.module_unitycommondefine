@@ -108,7 +108,7 @@ public static partial class KCDefine {
 
 	// 이름 {
 	public const string B_PLATFORM_N_MAC = "Mac";
-	public const string B_PLATFORM_N_WINDOWS = "Windows";
+	public const string B_PLATFORM_N_WNDS = "Wnds";
 
 	public const string B_PLATFORM_N_IOS = "iOS";
 	public const string B_PLATFORM_N_ANDROID = "Android";
@@ -118,6 +118,9 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_GALAXY_STORE = "GalaxyStore";
 	
 	public const string B_DIR_N_BACKUP = "Backup";
+
+	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
+	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
 	// 이름 }
 
 	// 씬 이름 {
@@ -227,12 +230,18 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 디바이스 {
+	public static readonly int B_PORTRAIT_DESKTOP_WND_WIDTH = (int)((Screen.currentResolution.height * 0.9f) * (KCDefine.B_SCREEN_WIDTH / (float)KCDefine.B_SCREEN_HEIGHT));
+	public static readonly int B_PORTRAIT_DESKTOP_WND_HEIGHT = (int)(Screen.currentResolution.height * 0.9f);
+
+	public static readonly int B_LANDSCAPE_DESKTOP_WND_WIDTH = (int)(Screen.currentResolution.width * 0.9f);
+	public static readonly int B_LANDSCAPE_DESKTOP_WND_HEIGHT = (int)((Screen.currentResolution.width * 0.9f) * (KCDefine.B_SCREEN_HEIGHT / (float)KCDefine.B_SCREEN_WIDTH));
+
 #if MODE_PORTRAIT_ENABLE
-	public static readonly int B_DESKTOP_WINDOW_WIDTH = (int)((Screen.currentResolution.height * 0.9f) * (KCDefine.B_SCREEN_WIDTH / (float)KCDefine.B_SCREEN_HEIGHT));
-	public static readonly int B_DESKTOP_WINDOW_HEIGHT = (int)(Screen.currentResolution.height * 0.9f);
+	public static readonly int B_DESKTOP_WND_WIDTH = KCDefine.B_PORTRAIT_DESKTOP_WND_WIDTH;
+	public static readonly int B_DESKTOP_WND_HEIGHT = KCDefine.B_PORTRAIT_DESKTOP_WND_HEIGHT;
 #else
-	public static readonly int B_DESKTOP_WINDOW_WIDTH = (int)(Screen.currentResolution.width * 0.9f);
-	public static readonly int B_DESKTOP_WINDOW_HEIGHT = (int)((Screen.currentResolution.width * 0.9f) * (KCDefine.B_SCREEN_HEIGHT / (float)KCDefine.B_SCREEN_WIDTH));
+	public static readonly int B_DESKTOP_WND_WIDTH = KCDefine.B_LANDSCAPE_DESKTOP_WND_WIDTH;
+	public static readonly int B_DESKTOP_WND_HEIGHT = KCDefine.B_LANDSCAPE_DESKTOP_WND_HEIGHT;
 #endif			// #if MODE_PORTRAIT_ENABLE
 
 	public static readonly Vector2 B_SCREEN_SIZE = new Vector2(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT);

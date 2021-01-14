@@ -298,7 +298,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
 
-	public const string U_OBJ_N_DEBUG_C_LOG_WINDOW = "DebugLogWindow";
+	public const string U_OBJ_N_DEBUG_C_LOG_WND = "DebugLogWindow";
 	public const string U_OBJ_N_DEBUG_C_LOG_POPUP = "DebugLogPopup";
 
 	public const string U_OBJ_N_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";

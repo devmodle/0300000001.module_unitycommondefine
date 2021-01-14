@@ -196,7 +196,7 @@ public enum EBuildType {
 public enum EStandaloneType {
 	NONE = -1,
 	MAC,
-	WINDOWS,
+	WNDS,
 	MAX_VALUE
 }
 
