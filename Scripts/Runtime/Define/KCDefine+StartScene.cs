@@ -12,7 +12,7 @@ public static partial class KCDefine {
 	public const float SS_DELTA_T_UPDATE_STATE = 0.5f;
 
 	// 텍스트
-	public const string SS_TEXT_LOADING = "Loading...";
+	public const string SS_TEXT_LOADING = "Loading";
 
 	// 이름 {
 	public const string SS_OBJ_N_LOADING_TEXT = "LoadingText";
