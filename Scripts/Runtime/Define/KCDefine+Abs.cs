@@ -68,12 +68,18 @@ public static partial class KCDefine {
 	// 플래그 }
 
 	// 디바이스 {
+	public const int B_PORTRAIT_SCREEN_WIDTH = 720;
+	public const int B_PORTRAIT_SCREEN_HEIGHT = 1280;
+
+	public const int B_LANDSCAPE_SCREEN_WIDTH = 1280;
+	public const int B_LANDSCAPE_SCREEN_HEIGHT = 720;
+
 #if MODE_PORTRAIT_ENABLE
-	public const int B_SCREEN_WIDTH = 720;
-	public const int B_SCREEN_HEIGHT = 1280;
+	public const int B_SCREEN_WIDTH = KCDefine.B_PORTRAIT_SCREEN_WIDTH;
+	public const int B_SCREEN_HEIGHT = KCDefine.B_PORTRAIT_SCREEN_HEIGHT;
 #else
-	public const int B_SCREEN_WIDTH = 1280;
-	public const int B_SCREEN_HEIGHT = 720;
+	public const int B_SCREEN_WIDTH = KCDefine.B_LANDSCAPE_SCREEN_WIDTH;
+	public const int B_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_SCREEN_HEIGHT;
 #endif			// #if MODE_PORTRAIT_ENABLE
 
 	public const int B_DEF_TARGET_FRAME_RATE = 30;
@@ -230,19 +236,8 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 디바이스 {
-	public static readonly int B_PORTRAIT_DESKTOP_WND_WIDTH = (int)((Screen.currentResolution.height * 0.9f) * (KCDefine.B_SCREEN_WIDTH / (float)KCDefine.B_SCREEN_HEIGHT));
-	public static readonly int B_PORTRAIT_DESKTOP_WND_HEIGHT = (int)(Screen.currentResolution.height * 0.9f);
-
-	public static readonly int B_LANDSCAPE_DESKTOP_WND_WIDTH = (int)(Screen.currentResolution.width * 0.9f);
-	public static readonly int B_LANDSCAPE_DESKTOP_WND_HEIGHT = (int)((Screen.currentResolution.width * 0.9f) * (KCDefine.B_SCREEN_HEIGHT / (float)KCDefine.B_SCREEN_WIDTH));
-
-#if MODE_PORTRAIT_ENABLE
-	public static readonly int B_DESKTOP_WND_WIDTH = KCDefine.B_PORTRAIT_DESKTOP_WND_WIDTH;
-	public static readonly int B_DESKTOP_WND_HEIGHT = KCDefine.B_PORTRAIT_DESKTOP_WND_HEIGHT;
-#else
-	public static readonly int B_DESKTOP_WND_WIDTH = KCDefine.B_LANDSCAPE_DESKTOP_WND_WIDTH;
-	public static readonly int B_DESKTOP_WND_HEIGHT = KCDefine.B_LANDSCAPE_DESKTOP_WND_HEIGHT;
-#endif			// #if MODE_PORTRAIT_ENABLE
+	public static readonly int B_DESKTOP_SCREEN_WIDTH = (int)(Screen.currentResolution.width * 0.95f);
+	public static readonly int B_DESKTOP_SCREEN_HEIGHT = (int)(KCDefine.B_DESKTOP_SCREEN_WIDTH * (KCDefine.B_LANDSCAPE_SCREEN_HEIGHT / (float)KCDefine.B_LANDSCAPE_SCREEN_WIDTH));
 
 	public static readonly Vector2 B_SCREEN_SIZE = new Vector2(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT);
 	public static readonly Vector2 B_WORLD_SCREEN_SIZE = new Vector2(KCDefine.B_WORLD_SCREEN_WIDTH, KCDefine.B_WORLD_SCREEN_HEIGHT);
