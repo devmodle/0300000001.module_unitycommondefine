@@ -251,6 +251,10 @@ public static partial class KCDefine {
 	public static readonly Color B_LOG_COLOR_PLATFORM_INFO = Color.red;
 	// 색상 }
 
+	// 인덱스
+	public static readonly Vector2Int B_INDEX_INVALID_2D = new Vector2Int(KCDefine.B_INDEX_INVALID, KCDefine.B_INDEX_INVALID);
+	public static readonly Vector3Int B_INDEX_INVALID_3D = new Vector3Int(KCDefine.B_INDEX_INVALID, KCDefine.B_INDEX_INVALID, KCDefine.B_INDEX_INVALID);
+
 	// 앵커 {
 	public static readonly Vector2 B_ANCHOR_TOP_LEFT = new Vector2(0.0f, 1.0f);
 	public static readonly Vector2 B_ANCHOR_TOP_CENTER = new Vector2(0.5f, 1.0f);
