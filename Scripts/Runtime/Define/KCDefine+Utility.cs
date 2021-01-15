@@ -270,7 +270,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TOP_BLIND_IMG = "TopBlindImg";
 	public const string U_OBJ_N_BOTTOM_BLIND_IMG = "BottomBlindImg";
 
-	public const string U_OBJ_N_POPUP_CONTENTS = "Contents";
+	public const string U_OBJ_N_POPUP_CONTENTS_ROOT = "Contents";
 	public const string U_OBJ_N_POPUP_CLOSE_BTN = "CloseBtn";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
@@ -292,8 +292,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SND_M_BG_SND = "BGSnd";
 	public const string U_OBJ_N_SND_M_FX_SND = "FXSnd";
 
-	public const string U_OBJ_N_SCROLL_V_CONTENT = "Content";
 	public const string U_OBJ_N_SCROLL_V_VIEWPORT = "Viewport";
+	public const string U_OBJ_N_SCROLL_V_CONTENTS_ROOT = "Contents";
 
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
