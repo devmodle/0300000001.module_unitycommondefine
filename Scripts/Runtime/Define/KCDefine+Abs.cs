@@ -203,14 +203,15 @@ public static partial class KCDefine {
 	public const string B_DIR_P_AGREE_SCENE = "AgreeScene/";
 	public const string B_DIR_P_INTRO_SCENE = "IntroScene/";
 
-	public const string B_DIR_P_TEXT_ROOT = "Text/";
-	public const string B_DIR_P_IMAGE_ROOT = "Image/";
-	public const string B_DIR_P_BUTTON_ROOT = "Button/";
-	public const string B_DIR_P_SCROLL_VIEW_ROOT = "ScrollView/";
-	public const string B_DIR_P_POPUP_ROOT = "Popup/";
-	public const string B_DIR_P_RESPONDER_ROOT = "Responder/";
+	public const string B_DIR_P_TEXT_ROOT = "UI/Text/";
+	public const string B_DIR_P_IMAGE_ROOT = "UI/Image/";
+	public const string B_DIR_P_BUTTON_ROOT = "UI/Button/";
+	public const string B_DIR_P_SCROLL_VIEW_ROOT = "UI/ScrollView/";
+	public const string B_DIR_P_POPUP_ROOT = "UI/Popup/";
+	public const string B_DIR_P_RESPONDER_ROOT = "UI/Responder/";
 	public const string B_DIR_P_SOUND_ROOT = "Sound/";
 	public const string B_DIR_P_FX_ROOT = "FX/";
+	public const string B_DIR_P_2D_ROOT = "2D/";
 	public const string B_DIR_P_EXTERNAL_ROOT = "External/";
 	public const string B_DIR_P_STRING_INFO_ROOT = "StringInfo/";
 	public const string B_DIR_P_VALUE_INFO_ROOT = "ValueInfo/";
