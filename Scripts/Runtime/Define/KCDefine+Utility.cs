@@ -343,7 +343,7 @@ public static partial class KCDefine {
 	public static readonly Color U_DEF_COLOR_INDICATOR_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
 
 #if UNITY_EDITOR
-	public static readonly Color U_DEF_COLOR_CAMERA_BG = new Color(0.35f, 0.35f, 0.35f, 1.0f);
+	public static readonly Color U_DEF_COLOR_CAMERA_BG = new Color(0.15f, 0.15f, 0.15f, 1.0f);
 #else
 	public static readonly Color U_DEF_COLOR_CAMERA_BG = Color.black;
 #endif			// #if UNITY_EDITOR
@@ -483,8 +483,8 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValueTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_STRING = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StringTable_Common";
 
-	public static readonly string U_TABLE_P_FMT_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}{KCDefine.B_FILE_N_FMT_COMBINE}";
-	public static readonly string U_TABLE_P_FMT_G_COMMON_STRING = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}{KCDefine.B_FILE_N_FMT_COMBINE}";
+	public static readonly string U_TABLE_P_FMT_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}{KCDefine.B_NAME_FMT_UNDER_SCORE_COMBINE}";
+	public static readonly string U_TABLE_P_FMT_G_COMMON_STRING = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}{KCDefine.B_NAME_FMT_UNDER_SCORE_COMBINE}";
 
 	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_VALUE = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_VALUE, "G_ValueTable_Common", "{0}");
 	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_STRING, "G_StringTable_Common", "{0}");

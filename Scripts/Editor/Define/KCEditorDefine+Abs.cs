@@ -161,11 +161,11 @@ public static partial class KCEditorDefine {
 #endif			// #if GPU_LIGHTMAPPER_ENABLE
 
 #if LIGHTMAP_SHADOW_BAKE_ENABLE
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Subtractive;
-#else
+#if LIGHTMAP_SHADOW_BAKE_MASK_MODE_ENABLE
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Shadowmask;
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#else
+	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Subtractive;
+#endif			// #if LIGHTMAP_SHADOW_BAKE_MASK_MODE_ENABLE
 #else
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
