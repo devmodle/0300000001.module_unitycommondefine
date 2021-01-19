@@ -195,6 +195,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_GLOBAL = "Global/";
 	public const string B_DIR_P_UTILITY = "Utility/";
 	public const string B_DIR_P_TUTORIAL = "Tutorial/";
+	public const string B_DIR_P_POPUP = "Popup/";
 	public const string B_DIR_P_INIT_SCENE = "InitScene/";
 	public const string B_DIR_P_SETUP_SCENE = "SetupScene/";
 	public const string B_DIR_P_START_SCENE = "StartScene/";
