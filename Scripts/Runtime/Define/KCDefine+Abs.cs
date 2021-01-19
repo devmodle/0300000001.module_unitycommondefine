@@ -202,6 +202,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_SPLASH_SCENE = "SplashScene/";
 	public const string B_DIR_P_AGREE_SCENE = "AgreeScene/";
 	public const string B_DIR_P_INTRO_SCENE = "IntroScene/";
+	public const string B_DIR_P_AUTO_CREATE = "00.AutoCreate/";
 
 	public const string B_DIR_P_TEXT_ROOT = "UI/Text/";
 	public const string B_DIR_P_IMAGE_ROOT = "UI/Image/";
@@ -316,6 +317,7 @@ public static partial class KCDefine {
 	// 경로 {
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../ExternalDatas/";
+	public static readonly string B_ABS_DIR_P_MAC_EXTERNAL_DATAS = $"{Application.dataPath}/../../ExternalDatas/";
 
 	public static readonly string B_DATA_P_LOG = $"{KCDefine.B_DIR_P_WRITABLE}Log.txt";
 	// 경로 }
