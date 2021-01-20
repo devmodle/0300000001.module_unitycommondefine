@@ -291,6 +291,14 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_POS_BOTTOM_LEFT = Vector3.zero;
 	public static readonly Vector3 B_POS_BOTTOM_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
 	public static readonly Vector3 B_POS_BOTTOM_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, 0.0f, 0.0f);
+
+#if MODE_CENTER_ENABLE
+	public static readonly Vector3 B_POS_POPUP = Vector3.zero;
+	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;
+#else
+	public static readonly Vector3 B_POS_POPUP = KCDefine.B_POS_MIDDLE_CENTER;
+	public static readonly Vector3 B_POS_TOUCH_RESPONDER = KCDefine.B_POS_MIDDLE_CENTER;
+#endif			// #if MODE_CENTER_ENABLE
 	// 위치 }
 
 	// 월드 위치 {
