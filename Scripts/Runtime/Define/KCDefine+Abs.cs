@@ -32,7 +32,7 @@ public static partial class KCDefine {
 	// 값 }
 
 	// 인덱스
-	public const int B_INDEX_INVALID = -1;
+	public const int B_IDX_INVALID = -1;
 
 	// 빌드 번호
 	public const int B_MIN_BUILD_NUMBER = 1;
@@ -259,8 +259,8 @@ public static partial class KCDefine {
 	// 색상 }
 
 	// 인덱스
-	public static readonly Vector2Int B_INDEX_INVALID_2D = new Vector2Int(KCDefine.B_INDEX_INVALID, KCDefine.B_INDEX_INVALID);
-	public static readonly Vector3Int B_INDEX_INVALID_3D = new Vector3Int(KCDefine.B_INDEX_INVALID, KCDefine.B_INDEX_INVALID, KCDefine.B_INDEX_INVALID);
+	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
+	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 
 	// 앵커 {
 	public static readonly Vector2 B_ANCHOR_TOP_LEFT = new Vector2(0.0f, 1.0f);

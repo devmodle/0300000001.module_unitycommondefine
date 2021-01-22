@@ -56,6 +56,13 @@ public static partial class KCEditorDefine {
 	public const string B_ALERT_P_EXPORT_SPRITE_FAIL_MSG = "스프라이트를 선택해주세요.";
 	// 경고 팝업 }
 
+	// 객체 이름 에디터 윈도우 {
+	public const string B_OBJ_NEW_SEARCH_TEXT = "검색";
+	public const string B_OBJ_NEW_REPLACE_TEXT = "변경";
+
+	public const string B_OBJ_NEW_APPLY_BTN_TEXT = "적용";
+	// 객체 이름 에디터 윈도우 }
+
 	// 이름 {
 	public const string B_CLS_N_LOG_ENTRIES = "UnityEditorInternal.LogEntries";
 
@@ -307,13 +314,13 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Study/Templates/";
 	public static readonly string B_ABS_DIR_P_STUDY_SCRIPT_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_STUDY_TEMPLATES}Scripts/";
 
-	public static readonly string B_ABS_PKG_P_2D_TOOLKIT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/2DToolkit-v2.5.8.unitypackage";
-	public static readonly string B_ABS_PKG_P_BITMAP_FONT_IMPORTER = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/BitmapFontImporter-v2.4.1.unitypackage";
-	public static readonly string B_ABS_PKG_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/BuildReportTool-v3.5.3.unitypackage";
-	public static readonly string B_ABS_PKG_P_NGUI = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/NGUI-v2020.2.0.unitypackage";
-	public static readonly string B_ABS_PKG_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/OdinInspector-v3.0.3.unitypackage";
-	public static readonly string B_ABS_PKG_P_ZENJECT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Zenject-v9.2.0.unitypackage";
-	public static readonly string B_ABS_PKG_P_SPINE = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Spine-v3.8.0.unitypackage";
+	public static readonly string B_ABS_PKGS_P_2D_TOOLKIT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/2DToolkit-v2.5.8.unitypackage";
+	public static readonly string B_ABS_PKGS_P_BITMAP_FONT_IMPORTER = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/BitmapFontImporter-v2.4.1.unitypackage";
+	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/BuildReportTool-v3.5.3.unitypackage";
+	public static readonly string B_ABS_PKGS_P_NGUI = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/NGUI-v2020.2.0.unitypackage";
+	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/OdinInspector-v3.0.3.unitypackage";
+	public static readonly string B_ABS_PKGS_P_ZENJECT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Zenject-v9.2.0.unitypackage";
+	public static readonly string B_ABS_PKGS_P_SPINE = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Spine-v3.8.0.unitypackage";
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}TagManager.asset";
 	public static readonly string B_ASSET_P_SND_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}AudioManager.asset";

@@ -16,17 +16,17 @@ public static partial class KCDefine {
 	// 디바이스 }
 
 	// 경고 팝업 간격 {
-	public const string VT_KEY_V_OFFSET_ALERT_P_TITLE = "V_OFFSET_ALERT_P_TITLE";
+	public const string VT_KEY_OFFSET_V_ALERT_P_TITLE = "OFFSET_V_ALERT_P_TITLE";
 
-	public const string VT_KEY_V_OFFSET_ALERT_P_BTN = "V_OFFSET_ALERT_P_BTN";
-	public const string VT_KEY_H_OFFSET_ALERT_P_BTN = "H_OFFSET_ALERT_P_BTN";
+	public const string VT_KEY_OFFSET_V_ALERT_P_BTN = "OFFSET_V_ALERT_P_BTN";
+	public const string VT_KEY_OFFSET_H_ALERT_P_BTN = "OFFSET_H_ALERT_P_BTN";
 
-	public const string VT_KEY_V_EXTRA_OFFSET_ALERT_P_TITLE = "V_EXTRA_OFFSET_ALERT_P_TITLE";
-	public const string VT_KEY_V_EXTRA_OFFSET_ALERT_P_MSG = "V_EXTRA_OFFSET_ALERT_P_MSG";
-	public const string VT_KEY_V_EXTRA_OFFSET_ALERT_P_BTN = "V_EXTRA_OFFSET_ALERT_P_BTN";
+	public const string VT_KEY_EXTRA_OFFSET_V_ALERT_P_TITLE = "EXTRA_OFFSET_V_ALERT_P_TITLE";
+	public const string VT_KEY_EXTRA_OFFSET_V_ALERT_P_MSG = "EXTRA_OFFSET_V_ALERT_P_MSG";
+	public const string VT_KEY_EXTRA_OFFSET_V_ALERT_P_BTN = "EXTRA_OFFSET_V_ALERT_P_BTN";
 
-	public const string VT_KEY_V_OFFSET_ALERT_P_BG = "V_OFFSET_ALERT_P_BG";
-	public const string VT_KEY_H_OFFSET_ALERT_P_BG = "H_OFFSET_ALERT_P_BG";
+	public const string VT_KEY_OFFSET_V_ALERT_P_BG = "OFFSET_V_ALERT_P_BG";
+	public const string VT_KEY_OFFSET_H_ALERT_P_BG = "OFFSET_H_ALERT_P_BG";
 	// 경고 팝업 간격 }
 
 	// 게임 정보 저장소
