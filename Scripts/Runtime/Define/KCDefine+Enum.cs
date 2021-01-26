@@ -15,17 +15,26 @@ public enum EMouseBtn {
 //! 방향
 public enum EDirection {
 	NONE = -1,
+	
 	UP,
 	DOWN,
 	LEFT,
 	RIGHT,
+	
+	UP_LEFT,
+	UP_RIGHT,
+	DOWN_LEFT,
+	DOWN_RIGHT,
+
 	LEFT_UP,
 	LEFT_DOWN,
 	RIGHT_UP,
 	RIGHT_DOWN,
+	
 	VERTICAL,
 	HORIZONTAL,
 	DIAGONAL,
+	
 	MAX_VALUE
 }
 

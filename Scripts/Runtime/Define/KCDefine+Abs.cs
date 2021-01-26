@@ -165,6 +165,8 @@ public static partial class KCDefine {
 	public const string B_CMD_GET_COUNTRY_CODE = "GetCountryCode";
 	public const string B_CMD_GET_STORE_VERSION = "GetStoreVersion";
 
+	public const string B_CMD_SET_ADS_TRACKING_ENABLE = "SetAdsTrackingEnable";
+
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
 
@@ -258,9 +260,44 @@ public static partial class KCDefine {
 	public static readonly Color B_LOG_COLOR_PLATFORM_INFO = Color.red;
 	// 색상 }
 
-	// 인덱스
+	// 인덱스 {
 	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
+
+	public static readonly Vector2Int[] B_IDX_OFFSETS_PREV_2D = new Vector2Int[] {
+		Vector2Int.down,
+		Vector2Int.up,
+		Vector2Int.right,
+		Vector2Int.left,
+
+		Vector2Int.down,
+		Vector2Int.down,
+		Vector2Int.up,
+		Vector2Int.up,
+
+		Vector2Int.right,
+		Vector2Int.right,
+		Vector2Int.left,
+		Vector2Int.left
+	};
+
+	public static readonly Vector2Int[] B_IDX_OFFSETS_NEXT_2D = new Vector2Int[] {
+		Vector2Int.up,
+		Vector2Int.down,
+		Vector2Int.left,
+		Vector2Int.right,
+
+		Vector2Int.left,
+		Vector2Int.right,
+		Vector2Int.left,
+		Vector2Int.right,
+
+		Vector2Int.up,
+		Vector2Int.down,
+		Vector2Int.up,
+		Vector2Int.down
+	};
+	// 인덱스 }
 
 	// 앵커 {
 	public static readonly Vector2 B_ANCHOR_TOP_LEFT = new Vector2(0.0f, 1.0f);
