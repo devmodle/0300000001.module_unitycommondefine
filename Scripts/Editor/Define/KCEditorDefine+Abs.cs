@@ -244,6 +244,9 @@ public static partial class KCEditorDefine {
 	public const string B_IOS_INFO_PLIST_P_FMT = "{0}/Info.plist";
 
 	public const string B_IOS_ENCRYPTION_ENABLE_KEY = "ITSAppUsesNonExemptEncryption";
+
+	public const string B_IOS_ADS_NETWORK_ITEMS_KEY = "SKAdNetworkItems";
+	public const string B_IOS_ADS_NETWORK_ID_KEY = "SKAdNetworkIdentifier";
 	// iOS }
 
 	// 안드로이드 {
