@@ -222,6 +222,12 @@ public static partial class KCDefine {
 	// 경로 }
 
 	// 형식 {
+	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";
+	public const string B_TEXT_FMT_2_DIGITS = "{0:00}";
+	public const string B_TEXT_FMT_3_DIGITS = "{0:000}";
+	public const string B_TEXT_FMT_4_DIGITS = "{0:0000}";
+	public const string B_TEXT_FMT_5_DIGITS = "{0:00000}";
+	
 	public const string B_SIZE_FMT_STRING = "<size={0}>{1}</size>";
 	public const string B_COLOR_FMT_STRING = "<color=#{0}>{1}</color>";
 	public const string B_DICTIONARY_FMT_STRING = "[{0}]{1}";
