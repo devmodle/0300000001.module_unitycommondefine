@@ -38,6 +38,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_ADMOB_ENABLE = "ADMOB_ENABLE";
 	public const string DS_DEFINE_S_IRON_SRC_ENABLE = "IRON_SRC_ENABLE";
 	public const string DS_DEFINE_S_APP_LOVIN_ENABLE = "APP_LOVIN_ENABLE";
+	public const string DS_DEFINE_S_FACEBOOK_ADS_ENABLE = "FACEBOOK_ADS_ENABLE";
 	// 광고 }
 
 	// 플러리 {
