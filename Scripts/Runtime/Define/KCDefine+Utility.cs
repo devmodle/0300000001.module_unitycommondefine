@@ -125,7 +125,7 @@ public static partial class KCDefine {
 	// 광원 }
 
 	// 회전
-	public static readonly Vector3 U_DEF_ROTATION_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
+	public static readonly Vector3 U_DEF_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
 
 	// 버전
 	public const string U_VERSION_COMMON_APP_INFO = "1.0.0";

@@ -8,6 +8,9 @@ public static partial class KCDefine {
 	// 개수
 	public const int SS_MAX_NUM_DOTS = 3;
 
+	// 비율
+	public const float SS_SCALE_LOADING = 1.5f;
+
 	// 시간
 	public const float SS_DELTA_T_UPDATE_STATE = 0.5f;
 
