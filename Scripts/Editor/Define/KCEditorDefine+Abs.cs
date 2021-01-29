@@ -18,23 +18,6 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
 
-	// 계층 뷰
-	public const float B_HIERARCHY_TEXT_OFFSET_X = 15.0f;
-	public const float B_HIERARCHY_OUTLINE_OFFSET_X = 1.0f;
-
-	// 크기 {
-	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
-	public const int B_FONT_SIZE_FPS_C_DYNAMIC_TEXT = 24;
-
-	public const int B_FONT_SIZE_DEBUG_C_TEXT = 30;
-
-	public const float B_WIDTH_OBJ_NEW_NAME_TEXT_FIELD = 300.0f;
-	public const float B_WIDTH_EDITOR_W_APPLY_BTN = 100.0f;
-	// 크기 }
-
-	// 비율
-	public const float B_SCALE_FILE_BROWSER_WND = 1.25f;
-
 	// 토큰
 	public const string B_TOKEN_DEFINE_SYMBOL = ";";
 
@@ -45,30 +28,11 @@ public static partial class KCEditorDefine {
 	public const string B_CMD_LINE_PARAMS_FMT_SHELL = "-c \"{0}\"";
 	public const string B_CMD_LINE_PARAMS_FMT_CMD_PROMPT = "/c \"{0}\"";
 
-	// 경고 팝업 {
-	public const string B_ALERT_P_TITLE = "알림";
-	public const string B_ALERT_P_OK_BTN_TEXT = "확인";
-	public const string B_ALERT_P_CANCEL_BTN_TEXT = "취소";
-
-	public const string B_ALERT_P_EXPORT_IMG_SUCCESS_MSG = "이미지를 추출했습니다.";
-
-	public const string B_ALERT_P_EXPORT_TEXTURE_FAIL_MSG = "텍스처를 선택해주세요.";
-	public const string B_ALERT_P_EXPORT_SPRITE_FAIL_MSG = "스프라이트를 선택해주세요.";
-	// 경고 팝업 }
-
-	// 객체 이름 에디터 윈도우 {
-	public const string B_OBJ_NEW_SEARCH_TEXT = "검색";
-	public const string B_OBJ_NEW_REPLACE_TEXT = "변경";
-
-	public const string B_OBJ_NEW_APPLY_BTN_TEXT = "적용";
-	// 객체 이름 에디터 윈도우 }
-
 	// 이름 {
 	public const string B_CLS_N_LOG_ENTRIES = "UnityEditorInternal.LogEntries";
 
 	public const string B_OBJ_N_GAME_OBJ = "GameObj";
 	public const string B_OBJ_N_OBJ_N_EDITOR_POPUP = "ObjNameEditorPopup";
-	public const string B_OBJ_N_FILE_BROWSER_WND = "SimpleFileBrowserWindow";
 
 	public const string B_OBJ_N_TEXT = "Text";
 	public const string B_OBJ_N_LOCALIZE_TEXT = "LocalizeText";
@@ -126,7 +90,6 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_N_SND_M_DISABLE_AUDIO = "m_DisableAudio";
 	public const string B_PROPERTY_N_SND_M_VIRTUALIZE_EFFECT = "m_VirtualizeEffects";
 
-	public const string B_PROPERTY_N_DEBUG_C_LOG_ITEM_PREFAB = "logItemPrefab";
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
 
 	public const string B_FUNC_N_SET_COMPRESSION_TYPE = "SetCompressionType";
@@ -147,10 +110,100 @@ public static partial class KCEditorDefine {
 
 	public const string B_DIR_P_EXPORT_IMG_BASE = "Export/Images/";
 	public const string B_ASSET_P_FMT_LIGHTING_SETTINGS = "{0}/{1}Settings.lighting";
-
-	public const string B_OBJ_P_FILE_BROWSER_UI = "SimpleFileBrowserCanvas";
 	// 경로 }
-	
+
+	// 맥
+	public const string B_BUILD_P_MAC = "Builds/Standalone/Mac/MacBuildOutput.app";
+
+	// 윈도우즈
+	public const string B_BUILD_P_WNDS = "Builds/Standalone/Windows/WindowsBuildOutput.exe";
+
+	// iOS {
+	public const string B_TEXT_IOS_YES = "YES";
+	public const string B_TEXT_IOS_NO = "NO";
+
+	public const string B_IPA_EXPORT_METHOD_IOS_DEV = "development";
+	public const string B_IPA_EXPORT_METHOD_IOS_ADHOC = "ad-hoc";
+	public const string B_IPA_EXPORT_METHOD_IOS_STORE = "app-store";
+
+	public const string B_BUILD_P_IOS = "Builds/iOS";
+	public const string B_PLIST_P_FMT_IOS = "{0}/Info.plist";
+
+	public const string B_KEY_IOS_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
+
+	public const string B_KEY_IOS_ADS_NETWORK_ITEMS = "SKAdNetworkItems";
+	public const string B_KEY_IOS_ADS_NETWORK_ID = "SKAdNetworkIdentifier";
+
+	public const string B_PROPERTY_N_IOS_ENABLE_BITCODE = "ENABLE_BITCODE";
+	public const string B_PROPERTY_N_IOS_PREPROCESSOR_DEFINITIONS = "GCC_PREPROCESSOR_DEFINITIONS";
+	// iOS }
+
+	// 안드로이드 {
+	public const string B_BUILD_FILE_EXTENSION_ANDROID_APK = "apk";
+	public const string B_BUILD_FILE_EXTENSION_ANDROID_AAB = "aab";
+
+	public const string B_BUILD_P_FMT_ANDROID = "Builds/Android/{0}/{1}.{2}";
+	public const string B_BUILD_FILE_N_FMT_ANDROID = "{0}BuildOutput";
+	// 안드로이드 }
+
+	// 젠킨스 {
+	public const string B_KEY_JENKINS_BRANCH = "Branch";
+	public const string B_KEY_JENKINS_SRC = "Src";
+	public const string B_KEY_JENKINS_PROJ_NAME = "ProjName";
+	public const string B_KEY_JENKINS_PROJ_PATH = "ProjPath";
+	public const string B_KEY_JENKINS_DIST_PATH = "DistPath";
+	public const string B_KEY_JENKINS_BUNDLE_ID = "BundleID";
+	public const string B_KEY_JENKINS_PROFILE_ID = "ProfileID";
+	public const string B_KEY_JENKINS_PLATFORM = "Platform";
+	public const string B_KEY_JENKINS_ANALYTICS = "Analytics";
+	public const string B_KEY_JENKINS_BUILD_MODE = "BuildMode";
+	public const string B_KEY_JENKINS_BUILD_FUNC = "BuildFunc";
+	public const string B_KEY_JENKINS_PIPELINE_NAME = "PipelineName";
+	public const string B_KEY_JENKINS_IPA_EXPORT_METHOD = "IPAExportMethod";
+	public const string B_KEY_JENKINS_BUILD_FILE_EXTENSION = "BuildFileExtension";
+
+	public const string B_BUILD_PARAMS_TOKEN_JENKINS = " ";
+	public const string B_PIPELINE_GROUP_NAME_JENKINS = "job/00001.Common/job/01.Pipelines/job";
+
+	public const string B_BUILD_DATA_FMT_JENKINS = "--data {0}={1}";
+	public const string B_BUILD_CMD_FMT_JENKINS = "curl -X POST {0} --user {1}:{2} --data token={3}";
+
+	public const string B_SRC_FMT_JENKINS = "{0}/{1}";
+	public const string B_PROJ_P_FMT_JENKINS = "{0}/{1}/{2}";
+	public const string B_ANALYTICS_FMT_JENKINS = "{0}/00.Analytics";
+
+	public const string B_STANDALONE_BUILD_PROJ_N_JENKINS = "41.Standalone";
+	public const string B_IOS_BUILD_PROJ_N_JENKINS = "01.iOS";
+	public const string B_ANDROID_BUILD_PROJ_N_JENKINS = "11.Android";
+
+	public const string B_DEBUG_BUILD_FUNC_JENKINS = "Debug";
+	public const string B_RELEASE_BUILD_FUNC_JENKINS = "Release";
+	public const string B_ADHOC_BUILD_FUNC_JENKINS = "Adhoc";
+	public const string B_ADHOC_UPLOAD_BUILD_FUNC_JENKINS = "AdhocUpload";
+	public const string B_STORE_BUILD_FUNC_JENKINS = "Store";
+	public const string B_STORE_TEST_BUILD_FUNC_JENKINS = "StoreTest";
+	public const string B_STORE_UPLOAD_BUILD_FUNC_JENKINS = "StoreUpload";
+
+	public const string B_STANDALONE_DEBUG_PIPELINE_N_JENKINS = "41.StandaloneDebug";
+	public const string B_STANDALONE_RELEASE_PIPELINE_N_JENKINS = "42.StandaloneRelease";
+
+	public const string B_IOS_DEBUG_PIPELINE_N_JENKINS = "01.iOSDebug";
+	public const string B_IOS_RELEASE_PIPELINE_N_JENKINS = "02.iOSRelease";
+	public const string B_IOS_ADHOC_PIPELINE_N_JENKINS = "03.iOSAdhoc";
+	public const string B_IOS_STORE_PIPELINE_N_JENKINS = "04.iOSStore";
+
+	public const string B_ANDROID_DEBUG_PIPELINE_N_JENKINS = "11.AndroidDebug";
+	public const string B_ANDROID_RELEASE_PIPELINE_N_JENKINS = "12.AndroidRelease";
+	public const string B_ANDROID_ADHOC_PIPELINE_N_JENKINS = "13.AndroidAdhoc";
+	public const string B_ANDROID_STORE_PIPELINE_N_JENKINS = "14.AndroidStore";
+	// 젠킨스 }
+
+	// 계층 뷰
+	public const float B_OFFSET_X_HIERARCHY_TEXT = 15.0f;
+
+	public const float B_OFFSET_X_HIERARCHY_OUTLINE = 1.0f;
+	public const float B_OFFSET_Y_HIERARCHY_OUTLINE = 1.0f;
+
 	// 에디터 옵션 {
 	public const string B_EDITOR_OPTS_IOS_REMOTE_DEVICE = "Any iOS Device";
 	public const string B_EDITOR_OPTS_ANDROID_REMOTE_DEVICE = "Any Android Device";
@@ -176,104 +229,55 @@ public static partial class KCEditorDefine {
 #else
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
+
+	public static readonly string[] B_EDITOR_OPTS_EXTENSIONS = new string[] {
+		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
+	};
 	// 에디터 옵션 }
 
-	// 젠킨스 {
-	public const string B_JENKINS_KEY_BRANCH = "Branch";
-	public const string B_JENKINS_KEY_SRC = "Src";
-	public const string B_JENKINS_KEY_PROJ_NAME = "ProjName";
-	public const string B_JENKINS_KEY_PROJ_PATH = "ProjPath";
-	public const string B_JENKINS_KEY_DIST_PATH = "DistPath";
-	public const string B_JENKINS_KEY_BUNDLE_ID = "BundleID";
-	public const string B_JENKINS_KEY_PROFILE_ID = "ProfileID";
-	public const string B_JENKINS_KEY_PLATFORM = "Platform";
-	public const string B_JENKINS_KEY_ANALYTICS = "Analytics";
-	public const string B_JENKINS_KEY_BUILD_MODE = "BuildMode";
-	public const string B_JENKINS_KEY_BUILD_FUNC = "BuildFunc";
-	public const string B_JENKINS_KEY_PIPELINE_NAME = "PipelineName";
-	public const string B_JENKINS_KEY_IPA_EXPORT_METHOD = "IPAExportMethod";
-	public const string B_JENKINS_KEY_BUILD_FILE_EXTENSION = "BuildFileExtension";
+	// 경고 팝업 {
+	public const string B_TEXT_ALERT_P_TITLE = "알림";
+	public const string B_TEXT_ALERT_P_OK_BTN = "확인";
+	public const string B_TEXT_ALERT_P_CANCEL_BTN = "취소";
 
-	public const string B_JENKINS_BUILD_PARAMS_TOKEN = " ";
-	public const string B_JENKINS_PIPELINE_GROUP_NAME = "job/00001.Common/job/01.Pipelines/job";
+	public const string B_MSG_ALERT_P_EXPORT_IMG_SUCCESS = "이미지를 추출했습니다.";
 
-	public const string B_JENKINS_BUILD_DATA_FMT = "--data {0}={1}";
-	public const string B_JENKINS_BUILD_CMD_FMT = "curl -X POST {0} --user {1}:{2} --data token={3}";
+	public const string B_MSG_ALERT_P_EXPORT_TEXTURE_FAIL = "텍스처를 선택해주세요.";
+	public const string B_MSG_ALERT_P_EXPORT_SPRITE_FAIL = "스프라이트를 선택해주세요.";
+	// 경고 팝업 }
 
-	public const string B_JENKINS_SRC_FMT = "{0}/{1}";
-	public const string B_JENKINS_PROJ_P_FMT = "{0}/{1}/{2}";
-	public const string B_JENKINS_ANALYTICS_FMT = "{0}/00.Analytics";
+	// 객체 이름 에디터 윈도우 {
+	public const float B_WIDTH_OBJ_NEW_APPLY_BTN = 100.0f;
+	public const float B_WIDTH_OBJ_NEW_NAME_INPUT = 300.0f;
 
-	public const string B_JENKINS_STANDALONE_BUILD_PROJ_NAME = "41.Standalone";
-	public const string B_JENKINS_IOS_BUILD_PROJ_NAME = "01.iOS";
-	public const string B_JENKINS_ANDROID_BUILD_PROJ_NAME = "11.Android";
+	public const string B_TEXT_OBJ_NEW_TARGET = "검색";
+	public const string B_TEXT_OBJ_NEW_REPLACE = "변경";
 
-	public const string B_JENKINS_DEBUG_BUILD_FUNC = "Debug";
-	public const string B_JENKINS_RELEASE_BUILD_FUNC = "Release";
-	public const string B_JENKINS_ADHOC_BUILD_FUNC = "Adhoc";
-	public const string B_JENKINS_ADHOC_UPLOAD_BUILD_FUNC = "AdhocUpload";
-	public const string B_JENKINS_STORE_BUILD_FUNC = "Store";
-	public const string B_JENKINS_STORE_TEST_BUILD_FUNC = "StoreTest";
-	public const string B_JENKINS_STORE_UPLOAD_BUILD_FUNC = "StoreUpload";
+	public const string B_TEXT_OBJ_NEW_APPLY_BTN = "적용";
+	// 객체 이름 에디터 윈도우 }
 
-	public const string B_JENKINS_STANDALONE_DEBUG_PIPELINE_NAME = "41.StandaloneDebug";
-	public const string B_JENKINS_STANDALONE_RELEASE_PIPELINE_NAME = "42.StandaloneRelease";
+	// FPS 카운터
+	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
+	public const int B_FONT_SIZE_FPS_C_DYNAMIC_TEXT = 24;
 
-	public const string B_JENKINS_IOS_DEBUG_PIPELINE_NAME = "01.iOSDebug";
-	public const string B_JENKINS_IOS_RELEASE_PIPELINE_NAME = "02.iOSRelease";
-	public const string B_JENKINS_IOS_ADHOC_PIPELINE_NAME = "03.iOSAdhoc";
-	public const string B_JENKINS_IOS_STORE_PIPELINE_NAME = "04.iOSStore";
+	// 디버그 콘솔
+	public const int B_FONT_SIZE_DEBUG_C_TEXT = 30;
+	public const string B_PROPERTY_N_DEBUG_C_LOG_ITEM_PREFAB = "logItemPrefab";
 
-	public const string B_JENKINS_ANDROID_DEBUG_PIPELINE_NAME = "11.AndroidDebug";
-	public const string B_JENKINS_ANDROID_RELEASE_PIPELINE_NAME = "12.AndroidRelease";
-	public const string B_JENKINS_ANDROID_ADHOC_PIPELINE_NAME = "13.AndroidAdhoc";
-	public const string B_JENKINS_ANDROID_STORE_PIPELINE_NAME = "14.AndroidStore";
-	// 젠킨스 }
+	// 파일 브라우저 {
+	public const float B_SCALE_FILE_BROWSER_WND = 1.25f;
 
-	// 맥
-	public const string B_MAC_BUILD_PATH = "Builds/Standalone/Mac/MacBuildOutput.app";
-
-	// 윈도우즈
-	public const string B_WNDS_BUILD_PATH = "Builds/Standalone/Windows/WindowsBuildOutput.exe";
-
-	// iOS {
-	public const string B_IOS_DEV_IPA_EXPORT_METHOD = "development";
-	public const string B_IOS_ADHOC_IPA_EXPORT_METHOD = "ad-hoc";
-	public const string B_IOS_STORE_IPA_EXPORT_METHOD = "app-store";
-
-	public const string B_IOS_BUILD_PATH = "Builds/iOS";
-	public const string B_IOS_INFO_PLIST_P_FMT = "{0}/Info.plist";
-
-	public const string B_IOS_ENCRYPTION_ENABLE_KEY = "ITSAppUsesNonExemptEncryption";
-
-	public const string B_IOS_ADS_NETWORK_ITEMS_KEY = "SKAdNetworkItems";
-	public const string B_IOS_ADS_NETWORK_ID_KEY = "SKAdNetworkIdentifier";
-	// iOS }
-
-	// 안드로이드 {
-	public const string B_ANDROID_APK_BUILD_FILE_EXTENSION = "apk";
-	public const string B_ANDROID_AAB_BUILD_FILE_EXTENSION = "aab";
-
-	public const string B_ANDROID_BUILD_P_FMT = "Builds/Android/{0}/{1}.{2}";
-	public const string B_ANDROID_BUILD_FILE_N_FMT = "{0}BuildOutput";
-	// 안드로이드 }
+	public const string B_OBJ_N_FILE_BROWSER_WND = "SimpleFileBrowserWindow";
+	public const string B_OBJ_P_FILE_BROWSER_UI = "SimpleFileBrowserCanvas";
+	// 파일 브라우저 }
 	#endregion			// 기본
 
 	#region 런타임 상수
-	// 계층 뷰
-	public static readonly Color B_HIERARCHY_TEXT_COLOR = new Color(1.0f, 0.27f, 0.0f, 1.0f);
-	public static readonly Color B_HIERARCHY_OUTLINE_COLOR = Color.black;
-
 	// 색상
 	public static readonly Color B_COLOR_UNITY_LOGO_BG = Color.black;
 
 	// 크기
-	public static readonly Vector2 B_SIZE_DEBUG_C_LOG_ITEM = new Vector2(0.0f, 80.0f);
 	public static readonly Vector2 B_MIN_SIZE_EDITOR_WND = new Vector2(350.0f, 350.0f);
-
-	// 위치
-	public static readonly Vector2 B_POS_FPS_C_STATIC_TEXT = new Vector2(-10.0f, 0.0f);
-	public static readonly Vector2 B_POS_FPS_C_DYNAMIC_TEXT = new Vector2(-10.0f, 140.0f);
 
 	// 경로 {
 	public static readonly string B_SCENE_P_INIT_SCENE = $"{KCDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity";
@@ -285,10 +289,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scenes";
 	public static readonly string B_DIR_P_PROJ_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}{KCDefine.B_DIR_P_AUTO_CREATE}Scenes";
 	public static readonly string B_DIR_P_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes";
-
-	public static readonly string B_DIR_P_FILTER_FPS_COUNTER = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
-	public static readonly string B_DIR_P_FILTER_DEBUG_CONSOLE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
-	public static readonly string B_DIR_P_FILTER_DEBUG_LOG_ITEM = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
 
 	public static readonly string B_ABS_DIR_P_ASSETS = $"{Application.dataPath}/";
 	public static readonly string B_ABS_DIR_P_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Packages/";
@@ -611,26 +611,34 @@ public static partial class KCEditorDefine {
 	};
 	// 경로 }
 
-	// 에디터 옵션
-	public static readonly string[] B_EDITOR_OPTS_EXTENSIONS = new string[] {
-		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
-	};
+	// 계층 뷰
+	public static readonly Color B_COLOR_HIERARCHY_TEXT = new Color(1.0f, 0.27f, 0.0f, 1.0f);
+	public static readonly Color B_COLOR_HIERARCHY_OUTLINE = Color.black;
 
-	// 젠킨스
-	public static readonly string B_JENKINS_STANDALONE_PIPELINE = $"{KCEditorDefine.B_JENKINS_PIPELINE_GROUP_NAME}/41.Standalone";
-	public static readonly string B_JENKINS_IOS_PIPELINE = $"{KCEditorDefine.B_JENKINS_PIPELINE_GROUP_NAME}/01.iOS";
-	public static readonly string B_JENKINS_ANDROID_PIPELINE = $"{KCEditorDefine.B_JENKINS_PIPELINE_GROUP_NAME}/11.Android";
+	// FPS 카운터 {
+	public static readonly Vector2 B_POS_FPS_C_STATIC_TEXT = new Vector2(-10.0f, 0.0f);
+	public static readonly Vector2 B_POS_FPS_C_DYNAMIC_TEXT = new Vector2(-10.0f, 140.0f);
+
+	public static readonly string B_DIR_P_FILTER_FPS_COUNTER = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
+	// FPS 카운터 }
+
+	// 디버그 콘솔 {
+	public static readonly Vector2 B_SIZE_DEBUG_C_LOG_ITEM = new Vector2(0.0f, 80.0f);
+
+	public static readonly string B_DIR_P_FILTER_DEBUG_CONSOLE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
+	public static readonly string B_DIR_P_FILTER_DEBUG_LOG_ITEM = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
+	// 디버그 콘솔 }
 
 	// 독립 플랫폼
-	public static readonly string B_STANDALONE_ABS_BUILD_P_FMT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Standalone/{"{0}"}";
+	public static readonly string B_ABS_BUILD_P_FMT_STANDALONE = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Standalone/{"{0}"}";
 
 	// 맥
-	public static readonly GraphicsDeviceType[] B_MAC_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
+	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_MAC = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Metal, GraphicsDeviceType.OpenGLCore
 	};
 
 	// 윈도우즈
-	public static readonly GraphicsDeviceType[] B_WNDS_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
+	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_WNDS = new GraphicsDeviceType[] {
 #if DIRECT_3D_12_ENABLE
 		GraphicsDeviceType.Direct3D12, 
 #endif			// #if DIRECT_3D_12_ENABLE
@@ -639,70 +647,68 @@ public static partial class KCEditorDefine {
 	};
 
 	// iOS {
-	public static readonly string B_IOS_ABS_BUILD_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
-	public static readonly string B_IOS_PLUGIN_PROJ_PTH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/iOS";
+	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
+	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/iOS";
 
-	public static readonly string B_IOS_SRC_PLUGIN_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/iOS/Classes/Plugin/";
-	public static readonly string B_IOS_DEST_PLUGIN_PATH = $"{KCEditorDefine.B_ABS_DIR_P_IOS_PLUGINS}CustomiOSPlugin/";
+	public static readonly string B_SRC_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/iOS/Classes/Plugin/";
+	public static readonly string B_DEST_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_IOS_PLUGINS}CustomiOSPlugin/";
 
-	public static readonly GraphicsDeviceType[] B_IOS_DEVICE_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
+	public static readonly string B_ENTITLEMENTS_P_IOS_CAPABILITY = $"{Application.productName}.entitlements";
+
+	public static readonly GraphicsDeviceType[] B_DEVICE_GRAPHICS_DEVICE_TYPES_IOS = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Metal
 	};
 	// iOS }
 
 	// 안드로이드 {
-	public static readonly string B_ANDROID_SRC_LIBRARY_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Temp/StagingArea/libs";
-	public static readonly string B_ANDROID_ABS_BUILD_P_FMT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Android/{"{0}"}";
+	public static readonly string B_SRC_LIBRARY_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Temp/StagingArea/libs";
+	public static readonly string B_ABS_BUILD_P_FMT_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Android/{"{0}"}";
 
-	public static readonly string B_ANDROID_PLUGIN_PROJ_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android";
-	public static readonly string B_ANDROID_PLUGIN_BUILD_CMD = $"cd {KCEditorDefine.B_ANDROID_PLUGIN_PROJ_PATH};./gradlew exportLibrary";
+	public static readonly string B_PLUGIN_PROJ_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android";
+	public static readonly string B_PLUGIN_BUILD_CMD_ANDROID = $"cd {KCEditorDefine.B_PLUGIN_PROJ_P_ANDROID};./gradlew exportLibrary";
 
-	public static readonly string B_ANDROID_SRC_PLUGIN_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android/app/build/outputs/aar/app-release.aar";
-	public static readonly string B_ANDROID_DEST_PLUGIN_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}CustomAndroidPlugin.aar";
+	public static readonly string B_SRC_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android/app/build/outputs/aar/app-release.aar";
+	public static readonly string B_DEST_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}CustomAndroidPlugin.aar";
 
-	public static readonly string B_ANDROID_SRC_MANIFEST_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/AndroidManifest.xml";
-	public static readonly string B_ANDROID_ORIGIN_SRC_MANIFEST_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/AndroidManifest.xml";
-	public static readonly string B_ANDROID_DEST_MANIFEST_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}AndroidManifest.xml";
+	public static readonly string B_SRC_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/AndroidManifest.xml";
+	public static readonly string B_ORIGIN_SRC_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/AndroidManifest.xml";
+	public static readonly string B_DEST_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}AndroidManifest.xml";
 
-	public static readonly string B_ANDROID_SRC_MAIN_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/mainTemplate.gradle";
-	public static readonly string B_ANDROID_ORIGIN_SRC_MAIN_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/mainTemplate.gradle";
-	public static readonly string B_ANDROID_DEST_MAIN_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}mainTemplate.gradle";
+	public static readonly string B_SRC_MAIN_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/mainTemplate.gradle";
+	public static readonly string B_ORIGIN_SRC_MAIN_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/mainTemplate.gradle";
+	public static readonly string B_DEST_MAIN_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}mainTemplate.gradle";
 
-	public static readonly string B_ANDROID_SRC_LAUNCHER_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/launcherTemplate.gradle";
-	public static readonly string B_ANDROID_ORIGIN_SRC_LAUNCHER_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/launcherTemplate.gradle";
-	public static readonly string B_ANDROID_DEST_LAUNCHER_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}launcherTemplate.gradle";
+	public static readonly string B_SRC_LAUNCHER_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/launcherTemplate.gradle";
+	public static readonly string B_ORIGIN_SRC_LAUNCHER_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/launcherTemplate.gradle";
+	public static readonly string B_DEST_LAUNCHER_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}launcherTemplate.gradle";
 
-	public static readonly string B_ANDROID_SRC_BASE_PROJ_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/baseProjectTemplate.gradle";
-	public static readonly string B_ANDROID_ORIGIN_SRC_BASE_PROJ_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/baseProjectTemplate.gradle";
-	public static readonly string B_ANDROID_DEST_BASE_PROJ_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}baseProjectTemplate.gradle";
+	public static readonly string B_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/baseProjectTemplate.gradle";
+	public static readonly string B_ORIGIN_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/baseProjectTemplate.gradle";
+	public static readonly string B_DEST_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}baseProjectTemplate.gradle";
 
-	public static readonly string B_ANDROID_SRC_PROGUARD_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/proguard-user.txt";
-	public static readonly string B_ANDROID_ORIGIN_SRC_PROGUARD_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/proguard-user.txt";
-	public static readonly string B_ANDROID_DEST_PROGUARD_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}proguard-user.txt";
+	public static readonly string B_SRC_PROGUARD_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/proguard-user.txt";
+	public static readonly string B_ORIGIN_SRC_PROGUARD_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/proguard-user.txt";
+	public static readonly string B_DEST_PROGUARD_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}proguard-user.txt";
 
-	public static readonly string B_ANDROID_SRC_GRADLE_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/gradleTemplate.properties";
-	public static readonly string B_ANDROID_ORIGIN_SRC_GRADLE_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/gradleTemplate.properties";
-	public static readonly string B_ANDROID_DEST_GRADLE_TEMPLATE_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}gradleTemplate.properties";
+	public static readonly string B_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/gradleTemplate.properties";
+	public static readonly string B_ORIGIN_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/gradleTemplate.properties";
+	public static readonly string B_DEST_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}gradleTemplate.properties";
 
-	public static readonly string B_ANDROID_SRC_UNITY_PLUGIN_PATH = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
-	public static readonly string B_ANDROID_DEST_UNITY_PLUGIN_PATH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android/app/libs/classes.jar";
+	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
+	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android/app/libs/classes.jar";
 
-	public static readonly GraphicsDeviceType[] B_ANDROID_GRAPHICS_DEVICE_TYPES = new GraphicsDeviceType[] {
+	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_ANDROID = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3, GraphicsDeviceType.OpenGLES2
 	};
 	// 안드로이드 }
+
+	// 젠킨스
+	public static readonly string B_JENKINS_STANDALONE_PIPELINE = $"{KCEditorDefine.B_PIPELINE_GROUP_NAME_JENKINS}/41.Standalone";
+	public static readonly string B_JENKINS_IOS_PIPELINE = $"{KCEditorDefine.B_PIPELINE_GROUP_NAME_JENKINS}/01.iOS";
+	public static readonly string B_JENKINS_ANDROID_PIPELINE = $"{KCEditorDefine.B_PIPELINE_GROUP_NAME_JENKINS}/11.Android";
 	#endregion			// 런타임 상수
 
 	#region 조건부 상수
-#if UNITY_IOS
-	// 프로퍼티 {
-	public const string B_IOS_PROPERTY_N_ENABLE_BITCODE = "ENABLE_BITCODE";
-	public const string B_IOS_PROPERTY_N_PREPROCESSOR_DEFINITIONS = "GCC_PREPROCESSOR_DEFINITIONS";
-
-	public const string B_IOS_PROPERTY_VALUE_ENABLE_BITCODE = "YES";
-	// 프로퍼티 }
-#endif			// #if UNITY_IOS
-
 #if NOTI_MODULE_ENABLE
 	// 옵션
 	public const PresentationOption B_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
@@ -722,12 +728,5 @@ public static partial class KCEditorDefine {
 	};
 #endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 상수
-
-	#region 조건부 런타임 상수
-#if UNITY_IOS
-	// 경로
-	public static readonly string B_IOS_CAPABILITY_ENTITLEMENTS_PATH = $"{Application.productName}.entitlements";
-#endif			// #if UNITY_IOS
-	#endregion			// 조건부 런타임 상수
 }
 #endif			// #if UNITY_EDITOR

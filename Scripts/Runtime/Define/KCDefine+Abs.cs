@@ -31,9 +31,6 @@ public static partial class KCDefine {
 	public const double B_VALUE_DBL_1 = 1.0;
 	// 값 }
 
-	// 인덱스
-	public const int B_IDX_INVALID = -1;
-
 	// 빌드 번호
 	public const int B_MIN_BUILD_NUMBER = 1;
 
@@ -45,12 +42,13 @@ public static partial class KCDefine {
 	// 개수
 	public const int B_MAX_NUM_BACKUP_FILES = 50;
 
-	// 횟수
+	// 횟수 {
 	public const int B_TIMES_INT_ONCE = 1;
 	public const int B_TIMES_INT_INFINITE = -1;
 
 	public const uint B_TIMES_UINT_ONCE = 1;
 	public const uint B_TIMES_UINT_INFINITE = uint.MaxValue;
+	// 횟수 }
 
 	// 시간 {
 	public const float B_DELTA_T_INFINITE = float.MaxValue;
@@ -66,6 +64,47 @@ public static partial class KCDefine {
 	public const BindingFlags B_BINDING_F_PUBLIC_STATIC = BindingFlags.Public | BindingFlags.Static;
 	public const BindingFlags B_BINDING_F_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
 	// 플래그 }
+
+	// 인덱스 {
+	public const int B_IDX_INVALID = -1;
+
+	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
+	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
+
+	public static readonly Vector2Int[] B_IDX_OFFSETS_PREV_2D = new Vector2Int[] {
+		Vector2Int.down,
+		Vector2Int.up,
+		Vector2Int.right,
+		Vector2Int.left,
+
+		Vector2Int.down,
+		Vector2Int.down,
+		Vector2Int.up,
+		Vector2Int.up,
+
+		Vector2Int.right,
+		Vector2Int.right,
+		Vector2Int.left,
+		Vector2Int.left
+	};
+
+	public static readonly Vector2Int[] B_IDX_OFFSETS_NEXT_2D = new Vector2Int[] {
+		Vector2Int.up,
+		Vector2Int.down,
+		Vector2Int.left,
+		Vector2Int.right,
+
+		Vector2Int.left,
+		Vector2Int.right,
+		Vector2Int.left,
+		Vector2Int.right,
+
+		Vector2Int.up,
+		Vector2Int.down,
+		Vector2Int.up,
+		Vector2Int.down
+	};
+	// 인덱스 }
 
 	// 디바이스 {
 	public const int B_PORTRAIT_SCREEN_WIDTH = 720;
@@ -94,6 +133,7 @@ public static partial class KCDefine {
 	public const string B_EMPTY_STRING = "";
 	public const string B_UNKNOWN_STRING = "Unknown";
 	public const string B_NEW_LINE_STRING = "\n";
+	public const string B_VERSION_STRING_FMT = "Ver.{0}";
 
 	public const string B_STRING_INT_0 = "0";
 	public const string B_STRING_INT_1 = "1";
@@ -105,7 +145,14 @@ public static partial class KCDefine {
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STRING;
 	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STRING;
 
-	public const string B_VERSION_STRING_FMT = "Ver.{0}";
+	public static readonly int B_DESKTOP_SCREEN_WIDTH = (int)(Screen.currentResolution.width * 0.95f);
+	public static readonly int B_DESKTOP_SCREEN_HEIGHT = (int)(KCDefine.B_DESKTOP_SCREEN_WIDTH * (KCDefine.B_LANDSCAPE_SCREEN_HEIGHT / (float)KCDefine.B_LANDSCAPE_SCREEN_WIDTH));
+
+	public static readonly Vector2 B_SCREEN_SIZE = new Vector2(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT);
+	public static readonly Vector2 B_WORLD_SCREEN_SIZE = new Vector2(KCDefine.B_WORLD_SCREEN_WIDTH, KCDefine.B_WORLD_SCREEN_HEIGHT);
+
+	public static readonly Bounds B_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_SCREEN_SIZE);
+	public static readonly Bounds B_WORLD_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_WORLD_SCREEN_SIZE);
 	// 디바이스 }
 
 	// 국가 코드
@@ -222,6 +269,8 @@ public static partial class KCDefine {
 	// 경로 }
 
 	// 형식 {
+	public const string B_TEXT_FMT_PRICE = "{0} {1}";
+
 	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";
 	public const string B_TEXT_FMT_2_DIGITS = "{0:00}";
 	public const string B_TEXT_FMT_3_DIGITS = "{0:000}";
@@ -246,17 +295,6 @@ public static partial class KCDefine {
 	#endregion			// 기본
 
 	#region 런타임 상수
-	// 디바이스 {
-	public static readonly int B_DESKTOP_SCREEN_WIDTH = (int)(Screen.currentResolution.width * 0.95f);
-	public static readonly int B_DESKTOP_SCREEN_HEIGHT = (int)(KCDefine.B_DESKTOP_SCREEN_WIDTH * (KCDefine.B_LANDSCAPE_SCREEN_HEIGHT / (float)KCDefine.B_LANDSCAPE_SCREEN_WIDTH));
-
-	public static readonly Vector2 B_SCREEN_SIZE = new Vector2(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT);
-	public static readonly Vector2 B_WORLD_SCREEN_SIZE = new Vector2(KCDefine.B_WORLD_SCREEN_WIDTH, KCDefine.B_WORLD_SCREEN_HEIGHT);
-
-	public static readonly Bounds B_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_SCREEN_SIZE);
-	public static readonly Bounds B_WORLD_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_WORLD_SCREEN_SIZE);
-	// 디바이스 }
-
 	// 색상 {
 	public static readonly Color B_LOG_COLOR_WARNING = new Color(0xff / 255.0f, 0xa5 / 255.0f, 0.0f, 1.0f);
 	public static readonly Color B_LOG_COLOR_ERROR = Color.red;
@@ -265,45 +303,6 @@ public static partial class KCDefine {
 	public static readonly Color B_LOG_COLOR_PLUGIN = Color.yellow;
 	public static readonly Color B_LOG_COLOR_PLATFORM_INFO = Color.red;
 	// 색상 }
-
-	// 인덱스 {
-	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
-	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
-
-	public static readonly Vector2Int[] B_IDX_OFFSETS_PREV_2D = new Vector2Int[] {
-		Vector2Int.down,
-		Vector2Int.up,
-		Vector2Int.right,
-		Vector2Int.left,
-
-		Vector2Int.down,
-		Vector2Int.down,
-		Vector2Int.up,
-		Vector2Int.up,
-
-		Vector2Int.right,
-		Vector2Int.right,
-		Vector2Int.left,
-		Vector2Int.left
-	};
-
-	public static readonly Vector2Int[] B_IDX_OFFSETS_NEXT_2D = new Vector2Int[] {
-		Vector2Int.up,
-		Vector2Int.down,
-		Vector2Int.left,
-		Vector2Int.right,
-
-		Vector2Int.left,
-		Vector2Int.right,
-		Vector2Int.left,
-		Vector2Int.right,
-
-		Vector2Int.up,
-		Vector2Int.down,
-		Vector2Int.up,
-		Vector2Int.down
-	};
-	// 인덱스 }
 
 	// 앵커 {
 	public static readonly Vector2 B_ANCHOR_TOP_LEFT = new Vector2(0.0f, 1.0f);
