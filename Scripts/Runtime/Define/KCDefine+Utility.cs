@@ -37,26 +37,6 @@ public static partial class KCDefine {
 	public const float U_UNIT_TABLET_INCHES = 7.0f;
 	public const float U_UNIT_TABLET_ASPECT = 2.0f;
 
-	// 레이어
-	public const int U_LAYER_DEF = 0;
-	public const int U_LAYER_TRANSPARENT_FX = 1;
-	public const int U_LAYER_IGNORE_RAYCAST = 2;
-	public const int U_LAYER_WATER = 4;
-	public const int U_LAYER_UI = 5;
-	public const int U_LAYER_CUSTOM = 8;
-
-	// 정렬 순서 {
-	public const int U_SORTING_O_SCREEN_POPUP_UI = 0;
-	public const int U_SORTING_O_SCREEN_TOPMOST_UI = 1;
-	public const int U_SORTING_O_SCREEN_ABS_UI = 2;
-	public const int U_SORTING_O_SCREEN_BLIND_UI = 3;
-	public const int U_SORTING_O_SCREEN_DEBUG_UI = 4;
-
-	public const int U_SORTING_O_FPS_COUNTER = 5;
-	public const int U_SORTING_O_FILE_BROWSER_UI = 6;
-	public const int U_SORTING_O_DEBUG_CONSOLE = 7;
-	// 정렬 순서 }
-
 	// 세기
 	public const float U_DEF_INTENSITY_VIBRATE = 1.0f;
 
@@ -109,6 +89,26 @@ public static partial class KCDefine {
 #endif			// #if MODE_PORTRAIT_ENABLE
 	// 시간 }
 
+	// 레이어
+	public const int U_LAYER_DEF = 0;
+	public const int U_LAYER_TRANSPARENT_FX = 1;
+	public const int U_LAYER_IGNORE_RAYCAST = 2;
+	public const int U_LAYER_WATER = 4;
+	public const int U_LAYER_UI = 5;
+	public const int U_LAYER_CUSTOM = 8;
+
+	// 정렬 순서 {
+	public const int U_SORTING_O_SCREEN_POPUP_UI = 0;
+	public const int U_SORTING_O_SCREEN_TOPMOST_UI = 1;
+	public const int U_SORTING_O_SCREEN_ABS_UI = 2;
+	public const int U_SORTING_O_SCREEN_BLIND_UI = 3;
+	public const int U_SORTING_O_SCREEN_DEBUG_UI = 4;
+
+	public const int U_SORTING_O_FPS_COUNTER = 5;
+	public const int U_SORTING_O_FILE_BROWSER_UI = 6;
+	public const int U_SORTING_O_DEBUG_CONSOLE = 7;
+	// 정렬 순서 }
+
 	// 애니메이션
 	public const Ease U_DEF_EASE_ANI = Ease.OutQuad;
 
@@ -135,95 +135,11 @@ public static partial class KCDefine {
 	// 형식
 	public const string U_FMT_LOG_MSG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
 
-	// 태그 {
-	public const string U_TAG_PLAYER = "Player";
-	public const string U_TAG_FINISH = "Finish";
-	public const string U_TAG_RESPAWN = "Respawn";
-	public const string U_TAG_EDITOR_ONLY = "EditorOnly";
-	public const string U_TAG_MAIN_CAMERA = "MainCamera";
-	public const string U_TAG_GAME_CONTROLLER = "GameController";
-
-	public const string U_TAG_ENEMY = "Enemy";
-	public const string U_TAG_OBSTACLE = "Obstacle";
-	public const string U_TAG_UI_CAMERA = "UICamera";
-	public const string U_TAG_MAIN_LIGHT = "MainLight";
-	public const string U_TAG_SCENE_MANAGER = "SceneManager";
-	// 태그 }
-
-	// 정렬 레이어 {
-	public const string U_SORTING_L_UNDERGROUND = "Underground";
-	public const string U_SORTING_L_BACKGROUND = "Background";
-	public const string U_SORTING_L_DEF = "Default";
-	public const string U_SORTING_L_FOREGROUND = "Foreground";
-	public const string U_SORTING_L_OVERGROUND = "Overground";
-	public const string U_SORTING_L_TOP = "Top";
-	public const string U_SORTING_L_TOPMOST = "Topmost";
-	public const string U_SORTING_L_ABS = "Abs";
-
-#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public const string U_SORTING_L_UNDERGROUND_UI = "UndergroundUI";
-	public const string U_SORTING_L_BACKGROUND_UI = "BackgroundUI";
-	public const string U_SORTING_L_DEF_UI = "DefaultUI";
-	public const string U_SORTING_L_FOREGROUND_UI = "ForegroundUI";
-	public const string U_SORTING_L_OVERGROUND_UI = "OvergroundUI";
-	public const string U_SORTING_L_TOP_UI = "TopUI";
-	public const string U_SORTING_L_TOPMOST_UI = "TopmostUI";
-	public const string U_SORTING_L_ABS_UI = "AbsUI";
-#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	// 정렬 레이어 }
-
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
 
 	public const string U_KEY_DEVICE_CMD = "Cmd";
 	public const string U_KEY_DEVICE_MSG = "Msg";
-
-	public const string U_KEY_STRING_T_ID = "ID";
-	public const string U_KEY_STRING_T_STRING = "String";
-	public const string U_KEY_STRING_T_REPLACE = "Replace";
-
-	public const string U_KEY_VALUE_T_ID = "ID";
-	public const string U_KEY_VALUE_T_VALUE = "Value";
-	public const string U_KEY_VALUE_T_VALUE_TYPE = "ValueType";
-	public const string U_KEY_VALUE_T_REPLACE = "Replace";
-
-	public const string U_KEY_ALERT_P_TITLE = "Title";
-	public const string U_KEY_ALERT_P_MSG = "Msg";
-	public const string U_KEY_ALERT_P_OK_BTN_TEXT = "OKBtnText";
-	public const string U_KEY_ALERT_P_CANCEL_BTN_TEXT = "CancelBtnText";
-
-	public const string U_KEY_UNITY_MS_APP_ID = "AppID";
-	public const string U_KEY_UNITY_MS_VERSION = "Version";
-	public const string U_KEY_UNITY_MS_TIMEOUT = "Timeout";
-
-	public const string U_KEY_UNITY_MS_BUILD_MODE = "BuildMode";
-	public const string U_KEY_UNITY_MS_ORIENTATION = "Orientation";
-
-	public const string U_KEY_UNITY_MS_ALERT_TITLE = KCDefine.U_KEY_ALERT_P_TITLE;
-	public const string U_KEY_UNITY_MS_ALERT_MSG = KCDefine.U_KEY_ALERT_P_MSG;
-	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = KCDefine.U_KEY_ALERT_P_OK_BTN_TEXT;
-	public const string U_KEY_UNITY_MS_ALERT_CANCEL_BTN_TEXT = KCDefine.U_KEY_ALERT_P_CANCEL_BTN_TEXT;
-
-	public const string U_KEY_UNITY_MS_VIBRATE_TYPE = "Type";
-	public const string U_KEY_UNITY_MS_VIBRATE_STYLE = "Style";
-	public const string U_KEY_UNITY_MS_VIBRATE_DURATION = "Duration";
-	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
-
-	public const string U_KEY_UNITY_MS_TRACKING_NAME = "Name";
-	public const string U_KEY_UNITY_MS_TRACKING_DATAS = "Datas";
-	public const string U_KEY_UNITY_MS_TRACKING_IS_START = "IsStart";
-
-	public const string U_KEY_UNITY_MS_ADMOB_IDS = "AdmobIDs";
-	public const string U_KEY_UNITY_MS_RESUME_ADS_ID = "ResumeAdsID";
-
-	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
-	
-	public const string U_KEY_DEVICE_MR_RESULT = "Result";
-	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
-	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
-
-	public const string U_KEY_SCENE_M_DIALOG_TOUCH_RESPONDER = "SceneMDialogTouchResponder";
-	public const string U_KEY_FMT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 	// 식별자 }
 
 	// 이름 {
@@ -277,37 +193,13 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_ALERT_POPUP = "AlertPopup";
 	public const string U_OBJ_N_TOAST_POPUP = "ToastPopup";
 
-	public const string U_OBJ_N_ALERT_P_TITLE_TEXT = "TitleText";
-	public const string U_OBJ_N_ALERT_P_MSG_TEXT = "MsgText";
-	public const string U_OBJ_N_ALERT_P_BTN_TEXT = "Text";
-
-	public const string U_OBJ_N_ALERT_P_BG_IMG = "BGImg";
-
-	public const string U_OBJ_N_ALERT_P_OK_BTN = "OKBtn";
-	public const string U_OBJ_N_ALERT_P_CANCEL_BTN = "CancelBtn";
-
-	public const string U_OBJ_N_TOAST_P_MSG_TEXT = "MsgText";
-	public const string U_OBJ_N_TOAST_P_TOAST_POPUP = "ToastPopup";
-
-	public const string U_OBJ_N_SND_M_BG_SND = "BGSnd";
-	public const string U_OBJ_N_SND_M_FX_SND = "FXSnd";
-
-	public const string U_OBJ_N_SCROLL_V_VIEWPORT = "Viewport";
-	public const string U_OBJ_N_SCROLL_V_CONTENTS_ROOT = "Contents";
-
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
-
-	public const string U_OBJ_N_DEBUG_C_LOG_WND = "DebugLogWindow";
-	public const string U_OBJ_N_DEBUG_C_LOG_POPUP = "DebugLogPopup";
 
 	public const string U_OBJ_N_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";
 
 	public const string U_IMG_N_DEF_SPRITE = "DefSprite";
 	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
-	
-	public const string U_CLS_N_UNITY_MS_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
-	public const string U_FUNC_N_UNITY_MS_MSG_HANDLER = "handleUnityMsg";
 
 	public const string U_FUNC_N_ON_DRAG = "OnDrag";
 	public const string U_FUNC_N_ON_POINTER_UP = "OnPointerUp";
@@ -321,6 +213,126 @@ public static partial class KCDefine {
 	public const string U_INPUT_N_VERTICAL = "Vertical";
 	public const string U_INPUT_N_HORIZONTAL = "Horizontal";
 	// 이름 }
+
+	// 태그 {
+	public const string U_TAG_PLAYER = "Player";
+	public const string U_TAG_FINISH = "Finish";
+	public const string U_TAG_RESPAWN = "Respawn";
+	public const string U_TAG_EDITOR_ONLY = "EditorOnly";
+	public const string U_TAG_MAIN_CAMERA = "MainCamera";
+	public const string U_TAG_GAME_CONTROLLER = "GameController";
+
+	public const string U_TAG_ENEMY = "Enemy";
+	public const string U_TAG_OBSTACLE = "Obstacle";
+	public const string U_TAG_UI_CAMERA = "UICamera";
+	public const string U_TAG_MAIN_LIGHT = "MainLight";
+	public const string U_TAG_SCENE_MANAGER = "SceneManager";
+	// 태그 }
+
+	// 정렬 레이어 {
+	public const string U_SORTING_L_UNDERGROUND = "Underground";
+	public const string U_SORTING_L_BACKGROUND = "Background";
+	public const string U_SORTING_L_DEF = "Default";
+	public const string U_SORTING_L_FOREGROUND = "Foreground";
+	public const string U_SORTING_L_OVERGROUND = "Overground";
+	public const string U_SORTING_L_TOP = "Top";
+	public const string U_SORTING_L_TOPMOST = "Topmost";
+	public const string U_SORTING_L_ABS = "Abs";
+
+#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+	public const string U_SORTING_L_UNDERGROUND_UI = "UndergroundUI";
+	public const string U_SORTING_L_BACKGROUND_UI = "BackgroundUI";
+	public const string U_SORTING_L_DEF_UI = "DefaultUI";
+	public const string U_SORTING_L_FOREGROUND_UI = "ForegroundUI";
+	public const string U_SORTING_L_OVERGROUND_UI = "OvergroundUI";
+	public const string U_SORTING_L_TOP_UI = "TopUI";
+	public const string U_SORTING_L_TOPMOST_UI = "TopmostUI";
+	public const string U_SORTING_L_ABS_UI = "AbsUI";
+#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+	// 정렬 레이어 }
+
+	// 씬 관리자
+	public const string U_KEY_SCENE_M_DIALOG_TOUCH_RESPONDER = "SceneMDialogTouchResponder";
+	public const string U_KEY_FMT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
+
+	// 토스트 팝업
+	public const string U_OBJ_N_TOAST_P_MSG_TEXT = "MsgText";
+	public const string U_OBJ_N_TOAST_P_TOAST_POPUP = "ToastPopup";
+
+	// 사운드 관리자
+	public const string U_OBJ_N_SND_M_BG_SND = "BGSnd";
+	public const string U_OBJ_N_SND_M_FX_SND = "FXSnd";
+
+	// 디버그 콘솔
+	public const string U_OBJ_N_DEBUG_C_LOG_WND = "DebugLogWindow";
+	public const string U_OBJ_N_DEBUG_C_LOG_POPUP = "DebugLogPopup";
+
+	// 스크롤 뷰
+	public const string U_OBJ_N_SCROLL_V_VIEWPORT = "Viewport";
+	public const string U_OBJ_N_SCROLL_V_CONTENTS_ROOT = "Contents";
+
+	// 문자열 테이블
+	public const string U_KEY_STRING_T_ID = "ID";
+	public const string U_KEY_STRING_T_STRING = "String";
+	public const string U_KEY_STRING_T_REPLACE = "Replace";
+
+	// 값 테이블
+	public const string U_KEY_VALUE_T_ID = "ID";
+	public const string U_KEY_VALUE_T_VALUE = "Value";
+	public const string U_KEY_VALUE_T_VALUE_TYPE = "ValueType";
+	public const string U_KEY_VALUE_T_REPLACE = "Replace";
+
+	// 경고 팝업 {
+	public const string U_KEY_ALERT_P_TITLE = "Title";
+	public const string U_KEY_ALERT_P_MSG = "Msg";
+	public const string U_KEY_ALERT_P_OK_BTN_TEXT = "OKBtnText";
+	public const string U_KEY_ALERT_P_CANCEL_BTN_TEXT = "CancelBtnText";
+
+	public const string U_OBJ_N_ALERT_P_TITLE_TEXT = "TitleText";
+	public const string U_OBJ_N_ALERT_P_MSG_TEXT = "MsgText";
+	public const string U_OBJ_N_ALERT_P_BTN_TEXT = "Text";
+
+	public const string U_OBJ_N_ALERT_P_BG_IMG = "BGImg";
+
+	public const string U_OBJ_N_ALERT_P_OK_BTN = "OKBtn";
+	public const string U_OBJ_N_ALERT_P_CANCEL_BTN = "CancelBtn";
+	// 경고 팝업 }
+
+	// 유니티 메세지 전송자 {
+	public const string U_KEY_UNITY_MS_APP_ID = "AppID";
+	public const string U_KEY_UNITY_MS_VERSION = "Version";
+	public const string U_KEY_UNITY_MS_TIMEOUT = "Timeout";
+
+	public const string U_KEY_UNITY_MS_BUILD_MODE = "BuildMode";
+	public const string U_KEY_UNITY_MS_ORIENTATION = "Orientation";
+
+	public const string U_KEY_UNITY_MS_ALERT_TITLE = KCDefine.U_KEY_ALERT_P_TITLE;
+	public const string U_KEY_UNITY_MS_ALERT_MSG = KCDefine.U_KEY_ALERT_P_MSG;
+	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = KCDefine.U_KEY_ALERT_P_OK_BTN_TEXT;
+	public const string U_KEY_UNITY_MS_ALERT_CANCEL_BTN_TEXT = KCDefine.U_KEY_ALERT_P_CANCEL_BTN_TEXT;
+
+	public const string U_KEY_UNITY_MS_VIBRATE_TYPE = "Type";
+	public const string U_KEY_UNITY_MS_VIBRATE_STYLE = "Style";
+	public const string U_KEY_UNITY_MS_VIBRATE_DURATION = "Duration";
+	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
+
+	public const string U_KEY_UNITY_MS_TRACKING_NAME = "Name";
+	public const string U_KEY_UNITY_MS_TRACKING_DATAS = "Datas";
+	public const string U_KEY_UNITY_MS_TRACKING_IS_START = "IsStart";
+
+	public const string U_KEY_UNITY_MS_ADMOB_IDS = "AdmobIDs";
+	public const string U_KEY_UNITY_MS_RESUME_ADS_ID = "ResumeAdsID";
+
+	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
+	
+	public const string U_CLS_N_UNITY_MS_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
+	public const string U_FUNC_N_UNITY_MS_MSG_HANDLER = "handleUnityMsg";
+	// 유니티 메세지 전송자 }
+
+	// 디바이스 메세지 수신자
+	public const string U_KEY_DEVICE_MR_RESULT = "Result";
+	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
+	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
 	#endregion			// 기본
 
 	#region 런타임 상수
@@ -348,50 +360,6 @@ public static partial class KCDefine {
 	public static readonly Color U_DEF_COLOR_CAMERA_BG = Color.black;
 #endif			// #if UNITY_EDITOR
 	// 색상 }
-
-	// 위치
-	public static readonly Vector2 U_POS_DEBUG_C_DEBUG_LOG_POPUP = new Vector2(36.0f, -36.0f);
-
-	// 정렬 순서 {
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_OBJ_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-
-#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF_UI
-	};
-#else
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	// 정렬 순서 }
-
-	// 동기화 객체
-	public static readonly object U_LOCK_OBJ_COMMON = new object();
-	public static readonly object U_LOCK_OBJ_SCHEDULE_M_UPDATE = new object();
-	public static readonly object U_LOCK_OBJ_TASK_M_UPDATE = new object();
-
-	// 레이어 마스크 {
-	public static readonly int[] U_DEF_LAYER_MASK_UI_CAMERA = new int[] {
-		KCDefine.U_LAYER_UI
-	};
-
-	public static readonly int[] U_DEF_LAYER_MASK_MAIN_CAMERA = new int[] {
-		KCDefine.U_LAYER_DEF,
-		KCDefine.U_LAYER_TRANSPARENT_FX,
-		KCDefine.U_LAYER_IGNORE_RAYCAST,
-		KCDefine.U_LAYER_WATER,
-
-#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-		KCDefine.U_LAYER_UI
-#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	};
-	// 레이어 마스크 }
 
 	// 태그
 	public static readonly string[] U_TAGS = new string[] {
@@ -424,6 +392,50 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_L_ABS_UI
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
+
+	// 정렬 순서 {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_OBJ_CANVAS = new STSortingOrderInfo() {
+		m_nOrder = 0,
+		m_oLayer = KCDefine.U_SORTING_L_DEF
+	};
+
+#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
+		m_nOrder = 0,
+		m_oLayer = KCDefine.U_SORTING_L_DEF_UI
+	};
+#else
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
+		m_nOrder = 0,
+		m_oLayer = KCDefine.U_SORTING_L_DEF
+	};
+#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+	// 정렬 순서 }
+
+	// 레이어 마스크 {
+	public static readonly int[] U_DEF_LAYER_MASK_UI_CAMERA = new int[] {
+		KCDefine.U_LAYER_UI
+	};
+
+	public static readonly int[] U_DEF_LAYER_MASK_MAIN_CAMERA = new int[] {
+		KCDefine.U_LAYER_DEF,
+		KCDefine.U_LAYER_TRANSPARENT_FX,
+		KCDefine.U_LAYER_IGNORE_RAYCAST,
+		KCDefine.U_LAYER_WATER,
+
+#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+		KCDefine.U_LAYER_UI
+#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+	};
+	// 레이어 마스크 }
+
+	// 디버그 콘솔
+	public static readonly Vector2 U_POS_DEBUG_C_DEBUG_LOG_POPUP = new Vector2(36.0f, -36.0f);
+
+	// 동기화 객체
+	public static readonly object U_LOCK_OBJ_COMMON = new object();
+	public static readonly object U_LOCK_OBJ_SCHEDULE_M_UPDATE = new object();
+	public static readonly object U_LOCK_OBJ_TASK_M_UPDATE = new object();
 
 	// 경로 {
 	public static readonly string U_DATA_P_COMMON_APP_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
@@ -518,18 +530,16 @@ public static partial class KCDefine {
 
 	#region 조건부 상수
 #if UNITY_EDITOR
-	// 디바이스
-	public const bool U_DEF_MULTI_TOUCH_ENABLE = false;
-	public const EQualityLevel U_DEF_QUALITY_LEVEL = EQualityLevel.AUTO;
-
 	// 퀄리티 {
 	public const bool U_QUALITY_ASYNC_UPLOAD_PERSISTENT_BUFFER = true;
-	public const float U_QUALITY_RESOLUTION_SCALE_FIXED_DPI_FACTOR = 1.0f;
 
 	public const int U_QUALITY_ANTI_ALIASING = 0;
 	public const int U_QUALITY_MAX_LOD_LEVEL = 0;
 	public const int U_QUALITY_ASYNC_UPLOAD_TIME_SLICE = 2;
 	public const int U_QUALITY_ASYNC_UPLOAD_BUFFER_SIZE = 16;
+
+	public const float U_QUALITY_RESOLUTION_SCALE_FIXED_DPI_FACTOR = 1.0f;
+	public const EQualityLevel U_DEF_QUALITY_LEVEL = EQualityLevel.AUTO;
 	// 퀄리티 }
 
 	// 스크립트 순서 {
@@ -662,11 +672,6 @@ public static partial class KCDefine {
 	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;
 
 	// 식별자 {
-	public const string U_TEST_ADS_ID_ADMOB_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
-	public const string U_TEST_ADS_ID_ADMOB_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
-	public const string U_TEST_ADS_ID_ADMOB_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
-	public const string U_TEST_ADS_ID_ADMOB_RESUME_ADS = "ca-app-pub-3940256099942544/1033173712";
-
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
@@ -680,6 +685,11 @@ public static partial class KCDefine {
 
 #if ADMOB_ENABLE
 	// 식별자 {
+	public const string U_ADS_ID_ADMOB_TEST_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
+	public const string U_ADS_ID_ADMOB_TEST_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
+	public const string U_ADS_ID_ADMOB_TEST_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
+	public const string U_ADS_ID_ADMOB_TEST_RESUME_ADS = "ca-app-pub-3940256099942544/1033173712";
+
 	public const string U_KEY_ADS_M_ADMOB_INIT_CALLBACK = "AdsMAdmobInitCallback";
 
 	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_LOAD_CALLBACK = "AdsMAdmobBannerAdsLoadCallback";
@@ -847,15 +857,9 @@ public static partial class KCDefine {
 	public const string U_KEY_GAME_CM_LOAD_SCORES_CALLBACK = "GameCMLoadScoresCallback";
 	public const string U_KEY_GAME_CM_UPDATE_SCORE_CALLBACK = "GameCMUpdateScoreCallback";
 	public const string U_KEY_GAME_CM_UPDATE_ACHIEVEMENT_CALLBACK = "GameCMUpdateAchievementCallback";
-
-	// 코드
-	public const string U_AUTH_CODE_GAME_CM_UNKNOWN = "Unknown";
 #endif			// #if GAME_CENTER_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
-	// 메세지
-	public const string U_MSG_INVALID_PRODUCT_TYPE = "해당 상품 타입을 지원하지않습니다.";
-
 	// 식별자 {
 	public const string U_KEY_PURCHASE_M_INIT_CALLBACK = "PurchaseMInitCallback";
 	public const string U_KEY_PURCHASE_M_INIT_FAIL_CALLBACK = "PurchaseMInitFailCallback";

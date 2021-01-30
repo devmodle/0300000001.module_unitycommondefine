@@ -716,7 +716,11 @@ public static partial class KCEditorDefine {
 	
 	// 이름
 	public const string B_ACTIVITY_N_NOTI = "com.unity3d.player.UnityPlayerActivity";
+#endif			// #if NOTI_MODULE_ENABLE
+	#endregion			// 조건부 상수
 
+	#region 조건부 런타임 상수
+#if NOTI_MODULE_ENABLE
 	// 경로
 	public static readonly KeyValuePair<string, string>[] B_NOTI_ICON_P_INFOS = new KeyValuePair<string, string>[] {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_ANDROID_NOTI_24x24}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-mdpi/icon24.png"),
@@ -727,6 +731,6 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_ANDROID_NOTI_256x256}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable/icon256.png")
 	};
 #endif			// #if NOTI_MODULE_ENABLE
-	#endregion			// 조건부 상수
+	#endregion			// 조건부 런타임 상수
 }
 #endif			// #if UNITY_EDITOR
