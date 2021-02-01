@@ -217,6 +217,7 @@ public static partial class KCEditorDefine {
 	#endregion			// 기본
 
 	#region 런타임 상수
+	// 대체 전처리기 심볼
 	public static readonly Dictionary<string, string> DS_REPLACE_DEFINE_S_MODULE_LIST = new Dictionary<string, string> {
 #if SKELETON_2D_ANI_ENABLE || SKELETON_2D_ANI_MODULE_ENABLE
 		[KCEditorDefine.DS_DEFINE_S_SKELETON_2D_ANI_ENABLE] = KCEditorDefine.DS_DEFINE_S_SKELETON_2D_ANI_MODULE_ENABLE,
