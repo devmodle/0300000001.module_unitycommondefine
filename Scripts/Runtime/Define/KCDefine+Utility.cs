@@ -19,6 +19,10 @@ using Unity.Notifications.Android;
 #endif			// #if UNITY_IOS
 #endif			// #if NOTI_MODULE_ENABLE
 
+#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+using UnityEngine.Rendering.Universal;
+#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+
 //! 유틸리티 상수
 public static partial class KCDefine {
 	#region 기본
@@ -514,8 +518,9 @@ public static partial class KCDefine {
 	public static readonly string U_SND_P_G_TOUCH_END = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchEnd";
 	public static readonly string U_SND_P_G_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_PopupClose";
 
-	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPAsset";
-	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDERER = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPRenderer";
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_ASSET = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPAsset";
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPRenderData";
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_SSAO_RENDER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPSSAORenderData";
 
 	public static readonly string U_IMG_P_G_SPLASH = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_Splash";
 	public static readonly string U_IMG_P_G_WHITE = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_UnityWhite";
@@ -575,20 +580,57 @@ public static partial class KCDefine {
 	// 비율
 	public const float U_SCALE_UNIVERSAL_RP_RENDERING = 1.0f;
 
+	// 길이
+	public const float U_PERCENT_UNIVERSAL_RP_CASCADE_2_SPLIT = 0.25f;
+
 	// 이름 {
 	public const string U_FIELD_N_UNIVERSAL_RP_ANTI_ALIASING = "m_MSAA";
-	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORT_SOFT_SHADOW = "m_SoftShadowsSupported";
-	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORT_MIXED_LIGHTING = "m_MixedLightingSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_OPAQUE_DOWN_SAMPLING = "m_OpaqueDownsampling";
+
+	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_2_SPLIT = "m_Cascade2Split";
+	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_3_SPLIT = "m_Cascade3Split";
+	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_4_SPLIT = "m_Cascade4Split";
+
+	public const string U_FIELD_N_UNIVERSAL_RP_RENDERER_DATAS = "m_RendererDataList";
+	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_SOFT_SHADOW = "m_SoftShadowsSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_TERRAIN_HOLES = "m_SupportsTerrainHoles";
+	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_MIXED_LIGHTING = "m_MixedLightingSupported";
 	
 	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
-	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORT_SHADOW = "m_MainLightShadowsSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
 	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
 
 	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SUPPORT_SHADOW = "m_AdditionalLightShadowsSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SUPPORTS_SHADOW = "m_AdditionalLightShadowsSupported";
 	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
 	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
 	// 이름 }
+
+#if ULTRA_QUALITY_LEVEL_ENABLE
+	// 옵션 {
+	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = true;
+
+	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._2xBilinear;
+	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.HighDynamicRange;
+	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
+	// 옵션 }
+#elif HIGH_QUALITY_LEVEL_ENABLE
+	// 옵션 {
+	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = true;
+
+	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
+	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.HighDynamicRange;
+	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.THREE_CASCADES;
+	// 옵션 }
+#else
+	// 옵션 {
+	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = false;
+
+	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._2xBilinear;
+	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.LowDynamicRange;
+	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
+	// 옵션 }
+#endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
@@ -907,13 +949,19 @@ public static partial class KCDefine {
 	
 #if HAPTIC_FEEDBACK_ENABLE
 	// 햅틱 피드백 지원 모델
-	public static readonly DeviceGeneration[] U_HAPTIC_FEEDBACK_SUPPORT_MODELS = new DeviceGeneration[] {
+	public static readonly DeviceGeneration[] U_HAPTIC_FEEDBACK_SUPPORTS_MODELS = new DeviceGeneration[] {
 		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus,
 		DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax,
 		DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
 	};
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
 #endif			// #if UNITY_IOS
+
+#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+	// 길이
+	public static readonly Vector2 U_PERCENT_UNIVERSAL_RP_CASCADE_3_SPLIT = new Vector2(0.1f, 0.3f);
+	public static readonly Vector3 U_PERCENT_UNIVERSAL_RP_CASCADE_4_SPLIT = new Vector3(0.075f, 0.2f, 0.45f);
+#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE
 	// 크기

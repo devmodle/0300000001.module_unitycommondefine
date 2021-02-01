@@ -13,6 +13,9 @@ using Unity.Notifications.iOS;
 //! 에디터 기본 상수
 public static partial class KCEditorDefine {
 	#region 기본
+	// 유닛
+	public const int B_UNIT_CUSTOM_TAG_ID = 10;
+
 	// 시간
 	public const float B_DELTA_T_HIERARCHY_UPDATE = 1.0f;
 	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
@@ -69,7 +72,7 @@ public static partial class KCEditorDefine {
 	public const string B_OBJ_N_SCENE_EDITOR_LIGHT = "SceneLight";
 	
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
-	public const string B_PROPERTY_N_REQUIRE_AR_KIT_SUPPORT = "requiresARKitSupport";
+	public const string B_PROPERTY_N_REQUIRE_AR_KIT_SUPPORTS = "requiresARKitSupport";
 	public const string B_PROPERTY_N_APPLE_ENABLE_PRO_MOTION = "appleEnableProMotion";
 	public const string B_PROPERTY_N_AUTO_ADD_CAPABILITIES = "automaticallyDetectAndAddCapabilities";
 	public const string B_PROPERTY_N_VALIDATE_APP_BUNDLE_SIZE = "validateAppBundleSize";
@@ -538,8 +541,7 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_PIPELINE_P_INFOS = new KeyValuePair<string, string>[] {
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP}.asset"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPRenderer.asset", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP_RENDERER}.asset")
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP_ASSET}.asset")
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_SCENE_P_INFOS = new KeyValuePair<string, string>[] {

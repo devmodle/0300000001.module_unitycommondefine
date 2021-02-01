@@ -3,6 +3,7 @@
     "rootNamespace": "",
     "references": [
         "UnityModule.IronSrc",
+        "Unity.RenderPipelines.Universal.Runtime",
         "Unity.Notifications.iOS",
         "Unity.Notifications.Android",
         "DOTween.Modules",
