@@ -280,11 +280,17 @@ public static partial class KCDefine {
 	public const string U_KEY_STRING_T_STRING = "String";
 	public const string U_KEY_STRING_T_REPLACE = "Replace";
 
-	// 값 테이블
+	// 값 테이블 {
+	public const int U_IDX_VALUE_T_BOOL_LIST = 0;
+	public const int U_IDX_VALUE_T_INT_LIST = 1;
+	public const int U_IDX_VALUE_T_FLOAT_LIST = 2;
+	public const int U_IDX_VALUE_T_STRING_LIST = 3;	
+
 	public const string U_KEY_VALUE_T_ID = "ID";
 	public const string U_KEY_VALUE_T_VALUE = "Value";
 	public const string U_KEY_VALUE_T_VALUE_TYPE = "ValueType";
 	public const string U_KEY_VALUE_T_REPLACE = "Replace";
+	// 값 테이블 }
 
 	// 경고 팝업 {
 	public const string U_KEY_ALERT_P_TITLE = "Title";
