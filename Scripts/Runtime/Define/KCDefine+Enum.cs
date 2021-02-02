@@ -74,6 +74,8 @@ public enum EAniType {
 	NONE = -1,
 	SCALE,
 	DROPDOWN,
+	SLIDE_LEFT,
+	SLIDE_RIGHT,
 	MAX_VALUE
 };
 
