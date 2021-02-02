@@ -73,6 +73,7 @@ public static partial class KCDefine {
 	public const float U_DEF_DURATION_SCROLL_ANI = 0.25f;
 	public const float U_DEF_DURATION_SCREEN_FADE_IN_ANI = 0.15f;
 	public const float U_DEF_DURATION_SCREEN_FADE_OUT_ANI = 0.15f;
+	public const float U_DEF_DURATION_POPUP_SCALE_ANI = 0.35f;
 	public const float U_DEF_DURATION_TOAST_POPUP = 2.0f;
 
 	public const float U_DEF_DURATION_LIGHT_VIBRATE = 0.05f;
@@ -87,9 +88,9 @@ public static partial class KCDefine {
 	public const float U_DEF_TIMEOUT_NETWORK_CONNECTION = 30.0f;
 
 #if MODE_PORTRAIT_ENABLE
-	public const float U_DEF_DURATION_POPUP_ANI = 0.5f;
+	public const float U_DEF_DURATION_POPUP_DROPDOWN_ANI = 0.5f;
 #else
-	public const float U_DEF_DURATION_POPUP_ANI = 0.45f;
+	public const float U_DEF_DURATION_POPUP_DROPDOWN_ANI = 0.45f;
 #endif			// #if MODE_PORTRAIT_ENABLE
 	// 시간 }
 
