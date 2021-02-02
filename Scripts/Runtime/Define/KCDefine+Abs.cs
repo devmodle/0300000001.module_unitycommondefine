@@ -270,6 +270,7 @@ public static partial class KCDefine {
 
 	// 형식 {
 	public const string B_TEXT_FMT_PRICE = "{0} {1}";
+	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
 
 	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";
 	public const string B_TEXT_FMT_2_DIGITS = "{0:00}";
@@ -284,7 +285,8 @@ public static partial class KCDefine {
 	public const string B_NAME_FMT_BACKUP = "yyyy_MM_dd HH_mm_ss";
 	public const string B_NAME_FMT_BACKUP_COMBINE = "{0} ({1})";
 	public const string B_NAME_FMT_UNDER_SCORE_COMBINE = "{0}_{1}";
-	
+
+	public const string B_DATE_T_FMT_HH_MM_SS = "HH:mm:ss";
 	public const string B_DATE_T_FMT_YYYY_MM_DD = "yyyyMMdd";
 	public const string B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
 	// 형식 }
