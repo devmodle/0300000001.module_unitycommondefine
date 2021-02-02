@@ -69,6 +69,14 @@ public enum EShadowCascadesOpts {
 	MAX_VALUE
 }
 
+//! 애니메이션 타입
+public enum EAniType {
+	NONE = -1,
+	SCALE,
+	DROPDOWN,
+	MAX_VALUE
+};
+
 //! 유저 타입
 public enum EUserType {
 	NONE = -1,
