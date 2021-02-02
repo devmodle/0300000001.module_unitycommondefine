@@ -124,6 +124,14 @@ public struct STCommonCustomTypeWrapper {
 #endregion			// 기본
 
 #region 조건부 타입
+#if ADS_MODULE_ENABLE
+//! 광고 보상 아이템
+public struct STAdsRewardItem {
+	public string m_oID;
+	public string m_oValue;
+}
+#endif			// #if ADS_MODULE_ENABLE
+
 #if NOTI_MODULE_ENABLE
 //! 알림 정보
 public struct STNotiInfo {
