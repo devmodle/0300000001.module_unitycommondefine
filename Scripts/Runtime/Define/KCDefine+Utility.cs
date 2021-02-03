@@ -357,7 +357,8 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
 	public static readonly Color U_DEF_COLOR_NORM = Color.white;
-	public static readonly Color U_DEF_COLOR_SELECT = new Color(0.75f, 0.75f, 0.75f, 1.0f);
+	public static readonly Color U_DEF_COLOR_PRESS = new Color(0.75f, 0.75f, 0.75f, 1.0f);
+	public static readonly Color U_DEF_COLOR_SELECT = Color.white;
 	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.35f, 0.35f, 0.35f, 1.0f);
 
 	public static readonly Color U_DEF_COLOR_BLIND_UI = Color.black;
