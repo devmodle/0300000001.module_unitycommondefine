@@ -373,7 +373,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ICON_P_ANDROID_NOTI_96x96 = $"{KCDefine.B_DIR_P_ICONS}Android/Notification/Icon96x96";
 	public static readonly string B_ICON_P_ANDROID_NOTI_256x256 = $"{KCDefine.B_DIR_P_ICONS}Android/Notification/Icon256x256";
 
-	public static readonly string[] B_SCENE_PATHS_SEARCH = new string[] {
+	public static readonly string[] B_SEARCH_P_SCENES = new string[] {
 		KCEditorDefine.B_DIR_P_AUTO_SCENES,
 		KCEditorDefine.B_DIR_P_PROJ_AUTO_SCENES,
 		KCEditorDefine.B_DIR_P_SCENES,
