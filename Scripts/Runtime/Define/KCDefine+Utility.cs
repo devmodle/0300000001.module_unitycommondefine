@@ -1004,7 +1004,7 @@ public static partial class KCDefine {
 #if FACEBOOK_MODULE_ENABLE
 	// 권한
 	public static readonly string[] U_DEF_PERMISSIONS_FACEBOOK = new string[] {
-		"public_profile", "email"
+		"public_profile"
 	};
 #endif			// #if FACEBOOK_MODULE_ENABLE
 

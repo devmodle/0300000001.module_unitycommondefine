@@ -295,7 +295,7 @@ public static partial class KCDefine {
 
 	// URL
 	public const string B_MAIL_URL_FMT = "mailto:{0}?subject={1}&body={2}";
-	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: v{1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\n\nPlease enter your inquiry:\n{7}";
+	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: v{1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUserID: {7}\n\nPlease enter your inquiry:\n{8}";
 	#endregion			// 기본
 
 	#region 런타임 상수
