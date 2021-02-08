@@ -173,6 +173,7 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_GALAXY_STORE = "GalaxyStore";
 	
 	public const string B_DIR_N_BACKUP = "Backup";
+	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
 
 	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
@@ -292,6 +293,12 @@ public static partial class KCDefine {
 	public const string B_NAME_FMT_BACKUP_COMBINE = "{0} ({1})";
 	public const string B_NAME_FMT_UNDER_SCORE_COMBINE = "{0}_{1}";
 
+	public const string B_PATH_FMT_1_COMBINE = "{0}/";
+	public const string B_PATH_FMT_2_COMBINE = "{0}/{1}/";
+	public const string B_PATH_FMT_3_COMBINE = "{0}/{1}/{2}/";
+	public const string B_PATH_FMT_4_COMBINE = "{0}/{1}/{2}/{3}/";
+	public const string B_PATH_FMT_5_COMBINE = "{0}/{1}/{2}/{3}/{4}/";
+
 	public const string B_DATE_T_FMT_HH_MM_SS = "HH:mm:ss";
 	public const string B_DATE_T_FMT_YYYY_MM_DD = "yyyyMMdd";
 	public const string B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
@@ -375,10 +382,15 @@ public static partial class KCDefine {
 
 	// 경로 {
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
-	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../ExternalDatas/";
-	public static readonly string B_ABS_DIR_P_MAC_EXTERNAL_DATAS = $"{Application.dataPath}/../../ExternalDatas/";
+	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 
 	public static readonly string B_DATA_P_LOG = $"{KCDefine.B_DIR_P_WRITABLE}Log.txt";
+
+#if UNITY_STANDALONE_WIN
+	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
+#else
+	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
+#endif			// #if UNITY_STANDALONE_WIN
 	// 경로 }
 	#endregion			// 런타임 상수
 }

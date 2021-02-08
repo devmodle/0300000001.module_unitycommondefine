@@ -660,6 +660,7 @@ public static partial class KCEditorDefine {
 	// 디버그 콘솔 }
 
 	// 독립 플랫폼
+	public static readonly string B_DIR_P_FMT_STANDALONE_EXTERNAL_DATAS = $"{"{0}"}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 	public static readonly string B_ABS_BUILD_P_FMT_STANDALONE = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Standalone/{"{0}"}";
 
 	// 맥
