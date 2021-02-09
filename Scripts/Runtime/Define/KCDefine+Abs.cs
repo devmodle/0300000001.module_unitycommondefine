@@ -277,6 +277,7 @@ public static partial class KCDefine {
 
 	// 형식 {
 	public const string B_TEXT_FMT_PRICE = "{0} {1}";
+	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
 
 	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";
