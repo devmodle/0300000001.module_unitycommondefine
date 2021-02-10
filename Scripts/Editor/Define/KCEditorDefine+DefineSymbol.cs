@@ -202,6 +202,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_STUDY_ENABLE = "STUDY_ENABLE";
 	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
 
+	public const string DS_DEFINE_S_INPUT_SYSTEM_ENABLE = "INPUT_SYSTEM_ENABLE";
+	public const string DS_DEFINE_S_INPUT_SYSTEM_MODULE_ENABLE = "INPUT_SYSTEM_MODULE_ENABLE";
+
 	public const string DS_DEFINE_S_POLY_BRUSH_ENABLE = "POLY_BRUSH_ENABLE";
 	public const string DS_DEFINE_S_PRO_BUILDER_ENABLE = "PRO_BUILDER_ENABLE";
 	public const string DS_DEFINE_S_ASSET_BUNDLE_ENABLE = "ASSET_BUNDLE_ENABLE";
@@ -221,6 +224,10 @@ public static partial class KCEditorDefine {
 	#region 런타임 상수
 	// 대체 전처리기 심볼
 	public static readonly Dictionary<string, string> DS_REPLACE_DEFINE_S_MODULE_LIST = new Dictionary<string, string> {
+#if INPUT_SYSTEM_ENABLE || INPUT_SYSTEM_MODULE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_INPUT_SYSTEM_ENABLE] = KCEditorDefine.DS_DEFINE_S_INPUT_SYSTEM_MODULE_ENABLE,
+#endif			// #if INPUT_SYSTEM_ENABLE || INPUT_SYSTEM_MODULE_ENABLE
+
 #if SKELETON_2D_ANI_ENABLE || SKELETON_2D_ANI_MODULE_ENABLE
 		[KCEditorDefine.DS_DEFINE_S_SKELETON_2D_ANI_ENABLE] = KCEditorDefine.DS_DEFINE_S_SKELETON_2D_ANI_MODULE_ENABLE,
 #endif			// #if SKELETON_2D_ANI_ENABLE || SKELETON_2D_ANI_MODULE_ENABLE
