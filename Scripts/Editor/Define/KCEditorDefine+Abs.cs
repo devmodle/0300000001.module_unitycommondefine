@@ -161,6 +161,7 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_PLATFORM = "Platform";
 	public const string B_KEY_JENKINS_ANALYTICS = "Analytics";
 	public const string B_KEY_JENKINS_BUILD_MODE = "BuildMode";
+	public const string B_KEY_JENKINS_BUILD_VERSION = "BuildVersion";
 	public const string B_KEY_JENKINS_BUILD_FUNC = "BuildFunc";
 	public const string B_KEY_JENKINS_PIPELINE_NAME = "PipelineName";
 	public const string B_KEY_JENKINS_IPA_EXPORT_METHOD = "IPAExportMethod";
