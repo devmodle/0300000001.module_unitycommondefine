@@ -32,7 +32,7 @@ public static partial class KCEditorDefine {
 	public const string B_CMD_LINE_PARAMS_FMT_CMD_PROMPT = "/c \"{0}\"";
 
 	// 이름 {
-	public const string B_CLS_N_LOG_ENTRIES = "UnityEditorInternal.LogEntries";
+	public const string B_MODULE_N_INPUT_SYSTEM = "com.unity.input.settings";
 
 	public const string B_OBJ_N_GAME_OBJ = "GameObj";
 	public const string B_OBJ_N_OBJ_N_EDITOR_POPUP = "ObjNameEditorPopup";
@@ -271,8 +271,8 @@ public static partial class KCEditorDefine {
 	// 파일 브라우저 {
 	public const float B_SCALE_FILE_BROWSER_WND = 1.25f;
 
+	public const string B_OBJ_P_FILE_BROWSER = "SimpleFileBrowserCanvas";
 	public const string B_OBJ_N_FILE_BROWSER_WND = "SimpleFileBrowserWindow";
-	public const string B_OBJ_P_FILE_BROWSER_UI = "SimpleFileBrowserCanvas";
 	// 파일 브라우저 }
 	#endregion			// 기본
 
@@ -755,6 +755,11 @@ public static partial class KCEditorDefine {
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
+#if INPUT_SYSTEM_MODULE_ENABLE
+	// 경로
+	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
+#endif			// #if INPUT_SYSTEM_MODULE_ENABLE
+
 #if NOTI_MODULE_ENABLE
 	// 경로
 	public static readonly KeyValuePair<string, string>[] B_NOTI_ICON_P_INFOS = new KeyValuePair<string, string>[] {

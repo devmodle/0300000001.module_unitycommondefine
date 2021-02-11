@@ -112,7 +112,7 @@ public static partial class KCDefine {
 	public const int U_SORTING_O_SCREEN_DEBUG_UI = 4;
 
 	public const int U_SORTING_O_FPS_COUNTER = 5;
-	public const int U_SORTING_O_FILE_BROWSER_UI = 6;
+	public const int U_SORTING_O_FILE_BROWSER = 6;
 	public const int U_SORTING_O_DEBUG_CONSOLE = 7;
 	// 정렬 순서 }
 
