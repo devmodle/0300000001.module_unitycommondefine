@@ -219,6 +219,13 @@ public enum EStandaloneType {
 	MAX_VALUE
 }
 
+//! iOS 타입
+public enum EiOSType {
+	NONE = -1,
+	APPLE,
+	MAX_VALUE
+}
+
 //! 안드로이드 타입
 public enum EAndroidType {
 	NONE = -1,

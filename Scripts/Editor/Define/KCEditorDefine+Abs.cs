@@ -155,7 +155,6 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_SRC = "Src";
 	public const string B_KEY_JENKINS_PROJ_NAME = "ProjName";
 	public const string B_KEY_JENKINS_PROJ_PATH = "ProjPath";
-	public const string B_KEY_JENKINS_DIST_PATH = "DistPath";
 	public const string B_KEY_JENKINS_BUNDLE_ID = "BundleID";
 	public const string B_KEY_JENKINS_PROFILE_ID = "ProfileID";
 	public const string B_KEY_JENKINS_PLATFORM = "Platform";
