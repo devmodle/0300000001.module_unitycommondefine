@@ -177,6 +177,8 @@ public static partial class KCDefine {
 
 	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
+
+	public const string B_ASSET_N_PATTERN_FIX_POINT_FILTER = "_FIX_PF_";
 	// 이름 }
 
 	// 씬 이름 {

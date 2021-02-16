@@ -94,7 +94,6 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_N_SND_M_VIRTUALIZE_EFFECT = "m_VirtualizeEffects";
 
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
-	public const string B_ASSET_N_PATTERN_FIX_POINT_FILTER = "_FIX_PF_";
 
 	public const string B_FUNC_N_SET_COMPRESSION_TYPE = "SetCompressionType";
 	public const string B_FUNC_N_SET_LIGHTMAP_ENCODING_QUALITY = "SetLightmapEncodingQualityForPlatformGroup";
