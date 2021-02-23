@@ -11,7 +11,8 @@ public static partial class KCDefine {
 
 	public const int B_UNIT_NORM_VALUE_TO_BYTE = 255;
 	public const float B_UNIT_NORM_VALUE_TO_VALUE = 100.0f;
-
+	
+	public const int B_UNIT_BYTE_TO_BIT = 8;
 	public const float B_UNIT_BYTE_TO_KILO_BYTE = 1024.0f;
 	public const float B_UNIT_BYTE_TO_MEGA_BYTE = 1024.0f * 1024.0f;
 
