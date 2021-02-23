@@ -205,10 +205,15 @@ public static partial class KCDefine {
 	public const string B_KEY_JSON_ROOT_DATA = "Root";
 	public const string B_KEY_JSON_COMMON_DATA = "Common";
 
-	// 토큰
+	// 토큰 {
 	public const string B_TOKEN_CSV_STRING = ",";
 	public const string B_TOKEN_POST_STRING = "&";
 	public const string B_TOKEN_VERSION_NUMBER = ".";
+
+	public const string B_TOKEN_USER_A = "A";
+	public const string B_TOKEN_USER_B = "B";
+	public const string B_TOKEN_USER_UNKNOWN = "U";
+	// 토큰 }
 
 	// 빌드 모드
 	public const string B_BUILD_MODE_DEBUG = "Debug";
@@ -261,6 +266,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_SPLASH_SCENE = "SplashScene/";
 	public const string B_DIR_P_AGREE_SCENE = "AgreeScene/";
 	public const string B_DIR_P_INTRO_SCENE = "IntroScene/";
+	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
 	public const string B_DIR_P_AUTO_CREATE = "00.AutoCreate/";
 
 	public const string B_DIR_P_TEXT_ROOT = "UI/Text/";
@@ -279,6 +285,7 @@ public static partial class KCDefine {
 
 	// 형식 {
 	public const string B_TEXT_FMT_PRICE = "{0} {1}";
+	public const string B_TEXT_FMT_VERSION = "v{0}{1}";
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
 
