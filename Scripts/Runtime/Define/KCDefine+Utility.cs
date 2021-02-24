@@ -214,6 +214,7 @@ public static partial class KCDefine {
 	public const string U_FUNC_N_ON_POINTER_ENTER = "OnPointerEnter";
 	public const string U_FUNC_N_ON_POINTER_EXIT = "OnPointerExit";
 
+	public const string U_FUNC_N_INIT = "Init";
 	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
 
 	public const string U_INPUT_N_JUMP = "Jump";
@@ -296,11 +297,6 @@ public static partial class KCDefine {
 	// 값 테이블 }
 
 	// 경고 팝업 {
-	public const string U_KEY_ALERT_P_TITLE = "Title";
-	public const string U_KEY_ALERT_P_MSG = "Msg";
-	public const string U_KEY_ALERT_P_OK_BTN_TEXT = "OKBtnText";
-	public const string U_KEY_ALERT_P_CANCEL_BTN_TEXT = "CancelBtnText";
-
 	public const string U_OBJ_N_ALERT_P_TITLE_TEXT = "TitleText";
 	public const string U_OBJ_N_ALERT_P_MSG_TEXT = "MsgText";
 	public const string U_OBJ_N_ALERT_P_BTN_TEXT = "Text";
@@ -319,10 +315,10 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_BUILD_MODE = "BuildMode";
 	public const string U_KEY_UNITY_MS_ORIENTATION = "Orientation";
 
-	public const string U_KEY_UNITY_MS_ALERT_TITLE = KCDefine.U_KEY_ALERT_P_TITLE;
-	public const string U_KEY_UNITY_MS_ALERT_MSG = KCDefine.U_KEY_ALERT_P_MSG;
-	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = KCDefine.U_KEY_ALERT_P_OK_BTN_TEXT;
-	public const string U_KEY_UNITY_MS_ALERT_CANCEL_BTN_TEXT = KCDefine.U_KEY_ALERT_P_CANCEL_BTN_TEXT;
+	public const string U_KEY_UNITY_MS_ALERT_TITLE = "Title";
+	public const string U_KEY_UNITY_MS_ALERT_MSG = "Msg";
+	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = "OKBtnText";
+	public const string U_KEY_UNITY_MS_ALERT_CANCEL_BTN_TEXT = "CancelBtnText";
 
 	public const string U_KEY_UNITY_MS_VIBRATE_TYPE = "Type";
 	public const string U_KEY_UNITY_MS_VIBRATE_STYLE = "Style";
