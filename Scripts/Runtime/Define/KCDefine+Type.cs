@@ -57,7 +57,7 @@ public struct STSortingOrderInfo {
 }
 
 //! 시퀀스 애니메이션 정보
-public struct STSequenceAniInfo {
+public struct STSequenceInfo {
 	public Sequence m_oSequence;
 	public GameObject m_oObj;
 }

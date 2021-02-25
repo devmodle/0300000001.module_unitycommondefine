@@ -545,6 +545,10 @@ public static partial class KCDefine {
 
 	#region 조건부 상수
 #if UNITY_EDITOR
+	// GUI
+	public const int U_SIZE_GUI_FONT = 48;
+	public const string U_TEXT_GUI_LOADING = "Scene Loading...";
+
 	// 퀄리티 {
 	public const bool U_QUALITY_ASYNC_UPLOAD_PERSISTENT_BUFFER = true;
 
