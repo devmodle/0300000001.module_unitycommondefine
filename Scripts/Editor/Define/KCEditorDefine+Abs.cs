@@ -150,6 +150,7 @@ public static partial class KCEditorDefine {
 	// 안드로이드 }
 
 	// 젠킨스 {
+	public const string B_KEY_JENKINS_ENGINE = "Engine";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
 	public const string B_KEY_JENKINS_SRC = "Src";
 	public const string B_KEY_JENKINS_PROJ_NAME = "ProjName";
@@ -166,7 +167,7 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_BUILD_FILE_EXTENSION = "BuildFileExtension";
 
 	public const string B_BUILD_PARAMS_TOKEN_JENKINS = " ";
-	public const string B_PIPELINE_GROUP_NAME_JENKINS = "job/00001.Common/job/01.Pipelines/job";
+	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/00001.Common/job/{0}/job/01.Pipelines/job";
 
 	public const string B_BUILD_DATA_FMT_JENKINS = "--data {0}={1}";
 	public const string B_BUILD_CMD_FMT_JENKINS = "curl -X POST {0} --user {1}:{2} --data token={3}";
@@ -749,9 +750,9 @@ public static partial class KCEditorDefine {
 	// 안드로이드 }
 
 	// 젠킨스
-	public static readonly string B_JENKINS_STANDALONE_PIPELINE = $"{KCEditorDefine.B_PIPELINE_GROUP_NAME_JENKINS}/41.Standalone";
-	public static readonly string B_JENKINS_IOS_PIPELINE = $"{KCEditorDefine.B_PIPELINE_GROUP_NAME_JENKINS}/01.iOS";
-	public static readonly string B_JENKINS_ANDROID_PIPELINE = $"{KCEditorDefine.B_PIPELINE_GROUP_NAME_JENKINS}/11.Android";
+	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone", Application.unityVersion);
+	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", Application.unityVersion);
+	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", Application.unityVersion);
 	#endregion			// 런타임 상수
 
 	#region 조건부 상수
