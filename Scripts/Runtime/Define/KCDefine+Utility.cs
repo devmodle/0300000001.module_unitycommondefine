@@ -547,7 +547,7 @@ public static partial class KCDefine {
 	#region 조건부 상수
 #if UNITY_EDITOR
 	// GUI
-	public const int U_SIZE_GUI_FONT = 42;
+	public const int U_SIZE_GUI_FONT = 28;
 	public const string U_TEXT_GUI_LOADING = "Scene Loading...";
 
 	// 퀄리티 {
