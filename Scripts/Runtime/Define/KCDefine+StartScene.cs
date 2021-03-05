@@ -19,7 +19,7 @@ public static partial class KCDefine {
 
 	// 이름 {
 	public const string SS_OBJ_N_LOADING_TEXT = "LoadingText";
-	public const string SS_OBJ_N_LOADING_IMG_OBJ = "LoadingImgObj";
+	public const string SS_OBJ_N_LOADING_GAUGE = "LoadingGauge";
 
 	public const string SS_OBJ_N_GAUGE_IMG = "GaugeImg";
 	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
@@ -27,12 +27,8 @@ public static partial class KCDefine {
 	#endregion			// 기본
 
 	#region 런타임 상수
-	// 위치
-	public static readonly Vector3 SS_POS_LOADING_TEXT = new Vector3(0.0f, 40.0f, 0.0f);
-	public static readonly Vector3 SS_POS_LOADING_IMG_OBJ = new Vector3(0.0f, -40.0f, 0.0f);
-	
 	// 경로
 	public static readonly string SS_OBJ_P_LOADING_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingText";
-	public static readonly string SS_OBJ_P_LOADING_IMG_OBJ = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingImgObj";
+	public static readonly string SS_OBJ_P_LOADING_GAUGE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingGauge";
 	#endregion			// 런타임 상수
 }
