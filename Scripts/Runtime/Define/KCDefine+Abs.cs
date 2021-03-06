@@ -196,10 +196,9 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_LOADING = "01.LoadingScene";
 	public const string B_SCENE_N_INTRO = "01.IntroScene";
 	public const string B_SCENE_N_TITLE = "01.TitleScene";
-	
-#if STUDY_ENABLE || STUDY_MODULE_ENABLE
+
 	public const string B_SCENE_N_MENU = "01.MenuScene";
-#endif			// #if STUDY_ENABLE || STUDY_MODULE_ENABLE
+	public const string B_SCENE_N_STUDY_SAMPLE = "00.StudySampleScene";
 	// 씬 이름 }
 
 	// 식별자
