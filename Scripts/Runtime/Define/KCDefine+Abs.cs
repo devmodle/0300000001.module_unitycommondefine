@@ -66,6 +66,12 @@ public static partial class KCDefine {
 	public const double B_VALUE_DBL_9 = 9.0;
 	// 값 }
 
+	// 회전
+	public const float B_ANGLE_45 = 45.0f;
+	public const float B_ANGLE_90 = 90.0f;
+	public const float B_ANGLE_180 = 180.0f;
+	public const float B_ANGLE_360 = 360.0f;
+
 	// 빌드 번호
 	public const int B_MIN_BUILD_NUMBER = 1;
 
