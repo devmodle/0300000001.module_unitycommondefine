@@ -23,15 +23,47 @@ public static partial class KCDefine {
 	// 값 {
 	public const int B_VALUE_INT_0 = 0;
 	public const int B_VALUE_INT_1 = 1;
+	public const int B_VALUE_INT_2 = 2;
+	public const int B_VALUE_INT_3 = 3;
+	public const int B_VALUE_INT_4 = 4;
+	public const int B_VALUE_INT_5 = 5;
+	public const int B_VALUE_INT_6 = 6;
+	public const int B_VALUE_INT_7 = 7;
+	public const int B_VALUE_INT_8 = 8;
+	public const int B_VALUE_INT_9 = 9;
 
 	public const long B_VALUE_LONG_0 = 0L;
 	public const long B_VALUE_LONG_1 = 1L;
+	public const long B_VALUE_LONG_2 = 2L;
+	public const long B_VALUE_LONG_3 = 3L;
+	public const long B_VALUE_LONG_4 = 4L;
+	public const long B_VALUE_LONG_5 = 5L;
+	public const long B_VALUE_LONG_6 = 6L;
+	public const long B_VALUE_LONG_7 = 7L;
+	public const long B_VALUE_LONG_8 = 8L;
+	public const long B_VALUE_LONG_9 = 9L;
 	
 	public const float B_VALUE_FLT_0 = 0.0f;
 	public const float B_VALUE_FLT_1 = 1.0f;
+	public const float B_VALUE_FLT_2 = 2.0f;
+	public const float B_VALUE_FLT_3 = 3.0f;
+	public const float B_VALUE_FLT_4 = 4.0f;
+	public const float B_VALUE_FLT_5 = 5.0f;
+	public const float B_VALUE_FLT_6 = 6.0f;
+	public const float B_VALUE_FLT_7 = 7.0f;
+	public const float B_VALUE_FLT_8 = 8.0f;
+	public const float B_VALUE_FLT_9 = 9.0f;
 
 	public const double B_VALUE_DBL_0 = 0.0;
 	public const double B_VALUE_DBL_1 = 1.0;
+	public const double B_VALUE_DBL_2 = 2.0;
+	public const double B_VALUE_DBL_3 = 3.0;
+	public const double B_VALUE_DBL_4 = 4.0;
+	public const double B_VALUE_DBL_5 = 5.0;
+	public const double B_VALUE_DBL_6 = 6.0;
+	public const double B_VALUE_DBL_7 = 7.0;
+	public const double B_VALUE_DBL_8 = 8.0;
+	public const double B_VALUE_DBL_9 = 9.0;
 	// 값 }
 
 	// 빌드 번호
