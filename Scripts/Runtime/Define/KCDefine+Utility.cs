@@ -31,7 +31,7 @@ public static partial class KCDefine {
 	public const int U_MAX_NUM_DUPLICATE_FX_SNDS = 10;
 
 	// 크기
-	public const int U_DEF_SIZE_OBJ_POOL = 10;
+	public const int U_DEF_SIZE_OBJS_POOL = 10;
 
 	// 길이
 	public const int U_MAX_LENGTH_LOG = 100000000;
@@ -406,7 +406,7 @@ public static partial class KCDefine {
 	};
 
 	// 정렬 순서 {
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_OBJ_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_OBJS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
