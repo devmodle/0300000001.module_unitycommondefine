@@ -166,7 +166,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_TOPMOST_UIS = "TopmostUIs";
 
 	public const string U_OBJ_N_SCENE_BASE = "Base";
-	public const string U_OBJ_N_SCENE_OBJ_BASE = "ObjRoot";
+	public const string U_OBJ_N_SCENE_OBJS_BASE = "ObjsRoot";
 	public const string U_OBJ_N_SCENE_OBJS = "Objs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
 
@@ -175,8 +175,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_TOP_OBJS = "TopObjs";
 	public const string U_OBJ_N_SCENE_BOTTOM_OBJS = "BottomObjs";
 
-	public const string U_OBJ_N_SCENE_OBJ_CANVAS_TOP = "ObjCanvasRoot";
-	public const string U_OBJ_N_SCENE_OBJ_CANVAS_BASE = "ObjCanvas";
+	public const string U_OBJ_N_SCENE_OBJS_CANVAS_TOP = "ObjsCanvasRoot";
+	public const string U_OBJ_N_SCENE_OBJS_CANVAS_BASE = "ObjsCanvas";
 	public const string U_OBJ_N_SCENE_CANVAS_OBJS = "CanvasObjs";
 
 	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIs Camera";
