@@ -279,6 +279,7 @@ public static partial class KCDefine {
 	// 명령어 }
 
 	// 경로 {
+	public const string B_DIR_P_BGS = "BGs/";
 	public const string B_DIR_P_FXS = "FXs/";
 	public const string B_DIR_P_ICONS = "Icons/";
 	public const string B_DIR_P_FONTS = "Fonts/";
