@@ -45,7 +45,7 @@ public static partial class KCDefine {
 	public const float U_DEF_INTENSITY_VIBRATE = 1.0f;
 
 	// 깊이
-	public const float U_DEPTH_UI_CAMERA = 50.0f;
+	public const float U_DEPTH_UIS_CAMERA = 50.0f;
 	public const float U_DEPTH_MAIN_CAMERA = -50.0f;
 
 	// 거리 {
@@ -101,15 +101,15 @@ public static partial class KCDefine {
 	public const int U_LAYER_TRANSPARENT_FX = 1;
 	public const int U_LAYER_IGNORE_RAYCAST = 2;
 	public const int U_LAYER_WATER = 4;
-	public const int U_LAYER_UI = 5;
+	public const int U_LAYER_UIS = 5;
 	public const int U_LAYER_CUSTOM = 8;
 
 	// 정렬 순서 {
-	public const int U_SORTING_O_SCREEN_POPUP_UI = 0;
-	public const int U_SORTING_O_SCREEN_TOPMOST_UI = 1;
-	public const int U_SORTING_O_SCREEN_ABS_UI = 2;
-	public const int U_SORTING_O_SCREEN_BLIND_UI = 3;
-	public const int U_SORTING_O_SCREEN_DEBUG_UI = 4;
+	public const int U_SORTING_O_SCREEN_POPUP_UIS = 0;
+	public const int U_SORTING_O_SCREEN_TOPMOST_UIS = 1;
+	public const int U_SORTING_O_SCREEN_ABS_UIS = 2;
+	public const int U_SORTING_O_SCREEN_BLIND_UIS = 3;
+	public const int U_SORTING_O_SCREEN_DEBUG_UIS = 4;
 
 	public const int U_SORTING_O_FPS_COUNTER = 5;
 	public const int U_SORTING_O_FILE_BROWSER = 6;
@@ -150,8 +150,8 @@ public static partial class KCDefine {
 	// 식별자 }
 
 	// 이름 {
-	public const string U_OBJ_N_SCENE_UI_TOP = "UIRoot";
-	public const string U_OBJ_N_SCENE_UI_BASE = "Canvas";
+	public const string U_OBJ_N_SCENE_UIS_TOP = "UIsRoot";
+	public const string U_OBJ_N_SCENE_UIS_BASE = "Canvas";
 	public const string U_OBJ_N_SCENE_UIS = "UIs";
 	public const string U_OBJ_N_SCENE_TEST_UIS = "TestUIs";
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
@@ -179,7 +179,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_OBJ_CANVAS_BASE = "ObjCanvas";
 	public const string U_OBJ_N_SCENE_CANVAS_OBJS = "CanvasObjs";
 
-	public const string U_OBJ_N_SCENE_UI_CAMERA = "UI Camera";
+	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIs Camera";
 	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "Main Camera";
 	public const string U_OBJ_N_SCENE_MAIN_LIGHT = "Directional Light";
 	public const string U_OBJ_N_SCENE_MANAGER = "SceneManager";
@@ -204,7 +204,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
 
-	public const string U_OBJ_N_FILE_BROWSER_UI = "SimpleFileBrowserCanvas(Clone)";
+	public const string U_OBJ_N_FILE_BROWSER_UIS = "SimpleFileBrowserCanvas(Clone)";
 
 	public const string U_IMG_N_DEF_SPRITE = "DefSprite";
 	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
@@ -233,7 +233,7 @@ public static partial class KCDefine {
 
 	public const string U_TAG_ENEMY = "Enemy";
 	public const string U_TAG_OBSTACLE = "Obstacle";
-	public const string U_TAG_UI_CAMERA = "UICamera";
+	public const string U_TAG_UIS_CAMERA = "UIsCamera";
 	public const string U_TAG_MAIN_LIGHT = "MainLight";
 	public const string U_TAG_SCENE_MANAGER = "SceneManager";
 	// 태그 }
@@ -249,14 +249,14 @@ public static partial class KCDefine {
 	public const string U_SORTING_L_ABS = "Abs";
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public const string U_SORTING_L_UNDERGROUND_UI = "UndergroundUI";
-	public const string U_SORTING_L_BACKGROUND_UI = "BackgroundUI";
-	public const string U_SORTING_L_DEF_UI = "DefaultUI";
-	public const string U_SORTING_L_FOREGROUND_UI = "ForegroundUI";
-	public const string U_SORTING_L_OVERGROUND_UI = "OvergroundUI";
-	public const string U_SORTING_L_TOP_UI = "TopUI";
-	public const string U_SORTING_L_TOPMOST_UI = "TopmostUI";
-	public const string U_SORTING_L_ABS_UI = "AbsUI";
+	public const string U_SORTING_L_UNDERGROUND_UIS = "UndergroundUIs";
+	public const string U_SORTING_L_BACKGROUND_UIS = "BackgroundUIs";
+	public const string U_SORTING_L_DEF_UIS = "DefaultUIs";
+	public const string U_SORTING_L_FOREGROUND_UIS = "ForegroundUIs";
+	public const string U_SORTING_L_OVERGROUND_UIS = "OvergroundUIs";
+	public const string U_SORTING_L_TOP_UIS = "TopUIs";
+	public const string U_SORTING_L_TOPMOST_UIS = "TopmostUIs";
+	public const string U_SORTING_L_ABS_UIS = "AbsUIs";
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	// 정렬 레이어 }
 
@@ -347,7 +347,7 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 영역
-	public static readonly Rect U_RECT_UI_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
+	public static readonly Rect U_RECT_UIS_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
 	public static readonly Rect U_RECT_MAIN_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
 
 	// 색상 {
@@ -359,7 +359,7 @@ public static partial class KCDefine {
 	public static readonly Color U_DEF_COLOR_HIGHLIGHT = Color.white;
 	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.35f, 0.35f, 0.35f, 1.0f);
 
-	public static readonly Color U_DEF_COLOR_BLIND_UI = Color.black;
+	public static readonly Color U_DEF_COLOR_BLIND_UIS = Color.black;
 	public static readonly Color U_DEF_COLOR_SCREEN_FADE_IN = Color.black;
 	public static readonly Color U_DEF_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
 	
@@ -377,7 +377,7 @@ public static partial class KCDefine {
 	public static readonly string[] U_TAGS = new string[] {
 		KCDefine.U_TAG_ENEMY,
 		KCDefine.U_TAG_OBSTACLE,
-		KCDefine.U_TAG_UI_CAMERA,
+		KCDefine.U_TAG_UIS_CAMERA,
 		KCDefine.U_TAG_MAIN_LIGHT,
 		KCDefine.U_TAG_SCENE_MANAGER
 	};
@@ -394,14 +394,14 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_L_ABS,
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-		KCDefine.U_SORTING_L_UNDERGROUND_UI,
-		KCDefine.U_SORTING_L_BACKGROUND_UI,
-		KCDefine.U_SORTING_L_DEF_UI,
-		KCDefine.U_SORTING_L_FOREGROUND_UI,
-		KCDefine.U_SORTING_L_OVERGROUND_UI,
-		KCDefine.U_SORTING_L_TOP_UI,
-		KCDefine.U_SORTING_L_TOPMOST_UI,
-		KCDefine.U_SORTING_L_ABS_UI
+		KCDefine.U_SORTING_L_UNDERGROUND_UIS,
+		KCDefine.U_SORTING_L_BACKGROUND_UIS,
+		KCDefine.U_SORTING_L_DEF_UIS,
+		KCDefine.U_SORTING_L_FOREGROUND_UIS,
+		KCDefine.U_SORTING_L_OVERGROUND_UIS,
+		KCDefine.U_SORTING_L_TOP_UIS,
+		KCDefine.U_SORTING_L_TOPMOST_UIS,
+		KCDefine.U_SORTING_L_ABS_UIS
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
 
@@ -412,12 +412,12 @@ public static partial class KCDefine {
 	};
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF_UI
+		m_oLayer = KCDefine.U_SORTING_L_DEF_UIS
 	};
 #else
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UI_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
@@ -425,8 +425,8 @@ public static partial class KCDefine {
 	// 정렬 순서 }
 
 	// 레이어 마스크 {
-	public static readonly int[] U_DEF_LAYER_MASK_UI_CAMERA = new int[] {
-		KCDefine.U_LAYER_UI
+	public static readonly int[] U_DEF_LAYER_MASK_UIS_CAMERA = new int[] {
+		KCDefine.U_LAYER_UIS
 	};
 
 	public static readonly int[] U_DEF_LAYER_MASK_MAIN_CAMERA = new int[] {
@@ -436,7 +436,7 @@ public static partial class KCDefine {
 		KCDefine.U_LAYER_WATER,
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-		KCDefine.U_LAYER_UI
+		KCDefine.U_LAYER_UIS
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
 	// 레이어 마스크 }
