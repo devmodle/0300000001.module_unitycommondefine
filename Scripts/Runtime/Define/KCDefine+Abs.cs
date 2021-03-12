@@ -255,6 +255,9 @@ public static partial class KCDefine {
 	public const string B_TOKEN_POST_STRING = "&";
 	public const string B_TOKEN_VERSION_NUMBER = ".";
 
+	public const string B_TOKEN_INCR = "+";
+	public const string B_TOKEN_DECR = "-";
+
 	public const string B_TOKEN_USER_A = "A";
 	public const string B_TOKEN_USER_B = "B";
 	public const string B_TOKEN_USER_UNKNOWN = "U";
@@ -334,8 +337,8 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_NUM = "x{0}";
 	public const string B_TEXT_FMT_BRACKET = "({0})";
 
-	public const string B_TEXT_FMT_INCREASE = "+{0}";
-	public const string B_TEXT_FMT_DECREASE = "-{0}";
+	public const string B_TEXT_FMT_INCR = "+{0}";
+	public const string B_TEXT_FMT_DECR = "-{0}";
 
 	public const string B_TEXT_FMT_PAGE = "{0}/{1}";
 	public const string B_TEXT_FMT_PRICE = "{0} {1}";
