@@ -21,56 +21,63 @@ public static partial class KCDefine {
 	// 유닛 }
 
 	// 값 {
-	public const int B_VALUE_INT_0 = 0;
-	public const int B_VALUE_INT_1 = 1;
-	public const int B_VALUE_INT_2 = 2;
-	public const int B_VALUE_INT_3 = 3;
-	public const int B_VALUE_INT_4 = 4;
-	public const int B_VALUE_INT_5 = 5;
-	public const int B_VALUE_INT_6 = 6;
-	public const int B_VALUE_INT_7 = 7;
-	public const int B_VALUE_INT_8 = 8;
-	public const int B_VALUE_INT_9 = 9;
+	public const int B_VALUE_0_INT = 0;
+	public const int B_VALUE_1_INT = 1;
+	public const int B_VALUE_2_INT = 2;
+	public const int B_VALUE_3_INT = 3;
+	public const int B_VALUE_4_INT = 4;
+	public const int B_VALUE_5_INT = 5;
+	public const int B_VALUE_6_INT = 6;
+	public const int B_VALUE_7_INT = 7;
+	public const int B_VALUE_8_INT = 8;
+	public const int B_VALUE_9_INT = 9;
 
-	public const long B_VALUE_LONG_0 = 0L;
-	public const long B_VALUE_LONG_1 = 1L;
-	public const long B_VALUE_LONG_2 = 2L;
-	public const long B_VALUE_LONG_3 = 3L;
-	public const long B_VALUE_LONG_4 = 4L;
-	public const long B_VALUE_LONG_5 = 5L;
-	public const long B_VALUE_LONG_6 = 6L;
-	public const long B_VALUE_LONG_7 = 7L;
-	public const long B_VALUE_LONG_8 = 8L;
-	public const long B_VALUE_LONG_9 = 9L;
+	public const long B_VALUE_0_LONG = 0L;
+	public const long B_VALUE_1_LONG = 1L;
+	public const long B_VALUE_2_LONG = 2L;
+	public const long B_VALUE_3_LONG = 3L;
+	public const long B_VALUE_4_LONG = 4L;
+	public const long B_VALUE_5_LONG = 5L;
+	public const long B_VALUE_6_LONG = 6L;
+	public const long B_VALUE_7_LONG = 7L;
+	public const long B_VALUE_8_LONG = 8L;
+	public const long B_VALUE_9_LONG = 9L;
 	
-	public const float B_VALUE_FLT_0 = 0.0f;
-	public const float B_VALUE_FLT_1 = 1.0f;
-	public const float B_VALUE_FLT_2 = 2.0f;
-	public const float B_VALUE_FLT_3 = 3.0f;
-	public const float B_VALUE_FLT_4 = 4.0f;
-	public const float B_VALUE_FLT_5 = 5.0f;
-	public const float B_VALUE_FLT_6 = 6.0f;
-	public const float B_VALUE_FLT_7 = 7.0f;
-	public const float B_VALUE_FLT_8 = 8.0f;
-	public const float B_VALUE_FLT_9 = 9.0f;
+	public const float B_VALUE_0_FLT = 0.0f;
+	public const float B_VALUE_1_FLT = 1.0f;
+	public const float B_VALUE_2_FLT = 2.0f;
+	public const float B_VALUE_3_FLT = 3.0f;
+	public const float B_VALUE_4_FLT = 4.0f;
+	public const float B_VALUE_5_FLT = 5.0f;
+	public const float B_VALUE_6_FLT = 6.0f;
+	public const float B_VALUE_7_FLT = 7.0f;
+	public const float B_VALUE_8_FLT = 8.0f;
+	public const float B_VALUE_9_FLT = 9.0f;
 
-	public const double B_VALUE_DBL_0 = 0.0;
-	public const double B_VALUE_DBL_1 = 1.0;
-	public const double B_VALUE_DBL_2 = 2.0;
-	public const double B_VALUE_DBL_3 = 3.0;
-	public const double B_VALUE_DBL_4 = 4.0;
-	public const double B_VALUE_DBL_5 = 5.0;
-	public const double B_VALUE_DBL_6 = 6.0;
-	public const double B_VALUE_DBL_7 = 7.0;
-	public const double B_VALUE_DBL_8 = 8.0;
-	public const double B_VALUE_DBL_9 = 9.0;
+	public const double B_VALUE_0_DBL = 0.0;
+	public const double B_VALUE_1_DBL = 1.0;
+	public const double B_VALUE_2_DBL = 2.0;
+	public const double B_VALUE_3_DBL = 3.0;
+	public const double B_VALUE_4_DBL = 4.0;
+	public const double B_VALUE_5_DBL = 5.0;
+	public const double B_VALUE_6_DBL = 6.0;
+	public const double B_VALUE_7_DBL = 7.0;
+	public const double B_VALUE_8_DBL = 8.0;
+	public const double B_VALUE_9_DBL = 9.0;
 	// 값 }
 
-	// 회전
-	public const float B_ANGLE_45 = 45.0f;
-	public const float B_ANGLE_90 = 90.0f;
-	public const float B_ANGLE_180 = 180.0f;
-	public const float B_ANGLE_360 = 360.0f;
+	// 회전 {
+	public const float B_ANGLE_45_DEG = 45.0f;
+	public const float B_ANGLE_90_DEG = 90.0f;
+	public const float B_ANGLE_180_DEG = 180.0f;
+	public const float B_ANGLE_360_DEG = 360.0f;
+
+	public const float B_ANGLE_45_RAD = KCDefine.B_ANGLE_45_DEG * Mathf.Deg2Rad;
+	public const float B_ANGLE_90_RAD = KCDefine.B_ANGLE_90_DEG * Mathf.Deg2Rad;
+	public const float B_ANGLE_180_RAD = KCDefine.B_ANGLE_180_DEG * Mathf.Deg2Rad;
+	public const float B_ANGLE_360_RAD = KCDefine.B_ANGLE_360_DEG * Mathf.Deg2Rad;
+	// 회전 }
+
 
 	// 빌드 번호
 	public const int B_MIN_BUILD_NUMBER = 1;
