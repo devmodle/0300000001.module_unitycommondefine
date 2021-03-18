@@ -271,12 +271,9 @@ public static partial class KCEditorDefine {
 	public const int B_FONT_SIZE_DEBUG_C_TEXT = 30;
 	public const string B_PROPERTY_N_DEBUG_C_LOG_ITEM_PREFAB = "logItemPrefab";
 
-	// 파일 브라우저 {
-	public const float B_SCALE_FILE_BROWSER_WND = 1.25f;
-
+	// 파일 브라우저
 	public const string B_OBJ_P_FILE_BROWSER = "SimpleFileBrowserCanvas";
 	public const string B_OBJ_N_FILE_BROWSER_WND = "SimpleFileBrowserWindow";
-	// 파일 브라우저 }
 	#endregion			// 기본
 
 	#region 런타임 상수
