@@ -300,7 +300,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_TABLES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Tables/";
 	public static readonly string B_ABS_DIR_P_UNITY_ENGINE = $"{EditorApplication.applicationPath}/";
 
-// #if SAMPLE_PROJ
+#if SAMPLE_PROJ
 	public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Common/Templates/";
 	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Common/UnityPackages/";
 
@@ -308,16 +308,15 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Study/Scenes/{KCDefine.B_SCENE_N_STUDY_SAMPLE}.unity";
 
 	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Study/Templates/";
-// #else
-	// FIXME: 임시 주석 처리
-	// public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Templates/";
-	// public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common@{KCEditorDefine.B_VERSION_UNITY_MODULE}/UnityPackages/";
+#else
+	public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Templates/";
+	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common@{KCEditorDefine.B_VERSION_UNITY_MODULE}/UnityPackages/";
 
-	// public static readonly string B_ABS_DIR_P_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
-	// public static readonly string B_ABS_DIR_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.study@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Scenes/{KCDefine.B_SCENE_N_STUDY_SAMPLE}.unity";
+	public static readonly string B_ABS_DIR_P_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
+	public static readonly string B_ABS_DIR_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.study@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Scenes/{KCDefine.B_SCENE_N_STUDY_SAMPLE}.unity";
 
-	// public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.study@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Templates/";
-// #endif			// #if SAMPLE_PROJ
+	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.study@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Templates/";
+#endif			// #if SAMPLE_PROJ
 
 	public static readonly string B_ABS_DIR_P_PLUGINS = $"{Application.dataPath}/Plugins/";
 	public static readonly string B_ABS_DIR_P_IOS_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}iOS/";
@@ -408,9 +407,11 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_Services_{SystemLanguage.Korean}.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.AS_DATA_P_SERVICES}.txt"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_Privacy_{SystemLanguage.Korean}.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.AS_DATA_P_PRIVACY}.txt"),
-		
+
+#if FIREBASE_MODULE_ENABLE		
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_GameConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_DATA_P_G_GAME_CONFIG}.json"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_BuildVersionConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_DATA_P_G_BUILD_VERSION_CONFIG}.json")
+#endif			// #if FIREBASE_MODULE_ENABLE
 	};
 	
 	public static readonly KeyValuePair<string, string>[] B_SCRIPT_P_INFOS = new KeyValuePair<string, string>[] {
@@ -562,18 +563,17 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_ParticleFX.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_PARTICLE_FX}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_2D_ROOT}T_Sprite.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_SPRITE}.prefab"),
 
-// #if SAMPLE_PROJ
+#if SAMPLE_PROJ
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Common.Externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Common.Externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Common.Externals/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.UnityModule.Common.Externals/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
-// #else
-		// FIXME: 임시 주석 처리
-		// new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
-		// new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
-		// new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
-		// new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
-// #endif			// #if SAMPLE_PROJ
+#else
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VERSION_UNITY_MODULE}/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
+#endif			// #if SAMPLE_PROJ
 		// 00.AutoCreate }
 
 		// 01.UnityProject {
