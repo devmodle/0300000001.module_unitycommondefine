@@ -238,13 +238,15 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_SETUP = "01.SetupScene";
 	public const string B_SCENE_N_AGREE = "01.AgreeScene";
 	public const string B_SCENE_N_LATE_SETUP = "01.LateSetupScene";
-	
+
 	public const string B_SCENE_N_START = "01.StartScene";
 	public const string B_SCENE_N_SPLASH = "01.SplashScene";
 	public const string B_SCENE_N_PERMISSION = "01.PermissionScene";
 	public const string B_SCENE_N_LOADING = "01.LoadingScene";
 	public const string B_SCENE_N_INTRO = "01.IntroScene";
 	public const string B_SCENE_N_TITLE = "01.TitleScene";
+	public const string B_SCENE_N_GAME = "02.GameScene";
+	public const string B_SCENE_N_OVERLAY = "00.OverlayScene";
 
 	public const string B_SCENE_N_MENU = "01.MenuScene";
 	public const string B_SCENE_N_STUDY_SAMPLE = "00.StudySampleScene";
