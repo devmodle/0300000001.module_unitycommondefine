@@ -512,6 +512,8 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_UTILITY}U_LightingSettings";
 
 	public static readonly string U_TABLE_P_G_ITEM_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ItemInfoTable";
+	public static readonly string U_TABLE_P_G_SALE_PRODUCT_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
+	
 	public static readonly string U_TABLE_P_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValueTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_STRING = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StringTable_Common";
 
