@@ -112,8 +112,7 @@ public static partial class KCDefine {
 	public const int U_SORTING_O_SCREEN_DEBUG_UIS = 4;
 
 	public const int U_SORTING_O_FPS_COUNTER = 5;
-	public const int U_SORTING_O_FILE_BROWSER = 6;
-	public const int U_SORTING_O_DEBUG_CONSOLE = 7;
+	public const int U_SORTING_O_DEBUG_CONSOLE = 6;
 	// 정렬 순서 }
 
 	// 애니메이션
@@ -204,8 +203,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
 
-	public const string U_OBJ_N_FILE_BROWSER_UIS = "SimpleFileBrowserCanvas(Clone)";
-
 	public const string U_IMG_N_DEF_SPRITE = "DefSprite";
 	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
 
@@ -261,7 +258,6 @@ public static partial class KCDefine {
 	// 정렬 레이어 }
 
 	// 씬 관리자
-	public const string U_KEY_SCENE_M_DIALOG_TOUCH_RESPONDER = "SceneMDialogTouchResponder";
 	public const string U_KEY_FMT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 
 	// 토스트 팝업
