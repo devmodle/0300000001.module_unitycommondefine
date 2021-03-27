@@ -153,7 +153,7 @@ public static partial class KCEditorDefine {
 	// 안드로이드 }
 
 	// 젠킨스 {
-	public const string B_KEY_JENKINS_ENGINE = "Engine";
+	public const string B_KEY_JENKINS_ENGINE_VER = "EngineVer";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
 	public const string B_KEY_JENKINS_SRC = "Src";
 	public const string B_KEY_JENKINS_PROJ_NAME = "ProjName";

@@ -83,7 +83,7 @@ public static partial class KCDefine {
 	// 회전 }
 
 	// 빌드 번호
-	public const int B_MIN_BUILD_NUMBER = 1;
+	public const int B_MIN_BUILD_NUM = 1;
 
 	// 비교
 	public const int B_COMPARE_LESS = -1;
@@ -272,9 +272,9 @@ public static partial class KCDefine {
 	public const string B_KEY_JSON_COMMON_DATA = "Common";
 
 	// 토큰 {
+	public const string B_TOKEN_VER = ".";
 	public const string B_TOKEN_CSV_STR = ",";
 	public const string B_TOKEN_POST_STR = "&";
-	public const string B_TOKEN_VER_NUMBER = ".";
 
 	public const string B_TOKEN_INCR = "+";
 	public const string B_TOKEN_DECR = "-";
