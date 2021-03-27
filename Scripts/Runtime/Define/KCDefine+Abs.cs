@@ -82,14 +82,13 @@ public static partial class KCDefine {
 	public const float B_ANGLE_360_RAD = KCDefine.B_ANGLE_360_DEG * Mathf.Deg2Rad;
 	// 회전 }
 
-
 	// 빌드 번호
 	public const int B_MIN_BUILD_NUMBER = 1;
 
-	// 비교 결과
-	public const int B_COMPARE_R_LESS = -1;
-	public const int B_COMPARE_R_EQUALS = 0;
-	public const int B_COMPARE_R_GREATE = 1;
+	// 비교
+	public const int B_COMPARE_LESS = -1;
+	public const int B_COMPARE_EQUALS = 0;
+	public const int B_COMPARE_GREATE = 1;
 
 	// 개수
 	public const int B_MAX_NUM_BACKUP_FILES = 50;
@@ -182,20 +181,36 @@ public static partial class KCDefine {
 	public const float B_WORLD_SCREEN_WIDTH = KCDefine.B_SCREEN_WIDTH * KCDefine.B_UNIT_SCALE;
 	public const float B_WORLD_SCREEN_HEIGHT = KCDefine.B_SCREEN_HEIGHT * KCDefine.B_UNIT_SCALE;
 	
-	public const string B_EMPTY_STRING = "";
-	public const string B_UNKNOWN_STRING = "Unknown";
-	public const string B_NEW_LINE_STRING = "\n";
-	public const string B_VERSION_STRING_FMT = "Ver.{0}";
+	public const string B_EMPTY_STR = "";
+	public const string B_UNKNOWN_STR = "Unknown";
+	public const string B_NEW_LINE_STR = "\n";
+	public const string B_VER_STR_FMT = "Ver.{0}";
 
-	public const string B_STRING_INT_0 = "0";
-	public const string B_STRING_INT_1 = "1";
+	public const string B_STR_0_INT = "0";
+	public const string B_STR_1_INT = "1";
+	public const string B_STR_2_INT = "2";
+	public const string B_STR_3_INT = "3";
+	public const string B_STR_4_INT = "4";
+	public const string B_STR_5_INT = "5";
+	public const string B_STR_6_INT = "6";
+	public const string B_STR_7_INT = "7";
+	public const string B_STR_8_INT = "8";
+	public const string B_STR_9_INT = "9";
 
-	public const string B_STRING_FLOAT_0 = "0.0";
-	public const string B_STRING_FLOAT_1 = "1.0";
+	public const string B_STR_0_FLT = "0.0";
+	public const string B_STR_1_FLT = "1.0";
+	public const string B_STR_2_FLT = "2.0";
+	public const string B_STR_3_FLT = "3.0";
+	public const string B_STR_4_FLT = "4.0";
+	public const string B_STR_5_FLT = "5.0";
+	public const string B_STR_6_FLT = "6.0";
+	public const string B_STR_7_FLT = "7.0";
+	public const string B_STR_8_FLT = "8.0";
+	public const string B_STR_9_FLT = "9.0";
 
-	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STRING;
-	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STRING;
-	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STRING;
+	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STR;
+	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STR;
+	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STR;
 
 	public static readonly int B_DESKTOP_SCREEN_WIDTH = (int)(Screen.currentResolution.width * 0.95f);
 	public static readonly int B_DESKTOP_SCREEN_HEIGHT = (int)(KCDefine.B_DESKTOP_SCREEN_WIDTH * (KCDefine.B_LANDSCAPE_SCREEN_HEIGHT / (float)KCDefine.B_LANDSCAPE_SCREEN_WIDTH));
@@ -257,9 +272,9 @@ public static partial class KCDefine {
 	public const string B_KEY_JSON_COMMON_DATA = "Common";
 
 	// 토큰 {
-	public const string B_TOKEN_CSV_STRING = ",";
-	public const string B_TOKEN_POST_STRING = "&";
-	public const string B_TOKEN_VERSION_NUMBER = ".";
+	public const string B_TOKEN_CSV_STR = ",";
+	public const string B_TOKEN_POST_STR = "&";
+	public const string B_TOKEN_VER_NUMBER = ".";
 
 	public const string B_TOKEN_INCR = "+";
 	public const string B_TOKEN_DECR = "-";
@@ -278,9 +293,9 @@ public static partial class KCDefine {
 
 	public const string B_CMD_GET_DEVICE_ID = "GetDeviceID";
 	public const string B_CMD_GET_COUNTRY_CODE = "GetCountryCode";
-	public const string B_CMD_GET_STORE_VERSION = "GetStoreVersion";
+	public const string B_CMD_GET_STORE_VER = "GetStoreVer";
 
-	public const string B_CMD_SET_ADS_TRACKING_ENABLE = "SetAdsTrackingEnable";
+	public const string B_CMD_SET_ENABLE_ADS_TRACKING = "SetEnableAdsTracking";
 
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
@@ -335,8 +350,8 @@ public static partial class KCDefine {
 	public const string B_DIR_P_FX_ROOT = "FX/";
 	public const string B_DIR_P_2D_ROOT = "2D/";
 	public const string B_DIR_P_EXTERNAL_ROOT = "External/";
-	public const string B_DIR_P_STRING_INFO_ROOT = "StringInfo/";
 	public const string B_DIR_P_VALUE_INFO_ROOT = "ValueInfo/";
+	public const string B_DIR_P_STRING_INFO_ROOT = "StringInfo/";
 	// 경로 }
 
 	// 형식 {
@@ -348,7 +363,7 @@ public static partial class KCDefine {
 
 	public const string B_TEXT_FMT_PAGE = "{0}/{1}";
 	public const string B_TEXT_FMT_PRICE = "{0} {1}";
-	public const string B_TEXT_FMT_VERSION = "v{0}{1}";
+	public const string B_TEXT_FMT_VER = "v{0}{1}";
 	
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
@@ -359,9 +374,9 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_4_DIGITS = "{0:0000}";
 	public const string B_TEXT_FMT_5_DIGITS = "{0:00000}";
 	
-	public const string B_SIZE_FMT_STRING = "<size={0}>{1}</size>";
-	public const string B_COLOR_FMT_STRING = "<color=#{0}>{1}</color>";
-	public const string B_DICTIONARY_FMT_STRING = "[{0}]{1}";
+	public const string B_DICT_FMT_STR = "[{0}]{1}";
+	public const string B_SIZE_FMT_STR = "<size={0}>{1}</size>";
+	public const string B_COLOR_FMT_STR = "<color=#{0}>{1}</color>";
 
 	public const string B_NAME_FMT_BACKUP = "yyyy_MM_dd HH_mm_ss";
 	public const string B_NAME_FMT_BACKUP_COMBINE = "{0} ({1})";
@@ -380,7 +395,7 @@ public static partial class KCDefine {
 
 	// URL
 	public const string B_MAIL_URL_FMT = "mailto:{0}?subject={1}&body={2}";
-	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: v{1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUserID: {7}\n\nPlease enter your inquiry:\n{8}";
+	public const string B_MAIL_MSG_FMT = "App: {0}\nVer: v{1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUserID: {7}\n\nPlease enter your inquiry:\n{8}";
 	#endregion			// 기본
 
 	#region 런타임 상수

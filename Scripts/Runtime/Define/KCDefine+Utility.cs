@@ -134,9 +134,9 @@ public static partial class KCDefine {
 	public static readonly Vector3 U_DEF_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
 
 	// 버전
-	public const string U_VERSION_COMMON_APP_INFO = "1.0.0";
-	public const string U_VERSION_COMMON_USER_INFO = "1.0.0";
-	public const string U_VERSION_COMMON_GAME_INFO = "1.0.0";
+	public const string U_VER_COMMON_APP_INFO = "1.0.0";
+	public const string U_VER_COMMON_USER_INFO = "1.0.0";
+	public const string U_VER_COMMON_GAME_INFO = "1.0.0";
 	
 	// 형식
 	public const string U_FMT_LOG_MSG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
@@ -277,15 +277,14 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCROLL_V_CONTENTS = "Contents";
 
 	// 문자열 테이블
-	public const string U_KEY_STRING_T_ID = "ID";
-	public const string U_KEY_STRING_T_STRING = "String";
-	public const string U_KEY_STRING_T_REPLACE = "Replace";
+	public const string U_KEY_STR_T_ID = "ID";
+	public const string U_KEY_STR_T_STR = "Str";
+	public const string U_KEY_STR_T_REPLACE = "Replace";
 
 	// 값 테이블 {
 	public const int U_IDX_VALUE_T_BOOL_LIST = 0;
 	public const int U_IDX_VALUE_T_INT_LIST = 1;
-	public const int U_IDX_VALUE_T_FLOAT_LIST = 2;
-	public const int U_IDX_VALUE_T_STRING_LIST = 3;	
+	public const int U_IDX_VALUE_T_FLT_LIST = 2;	
 
 	public const string U_KEY_VALUE_T_ID = "ID";
 	public const string U_KEY_VALUE_T_VALUE = "Value";
@@ -306,7 +305,7 @@ public static partial class KCDefine {
 
 	// 유니티 메세지 전송자 {
 	public const string U_KEY_UNITY_MS_APP_ID = "AppID";
-	public const string U_KEY_UNITY_MS_VERSION = "Version";
+	public const string U_KEY_UNITY_MS_VER = "Ver";
 	public const string U_KEY_UNITY_MS_TIMEOUT = "Timeout";
 
 	public const string U_KEY_UNITY_MS_BUILD_MODE = "BuildMode";
@@ -335,10 +334,12 @@ public static partial class KCDefine {
 	public const string U_FUNC_N_UNITY_MS_MSG_HANDLER = "handleUnityMsg";
 	// 유니티 메세지 전송자 }
 
-	// 디바이스 메세지 수신자
+	// 디바이스 메세지 수신자 {
+	public const string U_KEY_DEVICE_MR_VER = KCDefine.U_KEY_UNITY_MS_VER;
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
-	public const string U_KEY_DEVICE_MR_VERSION = KCDefine.U_KEY_UNITY_MS_VERSION;
+
 	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
+	// 디바이스 메세지 수신자 }
 	#endregion			// 기본
 
 	#region 런타임 상수
@@ -510,20 +511,20 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_ITEM_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ItemInfoTable";
 	public static readonly string U_TABLE_P_G_SALE_PRODUCT_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
 	
+	public static readonly string U_TABLE_P_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StrTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValueTable_Common";
-	public static readonly string U_TABLE_P_G_COMMON_STRING = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StringTable_Common";
 
+	public static readonly string U_TABLE_P_FMT_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}{KCDefine.B_NAME_FMT_UNDER_SCORE_COMBINE}";
 	public static readonly string U_TABLE_P_FMT_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}{KCDefine.B_NAME_FMT_UNDER_SCORE_COMBINE}";
-	public static readonly string U_TABLE_P_FMT_G_COMMON_STRING = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}{KCDefine.B_NAME_FMT_UNDER_SCORE_COMBINE}";
 
+	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_STR = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_STR, "G_StrTable_Common", "{0}");
 	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_VALUE = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_VALUE, "G_ValueTable_Common", "{0}");
-	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_STRING, "G_StringTable_Common", "{0}");
 
-	public static readonly string U_TABLE_P_G_KOREAN_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.Korean);
-	public static readonly string U_TABLE_P_G_ENGLISH_COMMON_STRING = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STRING, SystemLanguage.English);
+	public static readonly string U_TABLE_P_G_KOREAN_COMMON_STR = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STR, SystemLanguage.Korean);
+	public static readonly string U_TABLE_P_G_ENGLISH_COMMON_STR = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STR, SystemLanguage.English);
 
+	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_STR = KCDefine.U_TABLE_P_G_COMMON_STR;
 	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_VALUE = KCDefine.U_TABLE_P_G_COMMON_VALUE;
-	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_STRING = KCDefine.U_TABLE_P_G_COMMON_STRING;
 
 	public static readonly string U_FONT_P_G_THAI = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_ThaiFont";
 
@@ -858,7 +859,7 @@ public static partial class KCDefine {
 
 	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
 	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
-	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VERSION = "BuildVersionConfig";
+	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VER = "BuildVerConfig";
 
 	public const string U_TRACKING_KEY_DEVICE_ID = KCDefine.U_LOG_KEY_DEVICE_ID;
 	public const string U_TRACKING_KEY_PLATFORM = KCDefine.U_LOG_KEY_PLATFORM;
@@ -963,8 +964,8 @@ public static partial class KCDefine {
 	#region 조건부 런타임 상수
 #if UNITY_IOS
 	// 버전
-	public static readonly System.Version U_MIN_VERSION_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
-	public static readonly System.Version U_MIN_VERSION_LOGIN_WITH_APPLE = new System.Version(13, 0, 0);
+	public static readonly System.Version U_MIN_VER_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
+	public static readonly System.Version U_MIN_VER_LOGIN_WITH_APPLE = new System.Version(13, 0, 0);
 	
 #if HAPTIC_FEEDBACK_ENABLE
 	// 햅틱 피드백 지원 모델
@@ -1021,7 +1022,7 @@ public static partial class KCDefine {
 
 	// 경로
 	public static readonly string U_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_GameConfig";
-	public static readonly string U_DATA_P_G_BUILD_VERSION_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_BuildVersionConfig";
+	public static readonly string U_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_BuildVerConfig";
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE

@@ -65,16 +65,16 @@ public struct STSequenceInfo {
 //! 버전
 [MessagePackObject]
 [System.Serializable]
-public struct STVersion {
-	[Key(0)] public string m_oVersion;
+public struct STVer {
+	[Key(0)] public string m_oVer;
 	[Key(1)] public Dictionary<string, string> m_oExtraInfoList;
 }
 
 //! 빌드 버전
 [System.Serializable]
-public struct STBuildVersion {
-	public int m_nNumber;
-	public string m_oVersion;
+public struct STBuildVer {
+	public int m_nNum;
+	public string m_oVer;
 }
 
 //! 지급 아이템
@@ -100,12 +100,12 @@ public struct STDeviceConfig {
 
 //! 빌드 버전 속성
 [System.Serializable]
-public struct STBuildVersionConfig {
-	public STBuildVersion m_stiOSVersion;
+public struct STBuildVerConfig {
+	public STBuildVer m_stiOSVer;
 
-	public STBuildVersion m_stGoogleVersion;
-	public STBuildVersion m_stOneStoreVersion;
-	public STBuildVersion m_stGalaxyStoreVersion;
+	public STBuildVer m_stGoogleVer;
+	public STBuildVer m_stOneStoreVer;
+	public STBuildVer m_stGalaxyStoreVer;
 }
 
 //! 공용 커스텀 타입 래퍼
@@ -113,13 +113,18 @@ public struct STBuildVersionConfig {
 public struct STCommonCustomTypeWrapper {
 	[Key(0)] public List<bool> m_oBoolList;
 	[Key(1)] public List<int> m_oIntList;
-	[Key(2)] public List<float> m_oFloatList;
-	[Key(3)] public List<string> m_oStringList;
+	[Key(2)] public List<float> m_oFltList;
+	[Key(3)] public List<string> m_oStrList;
 
-	[Key(4)] public Dictionary<string, bool> m_oBoolMapList;
-	[Key(5)] public Dictionary<string, int> m_oIntMapList;
-	[Key(6)] public Dictionary<string, float> m_oFloatMapList;
-	[Key(7)] public Dictionary<string, string> m_oStringMapList;
+	[Key(4)] public Dictionary<int, bool> m_oBoolMapList;
+	[Key(5)] public Dictionary<int, int> m_oIntMapList;
+	[Key(6)] public Dictionary<int, float> m_oFltMapList;
+	[Key(7)] public Dictionary<int, string> m_oStrMapList;
+
+	[Key(8)] public Dictionary<string, bool> m_oBoolStrMapList;
+	[Key(9)] public Dictionary<string, int> m_oIntStrMapList;
+	[Key(10)] public Dictionary<string, float> m_oFltStrMapList;
+	[Key(11)] public Dictionary<string, string> m_oStrStrMapList;
 }
 #endregion			// 기본
 

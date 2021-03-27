@@ -109,8 +109,7 @@ public enum EValueType {
 	NONE = -1,
 	BOOL,
 	INT,
-	FLOAT,
-	STRING,
+	FLT,
 	MAX_VALUE
 }
 
