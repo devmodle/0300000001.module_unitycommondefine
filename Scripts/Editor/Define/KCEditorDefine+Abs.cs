@@ -393,9 +393,9 @@ public static partial class KCEditorDefine {
 		KCEditorDefine.B_DIR_P_PROJ_AUTO_SCENES,
 		KCEditorDefine.B_DIR_P_SCENES,
 
-#if EDITOR_ENABLE
+#if UNITY_EDITOR || EDITOR_ENABLE
 		KCEditorDefine.B_DIR_P_EDITOR_SCENES
-#endif			// #if EDITOR_ENABLE
+#endif			// #if UNITY_EDITOR || EDITOR_ENABLE
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_DATA_P_INFOS = new KeyValuePair<string, string>[] {
