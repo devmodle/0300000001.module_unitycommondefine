@@ -77,9 +77,9 @@ public struct STBuildVer {
 	public string m_oVer;
 }
 
-//! 지급 아이템
+//! 지급 아이템 정보
 [System.Serializable]
-public struct STPostItem {
+public struct STPostItemInfo {
 	public string m_oID;
 	public string m_oValue;
 }
@@ -130,8 +130,8 @@ public struct STCommonCustomTypeWrapper {
 
 #region 조건부 타입
 #if ADS_MODULE_ENABLE
-//! 광고 보상 아이템
-public struct STAdsRewardItem {
+//! 광고 보상 아이템 정보
+public struct STAdsRewardItemInfo {
 	public string m_oID;
 	public string m_oValue;
 }

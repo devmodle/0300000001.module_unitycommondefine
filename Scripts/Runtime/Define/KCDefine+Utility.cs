@@ -491,6 +491,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_TOAST_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ToastPopup";
 
 	public static readonly string U_OBJ_P_G_STORE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_StorePopup";
+	public static readonly string U_OBJ_P_G_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RewardPopup";
 	public static readonly string U_OBJ_P_G_FREE_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FreeRewardPopup";
 	public static readonly string U_OBJ_P_G_DAILY_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_DailyRewardPopup";
 
@@ -874,8 +875,8 @@ public static partial class KCDefine {
 	// 식별자 }
 
 	// 노드
-	public const string U_NODE_FIREBASE_POST_ITEM_LIST = "PostItemList";
 	public const string U_NODE_FIREBASE_USER_INFO_LIST = "UserInfoList";
+	public const string U_NODE_FIREBASE_POST_ITEM_INFO_LIST = "PostItemInfoList";
 	public const string U_NODE_FIREBASE_PURCHASE_INFO_LIST = "PurchaseInfoList";
 
 #if FIREBASE_AUTH_ENABLE
