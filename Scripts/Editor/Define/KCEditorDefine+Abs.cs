@@ -350,6 +350,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_BUILD_OPTS_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES}{KCDefine.U_ASSET_P_G_BUILD_OPTS_TABLE}.asset";
 	public static readonly string B_ASSET_P_PROJ_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES}{KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_DEFINE_SYMBOL_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES}{KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_TABLE}.asset";
+	public static readonly string B_ASSET_P_REWARD_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES}{KCDefine.U_ASSET_P_G_REWARD_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_SALE_ITEM_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES}{KCDefine.U_ASSET_P_G_SALE_ITEM_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_SALE_PRODUCT_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESES}{KCDefine.U_ASSET_P_G_SALE_PRODUCT_INFO_TABLE}.asset";
 
@@ -515,7 +516,8 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Storage/T_CGameInfoStorage.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Storage/CGameInfoStorage.cs"),
 
 		// 테이블
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Table/T_CItemInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CItemInfoTable.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Table/T_CRewardInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CRewardInfoTable.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Table/T_CSaleItemInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CSaleItemInfoTable.cs"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Table/T_CSaleProductInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CSaleProductInfoTable.cs"),
 
 		// 씬 관리자 {
@@ -599,6 +601,15 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_TABLE_P_INFOS = new KeyValuePair<string, string>[] {
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_TABLE_TEMPLATES}T_RewardInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_REWARD_INFO}.json"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_TABLE_TEMPLATES}T_RewardInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_REWARD_INFO}.json"),
+
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_TABLE_TEMPLATES}T_FreeRewardInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FREE_REWARD_INFO}.json"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_TABLE_TEMPLATES}T_FreeRewardInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_FREE_REWARD_INFO}.json"),
+
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_TABLE_TEMPLATES}T_DailyRewardInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_DAILY_REWARD_INFO}.json"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_TABLE_TEMPLATES}T_DailyRewardInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_DAILY_REWARD_INFO}.json"),
+
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_TABLE_TEMPLATES}T_SaleItemInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SALE_ITEM_INFO}.json"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_TABLE_TEMPLATES}T_SaleItemInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_SALE_ITEM_INFO}.json"),
 
