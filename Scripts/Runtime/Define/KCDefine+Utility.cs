@@ -156,10 +156,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
 	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
 
-	public const string U_OBJ_N_SCENE_LEFT_UIS = "LeftUIs";
-	public const string U_OBJ_N_SCENE_RIGHT_UIS = "RightUIs";
 	public const string U_OBJ_N_SCENE_TOP_UIS = "TopUIs";
 	public const string U_OBJ_N_SCENE_BOTTOM_UIS = "BottomUIs";
+	public const string U_OBJ_N_SCENE_LEFT_UIS = "LeftUIs";
+	public const string U_OBJ_N_SCENE_RIGHT_UIS = "RightUIs";
 
 	public const string U_OBJ_N_SCENE_POPUP_UIS = "PopupUIs";
 	public const string U_OBJ_N_SCENE_TOPMOST_UIS = "TopmostUIs";
@@ -169,10 +169,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_OBJS = "Objs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
 
-	public const string U_OBJ_N_SCENE_LEFT_OBJS = "LeftObjs";
-	public const string U_OBJ_N_SCENE_RIGHT_OBJS = "RightObjs";
 	public const string U_OBJ_N_SCENE_TOP_OBJS = "TopObjs";
 	public const string U_OBJ_N_SCENE_BOTTOM_OBJS = "BottomObjs";
+	public const string U_OBJ_N_SCENE_LEFT_OBJS = "LeftObjs";
+	public const string U_OBJ_N_SCENE_RIGHT_OBJS = "RightObjs";
 
 	public const string U_OBJ_N_SCENE_OBJS_CANVAS_TOP = "ObjsCanvasRoot";
 	public const string U_OBJ_N_SCENE_OBJS_CANVAS_BASE = "ObjsCanvas";
