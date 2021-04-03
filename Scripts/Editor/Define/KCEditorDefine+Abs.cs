@@ -278,7 +278,7 @@ public static partial class KCEditorDefine {
 	public static readonly Color B_COLOR_UNITY_LOGO_BG = Color.black;
 
 	// 크기
-	public static readonly Vector2 B_MIN_SIZE_EDITOR_WND = new Vector2(350.0f, 350.0f);
+	public static readonly Vector3 B_MIN_SIZE_EDITOR_WND = new Vector3(350.0f, 350.0f, 0.0f);
 
 	// 경로 {
 	public static readonly string B_SCENE_P_INIT_SCENE = $"{KCDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity";
@@ -726,14 +726,14 @@ public static partial class KCEditorDefine {
 	public static readonly Color B_COLOR_HIERARCHY_OUTLINE = Color.black;
 
 	// FPS 카운터 {
-	public static readonly Vector2 B_POS_FPS_C_STATIC_TEXT = new Vector2(-10.0f, 0.0f);
-	public static readonly Vector2 B_POS_FPS_C_DYNAMIC_TEXT = new Vector2(-10.0f, 140.0f);
+	public static readonly Vector3 B_POS_FPS_C_STATIC_TEXT = new Vector3(-10.0f, 0.0f, 0.0f);
+	public static readonly Vector3 B_POS_FPS_C_DYNAMIC_TEXT = new Vector3(-10.0f, 140.0f, 0.0f);
 
 	public static readonly string B_DIR_P_FILTER_FPS_COUNTER = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
 	// FPS 카운터 }
 
 	// 디버그 콘솔 {
-	public static readonly Vector2 B_SIZE_DEBUG_C_LOG_ITEM = new Vector2(0.0f, 80.0f);
+	public static readonly Vector3 B_SIZE_DEBUG_C_LOG_ITEM = new Vector3(0.0f, 80.0f, 0.0f);
 
 	public static readonly string B_DIR_P_FILTER_DEBUG_CONSOLE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
 	public static readonly string B_DIR_P_FILTER_DEBUG_LOG_ITEM = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";

@@ -215,8 +215,8 @@ public static partial class KCDefine {
 	public static readonly int B_DESKTOP_SCREEN_WIDTH = (int)(Screen.currentResolution.width * 0.95f);
 	public static readonly int B_DESKTOP_SCREEN_HEIGHT = (int)(KCDefine.B_DESKTOP_SCREEN_WIDTH * (KCDefine.B_LANDSCAPE_SCREEN_HEIGHT / (float)KCDefine.B_LANDSCAPE_SCREEN_WIDTH));
 
-	public static readonly Vector2 B_SCREEN_SIZE = new Vector2(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT);
-	public static readonly Vector2 B_WORLD_SCREEN_SIZE = new Vector2(KCDefine.B_WORLD_SCREEN_WIDTH, KCDefine.B_WORLD_SCREEN_HEIGHT);
+	public static readonly Vector3 B_SCREEN_SIZE = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
+	public static readonly Vector3 B_WORLD_SCREEN_SIZE = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH, KCDefine.B_WORLD_SCREEN_HEIGHT, 0.0f);
 
 	public static readonly Bounds B_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_SCREEN_SIZE);
 	public static readonly Bounds B_WORLD_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_WORLD_SCREEN_SIZE);

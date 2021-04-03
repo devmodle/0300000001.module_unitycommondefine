@@ -439,7 +439,7 @@ public static partial class KCDefine {
 	// 레이어 마스크 }
 
 	// 디버그 콘솔
-	public static readonly Vector2 U_POS_DEBUG_C_DEBUG_LOG_POPUP = new Vector2(36.0f, -36.0f);
+	public static readonly Vector3 U_POS_DEBUG_C_DEBUG_LOG_POPUP = new Vector3(36.0f, -36.0f, 0.0f);
 
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
@@ -991,8 +991,8 @@ public static partial class KCDefine {
 
 #if ADS_MODULE_ENABLE
 	// 크기
-	public static readonly Vector2 U_SIZE_PHONE_BANNER_ADS = new Vector2(320.0f, 50.0f);
-	public static readonly Vector2 U_SIZE_TABLET_BANNER_ADS = new Vector2(728.0f, 90.0f);
+	public static readonly Vector3 U_SIZE_PHONE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
+	public static readonly Vector3 U_SIZE_TABLET_BANNER_ADS = new Vector3(728.0f, 90.0f, 0.0f);
 
 #if ADMOB_ENABLE
 	// 크기
