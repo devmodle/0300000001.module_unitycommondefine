@@ -214,6 +214,7 @@ public static partial class KCDefine {
 
 	public const string U_FUNC_N_INIT = "Init";
 	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
+	public const string U_FUNC_N_RESET_LEVEL_MODE = "ResetLevelMode";
 
 	public const string U_INPUT_N_JUMP = "Jump";
 	public const string U_INPUT_N_VERTICAL = "Vertical";
