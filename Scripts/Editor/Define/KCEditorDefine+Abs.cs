@@ -680,7 +680,7 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_UnityModule.Singular.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Code/UnityModule.Singular.asmdef"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_UnityModule.GooglePlayGames.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}GooglePlayGames/UnityModule.GooglePlayGames.asmdef"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_UnityModule.GooglePlayGames.Editor.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}GooglePlayGames/Editor/UnityModule.GooglePlayGames.Editor.asmdef"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_UnityModule.UnityPurchasing.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef")
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_UnityModule.UnityPurchasing.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Scripts/UnityPurchasing/generated/UnityModule.UnityPurchasing.asmdef")
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_ICON_P_INFOS = new KeyValuePair<string, string>[] {
@@ -831,10 +831,10 @@ public static partial class KCEditorDefine {
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
-#if INPUT_SYSTEM_MODULE_ENABLE
+#if INPUT_SYSTEM_ENABLE
 	// 경로
 	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
-#endif			// #if INPUT_SYSTEM_MODULE_ENABLE
+#endif			// #if INPUT_SYSTEM_ENABLE
 
 #if NOTI_MODULE_ENABLE
 	// 경로
