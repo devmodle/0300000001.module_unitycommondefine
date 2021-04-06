@@ -288,6 +288,10 @@ public static partial class KCDefine {
 	public const string B_BUILD_MODE_DEBUG = "Debug";
 	public const string B_BUILD_MODE_RELEASE = "Release";
 
+	// 이벤트
+	public const string B_EVENT_START = "Start";
+	public const string B_EVENT_CANCEL = "Cancel";
+
 	// 명령어 {
 	public const string B_CMD_INIT = "Init";
 
