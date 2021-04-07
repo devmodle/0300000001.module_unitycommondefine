@@ -355,7 +355,7 @@ public static partial class KCDefine {
 	public static readonly Color U_DEF_COLOR_PRESS = new Color(0.75f, 0.75f, 0.75f, 1.0f);
 	public static readonly Color U_DEF_COLOR_SELECT = Color.white;
 	public static readonly Color U_DEF_COLOR_HIGHLIGHT = Color.white;
-	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.35f, 0.35f, 0.35f, 1.0f);
+	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.58f, 0.58f, 0.58f, 1.0f);
 
 	public static readonly Color U_DEF_COLOR_BLIND_UIS = Color.black;
 	public static readonly Color U_DEF_COLOR_SCREEN_FADE_IN = Color.black;
@@ -495,6 +495,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RewardPopup";
 	public static readonly string U_OBJ_P_G_FREE_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FreeRewardPopup";
 	public static readonly string U_OBJ_P_G_DAILY_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_DailyRewardPopup";
+	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 
 	public static readonly string U_OBJ_P_G_DRAG_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_DragResponder";
 	public static readonly string U_OBJ_P_G_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_TouchResponder";
