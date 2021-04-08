@@ -13,8 +13,8 @@ using Unity.Notifications.iOS;
 //! 에디터 기본 상수
 public static partial class KCEditorDefine {
 	#region 기본
-	// 유닛
-	public const int B_UNIT_CUSTOM_TAG_ID = 10;
+	// 단위
+	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
 	// 시간
 	public const float B_DELTA_T_HIERARCHY_UPDATE = 1.0f;

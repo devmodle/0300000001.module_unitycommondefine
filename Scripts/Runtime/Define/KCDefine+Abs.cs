@@ -6,23 +6,23 @@ using UnityEngine;
 //! 기본 상수
 public static partial class KCDefine {
 	#region 기본
-	// 유닛 {
+	// 단위 {
 	public const int B_UNIT_TYPE_TO_KINDS = 1000000;
 	public const int B_UNIT_TYPE_TO_KINDS_TYPE = 10000;
 	public const int B_UNIT_TYPE_TO_SUB_KINDS_TYPE = 100;
 
-	public const int B_UNIT_SEC_TO_MILLISEC = 1000;
-
 	public const int B_UNIT_NORM_VALUE_TO_BYTE = 255;
-	public const float B_UNIT_NORM_VALUE_TO_VALUE = 100.0f;
+	public const int B_UNIT_NORM_VALUE_TO_PERCENT = 100;
+
+	public const int B_UNIT_BITS_PER_BYTE = 8;
+	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
+	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
 	
-	public const int B_UNIT_BYTE_TO_BIT = 8;
-	public const float B_UNIT_BYTE_TO_KILO_BYTE = 1024.0f;
-	public const float B_UNIT_BYTE_TO_MEGA_BYTE = 1024.0f * 1024.0f;
+	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
 
 	public const float B_UNIT_SCALE = 0.01f;
-	public const float B_REF_PIXELS_UNIT = 1.0f;
-	// 유닛 }
+	public const float B_UNIT_REF_PIXELS = 1.0f;
+	// 단위 }
 
 	// 값 {
 	public const int B_VALUE_0_INT = 0;

@@ -37,7 +37,7 @@ public static partial class KCDefine {
 	public const int U_MAX_LENGTH_LOG = 100000000;
 	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
 
-	// 유닛
+	// 단위
 	public const float U_UNIT_TABLET_INCHES = 7.0f;
 	public const float U_UNIT_TABLET_ASPECT = 2.0f;
 
@@ -839,7 +839,7 @@ public static partial class KCDefine {
 
 #if FLURRY_MODULE_ENABLE
 	// 시간
-	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_SEC_TO_MILLISEC;
+	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_MILLI_SECS_PER_SEC;
 
 	// 식별자
 	public const string U_KEY_FLURRY_M_INIT_CALLBACK = "FlurryMInitCallback";
