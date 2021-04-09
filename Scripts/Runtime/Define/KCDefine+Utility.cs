@@ -156,8 +156,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
 	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
 
-	public const string U_OBJ_N_SCENE_TOP_UIS = "TopUIs";
-	public const string U_OBJ_N_SCENE_BOTTOM_UIS = "BottomUIs";
+	public const string U_OBJ_N_SCENE_UP_UIS = "UpUIs";
+	public const string U_OBJ_N_SCENE_DOWN_UIS = "DownUIs";
 	public const string U_OBJ_N_SCENE_LEFT_UIS = "LeftUIs";
 	public const string U_OBJ_N_SCENE_RIGHT_UIS = "RightUIs";
 
@@ -169,8 +169,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_OBJS = "Objs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
 
-	public const string U_OBJ_N_SCENE_TOP_OBJS = "TopObjs";
-	public const string U_OBJ_N_SCENE_BOTTOM_OBJS = "BottomObjs";
+	public const string U_OBJ_N_SCENE_UP_OBJS = "UpObjs";
+	public const string U_OBJ_N_SCENE_DOWN_OBJS = "DownObjs";
 	public const string U_OBJ_N_SCENE_LEFT_OBJS = "LeftObjs";
 	public const string U_OBJ_N_SCENE_RIGHT_OBJS = "RightObjs";
 
