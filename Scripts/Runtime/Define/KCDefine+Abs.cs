@@ -7,7 +7,7 @@ using UnityEngine;
 public static partial class KCDefine {
 	#region 기본
 	// 단위 {
-	public const int B_UNIT_TYPE_TO_KINDS = 1000000;
+	public const int B_UNIT_TYPE_TO_KINDS = 10000000;
 	public const int B_UNIT_TYPE_TO_KINDS_TYPE = 10000;
 	public const int B_UNIT_TYPE_TO_SUB_KINDS_TYPE = 100;
 
