@@ -818,28 +818,6 @@ public static partial class KCDefine {
 #endif			// #if APP_LOVIN_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
-#if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
-	// 이름
-	public const string U_LOG_N_APP_LAUNCH = "AppLaunch";
-
-	// 식별자 {
-	public const string U_LOG_KEY_USER_ID = "UserID";
-	public const string U_LOG_KEY_COUNTRY_CODE = "CountryCode";
-
-	public const string U_LOG_KEY_DEVICE_ID = "DeviceID";
-	public const string U_LOG_KEY_PLATFORM = "Platform";
-	public const string U_LOG_KEY_USER_TYPE = "UserType";
-	public const string U_LOG_KEY_LOG_TIME = "LogTime";
-	public const string U_LOG_KEY_INSTALL_TIME = "InstallTime";
-
-	public const string U_LOG_KEY_PARAMS_A = "ParamsA";
-	public const string U_LOG_KEY_PARAMS_B = "ParamsB";
-	public const string U_LOG_KEY_PARAMS_C = "ParamsC";
-	public const string U_LOG_KEY_PARAMS_D = "ParamsD";
-	public const string U_LOG_KEY_PARAMS_E = "ParamsE";
-	public const string U_LOG_KEY_PARAMS_F = "ParamsF";
-	// 식별자 }
-
 #if FLURRY_MODULE_ENABLE
 	// 시간
 	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_MILLI_SECS_PER_SEC;
@@ -863,7 +841,7 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE
 	// 이름
-	public const string U_TRACKING_N_APP_LAUNCH = KCDefine.U_LOG_N_APP_LAUNCH;
+	public const string U_TRACKING_N_APP_LAUNCH = KCDefine.L_LOG_N_APP_LAUNCH;
 	
 	// 식별자 {
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
@@ -872,16 +850,16 @@ public static partial class KCDefine {
 	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
 	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VER = "BuildVerConfig";
 
-	public const string U_TRACKING_KEY_DEVICE_ID = KCDefine.U_LOG_KEY_DEVICE_ID;
-	public const string U_TRACKING_KEY_PLATFORM = KCDefine.U_LOG_KEY_PLATFORM;
-	public const string U_TRACKING_KEY_USER_TYPE = KCDefine.U_LOG_KEY_USER_TYPE;
+	public const string U_TRACKING_KEY_DEVICE_ID = KCDefine.L_LOG_KEY_DEVICE_ID;
+	public const string U_TRACKING_KEY_PLATFORM = KCDefine.L_LOG_KEY_PLATFORM;
+	public const string U_TRACKING_KEY_USER_TYPE = KCDefine.L_LOG_KEY_USER_TYPE;
 
-	public const string U_TRACKING_KEY_PARAMS_A = KCDefine.U_LOG_KEY_PARAMS_A;
-	public const string U_TRACKING_KEY_PARAMS_B = KCDefine.U_LOG_KEY_PARAMS_B;
-	public const string U_TRACKING_KEY_PARAMS_C = KCDefine.U_LOG_KEY_PARAMS_C;
-	public const string U_TRACKING_KEY_PARAMS_D = KCDefine.U_LOG_KEY_PARAMS_D;
-	public const string U_TRACKING_KEY_PARAMS_E = KCDefine.U_LOG_KEY_PARAMS_E;
-	public const string U_TRACKING_KEY_PARAMS_F = KCDefine.U_LOG_KEY_PARAMS_F;
+	public const string U_TRACKING_KEY_PARAMS_A = KCDefine.L_LOG_KEY_PARAMS_A;
+	public const string U_TRACKING_KEY_PARAMS_B = KCDefine.L_LOG_KEY_PARAMS_B;
+	public const string U_TRACKING_KEY_PARAMS_C = KCDefine.L_LOG_KEY_PARAMS_C;
+	public const string U_TRACKING_KEY_PARAMS_D = KCDefine.L_LOG_KEY_PARAMS_D;
+	public const string U_TRACKING_KEY_PARAMS_E = KCDefine.L_LOG_KEY_PARAMS_E;
+	public const string U_TRACKING_KEY_PARAMS_F = KCDefine.L_LOG_KEY_PARAMS_F;
 	// 식별자 }
 
 	// 노드
@@ -921,7 +899,6 @@ public static partial class KCDefine {
 	// 식별자
 	public const string U_KEY_SINGULAR_M_INIT_CALLBACK = "SingularMInitCallback";
 #endif			// #if SINGULAR_MODULE_ENABLE
-#endif			// #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 
 #if GAME_CENTER_MODULE_ENABLE
 	// 식별자
