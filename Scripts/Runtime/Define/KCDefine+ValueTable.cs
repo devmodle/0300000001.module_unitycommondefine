@@ -30,7 +30,6 @@ public static partial class KCDefine {
 	// 경고 팝업 간격 }
 
 	// 게임 정보 저장소
-	public const string VT_KEY_DEF_DELAY_FULLSCREEN_ADS = "DEF_DELAY_FULLSCREEN_ADS";
-	public const string VT_KEY_DEF_DELAY_RESUME_ADS = "DEF_DELAY_RESUME_ADS";
+	public const string VT_KEY_DEF_DELAY_ADS = "DEF_DELAY_FULLSCREEN_ADS";
 	#endregion			// 기본
 }
