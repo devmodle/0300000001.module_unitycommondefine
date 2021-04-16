@@ -20,6 +20,10 @@ public static partial class KCDefine {
 	public const string ST_KEY_PURCHASE_P_SUCCESS_MSG = "PURCHASE_P_SUCCESS_MSG";
 	public const string ST_KEY_PURCHASE_P_FAIL_MSG = "PURCHASE_P_FAIL_MSG";
 
+	// 복원 팝업
+	public const string ST_KEY_RESTORE_P_SUCCESS_MSG = "RESTORE_P_SUCCESS_MSG";
+	public const string ST_KEY_RESTORE_P_FAIL_MSG = "RESTORE_P_FAIL_MSG";
+
 	// 시작 씬 관리자
 	public const string ST_KEY_START_SM_DOT_TEXT = "START_SM_DOT_TEXT";
 	public const string ST_KEY_START_SM_LOADING_TEXT = "START_SM_LOADING_TEXT";
