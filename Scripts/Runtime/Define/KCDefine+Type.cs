@@ -81,7 +81,7 @@ public struct STBuildVer {
 [System.Serializable]
 public struct STPostItemInfo {
 	public string m_oID;
-	public string m_oValue;
+	public string m_oVal;
 }
 
 //! 디바이스 정보
@@ -133,7 +133,7 @@ public struct STCommonCustomTypeWrapper {
 //! 광고 보상 아이템 정보
 public struct STAdsRewardItemInfo {
 	public string m_oID;
-	public string m_oValue;
+	public string m_oVal;
 }
 #endif			// #if ADS_MODULE_ENABLE
 
