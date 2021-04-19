@@ -11,8 +11,8 @@ public static partial class KCDefine {
 	public const int B_UNIT_TYPE_TO_KINDS_TYPE = 10000;
 	public const int B_UNIT_TYPE_TO_SUB_KINDS_TYPE = 100;
 
-	public const int B_UNIT_NORM_VALUE_TO_BYTE = 255;
-	public const int B_UNIT_NORM_VALUE_TO_PERCENT = 100;
+	public const int B_UNIT_NORM_VAL_TO_BYTE = 255;
+	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;
 
 	public const int B_UNIT_BITS_PER_BYTE = 8;
 	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
@@ -25,49 +25,49 @@ public static partial class KCDefine {
 	// 단위 }
 
 	// 값 {
-	public const int B_VALUE_0_INT = 0;
-	public const int B_VALUE_1_INT = 1;
-	public const int B_VALUE_2_INT = 2;
-	public const int B_VALUE_3_INT = 3;
-	public const int B_VALUE_4_INT = 4;
-	public const int B_VALUE_5_INT = 5;
-	public const int B_VALUE_6_INT = 6;
-	public const int B_VALUE_7_INT = 7;
-	public const int B_VALUE_8_INT = 8;
-	public const int B_VALUE_9_INT = 9;
+	public const int B_VAL_0_INT = 0;
+	public const int B_VAL_1_INT = 1;
+	public const int B_VAL_2_INT = 2;
+	public const int B_VAL_3_INT = 3;
+	public const int B_VAL_4_INT = 4;
+	public const int B_VAL_5_INT = 5;
+	public const int B_VAL_6_INT = 6;
+	public const int B_VAL_7_INT = 7;
+	public const int B_VAL_8_INT = 8;
+	public const int B_VAL_9_INT = 9;
 
-	public const long B_VALUE_0_LONG = 0L;
-	public const long B_VALUE_1_LONG = 1L;
-	public const long B_VALUE_2_LONG = 2L;
-	public const long B_VALUE_3_LONG = 3L;
-	public const long B_VALUE_4_LONG = 4L;
-	public const long B_VALUE_5_LONG = 5L;
-	public const long B_VALUE_6_LONG = 6L;
-	public const long B_VALUE_7_LONG = 7L;
-	public const long B_VALUE_8_LONG = 8L;
-	public const long B_VALUE_9_LONG = 9L;
+	public const long B_VAL_0_LONG = 0L;
+	public const long B_VAL_1_LONG = 1L;
+	public const long B_VAL_2_LONG = 2L;
+	public const long B_VAL_3_LONG = 3L;
+	public const long B_VAL_4_LONG = 4L;
+	public const long B_VAL_5_LONG = 5L;
+	public const long B_VAL_6_LONG = 6L;
+	public const long B_VAL_7_LONG = 7L;
+	public const long B_VAL_8_LONG = 8L;
+	public const long B_VAL_9_LONG = 9L;
 	
-	public const float B_VALUE_0_FLT = 0.0f;
-	public const float B_VALUE_1_FLT = 1.0f;
-	public const float B_VALUE_2_FLT = 2.0f;
-	public const float B_VALUE_3_FLT = 3.0f;
-	public const float B_VALUE_4_FLT = 4.0f;
-	public const float B_VALUE_5_FLT = 5.0f;
-	public const float B_VALUE_6_FLT = 6.0f;
-	public const float B_VALUE_7_FLT = 7.0f;
-	public const float B_VALUE_8_FLT = 8.0f;
-	public const float B_VALUE_9_FLT = 9.0f;
+	public const float B_VAL_0_FLT = 0.0f;
+	public const float B_VAL_1_FLT = 1.0f;
+	public const float B_VAL_2_FLT = 2.0f;
+	public const float B_VAL_3_FLT = 3.0f;
+	public const float B_VAL_4_FLT = 4.0f;
+	public const float B_VAL_5_FLT = 5.0f;
+	public const float B_VAL_6_FLT = 6.0f;
+	public const float B_VAL_7_FLT = 7.0f;
+	public const float B_VAL_8_FLT = 8.0f;
+	public const float B_VAL_9_FLT = 9.0f;
 
-	public const double B_VALUE_0_DBL = 0.0;
-	public const double B_VALUE_1_DBL = 1.0;
-	public const double B_VALUE_2_DBL = 2.0;
-	public const double B_VALUE_3_DBL = 3.0;
-	public const double B_VALUE_4_DBL = 4.0;
-	public const double B_VALUE_5_DBL = 5.0;
-	public const double B_VALUE_6_DBL = 6.0;
-	public const double B_VALUE_7_DBL = 7.0;
-	public const double B_VALUE_8_DBL = 8.0;
-	public const double B_VALUE_9_DBL = 9.0;
+	public const double B_VAL_0_DBL = 0.0;
+	public const double B_VAL_1_DBL = 1.0;
+	public const double B_VAL_2_DBL = 2.0;
+	public const double B_VAL_3_DBL = 3.0;
+	public const double B_VAL_4_DBL = 4.0;
+	public const double B_VAL_5_DBL = 5.0;
+	public const double B_VAL_6_DBL = 6.0;
+	public const double B_VAL_7_DBL = 7.0;
+	public const double B_VAL_8_DBL = 8.0;
+	public const double B_VAL_9_DBL = 9.0;
 	// 값 }
 
 	// 회전 {

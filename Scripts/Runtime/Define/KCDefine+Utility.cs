@@ -283,14 +283,14 @@ public static partial class KCDefine {
 	public const string U_KEY_STR_T_REPLACE = "Replace";
 
 	// 값 테이블 {
-	public const int U_IDX_VALUE_T_BOOL_LIST = 0;
-	public const int U_IDX_VALUE_T_INT_LIST = 1;
-	public const int U_IDX_VALUE_T_FLT_LIST = 2;	
+	public const int U_IDX_VAL_T_BOOL_LIST = 0;
+	public const int U_IDX_VAL_T_INT_LIST = 1;
+	public const int U_IDX_VAL_T_FLT_LIST = 2;	
 
-	public const string U_KEY_VALUE_T_ID = "ID";
-	public const string U_KEY_VALUE_T_VALUE = "Value";
-	public const string U_KEY_VALUE_T_VALUE_TYPE = "ValueType";
-	public const string U_KEY_VALUE_T_REPLACE = "Replace";
+	public const string U_KEY_VAL_T_ID = "ID";
+	public const string U_KEY_VAL_T_VAL = "Val";
+	public const string U_KEY_VAL_T_VAL_TYPE = "ValType";
+	public const string U_KEY_VAL_T_REPLACE = "Replace";
 	// 값 테이블 }
 
 	// 경고 팝업 {
@@ -522,20 +522,20 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_SALE_ITEM_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleItemInfoTable";
 	public static readonly string U_TABLE_P_G_SALE_PRODUCT_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
 	
+	public static readonly string U_TABLE_P_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StrTable_Common";
-	public static readonly string U_TABLE_P_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValueTable_Common";
 
+	public static readonly string U_TABLE_P_FMT_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}{KCDefine.B_NAME_FMT_UNDER_SCORE_COMBINE}";
 	public static readonly string U_TABLE_P_FMT_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}{KCDefine.B_NAME_FMT_UNDER_SCORE_COMBINE}";
-	public static readonly string U_TABLE_P_FMT_G_COMMON_VALUE = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}{KCDefine.B_NAME_FMT_UNDER_SCORE_COMBINE}";
 
+	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_VAL = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_VAL, "G_ValTable_Common", "{0}");
 	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_STR = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_STR, "G_StrTable_Common", "{0}");
-	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_VALUE = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_VALUE, "G_ValueTable_Common", "{0}");
 
 	public static readonly string U_TABLE_P_G_KOREAN_COMMON_STR = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STR, SystemLanguage.Korean);
 	public static readonly string U_TABLE_P_G_ENGLISH_COMMON_STR = string.Format(KCDefine.U_TABLE_P_FMT_G_LOCALIZE_COMMON_STR, SystemLanguage.English);
 
+	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_VAL = KCDefine.U_TABLE_P_G_COMMON_VAL;
 	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_STR = KCDefine.U_TABLE_P_G_COMMON_STR;
-	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_VALUE = KCDefine.U_TABLE_P_G_COMMON_VALUE;
 
 	public static readonly string U_FONT_P_G_THAI = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_ThaiFont";
 
