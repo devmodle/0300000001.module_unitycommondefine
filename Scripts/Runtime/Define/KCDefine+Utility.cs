@@ -144,6 +144,7 @@ public static partial class KCDefine {
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
 
+	public const string U_KEY_REPLACE = "Replace";
 	public const string U_KEY_DEVICE_CMD = "Cmd";
 	public const string U_KEY_DEVICE_MSG = "Msg";
 	// 식별자 }
@@ -280,7 +281,6 @@ public static partial class KCDefine {
 	// 문자열 테이블
 	public const string U_KEY_STR_T_ID = "ID";
 	public const string U_KEY_STR_T_STR = "Str";
-	public const string U_KEY_STR_T_REPLACE = "Replace";
 
 	// 값 테이블 {
 	public const int U_IDX_VAL_T_BOOL_LIST = 0;
@@ -290,7 +290,6 @@ public static partial class KCDefine {
 	public const string U_KEY_VAL_T_ID = "ID";
 	public const string U_KEY_VAL_T_VAL = "Val";
 	public const string U_KEY_VAL_T_VAL_TYPE = "ValType";
-	public const string U_KEY_VAL_T_REPLACE = "Replace";
 	// 값 테이블 }
 
 	// 경고 팝업 {
@@ -515,12 +514,9 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_01";
 	public static readonly string U_ASSET_P_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_UTILITY}U_LightingSettings";
 
-	public static readonly string U_TABLE_P_G_CLEAR_REWARD_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ClearRewardInfoTable";
-	public static readonly string U_TABLE_P_G_FREE_REWARD_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_FreeRewardInfoTable";
-	public static readonly string U_TABLE_P_G_DAILY_REWARD_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_DailyRewardInfoTable";
-
 	public static readonly string U_TABLE_P_G_SALE_ITEM_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleItemInfoTable";
 	public static readonly string U_TABLE_P_G_SALE_PRODUCT_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
+	public static readonly string U_TABLE_P_G_REWARD_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_RewardInfoTable";
 	
 	public static readonly string U_TABLE_P_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StrTable_Common";
