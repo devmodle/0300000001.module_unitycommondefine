@@ -739,6 +739,11 @@ public static partial class KCEditorDefine {
 	};
 	// 경로 }
 
+	// 옵션
+	public static readonly string[] B_COMPILER_OPTS_ADDITIONALS = new string[] {
+		"-FIRDebugEnabled"
+	};
+
 	// 계층 뷰
 	public static readonly Color B_COLOR_HIERARCHY_TEXT = new Color(1.0f, 0.27f, 0.0f, 1.0f);
 	public static readonly Color B_COLOR_HIERARCHY_OUTLINE = Color.black;
