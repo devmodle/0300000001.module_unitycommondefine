@@ -5,6 +5,10 @@ using UnityEngine;
 //! 값 테이블 상수
 public static partial class KCDefine {
 	#region 기본
+	// 광고
+	public const string VT_KEY_DELAY_ADS = "DELAY_ADS";
+	public const string VT_KEY_DELTA_TIME_ADS = "DELTA_TIME_ADS";
+	
 	// 디바이스 {
 	public const string VT_KEY_QUALITY_LEVEL = "QUALITY_LEVEL";
 	public const string VT_KEY_MULTI_TOUCH_ENABLE = "MULTI_TOUCH_ENABLE";
@@ -28,8 +32,5 @@ public static partial class KCDefine {
 	public const string VT_KEY_OFFSET_V_ALERT_P_BG = "OFFSET_V_ALERT_P_BG";
 	public const string VT_KEY_OFFSET_H_ALERT_P_BG = "OFFSET_H_ALERT_P_BG";
 	// 경고 팝업 간격 }
-
-	// 게임 정보 저장소
-	public const string VT_KEY_DEF_DELAY_ADS = "DEF_DELAY_ADS";
 	#endregion			// 기본
 }
