@@ -272,7 +272,6 @@ public static partial class KCDefine {
 
 	// 디버그 콘솔
 	public const string U_OBJ_N_DEBUG_C_LOG_WND = "DebugLogWindow";
-	public const string U_OBJ_N_DEBUG_C_LOG_POPUP = "DebugLogPopup";
 
 	// 스크롤 뷰
 	public const string U_OBJ_N_SCROLL_V_VIEWPORT = "Viewport";
