@@ -436,10 +436,7 @@ public static partial class KCDefine {
 #endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 	};
 	// 레이어 마스크 }
-
-	// 디버그 콘솔
-	public static readonly Vector3 U_POS_DEBUG_C_DEBUG_LOG_POPUP = new Vector3(36.0f, -36.0f, 0.0f);
-
+	
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
 	public static readonly object U_LOCK_OBJ_SCHEDULE_M_UPDATE = new object();
