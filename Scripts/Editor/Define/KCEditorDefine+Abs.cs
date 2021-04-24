@@ -170,7 +170,7 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_BUILD_FILE_EXTENSION = "BuildFileExtension";
 
 	public const string B_BUILD_PARAMS_TOKEN_JENKINS = " ";
-	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/00001.Common/job/{0}/job/01.Pipelines/job";
+	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/0000001.Common/job/{0}/job/01.Pipelines/job";
 
 	public const string B_BUILD_DATA_FMT_JENKINS = "--data {0}={1}";
 	public const string B_BUILD_CMD_FMT_JENKINS = "curl -X POST {0} --user {1}:{2} --data token={3}";
