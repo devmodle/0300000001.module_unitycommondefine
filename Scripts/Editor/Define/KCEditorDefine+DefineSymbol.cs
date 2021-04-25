@@ -206,6 +206,12 @@ public static partial class KCEditorDefine {
 	// 테스트 }
 
 	// 기타 {
+	public const string DS_DEFINE_S_FREE_MISSION_ENABLE = "FREE_MISSION_ENABLE";
+	public const string DS_DEFINE_S_DAILY_MISSION_ENABLE = "DAILY_MISSION_ENABLE";
+	
+	public const string DS_DEFINE_S_FREE_REWARD_ENABLE = "FREE_REWARD_ENABLE";
+	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
+
 	public const string DS_DEFINE_S_STUDY_ENABLE = "STUDY_ENABLE";
 	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
 	
