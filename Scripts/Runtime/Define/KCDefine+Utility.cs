@@ -338,6 +338,7 @@ public static partial class KCDefine {
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
 
 	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
+	public const string U_FUNC_N_DEVICE_MR_MSG_HANDLER = "HandleDeviceMsg";
 	// 디바이스 메세지 수신자 }
 	#endregion			// 기본
 
