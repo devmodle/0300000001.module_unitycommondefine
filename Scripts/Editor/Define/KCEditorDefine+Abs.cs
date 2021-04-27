@@ -122,7 +122,7 @@ public static partial class KCEditorDefine {
 	public const string B_BUILD_P_MAC = "Builds/Standalone/Mac/MacBuildOutput.app";
 
 	// 윈도우즈
-	public const string B_BUILD_P_WNDS = "Builds/Standalone/Windows/WindowsBuildOutput.exe";
+	public const string B_BUILD_P_WNDS = "Builds/Standalone/Wnds/WndsBuildOutput.exe";
 
 	// iOS {
 	public const string B_TEXT_IOS_YES = "YES";
