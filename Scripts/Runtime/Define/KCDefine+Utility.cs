@@ -662,26 +662,26 @@ public static partial class KCDefine {
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
-#if UNITY_IOS
-	// 식별자
-	public const string U_KEY_UNITY_MS_LOGIN_WITH_APPLE_CALLBACK = "UnityMSLoginWithAppleCallback";
-	public const string U_KEY_UNITY_MS_GET_CREDENTIAL_STATE_CALLBACK = "UnityMSGetCredentialStateCallback";
-
-	// 이름 {
-	public const string U_OBJ_N_LOGIN_WITH_APPLE = "LoginWithApple";
-
-#if HAPTIC_FEEDBACK_ENABLE
-	public const string U_MODEL_N_IPHONE = "iPhone";
-	public const string U_MODEL_N_IPAD = "iPad";
-#endif			// #if HAPTIC_FEEDBACK_ENABLE
-	// 이름 }
-#endif			// #if UNITY_IOS
-
 #if UNITY_ANDROID
 	// 시간
 	public const float U_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
 	public const float U_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.5f;
 #endif			// #if UNITY_ANDROID
+
+#if APPLE_LOGIN_ENABLE
+	// 식별자
+	public const string U_KEY_UNITY_MS_LOGIN_WITH_APPLE_CALLBACK = "UnityMSLoginWithAppleCallback";
+	public const string U_KEY_UNITY_MS_GET_CREDENTIAL_STATE_CALLBACK = "UnityMSGetCredentialStateCallback";
+
+	// 이름
+	public const string U_OBJ_N_LOGIN_WITH_APPLE = "LoginWithApple";
+#endif			// #if APPLE_LOGIN_ENABLE
+
+#if HAPTIC_FEEDBACK_ENABLE
+	// 이름
+	public const string U_MODEL_N_IPHONE = "iPhone";
+	public const string U_MODEL_N_IPAD = "iPad";
+#endif			// #if HAPTIC_FEEDBACK_ENABLE
 
 #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 	// 시간
