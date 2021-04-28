@@ -198,6 +198,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_POPUP_CLOSE_BTN = "CloseBtn";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
+	public const string U_OBJ_N_EMPTY = "Empty";
 	public const string U_OBJ_N_ALERT_POPUP = "AlertPopup";
 	public const string U_OBJ_N_TOAST_POPUP = "ToastPopup";
 
@@ -868,6 +869,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FIREBASE_M_LOGIN_CALLBACK = "FirebaseMLoginCallback";	
 
 #if UNITY_IOS
+	public const string U_PROVIDER_ID_FIREBASE_M_APPLE_LOGIN = "apple.com";
 	public const string U_KEY_FIREBASE_M_GAME_CENTER_CALLBACK = "FirebaseMGameCenterCallback";
 #endif			// #if UNITY_IOS
 	// 식별자 }
