@@ -303,6 +303,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_ALERT_P_CANCEL_BTN = "CancelBtn";
 	// 경고 팝업 }
 
+	// 서비스 관리자
+	public const string U_KEY_SERVICES_M_INIT_CALLBACK = "ServicesMInitCallback";
+
 	// 유니티 메세지 전송자 {
 	public const string U_KEY_UNITY_MS_APP_ID = "AppID";
 	public const string U_KEY_UNITY_MS_VER = "Ver";
