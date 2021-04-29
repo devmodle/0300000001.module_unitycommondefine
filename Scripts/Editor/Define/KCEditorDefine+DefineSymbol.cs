@@ -54,12 +54,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_TENJIN_ANALYTICS_ENABLE = "TENJIN_ANALYTICS_ENABLE";
 	// 텐진 }
 
-	// 페이스 북 {
+	// 페이스 북
 	public const string DS_DEFINE_S_FACEBOOK_ENABLE = "FACEBOOK_ENABLE";
 	public const string DS_DEFINE_S_FACEBOOK_MODULE_ENABLE = "FACEBOOK_MODULE_ENABLE";
-
-	public const string DS_DEFINE_S_FACEBOOK_ANALYTICS_ENABLE = "FACEBOOK_ANALYTICS_ENABLE";
-	// 페이스 북 }
 
 	// 파이어 베이스 {
 	public const string DS_DEFINE_S_FIREBASE_ENABLE = "FIREBASE_ENABLE";
