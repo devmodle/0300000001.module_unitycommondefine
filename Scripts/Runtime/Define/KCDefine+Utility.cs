@@ -189,10 +189,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_TOPMOST_UIS = "ScreenTopmostUIs";
 	public const string U_OBJ_N_SCREEN_ABS_UIS = "ScreenAbsUIs";
 
+	public const string U_OBJ_N_UP_BLIND_IMG = "UpBlindImg";
+	public const string U_OBJ_N_DOWN_BLIND_IMG = "DownBlindImg";
 	public const string U_OBJ_N_LEFT_BLIND_IMG = "LeftBlindImg";
 	public const string U_OBJ_N_RIGHT_BLIND_IMG = "RightBlindImg";
-	public const string U_OBJ_N_TOP_BLIND_IMG = "TopBlindImg";
-	public const string U_OBJ_N_BOTTOM_BLIND_IMG = "BottomBlindImg";
 
 	public const string U_OBJ_N_POPUP_CONTENTS = "Contents";
 	public const string U_OBJ_N_POPUP_CLOSE_BTN = "CloseBtn";

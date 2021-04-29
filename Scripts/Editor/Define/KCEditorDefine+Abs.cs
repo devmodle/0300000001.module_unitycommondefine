@@ -819,11 +819,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/baseProjectTemplate.gradle";
 	public static readonly string B_ORIGIN_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/baseProjectTemplate.gradle";
 	public static readonly string B_DEST_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}baseProjectTemplate.gradle";
-
-	public static readonly string B_SRC_PROGUARD_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/proguard-user.txt";
-	public static readonly string B_ORIGIN_SRC_PROGUARD_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/proguard-user.txt";
-	public static readonly string B_DEST_PROGUARD_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}proguard-user.txt";
-
+	
 	public static readonly string B_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/gradleTemplate.properties";
 	public static readonly string B_ORIGIN_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/Options/Android/gradleTemplate.properties";
 	public static readonly string B_DEST_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}gradleTemplate.properties";

@@ -260,8 +260,8 @@ public enum EAdsType {
 //! 배너 광고 위치
 public enum EBannerAdsPos {
 	NONE = -1,
-	TOP,
-	BOTTOM,
+	UP,
+	DOWN,
 	MAX_VAL
 }
 #endif			// #if ADS_MODULE_ENABLE

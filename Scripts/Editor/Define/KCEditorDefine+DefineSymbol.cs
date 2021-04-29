@@ -12,7 +12,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_IL2CPP_ENABLE = "ENABLE_IL2CPP";
 	public const string DS_DEFINE_S_EDITOR_ENABLE = "EDITOR_ENABLE";
 	public const string DS_DEFINE_S_MODE_2D_ENABLE = "MODE_2D_ENABLE";
-	public const string DS_DEFINE_S_MODE_CENTER_ENABLE = "MODE_CENTER_ENABLE";
 	public const string DS_DEFINE_S_MODE_PORTRAIT_ENABLE = "MODE_PORTRAIT_ENABLE";
 	public const string DS_DEFINE_S_SECURITY_ENABLE = "SECURITY_ENABLE";
 	public const string DS_DEFINE_S_PHYSICS_RAYCASTER_ENABLE = "PHYSICS_RAYCASTER_ENABLE";
