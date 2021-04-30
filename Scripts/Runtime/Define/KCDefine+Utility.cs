@@ -673,11 +673,11 @@ public static partial class KCDefine {
 
 #if APPLE_LOGIN_ENABLE
 	// 식별자
-	public const string U_KEY_UNITY_MS_LOGIN_WITH_APPLE_CALLBACK = "UnityMSLoginWithAppleCallback";
-	public const string U_KEY_UNITY_MS_GET_CREDENTIAL_STATE_CALLBACK = "UnityMSGetCredentialStateCallback";
+	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
+	public const string U_KEY_SERVICES_M_LOGIN_WITH_APPLE_CALLBACK = "ServicesMLoginWithAppleCallback";
 
 	// 이름
-	public const string U_OBJ_N_LOGIN_WITH_APPLE = "LoginWithApple";
+	public const string U_OBJ_N_SERVICES_M_LOGIN_WITH_APPLE = "LoginWithApple";
 #endif			// #if APPLE_LOGIN_ENABLE
 
 #if HAPTIC_FEEDBACK_ENABLE
