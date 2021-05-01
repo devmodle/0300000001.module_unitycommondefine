@@ -110,6 +110,7 @@ public enum EValueType {
 	BOOL,
 	INT,
 	FLT,
+	STR,
 	MAX_VAL
 }
 

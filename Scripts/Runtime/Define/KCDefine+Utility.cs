@@ -283,9 +283,10 @@ public static partial class KCDefine {
 	public const string U_KEY_STR_T_STR = "Str";
 
 	// 값 테이블 {
-	public const int U_IDX_VAL_T_BOOL_LIST = 0;
-	public const int U_IDX_VAL_T_INT_LIST = 1;
-	public const int U_IDX_VAL_T_FLT_LIST = 2;	
+	public const int U_IDX_VAL_T_BOOL_VALS = 0;
+	public const int U_IDX_VAL_T_INT_VALS = 1;
+	public const int U_IDX_VAL_T_FLT_VALS = 2;
+	public const int U_IDX_VAL_T_STR_VALS = 3;
 
 	public const string U_KEY_VAL_T_ID = "ID";
 	public const string U_KEY_VAL_T_VAL = "Val";
