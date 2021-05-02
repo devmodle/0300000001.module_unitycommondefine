@@ -120,8 +120,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_CINEMACHINE_ENABLE = "CINEMACHINE_ENABLE";
 	public const string DS_DEFINE_S_PIXELS_PERFECT_ENABLE = "PIXELS_PERFECT_ENABLE";
 	public const string DS_DEFINE_S_DYNAMIC_BATCHING_ENABLE = "DYNAMIC_BATCHING_ENABLE";
-
-	public const string DS_DEFINE_S_DIRECT_3D_12_ENABLE = "DIRECT_3D_12_ENABLE";
 	// 렌더링 }
 
 	// 태그 관리자 {

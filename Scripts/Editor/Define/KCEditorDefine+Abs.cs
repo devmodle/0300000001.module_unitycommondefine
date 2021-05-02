@@ -774,11 +774,7 @@ public static partial class KCEditorDefine {
 
 	// 윈도우즈
 	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_WNDS = new GraphicsDeviceType[] {
-#if DIRECT_3D_12_ENABLE
-		GraphicsDeviceType.Direct3D12, 
-#endif			// #if DIRECT_3D_12_ENABLE
-		
-		GraphicsDeviceType.Direct3D11
+		GraphicsDeviceType.Direct3D12, GraphicsDeviceType.Direct3D11
 	};
 
 	// iOS {

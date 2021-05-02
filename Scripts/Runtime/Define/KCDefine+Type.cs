@@ -59,13 +59,6 @@ public struct STPostItemInfo {
 	public string m_oItemKinds;
 }
 
-//! 결제 정보
-[System.Serializable]
-public struct STPurchaseInfo {
-	public string m_oProductID;
-	public string m_oPurchaseReceipt;
-}
-
 //! 디바이스 정보
 [System.Serializable]
 public struct STDeviceInfo {
