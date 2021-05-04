@@ -209,6 +209,7 @@ public static partial class KCDefine {
 	public const string B_STR_9_FLT = "9.0";
 
 	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STR;
+	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_SUPPORT_MSG = KCDefine.B_UNKNOWN_STR;
 
@@ -224,7 +225,7 @@ public static partial class KCDefine {
 
 	// 국가 코드
 	public const string B_KOREA_COUNTRY_CODE = "KR";
-	public const string B_UNKNOWN_COUNTRY_CODE = "Unknown";
+	public const string B_UNKNOWN_COUNTRY_CODE = KCDefine.B_UNKNOWN_STR;
 
 	// 이름 {
 	public const string B_PLATFORM_N_MAC = "Mac";
@@ -270,6 +271,8 @@ public static partial class KCDefine {
 	// 식별자
 	public const string B_KEY_JSON_ROOT_DATA = "Root";
 	public const string B_KEY_JSON_COMMON_DATA = "Common";
+	public const string B_KEY_JSON_USER_INFO_DATA = "UserInfo";
+	public const string B_KEY_JSON_COMMON_USER_INFO_DATA = "CommonUserInfo";
 
 	// 토큰 {
 	public const string B_TOKEN_VER = ".";
