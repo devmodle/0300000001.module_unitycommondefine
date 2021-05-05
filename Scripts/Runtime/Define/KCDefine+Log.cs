@@ -5,11 +5,6 @@ using UnityEngine;
 //! 로그 상수
 public static partial class KCDefine {
 	#region 기본
-
-	#endregion			// 기본
-
-	#region 조건부 상수
-#if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
 	// 이름
 	public const string L_LOG_N_APP_LAUNCH = "AppLaunch";
 
@@ -30,6 +25,5 @@ public static partial class KCDefine {
 	public const string L_LOG_KEY_PARAMS_E = "ParamsE";
 	public const string L_LOG_KEY_PARAMS_F = "ParamsF";
 	// 식별자 }
-#endif			// #if FLURRY_MODULE_ENABLE || TENJIN_MODULE_ENABLE || FACEBOOK_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
-	#endregion			// 조건부 상수
+	#endregion			// 기본
 }
