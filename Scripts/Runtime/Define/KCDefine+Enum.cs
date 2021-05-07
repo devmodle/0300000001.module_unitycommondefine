@@ -5,16 +5,20 @@ using UnityEngine;
 /*
 프로젝트 번호 지정 방식 
 :
-- 장르 번호 (2 자리) + 서브 장르 번호 (2 자리) + 게임 번호 (1 자리) + 베리에이션 번호 (1 자리)
+- 장르 번호 (2 자리) + 게임 번호 (2 자리) + 서브 게임 번호 (1 자리) + 베리에이션 번호 (1 자리)
 
 Ex)
 Puzzle_TangramTriangleA : 010001
 Puzzle_TangramTriangleB : 010002
 
 Puzzle_TangramSquareA : 010011
+Puzzle_TangramSquareB : 010012
+
 Puzzle_MergeShooterA : 010101
+Puzzle_MergeShooterB : 010102
 
 Casual_QuickPowerA : 020001
+Casual_QuickPowerB : 020002
 */
 
 /*
@@ -119,6 +123,16 @@ public enum EShadowCascadesOpts {
 	MAX_VAL
 }
 
+//! 값 타입
+public enum EValType {
+	NONE = -1,
+	BOOL,
+	INT,
+	FLT,
+	STR,
+	MAX_VAL
+}
+
 //! 애니메이션 타입
 public enum EAniType {
 	NONE = -1,
@@ -151,16 +165,6 @@ public enum EVSyncType {
 	NEVER,
 	EVERY,
 	SECOND,
-	MAX_VAL
-}
-
-//! 값 타입
-public enum EValueType {
-	NONE = -1,
-	BOOL,
-	INT,
-	FLT,
-	STR,
 	MAX_VAL
 }
 

@@ -339,7 +339,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKGS_P_BITMAP_FONT_IMPORTER = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/BitmapFontImporter-v2.4.1.unitypackage";
 	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/BuildReportTool-v3.8.1.unitypackage";
 	public static readonly string B_ABS_PKGS_P_NGUI = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/NGUI-v2020.2.1.unitypackage";
-	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/OdinInspector-v3.0.4.unitypackage";
+	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/OdinInspector-v3.0.5.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ZENJECT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Zenject-v9.2.0.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPINE = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Spine-v3.8.0.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPINE_URP_SHADERS = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/SpineURPShaders-v3.8.0.unitypackage";
@@ -347,6 +347,8 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKGS_P_SIMPLE_SCROLL_SNAP = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/SimpleScrollSnap-v1.2.1.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/SpriteTrail-v1.4.0.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/UltimateStatusBar-v2.6.0.unitypackage";
+	public static readonly string B_ABS_PKGS_P_LEAN_GUI = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/LeanGUI-v1.2.0.unitypackage";
+	public static readonly string B_ABS_PKGS_P_LEAN_TOUCH = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/LeanTouch-v2.2.1.unitypackage";
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}TagManager.asset";
 	public static readonly string B_ASSET_P_SND_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}AudioManager.asset";
