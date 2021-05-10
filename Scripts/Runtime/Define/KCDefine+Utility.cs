@@ -742,6 +742,8 @@ public static partial class KCDefine {
 	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;
 
 	// 식별자 {
+	public const string U_DEF_TYPE_CONSENT_VIEW = "pre";
+
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
@@ -751,6 +753,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
 	public const string U_KEY_FMT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
 	public const string U_KEY_FMT_ADS_M_RESUME_ADS_LOADER_INFO = "AdsMResumeAdsLoaderInfo_{0}";
+	public const string U_KEY_FMT_ADS_M_CONSENT_V_LOADER_INFO = "AdsMConsentVLoaderInfo_{0}";
 	// 식별자 }
 
 #if ADMOB_ENABLE
@@ -795,6 +798,11 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSrcFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSrcFullscreenAdsCloseCallback";
+
+	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_LOAD_CALLBACK = "AdsMIronSrcConsentViewLoadCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_LOAD_FAIL_CALLBACK = "AdsMIronSrcConsentViewLoadFailCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_CLOSE_CALLBACK = "AdsMIronSrcConsentViewCloseCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_ACCEPT_CALLBACK = "AdsMIronSrcConsentViewAcceptCallback";
 	// 식별자 }
 #endif			// #if IRON_SRC_ENABLE
 
