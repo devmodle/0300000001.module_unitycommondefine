@@ -957,6 +957,7 @@ public static partial class KCDefine {
 	#region 조건부 런타임 상수
 #if UNITY_IOS
 	// 버전
+	public static readonly System.Version U_MIN_VER_CONSENT_VIEW = new System.Version(14, 0, 0);
 	public static readonly System.Version U_MIN_VER_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
 	public static readonly System.Version U_MIN_VER_LOGIN_WITH_APPLE = new System.Version(13, 0, 0);
 	
