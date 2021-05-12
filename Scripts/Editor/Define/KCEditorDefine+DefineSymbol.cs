@@ -28,6 +28,7 @@ public static partial class KCEditorDefine {
 	// 플러그인
 	public const string DS_DEFINE_S_DOTWEEN_ENABLE = "DOTWEEN_ENABLE";
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
+	public const string DS_DEFINE_S_APPLE_CONSENT_VIEW_ENABLE = "APPLE_CONSENT_VIEW_ENABLE";
 	public const string DS_DEFINE_S_GOOGLE_REVIEW_ENABLE = "GOOGLE_REVIEW_ENABLE";
 	public const string DS_DEFINE_S_GOOGLE_UPDATE_ENABLE = "GOOGLE_UPDATE_ENABLE";
 

@@ -18,7 +18,7 @@ public static partial class KCDefine {
 	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
 	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
 	
-	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
+	public const int B_UNIT_MILLI_SECS_PER_SECS = 1000;
 
 	public const float B_UNIT_SCALE = 0.01f;
 	public const float B_UNIT_REF_PIXELS = 1.0f;
@@ -172,16 +172,17 @@ public static partial class KCDefine {
 	public const int B_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_SCREEN_HEIGHT;
 #endif			// #if MODE_PORTRAIT_ENABLE
 
-	public const int B_DEF_TARGET_FRAME_RATE = 30;
+	public const int B_TARGET_FRAME_RATE = 60;
 
-	public const float B_DEF_DPI = 160.0f;
-	public const float B_EDITOR_DPI = 320.0f;
-	public const float B_DEF_FIXED_DELTA_TIME = 0.02f;
+	public const float B_DPI = 160.0f;
+	public const float B_FIXED_DELTA_TIME = 0.02f;
 
 	public const float B_WORLD_SCREEN_WIDTH = KCDefine.B_SCREEN_WIDTH * KCDefine.B_UNIT_SCALE;
 	public const float B_WORLD_SCREEN_HEIGHT = KCDefine.B_SCREEN_HEIGHT * KCDefine.B_UNIT_SCALE;
 	
 	public const string B_EMPTY_STR = "";
+	public const string B_TRUE_STR = "True";
+	public const string B_FALSE_STR = "False";
 	public const string B_UNKNOWN_STR = "Unknown";
 	public const string B_NEW_LINE_STR = "\n";
 	public const string B_VER_STR_FMT = "Ver.{0}";
@@ -306,6 +307,7 @@ public static partial class KCDefine {
 
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
+	public const string B_CMD_SHOW_CONSENT_VIEW = "ShowConsentView";
 
 	public const string B_CMD_VIBRATE = "Vibrate";
 	public const string B_CMD_TRACKING = "Tracking";

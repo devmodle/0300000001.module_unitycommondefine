@@ -136,6 +136,7 @@ public static partial class KCEditorDefine {
 	public const string B_PLIST_P_FMT_IOS = "{0}/Info.plist";
 
 	public const string B_KEY_IOS_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
+	public const string B_KEY_IOS_USER_TRACKING_USAGE_DESC = "NSUserTrackingUsageDescription";
 
 	public const string B_KEY_IOS_ADS_NETWORK_ITEMS = "SKAdNetworkItems";
 	public const string B_KEY_IOS_ADS_NETWORK_ID = "SKAdNetworkIdentifier";

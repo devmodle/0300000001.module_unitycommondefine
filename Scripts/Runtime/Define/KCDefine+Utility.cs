@@ -31,7 +31,7 @@ public static partial class KCDefine {
 	public const int U_MAX_NUM_DUPLICATE_FX_SNDS = 10;
 
 	// 크기
-	public const int U_DEF_SIZE_OBJS_POOL = 10;
+	public const int U_SIZE_OBJS_POOL = 10;
 
 	// 길이
 	public const int U_MAX_LENGTH_LOG = 100000000;
@@ -42,58 +42,51 @@ public static partial class KCDefine {
 	public const float U_UNIT_TABLET_ASPECT = 2.0f;
 
 	// 세기
-	public const float U_DEF_INTENSITY_VIBRATE = 1.0f;
+	public const float U_INTENSITY_VIBRATE = 1.0f;
 
 	// 깊이
 	public const float U_DEPTH_UIS_CAMERA = 50.0f;
 	public const float U_DEPTH_MAIN_CAMERA = -50.0f;
 
-	// 거리 {
-	public const float U_DEF_DISTANCE_PAGE = 25.0f;
-	public const float U_DEF_DISTANCE_CAMERA_PLANE = 5.0f;
-
+	// 거리
+	public const float U_DISTANCE_CAMERA_PLANE = 5.0f;
 	public const float U_DISTANCE_CAMERA_FAR_PLANE = 5000.0f;
 	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 0.1f;
-	// 거리 }
 
 	// 비율 {
+	public const float U_SCALE_POPUP = 1.0f;
 	public const float U_MIN_SCALE_POPUP = 0.001f;
-	public const float U_DEF_SCALE_POPUP = 1.0f;
 
-	public const float U_DEF_SCALE_TOUCH = 1.05f;
-	public const float U_DEF_SCALE_PAGE_SCROLL = 0.35f;
+	public const float U_SCALE_TOUCH = 1.05f;
+	public const float U_SCALE_PAGE_SCROLL = 0.35f;
 	// 비율 }
 
 	// 시간 {
-	public const float U_DEF_TIME_SCALE = 1.0f;
+	public const float U_TIME_SCALE = 1.0f;
 	public const float U_ZERO_TIME_SCALE = 0.0f;
 	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
 
-	public const float U_DEF_DURATION_ANI = 0.25f;
-	public const float U_DEF_DURATION_SCROLL_ANI = 0.25f;
-	public const float U_DEF_DURATION_SCREEN_FADE_IN_ANI = 0.15f;
-	public const float U_DEF_DURATION_SCREEN_FADE_OUT_ANI = 0.15f;
-	public const float U_DEF_DURATION_POPUP_SCALE_ANI = 0.35f;
-	public const float U_DEF_DURATION_TOAST_POPUP = 2.0f;
+	public const float U_DURATION_ANI = 0.25f;
+	public const float U_DURATION_SCROLL_ANI = 0.25f;
+	public const float U_DURATION_SCREEN_FADE_IN_ANI = 0.15f;
+	public const float U_DURATION_SCREEN_FADE_OUT_ANI = 0.15f;
 
-	public const float U_DEF_DURATION_LIGHT_VIBRATE = 0.05f;
-	public const float U_DEF_DURATION_MEDIUM_VIBRATE = 0.1f;
-	public const float U_DEF_DURATION_HEAVY_VIBRATE = 0.15f;
+	public const float U_DURATION_POPUP_SCALE_ANI = 0.35f;
+	public const float U_DURATION_POPUP_DROPDOWN_ANI = 0.5f;
+	public const float U_DURATION_POPUP_SLIDE_ANI = 0.5f;
+
+	public const float U_DURATION_TOAST_POPUP = 2.0f;
+
+	public const float U_DURATION_LIGHT_VIBRATE = 0.05f;
+	public const float U_DURATION_MEDIUM_VIBRATE = 0.1f;
+	public const float U_DURATION_HEAVY_VIBRATE = 0.15f;
 
 	public const float U_DELAY_INIT = 0.15f;
 	public const float U_DELAY_NEXT_SCENE_LOAD = 0.5f;
-	public const float U_DEF_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
+	public const float U_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
 
-	public const float U_DEF_TIMEOUT_ASYNC_TASK = 30.0f;
-	public const float U_DEF_TIMEOUT_NETWORK_CONNECTION = 30.0f;
-
-#if MODE_PORTRAIT_ENABLE
-	public const float U_DEF_DURATION_POPUP_DROPDOWN_ANI = 0.5f;
-	public const float U_DEF_DURATION_POPUP_SLIDE_ANI = 0.45f;
-#else
-	public const float U_DEF_DURATION_POPUP_DROPDOWN_ANI = 0.45f;
-	public const float U_DEF_DURATION_POPUP_SLIDE_ANI = 0.5f;
-#endif			// #if MODE_PORTRAIT_ENABLE
+	public const float U_TIMEOUT_ASYNC_TASK = 30.0f;
+	public const float U_TIMEOUT_NETWORK_CONNECTION = 30.0f;
 	// 시간 }
 
 	// 레이어
@@ -116,22 +109,22 @@ public static partial class KCDefine {
 	// 정렬 순서 }
 
 	// 애니메이션
-	public const Ease U_DEF_EASE_ANI = Ease.OutQuad;
+	public const Ease U_EASE_ANI = Ease.OutQuad;
 
 	// 광원 {
 #if LIGHT_ENABLE && SHADOW_ENABLE
 #if SOFT_SHADOW_ENABLE
-	public const LightShadows U_DEF_LIGHT_SHADOW_TYPE = LightShadows.Soft;
+	public const LightShadows U_LIGHT_SHADOW_TYPE = LightShadows.Soft;
 #else
-	public const LightShadows U_DEF_LIGHT_SHADOW_TYPE = LightShadows.Hard;
+	public const LightShadows U_LIGHT_SHADOW_TYPE = LightShadows.Hard;
 #endif			// #if SOFT_SHADOW_ENABLE
 #else
-	public const LightShadows U_DEF_LIGHT_SHADOW_TYPE = LightShadows.None;
+	public const LightShadows U_LIGHT_SHADOW_TYPE = LightShadows.None;
 #endif			// #if LIGHT_ENABLE && SHADOW_ENABLE
 	// 광원 }
 
 	// 회전
-	public static readonly Vector3 U_DEF_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
+	public static readonly Vector3 U_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
 
 	// 버전
 	public const string U_VER_COMMON_APP_INFO = "1.0.0";
@@ -205,7 +198,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
 
-	public const string U_IMG_N_DEF_SPRITE = "DefSprite";
+	public const string U_IMG_N_SPRITE = "Sprite";
 	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
 
 	public const string U_FUNC_N_ON_DRAG = "OnDrag";
@@ -353,25 +346,24 @@ public static partial class KCDefine {
 	public static readonly Rect U_RECT_MAIN_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
 
 	// 색상 {
+	public static readonly Color U_COLOR_NORM = Color.white;
+	public static readonly Color U_COLOR_PRESS = new Color(0.75f, 0.75f, 0.75f, 1.0f);
+	public static readonly Color U_COLOR_SELECT = Color.white;
+	public static readonly Color U_COLOR_HIGHLIGHT = Color.white;
+	public static readonly Color U_COLOR_DISABLE = new Color(0.58f, 0.58f, 0.58f, 1.0f);
 	public static readonly Color U_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
-	public static readonly Color U_DEF_COLOR_NORM = Color.white;
-	public static readonly Color U_DEF_COLOR_PRESS = new Color(0.75f, 0.75f, 0.75f, 1.0f);
-	public static readonly Color U_DEF_COLOR_SELECT = Color.white;
-	public static readonly Color U_DEF_COLOR_HIGHLIGHT = Color.white;
-	public static readonly Color U_DEF_COLOR_DISABLE = new Color(0.58f, 0.58f, 0.58f, 1.0f);
-
-	public static readonly Color U_DEF_COLOR_BLIND_UIS = Color.black;
-	public static readonly Color U_DEF_COLOR_SCREEN_FADE_IN = Color.black;
-	public static readonly Color U_DEF_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
+	public static readonly Color U_COLOR_BLIND_UIS = Color.black;
+	public static readonly Color U_COLOR_SCREEN_FADE_IN = Color.black;
+	public static readonly Color U_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
 	
-	public static readonly Color U_DEF_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
-	public static readonly Color U_DEF_COLOR_INDICATOR_BG = KCDefine.U_DEF_COLOR_POPUP_BG;
+	public static readonly Color U_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
+	public static readonly Color U_COLOR_INDICATOR_BG = KCDefine.U_COLOR_POPUP_BG;
 
 #if UNITY_EDITOR
-	public static readonly Color U_DEF_COLOR_CAMERA_BG = new Color(0.15f, 0.15f, 0.15f, 1.0f);
+	public static readonly Color U_COLOR_CAMERA_BG = new Color(0.15f, 0.15f, 0.15f, 1.0f);
 #else
-	public static readonly Color U_DEF_COLOR_CAMERA_BG = Color.black;
+	public static readonly Color U_COLOR_CAMERA_BG = Color.black;
 #endif			// #if UNITY_EDITOR
 	// 색상 }
 
@@ -408,18 +400,18 @@ public static partial class KCDefine {
 	};
 
 	// 정렬 순서 {
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_OBJS_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_SORTING_OI_OBJS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 
 #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_L_DEF_UIS
 	};
 #else
-	public static readonly STSortingOrderInfo U_DEF_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
 		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
@@ -427,11 +419,11 @@ public static partial class KCDefine {
 	// 정렬 순서 }
 
 	// 레이어 마스크 {
-	public static readonly int[] U_DEF_LAYER_MASK_UIS_CAMERA = new int[] {
+	public static readonly int[] U_LAYER_MASK_UIS_CAMERA = new int[] {
 		KCDefine.U_LAYER_UIS
 	};
 
-	public static readonly int[] U_DEF_LAYER_MASK_MAIN_CAMERA = new int[] {
+	public static readonly int[] U_LAYER_MASK_MAIN_CAMERA = new int[] {
 		KCDefine.U_LAYER_DEF,
 		KCDefine.U_LAYER_TRANSPARENT_FX,
 		KCDefine.U_LAYER_IGNORE_RAYCAST,
@@ -572,7 +564,7 @@ public static partial class KCDefine {
 	public const int U_QUALITY_ASYNC_UPLOAD_BUFFER_SIZE = 16;
 
 	public const float U_QUALITY_RESOLUTION_SCALE_FIXED_DPI_FACTOR = 1.0f;
-	public const EQualityLevel U_DEF_QUALITY_LEVEL = EQualityLevel.AUTO;
+	public const EQualityLevel U_QUALITY_LEVEL = EQualityLevel.AUTO;
 	// 퀄리티 }
 
 	// 스크립트 순서 {
@@ -732,8 +724,11 @@ public static partial class KCDefine {
 #endif			// #if TENJIN_MODULE_ENABLE
 
 #if SINGULAR_MODULE_ENABLE
+	// 시간
+	public const int U_TIMEOUT_SINGULAR_M_AUTH_TRACKING = 300;
+
 	// 이름
-	public const string U_OBJ_N_SINGULAR_SDK = "SingularSDK";
+	public const string U_OBJ_N_SINGULAR_M_SINGULAR_SDK = "SingularSDK";
 #endif			// #if SINGULAR_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE
@@ -741,8 +736,11 @@ public static partial class KCDefine {
 	public const float U_DELTA_T_ADS_M_ADS_LOAD = 5.0f;
 	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;
 
+	// 텍스트
+	public const string U_TEXT_CONSENT_VIEW_ERROR_MSG = "IRON_SRC_ENABLE 또는 APPLE_CONSENT_VIEW_ENABLE 심볼를 추가해야합니다.";
+
 	// 식별자 {
-	public const string U_DEF_TYPE_CONSENT_VIEW = "pre";
+	public const string U_TYPE_CONSENT_VIEW = "pre";
 
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
@@ -801,7 +799,6 @@ public static partial class KCDefine {
 
 	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_LOAD_CALLBACK = "AdsMIronSrcConsentViewLoadCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_LOAD_FAIL_CALLBACK = "AdsMIronSrcConsentViewLoadFailCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_CLOSE_CALLBACK = "AdsMIronSrcConsentViewCloseCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_ACCEPT_CALLBACK = "AdsMIronSrcConsentViewAcceptCallback";
 	// 식별자 }
 #endif			// #if IRON_SRC_ENABLE
@@ -825,7 +822,7 @@ public static partial class KCDefine {
 
 #if FLURRY_MODULE_ENABLE
 	// 시간
-	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_MILLI_SECS_PER_SEC;
+	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_MILLI_SECS_PER_SECS;
 
 	// 식별자
 	public const string U_KEY_FLURRY_M_INIT_CALLBACK = "FlurryMInitCallback";
@@ -935,7 +932,7 @@ public static partial class KCDefine {
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
 
 	// 그룹
-	public const string U_DEF_GROUP_ID_NOTI = "DefNotiGroup";
+	public const string U_GROUP_ID_NOTI = "DefNotiGroup";
 
 #if UNITY_IOS
 	// 옵션
@@ -947,8 +944,8 @@ public static partial class KCDefine {
 	// 그룹 정보 {
 	public const Importance U_IMPORTANCE_NOTI = Importance.Default;
 	
-	public const string U_DEF_GROUP_N_NOTI = KCDefine.U_DEF_GROUP_ID_NOTI;
-	public const string U_DEF_GROUP_DESC_NOTI = KCDefine.U_DEF_GROUP_ID_NOTI;
+	public const string U_GROUP_N_NOTI = KCDefine.U_GROUP_ID_NOTI;
+	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_ID_NOTI;
 	// 그룹 정보 }
 #endif			// #if UNITY_ANDROID
 #endif			// #if NOTI_ENABLE
@@ -1005,7 +1002,7 @@ public static partial class KCDefine {
 
 #if FACEBOOK_MODULE_ENABLE
 	// 권한
-	public static readonly string[] U_DEF_PERMISSIONS_FACEBOOK = new string[] {
+	public static readonly string[] U_PERMISSIONS_FACEBOOK = new string[] {
 		"public_profile"
 	};
 #endif			// #if FACEBOOK_MODULE_ENABLE
