@@ -654,20 +654,20 @@ public static partial class KCDefine {
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
-#if UNITY_ANDROID
-	// 시간
-	public const float U_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
-	public const float U_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.5f;
-#endif			// #if UNITY_ANDROID
-
-#if APPLE_LOGIN_ENABLE
+#if UNITY_IOS && APPLE_LOGIN_ENABLE
 	// 식별자
 	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
 	public const string U_KEY_SERVICES_M_LOGIN_WITH_APPLE_CALLBACK = "ServicesMLoginWithAppleCallback";
 
 	// 이름
 	public const string U_OBJ_N_SERVICES_M_LOGIN_WITH_APPLE = "LoginWithApple";
-#endif			// #if APPLE_LOGIN_ENABLE
+#endif			// #if UNITY_IOS && APPLE_LOGIN_ENABLE
+
+#if UNITY_ANDROID
+	// 시간
+	public const float U_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
+	public const float U_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.5f;
+#endif			// #if UNITY_ANDROID
 
 #if HAPTIC_FEEDBACK_ENABLE
 	// 이름
