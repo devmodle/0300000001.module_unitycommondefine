@@ -725,7 +725,7 @@ public static partial class KCDefine {
 
 #if SINGULAR_MODULE_ENABLE
 	// 시간
-	public const int U_TIMEOUT_SINGULAR_M_AUTH_TRACKING = 300;
+	public const int U_TIMEOUT_SINGULAR_M_AGREE_TRACKING = 60;
 
 	// 이름
 	public const string U_OBJ_N_SINGULAR_M_SINGULAR_SDK = "SingularSDK";
@@ -735,10 +735,7 @@ public static partial class KCDefine {
 	// 시간
 	public const float U_DELTA_T_ADS_M_ADS_LOAD = 5.0f;
 	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;
-
-	// 텍스트
-	public const string U_TEXT_CONSENT_VIEW_ERROR_MSG = "IRON_SRC_ENABLE 또는 APPLE_CONSENT_VIEW_ENABLE 심볼를 추가해야합니다.";
-
+	
 	// 식별자 {
 	public const string U_TYPE_CONSENT_VIEW = "pre";
 
@@ -796,10 +793,6 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSrcFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSrcFullscreenAdsCloseCallback";
-
-	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_LOAD_CALLBACK = "AdsMIronSrcConsentViewLoadCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_LOAD_FAIL_CALLBACK = "AdsMIronSrcConsentViewLoadFailCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_CONSENT_V_ACCEPT_CALLBACK = "AdsMIronSrcConsentViewAcceptCallback";
 	// 식별자 }
 #endif			// #if IRON_SRC_ENABLE
 
