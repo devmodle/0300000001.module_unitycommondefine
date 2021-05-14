@@ -97,11 +97,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_NOTI_ENABLE = "NOTI_ENABLE";
 	public const string DS_DEFINE_S_NOTI_MODULE_ENABLE = "NOTI_MODULE_ENABLE";
 
-	// 애니메이션
-	public const string DS_DEFINE_S_SKELETON_2D_ANI_ENABLE = "SKELETON_2D_ANI_ENABLE";
-
 	// 렌더링 {
 	public const string DS_DEFINE_S_CAMERA_STACK_ENABLE = "CAMERA_STACK_ENABLE";
+	public const string DS_DEFINE_S_SKELETON_2D_ANI_ENABLE = "SKELETON_2D_ANI_ENABLE";
 
 	public const string DS_DEFINE_S_POST_PROCESSING_ENABLE = "POST_PROCESSING_ENABLE";
 	public const string DS_DEFINE_S_UNITY_POST_PROCESSING_STACK_V2 = "UNITY_POST_PROCESSING_STACK_V2";
@@ -156,9 +154,7 @@ public static partial class KCEditorDefine {
 	// 테스트 {
 	public const string DS_DEFINE_S_FPS_ENABLE = "FPS_ENABLE";
 	public const string DS_DEFINE_S_PROFILER_ENABLE = "PROFILER_ENABLE";
-
 	public const string DS_DEFINE_S_ML_AGENTS_ENABLE = "ML_AGENTS_ENABLE";
-	public const string DS_DEFINE_S_PROFILE_ANALYZER_ENABLE = "PROFILE_ANALYZER_ENABLE";
 
 	public const string DS_DEFINE_S_AB_TEST_ENABLE = "AB_TEST_ENABLE";
 	public const string DS_DEFINE_S_ADS_TEST_ENABLE = "ADS_TEST_ENABLE";
@@ -204,7 +200,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_INPUT_SYSTEM_ENABLE = "INPUT_SYSTEM_ENABLE";
 	public const string DS_DEFINE_S_INPUT_SYSTEM_MODULE_ENABLE = "ENABLE_INPUT_SYSTEM";
 
-	public const string DS_DEFINE_S_ASSET_BUNDLE_ENABLE = "ASSET_BUNDLE_ENABLE";
+	public const string DS_DEFINE_S_ADDRESSABLES_ENABLE = "ADDRESSABLES_ENABLE";
 	public const string DS_DEFINE_S_BURST_COMPILER_ENABLE = "BURST_COMPILER_ENABLE";
 	public const string DS_DEFINE_S_ADAPTIVE_PERFORMANCE_ENABLE = "ADAPTIVE_PERFORMANCE_ENABLE";
 
