@@ -7,7 +7,7 @@ public static partial class KCDefine {
 	#region 기본
 	// 광고
 	public const string VT_KEY_DELAY_ADS = "DELAY_ADS";
-	public const string VT_KEY_DELTA_TIME_ADS = "DELTA_TIME_ADS";
+	public const string VT_KEY_DELTA_T_ADS = "DELTA_T_ADS";
 	
 	// 디바이스 {
 	public const string VT_KEY_QUALITY_LEVEL = "QUALITY_LEVEL";
