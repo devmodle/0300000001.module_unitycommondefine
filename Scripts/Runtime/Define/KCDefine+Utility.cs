@@ -295,8 +295,13 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_ALERT_P_CANCEL_BTN = "CancelBtn";
 	// 경고 팝업 }
 
-	// 서비스 관리자
+	// 서비스 관리자 {
+	public const string U_KEY_SERVICES_M_RECEIPT = "json";
+	public const string U_KEY_SERVICES_M_PAYLOAD = "Payload";
+	public const string U_KEY_SERVICES_M_SIGNATURE = "signature";
+
 	public const string U_KEY_SERVICES_M_INIT_CALLBACK = "ServicesMInitCallback";
+	// 서비스 관리자 }
 
 	// 유니티 메세지 전송자 {
 	public const string U_KEY_UNITY_MS_APP_ID = "AppID";
@@ -714,13 +719,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
 	// 이름 }
 #endif			// #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
-
-#if TENJIN_MODULE_ENABLE
-	// 식별자
-	public const string U_KEY_TENJIN_M_RECEIPT = "json";
-	public const string U_KEY_TENJIN_M_PAYLOAD = "Payload";
-	public const string U_KEY_TENJIN_M_SIGNATURE = "signature";
-#endif			// #if TENJIN_MODULE_ENABLE
 
 #if SINGULAR_MODULE_ENABLE
 	// 시간
