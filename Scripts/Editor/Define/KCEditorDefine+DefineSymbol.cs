@@ -209,7 +209,7 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
-	public const string DS_DEFINE_S_USE_CUSTOM_PROJ_OPTS = "USE_CUSTOM_PROJ_OPTS";
+	public const string DS_DEFINE_S_USE_AUTO_CREATE = "USE_AUTO_CREATE";
 	// 기타 }
 	#endregion			// 기본
 
