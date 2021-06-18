@@ -348,7 +348,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKGS_P_SPINE = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Spine-v3.8.0.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPINE_URP_SHADERS = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/SpineURPShaders-v3.8.0.unitypackage";
 	public static readonly string B_ABS_PKGS_P_REST_CLIENT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/RestClient-v2.6.1.unitypackage";
-	public static readonly string B_ABS_PKGS_P_SIMPLE_SCROLL_SNAP = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/SimpleScrollSnap-v1.2.1.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/SpriteTrail-v1.4.0.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/UltimateStatusBar-v2.6.0.unitypackage";
 	public static readonly string B_ABS_PKGS_P_LEAN_GUI = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/LeanGUI-v1.2.0.unitypackage";
