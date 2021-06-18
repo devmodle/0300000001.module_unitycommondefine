@@ -807,9 +807,9 @@ public static partial class KCEditorDefine {
 
 	// iOS {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
-	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/iOS";
+	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/iOS";
 
-	public static readonly string B_SRC_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/iOS/Classes/Plugin/";
+	public static readonly string B_SRC_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/iOS/Classes/Plugin/";
 	public static readonly string B_DEST_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_IOS_PLUGINS}CustomiOSPlugin/";
 
 	public static readonly string B_ENTITLEMENTS_P_IOS_CAPABILITY = $"{Application.productName}.entitlements";
@@ -823,10 +823,10 @@ public static partial class KCEditorDefine {
 	public static readonly string B_SRC_LIBRARY_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Temp/StagingArea/libs";
 	public static readonly string B_ABS_BUILD_P_FMT_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Android/{"{0}"}";
 
-	public static readonly string B_PLUGIN_PROJ_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android";
+	public static readonly string B_PLUGIN_PROJ_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android";
 	public static readonly string B_PLUGIN_BUILD_CMD_ANDROID = $"cd {KCEditorDefine.B_PLUGIN_PROJ_P_ANDROID};./gradlew exportLibrary";
 
-	public static readonly string B_SRC_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android/app/build/outputs/aar/app-release.aar";
+	public static readonly string B_SRC_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/app/build/outputs/aar/app-release.aar";
 	public static readonly string B_DEST_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}CustomAndroidPlugin.aar";
 
 	public static readonly string B_SRC_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/AndroidManifest.xml";
@@ -850,7 +850,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DEST_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}gradleTemplate.properties";
 
 	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
-	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../PluginProjects/Android/app/libs/classes.jar";
+	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/app/libs/classes.jar";
 
 	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_ANDROID = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3, GraphicsDeviceType.OpenGLES2
