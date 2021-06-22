@@ -360,6 +360,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_FX_ROOT = "FX/";
 	public const string B_DIR_P_2D_ROOT = "2D/";
 	public const string B_DIR_P_EXTERNAL_ROOT = "External/";
+	public const string B_DIR_P_LEVEL_INFO_ROOT = "LevelInfo/";
 	public const string B_DIR_P_VALUE_INFO_ROOT = "ValueInfo/";
 	public const string B_DIR_P_STRING_INFO_ROOT = "StringInfo/";
 	// 경로 }
