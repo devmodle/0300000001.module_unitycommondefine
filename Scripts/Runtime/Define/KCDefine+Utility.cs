@@ -145,6 +145,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_UIS_BASE = "Canvas";
 	public const string U_OBJ_N_SCENE_UIS = "UIs";
 	public const string U_OBJ_N_SCENE_TEST_UIS = "TestUIs";
+	public const string U_OBJ_N_SCENE_PIVOT_UIS = "PivotUIs";
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
 	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
 
@@ -159,6 +160,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_BASE = "Base";
 	public const string U_OBJ_N_SCENE_OBJS_BASE = "ObjsRoot";
 	public const string U_OBJ_N_SCENE_OBJS = "Objs";
+	public const string U_OBJ_N_SCENE_PIVOT_OBJS = "PivotObjs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
 
 	public const string U_OBJ_N_SCENE_UP_OBJS = "UpObjs";
@@ -169,6 +171,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_OBJS_CANVAS_TOP = "ObjsCanvasRoot";
 	public const string U_OBJ_N_SCENE_OBJS_CANVAS_BASE = "ObjsCanvas";
 	public const string U_OBJ_N_SCENE_CANVAS_OBJS = "CanvasObjs";
+	public const string U_OBJ_N_SCENE_CANVAS_PIVOT_OBJS = "CanvasPivotObjs";
 
 	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIs Camera";
 	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "Main Camera";
