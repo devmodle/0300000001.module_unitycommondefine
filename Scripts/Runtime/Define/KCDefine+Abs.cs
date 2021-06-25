@@ -310,6 +310,7 @@ public static partial class KCDefine {
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
 
+	public const string B_CMD_MAIL = "Mail";
 	public const string B_CMD_VIBRATE = "Vibrate";
 	public const string B_CMD_TRACKING = "Tracking";
 	public const string B_CMD_INDICATOR = "Indicator";
