@@ -348,7 +348,6 @@ public static partial class KCDefine {
 	public const string B_DIR_P_AGREE_SCENE = "AgreeScene/";
 	public const string B_DIR_P_INTRO_SCENE = "IntroScene/";
 	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
-	public const string B_DIR_P_AUTO_CREATE = "00.AutoCreate/";
 
 	public const string B_DIR_P_TEXT_ROOT = "UI/Text/";
 	public const string B_DIR_P_IMAGE_ROOT = "UI/Image/";

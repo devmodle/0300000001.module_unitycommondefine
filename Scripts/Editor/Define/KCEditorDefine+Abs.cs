@@ -110,10 +110,12 @@ public static partial class KCEditorDefine {
 
 	public const string B_DIR_P_ASSETS = "Assets/";
 	public const string B_DIR_P_PACKAGES = "Packages/";
+	public const string B_DIR_P_AUTO_CREATE = "00.AutoCreate/";
 	public const string B_DIR_P_SUB_AUTO_CREATE = "01.SubAutoCreate/";
 	public const string B_DIR_P_UNITY_PROJ = "02.UnityProject/";
 	public const string B_DIR_P_UNITY_PROJ_EDITOR = "03.UnityProjectEditor/";
 	public const string B_DIR_P_PROJ_SETTINGS = "ProjectSettings/";
+	public const string B_DIR_P_EDITOR_DEF_RESES = "Editor Default Resources/";
 
 	public const string B_DIR_P_EXPORT_IMG_BASE = "Export/Images/";
 	public const string B_ASSET_P_FMT_LIGHTING_SETTINGS = "{0}/{1}Settings.lighting";
@@ -283,13 +285,13 @@ public static partial class KCEditorDefine {
 	public static readonly Vector3 B_MIN_SIZE_EDITOR_WND = new Vector3(350.0f, 350.0f, 0.0f);
 
 	// 경로 {
-	public static readonly string B_SCENE_P_INIT_SCENE = $"{KCDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity";
+	public static readonly string B_SCENE_P_INIT_SCENE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity";
 
-	public static readonly string B_DIR_P_AUTO_CREATE_RESES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/";
+	public static readonly string B_DIR_P_AUTO_CREATE_RESES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/";
 	public static readonly string B_DIR_P_SUB_AUTO_CREATE_RESES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Resources/";
 	public static readonly string B_DIR_P_UNITY_PROJ_RESES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
 
-	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scenes";
+	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes";
 	public static readonly string B_DIR_P_PROJ_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scenes";
 
 	public static readonly string B_DIR_P_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes";
@@ -414,9 +416,12 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_Doxyfile", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Doxyfile"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_CustomDependencies.xml.t", $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}Editor/CustomDependencies.xml"),
 
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}README.md"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}README.md"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}README.md"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}README.md"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}README.md"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}README.md"),
 
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_Services_{SystemLanguage.Korean}.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.AS_DATA_P_SERVICES}.txt"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_Privacy_{SystemLanguage.Korean}.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.AS_DATA_P_PRIVACY}.txt"),
@@ -430,49 +435,43 @@ public static partial class KCEditorDefine {
 	public static readonly KeyValuePair<string, string>[] B_SCRIPT_P_INFOS = new KeyValuePair<string, string>[] {
 		// 00.AutoCreate {
 		// 에디터 상수
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Define/T_KEditorDefine+Abs.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/Global/Define/KEditorDefine+Abs.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Define/T_KEditorDefine+Abs.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/Global/Define/KEditorDefine+Abs.cs"),
 
 		// 에디터 팩토리
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Factory/T_EditorFactory.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/Global/Factory/EditorFactory.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Factory/T_EditorFactory.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/Global/Factory/EditorFactory.cs"),
 
 		// 에디터 유틸리티
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Build/T_CBuildProcessor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/Global/Utility/Build/CBuildProcessor.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Build/T_CBuildProcessor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/Global/Utility/Build/CBuildProcessor.cs"),
 
 		// 에디터 씬 관리자
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Scene/T_CEditorSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/EditorScene/CEditorSceneManager.cs"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Scene/T_CEditorSceneManager+Setup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/EditorScene/CEditorSceneManager+Setup.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Scene/T_CEditorSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/EditorScene/CEditorSceneManager.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Scene/T_CEditorSceneManager+Setup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/EditorScene/CEditorSceneManager+Setup.cs"),
 
 		// 접근자
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Access/T_Access.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Access/Access.cs"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Access/T_AccessExtension.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Access/AccessExtension.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Access/T_Access.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Access/Access.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Access/T_AccessExtension.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Access/AccessExtension.cs"),
 
 		// 팩토리
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Factory/T_Factory.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Factory/Factory.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Factory/T_Factory.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Factory/Factory.cs"),
 
 		// 확장 클래스
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Extension/T_Extension.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Extension/Extension.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Extension/T_Extension.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Extension/Extension.cs"),
 
 		// 함수
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Function/T_Func.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Function/Func.cs"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Function/T_LogFunc.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Function/LogFunc.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Function/T_Func.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Function/Func.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Function/T_LogFunc.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Function/LogFunc.cs"),
 
 		// 유틸리티
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/External/T_CMsgPackRegister.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Utility/External/CMsgPackRegister.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/External/T_CMsgPackRegister.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/Global/Utility/External/CMsgPackRegister.cs"),
 
 		// 씬 관리자
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Scene/T_CSubInitSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/SubInitScene/CSubInitSceneManager.cs"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Scene/T_CSubSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/SubSetupScene/CSubSetupSceneManager.cs"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Scene/T_CSubAgreeSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/SubAgreeScene/CSubAgreeSceneManager.cs"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Scene/T_CSubLateSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/SubLateSetupScene/CSubLateSetupSceneManager.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Scene/T_CSubInitSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/SubInitScene/CSubInitSceneManager.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Scene/T_CSubSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/SubSetupScene/CSubSetupSceneManager.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Scene/T_CSubAgreeSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/SubAgreeScene/CSubAgreeSceneManager.cs"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Scene/T_CSubLateSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Runtime/SubLateSetupScene/CSubLateSetupSceneManager.cs"),
 		// 00.AutoCreate }
 
 		// 01.SubAutoCreate {
-		// 에디터 팩토리
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Factory/T_EditorFactory+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scripts/Editor/Global/Factory/EditorFactory+Global.cs"),
-
-		// 에셋 추가자
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Importer/T_CSubAssetImporter.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scripts/Editor/Global/Importer/CSubAssetImporter.cs"),
-
 		// 상수
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Define/T_KDefine+Abs.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scripts/Runtime/Global/Define/KDefine+Abs.cs"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Define/T_KDefine+InitScene.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scripts/Runtime/Global/Define/KDefine+InitScene.cs"),
@@ -505,6 +504,12 @@ public static partial class KCEditorDefine {
 		// 01.SubAutoCreate }
 
 		// 02.UnityProject {
+		// 에디터 팩토리
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Factory/T_EditorFactory+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Editor/Global/Factory/EditorFactory+Global.cs"),
+
+		// 에셋 추가자
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Importer/T_CSubAssetImporter.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Editor/Global/Importer/CSubAssetImporter.cs"),
+
 		// 상수 {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Define/T_KDefine+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+Engine.cs"),
 
@@ -581,36 +586,36 @@ public static partial class KCEditorDefine {
 	
 	public static readonly KeyValuePair<string, string>[] B_PREFAB_P_INFOS = new KeyValuePair<string, string>[] {
 		// 00.AutoCreate {
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_Text.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TEXT}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_TextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TEXT_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_Img.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_RawImg.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_RAW_IMG}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_TextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TEXT_SCALE_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_LocalizeText.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_LOCALIZE_TEXT}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_LocalizeTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_LOCALIZE_TEXT_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_LocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_SCALE_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_TEXT_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_TEXT_SCALE_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgLocalizeTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_LOCALIZE_TEXT_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgLocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_ScrollView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_SCROLL_VIEW}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_RecycleView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_RECYCLE_VIEW}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_PageView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_PAGE_VIEW}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_ParticleFX.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_PARTICLE_FX}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_2D_ROOT}T_Sprite.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_SPRITE}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_Text.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TEXT}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_TextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TEXT_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_Img.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_RawImg.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_RAW_IMG}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_TextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TEXT_SCALE_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_LocalizeText.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_LOCALIZE_TEXT}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_LocalizeTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_LOCALIZE_TEXT_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_LocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_SCALE_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_TEXT_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_TEXT_SCALE_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgLocalizeTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_LOCALIZE_TEXT_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgLocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_ScrollView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_SCROLL_VIEW}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_RecycleView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_RECYCLE_VIEW}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_PageView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_PAGE_VIEW}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_ParticleFX.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_PARTICLE_FX}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_2D_ROOT}T_Sprite.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_SPRITE}.prefab"),
 
 #if SAMPLE_PROJ
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
 #else
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VER_UNITY_MODULE}/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VER_UNITY_MODULE}/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VER_UNITY_MODULE}/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.unitymodule.common.externals@{KCEditorDefine.B_VER_UNITY_MODULE}/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
 #endif			// #if SAMPLE_PROJ
 		// 00.AutoCreate }
 
@@ -704,10 +709,10 @@ public static partial class KCEditorDefine {
 
 	public static readonly KeyValuePair<string, string>[] B_SCENE_P_INFOS = new KeyValuePair<string, string>[] {
 		// 00.AutoCreate
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity"),
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_SETUP}.unity"),
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_AGREE}.unity"),
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_LATE_SETUP}.unity"),
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity"),
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_SETUP}.unity"),
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_AGREE}.unity"),
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_LATE_SETUP}.unity"),
 
 		// 01.SubAutoCreate {
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_START}.unity"),
