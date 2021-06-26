@@ -404,8 +404,7 @@ public static partial class KCDefine {
 	public const string B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
 	// 형식 }
 
-	// URL
-	public const string B_MAIL_URL_FMT = "mailto:{0}?subject={1}&body={2}";
+	// 메일
 	public const string B_MAIL_MSG_FMT = "App: {0}\nVer: v{1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUserID: {7}\n\nPlease enter your inquiry:\n{8}";
 	#endregion			// 기본
 
