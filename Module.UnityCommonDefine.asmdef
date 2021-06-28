@@ -1,8 +1,8 @@
 {
-    "name": "UnityModule.Common.Define",
+    "name": "Module.UnityCommonDefine",
     "rootNamespace": "",
     "references": [
-        "UnityModule.IronSrc",
+        "Module.UnityIronSrc",
         "Unity.RenderPipelines.Universal.Runtime",
         "Unity.Notifications.iOS",
         "Unity.Notifications.Android",
