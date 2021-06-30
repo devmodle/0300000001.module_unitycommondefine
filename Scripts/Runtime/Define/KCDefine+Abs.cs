@@ -340,15 +340,26 @@ public static partial class KCDefine {
 	public const string B_DIR_P_GLOBAL = "Global/";
 	public const string B_DIR_P_UTILITY = "Utility/";
 	public const string B_DIR_P_TUTORIAL = "Tutorial/";
+	public const string B_DIR_P_ENGINE = "Engine/";
 	public const string B_DIR_P_POPUP = "Popup/";
+	public const string B_DIR_P_FX = "FX/";
+
 	public const string B_DIR_P_INIT_SCENE = "InitScene/";
 	public const string B_DIR_P_SETUP_SCENE = "SetupScene/";
-	public const string B_DIR_P_START_SCENE = "StartScene/";
-	public const string B_DIR_P_LOADING_SCENE = "LoadingScene/";
-	public const string B_DIR_P_SPLASH_SCENE = "SplashScene/";
 	public const string B_DIR_P_AGREE_SCENE = "AgreeScene/";
+	public const string B_DIR_P_LATE_SETUP_SCENE = "LateSetupScene/";
+
+	public const string B_DIR_P_START_SCENE = "StartScene/";
+	public const string B_DIR_P_SPLASH_SCENE = "SplashScene/";
+	public const string B_DIR_P_PERMISSION_SCENE = "PermissionScene/";
+	public const string B_DIR_P_LOADING_SCENE = "LoadingScene/";
+	
 	public const string B_DIR_P_INTRO_SCENE = "IntroScene/";
 	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
+	public const string B_DIR_P_GAME_SCENE = "GameScene/";
+	public const string B_DIR_P_OVERLAY_SCENE = "OverlayScene/";
+
+	public const string B_DIR_P_MENU_SCENE = "MenuScene/";
 
 	public const string B_DIR_P_TEXT_ROOT = "UI/Text/";
 	public const string B_DIR_P_IMAGE_ROOT = "UI/Image/";
@@ -433,6 +444,7 @@ public static partial class KCDefine {
 	// 앵커 }
 
 	// 비율
+	public static readonly Vector3 B_SCALE_ZERO = new Vector3(0.0f, 0.0f, 0.0f);
 	public static readonly Vector3 B_SCALE_NORM = new Vector3(1.0f, 1.0f, 1.0f);
 
 	// 위치 {
