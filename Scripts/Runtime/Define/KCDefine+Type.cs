@@ -83,9 +83,9 @@ public struct STBuildVerConfig {
 	public STBuildVer m_stGalaxyStoreVer;
 }
 
-//! 공용 커스텀 타입 래퍼
+//! 공용 타입 래퍼
 [MessagePackObject]
-public struct STCommonCustomTypeWrapper {
+public struct STCommonTypeWrapper {
 	[Key(0)] public List<bool> m_oBoolList;
 	[Key(1)] public List<int> m_oIntList;
 	[Key(2)] public List<float> m_oFltList;
