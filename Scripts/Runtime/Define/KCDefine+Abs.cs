@@ -211,6 +211,9 @@ public static partial class KCDefine {
 	public const string B_STR_8_FLT = "8.0";
 	public const string B_STR_9_FLT = "9.0";
 
+	public const string B_FILE_EXTENSION_TXT = ".txt";
+	public const string B_FILE_EXTENSION_BYTES = ".bytes";
+
 	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STR;
