@@ -252,6 +252,7 @@ public static partial class KCDefine {
 
 	// 씬 이름 {
 	public const string B_SCENE_N_SAMPLE = "00.SampleScene";
+	public const string B_SCENE_N_LEVEL_EDITOR = "91.LevelEditorScene";
 
 	public const string B_SCENE_N_INIT = "00.InitScene";
 	public const string B_SCENE_N_SETUP = "01.SetupScene";
@@ -262,6 +263,7 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_SPLASH = "01.SplashScene";
 	public const string B_SCENE_N_PERMISSION = "01.PermissionScene";
 	public const string B_SCENE_N_LOADING = "01.LoadingScene";
+	
 	public const string B_SCENE_N_INTRO = "01.IntroScene";
 	public const string B_SCENE_N_TITLE = "01.TitleScene";
 	public const string B_SCENE_N_GAME = "02.GameScene";

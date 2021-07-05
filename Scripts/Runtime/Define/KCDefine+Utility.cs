@@ -586,6 +586,7 @@ public static partial class KCDefine {
 	// 스크립트 순서 {
 	public const int U_SCRIPT_O_SINGLETON = -10;
 	public const int U_SCRIPT_O_BANNER_ADS_CORRECTOR = 5;
+	public const int U_SCRIPT_O_REWARD_ADS_TOUCH_INTERACTABLE = 5;
 
 	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = -20;
 	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
