@@ -430,7 +430,7 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 색상 {
-	public static readonly Color B_LOG_COLOR_WARNING = new Color(0xff / 255.0f, 0xa5 / 255.0f, 0.0f, 1.0f);
+	public static readonly Color B_LOG_COLOR_WARNING = new Color(0xff / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0xa5 / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0.0f, 1.0f);
 	public static readonly Color B_LOG_COLOR_ERROR = Color.red;
 
 	public static readonly Color B_LOG_COLOR_SETUP = Color.magenta;

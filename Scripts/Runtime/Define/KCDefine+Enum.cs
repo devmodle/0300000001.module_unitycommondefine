@@ -270,6 +270,14 @@ public enum ETextureCompressionType {
 #endif			// #if UNITY_EDITOR
 
 #if ADS_MODULE_ENABLE
+//! 배너 광고 위치
+public enum EBannerAdsPos {
+	NONE = -1,
+	UP,
+	DOWN,
+	MAX_VAL
+}
+
 //! 광고 타입
 public enum EAdsType {
 	NONE = -1,
@@ -286,14 +294,6 @@ public enum EAdsType {
 	APP_LOVIN,
 #endif			// #if APP_LOVIN_ENABLE
 
-	MAX_VAL
-}
-
-//! 배너 광고 위치
-public enum EBannerAdsPos {
-	NONE = -1,
-	UP,
-	DOWN,
 	MAX_VAL
 }
 #endif			// #if ADS_MODULE_ENABLE

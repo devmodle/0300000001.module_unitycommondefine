@@ -984,6 +984,12 @@ public static partial class KCDefine {
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE
+	// 기타
+	public static readonly STAdsRewardItemInfo U_INVALID_ADS_REWARD_ITEM_INFO = new STAdsRewardItemInfo() {
+		m_oID = string.Empty,
+		m_oVal = string.Empty
+	};
+
 	// 크기
 	public static readonly Vector3 U_SIZE_PHONE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
 	public static readonly Vector3 U_SIZE_TABLET_BANNER_ADS = new Vector3(728.0f, 90.0f, 0.0f);
