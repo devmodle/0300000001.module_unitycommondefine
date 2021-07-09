@@ -28,7 +28,7 @@ public static partial class KCEditorDefine {
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
 
 	// 버전
-	public const string B_VER_UNITY_MODULE = "1.5.7";
+	public const string B_VER_UNITY_MODULE = "1.5.8";
 
 	// 커맨드 라인
 	public const string B_CMD_LINE_PARAMS_FMT_SHELL = "-c \"{0}\"";
