@@ -61,7 +61,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_FIREBASE_DB_ENABLE = "FIREBASE_DB_ENABLE";
 	public const string DS_DEFINE_S_FIREBASE_REMOTE_CONFIG_ENABLE = "FIREBASE_REMOTE_CONFIG_ENABLE";
 	public const string DS_DEFINE_S_FIREBASE_CLOUD_MSG_ENABLE = "FIREBASE_CLOUD_MSG_ENABLE";
-	public const string DS_DEFINE_S_FIREBASE_PERFORMANCE_ENABLE = "FIREBASE_PERFORMANCE_ENABLE";
 	// 파이어 베이스 }
 
 	// 게임 분석 {

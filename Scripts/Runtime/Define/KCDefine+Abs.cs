@@ -321,7 +321,6 @@ public static partial class KCDefine {
 
 	public const string B_CMD_MAIL = "Mail";
 	public const string B_CMD_VIBRATE = "Vibrate";
-	public const string B_CMD_TRACKING = "Tracking";
 	public const string B_CMD_INDICATOR = "Indicator";
 
 	public const string B_CMD_INIT_ADS = "InitAds";

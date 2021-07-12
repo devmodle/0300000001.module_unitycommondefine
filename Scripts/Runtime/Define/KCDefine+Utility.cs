@@ -328,10 +328,6 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_VIBRATE_DURATION = "Duration";
 	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
 
-	public const string U_KEY_UNITY_MS_TRACKING_NAME = "Name";
-	public const string U_KEY_UNITY_MS_TRACKING_DATAS = "Datas";
-	public const string U_KEY_UNITY_MS_TRACKING_IS_START = "IsStart";
-
 	public const string U_KEY_UNITY_MS_ADMOB_IDS = "AdmobIDs";
 	public const string U_KEY_UNITY_MS_RESUME_ADS_ID = "ResumeAdsID";
 
@@ -846,26 +842,12 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_MODULE_ENABLE
 
 #if FIREBASE_MODULE_ENABLE
-	// 이름
-	public const string U_TRACKING_N_APP_LAUNCH = KCDefine.L_LOG_N_APP_LAUNCH;
-	
 	// 식별자 {
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
 
 	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
 	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
 	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VER = "BuildVerConfig";
-
-	public const string U_TRACKING_KEY_DEVICE_ID = KCDefine.L_LOG_KEY_DEVICE_ID;
-	public const string U_TRACKING_KEY_PLATFORM = KCDefine.L_LOG_KEY_PLATFORM;
-	public const string U_TRACKING_KEY_USER_TYPE = KCDefine.L_LOG_KEY_USER_TYPE;
-
-	public const string U_TRACKING_KEY_PARAMS_A = KCDefine.L_LOG_KEY_PARAMS_A;
-	public const string U_TRACKING_KEY_PARAMS_B = KCDefine.L_LOG_KEY_PARAMS_B;
-	public const string U_TRACKING_KEY_PARAMS_C = KCDefine.L_LOG_KEY_PARAMS_C;
-	public const string U_TRACKING_KEY_PARAMS_D = KCDefine.L_LOG_KEY_PARAMS_D;
-	public const string U_TRACKING_KEY_PARAMS_E = KCDefine.L_LOG_KEY_PARAMS_E;
-	public const string U_TRACKING_KEY_PARAMS_F = KCDefine.L_LOG_KEY_PARAMS_F;
 	// 식별자 }
 
 	// 노드
