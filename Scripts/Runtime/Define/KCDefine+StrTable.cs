@@ -12,6 +12,9 @@ public static partial class KCDefine {
 
 	// 종료 팝업
 	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
+
+	// 에디터 종료 팝업
+	public const string ST_KEY_EDITOR_QUIT_P_MSG = "EDITOR_QUIT_P_MSG";
 	
 	// 업데이트 팝업
 	public const string ST_KEY_UPDATE_P_MSG = "UPDATE_P_MSG";
