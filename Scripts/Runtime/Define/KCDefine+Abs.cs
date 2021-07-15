@@ -269,12 +269,12 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_START = "01.StartScene";
 	public const string B_SCENE_N_SPLASH = "01.SplashScene";
 	public const string B_SCENE_N_PERMISSION = "01.PermissionScene";
-	public const string B_SCENE_N_LOADING = "01.LoadingScene";
-	
 	public const string B_SCENE_N_INTRO = "01.IntroScene";
-	public const string B_SCENE_N_TITLE = "01.TitleScene";
-	public const string B_SCENE_N_GAME = "02.GameScene";
+
+	public const string B_SCENE_N_TITLE = "02.TitleScene";
+	public const string B_SCENE_N_GAME = "03.GameScene";
 	public const string B_SCENE_N_OVERLAY = "00.OverlayScene";
+	public const string B_SCENE_N_LOADING = "01.LoadingScene";
 
 	public const string B_SCENE_N_MENU = "01.MenuScene";
 	public const string B_SCENE_N_STUDY_SAMPLE = "00.StudySampleScene";
@@ -360,12 +360,12 @@ public static partial class KCDefine {
 	public const string B_DIR_P_START_SCENE = "StartScene/";
 	public const string B_DIR_P_SPLASH_SCENE = "SplashScene/";
 	public const string B_DIR_P_PERMISSION_SCENE = "PermissionScene/";
-	public const string B_DIR_P_LOADING_SCENE = "LoadingScene/";
-	
 	public const string B_DIR_P_INTRO_SCENE = "IntroScene/";
+
 	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
 	public const string B_DIR_P_GAME_SCENE = "GameScene/";
 	public const string B_DIR_P_OVERLAY_SCENE = "OverlayScene/";
+	public const string B_DIR_P_LOADING_SCENE = "LoadingScene/";
 
 	public const string B_DIR_P_MENU_SCENE = "MenuScene/";
 

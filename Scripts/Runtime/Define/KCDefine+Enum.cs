@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
+씬 로딩 순서 :
+- Init => Splash => Start => Setup => Agree => LateSetup => Permission => Intro
+
 프로젝트 번호 지정 방식 (총 6 자리) :
 - 장르 번호 (1 자리) + 게임 번호 (3 자리) + 서브 게임 번호 (1 자리) + 확장 번호 (1 자리)
 
