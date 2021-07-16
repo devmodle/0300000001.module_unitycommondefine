@@ -581,11 +581,11 @@ public static partial class KCDefine {
 	// 퀄리티 }
 
 	// 스크립트 순서 {
-	public const int U_SCRIPT_O_SINGLETON = -10;
-	public const int U_SCRIPT_O_BANNER_ADS_CORRECTOR = 5;
-	public const int U_SCRIPT_O_REWARD_ADS_TOUCH_INTERACTABLE = 5;
+	public const int U_SCRIPT_O_SINGLETON = sbyte.MaxValue;
+	public const int U_SCRIPT_O_BANNER_ADS_CORRECTOR = byte.MaxValue;
+	public const int U_SCRIPT_O_REWARD_ADS_TOUCH_INTERACTABLE = byte.MaxValue;
 
-	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = -20;
+	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = sbyte.MaxValue / 2;
 	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_O_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
@@ -595,8 +595,8 @@ public static partial class KCDefine {
 	public const int U_SCRIPT_O_PERMISSION_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_O_INTRO_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
 
-	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
+	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
 
 	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
 	// 스크립트 순서 }
