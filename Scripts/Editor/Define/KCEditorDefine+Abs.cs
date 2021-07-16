@@ -408,9 +408,9 @@ public static partial class KCEditorDefine {
 		KCEditorDefine.B_DIR_P_PROJ_AUTO_SCENES,
 		KCEditorDefine.B_DIR_P_PROJ_SCENES,
 
-#if EDITOR_ENABLE
+#if EDITOR_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE)
 		KCEditorDefine.B_DIR_P_PROJ_EDITOR_SCENES
-#endif			// #if EDITOR_ENABLE
+#endif			// #if EDITOR_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE)
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_DATA_P_INFOS = new KeyValuePair<string, string>[] {
@@ -915,10 +915,10 @@ public static partial class KCEditorDefine {
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
-#if INPUT_SYSTEM_ENABLE
+#if INPUT_SYSTEM_MODULE_ENABLE
 	// 경로
 	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
-#endif			// #if INPUT_SYSTEM_ENABLE
+#endif			// #if INPUT_SYSTEM_MODULE_ENABLE
 
 #if NOTI_MODULE_ENABLE
 	// 경로
