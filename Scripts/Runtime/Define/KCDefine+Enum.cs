@@ -42,7 +42,7 @@ public enum EMouseBtn {
 	NONE = -1,
 	LEFT,
 	RIGHT,
-	MIDDLE,
+	MID,
 	MAX_VAL
 }
 
@@ -69,14 +69,6 @@ public enum EDirection {
 	HORIZONTAL,
 	DIAGONAL,
 	
-	MAX_VAL
-}
-
-//! 디바이스 방향
-public enum EOrientation {
-	NONE = -1,
-	PORTRAIT,
-	LANDSCAPE,
 	MAX_VAL
 }
 

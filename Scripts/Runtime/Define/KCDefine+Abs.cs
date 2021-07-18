@@ -308,8 +308,6 @@ public static partial class KCDefine {
 	public const string B_EVENT_CANCEL = "Cancel";
 
 	// 명령어 {
-	public const string B_CMD_INIT = "Init";
-
 	public const string B_CMD_GET_DEVICE_ID = "GetDeviceID";
 	public const string B_CMD_GET_COUNTRY_CODE = "GetCountryCode";
 	public const string B_CMD_GET_STORE_VER = "GetStoreVer";
@@ -322,10 +320,6 @@ public static partial class KCDefine {
 	public const string B_CMD_MAIL = "Mail";
 	public const string B_CMD_VIBRATE = "Vibrate";
 	public const string B_CMD_INDICATOR = "Indicator";
-
-	public const string B_CMD_INIT_ADS = "InitAds";
-	public const string B_CMD_LOAD_RESUME_ADS = "LoadResumeAds";
-	public const string B_CMD_SHOW_RESUME_ADS = "ShowResumeAds";
 	// 명령어 }
 
 	// 경로 {
@@ -442,9 +436,9 @@ public static partial class KCDefine {
 	public static readonly Vector2 B_ANCHOR_UP_CENTER = new Vector2(0.5f, 1.0f);
 	public static readonly Vector2 B_ANCHOR_UP_RIGHT = new Vector2(1.0f, 1.0f);
 
-	public static readonly Vector2 B_ANCHOR_MIDDLE_LEFT = new Vector2(0.0f, 0.5f);
-	public static readonly Vector2 B_ANCHOR_MIDDLE_CENTER = new Vector2(0.5f, 0.5f);
-	public static readonly Vector2 B_ANCHOR_MIDDLE_RIGHT = new Vector2(1.0f, 0.5f);
+	public static readonly Vector2 B_ANCHOR_MID_LEFT = new Vector2(0.0f, 0.5f);
+	public static readonly Vector2 B_ANCHOR_MID_CENTER = new Vector2(0.5f, 0.5f);
+	public static readonly Vector2 B_ANCHOR_MID_RIGHT = new Vector2(1.0f, 0.5f);
 
 	public static readonly Vector2 B_ANCHOR_DOWN_LEFT = new Vector2(0.0f, 0.0f);
 	public static readonly Vector2 B_ANCHOR_DOWN_CENTER = new Vector2(0.5f, 0.0f);
@@ -460,9 +454,9 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_POS_UP_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	public static readonly Vector3 B_POS_UP_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	
-	public static readonly Vector3 B_POS_MIDDLE_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_POS_MIDDLE_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_POS_MIDDLE_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
+	public static readonly Vector3 B_POS_MID_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
+	public static readonly Vector3 B_POS_MID_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
+	public static readonly Vector3 B_POS_MID_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
 
 	public static readonly Vector3 B_POS_DOWN_LEFT = Vector3.zero;
 	public static readonly Vector3 B_POS_DOWN_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
@@ -477,9 +471,9 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_WORLD_POS_UP_CENTER = new Vector3(0.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / 2.0f, 0.0f);
 	public static readonly Vector3 B_WORLD_POS_UP_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / 2.0f, 0.0f);
 
-	public static readonly Vector3 B_WORLD_POS_MIDDLE_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, 0.0f, 0.0f);
-	public static readonly Vector3 B_WORLD_POS_MIDDLE_CENTER = Vector3.zero;
-	public static readonly Vector3 B_WORLD_POS_MIDDLE_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
+	public static readonly Vector3 B_WORLD_POS_MID_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, 0.0f, 0.0f);
+	public static readonly Vector3 B_WORLD_POS_MID_CENTER = Vector3.zero;
+	public static readonly Vector3 B_WORLD_POS_MID_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
 
 	public static readonly Vector3 B_WORLD_POS_DOWN_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / -2.0f, 0.0f);
 	public static readonly Vector3 B_WORLD_POS_DOWN_CENTER = new Vector3(0.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / -2.0f, 0.0f);

@@ -310,10 +310,7 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_APP_ID = "AppID";
 	public const string U_KEY_UNITY_MS_VER = "Ver";
 	public const string U_KEY_UNITY_MS_TIMEOUT = "Timeout";
-
-	public const string U_KEY_UNITY_MS_BUILD_MODE = "BuildMode";
-	public const string U_KEY_UNITY_MS_ORIENTATION = "Orientation";
-
+	
 	public const string U_KEY_UNITY_MS_ALERT_TITLE = "Title";
 	public const string U_KEY_UNITY_MS_ALERT_MSG = "Msg";
 	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = "OKBtnText";
@@ -327,9 +324,6 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_VIBRATE_STYLE = "Style";
 	public const string U_KEY_UNITY_MS_VIBRATE_DURATION = "Duration";
 	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
-
-	public const string U_KEY_UNITY_MS_ADMOB_IDS = "AdmobIDs";
-	public const string U_KEY_UNITY_MS_RESUME_ADS_ID = "ResumeAdsID";
 
 	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
 	
@@ -759,12 +753,10 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
-	public const string U_KEY_ADS_M_RESUME_ADS_ID = "AdsMResumeAdsID";
 
 	public const string U_KEY_FMT_ADS_M_BANNER_ADS_LOADER_INFO = "AdsMBannerAdsLoaderInfo_{0}";
 	public const string U_KEY_FMT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
 	public const string U_KEY_FMT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
-	public const string U_KEY_FMT_ADS_M_RESUME_ADS_LOADER_INFO = "AdsMResumeAdsLoaderInfo_{0}";
 	public const string U_KEY_FMT_ADS_M_CONSENT_V_LOADER_INFO = "AdsMConsentVLoaderInfo_{0}";
 	// 식별자 }
 
@@ -773,7 +765,6 @@ public static partial class KCDefine {
 	public const string U_ADS_ID_ADMOB_TEST_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
 	public const string U_ADS_ID_ADMOB_TEST_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
 	public const string U_ADS_ID_ADMOB_TEST_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
-	public const string U_ADS_ID_ADMOB_TEST_RESUME_ADS = "ca-app-pub-3940256099942544/1033173712";
 
 	public const string U_KEY_ADS_M_ADMOB_INIT_CALLBACK = "AdsMAdmobInitCallback";
 
@@ -789,10 +780,6 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMAdmobFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAdmobFullscreenAdsCloseCallback";
-	
-	public const string U_KEY_ADS_M_ADMOB_RESUME_ADS_LOAD_CALLBACK = "AdsMAdmobResumeAdsLoadCallback";
-	public const string U_KEY_ADS_M_ADMOB_RESUME_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobResumeAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_ADMOB_RESUME_ADS_CLOSE_CALLBACK = "AdsMAdmobResumeAdsCloseCallback";
 	// 식별자 }
 #endif			// #if ADMOB_ENABLE
 
