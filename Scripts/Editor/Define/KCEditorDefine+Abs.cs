@@ -28,7 +28,7 @@ public static partial class KCEditorDefine {
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
 
 	// 버전
-	public const string B_VER_UNITY_MODULE = "1.6.1";
+	public const string B_VER_UNITY_MODULE = "1.6.0";
 
 	// 커맨드 라인
 	public const string B_CMD_LINE_PARAMS_FMT_SHELL = "-c \"{0}\"";
@@ -309,6 +309,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABS_DIR_P_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommon/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
 	public static readonly string B_ABS_DIR_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitystudy/Scenes/{KCDefine.B_SCENE_N_STUDY_SAMPLE}.unity";
+	public static readonly string B_ABS_DIR_P_EDITOR_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitystudy/Scenes/{KCDefine.B_SCENE_N_EDITOR_SAMPLE}.unity";
 
 	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitystudy/Templates/";
 #else
@@ -317,6 +318,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABS_DIR_P_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommon@{KCEditorDefine.B_VER_UNITY_MODULE}/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
 	public static readonly string B_ABS_DIR_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitystudy@{KCEditorDefine.B_VER_UNITY_MODULE}/Scenes/{KCDefine.B_SCENE_N_STUDY_SAMPLE}.unity";
+	public static readonly string B_ABS_DIR_P_EDITOR_SAMPLE_SCENE = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommon@{KCEditorDefine.B_VER_UNITY_MODULE}/Scenes/{KCDefine.B_SCENE_N_EDITOR_SAMPLE}.unity";
 
 	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitystudy@{KCEditorDefine.B_VER_UNITY_MODULE}/Templates/";
 #endif			// #if SAMPLE_PROJ
@@ -755,7 +757,7 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_LOADING}.unity"),
 
 		// 03.UnityProjectEditor
-		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/{KCDefine.B_SCENE_N_LEVEL_EDITOR}.unity")
+		new KeyValuePair<string, string>(KCEditorDefine.B_ABS_DIR_P_EDITOR_SAMPLE_SCENE, $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/{KCDefine.B_SCENE_N_LEVEL_EDITOR}.unity")
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_ASSEMBLY_DEFINE_P_INFOS = new KeyValuePair<string, string>[] {
