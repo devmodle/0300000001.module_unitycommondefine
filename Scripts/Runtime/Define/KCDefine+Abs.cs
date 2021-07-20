@@ -363,6 +363,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_LOADING_SCENE = "LoadingScene/";
 
 	public const string B_DIR_P_MENU_SCENE = "MenuScene/";
+	public const string B_DIR_P_EDITOR_SCENE = "EditorScene/";
 
 	public const string B_DIR_P_TEXT_ROOT = "UI/Text/";
 	public const string B_DIR_P_IMAGE_ROOT = "UI/Image/";
@@ -389,6 +390,10 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_PAGE = "{0}/{1}";
 	public const string B_TEXT_FMT_PRICE = "{0} {1}";
 	public const string B_TEXT_FMT_VER = "Ver.{0}{1}";
+
+	public const string B_TEXT_FMT_LEVEL = "Level {0:0000}";
+	public const string B_TEXT_FMT_STAGE = "Stage {0:0000}";
+	public const string B_TEXT_FMT_CHAPTER = "Chapter {0:0000}";
 	
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
