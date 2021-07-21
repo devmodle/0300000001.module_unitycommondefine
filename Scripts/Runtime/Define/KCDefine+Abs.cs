@@ -394,6 +394,10 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_LEVEL = "Level {0:0000}";
 	public const string B_TEXT_FMT_STAGE = "Stage {0:0000}";
 	public const string B_TEXT_FMT_CHAPTER = "Chapter {0:0000}";
+
+	public const string B_TEXT_FMT_LEVEL_PAGE = "Level {0}/{1}";
+	public const string B_TEXT_FMT_STAGE_PAGE = "Stage {0}/{1}";
+	public const string B_TEXT_FMT_CHAPTER_PAGE = "Chapter {0}/{1}";
 	
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
@@ -442,31 +446,27 @@ public static partial class KCDefine {
 	public static readonly Vector2 B_ANCHOR_UP_CENTER = new Vector2(0.5f, 1.0f);
 	public static readonly Vector2 B_ANCHOR_UP_RIGHT = new Vector2(1.0f, 1.0f);
 
-	public static readonly Vector2 B_ANCHOR_MID_LEFT = new Vector2(0.0f, 0.5f);
-	public static readonly Vector2 B_ANCHOR_MID_CENTER = new Vector2(0.5f, 0.5f);
-	public static readonly Vector2 B_ANCHOR_MID_RIGHT = new Vector2(1.0f, 0.5f);
-
 	public static readonly Vector2 B_ANCHOR_DOWN_LEFT = new Vector2(0.0f, 0.0f);
 	public static readonly Vector2 B_ANCHOR_DOWN_CENTER = new Vector2(0.5f, 0.0f);
 	public static readonly Vector2 B_ANCHOR_DOWN_RIGHT = new Vector2(1.0f, 0.0f);
-	// 앵커 }
 
-	// 비율
-	public static readonly Vector3 B_SCALE_ZERO = new Vector3(0.0f, 0.0f, 0.0f);
-	public static readonly Vector3 B_SCALE_NORM = new Vector3(1.0f, 1.0f, 1.0f);
+	public static readonly Vector2 B_ANCHOR_MID_LEFT = new Vector2(0.0f, 0.5f);
+	public static readonly Vector2 B_ANCHOR_MID_CENTER = new Vector2(0.5f, 0.5f);
+	public static readonly Vector2 B_ANCHOR_MID_RIGHT = new Vector2(1.0f, 0.5f);
+	// 앵커 }
 
 	// 위치 {
 	public static readonly Vector3 B_POS_UP_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	public static readonly Vector3 B_POS_UP_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	public static readonly Vector3 B_POS_UP_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	
-	public static readonly Vector3 B_POS_MID_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_POS_MID_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_POS_MID_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
-
 	public static readonly Vector3 B_POS_DOWN_LEFT = Vector3.zero;
 	public static readonly Vector3 B_POS_DOWN_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
 	public static readonly Vector3 B_POS_DOWN_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, 0.0f, 0.0f);
+
+	public static readonly Vector3 B_POS_MID_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
+	public static readonly Vector3 B_POS_MID_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
+	public static readonly Vector3 B_POS_MID_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
 	
 	public static readonly Vector3 B_POS_POPUP = Vector3.zero;
 	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;
@@ -477,13 +477,13 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_WORLD_POS_UP_CENTER = new Vector3(0.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / 2.0f, 0.0f);
 	public static readonly Vector3 B_WORLD_POS_UP_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / 2.0f, 0.0f);
 
-	public static readonly Vector3 B_WORLD_POS_MID_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, 0.0f, 0.0f);
-	public static readonly Vector3 B_WORLD_POS_MID_CENTER = Vector3.zero;
-	public static readonly Vector3 B_WORLD_POS_MID_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
-
 	public static readonly Vector3 B_WORLD_POS_DOWN_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / -2.0f, 0.0f);
 	public static readonly Vector3 B_WORLD_POS_DOWN_CENTER = new Vector3(0.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / -2.0f, 0.0f);
 	public static readonly Vector3 B_WORLD_POS_DOWN_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / -2.0f, 0.0f);
+
+	public static readonly Vector3 B_WORLD_POS_MID_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, 0.0f, 0.0f);
+	public static readonly Vector3 B_WORLD_POS_MID_CENTER = Vector3.zero;
+	public static readonly Vector3 B_WORLD_POS_MID_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
 	// 월드 위치 }
 
 	// 국가 코드

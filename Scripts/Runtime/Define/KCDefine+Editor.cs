@@ -11,8 +11,8 @@ public static partial class KCDefine {
 	public const string E_OBJ_N_LANDSCAPE_UIS = "LandscapeUIs";
 
 	public const string E_OBJ_N_LEFT_EDITOR_UIS = "LeftEditorUIs";
-	public const string E_OBJ_N_MID_EDITOR_UIS = "MidEditorUIs";
 	public const string E_OBJ_N_RIGHT_EDITOR_UIS = "RightEditorUIs";
+	public const string E_OBJ_N_MID_EDITOR_UIS = "MidEditorUIs";
 	
 	// 에디터 스크롤러 셀 뷰 {
 	public const string E_OBJ_N_EDITOR_SCROLLER_CELL_VIEW = "EditorScrollerCellView";
