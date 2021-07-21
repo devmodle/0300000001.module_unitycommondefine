@@ -15,6 +15,15 @@ public static partial class KCDefine {
 
 	// 에디터 종료 팝업
 	public const string ST_KEY_EDITOR_QUIT_P_MSG = "EDITOR_QUIT_P_MSG";
+
+	// 에디터 레벨 제거 팝업
+	public const string ST_KEY_EDITOR_REMOVE_LP_MSG = "EDITOR_REMOVE_LP_MSG";
+
+	// 에디터 스테이지 제거 팝업
+	public const string ST_KEY_EDITOR_REMOVE_SP_MSG = "EDITOR_REMOVE_SP_MSG";
+
+	// 에디터 챕터 제거 팝업
+	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
 	
 	// 업데이트 팝업
 	public const string ST_KEY_UPDATE_P_MSG = "UPDATE_P_MSG";
