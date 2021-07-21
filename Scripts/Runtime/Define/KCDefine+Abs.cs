@@ -346,6 +346,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_ENGINE = "Engine/";
 	public const string B_DIR_P_POPUP = "Popup/";
 	public const string B_DIR_P_FX = "FX/";
+	public const string B_DIR_P_SCROLL_VIEW = "UI/ScrollView/";
 
 	public const string B_DIR_P_INIT_SCENE = "InitScene/";
 	public const string B_DIR_P_SETUP_SCENE = "SetupScene/";
