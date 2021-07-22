@@ -5,14 +5,6 @@ using UnityEngine;
 //! 문자열 테이블 상수
 public static partial class KCDefine {
 	#region 기본
-	// 경고 팝업
-	public const string ST_KEY_ALERT_P_TITLE = "ALERT_P_TITLE";
-	public const string ST_KEY_ALERT_P_OK_BTN_TEXT = "ALERT_P_OK_BTN_TEXT";
-	public const string ST_KEY_ALERT_P_CANCEL_BTN_TEXT = "ALERT_P_CANCEL_BTN_TEXT";
-
-	// 종료 팝업
-	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
-
 	// 에디터 종료 팝업
 	public const string ST_KEY_EDITOR_QUIT_P_MSG = "EDITOR_QUIT_P_MSG";
 
@@ -25,6 +17,14 @@ public static partial class KCDefine {
 	// 에디터 챕터 제거 팝업
 	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
 	
+	// 경고 팝업
+	public const string ST_KEY_ALERT_P_TITLE = "ALERT_P_TITLE";
+	public const string ST_KEY_ALERT_P_OK_BTN_TEXT = "ALERT_P_OK_BTN_TEXT";
+	public const string ST_KEY_ALERT_P_CANCEL_BTN_TEXT = "ALERT_P_CANCEL_BTN_TEXT";
+
+	// 종료 팝업
+	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
+
 	// 업데이트 팝업
 	public const string ST_KEY_UPDATE_P_MSG = "UPDATE_P_MSG";
 
