@@ -41,7 +41,7 @@ public struct STSequenceInfo {
 [System.Serializable]
 public struct STVer {
 	[Key(0)] public string m_oVer;
-	[Key(1)] public Dictionary<string, string> m_oExtraInfoList;
+	[Key(1)] public Dictionary<string, string> m_oExtraInfoDict;
 }
 
 //! 빌드 버전
@@ -100,20 +100,25 @@ public struct STCommonTypeWrapper {
 	[Key(33)] public List<float> m_oFltList;
 	[Key(34)] public List<string> m_oStrList;
 
-	[Key(91)] public HashSet<bool> m_oBoolSetList;
-	[Key(92)] public HashSet<int> m_oIntSetList;
-	[Key(93)] public HashSet<float> m_oFltSetList;
-	[Key(94)] public HashSet<string> m_oStrSetList;
+	[Key(91)] public HashSet<bool> m_oBoolSet;
+	[Key(92)] public HashSet<int> m_oIntSet;
+	[Key(93)] public HashSet<float> m_oFltSet;
+	[Key(94)] public HashSet<string> m_oStrSet;
 
-	[Key(151)] public Dictionary<int, bool> m_oBoolMapList;
-	[Key(152)] public Dictionary<int, int> m_oIntMapList;
-	[Key(153)] public Dictionary<int, float> m_oFltMapList;
-	[Key(154)] public Dictionary<int, string> m_oStrMapList;
+	[Key(151)] public Dictionary<int, bool> m_oIntBoolDict;
+	[Key(152)] public Dictionary<int, int> m_oIntIntDict;
+	[Key(153)] public Dictionary<int, float> m_oIntFltDict;
+	[Key(154)] public Dictionary<int, string> m_oIntStrDict;
 
-	[Key(155)] public Dictionary<string, bool> m_oBoolStrMapList;
-	[Key(156)] public Dictionary<string, int> m_oIntStrMapList;
-	[Key(157)] public Dictionary<string, float> m_oFltStrMapList;
-	[Key(158)] public Dictionary<string, string> m_oStrStrMapList;
+	[Key(155)] public Dictionary<long, bool> m_oLongBoolDict;
+	[Key(156)] public Dictionary<long, int> m_oLongIntDict;
+	[Key(157)] public Dictionary<long, float> m_oLongFltDict;
+	[Key(158)] public Dictionary<long, string> m_oLongStrDict;
+
+	[Key(159)] public Dictionary<string, bool> m_oStrBoolDict;
+	[Key(160)] public Dictionary<string, int> m_oStrIntDict;
+	[Key(161)] public Dictionary<string, float> m_oStrFltDict;
+	[Key(162)] public Dictionary<string, string> m_oStrStrDict;
 }
 #endregion			// 기본
 
