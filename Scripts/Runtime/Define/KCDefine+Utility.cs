@@ -71,9 +71,9 @@ public static partial class KCDefine {
 	public const float U_DURATION_SCREEN_FADE_IN_ANI = 0.15f;
 	public const float U_DURATION_SCREEN_FADE_OUT_ANI = 0.15f;
 
-	public const float U_DURATION_POPUP_SCALE_ANI = 0.35f;
-	public const float U_DURATION_POPUP_DROPDOWN_ANI = 0.5f;
-	public const float U_DURATION_POPUP_SLIDE_ANI = 0.5f;
+	public const float U_DURATION_POPUP_SCALE_ANI = 0.25f;
+	public const float U_DURATION_POPUP_DROPDOWN_ANI = 0.35f;
+	public const float U_DURATION_POPUP_SLIDE_ANI = 0.35f;
 
 	public const float U_DURATION_TOAST_POPUP = 2.0f;
 
@@ -135,9 +135,12 @@ public static partial class KCDefine {
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
 
-	public const string U_KEY_REPLACE = "Replace";
 	public const string U_KEY_DEVICE_CMD = "Cmd";
 	public const string U_KEY_DEVICE_MSG = "Msg";
+
+	public const string U_KEY_NAME = "Name";
+	public const string U_KEY_DESC = "Desc";
+	public const string U_KEY_REPLACE = "Replace";
 	// 식별자 }
 
 	// 이름 {
@@ -212,9 +215,12 @@ public static partial class KCDefine {
 	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
 	public const string U_FUNC_N_RESET_LEVEL_MODE = "ResetLevelMode";
 
-	public const string U_INPUT_N_JUMP = "Jump";
-	public const string U_INPUT_N_VERTICAL = "Vertical";
-	public const string U_INPUT_N_HORIZONTAL = "Horizontal";
+	public const string U_INPUT_E_N_JUMP = "Jump";
+	public const string U_INPUT_E_N_VERTICAL = "Vertical";
+	public const string U_INPUT_E_N_HORIZONTAL = "Horizontal";
+
+	public const string U_PROPERTY_N_TEXT = "text";
+	public const string U_PROPERTY_N_COLOR = "color";
 	// 이름 }
 
 	// 태그 {
@@ -490,10 +496,10 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_STORE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_StorePopup";
 	public static readonly string U_OBJ_P_G_SETTINGS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SettingsPopup";
 	public static readonly string U_OBJ_P_G_DAILY_MISSION_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_DailyMissionPopup";
-	public static readonly string U_OBJ_P_G_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RewardPopup";
 	public static readonly string U_OBJ_P_G_FREE_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FreeRewardPopup";
 	public static readonly string U_OBJ_P_G_DAILY_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_DailyRewardPopup";
 	public static readonly string U_OBJ_P_G_CHANGES_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ChangesPopup";
+	public static readonly string U_OBJ_P_G_REWARD_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RewardAcquirePopup";
 	public static readonly string U_OBJ_P_G_CHANGES_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ChangesAcquirePopup";
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";

@@ -32,6 +32,9 @@ public static partial class KCDefine {
 
 	public const string LES_OBJ_N_ME_UIS_PREV_LEVEL_BTN = "PrevLevelBtn";
 	public const string LES_OBJ_N_ME_UIS_NEXT_LEVEL_BTN = "NextLevelBtn";
+
+	public const string LES_OBJ_N_ME_UIS_COPY_LEVEL_BTN = "CopyLevelBtn";
+	public const string LES_OBJ_N_ME_UIS_MOVE_LEVEL_BTN = "MoveLevelBtn";
 	public const string LES_OBJ_N_ME_UIS_REMOVE_LEVEL_BTN = "RemoveLevelBtn";
 
 	public const string LES_OBJ_N_ME_UIS_SAVE_LEVEL_BTN = "SaveLevelBtn";

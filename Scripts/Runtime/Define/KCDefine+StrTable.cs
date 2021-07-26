@@ -16,7 +16,7 @@ public static partial class KCDefine {
 
 	// 에디터 챕터 제거 팝업
 	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
-	
+
 	// 경고 팝업
 	public const string ST_KEY_ALERT_P_TITLE = "ALERT_P_TITLE";
 	public const string ST_KEY_ALERT_P_OK_BTN_TEXT = "ALERT_P_OK_BTN_TEXT";
@@ -53,5 +53,19 @@ public static partial class KCDefine {
 
 	public const string ST_KEY_AGREE_P_OK_BTN_TEXT = "AGREE_P_OK_BTN_TEXT";
 	// 약관 동의 팝업 }
+
+	// 공용 {
+	public const string ST_KEY_COMMON_LEVEL_TEXT = "COMMON_LEVEL_TEXT";
+	public const string ST_KEY_COMMON_STAGE_TEXT = "COMMON_STAGE_TEXT";
+	public const string ST_KEY_COMMON_CHAPTER_TEXT = "COMMON_CHAPTER_TEXT";
+
+	public const string ST_KEY_COMMON_LEVEL_PAGE_TEXT_FMT = "COMMON_LEVEL_PAGE_TEXT_FMT";
+	public const string ST_KEY_COMMON_STAGE_PAGE_TEXT_FMT = "COMMON_STAGE_PAGE_TEXT_FMT";
+	public const string ST_KEY_COMMON_CHAPTER_PAGE_TEXT_FMT = "COMMON_CHAPTER_PAGE_TEXT_FMT";
+
+	public const string ST_KEY_COMMON_NUM_LEVELS_TEXT_FMT = "COMMON_NUM_LEVELS_TEXT_FMT";
+	public const string ST_KEY_COMMON_NUM_STAGES_TEXT_FMT = "COMMON_NUM_STAGES_TEXT_FMT";
+	public const string ST_KEY_COMMON_NUM_CHAPTERS_TEXT_FMT = "COMMON_NUM_CHAPTERS_TEXT_FMT";
+	// 공용 }
 	#endregion			// 기본
 }

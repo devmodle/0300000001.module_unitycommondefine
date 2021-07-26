@@ -388,18 +388,16 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_INCR = "+{0}";
 	public const string B_TEXT_FMT_DECR = "-{0}";
 
-	public const string B_TEXT_FMT_PAGE = "{0}/{1}";
-	public const string B_TEXT_FMT_PRICE = "{0} {1}";
 	public const string B_TEXT_FMT_VER = "Ver.{0}{1}";
+	public const string B_TEXT_FMT_PAGE = "{0}/{1}";
 
 	public const string B_TEXT_FMT_LEVEL = "Level {0:0000}";
 	public const string B_TEXT_FMT_STAGE = "Stage {0:0000}";
 	public const string B_TEXT_FMT_CHAPTER = "Chapter {0:0000}";
-
-	public const string B_TEXT_FMT_LEVEL_PAGE = "Level {0}/{1}";
-	public const string B_TEXT_FMT_STAGE_PAGE = "Stage {0}/{1}";
-	public const string B_TEXT_FMT_CHAPTER_PAGE = "Chapter {0}/{1}";
 	
+	public const string B_TEXT_FMT_DICT = "[{0}]{1}";
+	public const string B_TEXT_FMT_SIZE = "<size={0}>{1}</size>";
+	public const string B_TEXT_FMT_COLOR = "<color=#{0}>{1}</color>";
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
 
@@ -408,10 +406,11 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_3_DIGITS = "{0:000}";
 	public const string B_TEXT_FMT_4_DIGITS = "{0:0000}";
 	public const string B_TEXT_FMT_5_DIGITS = "{0:00000}";
-	
-	public const string B_DICT_FMT_STR = "[{0}]{1}";
-	public const string B_SIZE_FMT_STR = "<size={0}>{1}</size>";
-	public const string B_COLOR_FMT_STR = "<color=#{0}>{1}</color>";
+
+	public const string B_TEXT_FMT_2_COMBINE = "{0} {1}";
+	public const string B_TEXT_FMT_3_COMBINE = "{0} {1} {2}";
+	public const string B_TEXT_FMT_4_COMBINE = "{0} {1} {2} {3}";
+	public const string B_TEXT_FMT_5_COMBINE = "{0} {1} {2} {3} {4}";
 
 	public const string B_NAME_FMT_BACKUP = "yyyy_MM_dd HH_mm_ss";
 	public const string B_NAME_FMT_BACKUP_COMBINE = "{0} ({1})";

@@ -51,6 +51,15 @@ public struct STBuildVer {
 	public string m_oVer;
 }
 
+//! 식별자 정보
+[MessagePackObject]
+[System.Serializable]
+public struct STIDInfo {
+	[Key(0)] public int m_nID;
+	[Key(1)] public int m_nStageID;
+	[Key(2)] public int m_nChapterID;
+}
+
 //! 지급 아이템 정보
 [System.Serializable]
 public struct STPostItemInfo {
@@ -86,20 +95,25 @@ public struct STBuildVerConfig {
 //! 공용 타입 래퍼
 [MessagePackObject]
 public struct STCommonTypeWrapper {
-	[Key(0)] public List<bool> m_oBoolList;
-	[Key(1)] public List<int> m_oIntList;
-	[Key(2)] public List<float> m_oFltList;
-	[Key(3)] public List<string> m_oStrList;
+	[Key(31)] public List<bool> m_oBoolList;
+	[Key(32)] public List<int> m_oIntList;
+	[Key(33)] public List<float> m_oFltList;
+	[Key(34)] public List<string> m_oStrList;
 
-	[Key(4)] public Dictionary<int, bool> m_oBoolMapList;
-	[Key(5)] public Dictionary<int, int> m_oIntMapList;
-	[Key(6)] public Dictionary<int, float> m_oFltMapList;
-	[Key(7)] public Dictionary<int, string> m_oStrMapList;
+	[Key(91)] public HashSet<bool> m_oBoolSetList;
+	[Key(92)] public HashSet<int> m_oIntSetList;
+	[Key(93)] public HashSet<float> m_oFltSetList;
+	[Key(94)] public HashSet<string> m_oStrSetList;
 
-	[Key(8)] public Dictionary<string, bool> m_oBoolStrMapList;
-	[Key(9)] public Dictionary<string, int> m_oIntStrMapList;
-	[Key(10)] public Dictionary<string, float> m_oFltStrMapList;
-	[Key(11)] public Dictionary<string, string> m_oStrStrMapList;
+	[Key(151)] public Dictionary<int, bool> m_oBoolMapList;
+	[Key(152)] public Dictionary<int, int> m_oIntMapList;
+	[Key(153)] public Dictionary<int, float> m_oFltMapList;
+	[Key(154)] public Dictionary<int, string> m_oStrMapList;
+
+	[Key(155)] public Dictionary<string, bool> m_oBoolStrMapList;
+	[Key(156)] public Dictionary<string, int> m_oIntStrMapList;
+	[Key(157)] public Dictionary<string, float> m_oFltStrMapList;
+	[Key(158)] public Dictionary<string, string> m_oStrStrMapList;
 }
 #endregion			// 기본
 
