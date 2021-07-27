@@ -221,6 +221,8 @@ public static partial class KCDefine {
 
 	public const string U_PROPERTY_N_TEXT = "text";
 	public const string U_PROPERTY_N_COLOR = "color";
+
+	public const string U_ASSET_N_LIGHTING_SETTINGS = "U_LightingSettings";
 	// 이름 }
 
 	// 태그 {
@@ -603,11 +605,11 @@ public static partial class KCDefine {
 	// 스크립트 순서 }
 
 	// 광원 {
-#if REALTIME_LIGHTMAP_BAKE_ENABLE
+#if !LIGHTMAP_BAKE_ENABLE || REALTIME_LIGHTMAP_BAKE_ENABLE
 	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Realtime;
 #else
 	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Mixed;
-#endif			// #if REALTIME_LIGHTMAP_BAKE_ENABLE
+#endif			// #if !LIGHTMAP_BAKE_ENABLE || REALTIME_LIGHTMAP_BAKE_ENABLE
 	// 광원 }
 
 #if UNIVERSAL_PIPELINE_MODULE_ENABLE
