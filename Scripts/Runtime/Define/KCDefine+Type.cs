@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 using MessagePack;
 
@@ -123,6 +124,19 @@ public struct STCommonTypeWrapper {
 #endregion			// 기본
 
 #region 조건부 타입
+#if UNITY_EDITOR || UNITY_STANDALONE
+//! 에디터 레벨 생성 정보
+public struct STEditorLevelCreateInfo {
+	public int m_nNumLevels;
+
+	public int m_nMinNumCellsX;
+	public int m_nMaxNumCellsX;
+
+	public int m_nMinNumCellsY;
+	public int m_nMaxNumCellsY;
+}
+#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
+
 #if ADS_MODULE_ENABLE
 //! 광고 보상 아이템 정보
 public struct STAdsRewardItemInfo {

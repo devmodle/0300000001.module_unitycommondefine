@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 #if UNITY_IOS
@@ -192,6 +193,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_RIGHT_BLIND_IMG = "RightBlindImg";
 
 	public const string U_OBJ_N_POPUP_CONTENTS = "Contents";
+	public const string G_OBJ_N_POPUP_CONTENTS_UIS = "ContentsUIs";
+	
 	public const string U_OBJ_N_POPUP_CLOSE_BTN = "CloseBtn";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
@@ -296,6 +299,9 @@ public static partial class KCDefine {
 	// 값 테이블 }
 
 	// 경고 팝업 {
+	public const float U_DEF_OFFSET_ALERT_P_WIDTH = 80.0f;
+	public const float U_DEF_OFFSET_ALERT_P_HEIGHT = 40.0f;
+
 	public const string U_OBJ_N_ALERT_P_TITLE_TEXT = "TitleText";
 	public const string U_OBJ_N_ALERT_P_MSG_TEXT = "MsgText";
 	public const string U_OBJ_N_ALERT_P_BTN_TEXT = "Text";
@@ -374,6 +380,9 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_CAMERA_BG = Color.black;
 #endif			// #if UNITY_EDITOR
 	// 색상 }
+
+	// 크기
+	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
 	// 태그
 	public static readonly string[] U_TAGS = new string[] {
