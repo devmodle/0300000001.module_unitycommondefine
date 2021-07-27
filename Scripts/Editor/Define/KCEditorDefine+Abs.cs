@@ -303,6 +303,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../ExternalDatas/";
 	public static readonly string B_ABS_DIR_P_TABLES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Tables/";
 	public static readonly string B_ABS_DIR_P_UNITY_ENGINE = $"{EditorApplication.applicationPath}/";
+	public static readonly string B_ABS_DIR_P_DOTWEEN_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Plugins/Demigiant/";
 
 #if SAMPLE_PROJ
 	public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommon/Templates/";
@@ -344,6 +345,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_SRC_PYTHON_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Scripts/Python";
 	public static readonly string B_ABS_DIR_P_DEST_PYTHON_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Scripts/Python";
 	
+	public static readonly string B_ABS_PKGS_P_DOTWEEN_PRO = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/DOTweenPro-v1.0.244.unitypackage";
 	public static readonly string B_ABS_PKGS_P_2D_TOOLKIT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/2DToolkit-v2.5.8.unitypackage";
 	public static readonly string B_ABS_PKGS_P_BITMAP_FONT_IMPORTER = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/BitmapFontImporter-v2.4.1.unitypackage";
 	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/BuildReportTool-v3.8.2.unitypackage";
