@@ -299,9 +299,6 @@ public static partial class KCDefine {
 	// 값 테이블 }
 
 	// 경고 팝업 {
-	public const float U_DEF_OFFSET_ALERT_P_WIDTH = 80.0f;
-	public const float U_DEF_OFFSET_ALERT_P_HEIGHT = 40.0f;
-
 	public const string U_OBJ_N_ALERT_P_TITLE_TEXT = "TitleText";
 	public const string U_OBJ_N_ALERT_P_MSG_TEXT = "MsgText";
 	public const string U_OBJ_N_ALERT_P_BTN_TEXT = "Text";
