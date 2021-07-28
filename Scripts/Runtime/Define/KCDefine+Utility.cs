@@ -207,6 +207,7 @@ public static partial class KCDefine {
 
 	public const string U_IMG_N_SPRITE = "Sprite";
 	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
+	public const string U_IMG_N_UNKNOWN_SPRITE = "Unknown";
 
 	public const string U_FUNC_N_ON_DRAG = "OnDrag";
 	public const string U_FUNC_N_ON_POINTER_UP = "OnPointerUp";

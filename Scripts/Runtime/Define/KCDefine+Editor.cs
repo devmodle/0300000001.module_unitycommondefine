@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public static partial class KCDefine {
 	#region 기본
 	// 이름 {
+	public const string E_OBJ_N_BLOCK_SPRITE = "BlockSprite";
+
 	public const string E_OBJ_N_PORTRAIT_UIS = "PortraitUIs";
 	public const string E_OBJ_N_LANDSCAPE_UIS = "LandscapeUIs";
 
