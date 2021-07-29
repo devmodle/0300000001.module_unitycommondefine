@@ -38,9 +38,9 @@ public static partial class KCDefine {
 	public const string LES_OBJ_N_ME_UIS_MOVE_LEVEL_BTN = "MoveLevelBtn";
 	public const string LES_OBJ_N_ME_UIS_REMOVE_LEVEL_BTN = "RemoveLevelBtn";
 
-	public const string LES_OBJ_N_ME_UIS_SAVE_LEVEL_BTN = "SaveLevelBtn";
-	public const string LES_OBJ_N_ME_UIS_RESET_LEVEL_BTN = "ResetLevelBtn";
-	public const string LES_OBJ_N_ME_UIS_TEST_LEVEL_BTN = "TestLevelBtn";
+	public const string LES_OBJ_N_ME_UIS_SAVE_BTN = "SaveBtn";
+	public const string LES_OBJ_N_ME_UIS_RESET_BTN = "ResetBtn";
+	public const string LES_OBJ_N_ME_UIS_TEST_BTN = "TestBtn";
 	// 중앙 에디터 UI }
 	// 이름 }
 	#endregion			// 기본
