@@ -124,19 +124,6 @@ public struct STCommonTypeWrapper {
 #endregion			// 기본
 
 #region 조건부 타입
-#if UNITY_EDITOR || UNITY_STANDALONE
-//! 에디터 레벨 생성 정보
-public struct STEditorLevelCreateInfo {
-	public int m_nNumLevels;
-
-	public int m_nMinNumCellsX;
-	public int m_nMaxNumCellsX;
-
-	public int m_nMinNumCellsY;
-	public int m_nMaxNumCellsY;
-}
-#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
-
 #if ADS_MODULE_ENABLE
 //! 광고 보상 아이템 정보
 public struct STAdsRewardItemInfo {
@@ -158,4 +145,14 @@ public struct STNotiInfo {
 	public System.DateTime m_stNotiTime;
 }
 #endif			// #if NOTI_MODULE_ENABLE
+
+#if UNITY_EDITOR || UNITY_STANDALONE
+//! 에디터 레벨 생성 정보
+public class CEditorLevelCreateInfo {
+	public int m_nNumLevels = 0;
+
+	public Vector3Int m_stMinNumCells = Vector3Int.zero;
+	public Vector3Int m_stMaxNumCells = Vector3Int.zero;
+}
+#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
 #endregion			// 조건부 타입
