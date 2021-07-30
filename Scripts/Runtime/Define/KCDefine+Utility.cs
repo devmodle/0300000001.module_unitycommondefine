@@ -302,8 +302,7 @@ public static partial class KCDefine {
 	// 경고 팝업 {
 	public const string U_OBJ_N_ALERT_P_TITLE_TEXT = "TitleText";
 	public const string U_OBJ_N_ALERT_P_MSG_TEXT = "MsgText";
-	public const string U_OBJ_N_ALERT_P_BTN_TEXT = "Text";
-
+	
 	public const string U_OBJ_N_ALERT_P_BG_IMG = "BGImg";
 
 	public const string U_OBJ_N_ALERT_P_OK_BTN = "OKBtn";
