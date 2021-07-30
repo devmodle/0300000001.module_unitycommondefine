@@ -192,8 +192,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LEFT_BLIND_IMG = "LeftBlindImg";
 	public const string U_OBJ_N_RIGHT_BLIND_IMG = "RightBlindImg";
 
-	public const string U_OBJ_N_POPUP_CONTENTS = "Contents";
-	public const string G_OBJ_N_POPUP_CONTENTS_UIS = "ContentsUIs";
+	public const string U_OBJ_N_CONTENTS = "Contents";
+	public const string U_OBJ_N_CONTENTS_UIS = "ContentsUIs";
+
+	public const string U_OBJ_N_TOP_MENU_UIS = "TopMenuUIs";
+	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BottomMenuUIs";
 	
 	public const string U_OBJ_N_POPUP_CLOSE_BTN = "CloseBtn";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
