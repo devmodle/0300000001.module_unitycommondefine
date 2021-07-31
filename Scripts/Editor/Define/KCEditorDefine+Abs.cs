@@ -47,6 +47,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_OBJ_N_IMG = "Img";
 	public const string B_OBJ_N_RAW_IMG = "RawImg";
+	public const string B_OBJ_N_FOCUS_IMG = "FocusImg";
 
 	public const string B_OBJ_N_TEXT_BTN = "TextBtn";
 	public const string B_OBJ_N_TEXT_SCALE_BTN = "TextScaleBtn";
@@ -632,6 +633,7 @@ public static partial class KCEditorDefine {
 
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_Img.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_RawImg.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_RAW_IMG}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_FocusImg.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FOCUS_IMG}.prefab"),
 
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_BTN}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_IMG_SCALE_BTN}.prefab"),
@@ -929,7 +931,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DEST_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}gradleTemplate.properties";
 
 	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
-	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/app/libs/classes.jar";
+	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/unityLibrary/libs/unity-classes.jar";
 
 	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_ANDROID = new GraphicsDeviceType[] {
 		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3, GraphicsDeviceType.OpenGLES2

@@ -475,6 +475,7 @@ public static partial class KCDefine {
 
 	public static readonly string U_OBJ_P_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_Img";
 	public static readonly string U_OBJ_P_RAW_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_RawImg";
+	public static readonly string U_OBJ_P_FOCUS_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_FocusImg";
 
 	public static readonly string U_OBJ_P_IMG_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgBtn";
 	public static readonly string U_OBJ_P_IMG_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgScaleBtn";
