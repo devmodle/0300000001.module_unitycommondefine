@@ -37,8 +37,8 @@ public static partial class KCDefine {
 	public const string ST_KEY_AGREE_P_EU_TITLE = "AGREE_P_EU_TITLE";
 	public const string ST_KEY_AGREE_P_DESC_TEXT_01 = "AGREE_P_DESC_TEXT_01";
 	public const string ST_KEY_AGREE_P_DESC_TEXT_02 = "AGREE_P_DESC_TEXT_02";
-	public const string ST_KEY_AGREE_P_SERVICES_URL_TEXT = "AGREE_P_SERVICES_URL_TEXT";
-	public const string ST_KEY_AGREE_P_PRIVACY_URL_TEXT = "AGREE_P_PRIVACY_URL_TEXT";
+	public const string ST_KEY_AGREE_P_SERVICES_BTN_TEXT = "AGREE_P_SERVICES_BTN_TEXT";
+	public const string ST_KEY_AGREE_P_PRIVACY_BTN_TEXT = "AGREE_P_PRIVACY_BTN_TEXT";
 
 	public const string ST_KEY_AGREE_P_OK_BTN_TEXT = "AGREE_P_OK_BTN_TEXT";
 	// 약관 동의 팝업 }
