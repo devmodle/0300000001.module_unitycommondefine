@@ -455,8 +455,8 @@ public static partial class KCDefine {
 	
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
-	public static readonly object U_LOCK_OBJ_SCHEDULE_M_UPDATE = new object();
 	public static readonly object U_LOCK_OBJ_TASK_M_UPDATE = new object();
+	public static readonly object U_LOCK_OBJ_SCHEDULE_M_UPDATE = new object();
 
 	// 경로 {
 	public static readonly string U_DATA_P_COMMON_APP_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
