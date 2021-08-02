@@ -37,14 +37,6 @@ public struct STSequenceInfo {
 	public GameObject m_oObj;
 }
 
-//! 버전
-[MessagePackObject]
-[System.Serializable]
-public struct STVer {
-	[Key(0)] public string m_oVer;
-	[Key(1)] public Dictionary<string, string> m_oExtraInfoDict;
-}
-
 //! 빌드 버전
 [System.Serializable]
 public struct STBuildVer {

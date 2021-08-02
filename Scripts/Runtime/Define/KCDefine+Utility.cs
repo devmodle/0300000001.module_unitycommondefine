@@ -125,11 +125,6 @@ public static partial class KCDefine {
 
 	// 회전
 	public static readonly Vector3 U_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
-
-	// 버전
-	public const string U_VER_COMMON_APP_INFO = "1.0.0";
-	public const string U_VER_COMMON_USER_INFO = "1.0.0";
-	public const string U_VER_COMMON_GAME_INFO = "1.0.0";
 	
 	// 형식
 	public const string U_FMT_LOG_MSG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
