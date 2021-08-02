@@ -103,7 +103,6 @@ public enum EShadowCascadesOpts {
 //! 값 타입
 public enum EValType {
 	NONE = -1,
-	BOOL,
 	INT,
 	FLT,
 	STR,

@@ -88,30 +88,21 @@ public struct STBuildVerConfig {
 //! 공용 타입 래퍼
 [MessagePackObject]
 public struct STCommonTypeWrapper {
-	[Key(0)] public List<bool> m_oBoolList;
-	[Key(1)] public List<int> m_oIntList;
-	[Key(2)] public List<float> m_oFltList;
-	[Key(3)] public List<string> m_oStrList;
+	[Key(0)] public List<int> m_oIntList;
+	[Key(1)] public List<float> m_oFltList;
+	[Key(2)] public List<string> m_oStrList;
 
-	[Key(10)] public HashSet<bool> m_oBoolSet;
-	[Key(11)] public HashSet<int> m_oIntSet;
-	[Key(12)] public HashSet<float> m_oFltSet;
-	[Key(13)] public HashSet<string> m_oStrSet;
+	[Key(10)] public Dictionary<int, int> m_oIntIntDict;
+	[Key(11)] public Dictionary<int, float> m_oIntFltDict;
+	[Key(12)] public Dictionary<int, string> m_oIntStrDict;
 
-	[Key(21)] public Dictionary<int, bool> m_oIntBoolDict;
-	[Key(22)] public Dictionary<int, int> m_oIntIntDict;
-	[Key(23)] public Dictionary<int, float> m_oIntFltDict;
-	[Key(24)] public Dictionary<int, string> m_oIntStrDict;
+	[Key(20)] public Dictionary<long, int> m_oLongIntDict;
+	[Key(21)] public Dictionary<long, float> m_oLongFltDict;
+	[Key(22)] public Dictionary<long, string> m_oLongStrDict;
 
-	[Key(30)] public Dictionary<long, bool> m_oLongBoolDict;
-	[Key(31)] public Dictionary<long, int> m_oLongIntDict;
-	[Key(32)] public Dictionary<long, float> m_oLongFltDict;
-	[Key(33)] public Dictionary<long, string> m_oLongStrDict;
-
-	[Key(40)] public Dictionary<string, bool> m_oStrBoolDict;
-	[Key(41)] public Dictionary<string, int> m_oStrIntDict;
-	[Key(42)] public Dictionary<string, float> m_oStrFltDict;
-	[Key(43)] public Dictionary<string, string> m_oStrStrDict;
+	[Key(30)] public Dictionary<string, int> m_oStrIntDict;
+	[Key(31)] public Dictionary<string, float> m_oStrFltDict;
+	[Key(32)] public Dictionary<string, string> m_oStrStrDict;
 }
 #endregion			// 기본
 

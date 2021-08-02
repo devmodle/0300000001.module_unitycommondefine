@@ -288,10 +288,9 @@ public static partial class KCDefine {
 	public const string U_KEY_STR_T_STR = "Str";
 
 	// 값 테이블 {
-	public const int U_IDX_VAL_T_BOOL_VALS = 0;
-	public const int U_IDX_VAL_T_INT_VALS = 1;
-	public const int U_IDX_VAL_T_FLT_VALS = 2;
-	public const int U_IDX_VAL_T_STR_VALS = 3;
+	public const int U_IDX_VAL_T_INT_VALS = 0;
+	public const int U_IDX_VAL_T_FLT_VALS = 1;
+	public const int U_IDX_VAL_T_STR_VALS = 2;
 
 	public const string U_KEY_VAL_T_ID = "ID";
 	public const string U_KEY_VAL_T_VAL = "Val";
@@ -488,7 +487,9 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_SCROLL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}U_ScrollView";
 	public static readonly string U_OBJ_P_RECYCLE_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}U_RecycleView";
 
+	public static readonly string U_OBJ_P_LINE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_LineFX";
 	public static readonly string U_OBJ_P_PARTICLE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_ParticleFX";
+	
 	public static readonly string U_OBJ_P_SPRITE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_2D_ROOT}U_Sprite";
 
 	public static readonly string U_OBJ_P_FPS_COUNTER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_FPSCounter";
