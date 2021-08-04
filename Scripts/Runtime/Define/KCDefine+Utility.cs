@@ -198,8 +198,46 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
 	public const string U_OBJ_N_EMPTY = "Empty";
+	public const string U_OBJ_N_GAME_OBJ = "GameObj";
 	public const string U_OBJ_N_ALERT_POPUP = "AlertPopup";
 	public const string U_OBJ_N_TOAST_POPUP = "ToastPopup";
+
+	public const string U_OBJ_N_TEXT = "Text";
+	public const string U_OBJ_N_LOCALIZE_TEXT = "LocalizeText";
+
+	public const string U_OBJ_N_IMG = "Img";
+	public const string U_OBJ_N_RAW_IMG = "RawImg";
+	public const string U_OBJ_N_FOCUS_IMG = "FocusImg";
+
+	public const string U_OBJ_N_TEXT_BTN = "TextBtn";
+	public const string U_OBJ_N_TEXT_SCALE_BTN = "TextScaleBtn";
+
+	public const string U_OBJ_N_LOCALIZE_TEXT_BTN = "LocalizeTextBtn";
+	public const string U_OBJ_N_LOCALIZE_TEXT_SCALE_BTN = "LocalizeTextScaleBtn";
+
+	public const string U_OBJ_N_IMG_BTN = "ImgBtn";
+	public const string U_OBJ_N_IMG_SCALE_BTN = "ImgScaleBtn";
+
+	public const string U_OBJ_N_IMG_TEXT_BTN = "ImgTextBtn";
+	public const string U_OBJ_N_IMG_TEXT_SCALE_BTN = "ImgTextScaleBtn";
+
+	public const string U_OBJ_N_IMG_LOCALIZE_TEXT_BTN = "ImgLocalizeTextBtn";
+	public const string U_OBJ_N_IMG_LOCALIZE_TEXT_SCALE_BTN = "ImgLocalizeTextScaleBtn";
+
+	public const string U_OBJ_N_INPUT_FIELD = "InputField";
+	public const string U_OBJ_N_DROPDOWN = "Dropdown";
+
+	public const string U_OBJ_N_PAGE_VIEW = "PageView";
+	public const string U_OBJ_N_SCROLL_VIEW = "ScrollView";
+	public const string U_OBJ_N_RECYCLE_VIEW = "RecycleView";
+
+	public const string U_OBJ_N_LINE_FX = "LineFX";
+	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
+
+	public const string U_OBJ_N_SPRITE = "Sprite";
+
+	public const string U_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
+	public const string U_OBJ_N_DRAG_RESPONDER = "DragResponder";
 
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
