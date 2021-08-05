@@ -113,6 +113,14 @@ public struct STCommonTypeWrapper {
 	[Key(31)] public Dictionary<string, float> m_oStrFltDict;
 	[Key(32)] public Dictionary<string, string> m_oStrStrDict;
 }
+
+//! 경로 정보
+public class CPathInfo {
+	public int m_nCost = 0;
+	public Vector3Int m_stIdx = Vector3Int.zero;
+	
+	public CPathInfo m_oPrevPathInfo = null;
+}
 #endregion			// 기본
 
 #region 조건부 타입

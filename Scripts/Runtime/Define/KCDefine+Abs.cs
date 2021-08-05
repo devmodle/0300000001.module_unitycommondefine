@@ -434,6 +434,16 @@ public static partial class KCDefine {
 	#endregion			// 기본
 
 	#region 런타임 상수
+	// 기타 {
+	public static readonly List<Vector2> B_EMPTY_2D_VERTICES = new List<Vector2>();
+	public static readonly List<Vector3> B_EMPTY_3D_VERTICES = new List<Vector3>();
+
+	public static readonly List<Vector2Int> B_EMPTY_2D_INT_VERTICES = new List<Vector2Int>();
+	public static readonly List<Vector3Int> B_EMPTY_3D_INT_VERTICES = new List<Vector3Int>();
+
+	public static readonly List<STIdxInfo> B_EMPTY_IDX_INFOS = new List<STIdxInfo>();
+	// 기타 }
+
 	// 색상 {
 	public static readonly Color B_LOG_COLOR_WARNING = new Color(0xff / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0xa5 / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0.0f, 1.0f);
 	public static readonly Color B_LOG_COLOR_ERROR = Color.red;
