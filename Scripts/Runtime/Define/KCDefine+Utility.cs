@@ -235,6 +235,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
 
 	public const string U_OBJ_N_SPRITE = "Sprite";
+	public const string U_OBJ_N_GAUGE_IMG = "GaugeImg";
 
 	public const string U_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
 	public const string U_OBJ_N_DRAG_RESPONDER = "DragResponder";
