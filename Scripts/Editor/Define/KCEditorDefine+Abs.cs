@@ -227,13 +227,17 @@ public static partial class KCEditorDefine {
 	// 경고 팝업 }
 
 	// 객체 이름 에디터 윈도우 {
-	public const float B_WIDTH_OBJ_NEW_APPLY_BTN = 100.0f;
-	public const float B_WIDTH_OBJ_NEW_NAME_INPUT = 300.0f;
+	public const float B_WIDTH_TEXT = 300.0f;
+	public const float B_WIDTH_INPUT = 300.0f;
+	public const float B_WIDTH_BTN = 300.0f;
 
-	public const string B_TEXT_OBJ_NEW_TARGET = "검색";
-	public const string B_TEXT_OBJ_NEW_REPLACE = "변경";
+	public const string B_TEXT_SEARCH = "검색";
+	public const string B_TEXT_REPLACE = "변경";
+	public const string B_TEXT_APPLY = "적용";
+	public const string B_TEXT_PATH = "경로";
 
-	public const string B_TEXT_OBJ_NEW_APPLY_BTN = "적용";
+	public const string B_TEXT_OBJ_NAME_REPLACE = "=====> 객체 이름 변경 <=====";
+	public const string B_TEXT_FONT_REPLACE = "=====> 폰트 변경 <=====";
 	// 객체 이름 에디터 윈도우 }
 
 	// FPS 카운터
@@ -716,10 +720,8 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_ASSET_P_INFOS = new KeyValuePair<string, string>[] {
-		// 01.SubAutoCreate
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_FONT_TEMPLATES}T_ThaiFont.ttf", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Resources/{KCDefine.U_FONT_P_G_THAI}.ttf"),
-
 		// 02.UnityProject {
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_FONT_TEMPLATES}T_ThaiFont.ttf", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_FONT_P_G_THAI}.ttf"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas_01.spriteatlas.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_01}.spriteatlas"),
 
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_SCRIPTABLE_TEMPLATES}T_BuildInfoTable.asset", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE}.asset"),
