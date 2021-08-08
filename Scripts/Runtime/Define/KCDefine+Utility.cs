@@ -775,7 +775,7 @@ public static partial class KCDefine {
 
 	// 이름 {
 	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
-	public const string U_OBJ_N_SCREEN_DEBUG_TEXTS = "DebugTexts";
+	public const string U_OBJ_N_SCREEN_DEBUG_TEXT_UIS = "DebugTextUIs";
 
 	public const string U_OBJ_N_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
 	public const string U_OBJ_N_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
