@@ -190,11 +190,54 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_CONTENTS = "Contents";
 	public const string U_OBJ_N_CONTENTS_UIS = "ContentsUIs";
+	
+	public const string U_OBJ_N_VIEWPORT = "Viewport";
+	public const string U_OBJ_N_PAGINATION = "Pagination";
 
+	public const string U_OBJ_N_BLIND_UIS = "BlindUIs";
 	public const string U_OBJ_N_TOP_MENU_UIS = "TopMenuUIs";
 	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BottomMenuUIs";
+
+	public const string U_OBJ_N_TITLE_TEXT = "TitleText";
+	public const string U_OBJ_N_MSG_TEXT = "MsgText";
+
+	public const string U_OBJ_N_NAME_TEXT = "NameText";
+	public const string U_OBJ_N_DESC_TEXT = "DescText";
+
+	public const string U_OBJ_N_LEVEL_TEXT = "LevelText";
+	public const string U_OBJ_N_STAGE_TEXT = "StageText";
+	public const string U_OBJ_N_CHAPTER_TEXT = "ChapterText";
+
+	public const string U_OBJ_N_NUM_COINS_TEXT = "NumCoinsText";
+	public const string U_OBJ_N_NUM_STARS_TEXT = "NumStarsText";
+	public const string U_OBJ_N_NUM_STARS_STATE_TEXT = "NumStarsStateText";
+
+	public const string U_OBJ_N_BG_IMG = "BGImg";
+	public const string U_OBJ_N_BLIND_IMG = "BlindImg";
+	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
+
+	public const string U_OBJ_N_OK_BTN = "OKBtn";
+	public const string U_OBJ_N_CANCEL_BTN = "CancelBtn";
+	public const string U_OBJ_N_CLOSE_BTN = "CloseBtn";
+
+	public const string U_OBJ_N_PLAY_BTN = "PlayBtn";
+	public const string U_OBJ_N_STORE_BTN = "StoreBtn";
+	public const string U_OBJ_N_SETTINGS_BTN = "SettingsBtn";
+
+	public const string U_OBJ_N_PREV_BTN = "PrevBtn";
+	public const string U_OBJ_N_NEXT_BTN = "NextBtn";
+
+	public const string U_OBJ_N_ADS_BTN = "AdsBtn";
+	public const string U_OBJ_N_ACQUIRE_BTN = "AcquireBtn";
+	public const string U_OBJ_N_PURCHASE_BTN = "PurchaseBtn";
+	public const string U_OBJ_N_RESTORE_BTN = "RestoreBtn";
+
+	public const string U_OBJ_N_BG_SND_BTN = "BGSndBtn";
+	public const string U_OBJ_N_FX_SNDS_BTN = "FXSndsBtn";
+	public const string U_OBJ_N_NOTI_BTN = "NotiBtn";
+	public const string U_OBJ_N_REVIEW_BTN = "ReviewBtn";
+	public const string U_OBJ_N_SUPPORTS_BTN = "SupportsBtn";
 	
-	public const string U_OBJ_N_POPUP_CLOSE_BTN = "CloseBtn";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
 	public const string U_OBJ_N_EMPTY = "Empty";
@@ -208,6 +251,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_IMG = "Img";
 	public const string U_OBJ_N_RAW_IMG = "RawImg";
 	public const string U_OBJ_N_FOCUS_IMG = "FocusImg";
+	public const string U_OBJ_N_GAUGE_IMG = "GaugeImg";
 
 	public const string U_OBJ_N_TEXT_BTN = "TextBtn";
 	public const string U_OBJ_N_TEXT_SCALE_BTN = "TextScaleBtn";
@@ -235,7 +279,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
 
 	public const string U_OBJ_N_SPRITE = "Sprite";
-	public const string U_OBJ_N_GAUGE_IMG = "GaugeImg";
+	public const string U_OBJ_N_ICON_IMG = "IconImg";
+	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
 
 	public const string U_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
 	public const string U_OBJ_N_DRAG_RESPONDER = "DragResponder";
@@ -307,20 +352,12 @@ public static partial class KCDefine {
 	// 씬 관리자
 	public const string U_KEY_FMT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 
-	// 토스트 팝업
-	public const string U_OBJ_N_TOAST_P_MSG_TEXT = "MsgText";
-	public const string U_OBJ_N_TOAST_P_TOAST_POPUP = "ToastPopup";
-
 	// 사운드 관리자
 	public const string U_OBJ_N_SND_M_BG_SND = "BGSnd";
 	public const string U_OBJ_N_SND_M_FX_SND = "FXSnd";
 
 	// 디버그 콘솔
 	public const string U_OBJ_N_DEBUG_C_LOG_WND = "DebugLogWindow";
-
-	// 스크롤 뷰
-	public const string U_OBJ_N_SCROLL_V_VIEWPORT = "Viewport";
-	public const string U_OBJ_N_SCROLL_V_CONTENTS = "Contents";
 
 	// 문자열 테이블
 	public const string U_KEY_STR_T_ID = "ID";
@@ -335,17 +372,7 @@ public static partial class KCDefine {
 	public const string U_KEY_VAL_T_VAL = "Val";
 	public const string U_KEY_VAL_T_VAL_TYPE = "ValType";
 	// 값 테이블 }
-
-	// 경고 팝업 {
-	public const string U_OBJ_N_ALERT_P_TITLE_TEXT = "TitleText";
-	public const string U_OBJ_N_ALERT_P_MSG_TEXT = "MsgText";
 	
-	public const string U_OBJ_N_ALERT_P_BG_IMG = "BGImg";
-
-	public const string U_OBJ_N_ALERT_P_OK_BTN = "OKBtn";
-	public const string U_OBJ_N_ALERT_P_CANCEL_BTN = "CancelBtn";
-	// 경고 팝업 }
-
 	// 서비스 관리자 {
 	public const string U_KEY_SERVICES_M_RECEIPT = "json";
 	public const string U_KEY_SERVICES_M_PAYLOAD = "Payload";
@@ -509,6 +536,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_Img";
 	public static readonly string U_OBJ_P_RAW_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_RawImg";
 	public static readonly string U_OBJ_P_FOCUS_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_FocusImg";
+	public static readonly string U_OBJ_P_GAUGE_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_GaugeImg";
 
 	public static readonly string U_OBJ_P_IMG_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgBtn";
 	public static readonly string U_OBJ_P_IMG_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgScaleBtn";
