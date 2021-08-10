@@ -195,6 +195,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_PAGINATION = "Pagination";
 
 	public const string U_OBJ_N_BLIND_UIS = "BlindUIs";
+	public const string U_OBJ_N_CLEAR_UIS = "ClearUIs";
+	public const string U_OBJ_N_LOCK_UIS = "LockUIs";
+	public const string U_OBJ_N_OPEN_UIS = "OpenUIs";
+	public const string U_OBJ_N_GAUGE_UIS = "GaugeUIs";
 	public const string U_OBJ_N_TOP_MENU_UIS = "TopMenuUIs";
 	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BottomMenuUIs";
 
@@ -214,7 +218,12 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_BG_IMG = "BGImg";
 	public const string U_OBJ_N_BLIND_IMG = "BlindImg";
+	public const string U_OBJ_N_COIN_IMG = "CoinImg";
+	public const string U_OBJ_N_STAR_IMG = "StarImg";
 	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
+	public const string U_OBJ_N_LOCK_IMG = "LockImg";
+	public const string U_OBJ_N_ICON_IMG = "IconImg";
+	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
 
 	public const string U_OBJ_N_OK_BTN = "OKBtn";
 	public const string U_OBJ_N_CANCEL_BTN = "CancelBtn";
@@ -279,8 +288,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
 
 	public const string U_OBJ_N_SPRITE = "Sprite";
-	public const string U_OBJ_N_ICON_IMG = "IconImg";
-	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
 
 	public const string U_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
 	public const string U_OBJ_N_DRAG_RESPONDER = "DragResponder";
