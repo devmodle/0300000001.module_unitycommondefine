@@ -401,6 +401,8 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_SIZE = "<size={0}>{1}</size>";
 	public const string B_TEXT_FMT_COLOR = "<color=#{0}>{1}</color>";
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
+	public const string B_TEXT_FMT_USD_PRICE = "USD {0}";
+	public const string B_TEXT_FMT_USD_CURRENCY = "USD {0:N2}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
 
 	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";

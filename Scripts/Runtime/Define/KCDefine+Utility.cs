@@ -199,6 +199,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LOCK_UIS = "LockUIs";
 	public const string U_OBJ_N_OPEN_UIS = "OpenUIs";
 	public const string U_OBJ_N_GAUGE_UIS = "GaugeUIs";
+
+	public const string U_OBJ_N_ADS_PRICE_UIS = "AdsPriceUIs";
+	public const string U_OBJ_N_GOODS_PRICE_UIS = "GoodsPriceUIs";
+	public const string U_OBJ_N_PURCHASE_PRICE_UIS = "PurchasePriceUIs";
+
 	public const string U_OBJ_N_TOP_MENU_UIS = "TopMenuUIs";
 	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BottomMenuUIs";
 
@@ -212,6 +217,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_STAGE_TEXT = "StageText";
 	public const string U_OBJ_N_CHAPTER_TEXT = "ChapterText";
 
+	public const string U_OBJ_N_NUM_TEXT = "NumText";
+	public const string U_OBJ_N_PRICE_TEXT = "PriceText";
 	public const string U_OBJ_N_NUM_COINS_TEXT = "NumCoinsText";
 	public const string U_OBJ_N_NUM_STARS_TEXT = "NumStarsText";
 	public const string U_OBJ_N_NUM_STARS_STATE_TEXT = "NumStarsStateText";
@@ -295,6 +302,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
 
+	public const string U_OBJ_N_FMT_NUM_TEXT = "NumText_{0:00}";
+
 	public const string U_IMG_N_SPRITE = "Sprite";
 	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
 	public const string U_IMG_N_UNKNOWN_SPRITE = "Unknown";
@@ -315,6 +324,7 @@ public static partial class KCDefine {
 
 	public const string U_PROPERTY_N_TEXT = "text";
 	public const string U_PROPERTY_N_COLOR = "color";
+	public const string U_PROPERTY_N_SPRITE = "sprite";
 
 	public const string U_ASSET_N_LIGHTING_SETTINGS = "U_LightingSettings";
 	// 이름 }
