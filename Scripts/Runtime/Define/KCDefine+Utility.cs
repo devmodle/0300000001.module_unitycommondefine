@@ -218,6 +218,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CHAPTER_TEXT = "ChapterText";
 
 	public const string U_OBJ_N_NUM_TEXT = "NumText";
+	public const string U_OBJ_N_TIME_TEXT = "TimeText";
 	public const string U_OBJ_N_PRICE_TEXT = "PriceText";
 	public const string U_OBJ_N_NUM_COINS_TEXT = "NumCoinsText";
 	public const string U_OBJ_N_NUM_STARS_TEXT = "NumStarsText";

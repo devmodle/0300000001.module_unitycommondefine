@@ -22,6 +22,7 @@ public static partial class KCDefine {
 	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
 	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
 	
+	public const int B_UNIT_SECS_PER_MINUTES = 60;
 	public const int B_UNIT_MILLI_SECS_PER_SECS = 1000;
 
 	public const float B_UNIT_SCALE = 0.01f;
@@ -403,6 +404,8 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_USD_PRICE = "USD {0}";
 	public const string B_TEXT_FMT_USD_CURRENCY = "USD {0:N2}";
+
+	public const string B_TEXT_FMT_MM_SS = "{0:00}:{1:00}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
 
 	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";
