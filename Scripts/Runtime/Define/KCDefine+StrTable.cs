@@ -132,9 +132,9 @@ public static partial class KCDefine {
 	public const string ST_KEY_DAILY_RP_ACQUIRE_BTN_TEXT = "DAILY_RP_ACQUIRE_BTN_TEXT";
 	// 일일 보상 팝업 }
 
-	// 잔돈 팝업
-	public const string ST_KEY_CHANGES_P_TITLE = "CHANGES_P_TITLE";
-	public const string ST_KEY_CHANGES_P_OK_BTN_TEXT = "CHANGES_P_OK_BTN_TEXT";
+	// 판매 코인 팝업
+	public const string ST_KEY_SALE_CP_TITLE = "SALE_CP_TITLE";
+	public const string ST_KEY_SALE_CP_OK_BTN_TEXT = "SALE_CP_OK_BTN_TEXT";
 
 	// 보상 획득 팝업
 	public const string ST_KEY_REWARD_AP_ACQUIRE_BTN_TEXT = "REWARD_AP_ACQUIRE_BTN_TEXT";

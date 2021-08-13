@@ -220,14 +220,20 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_NUM_TEXT = "NumText";
 	public const string U_OBJ_N_TIME_TEXT = "TimeText";
 	public const string U_OBJ_N_PRICE_TEXT = "PriceText";
+	public const string U_OBJ_N_COUNTDOWN_TEXT = "CountdownText";
+
+	public const string U_OBJ_N_SCORE_TEXT = "ScoreText";
+	public const string U_OBJ_N_BEST_SCORE_TEXT = "BestScoreText";
+
 	public const string U_OBJ_N_NUM_COINS_TEXT = "NumCoinsText";
 	public const string U_OBJ_N_NUM_STARS_TEXT = "NumStarsText";
 	public const string U_OBJ_N_NUM_STARS_STATE_TEXT = "NumStarsStateText";
 
 	public const string U_OBJ_N_BG_IMG = "BGImg";
 	public const string U_OBJ_N_BLIND_IMG = "BlindImg";
-	public const string U_OBJ_N_COIN_IMG = "CoinImg";
-	public const string U_OBJ_N_STAR_IMG = "StarImg";
+
+	public const string U_OBJ_N_COINS_IMG = "CoinsImg";
+	public const string U_OBJ_N_STARS_IMG = "StarsImg";
 	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
 	public const string U_OBJ_N_LOCK_IMG = "LockImg";
 	public const string U_OBJ_N_ICON_IMG = "IconImg";
@@ -243,6 +249,8 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_PREV_BTN = "PrevBtn";
 	public const string U_OBJ_N_NEXT_BTN = "NextBtn";
+	public const string U_OBJ_N_RETRY_BTN = "RetryBtn";
+	public const string U_OBJ_N_LEAVE_BTN = "LeaveBtn";
 
 	public const string U_OBJ_N_ADS_BTN = "AdsBtn";
 	public const string U_OBJ_N_ACQUIRE_BTN = "AcquireBtn";
@@ -254,8 +262,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_NOTI_BTN = "NotiBtn";
 	public const string U_OBJ_N_REVIEW_BTN = "ReviewBtn";
 	public const string U_OBJ_N_SUPPORTS_BTN = "SupportsBtn";
-	
-	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
 	public const string U_OBJ_N_EMPTY = "Empty";
 	public const string U_OBJ_N_GAME_OBJ = "GameObj";
@@ -304,6 +310,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
 
 	public const string U_OBJ_N_FMT_NUM_TEXT = "NumText_{0:00}";
+	public const string U_OBJ_N_FMT_COUNTDOWN_TEXT = "CountdownText_{0:00}";
+	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
 	public const string U_IMG_N_SPRITE = "Sprite";
 	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
@@ -595,9 +603,11 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_DAILY_MISSION_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_DailyMissionPopup";
 	public static readonly string U_OBJ_P_G_FREE_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FreeRewardPopup";
 	public static readonly string U_OBJ_P_G_DAILY_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_DailyRewardPopup";
-	public static readonly string U_OBJ_P_G_CHANGES_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ChangesPopup";
+	public static readonly string U_OBJ_P_G_CHANGES_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SaleCoinsPopup";
 	public static readonly string U_OBJ_P_G_REWARD_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RewardAcquirePopup";
-	public static readonly string U_OBJ_P_G_CHANGES_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ChangesAcquirePopup";
+	public static readonly string U_OBJ_P_G_CHANGES_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SaleCoinsAcquirePopup";
+	public static readonly string U_OBJ_P_G_LEVEL_CLEAR_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_LevelClearPopup";
+	public static readonly string U_OBJ_P_G_LEVEL_CLEAR_FAIL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_LevelClearFailPopup";
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
 
@@ -849,6 +859,9 @@ public static partial class KCDefine {
 #endif			// #if SINGULAR_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE
+	// 비율
+	public const float U_SCALE_LANDSCAPE_BANNER_ADS_HEIGHT = 0.68f;
+
 	// 시간
 	public const float U_DELTA_T_ADS_M_ADS_LOAD = 5.0f;
 	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;

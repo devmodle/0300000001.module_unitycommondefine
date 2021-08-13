@@ -435,7 +435,7 @@ public static partial class KCDefine {
 	// 형식 }
 
 	// 메일
-	public const string B_MAIL_MSG_FMT = "App: {0}\nVer: {1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUserID: {7}\n\nPlease enter your inquiry:\n{8}";
+	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: {1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUserID: {7}\n\nPlease enter your inquiry:\n{8}";
 	#endregion			// 기본
 
 	#region 런타임 상수
