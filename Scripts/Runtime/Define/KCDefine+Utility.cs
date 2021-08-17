@@ -196,6 +196,7 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_BLIND_UIS = "BlindUIs";
 	public const string U_OBJ_N_CLEAR_UIS = "ClearUIs";
+	public const string U_OBJ_N_CLEAR_FAIL_UIS = "ClearFailUIs";
 	public const string U_OBJ_N_LOCK_UIS = "LockUIs";
 	public const string U_OBJ_N_OPEN_UIS = "OpenUIs";
 	public const string U_OBJ_N_GAUGE_UIS = "GaugeUIs";
@@ -606,8 +607,8 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_CHANGES_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SaleCoinsPopup";
 	public static readonly string U_OBJ_P_G_REWARD_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RewardAcquirePopup";
 	public static readonly string U_OBJ_P_G_CHANGES_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SaleCoinsAcquirePopup";
-	public static readonly string U_OBJ_P_G_LEVEL_CLEAR_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_LevelClearPopup";
-	public static readonly string U_OBJ_P_G_LEVEL_CLEAR_FAIL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_LevelClearFailPopup";
+	public static readonly string U_OBJ_P_G_RETRY_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RetryPopup";
+	public static readonly string U_OBJ_P_G_RESULT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResultPopup";
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
 
