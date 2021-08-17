@@ -238,6 +238,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
 	public const string U_OBJ_N_LOCK_IMG = "LockImg";
 	public const string U_OBJ_N_ICON_IMG = "IconImg";
+	public const string U_OBJ_N_COMPLETE_IMG = "CompleteImg";
 	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
 
 	public const string U_OBJ_N_OK_BTN = "OKBtn";
@@ -252,6 +253,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_NEXT_BTN = "NextBtn";
 	public const string U_OBJ_N_RETRY_BTN = "RetryBtn";
 	public const string U_OBJ_N_LEAVE_BTN = "LeaveBtn";
+	public const string U_OBJ_N_CONTINUE_BTN = "ContinueBtn";
 
 	public const string U_OBJ_N_ADS_BTN = "AdsBtn";
 	public const string U_OBJ_N_ACQUIRE_BTN = "AcquireBtn";
@@ -607,7 +609,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_CHANGES_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SaleCoinsPopup";
 	public static readonly string U_OBJ_P_G_REWARD_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RewardAcquirePopup";
 	public static readonly string U_OBJ_P_G_CHANGES_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SaleCoinsAcquirePopup";
-	public static readonly string U_OBJ_P_G_RETRY_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RetryPopup";
+	public static readonly string U_OBJ_P_G_CONTINUE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ContinuePopup";
 	public static readonly string U_OBJ_P_G_RESULT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResultPopup";
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
