@@ -20,6 +20,8 @@ public static partial class KCDefine {
 	// 오른쪽 에디터 UI {
 	public const string LES_OBJ_N_RE_UIS_APPLY_BTN = "ApplyBtn";
 	public const string LES_OBJ_N_RE_UIS_LOAD_LEVEL_BTN = "LoadLevelBtn";
+
+	public const string U_OBJ_N_RE_UIS_REWARD_TOGGLE = "RewardToggle";
 	
 	public const string LES_OBJ_N_RE_UIS_LEVEL_INPUT = "LevelInput";
 	public const string LES_OBJ_N_RE_UIS_NUM_CELLS_X_INPUT = "NumCellsXInput";

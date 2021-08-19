@@ -238,6 +238,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
 	public const string U_OBJ_N_LOCK_IMG = "LockImg";
 	public const string U_OBJ_N_ICON_IMG = "IconImg";
+	public const string U_OBJ_N_ITEM_IMG = "ItemImg";
+	public const string U_OBJ_N_REWARD_IMG = "RewardImg";
 	public const string U_OBJ_N_COMPLETE_IMG = "CompleteImg";
 	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
 
