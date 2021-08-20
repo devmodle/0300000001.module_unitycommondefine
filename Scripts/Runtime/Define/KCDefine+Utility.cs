@@ -190,6 +190,7 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_CONTENTS = "Contents";
 	public const string U_OBJ_N_CONTENTS_UIS = "ContentsUIs";
+	public const string U_OBJ_N_PAGE_UIS = "PageUIs";
 	
 	public const string U_OBJ_N_VIEWPORT = "Viewport";
 	public const string U_OBJ_N_PAGINATION = "Pagination";
