@@ -27,9 +27,14 @@ using UnityEngine.Rendering.Universal;
 //! 유틸리티 상수
 public static partial class KCDefine {
 	#region 기본
-	// 개수
+	// 개수 {
 	public const int U_MAX_NUM_LAYERS = 32;
 	public const int U_MAX_NUM_DUPLICATE_FX_SNDS = 10;
+
+	public const int U_MAX_NUM_LEVEL_INFOS = 9999;
+	public const int U_MAX_NUM_STAGE_INFOS = 999;
+	public const int U_MAX_NUM_CHAPTER_INFOS = 99;
+	// 개수 }
 
 	// 크기
 	public const int U_SIZE_OBJS_POOL = 10;
