@@ -207,6 +207,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_OPEN_UIS = "OpenUIs";
 	public const string U_OBJ_N_GAUGE_UIS = "GaugeUIs";
 
+	public const string U_OBJ_N_LOGIN_UIS = "LoginUIs";
+	public const string U_OBJ_N_LOGOUT_UIS = "LogoutUIs";
+
 	public const string U_OBJ_N_ADS_PRICE_UIS = "AdsPriceUIs";
 	public const string U_OBJ_N_GOODS_PRICE_UIS = "GoodsPriceUIs";
 	public const string U_OBJ_N_PURCHASE_PRICE_UIS = "PurchasePriceUIs";
@@ -252,6 +255,12 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_OK_BTN = "OKBtn";
 	public const string U_OBJ_N_CANCEL_BTN = "CancelBtn";
 	public const string U_OBJ_N_CLOSE_BTN = "CloseBtn";
+
+	public const string U_OBJ_N_LOGIN_BTN = "LoginBtn";
+	public const string U_OBJ_N_LOGOUT_BTN = "LogoutBtn";
+
+	public const string U_OBJ_N_SAVE_BTN = "SaveBtn";
+	public const string U_OBJ_N_LOAD_BTN = "LoadBtn";
 
 	public const string U_OBJ_N_PLAY_BTN = "PlayBtn";
 	public const string U_OBJ_N_STORE_BTN = "StoreBtn";
@@ -337,6 +346,7 @@ public static partial class KCDefine {
 	public const string U_FUNC_N_INIT = "Init";
 	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
 	public const string U_FUNC_N_RESET_LEVEL_MODE = "ResetLevelMode";
+	public const string U_FUNC_N_UPDATE_UIS_STATE = "UpdateUIsState";
 
 	public const string U_INPUT_E_N_JUMP = "Jump";
 	public const string U_INPUT_E_N_VERTICAL = "Vertical";
