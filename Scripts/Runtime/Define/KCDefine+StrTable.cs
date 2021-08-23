@@ -116,6 +116,9 @@ public static partial class KCDefine {
 
 	public const string ST_KEY_SYNC_P_LOGIN_BTN_TEXT = "SYNC_P_LOGIN_BTN_TEXT";
 	public const string ST_KEY_SYNC_P_LOGOUT_BTN_TEXT = "SYNC_P_LOGOUT_BTN_TEXT";
+
+	public const string ST_KEY_SYNC_P_SAVE_BTN_TEXT = "SYNC_P_SAVE_BTN_TEXT";
+	public const string ST_KEY_SYNC_P_LOAD_BTN_TEXT = "SYNC_P_LOAD_BTN_TEXT";
 	// 동기화 팝업 }
 
 	// 일일 미션 팝업
