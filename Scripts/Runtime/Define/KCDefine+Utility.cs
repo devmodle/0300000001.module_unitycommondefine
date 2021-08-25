@@ -1146,7 +1146,7 @@ public static partial class KCDefine {
 
 #if PURCHASE_MODULE_ENABLE
 	// 경로
-	public static readonly string U_DATA_P_PURCHASE_M_PRODUCT_ID_SET = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDSet.bytes";
+	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
 	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
 #endif			// #if PURCHASE_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수

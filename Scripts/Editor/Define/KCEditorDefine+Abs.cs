@@ -402,7 +402,16 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_Services_{SystemLanguage.Korean}.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.AS_DATA_P_SERVICES}.txt"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_Privacy_{SystemLanguage.Korean}.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.AS_DATA_P_PRIVACY}.txt"),
 
-#if FIREBASE_MODULE_ENABLE		
+#if FIREBASE_MODULE_ENABLE
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/AppInfos/Firebase/01.iOSAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../AppInfos/Firebase/01.iOSAppID.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/AppInfos/Firebase/01.iOSTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../AppInfos/Firebase/01.iOSTesterGroups.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/AppInfos/Firebase/11.GoogleAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../AppInfos/Firebase/11.GoogleAppID.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/AppInfos/Firebase/11.GoogleTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../AppInfos/Firebase/11.GoogleTesterGroups.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/AppInfos/Firebase/12.OneStoreAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../AppInfos/Firebase/12.OneStoreAppID.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/AppInfos/Firebase/12.OneStoreTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../AppInfos/Firebase/12.OneStoreTesterGroups.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/AppInfos/Firebase/13.GalaxyStoreAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../AppInfos/Firebase/13.GalaxyStoreAppID.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../UnityPackages/Templates/AppInfos/Firebase/13.GalaxyStoreTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}../AppInfos/Firebase/13.GalaxyStoreTesterGroups.txt"),
+
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_GameConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_DATA_P_G_GAME_CONFIG}.json"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_BuildVerConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_DATA_P_G_BUILD_VER_CONFIG}.json")
 #endif			// #if FIREBASE_MODULE_ENABLE
