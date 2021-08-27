@@ -387,10 +387,9 @@ public static partial class KCDefine {
 
 	// 형식 {
 	public const string B_TEXT_FMT_NUM = "x{0}";
-	public const string B_TEXT_FMT_BRACKET = "({0})";
-
 	public const string B_TEXT_FMT_INCR = "+{0}";
 	public const string B_TEXT_FMT_DECR = "-{0}";
+	public const string B_TEXT_FMT_BRACKET = "({0})";
 
 	public const string B_TEXT_FMT_VER = "Ver.{0}{1}";
 	public const string B_TEXT_FMT_PAGE = "{0}/{1}";
@@ -420,9 +419,18 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_4_COMBINE = "{0} {1} {2} {3}";
 	public const string B_TEXT_FMT_5_COMBINE = "{0} {1} {2} {3} {4}";
 
+	public const string B_TEXT_FMT_2_SPACE_COMBINE = "{0} {1}";
+	public const string B_TEXT_FMT_3_SPACE_COMBINE = "{0} {1} {2}";
+	public const string B_TEXT_FMT_4_SPACE_COMBINE = "{0} {1} {2} {3}";
+	public const string B_TEXT_FMT_5_SPACE_COMBINE = "{0} {1} {2} {3} {4}";
+
+	public const string B_NAME_FMT_2_UNDER_SCORE_COMBINE = "{0}_{1}";
+	public const string B_NAME_FMT_3_UNDER_SCORE_COMBINE = "{0}_{1}_{2}";
+	public const string B_NAME_FMT_4_UNDER_SCORE_COMBINE = "{0}_{1}_{2}_{3}";
+	public const string B_NAME_FMT_5_UNDER_SCORE_COMBINE = "{0}_{1}_{2}_{3}_{4}";
+
 	public const string B_NAME_FMT_BACKUP = "yyyy_MM_dd HH_mm_ss";
 	public const string B_NAME_FMT_BACKUP_COMBINE = "{0} ({1})";
-	public const string B_NAME_FMT_UNDER_SCORE_COMBINE = "{0}_{1}";
 
 	public const string B_PATH_FMT_1_COMBINE = "{0}/";
 	public const string B_PATH_FMT_2_COMBINE = "{0}/{1}/";
