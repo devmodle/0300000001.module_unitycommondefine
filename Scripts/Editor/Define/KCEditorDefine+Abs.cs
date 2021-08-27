@@ -323,7 +323,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/OdinInspector.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ZENJECT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Zenject.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPINE = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/Spine.unitypackage";
-	public static readonly string B_ABS_PKGS_P_SPINE_URP_SHADERS = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/SpineURPShaders.unitypackage";
 	public static readonly string B_ABS_PKGS_P_REST_CLIENT = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/RestClient.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/SpriteTrail.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PACKAGES}/UltimateStatusBar.unitypackage";
