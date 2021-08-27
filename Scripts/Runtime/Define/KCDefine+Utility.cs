@@ -829,7 +829,7 @@ public static partial class KCDefine {
 	public const string U_MODEL_N_IPAD = "iPad";
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
 
-#if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
+#if DEBUG || DEVELOPMENT_BUILD
 	// 시간
 	public const float U_DELTA_T_DYNAMIC_DEBUG = 1.0f;
 
@@ -863,7 +863,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_FPS_C_STATIC_TEXT = "StaticInfoText";
 	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
 	// 이름 }
-#endif			// #if LOGIC_TEST_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
+#endif			// #if DEBUG || DEVELOPMENT_BUILD
 
 #if GAME_ANALYTICS_MODULE_ENABLE
 	// 이름

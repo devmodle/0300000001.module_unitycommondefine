@@ -163,7 +163,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_ADS_TEST_ENABLE = "ADS_TEST_ENABLE";
 	public const string DS_DEFINE_S_ROBO_TEST_ENABLE = "ROBO_TEST_ENABLE";
 	public const string DS_DEFINE_S_PLAY_TEST_ENABLE = "PLAY_TEST_ENABLE";
-	public const string DS_DEFINE_S_LOGIC_TEST_ENABLE = "LOGIC_TEST_ENABLE";
 	public const string DS_DEFINE_S_LOCALIZE_TEST_ENABLE = "LOCALIZE_TEST_ENABLE";
 	public const string DS_DEFINE_S_ANALYTICS_TEST_ENABLE = "ANALYTICS_TEST_ENABLE";
 	public const string DS_DEFINE_S_PERFORMANCE_TEST_ENABLE = "PERFORMANCE_TEST_ENABLE";
@@ -182,12 +181,12 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_ROBO_TEST_E_ENABLE = "ROBO_TEST_E_ENABLE";
 	public const string DS_DEFINE_S_ROBO_TEST_F_ENABLE = "ROBO_TEST_F_ENABLE";
 
-	public const string DS_DEFINE_S_LOGIC_TEST_A_ENABLE = "LOGIC_TEST_A_ENABLE";
-	public const string DS_DEFINE_S_LOGIC_TEST_B_ENABLE = "LOGIC_TEST_B_ENABLE";
-	public const string DS_DEFINE_S_LOGIC_TEST_C_ENABLE = "LOGIC_TEST_C_ENABLE";
-	public const string DS_DEFINE_S_LOGIC_TEST_D_ENABLE = "LOGIC_TEST_D_ENABLE";
-	public const string DS_DEFINE_S_LOGIC_TEST_E_ENABLE = "LOGIC_TEST_E_ENABLE";
-	public const string DS_DEFINE_S_LOGIC_TEST_F_ENABLE = "LOGIC_TEST_F_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_A_ENABLE = "PLAY_TEST_A_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_B_ENABLE = "PLAY_TEST_B_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_C_ENABLE = "PLAY_TEST_C_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_D_ENABLE = "PLAY_TEST_D_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_E_ENABLE = "PLAY_TEST_E_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_F_ENABLE = "PLAY_TEST_F_ENABLE";
 	// 테스트 }
 
 	// 기타 {
