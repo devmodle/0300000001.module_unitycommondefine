@@ -47,6 +47,7 @@ public static partial class KCDefine {
 	// 단위
 	public const float U_UNIT_TABLET_INCHES = 7.0f;
 	public const float U_UNIT_TABLET_ASPECT = 2.0f;
+	public const float U_UNIT_SCROLL_SENSITIVITY = 250.0f;
 
 	// 세기
 	public const float U_INTENSITY_VIBRATE = 1.0f;
@@ -384,7 +385,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_L_TOPMOST = "Topmost";
 	public const string U_SORTING_L_ABS = "Abs";
 
-#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if !CAMERA_STACK_ENABLE
 	public const string U_SORTING_L_UNDERGROUND_UIS = "UndergroundUIs";
 	public const string U_SORTING_L_BACKGROUND_UIS = "BackgroundUIs";
 	public const string U_SORTING_L_DEF_UIS = "DefaultUIs";
@@ -393,7 +394,7 @@ public static partial class KCDefine {
 	public const string U_SORTING_L_TOP_UIS = "TopUIs";
 	public const string U_SORTING_L_TOPMOST_UIS = "TopmostUIs";
 	public const string U_SORTING_L_ABS_UIS = "AbsUIs";
-#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if !CAMERA_STACK_ENABLE
 	// 정렬 레이어 }
 
 	// 씬 관리자
@@ -464,8 +465,7 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 영역
-	public static readonly Rect U_RECT_UIS_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
-	public static readonly Rect U_RECT_MAIN_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
+	public static readonly Rect U_RECT_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
 
 	// 색상 {
 	public static readonly Color U_COLOR_NORM = Color.white;
@@ -512,7 +512,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_L_TOPMOST,
 		KCDefine.U_SORTING_L_ABS,
 
-#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if !CAMERA_STACK_ENABLE
 		KCDefine.U_SORTING_L_UNDERGROUND_UIS,
 		KCDefine.U_SORTING_L_BACKGROUND_UIS,
 		KCDefine.U_SORTING_L_DEF_UIS,
@@ -521,7 +521,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_L_TOP_UIS,
 		KCDefine.U_SORTING_L_TOPMOST_UIS,
 		KCDefine.U_SORTING_L_ABS_UIS
-#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if !CAMERA_STACK_ENABLE
 	};
 
 	// 정렬 순서 {
@@ -530,17 +530,17 @@ public static partial class KCDefine {
 		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 
-#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if CAMERA_STACK_ENABLE
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF_UIS
+		m_nOrder = 1,
+		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 #else
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF
+		m_oLayer = KCDefine.U_SORTING_L_DEF_UIS
 	};
-#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if CAMERA_STACK_ENABLE
 	// 정렬 순서 }
 
 	// 레이어 마스크 {
@@ -554,9 +554,9 @@ public static partial class KCDefine {
 		KCDefine.U_LAYER_IGNORE_RAYCAST,
 		KCDefine.U_LAYER_WATER,
 
-#if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if !CAMERA_STACK_ENABLE
 		KCDefine.U_LAYER_UIS
-#endif			// #if !CAMERA_STACK_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if !CAMERA_STACK_ENABLE
 	};
 	// 레이어 마스크 }
 	
