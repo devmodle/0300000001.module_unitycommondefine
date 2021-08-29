@@ -294,6 +294,7 @@ public static partial class KCDefine {
 	public const string B_TOKEN_VER = ".";
 	public const string B_TOKEN_CSV_STR = ",";
 	public const string B_TOKEN_POST_STR = "&";
+	public const string B_TOKEN_SPLASH_STR = "/";
 
 	public const string B_TOKEN_INCR = "+";
 	public const string B_TOKEN_DECR = "-";
@@ -439,8 +440,12 @@ public static partial class KCDefine {
 	public const string B_PATH_FMT_5_COMBINE = "{0}/{1}/{2}/{3}/{4}/";
 
 	public const string B_DATE_T_FMT_HH_MM_SS = "HH:mm:ss";
+
 	public const string B_DATE_T_FMT_YYYY_MM_DD = "yyyyMMdd";
 	public const string B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
+
+	public const string B_DATE_T_FMT_SPLASH_YYYY_MM_DD = "yyyy/MM/dd";
+	public const string B_DATE_T_FMT_SPLASH_YYYY_MM_DD_HH_MM_SS = "yyyy/MM/dd HH:mm:ss";
 	// 형식 }
 
 	// 메일
