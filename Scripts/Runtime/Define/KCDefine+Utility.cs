@@ -206,6 +206,7 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_SCENE_POPUP_UIS = "PopupUIs";
 	public const string U_OBJ_N_SCENE_TOPMOST_UIS = "TopmostUIs";
+	public const string U_OBJ_N_SCENE_ABS_UIS = "AbsUIs";
 
 	public const string U_OBJ_N_SCENE_BASE = "Base";
 	public const string U_OBJ_N_SCENE_OBJS_BASE = "ObjsRoot";
@@ -261,7 +262,7 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_TOP_MENU_UIS = "TopMenuUIs";
 	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BottomMenuUIs";
-
+	
 	public const string U_OBJ_N_TITLE_TEXT = "TitleText";
 	public const string U_OBJ_N_MSG_TEXT = "MsgText";
 
@@ -278,6 +279,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_COUNTDOWN_TEXT = "CountdownText";
 
 	public const string U_OBJ_N_SCORE_TEXT = "ScoreText";
+	public const string U_OBJ_N_LOADING_TEXT = "LoadingText";
 	public const string U_OBJ_N_BEST_SCORE_TEXT = "BestScoreText";
 
 	public const string U_OBJ_N_NUM_COINS_TEXT = "NumCoinsText";
@@ -286,6 +288,7 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_BG_IMG = "BGImg";
 	public const string U_OBJ_N_BLIND_IMG = "BlindImg";
+	public const string U_OBJ_N_SPLASH_IMG = "SplashImg";
 
 	public const string U_OBJ_N_COINS_IMG = "CoinsImg";
 	public const string U_OBJ_N_STARS_IMG = "StarsImg";
@@ -300,6 +303,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_OK_BTN = "OKBtn";
 	public const string U_OBJ_N_CANCEL_BTN = "CancelBtn";
 	public const string U_OBJ_N_CLOSE_BTN = "CloseBtn";
+
+	public const string U_OBJ_N_AGREE_BTN = "AgreeBtn";
+	public const string U_OBJ_N_SERVICES_BTN = "ServicesBtn";
+	public const string U_OBJ_N_PRIVACY_BTN = "PrivacyBtn";
 
 	public const string U_OBJ_N_LOGIN_BTN = "LoginBtn";
 	public const string U_OBJ_N_LOGOUT_BTN = "LogoutBtn";
@@ -367,9 +374,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
 
 	public const string U_OBJ_N_SPRITE = "Sprite";
+	public const string U_OBJ_N_DRAG_RESPONDER = "DragResponder";
 
 	public const string U_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
-	public const string U_OBJ_N_DRAG_RESPONDER = "DragResponder";
+	public const string U_OBJ_N_BG_TOUCH_RESPONDER = "BGTouchResponder";
 
 	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
