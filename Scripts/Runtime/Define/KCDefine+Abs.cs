@@ -415,10 +415,10 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_4_DIGITS = "{0:0000}";
 	public const string B_TEXT_FMT_5_DIGITS = "{0:00000}";
 
-	public const string B_TEXT_FMT_2_COMBINE = "{0} {1}";
-	public const string B_TEXT_FMT_3_COMBINE = "{0} {1} {2}";
-	public const string B_TEXT_FMT_4_COMBINE = "{0} {1} {2} {3}";
-	public const string B_TEXT_FMT_5_COMBINE = "{0} {1} {2} {3} {4}";
+	public const string B_TEXT_FMT_2_COMBINE = "{0}{1}";
+	public const string B_TEXT_FMT_3_COMBINE = "{0}{1}{2}";
+	public const string B_TEXT_FMT_4_COMBINE = "{0}{1}{2}{3}";
+	public const string B_TEXT_FMT_5_COMBINE = "{0}{1}{2}{3}{4}";
 
 	public const string B_TEXT_FMT_2_SPACE_COMBINE = "{0} {1}";
 	public const string B_TEXT_FMT_3_SPACE_COMBINE = "{0} {1} {2}";

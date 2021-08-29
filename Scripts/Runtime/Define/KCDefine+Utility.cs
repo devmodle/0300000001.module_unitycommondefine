@@ -144,6 +144,50 @@ public static partial class KCDefine {
 	public const string U_KEY_NAME = "Name";
 	public const string U_KEY_DESC = "Desc";
 	public const string U_KEY_REPLACE = "Replace";
+	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
+
+	public const string U_KEY_PLAY = "Play";
+	public const string U_KEY_HELP = "Help";
+	public const string U_KEY_FREE = "Free";
+	public const string U_KEY_DAILY = "Daily";
+	public const string U_KEY_EVENT = "Event";
+	public const string U_KEY_CLEAR = "Clear";
+	public const string U_KEY_PRICE = "Price";
+
+	public const string U_KEY_LEVEL = "Level";
+	public const string U_KEY_STAGE = "Stage";
+	public const string U_KEY_CHAPTER = "Chapter";
+
+	public const string U_KEY_ID = "ID";
+	public const string U_KEY_STAGE_ID = "StageID";
+	public const string U_KEY_CHAPTER_ID = "ChapterID";
+
+	public const string U_KEY_LEVEL_MODE = "LevelMode";
+	public const string U_KEY_LEVEL_KINDS = "LevelKinds";	
+	public const string U_KEY_STAGE_KINDS = "StageKinds";
+	public const string U_KEY_CHAPTER_KINDS = "ChapterKinds";
+
+	public const string U_KEY_PRICE_KINDS = "PriceKinds";
+	public const string U_KEY_REWARD_KINDS = "RewardKinds";
+	public const string U_KEY_PRODUCT_KINDS = "ProductKinds";
+	public const string U_KEY_MISSION_KINDS = "MissionKinds";
+	public const string U_KEY_SALE_ITEM_KINDS = "SaleItemKinds";
+	public const string U_KEY_SALE_PRODUCT_KINDS = "SaleProductKinds";
+
+	public const string U_KEY_TUTORIAL_KINDS = "TutorialKinds";
+	public const string U_KEY_NEXT_TUTORIAL_KINDS = "NextTutorialKinds";
+
+	public const string U_KEY_FMT_NUM_ITEMS = "NumItems_{0:00}";
+	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
+
+	public const string U_KEY_FMT_NUM_TARGETS = "NumTargets_{0:00}";
+	public const string U_KEY_FMT_TARGET_KINDS = "TargetKinds_{0:00}";
+
+	public const string U_KEY_FMT_UNLOCK_NUM_TARGETS = "UnlockNumTargets_{0:00}";
+	public const string U_KEY_FMT_UNLOCK_TARGET_KINDS = "UnlockTargetKinds_{0:00}";
+
+	public const string U_KEY_FMT_STRS = "Str_{0:00}";
+	public const string U_KEY_FMT_TUTORIAL_MSG = "TUTORIAL_MSG_{0:00}_{1:00}";
 	// 식별자 }
 
 	// 이름 {
@@ -869,13 +913,13 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_B = "Design Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_C = "Canvas Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_D = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_E = "Persistent Data Path: <color=orange>{0:0.0}</color>";
 
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_A = "GC: <color=orange>{0:0.0}</color> MB, Used Heap: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_E = "GPU Alloc: <color=orange>{0:0.0}</color> MB, Time Scale: <color=orange>{1:0.00000}</color>\n";
-	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_F = "Persistent Data Path: <color=orange>{0:0.0}</color>";
 	// 형식 }
 
 	// 이름 {
