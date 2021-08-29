@@ -292,13 +292,16 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_COINS_IMG = "CoinsImg";
 	public const string U_OBJ_N_STARS_IMG = "StarsImg";
+
 	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
+	public const string U_OBJ_N_RIBBON_IMG = "RibbonImg";
+	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
+	public const string U_OBJ_N_COMPLETE_IMG = "CompleteImg";
+
 	public const string U_OBJ_N_LOCK_IMG = "LockImg";
 	public const string U_OBJ_N_ICON_IMG = "IconImg";
 	public const string U_OBJ_N_ITEM_IMG = "ItemImg";
 	public const string U_OBJ_N_REWARD_IMG = "RewardImg";
-	public const string U_OBJ_N_COMPLETE_IMG = "CompleteImg";
-	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
 
 	public const string U_OBJ_N_OK_BTN = "OKBtn";
 	public const string U_OBJ_N_CANCEL_BTN = "CancelBtn";
@@ -334,6 +337,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_NOTI_BTN = "NotiBtn";
 	public const string U_OBJ_N_REVIEW_BTN = "ReviewBtn";
 	public const string U_OBJ_N_SUPPORTS_BTN = "SupportsBtn";
+	public const string U_OBJ_N_SYNC_BTN = "SyncBtn";
 
 	public const string U_OBJ_N_EMPTY = "Empty";
 	public const string U_OBJ_N_GAME_OBJ = "GameObj";
