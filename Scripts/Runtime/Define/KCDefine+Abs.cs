@@ -182,7 +182,6 @@ public static partial class KCDefine {
 	public const int B_TARGET_FRAME_RATE = 60;
 
 	public const float B_DPI = 160.0f;
-	public const float B_EDITOR_DPI = 480.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
 
 	public const float B_WORLD_SCREEN_WIDTH = KCDefine.B_SCREEN_WIDTH * KCDefine.B_UNIT_SCALE;
