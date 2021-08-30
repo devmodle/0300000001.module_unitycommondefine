@@ -642,7 +642,7 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_LandscapeAgreePopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.AS_OBJ_P_LANDSCAPE_AGREE_POPUP}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_PortraitAgreePopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.AS_OBJ_P_PORTRAIT_AGREE_POPUP}.prefab"),
 
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_DescPopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.LSS_OBJ_P_DESC_POPUP}.prefab"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_TrackingDescPopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.LSS_OBJ_P_TRACKING_DESC_POPUP}.prefab"),
 
 #if SAMPLE_PROJ
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),

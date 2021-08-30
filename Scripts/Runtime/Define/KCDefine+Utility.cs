@@ -241,6 +241,8 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_CONTENTS = "Contents";
 	public const string U_OBJ_N_CONTENTS_UIS = "ContentsUIs";
+
+	public const string U_OBJ_N_DESC_UIS = "DescUIs";
 	public const string U_OBJ_N_PAGE_UIS = "PageUIs";
 	
 	public const string U_OBJ_N_VIEWPORT = "Viewport";
@@ -314,8 +316,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LOGIN_BTN = "LoginBtn";
 	public const string U_OBJ_N_LOGOUT_BTN = "LogoutBtn";
 
-	public const string U_OBJ_N_SAVE_BTN = "SaveBtn";
 	public const string U_OBJ_N_LOAD_BTN = "LoadBtn";
+	public const string U_OBJ_N_SAVE_BTN = "SaveBtn";
 
 	public const string U_OBJ_N_PLAY_BTN = "PlayBtn";
 	public const string U_OBJ_N_STORE_BTN = "StoreBtn";
@@ -718,8 +720,8 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StrTable_Common";
 
-	public static readonly string U_TABLE_P_FMT_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}{KCDefine.B_NAME_FMT_2_UNDER_SCORE_COMBINE}";
-	public static readonly string U_TABLE_P_FMT_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}{KCDefine.B_NAME_FMT_2_UNDER_SCORE_COMBINE}";
+	public static readonly string U_TABLE_P_FMT_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}{KCDefine.B_TEXT_FMT_2_UNDER_SCORE_COMBINE}";
+	public static readonly string U_TABLE_P_FMT_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}{KCDefine.B_TEXT_FMT_2_UNDER_SCORE_COMBINE}";
 
 	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_VAL = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_VAL, "G_ValTable_Common", "{0}");
 	public static readonly string U_TABLE_P_FMT_G_LOCALIZE_COMMON_STR = string.Format(KCDefine.U_TABLE_P_FMT_G_COMMON_STR, "G_StrTable_Common", "{0}");
@@ -817,8 +819,9 @@ public static partial class KCDefine {
 	// 스크립트 순서 }
 
 	// 형식
-	public const string U_TEXT_FMT_SCREEN_INFO_A = "Screen DPI: {0}\n";
-	public const string U_TEXT_FMT_SCREEN_INFO_B = "Banner Ads Height: {0}";
+	public const string U_TEXT_FMT_SCREEN_INFO_A = "Screen DPI: {0:0.0}\n";
+	public const string U_TEXT_FMT_SCREEN_INFO_B = "Screen Size: {0:0.0}, {1:0.0}\n";
+	public const string U_TEXT_FMT_SCREEN_INFO_C = "Banner Ads Height: {0:0.0}";
 
 	// 광원 {
 #if !LIGHTMAP_BAKE_ENABLE || REALTIME_LIGHTMAP_BAKE_ENABLE
