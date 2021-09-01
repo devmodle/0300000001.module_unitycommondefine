@@ -406,6 +406,18 @@ public static partial class KCDefine {
 	public const string U_FUNC_N_RESET_LEVEL_MODE = "ResetLevelMode";
 	public const string U_FUNC_N_UPDATE_UIS_STATE = "UpdateUIsState";
 
+	public const string U_FUNC_N_ON_INIT_SERVICES_MANAGER = "OnInitServicesManager";
+	public const string U_FUNC_N_ON_INIT_ADS_MANAGER = "OnInitAdsManager";
+	public const string U_FUNC_N_ON_INIT_FLURRY_MANAGER = "OnInitFlurryManager";
+	public const string U_FUNC_N_ON_INIT_FACEBOOK_MANAGER = "OnInitFacebookManager";
+	public const string U_FUNC_N_ON_INIT_FIREBASE_MANAGER = "OnInitFirebaseManager";
+	public const string U_FUNC_N_ON_INIT_APPS_FLYER_MANAGER = "OnInitAppsFlyerManager";
+	public const string U_FUNC_N_ON_INIT_GAME_ANALYTICS_MANAGER = "OnInitGameAnalyticsManager";
+	public const string U_FUNC_N_ON_INIT_SINGULAR_MANAGER = "OnInitSingularManager";
+	public const string U_FUNC_N_ON_INIT_GAME_CENTER_MANAGER = "OnInitGameCenterManager";
+	public const string U_FUNC_N_ON_INIT_PURCHASE_MANAGER = "OnInitPurchaseManager";
+	public const string U_FUNC_N_ON_INIT_NOTI_MANAGER = "OnInitNotiManager";
+
 	public const string U_INPUT_E_N_JUMP = "Jump";
 	public const string U_INPUT_E_N_VERTICAL = "Vertical";
 	public const string U_INPUT_E_N_HORIZONTAL = "Horizontal";
@@ -945,11 +957,14 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_SCREEN_FPS_BTN = "FPSBtn";
 	public const string U_OBJ_N_SCREEN_DEBUG_BTN = "DebugBtn";
-
-	public const string U_OBJ_N_FPS_C_STATIC_TEXT = "StaticInfoText";
-	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
 	// 이름 }
 #endif			// #if DEBUG || DEVELOPMENT_BUILD
+
+#if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
+	// 이름
+	public const string U_OBJ_N_FPS_C_STATIC_TEXT = "StaticInfoText";
+	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
+#endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 
 #if GAME_ANALYTICS_MODULE_ENABLE
 	// 이름
