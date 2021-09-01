@@ -988,8 +988,6 @@ public static partial class KCDefine {
 	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;
 	
 	// 식별자 {
-	public const string U_TYPE_CONSENT_VIEW = "pre";
-
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
