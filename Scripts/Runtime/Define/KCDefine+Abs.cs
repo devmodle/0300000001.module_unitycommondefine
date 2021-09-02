@@ -219,6 +219,7 @@ public static partial class KCDefine {
 	public const string B_FILE_EXTENSION_TXT = ".txt";
 	public const string B_FILE_EXTENSION_JSON = ".json";
 	public const string B_FILE_EXTENSION_BYTES = ".bytes";
+	public const string B_FILE_EXTENSION_SPRITE_ATLAS = ".spriteatlas";
 
 	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STR;
@@ -249,6 +250,8 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_GOOGLE = "Google";
 	public const string B_PLATFORM_N_ONE_STORE = "OneStore";
 	public const string B_PLATFORM_N_GALAXY_STORE = "GalaxyStore";
+
+	public const string B_PLATFORM_N_DEF_TEXTURE = "DefaultTexturePlatform";
 	
 	public const string B_DIR_N_BACKUP = "Backup";
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
@@ -256,6 +259,7 @@ public static partial class KCDefine {
 	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
 
+	public const string B_ASSET_N_PATTERN_FIX_MIP_MAP = "_FIX_MM_";
 	public const string B_ASSET_N_PATTERN_FIX_CLAMP_WRAP = "_FIX_CW_";
 	public const string B_ASSET_N_PATTERN_FIX_POINT_FILTER = "_FIX_PF_";
 	public const string B_ASSET_N_PATTERN_FIX_LINEAR_CORRECTION = "_FIX_LC_";
