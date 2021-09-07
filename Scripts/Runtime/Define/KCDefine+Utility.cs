@@ -970,19 +970,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
 #endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 
-#if GAME_ANALYTICS_MODULE_ENABLE
-	// 이름
-	public const string U_OBJ_N_GAME_AM_GAME_ANALYTICS = "GameAnalytics";
-#endif			// #if GAME_ANALYTICS_MODULE_ENABLE
-
-#if SINGULAR_MODULE_ENABLE
-	// 시간
-	public const int U_TIMEOUT_SINGULAR_M_AGREE_TRACKING = 60;
-
-	// 이름
-	public const string U_OBJ_N_SINGULAR_M_SINGULAR = "Singular";
-#endif			// #if SINGULAR_MODULE_ENABLE
-
 #if ADS_MODULE_ENABLE
 	// 비율
 	public const float U_SCALE_LANDSCAPE_BANNER_ADS_HEIGHT = 0.68f;
@@ -1118,6 +1105,9 @@ public static partial class KCDefine {
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if APPS_FLYER_MODULE_ENABLE
+	// 시간
+	public const int U_TIMEOUT_APPS_FM_AGREE_TRACKING = 60;
+
 	// 식별자
 	public const string U_KEY_APPS_FM_INIT_CALLBACK = "AppsFMInitCallback";
 #endif			// #if APPS_FLYER_MODULE_ENABLE
@@ -1125,11 +1115,20 @@ public static partial class KCDefine {
 #if GAME_ANALYTICS_MODULE_ENABLE
 	// 식별자
 	public const string U_KEY_GAME_AM_INIT_CALLBACK = "GameAMInitCallback";
+
+	// 이름
+	public const string U_OBJ_N_GAME_AM_GAME_ANALYTICS = "GameAnalytics";
 #endif			// #if GAME_ANALYTICS_MODULE_ENABLE
 
 #if SINGULAR_MODULE_ENABLE
+	// 시간
+	public const int U_TIMEOUT_SINGULAR_M_AGREE_TRACKING = 60;
+	
 	// 식별자
 	public const string U_KEY_SINGULAR_M_INIT_CALLBACK = "SingularMInitCallback";
+
+	// 이름
+	public const string U_OBJ_N_SINGULAR_M_SINGULAR = "Singular";
 #endif			// #if SINGULAR_MODULE_ENABLE
 
 #if GAME_CENTER_MODULE_ENABLE
