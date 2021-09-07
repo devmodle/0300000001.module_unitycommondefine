@@ -106,6 +106,9 @@ public static partial class KCEditorDefine {
 	public const string B_BUILD_P_IOS = "Builds/iOS";
 	public const string B_PLIST_P_FMT_IOS = "{0}/Info.plist";
 
+	public const string B_DATA_P_FMT_COCOA_PODS = "{0}/Podfile";
+	public const string B_BUILD_CMD_FMT_IOS_COCOA_PODS = "pod update --project-directory={0}";
+
 	public const string B_KEY_IOS_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
 	public const string B_KEY_IOS_USER_TRACKING_USAGE_DESC = "NSUserTrackingUsageDescription";
 
