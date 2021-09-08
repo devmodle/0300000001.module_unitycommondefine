@@ -105,17 +105,20 @@ public static partial class KCEditorDefine {
 
 	public const string B_BUILD_P_IOS = "Builds/iOS";
 	public const string B_PLIST_P_FMT_IOS = "{0}/Info.plist";
+	public const string B_SEARCH_P_IOS_PODS = "$(SRCROOT)/**";
 
 	public const string B_DATA_P_FMT_COCOA_PODS = "{0}/Podfile";
-	public const string B_BUILD_CMD_FMT_IOS_COCOA_PODS = "pod update --project-directory={0}";
+	public const string B_PROJ_P_FMT_COCOA_PODS = "{0}/Pods/Pods.xcodeproj/project.pbxproj";
+	public const string B_BUILD_CMD_FMT_IOS_COCOA_PODS = "pod update --clean-install --project-directory={0}";
 
 	public const string B_KEY_IOS_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
 	public const string B_KEY_IOS_USER_TRACKING_USAGE_DESC = "NSUserTrackingUsageDescription";
 
 	public const string B_KEY_IOS_ADS_NETWORK_ITEMS = "SKAdNetworkItems";
 	public const string B_KEY_IOS_ADS_NETWORK_ID = "SKAdNetworkIdentifier";
-
+	
 	public const string B_PROPERTY_N_IOS_ENABLE_BITCODE = "ENABLE_BITCODE";
+	public const string B_PROPERTY_N_IOS_USER_HEADER_SEARCH_PATHS = "USER_HEADER_SEARCH_PATHS";
 	public const string B_PROPERTY_N_IOS_PREPROCESSOR_DEFINITIONS = "GCC_PREPROCESSOR_DEFINITIONS";
 	// iOS }
 
