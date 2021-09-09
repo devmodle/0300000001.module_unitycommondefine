@@ -462,6 +462,15 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_8_SLASH_COMBINE = "{0}/{1}/{2}/{3}/{4}/{5}/{6}/{7}";
 	public const string B_TEXT_FMT_9_SLASH_COMBINE = "{0}/{1}/{2}/{3}/{4}/{5}/{6}/{7}/{8}";
 
+	public const string B_TEXT_FMT_2_SEMI_COLON_COMBINE = "{0};{1}";
+	public const string B_TEXT_FMT_3_SEMI_COLON_COMBINE = "{0};{1};{2}";
+	public const string B_TEXT_FMT_4_SEMI_COLON_COMBINE = "{0};{1};{2};{3}";
+	public const string B_TEXT_FMT_5_SEMI_COLON_COMBINE = "{0};{1};{2};{3};{4}";
+	public const string B_TEXT_FMT_6_SEMI_COLON_COMBINE = "{0};{1};{2};{3};{4};{5}";
+	public const string B_TEXT_FMT_7_SEMI_COLON_COMBINE = "{0};{1};{2};{3};{4};{5};{6}";
+	public const string B_TEXT_FMT_8_SEMI_COLON_COMBINE = "{0};{1};{2};{3};{4};{5};{6};{7}";
+	public const string B_TEXT_FMT_9_SEMI_COLON_COMBINE = "{0};{1};{2};{3};{4};{5};{6};{7};{8}";
+
 	public const string B_TEXT_FMT_2_UNDER_SCORE_COMBINE = "{0}_{1}";
 	public const string B_TEXT_FMT_3_UNDER_SCORE_COMBINE = "{0}_{1}_{2}";
 	public const string B_TEXT_FMT_4_UNDER_SCORE_COMBINE = "{0}_{1}_{2}_{3}";
