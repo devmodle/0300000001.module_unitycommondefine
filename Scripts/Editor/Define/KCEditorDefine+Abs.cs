@@ -31,9 +31,12 @@ public static partial class KCEditorDefine {
 	// 버전
 	public const string B_VER_UNITY_MODULE = "1.7.2";
 
-	// 커맨드 라인
+	// 커맨드 라인 {
 	public const string B_CMD_LINE_PARAMS_FMT_SHELL = "-c \"{0}\"";
 	public const string B_CMD_LINE_PARAMS_FMT_CMD_PROMPT = "/c \"{0}\"";
+
+	public const string B_BUILD_CMD_EXPORT_PATH = "export PATH=\"$PATH:/usr/local/bin\"";
+	// 커맨드 라인 }
 
 	// 이름 {
 	public const string B_MODULE_N_INPUT_SYSTEM = "com.unity.input.settings";
