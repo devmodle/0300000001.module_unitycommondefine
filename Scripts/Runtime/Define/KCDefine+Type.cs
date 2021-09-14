@@ -53,15 +53,6 @@ public struct STIDInfo {
 	[Key(2)] public int m_nChapterID;
 }
 
-//! 인덱스 정보
-[MessagePackObject]
-[System.Serializable]
-public struct STIdxInfo {
-	[Key(0)] public int m_nX;
-	[Key(1)] public int m_nY;
-	[Key(2)] public int m_nZ;
-}
-
 //! 지급 아이템 정보
 [System.Serializable]
 public struct STPostItemInfo {
