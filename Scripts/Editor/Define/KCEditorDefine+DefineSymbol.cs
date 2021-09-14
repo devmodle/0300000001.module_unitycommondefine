@@ -22,6 +22,21 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_LZ4_COMPRESS_ENABLE = "LZ4_COMPRESS_ENABLE";
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 
+	// 스크립트
+	public const string DS_DEFINE_S_STORE_ENABLE = "STORE_ENABLE";
+	public const string DS_DEFINE_S_SETTINGS_ENABLE = "SETTINGS_ENABLE";
+	public const string DS_DEFINE_S_SYNC_ENABLE = "SYNC_ENABLE";
+	public const string DS_DEFINE_S_DAILY_MISSION_ENABLE = "DAILY_MISSION_ENABLE";
+	public const string DS_DEFINE_S_FREE_REWARD_ENABLE = "FREE_REWARD_ENABLE";
+	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
+	public const string DS_DEFINE_S_SALE_COINS_ENABLE = "SALE_COINS_ENABLE";
+	public const string DS_DEFINE_S_REWARD_ACQUIRE_ENABLE = "REWARD_ACQUIRE_ENABLE";
+	public const string DS_DEFINE_S_SALE_COINS_ACQUIRE_ENABLE = "SALE_COINS_ACQUIRE_ENABLE";
+	public const string DS_DEFINE_S_CONTINUE_ENABLE = "CONTINUE_ENABLE";
+	public const string DS_DEFINE_S_RESULT_ENABLE = "RESULT_ENABLE";
+	public const string DS_DEFINE_S_FOCUS_ENABLE = "FOCUS_ENABLE";
+	public const string DS_DEFINE_S_TUTORIAL_ENABLE = "TUTORIAL_ENABLE";
+
 	// 배포
 	public const string DS_DEFINE_S_ADHOC_BUILD = "ADHOC_BUILD";
 	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
@@ -192,22 +207,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_PLAY_TEST_E_ENABLE = "PLAY_TEST_E_ENABLE";
 	public const string DS_DEFINE_S_PLAY_TEST_F_ENABLE = "PLAY_TEST_F_ENABLE";
 	// 테스트 }
-
-	// 스크립트 {
-	public const string DS_DEFINE_S_STORE_ENABLE = "STORE_ENABLE";
-	public const string DS_DEFINE_S_SETTINGS_ENABLE = "SETTINGS_ENABLE";
-	public const string DS_DEFINE_S_SYNC_ENABLE = "SYNC_ENABLE";
-	public const string DS_DEFINE_S_DAILY_MISSION_ENABLE = "DAILY_MISSION_ENABLE";
-	public const string DS_DEFINE_S_FREE_REWARD_ENABLE = "FREE_REWARD_ENABLE";
-	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
-	public const string DS_DEFINE_S_SALE_COINS_ENABLE = "SALE_COINS_ENABLE";
-	public const string DS_DEFINE_S_REWARD_ACQUIRE_ENABLE = "REWARD_ACQUIRE_ENABLE";
-	public const string DS_DEFINE_S_SALE_COINS_ACQUIRE_ENABLE = "SALE_COINS_ACQUIRE_ENABLE";
-	public const string DS_DEFINE_S_CONTINUE_ENABLE = "CONTINUE_ENABLE";
-	public const string DS_DEFINE_S_RESULT_ENABLE = "RESULT_ENABLE";
-	public const string DS_DEFINE_S_FOCUS_ENABLE = "FOCUS_ENABLE";
-	public const string DS_DEFINE_S_TUTORIAL_ENABLE = "TUTORIAL_ENABLE";
-	// 스크립트 }
 
 	// 기타 {
 	public const string DS_DEFINE_S_STUDY_ENABLE = "STUDY_ENABLE";
