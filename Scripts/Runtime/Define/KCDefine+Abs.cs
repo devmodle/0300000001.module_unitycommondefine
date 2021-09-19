@@ -515,6 +515,8 @@ public static partial class KCDefine {
 
 	public static readonly List<Vector2Int> B_EMPTY_2D_INT_VECS = new List<Vector2Int>();
 	public static readonly List<Vector3Int> B_EMPTY_3D_INT_VECS = new List<Vector3Int>();
+
+	public static readonly List<STIdxInfo> B_EMPTY_IDX_INFOS = new List<STIdxInfo>();
 	// 기타 }
 
 	// 색상 {
