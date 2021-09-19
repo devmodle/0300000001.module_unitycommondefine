@@ -546,6 +546,11 @@ public static partial class KCDefine {
 #endif			// #if UNITY_EDITOR
 	// 색상 }
 
+	// 버전
+	public static readonly System.Version U_VER_COMMON_APP_INFO = new System.Version(1, 0, 0);
+	public static readonly System.Version U_VER_COMMON_GAME_INFO = new System.Version(1, 0, 0);
+	public static readonly System.Version U_VER_COMMON_USER_INFO = new System.Version(1, 0, 0);
+
 	// 크기
 	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 

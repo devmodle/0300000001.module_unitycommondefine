@@ -188,10 +188,14 @@ public static partial class KCDefine {
 	public const float B_WORLD_SCREEN_HEIGHT = KCDefine.B_SCREEN_HEIGHT * KCDefine.B_UNIT_SCALE;
 	
 	public const string B_EMPTY_STR = "";
+	public const string B_UNKNOWN_STR = "Unknown";
+
 	public const string B_TRUE_STR = "True";
 	public const string B_FALSE_STR = "False";
-	public const string B_UNKNOWN_STR = "Unknown";
+
 	public const string B_NEW_LINE_STR = "\n";
+
+	public const string B_VER_STR = "1.0.0";
 	public const string B_VER_STR_FMT = "Ver.{0}";
 
 	public const string B_STR_0_INT = "0";
