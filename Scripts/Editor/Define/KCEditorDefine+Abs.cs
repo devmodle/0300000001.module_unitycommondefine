@@ -40,7 +40,7 @@ public static partial class KCEditorDefine {
 
 	// 이름 {
 	public const string B_MODULE_N_INPUT_SYSTEM = "com.unity.input.settings";
-	public const string B_OBJ_N_OBJ_N_EDITOR_POPUP = "ObjNameEditorPopup";
+	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
 
 	public const string B_OBJ_N_SCENE_EDITOR_CAMERA = "SceneCamera";
 	public const string B_OBJ_N_SCENE_EDITOR_LIGHT = "SceneLight";
@@ -243,7 +243,6 @@ public static partial class KCEditorDefine {
 	public const string B_TEXT_SEARCH = "검색";
 	public const string B_TEXT_REPLACE = "변경";
 	public const string B_TEXT_APPLY = "적용";
-	public const string B_TEXT_PATH = "경로";
 
 	public const string B_TEXT_OBJ_NAME_REPLACE = "=====> 객체 이름 변경 <=====";
 	public const string B_TEXT_FONT_REPLACE = "=====> 폰트 변경 <=====";
