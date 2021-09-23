@@ -192,8 +192,6 @@ public static partial class KCEditorDefine {
 	public const float B_OFFSET_HIERARCHY_OUTLINE = 1.0f;
 
 	// 에디터 옵션 {
-	public const int B_EDITOR_OPTS_GAME_OBJ_NAMING_DIGITS = 2;
-
 	public const string B_EDITOR_OPTS_IOS_REMOTE_DEVICE = "Any iOS Device";
 	public const string B_EDITOR_OPTS_ANDROID_REMOTE_DEVICE = "Any Android Device";
 	public const string B_EDITOR_OPTS_DISABLE_REMOTE_DEVICE = "None";
