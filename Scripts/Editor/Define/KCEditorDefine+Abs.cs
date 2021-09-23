@@ -320,19 +320,14 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABS_DIR_P_SRC_PYTHON_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Scripts/Python";
 	public static readonly string B_ABS_DIR_P_DEST_PYTHON_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Scripts/Python";
-
-	public static readonly string B_ABS_PKGS_P_2D_TOOLKIT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/2DToolkit.unitypackage";
-	public static readonly string B_ABS_PKGS_P_BITMAP_FONT_IMPORTER = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/BitmapFontImporter.unitypackage";
-	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/BuildReportTool.unitypackage";
-	public static readonly string B_ABS_PKGS_P_NGUI = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/NGUI.unitypackage";
-	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/OdinInspector.unitypackage";
-	public static readonly string B_ABS_PKGS_P_ZENJECT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/Zenject.unitypackage";
-	public static readonly string B_ABS_PKGS_P_SPINE = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/Spine.unitypackage";
-	public static readonly string B_ABS_PKGS_P_REST_CLIENT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/RestClient.unitypackage";
-	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/SpriteTrail.unitypackage";
-	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UltimateStatusBar.unitypackage";
-	public static readonly string B_ABS_PKGS_P_LEAN_GUI = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/LeanGUI.unitypackage";
-	public static readonly string B_ABS_PKGS_P_LEAN_TOUCH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/LeanTouch.unitypackage";
+	
+	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/BuildReportTool.unitypackage";
+	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/OdinInspector.unitypackage";
+	public static readonly string B_ABS_PKGS_P_SPINE = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/Spine.unitypackage";
+	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/SpriteTrail.unitypackage";
+	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/UltimateStatusBar.unitypackage";
+	public static readonly string B_ABS_PKGS_P_LEAN_GUI = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/LeanGUI.unitypackage";
+	public static readonly string B_ABS_PKGS_P_LEAN_TOUCH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/LeanTouch.unitypackage";
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}TagManager.asset";
 	public static readonly string B_ASSET_P_SND_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}AudioManager.asset";
