@@ -45,8 +45,7 @@ public struct STBuildVer {
 }
 
 //! 식별자 정보
-[MessagePackObject]
-[System.Serializable]
+[MessagePackObject][System.Serializable]
 public struct STIDInfo {
 	[Key(0)] public int m_nID;
 	[Key(1)] public int m_nStageID;
@@ -54,8 +53,7 @@ public struct STIDInfo {
 }
 
 //! 인덱스 정보
-[MessagePackObject]
-[System.Serializable]
+[MessagePackObject][System.Serializable]
 public struct STIdxInfo {
 	[Key(0)] public int m_nX;
 	[Key(1)] public int m_nY;
