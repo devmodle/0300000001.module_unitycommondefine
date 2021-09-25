@@ -291,6 +291,7 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_LOADING = "01.LoadingScene";
 
 	public const string B_SCENE_N_MENU = "01.MenuScene";
+	public const string B_SCENE_N_TEST = "99.TestScene";
 	public const string B_SCENE_N_LEVEL_EDITOR = "91.LevelEditorScene";
 	// 씬 이름 }
 
