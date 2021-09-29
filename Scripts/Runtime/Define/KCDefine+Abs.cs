@@ -530,17 +530,17 @@ public static partial class KCDefine {
 	// 색상 }
 
 	// 앵커 {
-	public static readonly Vector2 B_ANCHOR_UP_LEFT = new Vector2(0.0f, 1.0f);
-	public static readonly Vector2 B_ANCHOR_UP_CENTER = new Vector2(0.5f, 1.0f);
-	public static readonly Vector2 B_ANCHOR_UP_RIGHT = new Vector2(1.0f, 1.0f);
+	public static readonly Vector3 B_ANCHOR_UP_LEFT = new Vector3(0.0f, 1.0f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_UP_CENTER = new Vector3(0.5f, 1.0f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_UP_RIGHT = new Vector3(1.0f, 1.0f, 0.0f);
 
-	public static readonly Vector2 B_ANCHOR_DOWN_LEFT = new Vector2(0.0f, 0.0f);
-	public static readonly Vector2 B_ANCHOR_DOWN_CENTER = new Vector2(0.5f, 0.0f);
-	public static readonly Vector2 B_ANCHOR_DOWN_RIGHT = new Vector2(1.0f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_DOWN_LEFT = new Vector3(0.0f, 0.0f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_DOWN_CENTER = new Vector3(0.5f, 0.0f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_DOWN_RIGHT = new Vector3(1.0f, 0.0f, 0.0f);
 
-	public static readonly Vector2 B_ANCHOR_MID_LEFT = new Vector2(0.0f, 0.5f);
-	public static readonly Vector2 B_ANCHOR_MID_CENTER = new Vector2(0.5f, 0.5f);
-	public static readonly Vector2 B_ANCHOR_MID_RIGHT = new Vector2(1.0f, 0.5f);
+	public static readonly Vector3 B_ANCHOR_MID_LEFT = new Vector3(0.0f, 0.5f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_MID_CENTER = new Vector3(0.5f, 0.5f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_MID_RIGHT = new Vector3(1.0f, 0.5f, 0.0f);
 	// 앵커 }
 
 	// 위치 {
