@@ -19,9 +19,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_HAPTIC_FEEDBACK_ENABLE = "HAPTIC_FEEDBACK_ENABLE";
 	public const string DS_DEFINE_S_CUSTOM_CAMERA_POS_ENABLE = "CUSTOM_CAMERA_POS_ENABLE";
 	public const string DS_DEFINE_S_AUTO_LOG_PARAMS_ENABLE = "AUTO_LOG_PARAMS_ENABLE";
-	public const string DS_DEFINE_S_LZ4_COMPRESS_ENABLE = "LZ4_COMPRESS_ENABLE";
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
-	public const string DS_DEFINE_S_RUNTIME_MSG_PACK_ENABLE = "RUNTIME_MSG_PACK_ENABLE";
 
 	// 배포
 	public const string DS_DEFINE_S_ADHOC_BUILD = "ADHOC_BUILD";
