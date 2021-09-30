@@ -293,6 +293,7 @@ public enum EStandaloneType {
 public enum EAndroidType {
 	NONE = -1,
 	GOOGLE,
+	AMAZON,
 	ONE_STORE,
 	GALAXY_STORE,
 	MAX_VAL

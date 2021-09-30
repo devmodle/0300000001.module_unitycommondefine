@@ -343,12 +343,13 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_TUTORIAL_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_TUTORIAL_INFO_TABLE}.asset";
 
 	public static readonly string B_ASSET_P_FMT_SCRIPTABLE_OBJ = $"{KCEditorDefine.B_DIR_P_ASSETS}{"{0}.asset"}";
-	public static readonly string B_ASSET_P_FMT_DEFINE_S_OUTPUT = $"{KCDefine.B_DIR_P_WRITABLE}/BuildOutput/{"{0}DefineSymbol.txt"}";
+	public static readonly string B_ASSET_P_FMT_DEFINE_S_OUTPUT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Symbols/{"{0}DefineSymbols.txt"}";
 
 	public static readonly string B_IMG_P_FMT_TEXTURE_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Textures/{0}.png"}";
 	public static readonly string B_IMG_P_FMT_SPRITE_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Sprites/{0}.png"}";
 
 	public static readonly string B_DATA_P_UNITY_PKGS = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}manifest.json";
+	public static readonly string B_DATA_P_BUILD_METHOD = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/BuildMethod.txt";
 	public static readonly string B_ICON_P_STANDALONE_APP = $"{KCDefine.B_DIR_P_ICONS}Standalone/App/Icon";
 
 	public static readonly string B_ICON_P_IOS_APP_76x76 = $"{KCDefine.B_DIR_P_ICONS}iOS/App/Icon76x76";
@@ -406,10 +407,12 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/01.iOSTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/01.iOSTesterGroups.txt"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/11.GoogleAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/11.GoogleAppID.txt"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/11.GoogleTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/11.GoogleTesterGroups.txt"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/12.OneStoreAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/12.OneStoreAppID.txt"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/12.OneStoreTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/12.OneStoreTesterGroups.txt"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/13.GalaxyStoreAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/13.GalaxyStoreAppID.txt"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/13.GalaxyStoreTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/13.GalaxyStoreTesterGroups.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/12.AmazonAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/12.AmazonAppID.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/12.AmazonTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/12.AmazonTesterGroups.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/13.OneStoreAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/13.OneStoreAppID.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/13.OneStoreTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/13.OneStoreTesterGroups.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/14.GalaxyStoreAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/14.GalaxyStoreAppID.txt"),
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/14.GalaxyStoreTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/14.GalaxyStoreTesterGroups.txt"),
 
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Datas/GameConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_GAME_CONFIG}.json"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Datas/GameConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_DATA_P_G_GAME_CONFIG}.json"),
