@@ -281,14 +281,6 @@ public enum EBuildType {
 	MAX_VAL
 }
 
-//! 독립 플랫폼 타입
-public enum EStandaloneType {
-	NONE = -1,
-	MAC,
-	WNDS,
-	MAX_VAL
-}
-
 //! 안드로이드 타입
 public enum EAndroidType {
 	NONE = -1,
@@ -296,6 +288,14 @@ public enum EAndroidType {
 	AMAZON,
 	ONE_STORE,
 	GALAXY_STORE,
+	MAX_VAL
+}
+
+//! 독립 플랫폼 타입
+public enum EStandaloneType {
+	NONE = -1,
+	MAC,
+	WNDS,
 	MAX_VAL
 }
 

@@ -245,9 +245,6 @@ public static partial class KCDefine {
 	public const string B_UNKNOWN_COUNTRY_CODE = KCDefine.B_UNKNOWN_STR;
 
 	// 이름 {
-	public const string B_PLATFORM_N_MAC = "Mac";
-	public const string B_PLATFORM_N_WNDS = "Wnds";
-
 	public const string B_PLATFORM_N_IOS = "iOS";
 	public const string B_PLATFORM_N_ANDROID = "Android";
 	
@@ -255,6 +252,9 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_AMAZON = "Amazon";
 	public const string B_PLATFORM_N_ONE_STORE = "OneStore";
 	public const string B_PLATFORM_N_GALAXY_STORE = "GalaxyStore";
+
+	public const string B_PLATFORM_N_MAC = "Mac";
+	public const string B_PLATFORM_N_WNDS = "Wnds";
 
 	public const string B_PLATFORM_N_DEF_TEXTURE = "DefaultTexturePlatform";
 	

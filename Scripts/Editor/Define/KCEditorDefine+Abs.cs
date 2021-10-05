@@ -92,12 +92,6 @@ public static partial class KCEditorDefine {
 	public const string B_ASSET_P_FMT_LIGHTING_SETTINGS = "{0}/{1}Settings.lighting";
 	// 경로 }
 
-	// 맥
-	public const string B_BUILD_P_MAC = "Builds/Standalone/Mac/MacBuildOutput.app";
-
-	// 윈도우즈
-	public const string B_BUILD_P_WNDS = "Builds/Standalone/Wnds/WndsBuildOutput.exe";
-
 	// iOS {
 	public const string B_TEXT_IOS_YES = "YES";
 	public const string B_TEXT_IOS_NO = "NO";
@@ -134,6 +128,12 @@ public static partial class KCEditorDefine {
 	public const string B_BUILD_FILE_N_FMT_ANDROID = "{0}BuildOutput";
 	// 안드로이드 }
 
+	// 맥
+	public const string B_BUILD_P_MAC = "Builds/Standalone/Mac/MacBuildOutput.app";
+
+	// 윈도우즈
+	public const string B_BUILD_P_WNDS = "Builds/Standalone/Wnds/WndsBuildOutput.exe";
+
 	// 젠킨스 {
 	public const string B_KEY_JENKINS_ENGINE_VER = "EngineVer";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
@@ -162,9 +162,9 @@ public static partial class KCEditorDefine {
 	public const string B_PROJ_P_FMT_JENKINS = "{0}/{1}/{2}";
 	public const string B_ANALYTICS_FMT_JENKINS = "{0}/00.Analytics";
 
-	public const string B_STANDALONE_BUILD_PROJ_N_JENKINS = "41.Standalone";
 	public const string B_IOS_BUILD_PROJ_N_JENKINS = "01.iOS";
 	public const string B_ANDROID_BUILD_PROJ_N_JENKINS = "11.Android";
+	public const string B_STANDALONE_BUILD_PROJ_N_JENKINS = "41.Standalone";
 
 	public const string B_DEBUG_BUILD_FUNC_JENKINS = "Debug";
 	public const string B_RELEASE_BUILD_FUNC_JENKINS = "Release";
@@ -173,9 +173,6 @@ public static partial class KCEditorDefine {
 	public const string B_STORE_A_BUILD_FUNC_JENKINS = "StoreA";
 	public const string B_STORE_B_BUILD_FUNC_JENKINS = "StoreB";
 	public const string B_STORE_UPLOAD_BUILD_FUNC_JENKINS = "StoreUpload";
-
-	public const string B_STANDALONE_DEBUG_PIPELINE_N_JENKINS = "41.StandaloneDebug";
-	public const string B_STANDALONE_RELEASE_PIPELINE_N_JENKINS = "42.StandaloneRelease";
 
 	public const string B_IOS_DEBUG_PIPELINE_N_JENKINS = "01.iOSDebug";
 	public const string B_IOS_RELEASE_PIPELINE_N_JENKINS = "02.iOSRelease";
@@ -186,6 +183,9 @@ public static partial class KCEditorDefine {
 	public const string B_ANDROID_RELEASE_PIPELINE_N_JENKINS = "12.AndroidRelease";
 	public const string B_ANDROID_ADHOC_PIPELINE_N_JENKINS = "13.AndroidAdhoc";
 	public const string B_ANDROID_STORE_PIPELINE_N_JENKINS = "14.AndroidStore";
+
+	public const string B_STANDALONE_DEBUG_PIPELINE_N_JENKINS = "41.StandaloneDebug";
+	public const string B_STANDALONE_RELEASE_PIPELINE_N_JENKINS = "42.StandaloneRelease";
 	// 젠킨스 }
 
 	// 계층 뷰
@@ -878,9 +878,6 @@ public static partial class KCEditorDefine {
 
 	public static readonly KeyValuePair<string, string>[] B_ICON_P_INFOS = new KeyValuePair<string, string>[] {
 		// 02.UnityProject {
-		// 독립 플랫폼
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Standalone/App/T_Icon.png", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_STANDALONE_APP}.png"),
-
 		// iOS
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon76x76.png", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_IOS_APP_76x76}.png"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon120x120.png", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_IOS_APP_120x120}.png"),
@@ -897,6 +894,9 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon144x144.png", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_ANDROID_APP_144x144}.png"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon192x192.png", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_ANDROID_APP_192x192}.png"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon512x512.png", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_ANDROID_APP_512x512}.png"),
+
+		// 독립 플랫폼
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Standalone/App/T_Icon.png", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_STANDALONE_APP}.png"),
 
 #if NOTI_MODULE_ENABLE
 		// iOS
@@ -933,20 +933,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_FILTER_DEBUG_CONSOLE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
 	public static readonly string B_DIR_P_FILTER_DEBUG_LOG_ITEM = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
 	// 디버그 콘솔 }
-
-	// 독립 플랫폼
-	public static readonly string B_ABS_BUILD_P_FMT_STANDALONE = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Standalone/{"{0}"}";
-	public static readonly string B_DIR_P_FMT_EXTERNAL_DATAS_STANDALONE = $"{"{0}"}/{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
-
-	// 맥
-	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_MAC = new GraphicsDeviceType[] {
-		GraphicsDeviceType.Metal, GraphicsDeviceType.OpenGLCore
-	};
-
-	// 윈도우즈
-	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_WNDS = new GraphicsDeviceType[] {
-		GraphicsDeviceType.Direct3D12, GraphicsDeviceType.Direct3D11
-	};
 
 	// iOS {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
@@ -999,10 +985,24 @@ public static partial class KCEditorDefine {
 	};
 	// 안드로이드 }
 
+	// 독립 플랫폼
+	public static readonly string B_ABS_BUILD_P_FMT_STANDALONE = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Standalone/{"{0}"}";
+	public static readonly string B_DIR_P_FMT_EXTERNAL_DATAS_STANDALONE = $"{"{0}"}/{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
+
+	// 맥
+	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_MAC = new GraphicsDeviceType[] {
+		GraphicsDeviceType.Metal, GraphicsDeviceType.OpenGLCore
+	};
+
+	// 윈도우즈
+	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_WNDS = new GraphicsDeviceType[] {
+		GraphicsDeviceType.Direct3D12, GraphicsDeviceType.Direct3D11
+	};
+
 	// 젠킨스
-	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone", Application.unityVersion);
 	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", Application.unityVersion);
 	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", Application.unityVersion);
+	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone", Application.unityVersion);
 	#endregion			// 런타임 상수
 
 	#region 조건부 상수
