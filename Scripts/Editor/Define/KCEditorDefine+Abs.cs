@@ -170,8 +170,8 @@ public static partial class KCEditorDefine {
 	public const string B_RELEASE_BUILD_FUNC_JENKINS = "Release";
 	public const string B_ADHOC_BUILD_FUNC_JENKINS = "Adhoc";
 	public const string B_ADHOC_UPLOAD_BUILD_FUNC_JENKINS = "AdhocUpload";
-	public const string B_STORE_BUILD_FUNC_JENKINS = "Store";
-	public const string B_STORE_TEST_BUILD_FUNC_JENKINS = "StoreTest";
+	public const string B_STORE_A_BUILD_FUNC_JENKINS = "StoreA";
+	public const string B_STORE_B_BUILD_FUNC_JENKINS = "StoreB";
 	public const string B_STORE_UPLOAD_BUILD_FUNC_JENKINS = "StoreUpload";
 
 	public const string B_STANDALONE_DEBUG_PIPELINE_N_JENKINS = "41.StandaloneDebug";
