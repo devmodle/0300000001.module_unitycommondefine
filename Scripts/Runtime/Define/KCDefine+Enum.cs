@@ -310,6 +310,15 @@ public enum ETextureCompressionType {
 #endif			// #if UNITY_EDITOR
 
 #if ADS_MODULE_ENABLE
+//! 광고 플랫폼
+public enum EAdsPlatform {
+	NONE = -1,
+	ADMOB,
+	IRON_SRC,
+	APP_LOVIN,
+	MAX_VAL
+}
+
 //! 배너 광고 위치
 public enum EBannerAdsPos {
 	NONE = -1,
@@ -317,14 +326,17 @@ public enum EBannerAdsPos {
 	DOWN,
 	MAX_VAL
 }
+#endif			// #if ADS_MODULE_ENABLE
 
-//! 광고 타입
-public enum EAdsType {
+#if PURCHASE_MODULE_ENABLE
+//! 결제 플랫폼
+public enum EPurchasePlatform {
 	NONE = -1,
-	ADMOB,
-	IRON_SRC,
-	APP_LOVIN,
+	GOOGLE,
+	AMAZON,
+	ONE_STORE,
+	GALAXY_STORE,
 	MAX_VAL
 }
-#endif			// #if ADS_MODULE_ENABLE
+#endif			// #if PURCHASE_MODULE_ENABLE
 #endregion			// 조건부 상수
