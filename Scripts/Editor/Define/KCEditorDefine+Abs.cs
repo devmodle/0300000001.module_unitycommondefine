@@ -857,11 +857,6 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityFlurry.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Plugins/FlurrySDK/Module.UnityFlurry.asmdef"),
 #endif			// #if FLURRY_ENABLE || FLURRY_MODULE_ENABLE
 
-#if GAME_ANALYTICS_ENABLE || GAME_ANALYTICS_MODULE_ENABLE
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityGameAnalytics.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}GameAnalytics/Module.UnityGameAnalytics.asmdef"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityGameAnalytics.Editor.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}GameAnalytics/Editor/Module.UnityGameAnalytics.Editor.asmdef"),
-#endif			// #if GAME_ANALYTICS_ENABLE || GAME_ANALYTICS_MODULE_ENABLE
-
 #if SINGULAR_ENABLE || SINGULAR_MODULE_ENABLE
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnitySingular.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Code/Module.UnitySingular.asmdef"),
 #endif			// #if SINGULAR_ENABLE || SINGULAR_MODULE_ENABLE

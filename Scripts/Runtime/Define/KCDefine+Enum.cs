@@ -179,7 +179,6 @@ public enum EAnalyticsType {
 	FLURRY,
 	FIREBASE,
 	APPS_FLYER,
-	GAME_ANALYTICS,
 	SINGULAR,
 	MAX_VAL
 }

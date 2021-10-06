@@ -1124,14 +1124,6 @@ public static partial class KCDefine {
 	public const string U_KEY_APPS_FM_INIT_CALLBACK = "AppsFMInitCallback";
 #endif			// #if APPS_FLYER_MODULE_ENABLE
 
-#if GAME_ANALYTICS_MODULE_ENABLE
-	// 식별자
-	public const string U_KEY_GAME_AM_INIT_CALLBACK = "GameAMInitCallback";
-
-	// 이름
-	public const string U_OBJ_N_GAME_AM_GAME_ANALYTICS = "GameAnalytics";
-#endif			// #if GAME_ANALYTICS_MODULE_ENABLE
-
 #if SINGULAR_MODULE_ENABLE
 	// 시간
 	public const int U_TIMEOUT_SINGULAR_M_AGREE_TRACKING = 60;
