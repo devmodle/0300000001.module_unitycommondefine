@@ -1124,17 +1124,6 @@ public static partial class KCDefine {
 	public const string U_KEY_APPS_FM_INIT_CALLBACK = "AppsFMInitCallback";
 #endif			// #if APPS_FLYER_MODULE_ENABLE
 
-#if SINGULAR_MODULE_ENABLE
-	// 시간
-	public const int U_TIMEOUT_SINGULAR_M_AGREE_TRACKING = 60;
-	
-	// 식별자
-	public const string U_KEY_SINGULAR_M_INIT_CALLBACK = "SingularMInitCallback";
-
-	// 이름
-	public const string U_OBJ_N_SINGULAR_M_SINGULAR = "Singular";
-#endif			// #if SINGULAR_MODULE_ENABLE
-
 #if GAME_CENTER_MODULE_ENABLE
 	// 식별자
 	public const string U_KEY_GAME_CM_INIT_CALLBACK = "GameCMInitCallback";
@@ -1234,10 +1223,10 @@ public static partial class KCDefine {
 #endif			// #if APP_LOVIN_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
-#if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
+#if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 	// 경로
 	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_PluginInfoTable";
-#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE || SINGULAR_MODULE_ENABLE
+#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 
 #if FACEBOOK_MODULE_ENABLE
 	// 권한
