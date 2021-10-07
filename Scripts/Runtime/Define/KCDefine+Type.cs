@@ -37,13 +37,6 @@ public struct STSequenceInfo {
 	public GameObject m_oObj;
 }
 
-//! 빌드 버전
-[System.Serializable]
-public struct STBuildVer {
-	public int m_nNum;
-	public string m_oVer;
-}
-
 //! 식별자 정보
 [MessagePackObject][System.Serializable]
 public struct STIDInfo {
@@ -58,6 +51,13 @@ public struct STIdxInfo {
 	[Key(0)] public int m_nX;
 	[Key(1)] public int m_nY;
 	[Key(2)] public int m_nZ;
+}
+
+//! 빌드 버전 정보
+[System.Serializable]
+public struct STBuildVerInfo {
+	public int m_nNum;
+	public string m_oVer;
 }
 
 //! 지급 아이템 정보
@@ -85,11 +85,12 @@ public struct STDeviceConfig {
 //! 빌드 버전 속성
 [System.Serializable]
 public struct STBuildVerConfig {
-	public STBuildVer m_stiOSVer;
+	public STBuildVerInfo m_stiOSBuildVerInfo;
 
-	public STBuildVer m_stGoogleVer;
-	public STBuildVer m_stOneStoreVer;
-	public STBuildVer m_stGalaxyStoreVer;
+	public STBuildVerInfo m_stGoogleBuildVerInfo;
+	public STBuildVerInfo m_stAmazonBuildVerInfo;
+	public STBuildVerInfo m_stOneStoreBuildVerInfo;
+	public STBuildVerInfo m_stGalaxyStoreBuildVerInfo;
 }
 
 //! 공용 타입 래퍼

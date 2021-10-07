@@ -1076,11 +1076,11 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE
 	// 식별자 {
-	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
+	public const string U_KEY_FIREBASE_M_GAME_CONFIG = "GameConfig";
+	public const string U_KEY_FIREBASE_M_DEVICE_CONFIG = "DeviceConfig";
+	public const string U_KEY_FIREBASE_M_BUILD_VER_CONFIG = "BuildVerConfig";
 
-	public const string U_CONFIG_KEY_FIREBASE_M_GAME = "GameConfig";
-	public const string U_CONFIG_KEY_FIREBASE_M_DEVICE = "DeviceConfig";
-	public const string U_CONFIG_KEY_FIREBASE_M_BUILD_VER = "BuildVerConfig";
+	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
 	// 식별자 }
 
 	// 노드
