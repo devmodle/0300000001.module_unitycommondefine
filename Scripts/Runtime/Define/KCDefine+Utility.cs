@@ -1134,6 +1134,9 @@ public static partial class KCDefine {
 #endif			// #if GAME_CENTER_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
+	// 기타
+	public const string U_PAYLOAD_PURCHASE_M_PURCHASE = "PurchaseMPurchase";
+
 	// 식별자 {
 	public const string U_KEY_PURCHASE_M_INIT_CALLBACK = "PurchaseMInitCallback";
 	public const string U_KEY_PURCHASE_M_INIT_FAIL_CALLBACK = "PurchaseMInitFailCallback";

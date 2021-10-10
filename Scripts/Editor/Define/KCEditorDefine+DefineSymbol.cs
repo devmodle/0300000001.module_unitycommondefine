@@ -135,8 +135,6 @@ public static partial class KCEditorDefine {
 	// 플랫폼 {
 	public const string DS_DEFINE_S_GOOGLE_PLATFORM = "GOOGLE_PLATFORM";
 	public const string DS_DEFINE_S_AMAZON_PLATFORM = "AMAZON_PLATFORM";
-	public const string DS_DEFINE_S_ONE_STORE_PLATFORM = "ONE_STORE_PLATFORM";
-	public const string DS_DEFINE_S_GALAXY_STORE_PLATFORM = "GALAXY_STORE_PLATFORM";
 
 	public const string DS_DEFINE_S_MAC_PLATFORM = "MAC_PLATFORM";
 	public const string DS_DEFINE_S_WNDS_PLATFORM = "WNDS_PLATFORM";

@@ -409,10 +409,6 @@ public static partial class KCEditorDefine {
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/11.GoogleTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/11.GoogleTesterGroups.txt"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/12.AmazonAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/12.AmazonAppID.txt"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/12.AmazonTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/12.AmazonTesterGroups.txt"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/13.OneStoreAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/13.OneStoreAppID.txt"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/13.OneStoreTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/13.OneStoreTesterGroups.txt"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/14.GalaxyStoreAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/14.GalaxyStoreAppID.txt"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/14.GalaxyStoreTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/14.GalaxyStoreTesterGroups.txt"),
 
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Datas/GameConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_GAME_CONFIG}.json"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Datas/GameConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_DATA_P_G_GAME_CONFIG}.json"),

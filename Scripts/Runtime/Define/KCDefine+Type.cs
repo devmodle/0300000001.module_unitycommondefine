@@ -89,8 +89,6 @@ public struct STBuildVerConfig {
 
 	public STBuildVerInfo m_stGoogleBuildVerInfo;
 	public STBuildVerInfo m_stAmazonBuildVerInfo;
-	public STBuildVerInfo m_stOneStoreBuildVerInfo;
-	public STBuildVerInfo m_stGalaxyStoreBuildVerInfo;
 }
 
 //! 공용 타입 래퍼
