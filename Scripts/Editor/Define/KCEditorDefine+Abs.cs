@@ -93,11 +93,13 @@ public static partial class KCEditorDefine {
 	// 경로 }
 
 	// iOS {
-	public const string B_TEXT_IOS_YES = "YES";
-	public const string B_TEXT_IOS_NO = "NO";
+	public const string B_TEXT_IOS_TRUE = "YES";
+	public const string B_TEXT_IOS_FALSE = "NO";
+
+	public const string B_TEXT_IOS_METAL = "metal";
+	public const string B_TEXT_IOS_ARM_64 = "arm64";
 
 	public const string B_IPA_EXPORT_METHOD_IOS_DEV = "development";
-	public const string B_IPA_EXPORT_METHOD_IOS_ADHOC = "ad-hoc";
 	public const string B_IPA_EXPORT_METHOD_IOS_STORE = "app-store";
 
 	public const string B_BUILD_P_IOS = "Builds/iOS";
@@ -168,21 +170,17 @@ public static partial class KCEditorDefine {
 
 	public const string B_DEBUG_BUILD_FUNC_JENKINS = "Debug";
 	public const string B_RELEASE_BUILD_FUNC_JENKINS = "Release";
-	public const string B_ADHOC_BUILD_FUNC_JENKINS = "Adhoc";
-	public const string B_ADHOC_UPLOAD_BUILD_FUNC_JENKINS = "AdhocUpload";
 	public const string B_STORE_A_BUILD_FUNC_JENKINS = "StoreA";
 	public const string B_STORE_B_BUILD_FUNC_JENKINS = "StoreB";
 	public const string B_STORE_UPLOAD_BUILD_FUNC_JENKINS = "StoreUpload";
 
 	public const string B_IOS_DEBUG_PIPELINE_N_JENKINS = "01.iOSDebug";
 	public const string B_IOS_RELEASE_PIPELINE_N_JENKINS = "02.iOSRelease";
-	public const string B_IOS_ADHOC_PIPELINE_N_JENKINS = "03.iOSAdhoc";
-	public const string B_IOS_STORE_PIPELINE_N_JENKINS = "04.iOSStore";
+	public const string B_IOS_STORE_PIPELINE_N_JENKINS = "03.iOSStore";
 
 	public const string B_ANDROID_DEBUG_PIPELINE_N_JENKINS = "11.AndroidDebug";
 	public const string B_ANDROID_RELEASE_PIPELINE_N_JENKINS = "12.AndroidRelease";
-	public const string B_ANDROID_ADHOC_PIPELINE_N_JENKINS = "13.AndroidAdhoc";
-	public const string B_ANDROID_STORE_PIPELINE_N_JENKINS = "14.AndroidStore";
+	public const string B_ANDROID_STORE_PIPELINE_N_JENKINS = "13.AndroidStore";
 
 	public const string B_STANDALONE_DEBUG_PIPELINE_N_JENKINS = "41.StandaloneDebug";
 	public const string B_STANDALONE_RELEASE_PIPELINE_N_JENKINS = "42.StandaloneRelease";

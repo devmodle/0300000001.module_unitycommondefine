@@ -274,7 +274,6 @@ public enum EBuildType {
 	NONE = -1,
 	DEBUG,
 	RELEASE,
-	ADHOC,
 	STORE,
 	MAX_VAL
 }

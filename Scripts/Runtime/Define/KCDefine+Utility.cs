@@ -968,6 +968,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
 	public const string U_OBJ_N_SCREEN_DEBUG_TEXT_UIS = "DebugTextUIs";
 
+	public const string U_OBJ_N_FPS_C_STATIC_TEXT = "StaticInfoText";
+	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
+
 	public const string U_OBJ_N_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
 	public const string U_OBJ_N_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
 
@@ -975,12 +978,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_DEBUG_BTN = "DebugBtn";
 	// 이름 }
 #endif			// #if DEBUG || DEVELOPMENT_BUILD
-
-#if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
-	// 이름
-	public const string U_OBJ_N_FPS_C_STATIC_TEXT = "StaticInfoText";
-	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
-#endif			// #if FPS_ENABLE || (DEBUG || DEVELOPMENT_BUILD)
 
 #if ADS_MODULE_ENABLE
 	// 비율

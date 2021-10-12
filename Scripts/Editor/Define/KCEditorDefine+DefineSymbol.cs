@@ -21,10 +21,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_AUTO_LOG_PARAMS_ENABLE = "AUTO_LOG_PARAMS_ENABLE";
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 
-	// 배포
-	public const string DS_DEFINE_S_ADHOC_BUILD = "ADHOC_BUILD";
-	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
-
 	// 플러그인
 	public const string DS_DEFINE_S_DOTWEEN_ENABLE = "DOTWEEN_ENABLE";
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
@@ -141,9 +137,8 @@ public static partial class KCEditorDefine {
 	// 플랫폼 }
 
 	// 테스트 {
-	public const string DS_DEFINE_S_FPS_ENABLE = "FPS_ENABLE";
 	public const string DS_DEFINE_S_PROFILER_ENABLE = "PROFILER_ENABLE";
-
+	
 	public const string DS_DEFINE_S_ML_AGENTS_ENABLE = "ML_AGENTS_ENABLE";
 	public const string DS_DEFINE_S_ML_AGENTS_MODULE_ENABLE = "ML_AGENTS_MODULE_ENABLE";
 
@@ -178,6 +173,7 @@ public static partial class KCEditorDefine {
 	// 테스트 }
 
 	// 기타 {
+	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
 	public const string DS_DEFINE_S_MODULE_VER_1_7_3_OR_NEWER = "MODULE_VER_1_7_3_OR_NEWER";
 
 	public const string DS_DEFINE_S_STUDY_ENABLE = "STUDY_ENABLE";
