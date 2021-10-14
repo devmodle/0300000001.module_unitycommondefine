@@ -7,28 +7,6 @@ using UnityEngine.UI;
 //! 기본 상수
 public static partial class KCDefine {
 	#region 기본
-	// 단위 {
-	public const int B_UNIT_KINDS_PER_TYPE = 10000000;
-	public const int B_UNIT_KINDS_PER_KINDS_TYPE = 10000;
-	public const int B_UNIT_KINDS_PER_SUB_KINDS_TYPE = 100;
-
-	public const int B_UNIT_IDS_PER_CHAPTER = 10000000;
-	public const int B_UNIT_IDS_PER_STAGE = 10000;
-
-	public const int B_UNIT_NORM_VAL_TO_BYTE = 255;
-	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;
-
-	public const int B_UNIT_BITS_PER_BYTE = 8;
-	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
-	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
-	
-	public const int B_UNIT_SECS_PER_MINUTES = 60;
-	public const int B_UNIT_MILLI_SECS_PER_SECS = 1000;
-
-	public const float B_UNIT_SCALE = 0.01f;
-	public const float B_UNIT_REF_PIXELS = 1.0f;
-	// 단위 }
-
 	// 값 {
 	public const int B_VAL_0_INT = 0;
 	public const int B_VAL_1_INT = 1;
@@ -86,6 +64,28 @@ public static partial class KCDefine {
 	public const float B_ANGLE_180_RAD = KCDefine.B_ANGLE_180_DEG * Mathf.Deg2Rad;
 	public const float B_ANGLE_360_RAD = KCDefine.B_ANGLE_360_DEG * Mathf.Deg2Rad;
 	// 회전 }
+
+	// 단위 {
+	public const int B_UNIT_KINDS_PER_TYPE = 10000000;
+	public const int B_UNIT_KINDS_PER_KINDS_TYPE = 10000;
+	public const int B_UNIT_KINDS_PER_SUB_KINDS_TYPE = 100;
+
+	public const int B_UNIT_IDS_PER_CHAPTER = 10000000;
+	public const int B_UNIT_IDS_PER_STAGE = 10000;
+
+	public const int B_UNIT_NORM_VAL_TO_BYTE = 255;
+	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;
+
+	public const int B_UNIT_BITS_PER_BYTE = 8;
+	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
+	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
+	
+	public const int B_UNIT_SECS_PER_MINUTE = 60;
+	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
+
+	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
+	public const float B_UNIT_PIXELS_PER_UNIT_SCALE = KCDefine.B_UNIT_PIXELS_PER_UNIT / 100.0f;
+	// 단위 }
 
 	// 빌드 번호
 	public const int B_MIN_BUILD_NUM = 1;
@@ -184,8 +184,8 @@ public static partial class KCDefine {
 	public const float B_DPI = 160.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
 
-	public const float B_WORLD_SCREEN_WIDTH = KCDefine.B_SCREEN_WIDTH * KCDefine.B_UNIT_SCALE;
-	public const float B_WORLD_SCREEN_HEIGHT = KCDefine.B_SCREEN_HEIGHT * KCDefine.B_UNIT_SCALE;
+	public const float B_WORLD_SCREEN_WIDTH = KCDefine.B_SCREEN_WIDTH * KCDefine.B_UNIT_PIXELS_PER_UNIT_SCALE;
+	public const float B_WORLD_SCREEN_HEIGHT = KCDefine.B_SCREEN_HEIGHT * KCDefine.B_UNIT_PIXELS_PER_UNIT_SCALE;
 	
 	public const string B_EMPTY_STR = "";
 	public const string B_UNKNOWN_STR = "Unknown";

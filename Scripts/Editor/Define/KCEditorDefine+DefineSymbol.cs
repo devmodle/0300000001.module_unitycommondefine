@@ -20,6 +20,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_CUSTOM_CAMERA_POS_ENABLE = "CUSTOM_CAMERA_POS_ENABLE";
 	public const string DS_DEFINE_S_AUTO_LOG_PARAMS_ENABLE = "AUTO_LOG_PARAMS_ENABLE";
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
+	public const string DS_DEFINE_S_MULTI_TOUCH_ENABLE = "MULTI_TOUCH_ENABLE";
 
 	// 플러그인
 	public const string DS_DEFINE_S_DOTWEEN_ENABLE = "DOTWEEN_ENABLE";

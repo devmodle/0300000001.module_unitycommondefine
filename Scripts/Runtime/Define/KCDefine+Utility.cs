@@ -56,8 +56,8 @@ public static partial class KCDefine {
 	public const float U_DEPTH_MAIN_CAMERA = -50.0f;
 
 	// 거리
-	public const float U_DISTANCE_CAMERA_PLANE = 5.0f;
-	public const float U_DISTANCE_CAMERA_FAR_PLANE = 5000.0f;
+	public const float U_DISTANCE_CAMERA_PLANE = 500.0f * KCDefine.B_UNIT_PIXELS_PER_UNIT_SCALE;
+	public const float U_DISTANCE_CAMERA_FAR_PLANE = 500000.0f * KCDefine.B_UNIT_PIXELS_PER_UNIT_SCALE;
 	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 0.1f;
 
 	// 비율 {
@@ -1057,7 +1057,7 @@ public static partial class KCDefine {
 
 #if FLURRY_MODULE_ENABLE
 	// 시간
-	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_MILLI_SECS_PER_SECS;
+	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_MILLI_SECS_PER_SEC;
 
 	// 식별자
 	public const string U_KEY_FLURRY_M_INIT_CALLBACK = "FlurryMInitCallback";
