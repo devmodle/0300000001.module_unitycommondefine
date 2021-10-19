@@ -91,7 +91,7 @@ public static partial class KCDefine {
 	public const float U_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_TIMEOUT_NETWORK_CONNECTION = 30.0f;
 
-	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
+	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.25f;
 	// 시간 }
 
 	// 레이어

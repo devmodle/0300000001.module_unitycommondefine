@@ -520,12 +520,12 @@ public static partial class KCDefine {
 	// 기타 }
 
 	// 색상 {
+	public static readonly Color B_LOG_COLOR_INFO = Color.cyan;
 	public static readonly Color B_LOG_COLOR_WARNING = new Color(0xff / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0xa5 / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0.0f, 1.0f);
 	public static readonly Color B_LOG_COLOR_ERROR = Color.red;
 
-	public static readonly Color B_LOG_COLOR_SETUP = Color.magenta;
 	public static readonly Color B_LOG_COLOR_PLUGIN = Color.yellow;
-	public static readonly Color B_LOG_COLOR_PLATFORM_INFO = Color.red;
+	public static readonly Color B_LOG_COLOR_PLATFORM_INFO = Color.magenta;
 	// 색상 }
 
 	// 앵커 {
