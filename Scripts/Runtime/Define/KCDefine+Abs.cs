@@ -84,7 +84,7 @@ public static partial class KCDefine {
 	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
 
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
-	public const float B_UNIT_PIXELS_PER_UNIT_SCALE = KCDefine.B_UNIT_PIXELS_PER_UNIT / 100.0f;
+	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
 	// 단위 }
 
 	// 빌드 번호
@@ -183,9 +183,6 @@ public static partial class KCDefine {
 
 	public const float B_DPI = 160.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
-
-	public const float B_WORLD_SCREEN_WIDTH = KCDefine.B_SCREEN_WIDTH * KCDefine.B_UNIT_PIXELS_PER_UNIT_SCALE;
-	public const float B_WORLD_SCREEN_HEIGHT = KCDefine.B_SCREEN_HEIGHT * KCDefine.B_UNIT_PIXELS_PER_UNIT_SCALE;
 	
 	public const string B_EMPTY_STR = "";
 	public const string B_UNKNOWN_STR = "Unknown";
@@ -234,10 +231,6 @@ public static partial class KCDefine {
 	public static readonly int B_DESKTOP_SCREEN_HEIGHT = (int)(KCDefine.B_DESKTOP_SCREEN_WIDTH * (KCDefine.B_LANDSCAPE_SCREEN_HEIGHT / (float)KCDefine.B_LANDSCAPE_SCREEN_WIDTH));
 
 	public static readonly Vector3 B_SCREEN_SIZE = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
-	public static readonly Vector3 B_WORLD_SCREEN_SIZE = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH, KCDefine.B_WORLD_SCREEN_HEIGHT, 0.0f);
-
-	public static readonly Bounds B_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_SCREEN_SIZE);
-	public static readonly Bounds B_WORLD_SCREEN_BOUNDS = new Bounds(Vector3.zero, KCDefine.B_WORLD_SCREEN_SIZE);
 	// 디바이스 }
 
 	// 국가 코드
@@ -558,20 +551,6 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_POS_POPUP = Vector3.zero;
 	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;
 	// 위치 }
-
-	// 월드 위치 {
-	public static readonly Vector3 B_WORLD_POS_UP_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_WORLD_POS_UP_CENTER = new Vector3(0.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_WORLD_POS_UP_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / 2.0f, 0.0f);
-
-	public static readonly Vector3 B_WORLD_POS_DOWN_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / -2.0f, 0.0f);
-	public static readonly Vector3 B_WORLD_POS_DOWN_CENTER = new Vector3(0.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / -2.0f, 0.0f);
-	public static readonly Vector3 B_WORLD_POS_DOWN_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, KCDefine.B_WORLD_SCREEN_HEIGHT / -2.0f, 0.0f);
-
-	public static readonly Vector3 B_WORLD_POS_MID_LEFT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / -2.0f, 0.0f, 0.0f);
-	public static readonly Vector3 B_WORLD_POS_MID_CENTER = Vector3.zero;
-	public static readonly Vector3 B_WORLD_POS_MID_RIGHT = new Vector3(KCDefine.B_WORLD_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
-	// 월드 위치 }
 
 	// 국가 코드
 	public static readonly string[] B_EU_COUNTRY_CODES = new string[] {
