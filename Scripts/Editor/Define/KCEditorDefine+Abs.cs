@@ -11,7 +11,7 @@ using UnityEditor;
 using Unity.Notifications.iOS;
 #endif			// #if NOTI_MODULE_ENABLE
 
-//! 에디터 기본 상수
+/** 에디터 기본 상수 */
 public static partial class KCEditorDefine {
 	#region 기본
 	// 단위

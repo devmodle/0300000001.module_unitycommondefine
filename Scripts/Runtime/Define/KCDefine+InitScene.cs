@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//! 초기화 씬 상수
+/** 초기화 씬 상수 */
 public static partial class KCDefine {
 	#region 런타임 상수
 	// 경로

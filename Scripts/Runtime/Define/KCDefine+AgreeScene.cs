@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//! 약관 동의 씬 상수
+/** 약관 동의 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 약관 동의 팝업

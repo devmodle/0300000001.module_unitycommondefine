@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//! 지연 설정 씬 상수
+/** 지연 설정 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 추적 설명 팝업

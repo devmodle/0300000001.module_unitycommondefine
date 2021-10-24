@@ -4,7 +4,7 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
-//! 기본 상수
+/** 기본 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 값 {

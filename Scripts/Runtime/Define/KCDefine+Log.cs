@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//! 로그 상수
+/** 로그 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 이름

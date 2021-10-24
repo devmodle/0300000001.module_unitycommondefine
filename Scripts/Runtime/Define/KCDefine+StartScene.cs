@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//! 시작 씬 상수
+/** 시작 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 개수

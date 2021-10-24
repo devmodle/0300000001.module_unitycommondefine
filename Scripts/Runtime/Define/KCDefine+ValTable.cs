@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//! 값 테이블 상수
+/** 값 테이블 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 광고

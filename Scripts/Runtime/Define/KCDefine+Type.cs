@@ -7,37 +7,37 @@ using DG.Tweening;
 using MessagePack;
 
 #region 기본
-//! 작업 정보
+/** 작업 정보 */
 public struct STTaskInfo {
 	public Task m_oTask;
 	public System.Action<Task> m_oCallback;
 }
 
-//! 콜백 정보
+/** 콜백 정보 */
 public struct STCallbackInfo {
 	public string m_oKey;
 	public System.Action m_oCallback;
 }
 
-//! 컴포넌트 정보
+/** 컴포넌트 정보 */
 public struct STComponentInfo {
 	public int m_nID;
 	public Component m_oComponent;
 }
 
-//! 정렬 순서 정보
+/** 정렬 순서 정보 */
 public struct STSortingOrderInfo {
 	public int m_nOrder;
 	public string m_oLayer;
 }
 
-//! 시퀀스 애니메이션 정보
+/** 시퀀스 애니메이션 정보 */
 public struct STSequenceInfo {
 	public Sequence m_oSequence;
 	public GameObject m_oObj;
 }
 
-//! 식별자 정보
+/** 식별자 정보 */
 [MessagePackObject][System.Serializable]
 public struct STIDInfo {
 	[Key(0)] public int m_nID;
@@ -45,7 +45,7 @@ public struct STIDInfo {
 	[Key(2)] public int m_nChapterID;
 }
 
-//! 인덱스 정보
+/** 인덱스 정보 */
 [MessagePackObject][System.Serializable]
 public struct STIdxInfo {
 	[Key(0)] public int m_nX;
@@ -53,14 +53,14 @@ public struct STIdxInfo {
 	[Key(2)] public int m_nZ;
 }
 
-//! 빌드 버전 정보
+/** 빌드 버전 정보 */
 [System.Serializable]
 public struct STBuildVerInfo {
 	public int m_nNum;
 	public string m_oVer;
 }
 
-//! 지급 아이템 정보
+/** 지급 아이템 정보 */
 [System.Serializable]
 public struct STPostItemInfo {
 	public string m_oNumItems;
@@ -68,21 +68,21 @@ public struct STPostItemInfo {
 	public string m_oItemKinds;
 }
 
-//! 디바이스 정보
+/** 디바이스 정보 */
 [System.Serializable]
 public struct STDeviceInfo {
 	public List<string> m_oiOSAdmobIDList;
 	public List<string> m_oAndroidAdmobIDList;
 }
 
-//! 디바이스 속성
+/** 디바이스 속성 */
 [System.Serializable]
 public struct STDeviceConfig {
 	public List<string> m_oiOSAdsIDList;
 	public List<string> m_oAndroidAdsIDList;
 }
 
-//! 빌드 버전 속성
+/** 빌드 버전 속성 */
 [System.Serializable]
 public struct STBuildVerConfig {
 	public STBuildVerInfo m_stiOSBuildVerInfo;
@@ -91,7 +91,7 @@ public struct STBuildVerConfig {
 	public STBuildVerInfo m_stAmazonBuildVerInfo;
 }
 
-//! 공용 타입 래퍼
+/** 공용 타입 래퍼 */
 [MessagePackObject]
 public struct STCommonTypeWrapper {
 	[Key(0)] public List<int> m_oIntList;
@@ -111,7 +111,7 @@ public struct STCommonTypeWrapper {
 	[Key(32)] public Dictionary<string, string> m_oStrStrDict;
 }
 
-//! 경로 정보
+/** 경로 정보 */
 public class CPathInfo {
 	public int m_nCost = 0;
 	public Vector3Int m_stIdx = Vector3Int.zero;
@@ -122,7 +122,7 @@ public class CPathInfo {
 
 #region 조건부 타입
 #if ADS_MODULE_ENABLE
-//! 광고 보상 아이템 정보
+/** 광고 보상 아이템 정보 */
 public struct STAdsRewardItemInfo {
 	public string m_oID;
 	public string m_oVal;
@@ -130,7 +130,7 @@ public struct STAdsRewardItemInfo {
 #endif			// #if ADS_MODULE_ENABLE
 
 #if NOTI_MODULE_ENABLE
-//! 알림 정보
+/** 알림 정보 */
 public struct STNotiInfo {
 	public bool m_bIsRepeat;
 	public bool m_bIsShowForeground;
@@ -144,7 +144,7 @@ public struct STNotiInfo {
 #endif			// #if NOTI_MODULE_ENABLE
 
 #if UNITY_EDITOR || UNITY_STANDALONE
-//! 에디터 레벨 생성 정보
+/** 에디터 레벨 생성 정보 */
 public class CEditorLevelCreateInfo {
 	public int m_nNumLevels = 0;
 

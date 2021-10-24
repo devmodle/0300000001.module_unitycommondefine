@@ -24,7 +24,7 @@ using Unity.Notifications.Android;
 using UnityEngine.Rendering.Universal;
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 
-//! 유틸리티 상수
+/** 유틸리티 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 개수 {

@@ -71,7 +71,7 @@ using UnityEngine.UI;
 - 161 ~ 169 : 참조 (복합) 형식 데이터 (리스트 or 딕셔너리)
 */
 #region 기본
-//! 마우스 버튼
+/** 마우스 버튼 */
 public enum EMouseBtn {
 	NONE = -1,
 	LEFT,
@@ -80,7 +80,7 @@ public enum EMouseBtn {
 	MAX_VAL
 }
 
-//! 방향
+/** 방향 */
 public enum EDirection {
 	NONE = -1,
 	
@@ -106,7 +106,7 @@ public enum EDirection {
 	MAX_VAL
 }
 
-//! 퀄리티 수준
+/** 퀄리티 수준 */
 public enum EQualityLevel {
 	NONE = -1,
 	VERY_LOW,
@@ -119,7 +119,7 @@ public enum EQualityLevel {
 	MAX_VAL
 }
 
-//! 그림자 옵션
+/** 그림자 옵션 */
 public enum EShadowCascadesOpts {
 	NONE = -1,
 	ONE_CASCADES,
@@ -129,7 +129,7 @@ public enum EShadowCascadesOpts {
 	MAX_VAL
 }
 
-//! 값 타입
+/** 값 타입 */
 public enum EValType {
 	NONE = -1,
 	INT,
@@ -138,7 +138,7 @@ public enum EValType {
 	MAX_VAL
 }
 
-//! 애니메이션 타입
+/** 애니메이션 타입 */
 public enum EAniType {
 	NONE = -1,
 	SCALE,
@@ -148,7 +148,7 @@ public enum EAniType {
 	MAX_VAL
 };
 
-//! 유저 타입
+/** 유저 타입 */
 public enum EUserType {
 	NONE = -1,
 	USER_A,
@@ -156,7 +156,7 @@ public enum EUserType {
 	MAX_VAL
 }
 
-//! 디바이스 타입
+/** 디바이스 타입 */
 public enum EDeviceType {
 	NONE = -1,
 	PHONE,
@@ -164,7 +164,7 @@ public enum EDeviceType {
 	MAX_VAL
 }
 
-//! 수직 동기화 타입
+/** 수직 동기화 타입 */
 public enum EVSyncType {
 	NONE = -1,
 	NEVER,
@@ -173,7 +173,7 @@ public enum EVSyncType {
 	MAX_VAL
 }
 
-//! 분석 타입
+/** 분석 타입 */
 public enum EAnalyticsType {
 	NONE = -1,
 	FLURRY,
@@ -182,7 +182,7 @@ public enum EAnalyticsType {
 	MAX_VAL
 }
 
-//! 진동 타입
+/** 진동 타입 */
 public enum EVibrateType {
 	NONE = -1,
 	SELECTION,
@@ -191,7 +191,7 @@ public enum EVibrateType {
 	MAX_VAL
 }
 
-//! 진동 스타일
+/** 진동 스타일 */
 public enum EVibrateStyle {
 	NONE = -1,
 	LIGHT,
@@ -200,7 +200,7 @@ public enum EVibrateStyle {
 	MAX_VAL
 }
 
-//! 내비게이션 스택 이벤트 타입
+/** 내비게이션 스택 이벤트 타입 */
 public enum ENavStackEvent {
 	NONE = -1,
 	TOP,
@@ -209,7 +209,7 @@ public enum ENavStackEvent {
 	MAX_VAL
 }
 
-//! 시작 씬 이벤트 타입
+/** 시작 씬 이벤트 타입 */
 public enum EStartSceneEvent {
 	NONE = -1,
 	LOAD_SETUP_SCENE,
@@ -220,7 +220,7 @@ public enum EStartSceneEvent {
 	MAX_VAL
 }
 
-//! 약관 동의 팝업 타입
+/** 약관 동의 팝업 타입 */
 public enum EAgreePopupType {
 	NONE = -1,
 	NORM,
@@ -231,7 +231,7 @@ public enum EAgreePopupType {
 
 #region 조건부 상수
 #if UNITY_EDITOR
-//! DSP 버퍼 크기
+/** DSP 버퍼 크기 */
 public enum EDSPBufferSize {
 	NONE = -1,
 	BEST_LATENCY = 256,
@@ -240,7 +240,7 @@ public enum EDSPBufferSize {
 	MAX_VAL	
 }
 
-//! 종횡비 모드
+/** 종횡비 모드 */
 public enum EAspectRatioMode {
 	NONE = -1,
 	LEGACY_WIDE_SCREEN,
@@ -249,7 +249,7 @@ public enum EAspectRatioMode {
 	MAX_VAL
 }
 
-//! 가속도 갱신 주기
+/** 가속도 갱신 주기 */
 public enum EAccelerometerFrequency {
 	NONE = -1,
 	DISABLE,
@@ -260,7 +260,7 @@ public enum EAccelerometerFrequency {
 	MAX_VAL
 }
 
-//! 광원 맵 엔코딩 퀄리티
+/** 광원 맵 엔코딩 퀄리티 */
 public enum ELightmapEncodingQuality {
 	NONE = -1,
 	LOW,
@@ -269,7 +269,7 @@ public enum ELightmapEncodingQuality {
 	MAX_VAL
 }
 
-//! 빌드 타입
+/** 빌드 타입 */
 public enum EBuildType {
 	NONE = -1,
 	DEBUG,
@@ -278,7 +278,7 @@ public enum EBuildType {
 	MAX_VAL
 }
 
-//! 안드로이드 타입
+/** 안드로이드 타입 */
 public enum EAndroidType {
 	NONE = -1,
 	GOOGLE,
@@ -286,7 +286,7 @@ public enum EAndroidType {
 	MAX_VAL
 }
 
-//! 독립 플랫폼 타입
+/** 독립 플랫폼 타입 */
 public enum EStandaloneType {
 	NONE = -1,
 	MAC,
@@ -294,7 +294,7 @@ public enum EStandaloneType {
 	MAX_VAL
 }
 
-//! 텍스처 압축 타입
+/** 텍스처 압축 타입 */
 public enum ETextureCompressionType {
 	NONE = -1,
 	LEGACY,
@@ -305,7 +305,7 @@ public enum ETextureCompressionType {
 #endif			// #if UNITY_EDITOR
 
 #if ADS_MODULE_ENABLE
-//! 광고 플랫폼
+/** 광고 플랫폼 */
 public enum EAdsPlatform {
 	NONE = -1,
 	ADMOB,
@@ -314,7 +314,7 @@ public enum EAdsPlatform {
 	MAX_VAL
 }
 
-//! 배너 광고 위치
+/** 배너 광고 위치 */
 public enum EBannerAdsPos {
 	NONE = -1,
 	UP,
@@ -324,7 +324,7 @@ public enum EBannerAdsPos {
 #endif			// #if ADS_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
-//! 결제 플랫폼
+/** 결제 플랫폼 */
 public enum EPurchasePlatform {
 	NONE = -1,
 	GOOGLE,
