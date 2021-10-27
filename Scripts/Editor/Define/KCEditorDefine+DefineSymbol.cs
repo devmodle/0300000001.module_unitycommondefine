@@ -104,7 +104,6 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_PIXELS_PERFECT_ENABLE = "PIXELS_PERFECT_ENABLE";
 	public const string DS_DEFINE_S_CAMERA_STACKING_ENABLE = "CAMERA_STACKING_ENABLE";
-	public const string DS_DEFINE_S_DYNAMIC_BATCHING_ENABLE = "DYNAMIC_BATCHING_ENABLE";
 	// 렌더링 }
 
 	// 태그 관리자 {
