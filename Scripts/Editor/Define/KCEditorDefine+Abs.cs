@@ -241,8 +241,8 @@ public static partial class KCEditorDefine {
 	public const string B_TEXT_REPLACE = "변경";
 	public const string B_TEXT_APPLY = "적용";
 
-	public const string B_TEXT_OBJ_NAME_REPLACE = "=====> 객체 이름 변경 <=====";
 	public const string B_TEXT_FONT_REPLACE = "=====> 폰트 변경 <=====";
+	public const string B_TEXT_OBJ_NAME_REPLACE = "=====> 객체 이름 변경 <=====";
 	// 객체 이름 에디터 윈도우 }
 
 	// FPS 카운터
@@ -260,7 +260,7 @@ public static partial class KCEditorDefine {
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
 	public const string B_NAME_LEAN_GUI_PKGS = "LeanGUI-v1.2.2";
-	public const string B_NAME_LEAN_TOUCH_PKGS = "LeanTouch-v2.2.2";
+	public const string B_NAME_LEAN_TOUCH_PKGS = "LeanTouch-v2.3.4";
 	#endregion			// 기본
 
 	#region 런타임 상수
