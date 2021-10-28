@@ -845,11 +845,6 @@ public static partial class KCDefine {
 	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
 	// 스크립트 순서 }
 
-	// 형식
-	public const string U_TEXT_FMT_SCREEN_INFO_A = "Screen DPI: {0:0.0}\n";
-	public const string U_TEXT_FMT_SCREEN_INFO_B = "Screen Size: {0:0.0}, {1:0.0}\n";
-	public const string U_TEXT_FMT_SCREEN_INFO_C = "Banner Ads Height: {0:0.0}";
-
 	// 광원 {
 #if !LIGHTMAP_BAKE_ENABLE || REALTIME_LIGHTMAP_BAKE_ENABLE
 	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Realtime;

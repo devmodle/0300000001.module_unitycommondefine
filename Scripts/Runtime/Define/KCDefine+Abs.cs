@@ -79,9 +79,10 @@ public static partial class KCDefine {
 	public const int B_UNIT_BITS_PER_BYTE = 8;
 	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
 	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
-	
+
 	public const int B_UNIT_SECS_PER_MINUTE = 60;
 	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
+	public const int B_UNIT_DIGITS_PER_THOUSAND = 1000;
 
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
 	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
@@ -117,10 +118,11 @@ public static partial class KCDefine {
 	// 시간 }
 
 	// 플래그 {
-	public const BindingFlags B_BINDING_F_PUBLIC_INSTANCE = BindingFlags.Public | BindingFlags.Instance;
-
 	public const BindingFlags B_BINDING_F_PUBLIC_STATIC = BindingFlags.Public | BindingFlags.Static;
 	public const BindingFlags B_BINDING_F_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
+
+	public const BindingFlags B_BINDING_F_PUBLIC_INSTANCE = BindingFlags.Public | BindingFlags.Instance;
+	public const BindingFlags B_BINDING_F_NON_PUBLIC_INSTANCE = BindingFlags.NonPublic | BindingFlags.Instance;
 	// 플래그 }
 
 	// 인덱스 {
@@ -558,6 +560,14 @@ public static partial class KCDefine {
 		"GR", "ES", "FR", "HR", "IT", "CY", "LV", 
 		"LT", "LU", "HU", "MT", "NL", "AT", "PL", 
 		"PT", "RO", "SI", "SK", "FI", "SE"
+	};
+
+	// 토큰
+	public static readonly Dictionary<string, long> B_UNIT_NUM_TOKEN_INFOS = new Dictionary<string, long>() {
+		["K"] = 1000,
+		["M"] = 1000000,
+		["B"] = 3000000000,
+		["T"] = 1000000000000
 	};
 
 	// 경로 {
