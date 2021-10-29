@@ -888,32 +888,28 @@ public static partial class KCDefine {
 	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
 	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
 	// 이름 }
-
-#if ULTRA_QUALITY_LEVEL_ENABLE
+	
 	// 옵션 {
+#if ULTRA_QUALITY_LEVEL_ENABLE
 	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = true;
 
-	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._2xBilinear;
+	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
 	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.HighDynamicRange;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
-	// 옵션 }
 #elif HIGH_QUALITY_LEVEL_ENABLE
-	// 옵션 {
 	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = true;
 
 	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
 	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.HighDynamicRange;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.THREE_CASCADES;
-	// 옵션 }
 #else
-	// 옵션 {
 	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = false;
 
 	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._2xBilinear;
 	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.LowDynamicRange;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
-	// 옵션 }
 #endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
+	// 옵션 }
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
