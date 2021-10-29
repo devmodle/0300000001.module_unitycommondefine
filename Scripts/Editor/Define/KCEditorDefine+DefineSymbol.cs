@@ -116,6 +116,7 @@ public static partial class KCEditorDefine {
 
 	// 광원 {
 	public const string DS_DEFINE_S_LIGHT_ENABLE = "LIGHT_ENABLE";
+	public const string DS_DEFINE_S_SHADOW_ENABLE = "SHADOW_ENABLE";
 	public const string DS_DEFINE_S_GPU_LIGHTMAPPER_ENABLE = "GPU_LIGHTMAPPER_ENABLE";
 
 	public const string DS_DEFINE_S_LIGHTMAP_BAKE_ENABLE = "LIGHTMAP_BAKE_ENABLE";
@@ -123,9 +124,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_LIGHTMAP_SHADOW_BAKE_ENABLE = "LIGHTMAP_SHADOW_BAKE_ENABLE";
 	public const string DS_DEFINE_S_LIGHTMAP_SHADOW_BAKE_MASK_MODE_ENABLE = "LIGHTMAP_SHADOW_BAKE_MASK_MODE_ENABLE";
 	public const string DS_DEFINE_S_REALTIME_LIGHTMAP_BAKE_ENABLE = "REALTIME_LIGHTMAP_BAKE_ENABLE";
-
-	public const string DS_DEFINE_S_SHADOW_ENABLE = "SHADOW_ENABLE";
-	public const string DS_DEFINE_S_SOFT_SHADOW_ENABLE = "SOFT_SHADOW_ENABLE";
 	// 광원 }
 
 	// 플랫폼 {

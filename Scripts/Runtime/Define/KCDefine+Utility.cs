@@ -118,13 +118,11 @@ public static partial class KCDefine {
 
 	// 광원 {
 #if LIGHT_ENABLE && SHADOW_ENABLE
-#if SOFT_SHADOW_ENABLE
-	public const LightShadows U_LIGHT_SHADOW_TYPE = LightShadows.Soft;
+	public const LightShadows U_LIGHT_SHADOW_TYPE_SUB = LightShadows.Hard;
+	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.Soft;
 #else
-	public const LightShadows U_LIGHT_SHADOW_TYPE = LightShadows.Hard;
-#endif			// #if SOFT_SHADOW_ENABLE
-#else
-	public const LightShadows U_LIGHT_SHADOW_TYPE = LightShadows.None;
+	public const LightShadows U_LIGHT_SHADOW_TYPE_SUB = LightShadows.None;
+	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.None;
 #endif			// #if LIGHT_ENABLE && SHADOW_ENABLE
 	// 광원 }
 
@@ -891,22 +889,13 @@ public static partial class KCDefine {
 	
 	// 옵션 {
 #if ULTRA_QUALITY_LEVEL_ENABLE
-	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = true;
-
 	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
-	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.HighDynamicRange;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
 #elif HIGH_QUALITY_LEVEL_ENABLE
-	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = true;
-
 	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
-	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.HighDynamicRange;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.THREE_CASCADES;
 #else
-	public const bool U_OPTS_UNIVERSAL_RP_SUPPORTS_HDR = false;
-
 	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._2xBilinear;
-	public const ColorGradingMode U_OPTS_UNIVERSAL_RP_COLOR_GRADING_MODE = ColorGradingMode.LowDynamicRange;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
 #endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
 	// 옵션 }
