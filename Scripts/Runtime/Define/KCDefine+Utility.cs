@@ -66,6 +66,7 @@ public static partial class KCDefine {
 
 	public const float U_SCALE_TOUCH = 1.05f;
 	public const float U_SCALE_PAGE_SCROLL = 0.35f;
+	public const float U_SCALE_LANDSCAPE_BANNER_ADS_HEIGHT = 0.68f;
 	// 비율 }
 
 	// 시간 {
@@ -533,15 +534,10 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_BLIND_UIS = Color.black;
 	public static readonly Color U_COLOR_SCREEN_FADE_IN = Color.black;
 	public static readonly Color U_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
-	
+
+	public static readonly Color U_COLOR_CLEAR = Color.black;
 	public static readonly Color U_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
 	public static readonly Color U_COLOR_INDICATOR_BG = KCDefine.U_COLOR_POPUP_BG;
-
-#if UNITY_EDITOR
-	public static readonly Color U_COLOR_CAMERA_BG = new Color(0.15f, 0.15f, 0.15f, 1.0f);
-#else
-	public static readonly Color U_COLOR_CAMERA_BG = Color.black;
-#endif			// #if UNITY_EDITOR
 	// 색상 }
 
 	// 버전
@@ -842,6 +838,7 @@ public static partial class KCDefine {
 
 	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
 	// 스크립트 순서 }
+#endif			// #if UNITY_EDITOR
 
 	// 광원 {
 #if !LIGHTMAP_BAKE_ENABLE || REALTIME_LIGHTMAP_BAKE_ENABLE
@@ -900,7 +897,6 @@ public static partial class KCDefine {
 #endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
 	// 옵션 }
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
-#endif			// #if UNITY_EDITOR
 
 #if UNITY_IOS && APPLE_LOGIN_ENABLE
 	// 식별자
@@ -960,9 +956,6 @@ public static partial class KCDefine {
 #endif			// #if DEBUG || DEVELOPMENT_BUILD
 
 #if ADS_MODULE_ENABLE
-	// 비율
-	public const float U_SCALE_LANDSCAPE_BANNER_ADS_HEIGHT = 0.68f;
-
 	// 시간
 	public const float U_DELTA_T_ADS_M_ADS_LOAD = 5.0f;
 	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;
