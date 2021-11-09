@@ -130,8 +130,20 @@ public static partial class KCDefine {
 	// 회전
 	public static readonly Vector3 U_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
 	
-	// 형식
+	// 형식 {
 	public const string U_FMT_LOG_MSG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
+
+#if UNITY_IOS
+	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
+	public const string U_FMT_MORE_GAMES_LANDING_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
+#elif UNITY_ANDROID
+	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
+	public const string U_FMT_MORE_GAMES_LANDING_URL = "https://play.google.com/store/apps/developer?id=Ninetap";
+#else
+	public const string U_FMT_STORE_URL = "";
+	public const string U_FMT_MORE_GAMES_LANDING_URL = "";
+#endif			// #if UNITY_IOS
+	// 형식 }
 
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
