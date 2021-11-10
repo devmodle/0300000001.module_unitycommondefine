@@ -82,6 +82,8 @@ public static partial class KCDefine {
 
 	public const int B_UNIT_SECS_PER_MINUTE = 60;
 	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
+
+	public const int B_UNIT_DIGITS_PER_TEN = 10;
 	public const int B_UNIT_DIGITS_PER_THOUSAND = 1000;
 
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
@@ -405,6 +407,8 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_DICT = "[{0}]{1}";
 	public const string B_TEXT_FMT_SIZE = "<size={0}>{1}</size>";
 	public const string B_TEXT_FMT_COLOR = "<color=#{0}>{1}</color>";
+	
+	public const string B_TEXT_FMT_NUM = "{0}.{1}{2}";
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_USD_PRICE = "USD {0}";
 	public const string B_TEXT_FMT_USD_CURRENCY = "USD {0:N2}";
