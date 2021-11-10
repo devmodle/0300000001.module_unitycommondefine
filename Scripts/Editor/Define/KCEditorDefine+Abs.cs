@@ -257,7 +257,6 @@ public static partial class KCEditorDefine {
 	// 패키지
 	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-v3.9.0";
 	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-v3.0.9";
-	public const string B_NAME_SPINE_PKGS = "Spine-v4.0.0";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
 	public const string B_NAME_LEAN_GUI_PKGS = "LeanGUI-v1.2.2";
@@ -330,7 +329,6 @@ public static partial class KCEditorDefine {
 	
 	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOLS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_BUILD_REPORT_TOOLS_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_PKGS}.unitypackage";
-	public static readonly string B_ABS_PKGS_P_SPINE = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPINE_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPRITE_TRAIL_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_LEAN_GUI = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_LEAN_GUI_PKGS}.unitypackage";
@@ -394,6 +392,15 @@ public static partial class KCEditorDefine {
 #if (UNITY_EDITOR || UNITY_STANDALONE) && EDITOR_ENABLE
 		KCEditorDefine.B_DIR_P_PROJ_EDITOR_SCENES
 #endif			// #if (UNITY_EDITOR || UNITY_STANDALONE) && EDITOR_ENABLE
+	};
+
+	public static readonly TextureImporterType[] B_IMPORTER_T_IGNORE_MIP_MAP_TEXTURES = new TextureImporterType[] {
+		TextureImporterType.Sprite
+	};
+
+	public static readonly TextureImporterType[] B_IMPORTER_T_IGNORE_RGBA32_FMT_TEXTURES = new TextureImporterType[] {
+		TextureImporterType.Cookie,
+		TextureImporterType.SingleChannel
 	};
 
 	public static readonly KeyValuePair<string, string>[] B_DATA_P_INFOS = new KeyValuePair<string, string>[] {
