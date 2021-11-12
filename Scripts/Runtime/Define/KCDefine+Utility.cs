@@ -135,13 +135,10 @@ public static partial class KCDefine {
 
 #if UNITY_IOS
 	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
-	public const string U_FMT_MORE_GAMES_LANDING_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
-#elif UNITY_ANDROID
-	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
-	public const string U_FMT_MORE_GAMES_LANDING_URL = "https://play.google.com/store/apps/developer?id=Ninetap";
+	public const string U_FMT_MORE_GAMES_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
 #else
-	public const string U_FMT_STORE_URL = "";
-	public const string U_FMT_MORE_GAMES_LANDING_URL = "";
+	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
+	public const string U_FMT_MORE_GAMES_URL = "https://play.google.com/store/apps/developer?id=Ninetap";
 #endif			// #if UNITY_IOS
 	// 형식 }
 
