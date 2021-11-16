@@ -106,14 +106,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_CAMERA_STACKING_ENABLE = "CAMERA_STACKING_ENABLE";
 	// 렌더링 }
 
-	// 태그 관리자 {
-	public const string DS_DEFINE_S_EXTRA_TAG_ENABLE = "EXTRA_TAG_ENABLE";
-	public const string DS_DEFINE_S_CUSTOM_TAG_ENABLE = "CUSTOM_TAG_ENABLE";
-
-	public const string DS_DEFINE_S_EXTRA_SORTING_LAYER_ENABLE = "EXTRA_SORTING_LAYER_ENABLE";
-	public const string DS_DEFINE_S_CUSTOM_SORTING_LAYER_ENABLE = "CUSTOM_SORTING_LAYER_ENABLE";
-	// 태그 관리자 }
-
 	// 광원 {
 	public const string DS_DEFINE_S_LIGHT_ENABLE = "LIGHT_ENABLE";
 	public const string DS_DEFINE_S_SHADOW_ENABLE = "SHADOW_ENABLE";

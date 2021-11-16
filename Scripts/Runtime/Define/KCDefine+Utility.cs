@@ -226,11 +226,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_LEFT_OBJS = "LeftObjs";
 	public const string U_OBJ_N_SCENE_RIGHT_OBJS = "RightObjs";
 
-	public const string U_OBJ_N_SCENE_OBJS_CANVAS_TOP = "ObjsCanvasRoot";
-	public const string U_OBJ_N_SCENE_OBJS_CANVAS_BASE = "ObjsCanvas";
-	public const string U_OBJ_N_SCENE_CANVAS_OBJS = "CanvasObjs";
-	public const string U_OBJ_N_SCENE_CANVAS_PIVOT_OBJS = "CanvasPivotObjs";
-
 	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIs Camera";
 	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "Main Camera";
 	public const string U_OBJ_N_SCENE_MAIN_LIGHT = "Directional Light";
@@ -558,7 +553,7 @@ public static partial class KCDefine {
 	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
 	// 태그
-	public static readonly string[] U_TAGS = new string[] {
+	public static readonly List<string> U_TAGS = new List<string> {
 		KCDefine.U_TAG_ENEMY,
 		KCDefine.U_TAG_OBSTACLE,
 		KCDefine.U_TAG_UIS_CAMERA,
@@ -567,7 +562,7 @@ public static partial class KCDefine {
 	};
 
 	// 정렬 레이어
-	public static readonly string[] U_SORTING_LAYERS = new string[] {
+	public static readonly List<string> U_SORTING_LAYERS = new List<string> {
 		KCDefine.U_SORTING_L_UNDERGROUND,
 		KCDefine.U_SORTING_L_BACKGROUND,
 		KCDefine.U_SORTING_L_DEF,
@@ -590,11 +585,6 @@ public static partial class KCDefine {
 	};
 
 	// 정렬 순서 {
-	public static readonly STSortingOrderInfo U_SORTING_OI_OBJS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-
 #if CAMERA_STACKING_ENABLE
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 1,
@@ -609,11 +599,11 @@ public static partial class KCDefine {
 	// 정렬 순서 }
 
 	// 레이어 마스크 {
-	public static readonly int[] U_LAYER_MASK_UIS_CAMERA = new int[] {
+	public static readonly List<int> U_LAYER_MASK_UIS_CAMERA = new List<int> {
 		KCDefine.U_LAYER_UIS
 	};
 
-	public static readonly int[] U_LAYER_MASK_MAIN_CAMERA = new int[] {
+	public static readonly List<int> U_LAYER_MASK_MAIN_CAMERA = new List<int> {
 		KCDefine.U_LAYER_DEF,
 		KCDefine.U_LAYER_TRANSPARENT_FX,
 		KCDefine.U_LAYER_IGNORE_RAYCAST,
@@ -1164,7 +1154,7 @@ public static partial class KCDefine {
 	
 #if HAPTIC_FEEDBACK_ENABLE
 	// 햅틱 피드백 지원 모델
-	public static readonly DeviceGeneration[] U_HAPTIC_FEEDBACK_SUPPORTS_MODELS = new DeviceGeneration[] {
+	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODELS = new List<DeviceGeneration> {
 		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus,
 		DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax,
 		DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
@@ -1212,7 +1202,7 @@ public static partial class KCDefine {
 
 #if FACEBOOK_MODULE_ENABLE
 	// 권한
-	public static readonly string[] U_PERMISSIONS_FACEBOOK = new string[] {
+	public static readonly List<string> U_PERMISSIONS_FACEBOOK = new List<string> {
 		"public_profile"
 	};
 #endif			// #if FACEBOOK_MODULE_ENABLE

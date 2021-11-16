@@ -133,7 +133,7 @@ public static partial class KCDefine {
 	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 
-	public static readonly Vector2Int[] B_IDX_OFFSETS_PREV_2D = new Vector2Int[] {
+	public static readonly List<Vector2Int> B_IDX_OFFSETS_PREV_2D = new List<Vector2Int> {
 		Vector2Int.down,
 		Vector2Int.up,
 		Vector2Int.right,
@@ -150,7 +150,7 @@ public static partial class KCDefine {
 		Vector2Int.left
 	};
 
-	public static readonly Vector2Int[] B_IDX_OFFSETS_NEXT_2D = new Vector2Int[] {
+	public static readonly List<Vector2Int> B_IDX_OFFSETS_NEXT_2D = new List<Vector2Int> {
 		Vector2Int.up,
 		Vector2Int.down,
 		Vector2Int.left,
@@ -557,7 +557,7 @@ public static partial class KCDefine {
 	// 위치 }
 
 	// 국가 코드
-	public static readonly string[] B_EU_COUNTRY_CODES = new string[] {
+	public static readonly List<string> B_EU_COUNTRY_CODES = new List<string> {
 		"BE", "BG", "CZ", "DK", "DE", "EE", "IE", 
 		"GR", "ES", "FR", "HR", "IT", "CY", "LV", 
 		"LT", "LU", "HU", "MT", "NL", "AT", "PL", 
