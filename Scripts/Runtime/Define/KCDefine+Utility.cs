@@ -1150,7 +1150,6 @@ public static partial class KCDefine {
 	// 버전
 	public static readonly System.Version U_MIN_VER_CONSENT_VIEW = new System.Version(14, 0, 0);
 	public static readonly System.Version U_MIN_VER_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
-	public static readonly System.Version U_MIN_VER_LOGIN_WITH_APPLE = new System.Version(13, 0, 0);
 	
 #if HAPTIC_FEEDBACK_ENABLE
 	// 햅틱 피드백 지원 모델

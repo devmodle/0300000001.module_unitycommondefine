@@ -229,7 +229,6 @@ public static partial class KCDefine {
 	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STR;
-	public const string B_UNKNOWN_SUPPORT_MSG = KCDefine.B_UNKNOWN_STR;
 
 	public static readonly int B_DESKTOP_SCREEN_WIDTH = (int)(Screen.currentResolution.width * 0.95f);
 	public static readonly int B_DESKTOP_SCREEN_HEIGHT = (int)(KCDefine.B_DESKTOP_SCREEN_WIDTH * (KCDefine.B_LANDSCAPE_SCREEN_HEIGHT / (float)KCDefine.B_LANDSCAPE_SCREEN_WIDTH));
