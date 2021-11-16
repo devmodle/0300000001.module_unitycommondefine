@@ -256,7 +256,7 @@ public static partial class KCEditorDefine {
 
 	// 패키지
 	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-v3.9.0";
-	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-v3.0.9";
+	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-v3.0.12";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
 	public const string B_NAME_LEAN_GUI_PKGS = "LeanGUI-v1.2.2";
