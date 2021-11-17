@@ -298,9 +298,9 @@ public static partial class KCDefine {
 
 	// 토큰 {
 	public const string B_TOKEN_VER = ".";
-	public const string B_TOKEN_CSV_STR = ",";
-	public const string B_TOKEN_POST_STR = "&";
-	public const string B_TOKEN_SPLASH_STR = "/";
+	public const string B_TOKEN_CSV = ",";
+	public const string B_TOKEN_POST = "&";
+	public const string B_TOKEN_SPLASH = "/";
 
 	public const string B_TOKEN_INCR = "+";
 	public const string B_TOKEN_DECR = "-";
