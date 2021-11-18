@@ -900,10 +900,10 @@ public static partial class KCDefine {
 #if UNITY_IOS && APPLE_LOGIN_ENABLE
 	// 식별자
 	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
-	public const string U_KEY_SERVICES_M_LOGIN_WITH_APPLE_CALLBACK = "ServicesMLoginWithAppleCallback";
+	public const string U_KEY_SERVICES_M_UPDATE_FAIL_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateFailAppleLoginStateCallback";
 
-	// 이름
-	public const string U_OBJ_N_SERVICES_M_LOGIN_WITH_APPLE = "LoginWithApple";
+	public const string U_KEY_SERVICES_M_LOGIN_WITH_APPLE_CALLBACK = "ServicesMLoginWithAppleCallback";
+	public const string U_KEY_SERVICES_M_LOGIN_FAIL_WITH_APPLE_CALLBACK = "ServicesMLoginFailWithAppleCallback";
 #endif			// #if UNITY_IOS && APPLE_LOGIN_ENABLE
 
 #if UNITY_ANDROID
@@ -914,8 +914,8 @@ public static partial class KCDefine {
 
 #if HAPTIC_FEEDBACK_ENABLE
 	// 이름
-	public const string U_MODEL_N_IPHONE = "iPhone";
 	public const string U_MODEL_N_IPAD = "iPad";
+	public const string U_MODEL_N_IPHONE = "iPhone";
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
 
 #if DEBUG || DEVELOPMENT_BUILD
