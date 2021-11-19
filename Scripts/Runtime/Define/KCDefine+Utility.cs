@@ -41,7 +41,6 @@ public static partial class KCDefine {
 	public const int U_DEF_MAX_SIZE_FONT = 10;
 
 	// 길이
-	public const int U_MAX_LENGTH_LOG = 100000000;
 	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
 
 	// 단위
@@ -131,8 +130,6 @@ public static partial class KCDefine {
 	public static readonly Vector3 U_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
 	
 	// 형식 {
-	public const string U_FMT_LOG_MSG = "[{0}]\nLogType: {1}\nCondition: {2}\nStackTrace:\n{3}==============================\n\n";
-
 #if UNITY_IOS
 	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
 	public const string U_FMT_MORE_GAMES_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
