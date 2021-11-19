@@ -135,7 +135,7 @@ public static partial class KCDefine {
 	public const string U_FMT_MORE_GAMES_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
 #else
 	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
-	public const string U_FMT_MORE_GAMES_URL = "https://play.google.com/store/apps/developer?id=Ninetap";
+	public const string U_FMT_MORE_GAMES_URL = "https://play.google.com/store/apps/developer?id={0}";
 #endif			// #if UNITY_IOS
 	// 형식 }
 
@@ -463,6 +463,14 @@ public static partial class KCDefine {
 
 	// 디버그 콘솔
 	public const string U_OBJ_N_DEBUG_C_LOG_WND = "DebugLogWindow";
+
+	// 입력 모듈 {
+	public const int U_THRESHOLD_INPUT_M_MOVE = 10;
+
+	public const float U_RATE_INPUT_M_MOVE_REPEAT = 0.1f;
+	public const float U_DELAY_INPUT_M_MOVE_REPEAT = 0.5f;
+	public const float U_UNIT_INPUT_M_INPUT_ACTIONS_PER_SEC = 10.0f;
+	// 입력 모듈 }
 
 	// 문자열 테이블
 	public const string U_KEY_STR_T_ID = "ID";
@@ -926,8 +934,10 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_A = "Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_B = "Design Resolution: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_C = "Canvas Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_D = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_E = "Persistent Data Path: <color=orange>{0:0.0}</color>";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_D = "Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_E = "Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_F = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_G = "Persistent Data Path: <color=orange>{0:0.0}</color>";
 
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_A = "GC: <color=orange>{0:0.0}</color> MB, Used Heap: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
