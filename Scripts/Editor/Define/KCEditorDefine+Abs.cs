@@ -292,6 +292,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_FONT_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Fonts/";
 	public static readonly string B_DIR_P_SCRIPTABLE_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Scriptables/";
 	public static readonly string B_DIR_P_SPRITE_ATLAS_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}SpriteAtlases/";
+	public static readonly string B_DIR_P_PIPELINE_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Pipelines/";
 
 	public static readonly string B_ABS_DIR_P_ASSETS = $"{Application.dataPath}/";
 	public static readonly string B_ABS_DIR_P_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Packages/";
@@ -315,7 +316,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_DATA_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Datas/";
 	public static readonly string B_ABS_DIR_P_PREFAB_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Prefabs/";
 	public static readonly string B_ABS_DIR_P_SCRIPT_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Scripts/";
-	public static readonly string B_ABS_DIR_P_PIPELINE_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Pipelines/";
 	public static readonly string B_ABS_DIR_P_TABLE_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Tables/";
 	public static readonly string B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}AssemblyDefines/";
 
@@ -806,7 +806,7 @@ public static partial class KCEditorDefine {
 	public static readonly KeyValuePair<string, string>[] B_PIPELINE_P_INFOS = new KeyValuePair<string, string>[] {
 		// 02.UnityProject {
 #if UNIVERSAL_PIPELINE_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP_ASSET}.asset")
+		new KeyValuePair<string, string>($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP_ASSET}.asset")
 #endif			// #if UNIVERSAL_PIPELINE_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 		// 02.UnityProject }
 	};
