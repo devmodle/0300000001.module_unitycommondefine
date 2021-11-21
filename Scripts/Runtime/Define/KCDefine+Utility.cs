@@ -391,7 +391,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_FMT_COUNTDOWN_TEXT = "CountdownText_{0:00}";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
-	public const string U_IMG_N_SPRITE = "Sprite";
+	public const string U_IMG_N_DEF_MESH = "DefMesh";
+	public const string U_IMG_N_DEF_SPRITE = "DefSprite";
+
 	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
 	public const string U_IMG_N_UNKNOWN_SPRITE = "Unknown";
 
