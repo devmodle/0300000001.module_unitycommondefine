@@ -187,17 +187,13 @@ public static partial class KCDefine {
 
 	public const float B_DPI = 160.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
-	
+
 	public const string B_EMPTY_STR = "";
 	public const string B_UNKNOWN_STR = "Unknown";
+	public const string B_NEW_LINE_STR = "\n";
 
 	public const string B_TRUE_STR = "True";
 	public const string B_FALSE_STR = "False";
-
-	public const string B_NEW_LINE_STR = "\n";
-
-	public const string B_VER_STR = "1.0.0";
-	public const string B_VER_STR_FMT = "Ver.{0}";
 
 	public const string B_STR_0_INT = "0";
 	public const string B_STR_1_INT = "1";
@@ -297,18 +293,29 @@ public static partial class KCDefine {
 	public const string B_KEY_JSON_COMMON_USER_INFO_DATA = "CommonUserInfo";
 
 	// 토큰 {
-	public const string B_TOKEN_VER = ".";
-	public const string B_TOKEN_CSV = ",";
-	public const string B_TOKEN_POST = "&";
+	public const string B_TOKEN_USER_A = "A";
+	public const string B_TOKEN_USER_B = "B";
+	public const string B_TOKEN_USER_UNKNOWN = "U";
+
+	public const string B_TOKEN_DOT = ".";
+	public const string B_TOKEN_COMMA = ",";
+
+	public const string B_TOKEN_SPACE = " ";
+	public const string B_TOKEN_CROSS = "x";
 	public const string B_TOKEN_SPLASH = "/";
 
 	public const string B_TOKEN_INCR = "+";
 	public const string B_TOKEN_DECR = "-";
 
-	public const string B_TOKEN_USER_A = "A";
-	public const string B_TOKEN_USER_B = "B";
-	public const string B_TOKEN_USER_UNKNOWN = "U";
+	public const string B_TOKEN_COLON = ":";
+	public const string B_TOKEN_SEMI_COLON = ";";
+
+	public const string B_TOKEN_AMPERSAND = "&";
+	public const string B_TOKEN_UNDER_SCORE = "_";
 	// 토큰 }
+
+	// 버전
+	public const string B_DEF_VER = "1.0.0";
 
 	// 빌드 모드
 	public const string B_BUILD_MODE_DEBUG = "Debug";
@@ -324,9 +331,7 @@ public static partial class KCDefine {
 	public const string B_CMD_GET_STORE_VER = "GetStoreVer";
 
 	public const string B_CMD_SET_ENABLE_ADS_TRACKING = "SetEnableAdsTracking";
-
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
-	public const string B_CMD_SHOW_TOAST = "ShowToast";
 
 	public const string B_CMD_MAIL = "Mail";
 	public const string B_CMD_VIBRATE = "Vibrate";
@@ -435,6 +440,24 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_8_COMBINE = "{0}{1}{2}{3}{4}{5}{6}{7}";
 	public const string B_TEXT_FMT_9_COMBINE = "{0}{1}{2}{3}{4}{5}{6}{7}{8}";
 
+	public const string B_TEXT_FMT_2_DOT_COMBINE = "{0}.{1}";
+	public const string B_TEXT_FMT_3_DOT_COMBINE = "{0}.{1}.{2}";
+	public const string B_TEXT_FMT_4_DOT_COMBINE = "{0}.{1}.{2}.{3}";
+	public const string B_TEXT_FMT_5_DOT_COMBINE = "{0}.{1}.{2}.{3}.{4}";
+	public const string B_TEXT_FMT_6_DOT_COMBINE = "{0}.{1}.{2}.{3}.{4}.{5}";
+	public const string B_TEXT_FMT_7_DOT_COMBINE = "{0}.{1}.{2}.{3}.{4}.{5}.{6}";
+	public const string B_TEXT_FMT_8_DOT_COMBINE = "{0}.{1}.{2}.{3}.{4}.{5}.{6}.{7}";
+	public const string B_TEXT_FMT_9_DOT_COMBINE = "{0}.{1}.{2}.{3}.{4}.{5}.{6}.{7}.{8}";
+
+	public const string B_TEXT_FMT_2_COMMA_COMBINE = "{0},{1}";
+	public const string B_TEXT_FMT_3_COMMA_COMBINE = "{0},{1},{2}";
+	public const string B_TEXT_FMT_4_COMMA_COMBINE = "{0},{1},{2},{3}";
+	public const string B_TEXT_FMT_5_COMMA_COMBINE = "{0},{1},{2},{3},{4}";
+	public const string B_TEXT_FMT_6_COMMA_COMBINE = "{0},{1},{2},{3},{4},{5}";
+	public const string B_TEXT_FMT_7_COMMA_COMBINE = "{0},{1},{2},{3},{4},{5},{6}";
+	public const string B_TEXT_FMT_8_COMMA_COMBINE = "{0},{1},{2},{3},{4},{5},{6},{7}";
+	public const string B_TEXT_FMT_9_COMMA_COMBINE = "{0},{1},{2},{3},{4},{5},{6},{7},{8}";
+
 	public const string B_TEXT_FMT_2_SPACE_COMBINE = "{0} {1}";
 	public const string B_TEXT_FMT_3_SPACE_COMBINE = "{0} {1} {2}";
 	public const string B_TEXT_FMT_4_SPACE_COMBINE = "{0} {1} {2} {3}";
@@ -461,6 +484,15 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_7_SLASH_COMBINE = "{0}/{1}/{2}/{3}/{4}/{5}/{6}";
 	public const string B_TEXT_FMT_8_SLASH_COMBINE = "{0}/{1}/{2}/{3}/{4}/{5}/{6}/{7}";
 	public const string B_TEXT_FMT_9_SLASH_COMBINE = "{0}/{1}/{2}/{3}/{4}/{5}/{6}/{7}/{8}";
+
+	public const string B_TEXT_FMT_2_COLON_COMBINE = "{0}:{1}";
+	public const string B_TEXT_FMT_3_COLON_COMBINE = "{0}:{1}:{2}";
+	public const string B_TEXT_FMT_4_COLON_COMBINE = "{0}:{1}:{2}:{3}";
+	public const string B_TEXT_FMT_5_COLON_COMBINE = "{0}:{1}:{2}:{3}:{4}";
+	public const string B_TEXT_FMT_6_COLON_COMBINE = "{0}:{1}:{2}:{3}:{4}:{5}";
+	public const string B_TEXT_FMT_7_COLON_COMBINE = "{0}:{1}:{2}:{3}:{4}:{5}:{6}";
+	public const string B_TEXT_FMT_8_COLON_COMBINE = "{0}:{1}:{2}:{3}:{4}:{5}:{6}:{7}";
+	public const string B_TEXT_FMT_9_COLON_COMBINE = "{0}:{1}:{2}:{3}:{4}:{5}:{6}:{7}:{8}";
 
 	public const string B_TEXT_FMT_2_SEMI_COLON_COMBINE = "{0};{1}";
 	public const string B_TEXT_FMT_3_SEMI_COLON_COMBINE = "{0};{1};{2}";
