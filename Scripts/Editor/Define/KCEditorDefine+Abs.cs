@@ -235,10 +235,6 @@ public static partial class KCEditorDefine {
 	// 경고 팝업 }
 
 	// 객체 이름 에디터 윈도우 {
-	public const float B_WIDTH_TEXT = 300.0f;
-	public const float B_WIDTH_INPUT = 300.0f;
-	public const float B_WIDTH_BTN = 300.0f;
-
 	public const string B_TEXT_SEARCH = "검색";
 	public const string B_TEXT_REPLACE = "변경";
 	public const string B_TEXT_APPLY = "적용";

@@ -927,12 +927,12 @@ public static partial class KCDefine {
 
 #if DEBUG || DEVELOPMENT_BUILD
 	// 시간
-	public const float U_DELTA_T_DYNAMIC_DEBUG = 1.0f;
+	public const float U_DELTA_T_DYNAMIC_DEBUG = 0.15f;
 
 	// 형식 {
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
-
+	
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_A = "Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_B = "Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_C = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>\n";
@@ -942,6 +942,7 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
+	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_E = "Time Scale: <color=orange>{0:0.0}</color>";
 	// 형식 }
 
 	// 이름 {
