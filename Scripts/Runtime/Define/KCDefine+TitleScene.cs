@@ -16,5 +16,6 @@ public static partial class KCDefine {
 
 	// 경로
 	public static readonly string TS_OBJ_P_VER_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_TITLE_SCENE}TS_VerText";
+	public static readonly string TS_OBJ_P_LEVEL_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_TITLE_SCENE}TS_LevelScrollerCellView";
 	#endregion			// 런타임 상수	
 }
