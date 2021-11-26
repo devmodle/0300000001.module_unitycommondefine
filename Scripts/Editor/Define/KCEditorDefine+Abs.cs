@@ -218,6 +218,14 @@ public static partial class KCEditorDefine {
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
 
+#if ULTRA_QUALITY_LEVEL_ENABLE
+	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.HIGH;
+#elif HIGH_QUALITY_LEVEL_ENABLE
+	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.NORM;
+#else
+	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.LOW;
+#endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
+
 	public static readonly string[] B_EDITOR_OPTS_EXTENSIONS = new string[] {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
 	};
