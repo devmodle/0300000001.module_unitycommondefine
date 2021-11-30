@@ -254,11 +254,7 @@ public static partial class KCEditorDefine {
 	// FPS 카운터
 	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
 	public const int B_FONT_SIZE_FPS_C_DYNAMIC_TEXT = 24;
-
-	// 디버그 콘솔
-	public const int B_FONT_SIZE_DEBUG_C_TEXT = 30;
-	public const string B_PROPERTY_N_DEBUG_C_LOG_ITEM_PREFAB = "logItemPrefab";
-
+	
 	// 패키지
 	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-v3.9.0";
 	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-v3.0.12";
@@ -644,13 +640,9 @@ public static partial class KCEditorDefine {
 #if SAMPLE_PROJ
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
 #else
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
 		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals@{KCEditorDefine.B_VER_UNITY_MODULE}/Plugins/IngameDebugConsole/IngameDebugConsole.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_CONSOLE}.prefab"),
-		new KeyValuePair<string, string>($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals@{KCEditorDefine.B_VER_UNITY_MODULE}/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_DEBUG_LOG_ITEM}.prefab"),
 #endif			// #if SAMPLE_PROJ
 
 #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
@@ -929,13 +921,6 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_DIR_P_FILTER_FPS_COUNTER = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
 	// FPS 카운터 }
-
-	// 디버그 콘솔 {
-	public static readonly Vector3 B_SIZE_DEBUG_C_LOG_ITEM = new Vector3(0.0f, 80.0f, 0.0f);
-
-	public static readonly string B_DIR_P_FILTER_DEBUG_CONSOLE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
-	public static readonly string B_DIR_P_FILTER_DEBUG_LOG_ITEM = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
-	// 디버그 콘솔 }
 
 	// iOS {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";

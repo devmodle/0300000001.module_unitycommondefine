@@ -110,7 +110,6 @@ public static partial class KCDefine {
 	public const int U_SORTING_O_SCREEN_DEBUG_UIS = 4;
 
 	public const int U_SORTING_O_FPS_COUNTER = 5;
-	public const int U_SORTING_O_DEBUG_CONSOLE = 6;
 	// 정렬 순서 }
 
 	// 애니메이션
@@ -462,10 +461,7 @@ public static partial class KCDefine {
 	// 사운드 관리자
 	public const string U_OBJ_N_SND_M_BG_SND = "BGSnd";
 	public const string U_OBJ_N_SND_M_FX_SND = "FXSnd";
-
-	// 디버그 콘솔
-	public const string U_OBJ_N_DEBUG_C_LOG_WND = "DebugLogWindow";
-
+	
 	// 입력 모듈 {
 	public const int U_THRESHOLD_INPUT_M_MOVE = 10;
 
@@ -670,10 +666,7 @@ public static partial class KCDefine {
 
 	public static readonly string U_OBJ_P_FPS_COUNTER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_FPSCounter";
 	public static readonly string U_OBJ_P_TIMER_MANAGER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_TimerManager";
-
-	public static readonly string U_OBJ_P_DEBUG_CONSOLE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_DebugConsole";
-	public static readonly string U_OBJ_P_DEBUG_LOG_ITEM = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_DebugLogItem";
-
+	
 	public static readonly string U_OBJ_P_G_BG_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_BGSnd";
 	public static readonly string U_OBJ_P_G_FX_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_FXSnd";
 
