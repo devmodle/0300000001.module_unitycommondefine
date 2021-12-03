@@ -226,7 +226,7 @@ public static partial class KCEditorDefine {
 	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.LOW;
 #endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
 
-	public static readonly string[] B_EDITOR_OPTS_EXTENSIONS = new string[] {
+	public static readonly List<string> B_EDITOR_OPTS_EXTENSIONS = new List<string>() {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
 	};
 	// 에디터 옵션 }
@@ -381,15 +381,15 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ICON_P_ANDROID_NOTI_96x96 = $"{KCDefine.B_DIR_P_ICONS}Android/Notification/Icon96x96";
 	public static readonly string B_ICON_P_ANDROID_NOTI_256x256 = $"{KCDefine.B_DIR_P_ICONS}Android/Notification/Icon256x256";
 
-	public static readonly string[] B_SEARCH_P_SCENES = new string[] {
+	public static readonly List<string> B_SEARCH_P_SCENES = new List<string>() {
 		KCEditorDefine.B_DIR_P_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_SCENES, KCEditorDefine.B_DIR_P_PROJ_EDITOR_SCENES
 	};
 
-	public static readonly TextureImporterType[] B_IMPORTER_T_IGNORE_MIP_MAP_TEXTURES = new TextureImporterType[] {
+	public static readonly List<TextureImporterType> B_IMPORTER_T_IGNORE_MIP_MAP_TEXTURES = new List<TextureImporterType>() {
 		TextureImporterType.Sprite
 	};
 
-	public static readonly TextureImporterType[] B_IMPORTER_T_IGNORE_RGBA32_FMT_TEXTURES = new TextureImporterType[] {
+	public static readonly List<TextureImporterType> B_IMPORTER_T_IGNORE_RGBA32_FMT_TEXTURES = new List<TextureImporterType>() {
 		TextureImporterType.Cookie, TextureImporterType.SingleChannel
 	};
 
@@ -927,7 +927,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ENTITLEMENTS_P_IOS_CAPABILITY = $"{Application.productName}.entitlements";
 
-	public static readonly GraphicsDeviceType[] B_DEVICE_GRAPHICS_DEVICE_TYPES_IOS = new GraphicsDeviceType[] {
+	public static readonly List<GraphicsDeviceType> B_DEVICE_GRAPHICS_DEVICE_TYPES_IOS = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Metal
 	};
 	// iOS }
@@ -967,7 +967,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
 	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/unityLibrary/libs/unity-classes.jar";
 
-	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_ANDROID = new GraphicsDeviceType[] {
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPES_ANDROID = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3, GraphicsDeviceType.OpenGLES2
 	};
 	// 안드로이드 }
@@ -977,12 +977,12 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_FMT_EXTERNAL_DATAS_STANDALONE = $"{"{0}"}/{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 
 	// 맥
-	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_MAC = new GraphicsDeviceType[] {
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPES_MAC = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Metal, GraphicsDeviceType.OpenGLCore
 	};
 
 	// 윈도우즈
-	public static readonly GraphicsDeviceType[] B_GRAPHICS_DEVICE_TYPES_WNDS = new GraphicsDeviceType[] {
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPES_WNDS = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Direct3D12, GraphicsDeviceType.Direct3D11
 	};
 

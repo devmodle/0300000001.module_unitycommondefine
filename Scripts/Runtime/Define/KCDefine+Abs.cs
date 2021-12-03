@@ -134,41 +134,7 @@ public static partial class KCDefine {
 	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 
 	public static readonly List<(Vector2Int, Vector2Int)> B_IDX_OFFSET_INFOS_2D = new List<(Vector2Int, Vector2Int)>() {
-		// 위
-		(Vector2Int.down, Vector2Int.up),
-
-		// 아래
-		(Vector2Int.up, Vector2Int.down),
-
-		// 왼쪽
-		(Vector2Int.right, Vector2Int.left),
-
-		// 오른쪽
-		(Vector2Int.left, Vector2Int.right),
-
-		// 위 왼쪽
-		(Vector2Int.down, Vector2Int.left),
-
-		// 위 오른쪽
-		(Vector2Int.down, Vector2Int.right),
-
-		// 아래 왼쪽
-		(Vector2Int.up, Vector2Int.left),
-
-		// 아래 오른쪽
-		(Vector2Int.up, Vector2Int.right),
-
-		// 왼쪽 위
-		(Vector2Int.right, Vector2Int.up),
-
-		// 왼쪽 아래
-		(Vector2Int.right, Vector2Int.down),
-
-		// 오른쪽 위
-		(Vector2Int.left, Vector2Int.up),
-
-		// 오른쪽 아래
-		(Vector2Int.left, Vector2Int.down)
+		(Vector2Int.down, Vector2Int.up), (Vector2Int.up, Vector2Int.down), (Vector2Int.right, Vector2Int.left), (Vector2Int.left, Vector2Int.right), (Vector2Int.down, Vector2Int.left), (Vector2Int.down, Vector2Int.right), (Vector2Int.up, Vector2Int.left), (Vector2Int.up, Vector2Int.right), (Vector2Int.right, Vector2Int.up), (Vector2Int.right, Vector2Int.down), (Vector2Int.left, Vector2Int.up), (Vector2Int.left, Vector2Int.down)
 	};
 	// 인덱스 }
 

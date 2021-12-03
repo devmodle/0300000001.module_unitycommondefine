@@ -1153,7 +1153,7 @@ public static partial class KCDefine {
 
 #if ADMOB_ENABLE
 	// 크기
-	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize(AdSize.FullWidth, 50);
+	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = AdSize.Banner;
 #endif			// #if ADMOB_ENABLE
 
 #if IRON_SRC_ENABLE
