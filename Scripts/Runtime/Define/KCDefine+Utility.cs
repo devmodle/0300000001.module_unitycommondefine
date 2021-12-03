@@ -556,61 +556,38 @@ public static partial class KCDefine {
 	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
 	// 태그
-	public static readonly List<string> U_TAGS = new List<string> {
-		KCDefine.U_TAG_ENEMY,
-		KCDefine.U_TAG_OBSTACLE,
-		KCDefine.U_TAG_UIS_CAMERA,
-		KCDefine.U_TAG_MAIN_LIGHT,
-		KCDefine.U_TAG_SCENE_MANAGER
+	public static readonly List<string> U_TAGS = new List<string>() {
+		KCDefine.U_TAG_ENEMY, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_UIS_CAMERA, KCDefine.U_TAG_MAIN_LIGHT, KCDefine.U_TAG_SCENE_MANAGER
 	};
 
 	// 정렬 레이어
-	public static readonly List<string> U_SORTING_LAYERS = new List<string> {
-		KCDefine.U_SORTING_L_UNDERGROUND,
-		KCDefine.U_SORTING_L_BACKGROUND,
-		KCDefine.U_SORTING_L_DEF,
-		KCDefine.U_SORTING_L_FOREGROUND,
-		KCDefine.U_SORTING_L_OVERGROUND,
-		KCDefine.U_SORTING_L_TOP,
-		KCDefine.U_SORTING_L_TOPMOST,
-		KCDefine.U_SORTING_L_ABS,
+	public static readonly List<string> U_SORTING_LAYERS = new List<string>() {
+		KCDefine.U_SORTING_L_UNDERGROUND, KCDefine.U_SORTING_L_BACKGROUND, KCDefine.U_SORTING_L_DEF, KCDefine.U_SORTING_L_FOREGROUND, KCDefine.U_SORTING_L_OVERGROUND, KCDefine.U_SORTING_L_TOP, KCDefine.U_SORTING_L_TOPMOST, KCDefine.U_SORTING_L_ABS,
 
 #if !CAMERA_STACKING_ENABLE
-		KCDefine.U_SORTING_L_UNDERGROUND_UIS,
-		KCDefine.U_SORTING_L_BACKGROUND_UIS,
-		KCDefine.U_SORTING_L_DEF_UIS,
-		KCDefine.U_SORTING_L_FOREGROUND_UIS,
-		KCDefine.U_SORTING_L_OVERGROUND_UIS,
-		KCDefine.U_SORTING_L_TOP_UIS,
-		KCDefine.U_SORTING_L_TOPMOST_UIS,
-		KCDefine.U_SORTING_L_ABS_UIS
+		KCDefine.U_SORTING_L_UNDERGROUND_UIS, KCDefine.U_SORTING_L_BACKGROUND_UIS, KCDefine.U_SORTING_L_DEF_UIS, KCDefine.U_SORTING_L_FOREGROUND_UIS, KCDefine.U_SORTING_L_OVERGROUND_UIS, KCDefine.U_SORTING_L_TOP_UIS, KCDefine.U_SORTING_L_TOPMOST_UIS, KCDefine.U_SORTING_L_ABS_UIS
 #endif			// #if !CAMERA_STACKING_ENABLE
 	};
 
 	// 정렬 순서 {
 #if CAMERA_STACKING_ENABLE
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 1,
-		m_oLayer = KCDefine.U_SORTING_L_DEF
+		m_nOrder = 1, m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 #else
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0,
-		m_oLayer = KCDefine.U_SORTING_L_DEF_UIS
+		m_nOrder = 0, m_oLayer = KCDefine.U_SORTING_L_DEF_UIS
 	};
 #endif			// #if CAMERA_STACKING_ENABLE
 	// 정렬 순서 }
 
 	// 레이어 마스크 {
-	public static readonly List<int> U_LAYER_MASK_UIS_CAMERA = new List<int> {
+	public static readonly List<int> U_LAYER_MASK_UIS_CAMERA = new List<int>() {
 		KCDefine.U_LAYER_UIS
 	};
 
-	public static readonly List<int> U_LAYER_MASK_MAIN_CAMERA = new List<int> {
-		KCDefine.U_LAYER_DEF,
-		KCDefine.U_LAYER_TRANSPARENT_FX,
-		KCDefine.U_LAYER_IGNORE_RAYCAST,
-		KCDefine.U_LAYER_WATER,
+	public static readonly List<int> U_LAYER_MASK_MAIN_CAMERA = new List<int>() {
+		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER,
 
 #if !CAMERA_STACKING_ENABLE
 		KCDefine.U_LAYER_UIS
@@ -1152,10 +1129,8 @@ public static partial class KCDefine {
 	
 #if HAPTIC_FEEDBACK_ENABLE
 	// 햅틱 피드백 지원 모델
-	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODELS = new List<DeviceGeneration> {
-		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus,
-		DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax,
-		DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
+	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODELS = new List<DeviceGeneration>() {
+		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus, DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax, DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
 	};
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
 #endif			// #if UNITY_IOS
@@ -1169,8 +1144,7 @@ public static partial class KCDefine {
 #if ADS_MODULE_ENABLE
 	// 기타
 	public static readonly STAdsRewardItemInfo U_INVALID_ADS_REWARD_ITEM_INFO = new STAdsRewardItemInfo() {
-		m_oID = string.Empty,
-		m_oVal = string.Empty
+		m_oID = string.Empty, m_oVal = string.Empty
 	};
 
 	// 크기
@@ -1200,7 +1174,7 @@ public static partial class KCDefine {
 
 #if FACEBOOK_MODULE_ENABLE
 	// 권한
-	public static readonly List<string> U_PERMISSIONS_FACEBOOK = new List<string> {
+	public static readonly List<string> U_PERMISSIONS_FACEBOOK = new List<string>() {
 		"public_profile"
 	};
 #endif			// #if FACEBOOK_MODULE_ENABLE

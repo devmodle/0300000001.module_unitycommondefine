@@ -133,38 +133,42 @@ public static partial class KCDefine {
 	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 
-	public static readonly List<Vector2Int> B_IDX_OFFSETS_PREV_2D = new List<Vector2Int> {
-		Vector2Int.down,
-		Vector2Int.up,
-		Vector2Int.right,
-		Vector2Int.left,
+	public static readonly List<(Vector2Int, Vector2Int)> B_IDX_OFFSET_INFOS_2D = new List<(Vector2Int, Vector2Int)>() {
+		// 위
+		(Vector2Int.down, Vector2Int.up),
 
-		Vector2Int.down,
-		Vector2Int.down,
-		Vector2Int.up,
-		Vector2Int.up,
+		// 아래
+		(Vector2Int.up, Vector2Int.down),
 
-		Vector2Int.right,
-		Vector2Int.right,
-		Vector2Int.left,
-		Vector2Int.left
-	};
+		// 왼쪽
+		(Vector2Int.right, Vector2Int.left),
 
-	public static readonly List<Vector2Int> B_IDX_OFFSETS_NEXT_2D = new List<Vector2Int> {
-		Vector2Int.up,
-		Vector2Int.down,
-		Vector2Int.left,
-		Vector2Int.right,
+		// 오른쪽
+		(Vector2Int.left, Vector2Int.right),
 
-		Vector2Int.left,
-		Vector2Int.right,
-		Vector2Int.left,
-		Vector2Int.right,
+		// 위 왼쪽
+		(Vector2Int.down, Vector2Int.left),
 
-		Vector2Int.up,
-		Vector2Int.down,
-		Vector2Int.up,
-		Vector2Int.down
+		// 위 오른쪽
+		(Vector2Int.down, Vector2Int.right),
+
+		// 아래 왼쪽
+		(Vector2Int.up, Vector2Int.left),
+
+		// 아래 오른쪽
+		(Vector2Int.up, Vector2Int.right),
+
+		// 왼쪽 위
+		(Vector2Int.right, Vector2Int.up),
+
+		// 왼쪽 아래
+		(Vector2Int.right, Vector2Int.down),
+
+		// 오른쪽 위
+		(Vector2Int.left, Vector2Int.up),
+
+		// 오른쪽 아래
+		(Vector2Int.left, Vector2Int.down)
 	};
 	// 인덱스 }
 
@@ -588,19 +592,13 @@ public static partial class KCDefine {
 	// 위치 }
 
 	// 국가 코드
-	public static readonly List<string> B_EU_COUNTRY_CODES = new List<string> {
-		"BE", "BG", "CZ", "DK", "DE", "EE", "IE", 
-		"GR", "ES", "FR", "HR", "IT", "CY", "LV", 
-		"LT", "LU", "HU", "MT", "NL", "AT", "PL", 
-		"PT", "RO", "SI", "SK", "FI", "SE"
+	public static readonly List<string> B_EU_COUNTRY_CODES = new List<string>() {
+		"BE", "BG", "CZ", "DK", "DE", "EE", "IE", "GR", "ES", "FR", "HR", "IT", "CY", "LV", "LT", "LU", "HU", "MT", "NL", "AT", "PL", "PT", "RO", "SI", "SK", "FI", "SE"
 	};
 
 	// 토큰
 	public static readonly Dictionary<string, long> B_UNIT_NUM_TOKEN_INFOS = new Dictionary<string, long>() {
-		["K"] = 1000,
-		["M"] = 1000000,
-		["B"] = 3000000000,
-		["T"] = 1000000000000
+		["K"] = 1000, ["M"] = 1000000, ["B"] = 3000000000, ["T"] = 1000000000000
 	};
 
 	// 경로 {

@@ -161,9 +161,6 @@ public static partial class KCEditorDefine {
 
 	// 기타 {
 	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
-	
-	public const string DS_DEFINE_S_MODULE_VER_1_7_3_OR_NEWER = "MODULE_VER_1_7_3_OR_NEWER";
-	public const string DS_DEFINE_S_MODULE_VER_1_8_0_OR_NEWER = "MODULE_VER_1_8_0_OR_NEWER";
 
 	public const string DS_DEFINE_S_STUDY_ENABLE = "STUDY_ENABLE";
 	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
@@ -200,7 +197,7 @@ public static partial class KCEditorDefine {
 
 	#region 런타임 상수
 	// 대체 전처리기 심볼
-	public static readonly Dictionary<string, string> DS_REPLACE_DEFINE_S_MODULES = new Dictionary<string, string> {
+	public static readonly Dictionary<string, string> DS_REPLACE_DEFINE_S_MODULES = new Dictionary<string, string>() {
 #if ML_AGENTS_ENABLE || ML_AGENTS_MODULE_ENABLE
 		[KCEditorDefine.DS_DEFINE_S_ML_AGENTS_ENABLE] = KCEditorDefine.DS_DEFINE_S_ML_AGENTS_MODULE_ENABLE,
 #endif			// #if ML_AGENTS_ENABLE || ML_AGENTS_MODULE_ENABLE
