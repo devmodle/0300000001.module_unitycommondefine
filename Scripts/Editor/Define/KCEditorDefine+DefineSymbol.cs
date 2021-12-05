@@ -197,7 +197,7 @@ public static partial class KCEditorDefine {
 
 	#region 런타임 상수
 	// 대체 전처리기 심볼
-	public static readonly Dictionary<string, string> DS_REPLACE_DEFINE_S_MODULES = new Dictionary<string, string>() {
+	public static readonly Dictionary<string, string> DS_DEFINE_S_REPLACE_MODULE_DICT = new Dictionary<string, string>() {
 #if ML_AGENTS_ENABLE || ML_AGENTS_MODULE_ENABLE
 		[KCEditorDefine.DS_DEFINE_S_ML_AGENTS_ENABLE] = KCEditorDefine.DS_DEFINE_S_ML_AGENTS_MODULE_ENABLE,
 #endif			// #if ML_AGENTS_ENABLE || ML_AGENTS_MODULE_ENABLE

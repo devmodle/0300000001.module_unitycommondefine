@@ -556,12 +556,12 @@ public static partial class KCDefine {
 	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
 	// 태그
-	public static readonly List<string> U_TAGS = new List<string>() {
+	public static readonly List<string> U_TAG_LIST = new List<string>() {
 		KCDefine.U_TAG_ENEMY, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_UIS_CAMERA, KCDefine.U_TAG_MAIN_LIGHT, KCDefine.U_TAG_SCENE_MANAGER
 	};
 
 	// 정렬 레이어
-	public static readonly List<string> U_SORTING_LAYERS = new List<string>() {
+	public static readonly List<string> U_SORTING_LAYER_LIST = new List<string>() {
 		KCDefine.U_SORTING_L_UNDERGROUND, KCDefine.U_SORTING_L_BACKGROUND, KCDefine.U_SORTING_L_DEF, KCDefine.U_SORTING_L_FOREGROUND, KCDefine.U_SORTING_L_OVERGROUND, KCDefine.U_SORTING_L_TOP, KCDefine.U_SORTING_L_TOPMOST, KCDefine.U_SORTING_L_ABS,
 
 #if !CAMERA_STACKING_ENABLE
@@ -582,11 +582,11 @@ public static partial class KCDefine {
 	// 정렬 순서 }
 
 	// 레이어 마스크 {
-	public static readonly List<int> U_LAYER_MASK_UIS_CAMERA = new List<int>() {
+	public static readonly List<int> U_LAYER_MASK_LIST_UIS_CAMERA = new List<int>() {
 		KCDefine.U_LAYER_UIS
 	};
 
-	public static readonly List<int> U_LAYER_MASK_MAIN_CAMERA = new List<int>() {
+	public static readonly List<int> U_LAYER_MASK_LIST_MAIN_CAMERA = new List<int>() {
 		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER,
 
 #if !CAMERA_STACKING_ENABLE
@@ -1129,7 +1129,7 @@ public static partial class KCDefine {
 	
 #if HAPTIC_FEEDBACK_ENABLE
 	// 햅틱 피드백 지원 모델
-	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODELS = new List<DeviceGeneration>() {
+	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODEL_LIST = new List<DeviceGeneration>() {
 		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus, DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax, DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
 	};
 #endif			// #if HAPTIC_FEEDBACK_ENABLE
@@ -1174,7 +1174,7 @@ public static partial class KCDefine {
 
 #if FACEBOOK_MODULE_ENABLE
 	// 권한
-	public static readonly List<string> U_PERMISSIONS_FACEBOOK = new List<string>() {
+	public static readonly List<string> U_PERMISSION_LIST_FACEBOOK = new List<string>() {
 		"public_profile"
 	};
 #endif			// #if FACEBOOK_MODULE_ENABLE

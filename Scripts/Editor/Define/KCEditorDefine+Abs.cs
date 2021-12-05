@@ -226,7 +226,7 @@ public static partial class KCEditorDefine {
 	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.LOW;
 #endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
 
-	public static readonly List<string> B_EDITOR_OPTS_EXTENSIONS = new List<string>() {
+	public static readonly List<string> B_EDITOR_OPTS_EXTENSION_LIST = new List<string>() {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
 	};
 	// 에디터 옵션 }
@@ -381,19 +381,19 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ICON_P_ANDROID_NOTI_96x96 = $"{KCDefine.B_DIR_P_ICONS}Android/Notification/Icon96x96";
 	public static readonly string B_ICON_P_ANDROID_NOTI_256x256 = $"{KCDefine.B_DIR_P_ICONS}Android/Notification/Icon256x256";
 
-	public static readonly List<string> B_SEARCH_P_SCENES = new List<string>() {
+	public static readonly List<string> B_SEARCH_P_SCENE_LIST = new List<string>() {
 		KCEditorDefine.B_DIR_P_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_SCENES, KCEditorDefine.B_DIR_P_PROJ_EDITOR_SCENES
 	};
 
-	public static readonly List<TextureImporterType> B_IMPORTER_T_IGNORE_MIP_MAP_TEXTURES = new List<TextureImporterType>() {
+	public static readonly List<TextureImporterType> B_IMPORTER_T_IGNORE_MIP_MAP_TEXTURE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.Sprite
 	};
 
-	public static readonly List<TextureImporterType> B_IMPORTER_T_IGNORE_RGBA32_FMT_TEXTURES = new List<TextureImporterType>() {
+	public static readonly List<TextureImporterType> B_IMPORTER_T_IGNORE_RGBA32_FMT_TEXTURE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.Cookie, TextureImporterType.SingleChannel
 	};
 
-	public static readonly List<(string, string)> B_DATA_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_DATA_P_INFO_LIST = new List<(string, string)>() {
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}README.md"),
@@ -424,7 +424,7 @@ public static partial class KCEditorDefine {
 		// 04.UnityPackages }
 	};
 	
-	public static readonly List<(string, string)> B_SCRIPT_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_SCRIPT_P_INFO_LIST = new List<(string, string)>() {
 		// 00.AutoCreate {
 		// 에디터 상수
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Define/T_KEditorDefine+Abs.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scripts/Editor/Global/Define/KEditorDefine+Abs.cs"),
@@ -631,7 +631,7 @@ public static partial class KCEditorDefine {
 		// 03.UnityProjectEditor }
 	};
 	
-	public static readonly List<(string, string)> B_PREFAB_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_PREFAB_P_INFO_LIST = new List<(string, string)>() {
 		// 00.AutoCreate {
 #if SAMPLE_PROJ
 		($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Externals/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
@@ -731,7 +731,7 @@ public static partial class KCEditorDefine {
 		// 03.UnityProjectEditor }
 	};
 
-	public static readonly List<(string, string)> B_TABLE_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_TABLE_P_INFO_LIST = new List<(string, string)>() {
 		// 04.UnityPackages {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ValueInfo/ValTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}ValTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ValueInfo/ValTable_Common.csv", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_COMMON_VAL}.csv"),
@@ -775,7 +775,7 @@ public static partial class KCEditorDefine {
 		// 04.UnityPackages }
 	};
 
-	public static readonly List<(string, string)> B_ASSET_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_ASSET_P_INFO_LIST = new List<(string, string)>() {
 		// 02.UnityProject {
 		($"{KCEditorDefine.B_DIR_P_FONT_TEMPLATES}T_ThaiFont.ttf", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_FONT_P_G_THAI}.ttf"),
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas_01.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_01}.spriteatlas"),
@@ -796,7 +796,7 @@ public static partial class KCEditorDefine {
 		// 02.UnityProject }
 	};
 
-	public static readonly List<(string, string)> B_PIPELINE_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {
 		// 02.UnityProject {
 #if UNIVERSAL_PIPELINE_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
 		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP_ASSET}.asset")
@@ -804,7 +804,7 @@ public static partial class KCEditorDefine {
 		// 02.UnityProject }
 	};
 
-	public static readonly List<(string, string)> B_SCENE_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_SCENE_P_INFO_LIST = new List<(string, string)>() {
 		// 00.AutoCreate {
 #if SCENE_TEMPLATES_ENABLE || SCENE_TEMPLATES_MODULE_ENABLE		
 		(KCEditorDefine.B_DIR_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity"),
@@ -847,7 +847,7 @@ public static partial class KCEditorDefine {
 		// 03.UnityProjectEditor }
 	};
 
-	public static readonly List<(string, string)> B_ASSEMBLY_DEFINE_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_ASSEMBLY_DEFINE_P_INFO_LIST = new List<(string, string)>() {
 #if ADS_ENABLE || ADS_MODULE_ENABLE
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityIronSrc.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}IronSource/Module.UnityIronSrc.asmdef"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityIronSrc.Editor.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}IronSource/Editor/Module.UnityIronSrc.Editor.asmdef"),
@@ -867,7 +867,7 @@ public static partial class KCEditorDefine {
 #endif			// #if PURCHASE_ENABLE || PURCHASE_MODULE_ENABLE
 	};
 
-	public static readonly List<(string, string)> B_ICON_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_ICON_P_INFO_LIST = new List<(string, string)>() {
 		// 02.UnityProject {
 		// iOS
 		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon76x76.png", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCEditorDefine.B_ICON_P_IOS_APP_76x76}.png"),
@@ -925,9 +925,9 @@ public static partial class KCEditorDefine {
 	public static readonly string B_SRC_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/iOS/Classes/Plugin/";
 	public static readonly string B_DEST_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_IOS_PLUGINS}CustomiOSPlugin/";
 
-	public static readonly string B_ENTITLEMENTS_P_IOS_CAPABILITY = $"{Application.productName}.entitlements";
+	public static readonly string B_ENTITLEMENTS_P_CAPABILITY_IOS = $"{Application.productName}.entitlements";
 
-	public static readonly List<GraphicsDeviceType> B_DEVICE_GRAPHICS_DEVICE_TYPES_IOS = new List<GraphicsDeviceType>() {
+	public static readonly List<GraphicsDeviceType> B_DEVICE_GRAPHICS_DEVICE_TYPE_LIST_IOS = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Metal
 	};
 	// iOS }
@@ -967,7 +967,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
 	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/unityLibrary/libs/unity-classes.jar";
 
-	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPES_ANDROID = new List<GraphicsDeviceType>() {
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_ANDROID = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3, GraphicsDeviceType.OpenGLES2
 	};
 	// 안드로이드 }
@@ -977,12 +977,12 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_FMT_EXTERNAL_DATAS_STANDALONE = $"{"{0}"}/{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 
 	// 맥
-	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPES_MAC = new List<GraphicsDeviceType>() {
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_MAC = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Metal, GraphicsDeviceType.OpenGLCore
 	};
 
 	// 윈도우즈
-	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPES_WNDS = new List<GraphicsDeviceType>() {
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_WNDS = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Direct3D12, GraphicsDeviceType.Direct3D11
 	};
 
@@ -1011,7 +1011,7 @@ public static partial class KCEditorDefine {
 
 #if NOTI_MODULE_ENABLE
 	// 경로
-	public static readonly List<(string, string)> B_NOTI_ICON_P_INFOS = new List<(string, string)>() {
+	public static readonly List<(string, string)> B_NOTI_ICON_P_INFO_LIST = new List<(string, string)>() {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Resources/{KCEditorDefine.B_ICON_P_ANDROID_NOTI_24x24}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-mdpi/icon24.png"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Resources/{KCEditorDefine.B_ICON_P_ANDROID_NOTI_36x36}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-hdpi/icon36.png"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Resources/{KCEditorDefine.B_ICON_P_ANDROID_NOTI_48x48}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-xhdpi/icon48.png"),

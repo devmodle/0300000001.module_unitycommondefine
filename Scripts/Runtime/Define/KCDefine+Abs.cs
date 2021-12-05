@@ -133,7 +133,7 @@ public static partial class KCDefine {
 	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 
-	public static readonly List<(Vector2Int, Vector2Int)> B_IDX_OFFSET_INFOS_2D = new List<(Vector2Int, Vector2Int)>() {
+	public static readonly List<(Vector2Int, Vector2Int)> B_IDX_OFFSET_INFO_LIST_2D = new List<(Vector2Int, Vector2Int)>() {
 		(Vector2Int.down, Vector2Int.up), (Vector2Int.up, Vector2Int.down), (Vector2Int.right, Vector2Int.left), (Vector2Int.left, Vector2Int.right), (Vector2Int.down, Vector2Int.left), (Vector2Int.down, Vector2Int.right), (Vector2Int.up, Vector2Int.left), (Vector2Int.up, Vector2Int.right), (Vector2Int.right, Vector2Int.up), (Vector2Int.right, Vector2Int.down), (Vector2Int.left, Vector2Int.up), (Vector2Int.left, Vector2Int.down)
 	};
 	// 인덱스 }
@@ -508,13 +508,13 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 기타 {
-	public static readonly List<Vector2> B_EMPTY_2D_VECS = new List<Vector2>();
-	public static readonly List<Vector3> B_EMPTY_3D_VECS = new List<Vector3>();
+	public static readonly List<Vector2> B_EMPTY_2D_VEC_LIST = new List<Vector2>();
+	public static readonly List<Vector3> B_EMPTY_3D_VEC_LIST = new List<Vector3>();
 
-	public static readonly List<Vector2Int> B_EMPTY_2D_INT_VECS = new List<Vector2Int>();
-	public static readonly List<Vector3Int> B_EMPTY_3D_INT_VECS = new List<Vector3Int>();
+	public static readonly List<Vector2Int> B_EMPTY_2D_INT_VEC_LIST = new List<Vector2Int>();
+	public static readonly List<Vector3Int> B_EMPTY_3D_INT_VEC_LIST = new List<Vector3Int>();
 
-	public static readonly List<STIdxInfo> B_EMPTY_IDX_INFOS = new List<STIdxInfo>();
+	public static readonly List<STIdxInfo> B_EMPTY_IDX_INFO_LIST = new List<STIdxInfo>();
 	// 기타 }
 
 	// 색상 {
@@ -558,12 +558,12 @@ public static partial class KCDefine {
 	// 위치 }
 
 	// 국가 코드
-	public static readonly List<string> B_EU_COUNTRY_CODES = new List<string>() {
+	public static readonly List<string> B_EU_COUNTRY_CODE_LIST = new List<string>() {
 		"BE", "BG", "CZ", "DK", "DE", "EE", "IE", "GR", "ES", "FR", "HR", "IT", "CY", "LV", "LT", "LU", "HU", "MT", "NL", "AT", "PL", "PT", "RO", "SI", "SK", "FI", "SE"
 	};
 
 	// 토큰
-	public static readonly Dictionary<string, long> B_UNIT_NUM_TOKEN_INFOS = new Dictionary<string, long>() {
+	public static readonly Dictionary<string, long> B_UNIT_NUM_TOKEN_INFO_DICT = new Dictionary<string, long>() {
 		["K"] = 1000, ["M"] = 1000000, ["B"] = 3000000000, ["T"] = 1000000000000
 	};
 
