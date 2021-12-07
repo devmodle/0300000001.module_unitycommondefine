@@ -124,8 +124,6 @@ public static partial class KCEditorDefine {
 	// 플랫폼 }
 
 	// 테스트 {
-	public const string DS_DEFINE_S_PROFILER_ENABLE = "PROFILER_ENABLE";
-	
 	public const string DS_DEFINE_S_ML_AGENTS_ENABLE = "ML_AGENTS_ENABLE";
 	public const string DS_DEFINE_S_ML_AGENTS_MODULE_ENABLE = "ML_AGENTS_MODULE_ENABLE";
 

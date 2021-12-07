@@ -7,11 +7,6 @@ using UnityEngine.UI;
 /** 레벨 에디터 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
-	// 이름 {
-	public const string LES_OBJ_N_LEVEL_SCROLL_VIEW = "LevelScrollView";
-	public const string LES_OBJ_N_STAGE_SCROLL_VIEW = "StageScrollView";
-	public const string LES_OBJ_N_CHAPTER_SCROLL_VIEW = "ChapterScrollView";
-
 	// 왼쪽 에디터 UI
 	public const string LES_OBJ_N_LE_UIS_ADD_LEVEL_BTN = "AddLevelBtn";
 	public const string LES_OBJ_N_LE_UIS_ADD_STAGE_BTN = "AddStageBtn";
@@ -20,8 +15,6 @@ public static partial class KCDefine {
 	// 오른쪽 에디터 UI {
 	public const string LES_OBJ_N_RE_UIS_APPLY_BTN = "ApplyBtn";
 	public const string LES_OBJ_N_RE_UIS_LOAD_LEVEL_BTN = "LoadLevelBtn";
-
-	public const string U_OBJ_N_RE_UIS_REWARD_TOGGLE = "RewardToggle";
 	
 	public const string LES_OBJ_N_RE_UIS_LEVEL_INPUT = "LevelInput";
 	public const string LES_OBJ_N_RE_UIS_NUM_CELLS_X_INPUT = "NumCellsXInput";
@@ -40,7 +33,6 @@ public static partial class KCDefine {
 	public const string LES_OBJ_N_ME_UIS_RESET_BTN = "ResetBtn";
 	public const string LES_OBJ_N_ME_UIS_TEST_BTN = "TestBtn";
 	// 중앙 에디터 UI }
-	// 이름 }
 	#endregion			// 기본
 }
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE

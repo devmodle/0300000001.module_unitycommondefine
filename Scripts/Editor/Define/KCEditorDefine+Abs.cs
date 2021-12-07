@@ -346,7 +346,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_TUTORIAL_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_TUTORIAL_INFO_TABLE}.asset";
 
 	public static readonly string B_ASSET_P_FMT_SCRIPTABLE_OBJ = $"{KCEditorDefine.B_DIR_P_ASSETS}{"{0}.asset"}";
-	public static readonly string B_ASSET_P_FMT_DEFINE_S_OUTPUT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Symbols/{"{0}DefineSymbols.txt"}";
+	public static readonly string B_ASSET_P_FMT_DEFINE_S_OUTPUT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/DefineSymbols/{"{0}DefineSymbols.txt"}";
 
 	public static readonly string B_IMG_P_FMT_TEXTURE_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Textures/{0}.png"}";
 	public static readonly string B_IMG_P_FMT_SPRITE_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Sprites/{0}.png"}";

@@ -195,10 +195,7 @@ public static partial class KCDefine {
 	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STR;
 	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STR;
-
-	public static readonly int B_DESKTOP_SCREEN_WIDTH = (int)(Screen.currentResolution.width * 0.95f);
-	public static readonly int B_DESKTOP_SCREEN_HEIGHT = (int)(KCDefine.B_DESKTOP_SCREEN_WIDTH * (KCDefine.B_LANDSCAPE_SCREEN_HEIGHT / (float)KCDefine.B_LANDSCAPE_SCREEN_WIDTH));
-
+	
 	public static readonly Vector3 B_SCREEN_SIZE = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	// 디바이스 }
 
@@ -507,6 +504,11 @@ public static partial class KCDefine {
 	#endregion			// 기본
 
 	#region 런타임 상수
+	// 씬 이름
+	public static readonly List<string> B_INIT_SCENE_NAME_LIST = new List<string>() {
+		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_SPLASH, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_PERMISSION, KCDefine.B_SCENE_N_INTRO
+	};
+
 	// 기타 {
 	public static readonly List<Vector2> B_EMPTY_2D_VEC_LIST = new List<Vector2>();
 	public static readonly List<Vector3> B_EMPTY_3D_VEC_LIST = new List<Vector3>();

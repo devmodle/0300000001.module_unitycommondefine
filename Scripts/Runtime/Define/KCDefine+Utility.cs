@@ -328,6 +328,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CONTINUE_BTN = "ContinueBtn";
 
 	public const string U_OBJ_N_ADS_BTN = "AdsBtn";
+	public const string U_OBJ_N_PAUSE_BTN = "PauseBtn";
 	public const string U_OBJ_N_ACQUIRE_BTN = "AcquireBtn";
 	public const string U_OBJ_N_PURCHASE_BTN = "PurchaseBtn";
 	public const string U_OBJ_N_RESTORE_BTN = "RestoreBtn";
@@ -373,6 +374,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_PAGE_VIEW = "PageView";
 	public const string U_OBJ_N_SCROLL_VIEW = "ScrollView";
 	public const string U_OBJ_N_RECYCLE_VIEW = "RecycleView";
+
+	public const string U_OBJ_N_LEVEL_SCROLL_VIEW = "LevelScrollView";
+	public const string U_OBJ_N_STAGE_SCROLL_VIEW = "StageScrollView";
+	public const string U_OBJ_N_CHAPTER_SCROLL_VIEW = "ChapterScrollView";
 
 	public const string U_OBJ_N_LINE_FX = "LineFX";
 	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
@@ -897,7 +902,7 @@ public static partial class KCDefine {
 
 #if DEBUG || DEVELOPMENT_BUILD
 	// 시간
-	public const float U_DELTA_T_DYNAMIC_DEBUG = 0.15f;
+	public const float U_DELTA_T_DYNAMIC_DEBUG = 0.25f;
 
 	// 형식 {
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";

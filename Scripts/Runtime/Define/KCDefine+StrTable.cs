@@ -9,6 +9,9 @@ public static partial class KCDefine {
 	// 에디터 종료 팝업
 	public const string ST_KEY_EDITOR_QUIT_P_MSG = "EDITOR_QUIT_P_MSG";
 
+	// 에디터 리셋 팝업
+	public const string ST_KEY_EDITOR_RESET_P_MSG = "EDITOR_RESET_P_MSG";
+
 	// 에디터 레벨 제거 팝업
 	public const string ST_KEY_EDITOR_REMOVE_LP_MSG = "EDITOR_REMOVE_LP_MSG";
 
@@ -20,6 +23,9 @@ public static partial class KCDefine {
 
 	// 종료 팝업
 	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
+
+	// 그만두기 팝업
+	public const string ST_KEY_LEAVE_P_MSG = "LEAVE_P_MSG";
 
 	// 업데이트 팝업
 	public const string ST_KEY_UPDATE_P_MSG = "UPDATE_P_MSG";
