@@ -29,7 +29,7 @@ public static partial class KCDefine {
 	#region 기본
 	// 개수 {
 	public const int U_MAX_NUM_LAYERS = 32;
-	public const int U_MAX_NUM_DUPLICATE_FX_SNDS = 10;
+	public const int U_MAX_NUM_FX_SNDS = 10;
 
 	public const int U_MAX_NUM_LEVEL_INFOS = 9999;
 	public const int U_MAX_NUM_STAGE_INFOS = 999;
