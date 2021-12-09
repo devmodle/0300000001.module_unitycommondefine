@@ -60,6 +60,13 @@ public struct STBuildVerInfo {
 	public string m_oVer;
 }
 
+/** 결제 정보 */
+[System.Serializable]
+public struct STPurchaseInfo {
+	public string m_oID;
+	public string m_oReceipt;
+}
+
 /** 지급 아이템 정보 */
 [System.Serializable]
 public struct STPostItemInfo {

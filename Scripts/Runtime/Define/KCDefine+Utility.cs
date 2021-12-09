@@ -116,13 +116,13 @@ public static partial class KCDefine {
 	public const Ease U_EASE_ANI = Ease.OutQuad;
 
 	// 광원 {
-#if LIGHT_ENABLE && SHADOW_ENABLE
+#if SHADOW_ENABLE
 	public const LightShadows U_LIGHT_SHADOW_TYPE_SUB = LightShadows.Hard;
 	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.Soft;
 #else
 	public const LightShadows U_LIGHT_SHADOW_TYPE_SUB = LightShadows.None;
 	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.None;
-#endif			// #if LIGHT_ENABLE && SHADOW_ENABLE
+#endif			// #if SHADOW_ENABLE
 	// 광원 }
 
 	// 회전
@@ -439,24 +439,30 @@ public static partial class KCDefine {
 	// 태그 }
 
 	// 정렬 레이어 {
-	public const string U_SORTING_L_UNDERGROUND = "Underground";
-	public const string U_SORTING_L_BACKGROUND = "Background";
 	public const string U_SORTING_L_DEF = "Default";
-	public const string U_SORTING_L_FOREGROUND = "Foreground";
-	public const string U_SORTING_L_OVERGROUND = "Overground";
-	public const string U_SORTING_L_TOP = "Top";
-	public const string U_SORTING_L_TOPMOST = "Topmost";
 	public const string U_SORTING_L_ABS = "Abs";
 
+	public const string U_SORTING_L_TOP = "Top";
+	public const string U_SORTING_L_TOPMOST = "Topmost";
+
+	public const string U_SORTING_L_FOREGROUND = "Foreground";
+	public const string U_SORTING_L_OVERGROUND = "Overground";
+
+	public const string U_SORTING_L_BACKGROUND = "Background";
+	public const string U_SORTING_L_UNDERGROUND = "Underground";
+
 #if !CAMERA_STACKING_ENABLE
-	public const string U_SORTING_L_UNDERGROUND_UIS = "UndergroundUIs";
-	public const string U_SORTING_L_BACKGROUND_UIS = "BackgroundUIs";
-	public const string U_SORTING_L_DEF_UIS = "DefaultUIs";
-	public const string U_SORTING_L_FOREGROUND_UIS = "ForegroundUIs";
-	public const string U_SORTING_L_OVERGROUND_UIS = "OvergroundUIs";
-	public const string U_SORTING_L_TOP_UIS = "TopUIs";
-	public const string U_SORTING_L_TOPMOST_UIS = "TopmostUIs";
-	public const string U_SORTING_L_ABS_UIS = "AbsUIs";
+	public const string U_SORTING_L_OVERLAY_DEF = "OverlayDefault";
+	public const string U_SORTING_L_OVERLAY_ABS = "OverlayAbs";
+
+	public const string U_SORTING_L_OVERLAY_TOP = "OverlayTop";
+	public const string U_SORTING_L_OVERLAY_TOPMOST = "OverlayTopmost";
+	
+	public const string U_SORTING_L_OVERLAY_FOREGROUND = "OverlayForeground";
+	public const string U_SORTING_L_OVERLAY_OVERGROUND = "OverlayOverground";
+
+	public const string U_SORTING_L_OVERLAY_BACKGROUND = "OverlayBackground";
+	public const string U_SORTING_L_OVERLAY_UNDERGROUND = "OverlayUnderground";
 #endif			// #if !CAMERA_STACKING_ENABLE
 	// 정렬 레이어 }
 
@@ -570,7 +576,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_L_UNDERGROUND, KCDefine.U_SORTING_L_BACKGROUND, KCDefine.U_SORTING_L_DEF, KCDefine.U_SORTING_L_FOREGROUND, KCDefine.U_SORTING_L_OVERGROUND, KCDefine.U_SORTING_L_TOP, KCDefine.U_SORTING_L_TOPMOST, KCDefine.U_SORTING_L_ABS,
 
 #if !CAMERA_STACKING_ENABLE
-		KCDefine.U_SORTING_L_UNDERGROUND_UIS, KCDefine.U_SORTING_L_BACKGROUND_UIS, KCDefine.U_SORTING_L_DEF_UIS, KCDefine.U_SORTING_L_FOREGROUND_UIS, KCDefine.U_SORTING_L_OVERGROUND_UIS, KCDefine.U_SORTING_L_TOP_UIS, KCDefine.U_SORTING_L_TOPMOST_UIS, KCDefine.U_SORTING_L_ABS_UIS
+		KCDefine.U_SORTING_L_OVERLAY_UNDERGROUND, KCDefine.U_SORTING_L_OVERLAY_BACKGROUND, KCDefine.U_SORTING_L_OVERLAY_DEF, KCDefine.U_SORTING_L_OVERLAY_FOREGROUND, KCDefine.U_SORTING_L_OVERLAY_OVERGROUND, KCDefine.U_SORTING_L_OVERLAY_TOP, KCDefine.U_SORTING_L_OVERLAY_TOPMOST, KCDefine.U_SORTING_L_OVERLAY_ABS
 #endif			// #if !CAMERA_STACKING_ENABLE
 	};
 
@@ -581,7 +587,7 @@ public static partial class KCDefine {
 	};
 #else
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0, m_oLayer = KCDefine.U_SORTING_L_DEF_UIS
+		m_nOrder = 0, m_oLayer = KCDefine.U_SORTING_L_OVERLAY_DEF
 	};
 #endif			// #if CAMERA_STACKING_ENABLE
 	// 정렬 순서 }
@@ -787,17 +793,9 @@ public static partial class KCDefine {
 
 	#region 조건부 상수
 #if UNITY_EDITOR
-	// 퀄리티 {
-	public const bool U_QUALITY_ASYNC_UPLOAD_PERSISTENT_BUFFER = true;
-
-	public const int U_QUALITY_ANTI_ALIASING = 0;
-	public const int U_QUALITY_MAX_LOD_LEVEL = 0;
+	// 퀄리티
 	public const int U_QUALITY_ASYNC_UPLOAD_TIME_SLICE = 2;
 	public const int U_QUALITY_ASYNC_UPLOAD_BUFFER_SIZE = 16;
-
-	public const float U_QUALITY_RESOLUTION_SCALE_FIXED_DPI_FACTOR = 1.0f;
-	public const EQualityLevel U_QUALITY_LEVEL = EQualityLevel.AUTO;
-	// 퀄리티 }
 
 	// 스크립트 순서 {
 	public const int U_SCRIPT_O_SINGLETON = sbyte.MaxValue;
@@ -879,26 +877,26 @@ public static partial class KCDefine {
 	// 옵션 }
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 
-#if UNITY_IOS && APPLE_LOGIN_ENABLE
+#if UNITY_IOS
+	// 이름
+	public const string U_MODEL_N_IPAD = "iPad";
+	public const string U_MODEL_N_IPHONE = "iPhone";
+
+#if APPLE_LOGIN_ENABLE
 	// 식별자
 	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
 	public const string U_KEY_SERVICES_M_UPDATE_FAIL_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateFailAppleLoginStateCallback";
 
 	public const string U_KEY_SERVICES_M_LOGIN_WITH_APPLE_CALLBACK = "ServicesMLoginWithAppleCallback";
 	public const string U_KEY_SERVICES_M_LOGIN_FAIL_WITH_APPLE_CALLBACK = "ServicesMLoginFailWithAppleCallback";
-#endif			// #if UNITY_IOS && APPLE_LOGIN_ENABLE
+#endif			// #if APPLE_LOGIN_ENABLE
+#endif			// #if UNITY_IOS
 
 #if UNITY_ANDROID
 	// 시간
 	public const float U_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
 	public const float U_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 1.0f;
 #endif			// #if UNITY_ANDROID
-
-#if HAPTIC_FEEDBACK_ENABLE
-	// 이름
-	public const string U_MODEL_N_IPAD = "iPad";
-	public const string U_MODEL_N_IPHONE = "iPhone";
-#endif			// #if HAPTIC_FEEDBACK_ENABLE
 
 #if DEBUG || DEVELOPMENT_BUILD
 	// 시간
@@ -1035,6 +1033,7 @@ public static partial class KCDefine {
 
 	// 노드
 	public const string U_NODE_FIREBASE_USER_INFOS = "UserInfos";
+	public const string U_NODE_FIREBASE_PURCHASE_INFOS = "PurchaseInfos";
 	public const string U_NODE_FIREBASE_POST_ITEM_INFOS = "PostItemInfos";
 	
 #if FIREBASE_AUTH_ENABLE
@@ -1131,13 +1130,11 @@ public static partial class KCDefine {
 	// 버전
 	public static readonly System.Version U_MIN_VER_CONSENT_VIEW = new System.Version(14, 0, 0);
 	public static readonly System.Version U_MIN_VER_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
-	
-#if HAPTIC_FEEDBACK_ENABLE
+
 	// 햅틱 피드백 지원 모델
 	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODEL_LIST = new List<DeviceGeneration>() {
 		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus, DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax, DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
 	};
-#endif			// #if HAPTIC_FEEDBACK_ENABLE
 #endif			// #if UNITY_IOS
 
 #if UNIVERSAL_PIPELINE_MODULE_ENABLE

@@ -97,10 +97,7 @@ public static partial class KCDefine {
 	public const int B_COMPARE_LESS = -1;
 	public const int B_COMPARE_EQUALS = 0;
 	public const int B_COMPARE_GREATE = 1;
-
-	// 개수
-	public const int B_MAX_NUM_BACKUP_FILES = 50;
-
+	
 	// 횟수 {
 	public const int B_TIMES_INT_ONCE = 1;
 	public const int B_TIMES_INT_INFINITE = -1;
@@ -157,6 +154,7 @@ public static partial class KCDefine {
 
 	public const float B_DPI = 160.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
+	public const float B_DESKTOP_SCREEN_RATE = 0.9f;
 
 	public const string B_EMPTY_STR = "";
 	public const string B_UNKNOWN_STR = "Unknown";
@@ -214,8 +212,6 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_WNDS = "Wnds";
 
 	public const string B_PLATFORM_N_DEF_TEXTURE = "DefaultTexturePlatform";
-	
-	public const string B_DIR_N_BACKUP = "Backup";
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
 
 	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
@@ -386,7 +382,6 @@ public static partial class KCDefine {
 
 	public const string B_TEXT_FMT_MM_SS = "{0:00}:{1:00}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
-	public const string B_DATE_T_FMT_BACKUP_COMBINE = "{0} ({1})";
 
 	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";
 	public const string B_TEXT_FMT_2_DIGITS = "{0:00}";
@@ -489,9 +484,7 @@ public static partial class KCDefine {
 	public const string B_PATH_FMT_8_COMBINE = "{0}/{1}/{2}/{3}/{4}/{5}/{6}/{7}/";
 	public const string B_PATH_FMT_9_COMBINE = "{0}/{1}/{2}/{3}/{4}/{5}/{6}/{7}/{8}/";
 
-	public const string B_DATE_T_FMT_BACKUP = "yyyy_MM_dd HH_mm_ss";
 	public const string B_DATE_T_FMT_HH_MM_SS = "HH:mm:ss";
-
 	public const string B_DATE_T_FMT_YYYY_MM_DD = "yyyyMMdd";
 	public const string B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS = "yyyyMMdd HH:mm:ss";
 

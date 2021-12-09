@@ -260,8 +260,8 @@ public static partial class KCEditorDefine {
 	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-v3.0.12";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
-	public const string B_NAME_LEAN_GUI_PKGS = "LeanGUI-v1.2.2";
-	public const string B_NAME_LEAN_TOUCH_PKGS = "LeanTouch-v2.3.4";
+	public const string B_NAME_LEAN_GUI_PKGS = "LeanGUI-v1.2.3";
+	public const string B_NAME_LEAN_TOUCH_PKGS = "LeanTouch-v2.3.5";
 	#endregion			// 기본
 
 	#region 런타임 상수

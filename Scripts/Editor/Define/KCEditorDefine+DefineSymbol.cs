@@ -9,12 +9,10 @@ using UnityEditor;
 /** 에디터 전처리기 심볼 상수 */
 public static partial class KCEditorDefine {
 	#region 기본
-	public const string DS_DEFINE_S_NO_GPGS = "NO_GPGS";
 	public const string DS_DEFINE_S_IL2CPP_ENABLE = "ENABLE_IL2CPP";
 	public const string DS_DEFINE_S_MODE_2D_ENABLE = "MODE_2D_ENABLE";
 	public const string DS_DEFINE_S_MODE_PORTRAIT_ENABLE = "MODE_PORTRAIT_ENABLE";
 	public const string DS_DEFINE_S_PHYSICS_RAYCASTER_ENABLE = "PHYSICS_RAYCASTER_ENABLE";
-	public const string DS_DEFINE_S_HAPTIC_FEEDBACK_ENABLE = "HAPTIC_FEEDBACK_ENABLE";
 	public const string DS_DEFINE_S_AUTO_LOG_PARAMS_ENABLE = "AUTO_LOG_PARAMS_ENABLE";
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 	public const string DS_DEFINE_S_MULTI_TOUCH_ENABLE = "MULTI_TOUCH_ENABLE";
@@ -112,7 +110,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_LIGHTMAP_AUTO_BAKE_ENABLE = "LIGHTMAP_AUTO_BAKE_ENABLE";
 	public const string DS_DEFINE_S_LIGHTMAP_SHADOW_BAKE_ENABLE = "LIGHTMAP_SHADOW_BAKE_ENABLE";
 	public const string DS_DEFINE_S_LIGHTMAP_SHADOW_BAKE_MASK_MODE_ENABLE = "LIGHTMAP_SHADOW_BAKE_MASK_MODE_ENABLE";
+
 	public const string DS_DEFINE_S_REALTIME_LIGHTMAP_BAKE_ENABLE = "REALTIME_LIGHTMAP_BAKE_ENABLE";
+	public const string DS_DEFINE_S_REALTIME_REFLECTION_PROBES_ENABLE = "REALTIME_REFLECTION_PROBES_ENABLE";
 	// 광원 }
 
 	// 플랫폼 {
