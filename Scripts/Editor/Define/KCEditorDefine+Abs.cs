@@ -186,6 +186,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_STANDALONE_DEBUG_PIPELINE_N_JENKINS = "41.StandaloneDebug";
 	public const string B_STANDALONE_RELEASE_PIPELINE_N_JENKINS = "42.StandaloneRelease";
+	public const string B_STANDALONE_STORE_PIPELINE_N_JENKINS = "43.StandaloneStore";
 	// 젠킨스 }
 
 	// 계층 뷰
