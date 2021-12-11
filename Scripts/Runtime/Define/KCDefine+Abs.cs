@@ -154,7 +154,7 @@ public static partial class KCDefine {
 
 	public const float B_DPI = 160.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
-	public const float B_DESKTOP_SCREEN_RATE = 0.9f;
+	public const float B_DESKTOP_SCREEN_RATE = 0.95f;
 
 	public const string B_EMPTY_STR = "";
 	public const string B_UNKNOWN_STR = "Unknown";
@@ -199,6 +199,7 @@ public static partial class KCDefine {
 
 	// 국가 코드
 	public const string B_KOREA_COUNTRY_CODE = "KR";
+	public const string B_AMERICA_COUNTRY_CODE = "US";
 	public const string B_UNKNOWN_COUNTRY_CODE = KCDefine.B_UNKNOWN_STR;
 
 	// 이름 {

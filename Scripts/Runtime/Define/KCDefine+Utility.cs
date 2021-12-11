@@ -308,8 +308,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CLOSE_BTN = "CloseBtn";
 
 	public const string U_OBJ_N_AGREE_BTN = "AgreeBtn";
-	public const string U_OBJ_N_SERVICES_BTN = "ServicesBtn";
 	public const string U_OBJ_N_PRIVACY_BTN = "PrivacyBtn";
+	public const string U_OBJ_N_SERVICES_BTN = "ServicesBtn";
 
 	public const string U_OBJ_N_LOGIN_BTN = "LoginBtn";
 	public const string U_OBJ_N_LOGOUT_BTN = "LogoutBtn";

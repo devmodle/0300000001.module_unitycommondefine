@@ -223,7 +223,7 @@ public enum EStartSceneEvent {
 /** 약관 동의 팝업 타입 */
 public enum EAgreePopupType {
 	NONE = -1,
-	NORM,
+	KR,
 	EU,
 	MAX_VAL
 }
