@@ -156,7 +156,7 @@ public static partial class KCDefine {
 
 	public const float B_DPI = 160.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
-	public const float B_DESKTOP_SCREEN_RATE = 0.95f;
+	public const float B_DESKTOP_SCREEN_RATE = 0.9f;
 
 	public const string B_EMPTY_STR = "";
 	public const string B_UNKNOWN_STR = "Unknown";
@@ -187,22 +187,18 @@ public static partial class KCDefine {
 	public const string B_STR_8_FLT = "8.0";
 	public const string B_STR_9_FLT = "9.0";
 
+	public const string B_FILE_EXTENSION_CSV = ".csv";
 	public const string B_FILE_EXTENSION_TXT = ".txt";
 	public const string B_FILE_EXTENSION_JSON = ".json";
 	public const string B_FILE_EXTENSION_BYTES = ".bytes";
 	public const string B_FILE_EXTENSION_SPRITE_ATLAS = ".spriteatlas";
 
-	public const string B_UNKNOWN_LANGUAGE = KCDefine.B_UNKNOWN_STR;
-	public const string B_UNKNOWN_DEVICE_ID = KCDefine.B_UNKNOWN_STR;
-	public const string B_UNKNOWN_ERROR_MSG = KCDefine.B_UNKNOWN_STR;
-	
 	public static readonly Vector3 B_SCREEN_SIZE = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	// 디바이스 }
 
 	// 국가 코드
 	public const string B_KOREA_COUNTRY_CODE = "KR";
 	public const string B_AMERICA_COUNTRY_CODE = "US";
-	public const string B_UNKNOWN_COUNTRY_CODE = KCDefine.B_UNKNOWN_STR;
 
 	// 이름 {
 	public const string B_PLATFORM_N_IOS = "iOS";

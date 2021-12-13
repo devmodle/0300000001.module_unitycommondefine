@@ -29,16 +29,19 @@ public static partial class KCDefine {
 	#region 기본
 	// 개수 {
 	public const int U_MAX_NUM_LAYERS = 32;
-	public const int U_MAX_NUM_FX_SNDS = 5;
+	public const int U_MAX_NUM_FX_SNDS = 10;
 
 	public const int U_MAX_NUM_LEVEL_INFOS = 9999;
 	public const int U_MAX_NUM_STAGE_INFOS = 999;
 	public const int U_MAX_NUM_CHAPTER_INFOS = 99;
 	// 개수 }
 
-	// 크기
+	// 크기 {
 	public const int U_SIZE_OBJS_POOL = 10;
-	public const int U_DEF_MAX_SIZE_FONT = 10;
+
+	public const int U_DEF_MIN_SIZE_FONT = 10;
+	public const int U_DEF_MAX_SIZE_FONT = 14;
+	// 크기 }
 
 	// 길이
 	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
@@ -72,6 +75,8 @@ public static partial class KCDefine {
 	public const float U_DELAY_INIT = 0.15f;
 	public const float U_DELAY_NEXT_SCENE_LOAD = 0.5f;
 	public const float U_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
+
+	public const float U_MIN_DELAY_FX_SNDS = 0.01f;
 	
 	public const float U_DURATION_ANI = 0.25f;
 	public const float U_DURATION_SCROLL_ANI = 0.25f;
@@ -348,6 +353,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TEXT = "Text";
 	public const string U_OBJ_N_LOCALIZE_TEXT = "LocalizeText";
 
+	public const string U_OBJ_N_TMP_TEXT = "TMPText";
+	public const string U_OBJ_N_TMP_LOCALIZE_TEXT = "TMPLocalizeText";
+
 	public const string U_OBJ_N_IMG = "Img";
 	public const string U_OBJ_N_RAW_IMG = "RawImg";
 	public const string U_OBJ_N_FOCUS_IMG = "FocusImg";
@@ -356,8 +364,14 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TEXT_BTN = "TextBtn";
 	public const string U_OBJ_N_TEXT_SCALE_BTN = "TextScaleBtn";
 
+	public const string U_OBJ_N_TMP_TEXT_BTN = "TMPTextBtn";
+	public const string U_OBJ_N_TMP_TEXT_SCALE_BTN = "TMPTextScaleBtn";
+
 	public const string U_OBJ_N_LOCALIZE_TEXT_BTN = "LocalizeTextBtn";
 	public const string U_OBJ_N_LOCALIZE_TEXT_SCALE_BTN = "LocalizeTextScaleBtn";
+
+	public const string U_OBJ_N_TMP_LOCALIZE_TEXT_BTN = "TMPLocalizeTextBtn";
+	public const string U_OBJ_N_TMP_LOCALIZE_TEXT_SCALE_BTN = "TMPLocalizeTextScaleBtn";
 
 	public const string U_OBJ_N_IMG_BTN = "ImgBtn";
 	public const string U_OBJ_N_IMG_SCALE_BTN = "ImgScaleBtn";
@@ -365,8 +379,14 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_IMG_TEXT_BTN = "ImgTextBtn";
 	public const string U_OBJ_N_IMG_TEXT_SCALE_BTN = "ImgTextScaleBtn";
 
+	public const string U_OBJ_N_TMP_IMG_TEXT_BTN = "TMPImgTextBtn";
+	public const string U_OBJ_N_TMP_IMG_TEXT_SCALE_BTN = "TMPImgTextScaleBtn";
+
 	public const string U_OBJ_N_IMG_LOCALIZE_TEXT_BTN = "ImgLocalizeTextBtn";
 	public const string U_OBJ_N_IMG_LOCALIZE_TEXT_SCALE_BTN = "ImgLocalizeTextScaleBtn";
+
+	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_BTN = "TMPImgLocalizeTextBtn";
+	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN = "TMPImgLocalizeTextScaleBtn";
 
 	public const string U_OBJ_N_INPUT_FIELD = "InputField";
 	public const string U_OBJ_N_DROPDOWN = "Dropdown";
@@ -619,12 +639,20 @@ public static partial class KCDefine {
 	public static readonly string U_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_LEVEL_INFO_ROOT}G_LevelInfo_{"{0:000000000}"}";
 
 	public static readonly string U_OBJ_P_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_TEXT_ROOT}U_Text";
-	public static readonly string U_OBJ_P_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_TextBtn";
-	public static readonly string U_OBJ_P_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_TextScaleBtn";
+	public static readonly string U_OBJ_P_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/U_TextBtn";
+	public static readonly string U_OBJ_P_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/U_TextScaleBtn";
+
+	public static readonly string U_OBJ_P_TMP_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_TEXT_ROOT}U_TMPText";
+	public static readonly string U_OBJ_P_TMP_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPTextBtn";
+	public static readonly string U_OBJ_P_TMP_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPTextScaleBtn";
 
 	public static readonly string U_OBJ_P_LOCALIZE_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_TEXT_ROOT}U_LocalizeText";
-	public static readonly string U_OBJ_P_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_LocalizeTextBtn";
-	public static readonly string U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_LocalizeTextScaleBtn";
+	public static readonly string U_OBJ_P_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/U_LocalizeTextBtn";
+	public static readonly string U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/U_LocalizeTextScaleBtn";
+
+	public static readonly string U_OBJ_P_TMP_LOCALIZE_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_TEXT_ROOT}U_TMPLocalizeText";
+	public static readonly string U_OBJ_P_TMP_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPLocalizeTextBtn";
+	public static readonly string U_OBJ_P_TMP_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPLocalizeTextScaleBtn";
 
 	public static readonly string U_OBJ_P_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_Img";
 	public static readonly string U_OBJ_P_RAW_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_IMAGE_ROOT}U_RawImg";
@@ -634,11 +662,17 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_IMG_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgBtn";
 	public static readonly string U_OBJ_P_IMG_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgScaleBtn";
 
-	public static readonly string U_OBJ_P_IMG_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgTextBtn";
-	public static readonly string U_OBJ_P_IMG_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgTextScaleBtn";
+	public static readonly string U_OBJ_P_IMG_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/U_ImgTextBtn";
+	public static readonly string U_OBJ_P_IMG_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/U_ImgTextScaleBtn";
 
-	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgLocalizeTextBtn";
-	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}U_ImgLocalizeTextScaleBtn";
+	public static readonly string U_OBJ_P_TMP_IMG_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPImgTextBtn";
+	public static readonly string U_OBJ_P_TMP_IMG_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPImgTextScaleBtn";
+
+	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/U_ImgLocalizeTextBtn";
+	public static readonly string U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/U_ImgLocalizeTextScaleBtn";
+
+	public static readonly string U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPImgLocalizeTextBtn";
+	public static readonly string U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPImgLocalizeTextScaleBtn";
 
 	public static readonly string U_OBJ_P_INPUT_FIELD = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_INPUT_ROOT}U_InputField";
 	public static readonly string U_OBJ_P_DROPDOWN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_INPUT_ROOT}U_Dropdown";
@@ -736,7 +770,11 @@ public static partial class KCDefine {
 	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_VAL = KCDefine.U_TABLE_P_G_COMMON_VAL;
 	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_STR = KCDefine.U_TABLE_P_G_COMMON_STR;
 
+	public static readonly string U_FONT_P_G_KR = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_KRFont";
 	public static readonly string U_FONT_P_G_THAI = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_ThaiFont";
+
+	public static readonly string U_FONT_AP_G_KR = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_KRFontAsset";
+	public static readonly string U_FONT_AP_G_THAI = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_ThaiFontAsset";
 
 	public static readonly string U_SND_P_G_TOUCH_BEGIN = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchBegin";
 	public static readonly string U_SND_P_G_TOUCH_END = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchEnd";
