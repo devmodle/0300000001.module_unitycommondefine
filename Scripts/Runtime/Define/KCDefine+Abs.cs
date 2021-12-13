@@ -54,11 +54,13 @@ public static partial class KCDefine {
 	// 값 }
 
 	// 회전 {
+	public const float B_ANGLE_0_DEG = 0.0f;
 	public const float B_ANGLE_45_DEG = 45.0f;
 	public const float B_ANGLE_90_DEG = 90.0f;
 	public const float B_ANGLE_180_DEG = 180.0f;
 	public const float B_ANGLE_360_DEG = 360.0f;
 
+	public const float B_ANGLE_0_RAD = KCDefine.B_ANGLE_0_DEG * Mathf.Deg2Rad;
 	public const float B_ANGLE_45_RAD = KCDefine.B_ANGLE_45_DEG * Mathf.Deg2Rad;
 	public const float B_ANGLE_90_RAD = KCDefine.B_ANGLE_90_DEG * Mathf.Deg2Rad;
 	public const float B_ANGLE_180_RAD = KCDefine.B_ANGLE_180_DEG * Mathf.Deg2Rad;
