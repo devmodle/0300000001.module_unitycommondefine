@@ -80,6 +80,18 @@ public enum EMouseBtn {
 	MAX_VAL
 }
 
+/** 폰트 세트 */
+public enum EFontSet {
+	NONE = -1,
+	SET_A,
+	SET_B,
+	SET_C,
+	SET_D,
+	SET_E,
+	SET_F,
+	MAX_VAL
+}
+
 /** 방향 */
 public enum EDirection {
 	NONE = -1,
@@ -182,6 +194,14 @@ public enum EAnalyticsType {
 	MAX_VAL
 }
 
+/** 약관 동의 팝업 타입 */
+public enum EAgreePopupType {
+	NONE = -1,
+	KR,
+	EU,
+	MAX_VAL
+}
+
 /** 진동 타입 */
 public enum EVibrateType {
 	NONE = -1,
@@ -217,14 +237,6 @@ public enum EStartSceneEvent {
 	LOAD_LATE_SETUP_SCENE,
 	LOAD_PERMISSION_SCENE,
 	LOAD_INTRO_SCENE,
-	MAX_VAL
-}
-
-/** 약관 동의 팝업 타입 */
-public enum EAgreePopupType {
-	NONE = -1,
-	KR,
-	EU,
 	MAX_VAL
 }
 #endregion			// 기본

@@ -388,8 +388,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_BTN = "TMPImgLocalizeTextBtn";
 	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN = "TMPImgLocalizeTextScaleBtn";
 
-	public const string U_OBJ_N_INPUT_FIELD = "InputField";
 	public const string U_OBJ_N_DROPDOWN = "Dropdown";
+	public const string U_OBJ_N_INPUT_FIELD = "InputField";
+
+	public const string U_OBJ_N_TMP_DROPDOWN = "TMPDropdown";
+	public const string U_OBJ_N_TMP_INPUT_FIELD = "TMPInputField";
 
 	public const string U_OBJ_N_PAGE_VIEW = "PageView";
 	public const string U_OBJ_N_SCROLL_VIEW = "ScrollView";
@@ -437,8 +440,11 @@ public static partial class KCDefine {
 	public const string U_INPUT_E_N_HORIZONTAL = "Horizontal";
 
 	public const string U_PROPERTY_N_TEXT = "text";
+	public const string U_PROPERTY_N_FONT = "font";
 	public const string U_PROPERTY_N_COLOR = "color";
 	public const string U_PROPERTY_N_SPRITE = "sprite";
+	public const string U_PROPERTY_N_TMP_TEXT = "text";
+	public const string U_PROPERTY_N_TMP_FONT = "font";
 
 	public const string U_ASSET_N_LIGHTING_SETTINGS = "U_LightingSettings";
 	// 이름 }
@@ -558,6 +564,16 @@ public static partial class KCDefine {
 	#endregion			// 기본
 
 	#region 런타임 상수
+	// 기타 {
+	public static readonly STFontInfo U_INVALID_FONT_INFO = new STFontInfo() {
+		m_eLanguage = SystemLanguage.Unknown
+	};
+
+	public static readonly STFontSetInfo U_INVALID_FONT_SET_INFO = new STFontSetInfo() {
+		m_eSet = EFontSet.NONE
+	};
+	// 기타 }
+
 	// 영역
 	public static readonly Rect U_RECT_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
 
@@ -674,8 +690,11 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPImgLocalizeTextBtn";
 	public static readonly string U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/U_TMPImgLocalizeTextScaleBtn";
 
-	public static readonly string U_OBJ_P_INPUT_FIELD = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_INPUT_ROOT}U_InputField";
 	public static readonly string U_OBJ_P_DROPDOWN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_INPUT_ROOT}U_Dropdown";
+	public static readonly string U_OBJ_P_INPUT_FIELD = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_INPUT_ROOT}U_InputField";
+
+	public static readonly string U_OBJ_P_TMP_DROPDOWN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_INPUT_ROOT}U_TMPDropdown";
+	public static readonly string U_OBJ_P_TMP_INPUT_FIELD = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_INPUT_ROOT}U_TMPInputField";
 
 	public static readonly string U_OBJ_P_PAGE_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}U_PageView";
 	public static readonly string U_OBJ_P_SCROLL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}U_ScrollView";
@@ -717,6 +736,7 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DefineSymbolTable";
 	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProjInfoTable";
 	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
+	public static readonly string U_ASSET_P_G_LOCALIZE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_LocalizeInfoTable";
 	public static readonly string U_ASSET_P_G_SALE_ITEM_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleItemInfoTable";
 	public static readonly string U_ASSET_P_G_SALE_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
 	public static readonly string U_ASSET_P_G_MISSION_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_MissionInfoTable";
@@ -770,11 +790,13 @@ public static partial class KCDefine {
 	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_VAL = KCDefine.U_TABLE_P_G_COMMON_VAL;
 	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_STR = KCDefine.U_TABLE_P_G_COMMON_STR;
 
-	public static readonly string U_FONT_P_G_KR = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_KRFont";
 	public static readonly string U_FONT_P_G_THAI = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_ThaiFont";
+	public static readonly string U_FONT_P_G_KOREAN = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_KoreanFont";
+	public static readonly string U_FONT_P_G_ENGLISH = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_EnglishFont";
 
-	public static readonly string U_FONT_AP_G_KR = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_KRFontAsset";
-	public static readonly string U_FONT_AP_G_THAI = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_ThaiFontAsset";
+	public static readonly string U_FONT_P_G_TMP_THAI = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_TMPThaiFont";
+	public static readonly string U_FONT_P_G_TMP_KOREAN = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_TMPKoreanFont";
+	public static readonly string U_FONT_P_G_TMP_ENGLISH = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_TMPEnglishFont";
 
 	public static readonly string U_SND_P_G_TOUCH_BEGIN = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchBegin";
 	public static readonly string U_SND_P_G_TOUCH_END = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchEnd";

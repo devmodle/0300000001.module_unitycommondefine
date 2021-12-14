@@ -75,6 +75,21 @@ public struct STPostItemInfo {
 	public string m_oItemKinds;
 }
 
+/** 폰트 정보 */
+[System.Serializable]
+public struct STFontInfo {
+	public string m_oCountryCode;
+	public SystemLanguage m_eLanguage;
+	public List<STFontSetInfo> m_oFontSetInfoList;
+}
+
+/** 폰트 세트 정보 */
+[System.Serializable]
+public struct STFontSetInfo {
+	public EFontSet m_eSet;
+	public string m_oPath;
+}
+
 /** 디바이스 정보 */
 [System.Serializable]
 public struct STDeviceInfo {
@@ -93,7 +108,6 @@ public struct STDeviceConfig {
 [System.Serializable]
 public struct STBuildVerConfig {
 	public STBuildVerInfo m_stiOSBuildVerInfo;
-
 	public STBuildVerInfo m_stGoogleBuildVerInfo;
 	public STBuildVerInfo m_stAmazonBuildVerInfo;
 }
