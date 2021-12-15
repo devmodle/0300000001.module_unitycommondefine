@@ -86,8 +86,8 @@ public struct STFontInfo {
 /** 폰트 세트 정보 */
 [System.Serializable]
 public struct STFontSetInfo {
-	public EFontSet m_eSet;
 	public string m_oPath;
+	public EFontSet m_eSet;
 }
 
 /** 디바이스 정보 */
