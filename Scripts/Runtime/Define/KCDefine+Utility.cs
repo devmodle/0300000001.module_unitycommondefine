@@ -77,6 +77,7 @@ public static partial class KCDefine {
 	public const float U_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
 
 	public const float U_MIN_DELAY_FX_SNDS = 0.01f;
+	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.25f;
 	
 	public const float U_DURATION_ANI = 0.25f;
 	public const float U_DURATION_SCROLL_ANI = 0.25f;
@@ -95,8 +96,6 @@ public static partial class KCDefine {
 
 	public const float U_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_TIMEOUT_NETWORK_CONNECTION = 30.0f;
-
-	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.25f;
 	// 시간 }
 
 	// 레이어
@@ -161,6 +160,8 @@ public static partial class KCDefine {
 	public const string U_KEY_EVENT = "Event";
 	public const string U_KEY_CLEAR = "Clear";
 	public const string U_KEY_PRICE = "Price";
+	public const string U_KEY_MISSION = "Mission";
+	public const string U_KEY_TUTORIAL = "Tutorial";
 
 	public const string U_KEY_LEVEL = "Level";
 	public const string U_KEY_STAGE = "Stage";

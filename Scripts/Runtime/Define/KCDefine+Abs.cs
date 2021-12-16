@@ -199,6 +199,7 @@ public static partial class KCDefine {
 	// 디바이스 }
 
 	// 국가 코드
+	public const string B_THAI_COUNTRY_CODE = "TH";
 	public const string B_KOREA_COUNTRY_CODE = "KR";
 	public const string B_AMERICA_COUNTRY_CODE = "US";
 
@@ -365,6 +366,7 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_INCR = "+{0}";
 	public const string B_TEXT_FMT_DECR = "-{0}";
 	public const string B_TEXT_FMT_CROSS = "x{0}";
+	public const string B_TEXT_FMT_PERCENT = "{0}%";
 	public const string B_TEXT_FMT_BRACKET = "({0})";
 
 	public const string B_TEXT_FMT_VER = "Ver.{0}{1}";
@@ -393,6 +395,16 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_7_DIGITS = "{0:0000000}";
 	public const string B_TEXT_FMT_8_DIGITS = "{0:00000000}";
 	public const string B_TEXT_FMT_9_DIGITS = "{0:000000000}";
+
+	public const string B_TEXT_FMT_1_FLT_DIGITS = "{0:0.0}";
+	public const string B_TEXT_FMT_2_FLT_DIGITS = "{0:0.00}";
+	public const string B_TEXT_FMT_3_FLT_DIGITS = "{0:0.000}";
+	public const string B_TEXT_FMT_4_FLT_DIGITS = "{0:0.0000}";
+	public const string B_TEXT_FMT_5_FLT_DIGITS = "{0:0.00000}";
+	public const string B_TEXT_FMT_6_FLT_DIGITS = "{0:0.000000}";
+	public const string B_TEXT_FMT_7_FLT_DIGITS = "{0:0.0000000}";
+	public const string B_TEXT_FMT_8_FLT_DIGITS = "{0:0.00000000}";
+	public const string B_TEXT_FMT_9_FLT_DIGITS = "{0:0.000000000}";
 
 	public const string B_TEXT_FMT_2_COMBINE = "{0}{1}";
 	public const string B_TEXT_FMT_3_COMBINE = "{0}{1}{2}";

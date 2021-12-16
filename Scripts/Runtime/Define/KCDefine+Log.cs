@@ -25,6 +25,9 @@ public static partial class KCDefine {
 	public const string L_LOG_KEY_PARAMS_D = "ParamsD";
 	public const string L_LOG_KEY_PARAMS_E = "ParamsE";
 	public const string L_LOG_KEY_PARAMS_F = "ParamsF";
+	public const string L_LOG_KEY_PARAMS_G = "ParamsG";
+	public const string L_LOG_KEY_PARAMS_H = "ParamsH";
+	public const string L_LOG_KEY_PARAMS_I = "ParamsI";
 	// 식별자 }
 	#endregion			// 기본
 }
