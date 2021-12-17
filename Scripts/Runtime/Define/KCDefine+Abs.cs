@@ -207,10 +207,9 @@ public static partial class KCDefine {
 
 	// 이름 {
 	public const string B_PLATFORM_N_IOS = "iOS";
-	public const string B_PLATFORM_N_ANDROID = "Android";
-
 	public const string B_PLATFORM_N_APPLE = "Apple";
-	
+
+	public const string B_PLATFORM_N_ANDROID = "Android";
 	public const string B_PLATFORM_N_GOOGLE = "Google";
 	public const string B_PLATFORM_N_AMAZON = "Amazon";
 

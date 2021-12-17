@@ -107,7 +107,7 @@ public struct STDeviceConfig {
 /** 빌드 버전 속성 */
 [System.Serializable]
 public struct STBuildVerConfig {
-	public STBuildVerInfo m_stiOSBuildVerInfo;
+	public STBuildVerInfo m_stAppleBuildVerInfo;
 	public STBuildVerInfo m_stGoogleBuildVerInfo;
 	public STBuildVerInfo m_stAmazonBuildVerInfo;
 }

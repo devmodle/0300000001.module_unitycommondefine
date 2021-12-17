@@ -416,13 +416,6 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Analytics/Doxyfile", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Doxyfile"),
 
 #if FIREBASE_MODULE_ENABLE
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/01.iOSAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/01.iOSAppID.txt"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/01.iOSTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/01.iOSTesterGroups.txt"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/11.GoogleAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/11.GoogleAppID.txt"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/11.GoogleTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/11.GoogleTesterGroups.txt"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/12.AmazonAppID.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/12.AmazonAppID.txt"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Firebase/12.AmazonTesterGroups.txt", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Options/Firebase/12.AmazonTesterGroups.txt"),
-
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Datas/GameConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_GAME_CONFIG}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Datas/GameConfig.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_DATA_P_G_GAME_CONFIG}.json"),
 
