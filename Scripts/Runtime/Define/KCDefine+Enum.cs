@@ -290,6 +290,13 @@ public enum EBuildType {
 	MAX_VAL
 }
 
+/** iOS 타입 */
+public enum EiOSType {
+	NONE = -1,
+	APPLE,
+	MAX_VAL
+}
+
 /** 안드로이드 타입 */
 public enum EAndroidType {
 	NONE = -1,

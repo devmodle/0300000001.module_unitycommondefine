@@ -104,7 +104,7 @@ public static partial class KCDefine {
 	public const int U_LAYER_IGNORE_RAYCAST = 2;
 	public const int U_LAYER_WATER = 4;
 	public const int U_LAYER_UIS = 5;
-	public const int U_LAYER_CUSTOM = 8;
+	public const int U_LAYER_CUSTOM = 11;
 
 	// 정렬 순서 {
 	public const int U_SORTING_O_SCREEN_POPUP_UIS = 0;
@@ -119,15 +119,9 @@ public static partial class KCDefine {
 	// 애니메이션
 	public const Ease U_EASE_ANI = Ease.OutQuad;
 
-	// 광원 {
-#if SHADOW_ENABLE
+	// 광원
 	public const LightShadows U_LIGHT_SHADOW_TYPE_SUB = LightShadows.Hard;
 	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.Soft;
-#else
-	public const LightShadows U_LIGHT_SHADOW_TYPE_SUB = LightShadows.None;
-	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.None;
-#endif			// #if SHADOW_ENABLE
-	// 광원 }
 
 	// 회전
 	public static readonly Vector3 U_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
@@ -567,7 +561,7 @@ public static partial class KCDefine {
 	#region 런타임 상수
 	// 기타 {
 	public static readonly STFontInfo U_INVALID_FONT_INFO = new STFontInfo() {
-		m_eLanguage = SystemLanguage.Unknown
+		m_eSystemLanguage = SystemLanguage.Unknown
 	};
 
 	public static readonly STFontSetInfo U_INVALID_FONT_SET_INFO = new STFontSetInfo() {
@@ -925,16 +919,16 @@ public static partial class KCDefine {
 	// 이름 }
 	
 	// 옵션 {
-#if ULTRA_QUALITY_LEVEL_ENABLE
-	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
-	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
-#elif HIGH_QUALITY_LEVEL_ENABLE
+#if HIGH_QUALITY_LEVEL_ENABLE
 	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.THREE_CASCADES;
+#elif ULTRA_QUALITY_LEVEL_ENABLE
+	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
+	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
 #else
 	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._2xBilinear;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
-#endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
+#endif			// #if HIGH_QUALITY_LEVEL_ENABLE
 	// 옵션 }
 #endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
 
@@ -1257,5 +1251,10 @@ public static partial class KCDefine {
 	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
 	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
 #endif			// #if PURCHASE_MODULE_ENABLE
+
+#if NOTI_MODULE_ENABLE
+	// 경로
+	public static readonly string U_DATA_P_NOTI_GROUP_IDS = $"{KCDefine.B_DIR_P_WRITABLE}NotiGroupIDs.bytes";
+#endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }

@@ -190,8 +190,10 @@ public static partial class KCDefine {
 	public const string B_FILE_EXTENSION_CSV = ".csv";
 	public const string B_FILE_EXTENSION_TXT = ".txt";
 	public const string B_FILE_EXTENSION_JSON = ".json";
+	public const string B_FILE_EXTENSION_ASSET = ".asset";
 	public const string B_FILE_EXTENSION_BYTES = ".bytes";
 	public const string B_FILE_EXTENSION_SPRITE_ATLAS = ".spriteatlas";
+	public const string B_FILE_EXTENSION_TMP_FONT_ASSET = KCDefine.B_FILE_EXTENSION_ASSET;
 
 	public const string B_STR_KOREAN_PATTERN = "[ㄱ-ㅎ가-힣]";
 	public const SystemLanguage B_DEF_LANGUAGE = SystemLanguage.English;
@@ -206,6 +208,8 @@ public static partial class KCDefine {
 	// 이름 {
 	public const string B_PLATFORM_N_IOS = "iOS";
 	public const string B_PLATFORM_N_ANDROID = "Android";
+
+	public const string B_PLATFORM_N_APPLE = "Apple";
 	
 	public const string B_PLATFORM_N_GOOGLE = "Google";
 	public const string B_PLATFORM_N_AMAZON = "Amazon";

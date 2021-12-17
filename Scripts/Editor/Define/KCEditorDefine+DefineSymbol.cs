@@ -17,6 +17,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 	public const string DS_DEFINE_S_MULTI_TOUCH_ENABLE = "MULTI_TOUCH_ENABLE";
 
+	// 버전
+	public const string DS_DEFINE_S_MODULE_VER_1_8_0_OR_NEWER = "MODULE_VER_1_8_0_OR_NEWER";
+
 	// 플러그인
 	public const string DS_DEFINE_S_DOTWEEN_ENABLE = "DOTWEEN_ENABLE";
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
@@ -97,13 +100,13 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_HIGH_QUALITY_LEVEL_ENABLE = "HIGH_QUALITY_LEVEL_ENABLE";
 	public const string DS_DEFINE_S_ULTRA_QUALITY_LEVEL_ENABLE = "ULTRA_QUALITY_LEVEL_ENABLE";
 
+	public const string DS_DEFINE_S_MSAA_ENABLE = "MSAA_ENABLE";
 	public const string DS_DEFINE_S_PIXELS_PERFECT_ENABLE = "PIXELS_PERFECT_ENABLE";
 	public const string DS_DEFINE_S_CAMERA_STACKING_ENABLE = "CAMERA_STACKING_ENABLE";
 	// 렌더링 }
 
 	// 광원 {
 	public const string DS_DEFINE_S_LIGHT_ENABLE = "LIGHT_ENABLE";
-	public const string DS_DEFINE_S_SHADOW_ENABLE = "SHADOW_ENABLE";
 	public const string DS_DEFINE_S_GPU_LIGHTMAPPER_ENABLE = "GPU_LIGHTMAPPER_ENABLE";
 
 	public const string DS_DEFINE_S_LIGHTMAP_BAKE_ENABLE = "LIGHTMAP_BAKE_ENABLE";
@@ -116,6 +119,8 @@ public static partial class KCEditorDefine {
 	// 광원 }
 
 	// 플랫폼 {
+	public const string DS_DEFINE_S_APPLE_PLATFORM = "APPLE_PLATFORM";
+
 	public const string DS_DEFINE_S_GOOGLE_PLATFORM = "GOOGLE_PLATFORM";
 	public const string DS_DEFINE_S_AMAZON_PLATFORM = "AMAZON_PLATFORM";
 
@@ -161,8 +166,6 @@ public static partial class KCEditorDefine {
 	// 테스트 }
 
 	// 기타 {
-	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
-
 	public const string DS_DEFINE_S_STUDY_ENABLE = "STUDY_ENABLE";
 	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
 
@@ -187,6 +190,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_ADDRESSABLES_ENABLE = "ADDRESSABLES_ENABLE";
 	public const string DS_DEFINE_S_BURST_COMPILER_ENABLE = "BURST_COMPILER_ENABLE";
 	
+	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";

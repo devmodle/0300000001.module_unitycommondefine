@@ -15,7 +15,7 @@ using Unity.Notifications.iOS;
 public static partial class KCEditorDefine {
 	#region 기본
 	// 단위
-	public const int B_UNIT_MAX_TEXTURE_SIZE = 2048;
+	public const int B_UNIT_MAX_TEXTURE_SIZE = 4096;
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
 	// 시간
@@ -47,7 +47,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_OBJ_N_SCENE_EDITOR_CAMERA = "SceneCamera";
 	public const string B_OBJ_N_SCENE_EDITOR_LIGHT = "SceneLight";
-	
+
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
 	public const string B_PROPERTY_N_REQUIRE_AR_KIT_SUPPORTS = "requiresARKitSupport";
 	public const string B_PROPERTY_N_APPLE_ENABLE_PRO_MOTION = "appleEnableProMotion";
@@ -55,6 +55,11 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_N_VALIDATE_APP_BUNDLE_SIZE = "validateAppBundleSize";
 	public const string B_PROPERTY_N_APP_BUNDLE_SIZE_TO_VALIDATE = "appBundleSizeToValidate";
 	public const string B_PROPERTY_N_SUPPORTED_ASPECT_RATIO_MODE = "supportedAspectRatioMode";
+
+	public const string B_PROPERTY_N_ATLAS_WIDTH = "atlasWidth";
+	public const string B_PROPERTY_N_ATLAS_HEIGHT = "atlasHeight";
+	public const string B_PROPERTY_N_ATLAS_RENDER_MODE = "atlasRenderMode";
+	public const string B_PROPERTY_N_CLEAR_DYNAMIC_DATA_ON_BUILD = "clearDynamicDataOnBuild";
 
 	public const string B_PROPERTY_N_SORTING_LAYER = "sortingLayerName";
 	public const string B_PROPERTY_N_SORTING_ORDER = "sortingOrder";
@@ -220,13 +225,13 @@ public static partial class KCEditorDefine {
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
 
-#if ULTRA_QUALITY_LEVEL_ENABLE
-	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.HIGH;
-#elif HIGH_QUALITY_LEVEL_ENABLE
+#if HIGH_QUALITY_LEVEL_ENABLE
 	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.NORM;
+#elif ULTRA_QUALITY_LEVEL_ENABLE
+	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.HIGH;
 #else
 	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.LOW;
-#endif			// #if ULTRA_QUALITY_LEVEL_ENABLE
+#endif			// #if HIGH_QUALITY_LEVEL_ENABLE
 
 	public static readonly List<string> B_EDITOR_OPTS_EXTENSION_LIST = new List<string>() {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
@@ -259,7 +264,7 @@ public static partial class KCEditorDefine {
 	public const int B_FONT_SIZE_FPS_C_DYNAMIC_TEXT = 24;
 	
 	// 패키지
-	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-v3.9.0";
+	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-v3.9.1";
 	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-v3.0.12";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";

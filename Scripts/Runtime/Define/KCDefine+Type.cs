@@ -79,7 +79,7 @@ public struct STPostItemInfo {
 [System.Serializable]
 public struct STFontInfo {
 	public string m_oCountryCode;
-	public SystemLanguage m_eLanguage;
+	public SystemLanguage m_eSystemLanguage;
 	public List<STFontSetInfo> m_oFontSetInfoList;
 }
 
