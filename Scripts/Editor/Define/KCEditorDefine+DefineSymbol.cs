@@ -119,13 +119,16 @@ public static partial class KCEditorDefine {
 	// 광원 }
 
 	// 플랫폼 {
-	public const string DS_DEFINE_S_APPLE_PLATFORM = "APPLE_PLATFORM";
+	public const string DS_DEFINE_S_IOS_APPLE_PLATFORM = "IOS_APPLE_PLATFORM";
 
-	public const string DS_DEFINE_S_GOOGLE_PLATFORM = "GOOGLE_PLATFORM";
-	public const string DS_DEFINE_S_AMAZON_PLATFORM = "AMAZON_PLATFORM";
+	public const string DS_DEFINE_S_ANDROID_GOOGLE_PLATFORM = "ANDROID_GOOGLE_PLATFORM";
+	public const string DS_DEFINE_S_ANDROID_AMAZON_PLATFORM = "ANDROID_AMAZON_PLATFORM";
+	public const string DS_DEFINE_S_ANDROID_ONE_STORE_PLATFORM = "ANDROID_ONE_STORE_PLATFORM";
 
-	public const string DS_DEFINE_S_MAC_PLATFORM = "MAC_PLATFORM";
-	public const string DS_DEFINE_S_WNDS_PLATFORM = "WNDS_PLATFORM";
+	public const string DS_DEFINE_S_MAC_APPLE_PLATFORM = "MAC_APPLE_PLATFORM";
+	public const string DS_DEFINE_S_MAC_STEAM_PLATFORM = "MAC_STEAM_PLATFORM";
+	
+	public const string DS_DEFINE_S_WNDS_STEAM_PLATFORM = "WNDS_STEAM_PLATFORM";
 	// 플랫폼 }
 
 	// 테스트 {
