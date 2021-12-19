@@ -110,7 +110,7 @@ public static partial class KCEditorDefine {
 	public const string B_IPA_EXPORT_METHOD_IOS_DEV = "development";
 	public const string B_IPA_EXPORT_METHOD_IOS_STORE = "app-store";
 
-	public const string B_BUILD_P_IOS = "Builds/iOS";
+	public const string B_BUILD_P_FMT_IOS = "Builds/iOS/{0}";
 	public const string B_PLIST_P_FMT_IOS = "{0}/Info.plist";
 	public const string B_SEARCH_P_IOS_PODS = "$(SRCROOT)/**";
 
@@ -119,11 +119,11 @@ public static partial class KCEditorDefine {
 	public const string B_BUILD_CMD_FMT_IOS_COCOA_PODS = "pod update --clean-install --project-directory={0}";
 
 	public const string B_KEY_IOS_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
-	public const string B_KEY_IOS_USER_TRACKING_USAGE_DESC = "NSUserTrackingUsageDescription";
 	public const string B_KEY_IOS_DEVICE_CAPABILITIES = "UIRequiredDeviceCapabilities";
+	public const string B_KEY_IOS_USER_TRACKING_USAGE_DESC = "NSUserTrackingUsageDescription";
 
-	public const string B_KEY_IOS_ADS_NETWORK_ITEMS = "SKAdNetworkItems";
 	public const string B_KEY_IOS_ADS_NETWORK_ID = "SKAdNetworkIdentifier";
+	public const string B_KEY_IOS_ADS_NETWORK_ITEMS = "SKAdNetworkItems";
 	
 	public const string B_PROPERTY_N_IOS_ENABLE_BITCODE = "ENABLE_BITCODE";
 	public const string B_PROPERTY_N_IOS_USER_HEADER_SEARCH_PATHS = "USER_HEADER_SEARCH_PATHS";
@@ -131,19 +131,23 @@ public static partial class KCEditorDefine {
 	// iOS }
 
 	// 안드로이드 {
+	public const int B_UNIT_VALIDATE_APP_BUNDLE_SIZE = 150;
+
 	public const string B_BUILD_FILE_EXTENSION_ANDROID_APK = "apk";
 	public const string B_BUILD_FILE_EXTENSION_ANDROID_AAB = "aab";
 
-	public const string B_BUILD_P_FMT_ANDROID = "Builds/Android/{0}/{1}.{2}";
-	public const string B_BUILD_FILE_N_FMT_ANDROID = "{0}BuildOutput";
+	public const string B_BUILD_P_FMT_ANDROID = "Builds/Android/{0}/{1}";
+	public const string B_BUILD_FILE_N_FMT_ANDROID = "{0}BuildOutput.{1}";
 	// 안드로이드 }
 
-	// 맥
-	public const string B_BUILD_P_MAC = "Builds/Standalone/Mac/MacBuildOutput.app";
+	// 독립 플랫폼 {
+	public const string B_BUILD_FILE_EXTENSION_STANDALONE_APP = "app";
+	public const string B_BUILD_FILE_EXTENSION_STANDALONE_EXE = "exe";
 
-	// 윈도우즈
-	public const string B_BUILD_P_WNDS = "Builds/Standalone/Wnds/WndsBuildOutput.exe";
-
+	public const string B_BUILD_P_FMT_STANDALONE = "Builds/Standalone/{0}/{1}";
+	public const string B_BUILD_FILE_N_FMT_STANDALONE = "{0}BuildOutput.{1}";
+	// 독립 플랫폼 }
+	
 	// 젠킨스 {
 	public const string B_KEY_JENKINS_ENGINE_VER = "EngineVer";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
@@ -273,9 +277,6 @@ public static partial class KCEditorDefine {
 	#endregion			// 기본
 
 	#region 런타임 상수
-	// 색상
-	public static readonly Color B_COLOR_UNITY_LOGO_BG = Color.black;
-
 	// 크기
 	public static readonly Vector3 B_MIN_SIZE_EDITOR_WND = new Vector3(350.0f, 350.0f, 0.0f);
 
@@ -816,9 +817,9 @@ public static partial class KCEditorDefine {
 
 	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {
 		// 02.UnityProject {
-#if UNIVERSAL_PIPELINE_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if UNIVERSAL_RENDER_PIPELINE_ENABLE || UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP_ASSET}.asset")
-#endif			// #if UNIVERSAL_PIPELINE_ENABLE || UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_ENABLE || UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 		// 02.UnityProject }
 	};
 
@@ -986,7 +987,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/unityLibrary/libs/unity-classes.jar";
 
 	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_ANDROID = new List<GraphicsDeviceType>() {
-		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3, GraphicsDeviceType.OpenGLES2
+		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3
 	};
 	// 안드로이드 }
 
@@ -1001,9 +1002,14 @@ public static partial class KCEditorDefine {
 
 	// 윈도우즈
 	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_WNDS = new List<GraphicsDeviceType>() {
-		GraphicsDeviceType.Direct3D12, GraphicsDeviceType.Direct3D11
+		GraphicsDeviceType.Direct3D11, GraphicsDeviceType.OpenGLCore
 	};
 
+	// 리눅스
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_LINUX = new List<GraphicsDeviceType>() {
+		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLCore
+	};
+	
 	// 젠킨스
 	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", Application.unityVersion);
 	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", Application.unityVersion);
@@ -1011,6 +1017,13 @@ public static partial class KCEditorDefine {
 	#endregion			// 런타임 상수
 
 	#region 조건부 상수
+#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+	// 이름
+	public const string B_PROPERTY_N_STRIP_DEBUG_VARIANTS = "m_StripDebugVariants";
+	public const string B_PROPERTY_N_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
+	public const string B_PROPERTY_N_STRIP_UNUSED_POST_PROCESSING_VARIANTS = "m_StripUnusedPostProcessingVariants";
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+
 #if NOTI_MODULE_ENABLE
 	// 옵션
 	public const PresentationOption B_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
@@ -1026,6 +1039,11 @@ public static partial class KCEditorDefine {
 	// 경로
 	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
 #endif			// #if INPUT_SYSTEM_MODULE_ENABLE
+
+#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+	// 경로
+	public static readonly string B_ASSET_P_UNIVERSAL_RP_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}UniversalRenderPipelineGlobalSettings.asset";
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 
 #if NOTI_MODULE_ENABLE
 	// 경로

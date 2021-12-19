@@ -93,23 +93,29 @@ public struct STFontSetInfo {
 /** 디바이스 정보 */
 [System.Serializable]
 public struct STDeviceInfo {
-	public List<string> m_oiOSAdmobIDList;
-	public List<string> m_oAndroidAdmobIDList;
+	public List<string> m_oiOSTestDeviceAdmobIDList;
+	public List<string> m_oAndroidTestDeviceAdmobIDList;
 }
 
 /** 디바이스 속성 */
 [System.Serializable]
 public struct STDeviceConfig {
-	public List<string> m_oiOSAdsIDList;
-	public List<string> m_oAndroidAdsIDList;
+	public List<string> m_oiOSTestDeviceAdsIDList;
+	public List<string> m_oAndroidTestDeviceAdsIDList;
 }
 
 /** 빌드 버전 속성 */
 [System.Serializable]
 public struct STBuildVerConfig {
-	public STBuildVerInfo m_stAppleBuildVerInfo;
-	public STBuildVerInfo m_stGoogleBuildVerInfo;
-	public STBuildVerInfo m_stAmazonBuildVerInfo;
+	public STBuildVerInfo m_stiOSAppleBuildVerInfo;
+
+	public STBuildVerInfo m_stAndroidGoogleBuildVerInfo;
+	public STBuildVerInfo m_stAndroidAmazonBuildVerInfo;
+	public STBuildVerInfo m_stAndroidOneStoreBuildVerInfo;
+
+	public STBuildVerInfo m_stMacAppleBuildVerInfo;
+	public STBuildVerInfo m_stMacSteamBuildVerInfo;
+	public STBuildVerInfo m_stWndsSteamBuildVerInfo;
 }
 
 /** 공용 타입 래퍼 */

@@ -20,9 +20,9 @@ using Unity.Notifications.Android;
 #endif			// #if UNITY_IOS
 #endif			// #if NOTI_MODULE_ENABLE
 
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 using UnityEngine.Rendering.Universal;
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 
 /** 유틸리티 상수 */
 public static partial class KCDefine {
@@ -875,22 +875,19 @@ public static partial class KCDefine {
 #endif			// #if UNITY_EDITOR
 
 	// 광원 {
-#if !LIGHTMAP_BAKE_ENABLE || REALTIME_LIGHTMAP_BAKE_ENABLE
+#if REALTIME_LIGHTMAP_BAKE_DIRECTIONAL_ENABLE
 	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Realtime;
 #else
 	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Mixed;
-#endif			// #if !LIGHTMAP_BAKE_ENABLE || REALTIME_LIGHTMAP_BAKE_ENABLE
+#endif			// #if REALTIME_LIGHTMAP_BAKE_DIRECTIONAL_ENABLE
 	// 광원 }
 
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 	// 개수
 	public const int U_MAX_NUM_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ = 4;
 
 	// 크기
 	public const int U_SIZE_UNIVERSAL_RP_COLOR_GRADING_LUT = 32;
-
-	// 비율
-	public const float U_SCALE_UNIVERSAL_RP_RENDERING = 1.0f;
 
 	// 길이
 	public const float U_PERCENT_UNIVERSAL_RP_CASCADE_2_SPLIT = 0.25f;
@@ -930,7 +927,7 @@ public static partial class KCDefine {
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
 #endif			// #if HIGH_QUALITY_LEVEL_ENABLE
 	// 옵션 }
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 
 #if UNITY_IOS
 	// 이름
@@ -1193,11 +1190,11 @@ public static partial class KCDefine {
 	};
 #endif			// #if UNITY_IOS
 
-#if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 	// 길이
 	public static readonly Vector2 U_PERCENT_UNIVERSAL_RP_CASCADE_3_SPLIT = new Vector2(0.1f, 0.3f);
 	public static readonly Vector3 U_PERCENT_UNIVERSAL_RP_CASCADE_4_SPLIT = new Vector3(0.075f, 0.2f, 0.45f);
-#endif			// #if UNIVERSAL_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE
 	// 기타

@@ -309,8 +309,9 @@ public enum EAndroidType {
 /** 독립 플랫폼 타입 */
 public enum EStandaloneType {
 	NONE = -1,
-	MAC,
-	WNDS,
+	MAC_APPLE,
+	MAC_STEAM,
+	WNDS_STEAM,
 	MAX_VAL
 }
 
