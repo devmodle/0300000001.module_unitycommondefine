@@ -86,6 +86,7 @@ public static partial class KCDefine {
 	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
 
 	public const int B_UNIT_DIGITS_PER_TEN = 10;
+	public const int B_UNIT_DIGITS_PER_HUNDRED = 100;
 	public const int B_UNIT_DIGITS_PER_THOUSAND = 1000;
 
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
