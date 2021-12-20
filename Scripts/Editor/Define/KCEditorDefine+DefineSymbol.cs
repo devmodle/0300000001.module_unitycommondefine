@@ -192,8 +192,10 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_ADDRESSABLES_ENABLE = "ADDRESSABLES_ENABLE";
 	public const string DS_DEFINE_S_BURST_COMPILER_ENABLE = "BURST_COMPILER_ENABLE";
-	
+
 	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
+	public const string DS_DEFINE_S_EDITOR_BUILD = "EDITOR_BUILD";
+
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
