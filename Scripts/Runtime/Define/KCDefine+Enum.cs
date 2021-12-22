@@ -89,6 +89,9 @@ public enum EFontSet {
 	SET_D,
 	SET_E,
 	SET_F,
+	SET_G,
+	SET_H,
+	SET_I,
 	MAX_VAL
 }
 

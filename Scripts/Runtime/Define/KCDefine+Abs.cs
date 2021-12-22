@@ -197,12 +197,13 @@ public static partial class KCDefine {
 	public const string B_FILE_EXTENSION_TMP_FONT_ASSET = KCDefine.B_FILE_EXTENSION_ASSET;
 
 	public const string B_STR_KOREAN_PATTERN = "[ㄱ-ㅎ가-힣]";
+	public const string B_STR_ENGLISH_PATTERN = "[a-zA-Z]";
+
 	public const SystemLanguage B_DEF_LANGUAGE = SystemLanguage.English;
 	public static readonly Vector3 B_SCREEN_SIZE = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	// 디바이스 }
 
 	// 국가 코드
-	public const string B_THAI_COUNTRY_CODE = "TH";
 	public const string B_KOREA_COUNTRY_CODE = "KR";
 	public const string B_AMERICA_COUNTRY_CODE = "US";
 
