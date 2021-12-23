@@ -31,10 +31,19 @@ public struct STSortingOrderInfo {
 	public string m_oLayer;
 }
 
-/** 시퀀스 애니메이션 정보 */
-public struct STSequenceInfo {
-	public Sequence m_oSequence;
+/** 비활성화 객체 정보 */
+public struct STDespawnObjInfo {
+	public bool m_bIsDestroy;
+	public string m_oKey;
+	public System.DateTime m_stDespawnTime;
+
 	public GameObject m_oObj;
+}
+
+/** 터치 응답자 정보 */
+public struct STTouchResponderInfo {
+	public Tween m_oAni;
+	public GameObject m_oTouchResponder;
 }
 
 /** 식별자 정보 */

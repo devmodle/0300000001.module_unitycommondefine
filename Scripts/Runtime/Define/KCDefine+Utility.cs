@@ -37,7 +37,7 @@ public static partial class KCDefine {
 	// 개수 }
 
 	// 크기 {
-	public const int U_SIZE_OBJS_POOL = 10;
+	public const int U_SIZE_OBJS_POOL = 100;
 
 	public const int U_DEF_MIN_SIZE_FONT = 10;
 	public const int U_DEF_MAX_SIZE_FONT = 14;
@@ -265,6 +265,7 @@ public static partial class KCDefine {
 	
 	public const string U_OBJ_N_TITLE_TEXT = "TitleText";
 	public const string U_OBJ_N_MSG_TEXT = "MsgText";
+	public const string U_OBJ_N_PAGE_TEXT = "PageText";
 
 	public const string U_OBJ_N_NAME_TEXT = "NameText";
 	public const string U_OBJ_N_DESC_TEXT = "DescText";
@@ -811,8 +812,9 @@ public static partial class KCDefine {
 	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPRenderData";
 	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_SSAO_RENDER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPSSAORenderData";
 
-	public static readonly string U_IMG_P_G_SPLASH = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_Splash";
+	public static readonly string U_IMG_P_G_ARROW = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_Arrow";
 	public static readonly string U_IMG_P_G_WHITE = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_UnityWhite";
+	public static readonly string U_IMG_P_G_SPLASH = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_Splash";
 
 #if UNITY_EDITOR
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.bytes";
