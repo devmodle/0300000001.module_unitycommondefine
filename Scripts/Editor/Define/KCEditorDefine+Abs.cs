@@ -18,6 +18,22 @@ public static partial class KCEditorDefine {
 	public const int B_UNIT_MAX_TEXTURE_SIZE = 4096;
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
+	// 정렬 순서 {
+	public const int B_SORTING_O_BUILD_MENU = 1000;
+
+	public const int B_SORTING_O_SETUP_MENU = 2000;
+	public const int B_SORTING_O_RESET_MENU = KCEditorDefine.B_SORTING_O_SETUP_MENU + 1;
+
+	public const int B_SORTING_O_IMPORT_MENU = 3000;
+	public const int B_SORTING_O_EXPORT_MENU = KCEditorDefine.B_SORTING_O_IMPORT_MENU + 1;
+
+	public const int B_SORTING_O_CREATE_MENU = 4000;
+	public const int B_SORTING_O_SUB_CREATE_MENU = KCEditorDefine.B_SORTING_O_CREATE_MENU + 1;
+
+	public const int B_SORTING_O_EDITOR_WND_MENU = 5000;
+	public const int B_SORTING_O_CHANGE_PLATFORM_MENU = KCEditorDefine.B_SORTING_O_EDITOR_WND_MENU + 1;
+	// 정렬 순서 }
+
 	// 시간
 	public const float B_DELTA_T_HIERARCHY_UPDATE = 1.0f;
 	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
@@ -32,6 +48,25 @@ public static partial class KCEditorDefine {
 
 	// 버전
 	public const string B_VER_UNITY_MODULE = "2.0.0";
+
+	// 메뉴 {
+	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
+	public const string B_MENU_GAME_OBJECT_BASE = "GameObject/Utility/";
+
+	public const string B_MENU_TOOLS_BUILD_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Build/";
+	public const string B_MENU_TOOLS_SETUP_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Setup/";
+	public const string B_MENU_TOOLS_RESET_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Reset/";
+	public const string B_MENU_TOOLS_IMPORT_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Import/";
+	public const string B_MENU_TOOLS_EXPORT_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Export/";
+	public const string B_MENU_TOOLS_CREATE_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Create/";
+	public const string B_MENU_TOOLS_SUB_CREATE_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "SubCreate/";
+	public const string B_MENU_TOOLS_EDITOR_WND_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "EditorWindow/";
+	public const string B_MENU_TOOLS_CHANGE_PLATFORM_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "ChangePlatform/";
+
+	public const string B_MENU_GAME_OBJECT_UI_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "UI/";
+	public const string B_MENU_GAME_OBJECT_2D_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "2D/";
+	public const string B_MENU_GAME_OBJECT_FX_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "FX/";
+	// 메뉴 }
 
 	// 커맨드 라인 {
 	public const string B_CMD_LINE_PARAMS_FMT_SHELL = "-c \"{0}\"";
@@ -220,11 +255,11 @@ public static partial class KCEditorDefine {
 #endif			// #if GPU_LIGHTMAPPER_ENABLE
 
 #if LIGHTMAP_SHADOW_BAKE_ENABLE
-#if LIGHTMAP_SHADOW_BAKE_MASK_MODE_ENABLE
+#if LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Shadowmask;
 #else
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Subtractive;
-#endif			// #if LIGHTMAP_SHADOW_BAKE_MASK_MODE_ENABLE
+#endif			// #if LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE
 #else
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
@@ -1010,7 +1045,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/unityLibrary/libs/unity-classes.jar";
 
 	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_ANDROID = new List<GraphicsDeviceType>() {
-		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3
+		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3, GraphicsDeviceType.OpenGLES2
 	};
 	// 안드로이드 }
 
