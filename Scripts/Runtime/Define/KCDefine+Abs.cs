@@ -214,9 +214,9 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_ANDROID_AMAZON = "AndroidAmazon";
 	public const string B_PLATFORM_N_ANDROID_ONE_STORE = "AndroidOneStore";
 
-	public const string B_PLATFORM_N_MAC_APPLE = "MacApple";
-	public const string B_PLATFORM_N_MAC_STEAM = "MacSteam";
-	public const string B_PLATFORM_N_WNDS_STEAM = "WndsSteam";
+	public const string B_PLATFORM_N_STANDALONE_MAC_APPLE = "StandaloneMacApple";
+	public const string B_PLATFORM_N_STANDALONE_MAC_STEAM = "StandaloneMacSteam";
+	public const string B_PLATFORM_N_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
 
 	public const string B_PLATFORM_N_DEF_TEXTURE = "DefaultTexturePlatform";
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";

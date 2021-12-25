@@ -122,9 +122,9 @@ public struct STBuildVerConfig {
 	public STBuildVerInfo m_stAndroidAmazonBuildVerInfo;
 	public STBuildVerInfo m_stAndroidOneStoreBuildVerInfo;
 
-	public STBuildVerInfo m_stMacAppleBuildVerInfo;
-	public STBuildVerInfo m_stMacSteamBuildVerInfo;
-	public STBuildVerInfo m_stWndsSteamBuildVerInfo;
+	public STBuildVerInfo m_stStandaloneMacAppleBuildVerInfo;
+	public STBuildVerInfo m_stStandaloneMacSteamBuildVerInfo;
+	public STBuildVerInfo m_stStandaloneWndsSteamBuildVerInfo;
 }
 
 /** 공용 타입 래퍼 */
