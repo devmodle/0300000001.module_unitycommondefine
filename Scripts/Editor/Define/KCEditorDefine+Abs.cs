@@ -192,6 +192,7 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_BUNDLE_ID = "BundleID";
 	public const string B_KEY_JENKINS_PROFILE_ID = "ProfileID";
 	public const string B_KEY_JENKINS_PLATFORM = "Platform";
+	public const string B_KEY_JENKINS_PROJ_PLATFORM = "ProjPlatform";
 	public const string B_KEY_JENKINS_ANALYTICS = "Analytics";
 	public const string B_KEY_JENKINS_BUILD_MODE = "BuildMode";
 	public const string B_KEY_JENKINS_BUILD_VER = "BuildVer";
@@ -200,14 +201,17 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_IPA_EXPORT_METHOD = "IPAExportMethod";
 	public const string B_KEY_JENKINS_BUILD_FILE_EXTENSION = "BuildFileExtension";
 
-	public const string B_BUILD_PARAMS_TOKEN_JENKINS = " ";
+	public const string B_PROJ_PLATFORM_N_IOS = "iOS";
+	public const string B_PROJ_PLATFORM_N_ANDROID = "Android";
+	public const string B_PROJ_PLATFORM_N_STANDALONE_MAC = "OSXUniversal";
+	public const string B_PROJ_PLATFORM_N_STANDALONE_WNDS = "Win64";
+
+	public const string B_BUILD_CMD_FMT_JENKINS = "curl -X POST {0} --user {1}:{2} --data token={3}";
+	public const string B_BUILD_DATA_FMT_JENKINS = "--data {0}={1}";
 	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/00000001.Common/job/{0}/job/01.Pipelines/job";
 
-	public const string B_BUILD_DATA_FMT_JENKINS = "--data {0}={1}";
-	public const string B_BUILD_CMD_FMT_JENKINS = "curl -X POST {0} --user {1}:{2} --data token={3}";
-
-	public const string B_BRANCH_FMT_JENKINS = "origin/{0}";
 	public const string B_SRC_FMT_JENKINS = "{0}/{1}";
+	public const string B_BRANCH_FMT_JENKINS = "origin/{0}";
 	public const string B_PROJ_P_FMT_JENKINS = "{0}/{1}/{2}";
 	public const string B_ANALYTICS_FMT_JENKINS = "{0}/00.Analytics";
 
