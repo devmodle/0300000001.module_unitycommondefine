@@ -80,8 +80,8 @@ public static partial class KCEditorDefine {
 	public const string B_MODULE_N_INPUT_SYSTEM = "com.unity.input.settings";
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
 
-	public const string B_OBJ_N_SCENE_EDITOR_CAMERA = "SceneCamera";
 	public const string B_OBJ_N_SCENE_EDITOR_LIGHT = "SceneLight";
+	public const string B_OBJ_N_SCENE_EDITOR_CAMERA = "SceneCamera";
 
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
 	public const string B_PROPERTY_N_REQUIRE_AR_KIT_SUPPORTS = "requiresARKitSupport";
