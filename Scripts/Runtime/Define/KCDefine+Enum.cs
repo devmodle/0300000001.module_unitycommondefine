@@ -188,6 +188,31 @@ public enum EVSyncType {
 	MAX_VAL
 }
 
+/** iOS 타입 */
+public enum EiOSType {
+	NONE = -1,
+	APPLE,
+	MAX_VAL
+}
+
+/** 안드로이드 타입 */
+public enum EAndroidType {
+	NONE = -1,
+	GOOGLE,
+	AMAZON,
+	ONE_STORE,
+	MAX_VAL
+}
+
+/** 독립 플랫폼 타입 */
+public enum EStandaloneType {
+	NONE = -1,
+	MAC_APPLE,
+	MAC_STEAM,
+	WNDS_STEAM,
+	MAX_VAL
+}
+
 /** 분석 타입 */
 public enum EAnalyticsType {
 	NONE = -1,
@@ -290,31 +315,6 @@ public enum EBuildType {
 	DEBUG,
 	RELEASE,
 	STORE,
-	MAX_VAL
-}
-
-/** iOS 타입 */
-public enum EiOSType {
-	NONE = -1,
-	APPLE,
-	MAX_VAL
-}
-
-/** 안드로이드 타입 */
-public enum EAndroidType {
-	NONE = -1,
-	GOOGLE,
-	AMAZON,
-	ONE_STORE,
-	MAX_VAL
-}
-
-/** 독립 플랫폼 타입 */
-public enum EStandaloneType {
-	NONE = -1,
-	MAC_APPLE,
-	MAC_STEAM,
-	WNDS_STEAM,
 	MAX_VAL
 }
 
