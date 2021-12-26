@@ -215,9 +215,15 @@ public static partial class KCEditorDefine {
 	public const string B_PROJ_P_FMT_JENKINS = "{0}/{1}/{2}";
 	public const string B_ANALYTICS_FMT_JENKINS = "{0}/00.Analytics";
 
-	public const string B_IOS_BUILD_PROJ_N_JENKINS = "01.iOS";
-	public const string B_ANDROID_BUILD_PROJ_N_JENKINS = "11.Android";
-	public const string B_STANDALONE_BUILD_PROJ_N_JENKINS = "41.Standalone";
+	public const string B_IOS_APPLE_BUILD_PROJ_N_JENKINS = "01.iOSApple";
+
+	public const string B_ANDROID_GOOGLE_BUILD_PROJ_N_JENKINS = "11.AndroidGoogle";
+	public const string B_ANDROID_AMAZON_BUILD_PROJ_N_JENKINS = "12.AndroidAmazon";
+	public const string B_ANDROID_ONE_STORE_BUILD_PROJ_N_JENKINS = "13.AndroidOneStore";
+
+	public const string B_STANDALONE_MAC_APPLE_BUILD_PROJ_N_JENKINS = "41.StandaloneMacApple";
+	public const string B_STANDALONE_MAC_STEAM_BUILD_PROJ_N_JENKINS = "42.StandaloneMacSteam";
+	public const string B_STANDALONE_WNDS_STEAM_BUILD_PROJ_N_JENKINS = "43.StandaloneWndsSteam";
 
 	public const string B_DEBUG_BUILD_FUNC_JENKINS = "Debug";
 	public const string B_RELEASE_BUILD_FUNC_JENKINS = "Release";
