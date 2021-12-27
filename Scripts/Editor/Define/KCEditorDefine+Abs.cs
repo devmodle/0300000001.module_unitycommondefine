@@ -222,8 +222,8 @@ public static partial class KCEditorDefine {
 	public const string B_ANDROID_ONE_STORE_BUILD_PROJ_N_JENKINS = "13.AndroidOneStore";
 
 	public const string B_STANDALONE_MAC_APPLE_BUILD_PROJ_N_JENKINS = "41.StandaloneMacApple";
-	public const string B_STANDALONE_MAC_STEAM_BUILD_PROJ_N_JENKINS = "42.StandaloneMacSteam";
-	public const string B_STANDALONE_WNDS_STEAM_BUILD_PROJ_N_JENKINS = "43.StandaloneWndsSteam";
+	public const string B_STANDALONE_MAC_STEAM_BUILD_PROJ_N_JENKINS = "45.StandaloneMacSteam";
+	public const string B_STANDALONE_WNDS_STEAM_BUILD_PROJ_N_JENKINS = "55.StandaloneWndsSteam";
 
 	public const string B_DEBUG_BUILD_FUNC_JENKINS = "Debug";
 	public const string B_RELEASE_BUILD_FUNC_JENKINS = "Release";
