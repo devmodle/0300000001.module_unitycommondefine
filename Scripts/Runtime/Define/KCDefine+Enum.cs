@@ -77,7 +77,7 @@ public enum EMouseBtn {
 	LEFT,
 	RIGHT,
 	MID,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 폰트 세트 */
@@ -92,7 +92,7 @@ public enum EFontSet {
 	SET_G,
 	SET_H,
 	SET_I,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 방향 */
@@ -118,7 +118,7 @@ public enum EDirection {
 	HORIZONTAL,
 	DIAGONAL,
 	
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 퀄리티 수준 */
@@ -131,7 +131,7 @@ public enum EQualityLevel {
 	VERY_HIGH,
 	ULTRA,
 	AUTO,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 그림자 옵션 */
@@ -141,7 +141,7 @@ public enum EShadowCascadesOpts {
 	TWO_CASCADES,
 	THREE_CASCADES,
 	FOUR_CASCADES,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 값 타입 */
@@ -150,7 +150,7 @@ public enum EValType {
 	INT,
 	FLT,
 	STR,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 애니메이션 타입 */
@@ -160,7 +160,7 @@ public enum EAniType {
 	DROPDOWN,
 	SLIDE_LEFT,
 	SLIDE_RIGHT,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 };
 
 /** 유저 타입 */
@@ -168,7 +168,7 @@ public enum EUserType {
 	NONE = -1,
 	USER_A,
 	USER_B,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 디바이스 타입 */
@@ -176,7 +176,7 @@ public enum EDeviceType {
 	NONE = -1,
 	PHONE,
 	TABLET,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 수직 동기화 타입 */
@@ -185,14 +185,14 @@ public enum EVSyncType {
 	NEVER,
 	EVERY,
 	SECOND,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** iOS 타입 */
 public enum EiOSType {
 	NONE = -1,
 	APPLE,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 안드로이드 타입 */
@@ -201,7 +201,7 @@ public enum EAndroidType {
 	GOOGLE,
 	AMAZON,
 	ONE_STORE,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 독립 플랫폼 타입 */
@@ -210,7 +210,7 @@ public enum EStandaloneType {
 	MAC_APPLE,
 	MAC_STEAM,
 	WNDS_STEAM,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 분석 타입 */
@@ -219,7 +219,7 @@ public enum EAnalyticsType {
 	FLURRY,
 	FIREBASE,
 	APPS_FLYER,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 약관 동의 팝업 타입 */
@@ -227,7 +227,7 @@ public enum EAgreePopupType {
 	NONE = -1,
 	KR,
 	EU,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 진동 타입 */
@@ -236,7 +236,7 @@ public enum EVibrateType {
 	SELECTION,
 	NOTIFICATION,
 	IMPACT,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 진동 스타일 */
@@ -245,7 +245,7 @@ public enum EVibrateStyle {
 	LIGHT,
 	MEDIUM,
 	HEAVY,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 내비게이션 스택 이벤트 타입 */
@@ -254,7 +254,7 @@ public enum ENavStackEvent {
 	TOP,
 	REMOVE,
 	BACK_KEY_DOWN,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 시작 씬 이벤트 타입 */
@@ -265,7 +265,7 @@ public enum EStartSceneEvent {
 	LOAD_LATE_SETUP_SCENE,
 	LOAD_PERMISSION_SCENE,
 	LOAD_INTRO_SCENE,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 #endregion			// 기본
 
@@ -277,7 +277,7 @@ public enum EDSPBufferSize {
 	BEST_LATENCY = 256,
 	GOOD_LATENCY = 512,
 	BEST_PERFORMANCE = 1024,
-	MAX_VAL	
+	[HideInInspector] MAX_VAL	
 }
 
 /** 종횡비 모드 */
@@ -286,7 +286,7 @@ public enum EAspectRatioMode {
 	LEGACY_WIDE_SCREEN,
 	NATIVE_ASPECT_RATIO,
 	CUSTOM,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 가속도 갱신 주기 */
@@ -297,7 +297,7 @@ public enum EAccelerometerFrequency {
 	FREQUENCY_30_HZ = 30,
 	FREQUENCY_60_HZ = 60,
 	FREQUENCY_100_HZ = 100,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 광원 맵 엔코딩 퀄리티 */
@@ -306,7 +306,7 @@ public enum ELightmapEncodingQuality {
 	LOW,
 	NORM,
 	HIGH,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 빌드 타입 */
@@ -315,7 +315,7 @@ public enum EBuildType {
 	DEBUG,
 	RELEASE,
 	STORE,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 텍스처 압축 타입 */
@@ -324,7 +324,7 @@ public enum ETextureCompressionType {
 	LEGACY,
 	DEFAULT,
 	CUSTOM,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 #endif			// #if UNITY_EDITOR
 
@@ -335,7 +335,7 @@ public enum EAdsPlatform {
 	ADMOB,
 	IRON_SRC,
 	APP_LOVIN,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 
 /** 배너 광고 위치 */
@@ -343,7 +343,7 @@ public enum EBannerAdsPos {
 	NONE = -1,
 	UP,
 	DOWN,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 #endif			// #if ADS_MODULE_ENABLE
 
@@ -353,7 +353,7 @@ public enum EPurchasePlatform {
 	NONE = -1,
 	GOOGLE,
 	AMAZON,
-	MAX_VAL
+	[HideInInspector] MAX_VAL
 }
 #endif			// #if PURCHASE_MODULE_ENABLE
 #endregion			// 조건부 상수

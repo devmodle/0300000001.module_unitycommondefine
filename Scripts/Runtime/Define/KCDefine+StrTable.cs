@@ -36,19 +36,6 @@ public static partial class KCDefine {
 	// 저장 팝업
 	public const string ST_KEY_SAVE_P_MSG = "SAVE_P_MSG";
 
-	// 약관 동의 팝업 {
-	public const string ST_KEY_AGREE_P_EU_TITLE = "AGREE_P_EU_TITLE";
-	
-	public const string ST_KEY_AGREE_P_PRIVACY_TITLE = "AGREE_P_PRIVACY_TITLE";
-	public const string ST_KEY_AGREE_P_SERVICES_TITLE = "AGREE_P_SERVICES_TITLE";
-
-	public const string ST_KEY_AGREE_P_PRIVACY_BTN_TEXT = "AGREE_P_PRIVACY_BTN_TEXT";
-	public const string ST_KEY_AGREE_P_SERVICES_BTN_TEXT = "AGREE_P_SERVICES_BTN_TEXT";
-
-	public const string ST_KEY_AGREE_P_DESC_TEXT_01 = "AGREE_P_DESC_TEXT_01";
-	public const string ST_KEY_AGREE_P_DESC_TEXT_02 = "AGREE_P_DESC_TEXT_02";
-	// 약관 동의 팝업 }
-
 	// 추적 설명 팝업 {
 	public const string ST_KEY_TRACKING_DP_TITLE = "TRACKING_DP_TITLE";
 	public const string ST_KEY_TRACKING_DP_MSG = "TRACKING_DP_MSG";
@@ -60,7 +47,6 @@ public static partial class KCDefine {
 
 	// 시작 씬 관리자
 	public const string ST_KEY_START_SM_DOT_TEXT = "START_SM_DOT_TEXT";
-	public const string ST_KEY_START_SM_LOADING_TEXT = "START_SM_LOADING_TEXT";
 
 	// 공용 {
 	public const string ST_KEY_COMMON_LOGIN_SUCCESS_MSG = "COMMON_LOGIN_SUCCESS_MSG";
