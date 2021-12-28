@@ -884,14 +884,6 @@ public static partial class KCDefine {
 	// 스크립트 순서 }
 #endif			// #if UNITY_EDITOR
 
-	// 광원 {
-#if REALTIME_LIGHTMAP_BAKE_DIRECTIONAL_ENABLE
-	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Realtime;
-#else
-	public const LightmapBakeType U_LIGHTMAP_BAKE_TYPE_DIRECTIONAL = LightmapBakeType.Mixed;
-#endif			// #if REALTIME_LIGHTMAP_BAKE_DIRECTIONAL_ENABLE
-	// 광원 }
-
 #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 	// 개수
 	public const int U_MAX_NUM_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ = 4;
