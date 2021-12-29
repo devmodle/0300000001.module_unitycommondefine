@@ -8,9 +8,9 @@ using DG.Tweening;
 using UnityEngine.iOS;
 #endif			// #if UNITY_IOS
 
-#if ADS_MODULE_ENABLE && ADMOB_ENABLE
+#if ADS_MODULE_ENABLE && ADMOB_ADS_ENABLE
 using GoogleMobileAds.Api;
-#endif			// #if ADS_MODULE_ENABLE && ADMOB_ENABLE
+#endif			// #if ADS_MODULE_ENABLE && ADMOB_ADS_ENABLE
 
 #if NOTI_MODULE_ENABLE
 #if UNITY_IOS
@@ -80,9 +80,8 @@ public static partial class KCDefine {
 	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.25f;
 	
 	public const float U_DURATION_ANI = 0.25f;
-	public const float U_DURATION_SCROLL_ANI = 0.25f;
-	public const float U_DURATION_SCREEN_FADE_IN_ANI = 0.15f;
-	public const float U_DURATION_SCREEN_FADE_OUT_ANI = 0.15f;
+	public const float U_DURATION_SCREEN_FADE_IN_ANI = 0.25f;
+	public const float U_DURATION_SCREEN_FADE_OUT_ANI = KCDefine.U_DURATION_SCREEN_FADE_IN_ANI;
 
 	public const float U_DURATION_POPUP_SCALE_ANI = 0.25f;
 	public const float U_DURATION_POPUP_DROPDOWN_ANI = 0.35f;
@@ -407,8 +406,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
 	public const string U_OBJ_N_BG_TOUCH_RESPONDER = "BGTouchResponder";
 
-	public const string U_OBJ_N_SCREEN_F_TOUCH_RESPONDER = "ScreenFTouchResponder";
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
+	public const string U_OBJ_N_SCREEN_FADE_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
 
 	public const string U_OBJ_N_FMT_NUM_TEXT = "NumText_{0:00}";
 	public const string U_OBJ_N_FMT_COUNTDOWN_TEXT = "CountdownText_{0:00}";
@@ -728,6 +727,8 @@ public static partial class KCDefine {
 
 	public static readonly string U_OBJ_P_G_DRAG_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_DragResponder";
 	public static readonly string U_OBJ_P_G_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_TouchResponder";
+	public static readonly string U_OBJ_P_G_INDICATOR_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_IndicatorTouchResponder";
+	public static readonly string U_OBJ_P_G_SCREEN_FADE_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_ScreenFadeTouchResponder";
 
 	public static readonly string U_ASSET_P_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_UTILITY}U_LightingSettings";
 
@@ -979,7 +980,7 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_C = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_D = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_E = "Time Scale: <color=orange>{0:0.0}</color>";
+	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_E = "Time Scale: <color=orange>{0:0.00}</color>";
 	// 형식 }
 
 	// 이름 {
@@ -994,6 +995,8 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_SCREEN_FPS_BTN = "FPSBtn";
 	public const string U_OBJ_N_SCREEN_DEBUG_BTN = "DebugBtn";
+	public const string U_OBJ_N_SCREEN_TIME_SCALE_UP_BTN = "TimeScaleUpBtn";
+	public const string U_OBJ_N_SCREEN_TIME_SCALE_DOWN_BTN = "TimeScaleDownBtn";
 	// 이름 }
 #endif			// #if DEBUG || DEVELOPMENT_BUILD
 
@@ -1013,7 +1016,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_ADS_M_CONSENT_V_LOADER_INFO = "AdsMConsentVLoaderInfo_{0}";
 	// 식별자 }
 
-#if ADMOB_ENABLE
+#if ADMOB_ADS_ENABLE
 	// 식별자 {
 	public const string U_ADS_ID_ADMOB_TEST_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
 	public const string U_ADS_ID_ADMOB_TEST_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
@@ -1034,9 +1037,9 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAdmobFullscreenAdsCloseCallback";
 	// 식별자 }
-#endif			// #if ADMOB_ENABLE
+#endif			// #if ADMOB_ADS_ENABLE
 
-#if IRON_SRC_ENABLE
+#if IRON_SRC_ADS_ENABLE
 	// 식별자 {
 	public const string U_KEY_ADS_M_IRON_SRC_INIT_CALLBACK = "AdsMIronSrcInitCallback";
 
@@ -1051,9 +1054,9 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSrcFullscreenAdsCloseCallback";
 	// 식별자 }
-#endif			// #if IRON_SRC_ENABLE
+#endif			// #if IRON_SRC_ADS_ENABLE
 
-#if APP_LOVIN_ENABLE
+#if APP_LOVIN_ADS_ENABLE
 	// 식별자 {
 	public const string U_KEY_ADS_M_APP_LOVIN_INIT_CALLBACK = "AdsMAppLovinInitCallback";
 
@@ -1067,7 +1070,7 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAppLovinFullscreenAdsCloseCallback";
 	// 식별자 }
-#endif			// #if APP_LOVIN_ENABLE
+#endif			// #if APP_LOVIN_ADS_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
 #if FLURRY_MODULE_ENABLE
@@ -1215,20 +1218,20 @@ public static partial class KCDefine {
 	public static readonly Vector3 U_SIZE_PHONE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
 	public static readonly Vector3 U_SIZE_TABLET_BANNER_ADS = new Vector3(728.0f, 90.0f, 0.0f);
 
-#if ADMOB_ENABLE
+#if ADMOB_ADS_ENABLE
 	// 크기
 	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = AdSize.Banner;
-#endif			// #if ADMOB_ENABLE
+#endif			// #if ADMOB_ADS_ENABLE
 
-#if IRON_SRC_ENABLE
+#if IRON_SRC_ADS_ENABLE
 	// 크기
 	public static readonly IronSourceBannerSize U_SIZE_IRON_SRC_BANNER_ADS = new IronSourceBannerSize(320, 50);
-#endif			// #if IRON_SRC_ENABLE
+#endif			// #if IRON_SRC_ADS_ENABLE
 
-#if APP_LOVIN_ENABLE
+#if APP_LOVIN_ADS_ENABLE
 	// 색상
 	public static readonly Color U_COLOR_APP_LOVIN_BANNER_BG = Color.black;
-#endif			// #if APP_LOVIN_ENABLE
+#endif			// #if APP_LOVIN_ADS_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
