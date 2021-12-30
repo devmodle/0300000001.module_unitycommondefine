@@ -83,15 +83,15 @@ public enum EMouseBtn {
 /** 폰트 세트 */
 public enum EFontSet {
 	NONE = -1,
-	SET_A,
-	SET_B,
-	SET_C,
-	SET_D,
-	SET_E,
-	SET_F,
-	SET_G,
-	SET_H,
-	SET_I,
+	A,
+	B,
+	C,
+	D,
+	E,
+	F,
+	G,
+	H,
+	I,
 	[HideInInspector] MAX_VAL
 }
 
@@ -166,8 +166,8 @@ public enum EAniType {
 /** 유저 타입 */
 public enum EUserType {
 	NONE = -1,
-	USER_A,
-	USER_B,
+	A,
+	B,
 	[HideInInspector] MAX_VAL
 }
 

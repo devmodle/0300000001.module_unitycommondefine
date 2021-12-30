@@ -12,6 +12,15 @@ public static partial class KCDefine {
 	// 에디터 리셋 팝업
 	public const string ST_KEY_EDITOR_RESET_P_MSG = "EDITOR_RESET_P_MSG";
 
+	// 에디터 A 세트 팝업
+	public const string ST_KEY_EDITOR_A_SET_P_MSG = "EDITOR_A_SET_P_MSG";
+
+	// 에디터 B 세트 팝업
+	public const string ST_KEY_EDITOR_B_SET_P_MSG = "EDITOR_B_SET_P_MSG";
+
+	// 에디터 테이블 다시 로드 팝업
+	public const string ST_KEY_EDITOR_TABLE_RL_MSG = "EDITOR_TABLE_RL_MSG";
+
 	// 에디터 레벨 제거 팝업
 	public const string ST_KEY_EDITOR_REMOVE_LP_MSG = "EDITOR_REMOVE_LP_MSG";
 

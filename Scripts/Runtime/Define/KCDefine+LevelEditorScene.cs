@@ -14,7 +14,7 @@ public static partial class KCDefine {
 	public const string LES_OBJ_N_ME_UIS_SAVE_BTN = "SaveBtn";
 	public const string LES_OBJ_N_ME_UIS_RESET_BTN = "ResetBtn";
 	public const string LES_OBJ_N_ME_UIS_TEST_BTN = "TestBtn";
-	public const string LES_OBJ_N_ME_UIS_RELOAD_BTN = "ReloadBtn";
+	public const string LES_OBJ_N_ME_UIS_TABLE_RELOAD_BTN = "TableReloadBtn";
 
 	public const string LES_OBJ_N_ME_UIS_COPY_LEVEL_BTN = "CopyLevelBtn";
 	public const string LES_OBJ_N_ME_UIS_MOVE_LEVEL_BTN = "MoveLevelBtn";
@@ -22,6 +22,11 @@ public static partial class KCDefine {
 	// 중앙 에디터 UI }
 
 	// 왼쪽 에디터 UI {
+	public const string LES_OBJ_N_LE_UIS_SET_TEXT = "SetText";
+
+	public const string LES_OBJ_N_LE_UIS_A_SET_BTN = "ASetBtn";
+	public const string LES_OBJ_N_LE_UIS_B_SET_BTN = "BSetBtn";
+
 	public const string LES_OBJ_N_LE_UIS_ADD_LEVEL_BTN = "AddLevelBtn";
 	public const string LES_OBJ_N_LE_UIS_ADD_STAGE_BTN = "AddStageBtn";
 	public const string LES_OBJ_N_LE_UIS_ADD_CHAPTER_BTN = "AddChapterBtn";
