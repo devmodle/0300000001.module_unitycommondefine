@@ -147,11 +147,12 @@ public static partial class KCEditorDefine {
 	public const string B_IPA_EXPORT_METHOD_IOS_DEV = "development";
 	public const string B_IPA_EXPORT_METHOD_IOS_STORE = "app-store";
 
+	public const string B_SEARCH_P_IOS_PODS = "$(SRCROOT)/**";
 	public const string B_BUILD_FILE_EXTENSION_IOS_IPA = "ipa";
 
 	public const string B_BUILD_P_FMT_IOS = "Builds/iOS/{0}";
 	public const string B_PLIST_P_FMT_IOS = "{0}/Info.plist";
-	public const string B_SEARCH_P_IOS_PODS = "$(SRCROOT)/**";
+	public const string B_BUILD_OUTPUT_P_FMT_IOS = "Builds/iOS/{0}/BuildOutput/Export/{0}BuildOutput.{1}";
 
 	public const string B_DATA_P_FMT_COCOA_PODS = "{0}/Podfile";
 	public const string B_PROJ_P_FMT_COCOA_PODS = "{0}/Pods/Pods.xcodeproj/project.pbxproj";
@@ -177,14 +178,17 @@ public static partial class KCEditorDefine {
 
 	public const string B_BUILD_P_FMT_ANDROID = "Builds/Android/{0}/{1}";
 	public const string B_BUILD_FILE_N_FMT_ANDROID = "{0}BuildOutput.{1}";
+	public const string B_BUILD_OUTPUT_P_FMT_ANDROID = "Builds/Android/{0}/{0}BuildOutput.{1}";
 	// 안드로이드 }
 
 	// 독립 플랫폼 {
 	public const string B_BUILD_FILE_EXTENSION_STANDALONE_APP = "app";
 	public const string B_BUILD_FILE_EXTENSION_STANDALONE_EXE = "exe";
+	public const string B_BUILD_FILE_EXTENSION_STANDALONE_ZIP = "zip";
 
 	public const string B_BUILD_P_FMT_STANDALONE = "Builds/Standalone/{0}/{1}";
 	public const string B_BUILD_FILE_N_FMT_STANDALONE = "{0}BuildOutput.{1}";
+	public const string B_BUILD_OUTPUT_P_FMT_STANDALONE = "Builds/Standalone/{0}BuildOutput.{1}";
 	// 독립 플랫폼 }
 	
 	// 젠킨스 {
