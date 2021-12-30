@@ -147,6 +147,8 @@ public static partial class KCEditorDefine {
 	public const string B_IPA_EXPORT_METHOD_IOS_DEV = "development";
 	public const string B_IPA_EXPORT_METHOD_IOS_STORE = "app-store";
 
+	public const string B_BUILD_FILE_EXTENSION_IOS_IPA = "ipa";
+
 	public const string B_BUILD_P_FMT_IOS = "Builds/iOS/{0}";
 	public const string B_PLIST_P_FMT_IOS = "{0}/Info.plist";
 	public const string B_SEARCH_P_IOS_PODS = "$(SRCROOT)/**";
@@ -191,6 +193,7 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_SRC = "Src";
 	public const string B_KEY_JENKINS_PROJ_NAME = "ProjName";
 	public const string B_KEY_JENKINS_PROJ_PATH = "ProjPath";
+	public const string B_KEY_JENKINS_BUILD_OUTPUT_PATH = "BuildOutputPath";
 	public const string B_KEY_JENKINS_BUNDLE_ID = "BundleID";
 	public const string B_KEY_JENKINS_PROFILE_ID = "ProfileID";
 	public const string B_KEY_JENKINS_PLATFORM = "Platform";
@@ -231,7 +234,7 @@ public static partial class KCEditorDefine {
 	public const string B_RELEASE_BUILD_FUNC_JENKINS = "Release";
 	public const string B_STORE_A_BUILD_FUNC_JENKINS = "StoreA";
 	public const string B_STORE_B_BUILD_FUNC_JENKINS = "StoreB";
-	public const string B_STORE_UPLOAD_BUILD_FUNC_JENKINS = "StoreUpload";
+	public const string B_STORE_DIST_BUILD_FUNC_JENKINS = "StoreDist";
 
 	public const string B_IOS_DEBUG_PIPELINE_N_JENKINS = "01.iOSDebug";
 	public const string B_IOS_RELEASE_PIPELINE_N_JENKINS = "02.iOSRelease";
