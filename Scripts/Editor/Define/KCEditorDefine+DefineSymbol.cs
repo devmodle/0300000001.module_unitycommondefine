@@ -203,6 +203,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
 	public const string DS_DEFINE_S_STORE_VER_CHECK_ENABLE = "STORE_VER_CHECK_ENABLE";
+	public const string DS_DEFINE_S_IGNORE_ORGANIZATION_BUILD_PIPELINE_SETUP = "IGNORE_ORGANIZATION_BUILD_PIPELINE_SETUP";
 	// 기타 }
 	#endregion			// 기본
 
