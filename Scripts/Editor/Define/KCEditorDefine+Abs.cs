@@ -193,6 +193,7 @@ public static partial class KCEditorDefine {
 	
 	// 젠킨스 {
 	public const string B_KEY_JENKINS_ENGINE_VER = "EngineVer";
+	public const string B_KEY_JENKINS_MODULE_VER = "ModuleVer";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
 	public const string B_KEY_JENKINS_SRC = "Src";
 	public const string B_KEY_JENKINS_PROJ_NAME = "ProjName";
@@ -324,12 +325,13 @@ public static partial class KCEditorDefine {
 	public const int B_FONT_SIZE_FPS_C_DYNAMIC_TEXT = 24;
 	
 	// 패키지
-	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-v3.9.1";
-	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-v3.0.12";
-	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
-	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
-	public const string B_NAME_LEAN_GUI_PKGS = "LeanGUI-v1.2.3";
-	public const string B_NAME_LEAN_TOUCH_PKGS = "LeanTouch-v2.3.5";
+	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-3.9.1";
+	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-3.0.12";
+	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-1.4.0";
+	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-2.6.0";
+	public const string B_NAME_LEAN_GUI_PKGS = "LeanGUI-1.2.3";
+	public const string B_NAME_LEAN_TOUCH_PKGS = "LeanTouch-2.3.5";
+	public const string B_NAME_APPLE_AUTH_PKGS = "AppleAuth-1.4.2";
 	#endregion			// 기본
 
 	#region 런타임 상수
@@ -397,6 +399,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_LEAN_GUI = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_LEAN_GUI_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_LEAN_TOUCH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_LEAN_TOUCH_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_APPLE_AUTH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_AUTH_PKGS}.unitypackage";
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}TagManager.asset";
 	public static readonly string B_ASSET_P_SND_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}AudioManager.asset";
