@@ -17,9 +17,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 	public const string DS_DEFINE_S_MULTI_TOUCH_ENABLE = "MULTI_TOUCH_ENABLE";
 
-	// 버전
-	public const string DS_DEFINE_S_MODULE_VER_2_0_0_OR_NEWER = "MODULE_VER_2_0_0_OR_NEWER";
-
 	// 플러그인
 	public const string DS_DEFINE_S_DOTWEEN_ENABLE = "DOTWEEN_ENABLE";
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
@@ -204,6 +201,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
 	public const string DS_DEFINE_S_STORE_VER_CHECK_ENABLE = "STORE_VER_CHECK_ENABLE";
 	public const string DS_DEFINE_S_NINETAP_BUILD_PIPELINE_ENABLE = "NINETAP_BUILD_PIPELINE_ENABLE";
+
+	public const string DS_DEFINE_S_MODULE_VER_2_0_0_OR_NEWER = "MODULE_VER_2_0_0_OR_NEWER";
+	public const string DS_DEFINE_S_MODULE_VER_2_0_1_OR_NEWER = "MODULE_VER_2_0_1_OR_NEWER";
 	// 기타 }
 	#endregion			// 기본
 
