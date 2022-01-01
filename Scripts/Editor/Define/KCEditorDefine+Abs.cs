@@ -248,11 +248,11 @@ public static partial class KCEditorDefine {
 	public const string B_STANDALONE_RELEASE_PIPELINE_N_JENKINS = "42.StandaloneRelease";
 	public const string B_STANDALONE_STORE_PIPELINE_N_JENKINS = "43.StandaloneStore";
 
-#if IGNORE_ORGANIZATION_BUILD_PIPELINE_SETUP
+#if NINETAP_BUILD_PIPELINE_ENABLE
 	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/000001.Common/job/{0}/job/01.Pipelines/job";
 #else
 	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/00000001.Common/job/{0}/job/01.Pipelines/job";
-#endif			// #if IGNORE_ORGANIZATION_BUILD_PIPELINE_SETUP
+#endif			// #if NINETAP_BUILD_PIPELINE_ENABLE
 	// 젠킨스 }
 
 	// 계층 뷰
