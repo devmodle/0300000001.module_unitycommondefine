@@ -218,11 +218,8 @@ public static partial class KCEditorDefine {
 	public const string B_BUILD_CMD_FMT_JENKINS = "curl -X POST {0} --user {1}:{2} --data token={3}";
 	public const string B_BUILD_DATA_FMT_JENKINS = "--data {0}={1}";
 
-	public const string B_SRC_FMT_JENKINS = "{0}/{1}";
 	public const string B_BRANCH_FMT_JENKINS = "origin/{0}";
-	public const string B_PROJ_P_FMT_JENKINS = "{0}/{1}/{2}";
 	public const string B_ANALYTICS_FMT_JENKINS = "{0}/00.Analytics";
-
 	public const string B_IOS_APPLE_BUILD_PROJ_N_JENKINS = "01.iOSApple";
 
 	public const string B_ANDROID_GOOGLE_BUILD_PROJ_N_JENKINS = "11.AndroidGoogle";
@@ -1120,10 +1117,69 @@ public static partial class KCEditorDefine {
 		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLCore
 	};
 	
-	// 젠킨스
+	// 젠킨스 {
 	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", Application.unityVersion);
 	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", Application.unityVersion);
 	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone", Application.unityVersion);
+
+	public static readonly Dictionary<EiOSType, Dictionary<string, string>> B_JENKINS_IOS_SOURCES = new Dictionary<EiOSType, Dictionary<string, string>>() {
+		[EiOSType.APPLE] = new Dictionary<string, string>() {
+			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.iOSAppleDebug",
+			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.iOSAppleRelease",
+			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.iOSAppleStoreA",
+			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.iOSAppleStoreDist"
+		}
+	};
+
+	public static readonly Dictionary<EAndroidType, Dictionary<string, string>> B_JENKINS_ANDROID_SOURCES = new Dictionary<EAndroidType, Dictionary<string, string>>() {
+		[EAndroidType.GOOGLE] = new Dictionary<string, string>() {
+			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.AndroidGoogleDebug",
+			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.AndroidGoogleRelease",
+			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidGoogleStoreA",
+			[KCEditorDefine.B_STORE_B_BUILD_FUNC_JENKINS] = "22.AndroidGoogleStoreB",
+			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.AndroidGoogleStoreDist"
+		},
+
+		[EAndroidType.AMAZON] = new Dictionary<string, string>() {
+			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.AndroidAmazonDebug",
+			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.AndroidAmazonRelease",
+			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidAmazonStoreA",
+			[KCEditorDefine.B_STORE_B_BUILD_FUNC_JENKINS] = "22.AndroidAmazonStoreB",
+			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.AndroidAmazonStoreDist"
+		},
+
+		[EAndroidType.ONE_STORE] = new Dictionary<string, string>() {
+			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.AndroidOneStoreDebug",
+			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.AndroidOneStoreRelease",
+			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidOneStoreStoreA",
+			[KCEditorDefine.B_STORE_B_BUILD_FUNC_JENKINS] = "22.AndroidOneStoreStoreB",
+			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.AndroidOneStoreStoreDist"
+		}
+	};
+
+	public static readonly Dictionary<EStandaloneType, Dictionary<string, string>> B_JENKINS_STANDALONE_SOURCES = new Dictionary<EStandaloneType, Dictionary<string, string>>() {
+		[EStandaloneType.MAC_APPLE] = new Dictionary<string, string>() {
+			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneMacAppleDebug",
+			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneMacAppleRelease",
+			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.StandaloneMacAppleStoreA",
+			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.StandaloneMacAppleStoreDist"
+		},
+
+		[EStandaloneType.MAC_STEAM] = new Dictionary<string, string>() {
+			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneMacSteamDebug",
+			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneMacSteamRelease",
+			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.StandaloneMacSteamStoreA",
+			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.StandaloneMacSteamStoreDist"
+		},
+
+		[EStandaloneType.WNDS_STEAM] = new Dictionary<string, string>() {
+			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneWndsSteamDebug",
+			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneWndsSteamRelease",
+			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.StandaloneWndsSteamStoreA",
+			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.StandaloneWndsSteamStoreDist"
+		}
+	};
+	// 젠킨스 }
 	#endregion			// 런타임 상수
 
 	#region 조건부 상수
