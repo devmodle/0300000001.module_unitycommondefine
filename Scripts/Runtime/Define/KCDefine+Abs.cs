@@ -390,8 +390,7 @@ public static partial class KCDefine {
 
 	public const string B_TEXT_FMT_MM_SS = "{0:00}:{1:00}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
-
-	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";
+	
 	public const string B_TEXT_FMT_2_DIGITS = "{0:00}";
 	public const string B_TEXT_FMT_3_DIGITS = "{0:000}";
 	public const string B_TEXT_FMT_4_DIGITS = "{0:0000}";

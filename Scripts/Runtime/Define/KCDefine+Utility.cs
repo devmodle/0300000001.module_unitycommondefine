@@ -275,23 +275,28 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_NUM_TEXT = "NumText";
 	public const string U_OBJ_N_TIME_TEXT = "TimeText";
+	public const string U_OBJ_N_TIMES_TEXT = "TimesText";
 	public const string U_OBJ_N_PRICE_TEXT = "PriceText";
+	public const string U_OBJ_N_LOADING_TEXT = "LoadingText";
 	public const string U_OBJ_N_COUNTDOWN_TEXT = "CountdownText";
 
-	public const string U_OBJ_N_SCORE_TEXT = "ScoreText";
-	public const string U_OBJ_N_LOADING_TEXT = "LoadingText";
-	public const string U_OBJ_N_BEST_SCORE_TEXT = "BestScoreText";
+	public const string U_OBJ_N_RECORD_TEXT = "RecordText";
+	public const string U_OBJ_N_BEST_RECORD_TEXT = "BestRecordText";
 
 	public const string U_OBJ_N_NUM_COINS_TEXT = "NumCoinsText";
-	public const string U_OBJ_N_NUM_STARS_TEXT = "NumStarsText";
-	public const string U_OBJ_N_NUM_STARS_STATE_TEXT = "NumStarsStateText";
+	public const string U_OBJ_N_NUM_SALE_COINS_TEXT = "NumSaleCoinsText";
+
+	public const string U_OBJ_N_NUM_MARKS_TEXT = "NumMarksText";
+	public const string U_OBJ_N_NUM_CLEAR_MARKS_TEXT = "NumClearMarksText";
+	public const string U_OBJ_N_NUM_CLEAR_MARKS_STATE_TEXT = "NumClearMarksStateText";
 
 	public const string U_OBJ_N_BG_IMG = "BGImg";
+	public const string U_OBJ_N_COINS_IMG = "CoinsImg";
 	public const string U_OBJ_N_BLIND_IMG = "BlindImg";
 	public const string U_OBJ_N_SPLASH_IMG = "SplashImg";
 
-	public const string U_OBJ_N_COINS_IMG = "CoinsImg";
-	public const string U_OBJ_N_STARS_IMG = "StarsImg";
+	public const string U_OBJ_N_MARK_IMG = "MarkImg";
+	public const string U_OBJ_N_CLEAR_MARK_IMG = "ClearMarkImg";
 
 	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
 	public const string U_OBJ_N_RIBBON_IMG = "RibbonImg";
@@ -410,7 +415,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_FADE_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
 
 	public const string U_OBJ_N_FMT_NUM_TEXT = "NumText_{0:00}";
-	public const string U_OBJ_N_FMT_COUNTDOWN_TEXT = "CountdownText_{0:00}";
+	public const string U_OBJ_N_FMT_COUNTDOWN_TEXT = "CountdownText_{0:00}"
+	;
+	public const string U_OBJ_N_FMT_CLEAR_MARK_IMG = "ClearMarkImg_{0:00}";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
 	public const string U_IMG_N_DEF_MESH = "DefMesh";
@@ -1160,8 +1167,7 @@ public static partial class KCDefine {
 	// 식별자
 	public const string U_KEY_GAME_CM_INIT_CALLBACK = "GameCMInitCallback";
 	public const string U_KEY_GAME_CM_LOGIN_CALLBACK = "GameCMLoginCallback";
-	public const string U_KEY_GAME_CM_LOAD_SCORES_CALLBACK = "GameCMLoadScoresCallback";
-	public const string U_KEY_GAME_CM_UPDATE_SCORE_CALLBACK = "GameCMUpdateScoreCallback";
+	public const string U_KEY_GAME_CM_UPDATE_RECORD_CALLBACK = "GameCMUpdateRecordCallback";
 	public const string U_KEY_GAME_CM_UPDATE_ACHIEVEMENT_CALLBACK = "GameCMUpdateAchievementCallback";
 #endif			// #if GAME_CENTER_MODULE_ENABLE
 

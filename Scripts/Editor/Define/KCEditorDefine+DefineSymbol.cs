@@ -17,6 +17,10 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 	public const string DS_DEFINE_S_MULTI_TOUCH_ENABLE = "MULTI_TOUCH_ENABLE";
 
+	// 버전
+	public const string DS_DEFINE_S_MODULE_VER_2_0_0_OR_NEWER = "MODULE_VER_2_0_0_OR_NEWER";
+	public const string DS_DEFINE_S_MODULE_VER_2_0_1_OR_NEWER = "MODULE_VER_2_0_1_OR_NEWER";
+
 	// 플러그인
 	public const string DS_DEFINE_S_DOTWEEN_ENABLE = "DOTWEEN_ENABLE";
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
@@ -81,6 +85,14 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_NOTI_MODULE_ENABLE = "NOTI_MODULE_ENABLE";
 
 	// 렌더링 {
+	public const string DS_DEFINE_S_MSAA_ENABLE = "MSAA_ENABLE";
+	public const string DS_DEFINE_S_PIXELS_PERFECT_ENABLE = "PIXELS_PERFECT_ENABLE";
+	public const string DS_DEFINE_S_CAMERA_STACKING_ENABLE = "CAMERA_STACKING_ENABLE";
+	
+	public const string DS_DEFINE_S_LINEAR_PIPELINE_ENABLE = "LINEAR_PIPELINE_ENABLE";
+	public const string DS_DEFINE_S_HIGH_QUALITY_LEVEL_ENABLE = "HIGH_QUALITY_LEVEL_ENABLE";
+	public const string DS_DEFINE_S_ULTRA_QUALITY_LEVEL_ENABLE = "ULTRA_QUALITY_LEVEL_ENABLE";
+
 	public const string DS_DEFINE_S_CINEMACHINE_ENABLE = "CINEMACHINE_ENABLE";
 	public const string DS_DEFINE_S_CINEMACHINE_MODULE_ENABLE = "CINEMACHINE_MODULE_ENABLE";
 
@@ -92,14 +104,6 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_UNIVERSAL_RENDER_PIPELINE_ENABLE = "UNIVERSAL_RENDER_PIPELINE_ENABLE";
 	public const string DS_DEFINE_S_UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE = "UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE";
-	
-	public const string DS_DEFINE_S_LINEAR_PIPELINE_ENABLE = "LINEAR_PIPELINE_ENABLE";
-	public const string DS_DEFINE_S_HIGH_QUALITY_LEVEL_ENABLE = "HIGH_QUALITY_LEVEL_ENABLE";
-	public const string DS_DEFINE_S_ULTRA_QUALITY_LEVEL_ENABLE = "ULTRA_QUALITY_LEVEL_ENABLE";
-
-	public const string DS_DEFINE_S_MSAA_ENABLE = "MSAA_ENABLE";
-	public const string DS_DEFINE_S_PIXELS_PERFECT_ENABLE = "PIXELS_PERFECT_ENABLE";
-	public const string DS_DEFINE_S_CAMERA_STACKING_ENABLE = "CAMERA_STACKING_ENABLE";
 	// 렌더링 }
 
 	// 광원 {
@@ -129,12 +133,6 @@ public static partial class KCEditorDefine {
 	// 플랫폼 }
 
 	// 테스트 {
-	public const string DS_DEFINE_S_ML_AGENTS_ENABLE = "ML_AGENTS_ENABLE";
-	public const string DS_DEFINE_S_ML_AGENTS_MODULE_ENABLE = "ML_AGENTS_MODULE_ENABLE";
-
-	public const string DS_DEFINE_S_ADAPTIVE_PERFORMANCE_ENABLE = "ADAPTIVE_PERFORMANCE_ENABLE";
-	public const string DS_DEFINE_S_ADAPTIVE_PERFORMANCE_MODULE_ENABLE = "ADAPTIVE_PERFORMANCE_MODULE_ENABLE";
-
 	public const string DS_DEFINE_S_AB_TEST_ENABLE = "AB_TEST_ENABLE";
 	public const string DS_DEFINE_S_ADS_TEST_ENABLE = "ADS_TEST_ENABLE";
 	public const string DS_DEFINE_S_ROBO_TEST_ENABLE = "ROBO_TEST_ENABLE";
@@ -149,6 +147,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_AB_TEST_D_ENABLE = "AB_TEST_D_ENABLE";
 	public const string DS_DEFINE_S_AB_TEST_E_ENABLE = "AB_TEST_E_ENABLE";
 	public const string DS_DEFINE_S_AB_TEST_F_ENABLE = "AB_TEST_F_ENABLE";
+	public const string DS_DEFINE_S_AB_TEST_G_ENABLE = "AB_TEST_G_ENABLE";
+	public const string DS_DEFINE_S_AB_TEST_H_ENABLE = "AB_TEST_H_ENABLE";
+	public const string DS_DEFINE_S_AB_TEST_I_ENABLE = "AB_TEST_I_ENABLE";
 
 	public const string DS_DEFINE_S_ROBO_TEST_A_ENABLE = "ROBO_TEST_A_ENABLE";
 	public const string DS_DEFINE_S_ROBO_TEST_B_ENABLE = "ROBO_TEST_B_ENABLE";
@@ -156,6 +157,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_ROBO_TEST_D_ENABLE = "ROBO_TEST_D_ENABLE";
 	public const string DS_DEFINE_S_ROBO_TEST_E_ENABLE = "ROBO_TEST_E_ENABLE";
 	public const string DS_DEFINE_S_ROBO_TEST_F_ENABLE = "ROBO_TEST_F_ENABLE";
+	public const string DS_DEFINE_S_ROBO_TEST_G_ENABLE = "ROBO_TEST_G_ENABLE";
+	public const string DS_DEFINE_S_ROBO_TEST_H_ENABLE = "ROBO_TEST_H_ENABLE";
+	public const string DS_DEFINE_S_ROBO_TEST_I_ENABLE = "ROBO_TEST_I_ENABLE";
 
 	public const string DS_DEFINE_S_PLAY_TEST_A_ENABLE = "PLAY_TEST_A_ENABLE";
 	public const string DS_DEFINE_S_PLAY_TEST_B_ENABLE = "PLAY_TEST_B_ENABLE";
@@ -163,9 +167,28 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_PLAY_TEST_D_ENABLE = "PLAY_TEST_D_ENABLE";
 	public const string DS_DEFINE_S_PLAY_TEST_E_ENABLE = "PLAY_TEST_E_ENABLE";
 	public const string DS_DEFINE_S_PLAY_TEST_F_ENABLE = "PLAY_TEST_F_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_G_ENABLE = "PLAY_TEST_G_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_H_ENABLE = "PLAY_TEST_H_ENABLE";
+	public const string DS_DEFINE_S_PLAY_TEST_I_ENABLE = "PLAY_TEST_I_ENABLE";
+
+	public const string DS_DEFINE_S_ML_AGENTS_ENABLE = "ML_AGENTS_ENABLE";
+	public const string DS_DEFINE_S_ML_AGENTS_MODULE_ENABLE = "ML_AGENTS_MODULE_ENABLE";
+
+	public const string DS_DEFINE_S_ADAPTIVE_PERFORMANCE_ENABLE = "ADAPTIVE_PERFORMANCE_ENABLE";
+	public const string DS_DEFINE_S_ADAPTIVE_PERFORMANCE_MODULE_ENABLE = "ADAPTIVE_PERFORMANCE_MODULE_ENABLE";
 	// 테스트 }
 
 	// 기타 {
+	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
+	public const string DS_DEFINE_S_EDITOR_BUILD = "EDITOR_BUILD";
+	public const string DS_DEFINE_S_CREATIVE_BUILD = "CREATIVE_BUILD";
+
+	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
+	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
+	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
+	public const string DS_DEFINE_S_STORE_VER_CHECK_ENABLE = "STORE_VER_CHECK_ENABLE";
+	public const string DS_DEFINE_S_NINETAP_BUILD_PIPELINE_ENABLE = "NINETAP_BUILD_PIPELINE_ENABLE";
+
 	public const string DS_DEFINE_S_STUDY_ENABLE = "STUDY_ENABLE";
 	public const string DS_DEFINE_S_STUDY_MODULE_ENABLE = "STUDY_MODULE_ENABLE";
 
@@ -192,18 +215,6 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_BURST_COMPILER_ENABLE = "BURST_COMPILER_ENABLE";
 	public const string DS_DEFINE_S_BURST_COMPILER_MODULE_ENABLE = "BURST_COMPILER_MODULE_ENABLE";
-
-	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
-	public const string DS_DEFINE_S_EDITOR_BUILD = "EDITOR_BUILD";
-
-	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
-	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
-	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
-	public const string DS_DEFINE_S_STORE_VER_CHECK_ENABLE = "STORE_VER_CHECK_ENABLE";
-	public const string DS_DEFINE_S_NINETAP_BUILD_PIPELINE_ENABLE = "NINETAP_BUILD_PIPELINE_ENABLE";
-
-	public const string DS_DEFINE_S_MODULE_VER_2_0_0_OR_NEWER = "MODULE_VER_2_0_0_OR_NEWER";
-	public const string DS_DEFINE_S_MODULE_VER_2_0_1_OR_NEWER = "MODULE_VER_2_0_1_OR_NEWER";
 	// 기타 }
 	#endregion			// 기본
 
