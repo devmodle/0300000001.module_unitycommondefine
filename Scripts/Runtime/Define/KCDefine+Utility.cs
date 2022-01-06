@@ -87,8 +87,6 @@ public static partial class KCDefine {
 	public const float U_DURATION_POPUP_DROPDOWN_ANI = 0.35f;
 	public const float U_DURATION_POPUP_SLIDE_ANI = 0.35f;
 
-	public const float U_DURATION_TOAST_POPUP = 2.0f;
-
 	public const float U_DURATION_LIGHT_VIBRATE = 0.05f;
 	public const float U_DURATION_MEDIUM_VIBRATE = 0.1f;
 	public const float U_DURATION_HEAVY_VIBRATE = 0.15f;
@@ -348,7 +346,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_EMPTY = "Empty";
 	public const string U_OBJ_N_GAME_OBJ = "GameObj";
 	public const string U_OBJ_N_ALERT_POPUP = "AlertPopup";
-	public const string U_OBJ_N_TOAST_POPUP = "ToastPopup";
 
 	public const string U_OBJ_N_TEXT = "Text";
 	public const string U_OBJ_N_LOCALIZE_TEXT = "LocalizeText";
@@ -403,7 +400,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CHAPTER_SCROLL_VIEW = "ChapterScrollView";
 
 	public const string U_OBJ_N_SPRITE = "Sprite";
-
 	public const string U_OBJ_N_LINE_FX = "LineFX";
 	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
 	
@@ -415,15 +411,14 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_FADE_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
 
 	public const string U_OBJ_N_FMT_NUM_TEXT = "NumText_{0:00}";
-	public const string U_OBJ_N_FMT_COUNTDOWN_TEXT = "CountdownText_{0:00}"
-	;
+	public const string U_OBJ_N_FMT_COUNTDOWN_TEXT = "CountdownText_{0:00}";
 	public const string U_OBJ_N_FMT_CLEAR_MARK_IMG = "ClearMarkImg_{0:00}";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
 	public const string U_IMG_N_DEF_MESH = "DefMesh";
 	public const string U_IMG_N_DEF_SPRITE = "DefSprite";
 
-	public const string U_IMG_N_SPRITE_CLONE = "(Clone)";
+	public const string U_IMG_N_CLONE_SPRITE = "(Clone)";
 	public const string U_IMG_N_UNKNOWN_SPRITE = "Unknown";
 
 	public const string U_FUNC_N_ON_DRAG = "OnDrag";
@@ -716,8 +711,6 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_FX_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_FXSnd";
 
 	public static readonly string U_OBJ_P_G_ALERT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_AlertPopup";
-	public static readonly string U_OBJ_P_G_TOAST_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ToastPopup";
-	
 	public static readonly string U_OBJ_P_G_STORE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_StorePopup";
 	public static readonly string U_OBJ_P_G_SETTINGS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SettingsPopup";
 	public static readonly string U_OBJ_P_G_SYNC_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SyncPopup";
@@ -772,19 +765,19 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_08";
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_09";
 
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_01";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_02";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_03";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_04";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_05";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_06";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_07";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_08";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_09";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_01";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_02";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_03";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_04";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_05";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_06";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_07";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_08";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_09";
 
 	public static readonly string U_ASSET_P_FMT_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}U_SpriteAtlas_{"{0:00}"}";
 	public static readonly string U_ASSET_P_FMT_G_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_{"{0:00}"}";
-	public static readonly string U_ASSET_P_FMT_G_FIX_PF_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_FIX_PF_SpriteAtlas_{"{0:00}"}";
+	public static readonly string U_ASSET_P_FMT_G_FIX_PF_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_{"{0:00}"}";
 
 	public static readonly string U_TABLE_P_G_LEVEL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_LEVEL_INFO_ROOT}G_LevelInfoTable";
 	public static readonly string U_TABLE_P_G_LEVEL_INFO_SET_A = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}A/{KCDefine.B_DIR_P_LEVEL_INFO_ROOT}G_LevelInfoTable";
@@ -1054,7 +1047,7 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_LOAD_CALLBACK = "AdsMAdmobRewardAdsLoadCallback";
 	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobRewardAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_CLOSE_CALLBACK = "AdsMAdmobRewardAdsCloseCallback";
-	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_RECEIVE_REWARD_CALLBACK = "AdsMAdmobRewardAdsReceiveRewardCallback";
+	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_RECEIVE_ADS_REWARD_CALLBACK = "AdsMAdmobRewardAdsReceiveAdsRewardCallback";
 
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMAdmobFullscreenAdsLoadCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobFullscreenAdsLoadFailCallback";
@@ -1070,7 +1063,7 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_IRON_SRC_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcBannerAdsLoadFailCallback";
 
 	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_CLOSE_CALLBACK = "AdsMIronSrcRewardAdsCloseCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_RECEIVE_REWARD_CALLBACK = "AdsMIronSrcRewardAdsReceiveRewardCallback";
+	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_RECEIVE_ADS_REWARD_CALLBACK = "AdsMIronSrcRewardAdsReceiveAdsRewardCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_CHANGE_STATE_CALLBACK = "AdsMIronSrcRewardAdsChangeStateCallback";
 
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSrcFullscreenAdsLoadCallback";
@@ -1088,7 +1081,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinRewardAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_CLOSE_CALLBACK = "AdsMAppLovinRewardAdsCloseCallback";
-	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_RECEIVE_REWARD_CALLBACK = "AdsMAppLovinRewardAdsReceiveRewardCallback";
+	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_RECEIVE_ADS_REWARD_CALLBACK = "AdsMAppLovinRewardAdsReceiveAdsRewardCallback";
 
 	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAppLovinFullscreenAdsCloseCallback";
@@ -1232,7 +1225,7 @@ public static partial class KCDefine {
 
 #if ADS_MODULE_ENABLE
 	// 기타
-	public static readonly STAdsRewardItemInfo U_INVALID_ADS_REWARD_ITEM_INFO = new STAdsRewardItemInfo() {
+	public static readonly STAdsRewardInfo U_INVALID_ADS_REWARD_INFO = new STAdsRewardInfo() {
 		m_oID = string.Empty, m_oVal = string.Empty
 	};
 

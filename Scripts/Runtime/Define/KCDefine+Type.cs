@@ -158,8 +158,8 @@ public class CPathInfo {
 
 #region 조건부 타입
 #if ADS_MODULE_ENABLE
-/** 광고 보상 아이템 정보 */
-public struct STAdsRewardItemInfo {
+/** 광고 보상 정보 */
+public struct STAdsRewardInfo {
 	public string m_oID;
 	public string m_oVal;
 }
