@@ -181,9 +181,9 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 
 	public const string U_KEY_FMT_NUM_TARGETS = "NumTargets_{0:00}";
-	public const string U_KEY_FMT_TARGET_KINDS = "TargetKinds_{0:00}";
+	public const string U_KEY_FMT_NUM_UNLOCK_TARGETS = "NumUnlockTargets_{0:00}";
 
-	public const string U_KEY_FMT_UNLOCK_NUM_TARGETS = "UnlockNumTargets_{0:00}";
+	public const string U_KEY_FMT_TARGET_KINDS = "TargetKinds_{0:00}";
 	public const string U_KEY_FMT_UNLOCK_TARGET_KINDS = "UnlockTargetKinds_{0:00}";
 
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
@@ -411,7 +411,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_FADE_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
 
 	public const string U_OBJ_N_FMT_NUM_TEXT = "NumText_{0:00}";
-	public const string U_OBJ_N_FMT_COUNTDOWN_TEXT = "CountdownText_{0:00}";
 	public const string U_OBJ_N_FMT_CLEAR_MARK_IMG = "ClearMarkImg_{0:00}";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 

@@ -17,6 +17,12 @@ public static partial class KCDefine {
 	public const string E_OBJ_N_RIGHT_EDITOR_UIS = "RightEditorUIs";
 	public const string E_OBJ_N_MID_EDITOR_UIS = "MidEditorUIs";
 
+	// 중앙 에디터 UI
+	public const string E_OBJ_N_ME_UIS_MSG_UIS = "MsgUIs";
+
+	// 왼쪽 에디터 UI
+	public const string E_OBJ_N_LE_UIS_SET_UIS = "BottomMenuUIs_01";
+
 	// 에디터 입력 팝업
 	public const string E_OBJ_N_EDITOR_INPUT_POPUP = "EditorInputPopup";
 	public const string E_OBJ_N_EDITOR_IP_INPUT = "Input";

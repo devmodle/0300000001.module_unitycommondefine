@@ -179,9 +179,9 @@ public static partial class KCEditorDefine {
 	// 테스트 }
 
 	// 기타 {
-	public const string DS_DEFINE_S_STORE_BUILD = "STORE_BUILD";
-	public const string DS_DEFINE_S_EDITOR_BUILD = "EDITOR_BUILD";
-	public const string DS_DEFINE_S_CREATIVE_BUILD = "CREATIVE_BUILD";
+	public const string DS_DEFINE_S_STORE_DIST_BUILD = "STORE_DIST_BUILD";
+	public const string DS_DEFINE_S_EDITOR_DIST_BUILD = "EDITOR_DIST_BUILD";
+	public const string DS_DEFINE_S_CREATIVE_DIST_BUILD = "CREATIVE_DIST_BUILD";
 
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";

@@ -22,8 +22,6 @@ public static partial class KCDefine {
 	// 중앙 에디터 UI }
 
 	// 왼쪽 에디터 UI {
-	public const string LES_OBJ_N_LE_UIS_SET_TEXT = "SetText";
-
 	public const string LES_OBJ_N_LE_UIS_A_SET_BTN = "ASetBtn";
 	public const string LES_OBJ_N_LE_UIS_B_SET_BTN = "BSetBtn";
 
