@@ -162,7 +162,7 @@ public static partial class KCDefine {
 	public const string U_KEY_STAGE_ID = "StageID";
 	public const string U_KEY_CHAPTER_ID = "ChapterID";
 
-	public const string U_KEY_LEVEL_MODE = "LevelMode";
+	public const string U_KEY_DIFFICULTY = "Difficulty";
 	public const string U_KEY_LEVEL_KINDS = "LevelKinds";	
 	public const string U_KEY_STAGE_KINDS = "StageKinds";
 	public const string U_KEY_CHAPTER_KINDS = "ChapterKinds";
@@ -180,6 +180,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_NUM_ITEMS = "NumItems_{0:00}";
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 
+	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
 	public const string U_KEY_FMT_NUM_TARGETS = "NumTargets_{0:00}";
 	public const string U_KEY_FMT_NUM_UNLOCK_TARGETS = "NumUnlockTargets_{0:00}";
 
@@ -428,7 +429,7 @@ public static partial class KCDefine {
 
 	public const string U_FUNC_N_INIT = "Init";
 	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
-	public const string U_FUNC_N_RESET_LEVEL_MODE = "ResetLevelMode";
+	public const string U_FUNC_N_RESET_DIFFICULTY = "ResetDifficulty";
 	public const string U_FUNC_N_UPDATE_UIS_STATE = "UpdateUIsState";
 	
 	public const string U_INPUT_E_N_JUMP = "Jump";
