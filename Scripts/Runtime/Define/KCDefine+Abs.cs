@@ -226,9 +226,11 @@ public static partial class KCDefine {
 	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
 
-	public const string B_ASSET_N_PATTERN_FIX_CLAMP_WRAP = "_FIX_CW_";
-	public const string B_ASSET_N_PATTERN_FIX_POINT_FILTER = "_FIX_PF_";
-	public const string B_ASSET_N_PATTERN_FIX_LINEAR_CORRECTION = "_FIX_LC_";
+	public const string B_ASSET_N_PATTERN_FIX_MIPMAP = "__FIX_MM__";
+	public const string B_ASSET_N_PATTERN_FIX_READ_WRITE = "__FIX_RW__";
+	public const string B_ASSET_N_PATTERN_FIX_CLAMP_WRAP = "__FIX_CW__";
+	public const string B_ASSET_N_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
+	public const string B_ASSET_N_PATTERN_FIX_LINEAR_CORRECTION = "__FIX_LC__";
 	// 이름 }
 
 	// 씬 이름 {

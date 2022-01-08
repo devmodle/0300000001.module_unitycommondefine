@@ -765,19 +765,41 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_08";
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_09";
 
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_01";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_02";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_03";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_04";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_05";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_06";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_07";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_08";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_09";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}01";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}02";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}03";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}04";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}05";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}06";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}07";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}08";
+	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}09";
+
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}01";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}02";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}03";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}04";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}05";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}06";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}07";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}08";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}09";
+
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}01";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}02";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}03";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}04";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}05";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}06";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}07";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}08";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}09";
 
 	public static readonly string U_ASSET_P_FMT_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}U_SpriteAtlas_{"{0:00}"}";
 	public static readonly string U_ASSET_P_FMT_G_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_{"{0:00}"}";
-	public static readonly string U_ASSET_P_FMT_G_FIX_PF_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_FIX_PF_{"{0:00}"}";
+	public static readonly string U_ASSET_P_FMT_G_FIX_MM_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}{"{0:00}"}";
+	public static readonly string U_ASSET_P_FMT_G_FIX_RW_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}{"{0:00}"}";
+	public static readonly string U_ASSET_P_FMT_G_FIX_PF_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}{"{0:00}"}";
 
 	public static readonly string U_TABLE_P_G_LEVEL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_LEVEL_INFO_ROOT}G_LevelInfoTable";
 	public static readonly string U_TABLE_P_G_LEVEL_INFO_SET_A = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}A/{KCDefine.B_DIR_P_LEVEL_INFO_ROOT}G_LevelInfoTable";

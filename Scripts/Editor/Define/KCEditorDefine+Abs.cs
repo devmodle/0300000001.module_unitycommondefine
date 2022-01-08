@@ -14,9 +14,15 @@ using Unity.Notifications.iOS;
 /** 에디터 기본 상수 */
 public static partial class KCEditorDefine {
 	#region 기본
-	// 단위
-	public const int B_UNIT_MAX_TEXTURE_SIZE = 4096;
+	// 단위 {
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
+
+#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
+	public const int B_UNIT_MAX_TEXTURE_SIZE = 4096;
+#else
+	public const int B_UNIT_MAX_TEXTURE_SIZE = 2048;
+#endif			// #if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
+	// 단위 }
 
 	// 정렬 순서 {
 	public const int B_SORTING_O_BUILD_MENU = 1000;
@@ -903,17 +909,7 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_07}.spriteatlas"),
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08}.spriteatlas"),
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09}.spriteatlas"),
-
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_01}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_02}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_03}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_04}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_05}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_06}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_07}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_08}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_09}.spriteatlas"),
-
+		
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_BuildInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_BuildOptsTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_BUILD_OPTS_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_DefineSymbolTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_TABLE}.asset"),
