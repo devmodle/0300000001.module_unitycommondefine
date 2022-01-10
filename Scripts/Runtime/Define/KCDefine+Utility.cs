@@ -196,6 +196,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_UIS_BASE = "Canvas";
 	public const string U_OBJ_N_SCENE_UIS = "UIs";
 	public const string U_OBJ_N_SCENE_TEST_UIS = "TestUIs";
+	public const string U_OBJ_N_SCENE_GUIDE_UIS = "GuideUIs";
 	public const string U_OBJ_N_SCENE_PIVOT_UIS = "PivotUIs";
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
 	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
