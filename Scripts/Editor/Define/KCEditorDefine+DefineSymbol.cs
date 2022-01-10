@@ -186,6 +186,7 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
+	public const string DS_DEFINE_S_TITLE_SCENE_ENABLE = "TITLE_SCENE_ENABLE";
 	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
 	public const string DS_DEFINE_S_STORE_VER_CHECK_ENABLE = "STORE_VER_CHECK_ENABLE";
 	public const string DS_DEFINE_S_NINETAP_BUILD_PIPELINE_ENABLE = "NINETAP_BUILD_PIPELINE_ENABLE";
