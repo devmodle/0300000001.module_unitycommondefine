@@ -196,10 +196,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_UIS_BASE = "Canvas";
 	public const string U_OBJ_N_SCENE_UIS = "UIs";
 	public const string U_OBJ_N_SCENE_TEST_UIS = "TestUIs";
-	public const string U_OBJ_N_SCENE_GUIDE_UIS = "GuideUIs";
 	public const string U_OBJ_N_SCENE_PIVOT_UIS = "PivotUIs";
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
-	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
+	public const string U_OBJ_N_SCENE_DESIGN_RESOLUTION_GUIDE_UIS = "DesignResolutionGuideUIs";
 
 	public const string U_OBJ_N_SCENE_UP_UIS = "UpUIs";
 	public const string U_OBJ_N_SCENE_DOWN_UIS = "DownUIs";
@@ -238,6 +237,7 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_CONTENTS = "Contents";
 	public const string U_OBJ_N_CONTENTS_UIS = "ContentsUIs";
+	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
 
 	public const string U_OBJ_N_DESC_UIS = "DescUIs";
 	public const string U_OBJ_N_PAGE_UIS = "PageUIs";
@@ -443,8 +443,6 @@ public static partial class KCDefine {
 	public const string U_PROPERTY_N_SPRITE = "sprite";
 	public const string U_PROPERTY_N_TMP_TEXT = "text";
 	public const string U_PROPERTY_N_TMP_FONT = "font";
-
-	public const string U_ASSET_N_LIGHTING_SETTINGS = "U_LightingSettings";
 	// 이름 }
 
 	// 태그 {
@@ -731,7 +729,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_INDICATOR_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_IndicatorTouchResponder";
 	public static readonly string U_OBJ_P_G_SCREEN_FADE_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_ScreenFadeTouchResponder";
 
-	public static readonly string U_ASSET_P_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_UTILITY}U_LightingSettings";
+	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings";
 
 	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
 	public static readonly string U_ASSET_P_G_BUILD_OPTS_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildOptsTable";
@@ -1253,8 +1251,7 @@ public static partial class KCDefine {
 	};
 
 	// 크기
-	public static readonly Vector3 U_SIZE_PHONE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
-	public static readonly Vector3 U_SIZE_TABLET_BANNER_ADS = new Vector3(728.0f, 90.0f, 0.0f);
+	public static readonly Vector3 U_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
 
 #if ADMOB_ADS_ENABLE
 	// 크기

@@ -117,6 +117,7 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_N_SND_M_VIRTUALIZE_EFFECT = "m_VirtualizeEffects";
 
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
+	public const string B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE = "T_LightingSettings";
 
 	public const string B_FUNC_N_SET_COMPRESSION_TYPE = "SetCompressionType";
 	public const string B_FUNC_N_SET_LIGHTMAP_ENCODING_QUALITY = "SetLightmapEncodingQualityForPlatformGroup";
@@ -140,7 +141,6 @@ public static partial class KCEditorDefine {
 	public const string B_DIR_P_EDITOR_DEF_RESOURCES = "Editor Default Resources/";
 
 	public const string B_DIR_P_EXPORT_IMG_BASE = "Export/Images/";
-	public const string B_ASSET_P_FMT_LIGHTING_SETTINGS = "{0}/{1}Settings.lighting";
 	// 경로 }
 
 	// iOS {
@@ -368,6 +368,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_SCRIPTABLE_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Scriptables/";
 	public static readonly string B_DIR_P_SPRITE_ATLAS_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}SpriteAtlases/";
 	public static readonly string B_DIR_P_PIPELINE_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Pipelines/";
+	public static readonly string B_DIR_P_SETTINGS_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Settings/";
 
 	public static readonly string B_ABS_DIR_P_ASSETS = $"{Application.dataPath}/";
 	public static readonly string B_ABS_DIR_P_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Packages/";
@@ -916,6 +917,8 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_ProjInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_DeviceInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_DEVICE_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_LocalizeInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_LOCALIZE_INFO_TABLE}.asset"),
+
+		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS}.lighting"),
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_PluginInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_PLUGIN_INFO_TABLE}.asset"),

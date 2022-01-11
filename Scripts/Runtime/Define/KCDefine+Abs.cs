@@ -161,12 +161,12 @@ public static partial class KCDefine {
 	public const float B_FIXED_DELTA_TIME = 0.02f;
 	public const float B_DESKTOP_SCREEN_RATE = 0.9f;
 
-	public const string B_EMPTY_STR = "";
-	public const string B_UNKNOWN_STR = "Unknown";
-	public const string B_NEW_LINE_STR = "\n";
+	public const string B_TEXT_TRUE = "True";
+	public const string B_TEXT_FALSE = "False";
 
-	public const string B_TRUE_STR = "True";
-	public const string B_FALSE_STR = "False";
+	public const string B_TEXT_EMPTY = "";
+	public const string B_TEXT_UNKNOWN = "Unknown";
+	public const string B_TEXT_NEW_LINE = "\n";
 
 	public const string B_STR_0_INT = "0";
 	public const string B_STR_1_INT = "1";
@@ -197,9 +197,6 @@ public static partial class KCDefine {
 	public const string B_FILE_EXTENSION_BYTES = ".bytes";
 	public const string B_FILE_EXTENSION_SPRITE_ATLAS = ".spriteatlas";
 	public const string B_FILE_EXTENSION_TMP_FONT_ASSET = KCDefine.B_FILE_EXTENSION_ASSET;
-
-	public const string B_STR_KOREAN_PATTERN = "[ㄱ-ㅎ가-힣]";
-	public const string B_STR_ENGLISH_PATTERN = "[a-zA-Z]";
 
 	public const SystemLanguage B_DEF_LANGUAGE = SystemLanguage.English;
 	public static readonly Vector3 B_SCREEN_SIZE = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);

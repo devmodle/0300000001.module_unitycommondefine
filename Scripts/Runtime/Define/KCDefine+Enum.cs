@@ -176,6 +176,10 @@ public enum EDeviceType {
 	NONE = -1,
 	PHONE,
 	TABLET,
+	DESKTOP,
+	CONSOLE,
+	HANDHELD_CONSOLE,
+	UNKNOWN,
 	[HideInInspector] MAX_VAL
 }
 
