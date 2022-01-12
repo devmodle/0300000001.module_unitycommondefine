@@ -20,10 +20,6 @@ using Unity.Notifications.Android;
 #endif			// #if UNITY_IOS
 #endif			// #if NOTI_MODULE_ENABLE
 
-#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
-using UnityEngine.Rendering.Universal;
-#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
-
 /** 유틸리티 상수 */
 public static partial class KCDefine {
 	#region 기본
@@ -117,8 +113,8 @@ public static partial class KCDefine {
 	public const Ease U_EASE_ANI = Ease.OutQuad;
 
 	// 광원
-	public const LightShadows U_LIGHT_SHADOW_TYPE_SUB = LightShadows.Hard;
 	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.Soft;
+	public const LightShadows U_LIGHT_SHADOW_TYPE_ADDITIONAL = LightShadows.Hard;
 
 	// 회전
 	public static readonly Vector3 U_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
@@ -931,53 +927,6 @@ public static partial class KCDefine {
 	// 스크립트 순서 }
 #endif			// #if UNITY_EDITOR
 
-#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
-	// 개수
-	public const int U_MAX_NUM_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ = 4;
-
-	// 크기
-	public const int U_SIZE_UNIVERSAL_RP_COLOR_GRADING_LUT = 32;
-
-	// 길이
-	public const float U_PERCENT_UNIVERSAL_RP_CASCADE_2_SPLIT = 0.25f;
-
-	// 이름 {
-	public const string U_FIELD_N_UNIVERSAL_RP_ANTI_ALIASING = "m_MSAA";
-	public const string U_FIELD_N_UNIVERSAL_RP_OPAQUE_DOWN_SAMPLING = "m_OpaqueDownsampling";
-
-	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_2_SPLIT = "m_Cascade2Split";
-	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_3_SPLIT = "m_Cascade3Split";
-	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_4_SPLIT = "m_Cascade4Split";
-
-	public const string U_FIELD_N_UNIVERSAL_RP_RENDERER_DATAS = "m_RendererDataList";
-	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_SOFT_SHADOW = "m_SoftShadowsSupported";
-	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_TERRAIN_HOLES = "m_SupportsTerrainHoles";
-	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_MIXED_LIGHTING = "m_MixedLightingSupported";
-	
-	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
-	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
-	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
-
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SUPPORTS_SHADOW = "m_AdditionalLightShadowsSupported";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightShadowmapResolution";
-	// 이름 }
-	
-	// 옵션 {
-#if HIGH_QUALITY_LEVEL_ENABLE
-	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
-	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.THREE_CASCADES;
-#elif ULTRA_QUALITY_LEVEL_ENABLE
-	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
-	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
-#else
-	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._2xBilinear;
-	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
-#endif			// #if HIGH_QUALITY_LEVEL_ENABLE
-	// 옵션 }
-#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
-
 #if UNITY_IOS
 	// 이름
 	public const string U_MODEL_N_IPAD = "iPad";
@@ -1237,12 +1186,6 @@ public static partial class KCDefine {
 		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus, DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax, DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
 	};
 #endif			// #if UNITY_IOS
-
-#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
-	// 길이
-	public static readonly Vector2 U_PERCENT_UNIVERSAL_RP_CASCADE_3_SPLIT = new Vector2(0.1f, 0.3f);
-	public static readonly Vector3 U_PERCENT_UNIVERSAL_RP_CASCADE_4_SPLIT = new Vector3(0.075f, 0.2f, 0.45f);
-#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE
 	// 기타

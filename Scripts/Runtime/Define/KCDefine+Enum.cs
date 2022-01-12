@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /*
+=====> Experimental <=====
+- RenderingMode.Deferred
+- SpritePackerMode.SpriteAtlasV2
+- LightingSettings.Lightmapper.ProgressiveGPU
+
 =====> 씬 로딩 순서 <=====
 - Init
 - Splash
@@ -13,6 +18,7 @@ using UnityEngine.UI;
 - LateSetup
 - Permission
 - Intro
+- Title
 
 =====> 프로젝트 식별자 지정 방식 (8 자리) <=====
 - 소속 번호 (1 자리) + 종류 번호 (1 자리) + 장르 번호 (1 자리) + 프로젝트 번호 (3 자리) + 서브 프로젝트 번호 (1 자리) + 확장 번호 (1 자리)
