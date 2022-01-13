@@ -77,6 +77,15 @@ using UnityEngine.UI;
 - 161 ~ 169 : 참조 (복합) 형식 데이터 (리스트 or 딕셔너리)
 */
 #region 기본
+/** 열거형 값 */
+public enum EEnumVal {
+	NONE = -1,
+	TYPE = KCDefine.B_UNIT_KINDS_PER_TYPE,
+	KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE,
+	SUB_KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE,
+	[HideInInspector] MAX_VAL,
+}
+
 /** 마우스 버튼 */
 public enum EMouseBtn {
 	NONE = -1,
