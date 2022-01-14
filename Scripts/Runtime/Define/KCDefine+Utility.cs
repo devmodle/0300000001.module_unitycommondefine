@@ -99,15 +99,12 @@ public static partial class KCDefine {
 	public const int U_LAYER_UIS = 5;
 	public const int U_LAYER_CUSTOM = 11;
 
-	// 정렬 순서 {
+	// 정렬 순서
 	public const int U_SORTING_O_SCREEN_POPUP_UIS = 0;
 	public const int U_SORTING_O_SCREEN_TOPMOST_UIS = 1;
 	public const int U_SORTING_O_SCREEN_ABS_UIS = 2;
 	public const int U_SORTING_O_SCREEN_BLIND_UIS = 3;
 	public const int U_SORTING_O_SCREEN_DEBUG_UIS = 4;
-
-	public const int U_SORTING_O_FPS_COUNTER = 5;
-	// 정렬 순서 }
 
 	// 애니메이션
 	public const Ease U_EASE_ANI = Ease.OutQuad;
@@ -696,11 +693,8 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_RECYCLE_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}U_RecycleView";
 
 	public static readonly string U_OBJ_P_SPRITE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_2D_ROOT}U_Sprite";
-
 	public static readonly string U_OBJ_P_LINE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_LineFX";
 	public static readonly string U_OBJ_P_PARTICLE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_ParticleFX";
-
-	public static readonly string U_OBJ_P_FPS_COUNTER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_FPSCounter";
 	public static readonly string U_OBJ_P_TIMER_MANAGER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_TimerManager";
 	
 	public static readonly string U_OBJ_P_G_BG_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_BGSnd";
@@ -958,6 +952,7 @@ public static partial class KCDefine {
 	public const float U_DELTA_T_DYNAMIC_DEBUG = 0.25f;
 
 	// 형식 {
+	public const string U_TEXT_FMT_FPS_INFO = "FPS: {0:0.0}, Frame Time: {1:0.0} ms";
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
 
@@ -978,14 +973,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
 	public const string U_OBJ_N_SCREEN_DEBUG_TEXT_UIS = "DebugTextUIs";
 
-	public const string U_OBJ_N_FPS_C_STATIC_TEXT = "StaticInfoText";
-	public const string U_OBJ_N_FPS_C_DYNAMIC_TEXT = "DynamicInfoText";
-
 	public const string U_OBJ_N_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
 	public const string U_OBJ_N_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
-
-	public const string U_OBJ_N_SCREEN_FPS_BTN = "FPSBtn";
-	public const string U_OBJ_N_SCREEN_DEBUG_BTN = "DebugBtn";
+	
+	public const string U_OBJ_N_SCREEN_DEBUG_INFO_BTN = "DebugInfoBtn";
 	public const string U_OBJ_N_SCREEN_TIME_SCALE_UP_BTN = "TimeScaleUpBtn";
 	public const string U_OBJ_N_SCREEN_TIME_SCALE_DOWN_BTN = "TimeScaleDownBtn";
 	// 이름 }

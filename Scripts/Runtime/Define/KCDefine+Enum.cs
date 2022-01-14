@@ -328,8 +328,8 @@ public enum ELightmapEncodingQuality {
 	[HideInInspector] MAX_VAL
 }
 
-/** 빌드 타입 */
-public enum EBuildType {
+/** 빌드 모드 */
+public enum EBuildMode {
 	NONE = -1,
 	DEBUG,
 	RELEASE,

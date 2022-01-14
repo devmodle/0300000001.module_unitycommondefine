@@ -328,10 +328,6 @@ public static partial class KCEditorDefine {
 	public const string B_TEXT_OBJ_NAME_REPLACE = "=====> 객체 이름 변경 <=====";
 	// 객체 이름 에디터 윈도우 }
 
-	// FPS 카운터
-	public const int B_FONT_SIZE_FPS_C_STATIC_TEXT = 24;
-	public const int B_FONT_SIZE_FPS_C_DYNAMIC_TEXT = 24;
-	
 	// 패키지
 	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-3.9.1";
 	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-3.0.12";
@@ -726,10 +722,8 @@ public static partial class KCEditorDefine {
 	public static readonly List<(string, string)> B_PREFAB_P_INFO_LIST = new List<(string, string)>() {
 		// 00.AutoCreate {
 #if SAMPLE_PROJ
-		($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Externals/UI/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
 		($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
 #else
-		($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/UI/OmniSARTechnologies/LiteFPSCounter/Prefabs/LiteFPSCounter.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_FPS_COUNTER}.prefab"),
 		($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Resources/{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
 #endif			// #if SAMPLE_PROJ
 
@@ -1055,14 +1049,7 @@ public static partial class KCEditorDefine {
 	// 계층 뷰
 	public static readonly Color B_COLOR_HIERARCHY_TEXT = new Color(1.0f, 0.27f, 0.0f, 1.0f);
 	public static readonly Color B_COLOR_HIERARCHY_OUTLINE = Color.black;
-
-	// FPS 카운터 {
-	public static readonly Vector3 B_POS_FPS_C_STATIC_TEXT = new Vector3(-10.0f, 0.0f, 0.0f);
-	public static readonly Vector3 B_POS_FPS_C_DYNAMIC_TEXT = new Vector3(-10.0f, 140.0f, 0.0f);
-
-	public static readonly string B_DIR_P_FILTER_FPS_COUNTER = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External";
-	// FPS 카운터 }
-
+	
 	// iOS {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
 	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/iOS";
@@ -1203,9 +1190,6 @@ public static partial class KCEditorDefine {
 
 	#region 조건부 상수
 #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
-	// 크기
-	public const int U_SIZE_UNIVERSAL_RP_COLOR_GRADING_LUT = 32;
-
 	// 길이
 	public const float U_PERCENT_UNIVERSAL_RP_CASCADE_2_SPLIT = 0.25f;
 
@@ -1225,6 +1209,7 @@ public static partial class KCEditorDefine {
 	
 	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
 	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
+	public const string U_FIELD_N_UNIVERSAL_RP_USE_FAST_SRGB_LINEAR_CONVERSION = "m_UseFastSRGBLinearConversion";
 	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
 
 	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_COOKIE_FMT = "m_AdditionalLightsCookieFormat";
@@ -1252,18 +1237,15 @@ public static partial class KCEditorDefine {
 
 #if HIGH_QUALITY_LEVEL_ENABLE
 	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._4x;
-	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.THREE_CASCADES;
 #else
 	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._8x;
-	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._4xBilinear;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
 #endif			// #if HIGH_QUALITY_LEVEL_ENABLE
 #else
 	public const int U_OPTS_UNIVERSAL_RP_NUM_ADDITIONAL_LIGHTS_PER_OBJ = 2;
 
 	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._2x;
-	public const Downsampling U_OPTS_UNIVERSAL_RP_DOWN_SAMPLING = Downsampling._2xBilinear;
 	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
 
 	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = LightRenderingMode.PerPixel;
