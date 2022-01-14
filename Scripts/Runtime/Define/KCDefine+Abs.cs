@@ -157,7 +157,7 @@ public static partial class KCDefine {
 
 	public const int B_TARGET_FRAME_RATE = 60;
 
-	public const float B_DPI = 160.0f;
+	public const float B_DEF_SCREEN_DPI = 160.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
 	public const float B_DESKTOP_SCREEN_RATE = 0.9f;
 

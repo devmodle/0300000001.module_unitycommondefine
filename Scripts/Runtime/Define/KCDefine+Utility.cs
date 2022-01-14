@@ -64,7 +64,6 @@ public static partial class KCDefine {
 
 	public const float U_SCALE_TOUCH = 1.05f;
 	public const float U_SCALE_PAGE_SCROLL = 0.35f;
-	public const float U_SCALE_LANDSCAPE_BANNER_ADS_HEIGHT = 0.68f;
 	// 비율 }
 
 	// 시간 {
@@ -948,11 +947,11 @@ public static partial class KCDefine {
 #endif			// #if UNITY_ANDROID
 
 #if DEBUG || DEVELOPMENT_BUILD
-	// 시간
-	public const float U_DELTA_T_DYNAMIC_DEBUG = 0.25f;
+	// 크기
+	public const int U_FONT_SIZE_FPS_INFO = 25;
 
 	// 형식 {
-	public const string U_TEXT_FMT_FPS_INFO = "FPS: {0:0.0}, Frame Time: {1:0.0} ms";
+	public const string U_TEXT_FMT_FPS_INFO = "FPS: {0:0.0}";
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
 
@@ -1194,7 +1193,7 @@ public static partial class KCDefine {
 
 #if ADMOB_ADS_ENABLE
 	// 크기
-	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = AdSize.Banner;
+	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize(320, 50);
 #endif			// #if ADMOB_ADS_ENABLE
 
 #if IRON_SRC_ADS_ENABLE
