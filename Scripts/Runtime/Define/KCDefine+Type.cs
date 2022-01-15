@@ -156,6 +156,22 @@ public class CPathInfo {
 }
 #endregion			// 기본
 
+#region 제네릭 타입
+/** 리스트 래퍼 */
+public class CListWrapper<T> {
+	public List<T> m_oList = new List<T>();
+	public List<T> m_oAddList = new List<T>();
+	public List<T> m_oRemoveList = new List<T>();
+}
+
+/** 딕셔너리 래퍼 */
+public class CDictWrapper<K, V> {
+	public Dictionary<K, V> m_oDict = new Dictionary<K, V>();
+	public Dictionary<K, V> m_oAddDict = new Dictionary<K, V>();
+	public Dictionary<K, V> m_oRemoveDict = new Dictionary<K, V>();
+}
+#endregion			// 제네릭 타입
+
 #region 조건부 타입
 #if ADS_MODULE_ENABLE
 /** 광고 보상 정보 */
