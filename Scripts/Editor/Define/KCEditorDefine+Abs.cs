@@ -118,6 +118,8 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_N_SND_M_DOPPLER_FACTOR = "Doppler Factor";
 	public const string B_PROPERTY_N_SND_M_DISABLE_AUDIO = "m_DisableAudio";
 	public const string B_PROPERTY_N_SND_M_VIRTUALIZE_EFFECT = "m_VirtualizeEffects";
+	public const string B_PROPERTY_N_SND_M_AMBISONIC_DECODER_PLUGIN = "m_AmbisonicDecoderPlugin";
+	public const string B_PROPERTY_N_SND_M_ENABLE_OUTPUT_SUSPENSION = "m_EnableOutputSuspension";
 
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
 	public const string B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE = "T_LightingSettings";
@@ -270,10 +272,6 @@ public static partial class KCEditorDefine {
 	public const float B_OFFSET_HIERARCHY_OUTLINE = 1.0f;
 
 	// 에디터 옵션 {
-	public const string B_EDITOR_OPTS_IOS_REMOTE_DEVICE = "Any iOS Device";
-	public const string B_EDITOR_OPTS_ANDROID_REMOTE_DEVICE = "Any Android Device";
-	public const string B_EDITOR_OPTS_DISABLE_REMOTE_DEVICE = "None";
-
 	public const string B_EDITOR_OPTS_REMOTE_COMPRESSION = "JPEG";
 	public const string B_EDITOR_OPTS_REMOTE_RESOLUTION = "Downsize";
 	public const string B_EDITOR_OPTS_VER_CONTROL = "Visible Meta Files";
@@ -283,6 +281,14 @@ public static partial class KCEditorDefine {
 
 	// TODO: 해당 기능 안정화 필요
 	// public const LightingSettings.Lightmapper B_EDITOR_OPTS_LIGHTMAPPER = LightingSettings.Lightmapper.ProgressiveGPU;
+
+#if UNITY_IOS
+	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "Any iOS Device";
+#elif UNITY_ANDROID
+	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "Any Android Device";
+#else
+	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "None";
+#endif			// #if UNITY_IOS
 
 #if LIGHTMAP_SHADOW_BAKE_ENABLE
 #if LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE
@@ -414,10 +420,11 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_BURST_AOT_SETTINGS_MAC = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneOSX.json";
 	public static readonly string B_ASSET_P_BURST_AOT_SETTINGS_WNDS = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneWindows.json";
 
+	public static readonly string B_ASSET_P_OPTS_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_OPTS_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_BUILD_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE}.asset";
-	public static readonly string B_ASSET_P_BUILD_OPTS_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_BUILD_OPTS_TABLE}.asset";
 	public static readonly string B_ASSET_P_PROJ_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE}.asset";
-	public static readonly string B_ASSET_P_DEFINE_SYMBOL_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_TABLE}.asset";
+	public static readonly string B_ASSET_P_DEFINE_SYMBOL_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_INFO_TABLE}.asset";
+	
 	public static readonly string B_ASSET_P_SALE_ITEM_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SALE_ITEM_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_SALE_PRODUCT_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SALE_PRODUCT_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_MISSION_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_MISSION_INFO_TABLE}.asset";
@@ -913,12 +920,13 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08}.spriteatlas"),
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09}.spriteatlas"),
 		
+		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_OptsInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_OPTS_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_BuildInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE}.asset"),
-		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_BuildOptsTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_BUILD_OPTS_TABLE}.asset"),
-		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_DefineSymbolTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_TABLE}.asset"),
+		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_DefineSymbolInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_ProjInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_DeviceInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_DEVICE_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_LocalizeInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_LOCALIZE_INFO_TABLE}.asset"),
+		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_StorageInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_STORAGE_INFO_TABLE}.asset"),
 
 		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS}.lighting"),
 

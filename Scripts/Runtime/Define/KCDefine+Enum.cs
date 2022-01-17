@@ -7,6 +7,7 @@ using UnityEngine.UI;
 =====> Experimental <=====
 - RenderingMode.Deferred
 - SpritePackerMode.SpriteAtlasV2
+- UniversalRenderPipelineAsset.useSRPBatcher
 - LightingSettings.Lightmapper.ProgressiveGPU
 
 =====> 씬 로딩 순서 <=====
@@ -293,6 +294,7 @@ public enum EStartSceneEvent {
 /** DSP 버퍼 크기 */
 public enum EDSPBufferSize {
 	NONE = -1,
+	DEFAULT,
 	BEST_LATENCY = 256,
 	GOOD_LATENCY = 512,
 	BEST_PERFORMANCE = 1024,

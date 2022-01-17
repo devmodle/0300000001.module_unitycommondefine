@@ -721,12 +721,14 @@ public static partial class KCDefine {
 
 	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings";
 
+	public static readonly string U_ASSET_P_G_OPTS_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_OptsInfoTable";
 	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
-	public static readonly string U_ASSET_P_G_BUILD_OPTS_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildOptsTable";
-	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DefineSymbolTable";
+	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DefineSymbolInfoTable";
 	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProjInfoTable";
 	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
 	public static readonly string U_ASSET_P_G_LOCALIZE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_LocalizeInfoTable";
+	public static readonly string U_ASSET_P_G_STORAGE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_StorageInfoTable";
+
 	public static readonly string U_ASSET_P_G_SALE_ITEM_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleItemInfoTable";
 	public static readonly string U_ASSET_P_G_SALE_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
 	public static readonly string U_ASSET_P_G_MISSION_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_MissionInfoTable";
@@ -947,13 +949,12 @@ public static partial class KCDefine {
 #endif			// #if UNITY_ANDROID
 
 #if DEBUG || DEVELOPMENT_BUILD
-	// 크기
-	public const int U_FONT_SIZE_FPS_INFO = 25;
-
 	// 형식 {
-	public const string U_TEXT_FMT_FPS_INFO = "FPS: {0:0.0}";
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
+
+	public const string U_TEXT_FMT_FPS = "FPS: {0:0.0}";
+	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: {0:0.0} ms";
 
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_A = "Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_B = "Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
@@ -970,12 +971,19 @@ public static partial class KCDefine {
 
 	// 이름 {
 	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
-	public const string U_OBJ_N_SCREEN_DEBUG_TEXT_UIS = "DebugTextUIs";
+
+	public const string U_OBJ_N_SCREEN_FPS_INFO_UIS = "FPSInfoUIs";
+	public const string U_OBJ_N_SCREEN_DEBUG_INFO_UIS = "DebugInfoUIs";
+
+	public const string U_OBJ_N_SCREEN_FPS_TEXT = "FPSText";
+	public const string U_OBJ_N_SCREEN_FRAME_TIME_TEXT = "FrameTimeText";
 
 	public const string U_OBJ_N_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
 	public const string U_OBJ_N_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
-	
+
+	public const string U_OBJ_N_SCREEN_FPS_INFO_BTN = "FPSInfoBtn";
 	public const string U_OBJ_N_SCREEN_DEBUG_INFO_BTN = "DebugInfoBtn";
+
 	public const string U_OBJ_N_SCREEN_TIME_SCALE_UP_BTN = "TimeScaleUpBtn";
 	public const string U_OBJ_N_SCREEN_TIME_SCALE_DOWN_BTN = "TimeScaleDownBtn";
 	// 이름 }
