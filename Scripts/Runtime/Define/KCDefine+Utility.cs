@@ -112,9 +112,6 @@ public static partial class KCDefine {
 	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.Soft;
 	public const LightShadows U_LIGHT_SHADOW_TYPE_ADDITIONAL = LightShadows.Hard;
 
-	// 회전
-	public static readonly Vector3 U_ANGLE_MAIN_LIGHT = new Vector3(45.0f, 45.0f, 0.0f);
-	
 	// 형식 {
 #if UNITY_IOS
 	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
@@ -191,12 +188,18 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_TEST_UIS = "TestUIs";
 	public const string U_OBJ_N_SCENE_PIVOT_UIS = "PivotUIs";
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
+	public const string U_OBJ_N_SCENE_CORNER_ANCHOR_UIS = "CornerAnchorUIs";
 	public const string U_OBJ_N_SCENE_DESIGN_RESOLUTION_GUIDE_UIS = "DesignResolutionGuideUIs";
 
 	public const string U_OBJ_N_SCENE_UP_UIS = "UpUIs";
 	public const string U_OBJ_N_SCENE_DOWN_UIS = "DownUIs";
 	public const string U_OBJ_N_SCENE_LEFT_UIS = "LeftUIs";
 	public const string U_OBJ_N_SCENE_RIGHT_UIS = "RightUIs";
+
+	public const string U_OBJ_N_SCENE_UP_LEFT_UIS = "UpLeftUIs";
+	public const string U_OBJ_N_SCENE_UP_RIGHT_UIS = "UpRightUIs";
+	public const string U_OBJ_N_SCENE_DOWN_LEFT_UIS = "DownLeftUIs";
+	public const string U_OBJ_N_SCENE_DOWN_RIGHT_UIS = "DownRightUIs";
 
 	public const string U_OBJ_N_SCENE_POPUP_UIS = "PopupUIs";
 	public const string U_OBJ_N_SCENE_TOPMOST_UIS = "TopmostUIs";
@@ -213,11 +216,12 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_LEFT_OBJS = "LeftObjs";
 	public const string U_OBJ_N_SCENE_RIGHT_OBJS = "RightObjs";
 
-	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIs Camera";
-	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "Main Camera";
-	public const string U_OBJ_N_SCENE_MAIN_LIGHT = "Directional Light";
+	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIsCamera";
+	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "MainCamera";
+	public const string U_OBJ_N_SCENE_MAIN_LIGHT = "MainLight";
 	public const string U_OBJ_N_SCENE_MANAGER = "SceneManager";
 
+	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
 	public const string U_OBJ_N_SCREEN_BLIND_UIS = "ScreenBlindUIs";
 	public const string U_OBJ_N_SCREEN_POPUP_UIS = "ScreenPopupUIs";
 	public const string U_OBJ_N_SCREEN_TOPMOST_UIS = "ScreenTopmostUIs";
@@ -953,8 +957,8 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
 
-	public const string U_TEXT_FMT_FPS = "FPS: {0:0.0}";
-	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: {0:0.0} ms";
+	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color>";
+	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: <color=orange>{0:0.0}</color> ms";
 
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_A = "Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_B = "Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
@@ -970,8 +974,6 @@ public static partial class KCDefine {
 	// 형식 }
 
 	// 이름 {
-	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
-
 	public const string U_OBJ_N_SCREEN_FPS_INFO_UIS = "FPSInfoUIs";
 	public const string U_OBJ_N_SCREEN_DEBUG_INFO_UIS = "DebugInfoUIs";
 
@@ -1176,6 +1178,11 @@ public static partial class KCDefine {
 	// 그룹 정보 }
 #endif			// #if UNITY_ANDROID
 #endif			// #if NOTI_ENABLE
+
+#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+	// 이름
+	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
+#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
