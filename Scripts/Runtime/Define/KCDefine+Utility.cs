@@ -1179,10 +1179,10 @@ public static partial class KCDefine {
 #endif			// #if UNITY_ANDROID
 #endif			// #if NOTI_ENABLE
 
-#if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+#if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	// 이름
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
-#endif			// #if UNIVERSAL_RENDER_PIPELINE_MODULE_ENABLE
+#endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
