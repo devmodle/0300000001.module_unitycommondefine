@@ -55,7 +55,7 @@ public static partial class KCDefine {
 
 	// 거리
 	public const float U_DISTANCE_CAMERA_PLANE = 500.0f;
-	public const float U_DISTANCE_CAMERA_FAR_PLANE = 500000.0f;
+	public const float U_DISTANCE_CAMERA_FAR_PLANE = 100000.0f;
 	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 0.1f;
 
 	// 비율 {

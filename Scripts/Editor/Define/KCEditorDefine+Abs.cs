@@ -18,15 +18,9 @@ using UnityEngine.Rendering.Universal;
 /** 에디터 기본 상수 */
 public static partial class KCEditorDefine {
 	#region 기본
-	// 단위 {
-	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
-
-#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
-	public const int B_UNIT_MAX_TEXTURE_SIZE = 4096;
-#else
+	// 단위
 	public const int B_UNIT_MAX_TEXTURE_SIZE = 2048;
-#endif			// #if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
-	// 단위 }
+	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
 	// 정렬 순서 {
 	public const int B_SORTING_O_BUILD_MENU = 1000;
