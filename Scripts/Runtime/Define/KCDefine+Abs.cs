@@ -242,7 +242,6 @@ public static partial class KCDefine {
 
 	public const string B_SCENE_N_START = "01.StartScene";
 	public const string B_SCENE_N_SPLASH = "01.SplashScene";
-	public const string B_SCENE_N_PERMISSION = "01.PermissionScene";
 	public const string B_SCENE_N_INTRO = "01.IntroScene";
 
 	public const string B_SCENE_N_TITLE = "01.TitleScene";
@@ -342,7 +341,6 @@ public static partial class KCDefine {
 
 	public const string B_DIR_P_START_SCENE = "StartScene/";
 	public const string B_DIR_P_SPLASH_SCENE = "SplashScene/";
-	public const string B_DIR_P_PERMISSION_SCENE = "PermissionScene/";
 	public const string B_DIR_P_INTRO_SCENE = "IntroScene/";
 
 	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
@@ -519,7 +517,7 @@ public static partial class KCDefine {
 	#region 런타임 상수
 	// 씬 이름
 	public static readonly List<string> B_INIT_SCENE_NAME_LIST = new List<string>() {
-		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_SPLASH, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_PERMISSION, KCDefine.B_SCENE_N_INTRO
+		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_SPLASH, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_INTRO
 	};
 
 	// 기타 {

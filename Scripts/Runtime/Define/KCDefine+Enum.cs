@@ -17,7 +17,6 @@ using UnityEngine.UI;
 - Setup (Additive)
 - Agree (Additive)
 - LateSetup (Additive)
-- Permission (Additive)
 - Intro
 - Title
 
@@ -283,7 +282,6 @@ public enum EStartSceneEvent {
 	LOAD_SETUP_SCENE,
 	LOAD_AGREE_SCENE,
 	LOAD_LATE_SETUP_SCENE,
-	LOAD_PERMISSION_SCENE,
 	[HideInInspector] MAX_VAL
 }
 #endregion			// 기본
