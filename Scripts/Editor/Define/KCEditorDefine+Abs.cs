@@ -117,6 +117,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
 	public const string B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE = "T_LightingSettings";
+	public const string B_ASSET_N_POST_PROCESSING_SETTINGS_TEMPLATE = "T_PostProcessingSettings";
 
 	public const string B_FUNC_N_SET_COMPRESSION_TYPE = "SetCompressionType";
 	public const string B_FUNC_N_SET_LIGHTMAP_ENCODING_QUALITY = "SetLightmapEncodingQualityForPlatformGroup";
@@ -928,6 +929,10 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_StorageInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_STORAGE_INFO_TABLE}.asset"),
 
 		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS}.lighting"),
+
+#if POST_PROCESSING_MODULE_ENABLE
+		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_PostProcessingSettings.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_POST_PROCESSING_SETTINGS}.asset"),
+#endif			// #if POST_PROCESSING_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_PluginInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_PLUGIN_INFO_TABLE}.asset"),
