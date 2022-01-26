@@ -217,8 +217,8 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_STANDALONE_MAC_STEAM = "StandaloneMacSteam";
 	public const string B_PLATFORM_N_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
 
-	public const string B_PLATFORM_N_DEF_TEXTURE = "DefaultTexturePlatform";
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
+	public const string B_PLATFORM_N_DEF_TEXTURE = "DefaultTexturePlatform";
 
 	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
@@ -227,7 +227,7 @@ public static partial class KCDefine {
 	public const string B_ASSET_N_PATTERN_FIX_READ_WRITE = "__FIX_RW__";
 	public const string B_ASSET_N_PATTERN_FIX_CLAMP_WRAP = "__FIX_CW__";
 	public const string B_ASSET_N_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
-	public const string B_ASSET_N_PATTERN_FIX_LINEAR_CORRECTION = "__FIX_LC__";
+	public const string B_ASSET_N_PATTERN_FIX_GAMMA_PIPELINE = "__FIX_GP__";
 	// 이름 }
 
 	// 씬 이름 {
@@ -247,8 +247,8 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_TITLE = "01.TitleScene";
 	public const string B_SCENE_N_MAIN = "02.MainScene";
 	public const string B_SCENE_N_GAME = "03.GameScene";
-	public const string B_SCENE_N_OVERLAY = "00.OverlayScene";
-	public const string B_SCENE_N_LOADING = "00.LoadingScene";
+	public const string B_SCENE_N_LOADING = "91.LoadingScene";
+	public const string B_SCENE_N_OVERLAY = "92.OverlayScene";
 
 	public const string B_SCENE_N_MENU = "01.MenuScene";
 	public const string B_SCENE_N_TEST = "99.TestScene";
@@ -318,6 +318,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_IMAGES = "Images/";
 	public const string B_DIR_P_SOUNDS = "Sounds/";
 	public const string B_DIR_P_TABLES = "Tables/";
+	public const string B_DIR_P_SHADERS = "Shaders/";
 	public const string B_DIR_P_PREFABS = "Prefabs/";
 	public const string B_DIR_P_TEXTURES = "Textures/";
 	public const string B_DIR_P_MATERIALS = "Materials/";
@@ -346,8 +347,8 @@ public static partial class KCDefine {
 	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
 	public const string B_DIR_P_MAIN_SCENE = "MainScene/";
 	public const string B_DIR_P_GAME_SCENE = "GameScene/";
-	public const string B_DIR_P_OVERLAY_SCENE = "OverlayScene/";
 	public const string B_DIR_P_LOADING_SCENE = "LoadingScene/";
+	public const string B_DIR_P_OVERLAY_SCENE = "OverlayScene/";
 
 	public const string B_DIR_P_MENU_SCENE = "MenuScene/";
 	public const string B_DIR_P_EDITOR_SCENE = "EditorScene/";

@@ -216,10 +216,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_LEFT_OBJS = "LeftObjs";
 	public const string U_OBJ_N_SCENE_RIGHT_OBJS = "RightObjs";
 
+	public const string U_OBJ_N_SCENE_MANAGER = "SceneManager";
 	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIsCamera";
 	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "MainCamera";
-	public const string U_OBJ_N_SCENE_MAIN_LIGHT = "MainLight";
-	public const string U_OBJ_N_SCENE_MANAGER = "SceneManager";
+	public const string U_OBJ_N_SCENE_MAIN_DIRECTIONAL_LIGHT = "MainDirectionalLight";
 
 	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
 	public const string U_OBJ_N_SCREEN_BLIND_UIS = "ScreenBlindUIs";
@@ -453,8 +453,8 @@ public static partial class KCDefine {
 	public const string U_TAG_ENEMY = "Enemy";
 	public const string U_TAG_OBSTACLE = "Obstacle";
 	public const string U_TAG_UIS_CAMERA = "UIsCamera";
-	public const string U_TAG_MAIN_LIGHT = "MainLight";
 	public const string U_TAG_SCENE_MANAGER = "SceneManager";
+	public const string U_TAG_MAIN_DIRECTIONAL_LIGHT = "MainDirectionalLight";
 	// 태그 }
 
 	// 정렬 레이어 {
@@ -597,7 +597,7 @@ public static partial class KCDefine {
 
 	// 태그
 	public static readonly List<string> U_TAG_LIST = new List<string>() {
-		KCDefine.U_TAG_ENEMY, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_UIS_CAMERA, KCDefine.U_TAG_MAIN_LIGHT, KCDefine.U_TAG_SCENE_MANAGER
+		KCDefine.U_TAG_ENEMY, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_UIS_CAMERA, KCDefine.U_TAG_SCENE_MANAGER, KCDefine.U_TAG_MAIN_DIRECTIONAL_LIGHT
 	};
 
 	// 정렬 레이어
@@ -622,16 +622,20 @@ public static partial class KCDefine {
 	// 정렬 순서 }
 
 	// 레이어 마스크 {
-	public static readonly List<int> U_LAYER_MASK_LIST_UIS_CAMERA = new List<int>() {
+	public static readonly List<int> U_LAYER_MASKS_UIS_CAMERA = new List<int>() {
 		KCDefine.U_LAYER_UIS
 	};
 
-	public static readonly List<int> U_LAYER_MASK_LIST_MAIN_CAMERA = new List<int>() {
+	public static readonly List<int> U_LAYER_MASKS_MAIN_CAMERA = new List<int>() {
 		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER,
 
 #if !CAMERA_STACKING_ENABLE
 		KCDefine.U_LAYER_UIS
 #endif			// #if !CAMERA_STACKING_ENABLE
+	};
+
+	public static readonly List<int> U_LAYER_MASKS_MAIN_DIRECTIONAL_LIGHT = new List<int>() {
+		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER
 	};
 	// 레이어 마스크 }
 	
@@ -838,9 +842,16 @@ public static partial class KCDefine {
 	public static readonly string U_SND_P_G_POPUP_SHOW = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_PopupShow";
 	public static readonly string U_SND_P_G_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_PopupClose";
 
+	public static readonly string U_MAT_P_G_UNIVERSAL_RP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPLitMat";
+	public static readonly string U_MAT_P_G_UNIVERSAL_RP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPUnlitMat";
+
 	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_ASSET = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPAsset";
-	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPRenderData";
-	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_SSAO_RENDER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPSSAORenderData";
+
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPRendererData";
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_SSAO_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPSSAORendererData";
+
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_2D_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRP2DRendererData";
+	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_2D_SSAO_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRP2DSSAORendererData";
 
 	public static readonly string U_IMG_P_G_ARROW = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_Arrow";
 	public static readonly string U_IMG_P_G_WHITE = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_UnityWhite";
