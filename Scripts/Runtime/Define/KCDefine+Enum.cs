@@ -86,6 +86,25 @@ public enum EEnumVal {
 	[HideInInspector] MAX_VAL,
 }
 
+/** POT 값 */
+public enum EPOTVal {
+	NONE = -1,
+	POT_2 = 2,
+	POT_4 = 4,
+	POT_8 = 8,
+	POT_16 = 16,
+	POT_32 = 32,
+	POT_64 = 64,
+	POT_128 = 128,
+	POT_256 = 256,
+	POT_512 = 512,
+	POT_1024 = 1024,
+	POT_2048 = 2048,
+	POT_4096 = 2096,
+	POT_8192 = 8192,
+	[HideInInspector] MAX_VAL
+}
+
 /** 마우스 버튼 */
 public enum EMouseBtn {
 	NONE = -1,

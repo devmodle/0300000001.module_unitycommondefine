@@ -108,10 +108,6 @@ public static partial class KCDefine {
 	// 애니메이션
 	public const Ease U_EASE_ANI = Ease.OutQuad;
 
-	// 광원
-	public const LightShadows U_LIGHT_SHADOW_TYPE_MAIN = LightShadows.Soft;
-	public const LightShadows U_LIGHT_SHADOW_TYPE_ADDITIONAL = LightShadows.Hard;
-
 	// 형식 {
 #if UNITY_IOS
 	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";

@@ -19,7 +19,6 @@ using UnityEngine.Rendering.Universal;
 public static partial class KCEditorDefine {
 	#region 기본
 	// 단위
-	public const int B_UNIT_MAX_TEXTURE_SIZE = 2048;
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
 	// 정렬 순서 {
@@ -42,6 +41,21 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_T_HIERARCHY_UPDATE = 1.0f;
 	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
+
+	// 광원 {
+#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
+	public const int B_EDITOR_OPTS_LIGHT_MAP_MAX_SIZE = (int)EPOTVal.POT_2048;
+
+#if HIGH_QUALITY_LEVEL_ENABLE
+	public const LightmapCompression B_EDITOR_OPTS_LIGHT_MAP_COMPRESSION = LightmapCompression.NormalQuality;
+#else
+	public const LightmapCompression B_EDITOR_OPTS_LIGHT_MAP_COMPRESSION = LightmapCompression.HighQuality;
+#endif			// #if HIGH_QUALITY_LEVEL_ENABLE
+#else
+	public const int B_EDITOR_OPTS_LIGHT_MAP_MAX_SIZE = (int)EPOTVal.POT_1024;
+	public const LightmapCompression B_EDITOR_OPTS_IGHT_MAP_COMPRESSION = LightmapCompression.LowQuality;
+#endif			// #if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
+	// 광원 }
 
 	// 토큰
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
@@ -1231,29 +1245,18 @@ public static partial class KCEditorDefine {
 	// 이름 }
 	
 	// 옵션 {
-#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
 	public const int U_OPTS_UNIVERSAL_RP_NUM_ADDITIONAL_LIGHTS_PER_OBJ = 4;
+	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._4x;
+	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
 
+#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
 	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = LightRenderingMode.PerPixel;
 	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_RENDERING_MODE = LightRenderingMode.PerPixel;
 	public const LightCookieResolution B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_COOKIE_RESOLUTION = LightCookieResolution._512;
 
 	public const UnityEngine.Rendering.Universal.ShadowResolution B_OPTS_UNIVERSAL_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = UnityEngine.Rendering.Universal.ShadowResolution._2048;
 	public const UnityEngine.Rendering.Universal.ShadowResolution B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = UnityEngine.Rendering.Universal.ShadowResolution._1024;
-
-#if HIGH_QUALITY_LEVEL_ENABLE
-	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._4x;
-	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.THREE_CASCADES;
 #else
-	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._8x;
-	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
-#endif			// #if HIGH_QUALITY_LEVEL_ENABLE
-#else
-	public const int U_OPTS_UNIVERSAL_RP_NUM_ADDITIONAL_LIGHTS_PER_OBJ = 2;
-
-	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._2x;
-	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
-
 	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = LightRenderingMode.PerPixel;
 	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_RENDERING_MODE = LightRenderingMode.PerVertex;
 	public const LightCookieResolution B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_COOKIE_RESOLUTION = LightCookieResolution._256;
