@@ -723,8 +723,13 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_INDICATOR_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_IndicatorTouchResponder";
 	public static readonly string U_OBJ_P_G_SCREEN_FADE_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_RESPONDER_ROOT}G_ScreenFadeTouchResponder";
 
-	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings";
-	public static readonly string U_ASSET_P_G_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_PostProcessingSettings";
+	public static readonly string U_ASSET_P_G_NORM_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityLightingSettings";
+	public static readonly string U_ASSET_P_G_HIGH_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityLightingSettings";
+	public static readonly string U_ASSET_P_G_ULTRA_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityLightingSettings";
+
+	public static readonly string U_ASSET_P_G_NORM_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityPostProcessingSettings";
+	public static readonly string U_ASSET_P_G_HIGH_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityPostProcessingSettings";
+	public static readonly string U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityPostProcessingSettings";
 
 	public static readonly string U_ASSET_P_G_OPTS_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_OptsInfoTable";
 	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
@@ -841,7 +846,9 @@ public static partial class KCDefine {
 	public static readonly string U_MAT_P_G_UNIVERSAL_RP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPLitMat";
 	public static readonly string U_MAT_P_G_UNIVERSAL_RP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPUnlitMat";
 
-	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_ASSET = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPAsset";
+	public static readonly string U_PIPELINE_P_G_NORM_QUALITY_UNIVERSAL_RP_ASSET = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityUniversalRPAsset";
+	public static readonly string U_PIPELINE_P_G_HIGH_QUALITY_UNIVERSAL_RP_ASSET = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityUniversalRPAsset";
+	public static readonly string U_PIPELINE_P_G_ULTRA_QUALITY_UNIVERSAL_RP_ASSET = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityUniversalRPAsset";
 
 	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPRendererData";
 	public static readonly string U_PIPELINE_P_G_UNIVERSAL_RP_SSAO_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPSSAORendererData";

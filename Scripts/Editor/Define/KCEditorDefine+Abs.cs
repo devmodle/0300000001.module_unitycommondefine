@@ -41,22 +41,7 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_T_HIERARCHY_UPDATE = 1.0f;
 	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
-
-	// 광원 {
-#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
-	public const int B_EDITOR_OPTS_LIGHT_MAP_MAX_SIZE = (int)EPOTVal.POT_2048;
-
-#if HIGH_QUALITY_LEVEL_ENABLE
-	public const LightmapCompression B_EDITOR_OPTS_LIGHT_MAP_COMPRESSION = LightmapCompression.NormalQuality;
-#else
-	public const LightmapCompression B_EDITOR_OPTS_LIGHT_MAP_COMPRESSION = LightmapCompression.HighQuality;
-#endif			// #if HIGH_QUALITY_LEVEL_ENABLE
-#else
-	public const int B_EDITOR_OPTS_LIGHT_MAP_MAX_SIZE = (int)EPOTVal.POT_1024;
-	public const LightmapCompression B_EDITOR_OPTS_IGHT_MAP_COMPRESSION = LightmapCompression.LowQuality;
-#endif			// #if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
-	// 광원 }
-
+	
 	// 토큰
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
 
@@ -281,6 +266,8 @@ public static partial class KCEditorDefine {
 	public const float B_OFFSET_HIERARCHY_OUTLINE = 1.0f;
 
 	// 에디터 옵션 {
+	public const float U_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT = 0.25f;
+
 	public const string B_EDITOR_OPTS_REMOTE_COMPRESSION = "JPEG";
 	public const string B_EDITOR_OPTS_REMOTE_RESOLUTION = "Downsize";
 	public const string B_EDITOR_OPTS_VER_CONTROL = "Visible Meta Files";
@@ -309,13 +296,20 @@ public static partial class KCEditorDefine {
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
 
+#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
+	public const int U_EDITOR_OPTS_NUM_ADDITIONAL_LIGHTS_PER_OBJ = 4;
+	public const EShadowCascadesOpts U_EDITOR_OPTS_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
+
 #if HIGH_QUALITY_LEVEL_ENABLE
 	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.NORM;
-#elif ULTRA_QUALITY_LEVEL_ENABLE
-	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.HIGH;
 #else
-	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.LOW;
+	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.HIGH;
 #endif			// #if HIGH_QUALITY_LEVEL_ENABLE
+#else
+	public const int U_EDITOR_OPTS_NUM_ADDITIONAL_LIGHTS_PER_OBJ = 2;
+	public const EShadowCascadesOpts U_EDITOR_OPTS_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
+	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.LOW;
+#endif			// #if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
 
 	public static readonly List<string> B_EDITOR_OPTS_EXTENSION_LIST = new List<string>() {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
@@ -356,6 +350,10 @@ public static partial class KCEditorDefine {
 	#region 런타임 상수
 	// 크기
 	public static readonly Vector3 B_MIN_SIZE_EDITOR_WND = new Vector3(350.0f, 350.0f, 0.0f);
+
+	// 에디터 옵션
+	public static readonly Vector2 U_EDITOR_OPTS_CASCADE_3_SPLIT_PERCENT = new Vector2(0.1f, 0.3f);
+	public static readonly Vector3 U_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(0.075f, 0.2f, 0.45f);
 
 	// 경로 {
 	public static readonly string B_SCENE_P_INIT_SCENE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity";
@@ -940,10 +938,14 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_LocalizeInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_LOCALIZE_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_StorageInfoTable.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_STORAGE_INFO_TABLE}.asset"),
 
-		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS}.lighting"),
+		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_NORM_QUALITY_LIGHTING_SETTINGS}.lighting"),
+		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_HIGH_QUALITY_LIGHTING_SETTINGS}.lighting"),
+		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_LIGHTING_SETTINGS}.lighting"),
 
 #if POST_PROCESSING_MODULE_ENABLE
-		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_PostProcessingSettings.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_POST_PROCESSING_SETTINGS}.asset"),
+		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_PostProcessingSettings.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_NORM_QUALITY_POST_PROCESSING_SETTINGS}.asset"),
+		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_PostProcessingSettings.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_HIGH_QUALITY_POST_PROCESSING_SETTINGS}.asset"),
+		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_PostProcessingSettings.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS}.asset"),
 #endif			// #if POST_PROCESSING_MODULE_ENABLE
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
@@ -959,7 +961,9 @@ public static partial class KCEditorDefine {
 	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {
 		// 02.UnityProject {
 #if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_UNIVERSAL_RP_ASSET}.asset")
+		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_NORM_QUALITY_UNIVERSAL_RP_ASSET}.asset"),
+		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_HIGH_QUALITY_UNIVERSAL_RP_ASSET}.asset"),
+		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_ULTRA_QUALITY_UNIVERSAL_RP_ASSET}.asset")
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 		// 02.UnityProject }
 	};
@@ -1210,9 +1214,6 @@ public static partial class KCEditorDefine {
 
 	#region 조건부 상수
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-	// 길이
-	public const float U_PERCENT_UNIVERSAL_RP_CASCADE_2_SPLIT = 0.25f;
-
 	// 이름 {
 	public const string U_FIELD_N_UNIVERSAL_RP_MSAA_QUALITY = "m_MSAA";
 	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_BORDER = "m_CascadeBorder";
@@ -1245,9 +1246,7 @@ public static partial class KCEditorDefine {
 	// 이름 }
 	
 	// 옵션 {
-	public const int U_OPTS_UNIVERSAL_RP_NUM_ADDITIONAL_LIGHTS_PER_OBJ = 4;
 	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._4x;
-	public const EShadowCascadesOpts U_OPTS_UNIVERSAL_RP_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
 
 #if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
 	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = LightRenderingMode.PerPixel;
@@ -1284,10 +1283,6 @@ public static partial class KCEditorDefine {
 #endif			// #if INPUT_SYSTEM_MODULE_ENABLE
 
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-	// 길이
-	public static readonly Vector2 U_PERCENT_UNIVERSAL_RP_CASCADE_3_SPLIT = new Vector2(0.1f, 0.3f);
-	public static readonly Vector3 U_PERCENT_UNIVERSAL_RP_CASCADE_4_SPLIT = new Vector3(0.075f, 0.2f, 0.45f);
-
 	// 경로
 	public static readonly string B_ASSET_P_UNIVERSAL_RP_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}UniversalRenderPipelineGlobalSettings.asset";
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE

@@ -160,7 +160,7 @@ public enum EQualityLevel {
 	NONE = -1,
 	VERY_LOW,
 	LOW,
-	MEDIUM,
+	NORM,
 	HIGH,
 	VERY_HIGH,
 	ULTRA,
@@ -171,10 +171,9 @@ public enum EQualityLevel {
 /** 그림자 옵션 */
 public enum EShadowCascadesOpts {
 	NONE = -1,
-	ONE_CASCADES,
-	TWO_CASCADES,
-	THREE_CASCADES,
-	FOUR_CASCADES,
+	NO_CASCADES,
+	TWO_CASCADES = 2,
+	FOUR_CASCADES = 4,
 	[HideInInspector] MAX_VAL
 }
 
