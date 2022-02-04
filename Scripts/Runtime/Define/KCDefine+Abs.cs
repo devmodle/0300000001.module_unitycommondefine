@@ -91,6 +91,7 @@ public static partial class KCDefine {
 	public const int B_UNIT_DIGITS_PER_TEN_THOUSAND = 10000;
 	public const int B_UNIT_DIGITS_PER_HUNDRED_THOUSAND = 100000;
 
+	public const float B_UNIT_SCALE = 1.0f;
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
 	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
 	// 단위 }
@@ -218,15 +219,15 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
 
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
-	public const string B_PLATFORM_N_DEF_TEXTURE = "DefaultTexturePlatform";
-
 	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
 	
-	public const string B_NAME_PATTERN_FIX_READ_WRITE = "__FIX_RW__";
 	public const string B_NAME_PATTERN_FIX_CLAMP_WRAP = "__FIX_CW__";
 	public const string B_NAME_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
 	public const string B_NAME_PATTERN_FIX_GAMMA_PIPELINE = "__FIX_GP__";
+	public const string B_NAME_PATTERN_FIX_COMPRESS_IN_MEMORY = "__FIX_CIM__";
+
+	public const string B_NAME_PATTERN_ENABLE_READ_WRITE = "__ENABLE_RW__";
 	public const string B_NAME_PATTERN_IGNORE_SETUP_CULLING_MASK = "__IGNORE_SCM__";
 	// 이름 }
 

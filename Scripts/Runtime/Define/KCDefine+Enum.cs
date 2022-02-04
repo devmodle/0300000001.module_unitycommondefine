@@ -100,7 +100,7 @@ public enum EPOTVal {
 	POT_512 = 512,
 	POT_1024 = 1024,
 	POT_2048 = 2048,
-	POT_4096 = 2096,
+	POT_4096 = 4096,
 	POT_8192 = 8192,
 	[HideInInspector] MAX_VAL
 }
