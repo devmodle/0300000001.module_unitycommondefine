@@ -109,7 +109,6 @@ public static partial class KCEditorDefine {
 
 	// 광원 {
 	public const string DS_DEFINE_S_LIGHT_ENABLE = "LIGHT_ENABLE";
-	public const string DS_DEFINE_S_LIGHTMAP_BAKE_ENABLE = "LIGHTMAP_BAKE_ENABLE";
 	public const string DS_DEFINE_S_LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE = "LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE";
 
 	public const string DS_DEFINE_S_REALTIME_GI_ENABLE = "REALTIME_GI_ENABLE";
