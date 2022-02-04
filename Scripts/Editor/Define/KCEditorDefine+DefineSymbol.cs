@@ -110,7 +110,6 @@ public static partial class KCEditorDefine {
 	// 광원 {
 	public const string DS_DEFINE_S_LIGHT_ENABLE = "LIGHT_ENABLE";
 	public const string DS_DEFINE_S_LIGHTMAP_BAKE_ENABLE = "LIGHTMAP_BAKE_ENABLE";
-	public const string DS_DEFINE_S_LIGHTMAP_SHADOW_BAKE_ENABLE = "LIGHTMAP_SHADOW_BAKE_ENABLE";
 	public const string DS_DEFINE_S_LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE = "LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE";
 
 	public const string DS_DEFINE_S_REALTIME_GI_ENABLE = "REALTIME_GI_ENABLE";
@@ -180,6 +179,7 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
+	public const string DS_DEFINE_S_DEVELOPMENT_PROJ = "DEVELOPMENT_PROJ";
 	public const string DS_DEFINE_S_TITLE_SCENE_ENABLE = "TITLE_SCENE_ENABLE";
 	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
 	public const string DS_DEFINE_S_STORE_VER_CHECK_ENABLE = "STORE_VER_CHECK_ENABLE";
