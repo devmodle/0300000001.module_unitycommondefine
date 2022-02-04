@@ -222,12 +222,12 @@ public static partial class KCDefine {
 
 	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
-
-	public const string B_ASSET_N_PATTERN_FIX_MIPMAP = "__FIX_MM__";
-	public const string B_ASSET_N_PATTERN_FIX_READ_WRITE = "__FIX_RW__";
-	public const string B_ASSET_N_PATTERN_FIX_CLAMP_WRAP = "__FIX_CW__";
-	public const string B_ASSET_N_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
-	public const string B_ASSET_N_PATTERN_FIX_GAMMA_PIPELINE = "__FIX_GP__";
+	
+	public const string B_NAME_PATTERN_FIX_READ_WRITE = "__FIX_RW__";
+	public const string B_NAME_PATTERN_FIX_CLAMP_WRAP = "__FIX_CW__";
+	public const string B_NAME_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
+	public const string B_NAME_PATTERN_FIX_GAMMA_PIPELINE = "__FIX_GP__";
+	public const string B_NAME_PATTERN_IGNORE_SETUP_CULLING_MASK = "__IGNORE_SCM__";
 	// 이름 }
 
 	// 씬 이름 {
@@ -251,7 +251,7 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_OVERLAY = "92.OverlayScene";
 
 	public const string B_SCENE_N_MENU = "01.MenuScene";
-	public const string B_SCENE_N_TEST = "99.TestScene";
+	public const string B_SCENE_N_TEST = "91.TestScene";
 	public const string B_SCENE_N_LEVEL_EDITOR = "91.LevelEditorScene";
 	// 씬 이름 }
 

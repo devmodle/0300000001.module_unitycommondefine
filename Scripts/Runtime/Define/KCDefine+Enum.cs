@@ -158,13 +158,22 @@ public enum EDirection {
 /** 퀄리티 수준 */
 public enum EQualityLevel {
 	NONE = -1,
-	VERY_LOW,
-	LOW,
+	[System.Obsolete("NEVER_USE_THIS", true)] VERY_LOW,
+	[System.Obsolete("NEVER_USE_THIS", true)] LOW,
 	NORM,
 	HIGH,
-	VERY_HIGH,
+	[System.Obsolete("NEVER_USE_THIS", true)] VERY_HIGH,
 	ULTRA,
-	AUTO,
+	[HideInInspector] MAX_VAL
+}
+
+/** 안티 에일리어싱 수준 */
+public enum EAntiAliasingLevel {
+	NONE = -1,
+	DISABLE,
+	TWO_SAMPLE = 2,
+	FOUR_SAMPLE = 4,
+	EIGHT_SAMPLE = 8,
 	[HideInInspector] MAX_VAL
 }
 

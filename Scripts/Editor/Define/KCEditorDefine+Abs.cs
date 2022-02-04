@@ -296,21 +296,6 @@ public static partial class KCEditorDefine {
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
 
-#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
-	public const int U_EDITOR_OPTS_NUM_ADDITIONAL_LIGHTS_PER_OBJ = 4;
-	public const EShadowCascadesOpts U_EDITOR_OPTS_SHADOW_CASCADES = EShadowCascadesOpts.FOUR_CASCADES;
-
-#if HIGH_QUALITY_LEVEL_ENABLE
-	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.NORM;
-#else
-	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.HIGH;
-#endif			// #if HIGH_QUALITY_LEVEL_ENABLE
-#else
-	public const int U_EDITOR_OPTS_NUM_ADDITIONAL_LIGHTS_PER_OBJ = 2;
-	public const EShadowCascadesOpts U_EDITOR_OPTS_SHADOW_CASCADES = EShadowCascadesOpts.TWO_CASCADES;
-	public const ELightmapEncodingQuality B_EDITOR_OPTS_LIGHTMAP_ENCODING_QUALITY = ELightmapEncodingQuality.LOW;
-#endif			// #if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
-
 	public static readonly List<string> B_EDITOR_OPTS_EXTENSION_LIST = new List<string>() {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
 	};
@@ -484,15 +469,7 @@ public static partial class KCEditorDefine {
 	public static readonly List<string> B_SEARCH_P_SCENE_LIST = new List<string>() {
 		KCEditorDefine.B_DIR_P_AUTO_SCENES, KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_PROJ_SCENES, KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_EDITOR_PROJ_SCENES
 	};
-
-	public static readonly List<TextureImporterType> B_IMPORTER_T_IGNORE_MIP_MAP_TEXTURE_LIST = new List<TextureImporterType>() {
-		TextureImporterType.Sprite
-	};
-
-	public static readonly List<TextureImporterType> B_IMPORTER_T_IGNORE_RGBA32_FMT_TEXTURE_LIST = new List<TextureImporterType>() {
-		TextureImporterType.Cookie, TextureImporterType.SingleChannel
-	};
-
+	
 	public static readonly List<(string, string)> B_DATA_P_INFO_LIST = new List<(string, string)>() {
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}README.md"),
@@ -1002,7 +979,8 @@ public static partial class KCEditorDefine {
 
 		// 03.SubUnityProject {
 #if RUNTIME_TEMPLATES_ENABLE || RUNTIME_TEMPLATES_MODULE_ENABLE
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_TEST}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/00.Test/00.===== Test =====.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/00.Test/{KCDefine.B_SCENE_N_TEST}.unity"),
 #endif			// #if RUNTIME_TEMPLATES_ENABLE || RUNTIME_TEMPLATES_MODULE_ENABLE
 		// 03.SubUnityProject }
 
@@ -1244,26 +1222,6 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_N_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
 	public const string B_PROPERTY_N_STRIP_UNUSED_POST_PROCESSING_VARIANTS = "m_StripUnusedPostProcessingVariants";
 	// 이름 }
-	
-	// 옵션 {
-	public const MsaaQuality U_OPTS_UNIVERSAL_RP_MSAA_QUALITY = MsaaQuality._4x;
-
-#if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
-	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = LightRenderingMode.PerPixel;
-	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_RENDERING_MODE = LightRenderingMode.PerPixel;
-	public const LightCookieResolution B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_COOKIE_RESOLUTION = LightCookieResolution._512;
-
-	public const UnityEngine.Rendering.Universal.ShadowResolution B_OPTS_UNIVERSAL_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = UnityEngine.Rendering.Universal.ShadowResolution._2048;
-	public const UnityEngine.Rendering.Universal.ShadowResolution B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = UnityEngine.Rendering.Universal.ShadowResolution._1024;
-#else
-	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = LightRenderingMode.PerPixel;
-	public const LightRenderingMode B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_RENDERING_MODE = LightRenderingMode.PerVertex;
-	public const LightCookieResolution B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_COOKIE_RESOLUTION = LightCookieResolution._256;
-
-	public const UnityEngine.Rendering.Universal.ShadowResolution B_OPTS_UNIVERSAL_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = UnityEngine.Rendering.Universal.ShadowResolution._1024;
-	public const UnityEngine.Rendering.Universal.ShadowResolution B_OPTS_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = UnityEngine.Rendering.Universal.ShadowResolution._512;
-#endif			// #if HIGH_QUALITY_LEVEL_ENABLE || ULTRA_QUALITY_LEVEL_ENABLE
-	// 옵션 }
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
 #if NOTI_MODULE_ENABLE

@@ -302,6 +302,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_REWARD_IMG = "RewardImg";
 
 	public const string U_OBJ_N_OK_BTN = "OKBtn";
+	public const string U_OBJ_N_BACK_BTN = "BackBtn";
 	public const string U_OBJ_N_CANCEL_BTN = "CancelBtn";
 	public const string U_OBJ_N_CLOSE_BTN = "CloseBtn";
 
@@ -466,19 +467,17 @@ public static partial class KCDefine {
 	public const string U_SORTING_L_BACKGROUND = "Background";
 	public const string U_SORTING_L_UNDERGROUND = "Underground";
 
-#if !CAMERA_STACKING_ENABLE
-	public const string U_SORTING_L_OVERLAY_DEF = "OverlayDefault";
 	public const string U_SORTING_L_OVERLAY_ABS = "OverlayAbs";
+	public const string U_SORTING_L_OVERLAY_DEF = "OverlayDefault";
 
 	public const string U_SORTING_L_OVERLAY_TOP = "OverlayTop";
 	public const string U_SORTING_L_OVERLAY_TOPMOST = "OverlayTopmost";
-	
+
 	public const string U_SORTING_L_OVERLAY_FOREGROUND = "OverlayForeground";
 	public const string U_SORTING_L_OVERLAY_OVERGROUND = "OverlayOverground";
 
 	public const string U_SORTING_L_OVERLAY_BACKGROUND = "OverlayBackground";
 	public const string U_SORTING_L_OVERLAY_UNDERGROUND = "OverlayUnderground";
-#endif			// #if !CAMERA_STACKING_ENABLE
 	// 정렬 레이어 }
 
 	// 씬 관리자
@@ -598,39 +597,24 @@ public static partial class KCDefine {
 
 	// 정렬 레이어
 	public static readonly List<string> U_SORTING_LAYER_LIST = new List<string>() {
-		KCDefine.U_SORTING_L_UNDERGROUND, KCDefine.U_SORTING_L_BACKGROUND, KCDefine.U_SORTING_L_DEF, KCDefine.U_SORTING_L_FOREGROUND, KCDefine.U_SORTING_L_OVERGROUND, KCDefine.U_SORTING_L_TOP, KCDefine.U_SORTING_L_TOPMOST, KCDefine.U_SORTING_L_ABS,
-
-#if !CAMERA_STACKING_ENABLE
-		KCDefine.U_SORTING_L_OVERLAY_UNDERGROUND, KCDefine.U_SORTING_L_OVERLAY_BACKGROUND, KCDefine.U_SORTING_L_OVERLAY_DEF, KCDefine.U_SORTING_L_OVERLAY_FOREGROUND, KCDefine.U_SORTING_L_OVERLAY_OVERGROUND, KCDefine.U_SORTING_L_OVERLAY_TOP, KCDefine.U_SORTING_L_OVERLAY_TOPMOST, KCDefine.U_SORTING_L_OVERLAY_ABS
-#endif			// #if !CAMERA_STACKING_ENABLE
+		KCDefine.U_SORTING_L_UNDERGROUND, KCDefine.U_SORTING_L_BACKGROUND, KCDefine.U_SORTING_L_DEF, KCDefine.U_SORTING_L_FOREGROUND, KCDefine.U_SORTING_L_OVERGROUND, KCDefine.U_SORTING_L_TOP, KCDefine.U_SORTING_L_TOPMOST, KCDefine.U_SORTING_L_ABS, KCDefine.U_SORTING_L_OVERLAY_UNDERGROUND, KCDefine.U_SORTING_L_OVERLAY_BACKGROUND, KCDefine.U_SORTING_L_OVERLAY_DEF, KCDefine.U_SORTING_L_OVERLAY_FOREGROUND, KCDefine.U_SORTING_L_OVERLAY_OVERGROUND, KCDefine.U_SORTING_L_OVERLAY_TOP, KCDefine.U_SORTING_L_OVERLAY_TOPMOST, KCDefine.U_SORTING_L_OVERLAY_ABS
 	};
 
-	// 정렬 순서 {
-#if CAMERA_STACKING_ENABLE
+	// 정렬 순서
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = 1, m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
-#else
-	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 0, m_oLayer = KCDefine.U_SORTING_L_OVERLAY_DEF
-	};
-#endif			// #if CAMERA_STACKING_ENABLE
-	// 정렬 순서 }
 
 	// 레이어 마스크 {
+	public static readonly List<int> U_LAYER_MASKS_LIGHT = new List<int>() {
+		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER
+	};
+
 	public static readonly List<int> U_LAYER_MASKS_UIS_CAMERA = new List<int>() {
 		KCDefine.U_LAYER_UIS
 	};
 
 	public static readonly List<int> U_LAYER_MASKS_MAIN_CAMERA = new List<int>() {
-		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER,
-
-#if !CAMERA_STACKING_ENABLE
-		KCDefine.U_LAYER_UIS
-#endif			// #if !CAMERA_STACKING_ENABLE
-	};
-
-	public static readonly List<int> U_LAYER_MASKS_MAIN_DIRECTIONAL_LIGHT = new List<int>() {
 		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER
 	};
 	// 레이어 마스크 }
@@ -702,6 +686,7 @@ public static partial class KCDefine {
 	
 	public static readonly string U_OBJ_P_G_BG_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_BGSnd";
 	public static readonly string U_OBJ_P_G_FX_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_FXSnd";
+	public static readonly string U_OBJ_P_G_BACK_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_BackBtn";
 
 	public static readonly string U_OBJ_P_G_ALERT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_AlertPopup";
 	public static readonly string U_OBJ_P_G_STORE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_StorePopup";
@@ -767,41 +752,30 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_08";
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_09";
 
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}01";
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}02";
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}03";
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}04";
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}05";
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}06";
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}07";
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}08";
-	public static readonly string U_ASSET_P_G_FIX_MM_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}09";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}01";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}02";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}03";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}04";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}05";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}06";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}07";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}08";
+	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}09";
 
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}01";
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}02";
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}03";
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}04";
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}05";
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}06";
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}07";
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}08";
-	public static readonly string U_ASSET_P_G_FIX_RW_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}09";
-
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}01";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}02";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}03";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}04";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}05";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}06";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}07";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}08";
-	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}09";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}01";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}02";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}03";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}04";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}05";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}06";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}07";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}08";
+	public static readonly string U_ASSET_P_G_FIX_PF_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}09";
 
 	public static readonly string U_ASSET_P_FMT_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}U_SpriteAtlas_{"{0:00}"}";
 	public static readonly string U_ASSET_P_FMT_G_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_{"{0:00}"}";
-	public static readonly string U_ASSET_P_FMT_G_FIX_MM_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_MIPMAP}{"{0:00}"}";
-	public static readonly string U_ASSET_P_FMT_G_FIX_RW_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_READ_WRITE}{"{0:00}"}";
-	public static readonly string U_ASSET_P_FMT_G_FIX_PF_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_ASSET_N_PATTERN_FIX_POINT_FILTER}{"{0:00}"}";
+	public static readonly string U_ASSET_P_FMT_G_FIX_RW_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_READ_WRITE}{"{0:00}"}";
+	public static readonly string U_ASSET_P_FMT_G_FIX_PF_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas{KCDefine.B_NAME_PATTERN_FIX_POINT_FILTER}{"{0:00}"}";
 
 	public static readonly string U_TABLE_P_G_LEVEL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_LEVEL_INFO_ROOT}G_LevelInfoTable";
 	public static readonly string U_TABLE_P_G_LEVEL_INFO_SET_A = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}A/{KCDefine.B_DIR_P_LEVEL_INFO_ROOT}G_LevelInfoTable";
@@ -978,7 +952,8 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_B = "Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_C = "Screen Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_D = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_E = "Persistent Data Path: <color=orange>{0:0.0}</color>";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_E = "Quality Level: <color=orange>{0}</color>, Target Frame Rate: <color=orange>{1}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_F = "Persistent Data Path: <color=orange>{0}</color>";
 
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_A = "Used Heap: <color=orange>{0:0.0}</color> MB, GPU Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_B = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
