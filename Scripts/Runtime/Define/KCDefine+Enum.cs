@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /*
+=====> 모듈 버전 정보 <=====
+- 버전 : 2.0.3
+- 연관 파일 개수 : 46
+
 =====> Experimental <=====
 - RenderingMode.Deferred
 - SpritePackerMode.SpriteAtlasV2
