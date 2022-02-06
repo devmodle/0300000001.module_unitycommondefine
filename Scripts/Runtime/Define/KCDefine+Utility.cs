@@ -206,6 +206,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_OBJS = "Objs";
 	public const string U_OBJ_N_SCENE_PIVOT_OBJS = "PivotObjs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
+	public const string U_OBJ_N_SCENE_STATIC_OBJS = "StaticObjs";
+	public const string U_OBJ_N_SCENE_LIGHT_PROBES = "LightProbes";
+	public const string U_OBJ_N_SCENE_ADDITIONAL_LIGHTS = "AdditionalLights";
+	public const string U_OBJ_N_SCENE_REFLECTION_PROBES = "ReflectionProbes";
 
 	public const string U_OBJ_N_SCENE_UP_OBJS = "UpObjs";
 	public const string U_OBJ_N_SCENE_DOWN_OBJS = "DownObjs";

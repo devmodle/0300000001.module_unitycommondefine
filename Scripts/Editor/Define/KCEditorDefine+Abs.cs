@@ -41,7 +41,10 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_T_HIERARCHY_UPDATE = 1.0f;
 	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
-	
+
+	// 플래그
+	public const StaticEditorFlags B_STATIC_EF_DEF = StaticEditorFlags.ContributeGI | StaticEditorFlags.OccluderStatic | StaticEditorFlags.BatchingStatic | StaticEditorFlags.NavigationStatic | StaticEditorFlags.OccludeeStatic | StaticEditorFlags.OffMeshLinkGeneration | StaticEditorFlags.ReflectionProbeStatic;
+
 	// 토큰
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
 
