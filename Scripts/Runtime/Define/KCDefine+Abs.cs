@@ -91,9 +91,14 @@ public static partial class KCDefine {
 	public const int B_UNIT_DIGITS_PER_TEN_THOUSAND = 10000;
 	public const int B_UNIT_DIGITS_PER_HUNDRED_THOUSAND = 100000;
 
-	public const float B_UNIT_SCALE = 1.0f;
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
 	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
+
+#if UNIT_SCALE_ENABLE
+	public const float B_UNIT_SCALE = 0.01f;
+#else
+	public const float B_UNIT_SCALE = 1.0f;
+#endif			// #if UNIT_SCALE_ENABLE
 	// 단위 }
 
 	// 빌드 번호

@@ -294,11 +294,15 @@ public static partial class KCEditorDefine {
 	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "None";
 #endif			// #if UNITY_IOS
 
+#if LIGHTMAP_SHADOW_BAKE_ENABLE
 #if LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Shadowmask;
 #else
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Subtractive;
 #endif			// #if LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE
+#else
+	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
+#endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
 
 	public static readonly List<string> B_EDITOR_OPTS_EXTENSION_LIST = new List<string>() {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
