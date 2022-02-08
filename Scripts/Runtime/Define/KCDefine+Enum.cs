@@ -90,8 +90,8 @@ public enum EEnumVal {
 	[HideInInspector] MAX_VAL,
 }
 
-/** POT 값 */
-public enum EPOTVal {
+/** 2 의 승수 */
+public enum EPowOfTwo {
 	NONE = -1,
 	_2 = 2,
 	_4 = 4,
