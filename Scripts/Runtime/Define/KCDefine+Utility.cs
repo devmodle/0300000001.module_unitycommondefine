@@ -207,9 +207,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_PIVOT_OBJS = "PivotObjs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
 	public const string U_OBJ_N_SCENE_STATIC_OBJS = "StaticObjs";
-	public const string U_OBJ_N_SCENE_LIGHT_PROBES = "LightProbes";
 	public const string U_OBJ_N_SCENE_ADDITIONAL_LIGHTS = "AdditionalLights";
 	public const string U_OBJ_N_SCENE_REFLECTION_PROBES = "ReflectionProbes";
+	public const string U_OBJ_N_SCENE_LIGHT_PROBE_GROUPS = "LightProbeGroups";
 
 	public const string U_OBJ_N_SCENE_UP_OBJS = "UpObjs";
 	public const string U_OBJ_N_SCENE_DOWN_OBJS = "DownObjs";
@@ -402,6 +402,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SPRITE = "Sprite";
 	public const string U_OBJ_N_LINE_FX = "LineFX";
 	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
+	public const string U_OBJ_N_REFLECTION_PROBE = "ReflectionProbe";
+	public const string U_OBJ_N_LIGHT_PROBE_GROUP = "LightProbeGroup";
 	
 	public const string U_OBJ_N_DRAG_RESPONDER = "DragResponder";
 	public const string U_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
@@ -687,6 +689,8 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_LINE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_LineFX";
 	public static readonly string U_OBJ_P_PARTICLE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_ParticleFX";
 	public static readonly string U_OBJ_P_TIMER_MANAGER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_EXTERNAL_ROOT}U_TimerManager";
+	public static readonly string U_OBJ_P_REFLECTION_PROBE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_ReflectionProbe";
+	public static readonly string U_OBJ_P_LIGHT_PROBE_GROUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_LightProbeGroup";
 	
 	public static readonly string U_OBJ_P_G_BG_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_BGSnd";
 	public static readonly string U_OBJ_P_G_FX_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_FXSnd";

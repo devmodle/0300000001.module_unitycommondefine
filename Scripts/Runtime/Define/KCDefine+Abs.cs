@@ -166,7 +166,7 @@ public static partial class KCDefine {
 	public const float B_DEF_SCREEN_DPI = 160.0f;
 	public const float B_FIXED_DELTA_TIME = 0.02f;
 	public const float B_DESKTOP_SCREEN_RATE = 0.9f;
-	public const float B_ADDITIONAL_LIGHT_INTENSITY = 0.95f;
+	public const float B_ADDITIONAL_LIGHT_INTENSITY = 0.99f;
 
 	public const string B_TEXT_TRUE = "True";
 	public const string B_TEXT_FALSE = "False";
