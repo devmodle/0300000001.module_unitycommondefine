@@ -90,7 +90,7 @@ public enum EEnumVal {
 	[HideInInspector] MAX_VAL,
 }
 
-/** 2 의 승수 */
+/** POT */
 public enum EPowOfTwo {
 	NONE = -1,
 	_2 = 2,
@@ -171,13 +171,11 @@ public enum EQualityLevel {
 	[HideInInspector] MAX_VAL
 }
 
-/** 안티 에일리어싱 수준 */
-public enum EAntiAliasingLevel {
+/** 광원 맵 모드 */
+public enum ELightmapMode {
 	NONE = -1,
-	DISABLE,
-	TWO_SAMPLE = 2,
-	FOUR_SAMPLE = 4,
-	EIGHT_SAMPLE = 8,
+	NON_DIRECTIONAL,
+	COMBINE_DIRECTIONAL,
 	[HideInInspector] MAX_VAL
 }
 
