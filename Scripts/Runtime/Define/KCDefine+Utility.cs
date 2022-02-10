@@ -330,11 +330,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LEAVE_BTN = "LeaveBtn";
 	public const string U_OBJ_N_CONTINUE_BTN = "ContinueBtn";
 
-	public const string U_OBJ_N_ADS_BTN = "AdsBtn";
 	public const string U_OBJ_N_PAUSE_BTN = "PauseBtn";
 	public const string U_OBJ_N_ACQUIRE_BTN = "AcquireBtn";
 	public const string U_OBJ_N_PURCHASE_BTN = "PurchaseBtn";
 	public const string U_OBJ_N_RESTORE_BTN = "RestoreBtn";
+	public const string U_OBJ_N_REWARD_ADS_BTN = "RewardAdsBtn";
 
 	public const string U_OBJ_N_BG_SND_BTN = "BGSndBtn";
 	public const string U_OBJ_N_FX_SNDS_BTN = "FXSndsBtn";
