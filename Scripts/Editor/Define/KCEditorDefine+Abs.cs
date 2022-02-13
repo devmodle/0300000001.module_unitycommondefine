@@ -478,6 +478,18 @@ public static partial class KCEditorDefine {
 		KCEditorDefine.B_DIR_P_AUTO_SCENES, KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_PROJ_SCENES, KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_EDITOR_PROJ_SCENES
 	};
 
+	public static readonly List<TextureImporterType> B_ENABLE_ALPHA_TRANSPARENCY_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+		TextureImporterType.GUI, TextureImporterType.Sprite
+	};
+
+	public static readonly List<TextureImporterType> B_IGNORE_WRAP_MODE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+		TextureImporterType.Lightmap, TextureImporterType.DirectionalLightmap, TextureImporterType.Shadowmask
+	};
+
+	public static readonly List<TextureImporterType> B_IGNORE_FILTER_MODE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+		// Do Something
+	};
+
 	public static readonly List<TextureImporterType> B_IGNORE_NON_POT_SCALE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.GUI, TextureImporterType.Sprite
 	};
@@ -963,9 +975,9 @@ public static partial class KCEditorDefine {
 	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {
 		// 02.UnityProject {
 #if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_NORM_QUALITY_UNIVERSAL_RP_ASSET}.asset"),
-		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_HIGH_QUALITY_UNIVERSAL_RP_ASSET}.asset"),
-		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_PIPELINE_P_G_ULTRA_QUALITY_UNIVERSAL_RP_ASSET}.asset")
+		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_NORM_QUALITY_UNIVERSAL_RP}.asset"),
+		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_HIGH_QUALITY_UNIVERSAL_RP}.asset"),
+		($"{KCEditorDefine.B_DIR_P_PIPELINE_TEMPLATES}T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_UNIVERSAL_RP}.asset")
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 		// 02.UnityProject }
 	};
