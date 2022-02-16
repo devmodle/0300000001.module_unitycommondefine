@@ -265,7 +265,7 @@ public static partial class KCEditorDefine {
 #if NINETAP_BUILD_PIPELINE_ENABLE
 	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/000001.Common/job/{0}/job/01.Pipelines/job";
 #else
-	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/00000001.Common/job/{0}/job/01.Pipelines/job";
+	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/00000000.Common/job/{0}/job/01.Pipelines/job";
 #endif			// #if NINETAP_BUILD_PIPELINE_ENABLE
 	// 젠킨스 }
 
@@ -294,15 +294,11 @@ public static partial class KCEditorDefine {
 	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "None";
 #endif			// #if UNITY_IOS
 
-#if LIGHTMAP_SHADOW_BAKE_ENABLE
-#if LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE
+#if LIGHTMAP_BAKE_SHADOW_MASK_ENABLE
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Shadowmask;
 #else
 	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.Subtractive;
-#endif			// #if LIGHTMAP_SHADOW_BAKE_SHADOW_MASK_ENABLE
-#else
-	public const MixedLightingMode B_EDITOR_OPTS_LIGHTMAP_BAKE_MODE = MixedLightingMode.IndirectOnly;
-#endif			// #if LIGHTMAP_SHADOW_BAKE_ENABLE
+#endif			// #if LIGHTMAP_BAKE_SHADOW_MASK_ENABLE
 
 	public static readonly List<string> B_EDITOR_OPTS_EXTENSION_LIST = new List<string>() {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
