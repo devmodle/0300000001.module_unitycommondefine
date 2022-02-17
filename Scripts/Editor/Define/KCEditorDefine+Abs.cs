@@ -280,12 +280,7 @@ public static partial class KCEditorDefine {
 	public const string B_EDITOR_OPTS_REMOTE_RESOLUTION = "Downsize";
 	public const string B_EDITOR_OPTS_VER_CONTROL = "Visible Meta Files";
 	public const string B_EDITOR_OPTS_JOYSTIC_SRC = "Remote";
-
-	public const LightingSettings.Lightmapper B_EDITOR_OPTS_LIGHTMAPPER = LightingSettings.Lightmapper.ProgressiveCPU;
-
-	// TODO: 해당 기능 안정화 필요
-	// public const LightingSettings.Lightmapper B_EDITOR_OPTS_LIGHTMAPPER = LightingSettings.Lightmapper.ProgressiveGPU;
-
+	
 #if UNITY_IOS
 	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "Any iOS Device";
 #elif UNITY_ANDROID
