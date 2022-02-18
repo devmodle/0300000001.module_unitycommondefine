@@ -239,9 +239,8 @@ public static partial class KCEditorDefine {
 	public const string B_ANDROID_GOOGLE_BUILD_PROJ_N_JENKINS = "11.AndroidGoogle";
 	public const string B_ANDROID_AMAZON_BUILD_PROJ_N_JENKINS = "12.AndroidAmazon";
 
-	public const string B_STANDALONE_MAC_APPLE_BUILD_PROJ_N_JENKINS = "41.StandaloneMacApple";
-	public const string B_STANDALONE_MAC_STEAM_BUILD_PROJ_N_JENKINS = "45.StandaloneMacSteam";
-	public const string B_STANDALONE_WNDS_STEAM_BUILD_PROJ_N_JENKINS = "55.StandaloneWndsSteam";
+	public const string B_STANDALONE_MAC_STEAM_BUILD_PROJ_N_JENKINS = "41.StandaloneMacSteam";
+	public const string B_STANDALONE_WNDS_STEAM_BUILD_PROJ_N_JENKINS = "51.StandaloneWndsSteam";
 
 	public const string B_DEBUG_BUILD_FUNC_JENKINS = "Debug";
 	public const string B_RELEASE_BUILD_FUNC_JENKINS = "Release";
@@ -1179,13 +1178,6 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly Dictionary<EStandaloneType, Dictionary<string, string>> B_JENKINS_STANDALONE_SOURCES = new Dictionary<EStandaloneType, Dictionary<string, string>>() {
-		[EStandaloneType.MAC_APPLE] = new Dictionary<string, string>() {
-			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneMacAppleDebug",
-			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneMacAppleRelease",
-			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.StandaloneMacAppleStoreA",
-			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.StandaloneMacAppleStoreDist"
-		},
-
 		[EStandaloneType.MAC_STEAM] = new Dictionary<string, string>() {
 			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneMacSteamDebug",
 			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneMacSteamRelease",
