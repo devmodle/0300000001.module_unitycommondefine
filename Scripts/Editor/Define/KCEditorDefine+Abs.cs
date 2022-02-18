@@ -200,7 +200,6 @@ public static partial class KCEditorDefine {
 	// 독립 플랫폼 }
 	
 	// 젠킨스 {
-	public const string B_KEY_JENKINS_ENGINE_VER = "EngineVer";
 	public const string B_KEY_JENKINS_MODULE_VER = "ModuleVer";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
 	public const string B_KEY_JENKINS_SRC = "Src";
@@ -1146,9 +1145,9 @@ public static partial class KCEditorDefine {
 	};
 	
 	// 젠킨스 {
-	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", Application.unityVersion);
-	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", Application.unityVersion);
-	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone", Application.unityVersion);
+	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", KCEditorDefine.B_VER_UNITY_MODULE);
+	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", KCEditorDefine.B_VER_UNITY_MODULE);
+	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone", KCEditorDefine.B_VER_UNITY_MODULE);
 
 	public static readonly Dictionary<EiOSType, Dictionary<string, string>> B_JENKINS_IOS_SOURCES = new Dictionary<EiOSType, Dictionary<string, string>>() {
 		[EiOSType.APPLE] = new Dictionary<string, string>() {
