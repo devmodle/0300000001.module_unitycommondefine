@@ -220,7 +220,6 @@ public static partial class KCDefine {
 
 	public const string B_PLATFORM_N_ANDROID_GOOGLE = "AndroidGoogle";
 	public const string B_PLATFORM_N_ANDROID_AMAZON = "AndroidAmazon";
-	public const string B_PLATFORM_N_ANDROID_ONE_STORE = "AndroidOneStore";
 
 	public const string B_PLATFORM_N_STANDALONE_MAC_APPLE = "StandaloneMacApple";
 	public const string B_PLATFORM_N_STANDALONE_MAC_STEAM = "StandaloneMacSteam";

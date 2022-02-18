@@ -120,7 +120,6 @@ public struct STBuildVerConfig {
 
 	public STBuildVerInfo m_stAndroidGoogleBuildVerInfo;
 	public STBuildVerInfo m_stAndroidAmazonBuildVerInfo;
-	public STBuildVerInfo m_stAndroidOneStoreBuildVerInfo;
 
 	public STBuildVerInfo m_stStandaloneMacAppleBuildVerInfo;
 	public STBuildVerInfo m_stStandaloneMacSteamBuildVerInfo;

@@ -238,7 +238,6 @@ public static partial class KCEditorDefine {
 
 	public const string B_ANDROID_GOOGLE_BUILD_PROJ_N_JENKINS = "11.AndroidGoogle";
 	public const string B_ANDROID_AMAZON_BUILD_PROJ_N_JENKINS = "12.AndroidAmazon";
-	public const string B_ANDROID_ONE_STORE_BUILD_PROJ_N_JENKINS = "13.AndroidOneStore";
 
 	public const string B_STANDALONE_MAC_APPLE_BUILD_PROJ_N_JENKINS = "41.StandaloneMacApple";
 	public const string B_STANDALONE_MAC_STEAM_BUILD_PROJ_N_JENKINS = "45.StandaloneMacSteam";
@@ -1176,14 +1175,6 @@ public static partial class KCEditorDefine {
 			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidAmazonStoreA",
 			[KCEditorDefine.B_STORE_B_BUILD_FUNC_JENKINS] = "22.AndroidAmazonStoreB",
 			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.AndroidAmazonStoreDist"
-		},
-
-		[EAndroidType.ONE_STORE] = new Dictionary<string, string>() {
-			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.AndroidOneStoreDebug",
-			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.AndroidOneStoreRelease",
-			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidOneStoreStoreA",
-			[KCEditorDefine.B_STORE_B_BUILD_FUNC_JENKINS] = "22.AndroidOneStoreStoreB",
-			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.AndroidOneStoreStoreDist"
 		}
 	};
 
