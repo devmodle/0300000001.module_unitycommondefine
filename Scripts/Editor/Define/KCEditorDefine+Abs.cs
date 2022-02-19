@@ -464,6 +464,10 @@ public static partial class KCEditorDefine {
 		TextureImporterType.GUI, TextureImporterType.Sprite
 	};
 
+	public static readonly List<TextureImporterType> B_IGNORE_RGBA_32_FMT_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+		TextureImporterType.SingleChannel
+	};
+
 	public static readonly List<TextureImporterType> B_IGNORE_WRAP_MODE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.Lightmap, TextureImporterType.DirectionalLightmap, TextureImporterType.Shadowmask
 	};
