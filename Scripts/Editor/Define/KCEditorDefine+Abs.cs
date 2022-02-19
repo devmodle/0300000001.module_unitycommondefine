@@ -260,7 +260,7 @@ public static partial class KCEditorDefine {
 	public const string B_STANDALONE_STORE_PIPELINE_N_JENKINS = "43.StandaloneStore";
 
 #if NINETAP_BUILD_PIPELINE_ENABLE
-	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/000001.Common/job/{0}/job/01.Pipelines/job";
+	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/000000.Common/job/{0}/job/01.Pipelines/job";
 #else
 	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/00000000.Common/job/{0}/job/01.Pipelines/job";
 #endif			// #if NINETAP_BUILD_PIPELINE_ENABLE
