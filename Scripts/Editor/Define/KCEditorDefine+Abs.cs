@@ -859,14 +859,6 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_LEVEL_INFO}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_LEVEL_INFO_SET_A}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_LEVEL_INFO_SET_B}.json"),
-
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO, 1)}.bytes"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A, 1)}.bytes"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B, 1)}.bytes"),
-
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO, 1)}.bytes"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A, 1)}.bytes"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B, 1)}.bytes"),
 	
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/SaleItemInfo/SaleItemInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}SaleItemInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/SaleItemInfo/SaleItemInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SALE_ITEM_INFO}.json"),
@@ -902,7 +894,25 @@ public static partial class KCEditorDefine {
 
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/BlockInfo/BlockInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}BlockInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/BlockInfo/BlockInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/BlockInfo/BlockInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json")
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/BlockInfo/BlockInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json"),
+
+#if MSG_PACK_ENABLE
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO, 1)}.bytes"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A, 1)}.bytes"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B, 1)}.bytes"),
+
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO, 1)}.bytes"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A, 1)}.bytes"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.bytes", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B, 1)}.bytes")
+#else
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO, 1)}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A, 1)}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B, 1)}.json"),
+
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO, 1)}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A, 1)}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfo_000000001.json", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/{string.Format(KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B, 1)}.json")
+#endif			// #if MSG_PACK_ENABLE
 #endif			// #if RUNTIME_TEMPLATES_ENABLE || RUNTIME_TEMPLATES_MODULE_ENABLE
 		// 04.UnityPackages }
 	};
