@@ -1248,14 +1248,25 @@ public static partial class KCDefine {
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
-	// 경로
-	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
+	// 경로 {
 	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
+
+#if MSG_PACK_ENABLE
+	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
+#else
+	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.json";
+#endif			// #if MSG_PACK_ENABLE
+	// 경로 }
 #endif			// #if PURCHASE_MODULE_ENABLE
 
 #if NOTI_MODULE_ENABLE
-	// 경로
+	// 경로 {
+#if MSG_PACK_ENABLE
 	public static readonly string U_DATA_P_NOTI_GROUP_IDS = $"{KCDefine.B_DIR_P_WRITABLE}NotiGroupIDs.bytes";
+#else
+	public static readonly string U_DATA_P_NOTI_GROUP_IDS = $"{KCDefine.B_DIR_P_WRITABLE}NotiGroupIDs.json";
+#endif			// #if MSG_PACK_ENABLE
+	// 경로 }
 #endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }
