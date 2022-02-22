@@ -203,6 +203,7 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_MODULE_VER = "ModuleVer";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
 	public const string B_KEY_JENKINS_SRC = "Src";
+	public const string B_KEY_JENKINS_ANALYTICS_SRC = "AnalyticsSrc";
 	public const string B_KEY_JENKINS_PROJ_NAME = "ProjName";
 	public const string B_KEY_JENKINS_PROJ_PATH = "ProjPath";
 	public const string B_KEY_JENKINS_BUILD_OUTPUT_PATH = "BuildOutputPath";
@@ -210,8 +211,6 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_PROFILE_ID = "ProfileID";
 	public const string B_KEY_JENKINS_PLATFORM = "Platform";
 	public const string B_KEY_JENKINS_PROJ_PLATFORM = "ProjPlatform";
-	public const string B_KEY_JENKINS_ANALYTICS = "Analytics";
-	public const string B_KEY_JENKINS_BUILD_MODE = "BuildMode";
 	public const string B_KEY_JENKINS_BUILD_VER = "BuildVer";
 	public const string B_KEY_JENKINS_BUILD_FUNC = "BuildFunc";
 	public const string B_KEY_JENKINS_PIPELINE_NAME = "PipelineName";
