@@ -156,12 +156,14 @@ public static partial class KCEditorDefine {
 	// 테스트 }
 
 	// 기타 {
+	public const string DS_DEFINE_S_SCRIPT_TEMPLATE_ONLY = "SCRIPT_TEMPLATE_ONLY";
+	public const string DS_DEFINE_S_SETUP_DEFINE_SYMBOLS = "SETUP_DEFINE_SYMBOLS";
+
 	public const string DS_DEFINE_S_STORE_DIST_BUILD = "STORE_DIST_BUILD";
 	public const string DS_DEFINE_S_EDITOR_DIST_BUILD = "EDITOR_DIST_BUILD";
 	public const string DS_DEFINE_S_CREATIVE_DIST_BUILD = "CREATIVE_DIST_BUILD";
 
 	public const string DS_DEFINE_S_SAMPLE_PROJ = "SAMPLE_PROJ";
-	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_DEVELOPMENT_PROJ = "DEVELOPMENT_PROJ";
 	public const string DS_DEFINE_S_TITLE_SCENE_ENABLE = "TITLE_SCENE_ENABLE";
 	public const string DS_DEFINE_S_DAILY_REWARD_ENABLE = "DAILY_REWARD_ENABLE";
