@@ -1243,8 +1243,8 @@ public static partial class KCEditorDefine {
 
 #if NOTI_MODULE_ENABLE
 	// 옵션
-	public const PresentationOption B_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
-	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = KCEditorDefine.B_PRESENT_OPTS_NOTI;
+	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
+	public const AuthorizationOption B_PRESENT_OPTS_AUTHORIZATION_NOTI = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
 	
 	// 이름
 	public const string B_ACTIVITY_N_NOTI = "com.unity3d.player.UnityPlayerActivity";
