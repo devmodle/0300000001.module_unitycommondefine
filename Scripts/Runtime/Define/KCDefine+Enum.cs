@@ -90,26 +90,26 @@ public enum EEnumVal {
 	TYPE = KCDefine.B_UNIT_KINDS_PER_TYPE,
 	KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE,
 	SUB_KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE,
-	[HideInInspector] MAX_VAL,
+	[InspectorName(null)] MAX_VAL,
 }
 
 /** POT */
 public enum EPowOfTwo {
 	NONE = -1,
-	[HideInInspector] _2 = 2,
-	[HideInInspector] _4 = 4,
-	[HideInInspector] _8 = 8,
-	[HideInInspector] _16 = 16,
-	[HideInInspector] _32 = 32,
-	[HideInInspector] _64 = 64,
-	[HideInInspector] _128 = 128,
-	[HideInInspector] _256 = 256,
+	[InspectorName(null)] _2 = 2,
+	[InspectorName(null)] _4 = 4,
+	[InspectorName(null)] _8 = 8,
+	[InspectorName(null)] _16 = 16,
+	[InspectorName(null)] _32 = 32,
+	[InspectorName(null)] _64 = 64,
+	[InspectorName(null)] _128 = 128,
+	[InspectorName(null)] _256 = 256,
 	_512 = 512,
 	_1024 = 1024,
 	_2048 = 2048,
 	_4096 = 4096,
 	_8192 = 8192,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 마우스 버튼 */
@@ -118,7 +118,7 @@ public enum EMouseBtn {
 	LEFT,
 	RIGHT,
 	MID,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 폰트 세트 */
@@ -133,7 +133,7 @@ public enum EFontSet {
 	G,
 	H,
 	I,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 방향 */
@@ -159,7 +159,7 @@ public enum EDirection {
 	HORIZONTAL,
 	DIAGONAL,
 	
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 퀄리티 수준 */
@@ -171,7 +171,7 @@ public enum EQualityLevel {
 	HIGH,
 	[System.Obsolete("NEVER_USE_THIS", true)] VERY_HIGH,
 	ULTRA,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 광원 맵 모드 */
@@ -179,7 +179,7 @@ public enum ELightmapMode {
 	NONE = -1,
 	NON_DIRECTIONAL,
 	COMBINE_DIRECTIONAL,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 그림자 옵션 */
@@ -188,7 +188,7 @@ public enum EShadowCascadesOpts {
 	NO_CASCADES,
 	TWO_CASCADES = 2,
 	FOUR_CASCADES = 4,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 값 타입 */
@@ -197,7 +197,7 @@ public enum EValType {
 	INT,
 	FLT,
 	STR,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 애니메이션 타입 */
@@ -207,7 +207,7 @@ public enum EAniType {
 	DROPDOWN,
 	SLIDE_LEFT,
 	SLIDE_RIGHT,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 };
 
 /** 유저 타입 */
@@ -215,7 +215,7 @@ public enum EUserType {
 	NONE = -1,
 	A,
 	B,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 디바이스 타입 */
@@ -227,7 +227,7 @@ public enum EDeviceType {
 	CONSOLE,
 	HANDHELD_CONSOLE,
 	UNKNOWN,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 수직 동기화 타입 */
@@ -236,14 +236,14 @@ public enum EVSyncType {
 	NEVER,
 	EVERY,
 	SECOND,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** iOS 타입 */
 public enum EiOSType {
 	NONE = -1,
 	APPLE,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 안드로이드 타입 */
@@ -251,7 +251,7 @@ public enum EAndroidType {
 	NONE = -1,
 	GOOGLE,
 	AMAZON,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 독립 플랫폼 타입 */
@@ -259,7 +259,7 @@ public enum EStandaloneType {
 	NONE = -1,
 	MAC_STEAM,
 	WNDS_STEAM,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 분석 타입 */
@@ -268,7 +268,7 @@ public enum EAnalyticsType {
 	FLURRY,
 	FIREBASE,
 	APPS_FLYER,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 약관 동의 팝업 타입 */
@@ -276,7 +276,7 @@ public enum EAgreePopupType {
 	NONE = -1,
 	KR,
 	EU,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 진동 타입 */
@@ -285,7 +285,7 @@ public enum EVibrateType {
 	SELECTION,
 	NOTIFICATION,
 	IMPACT,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 진동 스타일 */
@@ -294,7 +294,7 @@ public enum EVibrateStyle {
 	LIGHT,
 	MEDIUM,
 	HEAVY,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 내비게이션 스택 이벤트 타입 */
@@ -303,7 +303,7 @@ public enum ENavStackEvent {
 	TOP,
 	REMOVE,
 	BACK_KEY_DOWN,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 시작 씬 이벤트 타입 */
@@ -312,7 +312,7 @@ public enum EStartSceneEvent {
 	LOAD_SETUP_SCENE,
 	LOAD_AGREE_SCENE,
 	LOAD_LATE_SETUP_SCENE,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 #endregion			// 기본
 
@@ -325,7 +325,7 @@ public enum EDSPBufferSize {
 	BEST_LATENCY = 256,
 	GOOD_LATENCY = 512,
 	BEST_PERFORMANCE = 1024,
-	[HideInInspector] MAX_VAL	
+	[InspectorName(null)] MAX_VAL	
 }
 
 /** 종횡비 모드 */
@@ -334,7 +334,7 @@ public enum EAspectRatioMode {
 	LEGACY_WIDE_SCREEN,
 	NATIVE_ASPECT_RATIO,
 	CUSTOM,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 가속도 갱신 주기 */
@@ -345,7 +345,7 @@ public enum EAccelerometerFrequency {
 	FREQUENCY_30_HZ = 30,
 	FREQUENCY_60_HZ = 60,
 	FREQUENCY_100_HZ = 100,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 광원 맵 엔코딩 퀄리티 */
@@ -354,7 +354,7 @@ public enum ELightmapEncodingQuality {
 	LOW,
 	NORM,
 	HIGH,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 빌드 모드 */
@@ -363,7 +363,7 @@ public enum EBuildMode {
 	DEBUG,
 	RELEASE,
 	STORE,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 텍스처 압축 타입 */
@@ -372,7 +372,7 @@ public enum ETextureCompressionType {
 	LEGACY,
 	DEFAULT,
 	CUSTOM,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 #endif			// #if UNITY_EDITOR
 
@@ -383,7 +383,7 @@ public enum EAdsPlatform {
 	ADMOB,
 	IRON_SRC,
 	APP_LOVIN,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 
 /** 배너 광고 위치 */
@@ -391,7 +391,7 @@ public enum EBannerAdsPos {
 	NONE = -1,
 	UP,
 	DOWN,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 #endif			// #if ADS_MODULE_ENABLE
 
@@ -401,7 +401,7 @@ public enum EPurchasePlatform {
 	NONE = -1,
 	GOOGLE,
 	AMAZON,
-	[HideInInspector] MAX_VAL
+	[InspectorName(null)] MAX_VAL
 }
 #endif			// #if PURCHASE_MODULE_ENABLE
 #endregion			// 조건부 상수
