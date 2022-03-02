@@ -6,9 +6,6 @@ using UnityEngine.UI;
 /** 시작 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
-	// 개수
-	public const int SS_MAX_NUM_DOTS = 3;
-	
 	// 시간
 	public const float SS_DELTA_T_UPDATE_STATE = 0.5f;
 	

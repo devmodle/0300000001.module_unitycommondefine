@@ -1170,8 +1170,8 @@ public static partial class KCDefine {
 
 #if UNITY_IOS
 	// 옵션
-	public const AuthorizationOption U_AUTH_OPTS_NOTI = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
 	public const PresentationOption U_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Sound;
+	public const AuthorizationOption U_AUTHORIZATION_OPTS_NOTI = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
 #endif			// #if UNITY_IOS
 
 #if UNITY_ANDROID

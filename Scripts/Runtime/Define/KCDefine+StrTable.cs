@@ -55,7 +55,6 @@ public static partial class KCDefine {
 	// 추적 설명 팝업 }
 
 	// 시작 씬 관리자
-	public const string ST_KEY_START_SM_DOT_TEXT = "START_SM_DOT_TEXT";
 	public const string ST_KEY_START_SM_LOADING_TEXT = "START_SM_LOADING_TEXT";
 
 	// 공용 {
