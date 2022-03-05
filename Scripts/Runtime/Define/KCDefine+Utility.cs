@@ -108,6 +108,7 @@ public static partial class KCDefine {
 	// 애니메이션
 	public const Ease U_EASE_ANI = Ease.OutQuad;
 	public const Ease U_EASE_UNSET = Ease.Unset;
+	public const Ease U_EASE_LINEAR = Ease.Linear;
 
 	// 형식 {
 #if UNITY_IOS

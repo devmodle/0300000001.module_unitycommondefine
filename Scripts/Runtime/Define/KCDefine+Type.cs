@@ -42,7 +42,7 @@ public struct STDespawnObjInfo {
 
 /** 터치 응답자 정보 */
 public struct STTouchResponderInfo {
-	public Tween m_oAni;
+	public Sequence m_oAni;
 	public GameObject m_oTouchResponder;
 }
 

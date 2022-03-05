@@ -284,6 +284,7 @@ public static partial class KCDefine {
 
 	public const string B_TOKEN_INCR = "+";
 	public const string B_TOKEN_DECR = "-";
+	public const string B_TOKEN_DASH = "-";
 
 	public const string B_TOKEN_COLON = ":";
 	public const string B_TOKEN_SEMI_COLON = ";";
