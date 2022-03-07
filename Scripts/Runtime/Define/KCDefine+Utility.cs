@@ -154,14 +154,18 @@ public static partial class KCDefine {
 	public const string U_KEY_STAGE_KINDS = "StageKinds";
 	public const string U_KEY_CHAPTER_KINDS = "ChapterKinds";
 
-	public const string U_KEY_FX_KINDS = "FXKinds";
-	public const string U_KEY_BLOCK_KINDS = "BlockKinds";
 	public const string U_KEY_PRICE_KINDS = "PriceKinds";
 	public const string U_KEY_REWARD_KINDS = "RewardKinds";
 	public const string U_KEY_PRODUCT_KINDS = "ProductKinds";
 	public const string U_KEY_MISSION_KINDS = "MissionKinds";
 	public const string U_KEY_SALE_ITEM_KINDS = "SaleItemKinds";
 	public const string U_KEY_SALE_PRODUCT_KINDS = "SaleProductKinds";
+
+	public const string U_KEY_FX_KINDS = "FXKinds";
+	public const string U_KEY_NEXT_FX_KINDS = "NextFXKinds";
+
+	public const string U_KEY_BLOCK_KINDS = "BlockKinds";
+	public const string U_KEY_NEXT_BLOCK_KINDS = "NextBlockKinds";
 
 	public const string U_KEY_TUTORIAL_KINDS = "TutorialKinds";
 	public const string U_KEY_NEXT_TUTORIAL_KINDS = "NextTutorialKinds";
