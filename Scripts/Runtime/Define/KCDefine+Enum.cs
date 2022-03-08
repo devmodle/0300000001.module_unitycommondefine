@@ -6,7 +6,7 @@ using UnityEngine.UI;
 /*
 =====> 모듈 버전 정보 <=====
 - 버전 : 2.0.12
-- 연관 파일 개수 : 46
+- 연관 파일 개수 : 47
 
 =====> Experimental <=====
 - RenderingMode.Deferred
