@@ -7,6 +7,11 @@ using UnityEngine.UI;
 /** 레벨 에디터 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
+	// 형식
+	public const string LES_TEXT_FMT_LEVEL = "레벨 {0:0000}";
+	public const string LES_TEXT_FMT_STAGE = "스테이지 {0:000}";
+	public const string LES_TEXT_FMT_CHAPTER = "챕터 {0:00}";
+
 	// 중앙 에디터 UI {
 	public const string LES_OBJ_N_ME_UIS_PREV_BTN = "PrevBtn";
 	public const string LES_OBJ_N_ME_UIS_NEXT_BTN = "NextBtn";

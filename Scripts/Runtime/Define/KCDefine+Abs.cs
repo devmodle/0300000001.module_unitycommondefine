@@ -381,10 +381,6 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_BRACKET = "({0})";
 
 	public const string B_TEXT_FMT_VER = "Ver.{0}{1}";
-	public const string B_TEXT_FMT_LEVEL = "Level {0:0000}";
-	public const string B_TEXT_FMT_STAGE = "Stage {0:0000}";
-	public const string B_TEXT_FMT_CHAPTER = "Chapter {0:0000}";
-	
 	public const string B_TEXT_FMT_DICT = "[{0}]{1}";
 	public const string B_TEXT_FMT_SIZE = "<size={0}>{1}</size>";
 	public const string B_TEXT_FMT_COLOR = "<color=#{0}>{1}</color>";
