@@ -146,6 +146,8 @@ public static partial class KCEditorDefine {
 	// 테스트 }
 
 	// 기타 {
+	public const string DS_DEFINE_S_EXTRA_SCRIPT = "EXTRA_SCRIPT";
+	public const string DS_DEFINE_S_EXTRA_SCRIPT_ENABLE = "EXTRA_SCRIPT_ENABLE";
 	public const string DS_DEFINE_S_SCRIPT_TEMPLATE_ONLY = "SCRIPT_TEMPLATE_ONLY";
 
 	public const string DS_DEFINE_S_STORE_DIST_BUILD = "STORE_DIST_BUILD";
@@ -210,6 +212,10 @@ public static partial class KCEditorDefine {
 	#region 런타임 상수
 	// 대체 전처리기 심볼
 	public static readonly Dictionary<string, string> DS_DEFINE_S_REPLACE_MODULE_DICT = new Dictionary<string, string>() {
+#if EXTRA_SCRIPT || EXTRA_SCRIPT_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_EXTRA_SCRIPT] = KCEditorDefine.DS_DEFINE_S_EXTRA_SCRIPT_ENABLE,
+#endif			// #if EXTRA_SCRIPT || EXTRA_SCRIPT_ENABLE
+
 #if ADDRESSABLES_ENABLE || ADDRESSABLES_MODULE_ENABLE
 		[KCEditorDefine.DS_DEFINE_S_ADDRESSABLES_ENABLE] = KCEditorDefine.DS_DEFINE_S_ADDRESSABLES_MODULE_ENABLE,
 #endif			// #if ADDRESSABLES_ENABLE || ADDRESSABLES_MODULE_ENABLE
