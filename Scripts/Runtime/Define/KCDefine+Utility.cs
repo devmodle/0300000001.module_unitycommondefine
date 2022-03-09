@@ -149,6 +149,14 @@ public static partial class KCDefine {
 	public const string U_KEY_STAGE_ID = "StageID";
 	public const string U_KEY_CHAPTER_ID = "ChapterID";
 
+	public const string U_KEY_POS_X = "PosX";
+	public const string U_KEY_POS_Y = "PosY";
+	public const string U_KEY_POS_Z = "PosZ";
+
+	public const string U_KEY_SIZE_X = "SizeX";
+	public const string U_KEY_SIZE_Y = "SizeY";
+	public const string U_KEY_SIZE_Z = "SizeZ";
+
 	public const string U_KEY_DIFFICULTY = "Difficulty";
 	public const string U_KEY_LEVEL_KINDS = "LevelKinds";	
 	public const string U_KEY_STAGE_KINDS = "StageKinds";
