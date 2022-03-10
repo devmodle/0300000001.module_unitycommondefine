@@ -463,8 +463,12 @@ public static partial class KCEditorDefine {
 		KCEditorDefine.B_DIR_P_AUTO_SCENES, KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_PROJ_SCENES, KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_EDITOR_PROJ_SCENES
 	};
 
+	public static readonly List<TextureImporterType> B_ENABLE_SRGB_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+		TextureImporterType.Default, TextureImporterType.Sprite
+	};	
+
 	public static readonly List<TextureImporterType> B_ENABLE_ALPHA_TRANSPARENCY_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
-		TextureImporterType.GUI, TextureImporterType.Sprite
+		TextureImporterType.Default, TextureImporterType.Sprite, TextureImporterType.GUI, TextureImporterType.Cursor, TextureImporterType.Cookie
 	};
 
 	public static readonly List<TextureImporterType> B_IGNORE_RGBA_32_FMT_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
@@ -472,7 +476,7 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly List<TextureImporterType> B_IGNORE_WRAP_MODE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
-		TextureImporterType.Lightmap, TextureImporterType.DirectionalLightmap, TextureImporterType.Shadowmask
+		TextureImporterType.NormalMap, TextureImporterType.Lightmap, TextureImporterType.DirectionalLightmap, TextureImporterType.Shadowmask
 	};
 
 	public static readonly List<TextureImporterType> B_IGNORE_FILTER_MODE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
