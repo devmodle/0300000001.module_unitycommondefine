@@ -1028,10 +1028,9 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
 	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
 
-	public const string U_KEY_FMT_ADS_M_BANNER_ADS_LOADER_INFO = "AdsMBannerAdsLoaderInfo_{0}";
-	public const string U_KEY_FMT_ADS_M_REWARD_ADS_LOADER_INFO = "AdsMRewardAdsLoaderInfo_{0}";
-	public const string U_KEY_FMT_ADS_M_FULLSCREEN_ADS_LOADER_INFO = "AdsMFullscreenAdsLoaderInfo_{0}";
-	public const string U_KEY_FMT_ADS_M_CONSENT_V_LOADER_INFO = "AdsMConsentVLoaderInfo_{0}";
+	public const string U_KEY_FMT_ADS_M_LOAD_FAIL_BANNER_ADS_INFO = "AdsMLoadFailBannerAdsInfo_{0}";
+	public const string U_KEY_FMT_ADS_M_LOAD_FAIL_REWARD_ADS_INFO = "AdsMLoadFailRewardAdsInfo_{0}";
+	public const string U_KEY_FMT_ADS_M_LOAD_FAIL_FULLSCREEN_ADS_INFO = "AdsMLoadFailFullscreenAdsInfo_{0}";
 	// 식별자 }
 
 #if ADMOB_ADS_ENABLE
