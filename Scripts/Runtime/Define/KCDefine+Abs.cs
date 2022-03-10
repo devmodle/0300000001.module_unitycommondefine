@@ -314,7 +314,6 @@ public static partial class KCDefine {
 	// 명령어 }
 
 	// 경로 {
-	public const string B_DIR_P_BGS = "BGs/";
 	public const string B_DIR_P_FXS = "FXs/";
 	public const string B_DIR_P_ICONS = "Icons/";
 	public const string B_DIR_P_FONTS = "Fonts/";
@@ -337,7 +336,8 @@ public static partial class KCDefine {
 	public const string B_DIR_P_ENGINE = "Engine/";
 	public const string B_DIR_P_POPUP = "Popup/";
 	public const string B_DIR_P_FX = "FX/";
-	public const string B_DIR_P_SCROLL_VIEW = "UI/ScrollView/";
+	public const string B_DIR_P_UI = "UI/";
+	public const string B_DIR_P_BG = "BG/";
 
 	public const string B_DIR_P_INIT_SCENE = "InitScene/";
 	public const string B_DIR_P_SETUP_SCENE = "SetupScene/";
