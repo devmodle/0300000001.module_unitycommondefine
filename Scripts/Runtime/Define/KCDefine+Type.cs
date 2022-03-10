@@ -84,9 +84,9 @@ public struct STPostItemInfo {
 	public string m_oItemKinds;
 }
 
-/** 폰트 정보 */
+/** 지역화 정보 */
 [System.Serializable]
-public struct STFontInfo {
+public struct STLocalizeInfo {
 	public string m_oCountryCode;
 	public SystemLanguage m_eSystemLanguage;
 	public List<STFontSetInfo> m_oFontSetInfoList;

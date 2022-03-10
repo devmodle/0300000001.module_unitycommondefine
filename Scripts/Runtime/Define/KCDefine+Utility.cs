@@ -575,7 +575,7 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 기타 {
-	public static readonly STFontInfo U_INVALID_FONT_INFO = new STFontInfo() {
+	public static readonly STLocalizeInfo U_INVALID_LOCALIZE_INFO = new STLocalizeInfo() {
 		m_eSystemLanguage = SystemLanguage.Unknown
 	};
 
