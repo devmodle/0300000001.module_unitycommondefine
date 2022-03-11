@@ -53,7 +53,7 @@ public static partial class KCEditorDefine {
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
 
 	// 버전
-	public const string B_VER_UNITY_MODULE = "2.1.3";
+	public const string B_VER_UNITY_MODULE = "2.1.4";
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
@@ -318,8 +318,6 @@ public static partial class KCEditorDefine {
 	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-3.0.12";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-1.4.0";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-2.6.0";
-	public const string B_NAME_LEAN_GUI_PKGS = "LeanGUI-1.2.3";
-	public const string B_NAME_LEAN_TOUCH_PKGS = "LeanTouch-2.3.5";
 	public const string B_NAME_APPLE_AUTH_PKGS = "AppleAuth-1.4.2";
 	#endregion			// 기본
 
@@ -389,8 +387,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPRITE_TRAIL_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
-	public static readonly string B_ABS_PKGS_P_LEAN_GUI = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_LEAN_GUI_PKGS}.unitypackage";
-	public static readonly string B_ABS_PKGS_P_LEAN_TOUCH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_LEAN_TOUCH_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_APPLE_AUTH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_AUTH_PKGS}.unitypackage";
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
