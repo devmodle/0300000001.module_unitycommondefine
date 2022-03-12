@@ -165,11 +165,11 @@ public enum EDirection {
 /** 퀄리티 수준 */
 public enum EQualityLevel {
 	NONE = -1,
-	[System.Obsolete("NEVER_USE_THIS", true)] VERY_LOW,
-	[System.Obsolete("NEVER_USE_THIS", true)] LOW,
+	[HideInInspector] VERY_LOW,
+	[HideInInspector] LOW,
 	NORM,
 	HIGH,
-	[System.Obsolete("NEVER_USE_THIS", true)] VERY_HIGH,
+	[HideInInspector] VERY_HIGH,
 	ULTRA,
 	[HideInInspector] MAX_VAL
 }
