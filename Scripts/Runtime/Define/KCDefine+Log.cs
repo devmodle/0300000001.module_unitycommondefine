@@ -20,26 +20,15 @@ public static partial class KCDefine {
 	public const string L_LOG_KEY_LOG_TIME = "LogTime";
 	public const string L_LOG_KEY_INSTALL_TIME = "InstallTime";
 
-	public const string L_LOG_KEY_PARAMS_A = "ParamsA";
-	public const string L_LOG_KEY_PARAMS_B = "ParamsB";
-	public const string L_LOG_KEY_PARAMS_C = "ParamsC";
-	public const string L_LOG_KEY_PARAMS_D = "ParamsD";
-	public const string L_LOG_KEY_PARAMS_E = "ParamsE";
-	public const string L_LOG_KEY_PARAMS_F = "ParamsF";
-	public const string L_LOG_KEY_PARAMS_G = "ParamsG";
-	public const string L_LOG_KEY_PARAMS_H = "ParamsH";
-	public const string L_LOG_KEY_PARAMS_I = "ParamsI";
-	public const string L_LOG_KEY_PARAMS_J = "ParamsJ";
-	public const string L_LOG_KEY_PARAMS_K = "ParamsK";
-	public const string L_LOG_KEY_PARAMS_L = "ParamsL";
-	public const string L_LOG_KEY_PARAMS_M = "ParamsM";
-	public const string L_LOG_KEY_PARAMS_N = "ParamsN";
-	public const string L_LOG_KEY_PARAMS_O = "ParamsO";
-	public const string L_LOG_KEY_PARAMS_P = "ParamsP";
-	public const string L_LOG_KEY_PARAMS_Q = "ParamsQ";
-	public const string L_LOG_KEY_PARAMS_R = "ParamsR";
-	public const string L_LOG_KEY_PARAMS_S = "ParamsS";
-	public const string L_LOG_KEY_PARAMS_T = "ParamsT";
+	public const string L_LOG_KEY_PARAMS_01 = "Params_01";
+	public const string L_LOG_KEY_PARAMS_02 = "Params_02";
+	public const string L_LOG_KEY_PARAMS_03 = "Params_03";
+	public const string L_LOG_KEY_PARAMS_04 = "Params_04";
+	public const string L_LOG_KEY_PARAMS_05 = "Params_05";
+	public const string L_LOG_KEY_PARAMS_06 = "Params_06";
+	public const string L_LOG_KEY_PARAMS_07 = "Params_07";
+	public const string L_LOG_KEY_PARAMS_08 = "Params_08";
+	public const string L_LOG_KEY_PARAMS_09 = "Params_09";
 	// 식별자 }
 	#endregion			// 기본
 }

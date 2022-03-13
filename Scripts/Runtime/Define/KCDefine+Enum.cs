@@ -124,15 +124,15 @@ public enum EMouseBtn {
 /** 폰트 세트 */
 public enum EFontSet {
 	NONE = -1,
-	A,
-	B,
-	C,
-	D,
-	E,
-	F,
-	G,
-	H,
-	I,
+	_1,
+	_2,
+	_3,
+	_4,
+	_5,
+	_6,
+	_7,
+	_8,
+	_9,
 	[HideInInspector] MAX_VAL
 }
 
