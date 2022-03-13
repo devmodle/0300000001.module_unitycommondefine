@@ -162,6 +162,14 @@ public enum EDirection {
 	[HideInInspector] MAX_VAL
 }
 
+/** 직교 */
+public enum EOrthogonal {
+	NONE = -1,
+	CW,
+	CCW,
+	[HideInInspector] MAX_VAL
+}
+
 /** 퀄리티 수준 */
 public enum EQualityLevel {
 	NONE = -1,
