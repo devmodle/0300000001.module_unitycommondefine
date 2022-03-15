@@ -262,7 +262,7 @@ public static partial class KCEditorDefine {
 #if NINETAP_BUILD_PIPELINE_ENABLE
 	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/000000.Common/job/{0}/job/01.Pipelines/job";
 #else
-	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/00000000.Common/job/{0}/job/01.Pipelines/job";
+	public const string B_PIPELINE_GROUP_NAME_FMT_JENKINS = "job/0000000000.Common/job/{0}/job/01.Pipelines/job";
 #endif			// #if NINETAP_BUILD_PIPELINE_ENABLE
 	// 젠킨스 }
 
