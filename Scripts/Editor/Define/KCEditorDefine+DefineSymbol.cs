@@ -83,6 +83,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_NOTI_MODULE_ENABLE = "NOTI_MODULE_ENABLE";
 
 	// 렌더링 {
+	public const string DS_DEFINE_S_LIGHT_ENABLE = "LIGHT_ENABLE";
 	public const string DS_DEFINE_S_UNITY_POST_PROCESSING_STACK_V2 = "UNITY_POST_PROCESSING_STACK_V2";
 
 	public const string DS_DEFINE_S_POST_PROCESSING_ENABLE = "POST_PROCESSING_ENABLE";
