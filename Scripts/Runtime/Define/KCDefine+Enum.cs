@@ -374,14 +374,27 @@ public enum EBuildMode {
 	[HideInInspector] MAX_VAL
 }
 
-/** 텍스처 압축 타입 */
-public enum ETextureCompressionType {
+/** 텍스처 압축 */
+public enum ETextureCompression {
 	NONE = -1,
 	LEGACY,
 	DEFAULT,
 	CUSTOM,
 	[HideInInspector] MAX_VAL
 }
+
+#if BURST_COMPILER_MODULE_ENABLE
+/** 버스트 컴파일러 최적화 */
+public enum EBurstCompilerOptimization {
+	NONE = -1,
+	DEF,
+	PERFORMANCE,
+	SIZE,
+	FAST_COMPILATION,
+	BALANCED,
+	[HideInInspector] MAX_VAL
+}
+#endif			// #if BURST_COMPILER_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
 #if ADS_MODULE_ENABLE

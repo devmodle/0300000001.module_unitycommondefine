@@ -356,6 +356,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_ASSETS = $"{Application.dataPath}/";
 	public static readonly string B_ABS_DIR_P_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Packages/";
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../ExternalDatas/";
+	public static readonly string B_ABS_DIR_P_PROJ_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../ProjectSettings/";
 	public static readonly string B_ABS_DIR_P_TABLES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Tables/";
 	public static readonly string B_ABS_DIR_P_UNITY_ENGINE = $"{EditorApplication.applicationPath}/";
 
@@ -1303,6 +1304,14 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Resources/{KCEditorDefine.B_ICON_P_ANDROID_NOTI_256x256}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable/icon256.png")
 	};
 #endif			// #if NOTI_MODULE_ENABLE
+
+#if BURST_COMPILER_MODULE_ENABLE
+	// 경로
+	public static readonly string B_DATA_P_IOS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_iOS.json";
+	public static readonly string B_DATA_P_ANDROID_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_Android.json";
+	public static readonly string B_DATA_P_MAC_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneOSX.json";
+	public static readonly string B_DATA_P_WNDS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneWindows.json";
+#endif			// #if BURST_COMPILER_MODULE_ENABLE
 	#endregion			// 조건부 런타임 상수
 }
 #endif			// #if UNITY_EDITOR
