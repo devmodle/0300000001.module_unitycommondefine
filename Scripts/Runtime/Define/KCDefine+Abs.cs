@@ -230,10 +230,10 @@ public static partial class KCDefine {
 	
 	public const string B_NAME_PATTERN_FIX_CLAMP_WRAP = "__FIX_CW__";
 	public const string B_NAME_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
-	public const string B_NAME_PATTERN_FIX_GAMMA_PIPELINE = "__FIX_GP__";
 	public const string B_NAME_PATTERN_FIX_COMPRESS_IN_MEMORY = "__FIX_CIM__";
 
 	public const string B_NAME_PATTERN_ENABLE_READ_WRITE = "__ENABLE_RW__";
+	public const string B_NAME_PATTERN_IGNORE_LINEAR_PIPELINE = "__IGNORE_LP__";
 	public const string B_NAME_PATTERN_IGNORE_SETUP_CULLING_MASK = "__IGNORE_SCM__";
 	// 이름 }
 
