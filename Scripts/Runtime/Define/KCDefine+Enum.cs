@@ -94,7 +94,7 @@ public enum EEnumVal {
 }
 
 /** POT */
-public enum EPowOfTwo {
+public enum EPOT {
 	NONE = -1,
 	[HideInInspector] _2 = 2,
 	[HideInInspector] _4 = 4,
@@ -112,12 +112,30 @@ public enum EPowOfTwo {
 	[HideInInspector] MAX_VAL
 }
 
+/** 수직 동기화 */
+public enum EVSync {
+	NONE = -1,
+	NEVER,
+	EVERY,
+	SECOND,
+	[HideInInspector] MAX_VAL
+}
+
 /** 마우스 버튼 */
 public enum EMouseBtn {
 	NONE = -1,
 	LEFT,
 	RIGHT,
 	MID,
+	[HideInInspector] MAX_VAL
+}
+
+/** 분석 */
+public enum EAnalytics {
+	NONE = -1,
+	FLURRY,
+	FIREBASE,
+	APPS_FLYER,
 	[HideInInspector] MAX_VAL
 }
 
@@ -199,6 +217,32 @@ public enum EShadowCascadesOpts {
 	[HideInInspector] MAX_VAL
 }
 
+/** 약관 동의 팝업 */
+public enum EAgreePopup {
+	NONE = -1,
+	KR,
+	EU,
+	[HideInInspector] MAX_VAL
+}
+
+/** 내비게이션 스택 이벤트 */
+public enum ENavStackEvent {
+	NONE = -1,
+	TOP,
+	REMOVE,
+	BACK_KEY_DOWN,
+	[HideInInspector] MAX_VAL
+}
+
+/** 시작 씬 이벤트 */
+public enum EStartSceneEvent {
+	NONE = -1,
+	LOAD_SETUP_SCENE,
+	LOAD_AGREE_SCENE,
+	LOAD_LATE_SETUP_SCENE,
+	[HideInInspector] MAX_VAL
+}
+
 /** 값 타입 */
 public enum EValType {
 	NONE = -1,
@@ -238,15 +282,6 @@ public enum EDeviceType {
 	[HideInInspector] MAX_VAL
 }
 
-/** 수직 동기화 타입 */
-public enum EVSyncType {
-	NONE = -1,
-	NEVER,
-	EVERY,
-	SECOND,
-	[HideInInspector] MAX_VAL
-}
-
 /** iOS 타입 */
 public enum EiOSType {
 	NONE = -1,
@@ -270,23 +305,6 @@ public enum EStandaloneType {
 	[HideInInspector] MAX_VAL
 }
 
-/** 분석 타입 */
-public enum EAnalyticsType {
-	NONE = -1,
-	FLURRY,
-	FIREBASE,
-	APPS_FLYER,
-	[HideInInspector] MAX_VAL
-}
-
-/** 약관 동의 팝업 타입 */
-public enum EAgreePopupType {
-	NONE = -1,
-	KR,
-	EU,
-	[HideInInspector] MAX_VAL
-}
-
 /** 진동 타입 */
 public enum EVibrateType {
 	NONE = -1,
@@ -302,24 +320,6 @@ public enum EVibrateStyle {
 	LIGHT,
 	MEDIUM,
 	HEAVY,
-	[HideInInspector] MAX_VAL
-}
-
-/** 내비게이션 스택 이벤트 타입 */
-public enum ENavStackEvent {
-	NONE = -1,
-	TOP,
-	REMOVE,
-	BACK_KEY_DOWN,
-	[HideInInspector] MAX_VAL
-}
-
-/** 시작 씬 이벤트 타입 */
-public enum EStartSceneEvent {
-	NONE = -1,
-	LOAD_SETUP_SCENE,
-	LOAD_AGREE_SCENE,
-	LOAD_LATE_SETUP_SCENE,
 	[HideInInspector] MAX_VAL
 }
 #endregion			// 기본
