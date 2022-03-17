@@ -348,16 +348,21 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_PAUSE_BTN = "PauseBtn";
 	public const string U_OBJ_N_ACQUIRE_BTN = "AcquireBtn";
+	public const string U_OBJ_N_RANKING_BTN = "RankingBtn";
 	public const string U_OBJ_N_PURCHASE_BTN = "PurchaseBtn";
 	public const string U_OBJ_N_RESTORE_BTN = "RestoreBtn";
 	public const string U_OBJ_N_REWARD_ADS_BTN = "RewardAdsBtn";
+	public const string U_OBJ_N_REMOVE_ADS_BTN = "RemoveAdsBtn";
 
+	public const string U_OBJ_N_SND_BTN = "SndBtn";
 	public const string U_OBJ_N_BG_SND_BTN = "BGSndBtn";
 	public const string U_OBJ_N_FX_SNDS_BTN = "FXSndsBtn";
 	public const string U_OBJ_N_NOTI_BTN = "NotiBtn";
 	public const string U_OBJ_N_REVIEW_BTN = "ReviewBtn";
 	public const string U_OBJ_N_SUPPORTS_BTN = "SupportsBtn";
 	public const string U_OBJ_N_SYNC_BTN = "SyncBtn";
+	public const string U_OBJ_N_VIBRATE_BTN = "VibrateBtn";
+	public const string U_OBJ_N_LOCALIZE_BTN = "LocalizeBtn";
 
 	public const string U_OBJ_N_EMPTY = "Empty";
 	public const string U_OBJ_N_GAME_OBJ = "GameObj";
