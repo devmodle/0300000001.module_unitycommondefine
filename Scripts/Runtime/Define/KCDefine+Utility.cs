@@ -75,6 +75,7 @@ public static partial class KCDefine {
 	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.25f;
 	
 	public const float U_DURATION_ANI = 0.25f;
+	public const float U_DURATION_SELECTABLE_ANI = 0.15f;
 	public const float U_DURATION_SCREEN_FADE_IN_ANI = 0.25f;
 	public const float U_DURATION_SCREEN_FADE_OUT_ANI = KCDefine.U_DURATION_SCREEN_FADE_IN_ANI;
 
@@ -357,11 +358,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SND_BTN = "SndBtn";
 	public const string U_OBJ_N_BG_SND_BTN = "BGSndBtn";
 	public const string U_OBJ_N_FX_SNDS_BTN = "FXSndsBtn";
+	public const string U_OBJ_N_VIBRATE_BTN = "VibrateBtn";
 	public const string U_OBJ_N_NOTI_BTN = "NotiBtn";
 	public const string U_OBJ_N_REVIEW_BTN = "ReviewBtn";
 	public const string U_OBJ_N_SUPPORTS_BTN = "SupportsBtn";
 	public const string U_OBJ_N_SYNC_BTN = "SyncBtn";
-	public const string U_OBJ_N_VIBRATE_BTN = "VibrateBtn";
 	public const string U_OBJ_N_LOCALIZE_BTN = "LocalizeBtn";
 
 	public const string U_OBJ_N_EMPTY = "Empty";
@@ -598,7 +599,7 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_PRESS = new Color(0.75f, 0.75f, 0.75f, 1.0f);
 	public static readonly Color U_COLOR_SEL = Color.white;
 	public static readonly Color U_COLOR_HIGHLIGHT = Color.white;
-	public static readonly Color U_COLOR_DISABLE = new Color(0.58f, 0.58f, 0.58f, 1.0f);
+	public static readonly Color U_COLOR_DISABLE = new Color(0.35f, 0.35f, 0.35f, 1.0f);
 	public static readonly Color U_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
 	public static readonly Color U_COLOR_BLIND_UIS = Color.black;
@@ -606,7 +607,7 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
 
 	public static readonly Color U_COLOR_CLEAR = Color.black;
-	public static readonly Color U_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
+	public static readonly Color U_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.95f);
 	public static readonly Color U_COLOR_INDICATOR_BG = KCDefine.U_COLOR_POPUP_BG;
 	// 색상 }
 
@@ -616,7 +617,7 @@ public static partial class KCDefine {
 	public static readonly System.Version U_VER_COMMON_USER_INFO = new System.Version(1, 0, 0);
 
 	// 크기
-	public static readonly Vector3 U_POS_VER_TEXT = new Vector3(10.0f, -10.0f, 0.0f);
+	public static readonly Vector3 U_POS_VER_TEXT = new Vector3((KCDefine.B_SCREEN_WIDTH / -2.0f) + 10.0f, -10.0f, 0.0f);
 	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
 	// 태그
