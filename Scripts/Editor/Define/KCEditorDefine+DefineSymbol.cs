@@ -84,6 +84,8 @@ public static partial class KCEditorDefine {
 
 	// 렌더링 {
 	public const string DS_DEFINE_S_LIGHT_ENABLE = "LIGHT_ENABLE";
+	public const string DS_DEFINE_S_ODIN_INSPECTOR = "ODIN_INSPECTOR";
+	public const string DS_DEFINE_S_ODIN_INSPECTOR_3 = "ODIN_INSPECTOR_3";
 	public const string DS_DEFINE_S_UNITY_POST_PROCESSING_STACK_V2 = "UNITY_POST_PROCESSING_STACK_V2";
 
 	public const string DS_DEFINE_S_POST_PROCESSING_ENABLE = "POST_PROCESSING_ENABLE";

@@ -188,6 +188,18 @@ public enum EOrthogonal {
 	[HideInInspector] MAX_VAL
 }
 
+/** 난이도 */
+public enum EDifficulty {
+	NONE = -1,
+	EASY,
+	NORM,
+	HARD,
+	VERY_HARD,
+	SUPER_HARD,
+	ULTRA_HARD,
+	[HideInInspector] MAX_VAL
+}
+
 /** 퀄리티 수준 */
 public enum EQualityLevel {
 	NONE = -1,
