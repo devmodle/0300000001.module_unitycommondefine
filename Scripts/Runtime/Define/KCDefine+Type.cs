@@ -102,8 +102,8 @@ public struct STFontSetInfo {
 /** 디바이스 정보 */
 [System.Serializable]
 public struct STDeviceInfo {
-	public List<string> m_oiOSTestDeviceAdmobIDList;
-	public List<string> m_oAndroidTestDeviceAdmobIDList;
+	public List<string> m_oiOSAdmobTestDeviceIDList;
+	public List<string> m_oAndroidAdmobTestDeviceIDList;
 }
 
 /** 디바이스 속성 */
@@ -129,19 +129,19 @@ public struct STBuildVerConfig {
 [MessagePackObject]
 public struct STCommonTypeWrapper {
 	[Key(0)] public List<int> m_oIntList;
-	[Key(1)] public List<float> m_oFltList;
+	[Key(1)] public List<float> m_oRealList;
 	[Key(2)] public List<string> m_oStrList;
 
 	[Key(10)] public Dictionary<int, int> m_oIntIntDict;
-	[Key(11)] public Dictionary<int, float> m_oIntFltDict;
+	[Key(11)] public Dictionary<int, float> m_oIntRealDict;
 	[Key(12)] public Dictionary<int, string> m_oIntStrDict;
 
 	[Key(20)] public Dictionary<long, int> m_oLongIntDict;
-	[Key(21)] public Dictionary<long, float> m_oLongFltDict;
+	[Key(21)] public Dictionary<long, float> m_oLongRealDict;
 	[Key(22)] public Dictionary<long, string> m_oLongStrDict;
 
 	[Key(30)] public Dictionary<string, int> m_oStrIntDict;
-	[Key(31)] public Dictionary<string, float> m_oStrFltDict;
+	[Key(31)] public Dictionary<string, float> m_oStrRealDict;
 	[Key(32)] public Dictionary<string, string> m_oStrStrDict;
 }
 
