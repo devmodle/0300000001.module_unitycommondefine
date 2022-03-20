@@ -8,11 +8,6 @@ using UnityEngine.UI;
 public static partial class KCDefine {
 	#region 기본
 	// 이름 {
-	public const string E_OBJ_N_BLOCK_SPRITE = "BlockSprite";
-
-	public const string E_OBJ_N_PORTRAIT_UIS = "PortraitUIs";
-	public const string E_OBJ_N_LANDSCAPE_UIS = "LandscapeUIs";
-
 	public const string E_OBJ_N_LEFT_EDITOR_UIS = "LeftEditorUIs";
 	public const string E_OBJ_N_RIGHT_EDITOR_UIS = "RightEditorUIs";
 	public const string E_OBJ_N_MID_EDITOR_UIS = "MidEditorUIs";
@@ -21,7 +16,7 @@ public static partial class KCDefine {
 	public const string E_OBJ_N_ME_UIS_MSG_UIS = "MsgUIs";
 
 	// 왼쪽 에디터 UI
-	public const string E_OBJ_N_LE_UIS_SET_UIS = "BottomMenuUIs_01";
+	public const string E_OBJ_N_LE_UIS_AB_SET_UIS = "BottomMenuUIs_01";
 
 	// 에디터 입력 팝업
 	public const string E_OBJ_N_EDITOR_INPUT_POPUP = "EditorInputPopup";

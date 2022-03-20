@@ -200,6 +200,16 @@ public enum EDifficulty {
 	[HideInInspector] MAX_VAL
 }
 
+/** 채우기 기준 */
+public enum EFillOrigin {
+	NONE = -1,
+	_1,
+	_2,
+	_3,
+	_4,
+	[HideInInspector] MAX_VAL
+}
+
 /** 퀄리티 수준 */
 public enum EQualityLevel {
 	NONE = -1,
@@ -259,7 +269,7 @@ public enum EStartSceneEvent {
 public enum EValType {
 	NONE = -1,
 	INT,
-	FLT,
+	REAL,
 	STR,
 	[HideInInspector] MAX_VAL
 }
@@ -415,7 +425,6 @@ public enum EAdsPlatform {
 	NONE = -1,
 	ADMOB,
 	IRON_SRC,
-	APP_LOVIN,
 	[HideInInspector] MAX_VAL
 }
 
