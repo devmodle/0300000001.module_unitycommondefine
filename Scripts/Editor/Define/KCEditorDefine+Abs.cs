@@ -313,7 +313,7 @@ public static partial class KCEditorDefine {
 	// 객체 이름 에디터 윈도우 }
 
 	// 패키지
-	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-3.9.2";
+	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-3.9.3";
 	public const string B_NAME_GOOGLE_SHEETS_TO_UNITY_PKGS = "GoogleSheetsToUnity-1.0.0";
 	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-3.0.12";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-1.4.0";
