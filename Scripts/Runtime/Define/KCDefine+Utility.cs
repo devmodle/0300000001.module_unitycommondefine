@@ -610,7 +610,7 @@ public static partial class KCDefine {
 
 	public static readonly Color U_COLOR_CLEAR = Color.black;
 	public static readonly Color U_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.95f);
-	public static readonly Color U_COLOR_INDICATOR_BG = KCDefine.U_COLOR_POPUP_BG;
+	public static readonly Color U_COLOR_INDICATOR_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
 	// 색상 }
 
 	// 버전
