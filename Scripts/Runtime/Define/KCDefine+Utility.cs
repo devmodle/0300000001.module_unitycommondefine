@@ -1278,5 +1278,21 @@ public static partial class KCDefine {
 #endif			// #if MSG_PACK_ENABLE
 	// 경로 }
 #endif			// #if NOTI_MODULE_ENABLE
+
+#if UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD)
+	// 경로 {
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_01";
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_02";
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_03";
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_04";
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_05";
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_06";
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_07";
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_08";
+	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_09";
+
+	public static readonly string U_ASSET_P_FMT_EG_SPRITE_ATLAS = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_{"{0:00}"}";
+	// 경로 }
+#endif			// #if UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 런타임 상수
 }
