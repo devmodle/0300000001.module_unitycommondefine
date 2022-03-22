@@ -336,6 +336,8 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_SUB_AUTO_CREATE_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Resources/";
 	public static readonly string B_DIR_P_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
 	public static readonly string B_DIR_P_SUB_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Resources/";
+	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
 
 	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes";
 	public static readonly string B_DIR_P_SUB_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scenes";
@@ -507,9 +509,7 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}README.md"),
-		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}README.md"),
-		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_DATA_TEMPLATES}T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}README.md"),
 
 		// 00.AutoCreate
@@ -987,7 +987,18 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_06}.spriteatlas"),
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_07}.spriteatlas"),
 		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09}.spriteatlas")
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09}.spriteatlas"),
+
+		// 05.SubUnityProjectEditor
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_01}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_02}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_03}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_04}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_05}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_06}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_07}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_08}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_SPRITE_ATLAS_TEMPLATES}T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_09}.spriteatlas")
 	};
 
 	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {
