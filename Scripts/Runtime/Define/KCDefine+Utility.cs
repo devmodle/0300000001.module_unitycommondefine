@@ -34,6 +34,8 @@ public static partial class KCDefine {
 
 	// 크기 {
 	public const int U_SIZE_OBJS_POOL = 100;
+	public const int U_SIZE_DOTWEEN_ANI = byte.MaxValue;
+	public const int U_SIZE_DOTWEEN_SEQUENCE_ANI = sbyte.MaxValue;
 
 	public const int U_DEF_MIN_SIZE_FONT = 10;
 	public const int U_DEF_MAX_SIZE_FONT = 14;
