@@ -17,10 +17,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_MSG_PACK_ENABLE = "MSG_PACK_ENABLE";
 	public const string DS_DEFINE_S_MULTI_TOUCH_ENABLE = "MULTI_TOUCH_ENABLE";
 
-	// 버전
-	public const string DS_DEFINE_S_MODULE_VER_2_0_0_OR_NEWER = "MODULE_VER_2_0_0_OR_NEWER";
-	public const string DS_DEFINE_S_MODULE_VER_2_1_0_OR_NEWER = "MODULE_VER_2_1_0_OR_NEWER";
-
 	// 플러그인
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
 	public const string DS_DEFINE_S_GOOGLE_UPDATE_ENABLE = "GOOGLE_UPDATE_ENABLE";
@@ -209,7 +205,7 @@ public static partial class KCEditorDefine {
 	#endregion			// 기본
 
 	#region 런타임 상수
-	// 대체 전처리기 심볼
+	// 전처리기 심볼
 	public static readonly Dictionary<string, string> DS_DEFINE_S_REPLACE_MODULE_DICT = new Dictionary<string, string>() {
 #if EXTRA_SCRIPT || EXTRA_SCRIPT_ENABLE
 		[KCEditorDefine.DS_DEFINE_S_EXTRA_SCRIPT] = KCEditorDefine.DS_DEFINE_S_EXTRA_SCRIPT_ENABLE,
