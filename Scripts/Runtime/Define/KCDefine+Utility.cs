@@ -600,7 +600,7 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_SEL = Color.white;
 	public static readonly Color U_COLOR_HIGHLIGHT = Color.white;
 	public static readonly Color U_COLOR_DISABLE = new Color(0.35f, 0.35f, 0.35f, 1.0f);
-	public static readonly Color U_COLOR_TRANSPARENT = new Color(0.0f, 0.0f, 0.0f, 0.0f);
+	public static readonly Color U_COLOR_TRANSPARENT = Color.clear;
 
 	public static readonly Color U_COLOR_BLIND_UIS = Color.black;
 	public static readonly Color U_COLOR_SCREEN_FADE_IN = Color.black;
