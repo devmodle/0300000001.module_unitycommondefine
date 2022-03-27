@@ -201,6 +201,7 @@ public static partial class KCDefine {
 
 	public const string B_FILE_EXTENSION_CSV = ".csv";
 	public const string B_FILE_EXTENSION_TXT = ".txt";
+	public const string B_FILE_EXTENSION_MAT = ".mat";
 	public const string B_FILE_EXTENSION_HLSL = ".hlsl";
 	public const string B_FILE_EXTENSION_JSON = ".json";
 	public const string B_FILE_EXTENSION_ASSET = ".asset";
