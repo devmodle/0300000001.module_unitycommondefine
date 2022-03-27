@@ -348,7 +348,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_SUB_EDITOR_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes";
 
 	public static readonly string B_DIR_P_TEMPLATES = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Templates/";
-
 	public static readonly string B_DIR_P_FONT_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Fonts/";
 	public static readonly string B_DIR_P_SCRIPTABLE_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Scriptables/";
 	public static readonly string B_DIR_P_SPRITE_ATLAS_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}SpriteAtlases/";
@@ -467,6 +466,11 @@ public static partial class KCEditorDefine {
 
 	public static readonly List<string> B_SEARCH_P_SCENE_LIST = new List<string>() {
 		KCEditorDefine.B_DIR_P_AUTO_SCENES, KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_PROJ_SCENES, KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_EDITOR_PROJ_SCENES
+	};
+
+	public static readonly List<string> B_SEARCH_P_SPRITE_ATLAS_LIST = new List<string>() {
+		$"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}",
+		$"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}"
 	};
 
 	public static readonly List<TextureImporterType> B_ENABLE_SRGB_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
