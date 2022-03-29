@@ -522,7 +522,7 @@ public static partial class KCDefine {
 	#region 런타임 상수
 	// 씬 이름
 	public static readonly List<string> B_INIT_SCENE_NAME_LIST = new List<string>() {
-		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_SPLASH, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_INTRO
+		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_SPLASH, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_INTRO, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY
 	};
 
 	// 기타 {
