@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +6,7 @@ using UnityEngine.UI;
 /*
 =====> 모듈 버전 정보 <=====
 - 버전 : "2.3.0"
-- 연관 파일 개수 : 47
+- 연관 파일 개수 : 28
 
 =====> Experimental <=====
 - RenderingMode.Deferred

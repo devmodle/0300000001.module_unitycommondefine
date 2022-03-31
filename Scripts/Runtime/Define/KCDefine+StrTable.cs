@@ -149,5 +149,11 @@ public static partial class KCDefine {
 
 	// 결과 팝업
 	public const string ST_KEY_RESULT_P_TITLE = "RESULT_P_TITLE";
+
+	// 재개 팝업
+	public const string ST_KEY_RESUME_P_TITLE = "RESUME_P_TITLE";
+
+	// 정지 팝업
+	public const string ST_KEY_PAUSE_P_TITLE = "PAUSE_P_TITLE";
 	#endregion			// 기본
 }

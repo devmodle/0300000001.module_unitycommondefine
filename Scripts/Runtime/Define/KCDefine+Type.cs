@@ -153,7 +153,7 @@ public struct STCommonTypeWrapper {
 }
 
 /** 경로 정보 */
-public class CPathInfo {
+public partial class CPathInfo {
 	public int m_nCost = 0;
 	public Vector3Int m_stIdx = Vector3Int.zero;
 	
@@ -163,14 +163,14 @@ public class CPathInfo {
 
 #region 제네릭 타입
 /** 리스트 래퍼 */
-public class CListWrapper<T> {
+public partial class CListWrapper<T> {
 	public List<T> m_oList = new List<T>();
 	public List<T> m_oAddList = new List<T>();
 	public List<T> m_oRemoveList = new List<T>();
 }
 
 /** 딕셔너리 래퍼 */
-public class CDictWrapper<K, V> {
+public partial class CDictWrapper<K, V> {
 	public Dictionary<K, V> m_oDict = new Dictionary<K, V>();
 	public Dictionary<K, V> m_oAddDict = new Dictionary<K, V>();
 	public Dictionary<K, V> m_oRemoveDict = new Dictionary<K, V>();
@@ -202,7 +202,7 @@ public struct STNotiInfo {
 
 #if UNITY_EDITOR || UNITY_STANDALONE
 /** 에디터 레벨 생성 정보 */
-public class CEditorLevelCreateInfo {
+public partial class CEditorLevelCreateInfo {
 	public int m_nNumLevels = 0;
 
 	public Vector3Int m_stMinNumCells = Vector3Int.zero;
