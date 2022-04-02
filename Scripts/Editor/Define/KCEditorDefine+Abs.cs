@@ -82,7 +82,6 @@ public static partial class KCEditorDefine {
 	// 커맨드 라인 }
 
 	// 이름 {
-	public const string B_VIEW_N_GAME = "UnityEditor.GameView";
 	public const string B_MODULE_N_INPUT_SYSTEM = "com.unity.input.settings";
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
 
