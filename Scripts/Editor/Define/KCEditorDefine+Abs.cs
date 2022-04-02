@@ -1119,11 +1119,6 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityFlurry.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Plugins/FlurrySDK/Module.UnityFlurry.asmdef"),
 #endif			// #if FLURRY_ENABLE || FLURRY_MODULE_ENABLE
 
-#if GAME_CENTER_ENABLE || GAME_CENTER_MODULE_ENABLE
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityGooglePlayGames.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}GooglePlayGames/Module.UnityGooglePlayGames.asmdef"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityGooglePlayGames.Editor.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}GooglePlayGames/Editor/Module.UnityGooglePlayGames.Editor.asmdef"),
-#endif			// #if GAME_CENTER_ENABLE || GAME_CENTER_MODULE_ENABLE
-
 #if PURCHASE_ENABLE || PURCHASE_MODULE_ENABLE
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityUnityPurchasing.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Scripts/UnityPurchasing/generated/Module.UnityUnityPurchasing.asmdef")
 #endif			// #if PURCHASE_ENABLE || PURCHASE_MODULE_ENABLE
