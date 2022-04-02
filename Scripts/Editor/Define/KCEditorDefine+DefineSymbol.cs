@@ -59,12 +59,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_APPS_FLYER_ANALYTICS_ENABLE = "APPS_FLYER_ANALYTICS_ENABLE";
 	// 앱스 플라이어 }
 
-	// 게임 센터 {
+	// 게임 센터
 	public const string DS_DEFINE_S_GAME_CENTER_ENABLE = "GAME_CENTER_ENABLE";
 	public const string DS_DEFINE_S_GAME_CENTER_MODULE_ENABLE = "GAME_CENTER_MODULE_ENABLE";
-
-	public const string DS_DEFINE_S_GAME_CENTER_SAVE_ENABLE = "GAME_CENTER_SAVE_ENABLE";
-	// 게임 센터 }
 
 	// 결제 {
 	public const string DS_DEFINE_S_PURCHASE_ENABLE = "PURCHASE_ENABLE";
