@@ -103,7 +103,7 @@ public enum EPOT {
 	[HideInInspector] _32 = 32,
 	[HideInInspector] _64 = 64,
 	[HideInInspector] _128 = 128,
-	[HideInInspector] _256 = 256,
+	_256 = 256,
 	_512 = 512,
 	_1024 = 1024,
 	_2048 = 2048,
