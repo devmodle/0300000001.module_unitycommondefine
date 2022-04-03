@@ -132,6 +132,7 @@ public static partial class KCDefine {
 	public const string U_KEY_NAME = "Name";
 	public const string U_KEY_DESC = "Desc";
 	public const string U_KEY_REPLACE = "Replace";
+	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
 
 	public const string U_KEY_PLAY = "Play";
@@ -149,6 +150,7 @@ public static partial class KCDefine {
 	public const string U_KEY_CHAPTER = "Chapter";
 
 	public const string U_KEY_ID = "ID";
+	public const string U_KEY_RES_ID = "ResID";
 	public const string U_KEY_STAGE_ID = "StageID";
 	public const string U_KEY_CHAPTER_ID = "ChapterID";
 
@@ -775,6 +777,7 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_TUTORIAL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
 	public static readonly string U_ASSET_P_G_FX_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
 	public static readonly string U_ASSET_P_G_BLOCK_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BlockInfoTable";
+	public static readonly string U_ASSET_P_G_RES_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
 
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_01";
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_02";
@@ -821,6 +824,7 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
 	public static readonly string U_TABLE_P_G_FX_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
 	public static readonly string U_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_BlockInfoTable";
+	public static readonly string U_TABLE_P_G_RES_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
 	
 	public static readonly string U_TABLE_P_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StrTable_Common";
@@ -880,6 +884,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_RES_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json";
 
 #if MSG_PACK_ENABLE
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.bytes";
@@ -911,6 +916,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_RES_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json";
 
 #if MSG_PACK_ENABLE
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.bytes";
