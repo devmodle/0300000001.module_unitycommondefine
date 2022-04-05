@@ -619,7 +619,7 @@ public static partial class KCDefine {
 	public static readonly System.Version U_VER_COMMON_USER_INFO = new System.Version(1, 0, 0);
 
 	// 크기
-	public static readonly Vector3 U_POS_VER_TEXT = new Vector3((KCDefine.B_SCREEN_WIDTH / -2.0f) + 10.0f, -10.0f, 0.0f);
+	public static readonly Vector3 U_POS_INFO_TEXT = new Vector3(10.0f, -10.0f, 0.0f);
 	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
 	// 태그
@@ -714,9 +714,8 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_REFLECTION_PROBE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_ReflectionProbe";
 	public static readonly string U_OBJ_P_LIGHT_PROBE_GROUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}{KCDefine.B_DIR_P_FX_ROOT}U_LightProbeGroup";
 
-	public static readonly string U_OBJ_P_G_VER_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_VerText";
+	public static readonly string U_OBJ_P_G_INFO_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_InfoText";
 	public static readonly string U_OBJ_P_G_BACK_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_BackBtn";
-	
 	public static readonly string U_OBJ_P_G_BG_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_BGSnd";
 	public static readonly string U_OBJ_P_G_FX_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_SOUND_ROOT}G_FXSnd";
 

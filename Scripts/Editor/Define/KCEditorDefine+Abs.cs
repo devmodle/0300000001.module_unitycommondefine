@@ -338,20 +338,23 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
 	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
 
-	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes";
-	public static readonly string B_DIR_P_SUB_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scenes";
+	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/";
+	public static readonly string B_DIR_P_SUB_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scenes/";
 
-	public static readonly string B_DIR_P_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes";
-	public static readonly string B_DIR_P_SUB_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes";
-	public static readonly string B_DIR_P_EDITOR_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes";
-	public static readonly string B_DIR_P_SUB_EDITOR_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes";
+	public static readonly string B_DIR_P_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
+	public static readonly string B_DIR_P_SUB_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
+
+	public static readonly string B_DIR_P_EDITOR_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_DIR_P_SUB_EDITOR_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
 
 	public static readonly string B_DIR_P_TEMPLATES = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Templates/";
+	public static readonly string B_DIR_P_ICON_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Icons/";
 	public static readonly string B_DIR_P_FONT_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Fonts/";
 	public static readonly string B_DIR_P_SCRIPTABLE_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Scriptables/";
 	public static readonly string B_DIR_P_SPRITE_ATLAS_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}SpriteAtlases/";
 	public static readonly string B_DIR_P_PIPELINE_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Pipelines/";
 	public static readonly string B_DIR_P_SETTINGS_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Settings/";
+	public static readonly string B_DIR_P_PREFAB_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Prefabs/";
 
 	public static readonly string B_ABS_DIR_P_ASSETS = $"{Application.dataPath}/";
 	public static readonly string B_ABS_DIR_P_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Packages/";
@@ -377,9 +380,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_IOS_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}iOS/";
 	public static readonly string B_ABS_DIR_P_ANDROID_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}Android/";
 
-	public static readonly string B_ABS_DIR_P_ICON_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Icons/";
 	public static readonly string B_ABS_DIR_P_DATA_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Datas/";
-	public static readonly string B_ABS_DIR_P_PREFAB_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Prefabs/";
 	public static readonly string B_ABS_DIR_P_SCRIPT_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Scripts/";
 	public static readonly string B_ABS_DIR_P_TABLE_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Tables/";
 	public static readonly string B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}AssemblyDefines/";
@@ -465,7 +466,19 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ICON_P_ANDROID_NOTI_256x256 = $"{KCDefine.B_DIR_P_ICONS}Android/Notification/Icon256x256";
 
 	public static readonly List<string> B_SEARCH_P_SCENE_LIST = new List<string>() {
-		KCEditorDefine.B_DIR_P_AUTO_SCENES, KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES, KCEditorDefine.B_DIR_P_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_PROJ_SCENES, KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES, KCEditorDefine.B_DIR_P_SUB_EDITOR_PROJ_SCENES
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_PROJ_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_PROJ_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_EDITOR_PROJ_SCENES)
+	};
+
+	public static readonly List<string> B_SEARCH_P_PREFAB_SCENE_LIST = new List<string>() {
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_PROJ_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES)
 	};
 
 	public static readonly List<string> B_SEARCH_P_SPRITE_ATLAS_LIST = new List<string>() {
@@ -798,121 +811,117 @@ public static partial class KCEditorDefine {
 	
 	public static readonly List<(string, string)> B_PREFAB_P_INFO_LIST = new List<(string, string)>() {
 		// 00.AutoCreate {
-#if SAMPLE_PROJ
-		($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
-#else
-		($"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommonexternals@{KCEditorDefine.B_VER_UNITY_MODULE}/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
-#endif			// #if SAMPLE_PROJ
+		($"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommonExternals/Externals/SmartTimersManager/TimerManager/TimersManager.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TIMER_MANAGER}.prefab"),
 
 #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_Text.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TEXT}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_TextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TEXT_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_TextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TEXT_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_Text.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TEXT}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_TextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TEXT_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_TextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TEXT_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_TMPText.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_TMPText.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPTextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPTextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_LocalizeText.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LOCALIZE_TEXT}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_LocalizeTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LOCALIZE_TEXT_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_LocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_LocalizeText.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LOCALIZE_TEXT}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_LocalizeTextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LOCALIZE_TEXT_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_LocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_TMPLocalizeText.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_LOCALIZE_TEXT}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPLocalizeTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_LOCALIZE_TEXT_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPLocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_TEXT_ROOT}T_TMPLocalizeText.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_LOCALIZE_TEXT}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPLocalizeTextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_LOCALIZE_TEXT_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPLocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_Img.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_RawImg.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_RAW_IMG}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_FocusImg.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_FOCUS_IMG}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_GaugeImg.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_GAUGE_IMG}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_Img.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_RawImg.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_RAW_IMG}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_FocusImg.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_FOCUS_IMG}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_IMAGE_ROOT}T_GaugeImg.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_GAUGE_IMG}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}T_ImgScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_ImgTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_TEXT_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_ImgTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_TEXT_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_ImgTextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_TEXT_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_ImgTextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_TEXT_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPImgTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_IMG_TEXT_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPImgTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_IMG_TEXT_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPImgTextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_IMG_TEXT_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPImgTextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_IMG_TEXT_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_ImgLocalizeTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_LOCALIZE_TEXT_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_ImgLocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_ImgLocalizeTextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_LOCALIZE_TEXT_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}Text/T_ImgLocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_IMG_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPImgLocalizeTextBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_BTN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPImgLocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPImgLocalizeTextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_BTN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_BUTTON_ROOT}TextMeshPro/T_TMPImgLocalizeTextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_INPUT_ROOT}T_Dropdown.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_DROPDOWN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_INPUT_ROOT}T_InputField.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_INPUT_FIELD}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_INPUT_ROOT}T_Dropdown.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_DROPDOWN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_INPUT_ROOT}T_InputField.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_INPUT_FIELD}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_INPUT_ROOT}T_TMPDropdown.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_DROPDOWN}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_INPUT_ROOT}T_TMPInputField.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_INPUT_FIELD}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_INPUT_ROOT}T_TMPDropdown.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_DROPDOWN}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_INPUT_ROOT}T_TMPInputField.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_INPUT_FIELD}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_ScrollView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_SCROLL_VIEW}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_RecycleView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_RECYCLE_VIEW}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_PageView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_PAGE_VIEW}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_ScrollView.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_SCROLL_VIEW}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_RecycleView.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_RECYCLE_VIEW}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SCROLL_VIEW_ROOT}T_PageView.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_PAGE_VIEW}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_LineFX.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LINE_FX}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_ParticleFX.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_PARTICLE_FX}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_ReflectionProbe.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_REFLECTION_PROBE}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_LightProbeGroup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LIGHT_PROBE_GROUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_LineFX.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LINE_FX}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_ParticleFX.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_PARTICLE_FX}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_ReflectionProbe.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_REFLECTION_PROBE}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_FX_ROOT}T_LightProbeGroup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_LIGHT_PROBE_GROUP}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_2D_ROOT}T_Sprite.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_SPRITE}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_2D_ROOT}T_Sprite.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_SPRITE}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_PortraitAgreePopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.AS_OBJ_P_PORTRAIT_AGREE_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_LandscapeAgreePopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.AS_OBJ_P_LANDSCAPE_AGREE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_PortraitAgreePopup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.AS_OBJ_P_PORTRAIT_AGREE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_LandscapeAgreePopup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.AS_OBJ_P_LANDSCAPE_AGREE_POPUP}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_TrackingDescPopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.LSS_OBJ_P_TRACKING_DESC_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_TrackingDescPopup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.LSS_OBJ_P_TRACKING_DESC_POPUP}.prefab"),
 #endif			// #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
 		// 00.AutoCreate }
 
 		// 01.SubAutoCreate {
 #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SOUND_ROOT}T_BGSnd.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_BG_SND}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SOUND_ROOT}T_FXSnd.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_FX_SND}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SOUND_ROOT}T_BGSnd.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_BG_SND}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SOUND_ROOT}T_FXSnd.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_FX_SND}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_DragResponder.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_DRAG_RESPONDER}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_TouchResponder.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_TOUCH_RESPONDER}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_TouchResponder.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_INDICATOR_TOUCH_RESPONDER}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_TouchResponder.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_SCREEN_FADE_TOUCH_RESPONDER}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_DragResponder.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_DRAG_RESPONDER}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_TouchResponder.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_TOUCH_RESPONDER}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_TouchResponder.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_INDICATOR_TOUCH_RESPONDER}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_TouchResponder.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_SCREEN_FADE_TOUCH_RESPONDER}.prefab"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_START_SCENE}T_LoadingText.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.SS_OBJ_P_LOADING_TEXT}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_START_SCENE}T_LoadingGauge.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.SS_OBJ_P_LOADING_GAUGE}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_START_SCENE}T_LoadingText.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.SS_OBJ_P_LOADING_TEXT}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_START_SCENE}T_LoadingGauge.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.SS_OBJ_P_LOADING_GAUGE}.prefab"),
 #endif			// #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
 		// 01.SubAutoCreate }
 
 		// 04.SubUnityProject {
 #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_AlertPopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_ALERT_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_AlertPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_ALERT_POPUP}.prefab"),
 #endif			// #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
 
 #if (PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE) && (RUNTIME_TEMPLATES_ENABLE || RUNTIME_TEMPLATES_MODULE_ENABLE)
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_STORE_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SETTINGS_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SYNC_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_DAILY_MISSION_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_FREE_REWARD_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_DAILY_REWARD_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SALE_COINS_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_REWARD_ACQUIRE_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SALE_COINS_ACQUIRE_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_CONTINUE_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_RESULT_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_RESUME_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_PAUSE_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SALE_PRODUCT_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_FocusPopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_FOCUS_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_FocusPopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_TUTORIAL_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_STORE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SETTINGS_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SYNC_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_DAILY_MISSION_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_FREE_REWARD_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_DAILY_REWARD_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SALE_COINS_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_REWARD_ACQUIRE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SALE_COINS_ACQUIRE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_CONTINUE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_RESULT_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_RESUME_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_PAUSE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SALE_PRODUCT_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_FocusPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_FOCUS_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_FocusPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_TUTORIAL_POPUP}.prefab"),
 #endif			// #if (PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE) && (RUNTIME_TEMPLATES_ENABLE || RUNTIME_TEMPLATES_MODULE_ENABLE)
 		// 04.SubUnityProject }
 
 		// 04.UnityProjectEditor {
 #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorInputPopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/{KCDefine.E_OBJ_P_EDITOR_INPUT_POPUP}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorLevelCreatePopup.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/{KCDefine.E_OBJ_P_EDITOR_LEVEL_CREATE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorInputPopup.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_EDITOR_INPUT_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorLevelCreatePopup.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_EDITOR_LEVEL_CREATE_POPUP}.prefab"),
 	
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/{KCDefine.E_OBJ_P_LEVEL_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/{KCDefine.E_OBJ_P_STAGE_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
-		($"{KCEditorDefine.B_ABS_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/{KCDefine.E_OBJ_P_CHAPTER_EDITOR_SCROLLER_CELL_VIEW}.prefab")
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_LEVEL_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_STAGE_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_CHAPTER_EDITOR_SCROLLER_CELL_VIEW}.prefab")
 #endif			// #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 04.UnityProjectEditor }
 	};
@@ -1134,38 +1143,38 @@ public static partial class KCEditorDefine {
 	public static readonly List<(string, string)> B_ICON_P_INFO_LIST = new List<(string, string)>() {
 		// 02.UnityProject {
 		// iOS
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon76x76.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_76x76}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon120x120.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_120x120}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon152x152.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_152x152}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon167x167.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_167x167}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon180x180.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_180x180}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon1024x1024.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_1024x1024}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon76x76.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_76x76}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon120x120.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_120x120}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon152x152.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_152x152}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon167x167.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_167x167}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon180x180.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_180x180}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/App/T_Icon1024x1024.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_APP_1024x1024}.png"),
 
 		// 안드로이드
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon36x36.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_36x36}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon48x48.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_48x48}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon72x72.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_72x72}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon96x96.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_96x96}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon144x144.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_144x144}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon192x192.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_192x192}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/App/T_Icon512x512.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_512x512}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/App/T_Icon36x36.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_36x36}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/App/T_Icon48x48.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_48x48}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/App/T_Icon72x72.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_72x72}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/App/T_Icon96x96.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_96x96}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/App/T_Icon144x144.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_144x144}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/App/T_Icon192x192.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_192x192}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/App/T_Icon512x512.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_512x512}.png"),
 
 		// 독립 플랫폼
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Standalone/App/T_Icon.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_STANDALONE_APP}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Standalone/App/T_Icon.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_STANDALONE_APP}.png"),
 
 #if NOTI_MODULE_ENABLE
 		// iOS
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/Notification/T_Icon20x20.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_NOTI_20x20}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/Notification/T_Icon40x40.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_NOTI_40x40}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}iOS/Notification/T_Icon60x60.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_NOTI_60x60}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/Notification/T_Icon20x20.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_NOTI_20x20}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/Notification/T_Icon40x40.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_NOTI_40x40}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}iOS/Notification/T_Icon60x60.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_IOS_NOTI_60x60}.png"),
 
 		// 안드로이드
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon24x24.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_24x24}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon36x36.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_36x36}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon48x48.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_48x48}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon72x72.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_72x72}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon96x96.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon256x256.png", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_256x256}.png")
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon24x24.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_24x24}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon36x36.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_36x36}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon48x48.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_48x48}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon72x72.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_72x72}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon96x96.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png"),
+		($"{KCEditorDefine.B_DIR_P_ICON_TEMPLATES}Android/Notification/T_Icon256x256.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_256x256}.png")
 #endif			// #if NOTI_MODULE_ENABLE
 		// 02.UnityProject }
 	};

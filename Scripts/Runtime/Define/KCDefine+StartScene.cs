@@ -11,6 +11,7 @@ public static partial class KCDefine {
 	
 	// 이름
 	public const string SS_OBJ_N_LOADING_GAUGE = "LoadingGauge";
+	public const string SS_OBJ_N_SCENE_INFO_TEXT = "SceneInfoText";
 	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
 	#endregion			// 기본
 

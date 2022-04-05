@@ -267,6 +267,7 @@ public enum ENavStackEvent {
 /** 시작 씬 이벤트 */
 public enum EStartSceneEvent {
 	NONE = -1,
+	LOAD_START_SCENE,
 	LOAD_SETUP_SCENE,
 	LOAD_AGREE_SCENE,
 	LOAD_LATE_SETUP_SCENE,
