@@ -1215,8 +1215,8 @@ public static partial class KCDefine {
 	#region 조건부 런타임 상수
 #if UNITY_IOS
 	// 버전
-	public static readonly System.Version U_MIN_VER_CONSENT_VIEW = new System.Version(14, 0, 0);
 	public static readonly System.Version U_MIN_VER_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
+	public static readonly System.Version U_MIN_VER_TRACKING_CONSENT_VIEW = new System.Version(14, 0, 0);
 
 	// 햅틱 피드백 지원 모델
 	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODEL_LIST = new List<DeviceGeneration>() {

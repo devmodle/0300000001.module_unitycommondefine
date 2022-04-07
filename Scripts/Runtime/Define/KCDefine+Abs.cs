@@ -124,7 +124,7 @@ public static partial class KCDefine {
 	public const float B_DELTA_T_INTERMEDIATE = float.Epsilon;
 	
 	public const float B_DELTA_T_ASYNC_OPERATION = 0.25f;
-	public const float B_MAX_DELTA_T_CONSENT_VIEW = 2.5f;
+	public const float B_MAX_DELTA_T_TRACKING_CONSENT_VIEW = 2.5f;
 
 	public const double B_DELTA_T_UTC_TO_PST = -8.0;
 	// 시간 }
