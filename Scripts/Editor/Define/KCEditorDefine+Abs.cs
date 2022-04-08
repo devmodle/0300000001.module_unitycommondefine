@@ -1031,7 +1031,6 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_ProjInfoTable.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_DeviceInfoTable.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_DEVICE_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_LocalizeInfoTable.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LOCALIZE_INFO_TABLE}.asset"),
-		($"{KCEditorDefine.B_DIR_P_SCRIPTABLE_TEMPLATES}T_StorageInfoTable.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_STORAGE_INFO_TABLE}.asset"),
 
 		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_NORM_QUALITY_LIGHTING_SETTINGS}.lighting"),
 		($"{KCEditorDefine.B_DIR_P_SETTINGS_TEMPLATES}T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_HIGH_QUALITY_LIGHTING_SETTINGS}.lighting"),
@@ -1126,6 +1125,11 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly List<(string, string)> B_ASSEMBLY_DEFINE_P_INFO_LIST = new List<(string, string)>() {
+#if GOOGLE_SHEET_ENABLE || GOOGLE_SHEET_MODULE_ENABLE
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.GoogleSheetsToUnity.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Google Sheets to Unity/Module.GoogleSheetsToUnity.asmdef"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.GoogleSheetsToUnity.Editor.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Google Sheets to Unity/Scripts/Editor/Module.GoogleSheetsToUnity.Editor.asmdef"),
+#endif			// #if GOOGLE_SHEET_ENABLE || GOOGLE_SHEET_MODULE_ENABLE
+
 #if ADS_ENABLE || ADS_MODULE_ENABLE
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityIronSrc.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}IronSource/Module.UnityIronSrc.asmdef"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityIronSrc.Editor.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}IronSource/Editor/Module.UnityIronSrc.Editor.asmdef"),

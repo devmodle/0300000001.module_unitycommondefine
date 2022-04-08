@@ -37,6 +37,7 @@ public static partial class KCDefine {
 	public const int U_SIZE_DOTWEEN_ANI = byte.MaxValue;
 	public const int U_SIZE_DOTWEEN_SEQUENCE_ANI = sbyte.MaxValue;
 
+	public const int U_DEF_SIZE_FONT = 28;
 	public const int U_DEF_MIN_SIZE_FONT = 10;
 	public const int U_DEF_MAX_SIZE_FONT = 14;
 	// 크기 }
@@ -329,7 +330,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_OK_BTN = "OKBtn";
 	public const string U_OBJ_N_BACK_BTN = "BackBtn";
 	public const string U_OBJ_N_CANCEL_BTN = "CancelBtn";
+	public const string U_OBJ_N_OPEN_BTN = "OpenBtn";
 	public const string U_OBJ_N_CLOSE_BTN = "CloseBtn";
+
+	public const string U_OBJ_N_A_SET_BTN = "ASetBtn";
+	public const string U_OBJ_N_B_SET_BTN = "BSetBtn";
 
 	public const string U_OBJ_N_AGREE_BTN = "AgreeBtn";
 	public const string U_OBJ_N_PRIVACY_BTN = "PrivacyBtn";
@@ -766,7 +771,6 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProjInfoTable";
 	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
 	public static readonly string U_ASSET_P_G_LOCALIZE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_LocalizeInfoTable";
-	public static readonly string U_ASSET_P_G_STORAGE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_StorageInfoTable";
 
 	public static readonly string U_ASSET_P_G_SALE_ITEM_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleItemInfoTable";
 	public static readonly string U_ASSET_P_G_SALE_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
@@ -1210,6 +1214,12 @@ public static partial class KCDefine {
 	// 이름
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
+
+#if UNITY_STANDALONE && GOOGLE_SHEET_MODULE_ENABLE
+	// 이름
+	public const string U_CELL_N_GOOGLE_SHEET_SRC = "A1";
+	public const string U_CELL_N_GOOGLE_SHEET_DEST = "CZ10000";
+#endif			// #if UNITY_STANDALONE && GOOGLE_SHEET_MODULE_ENABLE
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수

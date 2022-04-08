@@ -57,6 +57,10 @@ public static partial class KCDefine {
 	// 시작 씬 관리자
 	public const string ST_KEY_START_SM_LOADING_TEXT = "START_SM_LOADING_TEXT";
 
+	// 메인 씬 관리자
+	public const string ST_KEY_MAIN_SM_A_SET_TEXT = "MAIN_SM_A_SET_TEXT";
+	public const string ST_KEY_MAIN_SM_B_SET_TEXT = "MAIN_SM_B_SET_TEXT";
+
 	// 공용 {
 	public const string ST_KEY_COMMON_LOGIN_SUCCESS_MSG = "COMMON_LOGIN_SUCCESS_MSG";
 	public const string ST_KEY_COMMON_LOGIN_FAIL_MSG = "COMMON_LOGIN_FAIL_MSG";

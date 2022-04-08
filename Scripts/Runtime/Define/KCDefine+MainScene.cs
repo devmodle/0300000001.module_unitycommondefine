@@ -6,7 +6,8 @@ using UnityEngine.UI;
 /** 메인 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
-
+	// AB 테스트 UI
+	public const string MS_OBJ_N_AB_T_UIS_SET_UIS = "SetUIs";
 	#endregion			// 기본
 
 	#region 런타임 상수
