@@ -1219,7 +1219,7 @@ public static partial class KCDefine {
 #if UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
 	public const string U_CELL_N_GOOGLE_SHEET_SRC = "A1";
-	public const string U_CELL_N_GOOGLE_SHEET_DEST = "ZZ10000";
+	public const string U_CELL_N_GOOGLE_SHEET_DEST = "CZ100000";
 #endif			// #if UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 상수
 
