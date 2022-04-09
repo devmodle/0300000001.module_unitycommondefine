@@ -1216,11 +1216,11 @@ public static partial class KCDefine {
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
-#if UNITY_STANDALONE && GOOGLE_SHEET_MODULE_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
 	public const string U_CELL_N_GOOGLE_SHEET_SRC = "A1";
-	public const string U_CELL_N_GOOGLE_SHEET_DEST = "CZ10000";
-#endif			// #if UNITY_STANDALONE && GOOGLE_SHEET_MODULE_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+	public const string U_CELL_N_GOOGLE_SHEET_DEST = "ZZ10000";
+#endif			// #if UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수

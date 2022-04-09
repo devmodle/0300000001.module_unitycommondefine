@@ -313,7 +313,6 @@ public static partial class KCEditorDefine {
 
 	// 패키지
 	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-3.9.3";
-	public const string B_NAME_GOOGLE_SHEETS_TO_UNITY_PKGS = "GoogleSheetsToUnity-1.0.0";
 	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-3.0.12";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-1.4.0";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-2.6.0";
@@ -391,7 +390,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_DEST_PYTHON_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Scripts/Python";
 	
 	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOLS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_BUILD_REPORT_TOOLS_PKGS}.unitypackage";
-	public static readonly string B_ABS_PKGS_P_GOOGLE_SHEETS_TO_UNITY = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_GOOGLE_SHEETS_TO_UNITY_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPRITE_TRAIL_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
@@ -1125,11 +1123,6 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly List<(string, string)> B_ASSEMBLY_DEFINE_P_INFO_LIST = new List<(string, string)>() {
-#if GOOGLE_SHEET_ENABLE || GOOGLE_SHEET_MODULE_ENABLE
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.GoogleSheetsToUnity.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Google Sheets to Unity/Module.GoogleSheetsToUnity.asmdef"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.GoogleSheetsToUnity.Editor.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Google Sheets to Unity/Scripts/Editor/Module.GoogleSheetsToUnity.Editor.asmdef"),
-#endif			// #if GOOGLE_SHEET_ENABLE || GOOGLE_SHEET_MODULE_ENABLE
-
 #if ADS_ENABLE || ADS_MODULE_ENABLE
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityIronSrc.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}IronSource/Module.UnityIronSrc.asmdef"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES}T_Module.UnityIronSrc.Editor.asmdef.t", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}IronSource/Editor/Module.UnityIronSrc.Editor.asmdef"),
