@@ -551,7 +551,7 @@ public static partial class KCDefine {
 	public const string U_KEY_SERVICES_M_SIGNATURE = "signature";
 
 	public const string U_KEY_SERVICES_M_INIT_CALLBACK = "ServicesMInitCallback";
-	public const string U_KEY_SERVICES_M_LOAD_GOOGLE_SHEET_CALLBACK = "ServicesMLoadGoogleSheetCallback";
+	public const string U_KEY_SERVICES_M_LOAD_GOOGLE_SPREAD_SHEET_CALLBACK = "ServicesMLoadGoogleSpreadSheetCallback";
 	// 서비스 관리자 }
 
 	// 유니티 메세지 전송자 {
