@@ -209,4 +209,15 @@ public partial class CEditorLevelCreateInfo {
 	public Vector3Int m_stMaxNumCells = Vector3Int.zero;
 }
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE
+
+#if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+/** 구글 시트 정보 */
+public struct STGoogleSheetInfo {
+	public int m_nSrcIdx;
+	public int m_nNumCells;
+
+	public string m_oID;
+	public string m_oName;
+}
+#endif			// #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
 #endregion			// 조건부 타입

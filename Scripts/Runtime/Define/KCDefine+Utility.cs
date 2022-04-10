@@ -551,7 +551,7 @@ public static partial class KCDefine {
 	public const string U_KEY_SERVICES_M_SIGNATURE = "signature";
 
 	public const string U_KEY_SERVICES_M_INIT_CALLBACK = "ServicesMInitCallback";
-	public const string U_KEY_SERVICES_M_LOAD_GOOGLE_SPREAD_SHEET_CALLBACK = "ServicesMLoadGoogleSpreadSheetCallback";
+	public const string U_KEY_SERVICES_M_LOAD_GOOGLE_SHEET_CALLBACK = "ServicesMLoadGoogleSheetCallback";
 	// 서비스 관리자 }
 
 	// 유니티 메세지 전송자 {
@@ -1216,11 +1216,14 @@ public static partial class KCDefine {
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
-#if UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD)
+#if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+	// 개수
+	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 150;
+
 	// 이름
-	public const string U_CELL_N_GOOGLE_SHEET_SRC = "A1";
-	public const string U_CELL_N_GOOGLE_SHEET_DEST = "CZ100000";
-#endif			// #if UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD)
+	public const string U_COL_N_GOOGLE_SHEET_SRC = "A";
+	public const string U_COL_N_GOOGLE_SHEET_DEST = "CZ";
+#endif			// #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
@@ -1297,5 +1300,11 @@ public static partial class KCDefine {
 #endif			// #if MSG_PACK_ENABLE
 	// 경로 }
 #endif			// #if NOTI_MODULE_ENABLE
+
+#if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+	// 이름
+	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_SRC = $"{KCDefine.U_COL_N_GOOGLE_SHEET_SRC}{"{0}"}";
+	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_DEST = $"{KCDefine.U_COL_N_GOOGLE_SHEET_DEST}{"{0}"}";
+#endif			// #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 런타임 상수
 }

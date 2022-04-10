@@ -19,8 +19,8 @@ public static partial class KCEditorDefine {
 
 	// 플러그인
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
+	public const string DS_DEFINE_S_GOOGLE_SHEET_ENABLE = "GOOGLE_SHEET_ENABLE";
 	public const string DS_DEFINE_S_GOOGLE_PLAY_UPDATE_ENABLE = "GOOGLE_PLAY_UPDATE_ENABLE";
-	public const string DS_DEFINE_S_GOOGLE_SPREAD_SHEET_ENABLE = "GOOGLE_SPREAD_SHEET_ENABLE";
 
 	// 광고 {
 	public const string DS_DEFINE_S_ADS_ENABLE = "ADS_ENABLE";
