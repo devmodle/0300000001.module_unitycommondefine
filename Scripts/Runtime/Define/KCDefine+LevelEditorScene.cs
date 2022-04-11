@@ -43,8 +43,9 @@ public static partial class KCDefine {
 
 	public const string LES_OBJ_N_RE_UIS_APPLY_BTN = "ApplyBtn";
 	public const string LES_OBJ_N_RE_UIS_LOAD_LEVEL_BTN = "LoadLevelBtn";
-	public const string LES_OBJ_N_RE_UIS_LOAD_TABLE_BTN = "LoadTableBtn";
-	public const string LES_OBJ_N_RE_UIS_REMOVE_LEVEL_BTN = "RemoveLevelBtn";
+	public const string LES_OBJ_N_RE_UIS_REMOVE_ALL_LEVELS_BTN = "RemoveAllLevelsBtn";
+	public const string LES_OBJ_N_RE_UIS_LOAD_LOCAL_TABLE_BTN = "LoadLocalTableBtn";
+	public const string LES_OBJ_N_RE_UIS_LOAD_REMOTE_TABLE_BTN = "LoadRemoteTableBtn";
 	
 	public const string LES_OBJ_N_RE_UIS_LEVEL_INPUT = "LevelInput";
 	public const string LES_OBJ_N_RE_UIS_NUM_CELLS_X_INPUT = "NumCellsXInput";

@@ -121,7 +121,13 @@ public static partial class KCEditorDefine {
 	public const string B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE = "T_LightingSettings";
 	public const string B_ASSET_N_POST_PROCESSING_SETTINGS_TEMPLATE = "T_PostProcessingSettings";
 
+	public const string B_FUNC_N_GET_LIGHTMAP_ENCODING_QUALITY = "GetLightmapEncodingQualityForPlatformGroup";
+	public const string B_FUNC_N_GET_LIGHTMAP_STREAMING_ENABLE = "GetLightmapStreamingEnabledForPlatformGroup";
+	public const string B_FUNC_N_GET_LIGHTMAP_STREAMING_PRIORITY = "GetLightmapStreamingPriorityForPlatformGroup";
+
 	public const string B_FUNC_N_SET_COMPRESSION_TYPE = "SetCompressionType";
+	public const string B_FUNC_N_SET_BATCHING_FOR_PLATFORM = "SetBatchingForPlatform";
+
 	public const string B_FUNC_N_SET_LIGHTMAP_ENCODING_QUALITY = "SetLightmapEncodingQualityForPlatformGroup";
 	public const string B_FUNC_N_SET_LIGHTMAP_STREAMING_ENABLE = "SetLightmapStreamingEnabledForPlatformGroup";
 	public const string B_FUNC_N_SET_LIGHTMAP_STREAMING_PRIORITY = "SetLightmapStreamingPriorityForPlatformGroup";
