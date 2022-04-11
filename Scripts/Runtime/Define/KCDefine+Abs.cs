@@ -513,6 +513,38 @@ public static partial class KCDefine {
 	public const string B_DATE_T_FMT_SLASH_YYYY_MM_DD_HH_MM_SS = "yyyy/MM/dd HH:mm:ss";
 	// 형식 }
 
+	// 접두어 {
+	public const string B_PREFIX_G_SPRITE_ATLAS_01 = "G_SA_01_";
+	public const string B_PREFIX_G_SPRITE_ATLAS_02 = "G_SA_02_";
+	public const string B_PREFIX_G_SPRITE_ATLAS_03 = "G_SA_03_";
+	public const string B_PREFIX_G_SPRITE_ATLAS_04 = "G_SA_04_";
+	public const string B_PREFIX_G_SPRITE_ATLAS_05 = "G_SA_05_";
+	public const string B_PREFIX_G_SPRITE_ATLAS_06 = "G_SA_06_";
+	public const string B_PREFIX_G_SPRITE_ATLAS_07 = "G_SA_07_";
+	public const string B_PREFIX_G_SPRITE_ATLAS_08 = "G_SA_08_";
+	public const string B_PREFIX_G_SPRITE_ATLAS_09 = "G_SA_09_";
+
+	public const string B_PREFIX_U_SPRITE_ATLAS_01 = "U_SA_01_";
+	public const string B_PREFIX_U_SPRITE_ATLAS_02 = "U_SA_02_";
+	public const string B_PREFIX_U_SPRITE_ATLAS_03 = "U_SA_03_";
+	public const string B_PREFIX_U_SPRITE_ATLAS_04 = "U_SA_04_";
+	public const string B_PREFIX_U_SPRITE_ATLAS_05 = "U_SA_05_";
+	public const string B_PREFIX_U_SPRITE_ATLAS_06 = "U_SA_06_";
+	public const string B_PREFIX_U_SPRITE_ATLAS_07 = "U_SA_07_";
+	public const string B_PREFIX_U_SPRITE_ATLAS_08 = "U_SA_08_";
+	public const string B_PREFIX_U_SPRITE_ATLAS_09 = "U_SA_09_";
+
+	public const string B_PREFIX_EG_SPRITE_ATLAS_01 = "EG_SA_01_";
+	public const string B_PREFIX_EG_SPRITE_ATLAS_02 = "EG_SA_02_";
+	public const string B_PREFIX_EG_SPRITE_ATLAS_03 = "EG_SA_03_";
+	public const string B_PREFIX_EG_SPRITE_ATLAS_04 = "EG_SA_04_";
+	public const string B_PREFIX_EG_SPRITE_ATLAS_05 = "EG_SA_05_";
+	public const string B_PREFIX_EG_SPRITE_ATLAS_06 = "EG_SA_06_";
+	public const string B_PREFIX_EG_SPRITE_ATLAS_07 = "EG_SA_07_";
+	public const string B_PREFIX_EG_SPRITE_ATLAS_08 = "EG_SA_08_";
+	public const string B_PREFIX_EG_SPRITE_ATLAS_09 = "EG_SA_09_";
+	// 접두어 }
+
 	// 메일
 	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: {1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUserID: {7}\n\nPlease enter your inquiry:\n{8}";
 	#endregion			// 기본

@@ -110,7 +110,7 @@ public static partial class KCDefine {
 	public const int U_SORTING_O_SCREEN_DEBUG_UIS = 4;
 
 	// 애니메이션
-	public const Ease U_EASE_ANI = Ease.OutQuad;
+	public const Ease U_EASE_DEF = Ease.OutQuad;
 	public const Ease U_EASE_UNSET = Ease.Unset;
 	public const Ease U_EASE_LINEAR = Ease.Linear;
 
@@ -858,9 +858,10 @@ public static partial class KCDefine {
 	public static readonly string U_MAT_P_G_UNIVERSAL_RP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPLitMat";
 	public static readonly string U_MAT_P_G_UNIVERSAL_RP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPUnlitMat";
 
-	public static readonly string U_IMG_P_G_ARROW = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_Arrow";
-	public static readonly string U_IMG_P_G_WHITE = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_UnityWhite";
-	public static readonly string U_IMG_P_G_SPLASH = $"{KCDefine.B_DIR_P_IMAGES}{KCDefine.B_DIR_P_GLOBAL}G_Splash";
+	public static readonly string U_IMG_P_ARROW = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Arrow";
+	public static readonly string U_IMG_P_WHITE = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}UnityWhite";
+	public static readonly string U_IMG_P_SPLASH = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Splash";
+	public static readonly string U_IMG_P_INDICATOR = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Indicator";
 
 #if MSG_PACK_ENABLE
 	public static readonly string U_DATA_P_COMMON_APP_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
@@ -1218,7 +1219,7 @@ public static partial class KCDefine {
 
 #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 개수
-	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 150;
+	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 100;
 
 	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "A";
