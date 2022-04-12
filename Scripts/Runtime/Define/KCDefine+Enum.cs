@@ -121,6 +121,15 @@ public enum EVSync {
 	[HideInInspector] MAX_VAL
 }
 
+/** 터치 */
+public enum ETouch {
+	NONE = -1,
+	BEGIN,
+	MOVE,
+	END,
+	[HideInInspector] MAX_VAL
+}
+
 /** 마우스 버튼 */
 public enum EMouseBtn {
 	NONE = -1,
