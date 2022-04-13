@@ -30,6 +30,9 @@ public static partial class KCDefine {
 	// 에디터 챕터 제거 팝업
 	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
 
+	// 에디터 구글 시트 로드 팝업
+	public const string ST_KEY_EDITOR_GOOGLE_SLP_MSG = "EDITOR_GOOGLE_SLP_MSG";
+
 	// 종료 팝업
 	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
 

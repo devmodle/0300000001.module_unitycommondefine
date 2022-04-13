@@ -640,7 +640,7 @@ public static partial class KCDefine {
 
 	// 정렬 순서
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = 1, m_oLayer = KCDefine.U_SORTING_L_DEF
+		m_nOrder = (sbyte.MaxValue * 0), m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 
 	// 레이어 마스크 {
