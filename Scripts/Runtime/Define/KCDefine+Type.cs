@@ -190,7 +190,6 @@ public struct STAdsRewardInfo {
 /** 알림 정보 */
 public struct STNotiInfo {
 	public bool m_bIsRepeat;
-	public bool m_bIsShowForeground;
 
 	public string m_oTitle;
 	public string m_oSubTitle;

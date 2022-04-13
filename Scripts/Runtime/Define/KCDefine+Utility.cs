@@ -1195,20 +1195,11 @@ public static partial class KCDefine {
 	// 식별자
 	public const string U_GROUP_ID_NOTI = "DefNotiGroup";
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
-
-#if UNITY_IOS
-	// 옵션
-	public const PresentationOption U_PRESENT_OPTS_NOTI = PresentationOption.Alert | PresentationOption.Sound;
-	public const AuthorizationOption U_AUTHORIZATION_OPTS_NOTI = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
-#endif			// #if UNITY_IOS
-
+	
 #if UNITY_ANDROID
-	// 그룹 정보 {
+	// 그룹 정보
 	public const string U_GROUP_N_NOTI = KCDefine.U_GROUP_ID_NOTI;
 	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_ID_NOTI;
-	
-	public const Importance U_IMPORTANCE_NOTI = Importance.Default;
-	// 그룹 정보 }
 #endif			// #if UNITY_ANDROID
 #endif			// #if NOTI_ENABLE
 
