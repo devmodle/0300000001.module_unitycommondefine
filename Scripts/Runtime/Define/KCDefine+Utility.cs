@@ -1250,12 +1250,12 @@ public static partial class KCDefine {
 
 #if ADMOB_ADS_ENABLE
 	// 크기
-	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize(320, 50);
+	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize((int)KCDefine.U_SIZE_BANNER_ADS.x, (int)KCDefine.U_SIZE_BANNER_ADS.y);
 #endif			// #if ADMOB_ADS_ENABLE
 
 #if IRON_SRC_ADS_ENABLE
 	// 크기
-	public static readonly IronSourceBannerSize U_SIZE_IRON_SRC_BANNER_ADS = new IronSourceBannerSize(320, 50);
+	public static readonly IronSourceBannerSize U_SIZE_IRON_SRC_BANNER_ADS = new IronSourceBannerSize((int)KCDefine.U_SIZE_BANNER_ADS.x, (int)KCDefine.U_SIZE_BANNER_ADS.y);
 #endif			// #if IRON_SRC_ADS_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
