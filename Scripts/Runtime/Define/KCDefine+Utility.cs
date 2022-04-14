@@ -103,11 +103,11 @@ public static partial class KCDefine {
 	public const int U_LAYER_CUSTOM = 11;
 
 	// 정렬 순서
-	public const int U_SORTING_O_SCREEN_POPUP_UIS = 0;
-	public const int U_SORTING_O_SCREEN_TOPMOST_UIS = 1;
-	public const int U_SORTING_O_SCREEN_ABS_UIS = 2;
-	public const int U_SORTING_O_SCREEN_BLIND_UIS = 3;
-	public const int U_SORTING_O_SCREEN_DEBUG_UIS = 4;
+	public const int U_SORTING_O_SCREEN_POPUP_UIS = sbyte.MaxValue * 0;
+	public const int U_SORTING_O_SCREEN_TOPMOST_UIS = sbyte.MaxValue * 1;
+	public const int U_SORTING_O_SCREEN_ABS_UIS = sbyte.MaxValue * 2;
+	public const int U_SORTING_O_SCREEN_BLIND_UIS = sbyte.MaxValue * 3;
+	public const int U_SORTING_O_SCREEN_DEBUG_UIS = sbyte.MaxValue * 4;
 
 	// 애니메이션
 	public const Ease U_EASE_DEF = Ease.OutQuad;
@@ -240,6 +240,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_MANAGER = "SceneManager";
 	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIsCamera";
 	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "MainCamera";
+
+	public const string U_OBJ_N_SCENE_LIGHT = "SceneLight";
+	public const string U_OBJ_N_SCENE_PRE_RENDER_LIGHT = "PreRenderLight";
 	public const string U_OBJ_N_SCENE_MAIN_DIRECTIONAL_LIGHT = "MainDirectionalLight";
 
 	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
@@ -488,6 +491,7 @@ public static partial class KCDefine {
 	public const string U_TAG_UIS_CAMERA = "UIsCamera";
 	public const string U_TAG_SCENE_MANAGER = "SceneManager";
 	public const string U_TAG_MAIN_DIRECTIONAL_LIGHT = "MainDirectionalLight";
+	public const string U_TAG_ADDITIONAL_LIGHT = "AdditionalLight";
 	// 태그 }
 
 	// 정렬 레이어 {
@@ -630,7 +634,7 @@ public static partial class KCDefine {
 
 	// 태그
 	public static readonly List<string> U_TAG_LIST = new List<string>() {
-		KCDefine.U_TAG_ENEMY, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_UIS_CAMERA, KCDefine.U_TAG_SCENE_MANAGER, KCDefine.U_TAG_MAIN_DIRECTIONAL_LIGHT
+		KCDefine.U_TAG_ENEMY, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_UIS_CAMERA, KCDefine.U_TAG_SCENE_MANAGER, KCDefine.U_TAG_MAIN_DIRECTIONAL_LIGHT, KCDefine.U_TAG_ADDITIONAL_LIGHT
 	};
 
 	// 정렬 레이어

@@ -144,6 +144,7 @@ public static partial class KCEditorDefine {
 	// 기타 {
 	public const string DS_DEFINE_S_EXTRA_SCRIPT = "EXTRA_SCRIPT";
 	public const string DS_DEFINE_S_EXTRA_SCRIPT_ENABLE = "EXTRA_SCRIPT_ENABLE";
+
 	public const string DS_DEFINE_S_SCRIPT_TEMPLATE_ONLY = "SCRIPT_TEMPLATE_ONLY";
 
 	public const string DS_DEFINE_S_STORE_DIST_BUILD = "STORE_DIST_BUILD";

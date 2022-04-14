@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 /*
 =====> 모듈 버전 정보 <=====
-- 버전 : "2.3.16"
+- 버전 : "2.3.17"
 - 연관 파일 개수 : 28
 
 =====> Experimental <=====
@@ -103,7 +103,7 @@ public enum EPOT {
 	[HideInInspector] _32 = 32,
 	[HideInInspector] _64 = 64,
 	[HideInInspector] _128 = 128,
-	[HideInInspector] _256 = 256,
+	_256 = 256,
 	_512 = 512,
 	_1024 = 1024,
 	_2048 = 2048,

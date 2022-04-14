@@ -53,7 +53,7 @@ public static partial class KCEditorDefine {
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
 
 	// 버전
-	public const string B_VER_UNITY_MODULE = "2.3.16";
+	public const string B_VER_UNITY_MODULE = "2.3.17";
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
@@ -1321,7 +1321,9 @@ public static partial class KCEditorDefine {
 	public const string U_FIELD_N_UNIVERSAL_RP_RENDERER_DATAS = "m_RendererDataList";
 	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_SOFT_SHADOW = "m_SoftShadowsSupported";
 	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_TERRAIN_HOLES = "m_SupportsTerrainHoles";
-	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_MIXED_LIGHTING = "m_MixedLightingSupported";
+
+	public const string U_FIELD_N_UNIVERSAL_RP_REFLECTION_PROBE_BLENDING = "m_ReflectionProbeBlending";
+	public const string U_FIELD_N_UNIVERSAL_RP_REFLECTION_PROBE_BOX_PROJECTION = "m_ReflectionProbeBoxProjection";
 	
 	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
 	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
