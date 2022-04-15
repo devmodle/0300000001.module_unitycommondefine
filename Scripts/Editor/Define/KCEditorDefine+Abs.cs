@@ -44,7 +44,7 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
 
 	// 플래그
-	public const StaticEditorFlags B_STATIC_EF_DEF = StaticEditorFlags.ContributeGI | StaticEditorFlags.OccluderStatic | StaticEditorFlags.BatchingStatic | StaticEditorFlags.NavigationStatic | StaticEditorFlags.OccludeeStatic | StaticEditorFlags.OffMeshLinkGeneration | StaticEditorFlags.ReflectionProbeStatic;
+	public const StaticEditorFlags B_STATIC_E_FLAGS = StaticEditorFlags.ContributeGI | StaticEditorFlags.OccluderStatic | StaticEditorFlags.BatchingStatic | StaticEditorFlags.NavigationStatic | StaticEditorFlags.OccludeeStatic | StaticEditorFlags.OffMeshLinkGeneration | StaticEditorFlags.ReflectionProbeStatic;
 
 	// 토큰
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
@@ -82,11 +82,8 @@ public static partial class KCEditorDefine {
 	// 커맨드 라인 }
 
 	// 이름 {
-	public const string B_MODULE_N_INPUT_SYSTEM = "com.unity.input.settings";
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
-
-	public const string B_OBJ_N_SCENE_EDITOR_LIGHT = "SceneLight";
-	public const string B_OBJ_N_SCENE_EDITOR_CAMERA = "SceneCamera";
+	public const string B_MODULE_N_INPUT_SYSTEM_SETTINGS = "com.unity.input.settings";
 
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
 	public const string B_PROPERTY_N_REQUIRE_AR_KIT_SUPPORTS = "requiresARKitSupport";
@@ -330,8 +327,26 @@ public static partial class KCEditorDefine {
 	public static readonly Vector3 B_MIN_SIZE_EDITOR_WND = new Vector3(350.0f, 350.0f, 0.0f);
 
 	// 에디터 옵션
-	public static readonly Vector2 U_EDITOR_OPTS_CASCADE_3_SPLIT_PERCENT = new Vector2(0.1f, 0.3f);
-	public static readonly Vector3 U_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(0.075f, 0.2f, 0.45f);
+	public static readonly Vector2 B_EDITOR_OPTS_CASCADE_3_SPLIT_PERCENT = new Vector2(0.1f, 0.3f);
+	public static readonly Vector3 B_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(0.075f, 0.2f, 0.45f);
+
+	// 이름 {
+	public static readonly List<string> B_OBJ_N_ROOT_OBJ_LIST = new List<string>() {
+		KCDefine.U_OBJ_N_SCENE_BASE, KCDefine.U_OBJ_N_SCENE_OBJS_BASE
+	};
+
+	public static readonly List<string> B_OBJ_N_STATIC_OBJ_LIST = new List<string>() {
+		KCDefine.U_OBJ_N_SCENE_STATIC_OBJS, KCDefine.U_OBJ_N_SCENE_ADDITIONAL_LIGHTS, KCDefine.U_OBJ_N_SCENE_ADDITIONAL_CAMERAS, KCDefine.U_OBJ_N_SCENE_REFLECTION_PROBES, KCDefine.U_OBJ_N_SCENE_LIGHT_PROBE_GROUPS,
+	};
+
+	public static readonly List<string> B_OBJ_N_SCENE_EDITOR_LIGHT_LIST = new List<string>() {
+		"SceneLight", "PreRenderLight"
+	};
+
+	public static readonly List<string> B_OBJ_N_SCENE_EDITOR_CAMERA_LIST = new List<string>() {
+		"SceneCamera", "Main Camera", "Preview Camera", "Preview Scene Camera"
+	};
+	// 이름 }
 
 	// 경로 {
 	public static readonly string B_SCENE_P_INIT_SCENE = $"{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/{KCDefine.B_SCENE_N_INIT}.unity";
