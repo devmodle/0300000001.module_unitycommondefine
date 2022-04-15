@@ -53,8 +53,7 @@ public static partial class KCDefine {
 	public const float U_INTENSITY_VIBRATE = 1.0f;
 
 	// 깊이
-	public const float U_DEPTH_UIS_CAMERA = 50.0f;
-	public const float U_DEPTH_MAIN_CAMERA = -50.0f;
+	public const float U_DEPTH_MAIN_CAMERA = 0.0f;
 
 	// 거리
 	public const float U_DISTANCE_CAMERA_PLANE = 500.0f * KCDefine.B_UNIT_SCALE;
@@ -242,11 +241,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_LEFT_OBJS = "LeftObjs";
 	public const string U_OBJ_N_SCENE_RIGHT_OBJS = "RightObjs";
 
-	public const string U_OBJ_N_SCENE_MANAGER = "SceneManager";
-	public const string U_OBJ_N_SCENE_UIS_CAMERA = "UIsCamera";
-
 	public const string U_OBJ_N_SCENE_MAIN_LIGHT = "MainLight";
 	public const string U_OBJ_N_SCENE_MAIN_CAMERA = "MainCamera";
+	public const string U_OBJ_N_SCENE_MANAGER = "SceneManager";
 
 	public const string U_OBJ_N_SCREEN_DEBUG_UIS = "ScreenDebugUIs";
 	public const string U_OBJ_N_SCREEN_BLIND_UIS = "ScreenBlindUIs";
@@ -655,11 +652,7 @@ public static partial class KCDefine {
 	public static readonly List<int> U_LAYER_MASKS_LIGHT = new List<int>() {
 		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER
 	};
-
-	public static readonly List<int> U_LAYER_MASKS_UIS_CAMERA = new List<int>() {
-		KCDefine.U_LAYER_UIS
-	};
-
+	
 	public static readonly List<int> U_LAYER_MASKS_MAIN_CAMERA = new List<int>() {
 		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER
 	};
