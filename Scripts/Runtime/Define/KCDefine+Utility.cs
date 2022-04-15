@@ -102,12 +102,16 @@ public static partial class KCDefine {
 	public const int U_LAYER_UIS = 5;
 	public const int U_LAYER_CUSTOM = 11;
 
-	// 정렬 순서
-	public const int U_SORTING_O_SCREEN_POPUP_UIS = sbyte.MaxValue * 0;
-	public const int U_SORTING_O_SCREEN_TOPMOST_UIS = sbyte.MaxValue * 1;
-	public const int U_SORTING_O_SCREEN_ABS_UIS = sbyte.MaxValue * 2;
-	public const int U_SORTING_O_SCREEN_BLIND_UIS = sbyte.MaxValue * 3;
-	public const int U_SORTING_O_SCREEN_DEBUG_UIS = sbyte.MaxValue * 4;
+	// 정렬 순서 {
+	public const int U_SORTING_O_UIS = sbyte.MaxValue * 0;
+	public const int U_SORTING_O_OVERLAY_UIS = sbyte.MaxValue * 10;
+
+	public const int U_SORTING_O_SCREEN_POPUP_UIS = sbyte.MaxValue * 20;
+	public const int U_SORTING_O_SCREEN_TOPMOST_UIS = sbyte.MaxValue * 21;
+	public const int U_SORTING_O_SCREEN_ABS_UIS = sbyte.MaxValue * 22;
+	public const int U_SORTING_O_SCREEN_BLIND_UIS = sbyte.MaxValue * 23;
+	public const int U_SORTING_O_SCREEN_DEBUG_UIS = sbyte.MaxValue * 24;
+	// 정렬 순서 }
 
 	// 애니메이션
 	public const Ease U_EASE_DEF = Ease.OutQuad;
@@ -644,7 +648,7 @@ public static partial class KCDefine {
 
 	// 정렬 순서
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = (sbyte.MaxValue * 0), m_oLayer = KCDefine.U_SORTING_L_DEF
+		m_nOrder = KCDefine.U_SORTING_O_UIS, m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 
 	// 레이어 마스크 {
