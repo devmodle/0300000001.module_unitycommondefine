@@ -38,8 +38,8 @@ public static partial class KCDefine {
 	public const int U_SIZE_DOTWEEN_SEQUENCE_ANI = sbyte.MaxValue;
 
 	public const int U_DEF_SIZE_FONT = 28;
-	public const int U_DEF_MIN_SIZE_FONT = 10;
-	public const int U_DEF_MAX_SIZE_FONT = 14;
+	public const int U_DEF_MIN_SIZE_FONT = 14;
+	public const int U_DEF_MAX_SIZE_FONT = 18;
 	// 크기 }
 
 	// 길이
