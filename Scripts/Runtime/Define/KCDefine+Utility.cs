@@ -202,7 +202,7 @@ public static partial class KCDefine {
 	// 식별자 }
 
 	// 이름 {
-	public const string U_OBJ_N_SCENE_UIS_TOP = "UIsRoot";
+	public const string U_OBJ_N_SCENE_UIS_ROOT = "UIsRoot";
 	public const string U_OBJ_N_SCENE_UIS_BASE = "Canvas";
 	public const string U_OBJ_N_SCENE_UIS = "UIs";
 	public const string U_OBJ_N_SCENE_TEST_UIS = "TestUIs";
@@ -647,16 +647,6 @@ public static partial class KCDefine {
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = KCDefine.U_SORTING_O_UIS, m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
-
-	// 레이어 마스크 {
-	public static readonly List<int> U_LAYER_MASKS_LIGHT = new List<int>() {
-		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER
-	};
-	
-	public static readonly List<int> U_LAYER_MASKS_MAIN_CAMERA = new List<int>() {
-		KCDefine.U_LAYER_DEF, KCDefine.U_LAYER_TRANSPARENT_FX, KCDefine.U_LAYER_IGNORE_RAYCAST, KCDefine.U_LAYER_WATER
-	};
-	// 레이어 마스크 }
 	
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
