@@ -891,6 +891,7 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE
 	public static readonly string U_RUNTIME_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_GAME_CONFIG}.json";
+	public static readonly string U_RUNTIME_DATA_P_G_DEVICE_CONFIG = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_DEVICE_CONFIG}.json";
 	public static readonly string U_RUNTIME_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_BUILD_VER_CONFIG}.json";
 #endif			// #if FIREBASE_MODULE_ENABLE
 #else
@@ -1121,7 +1122,7 @@ public static partial class KCDefine {
 
 #if UNITY_IOS
 	public const string U_PROVIDER_ID_FIREBASE_M_APPLE_LOGIN = "apple.com";
-	public const string U_KEY_FIREBASE_M_GAME_CENTER_CALLBACK = "FirebaseMGameCenterCallback";
+	public const string U_KEY_FIREBASE_M_RECEIVE_GAME_CENTER_CREDENTIAL_CALLBACK = "FirebaseMReceiveGameCenterCredentialCallback";
 #endif			// #if UNITY_IOS
 	// 식별자 }
 #endif			// #if FIREBASE_AUTH_ENABLE
@@ -1256,6 +1257,7 @@ public static partial class KCDefine {
 
 	// 경로
 	public static readonly string U_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_GameConfig";
+	public static readonly string U_DATA_P_G_DEVICE_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_DeviceConfig";
 	public static readonly string U_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_BuildVerConfig";
 #endif			// #if FIREBASE_MODULE_ENABLE
 
