@@ -924,6 +924,7 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE
 	public static readonly string U_RUNTIME_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_GAME_CONFIG}.json";
+	public static readonly string U_RUNTIME_DATA_P_G_DEVICE_CONFIG = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_DEVICE_CONFIG}.json";
 	public static readonly string U_RUNTIME_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_BUILD_VER_CONFIG}.json";
 #endif			// #if FIREBASE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
