@@ -228,8 +228,8 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
 
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
-	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
-	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
+	public const string B_EDITOR_SCENE_N_PATTERN_01 = "EditorMenu";
+	public const string B_EDITOR_SCENE_N_PATTERN_02 = "EditorScene";
 	
 	public const string B_NAME_PATTERN_FIX_CLAMP_WRAP = "__FIX_CW__";
 	public const string B_NAME_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";

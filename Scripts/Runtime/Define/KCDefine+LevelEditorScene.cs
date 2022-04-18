@@ -33,8 +33,8 @@ public static partial class KCDefine {
 	public const string LES_OBJ_N_LE_UIS_ADD_STAGE_BTN = "AddStageBtn";
 	public const string LES_OBJ_N_LE_UIS_ADD_CHAPTER_BTN = "AddChapterBtn";
 
-	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_A = "StageScrollView_A";
-	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_B = "StageScrollView_B";
+	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_01 = "StageScrollView_01";
+	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_02 = "StageScrollView_02";
 	// 왼쪽 에디터 UI }
 
 	// 오른쪽 에디터 UI {

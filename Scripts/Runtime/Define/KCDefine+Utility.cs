@@ -309,8 +309,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_NUM_SALE_COINS_TEXT = "NumSaleCoinsText";
 
 	public const string U_OBJ_N_NUM_MARKS_TEXT = "NumMarksText";
-	public const string U_OBJ_N_NUM_CLEAR_MARKS_TEXT = "NumClearMarksText";
-	public const string U_OBJ_N_NUM_CLEAR_MARKS_STATE_TEXT = "NumClearMarksStateText";
+	public const string U_OBJ_N_NUM_MARKS_STATE_TEXT = "NumMarksStateText";
 
 	public const string U_OBJ_N_BG_IMG = "BGImg";
 	public const string U_OBJ_N_COINS_IMG = "CoinsImg";
@@ -318,8 +317,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SPLASH_IMG = "SplashImg";
 
 	public const string U_OBJ_N_MARK_IMG = "MarkImg";
-	public const string U_OBJ_N_CLEAR_MARK_IMG = "ClearMarkImg";
-
 	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
 	public const string U_OBJ_N_RIBBON_IMG = "RibbonImg";
 	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
@@ -447,7 +444,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_FADE_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
 
 	public const string U_OBJ_N_FMT_NUM_TEXT = "NumText_{0:00}";
-	public const string U_OBJ_N_FMT_CLEAR_MARK_IMG = "ClearMarkImg_{0:00}";
+	public const string U_OBJ_N_FMT_CLEAR_MARK_IMG = "MarkImg_{0:00}";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
 
 	public const string U_IMG_N_DEF_MESH = "DefMesh";
@@ -894,6 +891,7 @@ public static partial class KCDefine {
 
 #if FIREBASE_MODULE_ENABLE
 	public static readonly string U_RUNTIME_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_GAME_CONFIG}.json";
+	public static readonly string U_RUNTIME_DATA_P_G_DEVICE_CONFIG = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_DEVICE_CONFIG}.json";
 	public static readonly string U_RUNTIME_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_BUILD_VER_CONFIG}.json";
 #endif			// #if FIREBASE_MODULE_ENABLE
 #else
@@ -1124,7 +1122,7 @@ public static partial class KCDefine {
 
 #if UNITY_IOS
 	public const string U_PROVIDER_ID_FIREBASE_M_APPLE_LOGIN = "apple.com";
-	public const string U_KEY_FIREBASE_M_GAME_CENTER_CALLBACK = "FirebaseMGameCenterCallback";
+	public const string U_KEY_FIREBASE_M_RECEIVE_GAME_CENTER_CREDENTIAL_CALLBACK = "FirebaseMReceiveGameCenterCredentialCallback";
 #endif			// #if UNITY_IOS
 	// 식별자 }
 #endif			// #if FIREBASE_AUTH_ENABLE
@@ -1174,7 +1172,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_PURCHASE_M_CONFIRM_CALLBACK = "PurchaseMConfirmCallback";
 	public const string U_KEY_PURCHASE_M_RESTORE_CALLBACK = "PurchaseMRestoreCallback";
-	public const string U_KEY_PURCHASE_M_PURCHASE_RESULT_CALLBACK = "PurchaseMPurchaseResultCallback";
+	public const string U_KEY_PURCHASE_M_HANDLE_PURCHASE_RESULT_CALLBACK = "PurchaseMHandlePurchaseResultCallback";
 	// 식별자 }
 #endif			// #if PURCHASE_MODULE_ENABLE
 
@@ -1259,6 +1257,7 @@ public static partial class KCDefine {
 
 	// 경로
 	public static readonly string U_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_GameConfig";
+	public static readonly string U_DATA_P_G_DEVICE_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_DeviceConfig";
 	public static readonly string U_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_BuildVerConfig";
 #endif			// #if FIREBASE_MODULE_ENABLE
 
