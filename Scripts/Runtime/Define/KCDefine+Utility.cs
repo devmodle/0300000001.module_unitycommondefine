@@ -73,7 +73,7 @@ public static partial class KCDefine {
 	public const float U_DELAY_NEXT_SCENE_LOAD = 0.5f;
 	public const float U_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
 
-	public const float U_MIN_DELAY_FX_SNDS = 0.01f;
+	public const float U_MIN_DELAY_FX_SNDS = 0.15f;
 	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.25f;
 	
 	public const float U_DURATION_ANI = 0.25f;
@@ -142,21 +142,38 @@ public static partial class KCDefine {
 	public const string U_KEY_PLAY = "Play";
 	public const string U_KEY_HELP = "Help";
 	public const string U_KEY_FREE = "Free";
+
 	public const string U_KEY_DAILY = "Daily";
 	public const string U_KEY_EVENT = "Event";
 	public const string U_KEY_CLEAR = "Clear";
 	public const string U_KEY_PRICE = "Price";
+
 	public const string U_KEY_MISSION = "Mission";
 	public const string U_KEY_TUTORIAL = "Tutorial";
 
+	public const string U_KEY_BG = "BG";
+	public const string U_KEY_NORM = "Norm";
+	public const string U_KEY_OVERLAY = "Overlay";
+
+	public const string U_KEY_GOODS = "Goods";
+	public const string U_KEY_CONSUMABLE = "Consumable";
+	public const string U_KEY_NON_CONSUMABLE = "NonConsumable";
+
+	public const string U_KEY_PKGS = "Pkgs";
+	public const string U_KEY_SINGLE = "Single";
+	
 	public const string U_KEY_LEVEL = "Level";
 	public const string U_KEY_STAGE = "Stage";
 	public const string U_KEY_CHAPTER = "Chapter";
 
 	public const string U_KEY_ID = "ID";
-	public const string U_KEY_RES_ID = "ResID";
 	public const string U_KEY_STAGE_ID = "StageID";
 	public const string U_KEY_CHAPTER_ID = "ChapterID";
+
+	public const string U_KEY_SND = "Snd";
+	public const string U_KEY_FONT = "Font";
+	public const string U_KEY_SPRITE = "Sprite";
+	public const string U_KEY_TEXTURE = "Texture";
 
 	public const string U_KEY_POS_X = "PosX";
 	public const string U_KEY_POS_Y = "PosY";
@@ -186,6 +203,11 @@ public static partial class KCDefine {
 
 	public const string U_KEY_TUTORIAL_KINDS = "TutorialKinds";
 	public const string U_KEY_NEXT_TUTORIAL_KINDS = "NextTutorialKinds";
+
+	public const string U_KEY_RES_KINDS = "ResKinds";
+	public const string U_KEY_FX_RES_KINDS = "FXResKinds";
+	public const string U_KEY_SND_RES_KINDS = "SndResKinds";
+	public const string U_KEY_BLOCK_RES_KINDS = "BlockResKinds";
 
 	public const string U_KEY_FMT_NUM_ITEMS = "NumItems_{0:00}";
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
@@ -847,7 +869,7 @@ public static partial class KCDefine {
 	public static readonly string U_MAT_P_G_UNIVERSAL_RP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPUnlitMat";
 
 	public static readonly string U_IMG_P_ARROW = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Arrow";
-	public static readonly string U_IMG_P_WHITE = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}UnityWhite";
+	public static readonly string U_IMG_P_WHITE = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}White";
 	public static readonly string U_IMG_P_SPLASH = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Splash";
 	public static readonly string U_IMG_P_INDICATOR = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Indicator";
 
