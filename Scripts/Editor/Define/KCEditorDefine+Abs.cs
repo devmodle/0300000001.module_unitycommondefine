@@ -895,7 +895,7 @@ public static partial class KCEditorDefine {
 		// 01.SubAutoCreate {
 #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
 		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SOUND_ROOT}T_BGSnd.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_BG_SND}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SOUND_ROOT}T_FXSnd.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_FX_SND}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_SOUND_ROOT}T_FXSnds.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_FX_SNDS}.prefab"),
 
 		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_DragResponder.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_DRAG_RESPONDER}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_RESPONDER_ROOT}T_TouchResponder.prefab", $"{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_TOUCH_RESPONDER}.prefab"),
