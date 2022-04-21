@@ -135,6 +135,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_NAME = "Name";
 	public const string U_KEY_DESC = "Desc";
+	public const string U_KEY_RATE = "Rate";
 	public const string U_KEY_REPLACE = "Replace";
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
@@ -175,13 +176,8 @@ public static partial class KCDefine {
 	public const string U_KEY_SPRITE = "Sprite";
 	public const string U_KEY_TEXTURE = "Texture";
 
-	public const string U_KEY_POS_X = "PosX";
-	public const string U_KEY_POS_Y = "PosY";
-	public const string U_KEY_POS_Z = "PosZ";
-
-	public const string U_KEY_SIZE_X = "SizeX";
-	public const string U_KEY_SIZE_Y = "SizeY";
-	public const string U_KEY_SIZE_Z = "SizeZ";
+	public const string U_KEY_POS = "Pos";
+	public const string U_KEY_SIZE = "Size";
 
 	public const string U_KEY_DIFFICULTY = "Difficulty";
 	public const string U_KEY_LEVEL_KINDS = "LevelKinds";	
@@ -191,22 +187,29 @@ public static partial class KCDefine {
 	public const string U_KEY_PRICE_KINDS = "PriceKinds";
 	public const string U_KEY_REWARD_KINDS = "RewardKinds";
 	public const string U_KEY_PRODUCT_KINDS = "ProductKinds";
+	public const string U_KEY_ITEM_SALE_KINDS = "ItemSaleKinds";
+	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductSaleKinds";
+
 	public const string U_KEY_MISSION_KINDS = "MissionKinds";
-	public const string U_KEY_SALE_ITEM_KINDS = "SaleItemKinds";
-	public const string U_KEY_SALE_PRODUCT_KINDS = "SaleProductKinds";
+	public const string U_KEY_PREV_MISSION_KINDS = "PrevMissionKinds";
+	public const string U_KEY_NEXT_MISSION_KINDS = "NextMissionKinds";
 
 	public const string U_KEY_FX_KINDS = "FXKinds";
+	public const string U_KEY_PREV_FX_KINDS = "PrevFXKinds";
 	public const string U_KEY_NEXT_FX_KINDS = "NextFXKinds";
 
 	public const string U_KEY_BLOCK_KINDS = "BlockKinds";
+	public const string U_KEY_PREV_BLOCK_KINDS = "PrevBlockKinds";
 	public const string U_KEY_NEXT_BLOCK_KINDS = "NextBlockKinds";
 
 	public const string U_KEY_TUTORIAL_KINDS = "TutorialKinds";
+	public const string U_KEY_PREV_TUTORIAL_KINDS = "PrevTutorialKinds";
 	public const string U_KEY_NEXT_TUTORIAL_KINDS = "NextTutorialKinds";
 
 	public const string U_KEY_RES_KINDS = "ResKinds";
+	public const string U_KEY_SKILL_KINDS = "SkillKinds";
+
 	public const string U_KEY_FX_RES_KINDS = "FXResKinds";
-	public const string U_KEY_SND_RES_KINDS = "SndResKinds";
 	public const string U_KEY_BLOCK_RES_KINDS = "BlockResKinds";
 
 	public const string U_KEY_FMT_NUM_ITEMS = "NumItems_{0:00}";
@@ -749,7 +752,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_RESULT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResultPopup";
 	public static readonly string U_OBJ_P_G_RESUME_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResumePopup";
 	public static readonly string U_OBJ_P_G_PAUSE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_PausePopup";
-	public static readonly string U_OBJ_P_G_SALE_PRODUCT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SaleProductPopup";
+	public static readonly string U_OBJ_P_G_PRODUCT_SALE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ProductSalePopup";
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
 
@@ -783,13 +786,15 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
 	public static readonly string U_ASSET_P_G_LOCALIZE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_LocalizeInfoTable";
 
-	public static readonly string U_ASSET_P_G_SALE_ITEM_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleItemInfoTable";
-	public static readonly string U_ASSET_P_G_SALE_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
+	public static readonly string U_ASSET_P_G_ITEM_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ItemInfoTable";
+	public static readonly string U_ASSET_P_G_ITEM_SALE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ItemSaleInfoTable";
+	public static readonly string U_ASSET_P_G_PRODUCT_SALE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductSaleInfoTable";
 	public static readonly string U_ASSET_P_G_MISSION_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_MissionInfoTable";
 	public static readonly string U_ASSET_P_G_REWARD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_RewardInfoTable";
 	public static readonly string U_ASSET_P_G_EPISODE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_EpisodeInfoTable";
 	public static readonly string U_ASSET_P_G_TUTORIAL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
 	public static readonly string U_ASSET_P_G_FX_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
+	public static readonly string U_ASSET_P_G_SKILL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SkillInfoTable";
 	public static readonly string U_ASSET_P_G_BLOCK_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BlockInfoTable";
 	public static readonly string U_ASSET_P_G_RES_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
 
@@ -831,12 +836,14 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_EPISODE_INFO_SET_A = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}A/G_EpisodeInfoTable";
 	public static readonly string U_TABLE_P_G_EPISODE_INFO_SET_B = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}B/G_EpisodeInfoTable";
 
-	public static readonly string U_TABLE_P_G_SALE_ITEM_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleItemInfoTable";
-	public static readonly string U_TABLE_P_G_SALE_PRODUCT_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SaleProductInfoTable";
+	public static readonly string U_TABLE_P_G_ITEM_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ItemInfoTable";
+	public static readonly string U_TABLE_P_G_ITEM_SALE_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ItemSaleInfoTable";
+	public static readonly string U_TABLE_P_G_PRODUCT_SALE_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductSaleInfoTable";
 	public static readonly string U_TABLE_P_G_MISSION_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_MissionInfoTable";
 	public static readonly string U_TABLE_P_G_REWARD_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_RewardInfoTable";
 	public static readonly string U_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
 	public static readonly string U_TABLE_P_G_FX_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
+	public static readonly string U_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SkillInfoTable";
 	public static readonly string U_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_BlockInfoTable";
 	public static readonly string U_TABLE_P_G_RES_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
 	
@@ -856,17 +863,17 @@ public static partial class KCDefine {
 	public static readonly string U_BASE_TABLE_P_G_LOCALIZE_COMMON_STR = KCDefine.U_TABLE_P_G_COMMON_STR;
 
 	public static readonly string U_FONT_P_G_DEF = $"Fonts & Materials/LiberationSans SDF";
-	public static readonly string U_FONT_P_G_KOREAN = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_KoreanFont";
-	public static readonly string U_FONT_P_G_ENGLISH = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_EnglishFont";
-	
-	public static readonly string U_SND_P_G_TOUCH_BEGIN = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchBegin";
-	public static readonly string U_SND_P_G_TOUCH_END = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_TouchEnd";
+	public static readonly string U_FONT_P_G_KOREAN = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_Korean";
+	public static readonly string U_FONT_P_G_ENGLISH = $"{KCDefine.B_DIR_P_FONTS}{KCDefine.B_DIR_P_GLOBAL}G_English";
 
-	public static readonly string U_SND_P_G_POPUP_SHOW = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_PopupShow";
-	public static readonly string U_SND_P_G_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_PopupClose";
+	public static readonly string U_SND_P_G_SFX_TOUCH_BEGIN = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_TouchBegin";
+	public static readonly string U_SND_P_G_SFX_TOUCH_END = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_TouchEnd";
 
-	public static readonly string U_MAT_P_G_UNIVERSAL_RP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPLitMat";
-	public static readonly string U_MAT_P_G_UNIVERSAL_RP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPUnlitMat";
+	public static readonly string U_SND_P_G_SFX_POPUP_SHOW = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupShow";
+	public static readonly string U_SND_P_G_SFX_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupClose";
+
+	public static readonly string U_MAT_P_G_UNIVERSAL_RP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPLit";
+	public static readonly string U_MAT_P_G_UNIVERSAL_RP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPUnlit";
 
 	public static readonly string U_IMG_P_ARROW = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Arrow";
 	public static readonly string U_IMG_P_WHITE = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}White";
@@ -892,12 +899,14 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_EPISODE_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_EPISODE_INFO_SET_A}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_EPISODE_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_EPISODE_INFO_SET_B}.json";
 
-	public static readonly string U_RUNTIME_TABLE_P_G_SALE_ITEM_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SALE_ITEM_INFO}.json";
-	public static readonly string U_RUNTIME_TABLE_P_G_SALE_PRODUCT_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SALE_PRODUCT_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_ITEM_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ITEM_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_ITEM_SALE_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ITEM_SALE_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_PRODUCT_SALE_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_PRODUCT_SALE_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_MISSION_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_MISSION_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_REWARD_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_REWARD_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SKILL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_RES_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json";
 
@@ -924,12 +933,14 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_EPISODE_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_EPISODE_INFO_SET_A}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_EPISODE_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_EPISODE_INFO_SET_B}.json";
 
-	public static readonly string U_RUNTIME_TABLE_P_G_SALE_ITEM_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SALE_ITEM_INFO}.json";
-	public static readonly string U_RUNTIME_TABLE_P_G_SALE_PRODUCT_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SALE_PRODUCT_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_ITEM_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ITEM_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_ITEM_SALE_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ITEM_SALE_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_PRODUCT_SALE_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_PRODUCT_SALE_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_MISSION_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_MISSION_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_REWARD_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_REWARD_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SKILL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_RES_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json";
 

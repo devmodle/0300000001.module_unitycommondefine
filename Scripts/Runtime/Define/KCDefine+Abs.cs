@@ -170,6 +170,7 @@ public static partial class KCDefine {
 	public const float B_DESKTOP_SCREEN_RATE = 0.9f;
 	public const float B_ADDITIONAL_LIGHT_INTENSITY = 0.99f;
 
+	public const string B_TEXT_NULL = "null";
 	public const string B_TEXT_TRUE = "True";
 	public const string B_TEXT_FALSE = "False";
 
