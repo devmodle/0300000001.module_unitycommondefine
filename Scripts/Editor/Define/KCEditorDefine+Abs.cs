@@ -39,7 +39,6 @@ public static partial class KCEditorDefine {
 	// 정렬 순서 }
 
 	// 시간
-	public const float B_DELTA_T_HIERARCHY_UPDATE = 1.0f;
 	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
 
@@ -404,6 +403,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_TABLE_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}Tables/";
 	public static readonly string B_ABS_DIR_P_ASSEMBLY_DEFINE_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}AssemblyDefines/";
 
+	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}UnityPackages/";
 	public static readonly string B_ABS_DIR_P_STUDY_SCRIPT_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_STUDY_TEMPLATES}Scripts/";
 
 	public static readonly string B_ABS_DIR_P_SRC_PYTHON_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Scripts/Python";
