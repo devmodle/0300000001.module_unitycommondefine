@@ -176,8 +176,9 @@ public static partial class KCDefine {
 	public const string U_KEY_SPRITE = "Sprite";
 	public const string U_KEY_TEXTURE = "Texture";
 
-	public const string U_KEY_POS = "Pos";
-	public const string U_KEY_SIZE = "Size";
+	public const string U_KEY_SIZE_X = "SizeX";
+	public const string U_KEY_SIZE_Y = "SizeY";
+	public const string U_KEY_SIZE_Z = "SizeZ";
 
 	public const string U_KEY_DIFFICULTY = "Difficulty";
 	public const string U_KEY_LEVEL_KINDS = "LevelKinds";	
@@ -218,10 +219,11 @@ public static partial class KCDefine {
 	public const string U_KEY_FX_RES_KINDS = "FXResKinds";
 	public const string U_KEY_BLOCK_RES_KINDS = "BlockResKinds";
 
-	public const string U_KEY_FMT_NUM_ITEMS = "NumItems_{0:00}";
+	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
+	public const string U_KEY_FMT_FX_KINDS = "FXKinds_{0:00}";
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 
-	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
+	public const string U_KEY_FMT_NUM_ITEMS = "NumItems_{0:00}";
 	public const string U_KEY_FMT_NUM_TARGETS = "NumTargets_{0:00}";
 	public const string U_KEY_FMT_NUM_UNLOCK_TARGETS = "NumUnlockTargets_{0:00}";
 
