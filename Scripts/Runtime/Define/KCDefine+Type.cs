@@ -83,14 +83,6 @@ public struct STPurchaseInfo {
 	public string m_oReceipt;
 }
 
-/** 지급 아이템 정보 */
-[System.Serializable]
-public struct STPostItemInfo {
-	public string m_oNumItems;
-	public string m_oItemType;
-	public string m_oItemKinds;
-}
-
 /** 지역화 정보 */
 [System.Serializable]
 public struct STLocalizeInfo {

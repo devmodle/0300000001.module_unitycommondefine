@@ -1146,7 +1146,7 @@ public static partial class KCDefine {
 	// 노드
 	public const string U_NODE_FIREBASE_USER_INFOS = "UserInfos";
 	public const string U_NODE_FIREBASE_PURCHASE_INFOS = "PurchaseInfos";
-	public const string U_NODE_FIREBASE_POST_ITEM_INFOS = "PostItemInfos";
+	public const string U_NODE_FIREBASE_ACQUIRE_ITEM_INFOS = "AcquireItemInfos";
 	
 #if FIREBASE_AUTH_ENABLE
 	// 식별자 {
