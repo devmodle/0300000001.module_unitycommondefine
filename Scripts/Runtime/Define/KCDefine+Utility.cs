@@ -190,6 +190,10 @@ public static partial class KCDefine {
 	public const string U_KEY_ITEM_SALE_KINDS = "ItemSaleKinds";
 	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductSaleKinds";
 
+	public const string U_KEY_ITEM_KINDS = "ItemKinds";
+	public const string U_KEY_PREV_ITEM_KINDS = "PrevItemKinds";
+	public const string U_KEY_NEXT_ITEM_KINDS = "NextItemKinds";
+
 	public const string U_KEY_MISSION_KINDS = "MissionKinds";
 	public const string U_KEY_PREV_MISSION_KINDS = "PrevMissionKinds";
 	public const string U_KEY_NEXT_MISSION_KINDS = "NextMissionKinds";
@@ -197,6 +201,10 @@ public static partial class KCDefine {
 	public const string U_KEY_FX_KINDS = "FXKinds";
 	public const string U_KEY_PREV_FX_KINDS = "PrevFXKinds";
 	public const string U_KEY_NEXT_FX_KINDS = "NextFXKinds";
+
+	public const string U_KEY_SKILL_KINDS = "SkillKinds";
+	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
+	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
 
 	public const string U_KEY_BLOCK_KINDS = "BlockKinds";
 	public const string U_KEY_PREV_BLOCK_KINDS = "PrevBlockKinds";
@@ -207,8 +215,6 @@ public static partial class KCDefine {
 	public const string U_KEY_NEXT_TUTORIAL_KINDS = "NextTutorialKinds";
 
 	public const string U_KEY_RES_KINDS = "ResKinds";
-	public const string U_KEY_SKILL_KINDS = "SkillKinds";
-
 	public const string U_KEY_FX_RES_KINDS = "FXResKinds";
 	public const string U_KEY_BLOCK_RES_KINDS = "BlockResKinds";
 
