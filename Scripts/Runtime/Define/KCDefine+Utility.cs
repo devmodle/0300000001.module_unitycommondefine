@@ -1199,6 +1199,7 @@ public static partial class KCDefine {
 	public const string U_KEY_GAME_CM_LOGIN_CALLBACK = "GameCMLoginCallback";
 	public const string U_KEY_GAME_CM_UPDATE_RECORD_CALLBACK = "GameCMUpdateRecordCallback";
 	public const string U_KEY_GAME_CM_UPDATE_ACHIEVEMENT_CALLBACK = "GameCMUpdateAchievementCallback";
+	public const string U_KEY_GAME_CM_RECEIVE_SERVER_SIDE_ACCESS_RESULT_CALLBACK = "GameCMReceiveServerSideAccessResultCallback";
 #endif			// #if GAME_CENTER_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
