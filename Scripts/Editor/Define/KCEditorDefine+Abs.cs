@@ -12,10 +12,6 @@ using UnityEditor;
 using Unity.Notifications.iOS;
 #endif			// #if NOTI_MODULE_ENABLE
 
-#if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-using UnityEngine.Rendering.Universal;
-#endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-
 /** 에디터 기본 상수 */
 public static partial class KCEditorDefine {
 	#region 기본
@@ -406,9 +402,6 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}UnityPackages/";
 	public static readonly string B_ABS_DIR_P_STUDY_SCRIPT_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_STUDY_TEMPLATES}Scripts/";
-
-	public static readonly string B_ABS_DIR_P_SRC_PYTHON_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Scripts/Python";
-	public static readonly string B_ABS_DIR_P_DEST_PYTHON_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Scripts/Python";
 	
 	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOLS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_BUILD_REPORT_TOOLS_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPRITE_TRAIL_PKGS}.unitypackage";
