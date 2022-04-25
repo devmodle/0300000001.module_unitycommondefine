@@ -46,6 +46,7 @@ public static partial class KCEditorDefine {
 
 	// 형식
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
+	public const string B_SCENE_N_DIGITS_PATTERN = @"[\d.]";
 
 	// 버전
 	public const string B_VER_UNITY_MODULE = "2.3.21";
@@ -298,6 +299,8 @@ public static partial class KCEditorDefine {
 
 	public const string B_MSG_ALERT_P_EXPORT_TEXTURE_FAIL = "텍스처를 선택해주세요.";
 	public const string B_MSG_ALERT_P_EXPORT_SPRITE_FAIL = "스프라이트를 선택해주세요.";
+
+	public const string B_MSG_FMT_ALERT_P_MISSING_PREFAB = "프리팹이 소실 된 {0} 객체를 제거하시겠습니까?";
 	// 경고 팝업 }
 
 	// 객체 이름 에디터 윈도우 {
@@ -329,6 +332,10 @@ public static partial class KCEditorDefine {
 		KCDefine.U_OBJ_N_SCENE_BASE, KCDefine.U_OBJ_N_SCENE_OBJS_BASE
 	};
 
+	public static readonly List<string> B_OBJ_N_PREFAB_ROOT_OBJ_LIST = new List<string>() {
+		KCDefine.U_OBJ_N_SCENE_UIS_ROOT
+	};
+
 	public static readonly List<string> B_OBJ_N_STATIC_OBJ_LIST = new List<string>() {
 		KCDefine.U_OBJ_N_SCENE_STATIC_OBJS, KCDefine.U_OBJ_N_SCENE_ADDITIONAL_LIGHTS, KCDefine.U_OBJ_N_SCENE_ADDITIONAL_CAMERAS, KCDefine.U_OBJ_N_SCENE_REFLECTION_PROBES, KCDefine.U_OBJ_N_SCENE_LIGHT_PROBE_GROUPS,
 	};
@@ -355,11 +362,14 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Scenes/";
 	public static readonly string B_DIR_P_SUB_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE}Scenes/";
 
-	public static readonly string B_DIR_P_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
-	public static readonly string B_DIR_P_SUB_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
+	public static readonly string B_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
 
-	public static readonly string B_DIR_P_EDITOR_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
-	public static readonly string B_DIR_P_SUB_EDITOR_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
+
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_PREFABS = $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}Prefabs/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_PREFABS = $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}Prefabs/";
 
 	public static readonly string B_DIR_P_TEMPLATES = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Templates/";
 	public static readonly string B_DIR_P_ICON_TEMPLATES = $"{KCEditorDefine.B_DIR_P_TEMPLATES}Icons/";
@@ -480,17 +490,17 @@ public static partial class KCEditorDefine {
 	public static readonly List<string> B_SEARCH_P_SCENE_LIST = new List<string>() {
 		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO_SCENES),
 		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES),
-		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_PROJ_SCENES),
-		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_PROJ_SCENES),
-		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES),
-		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_EDITOR_PROJ_SCENES)
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES)
 	};
 
 	public static readonly List<string> B_SEARCH_P_PREFAB_SCENE_LIST = new List<string>() {
 		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO_SCENES),
 		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_AUTO_SCENES),
-		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_PROJ_SCENES),
-		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_EDITOR_PROJ_SCENES)
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES),
+		Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_SCENES)
 	};
 
 	public static readonly List<string> B_SEARCH_P_SPRITE_ATLAS_LIST = new List<string>() {
