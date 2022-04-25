@@ -136,6 +136,7 @@ public static partial class KCDefine {
 	public const string U_KEY_NAME = "Name";
 	public const string U_KEY_DESC = "Desc";
 	public const string U_KEY_RATE = "Rate";
+	public const string U_KEY_DELAY = "Delay";
 	public const string U_KEY_REPLACE = "Replace";
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
