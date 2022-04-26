@@ -65,106 +65,66 @@ public static partial class KCDefine {
 	public const string ST_KEY_MAIN_SM_B_SET_TEXT = "MAIN_SM_B_SET_TEXT";
 
 	// 공용 {
-	public const string ST_KEY_COMMON_LOGIN_SUCCESS_MSG = "COMMON_LOGIN_SUCCESS_MSG";
-	public const string ST_KEY_COMMON_LOGIN_FAIL_MSG = "COMMON_LOGIN_FAIL_MSG";
-
-	public const string ST_KEY_COMMON_LOGOUT_SUCCESS_MSG = "COMMON_LOGOUT_SUCCESS_MSG";
-	public const string ST_KEY_COMMON_LOGOUT_FAIL_MSG = "COMMON_LOGOUT_FAIL_MSG";
-
-	public const string ST_KEY_COMMON_LOAD_SUCCESS_MSG = "COMMON_LOAD_SUCCESS_MSG";
-	public const string ST_KEY_COMMON_LOAD_FAIL_MSG = "COMMON_LOAD_FAIL_MSG";
-
-	public const string ST_KEY_COMMON_SAVE_SUCCESS_MSG = "COMMON_SAVE_SUCCESS_MSG";
-	public const string ST_KEY_COMMON_SAVE_FAIL_MSG = "COMMON_SAVE_FAIL_MSG";
-
-	public const string ST_KEY_COMMON_PURCHASE_SUCCESS_MSG = "COMMON_PURCHASE_SUCCESS_MSG";
-	public const string ST_KEY_COMMON_PURCHASE_FAIL_MSG = "COMMON_PURCHASE_FAIL_MSG";
-
-	public const string ST_KEY_COMMON_RESTORE_SUCCESS_MSG = "COMMON_RESTORE_SUCCESS_MSG";
-	public const string ST_KEY_COMMON_RESTORE_FAIL_MSG = "COMMON_RESTORE_FAIL_MSG";
-
-	public const string ST_KEY_COMMON_OK_TEXT = "COMMON_OK_TEXT";
-	public const string ST_KEY_COMMON_CANCEL_TEXT = "COMMON_CANCEL_TEXT";
-	public const string ST_KEY_COMMON_AGREE_TEXT = "COMMON_AGREE_TEXT";
-	public const string ST_KEY_COMMON_RESULT_TEXT = "COMMON_RESULT_TEXT";
-
-	public const string ST_KEY_COMMON_GET_TEXT = "COMMON_GET_TEXT";
-	public const string ST_KEY_COMMON_STORE_TEXT = "COMMON_STORE_TEXT";
-	public const string ST_KEY_COMMON_EVENT_TEXT = "COMMON_EVENT_TEXT";
-	public const string ST_KEY_COMMON_NEXT_TEXT = "COMMON_NEXT_TEXT";
-	public const string ST_KEY_COMMON_HOME_TEXT = "COMMON_HOME_TEXT";
-	public const string ST_KEY_COMMON_PLAY_TEXT = "COMMON_PLAY_TEXT";
-	public const string ST_KEY_COMMON_RETRY_TEXT = "COMMON_RETRY_TEXT";
-	public const string ST_KEY_COMMON_LEAVE_TEXT = "COMMON_LEAVE_TEXT";
-	public const string ST_KEY_COMMON_SYNC_TEXT = "COMMON_SYNC_TEXT";
-
-	public const string ST_KEY_COMMON_LOGIN_TEXT = "COMMON_LOGIN_TEXT";
-	public const string ST_KEY_COMMON_APPLE_LOGIN_TEXT = "COMMON_APPLE_LOGIN_TEXT";
-	public const string ST_KEY_COMMON_FACEBOOK_LOGIN_TEXT = "COMMON_FACEBOOK_LOGIN_TEXT";
-
-	public const string ST_KEY_COMMON_LOGOUT_TEXT = "COMMON_LOGOUT_TEXT";
-	public const string ST_KEY_COMMON_DISCONNECT_TEXT = "COMMON_DISCONNECT_TEXT";
-
-	public const string ST_KEY_COMMON_LOAD_TEXT = "COMMON_LOAD_TEXT";
-	public const string ST_KEY_COMMON_SAVE_TEXT = "COMMON_SAVE_TEXT";
-	public const string ST_KEY_COMMON_CONTINUE_TEXT = "COMMON_CONTINUE_TEXT";
-	
-	public const string ST_KEY_COMMON_NOTI_TEXT = "COMMON_NOTI_TEXT";
-	public const string ST_KEY_COMMON_REVIEW_TEXT = "COMMON_REVIEW_TEXT";
-	public const string ST_KEY_COMMON_SUPPORTS_TEXT = "COMMON_SUPPORTS_TEXT";
-	public const string ST_KEY_COMMON_BG_SND_TEXT = "COMMON_BG_SND_TEXT";
-	public const string ST_KEY_COMMON_FX_SNDS_TEXT = "COMMON_FX_SNDS_TEXT";
-	public const string ST_KEY_COMMON_WATCH_ADS_TEXT = "COMMON_WATCH_ADS_TEXT";
-	public const string ST_KEY_COMMON_RESTORE_PAYMENT_TEXT = "COMMON_RESTORE_PAYMENT_TEXT";
-
-	public const string ST_KEY_COMMON_LEVEL_TEXT = "COMMON_LEVEL_TEXT";
-	public const string ST_KEY_COMMON_STAGE_TEXT = "COMMON_STAGE_TEXT";
-	public const string ST_KEY_COMMON_CHAPTER_TEXT = "COMMON_CHAPTER_TEXT";
-
-	public const string ST_KEY_COMMON_BEGINNER_PKGS_TEXT = "COMMON_BEGINNER_PKGS_TEXT";
-	public const string ST_KEY_COMMON_EXPERT_PKGS_TEXT = "COMMON_EXPERT_PKGS_TEXT";
-	public const string ST_KEY_COMMON_PRO_PKGS_TEXT = "COMMON_PRO_PKGS_TEXT";
-
-	public const string ST_KEY_COMMON_LEVEL_NUM_TEXT_FMT = "COMMON_LEVEL_NUM_TEXT_FMT";
-	public const string ST_KEY_COMMON_STAGE_NUM_TEXT_FMT = "COMMON_STAGE_NUM_TEXT_FMT";
-	public const string ST_KEY_COMMON_CHAPTER_NUM_TEXT_FMT = "COMMON_CHAPTER_NUM_TEXT_FMT";
-
-	public const string ST_KEY_COMMON_LEVEL_PAGE_TEXT_FMT = "COMMON_LEVEL_PAGE_TEXT_FMT";
-	public const string ST_KEY_COMMON_STAGE_PAGE_TEXT_FMT = "COMMON_STAGE_PAGE_TEXT_FMT";
-	public const string ST_KEY_COMMON_CHAPTER_PAGE_TEXT_FMT = "COMMON_CHAPTER_PAGE_TEXT_FMT";
+	public const string ST_KEY_C_LOGIN_SUCCESS_MSG = "C_LOGIN_SUCCESS_MSG";
+	public const string ST_KEY_C_LOGIN_FAIL_MSG = "C_LOGIN_FAIL_MSG";
+	public const string ST_KEY_C_LOGOUT_SUCCESS_MSG = "C_LOGOUT_SUCCESS_MSG";
+	public const string ST_KEY_C_LOGOUT_FAIL_MSG = "C_LOGOUT_FAIL_MSG";
+	public const string ST_KEY_C_LOAD_SUCCESS_MSG = "C_LOAD_SUCCESS_MSG";
+	public const string ST_KEY_C_LOAD_FAIL_MSG = "C_LOAD_FAIL_MSG";
+	public const string ST_KEY_C_SAVE_SUCCESS_MSG = "C_SAVE_SUCCESS_MSG";
+	public const string ST_KEY_C_SAVE_FAIL_MSG = "C_SAVE_FAIL_MSG";
+	public const string ST_KEY_C_PURCHASE_SUCCESS_MSG = "C_PURCHASE_SUCCESS_MSG";
+	public const string ST_KEY_C_PURCHASE_FAIL_MSG = "C_PURCHASE_FAIL_MSG";
+	public const string ST_KEY_C_RESTORE_SUCCESS_MSG = "C_RESTORE_SUCCESS_MSG";
+	public const string ST_KEY_C_RESTORE_FAIL_MSG = "C_RESTORE_FAIL_MSG";
+	public const string ST_KEY_C_OK_TEXT = "C_OK_TEXT";
+	public const string ST_KEY_C_CANCEL_TEXT = "C_CANCEL_TEXT";
+	public const string ST_KEY_C_AGREE_TEXT = "C_AGREE_TEXT";
+	public const string ST_KEY_C_RESULT_TEXT = "C_RESULT_TEXT";
+	public const string ST_KEY_C_GET_TEXT = "C_GET_TEXT";
+	public const string ST_KEY_C_STORE_TEXT = "C_STORE_TEXT";
+	public const string ST_KEY_C_EVENT_TEXT = "C_EVENT_TEXT";
+	public const string ST_KEY_C_NEXT_TEXT = "C_NEXT_TEXT";
+	public const string ST_KEY_C_HOME_TEXT = "C_HOME_TEXT";
+	public const string ST_KEY_C_PLAY_TEXT = "C_PLAY_TEXT";
+	public const string ST_KEY_C_RETRY_TEXT = "C_RETRY_TEXT";
+	public const string ST_KEY_C_LEAVE_TEXT = "C_LEAVE_TEXT";
+	public const string ST_KEY_C_SYNC_TEXT = "C_SYNC_TEXT";
+	public const string ST_KEY_C_LOGIN_TEXT = "C_LOGIN_TEXT";
+	public const string ST_KEY_C_APPLE_LOGIN_TEXT = "C_APPLE_LOGIN_TEXT";
+	public const string ST_KEY_C_FACEBOOK_LOGIN_TEXT = "C_FACEBOOK_LOGIN_TEXT";
+	public const string ST_KEY_C_LOGOUT_TEXT = "C_LOGOUT_TEXT";
+	public const string ST_KEY_C_DISCONNECT_TEXT = "C_DISCONNECT_TEXT";
+	public const string ST_KEY_C_LOAD_TEXT = "C_LOAD_TEXT";
+	public const string ST_KEY_C_SAVE_TEXT = "C_SAVE_TEXT";
+	public const string ST_KEY_C_CONTINUE_TEXT = "C_CONTINUE_TEXT";
+	public const string ST_KEY_C_NOTI_TEXT = "C_NOTI_TEXT";
+	public const string ST_KEY_C_REVIEW_TEXT = "C_REVIEW_TEXT";
+	public const string ST_KEY_C_SUPPORTS_TEXT = "C_SUPPORTS_TEXT";
+	public const string ST_KEY_C_BG_SND_TEXT = "C_BG_SND_TEXT";
+	public const string ST_KEY_C_FX_SNDS_TEXT = "C_FX_SNDS_TEXT";
+	public const string ST_KEY_C_WATCH_ADS_TEXT = "C_WATCH_ADS_TEXT";
+	public const string ST_KEY_C_REMOVE_ADS_TEXT = "C_REMOVE_ADS_TEXT";
+	public const string ST_KEY_C_RESTORE_PAYMENT_TEXT = "C_RESTORE_PAYMENT_TEXT";
+	public const string ST_KEY_C_LEVEL_TEXT = "C_LEVEL_TEXT";
+	public const string ST_KEY_C_STAGE_TEXT = "C_STAGE_TEXT";
+	public const string ST_KEY_C_CHAPTER_TEXT = "C_CHAPTER_TEXT";
+	public const string ST_KEY_C_SETTINGS_TEXT = "C_SETTINGS_TEXT";
+	public const string ST_KEY_C_DAILY_MISSION_TEXT = "C_DAILY_MISSION_TEXT";
+	public const string ST_KEY_C_FREE_REWARD_TEXT = "C_FREE_REWARD_TEXT";
+	public const string ST_KEY_C_DAILY_REWARD_TEXT = "C_DAILY_REWARD_TEXT";
+	public const string ST_KEY_C_COINS_BOX_TEXT = "C_COINS_BOX_TEXT";
+	public const string ST_KEY_C_RESUME_TEXT = "C_RESUME_TEXT";
+	public const string ST_KEY_C_PAUSE_TEXT = "C_PAUSE_TEXT";
+	public const string ST_KEY_C_BEGINNER_PKGS_TEXT = "C_BEGINNER_PKGS_TEXT";
+	public const string ST_KEY_C_EXPERT_PKGS_TEXT = "C_EXPERT_PKGS_TEXT";
+	public const string ST_KEY_C_PRO_PKGS_TEXT = "C_PRO_PKGS_TEXT";
+	public const string ST_KEY_C_LEVEL_NUM_TEXT_FMT = "C_LEVEL_NUM_TEXT_FMT";
+	public const string ST_KEY_C_STAGE_NUM_TEXT_FMT = "C_STAGE_NUM_TEXT_FMT";
+	public const string ST_KEY_C_CHAPTER_NUM_TEXT_FMT = "C_CHAPTER_NUM_TEXT_FMT";
+	public const string ST_KEY_C_LEVEL_PAGE_TEXT_FMT = "C_LEVEL_PAGE_TEXT_FMT";
+	public const string ST_KEY_C_STAGE_PAGE_TEXT_FMT = "C_STAGE_PAGE_TEXT_FMT";
+	public const string ST_KEY_C_CHAPTER_PAGE_TEXT_FMT = "C_CHAPTER_PAGE_TEXT_FMT";
 	// 공용 }
-
-	// 상점 팝업
-	public const string ST_KEY_STORE_P_TITLE = "STORE_P_TITLE";
-
-	// 설정 팝업
-	public const string ST_KEY_SETTINGS_P_TITLE = "SETTINGS_P_TITLE";
-
-	// 동기화 팝업
-	public const string ST_KEY_SYNC_P_TITLE = "SYNC_P_TITLE";
-
-	// 일일 미션 팝업
-	public const string ST_KEY_DAILY_MP_TITLE = "DAILY_MP_TITLE";
-
-	// 무료 보상 팝업
-	public const string ST_KEY_FREE_RP_TITLE = "FREE_RP_TITLE";
-
-	// 일일 보상 팝업
-	public const string ST_KEY_DAILY_RP_TITLE = "DAILY_RP_TITLE";
-
-	// 판매 코인 팝업
-	public const string ST_KEY_SALE_CP_TITLE = "SALE_CP_TITLE";
-
-	// 이어하기 팝업
-	public const string ST_KEY_CONTINUE_P_TITLE = "CONTINUE_P_TITLE";
-
-	// 결과 팝업
-	public const string ST_KEY_RESULT_P_TITLE = "RESULT_P_TITLE";
-
-	// 재개 팝업
-	public const string ST_KEY_RESUME_P_TITLE = "RESUME_P_TITLE";
-
-	// 정지 팝업
-	public const string ST_KEY_PAUSE_P_TITLE = "PAUSE_P_TITLE";
 	#endregion			// 기본
 }
