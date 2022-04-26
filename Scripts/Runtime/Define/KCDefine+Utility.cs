@@ -188,7 +188,6 @@ public static partial class KCDefine {
 
 	public const string U_KEY_PRICE_KINDS = "PriceKinds";
 	public const string U_KEY_REWARD_KINDS = "RewardKinds";
-	public const string U_KEY_PRODUCT_KINDS = "ProductKinds";
 	public const string U_KEY_ITEM_SALE_KINDS = "ItemSaleKinds";
 	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductSaleKinds";
 
