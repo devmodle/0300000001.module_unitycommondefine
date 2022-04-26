@@ -341,8 +341,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_BEST_RECORD_TEXT = "BestRecordText";
 
 	public const string U_OBJ_N_NUM_COINS_TEXT = "NumCoinsText";
-	public const string U_OBJ_N_NUM_SALE_COINS_TEXT = "NumSaleCoinsText";
-
 	public const string U_OBJ_N_NUM_MARKS_TEXT = "NumMarksText";
 	public const string U_OBJ_N_NUM_MARKS_STATE_TEXT = "NumMarksStateText";
 
