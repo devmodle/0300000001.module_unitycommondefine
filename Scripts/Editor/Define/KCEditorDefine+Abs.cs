@@ -19,27 +19,24 @@ public static partial class KCEditorDefine {
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
 	// 정렬 순서 {
-	public const int B_SORTING_O_BUILD_MENU = 1000;
+	public const int B_SORTING_O_BUILD_MENU = 10000;
 
-	public const int B_SORTING_O_SETUP_MENU = 2000;
+	public const int B_SORTING_O_SETUP_MENU = 20000;
 	public const int B_SORTING_O_RESET_MENU = KCEditorDefine.B_SORTING_O_SETUP_MENU + 1;
 
-	public const int B_SORTING_O_IMPORT_MENU = 3000;
+	public const int B_SORTING_O_IMPORT_MENU = 30000;
 	public const int B_SORTING_O_EXPORT_MENU = KCEditorDefine.B_SORTING_O_IMPORT_MENU + 1;
 
-	public const int B_SORTING_O_CREATE_MENU = 4000;
+	public const int B_SORTING_O_CREATE_MENU = 40000;
 	public const int B_SORTING_O_SUB_CREATE_MENU = KCEditorDefine.B_SORTING_O_CREATE_MENU + 1;
 
-	public const int B_SORTING_O_EDITOR_WND_MENU = 5000;
+	public const int B_SORTING_O_EDITOR_WND_MENU = 50000;
 	public const int B_SORTING_O_CHANGE_PLATFORM_MENU = KCEditorDefine.B_SORTING_O_EDITOR_WND_MENU + 1;
 	// 정렬 순서 }
 
 	// 시간
 	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
-
-	// 플래그
-	public const StaticEditorFlags B_STATIC_E_FLAGS = StaticEditorFlags.ContributeGI | StaticEditorFlags.OccluderStatic | StaticEditorFlags.BatchingStatic | StaticEditorFlags.NavigationStatic | StaticEditorFlags.OccludeeStatic | StaticEditorFlags.OffMeshLinkGeneration | StaticEditorFlags.ReflectionProbeStatic;
 
 	// 토큰
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
@@ -53,7 +50,7 @@ public static partial class KCEditorDefine {
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
-	public const string B_MENU_GAME_OBJECT_BASE = "GameObject/Utility/";
+	public const string B_MENU_GAME_OBJECT_BASE = "GameObject/";
 
 	public const string B_MENU_TOOLS_BUILD_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Build/";
 	public const string B_MENU_TOOLS_SETUP_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Setup/";
@@ -65,9 +62,9 @@ public static partial class KCEditorDefine {
 	public const string B_MENU_TOOLS_EDITOR_WND_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "EditorWindow/";
 	public const string B_MENU_TOOLS_CHANGE_PLATFORM_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "ChangePlatform/";
 
-	public const string B_MENU_GAME_OBJECT_UI_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "UI/";
-	public const string B_MENU_GAME_OBJECT_2D_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "2D/";
-	public const string B_MENU_GAME_OBJECT_FX_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "FX/";
+	public const string B_MENU_GAME_OBJECT_UI_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "UI/Utility/";
+	public const string B_MENU_GAME_OBJECT_2D_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "2D Object/Utility/";
+	public const string B_MENU_GAME_OBJECT_FX_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "Effects/Utility/";
 	// 메뉴 }
 
 	// 커맨드 라인 {
