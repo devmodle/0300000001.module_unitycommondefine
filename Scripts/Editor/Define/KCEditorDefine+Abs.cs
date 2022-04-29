@@ -726,7 +726,7 @@ public static partial class KCEditorDefine {
 		// 02.UnityProject }
 		
 		// 03.SubUnityProject {
-#if EXTRA_SCRIPT || EXTRA_SCRIPT_ENABLE
+#if EXTRA_SCRIPT_ENABLE || EXTRA_SCRIPT_MODULE_ENABLE
 		// 에디터 상수
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Define/T_KEditorDefine+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Global/Define/KEditorDefine+SubGlobal.cs"),
 		
@@ -751,7 +751,7 @@ public static partial class KCEditorDefine {
 
 		// 에셋 임포터
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Importer/T_CSubAssetImporter.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Global/Importer/CSubAssetImporter.cs"),
-#endif			// #if EXTRA_SCRIPT || EXTRA_SCRIPT_ENABLE
+#endif			// #if EXTRA_SCRIPT_ENABLE || EXTRA_SCRIPT_MODULE_ENABLE
 
 		// 엔진 {
 #if ENGINE_TEMPLATES_ENABLE || ENGINE_TEMPLATES_MODULE_ENABLE
