@@ -929,11 +929,6 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A}.json";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B}.json";
 #endif			// #if MSG_PACK_ENABLE
-
-#if FIREBASE_MODULE_ENABLE
-	public static readonly string U_RUNTIME_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_GAME_CONFIG}.json";
-	public static readonly string U_RUNTIME_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_BUILD_VER_CONFIG}.json";
-#endif			// #if FIREBASE_MODULE_ENABLE
 #else
 	public static readonly string U_RUNTIME_TABLE_P_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_LEVEL_INFO}.bytes";
 	public static readonly string U_RUNTIME_TABLE_P_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_LEVEL_INFO_SET_A}.bytes";
@@ -964,11 +959,6 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A}.json";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B}.json";
 #endif			// #if MSG_PACK_ENABLE
-
-#if FIREBASE_MODULE_ENABLE
-	public static readonly string U_RUNTIME_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_GAME_CONFIG}.json";
-	public static readonly string U_RUNTIME_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_G_BUILD_VER_CONFIG}.json";
-#endif			// #if FIREBASE_MODULE_ENABLE
 #endif			// #if UNITY_EDITOR
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
@@ -1146,13 +1136,8 @@ public static partial class KCDefine {
 #endif			// #if FACEBOOK_MODULE_ENABLE
 
 #if FIREBASE_MODULE_ENABLE
-	// 식별자 {
-	public const string U_KEY_FIREBASE_M_GAME_CONFIG = "GameConfig";
-	public const string U_KEY_FIREBASE_M_DEVICE_CONFIG = "DeviceConfig";
-	public const string U_KEY_FIREBASE_M_BUILD_VER_CONFIG = "BuildVerConfig";
-
+	// 식별자
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
-	// 식별자 }
 
 	// 노드
 	public const string U_NODE_FIREBASE_USER_INFOS = "UserInfos";
@@ -1175,11 +1160,6 @@ public static partial class KCDefine {
 	public const string U_KEY_FIREBASE_M_SAVE_DB_CALLBACK = "FirebaseMSaveDBCallback";
 	public const string U_KEY_FIREBASE_M_LOAD_DB_CALLBACK = "FirebaseMLoadDBCallback";
 #endif			// #if FIREBASE_DB_ENABLE
-
-#if FIREBASE_REMOTE_CONFIG_ENABLE
-	// 식별자
-	public const string U_KEY_FIREBASE_M_LOAD_CONFIG_CALLBACK = "FirebaseMLoadConfigCallback";
-#endif			// #if FIREBASE_REMOTE_CONFIG_ENABLE
 
 #if FIREBASE_CLOUD_MSG_ENABLE
 	// 식별자
@@ -1298,10 +1278,6 @@ public static partial class KCDefine {
 #if FIREBASE_MODULE_ENABLE
 	// 시간
 	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_SESSION = new System.TimeSpan(0, 0, 60);
-
-	// 경로
-	public static readonly string U_DATA_P_G_GAME_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_GameConfig";
-	public static readonly string U_DATA_P_G_BUILD_VER_CONFIG = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_GLOBAL}G_BuildVerConfig";
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE

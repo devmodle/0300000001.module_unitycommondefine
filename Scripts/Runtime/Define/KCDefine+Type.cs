@@ -105,25 +105,6 @@ public struct STDeviceInfo {
 	public List<string> m_oAndroidAdmobTestDeviceIDList;
 }
 
-/** 디바이스 속성 */
-[System.Serializable]
-public struct STDeviceConfig {
-	public List<string> m_oiOSTestDeviceAdsIDList;
-	public List<string> m_oAndroidTestDeviceAdsIDList;
-}
-
-/** 빌드 버전 속성 */
-[System.Serializable]
-public struct STBuildVerConfig {
-	public STBuildVerInfo m_stiOSAppleBuildVerInfo;
-
-	public STBuildVerInfo m_stAndroidGoogleBuildVerInfo;
-	public STBuildVerInfo m_stAndroidAmazonBuildVerInfo;
-	
-	public STBuildVerInfo m_stStandaloneMacSteamBuildVerInfo;
-	public STBuildVerInfo m_stStandaloneWndsSteamBuildVerInfo;
-}
-
 /** 설명 정보 */
 [System.Serializable]
 public struct STDescInfo {
