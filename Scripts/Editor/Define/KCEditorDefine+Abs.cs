@@ -192,7 +192,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_BUILD_P_FMT_STANDALONE = "Builds/Standalone/{0}/{1}";
 	public const string B_BUILD_FILE_N_FMT_STANDALONE = "{0}BuildOutput.{1}";
-	public const string B_BUILD_OUTPUT_P_FMT_STANDALONE = "Builds/Standalone/{0}BuildOutput.{1}";
+	public const string B_BUILD_OUTPUT_P_FMT_STANDALONE = "Builds/Standalone/{0}/{0}BuildOutput.{1}";
 	// 독립 플랫폼 }
 	
 	// 젠킨스 {
