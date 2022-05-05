@@ -233,7 +233,7 @@ public static partial class KCDefine {
 	public const string B_EDITOR_SCENE_N_PATTERN_01 = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_02 = "EditorScene";
 	
-	public const string B_NAME_PATTERN_FIX_CLAMP_WRAP = "__FIX_CW__";
+	public const string B_NAME_PATTERN_FIX_REPEAT_WRAP = "__FIX_RW__";
 	public const string B_NAME_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
 	public const string B_NAME_PATTERN_FIX_COMPRESS_IN_MEMORY = "__FIX_CIM__";
 
