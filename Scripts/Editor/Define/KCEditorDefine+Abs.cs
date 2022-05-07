@@ -927,7 +927,7 @@ public static partial class KCEditorDefine {
 #endif			// #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
 		// 01.SubAutoCreate }
 
-		// 04.SubUnityProject {
+		// 03.SubUnityProject {
 #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
 		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_AlertPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_ALERT_POPUP}.prefab"),
 #endif			// #if PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE
@@ -950,18 +950,18 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_FocusPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_FOCUS_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_POPUP_ROOT}T_FocusPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_TUTORIAL_POPUP}.prefab"),
 #endif			// #if (PREFAB_TEMPLATES_ENABLE || PREFAB_TEMPLATES_MODULE_ENABLE) && (RUNTIME_TEMPLATES_ENABLE || RUNTIME_TEMPLATES_MODULE_ENABLE)
-		// 04.SubUnityProject }
+		// 03.SubUnityProject }
 
-		// 04.UnityProjectEditor {
+		// 05.SubUnityProjectEditor {
 #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
-		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorInputPopup.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_EDITOR_INPUT_POPUP}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorLevelCreatePopup.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_EDITOR_LEVEL_CREATE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorInputPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_EDITOR_INPUT_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorLevelCreatePopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_EDITOR_LEVEL_CREATE_POPUP}.prefab"),
 	
-		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_LEVEL_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_STAGE_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_CHAPTER_EDITOR_SCROLLER_CELL_VIEW}.prefab")
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_LEVEL_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_STAGE_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_PREFAB_TEMPLATES}{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_CHAPTER_EDITOR_SCROLLER_CELL_VIEW}.prefab")
 #endif			// #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
-		// 04.UnityProjectEditor }
+		// 05.SubUnityProjectEditor }
 	};
 
 	public static readonly List<(string, string)> B_TABLE_P_INFO_LIST = new List<(string, string)>() {
@@ -992,7 +992,7 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ValueInfo/ValTable_Common.csv", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_COMMON_VAL}.csv"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/StringInfo/StrTable_Common.csv", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_COMMON_STR}.csv"),
 
-		// 04.SubUnityProject {
+		// 03.SubUnityProject {
 #if RUNTIME_TEMPLATES_ENABLE || RUNTIME_TEMPLATES_MODULE_ENABLE
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/StringInfo/StrTable_Common_{SystemLanguage.Korean}.csv", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_KOREAN_COMMON_STR}.csv"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/StringInfo/StrTable_Common_{SystemLanguage.English}.csv", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_ENGLISH_COMMON_STR}.csv"),
@@ -1074,7 +1074,7 @@ public static partial class KCEditorDefine {
 #endif			// #if AB_TEST_ENABLE
 #endif			// #if MSG_PACK_ENABLE
 #endif			// #if RUNTIME_TEMPLATES_ENABLE || RUNTIME_TEMPLATES_MODULE_ENABLE
-		// 04.SubUnityProject }
+		// 03.SubUnityProject }
 	};
 
 	public static readonly List<(string, string)> B_ASSET_P_INFO_LIST = new List<(string, string)>() {
