@@ -165,6 +165,7 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_IOS_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
 	public const string B_KEY_IOS_DEVICE_CAPABILITIES = "UIRequiredDeviceCapabilities";
 	public const string B_KEY_IOS_USER_TRACKING_USAGE_DESC = "NSUserTrackingUsageDescription";
+	public const string B_KEY_IOS_FIREBASE_APP_STORE_RECEIPT_URL_CHECK_ENABLE = "FirebaseAppStoreReceiptURLCheckEnabled";
 
 	public const string B_KEY_IOS_ADS_NETWORK_ID = "SKAdNetworkIdentifier";
 	public const string B_KEY_IOS_ADS_NETWORK_ITEMS = "SKAdNetworkItems";
