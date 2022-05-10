@@ -76,6 +76,7 @@ public static partial class KCEditorDefine {
 
 	// 이름 {
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
+	public const string B_MODULE_N_LOCALIZE_SETTINGS = "com.unity.localization.settings";
 	public const string B_MODULE_N_INPUT_SYSTEM_SETTINGS = "com.unity.input.settings";
 
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
@@ -264,11 +265,8 @@ public static partial class KCEditorDefine {
 
 	// 계층 뷰
 	public const float B_OFFSET_HIERARCHY_TEXT = 15.0f;
-	public const float B_OFFSET_HIERARCHY_OUTLINE = 1.0f;
 
 	// 에디터 옵션 {
-	public const float U_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT = 0.25f;
-
 	public const string B_EDITOR_OPTS_REMOTE_COMPRESSION = "JPEG";
 	public const string B_EDITOR_OPTS_REMOTE_RESOLUTION = "Downsize";
 	public const string B_EDITOR_OPTS_VER_CONTROL = "Visible Meta Files";
@@ -286,7 +284,7 @@ public static partial class KCEditorDefine {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
 	};
 	// 에디터 옵션 }
-
+	
 	// 경고 팝업 {
 	public const string B_TEXT_ALERT_P_TITLE = "알림";
 	public const string B_TEXT_ALERT_P_OK_BTN = "확인";
@@ -1388,9 +1386,9 @@ public static partial class KCEditorDefine {
 	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_COOKIE_RESOLUTION = "m_AdditionalLightsCookieResolution";
 	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHT_SHADOW_MAP_RESOLUTION = "m_AdditionalLightsShadowmapResolution";
 
-	public const string B_PROPERTY_N_STRIP_DEBUG_VARIANTS = "m_StripDebugVariants";
-	public const string B_PROPERTY_N_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
-	public const string B_PROPERTY_N_STRIP_UNUSED_POST_PROCESSING_VARIANTS = "m_StripUnusedPostProcessingVariants";
+	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_DEBUG_VARIANTS = "m_StripDebugVariants";
+	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
+	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_UNUSED_POST_PROCESSING_VARIANTS = "m_StripUnusedPostProcessingVariants";
 	// 이름 }
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
@@ -1405,6 +1403,14 @@ public static partial class KCEditorDefine {
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
+#if LOCALIZE_MODULE_ENABLE
+	// 이름
+	public const string B_PROPERTY_N_LOCALIZE_INITIALIZE_SYNCHRONOUSLY = "m_InitializeSynchronously";
+
+	// 경로
+	public static readonly string B_ASSET_P_LOCALIZE_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}LocalizationSettings.asset";
+#endif			// #if LOCALIZE_MODULE_ENABLE
+
 #if INPUT_SYSTEM_MODULE_ENABLE
 	// 경로
 	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
