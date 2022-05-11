@@ -57,7 +57,7 @@ public static partial class KCDefine {
 
 	// 거리
 	public const float U_DISTANCE_CAMERA_PLANE = 500.0f * KCDefine.B_UNIT_SCALE;
-	public const float U_DISTANCE_CAMERA_FAR_PLANE = 100000.0f * KCDefine.B_UNIT_SCALE;
+	public const float U_DISTANCE_CAMERA_FAR_PLANE = 5000.0f * KCDefine.B_UNIT_SCALE;
 	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 0.1f;
 
 	// 비율 {
@@ -1031,6 +1031,7 @@ public static partial class KCDefine {
 
 	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color>";
 	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: <color=orange>{0:0.0}</color> ms";
+	public const string U_TEXT_FMT_DEVICE_INFO = "Graphics Device: <color=orange>{0}</color> <color=green>[{1}]</color>";
 
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_01 = "Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_02 = "Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
@@ -1052,6 +1053,7 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_SCREEN_FPS_TEXT = "FPSText";
 	public const string U_OBJ_N_SCREEN_FRAME_TIME_TEXT = "FrameTimeText";
+	public const string U_OBJ_N_SCREEN_DEVICE_INFO_TEXT = "DeviceInfoText";
 
 	public const string U_OBJ_N_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
 	public const string U_OBJ_N_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
