@@ -344,6 +344,27 @@ public static partial class KCEditorDefine {
 	public static readonly List<string> B_OBJ_N_SCENE_EDITOR_CAMERA_LIST = new List<string>() {
 		"SceneCamera", "Main Camera", "Preview Camera", "Preview Scene Camera"
 	};
+
+	public static readonly Dictionary<string, string> B_DIR_N_SCENE_DICT = new Dictionary<string, string>() {
+		[KCDefine.B_SCENE_N_INIT] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO_CREATE),
+		[KCDefine.B_SCENE_N_SETUP] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO_CREATE),
+		[KCDefine.B_SCENE_N_AGREE] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO_CREATE),
+		[KCDefine.B_SCENE_N_LATE_SETUP] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO_CREATE),
+
+		[KCDefine.B_SCENE_N_START] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE),
+		[KCDefine.B_SCENE_N_SPLASH] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE),
+		[KCDefine.B_SCENE_N_INTRO] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE),
+
+		[KCDefine.B_SCENE_N_TITLE] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ),
+		[KCDefine.B_SCENE_N_MAIN] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ),
+		[KCDefine.B_SCENE_N_GAME] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ),
+		[KCDefine.B_SCENE_N_LOADING] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ),
+		[KCDefine.B_SCENE_N_OVERLAY] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ),
+		[KCDefine.B_SCENE_N_TEST] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ),
+
+		[KCDefine.B_SCENE_N_MENU] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_SUB_AUTO_CREATE),
+		[KCDefine.B_SCENE_N_LEVEL_EDITOR] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR)
+	};
 	// 이름 }
 
 	// 경로 {
