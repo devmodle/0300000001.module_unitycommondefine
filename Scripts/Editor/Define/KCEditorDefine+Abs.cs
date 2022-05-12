@@ -77,6 +77,7 @@ public static partial class KCEditorDefine {
 	// 이름 {
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
 	public const string B_MODULE_N_LOCALIZE_SETTINGS = "com.unity.localization.settings";
+	public const string B_MODULE_N_ML_AGENTS_SETTINGS = "com.unity.ml-agents.settings";
 	public const string B_MODULE_N_INPUT_SYSTEM_SETTINGS = "com.unity.input.settings";
 
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
@@ -1432,6 +1433,19 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_LOCALIZE_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}LocalizationSettings.asset";
 #endif			// #if LOCALIZE_MODULE_ENABLE
 
+#if ML_AGENTS_MODULE_ENABLE
+	// 이름 {
+	public const string B_CLS_N_ML_AGENTS_SETTINGS = "Unity.MLAgents.MLAgentsSettings";
+	public const string B_PROPERTY_N_ML_AGENTS_CONNECT_TRAINER = "m_ConnectTrainer";
+
+	public const string B_ASSEMBLY_N_ML_AGENTS = "Unity.ML-Agents";
+	public const string B_ASSEMBLY_N_ML_AGENTS_EDITOR = "Editor";
+	// 이름 }
+
+	// 경로
+	public static readonly string B_ASSET_P_ML_AGENTS_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}MLAgentsSettings.mlagents.asset";
+#endif			// #if ML_AGENTS_MODULE_ENABLE
+
 #if INPUT_SYSTEM_MODULE_ENABLE
 	// 경로
 	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
@@ -1445,12 +1459,12 @@ public static partial class KCEditorDefine {
 #if NOTI_MODULE_ENABLE
 	// 경로
 	public static readonly List<(string, string)> B_NOTI_ICON_P_INFO_LIST = new List<(string, string)>() {
-		($"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_24x24}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-mdpi/icon24.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_36x36}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-hdpi/icon36.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_48x48}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-xhdpi/icon48.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_72x72}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-xxhdpi/icon72.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-xxxhdpi/icon96.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SUB_AUTO_CREATE_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_256x256}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable/icon256.png")
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_24x24}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-mdpi/icon24.png"),
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_36x36}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-hdpi/icon36.png"),
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_48x48}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-xhdpi/icon48.png"),
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_72x72}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-xxhdpi/icon72.png"),
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable-xxxhdpi/icon96.png"),
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_256x256}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}res/drawable/icon256.png")
 	};
 #endif			// #if NOTI_MODULE_ENABLE
 
