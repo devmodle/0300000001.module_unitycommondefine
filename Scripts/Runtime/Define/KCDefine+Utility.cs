@@ -1211,7 +1211,11 @@ public static partial class KCDefine {
 	// 식별자
 	public const string U_GROUP_ID_NOTI = "DefNotiGroup";
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
-	
+
+	// 이름
+	public const string U_ICON_N_ANDROID_NOTI_SMALL = "smallnotiicon";
+	public const string U_ICON_N_ANDROID_NOTI_LARGE = "largenotiicon";
+
 #if UNITY_ANDROID
 	// 그룹 정보
 	public const string U_GROUP_N_NOTI = KCDefine.U_GROUP_ID_NOTI;

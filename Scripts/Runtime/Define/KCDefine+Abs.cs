@@ -82,8 +82,11 @@ public static partial class KCDefine {
 	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
 	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
 
+	public const int B_UNIT_SECS_PER_HOUR = 360;
 	public const int B_UNIT_SECS_PER_MINUTE = 60;
+
 	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
+	public const int B_UNIT_MICRO_SECS_PER_SEC = 1000000;
 
 	public const int B_UNIT_DIGITS_PER_TEN = 10;
 	public const int B_UNIT_DIGITS_PER_HUNDRED = 100;
