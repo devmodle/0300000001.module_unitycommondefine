@@ -51,6 +51,7 @@ public struct STDespawnObjInfo {
 public struct STTouchResponderInfo {
 	public Sequence m_oAni;
 	public GameObject m_oTouchResponder;
+	public System.Action<GameObject> m_oCallback;
 }
 
 /** 식별자 정보 */

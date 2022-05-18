@@ -1029,7 +1029,7 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
 
-	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color>";
+	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color> <color=green>[{1}]</color>";
 	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: <color=orange>{0:0.0}</color> ms";
 	public const string U_TEXT_FMT_DEVICE_INFO = "Graphics Device: <color=orange>{0}</color> <color=green>[{1}]</color>";
 
@@ -1209,7 +1209,6 @@ public static partial class KCDefine {
 	public const float U_MAX_DELTA_T_NOTI_M_REQUEST_CHECK = 0.5f;
 
 	// 식별자
-	public const string U_GROUP_ID_NOTI = "DefNotiGroup";
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
 
 	// 이름
@@ -1218,8 +1217,8 @@ public static partial class KCDefine {
 
 #if UNITY_ANDROID
 	// 그룹 정보
-	public const string U_GROUP_N_NOTI = KCDefine.U_GROUP_ID_NOTI;
-	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_ID_NOTI;
+	public const string U_GROUP_N_NOTI = "NotiMNotiGroup";
+	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_N_NOTI;
 #endif			// #if UNITY_ANDROID
 #endif			// #if NOTI_ENABLE
 
@@ -1298,16 +1297,6 @@ public static partial class KCDefine {
 #endif			// #if MSG_PACK_ENABLE
 	// 경로 }
 #endif			// #if PURCHASE_MODULE_ENABLE
-
-#if NOTI_MODULE_ENABLE
-	// 경로 {
-#if MSG_PACK_ENABLE
-	public static readonly string U_DATA_P_NOTI_GROUP_IDS = $"{KCDefine.B_DIR_P_WRITABLE}NotiGroupIDs.bytes";
-#elif NEWTON_SOFT_JSON_MODULE_ENABLE
-	public static readonly string U_DATA_P_NOTI_GROUP_IDS = $"{KCDefine.B_DIR_P_WRITABLE}NotiGroupIDs.json";
-#endif			// #if MSG_PACK_ENABLE
-	// 경로 }
-#endif			// #if NOTI_MODULE_ENABLE
 
 #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
