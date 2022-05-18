@@ -5,13 +5,12 @@ using UnityEngine.UI;
 
 /*
 =====> 모듈 버전 정보 <=====
-- 버전 : "2.4.0"
-- 연관 파일 개수 : 28
+- 버전 : "2.4.1"
+- 연관 파일 개수 : 29
 
 =====> Experimental <=====
 - RenderingMode.Deferred
 - SpritePackerMode.SpriteAtlasV2
-- UniversalRenderPipelineAsset.useSRPBatcher
 - LightingSettings.Lightmapper.ProgressiveGPU
 
 =====> 씬 로딩 순서 <=====
