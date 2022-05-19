@@ -212,6 +212,7 @@ public static partial class KCDefine {
 	public const string B_FILE_EXTENSION_BYTES = ".bytes";
 	public const string B_FILE_EXTENSION_SHADER = ".shader";
 	public const string B_FILE_EXTENSION_PREFAB = ".prefab";
+	public const string B_FILE_EXTENSION_DS_STORE = ".DS_Store";
 	public const string B_FILE_EXTENSION_SPRITE_ATLAS = ".spriteatlas";
 	public const string B_FILE_EXTENSION_TMP_FONT_ASSET = KCDefine.B_FILE_EXTENSION_ASSET;
 
