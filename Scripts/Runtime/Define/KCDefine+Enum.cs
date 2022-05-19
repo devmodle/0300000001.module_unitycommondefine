@@ -246,6 +246,15 @@ public enum ELightmapMode {
 	[HideInInspector] MAX_VAL
 }
 
+/** 광원 맵 엔코딩 퀄리티 */
+public enum ELightmapEncodingQuality {
+	NONE = -1,
+	LOW,
+	NORM,
+	HIGH,
+	[HideInInspector] MAX_VAL
+}
+
 /** 그림자 옵션 */
 public enum EShadowCascadesOpts {
 	NONE = -1,
@@ -392,15 +401,6 @@ public enum EAccelerometerFrequency {
 	FREQUENCY_30_HZ = 30,
 	FREQUENCY_60_HZ = 60,
 	FREQUENCY_100_HZ = 100,
-	[HideInInspector] MAX_VAL
-}
-
-/** 광원 맵 엔코딩 퀄리티 */
-public enum ELightmapEncodingQuality {
-	NONE = -1,
-	LOW,
-	NORM,
-	HIGH,
 	[HideInInspector] MAX_VAL
 }
 

@@ -1029,7 +1029,7 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
 
-	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color> <color=green>[{1}]</color>";
+	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color> <color=green>[{1}, {2}]</color>";
 	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: <color=orange>{0:0.0}</color> ms";
 	public const string U_TEXT_FMT_DEVICE_INFO = "Graphics Device: <color=orange>{0}</color> <color=green>[{1}]</color>";
 
