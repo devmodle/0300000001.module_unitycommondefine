@@ -288,6 +288,7 @@ public enum EStartSceneEvent {
 	LOAD_SETUP_SCENE,
 	LOAD_AGREE_SCENE,
 	LOAD_LATE_SETUP_SCENE,
+	LOAD_INTRO_SCENE = EStartSceneEvent.LOAD_LATE_SETUP_SCENE,
 	[HideInInspector] MAX_VAL
 }
 
