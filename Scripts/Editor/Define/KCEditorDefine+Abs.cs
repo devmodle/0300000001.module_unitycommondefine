@@ -1257,7 +1257,17 @@ public static partial class KCEditorDefine {
 	// 계층 뷰
 	public static readonly Color B_COLOR_HIERARCHY_TEXT = new Color(1.0f, 0.27f, 0.0f, 1.0f);
 	public static readonly Color B_COLOR_HIERARCHY_OUTLINE = Color.black;
-	
+
+	// 알림 {
+	public static readonly string B_DATA_P_NOTI_PROJ_PROPERTIES = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidPlugin.androidlib/project.properties";
+	public static readonly string B_DATA_P_NOTI_ANDROID_MANIFEST = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidPlugin.androidlib/AndroidManifest.xml";
+
+	public static readonly List<(string, string)> B_NOTI_ICON_P_INFO_LIST = new List<(string, string)>() {
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidPlugin.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_SMALL}.png"),
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_192x192}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidPlugin.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_LARGE}.png")
+	};
+	// 알림 }
+
 	// iOS {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
 	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/iOS";
@@ -1459,17 +1469,6 @@ public static partial class KCEditorDefine {
 	// 경로
 	public static readonly string B_ASSET_P_UNIVERSAL_RP_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}UniversalRenderPipelineGlobalSettings.asset";
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-
-#if NOTI_MODULE_ENABLE
-	// 경로
-	public static readonly string B_DATA_P_NOTI_PROJ_PROPERTIES = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidPlugin.androidlib/project.properties";
-	public static readonly string B_DATA_P_NOTI_ANDROID_MANIFEST = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidPlugin.androidlib/AndroidManifest.xml";
-
-	public static readonly List<(string, string)> B_NOTI_ICON_P_INFO_LIST = new List<(string, string)>() {
-		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidPlugin.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_SMALL}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_192x192}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidPlugin.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_LARGE}.png")
-	};
-#endif			// #if NOTI_MODULE_ENABLE
 
 #if BURST_COMPILER_MODULE_ENABLE
 	// 경로

@@ -1134,6 +1134,7 @@ public static partial class KCDefine {
 	// 식별자
 	public const string U_KEY_FACEBOOK_M_INIT_CALLBACK = "FacebookMInitCallback";
 	public const string U_KEY_FACEBOOK_M_LOGIN_CALLBACK = "FacebookMLoginCallback";
+	public const string U_KEY_FACEBOOK_M_LOGOUT_CALLBACK = "FacebookMLogoutCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_SHOW_CALLBACK = "FacebookMViewStateShowCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_CLOSE_CALLBACK = "FacebookMViewStateCloseCallback";
 #endif			// #if FACEBOOK_MODULE_ENABLE
@@ -1141,6 +1142,7 @@ public static partial class KCDefine {
 #if FIREBASE_MODULE_ENABLE
 	// 식별자
 	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
+	public const string U_KEY_FIREBASE_M_LOGOUT_CALLBACK = "FirebaseMLogoutCallback";
 
 	// 노드
 	public const string U_NODE_FIREBASE_USER_INFOS = "UserInfos";
@@ -1149,7 +1151,7 @@ public static partial class KCDefine {
 	
 #if FIREBASE_AUTH_ENABLE
 	// 식별자 {
-	public const string U_KEY_FIREBASE_M_LOGIN_CALLBACK = "FirebaseMLoginCallback";	
+	public const string U_KEY_FIREBASE_M_LOGIN_CALLBACK = "FirebaseMLoginCallback";
 
 #if UNITY_IOS
 	public const string U_PROVIDER_ID_FIREBASE_M_APPLE_LOGIN = "apple.com";
@@ -1165,9 +1167,12 @@ public static partial class KCDefine {
 #endif			// #if FIREBASE_DB_ENABLE
 
 #if FIREBASE_CLOUD_MSG_ENABLE
-	// 식별자
+	// 식별자 {
 	public const string U_KEY_FIREBASE_M_TOKEN_CALLBACK = "FirebaseMTokenCallback";
 	public const string U_KEY_FIREBASE_M_NOTI_MSG_CALLBACK = "FirebaseMNotiMsgCallback";
+
+	public const string U_KEY_FIREBASE_M_LOAD_MSG_TOKEN_CALLBACK = "FirebaseMLoadMsgTokenCallback";
+	// 식별자 }
 #endif			// #if FIREBASE_CLOUD_MSG_ENABLE
 #endif			// #if FIREBASE_MODULE_ENABLE
 
@@ -1183,6 +1188,7 @@ public static partial class KCDefine {
 	// 식별자
 	public const string U_KEY_GAME_CM_INIT_CALLBACK = "GameCMInitCallback";
 	public const string U_KEY_GAME_CM_LOGIN_CALLBACK = "GameCMLoginCallback";
+	public const string U_KEY_GAME_CM_LOGOUT_CALLBACK = "GameCMLogoutCallback";
 	public const string U_KEY_GAME_CM_UPDATE_RECORD_CALLBACK = "GameCMUpdateRecordCallback";
 	public const string U_KEY_GAME_CM_UPDATE_ACHIEVEMENT_CALLBACK = "GameCMUpdateAchievementCallback";
 	public const string U_KEY_GAME_CM_RECEIVE_SERVER_SIDE_ACCESS_RESULT_CALLBACK = "GameCMReceiveServerSideAccessResultCallback";
