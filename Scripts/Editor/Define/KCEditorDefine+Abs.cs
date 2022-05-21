@@ -315,6 +315,10 @@ public static partial class KCEditorDefine {
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-1.4.0";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-2.6.0";
 	public const string B_NAME_APPLE_AUTH_PKGS = "AppleAuth-1.4.2";
+
+	// 알림
+	public const string B_TEXT_NOTI_PROJ_PROPERTIES = "android.library=true";
+	public const string B_TEXT_NOTI_ANDROID_MANIFEST = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"dante.distribution.android.notification\">\n</manifest>";
 	#endregion			// 기본
 
 	#region 런타임 상수
@@ -1252,6 +1256,10 @@ public static partial class KCEditorDefine {
 #endif			// #if NOTI_MODULE_ENABLE
 		// 02.UnityProject }
 	};
+
+	public static readonly List<(string, string)> B_ASSET_P_MOVE_INFO_LIST = new List<(string, string)>() {
+		// Do Something
+	};
 	// 경로 }
 	
 	// 계층 뷰
@@ -1431,10 +1439,6 @@ public static partial class KCEditorDefine {
 	
 	// 이름
 	public const string B_ACTIVITY_N_NOTI = "com.unity3d.player.UnityPlayerActivity";
-
-	// 텍스트
-	public const string B_TEXT_NOTI_PROJ_PROPERTIES = "android.library=true";
-	public const string B_TEXT_NOTI_ANDROID_MANIFEST = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"dante.distribution.android.notification\">\n</manifest>";
 #endif			// #if NOTI_MODULE_ENABLE
 	#endregion			// 조건부 상수
 

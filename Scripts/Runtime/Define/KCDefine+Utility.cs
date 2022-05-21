@@ -334,6 +334,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TIME_TEXT = "TimeText";
 	public const string U_OBJ_N_TIMES_TEXT = "TimesText";
 	public const string U_OBJ_N_PRICE_TEXT = "PriceText";
+	public const string U_OBJ_N_STATE_TEXT = "StateText";
 	public const string U_OBJ_N_LOADING_TEXT = "LoadingText";
 	public const string U_OBJ_N_COUNTDOWN_TEXT = "CountdownText";
 
@@ -390,6 +391,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CONTINUE_BTN = "ContinueBtn";
 
 	public const string U_OBJ_N_PAUSE_BTN = "PauseBtn";
+	public const string U_OBJ_N_SHARE_BTN = "ShareBtn";
 	public const string U_OBJ_N_ACQUIRE_BTN = "AcquireBtn";
 	public const string U_OBJ_N_RANKING_BTN = "RankingBtn";
 	public const string U_OBJ_N_PURCHASE_BTN = "PurchaseBtn";
@@ -507,6 +509,9 @@ public static partial class KCDefine {
 	public const string U_PROPERTY_N_SPRITE = "sprite";
 	public const string U_PROPERTY_N_TMP_TEXT = "text";
 	public const string U_PROPERTY_N_TMP_FONT = "font";
+	
+	public const string U_ICON_N_ANDROID_NOTI_SMALL = "smallnotiicon";
+	public const string U_ICON_N_ANDROID_NOTI_LARGE = "largenotiicon";
 	// 이름 }
 
 	// 태그 {
@@ -1217,10 +1222,6 @@ public static partial class KCDefine {
 
 	// 식별자
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
-
-	// 이름
-	public const string U_ICON_N_ANDROID_NOTI_SMALL = "smallnotiicon";
-	public const string U_ICON_N_ANDROID_NOTI_LARGE = "largenotiicon";
 
 #if UNITY_ANDROID
 	// 그룹 정보
