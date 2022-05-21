@@ -882,6 +882,7 @@ public static partial class KCDefine {
 	public static readonly string U_SND_P_G_SFX_POPUP_SHOW = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupShow";
 	public static readonly string U_SND_P_G_SFX_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupClose";
 
+	public static readonly string U_MAT_P_G_SKYBOX = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_Skybox";
 	public static readonly string U_MAT_P_G_UNIVERSAL_RP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPLit";
 	public static readonly string U_MAT_P_G_UNIVERSAL_RP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_UniversalRPUnlit";
 
@@ -1235,7 +1236,7 @@ public static partial class KCDefine {
 
 #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 개수
-	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 100;
+	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 250;
 
 	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "A";
