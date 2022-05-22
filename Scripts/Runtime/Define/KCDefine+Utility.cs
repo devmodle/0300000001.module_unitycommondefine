@@ -1230,6 +1230,14 @@ public static partial class KCDefine {
 #endif			// #if UNITY_ANDROID
 #endif			// #if NOTI_ENABLE
 
+#if BACKEND_MODULE_ENABLE
+	// 식별자
+	public const string U_KEY_BACKEND_M_INIT_CALLBACK = "BackendMInitCallback";
+	public const string U_KEY_BACKEND_M_LOGIN_CALLBACK = "BackendMLoginCallback";
+	public const string U_KEY_BACKEND_M_LOGIN_FAIL_CALLBACK = "BackendMLoginFailCallback";
+	public const string U_KEY_BACKEND_M_LOGOUT_CALLBACK = "BackendMLogoutCallback";
+#endif			// #if BACKEND_MODULE_ENABLE
+
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	// 이름
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
@@ -1277,10 +1285,10 @@ public static partial class KCDefine {
 #endif			// #if IRON_SRC_ADS_ENABLE
 #endif			// #if ADS_MODULE_ENABLE
 
-#if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
+#if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 	// 경로
 	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_PluginInfoTable";
-#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || FIREBASE_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
+#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 
 #if FACEBOOK_MODULE_ENABLE
 	// 권한
