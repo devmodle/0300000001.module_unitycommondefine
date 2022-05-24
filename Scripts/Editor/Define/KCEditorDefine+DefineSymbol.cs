@@ -149,6 +149,7 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_SCRIPT_TEMPLATE_ONLY = "SCRIPT_TEMPLATE_ONLY";
+	public const string DS_DEFINE_S_CAMERA_STACKING_ENABLE = "CAMERA_STACKING_ENABLE";
 
 	public const string DS_DEFINE_S_STORE_DIST_BUILD = "STORE_DIST_BUILD";
 	public const string DS_DEFINE_S_EDITOR_DIST_BUILD = "EDITOR_DIST_BUILD";
