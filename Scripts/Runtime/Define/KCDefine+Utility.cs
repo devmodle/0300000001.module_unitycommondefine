@@ -1230,13 +1230,13 @@ public static partial class KCDefine {
 #endif			// #if UNITY_ANDROID
 #endif			// #if NOTI_ENABLE
 
-#if BACKEND_MODULE_ENABLE
+#if PLAYFAB_MODULE_ENABLE
 	// 식별자
-	public const string U_KEY_BACKEND_M_INIT_CALLBACK = "BackendMInitCallback";
-	public const string U_KEY_BACKEND_M_LOGIN_CALLBACK = "BackendMLoginCallback";
-	public const string U_KEY_BACKEND_M_LOGIN_FAIL_CALLBACK = "BackendMLoginFailCallback";
-	public const string U_KEY_BACKEND_M_LOGOUT_CALLBACK = "BackendMLogoutCallback";
-#endif			// #if BACKEND_MODULE_ENABLE
+	public const string U_KEY_PLAYFAB_M_INIT_CALLBACK = "PlayfabMInitCallback";
+	public const string U_KEY_PLAYFAB_M_LOGIN_CALLBACK = "PlayfabMLoginCallback";
+	public const string U_KEY_PLAYFAB_M_LOGIN_FAIL_CALLBACK = "PlayfabMLoginFailCallback";
+	public const string U_KEY_PLAYFAB_M_LOGOUT_CALLBACK = "PlayfabMLogoutCallback";
+#endif			// #if PLAYFAB_MODULE_ENABLE
 
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	// 이름
