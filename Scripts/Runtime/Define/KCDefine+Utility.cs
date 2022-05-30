@@ -1231,6 +1231,7 @@ public static partial class KCDefine {
 
 #if PLAYFAB_MODULE_ENABLE
 	// 개수
+	public const int U_MAX_NUM_PLAYFAB_M_NOTICES = 10;
 	public const int U_MAX_NUM_PLAYFAB_M_STATISTICS = 100;
 
 	// 식별자 {
