@@ -80,6 +80,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_PLAYFAB_ENABLE = "PLAYFAB_ENABLE";
 	public const string DS_DEFINE_S_PLAYFAB_MODULE_ENABLE = "PLAYFAB_MODULE_ENABLE";
 
+	public const string DS_DEFINE_S_PLAYFAB_ANALYTICS_ENABLE = "PLAYFAB_ANALYTICS_ENABLE";
 	public const string DS_DEFINE_S_PLAYFAB_SERVER_API_ENABLE = "ENABLE_PLAYFABSERVER_API";
 	// 플레이 팹 }
 

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public static partial class KCDefine {
 	#region 기본
 	// 이름
-	public const string GS_OBJ_N_FXS = "FXObjs";
-	public const string GS_OBJ_N_BLOCKS = "BlockObjs";
+	public const string GS_OBJ_N_FX_ROOT = "FXs";
+	public const string GS_OBJ_N_OBJ_ROOT = "Objs";
 	#endregion			// 기본
 }

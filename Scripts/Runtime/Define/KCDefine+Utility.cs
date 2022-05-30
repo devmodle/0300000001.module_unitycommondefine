@@ -209,9 +209,9 @@ public static partial class KCDefine {
 	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
 	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
 
-	public const string U_KEY_BLOCK_KINDS = "BlockKinds";
-	public const string U_KEY_PREV_BLOCK_KINDS = "PrevBlockKinds";
-	public const string U_KEY_NEXT_BLOCK_KINDS = "NextBlockKinds";
+	public const string U_KEY_OBJ_KINDS = "ObjKinds";
+	public const string U_KEY_PREV_OBJ_KINDS = "PrevObjKinds";
+	public const string U_KEY_NEXT_OBJ_KINDS = "NextObjKinds";
 
 	public const string U_KEY_TUTORIAL_KINDS = "TutorialKinds";
 	public const string U_KEY_PREV_TUTORIAL_KINDS = "PrevTutorialKinds";
@@ -219,7 +219,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_RES_KINDS = "ResKinds";
 	public const string U_KEY_FX_RES_KINDS = "FXResKinds";
-	public const string U_KEY_BLOCK_RES_KINDS = "BlockResKinds";
+	public const string U_KEY_OBJ_RES_KINDS = "ObjResKinds";
 
 	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
 	public const string U_KEY_FMT_FX_KINDS = "FXKinds_{0:00}";
@@ -808,7 +808,7 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_TUTORIAL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
 	public static readonly string U_ASSET_P_G_FX_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
 	public static readonly string U_ASSET_P_G_SKILL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SkillInfoTable";
-	public static readonly string U_ASSET_P_G_BLOCK_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BlockInfoTable";
+	public static readonly string U_ASSET_P_G_OBJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ObjInfoTable";
 	public static readonly string U_ASSET_P_G_RES_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
 
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_01";
@@ -858,7 +858,7 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
 	public static readonly string U_TABLE_P_G_FX_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
 	public static readonly string U_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SkillInfoTable";
-	public static readonly string U_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_BlockInfoTable";
+	public static readonly string U_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ObjInfoTable";
 	public static readonly string U_TABLE_P_G_RES_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
 	
 	public static readonly string U_TABLE_P_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValTable_Common";
@@ -923,7 +923,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SKILL_INFO}.json";
-	public static readonly string U_RUNTIME_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_RES_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json";
 
 #if MSG_PACK_ENABLE
@@ -953,7 +953,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SKILL_INFO}.json";
-	public static readonly string U_RUNTIME_TABLE_P_G_BLOCK_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_BLOCK_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_RES_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json";
 
 #if MSG_PACK_ENABLE
@@ -1167,8 +1167,8 @@ public static partial class KCDefine {
 
 #if FIREBASE_DB_ENABLE
 	// 식별자
-	public const string U_KEY_FIREBASE_M_SAVE_DB_CALLBACK = "FirebaseMSaveDBCallback";
-	public const string U_KEY_FIREBASE_M_LOAD_DB_CALLBACK = "FirebaseMLoadDBCallback";
+	public const string U_KEY_FIREBASE_M_LOAD_DATAS_CALLBACK = "FirebaseMLoadDatasCallback";
+	public const string U_KEY_FIREBASE_M_SAVE_DATAS_CALLBACK = "FirebaseMSaveDatasCallback";
 #endif			// #if FIREBASE_DB_ENABLE
 
 #if FIREBASE_CLOUD_MSG_ENABLE
@@ -1230,11 +1230,16 @@ public static partial class KCDefine {
 #endif			// #if NOTI_ENABLE
 
 #if PLAYFAB_MODULE_ENABLE
-	// 식별자
+	// 개수
+	public const int U_MAX_NUM_PLAYFAB_M_STATISTICS = 100;
+
+	// 식별자 {
 	public const string U_KEY_PLAYFAB_M_INIT_CALLBACK = "PlayfabMInitCallback";
-	public const string U_KEY_PLAYFAB_M_LOGIN_CALLBACK = "PlayfabMLoginCallback";
-	public const string U_KEY_PLAYFAB_M_LOGIN_FAIL_CALLBACK = "PlayfabMLoginFailCallback";
-	public const string U_KEY_PLAYFAB_M_LOGOUT_CALLBACK = "PlayfabMLogoutCallback";
+
+	public const string U_KEY_PLAYFAB_M_HANDLE_LOGIN_RESPONSE_CALLBACK = "PlayfabMHandleLoginResponseCallback";
+	public const string U_KEY_PLAYFAB_M_HANDLE_LOGOUT_RESPONSE_CALLBACK = "PlayfabMHandleLogoutResponseCallback";
+	public const string U_KEY_PLAYFAB_M_HANDLE_LOAD_SERVER_TIME_RESPONSE_CALLBACK = "PlayfabMHandleLoadServerTimeResponseCallback";
+	// 식별자 }
 #endif			// #if PLAYFAB_MODULE_ENABLE
 
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
