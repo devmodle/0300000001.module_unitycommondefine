@@ -614,7 +614,7 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_VIBRATE_DURATION = "Duration";
 	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
 
-	public const string U_KEY_UNITY_MS_SHARE_MSG_CALLBACK = "UnityMSShareMsgCallback";
+	public const string U_KEY_UNITY_MS_SEND_SHARE_MSG_CALLBACK = "UnityMSSendShareMsgCallback";
 	public const string U_CLS_N_UNITY_MS_UNITY_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
 	public const string U_FUNC_N_UNITY_MS_UNITY_MSG_HANDLER = "handleUnityMsg";
 	// 유니티 메세지 전송자 }
@@ -1234,13 +1234,11 @@ public static partial class KCDefine {
 	public const int U_MAX_NUM_PLAYFAB_M_NOTICES = 10;
 	public const int U_MAX_NUM_PLAYFAB_M_STATISTICS = 100;
 
-	// 식별자 {
+	// 식별자
 	public const string U_KEY_PLAYFAB_M_INIT_CALLBACK = "PlayfabMInitCallback";
-
-	public const string U_KEY_PLAYFAB_M_HANDLE_LOGIN_RESPONSE_CALLBACK = "PlayfabMHandleLoginResponseCallback";
-	public const string U_KEY_PLAYFAB_M_HANDLE_LOGOUT_RESPONSE_CALLBACK = "PlayfabMHandleLogoutResponseCallback";
-	public const string U_KEY_PLAYFAB_M_HANDLE_LOAD_SERVER_TIME_RESPONSE_CALLBACK = "PlayfabMHandleLoadServerTimeResponseCallback";
-	// 식별자 }
+	public const string U_KEY_PLAYFAB_M_LOGIN_CALLBACK = "PlayfabMLoginCallback";
+	public const string U_KEY_PLAYFAB_M_LOGOUT_CALLBACK = "PlayfabMLogoutCallback";
+	public const string U_KEY_PLAYFAB_M_LOAD_SERVER_TIME_CALLBACK = "PlayfabMLoadServerTimeCallback";
 #endif			// #if PLAYFAB_MODULE_ENABLE
 
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
