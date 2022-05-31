@@ -375,6 +375,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SERVICES_BTN = "ServicesBtn";
 
 	public const string U_OBJ_N_LOGIN_BTN = "LoginBtn";
+	public const string U_OBJ_N_APPLE_LOGIN_BTN = "AppleLoginBtn";
+	public const string U_OBJ_N_FACEBOOK_LOGIN_BTN = "FacebookLoginBtn";
 	public const string U_OBJ_N_LOGOUT_BTN = "LogoutBtn";
 
 	public const string U_OBJ_N_LOAD_BTN = "LoadBtn";
