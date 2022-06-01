@@ -1435,6 +1435,19 @@ public static partial class KCEditorDefine {
 	// 이름 }
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
+#if BURST_COMPILER_MODULE_ENABLE
+	// 식별자 {
+	public const string B_KEY_BURST_AS_OPTIMIZE_FOR = "OptimizeFor";
+	public const string B_KEY_BURST_AS_MONO_BEHAVIOUR = "MonoBehaviour";
+	public const string B_KEY_BURST_AS_USE_PLATFORM_SDK_LINKER = "UsePlatformSDKLinker";
+
+	public const string B_KEY_BURST_AS_ENABLE_OPTIMISATIONS = "EnableOptimisations";
+	public const string B_KEY_BURST_AS_ENABLE_BURST_COMPILATION = "EnableBurstCompilation";
+	public const string B_KEY_BURST_AS_ENABLE_SAFETY_CHECKS = "EnableSafetyChecks";
+	public const string B_KEY_BURST_AS_ENABLE_DEBUG_IN_ALL_BUILDS = "EnableDebugInAllBuilds";
+	// 식별자 }
+#endif			// #if BURST_COMPILER_MODULE_ENABLE
+
 #if NOTI_MODULE_ENABLE
 	// 옵션
 	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
