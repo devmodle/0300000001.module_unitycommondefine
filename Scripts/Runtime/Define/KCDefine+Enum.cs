@@ -288,7 +288,7 @@ public enum EStartSceneEvent {
 	LOAD_SETUP_SCENE,
 	LOAD_AGREE_SCENE,
 	LOAD_LATE_SETUP_SCENE,
-	LOAD_INTRO_SCENE = EStartSceneEvent.LOAD_LATE_SETUP_SCENE,
+	LOAD_INTRO_SCENE,
 	[HideInInspector] MAX_VAL
 }
 
@@ -375,6 +375,16 @@ public enum EVibrateStyle {
 
 #region 조건부 상수
 #if UNITY_EDITOR
+/** MSAA 수준 */
+public enum EMSAAQuality {
+	NONE = -1,
+	DISABLE,
+	_2x,
+	_4x,
+	_8x,
+	[HideInInspector] MAX_VAL
+}
+
 /** DSP 버퍼 크기 */
 public enum EDSPBufferSize {
 	NONE = -1,
@@ -382,7 +392,7 @@ public enum EDSPBufferSize {
 	BEST_LATENCY = 256,
 	GOOD_LATENCY = 512,
 	BEST_PERFORMANCE = 1024,
-	[HideInInspector] MAX_VAL	
+	[HideInInspector] MAX_VAL
 }
 
 /** 종횡비 모드 */
