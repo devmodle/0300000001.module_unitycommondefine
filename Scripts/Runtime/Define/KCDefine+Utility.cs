@@ -168,6 +168,13 @@ public static partial class KCDefine {
 	public const string U_KEY_STAGE = "Stage";
 	public const string U_KEY_CHAPTER = "Chapter";
 
+	public const string U_KEY_ACTIVE = "Active";
+	public const string U_KEY_PASSIVE = "Passive";
+
+	public const string U_KEY_STAT = "Stat";
+	public const string U_KEY_BUFF = "Buff";
+	public const string U_KEY_DEBUFF = "Debuff";
+
 	public const string U_KEY_ID = "ID";
 	public const string U_KEY_STAGE_ID = "StageID";
 	public const string U_KEY_CHAPTER_ID = "ChapterID";
@@ -208,6 +215,10 @@ public static partial class KCDefine {
 	public const string U_KEY_SKILL_KINDS = "SkillKinds";
 	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
 	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
+
+	public const string U_KEY_ABILITY_KINDS = "AbilityKinds";
+	public const string U_KEY_PREV_ABILITY_KINDS = "PrevAbilityKinds";
+	public const string U_KEY_NEXT_ABILITY_KINDS = "NextAbilityKinds";
 
 	public const string U_KEY_OBJ_KINDS = "ObjKinds";
 	public const string U_KEY_PREV_OBJ_KINDS = "PrevObjKinds";
@@ -810,6 +821,7 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_TUTORIAL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
 	public static readonly string U_ASSET_P_G_FX_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
 	public static readonly string U_ASSET_P_G_SKILL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SkillInfoTable";
+	public static readonly string U_ASSET_P_G_ABILITY_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_AbilityInfoTable";
 	public static readonly string U_ASSET_P_G_OBJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ObjInfoTable";
 	public static readonly string U_ASSET_P_G_RES_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
 
@@ -860,6 +872,7 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
 	public static readonly string U_TABLE_P_G_FX_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
 	public static readonly string U_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_SkillInfoTable";
+	public static readonly string U_TABLE_P_G_ABILITY_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_AbilityInfoTable";
 	public static readonly string U_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ObjInfoTable";
 	public static readonly string U_TABLE_P_G_RES_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
 	
@@ -925,6 +938,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SKILL_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_ABILITY_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ABILITY_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_RES_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json";
 
@@ -955,6 +969,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_SKILL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SKILL_INFO}.json";
+	public static readonly string U_RUNTIME_TABLE_P_G_ABILITY_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ABILITY_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_RES_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json";
 
