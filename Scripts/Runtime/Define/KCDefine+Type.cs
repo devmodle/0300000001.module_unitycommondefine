@@ -60,6 +60,26 @@ public struct STIDInfo {
 	[Key(0)] public int m_nID;
 	[Key(1)] public int m_nStageID;
 	[Key(2)] public int m_nChapterID;
+
+	#region 함수
+	/** 생성자 */
+	public STIDInfo(SimpleJSON.JSONNode a_oIDInfo) {
+		m_nID = (!a_oIDInfo[KCDefine.U_KEY_ID].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[KCDefine.U_KEY_ID].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[KCDefine.U_KEY_ID].AsInt : KCDefine.B_VAL_0_INT;
+		m_nStageID = (!a_oIDInfo[KCDefine.U_KEY_STAGE_ID].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[KCDefine.U_KEY_STAGE_ID].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[KCDefine.U_KEY_STAGE_ID].AsInt : KCDefine.B_VAL_0_INT;
+		m_nChapterID = (!a_oIDInfo[KCDefine.U_KEY_CHAPTER_ID].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[KCDefine.U_KEY_CHAPTER_ID].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[KCDefine.U_KEY_CHAPTER_ID].AsInt : KCDefine.B_VAL_0_INT;
+	}
+	#endregion			// 함수
+
+	#region 조건부 함수
+#if UNITY_EDITOR || UNITY_STANDALONE
+	/** 식별자 정보를 생성한다 */
+	public void MakeIDInfo(SimpleJSON.JSONClass a_oOutIDInfo) {
+		a_oOutIDInfo.Add(KCDefine.U_KEY_ID, $"{Mathf.Clamp(m_nID, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_LEVEL_INFOS)}");
+		a_oOutIDInfo.Add(KCDefine.U_KEY_STAGE_ID, $"{Mathf.Clamp(m_nStageID, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_STAGE_INFOS)}");
+		a_oOutIDInfo.Add(KCDefine.U_KEY_CHAPTER_ID, $"{Mathf.Clamp(m_nChapterID, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
+	}
+#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
+	#endregion			// 조건부 함수
 }
 
 /** 인덱스 정보 */
@@ -122,7 +142,7 @@ public struct STDescInfo {
 
 	#region 조건부 함수
 #if UNITY_EDITOR || UNITY_STANDALONE
-	/** 에피소드 정보를 생성한다 */
+	/** 설명 정보를 생성한다 */
 	public void MakeDescInfo(SimpleJSON.JSONClass a_oOutDescInfo) {
 		a_oOutDescInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
 		a_oOutDescInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
