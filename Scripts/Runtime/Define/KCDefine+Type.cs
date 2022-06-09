@@ -151,6 +151,34 @@ public struct STDescInfo {
 	#endregion			// 조건부 함수
 }
 
+/** 지속 시간 정보 */
+[System.Serializable]
+public struct STDurationInfo {
+	public float m_fDelay;
+	public float m_fDuration;
+	public float m_fDeltaTime;
+
+	#region 함수
+	/** 생성자 */
+	public STDurationInfo(SimpleJSON.JSONNode a_oDurationInfo) {
+		m_fDelay = (!a_oDurationInfo[KCDefine.U_KEY_DELAY].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELAY].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELAY].AsFloat : KCDefine.B_VAL_0_FLT;
+		m_fDuration = (!a_oDurationInfo[KCDefine.U_KEY_DURATION].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DURATION].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DURATION].AsFloat : KCDefine.B_VAL_0_FLT;
+		m_fDeltaTime = (!a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].AsFloat : KCDefine.B_VAL_0_FLT;
+	}
+	#endregion			// 함수
+
+	#region 조건부 함수
+#if UNITY_EDITOR || UNITY_STANDALONE
+	/** 지속 시간 정보를 생성한다 */
+	public void MakeDurationInfo(SimpleJSON.JSONClass a_oOutDurationInfo) {
+		a_oOutDurationInfo.Add(KCDefine.U_KEY_DELAY, $"{m_fDelay}");
+		a_oOutDurationInfo.Add(KCDefine.U_KEY_DURATION, $"{m_fDuration}");
+		a_oOutDurationInfo.Add(KCDefine.U_KEY_DELTA_TIME, $"{m_fDeltaTime}");
+	}
+#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
+	#endregion			// 조건부 함수
+}
+
 /** 공용 타입 래퍼 */
 [MessagePackObject]
 public struct STCommonTypeWrapper {

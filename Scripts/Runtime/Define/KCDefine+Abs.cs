@@ -192,16 +192,16 @@ public static partial class KCDefine {
 	public const string B_STR_8_INT = "8";
 	public const string B_STR_9_INT = "9";
 
-	public const string B_STR_0_FLT = "0.0";
-	public const string B_STR_1_FLT = "1.0";
-	public const string B_STR_2_FLT = "2.0";
-	public const string B_STR_3_FLT = "3.0";
-	public const string B_STR_4_FLT = "4.0";
-	public const string B_STR_5_FLT = "5.0";
-	public const string B_STR_6_FLT = "6.0";
-	public const string B_STR_7_FLT = "7.0";
-	public const string B_STR_8_FLT = "8.0";
-	public const string B_STR_9_FLT = "9.0";
+	public const string B_STR_0_REAL = "0.0";
+	public const string B_STR_1_REAL = "1.0";
+	public const string B_STR_2_REAL = "2.0";
+	public const string B_STR_3_REAL = "3.0";
+	public const string B_STR_4_REAL = "4.0";
+	public const string B_STR_5_REAL = "5.0";
+	public const string B_STR_6_REAL = "6.0";
+	public const string B_STR_7_REAL = "7.0";
+	public const string B_STR_8_REAL = "8.0";
+	public const string B_STR_9_REAL = "9.0";
 
 	public const string B_FILE_EXTENSION_CSV = ".csv";
 	public const string B_FILE_EXTENSION_TXT = ".txt";
