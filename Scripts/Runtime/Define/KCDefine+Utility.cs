@@ -169,6 +169,7 @@ public static partial class KCDefine {
 	public const string U_KEY_WEAPON = "Weapon";
 	public const string U_KEY_ARMOR = "Armor";
 	public const string U_KEY_ACCESSORY = "Accessory";
+	public const string U_KEY_ATTACHMENTS = "Attachments";
 
 	public const string U_KEY_PKGS = "Pkgs";
 	public const string U_KEY_SINGLE = "Single";
@@ -254,6 +255,8 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 	public const string U_KEY_FMT_SKILL_KINDS = "SkillKinds_{0:00}";
 	public const string U_KEY_FMT_PRICE_KINDS = "PriceKinds_{0:00}";
+	public const string U_KEY_FMT_EQUIPMENTS_ITEM_KINDS = "EquipmentsItemKinds_{0:00}";
+	public const string U_KEY_FMT_ATTACHMENTS_ITEM_KINDS = "AttachmentsItemKinds_{0:00}";
 
 	public const string U_KEY_FMT_ABILITY_LV = "AbilityLV_{0:00}";
 	public const string U_KEY_FMT_ABILITY_KINDS = "AbilityKinds_{0:00}";
