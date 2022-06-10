@@ -43,8 +43,8 @@ using UnityEngine.UI;
 - 장르 번호 (1 자리) + 프로젝트 번호 (3 자리) + 서브 프로젝트 번호 (1 자리) + 확장 번호 (1 자리)
 
 =====> Kinds 값 지정 방식 <=====
-- Type 별로 10,000,000 단위로 값 지정
-- Kinds Type 별로 10,000 단위로 값 지정
+- Type 별로 100,000,000 단위로 값 지정
+- Kinds Type 별로 100,000 단위로 값 지정
 - Sub Kinds Type 별로 100 단위로 값 지정
 - Detail Sub Kinds Type 별로 1 단위로 값 지정
 
