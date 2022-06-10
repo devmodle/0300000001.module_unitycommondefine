@@ -46,7 +46,7 @@ public static partial class KCEditorDefine {
 	public const string B_SCENE_N_DIGITS_PATTERN = @"[\d.]";
 
 	// 버전
-	public const string B_VER_UNITY_MODULE = "2.5.0";
+	public const string B_VER_UNITY_MODULE = "2.5.1";
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
@@ -632,6 +632,8 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Scripts/Python/UnityModuleTagUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleTagUpdater.py"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Scripts/Python/UnityModuleUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleUpdater.py"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Scripts/Python/UnityModuleUploader.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleUploader.py"),
+
+		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Cloud/T_CloudScript.js", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Scripts/Cloud/CloudScript.js"),
 #endif			// #if SAMPLE_PROJ || DEVELOPMENT_PROJ
 
 		// 00.AutoCreate {
