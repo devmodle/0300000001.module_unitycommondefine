@@ -87,6 +87,7 @@ using UnityEngine.UI;
 public enum EEnumVal {
 	NONE = -1,
 	TYPE = KCDefine.B_UNIT_KINDS_PER_TYPE,
+	SUB_TYPE = KCDefine.B_UNIT_KINDS_PER_SUB_TYPE,
 	KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE,
 	SUB_KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE,
 	[HideInInspector] MAX_VAL,

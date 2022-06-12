@@ -126,6 +126,33 @@ public struct STDeviceInfo {
 	public List<string> m_oAndroidAdmobTestDeviceIDList;
 }
 
+/** 값 정보 */
+[System.Serializable]
+public struct STValInfo {
+	public string m_oVal;
+	public string m_oExtraVal;
+
+	public EValType m_eValType;
+
+	#region 프로퍼티
+	public long IntVal => long.TryParse(m_oVal, out long nVal) ? nVal : KCDefine.B_VAL_0_LONG;
+	public long IntExtraVal => long.TryParse(m_oExtraVal, out long nExtraVal) ? nExtraVal : KCDefine.B_VAL_0_LONG;
+
+	public double RealVal => double.TryParse(m_oVal, out double dblVal) ? dblVal : KCDefine.B_VAL_0_DBL;
+	public double RealExtraVal => double.TryParse(m_oExtraVal, out double dblExtraVal) ? dblExtraVal : KCDefine.B_VAL_0_DBL;
+	#endregion			// 프로퍼티
+
+	#region 함수
+	/** 생성자 */
+	public STValInfo(SimpleJSON.JSONNode a_oValInfo) {
+		m_oVal = (!a_oValInfo[KCDefine.U_KEY_VAL].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.U_KEY_VAL].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.U_KEY_VAL] : KCDefine.B_STR_0_INT;
+		m_oExtraVal = (!a_oValInfo[KCDefine.U_KEY_EXTRA_VAL].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.U_KEY_EXTRA_VAL].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.U_KEY_EXTRA_VAL] : KCDefine.B_STR_0_INT;
+
+		m_eValType = (!a_oValInfo[KCDefine.U_KEY_VAL_TYPE].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.U_KEY_VAL_TYPE].Value.Length > KCDefine.B_VAL_0_INT) ? (EValType)a_oValInfo[KCDefine.U_KEY_VAL_TYPE].AsInt : EValType.NONE;
+	}
+	#endregion			// 함수
+}
+
 /** 설명 정보 */
 [System.Serializable]
 public struct STDescInfo {
@@ -166,17 +193,6 @@ public struct STDurationInfo {
 		m_fDeltaTime = (!a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].AsFloat : KCDefine.B_VAL_0_FLT;
 	}
 	#endregion			// 함수
-
-	#region 조건부 함수
-#if UNITY_EDITOR || UNITY_STANDALONE
-	/** 지속 시간 정보를 생성한다 */
-	public void MakeDurationInfo(SimpleJSON.JSONClass a_oOutDurationInfo) {
-		a_oOutDurationInfo.Add(KCDefine.U_KEY_DELAY, $"{m_fDelay}");
-		a_oOutDurationInfo.Add(KCDefine.U_KEY_DURATION, $"{m_fDuration}");
-		a_oOutDurationInfo.Add(KCDefine.U_KEY_DELTA_TIME, $"{m_fDeltaTime}");
-	}
-#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
-	#endregion			// 조건부 함수
 }
 
 /** 공용 타입 래퍼 */

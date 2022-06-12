@@ -188,6 +188,7 @@ public static partial class KCDefine {
 	public const string U_KEY_DEBUFF = "Debuff";
 	public const string U_KEY_UPGRADE = "Upgrade";
 	public const string U_KEY_EXTRA_VAL = "ExtraVal";
+	public const string U_KEY_VAL_TYPE = "ValType";
 
 	public const string U_KEY_ID = "ID";
 	public const string U_KEY_PREV_ID = "PrevID";
@@ -615,15 +616,10 @@ public static partial class KCDefine {
 	public const string U_KEY_STR_T_ID = "ID";
 	public const string U_KEY_STR_T_STR = "Str";
 
-	// 값 테이블 {
-	public const int U_IDX_VAL_T_INT_VALS = 0;
-	public const int U_IDX_VAL_T_FLT_VALS = 1;
-	public const int U_IDX_VAL_T_STR_VALS = 2;
-
+	// 값 테이블
 	public const string U_KEY_VAL_T_ID = "ID";
 	public const string U_KEY_VAL_T_VAL = "Val";
 	public const string U_KEY_VAL_T_VAL_TYPE = "ValType";
-	// 값 테이블 }
 	
 	// 서비스 관리자 {
 	public const string U_KEY_SERVICES_M_RECEIPT = "json";
