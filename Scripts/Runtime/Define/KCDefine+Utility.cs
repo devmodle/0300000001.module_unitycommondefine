@@ -208,12 +208,11 @@ public static partial class KCDefine {
 	public const string U_KEY_PRODUCT_TYPE = "ProductType";
 	
 	public const string U_KEY_PRICE_KINDS = "PriceKinds";
-	public const string U_KEY_REWARD_KINDS = "RewardKinds";
 	public const string U_KEY_EPISODE_KINDS = "EpisodeKinds";
-	public const string U_KEY_OBJ_SALE_KINDS = "ObjSaleKinds";
-	public const string U_KEY_ITEM_SALE_KINDS = "ItemSaleKinds";
-	public const string U_KEY_SKILL_SALE_KINDS = "SkillSaleKinds";
-	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductSaleKinds";
+
+	public const string U_KEY_REWARD_KINDS = "RewardKinds";
+	public const string U_KEY_PREV_REWARD_KINDS = "PrevRewardKinds";
+	public const string U_KEY_NEXT_REWARD_KINDS = "NextRewardKinds";
 
 	public const string U_KEY_ITEM_KINDS = "ItemKinds";
 	public const string U_KEY_PREV_ITEM_KINDS = "PrevItemKinds";
@@ -244,8 +243,24 @@ public static partial class KCDefine {
 	public const string U_KEY_NEXT_TUTORIAL_KINDS = "NextTutorialKinds";
 
 	public const string U_KEY_RES_KINDS = "ResKinds";
-	public const string U_KEY_FX_RES_KINDS = "FXResKinds";
-	public const string U_KEY_OBJ_RES_KINDS = "ObjResKinds";
+	public const string U_KEY_PREV_RES_KINDS = "PrevResKinds";
+	public const string U_KEY_NEXT_RES_KINDS = "NextResKinds";
+
+	public const string U_KEY_OBJ_SALE_KINDS = "ObjSaleKinds";
+	public const string U_KEY_PREV_OBJ_SALE_KINDS = "PrevObjSaleKinds";
+	public const string U_KEY_NEXT_OBJ_SALE_KINDS = "NextObjSaleKinds";
+
+	public const string U_KEY_ITEM_SALE_KINDS = "ItemSaleKinds";
+	public const string U_KEY_PREV_ITEM_SALE_KINDS = "PrevItemSaleKinds";
+	public const string U_KEY_NEXT_ITEM_SALE_KINDS = "NextItemSaleKinds";
+
+	public const string U_KEY_SKILL_SALE_KINDS = "SkillSaleKinds";
+	public const string U_KEY_PREV_SKILL_SALE_KINDS = "PrevSkillSaleKinds";
+	public const string U_KEY_NEXT_SKILL_SALE_KINDS = "NextSkillSaleKinds";
+
+	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductSaleKinds";
+	public const string U_KEY_PREV_PRODUCT_SALE_KINDS = "PrevProductSaleKinds";
+	public const string U_KEY_NEXT_PRODUCT_SALE_KINDS = "NextProductSaleKinds";
 
 	public const string U_KEY_FMT_PRICE = "Price_{0:00}";
 	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
@@ -256,6 +271,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 	public const string U_KEY_FMT_SKILL_KINDS = "SkillKinds_{0:00}";
 	public const string U_KEY_FMT_PRICE_KINDS = "PriceKinds_{0:00}";
+	public const string U_KEY_FMT_REWARD_KINDS = "RewardKinds_{0:00}";
 	public const string U_KEY_FMT_EQUIPMENTS_ITEM_KINDS = "EquipmentsItemKinds_{0:00}";
 	public const string U_KEY_FMT_ATTACHMENTS_ITEM_KINDS = "AttachmentsItemKinds_{0:00}";
 
