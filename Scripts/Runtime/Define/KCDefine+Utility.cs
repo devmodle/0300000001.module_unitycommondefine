@@ -360,7 +360,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CLEAR_FAIL_UIS = "ClearFailUIs";
 	public const string U_OBJ_N_LOCK_UIS = "LockUIs";
 	public const string U_OBJ_N_OPEN_UIS = "OpenUIs";
+
 	public const string U_OBJ_N_GAUGE_UIS = "GaugeUIs";
+	public const string U_OBJ_N_HP_GAUGE_UIS = "HPGaugeUIs";
+	public const string U_OBJ_N_MP_GAUGE_UIS = "MPGaugeUIs";
+	public const string U_OBJ_N_EXP_GAUGE_UIS = "EXPGaugeUIs";
 
 	public const string U_OBJ_N_LOGIN_UIS = "LoginUIs";
 	public const string U_OBJ_N_LOGOUT_UIS = "LogoutUIs";
@@ -379,6 +383,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_NAME_TEXT = "NameText";
 	public const string U_OBJ_N_DESC_TEXT = "DescText";
 
+	public const string U_OBJ_N_LV_TEXT = "LVText";
+	public const string U_OBJ_N_HP_TEXT = "HPText";
+	public const string U_OBJ_N_MP_TEXT = "MPText";
+	public const string U_OBJ_N_EXP_TEXT = "EXPText";
+	
 	public const string U_OBJ_N_LEVEL_TEXT = "LevelText";
 	public const string U_OBJ_N_STAGE_TEXT = "StageText";
 	public const string U_OBJ_N_CHAPTER_TEXT = "ChapterText";
