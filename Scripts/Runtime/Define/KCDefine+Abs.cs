@@ -73,8 +73,8 @@ public static partial class KCDefine {
 	public const int B_UNIT_KINDS_PER_KINDS_TYPE = 100000;
 	public const int B_UNIT_KINDS_PER_SUB_KINDS_TYPE = 100;
 
-	public const int B_UNIT_IDS_PER_CHAPTER = 10000000;
-	public const int B_UNIT_IDS_PER_STAGE = 10000;
+	public const int B_UNIT_IDS_PER_IDS_02 = 10000;
+	public const int B_UNIT_IDS_PER_IDS_03 = 10000000;
 
 	public const int B_UNIT_NORM_VAL_TO_BYTE = 255;
 	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;

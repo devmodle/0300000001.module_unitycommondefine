@@ -57,22 +57,26 @@ public partial struct STTouchResponderInfo {
 /** 식별자 정보 */
 [MessagePackObject][System.Serializable]
 public partial struct STIDInfo {
-	[Key(0)] public int m_nID;
-	[Key(1)] public int m_nStageID;
-	[Key(2)] public int m_nChapterID;
+	[Key(0)] public int m_nID01;
+	[Key(1)] public int m_nID02;
+	[Key(2)] public int m_nID03;
 
 	#region 프로퍼티
-	public long UniqueLevelID => this.UniqueStageID + m_nID;
-	public long UniqueStageID => this.UniqueChapterID + (m_nStageID * (long)KCDefine.B_UNIT_IDS_PER_STAGE);
-	public long UniqueChapterID => m_nChapterID * (long)KCDefine.B_UNIT_IDS_PER_CHAPTER;
+	[IgnoreMember] public long UniqueID01 => this.UniqueID02 + m_nID01;
+	[IgnoreMember] public long UniqueID02 => this.UniqueID03 + (m_nID02 * (long)KCDefine.B_UNIT_IDS_PER_IDS_02);
+	[IgnoreMember] public long UniqueID03 => m_nID03 * (long)KCDefine.B_UNIT_IDS_PER_IDS_03;
 	#endregion			// 프로퍼티
 	
 	#region 함수
 	/** 생성자 */
 	public STIDInfo(SimpleJSON.JSONNode a_oIDInfo) {
-		m_nID = (!a_oIDInfo[KCDefine.U_KEY_ID].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[KCDefine.U_KEY_ID].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[KCDefine.U_KEY_ID].AsInt : KCDefine.B_VAL_0_INT;
-		m_nStageID = (!a_oIDInfo[KCDefine.U_KEY_STAGE_ID].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[KCDefine.U_KEY_STAGE_ID].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[KCDefine.U_KEY_STAGE_ID].AsInt : KCDefine.B_VAL_0_INT;
-		m_nChapterID = (!a_oIDInfo[KCDefine.U_KEY_CHAPTER_ID].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[KCDefine.U_KEY_CHAPTER_ID].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[KCDefine.U_KEY_CHAPTER_ID].AsInt : KCDefine.B_VAL_0_INT;
+		string oID01Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT);
+		string oID02Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT);
+		string oID03Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT);
+
+		m_nID01 = (!a_oIDInfo[oID01Key].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[oID01Key].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[oID01Key].AsInt : KCDefine.B_VAL_0_INT;
+		m_nID02 = (!a_oIDInfo[oID02Key].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[oID02Key].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[oID02Key].AsInt : KCDefine.B_VAL_0_INT;
+		m_nID03 = (!a_oIDInfo[oID03Key].Value.Equals(KCDefine.B_TEXT_NULL) && a_oIDInfo[oID03Key].Value.Length > KCDefine.B_VAL_0_INT) ? a_oIDInfo[oID03Key].AsInt : KCDefine.B_VAL_0_INT;
 	}
 	#endregion			// 함수
 
@@ -80,9 +84,13 @@ public partial struct STIDInfo {
 #if UNITY_EDITOR || UNITY_STANDALONE
 	/** 식별자 정보를 생성한다 */
 	public void MakeIDInfo(SimpleJSON.JSONClass a_oOutIDInfo) {
-		a_oOutIDInfo.Add(KCDefine.U_KEY_ID, $"{Mathf.Clamp(m_nID, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_LEVEL_INFOS)}");
-		a_oOutIDInfo.Add(KCDefine.U_KEY_STAGE_ID, $"{Mathf.Clamp(m_nStageID, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_STAGE_INFOS)}");
-		a_oOutIDInfo.Add(KCDefine.U_KEY_CHAPTER_ID, $"{Mathf.Clamp(m_nChapterID, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
+		string oID01Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT);
+		string oID02Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT);
+		string oID03Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT);
+
+		a_oOutIDInfo.Add(oID01Key, $"{Mathf.Clamp(m_nID01, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_LEVEL_INFOS)}");
+		a_oOutIDInfo.Add(oID02Key, $"{Mathf.Clamp(m_nID02, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_STAGE_INFOS)}");
+		a_oOutIDInfo.Add(oID03Key, $"{Mathf.Clamp(m_nID03, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
 	}
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE
 	#endregion			// 조건부 함수

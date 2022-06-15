@@ -16,6 +16,7 @@ public static partial class KCDefine {
 	
 	public const string L_LOG_KEY_LOG_TIME = "LogTime";
 	public const string L_LOG_KEY_INSTALL_TIME = "InstallTime";
+	public const string L_LOG_KEY_SHORT_LOG_TIME = "ShortLogTime";
 
 	public const string L_LOG_KEY_PARAMS_01 = "Params_01";
 	public const string L_LOG_KEY_PARAMS_02 = "Params_02";

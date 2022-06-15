@@ -190,11 +190,9 @@ public static partial class KCDefine {
 	public const string U_KEY_EXTRA_VAL = "ExtraVal";
 	public const string U_KEY_VAL_TYPE = "ValType";
 
-	public const string U_KEY_ID = "ID";
+	public const string U_KEY_ID = "ID";	
 	public const string U_KEY_PREV_ID = "PrevID";
 	public const string U_KEY_NEXT_ID = "NextID";
-	public const string U_KEY_STAGE_ID = "StageID";
-	public const string U_KEY_CHAPTER_ID = "ChapterID";
 
 	public const string U_KEY_SND = "Snd";
 	public const string U_KEY_FONT = "Font";
@@ -261,6 +259,10 @@ public static partial class KCDefine {
 	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductSaleKinds";
 	public const string U_KEY_PREV_PRODUCT_SALE_KINDS = "PrevProductSaleKinds";
 	public const string U_KEY_NEXT_PRODUCT_SALE_KINDS = "NextProductSaleKinds";
+
+	public const string U_KEY_FMT_ID = "ID_{0:00}";
+	public const string U_KEY_FMT_PREV_ID = "PrevID_{0:00}";
+	public const string U_KEY_FMT_NEXT_ID = "NextID_{0:00}";
 
 	public const string U_KEY_FMT_PRICE = "Price_{0:00}";
 	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
