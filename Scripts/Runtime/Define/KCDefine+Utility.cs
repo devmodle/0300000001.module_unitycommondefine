@@ -204,8 +204,6 @@ public static partial class KCDefine {
 
 	public const string U_KEY_DIFFICULTY = "Difficulty";
 	public const string U_KEY_PRODUCT_TYPE = "ProductType";
-	
-	public const string U_KEY_PRICE_KINDS = "PriceKinds";
 	public const string U_KEY_EPISODE_KINDS = "EpisodeKinds";
 
 	public const string U_KEY_REWARD_KINDS = "RewardKinds";
@@ -266,13 +264,15 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FMT_PRICE = "Price_{0:00}";
 	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
+	
+	public const string U_KEY_FMT_KINDS = "Kinds_{0:00}";
+	public const string U_KEY_FMT_PRICE_TYPE = "PriceType_{0:00}";
 
 	public const string U_KEY_FMT_FX_KINDS = "FXKinds_{0:00}";
 	public const string U_KEY_FMT_OBJ_KINDS = "ObjKinds_{0:00}";
 	public const string U_KEY_FMT_RES_KINDS = "ResKinds_{0:00}";
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 	public const string U_KEY_FMT_SKILL_KINDS = "SkillKinds_{0:00}";
-	public const string U_KEY_FMT_PRICE_KINDS = "PriceKinds_{0:00}";
 	public const string U_KEY_FMT_REWARD_KINDS = "RewardKinds_{0:00}";
 	public const string U_KEY_FMT_EQUIPMENTS_ITEM_KINDS = "EquipmentsItemKinds_{0:00}";
 	public const string U_KEY_FMT_ATTACHMENTS_ITEM_KINDS = "AttachmentsItemKinds_{0:00}";
@@ -372,7 +372,6 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LOGOUT_UIS = "LogoutUIs";
 
 	public const string U_OBJ_N_ADS_PRICE_UIS = "AdsPriceUIs";
-	public const string U_OBJ_N_GOODS_PRICE_UIS = "GoodsPriceUIs";
 	public const string U_OBJ_N_PURCHASE_PRICE_UIS = "PurchasePriceUIs";
 
 	public const string U_OBJ_N_TOP_MENU_UIS = "TopMenuUIs";
