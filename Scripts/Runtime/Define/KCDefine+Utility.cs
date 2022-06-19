@@ -265,8 +265,8 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_PRICE = "Price_{0:00}";
 	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
 	
-	public const string U_KEY_FMT_KINDS = "Kinds_{0:00}";
 	public const string U_KEY_FMT_PRICE_TYPE = "PriceType_{0:00}";
+	public const string U_KEY_FMT_PRICE_KINDS = "PriceKinds_{0:00}";
 
 	public const string U_KEY_FMT_FX_KINDS = "FXKinds_{0:00}";
 	public const string U_KEY_FMT_OBJ_KINDS = "ObjKinds_{0:00}";
@@ -285,7 +285,10 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_NUM_TARGETS = "NumTargets_{0:00}";
 	public const string U_KEY_FMT_NUM_UNLOCK_TARGETS = "NumUnlockTargets_{0:00}";
 
+	public const string U_KEY_FMT_TARGET_TYPE = "TargetType_{0:00}";
 	public const string U_KEY_FMT_TARGET_KINDS = "TargetKinds_{0:00}";
+
+	public const string U_KEY_FMT_UNLOCK_TARGET_TYPE = "UnlockTargetType_{0:00}";
 	public const string U_KEY_FMT_UNLOCK_TARGET_KINDS = "UnlockTargetKinds_{0:00}";
 
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
