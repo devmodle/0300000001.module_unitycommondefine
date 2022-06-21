@@ -765,6 +765,9 @@ public static partial class KCEditorDefine {
 #if EXTRA_SCRIPT_ENABLE || EXTRA_SCRIPT_MODULE_ENABLE
 		// 에디터 상수
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Editor/Define/T_KEditorDefine+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Global/Define/KEditorDefine+SubGlobal.cs"),
+
+		// 기본
+		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Base/T_CGSComponent.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Base/CGSComponent.cs"),
 		
 		// 상수
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Runtime/Define/T_KDefine+SubType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubType.cs"),
