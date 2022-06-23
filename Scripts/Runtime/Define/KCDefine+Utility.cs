@@ -325,6 +325,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_PIVOT_OBJS = "PivotObjs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
 	public const string U_OBJ_N_SCENE_STATIC_OBJS = "StaticObjs";
+
+	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
 	public const string U_OBJ_N_SCENE_ADDITIONAL_LIGHTS = "AdditionalLights";
 	public const string U_OBJ_N_SCENE_ADDITIONAL_CAMERAS = "AdditionalCameras";
 	public const string U_OBJ_N_SCENE_REFLECTION_PROBES = "ReflectionProbes";
@@ -345,217 +347,215 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_TOPMOST_UIS = "ScreenTopmostUIs";
 	public const string U_OBJ_N_SCREEN_ABS_UIS = "ScreenAbsUIs";
 
-	public const string U_OBJ_N_UP_BLIND_IMG = "UpBlindImg";
-	public const string U_OBJ_N_DOWN_BLIND_IMG = "DownBlindImg";
-	public const string U_OBJ_N_LEFT_BLIND_IMG = "LeftBlindImg";
-	public const string U_OBJ_N_RIGHT_BLIND_IMG = "RightBlindImg";
+	public const string U_OBJ_N_VIEWPORT = "VIEWPORT";
+	public const string U_OBJ_N_CONTENTS = "CONTENTS";
+	public const string U_OBJ_N_CONTENTS_UIS = "CONTENTS_UIS";
 
-	public const string U_OBJ_N_CONTENTS = "Contents";
-	public const string U_OBJ_N_CONTENTS_UIS = "ContentsUIs";
-	public const string U_OBJ_N_SCENE_EVENT_SYSTEM = "EventSystem";
+	public const string U_OBJ_N_UP_BLIND_IMG = "UP_BLIND_IMG";
+	public const string U_OBJ_N_DOWN_BLIND_IMG = "DOWN_BLIND_IMG";
+	public const string U_OBJ_N_LEFT_BLIND_IMG = "LEFT_BLIND_IMG";
+	public const string U_OBJ_N_RIGHT_BLIND_IMG = "RIGHT_BLIND_IMG";
 
-	public const string U_OBJ_N_DESC_UIS = "DescUIs";
-	public const string U_OBJ_N_PAGE_UIS = "PageUIs";
+	public const string U_OBJ_N_DESC_UIS = "DESC_UIS";
+	public const string U_OBJ_N_PAGE_UIS = "PAGE_UIS";
+	public const string U_OBJ_N_PAGINATION = "PAGINATION";
+
+	public const string U_OBJ_N_BLIND_UIS = "BLIND_UIS";
+	public const string U_OBJ_N_CLEAR_UIS = "CLEAR_UIS";
+	public const string U_OBJ_N_CLEAR_FAIL_UIS = "CLEAR_FAIL_UIS";
+
+	public const string U_OBJ_N_LOCK_UIS = "LOCK_UIS";
+	public const string U_OBJ_N_OPEN_UIS = "OPEN_UIS";
+
+	public const string U_OBJ_N_GAUGE_UIS = "GAUGE_UIS";
+	public const string U_OBJ_N_HP_GAUGE_UIS = "HP_GAUGE_UIS";
+	public const string U_OBJ_N_MP_GAUGE_UIS = "MP_GAUGE_UIS";
+	public const string U_OBJ_N_EXP_GAUGE_UIS = "EXP_GAUGE_UIS";
+
+	public const string U_OBJ_N_LOGIN_UIS = "LOGIN_UIS";
+	public const string U_OBJ_N_LOGOUT_UIS = "LOGOUT_UIS";
+
+	public const string U_OBJ_N_ADS_PRICE_UIS = "ADS_PRICE_UIS";
+	public const string U_OBJ_N_PURCHASE_PRICE_UIS = "PURCHASE_PRICE_UIS";
+
+	public const string U_OBJ_N_TOP_MENU_UIS = "TOP_MENU_UIS";
+	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BOTTOM_MENU_UIS";
 	
-	public const string U_OBJ_N_VIEWPORT = "Viewport";
-	public const string U_OBJ_N_PAGINATION = "Pagination";
+	public const string U_OBJ_N_TITLE_TEXT = "TITLE_TEXT";
+	public const string U_OBJ_N_MSG_TEXT = "MSG_TEXT";
+	public const string U_OBJ_N_PAGE_TEXT = "PAGE_TEXT";
 
-	public const string U_OBJ_N_BLIND_UIS = "BlindUIs";
-	public const string U_OBJ_N_CLEAR_UIS = "ClearUIs";
-	public const string U_OBJ_N_CLEAR_FAIL_UIS = "ClearFailUIs";
-	public const string U_OBJ_N_LOCK_UIS = "LockUIs";
-	public const string U_OBJ_N_OPEN_UIS = "OpenUIs";
+	public const string U_OBJ_N_NAME_TEXT = "NAME_TEXT";
+	public const string U_OBJ_N_DESC_TEXT = "DESC_TEXT";
 
-	public const string U_OBJ_N_GAUGE_UIS = "GaugeUIs";
-	public const string U_OBJ_N_HP_GAUGE_UIS = "HPGaugeUIs";
-	public const string U_OBJ_N_MP_GAUGE_UIS = "MPGaugeUIs";
-	public const string U_OBJ_N_EXP_GAUGE_UIS = "EXPGaugeUIs";
-
-	public const string U_OBJ_N_LOGIN_UIS = "LoginUIs";
-	public const string U_OBJ_N_LOGOUT_UIS = "LogoutUIs";
-
-	public const string U_OBJ_N_ADS_PRICE_UIS = "AdsPriceUIs";
-	public const string U_OBJ_N_PURCHASE_PRICE_UIS = "PurchasePriceUIs";
-
-	public const string U_OBJ_N_TOP_MENU_UIS = "TopMenuUIs";
-	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BottomMenuUIs";
+	public const string U_OBJ_N_LV_TEXT = "LV_TEXT";
+	public const string U_OBJ_N_HP_TEXT = "HP_TEXT";
+	public const string U_OBJ_N_MP_TEXT = "MP_TEXT";
+	public const string U_OBJ_N_EXP_TEXT = "EXP_TEXT";
 	
-	public const string U_OBJ_N_TITLE_TEXT = "TitleText";
-	public const string U_OBJ_N_MSG_TEXT = "MsgText";
-	public const string U_OBJ_N_PAGE_TEXT = "PageText";
+	public const string U_OBJ_N_LEVEL_TEXT = "LEVEL_TEXT";
+	public const string U_OBJ_N_STAGE_TEXT = "STAGE_TEXT";
+	public const string U_OBJ_N_CHAPTER_TEXT = "CHAPTER_TEXT";
 
-	public const string U_OBJ_N_NAME_TEXT = "NameText";
-	public const string U_OBJ_N_DESC_TEXT = "DescText";
+	public const string U_OBJ_N_VER_TEXT = "VER_TEXT";
+	public const string U_OBJ_N_NUM_TEXT = "NUM_TEXT";
+	public const string U_OBJ_N_TIME_TEXT = "TIME_TEXT";
+	public const string U_OBJ_N_TIMES_TEXT = "TIMES_TEXT";
+	public const string U_OBJ_N_PRICE_TEXT = "PRICE_TEXT";
+	public const string U_OBJ_N_STATE_TEXT = "STATE_TEXT";
+	public const string U_OBJ_N_LOADING_TEXT = "LOADING_TEXT";
+	public const string U_OBJ_N_COUNTDOWN_TEXT = "COUNTDOWN_TEXT";
 
-	public const string U_OBJ_N_LV_TEXT = "LVText";
-	public const string U_OBJ_N_HP_TEXT = "HPText";
-	public const string U_OBJ_N_MP_TEXT = "MPText";
-	public const string U_OBJ_N_EXP_TEXT = "EXPText";
+	public const string U_OBJ_N_RECORD_TEXT = "RECORD_TEXT";
+	public const string U_OBJ_N_BEST_RECORD_TEXT = "BEST_RECORD_TEXT";
+
+	public const string U_OBJ_N_NUM_COINS_TEXT = "NUM_COINS_TEXT";
+	public const string U_OBJ_N_NUM_MARKS_TEXT = "NUM_MARKS_TEXT";
+	public const string U_OBJ_N_NUM_MARKS_STATE_TEXT = "NUM_MARKS_STATE_TEXT";
+
+	public const string U_OBJ_N_BG_IMG = "BG_IMG";
+	public const string U_OBJ_N_COINS_IMG = "COINS_IMG";
+	public const string U_OBJ_N_BLIND_IMG = "BLIND_IMG";
+	public const string U_OBJ_N_SPLASH_IMG = "SPLASH_IMG";
+	public const string U_OBJ_N_FOREGROUND_IMG = "FOREGROUND_IMG";
+
+	public const string U_OBJ_N_MARK_IMG = "MARK_IMG";
+	public const string U_OBJ_N_CHECK_IMG = "CHECK_IMG";
+	public const string U_OBJ_N_RIBBON_IMG = "RIBBON_IMG";
+	public const string U_OBJ_N_PERCENT_IMG = "PERCENT_IMG";
+	public const string U_OBJ_N_COMPLETE_IMG = "COMPLETE_IMG";
+
+	public const string U_OBJ_N_LOCK_IMG = "LOCK_IMG";
+	public const string U_OBJ_N_ICON_IMG = "ICON_IMG";
+	public const string U_OBJ_N_ITEM_IMG = "ITEM_IMG";
+	public const string U_OBJ_N_REWARD_IMG = "REWARD_IMG";
+
+	public const string U_OBJ_N_OK_BTN = "OK_BTN";
+	public const string U_OBJ_N_BACK_BTN = "BACK_BTN";
+	public const string U_OBJ_N_CANCEL_BTN = "CANCEL_BTN";
+	public const string U_OBJ_N_OPEN_BTN = "OPEN_BTN";
+	public const string U_OBJ_N_CLOSE_BTN = "CLOSE_BTN";
+
+	public const string U_OBJ_N_A_SET_BTN = "A_SET_BTN";
+	public const string U_OBJ_N_B_SET_BTN = "B_SET_BTN";
+
+	public const string U_OBJ_N_AGREE_BTN = "AGREE_BTN";
+	public const string U_OBJ_N_PRIVACY_BTN = "PRIVACY_BTN";
+	public const string U_OBJ_N_SERVICES_BTN = "SERVICES_BTN";
+
+	public const string U_OBJ_N_LOGIN_BTN = "LOGIN_BTN";
+	public const string U_OBJ_N_APPLE_LOGIN_BTN = "APPLE_LOGIN_BTN";
+	public const string U_OBJ_N_FACEBOOK_LOGIN_BTN = "FACEBOOK_LOGIN_BTN";
+	public const string U_OBJ_N_LOGOUT_BTN = "LOGOUT_BTN";
+
+	public const string U_OBJ_N_LOAD_BTN = "LOAD_BTN";
+	public const string U_OBJ_N_SAVE_BTN = "SAVE_BTN";
+	public const string U_OBJ_N_PLAY_BTN = "PLAY_BTN";
+	public const string U_OBJ_N_STORE_BTN = "STORE_BTN";
+	public const string U_OBJ_N_SETTINGS_BTN = "SETTINGS_BTN";
+
+	public const string U_OBJ_N_PREV_BTN = "PREV_BTN";
+	public const string U_OBJ_N_NEXT_BTN = "NEXT_BTN";
+	public const string U_OBJ_N_RETRY_BTN = "RETRY_BTN";
+	public const string U_OBJ_N_LEAVE_BTN = "LEAVE_BTN";
+	public const string U_OBJ_N_CONTINUE_BTN = "CONTINUE_BTN";
+
+	public const string U_OBJ_N_PAUSE_BTN = "PAUSE_BTN";
+	public const string U_OBJ_N_SHARE_BTN = "SHARE_BTN";
+	public const string U_OBJ_N_ACQUIRE_BTN = "ACQUIRE_BTN";
+	public const string U_OBJ_N_RANKING_BTN = "RANKING_BTN";
+	public const string U_OBJ_N_PURCHASE_BTN = "PURCHASE_BTN";
+	public const string U_OBJ_N_RESTORE_BTN = "RESTORE_BTN";
+	public const string U_OBJ_N_REWARD_ADS_BTN = "REWARD_ADS_BTN";
+	public const string U_OBJ_N_REMOVE_ADS_BTN = "REMOVE_ADS_BTN";
+
+	public const string U_OBJ_N_SND_BTN = "SND_BTN";
+	public const string U_OBJ_N_BG_SND_BTN = "BG_SND_BTN";
+	public const string U_OBJ_N_FX_SNDS_BTN = "FX_SNDS_BTN";
+	public const string U_OBJ_N_VIBRATE_BTN = "VIBRATE_BTN";
+	public const string U_OBJ_N_NOTI_BTN = "NOTI_BTN";
+	public const string U_OBJ_N_REVIEW_BTN = "REVIEW_BTN";
+	public const string U_OBJ_N_SUPPORTS_BTN = "SUPPORTS_BTN";
+	public const string U_OBJ_N_SYNC_BTN = "SYNC_BTN";
+	public const string U_OBJ_N_LOCALIZE_BTN = "LOCALIZE_BTN";
+
+	public const string U_OBJ_N_GAME_OBJ = "GAME_OBJ";
+	public const string U_OBJ_N_ALERT_POPUP = "ALERT_POPUP";
+
+	public const string U_OBJ_N_TEXT = "TEXT";
+	public const string U_OBJ_N_LOCALIZE_TEXT = "LOCALIZE_TEXT";
+
+	public const string U_OBJ_N_TMP_TEXT = "TMP_TEXT";
+	public const string U_OBJ_N_TMP_LOCALIZE_TEXT = "TMP_LOCALIZE_TEXT";
+
+	public const string U_OBJ_N_IMG = "IMG";
+	public const string U_OBJ_N_RAW_IMG = "RAW_IMG";
+	public const string U_OBJ_N_FOCUS_IMG = "FOCUS_IMG";
+	public const string U_OBJ_N_GAUGE_IMG = "GAUGE_IMG";
+
+	public const string U_OBJ_N_TEXT_BTN = "TEXT_BTN";
+	public const string U_OBJ_N_TEXT_SCALE_BTN = "TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_TMP_TEXT_BTN = "TMP_TEXT_BTN";
+	public const string U_OBJ_N_TMP_TEXT_SCALE_BTN = "TMP_TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_LOCALIZE_TEXT_BTN = "LOCALIZE_TEXT_BTN";
+	public const string U_OBJ_N_LOCALIZE_TEXT_SCALE_BTN = "LOCALIZE_TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_TMP_LOCALIZE_TEXT_BTN = "TMP_LOCALIZE_TEXT_BTN";
+	public const string U_OBJ_N_TMP_LOCALIZE_TEXT_SCALE_BTN = "TMP_LOCALIZE_TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_IMG_BTN = "IMG_BTN";
+	public const string U_OBJ_N_IMG_SCALE_BTN = "IMG_SCALE_BTN";
+
+	public const string U_OBJ_N_IMG_TEXT_BTN = "IMG_TEXT_BTN";
+	public const string U_OBJ_N_IMG_TEXT_SCALE_BTN = "IMG_TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_TMP_IMG_TEXT_BTN = "TMP_IMG_TEXT_BTN";
+	public const string U_OBJ_N_TMP_IMG_TEXT_SCALE_BTN = "TMP_IMG_TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_IMG_LOCALIZE_TEXT_BTN = "IMG_LOCALIZE_TEXT_BTN";
+	public const string U_OBJ_N_IMG_LOCALIZE_TEXT_SCALE_BTN = "IMG_LOCALIZE_TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_BTN = "TMP_IMG_LOCALIZE_TEXT_BTN";
+	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN = "TMP_IMG_LOCALIZE_TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_DROPDOWN = "DROPDOWN";
+	public const string U_OBJ_N_INPUT_FIELD = "INPUT_FIELD";
+
+	public const string U_OBJ_N_TMP_DROPDOWN = "TMP_DROPDOWN";
+	public const string U_OBJ_N_TMP_INPUT_FIELD = "TMP_INPUT_FIELD";
+
+	public const string U_OBJ_N_PAGE_VIEW = "PAGE_VIEW";
+	public const string U_OBJ_N_SCROLL_VIEW = "SCROLL_VIEW";
+	public const string U_OBJ_N_RECYCLE_VIEW = "RECYCLE_VIEW";
+
+	public const string U_OBJ_N_LEVEL_SCROLL_VIEW = "LEVEL_SCROLL_VIEW";
+	public const string U_OBJ_N_STAGE_SCROLL_VIEW = "STAGE_SCROLL_VIEW";
+	public const string U_OBJ_N_CHAPTER_SCROLL_VIEW = "CHAPTER_SCROLL_VIEW";
+
+	public const string U_OBJ_N_SPRITE = "SPRITE";
+	public const string U_OBJ_N_LINE_FX = "LINE_FX";
+	public const string U_OBJ_N_PARTICLE_FX = "PARTICLE_FX";
+	public const string U_OBJ_N_REFLECTION_PROBE = "REFLECTION_PROBE";
+	public const string U_OBJ_N_LIGHT_PROBE_GROUP = "LIGHT_PROBE_GROUP";
 	
-	public const string U_OBJ_N_LEVEL_TEXT = "LevelText";
-	public const string U_OBJ_N_STAGE_TEXT = "StageText";
-	public const string U_OBJ_N_CHAPTER_TEXT = "ChapterText";
+	public const string U_OBJ_N_DRAG_RESPONDER = "DRAG_RESPONDER";
+	public const string U_OBJ_N_TOUCH_RESPONDER = "TOUCH_RESPONDER";
+	public const string U_OBJ_N_BG_TOUCH_RESPONDER = "BG_TOUCH_RESPONDER";
 
-	public const string U_OBJ_N_VER_TEXT = "VerText";
-	public const string U_OBJ_N_NUM_TEXT = "NumText";
-	public const string U_OBJ_N_TIME_TEXT = "TimeText";
-	public const string U_OBJ_N_TIMES_TEXT = "TimesText";
-	public const string U_OBJ_N_PRICE_TEXT = "PriceText";
-	public const string U_OBJ_N_STATE_TEXT = "StateText";
-	public const string U_OBJ_N_LOADING_TEXT = "LoadingText";
-	public const string U_OBJ_N_COUNTDOWN_TEXT = "CountdownText";
+	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "INDICATOR_TOUCH_RESPONDER";
+	public const string U_OBJ_N_SCREEN_FADE_TOUCH_RESPONDER = "SCREEN_FADE_TOUCH_RESPONDER";
 
-	public const string U_OBJ_N_RECORD_TEXT = "RecordText";
-	public const string U_OBJ_N_BEST_RECORD_TEXT = "BestRecordText";
+	public const string U_OBJ_N_FMT_TOGGLE = "TOGGLE_{0:00}";
+	public const string U_OBJ_N_FMT_NUM_TEXT = "NUM_TEXT_{0:00}";
+	public const string U_OBJ_N_FMT_MARK_IMG = "MARK_IMG_{0:00}";
+	public const string U_OBJ_N_FMT_PAGE_UIS = "PAGE_UIS_{0:00}";
+	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "POPUP_TOUCH_RESPONDER_{0}";
 
-	public const string U_OBJ_N_NUM_COINS_TEXT = "NumCoinsText";
-	public const string U_OBJ_N_NUM_MARKS_TEXT = "NumMarksText";
-	public const string U_OBJ_N_NUM_MARKS_STATE_TEXT = "NumMarksStateText";
-
-	public const string U_OBJ_N_BG_IMG = "BGImg";
-	public const string U_OBJ_N_COINS_IMG = "CoinsImg";
-	public const string U_OBJ_N_BLIND_IMG = "BlindImg";
-	public const string U_OBJ_N_SPLASH_IMG = "SplashImg";
-
-	public const string U_OBJ_N_MARK_IMG = "MarkImg";
-	public const string U_OBJ_N_CHECK_IMG = "CheckImg";
-	public const string U_OBJ_N_RIBBON_IMG = "RibbonImg";
-	public const string U_OBJ_N_PERCENT_IMG = "PercentImg";
-	public const string U_OBJ_N_COMPLETE_IMG = "CompleteImg";
-
-	public const string U_OBJ_N_LOCK_IMG = "LockImg";
-	public const string U_OBJ_N_ICON_IMG = "IconImg";
-	public const string U_OBJ_N_ITEM_IMG = "ItemImg";
-	public const string U_OBJ_N_REWARD_IMG = "RewardImg";
-
-	public const string U_OBJ_N_OK_BTN = "OKBtn";
-	public const string U_OBJ_N_BACK_BTN = "BackBtn";
-	public const string U_OBJ_N_CANCEL_BTN = "CancelBtn";
-	public const string U_OBJ_N_OPEN_BTN = "OpenBtn";
-	public const string U_OBJ_N_CLOSE_BTN = "CloseBtn";
-
-	public const string U_OBJ_N_A_SET_BTN = "ASetBtn";
-	public const string U_OBJ_N_B_SET_BTN = "BSetBtn";
-
-	public const string U_OBJ_N_AGREE_BTN = "AgreeBtn";
-	public const string U_OBJ_N_PRIVACY_BTN = "PrivacyBtn";
-	public const string U_OBJ_N_SERVICES_BTN = "ServicesBtn";
-
-	public const string U_OBJ_N_LOGIN_BTN = "LoginBtn";
-	public const string U_OBJ_N_APPLE_LOGIN_BTN = "AppleLoginBtn";
-	public const string U_OBJ_N_FACEBOOK_LOGIN_BTN = "FacebookLoginBtn";
-	public const string U_OBJ_N_LOGOUT_BTN = "LogoutBtn";
-
-	public const string U_OBJ_N_LOAD_BTN = "LoadBtn";
-	public const string U_OBJ_N_SAVE_BTN = "SaveBtn";
-
-	public const string U_OBJ_N_PLAY_BTN = "PlayBtn";
-	public const string U_OBJ_N_STORE_BTN = "StoreBtn";
-	public const string U_OBJ_N_SETTINGS_BTN = "SettingsBtn";
-
-	public const string U_OBJ_N_PREV_BTN = "PrevBtn";
-	public const string U_OBJ_N_NEXT_BTN = "NextBtn";
-	public const string U_OBJ_N_RETRY_BTN = "RetryBtn";
-	public const string U_OBJ_N_LEAVE_BTN = "LeaveBtn";
-	public const string U_OBJ_N_CONTINUE_BTN = "ContinueBtn";
-
-	public const string U_OBJ_N_PAUSE_BTN = "PauseBtn";
-	public const string U_OBJ_N_SHARE_BTN = "ShareBtn";
-	public const string U_OBJ_N_ACQUIRE_BTN = "AcquireBtn";
-	public const string U_OBJ_N_RANKING_BTN = "RankingBtn";
-	public const string U_OBJ_N_PURCHASE_BTN = "PurchaseBtn";
-	public const string U_OBJ_N_RESTORE_BTN = "RestoreBtn";
-	public const string U_OBJ_N_REWARD_ADS_BTN = "RewardAdsBtn";
-	public const string U_OBJ_N_REMOVE_ADS_BTN = "RemoveAdsBtn";
-
-	public const string U_OBJ_N_SND_BTN = "SndBtn";
-	public const string U_OBJ_N_BG_SND_BTN = "BGSndBtn";
-	public const string U_OBJ_N_FX_SNDS_BTN = "FXSndsBtn";
-	public const string U_OBJ_N_VIBRATE_BTN = "VibrateBtn";
-	public const string U_OBJ_N_NOTI_BTN = "NotiBtn";
-	public const string U_OBJ_N_REVIEW_BTN = "ReviewBtn";
-	public const string U_OBJ_N_SUPPORTS_BTN = "SupportsBtn";
-	public const string U_OBJ_N_SYNC_BTN = "SyncBtn";
-	public const string U_OBJ_N_LOCALIZE_BTN = "LocalizeBtn";
-
-	public const string U_OBJ_N_EMPTY = "Empty";
-	public const string U_OBJ_N_GAME_OBJ = "GameObj";
-	public const string U_OBJ_N_ALERT_POPUP = "AlertPopup";
-
-	public const string U_OBJ_N_TEXT = "Text";
-	public const string U_OBJ_N_LOCALIZE_TEXT = "LocalizeText";
-
-	public const string U_OBJ_N_TMP_TEXT = "TMPText";
-	public const string U_OBJ_N_TMP_LOCALIZE_TEXT = "TMPLocalizeText";
-
-	public const string U_OBJ_N_IMG = "Img";
-	public const string U_OBJ_N_RAW_IMG = "RawImg";
-	public const string U_OBJ_N_FOCUS_IMG = "FocusImg";
-	public const string U_OBJ_N_GAUGE_IMG = "GaugeImg";
-
-	public const string U_OBJ_N_TEXT_BTN = "TextBtn";
-	public const string U_OBJ_N_TEXT_SCALE_BTN = "TextScaleBtn";
-
-	public const string U_OBJ_N_TMP_TEXT_BTN = "TMPTextBtn";
-	public const string U_OBJ_N_TMP_TEXT_SCALE_BTN = "TMPTextScaleBtn";
-
-	public const string U_OBJ_N_LOCALIZE_TEXT_BTN = "LocalizeTextBtn";
-	public const string U_OBJ_N_LOCALIZE_TEXT_SCALE_BTN = "LocalizeTextScaleBtn";
-
-	public const string U_OBJ_N_TMP_LOCALIZE_TEXT_BTN = "TMPLocalizeTextBtn";
-	public const string U_OBJ_N_TMP_LOCALIZE_TEXT_SCALE_BTN = "TMPLocalizeTextScaleBtn";
-
-	public const string U_OBJ_N_IMG_BTN = "ImgBtn";
-	public const string U_OBJ_N_IMG_SCALE_BTN = "ImgScaleBtn";
-
-	public const string U_OBJ_N_IMG_TEXT_BTN = "ImgTextBtn";
-	public const string U_OBJ_N_IMG_TEXT_SCALE_BTN = "ImgTextScaleBtn";
-
-	public const string U_OBJ_N_TMP_IMG_TEXT_BTN = "TMPImgTextBtn";
-	public const string U_OBJ_N_TMP_IMG_TEXT_SCALE_BTN = "TMPImgTextScaleBtn";
-
-	public const string U_OBJ_N_IMG_LOCALIZE_TEXT_BTN = "ImgLocalizeTextBtn";
-	public const string U_OBJ_N_IMG_LOCALIZE_TEXT_SCALE_BTN = "ImgLocalizeTextScaleBtn";
-
-	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_BTN = "TMPImgLocalizeTextBtn";
-	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN = "TMPImgLocalizeTextScaleBtn";
-
-	public const string U_OBJ_N_DROPDOWN = "Dropdown";
-	public const string U_OBJ_N_INPUT_FIELD = "InputField";
-
-	public const string U_OBJ_N_TMP_DROPDOWN = "TMPDropdown";
-	public const string U_OBJ_N_TMP_INPUT_FIELD = "TMPInputField";
-
-	public const string U_OBJ_N_PAGE_VIEW = "PageView";
-	public const string U_OBJ_N_SCROLL_VIEW = "ScrollView";
-	public const string U_OBJ_N_RECYCLE_VIEW = "RecycleView";
-
-	public const string U_OBJ_N_LEVEL_SCROLL_VIEW = "LevelScrollView";
-	public const string U_OBJ_N_STAGE_SCROLL_VIEW = "StageScrollView";
-	public const string U_OBJ_N_CHAPTER_SCROLL_VIEW = "ChapterScrollView";
-
-	public const string U_OBJ_N_SPRITE = "Sprite";
-	public const string U_OBJ_N_LINE_FX = "LineFX";
-	public const string U_OBJ_N_PARTICLE_FX = "ParticleFX";
-	public const string U_OBJ_N_REFLECTION_PROBE = "ReflectionProbe";
-	public const string U_OBJ_N_LIGHT_PROBE_GROUP = "LightProbeGroup";
-	
-	public const string U_OBJ_N_DRAG_RESPONDER = "DragResponder";
-	public const string U_OBJ_N_TOUCH_RESPONDER = "TouchResponder";
-	public const string U_OBJ_N_BG_TOUCH_RESPONDER = "BGTouchResponder";
-
-	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "IndicatorTouchResponder";
-	public const string U_OBJ_N_SCREEN_FADE_TOUCH_RESPONDER = "ScreenFadeTouchResponder";
-
-	public const string U_OBJ_N_FMT_NUM_TEXT = "NumText_{0:00}";
-	public const string U_OBJ_N_FMT_CLEAR_MARK_IMG = "MarkImg_{0:00}";
-	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "PopupTouchResponder_{0}";
-
-	public const string U_IMG_N_DEF_MESH = "DefMesh";
-	public const string U_IMG_N_DEF_SPRITE = "DefSprite";
-
+	public const string U_IMG_N_DEF_MESH = "DEF_MESH";
+	public const string U_IMG_N_DEF_SPRITE = "DEF_SPRITE";
 	public const string U_IMG_N_CLONE_SPRITE = "(Clone)";
-	public const string U_IMG_N_UNKNOWN_SPRITE = "Unknown";
 
 	public const string U_FUNC_N_ON_DRAG = "OnDrag";
 	public const string U_FUNC_N_ON_POINTER_UP = "OnPointerUp";
@@ -719,8 +719,8 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
 
 	public static readonly Color U_COLOR_CLEAR = Color.black;
-	public static readonly Color U_COLOR_POPUP_BG = new Color(0.0f, 0.0f, 0.0f, 0.95f);
-	public static readonly Color U_COLOR_INDICATOR_BG = new Color(0.0f, 0.0f, 0.0f, 0.75f);
+	public static readonly Color U_COLOR_POPUP_BLIND = new Color(0.0f, 0.0f, 0.0f, 0.95f);
+	public static readonly Color U_COLOR_INDICATOR_BLIND = new Color(0.0f, 0.0f, 0.0f, 0.75f);
 	// 색상 }
 
 	// 버전

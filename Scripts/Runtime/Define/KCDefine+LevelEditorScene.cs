@@ -12,47 +12,25 @@ public static partial class KCDefine {
 	public const string LES_TEXT_FMT_STAGE = "스테이지 {0:000}";
 	public const string LES_TEXT_FMT_CHAPTER = "챕터 {0:00}";
 
-	// 중앙 에디터 UI {
-	public const string LES_OBJ_N_ME_UIS_PREV_BTN = "PrevBtn";
-	public const string LES_OBJ_N_ME_UIS_NEXT_BTN = "NextBtn";
-
-	public const string LES_OBJ_N_ME_UIS_SAVE_BTN = "SaveBtn";
-	public const string LES_OBJ_N_ME_UIS_RESET_BTN = "ResetBtn";
-	public const string LES_OBJ_N_ME_UIS_TEST_BTN = "TestBtn";
-
-	public const string LES_OBJ_N_ME_UIS_COPY_LEVEL_BTN = "CopyLevelBtn";
-	public const string LES_OBJ_N_ME_UIS_MOVE_LEVEL_BTN = "MoveLevelBtn";
-	public const string LES_OBJ_N_ME_UIS_REMOVE_LEVEL_BTN = "RemoveLevelBtn";
-	// 중앙 에디터 UI }
+	// 중앙 에디터 UI
+	public const string LES_OBJ_N_ME_UIS_SAVE_BTN = "SAVE_BTN";
+	public const string LES_OBJ_N_ME_UIS_RESET_BTN = "RESET_BTN";
+	public const string LES_OBJ_N_ME_UIS_TEST_BTN = "TEST_BTN";
+	public const string LES_OBJ_N_ME_UIS_COPY_LEVEL_BTN = "COPY_LEVEL_BTN";
 
 	// 왼쪽 에디터 UI {
-	public const string LES_OBJ_N_LE_UIS_A_SET_BTN = "ASetBtn";
-	public const string LES_OBJ_N_LE_UIS_B_SET_BTN = "BSetBtn";
+	public const string LES_OBJ_N_LE_UIS_ADD_LEVEL_BTN = "ADD_LEVEL_BTN";
+	public const string LES_OBJ_N_LE_UIS_ADD_STAGE_BTN = "ADD_STAGE_BTN";
+	public const string LES_OBJ_N_LE_UIS_ADD_CHAPTER_BTN = "ADD_CHAPTER_BTN";
 
-	public const string LES_OBJ_N_LE_UIS_ADD_LEVEL_BTN = "AddLevelBtn";
-	public const string LES_OBJ_N_LE_UIS_ADD_STAGE_BTN = "AddStageBtn";
-	public const string LES_OBJ_N_LE_UIS_ADD_CHAPTER_BTN = "AddChapterBtn";
-
-	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_01 = "StageScrollView_01";
-	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_02 = "StageScrollView_02";
+	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_01 = "STAGE_SCROLL_VIEW_01";
+	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_02 = "STAGE_SCROLL_VIEW_02";
 	// 왼쪽 에디터 UI }
 
-	// 오른쪽 에디터 UI {
-	public const string LES_OBJ_N_RE_UIS_PREV_BTN = "PrevBtn";
-	public const string LES_OBJ_N_RE_UIS_NEXT_BTN = "NextBtn";
-
-	public const string LES_OBJ_N_RE_UIS_APPLY_BTN = "ApplyBtn";
-	public const string LES_OBJ_N_RE_UIS_LOAD_LEVEL_BTN = "LoadLevelBtn";
-	public const string LES_OBJ_N_RE_UIS_REMOVE_ALL_LEVELS_BTN = "RemoveAllLevelsBtn";
-	public const string LES_OBJ_N_RE_UIS_LOAD_LOCAL_TABLE_BTN = "LoadLocalTableBtn";
-	public const string LES_OBJ_N_RE_UIS_LOAD_REMOTE_TABLE_BTN = "LoadRemoteTableBtn";
-	
-	public const string LES_OBJ_N_RE_UIS_LEVEL_INPUT = "LevelInput";
-	public const string LES_OBJ_N_RE_UIS_NUM_CELLS_X_INPUT = "NumCellsXInput";
-	public const string LES_OBJ_N_RE_UIS_NUM_CELLS_Y_INPUT = "NumCellsYInput";
-	
-	public const string LES_OBJ_N_RE_UIS_PAGE_VIEW = "PageView";
-	// 오른쪽 에디터 UI }
+	// 오른쪽 에디터 UI
+	public const string LES_OBJ_N_RE_UIS_APPLY_BTN = "APPLY_BTN";
+	public const string LES_OBJ_N_RE_UIS_LOAD_LEVEL_BTN = "LOAD_LEVEL_BTN";
+	public const string LES_OBJ_N_RE_UIS_LOAD_LOCAL_TABLE_BTN = "LOAD_LOCAL_TABLE_BTN";
 	#endregion			// 기본
 }
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE
