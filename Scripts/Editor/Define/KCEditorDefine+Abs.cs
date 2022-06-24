@@ -312,10 +312,6 @@ public static partial class KCEditorDefine {
 	// 객체 이름 에디터 윈도우 }
 
 	// 패키지
-	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspector-3.0.13";
-	public const string B_NAME_BUILD_REPORT_TOOLS_PKGS = "BuildReportTool-3.9.3";
-	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-1.4.0";
-	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-2.6.0";
 	public const string B_NAME_APPLE_AUTH_PKGS = "AppleAuth-1.4.2";
 
 	// 알림
@@ -438,10 +434,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}UnityPackages/";
 	public static readonly string B_ABS_DIR_P_STUDY_SCRIPT_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_STUDY_TEMPLATES}Scripts/";
 	
-	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR_PKGS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_PKGS}.unitypackage";
-	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOLS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_BUILD_REPORT_TOOLS_PKGS}.unitypackage";
-	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPRITE_TRAIL_PKGS}.unitypackage";
-	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_APPLE_AUTH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_AUTH_PKGS}.unitypackage";
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
