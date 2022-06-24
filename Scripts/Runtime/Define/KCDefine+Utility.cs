@@ -163,6 +163,7 @@ public static partial class KCDefine {
 	public const string U_KEY_OVERLAY = "Overlay";
 	public const string U_KEY_PLAYABLE = "Playable";
 	public const string U_KEY_NON_PLAYABLE = "NonPlayable";
+	public const string U_KEY_ENEMY = "Enemy";
 
 	public const string U_KEY_GOODS = "Goods";
 	public const string U_KEY_CONSUMABLE = "Consumable";
