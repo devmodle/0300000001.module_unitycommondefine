@@ -2,40 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 #if UNITY_EDITOR || UNITY_STANDALONE
 /** 에디터 기본 상수 */
 public static partial class KCDefine {
 	#region 기본
-	// 이름 {
-	public const string E_OBJ_N_LEFT_EDITOR_UIS = "LeftEditorUIs";
-	public const string E_OBJ_N_RIGHT_EDITOR_UIS = "RightEditorUIs";
-	public const string E_OBJ_N_MID_EDITOR_UIS = "MidEditorUIs";
-
-	// 중앙 에디터 UI
-	public const string E_OBJ_N_ME_UIS_MSG_UIS = "MsgUIs";
-
-	// 왼쪽 에디터 UI
-	public const string E_OBJ_N_LE_UIS_AB_SET_UIS = "BottomMenuUIs_01";
-
-	// 에디터 입력 팝업
+	// 이름
 	public const string E_OBJ_N_EDITOR_INPUT_POPUP = "EDITOR_INPUT_POPUP";
-	public const string E_OBJ_N_EDITOR_IP_INPUT = "INPUT";
-
-	// 에디터 레벨 생성 팝업 {
 	public const string E_OBJ_N_EDITOR_LEVEL_CREATE_POPUP = "EDITOR_LEVEL_CREATE_POPUP";
-	public const string E_OBJ_N_EDITOR_LCP_NUM_LEVELS_INPUT = "NUM_LEVELS_INPUT";
-
-	public const string E_OBJ_N_EDITOR_LCP_MIN_NUM_CELLS_X_INPUT = "MIN_NUM_CELLS_X_INPUT";
-	public const string E_OBJ_N_EDITOR_LCP_MAX_NUM_CELLS_X_INPUT = "MAX_NUM_CELLS_X_INPUT";
-
-	public const string E_OBJ_N_EDITOR_LCP_MIN_NUM_CELLS_Y_INPUT = "MIN_NUM_CELLS_Y_INPUT";
-	public const string E_OBJ_N_EDITOR_LCP_MAX_NUM_CELLS_Y_INPUT = "MAX_NUM_CELLS_Y_INPUT";
-	// 에디터 레벨 생성 팝업 }
-	
-	// 에디터 스크롤러 셀 뷰
-	public const string E_OBJ_N_ESCV_COPY_BTN = "COPY_BTN";
-	// 이름 }
 	#endregion			// 기본
 
 	#region 런타임 상수

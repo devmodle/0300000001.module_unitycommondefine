@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using DG.Tweening;
 
 #if UNITY_IOS
@@ -451,6 +452,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LOAD_BTN = "LOAD_BTN";
 	public const string U_OBJ_N_SAVE_BTN = "SAVE_BTN";
 	public const string U_OBJ_N_PLAY_BTN = "PLAY_BTN";
+	public const string U_OBJ_N_COPY_BTN = "COPY_BTN";
 	public const string U_OBJ_N_STORE_BTN = "STORE_BTN";
 	public const string U_OBJ_N_SETTINGS_BTN = "SETTINGS_BTN";
 
@@ -519,6 +521,9 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_BTN = "TMP_IMG_LOCALIZE_TEXT_BTN";
 	public const string U_OBJ_N_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN = "TMP_IMG_LOCALIZE_TEXT_SCALE_BTN";
+
+	public const string U_OBJ_N_DROP = "DROP";
+	public const string U_OBJ_N_INPUT = "INPUT";
 
 	public const string U_OBJ_N_DROPDOWN = "DROPDOWN";
 	public const string U_OBJ_N_INPUT_FIELD = "INPUT_FIELD";
@@ -824,7 +829,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_DAILY_REWARD_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_DailyRewardPopup";
 	public static readonly string U_OBJ_P_G_COINS_BOX_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_CoinsBoxPopup";
 	public static readonly string U_OBJ_P_G_REWARD_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_RewardAcquirePopup";
-	public static readonly string U_OBJ_P_G_COINS_BOX_COINS_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_CoinsBoxCoinsAcquirePopup";
+	public static readonly string U_OBJ_P_G_COINS_BOX_ACQUIRE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_CoinsBoxAcquirePopup";
 	public static readonly string U_OBJ_P_G_CONTINUE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ContinuePopup";
 	public static readonly string U_OBJ_P_G_RESULT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResultPopup";
 	public static readonly string U_OBJ_P_G_RESUME_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResumePopup";

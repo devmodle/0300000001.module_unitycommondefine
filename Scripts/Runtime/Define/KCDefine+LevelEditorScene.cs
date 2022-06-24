@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 #if UNITY_EDITOR || UNITY_STANDALONE
 /** 레벨 에디터 씬 상수 */

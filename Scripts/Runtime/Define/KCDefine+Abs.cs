@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 /** 기본 상수 */
 public static partial class KCDefine {
