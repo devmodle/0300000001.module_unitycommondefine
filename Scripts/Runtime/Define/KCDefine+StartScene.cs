@@ -7,9 +7,6 @@ using UnityEngine.Events;
 /** 시작 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
-	// 시간
-	public const float SS_DELTA_T_UPDATE_STATE = 0.5f;
-	
 	// 이름
 	public const string SS_OBJ_N_LOADING_GAUGE = "LOADING_GAUGE";
 	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
