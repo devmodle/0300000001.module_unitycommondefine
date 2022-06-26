@@ -295,6 +295,13 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
 	public const string U_KEY_FMT_TUTORIAL_MSG = "TUTORIAL_MSG_{0:00}_{1:00}";
+	
+	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
+	public const string U_KEY_SERVICES_M_UPDATE_FAIL_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateFailAppleLoginStateCallback";
+
+	public const string U_KEY_SERVICES_M_LOGIN_WITH_APPLE_CALLBACK = "ServicesMLoginWithAppleCallback";
+	public const string U_KEY_SERVICES_M_LOGIN_FAIL_WITH_APPLE_CALLBACK = "ServicesMLoginFailWithAppleCallback";
+	public const string U_KEY_SERVICES_M_LOGOUT_WITH_APPLE_CALLBACK = "ServicesMLogoutWithAppleCallback";
 	// 식별자 }
 
 	// 이름 {
@@ -1102,15 +1109,6 @@ public static partial class KCDefine {
 	// 이름
 	public const string U_MODEL_N_IPAD = "iPad";
 	public const string U_MODEL_N_IPHONE = "iPhone";
-
-#if APPLE_LOGIN_ENABLE
-	// 식별자
-	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
-	public const string U_KEY_SERVICES_M_UPDATE_FAIL_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateFailAppleLoginStateCallback";
-
-	public const string U_KEY_SERVICES_M_LOGIN_WITH_APPLE_CALLBACK = "ServicesMLoginWithAppleCallback";
-	public const string U_KEY_SERVICES_M_LOGIN_FAIL_WITH_APPLE_CALLBACK = "ServicesMLoginFailWithAppleCallback";
-#endif			// #if APPLE_LOGIN_ENABLE
 #endif			// #if UNITY_IOS
 
 #if UNITY_ANDROID
