@@ -19,14 +19,10 @@ public static partial class KCDefine {
 	public const string LES_OBJ_N_ME_UIS_TEST_BTN = "TEST_BTN";
 	public const string LES_OBJ_N_ME_UIS_COPY_LEVEL_BTN = "COPY_LEVEL_BTN";
 
-	// 왼쪽 에디터 UI {
+	// 왼쪽 에디터 UI
 	public const string LES_OBJ_N_LE_UIS_ADD_LEVEL_BTN = "ADD_LEVEL_BTN";
-	public const string LES_OBJ_N_LE_UIS_ADD_STAGE_BTN = "ADD_STAGE_BTN";
-	public const string LES_OBJ_N_LE_UIS_ADD_CHAPTER_BTN = "ADD_CHAPTER_BTN";
-
 	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_01 = "STAGE_SCROLL_VIEW_01";
 	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_02 = "STAGE_SCROLL_VIEW_02";
-	// 왼쪽 에디터 UI }
 
 	// 오른쪽 에디터 UI
 	public const string LES_OBJ_N_RE_UIS_APPLY_BTN = "APPLY_BTN";
