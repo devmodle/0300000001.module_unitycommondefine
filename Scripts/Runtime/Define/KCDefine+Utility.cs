@@ -471,13 +471,13 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LEAVE_BTN = "LEAVE_BTN";
 	public const string U_OBJ_N_CONTINUE_BTN = "CONTINUE_BTN";
 
+	public const string U_OBJ_N_ADS_BTN = "ADS_BTN";
 	public const string U_OBJ_N_PAUSE_BTN = "PAUSE_BTN";
 	public const string U_OBJ_N_SHARE_BTN = "SHARE_BTN";
 	public const string U_OBJ_N_ACQUIRE_BTN = "ACQUIRE_BTN";
 	public const string U_OBJ_N_RANKING_BTN = "RANKING_BTN";
 	public const string U_OBJ_N_PURCHASE_BTN = "PURCHASE_BTN";
 	public const string U_OBJ_N_RESTORE_BTN = "RESTORE_BTN";
-	public const string U_OBJ_N_REWARD_ADS_BTN = "REWARD_ADS_BTN";
 	public const string U_OBJ_N_REMOVE_ADS_BTN = "REMOVE_ADS_BTN";
 
 	public const string U_OBJ_N_SND_BTN = "SND_BTN";
