@@ -150,11 +150,11 @@ public partial struct STValInfo {
 	public EValType m_eValType;
 
 	#region 프로퍼티
-	public long IntVal => long.TryParse(m_oVal, out long nVal) ? nVal : KCDefine.B_VAL_0_LONG;
-	public long IntExtraVal => long.TryParse(m_oExtraVal, out long nExtraVal) ? nExtraVal : KCDefine.B_VAL_0_LONG;
+	public long IntVal => long.TryParse(m_oVal, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;
+	public long IntExtraVal => long.TryParse(m_oExtraVal, out long nExtraVal) ? nExtraVal : KCDefine.B_VAL_0_INT;
 
-	public double RealVal => double.TryParse(m_oVal, out double dblVal) ? dblVal : KCDefine.B_VAL_0_DBL;
-	public double RealExtraVal => double.TryParse(m_oExtraVal, out double dblExtraVal) ? dblExtraVal : KCDefine.B_VAL_0_DBL;
+	public double RealVal => double.TryParse(m_oVal, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
+	public double RealExtraVal => double.TryParse(m_oExtraVal, out double dblExtraVal) ? dblExtraVal : KCDefine.B_VAL_0_REAL;
 	#endregion			// 프로퍼티
 
 	#region 함수
@@ -168,26 +168,35 @@ public partial struct STValInfo {
 	#endregion			// 함수
 }
 
-/** 설명 정보 */
+/** 공용 정보 */
 [System.Serializable]
-public partial struct STDescInfo {
+public partial struct STCommonInfo {
+	public bool m_bIsRepeat;
+	public bool m_bIsDuplicate;
+
 	public string m_oName;
 	public string m_oDesc;
 
 	#region 함수
 	/** 생성자 */
-	public STDescInfo(SimpleJSON.JSONNode a_oDescInfo) {
-		m_oName = (!a_oDescInfo[KCDefine.U_KEY_NAME].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDescInfo[KCDefine.U_KEY_NAME].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDescInfo[KCDefine.U_KEY_NAME] : string.Empty;
-		m_oDesc = (!a_oDescInfo[KCDefine.U_KEY_DESC].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDescInfo[KCDefine.U_KEY_DESC].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDescInfo[KCDefine.U_KEY_DESC] : string.Empty;
+	public STCommonInfo(SimpleJSON.JSONNode a_oCommonInfo) {
+		m_bIsRepeat = (!a_oCommonInfo[KCDefine.U_KEY_REPEAT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oCommonInfo[KCDefine.U_KEY_REPEAT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oCommonInfo[KCDefine.U_KEY_REPEAT].AsInt != KCDefine.B_VAL_0_INT : false;
+		m_bIsDuplicate = (!a_oCommonInfo[KCDefine.U_KEY_DUPLICATE].Value.Equals(KCDefine.B_TEXT_NULL) && a_oCommonInfo[KCDefine.U_KEY_DUPLICATE].Value.Length > KCDefine.B_VAL_0_INT) ? a_oCommonInfo[KCDefine.U_KEY_DUPLICATE].AsInt != KCDefine.B_VAL_0_INT : false;
+
+		m_oName = (!a_oCommonInfo[KCDefine.U_KEY_NAME].Value.Equals(KCDefine.B_TEXT_NULL) && a_oCommonInfo[KCDefine.U_KEY_NAME].Value.Length > KCDefine.B_VAL_0_INT) ? a_oCommonInfo[KCDefine.U_KEY_NAME] : string.Empty;
+		m_oDesc = (!a_oCommonInfo[KCDefine.U_KEY_DESC].Value.Equals(KCDefine.B_TEXT_NULL) && a_oCommonInfo[KCDefine.U_KEY_DESC].Value.Length > KCDefine.B_VAL_0_INT) ? a_oCommonInfo[KCDefine.U_KEY_DESC] : string.Empty;
 	}
 	#endregion			// 함수
 
 	#region 조건부 함수
 #if UNITY_EDITOR || UNITY_STANDALONE
-	/** 설명 정보를 생성한다 */
-	public void MakeDescInfo(SimpleJSON.JSONClass a_oOutDescInfo) {
-		a_oOutDescInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
-		a_oOutDescInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
+	/** 공용 정보를 생성한다 */
+	public void MakeCommonInfo(SimpleJSON.JSONClass a_oOutCommonInfo) {
+		a_oOutCommonInfo.Add(KCDefine.U_KEY_REPEAT, m_bIsRepeat ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
+		a_oOutCommonInfo.Add(KCDefine.U_KEY_DUPLICATE, m_bIsDuplicate ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
+
+		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
+		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
 	}
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE
 	#endregion			// 조건부 함수
@@ -203,9 +212,9 @@ public partial struct STDurationInfo {
 	#region 함수
 	/** 생성자 */
 	public STDurationInfo(SimpleJSON.JSONNode a_oDurationInfo) {
-		m_fDelay = (!a_oDurationInfo[KCDefine.U_KEY_DELAY].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELAY].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELAY].AsFloat : KCDefine.B_VAL_0_FLT;
-		m_fDuration = (!a_oDurationInfo[KCDefine.U_KEY_DURATION].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DURATION].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DURATION].AsFloat : KCDefine.B_VAL_0_FLT;
-		m_fDeltaTime = (!a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].AsFloat : KCDefine.B_VAL_0_FLT;
+		m_fDelay = (!a_oDurationInfo[KCDefine.U_KEY_DELAY].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELAY].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELAY].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDuration = (!a_oDurationInfo[KCDefine.U_KEY_DURATION].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DURATION].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DURATION].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDeltaTime = (!a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].AsFloat : KCDefine.B_VAL_0_REAL;
 	}
 	#endregion			// 함수
 }

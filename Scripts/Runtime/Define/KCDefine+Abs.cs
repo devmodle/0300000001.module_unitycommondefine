@@ -19,39 +19,17 @@ public static partial class KCDefine {
 	public const int B_VAL_7_INT = 7;
 	public const int B_VAL_8_INT = 8;
 	public const int B_VAL_9_INT = 9;
-
-	public const long B_VAL_0_LONG = 0L;
-	public const long B_VAL_1_LONG = 1L;
-	public const long B_VAL_2_LONG = 2L;
-	public const long B_VAL_3_LONG = 3L;
-	public const long B_VAL_4_LONG = 4L;
-	public const long B_VAL_5_LONG = 5L;
-	public const long B_VAL_6_LONG = 6L;
-	public const long B_VAL_7_LONG = 7L;
-	public const long B_VAL_8_LONG = 8L;
-	public const long B_VAL_9_LONG = 9L;
 	
-	public const float B_VAL_0_FLT = 0.0f;
-	public const float B_VAL_1_FLT = 1.0f;
-	public const float B_VAL_2_FLT = 2.0f;
-	public const float B_VAL_3_FLT = 3.0f;
-	public const float B_VAL_4_FLT = 4.0f;
-	public const float B_VAL_5_FLT = 5.0f;
-	public const float B_VAL_6_FLT = 6.0f;
-	public const float B_VAL_7_FLT = 7.0f;
-	public const float B_VAL_8_FLT = 8.0f;
-	public const float B_VAL_9_FLT = 9.0f;
-
-	public const double B_VAL_0_DBL = 0.0;
-	public const double B_VAL_1_DBL = 1.0;
-	public const double B_VAL_2_DBL = 2.0;
-	public const double B_VAL_3_DBL = 3.0;
-	public const double B_VAL_4_DBL = 4.0;
-	public const double B_VAL_5_DBL = 5.0;
-	public const double B_VAL_6_DBL = 6.0;
-	public const double B_VAL_7_DBL = 7.0;
-	public const double B_VAL_8_DBL = 8.0;
-	public const double B_VAL_9_DBL = 9.0;
+	public const float B_VAL_0_REAL = 0.0f;
+	public const float B_VAL_1_REAL = 1.0f;
+	public const float B_VAL_2_REAL = 2.0f;
+	public const float B_VAL_3_REAL = 3.0f;
+	public const float B_VAL_4_REAL = 4.0f;
+	public const float B_VAL_5_REAL = 5.0f;
+	public const float B_VAL_6_REAL = 6.0f;
+	public const float B_VAL_7_REAL = 7.0f;
+	public const float B_VAL_8_REAL = 8.0f;
+	public const float B_VAL_9_REAL = 9.0f;
 	// 값 }
 
 	// 회전 {

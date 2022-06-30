@@ -149,6 +149,7 @@ public static partial class KCDefine {
 	public const string U_KEY_HELP = "Help";
 	public const string U_KEY_FREE = "Free";
 	public const string U_KEY_REPEAT = "Repeat";
+	public const string U_KEY_DUPLICATE = "Duplicate";
 
 	public const string U_KEY_DAILY = "Daily";
 	public const string U_KEY_EVENT = "Event";
@@ -1238,8 +1239,8 @@ public static partial class KCDefine {
 
 	// 노드
 	public const string U_NODE_FIREBASE_USER_INFOS = "UserInfos";
+	public const string U_NODE_FIREBASE_ACQUIRE_INFOS = "AcquireInfos";
 	public const string U_NODE_FIREBASE_PURCHASE_INFOS = "PurchaseInfos";
-	public const string U_NODE_FIREBASE_ACQUIRE_ITEM_INFOS = "AcquireItemInfos";
 	
 #if FIREBASE_AUTH_ENABLE
 	// 식별자 {
