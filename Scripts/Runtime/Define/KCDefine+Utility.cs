@@ -267,9 +267,13 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FMT_PRICE = "Price_{0:00}";
 	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
+	public const string U_KEY_FMT_ACQUIRE_VAL = "AcquireVal_{0:00}";
 	
 	public const string U_KEY_FMT_PRICE_TYPE = "PriceType_{0:00}";
 	public const string U_KEY_FMT_PRICE_KINDS = "PriceKinds_{0:00}";
+
+	public const string U_KEY_FMT_ACQUIRE_TYPE = "AcquireType_{0:00}";
+	public const string U_KEY_FMT_ACQUIRE_KINDS = "AcquireKinds_{0:00}";
 
 	public const string U_KEY_FMT_FX_KINDS = "FXKinds_{0:00}";
 	public const string U_KEY_FMT_OBJ_KINDS = "ObjKinds_{0:00}";
