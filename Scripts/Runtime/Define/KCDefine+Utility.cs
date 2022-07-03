@@ -122,12 +122,18 @@ public static partial class KCDefine {
 	// 형식 {
 #if UNITY_IOS
 	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
-	public const string U_FMT_MORE_GAMES_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
+	public const string U_FMT_MORE_APPS_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
 #else
 	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
-	public const string U_FMT_MORE_GAMES_URL = "https://play.google.com/store/apps/developer?id={0}";
+	public const string U_FMT_MORE_APPS_URL = "https://play.google.com/store/apps/developer?id={0}";
 #endif			// #if UNITY_IOS
 	// 형식 }
+
+	// 접두어
+	public const string U_PREFIX_PAY = "Pay";
+	public const string U_PREFIX_CLEAR = "Clear";
+	public const string U_PREFIX_UNLOCK = "Unlock";
+	public const string U_PREFIX_ACQUIRE = "Acquire";
 
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
@@ -288,15 +294,9 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_ABILITY_KINDS = "AbilityKinds_{0:00}";
 	public const string U_KEY_FMT_EXTRA_ABILITY_KINDS = "ExtraAbilityKinds_{0:00}";
 
-	public const string U_KEY_FMT_NUM_ITEMS = "NumItems_{0:00}";
-	public const string U_KEY_FMT_NUM_TARGETS = "NumTargets_{0:00}";
-	public const string U_KEY_FMT_NUM_UNLOCK_TARGETS = "NumUnlockTargets_{0:00}";
-
-	public const string U_KEY_FMT_TARGET_TYPE = "TargetType_{0:00}";
+	public const string U_KEY_FMT_KINDS = "Kinds_{0:00}";
+	public const string U_KEY_FMT_TARGETS = "Targets_{0:00}";
 	public const string U_KEY_FMT_TARGET_KINDS = "TargetKinds_{0:00}";
-
-	public const string U_KEY_FMT_UNLOCK_TARGET_TYPE = "UnlockTargetType_{0:00}";
-	public const string U_KEY_FMT_UNLOCK_TARGET_KINDS = "UnlockTargetKinds_{0:00}";
 
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
 	public const string U_KEY_FMT_TUTORIAL_MSG = "TUTORIAL_MSG_{0:00}_{1:00}";
@@ -1243,7 +1243,7 @@ public static partial class KCDefine {
 
 	// 노드
 	public const string U_NODE_FIREBASE_USER_INFOS = "UserInfos";
-	public const string U_NODE_FIREBASE_ACQUIRE_INFOS = "AcquireInfos";
+	public const string U_NODE_FIREBASE_TARGET_INFOS = "TargetInfos";
 	public const string U_NODE_FIREBASE_PURCHASE_INFOS = "PurchaseInfos";
 	
 #if FIREBASE_AUTH_ENABLE
