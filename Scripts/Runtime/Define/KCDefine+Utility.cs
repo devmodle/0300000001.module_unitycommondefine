@@ -207,12 +207,14 @@ public static partial class KCDefine {
 	public const string U_KEY_FONT = "Font";
 	public const string U_KEY_SPRITE = "Sprite";
 	public const string U_KEY_TEXTURE = "Texture";
+	public const string U_KEY_TABLE_IDX = "TableIdx";
 
 	public const string U_KEY_SIZE_X = "SizeX";
 	public const string U_KEY_SIZE_Y = "SizeY";
 
 	public const string U_KEY_DIFFICULTY = "Difficulty";
 	public const string U_KEY_PRODUCT_TYPE = "ProductType";
+	public const string U_KEY_PURCHASE_TYPE = "PurchaseType";
 	public const string U_KEY_EPISODE_KINDS = "EpisodeKinds";
 
 	public const string U_KEY_REWARD_KINDS = "RewardKinds";
