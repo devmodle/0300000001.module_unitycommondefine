@@ -253,17 +253,17 @@ public static partial class KCDefine {
 	public const string U_KEY_PREV_RES_KINDS = "PrevResKinds";
 	public const string U_KEY_NEXT_RES_KINDS = "NextResKinds";
 
-	public const string U_KEY_OBJ_SALE_KINDS = "ObjSaleKinds";
-	public const string U_KEY_PREV_OBJ_SALE_KINDS = "PrevObjSaleKinds";
-	public const string U_KEY_NEXT_OBJ_SALE_KINDS = "NextObjSaleKinds";
+	public const string U_KEY_OBJ_SALE_KINDS = "ObjKinds";
+	public const string U_KEY_PREV_OBJ_SALE_KINDS = "PrevObjKinds";
+	public const string U_KEY_NEXT_OBJ_SALE_KINDS = "NextObjKinds";
 
-	public const string U_KEY_ITEM_SALE_KINDS = "ItemSaleKinds";
-	public const string U_KEY_PREV_ITEM_SALE_KINDS = "PrevItemSaleKinds";
-	public const string U_KEY_NEXT_ITEM_SALE_KINDS = "NextItemSaleKinds";
+	public const string U_KEY_ITEM_SALE_KINDS = "ItemKinds";
+	public const string U_KEY_PREV_ITEM_SALE_KINDS = "PrevItemKinds";
+	public const string U_KEY_NEXT_ITEM_SALE_KINDS = "NextItemKinds";
 
-	public const string U_KEY_SKILL_SALE_KINDS = "SkillSaleKinds";
-	public const string U_KEY_PREV_SKILL_SALE_KINDS = "PrevSkillSaleKinds";
-	public const string U_KEY_NEXT_SKILL_SALE_KINDS = "NextSkillSaleKinds";
+	public const string U_KEY_SKILL_SALE_KINDS = "SkillKinds";
+	public const string U_KEY_PREV_SKILL_SALE_KINDS = "PrevSkillKinds";
+	public const string U_KEY_NEXT_SKILL_SALE_KINDS = "NextSkillKinds";
 
 	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductSaleKinds";
 	public const string U_KEY_PREV_PRODUCT_SALE_KINDS = "PrevProductSaleKinds";
