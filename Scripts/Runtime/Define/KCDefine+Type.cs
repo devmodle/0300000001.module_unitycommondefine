@@ -62,6 +62,12 @@ public partial struct STIDInfo {
 	[Key(1)] public int m_nID02;
 	[Key(2)] public int m_nID03;
 
+	#region 상수
+	public static readonly STIDInfo INVALID = new STIDInfo() {
+		m_nID01 = KCDefine.B_IDX_INVALID, m_nID02 = KCDefine.B_IDX_INVALID, m_nID03 = KCDefine.B_IDX_INVALID
+	};
+	#endregion			// 상수
+
 	#region 프로퍼티
 	[IgnoreMember] public long UniqueID01 => this.UniqueID02 + m_nID01;
 	[IgnoreMember] public long UniqueID02 => this.UniqueID03 + (m_nID02 * (long)KCDefine.B_UNIT_IDS_PER_IDS_02);
@@ -103,6 +109,12 @@ public partial struct STIdxInfo {
 	[Key(0)] public int m_nX;
 	[Key(1)] public int m_nY;
 	[Key(2)] public int m_nZ;
+
+	#region 상수
+	public static readonly STIdxInfo INVALID = new STIdxInfo() {
+		m_nX = KCDefine.B_IDX_INVALID, m_nY = KCDefine.B_IDX_INVALID, m_nZ = KCDefine.B_IDX_INVALID
+	};
+	#endregion			// 상수
 }
 
 /** 빌드 버전 정보 */
@@ -125,6 +137,12 @@ public partial struct STLocalizeInfo {
 	public string m_oCountryCode;
 	public SystemLanguage m_eSystemLanguage;
 	public List<STFontSetInfo> m_oFontSetInfoList;
+
+	#region 상수
+	public static readonly STLocalizeInfo INVALID = new STLocalizeInfo() {
+		m_eSystemLanguage = SystemLanguage.Unknown
+	};
+	#endregion			// 상수
 }
 
 /** 폰트 세트 정보 */
@@ -132,6 +150,12 @@ public partial struct STLocalizeInfo {
 public partial struct STFontSetInfo {
 	public string m_oPath;
 	public EFontSet m_eSet;
+
+	#region 상수
+	public static readonly STFontSetInfo INVALID = new STFontSetInfo() {
+		m_eSet = EFontSet.NONE
+	};
+	#endregion			// 상수
 }
 
 /** 디바이스 정보 */
@@ -148,6 +172,12 @@ public partial struct STValInfo {
 	public string m_oExtraVal;
 
 	public EValType m_eValType;
+
+	#region 상수
+	public static readonly STValInfo INVALID = new STValInfo() {
+		m_eValType = EValType.NONE
+	};
+	#endregion			// 상수
 
 	#region 프로퍼티
 	public long IntVal => long.TryParse(m_oVal, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;

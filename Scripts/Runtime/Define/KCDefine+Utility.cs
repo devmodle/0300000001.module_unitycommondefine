@@ -131,6 +131,8 @@ public static partial class KCDefine {
 
 	// 접두어
 	public const string U_PREFIX_PAY = "Pay";
+	public const string U_PREFIX_ITEM = "Item";
+	public const string U_PREFIX_SKILL = "Skill";
 	public const string U_PREFIX_CLEAR = "Clear";
 	public const string U_PREFIX_UNLOCK = "Unlock";
 	public const string U_PREFIX_ACQUIRE = "Acquire";
