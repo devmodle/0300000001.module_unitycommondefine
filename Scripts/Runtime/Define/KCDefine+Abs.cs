@@ -383,25 +383,25 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_MM_SS = "{0:00}:{1:00}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
 	
-	public const string B_TEXT_FMT_1_DIGITS = "{0:0}";
-	public const string B_TEXT_FMT_2_DIGITS = "{0:00}";
-	public const string B_TEXT_FMT_3_DIGITS = "{0:000}";
-	public const string B_TEXT_FMT_4_DIGITS = "{0:0000}";
-	public const string B_TEXT_FMT_5_DIGITS = "{0:00000}";
-	public const string B_TEXT_FMT_6_DIGITS = "{0:000000}";
-	public const string B_TEXT_FMT_7_DIGITS = "{0:0000000}";
-	public const string B_TEXT_FMT_8_DIGITS = "{0:00000000}";
-	public const string B_TEXT_FMT_9_DIGITS = "{0:000000000}";
-
-	public const string B_TEXT_FMT_1_FLT_DIGITS = "{0:0.0}";
-	public const string B_TEXT_FMT_2_FLT_DIGITS = "{0:0.00}";
-	public const string B_TEXT_FMT_3_FLT_DIGITS = "{0:0.000}";
-	public const string B_TEXT_FMT_4_FLT_DIGITS = "{0:0.0000}";
-	public const string B_TEXT_FMT_5_FLT_DIGITS = "{0:0.00000}";
-	public const string B_TEXT_FMT_6_FLT_DIGITS = "{0:0.000000}";
-	public const string B_TEXT_FMT_7_FLT_DIGITS = "{0:0.0000000}";
-	public const string B_TEXT_FMT_8_FLT_DIGITS = "{0:0.00000000}";
-	public const string B_TEXT_FMT_9_FLT_DIGITS = "{0:0.000000000}";
+	public const string B_TEXT_FMT_1_INT = "{0:0}";
+	public const string B_TEXT_FMT_2_INT = "{0:00}";
+	public const string B_TEXT_FMT_3_INT = "{0:000}";
+	public const string B_TEXT_FMT_4_INT = "{0:0000}";
+	public const string B_TEXT_FMT_5_INT = "{0:00000}";
+	public const string B_TEXT_FMT_6_INT = "{0:000000}";
+	public const string B_TEXT_FMT_7_INT = "{0:0000000}";
+	public const string B_TEXT_FMT_8_INT = "{0:00000000}";
+	public const string B_TEXT_FMT_9_INT = "{0:000000000}";
+	
+	public const string B_TEXT_FMT_1_REAL = "{0:0.0}";
+	public const string B_TEXT_FMT_2_REAL = "{0:0.00}";
+	public const string B_TEXT_FMT_3_REAL = "{0:0.000}";
+	public const string B_TEXT_FMT_4_REAL = "{0:0.0000}";
+	public const string B_TEXT_FMT_5_REAL = "{0:0.00000}";
+	public const string B_TEXT_FMT_6_REAL = "{0:0.000000}";
+	public const string B_TEXT_FMT_7_REAL = "{0:0.0000000}";
+	public const string B_TEXT_FMT_8_REAL = "{0:0.00000000}";
+	public const string B_TEXT_FMT_9_REAL = "{0:0.000000000}";
 
 	public const string B_TEXT_FMT_2_COMBINE = "{0}{1}";
 	public const string B_TEXT_FMT_3_COMBINE = "{0}{1}{2}";
