@@ -299,7 +299,6 @@ public enum EValType {
 	NONE = -1,
 	INT,
 	REAL,
-	STR,
 	[HideInInspector] MAX_VAL
 }
 

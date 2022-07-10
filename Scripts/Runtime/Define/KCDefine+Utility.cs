@@ -136,6 +136,8 @@ public static partial class KCDefine {
 	public const string U_PREFIX_CLEAR = "Clear";
 	public const string U_PREFIX_UNLOCK = "Unlock";
 	public const string U_PREFIX_ACQUIRE = "Acquire";
+	public const string U_PREFIX_EQUIPABLE_ITEM = "EquipableItem";
+	public const string U_PREFIX_ATTACHABLE_ITEM = "AttachableItem";
 
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
@@ -155,6 +157,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_PLAY = "Play";
 	public const string U_KEY_HELP = "Help";
+	public const string U_KEY_MAIN = "Main";
 	public const string U_KEY_FREE = "Free";
 	public const string U_KEY_REPEAT = "Repeat";
 	public const string U_KEY_DUPLICATE = "Duplicate";
@@ -292,10 +295,10 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_EXTRA_ABILITY_KINDS = "ExtraAbilityKinds_{0:00}";
 
 	public const string U_KEY_FMT_KINDS = "Kinds_{0:00}";
-	public const string U_KEY_FMT_TARGETS = "Targets_{0:00}";
 	public const string U_KEY_FMT_TARGET_KINDS = "TargetKinds_{0:00}";
 
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
+	public const string U_KEY_FMT_TARGET = "Target_{0:00}";
 	public const string U_KEY_FMT_TUTORIAL_MSG = "TUTORIAL_MSG_{0:00}_{1:00}";
 	
 	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
