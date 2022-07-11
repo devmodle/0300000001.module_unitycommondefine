@@ -57,7 +57,7 @@ public partial struct STTouchResponderInfo {
 
 /** 식별자 정보 */
 [MessagePackObject][System.Serializable]
-public partial struct STIDInfo {
+public partial struct STIDInfo : System.IEquatable<STIDInfo> {
 	[Key(0)] public int m_nID01;
 	[Key(1)] public int m_nID02;
 	[Key(2)] public int m_nID03;
@@ -73,6 +73,12 @@ public partial struct STIDInfo {
 	[IgnoreMember] public long UniqueID02 => this.UniqueID03 + (m_nID02 * (long)KCDefine.B_UNIT_IDS_PER_IDS_02);
 	[IgnoreMember] public long UniqueID03 => m_nID03 * (long)KCDefine.B_UNIT_IDS_PER_IDS_03;
 	#endregion			// 프로퍼티
+
+	#region IEquatable
+	public bool Equals(STIDInfo a_stIDInfo) {
+		return a_stIDInfo.m_nID01 == m_nID01 && a_stIDInfo.m_nID02 == m_nID02 && a_stIDInfo.m_nID03 == m_nID03;
+	}
+	#endregion			// IEquatable
 	
 	#region 함수
 	/** 생성자 */
@@ -105,7 +111,7 @@ public partial struct STIDInfo {
 
 /** 인덱스 정보 */
 [MessagePackObject][System.Serializable]
-public partial struct STIdxInfo {
+public partial struct STIdxInfo : System.IEquatable<STIdxInfo> {
 	[Key(0)] public int m_nX;
 	[Key(1)] public int m_nY;
 	[Key(2)] public int m_nZ;
@@ -115,6 +121,12 @@ public partial struct STIdxInfo {
 		m_nX = KCDefine.B_IDX_INVALID, m_nY = KCDefine.B_IDX_INVALID, m_nZ = KCDefine.B_IDX_INVALID
 	};
 	#endregion			// 상수
+
+	#region IEquatable
+	public bool Equals(STIdxInfo a_stIdxInfo) {
+		return a_stIdxInfo.m_nX == m_nX && a_stIdxInfo.m_nY == m_nY && a_stIdxInfo.m_nZ == m_nZ;
+	}
+	#endregion			// IEquatable
 }
 
 /** 빌드 버전 정보 */
@@ -133,7 +145,7 @@ public partial struct STPurchaseInfo {
 
 /** 지역화 정보 */
 [System.Serializable]
-public partial struct STLocalizeInfo {
+public partial struct STLocalizeInfo : System.IEquatable<STLocalizeInfo> {
 	public string m_oCountryCode;
 	public SystemLanguage m_eSystemLanguage;
 	public List<STFontSetInfo> m_oFontSetInfoList;
@@ -143,11 +155,17 @@ public partial struct STLocalizeInfo {
 		m_eSystemLanguage = SystemLanguage.Unknown
 	};
 	#endregion			// 상수
+
+	#region IEquatable
+	public bool Equals(STLocalizeInfo a_stLocalizeInfo) {
+		return a_stLocalizeInfo.m_oCountryCode.Equals(m_oCountryCode) && a_stLocalizeInfo.m_eSystemLanguage == m_eSystemLanguage && a_stLocalizeInfo.m_oFontSetInfoList.Equals(m_oFontSetInfoList);
+	}
+	#endregion			// IEquatable
 }
 
 /** 폰트 세트 정보 */
 [System.Serializable]
-public partial struct STFontSetInfo {
+public partial struct STFontSetInfo : System.IEquatable<STFontSetInfo> {
 	public string m_oPath;
 	public EFontSet m_eSet;
 
@@ -156,6 +174,12 @@ public partial struct STFontSetInfo {
 		m_eSet = EFontSet.NONE
 	};
 	#endregion			// 상수
+
+	#region IEquatable
+	public bool Equals(STFontSetInfo a_stFontSetInfo) {
+		return a_stFontSetInfo.m_oPath.Equals(m_oPath) && a_stFontSetInfo.m_eSet == m_eSet;
+	}
+	#endregion			// IEquatable
 }
 
 /** 디바이스 정보 */
@@ -167,10 +191,9 @@ public partial struct STDeviceInfo {
 
 /** 값 정보 */
 [System.Serializable]
-public partial struct STValInfo {
+public partial struct STValInfo : System.IEquatable<STValInfo> {
 	public string m_oVal;
 	public string m_oExtraVal;
-
 	public EValType m_eValType;
 
 	#region 상수
@@ -182,10 +205,16 @@ public partial struct STValInfo {
 	#region 프로퍼티
 	public long IntVal => long.TryParse(m_oVal, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;
 	public long IntExtraVal => long.TryParse(m_oExtraVal, out long nExtraVal) ? nExtraVal : KCDefine.B_VAL_0_INT;
-
+	
 	public double RealVal => double.TryParse(m_oVal, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
 	public double RealExtraVal => double.TryParse(m_oExtraVal, out double dblExtraVal) ? dblExtraVal : KCDefine.B_VAL_0_REAL;
 	#endregion			// 프로퍼티
+
+	#region IEquatable
+	public bool Equals(STValInfo a_stValInfo) {
+		return a_stValInfo.m_oVal.Equals(m_oVal) && a_stValInfo.m_oExtraVal.Equals(m_oExtraVal) && a_stValInfo.m_eValType == m_eValType;
+	}
+	#endregion			// IEquatable
 
 	#region 함수
 	/** 생성자 */
