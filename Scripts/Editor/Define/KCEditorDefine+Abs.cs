@@ -792,12 +792,10 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/T_CEngine+Access.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/CEngine+Access.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/T_CEngine+Factory.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/CEngine+Factory.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CEFX.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CEFX.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CEObj.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CEObj.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CEComponent.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CEComponent.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CEPlayableObj.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CEPlayableObj.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CENonPlayableObj.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CENonPlayableObj.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CEInteractableObj.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CEInteractableObj.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CEFX.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CEFX.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CESkill.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CESkill.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Base/T_CEObj.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Base/CEObj.cs"),
 
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Define/T_KDefine+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Define/KDefine+Engine.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_SCRIPT_TEMPLATES}Engine/Define/T_KDefine+EngineType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Engine/Global/Define/KDefine+EngineType.cs"),
@@ -1364,12 +1362,12 @@ public static partial class KCEditorDefine {
 
 	// 윈도우즈
 	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_WNDS = new List<GraphicsDeviceType>() {
-		GraphicsDeviceType.Direct3D11, GraphicsDeviceType.OpenGLCore
+		GraphicsDeviceType.Direct3D12, GraphicsDeviceType.Direct3D11, GraphicsDeviceType.OpenGLCore
 	};
 
 	// 리눅스
 	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_LINUX = new List<GraphicsDeviceType>() {
-		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLCore
+		GraphicsDeviceType.OpenGLCore
 	};
 	
 	// 젠킨스 {
