@@ -1416,3 +1416,109 @@ public static partial class KCDefine {
 #endif			// #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 런타임 상수
 }
+
+/** 초기화 씬 상수 */
+public static partial class KCDefine {
+	#region 런타임 상수
+	// 경로
+	public static readonly string IS_OBJ_P_SCREEN_BLIND_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_INIT_SCENE}IS_ScreenBlindUIs";
+	public static readonly string IS_OBJ_P_SCREEN_BLIND_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_INIT_SCENE}IS_ScreenBlindImg";
+	#endregion			// 런타임 상수
+}
+
+/** 설정 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	// 이름
+	public const string SS_OBJ_N_TIMER_MANAGER = "TimerManager";
+	#endregion			// 기본
+
+	#region 런타임 상수
+	// 경로
+	public static readonly string SS_OBJ_P_SCREEN_DEBUG_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenDebugUIs";
+	public static readonly string SS_OBJ_P_SCREEN_POPUP_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenPopupUIs";
+	public static readonly string SS_OBJ_P_SCREEN_TOPMOST_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenTopmostUIs";
+	public static readonly string SS_OBJ_P_SCREEN_ABS_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenAbsUIs";
+	#endregion			// 런타임 상수
+}
+
+/** 약관 동의 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	// 약관 동의 팝업
+	public const string AS_OBJ_N_AGREE_POPUP = "AgreePopup";
+	#endregion			// 기본
+
+	#region 런타임 상수
+	// 경로 {
+	public static readonly string AS_DATA_P_PRIVACY = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_Privacy_{SystemLanguage.Korean}";
+	public static readonly string AS_DATA_P_SERVICES = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_Services_{SystemLanguage.Korean}";
+
+	public static readonly string AS_OBJ_P_PORTRAIT_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_PortraitAgreePopup";
+	public static readonly string AS_OBJ_P_LANDSCAPE_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_LandscapeAgreePopup";
+	// 경로 }
+	#endregion			// 런타임 상수
+}
+
+/** 지연 설정 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	// 추적 설명 팝업
+	public const string LSS_OBJ_N_TRACKING_DESC_POPUP = "TrackingDescPopup";
+	#endregion			// 기본
+
+	#region 런타임 상수
+	// 경로
+	public static readonly string LSS_OBJ_P_TRACKING_DESC_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_LATE_SETUP_SCENE}LSS_TrackingDescPopup";
+	#endregion			// 런타임 상수
+}
+
+/** 시작 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	// 이름
+	public const string SS_OBJ_N_LOADING_GAUGE = "LOADING_GAUGE";
+	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
+	#endregion			// 기본
+
+	#region 런타임 상수
+	// 경로
+	public static readonly string SS_OBJ_P_LOADING_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingText";
+	public static readonly string SS_OBJ_P_LOADING_GAUGE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingGauge";
+	#endregion			// 런타임 상수
+}
+
+/** 스플래시 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	// 시간
+	public const float SS_DELAY_NEXT_SCENE_LOAD = 2.0f;
+	#endregion			// 기본
+
+	#region 런타임 상수
+	// 색상
+	public static readonly Color SS_COLOR_BG_IMG = new Color(0x29 / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0x4c / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0x94 / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 1.0f);
+	#endregion			// 런타임 상수
+}
+
+/** 메인 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	// AB 테스트 UI
+	public const string MS_OBJ_N_AB_T_UIS_SET_UIS = "SET_UIS";
+	#endregion			// 기본
+
+	#region 런타임 상수
+	// 경로
+	public static readonly string MS_OBJ_P_LEVEL_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_MAIN_SCENE}MS_LevelScrollerCellView";
+	public static readonly string MS_OBJ_P_STAGE_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_MAIN_SCENE}MS_StageScrollerCellView";
+	public static readonly string MS_OBJ_P_CHAPTER_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_MAIN_SCENE}MS_ChapterScrollerCellView";
+	#endregion			// 런타임 상수
+}
+
+/** 게임 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	
+	#endregion			// 기본
+}
