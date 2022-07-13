@@ -596,7 +596,8 @@ public static partial class KCDefine {
 	public const string U_PROPERTY_N_SPRITE = "sprite";
 	public const string U_PROPERTY_N_TMP_TEXT = "text";
 	public const string U_PROPERTY_N_TMP_FONT = "font";
-	
+
+	public const string U_MAT_N_DEF_SKYBOX = "Default-Skybox";
 	public const string U_ICON_N_ANDROID_NOTI_SMALL = "smallnotiicon";
 	public const string U_ICON_N_ANDROID_NOTI_LARGE = "largenotiicon";
 	// 이름 }
