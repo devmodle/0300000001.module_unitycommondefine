@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
@@ -175,11 +176,11 @@ public partial struct STValInfo {
 	#endregion			// 상수
 
 	#region 프로퍼티
-	public long IntVal => long.TryParse(m_oVal, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;
-	public long IntExtraVal => long.TryParse(m_oExtraVal, out long nExtraVal) ? nExtraVal : KCDefine.B_VAL_0_INT;
+	public long IntVal => long.TryParse(m_oVal, NumberStyles.Any, null, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;
+	public long IntExtraVal => long.TryParse(m_oExtraVal, NumberStyles.Any, null, out long nExtraVal) ? nExtraVal : KCDefine.B_VAL_0_INT;
 	
-	public double RealVal => double.TryParse(m_oVal, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
-	public double RealExtraVal => double.TryParse(m_oExtraVal, out double dblExtraVal) ? dblExtraVal : KCDefine.B_VAL_0_REAL;
+	public double RealVal => double.TryParse(m_oVal, NumberStyles.Any, null, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
+	public double RealExtraVal => double.TryParse(m_oExtraVal, NumberStyles.Any, null, out double dblExtraVal) ? dblExtraVal : KCDefine.B_VAL_0_REAL;
 	#endregion			// 프로퍼티
 
 	#region 함수

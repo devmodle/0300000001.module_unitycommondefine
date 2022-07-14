@@ -271,6 +271,7 @@ public static partial class KCDefine {
 	public const string B_TOKEN_SPACE = " ";
 	public const string B_TOKEN_CROSS = "x";
 	public const string B_TOKEN_SPLASH = "/";
+	public const string B_TOKEN_REV_SPLASH = "\\";
 
 	public const string B_TOKEN_INCR = "+";
 	public const string B_TOKEN_DECR = "-";
