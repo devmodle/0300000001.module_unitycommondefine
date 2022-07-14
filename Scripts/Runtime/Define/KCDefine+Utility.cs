@@ -129,16 +129,6 @@ public static partial class KCDefine {
 #endif			// #if UNITY_IOS
 	// 형식 }
 
-	// 접두어
-	public const string U_PREFIX_PAY = "Pay";
-	public const string U_PREFIX_ITEM = "Item";
-	public const string U_PREFIX_SKILL = "Skill";
-	public const string U_PREFIX_CLEAR = "Clear";
-	public const string U_PREFIX_UNLOCK = "Unlock";
-	public const string U_PREFIX_ACQUIRE = "Acquire";
-	public const string U_PREFIX_EQUIPABLE_ITEM = "EquipableItem";
-	public const string U_PREFIX_ATTACHABLE_ITEM = "AttachableItem";
-
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
 
@@ -148,9 +138,6 @@ public static partial class KCDefine {
 	public const string U_KEY_NAME = "Name";
 	public const string U_KEY_DESC = "Desc";
 	public const string U_KEY_RATE = "Rate";
-	public const string U_KEY_DELAY = "Delay";
-	public const string U_KEY_DURATION = "Duration";
-	public const string U_KEY_DELTA_TIME = "DeltaTime";
 	public const string U_KEY_REPLACE = "Replace";
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
@@ -196,13 +183,12 @@ public static partial class KCDefine {
 	public const string U_KEY_PASSIVE = "Passive";
 
 	public const string U_KEY_HIT = "Hit";
-	public const string U_KEY_VAL = "Val";
 	public const string U_KEY_STAT = "Stat";
 	public const string U_KEY_BUFF = "Buff";
 	public const string U_KEY_DEBUFF = "Debuff";
 	public const string U_KEY_UPGRADE = "Upgrade";
-	public const string U_KEY_EXTRA_VAL = "ExtraVal";
-	public const string U_KEY_VAL_TYPE = "ValType";
+	public const string U_KEY_VAL_INFO = "ValInfo";
+	public const string U_KEY_DURATION_INFO = "DurationInfo";
 
 	public const string U_KEY_ID = "ID";	
 	public const string U_KEY_PREV_ID = "PrevID";
@@ -210,12 +196,10 @@ public static partial class KCDefine {
 
 	public const string U_KEY_SND = "Snd";
 	public const string U_KEY_FONT = "Font";
+	public const string U_KEY_SIZE = "Size";
 	public const string U_KEY_SPRITE = "Sprite";
 	public const string U_KEY_TEXTURE = "Texture";
 	public const string U_KEY_TABLE_IDX = "TableIdx";
-
-	public const string U_KEY_SIZE_X = "SizeX";
-	public const string U_KEY_SIZE_Y = "SizeY";
 
 	public const string U_KEY_DIFFICULTY = "Difficulty";
 	public const string U_KEY_PRODUCT_TYPE = "ProductType";
@@ -287,19 +271,24 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 	public const string U_KEY_FMT_SKILL_KINDS = "SkillKinds_{0:00}";
 	public const string U_KEY_FMT_REWARD_KINDS = "RewardKinds_{0:00}";
-	public const string U_KEY_FMT_EQUIPMENTS_ITEM_KINDS = "EquipmentsItemKinds_{0:00}";
-	public const string U_KEY_FMT_ATTACHMENTS_ITEM_KINDS = "AttachmentsItemKinds_{0:00}";
-
-	public const string U_KEY_FMT_ABILITY_LV = "AbilityLV_{0:00}";
-	public const string U_KEY_FMT_ABILITY_KINDS = "AbilityKinds_{0:00}";
 	public const string U_KEY_FMT_EXTRA_ABILITY_KINDS = "ExtraAbilityKinds_{0:00}";
 
-	public const string U_KEY_FMT_KINDS = "Kinds_{0:00}";
-	public const string U_KEY_FMT_TARGET_KINDS = "TargetKinds_{0:00}";
-
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
-	public const string U_KEY_FMT_TARGET = "Target_{0:00}";
 	public const string U_KEY_FMT_TUTORIAL_MSG = "TUTORIAL_MSG_{0:00}_{1:00}";
+	public const string U_KEY_FMT_ABILITY_VAL_INFO = "AbilityValInfo_{0:00}";
+
+	public const string U_KEY_FMT_PAY_TARGET_INFO = "PayTargetInfo_{0:00}";
+	public const string U_KEY_FMT_CLEAR_TARGET_INFO = "ClearTargetInfo_{0:00}";
+	public const string U_KEY_FMT_ACQUIRE_TARGET_INFO = "AcquireTargetInfo_{0:00}";
+	public const string U_KEY_FMT_UNLOCK_TARGET_INFO = "UnlockTargetInfo_{0:00}";
+
+	public const string U_KEY_FMT_DROP_ITEM_TARGET_INFO = "DropItemTargetInfo_{0:00}";
+	public const string U_KEY_FMT_EQUIP_ITEM_TARGET_INFO = "EquipItemTargetInfo_{0:00}";
+	public const string U_KEY_FMT_ATTACH_ITEM_TARGET_INFO = "AttachItemTargetInfo_{0:00}";
+
+	public const string U_KEY_FMT_SKILL_TARGET_INFO = "SkillTargetInfo_{0:00}";
+	public const string U_KEY_FMT_PLAYER_OBJ_TARGET_INFO = "PlayerObjTargetInfo_{0:00}";
+	public const string U_KEY_FMT_ENEMY_OBJ_TARGET_INFO = "EnemyObjTargetInfo_{0:00}";
 	
 	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
 	public const string U_KEY_SERVICES_M_UPDATE_FAIL_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateFailAppleLoginStateCallback";

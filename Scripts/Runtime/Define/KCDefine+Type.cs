@@ -57,7 +57,7 @@ public partial struct STTouchResponderInfo {
 
 /** 식별자 정보 */
 [MessagePackObject][System.Serializable]
-public partial struct STIDInfo : System.IEquatable<STIDInfo> {
+public partial struct STIDInfo {
 	[Key(0)] public int m_nID01;
 	[Key(1)] public int m_nID02;
 	[Key(2)] public int m_nID03;
@@ -74,12 +74,6 @@ public partial struct STIDInfo : System.IEquatable<STIDInfo> {
 	[IgnoreMember] public long UniqueID03 => m_nID03 * (long)KCDefine.B_UNIT_IDS_PER_IDS_03;
 	#endregion			// 프로퍼티
 
-	#region IEquatable
-	public bool Equals(STIDInfo a_stIDInfo) {
-		return a_stIDInfo.m_nID01 == m_nID01 && a_stIDInfo.m_nID02 == m_nID02 && a_stIDInfo.m_nID03 == m_nID03;
-	}
-	#endregion			// IEquatable
-	
 	#region 함수
 	/** 생성자 */
 	public STIDInfo(SimpleJSON.JSONNode a_oIDInfo) {
@@ -97,13 +91,9 @@ public partial struct STIDInfo : System.IEquatable<STIDInfo> {
 #if UNITY_EDITOR || UNITY_STANDALONE
 	/** 식별자 정보를 생성한다 */
 	public void MakeIDInfo(SimpleJSON.JSONClass a_oOutIDInfo) {
-		string oID01Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT);
-		string oID02Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT);
-		string oID03Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT);
-
-		a_oOutIDInfo.Add(oID01Key, $"{Mathf.Clamp(m_nID01, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_LEVEL_INFOS)}");
-		a_oOutIDInfo.Add(oID02Key, $"{Mathf.Clamp(m_nID02, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_STAGE_INFOS)}");
-		a_oOutIDInfo.Add(oID03Key, $"{Mathf.Clamp(m_nID03, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
+		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT), $"{Mathf.Clamp(m_nID01, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_LEVEL_INFOS)}");
+		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT), $"{Mathf.Clamp(m_nID02, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_STAGE_INFOS)}");
+		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT), $"{Mathf.Clamp(m_nID03, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
 	}
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE
 	#endregion			// 조건부 함수
@@ -111,7 +101,7 @@ public partial struct STIDInfo : System.IEquatable<STIDInfo> {
 
 /** 인덱스 정보 */
 [MessagePackObject][System.Serializable]
-public partial struct STIdxInfo : System.IEquatable<STIdxInfo> {
+public partial struct STIdxInfo {
 	[Key(0)] public int m_nX;
 	[Key(1)] public int m_nY;
 	[Key(2)] public int m_nZ;
@@ -121,12 +111,6 @@ public partial struct STIdxInfo : System.IEquatable<STIdxInfo> {
 		m_nX = KCDefine.B_IDX_INVALID, m_nY = KCDefine.B_IDX_INVALID, m_nZ = KCDefine.B_IDX_INVALID
 	};
 	#endregion			// 상수
-
-	#region IEquatable
-	public bool Equals(STIdxInfo a_stIdxInfo) {
-		return a_stIdxInfo.m_nX == m_nX && a_stIdxInfo.m_nY == m_nY && a_stIdxInfo.m_nZ == m_nZ;
-	}
-	#endregion			// IEquatable
 }
 
 /** 빌드 버전 정보 */
@@ -145,7 +129,7 @@ public partial struct STPurchaseInfo {
 
 /** 지역화 정보 */
 [System.Serializable]
-public partial struct STLocalizeInfo : System.IEquatable<STLocalizeInfo> {
+public partial struct STLocalizeInfo {
 	public string m_oCountryCode;
 	public SystemLanguage m_eSystemLanguage;
 	public List<STFontSetInfo> m_oFontSetInfoList;
@@ -155,17 +139,11 @@ public partial struct STLocalizeInfo : System.IEquatable<STLocalizeInfo> {
 		m_eSystemLanguage = SystemLanguage.Unknown
 	};
 	#endregion			// 상수
-
-	#region IEquatable
-	public bool Equals(STLocalizeInfo a_stLocalizeInfo) {
-		return a_stLocalizeInfo.m_oCountryCode.Equals(m_oCountryCode) && a_stLocalizeInfo.m_eSystemLanguage == m_eSystemLanguage && a_stLocalizeInfo.m_oFontSetInfoList.Equals(m_oFontSetInfoList);
-	}
-	#endregion			// IEquatable
 }
 
 /** 폰트 세트 정보 */
 [System.Serializable]
-public partial struct STFontSetInfo : System.IEquatable<STFontSetInfo> {
+public partial struct STFontSetInfo {
 	public string m_oPath;
 	public EFontSet m_eSet;
 
@@ -174,12 +152,6 @@ public partial struct STFontSetInfo : System.IEquatable<STFontSetInfo> {
 		m_eSet = EFontSet.NONE
 	};
 	#endregion			// 상수
-
-	#region IEquatable
-	public bool Equals(STFontSetInfo a_stFontSetInfo) {
-		return a_stFontSetInfo.m_oPath.Equals(m_oPath) && a_stFontSetInfo.m_eSet == m_eSet;
-	}
-	#endregion			// IEquatable
 }
 
 /** 디바이스 정보 */
@@ -191,7 +163,7 @@ public partial struct STDeviceInfo {
 
 /** 값 정보 */
 [System.Serializable]
-public partial struct STValInfo : System.IEquatable<STValInfo> {
+public partial struct STValInfo {
 	public string m_oVal;
 	public string m_oExtraVal;
 	public EValType m_eValType;
@@ -210,19 +182,12 @@ public partial struct STValInfo : System.IEquatable<STValInfo> {
 	public double RealExtraVal => double.TryParse(m_oExtraVal, out double dblExtraVal) ? dblExtraVal : KCDefine.B_VAL_0_REAL;
 	#endregion			// 프로퍼티
 
-	#region IEquatable
-	public bool Equals(STValInfo a_stValInfo) {
-		return a_stValInfo.m_oVal.Equals(m_oVal) && a_stValInfo.m_oExtraVal.Equals(m_oExtraVal) && a_stValInfo.m_eValType == m_eValType;
-	}
-	#endregion			// IEquatable
-
 	#region 함수
 	/** 생성자 */
 	public STValInfo(SimpleJSON.JSONNode a_oValInfo) {
-		m_oVal = (!a_oValInfo[KCDefine.U_KEY_VAL].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.U_KEY_VAL].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.U_KEY_VAL] : KCDefine.B_STR_0_INT;
-		m_oExtraVal = (!a_oValInfo[KCDefine.U_KEY_EXTRA_VAL].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.U_KEY_EXTRA_VAL].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.U_KEY_EXTRA_VAL] : KCDefine.B_STR_0_INT;
-
-		m_eValType = (!a_oValInfo[KCDefine.U_KEY_VAL_TYPE].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.U_KEY_VAL_TYPE].Value.Length > KCDefine.B_VAL_0_INT) ? (EValType)a_oValInfo[KCDefine.U_KEY_VAL_TYPE].AsInt : EValType.NONE;
+		m_oVal = (!a_oValInfo[KCDefine.B_VAL_1_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.B_VAL_1_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.B_VAL_1_INT] : KCDefine.B_STR_0_INT;
+		m_oExtraVal = (!a_oValInfo[KCDefine.B_VAL_2_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.B_VAL_2_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.B_VAL_2_INT] : KCDefine.B_STR_0_INT;
+		m_eValType = (!a_oValInfo[KCDefine.B_VAL_0_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.B_VAL_0_INT].Value.Length > KCDefine.B_VAL_0_INT) ? (EValType)a_oValInfo[KCDefine.B_VAL_0_INT].AsInt : EValType.NONE;
 	}
 	#endregion			// 함수
 }
@@ -271,9 +236,9 @@ public partial struct STDurationInfo {
 	#region 함수
 	/** 생성자 */
 	public STDurationInfo(SimpleJSON.JSONNode a_oDurationInfo) {
-		m_fDelay = (!a_oDurationInfo[KCDefine.U_KEY_DELAY].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELAY].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELAY].AsFloat : KCDefine.B_VAL_0_REAL;
-		m_fDuration = (!a_oDurationInfo[KCDefine.U_KEY_DURATION].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DURATION].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DURATION].AsFloat : KCDefine.B_VAL_0_REAL;
-		m_fDeltaTime = (!a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.U_KEY_DELTA_TIME].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDelay = (!a_oDurationInfo[KCDefine.B_VAL_0_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.B_VAL_0_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.B_VAL_0_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDuration = (!a_oDurationInfo[KCDefine.B_VAL_1_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.B_VAL_1_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDeltaTime = (!a_oDurationInfo[KCDefine.B_VAL_2_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.B_VAL_2_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 	}
 	#endregion			// 함수
 }
