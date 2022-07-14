@@ -196,7 +196,6 @@ public partial struct STValInfo {
 [System.Serializable]
 public partial struct STCommonInfo {
 	public bool m_bIsRepeat;
-	public bool m_bIsDuplicate;
 
 	public string m_oName;
 	public string m_oDesc;
@@ -205,7 +204,6 @@ public partial struct STCommonInfo {
 	/** 생성자 */
 	public STCommonInfo(SimpleJSON.JSONNode a_oCommonInfo) {
 		m_bIsRepeat = (!a_oCommonInfo[KCDefine.U_KEY_REPEAT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oCommonInfo[KCDefine.U_KEY_REPEAT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oCommonInfo[KCDefine.U_KEY_REPEAT].AsInt != KCDefine.B_VAL_0_INT : false;
-		m_bIsDuplicate = (!a_oCommonInfo[KCDefine.U_KEY_DUPLICATE].Value.Equals(KCDefine.B_TEXT_NULL) && a_oCommonInfo[KCDefine.U_KEY_DUPLICATE].Value.Length > KCDefine.B_VAL_0_INT) ? a_oCommonInfo[KCDefine.U_KEY_DUPLICATE].AsInt != KCDefine.B_VAL_0_INT : false;
 
 		m_oName = (!a_oCommonInfo[KCDefine.U_KEY_NAME].Value.Equals(KCDefine.B_TEXT_NULL) && a_oCommonInfo[KCDefine.U_KEY_NAME].Value.Length > KCDefine.B_VAL_0_INT) ? a_oCommonInfo[KCDefine.U_KEY_NAME] : string.Empty;
 		m_oDesc = (!a_oCommonInfo[KCDefine.U_KEY_DESC].Value.Equals(KCDefine.B_TEXT_NULL) && a_oCommonInfo[KCDefine.U_KEY_DESC].Value.Length > KCDefine.B_VAL_0_INT) ? a_oCommonInfo[KCDefine.U_KEY_DESC] : string.Empty;
@@ -217,7 +215,6 @@ public partial struct STCommonInfo {
 	/** 공용 정보를 생성한다 */
 	public void MakeCommonInfo(SimpleJSON.JSONClass a_oOutCommonInfo) {
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_REPEAT, m_bIsRepeat ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
-		a_oOutCommonInfo.Add(KCDefine.U_KEY_DUPLICATE, m_bIsDuplicate ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
