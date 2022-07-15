@@ -166,7 +166,6 @@ public partial struct STDeviceInfo {
 [System.Serializable]
 public partial struct STValInfo {
 	public string m_oVal;
-	public string m_oExtraVal;
 	public EValType m_eValType;
 
 	#region 상수
@@ -177,17 +176,13 @@ public partial struct STValInfo {
 
 	#region 프로퍼티
 	public long IntVal => long.TryParse(m_oVal, NumberStyles.Any, null, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;
-	public long IntExtraVal => long.TryParse(m_oExtraVal, NumberStyles.Any, null, out long nExtraVal) ? nExtraVal : KCDefine.B_VAL_0_INT;
-	
 	public double RealVal => double.TryParse(m_oVal, NumberStyles.Any, null, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
-	public double RealExtraVal => double.TryParse(m_oExtraVal, NumberStyles.Any, null, out double dblExtraVal) ? dblExtraVal : KCDefine.B_VAL_0_REAL;
 	#endregion			// 프로퍼티
 
 	#region 함수
 	/** 생성자 */
 	public STValInfo(SimpleJSON.JSONNode a_oValInfo) {
 		m_oVal = (!a_oValInfo[KCDefine.B_VAL_1_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.B_VAL_1_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.B_VAL_1_INT] : KCDefine.B_STR_0_INT;
-		m_oExtraVal = (!a_oValInfo[KCDefine.B_VAL_2_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.B_VAL_2_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.B_VAL_2_INT] : KCDefine.B_STR_0_INT;
 		m_eValType = (!a_oValInfo[KCDefine.B_VAL_0_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.B_VAL_0_INT].Value.Length > KCDefine.B_VAL_0_INT) ? (EValType)a_oValInfo[KCDefine.B_VAL_0_INT].AsInt : EValType.NONE;
 	}
 	#endregion			// 함수

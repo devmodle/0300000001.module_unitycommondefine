@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 #if UNITY_EDITOR || UNITY_STANDALONE
-/** 에디터 기본 상수 */
+/** 에디터 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 이름

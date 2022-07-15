@@ -188,6 +188,7 @@ public static partial class KCDefine {
 	public const string U_KEY_UPGRADE = "Upgrade";
 	public const string U_KEY_VAL_INFO = "ValInfo";
 	public const string U_KEY_DURATION_INFO = "DurationInfo";
+	public const string U_KEY_EXTRA_VAL_INFO = "ExtraValInfo";
 
 	public const string U_KEY_ID = "ID";	
 	public const string U_KEY_PREV_ID = "PrevID";
