@@ -38,6 +38,12 @@ public partial struct STComponentInfo {
 public partial struct STSortingOrderInfo {
 	public int m_nOrder;
 	public string m_oLayer;
+
+	#region 상수
+	public static readonly STSortingOrderInfo INVALID = new STSortingOrderInfo() {
+		m_nOrder = int.MinValue
+	};
+	#endregion			// 상수
 }
 
 /** 비활성화 객체 정보 */
