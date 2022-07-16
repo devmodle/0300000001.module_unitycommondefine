@@ -15,13 +15,11 @@ using UnityEngine.Events;
 - LightingSettings.Lightmapper.ProgressiveGPU
 
 =====> 씬 로딩 순서 <=====
-- Init
 - Splash
 - Start
 - Setup (Additive)
 - Agree (Additive)
 - LateSetup (Additive)
-- Intro
 - Title
 
 =====> 소속 번호 <=====
