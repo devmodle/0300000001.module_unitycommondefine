@@ -306,16 +306,17 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 	public const string U_KEY_FMT_SKILL_KINDS = "SkillKinds_{0:00}";
 	public const string U_KEY_FMT_REWARD_KINDS = "RewardKinds_{0:00}";
-	public const string U_KEY_FMT_EXTRA_ABILITY_KINDS = "ExtraAbilityKinds_{0:00}";
 
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
 	public const string U_KEY_FMT_TUTORIAL_MSG = "TUTORIAL_MSG_{0:00}_{1:00}";
 	public const string U_KEY_FMT_ABILITY_VAL_INFO = "AbilityValInfo_{0:00}";
 
 	public const string U_KEY_FMT_PAY_TARGET_INFO = "PayTargetInfo_{0:00}";
-	public const string U_KEY_FMT_CLEAR_TARGET_INFO = "ClearTargetInfo_{0:00}";
 	public const string U_KEY_FMT_ACQUIRE_TARGET_INFO = "AcquireTargetInfo_{0:00}";
+	
+	public const string U_KEY_FMT_CLEAR_TARGET_INFO = "ClearTargetInfo_{0:00}";
 	public const string U_KEY_FMT_UNLOCK_TARGET_INFO = "UnlockTargetInfo_{0:00}";
+	public const string U_KEY_FMT_EXTRA_ABILITY_TARGET_INFO = "ExtraAbilityTargetInfo_{0:00}";
 
 	public const string U_KEY_FMT_DROP_ITEM_TARGET_INFO = "DropItemTargetInfo_{0:00}";
 	public const string U_KEY_FMT_EQUIP_ITEM_TARGET_INFO = "EquipItemTargetInfo_{0:00}";
