@@ -158,55 +158,55 @@ public static partial class KCDefine {
 
 	public const string U_KEY_BG = "BG";
 	public const string U_KEY_BG_SALE = "BGSale";
-	public const string U_KEY_BG_UPGRADE = "BGUpgrade";
+	public const string U_KEY_BG_ENHANCE = "BGEnhance";
 
 	public const string U_KEY_NORM = "Norm";
 	public const string U_KEY_NORM_SALE = "NormSale";
-	public const string U_KEY_NORM_UPGRADE = "NormUpgrade";
+	public const string U_KEY_NORM_ENHANCE = "NormEnhance";
 
 	public const string U_KEY_OVERLAY = "Overlay";
 	public const string U_KEY_OVERLAY_SALE = "OverlaySale";
-	public const string U_KEY_OVERLAY_UPGRADE = "OverlayUpgrade";
+	public const string U_KEY_OVERLAY_ENHANCE = "OverlayEnhance";
 
 	public const string U_KEY_PLAYABLE = "Playable";
 	public const string U_KEY_PLAYABLE_SALE = "PlayableSale";
-	public const string U_KEY_PLAYABLE_UPGRADE = "PlayableUpgrade";
+	public const string U_KEY_PLAYABLE_ENHANCE = "PlayableEnhance";
 
 	public const string U_KEY_NON_PLAYABLE = "NonPlayable";
 	public const string U_KEY_NON_PLAYABLE_SALE = "NonPlayableSale";
-	public const string U_KEY_NON_PLAYABLE_UPGRADE = "NonPlayableUpgrade";
+	public const string U_KEY_NON_PLAYABLE_ENHANCE = "NonPlayableEnhance";
 
 	public const string U_KEY_ENEMY = "Enemy";
 	public const string U_KEY_ENEMY_SALE = "EnemySale";
-	public const string U_KEY_ENEMY_UPGRADE = "EnemyUpgrade";
+	public const string U_KEY_ENEMY_ENHANCE = "EnemyEnhance";
 
 	public const string U_KEY_GOODS = "Goods";
 	public const string U_KEY_GOODS_SALE = "GoodsSale";
-	public const string U_KEY_GOODS_UPGRADE = "GoodsUpgrade";
+	public const string U_KEY_GOODS_ENHANCE = "GoodsEnhance";
 
 	public const string U_KEY_CONSUMABLE = "Consumable";
 	public const string U_KEY_CONSUMABLE_SALE = "ConsumableSale";
-	public const string U_KEY_CONSUMABLE_UPGRADE = "ConsumableUpgrade";
+	public const string U_KEY_CONSUMABLE_ENHANCE = "ConsumableEnhance";
 
 	public const string U_KEY_NON_CONSUMABLE = "NonConsumable";
 	public const string U_KEY_NON_CONSUMABLE_SALE = "NonConsumableSale";
-	public const string U_KEY_NON_CONSUMABLE_UPGRADE = "NonConsumableUpgrade";
+	public const string U_KEY_NON_CONSUMABLE_ENHANCE = "NonConsumableEnhance";
 
 	public const string U_KEY_WEAPON = "Weapon";
 	public const string U_KEY_WEAPON_SALE = "WeaponSale";
-	public const string U_KEY_WEAPON_UPGRADE = "WeaponUpgrade";
+	public const string U_KEY_WEAPON_ENHANCE = "WeaponEnhance";
 
 	public const string U_KEY_ARMOR = "Armor";
 	public const string U_KEY_ARMOR_SALE = "ArmorSale";
-	public const string U_KEY_ARMOR_UPGRADE = "ArmorUpgrade";
+	public const string U_KEY_ARMOR_ENHANCE = "ArmorEnhance";
 
 	public const string U_KEY_ACCESSORY = "Accessory";
 	public const string U_KEY_ACCESSORY_SALE = "AccessorySale";
-	public const string U_KEY_ACCESSORY_UPGRADE = "AccessoryUpgrade";
+	public const string U_KEY_ACCESSORY_ENHANCE = "AccessoryEnhance";
 
 	public const string U_KEY_ATTACH = "Attach";
 	public const string U_KEY_ATTACH_SALE = "AttachSale";
-	public const string U_KEY_ATTACH_UPGRADE = "AttachUpgrade";
+	public const string U_KEY_ATTACH_ENHANCE = "AttachEnhance";
 
 	public const string U_KEY_PKGS = "Pkgs";
 	public const string U_KEY_SINGLE = "Single";
@@ -217,20 +217,24 @@ public static partial class KCDefine {
 
 	public const string U_KEY_ACTIVE = "Active";
 	public const string U_KEY_ACTIVE_SALE = "ActiveSale";
-	public const string U_KEY_ACTIVE_UPGRADE = "ActiveUpgrade";
+	public const string U_KEY_ACTIVE_ENHANCE = "ActiveEnhance";
 
 	public const string U_KEY_PASSIVE = "Passive";
 	public const string U_KEY_PASSIVE_SALE = "PassiveSale";
-	public const string U_KEY_PASSIVE_UPGRADE = "PassiveUpgrade";
+	public const string U_KEY_PASSIVE_ENHANCE = "PassiveEnhance";
+
+	public const string U_KEY_STAT = "Stat";
+	public const string U_KEY_STAT_ENHANCE = "StatEnhance";
+
+	public const string U_KEY_BUFF = "Buff";
+	public const string U_KEY_BUFF_ENHANCE = "BuffEnhance";
+	
+	public const string U_KEY_DEBUFF = "Debuff";
+	public const string U_KEY_DEBUFF_ENHANCE = "DebuffEnhance";
 
 	public const string U_KEY_HIT = "Hit";
-	public const string U_KEY_STAT = "Stat";
-	public const string U_KEY_BUFF = "Buff";
-	public const string U_KEY_DEBUFF = "Debuff";
-	public const string U_KEY_UPGRADE = "Upgrade";
 	public const string U_KEY_VAL_INFO = "ValInfo";
 	public const string U_KEY_DURATION_INFO = "DurationInfo";
-	public const string U_KEY_EXTRA_VAL_INFO = "ExtraValInfo";
 
 	public const string U_KEY_ID = "ID";	
 	public const string U_KEY_PREV_ID = "PrevID";
@@ -896,23 +900,11 @@ public static partial class KCDefine {
 
 	public static readonly string U_ASSET_P_G_OPTS_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_OptsInfoTable";
 	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
-	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DefineSymbolInfoTable";
 	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProjInfoTable";
-	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
 	public static readonly string U_ASSET_P_G_LOCALIZE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_LocalizeInfoTable";
-
-	public static readonly string U_ASSET_P_G_MISSION_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_MissionInfoTable";
-	public static readonly string U_ASSET_P_G_REWARD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_RewardInfoTable";
-	public static readonly string U_ASSET_P_G_EPISODE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_EpisodeInfoTable";
-	public static readonly string U_ASSET_P_G_TUTORIAL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
-	public static readonly string U_ASSET_P_G_RES_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ResInfoTable";
-
-	public static readonly string U_ASSET_P_G_ABILITY_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_AbilityInfoTable";
-	public static readonly string U_ASSET_P_G_ITEM_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ItemInfoTable";
-	public static readonly string U_ASSET_P_G_SKILL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_SkillInfoTable";
-	public static readonly string U_ASSET_P_G_OBJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ObjInfoTable";
-	public static readonly string U_ASSET_P_G_FX_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
-	public static readonly string U_ASSET_P_G_PRODUCT_SALE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductSaleInfoTable";
+	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DefineSymbolInfoTable";
+	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
+	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
 
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_01";
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_02";
@@ -1403,8 +1395,6 @@ public static partial class KCDefine {
 
 #if PURCHASE_MODULE_ENABLE
 	// 경로 {
-	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
-
 #if MSG_PACK_ENABLE
 	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
 #elif NEWTON_SOFT_JSON_MODULE_ENABLE
