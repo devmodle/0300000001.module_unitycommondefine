@@ -170,7 +170,7 @@ public partial struct STDeviceInfo {
 
 /** 값 정보 */
 [System.Serializable]
-public partial struct STValInfo {
+public partial struct STValInfo : System.IEquatable<STValInfo> {
 	public string m_oVal;
 	public EValType m_eValType;
 
@@ -185,11 +185,18 @@ public partial struct STValInfo {
 	public double RealVal => double.TryParse(m_oVal, NumberStyles.Any, null, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
 	#endregion			// 프로퍼티
 
+	#region IEquatable
+	/** 동일 여부를 검사한다 */
+	public bool Equals(STValInfo a_stValInfo) {
+		return m_eValType == a_stValInfo.m_eValType && m_oVal.Equals(a_stValInfo.m_oVal);
+	}
+	#endregion			// IEquatable
+
 	#region 함수
 	/** 생성자 */
-	public STValInfo(SimpleJSON.JSONNode a_oValInfo) {
-		m_oVal = (!a_oValInfo[KCDefine.B_VAL_1_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.B_VAL_1_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[KCDefine.B_VAL_1_INT] : KCDefine.B_STR_0_INT;
-		m_eValType = (!a_oValInfo[KCDefine.B_VAL_0_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[KCDefine.B_VAL_0_INT].Value.Length > KCDefine.B_VAL_0_INT) ? (EValType)a_oValInfo[KCDefine.B_VAL_0_INT].AsInt : EValType.NONE;
+	public STValInfo(SimpleJSON.JSONNode a_oValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+		m_oVal = (!a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] : KCDefine.B_STR_0_INT;
+		m_eValType = (!a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].Value.Length > KCDefine.B_VAL_0_INT) ? (EValType)a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsInt : EValType.NONE;
 	}
 	#endregion			// 함수
 }
@@ -234,10 +241,10 @@ public partial struct STDurationInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STDurationInfo(SimpleJSON.JSONNode a_oDurationInfo) {
-		m_fDelay = (!a_oDurationInfo[KCDefine.B_VAL_0_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.B_VAL_0_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.B_VAL_0_INT].AsFloat : KCDefine.B_VAL_0_REAL;
-		m_fDuration = (!a_oDurationInfo[KCDefine.B_VAL_1_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.B_VAL_1_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
-		m_fDeltaTime = (!a_oDurationInfo[KCDefine.B_VAL_2_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[KCDefine.B_VAL_2_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+	public STDurationInfo(SimpleJSON.JSONNode a_oDurationInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+		m_fDelay = (!a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDuration = (!a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDeltaTime = (!a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 	}
 	#endregion			// 함수
 }
