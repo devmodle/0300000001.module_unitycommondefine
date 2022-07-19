@@ -215,6 +215,10 @@ public static partial class KCDefine {
 	public const string U_KEY_STAGE = "Stage";
 	public const string U_KEY_CHAPTER = "Chapter";
 
+	public const string U_KEY_ACTION = "Action";
+	public const string U_KEY_ACTION_SALE = "ActionSale";
+	public const string U_KEY_ACTION_ENHANCE = "ActionEnhance";
+
 	public const string U_KEY_ACTIVE = "Active";
 	public const string U_KEY_ACTIVE_SALE = "ActiveSale";
 	public const string U_KEY_ACTIVE_ENHANCE = "ActiveEnhance";
