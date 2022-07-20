@@ -76,9 +76,9 @@ public partial struct STIDInfo {
 	#endregion			// 상수
 
 	#region 프로퍼티
-	[IgnoreMember] public long UniqueID01 => this.UniqueID02 + m_nID01;
-	[IgnoreMember] public long UniqueID02 => this.UniqueID03 + (m_nID02 * (long)KCDefine.B_UNIT_IDS_PER_IDS_02);
-	[IgnoreMember] public long UniqueID03 => m_nID03 * (long)KCDefine.B_UNIT_IDS_PER_IDS_03;
+	[IgnoreMember] public ulong UniqueID01 => this.UniqueID02 + ((ulong)m_nID01 * KCDefine.B_UNIT_IDS_PER_IDS_01);
+	[IgnoreMember] public ulong UniqueID02 => this.UniqueID03 + ((ulong)m_nID02 * KCDefine.B_UNIT_IDS_PER_IDS_02);
+	[IgnoreMember] public ulong UniqueID03 => (ulong)m_nID03 * KCDefine.B_UNIT_IDS_PER_IDS_03;
 	#endregion			// 프로퍼티
 
 	#region 함수
@@ -169,10 +169,11 @@ public partial struct STDeviceInfo {
 }
 
 /** 값 정보 */
-[System.Serializable]
+[MessagePackObject][System.Serializable]
 public partial struct STValInfo : System.IEquatable<STValInfo> {
-	public string m_oVal;
-	public EValType m_eValType;
+	[Key(1)] public long m_nVal;
+	[Key(2)] public double m_dblVal;
+	[Key(11)] public EValType m_eValType;
 
 	#region 상수
 	public static readonly STValInfo INVALID = new STValInfo() {
@@ -180,25 +181,35 @@ public partial struct STValInfo : System.IEquatable<STValInfo> {
 	};
 	#endregion			// 상수
 
-	#region 프로퍼티
-	public long IntVal => long.TryParse(m_oVal, NumberStyles.Any, null, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;
-	public double RealVal => double.TryParse(m_oVal, NumberStyles.Any, null, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
-	#endregion			// 프로퍼티
-
 	#region IEquatable
 	/** 동일 여부를 검사한다 */
 	public bool Equals(STValInfo a_stValInfo) {
-		return m_eValType == a_stValInfo.m_eValType && m_oVal.Equals(a_stValInfo.m_oVal);
+		double dblDelta = System.Math.Abs(m_dblVal) - System.Math.Abs(a_stValInfo.m_dblVal);
+		return m_nVal == a_stValInfo.m_nVal && m_eValType == a_stValInfo.m_eValType && (dblDelta >= -double.Epsilon && dblDelta <= double.Epsilon);
 	}
 	#endregion			// IEquatable
 
 	#region 함수
 	/** 생성자 */
 	public STValInfo(SimpleJSON.JSONNode a_oValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
-		m_oVal = (!a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].Value.Length > KCDefine.B_VAL_0_INT) ? a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] : KCDefine.B_STR_0_INT;
+		m_nVal = long.TryParse(a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT], NumberStyles.Any, null, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;
+		m_dblVal = double.TryParse(a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT], NumberStyles.Any, null, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
 		m_eValType = (!a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].Value.Equals(KCDefine.B_TEXT_NULL) && a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].Value.Length > KCDefine.B_VAL_0_INT) ? (EValType)a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsInt : EValType.NONE;
 	}
 	#endregion			// 함수
+
+	#region 조건부 함수
+#if UNITY_EDITOR || UNITY_STANDALONE
+	/** 값 정보를 생성한다 */
+	public void MakeValInfo(string a_oKey, SimpleJSON.JSONClass a_oOutValInfo) {
+		var oJSONArray = new SimpleJSON.JSONArray();
+		oJSONArray.Add($"{(int)m_eValType}");
+		oJSONArray.Add((m_eValType == EValType.INT) ? $"{m_nVal}" : $"{m_dblVal}");
+
+		a_oOutValInfo.Add(a_oKey, oJSONArray);
+	}
+#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
+	#endregion			// 조건부 함수
 }
 
 /** 공용 정보 */
@@ -255,18 +266,6 @@ public partial struct STCommonTypeWrapper {
 	[Key(0)] public List<int> m_oIntList;
 	[Key(1)] public List<float> m_oRealList;
 	[Key(2)] public List<string> m_oStrList;
-
-	[Key(10)] public Dictionary<int, int> m_oIntIntDict;
-	[Key(11)] public Dictionary<int, float> m_oIntRealDict;
-	[Key(12)] public Dictionary<int, string> m_oIntStrDict;
-
-	[Key(20)] public Dictionary<long, int> m_oLongIntDict;
-	[Key(21)] public Dictionary<long, float> m_oLongRealDict;
-	[Key(22)] public Dictionary<long, string> m_oLongStrDict;
-
-	[Key(30)] public Dictionary<string, int> m_oStrIntDict;
-	[Key(31)] public Dictionary<string, float> m_oStrRealDict;
-	[Key(32)] public Dictionary<string, string> m_oStrStrDict;
 }
 
 /** 경로 정보 */

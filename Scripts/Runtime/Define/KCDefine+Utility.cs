@@ -73,26 +73,17 @@ public static partial class KCDefine {
 	public const float U_DELAY_INIT = 0.15f;
 	public const float U_DELAY_NEXT_SCENE_LOAD = 0.5f;
 	public const float U_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
-
 	public const float U_MIN_DELAY_FX_SNDS = 0.15f;
 
-	public const float U_DURATION_ANI = 0.25f;
-	public const float U_DURATION_SELECTABLE_ANI = 0.15f;
-	public const float U_DURATION_SCREEN_FADE_IN_ANI = 0.25f;
-	public const float U_DURATION_SCREEN_FADE_OUT_ANI = KCDefine.U_DURATION_SCREEN_FADE_IN_ANI;
-
-	public const float U_DURATION_POPUP_SCALE_ANI = 0.25f;
-	public const float U_DURATION_POPUP_DROPDOWN_ANI = 0.35f;
-	public const float U_DURATION_POPUP_SLIDE_ANI = 0.35f;
-
+	public const float U_DURATION_ANI = 0.15f;
+	public const float U_DURATION_POPUP_ANI = 0.25f;
 	public const float U_DURATION_LIGHT_VIBRATE = 0.05f;
 	public const float U_DURATION_MEDIUM_VIBRATE = 0.1f;
 	public const float U_DURATION_HEAVY_VIBRATE = 0.15f;
 
-	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.25f;
-
 	public const float U_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_TIMEOUT_NETWORK_CONNECTION = 30.0f;
+	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
 	// 시간 }
 
 	// 레이어
@@ -302,8 +293,6 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_NEXT_ID = "NextID_{0:00}";
 
 	public const string U_KEY_FMT_PRICE = "Price_{0:00}";
-	public const string U_KEY_FMT_RECORD = "Record_{0:00}";
-
 	public const string U_KEY_FMT_FX_KINDS = "FXKinds_{0:00}";
 	public const string U_KEY_FMT_OBJ_KINDS = "ObjKinds_{0:00}";
 	public const string U_KEY_FMT_RES_KINDS = "ResKinds_{0:00}";
@@ -313,14 +302,13 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
 	public const string U_KEY_FMT_TUTORIAL_MSG = "TUTORIAL_MSG_{0:00}_{1:00}";
-	public const string U_KEY_FMT_ABILITY_VAL_INFO = "AbilityValInfo_{0:00}";
+	public const string U_KEY_FMT_RECORD_VAL_INFO = "RecordValInfo_{0:00}";
 
 	public const string U_KEY_FMT_PAY_TARGET_INFO = "PayTargetInfo_{0:00}";
 	public const string U_KEY_FMT_ACQUIRE_TARGET_INFO = "AcquireTargetInfo_{0:00}";
 	
 	public const string U_KEY_FMT_CLEAR_TARGET_INFO = "ClearTargetInfo_{0:00}";
 	public const string U_KEY_FMT_UNLOCK_TARGET_INFO = "UnlockTargetInfo_{0:00}";
-	public const string U_KEY_FMT_EXTRA_ABILITY_TARGET_INFO = "ExtraAbilityTargetInfo_{0:00}";
 
 	public const string U_KEY_FMT_DROP_ITEM_TARGET_INFO = "DropItemTargetInfo_{0:00}";
 	public const string U_KEY_FMT_EQUIP_ITEM_TARGET_INFO = "EquipItemTargetInfo_{0:00}";
@@ -329,6 +317,9 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_SKILL_TARGET_INFO = "SkillTargetInfo_{0:00}";
 	public const string U_KEY_FMT_PLAYER_OBJ_TARGET_INFO = "PlayerObjTargetInfo_{0:00}";
 	public const string U_KEY_FMT_ENEMY_OBJ_TARGET_INFO = "EnemyObjTargetInfo_{0:00}";
+
+	public const string U_KEY_FMT_ABILITY_TARGET_INFO = "AbilityTargetInfo_{0:00}";
+	public const string U_KEY_FMT_EXTRA_ABILITY_TARGET_INFO = "ExtraAbilityTargetInfo_{0:00}";
 	
 	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
 	public const string U_KEY_SERVICES_M_UPDATE_FAIL_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateFailAppleLoginStateCallback";

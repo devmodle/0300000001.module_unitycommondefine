@@ -52,6 +52,7 @@ public static partial class KCDefine {
 	public const int B_UNIT_KINDS_PER_KINDS_TYPE = 100000;
 	public const int B_UNIT_KINDS_PER_SUB_KINDS_TYPE = 100;
 
+	public const int B_UNIT_IDS_PER_IDS_01 = 1;
 	public const int B_UNIT_IDS_PER_IDS_02 = 10000;
 	public const int B_UNIT_IDS_PER_IDS_03 = 10000000;
 
@@ -106,7 +107,7 @@ public static partial class KCDefine {
 	public const float B_DELTA_T_INFINITE = float.MaxValue;
 	public const float B_DELTA_T_INTERMEDIATE = float.Epsilon;
 	
-	public const float B_DELTA_T_ASYNC_OPERATION = 0.25f;
+	public const float B_DELTA_T_ASYNC_OPERATION = 0.15f;
 	public const float B_MAX_DELTA_T_TRACKING_CONSENT_VIEW = 2.5f;
 
 	public const double B_DELTA_T_UTC_TO_PST = -8.0;
