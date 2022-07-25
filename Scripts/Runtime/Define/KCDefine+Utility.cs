@@ -1458,7 +1458,6 @@ public static partial class KCDefine {
 public static partial class KCDefine {
 	#region 기본
 	// 이름
-	public const string SS_OBJ_N_LOADING_GAUGE = "LOADING_GAUGE";
 	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
 	#endregion			// 기본
 

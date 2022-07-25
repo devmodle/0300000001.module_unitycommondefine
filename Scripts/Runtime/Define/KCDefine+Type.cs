@@ -272,7 +272,6 @@ public partial struct STCommonTypeWrapper {
 public partial class CPathInfo {
 	public int m_nCost = 0;
 	public Vector3Int m_stIdx = Vector3Int.zero;
-	
 	public CPathInfo m_oPrevPathInfo = null;
 }
 #endregion			// 기본
@@ -319,7 +318,6 @@ public partial struct STNotiInfo {
 /** 에디터 레벨 생성 정보 */
 public partial class CEditorLevelCreateInfo {
 	public int m_nNumLevels = 0;
-
 	public Vector3Int m_stMinNumCells = Vector3Int.zero;
 	public Vector3Int m_stMaxNumCells = Vector3Int.zero;
 }
