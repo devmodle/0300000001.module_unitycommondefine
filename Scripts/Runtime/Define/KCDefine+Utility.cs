@@ -232,6 +232,9 @@ public static partial class KCDefine {
 	public const string U_KEY_DEBUFF = "Debuff";
 	public const string U_KEY_DEBUFF_ENHANCE = "DebuffEnhance";
 
+	public const string U_KEY_UPGRADE = "Upgrade";
+	public const string U_KEY_UPGRADE_ENHANCE = "UpgradeEnhance";
+
 	public const string U_KEY_ID = "ID";	
 	public const string U_KEY_PREV_ID = "PrevID";
 	public const string U_KEY_NEXT_ID = "NextID";
