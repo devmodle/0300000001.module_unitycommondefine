@@ -199,8 +199,8 @@ public static partial class KCDefine {
 	public const string U_KEY_ATTACH_SALE = "AttachSale";
 	public const string U_KEY_ATTACH_ENHANCE = "AttachEnhance";
 
-	public const string U_KEY_PKGS = "Pkgs";
-	public const string U_KEY_SINGLE = "Single";
+	public const string U_KEY_PKGS_SALE = "PkgsSale";
+	public const string U_KEY_SINGLE_SALE = "SingleSale";
 	
 	public const string U_KEY_LEVEL = "Level";
 	public const string U_KEY_STAGE = "Stage";
@@ -284,9 +284,9 @@ public static partial class KCDefine {
 	public const string U_KEY_PREV_RES_KINDS = "PrevResKinds";
 	public const string U_KEY_NEXT_RES_KINDS = "NextResKinds";
 
-	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductKinds";
-	public const string U_KEY_PREV_PRODUCT_SALE_KINDS = "PrevProductKinds";
-	public const string U_KEY_NEXT_PRODUCT_SALE_KINDS = "NextProductKinds";
+	public const string U_KEY_PRODUCT_KINDS = "ProductKinds";
+	public const string U_KEY_PREV_PRODUCT_KINDS = "PrevProductKinds";
+	public const string U_KEY_NEXT_PRODUCT_KINDS = "NextProductKinds";
 
 	public const string U_KEY_FMT_ID = "ID_{0:00}";
 	public const string U_KEY_FMT_PREV_ID = "PrevID_{0:00}";
@@ -951,9 +951,7 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ObjInfoTable";
 	public static readonly string U_TABLE_P_G_FX_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_FXInfoTable";
 	public static readonly string U_TABLE_P_G_ABILITY_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_AbilityInfoTable";
-
 	public static readonly string U_TABLE_P_G_PRODUCT_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
-	public static readonly string U_TABLE_P_G_PRODUCT_SALE_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductSaleInfoTable";
 	
 	public static readonly string U_TABLE_P_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_VALUE_INFO_ROOT}G_ValTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_STRING_INFO_ROOT}G_StrTable_Common";
@@ -1019,9 +1017,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_ABILITY_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ABILITY_INFO}.json";
-
 	public static readonly string U_RUNTIME_TABLE_P_G_PRODUCT_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_PRODUCT_INFO}.json";
-	public static readonly string U_RUNTIME_TABLE_P_G_PRODUCT_SALE_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_PRODUCT_SALE_INFO}.json";
 
 #if MSG_PACK_ENABLE
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.bytes";
@@ -1052,9 +1048,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_FX_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_ABILITY_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ABILITY_INFO}.json";
-
 	public static readonly string U_RUNTIME_TABLE_P_G_PRODUCT_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_PRODUCT_INFO}.json";
-	public static readonly string U_RUNTIME_TABLE_P_G_PRODUCT_SALE_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_PRODUCT_SALE_INFO}.json";
 
 #if MSG_PACK_ENABLE
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.bytes";
