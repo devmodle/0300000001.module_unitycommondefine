@@ -1390,6 +1390,11 @@ public static partial class KCDefine {
 #endif			// #if FIREBASE_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
+	// 식별자
+	public static readonly List<string> G_KEY_PRODUCT_INFOS = new List<string>() {
+		KCDefine.B_KEY_JSON_COMMON_DATA, CCommonAppInfoStorage.Inst.Platform
+	};
+
 	// 경로 {
 #if MSG_PACK_ENABLE
 	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
