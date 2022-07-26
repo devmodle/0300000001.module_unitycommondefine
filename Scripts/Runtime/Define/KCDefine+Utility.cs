@@ -284,9 +284,9 @@ public static partial class KCDefine {
 	public const string U_KEY_PREV_RES_KINDS = "PrevResKinds";
 	public const string U_KEY_NEXT_RES_KINDS = "NextResKinds";
 
-	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductSaleKinds";
-	public const string U_KEY_PREV_PRODUCT_SALE_KINDS = "PrevProductSaleKinds";
-	public const string U_KEY_NEXT_PRODUCT_SALE_KINDS = "NextProductSaleKinds";
+	public const string U_KEY_PRODUCT_SALE_KINDS = "ProductKinds";
+	public const string U_KEY_PREV_PRODUCT_SALE_KINDS = "PrevProductKinds";
+	public const string U_KEY_NEXT_PRODUCT_SALE_KINDS = "NextProductKinds";
 
 	public const string U_KEY_FMT_ID = "ID_{0:00}";
 	public const string U_KEY_FMT_PREV_ID = "PrevID_{0:00}";
@@ -940,6 +940,7 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_EPISODE_INFO_SET_A = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}A/G_EpisodeInfoTable";
 	public static readonly string U_TABLE_P_G_EPISODE_INFO_SET_B = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}B/G_EpisodeInfoTable";
 
+	public static readonly string U_TABLE_P_G_ETC_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_EtcInfoTable";
 	public static readonly string U_TABLE_P_G_MISSION_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_MissionInfoTable";
 	public static readonly string U_TABLE_P_G_REWARD_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_RewardInfoTable";
 	public static readonly string U_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_TutorialInfoTable";
@@ -1007,6 +1008,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_EPISODE_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_EPISODE_INFO_SET_A}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_EPISODE_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_EPISODE_INFO_SET_B}.json";
 
+	public static readonly string U_RUNTIME_TABLE_P_G_ETC_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ETC_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_MISSION_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_MISSION_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_REWARD_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_REWARD_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
@@ -1039,6 +1041,7 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_TABLE_P_G_EPISODE_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_EPISODE_INFO_SET_A}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_EPISODE_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_EPISODE_INFO_SET_B}.json";
 
+	public static readonly string U_RUNTIME_TABLE_P_G_ETC_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ETC_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_MISSION_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_MISSION_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_REWARD_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_REWARD_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_TUTORIAL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json";
@@ -1378,8 +1381,8 @@ public static partial class KCDefine {
 #endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 
 #if FACEBOOK_MODULE_ENABLE
-	// 권한
-	public static readonly List<string> U_PERMISSION_LIST_FACEBOOK = new List<string>() {
+	// 식별자
+	public static readonly List<string> U_KEY_FACEBOOK_PERMISSION_LIST = new List<string>() {
 		"public_profile"
 	};
 #endif			// #if FACEBOOK_MODULE_ENABLE

@@ -1002,26 +1002,24 @@ public static partial class KCEditorDefine {
 
 	public static readonly List<(string, string)> B_TABLE_P_INFO_LIST = new List<(string, string)>() {
 #if SAMPLE_PROJ || DEVELOPMENT_PROJ
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ValueInfo/ValTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ValTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/StringInfo/StrTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_StrTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EpisodeInfo/G_EpisodeInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_EpisodeInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EpisodeInfo/G_EpisodeInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}A/G_EpisodeInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EpisodeInfo/G_EpisodeInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}B/G_EpisodeInfoTable.xlsx"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EpisodeInfo/EpisodeInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_EpisodeInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EpisodeInfo/EpisodeInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}A/G_EpisodeInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EpisodeInfo/EpisodeInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}B/G_EpisodeInfoTable.xlsx"),
-
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/MissionInfo/MissionInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_MissionInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/RewardInfo/RewardInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_RewardInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/TutorialInfo/TutorialInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_TutorialInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ResourceInfo/ResInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ResInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EtcInfo/G_EtcInfo.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_EtcInfo.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/MissionInfo/G_MissionInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_MissionInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/RewardInfo/G_RewardInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_RewardInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/TutorialInfo/G_TutorialInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_TutorialInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ResourceInfo/G_ResInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ResInfoTable.xlsx"),
 		
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ItemInfo/ItemInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ItemInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/SkillInfo/SkillInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_SkillInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjectInfo/ObjInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ObjInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/FXInfo/FXInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_FXInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/AbilityInfo/AbilityInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_AbilityInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ItemInfo/G_ItemInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ItemInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/SkillInfo/G_SkillInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_SkillInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjectInfo/G_ObjInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ObjInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/FXInfo/G_FXInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_FXInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/AbilityInfo/G_AbilityInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_AbilityInfoTable.xlsx"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ProductInfo/ProductInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ProductInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ProductInfo/ProductSaleInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ProductSaleInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ProductInfo/G_ProductInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ProductInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ProductInfo/G_ProductSaleInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ProductSaleInfoTable.xlsx"),
 #endif			// #if SAMPLE_PROJ || DEVELOPMENT_PROJ
 
 		// 03.UnityProject
@@ -1035,6 +1033,9 @@ public static partial class KCEditorDefine {
 
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_LEVEL_INFO}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/LevelInfo/LevelInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_LEVEL_INFO}.json"),
+
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EtcInfo/EtcInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ETC_INFO}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/EtcInfo/EtcInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_ETC_INFO}.json"),
 
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/MissionInfo/MissionInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_MISSION_INFO}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/MissionInfo/MissionInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_MISSION_INFO}.json"),
