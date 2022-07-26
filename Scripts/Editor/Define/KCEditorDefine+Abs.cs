@@ -1012,11 +1012,11 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/MissionInfo/MissionInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_MissionInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/RewardInfo/RewardInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_RewardInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/TutorialInfo/TutorialInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_TutorialInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ResInfo/ResInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ResInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ResourceInfo/ResInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ResInfoTable.xlsx"),
 		
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ItemInfo/ItemInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ItemInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/SkillInfo/SkillInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_SkillInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjInfo/ObjInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ObjInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjectInfo/ObjInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ObjInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/FXInfo/FXInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_FXInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/AbilityInfo/AbilityInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_AbilityInfoTable.xlsx"),
 
@@ -1048,8 +1048,8 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/TutorialInfo/TutorialInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/TutorialInfo/TutorialInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_TUTORIAL_INFO}.json"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ResInfo/ResInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ResInfo/ResInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_RES_INFO}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ResourceInfo/ResInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_RES_INFO}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ResourceInfo/ResInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_RES_INFO}.json"),
 
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ItemInfo/ItemInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_ITEM_INFO}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ItemInfo/ItemInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_ITEM_INFO}.json"),
@@ -1057,8 +1057,8 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/SkillInfo/SkillInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_SKILL_INFO}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/SkillInfo/SkillInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_SKILL_INFO}.json"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjInfo/ObjInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjInfo/ObjInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjectInfo/ObjInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjectInfo/ObjInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_OBJ_INFO}.json"),
 
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/FXInfo/FXInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_FX_INFO}.json"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/FXInfo/FXInfoTable.json", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_TABLE_P_G_FX_INFO}.json"),
