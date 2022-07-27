@@ -133,6 +133,10 @@ public static partial class KCDefine {
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
 
+	public const string U_KEY_LEVEL_EPISODE = "LevelEpisode";
+	public const string U_KEY_STAGE_EPISODE = "StageEpisode";
+	public const string U_KEY_CHAPTER_EPISODE = "ChapterEpisode";
+
 	public const string U_KEY_PLAY_TUTORIAL = "PlayTutorial";
 	public const string U_KEY_HELP_TUTORIAL = "HelpTutorial";
 
@@ -206,10 +210,6 @@ public static partial class KCDefine {
 
 	public const string U_KEY_PKGS_SALE = "PkgsSale";
 	public const string U_KEY_SINGLE_SALE = "SingleSale";
-	
-	public const string U_KEY_LEVEL = "Level";
-	public const string U_KEY_STAGE = "Stage";
-	public const string U_KEY_CHAPTER = "Chapter";
 
 	public const string U_KEY_ACTION = "Action";
 	public const string U_KEY_ACTION_SALE = "ActionSale";
