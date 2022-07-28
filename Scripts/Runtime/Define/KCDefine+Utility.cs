@@ -184,35 +184,35 @@ public static partial class KCDefine {
 	public const string U_KEY_ENEMY_ENHANCE = "EnemyEnhance";
 
 	public const string U_KEY_GOODS = "Goods";
-	public const string U_KEY_GOODS_SALE = "GoodsSale";
 	public const string U_KEY_GOODS_ENHANCE = "GoodsEnhance";
+	public const string U_KEY_GOODS_BUY_TRADE = "GoodsBuyTrade";
 
 	public const string U_KEY_CONSUMABLE = "Consumable";
-	public const string U_KEY_CONSUMABLE_SALE = "ConsumableSale";
 	public const string U_KEY_CONSUMABLE_ENHANCE = "ConsumableEnhance";
+	public const string U_KEY_CONSUMABLE_BUY_TRADE = "ConsumableBuyTrade";
 
 	public const string U_KEY_NON_CONSUMABLE = "NonConsumable";
-	public const string U_KEY_NON_CONSUMABLE_SALE = "NonConsumableSale";
 	public const string U_KEY_NON_CONSUMABLE_ENHANCE = "NonConsumableEnhance";
+	public const string U_KEY_NON_CONSUMABLE_BUY_TRADE = "NonConsumableBuyTrade";
 
 	public const string U_KEY_WEAPON = "Weapon";
-	public const string U_KEY_WEAPON_SALE = "WeaponSale";
 	public const string U_KEY_WEAPON_ENHANCE = "WeaponEnhance";
+	public const string U_KEY_WEAPON_BUY_TRADE = "WeaponBuyTrade";
 
 	public const string U_KEY_ARMOR = "Armor";
-	public const string U_KEY_ARMOR_SALE = "ArmorSale";
 	public const string U_KEY_ARMOR_ENHANCE = "ArmorEnhance";
+	public const string U_KEY_ARMOR_BUY_TRADE = "ArmorBuyTrade";
 
 	public const string U_KEY_ACCESSORY = "Accessory";
-	public const string U_KEY_ACCESSORY_SALE = "AccessorySale";
 	public const string U_KEY_ACCESSORY_ENHANCE = "AccessoryEnhance";
+	public const string U_KEY_ACCESSORY_BUY_TRADE = "AccessoryBuyTrade";
 
 	public const string U_KEY_ATTACH = "Attach";
-	public const string U_KEY_ATTACH_SALE = "AttachSale";
 	public const string U_KEY_ATTACH_ENHANCE = "AttachEnhance";
+	public const string U_KEY_ATTACH_BUY_TRADE = "AttachBuyTrade";
 
-	public const string U_KEY_PKGS_SALE = "PkgsSale";
-	public const string U_KEY_SINGLE_SALE = "SingleSale";
+	public const string U_KEY_PKGS_BUY_TRADE = "PkgsBuyTrade";
+	public const string U_KEY_SINGLE_BUY_TRADE = "SingleBuyTrade";
 
 	public const string U_KEY_ACTION = "Action";
 	public const string U_KEY_ACTION_SALE = "ActionSale";
@@ -879,7 +879,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_RESULT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResultPopup";
 	public static readonly string U_OBJ_P_G_RESUME_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResumePopup";
 	public static readonly string U_OBJ_P_G_PAUSE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_PausePopup";
-	public static readonly string U_OBJ_P_G_PRODUCT_SALE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ProductSalePopup";
+	public static readonly string U_OBJ_P_G_PRODUCT_BUY_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ProductBuyPopup";
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
 
