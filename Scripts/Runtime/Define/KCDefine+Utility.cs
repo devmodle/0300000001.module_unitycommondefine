@@ -133,6 +133,9 @@ public static partial class KCDefine {
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
 
+	public const string U_KEY_CALC = "Calc";
+	public const string U_KEY_ABILITY_CALC = "AbilityCalc";
+
 	public const string U_KEY_LEVEL_EPISODE = "LevelEpisode";
 	public const string U_KEY_STAGE_EPISODE = "StageEpisode";
 	public const string U_KEY_CHAPTER_EPISODE = "ChapterEpisode";
@@ -254,6 +257,10 @@ public static partial class KCDefine {
 	public const string U_KEY_PRODUCT_TYPE = "ProductType";
 	public const string U_KEY_PURCHASE_TYPE = "PurchaseType";
 	public const string U_KEY_EPISODE_KINDS = "EpisodeKinds";
+
+	public const string U_KEY_CALC_KINDS = "CalcKinds";
+	public const string U_KEY_PREV_CALC_KINDS = "PrevCalcKinds";
+	public const string U_KEY_NEXT_CALC_KINDS = "NextCalcKinds";
 
 	public const string U_KEY_REWARD_KINDS = "RewardKinds";
 	public const string U_KEY_PREV_REWARD_KINDS = "PrevRewardKinds";
