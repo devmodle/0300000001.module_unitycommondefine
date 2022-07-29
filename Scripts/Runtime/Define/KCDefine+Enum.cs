@@ -120,8 +120,8 @@ public enum EVSync {
 	[HideInInspector] MAX_VAL
 }
 
-/** 터치 */
-public enum ETouch {
+/** 터치 이벤트 */
+public enum ETouchEvent {
 	NONE = -1,
 	BEGIN,
 	MOVE,

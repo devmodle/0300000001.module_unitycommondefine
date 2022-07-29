@@ -297,6 +297,7 @@ public static partial class KCDefine {
 	public const string U_KEY_SKILL_KINDS = "SkillKinds";
 	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
 	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
+	public const string U_KEY_SKILL_TARGET_KINDS = "SkillTargetKinds";
 
 	public const string U_KEY_ABILITY_KINDS = "AbilityKinds";
 	public const string U_KEY_PREV_ABILITY_KINDS = "PrevAbilityKinds";
