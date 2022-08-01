@@ -1410,7 +1410,7 @@ public static partial class KCDefine {
 #if PURCHASE_MODULE_ENABLE
 	// 식별자
 	public static readonly List<string> G_KEY_PRODUCT_INFOS = new List<string>() {
-		KCDefine.B_KEY_JSON_COMMON_DATA, CCommonAppInfoStorage.Inst.Platform
+		KCDefine.B_KEY_JSON_COMMON_DATA
 	};
 
 	// 경로 {
