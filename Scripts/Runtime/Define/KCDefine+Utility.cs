@@ -264,7 +264,7 @@ public static partial class KCDefine {
 	public const string U_KEY_IMG = "Image";
 	public const string U_KEY_SPRITE = "Sprite";
 	public const string U_KEY_TEXTURE = "Texture";
-	public const string U_KEY_TABLE_IDX = "TableIdx";
+	public const string U_KEY_PRODUCT_IDX = "ProductIdx";
 	public const string U_KEY_NUM_SUB_EPISODES = "NumSubEpisodes";
 
 	public const string U_KEY_VAL_INFO = "ValInfo";
