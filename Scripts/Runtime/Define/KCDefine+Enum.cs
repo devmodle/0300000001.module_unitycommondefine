@@ -15,7 +15,7 @@ using UnityEngine.Events;
 - LightingSettings.Lightmapper.ProgressiveGPU
 
 =====> 씬 로딩 순서 <=====
-- Splash
+- Init
 - Start
 - Setup (Additive)
 - Agree (Additive)

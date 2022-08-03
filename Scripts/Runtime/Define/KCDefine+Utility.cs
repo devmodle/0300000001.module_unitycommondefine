@@ -1107,15 +1107,15 @@ public static partial class KCDefine {
 	public const int U_SCRIPT_O_ADS_CORRECTOR = byte.MaxValue;
 	public const int U_SCRIPT_O_ADS_INTERACTABLE = byte.MaxValue;
 
-	public const int U_SCRIPT_O_SPLASH_SCENE_MANAGER = sbyte.MaxValue / 2;
-	public const int U_SCRIPT_O_START_SCENE_MANAGER = KCDefine.U_SCRIPT_O_SPLASH_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_SPLASH_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_O_SPLASH_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_SPLASH_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = sbyte.MaxValue / 2;
+	public const int U_SCRIPT_O_START_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
 
-	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_SPLASH_SCENE_MANAGER + 2;
-	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_SPLASH_SCENE_MANAGER + 3;
-	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_SPLASH_SCENE_MANAGER + 3;
+	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
+	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
+	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
 	// 스크립트 순서 }
 #endif			// #if UNITY_EDITOR
 
@@ -1430,6 +1430,34 @@ public static partial class KCDefine {
 	#endregion			// 조건부 런타임 상수
 }
 
+/** 초기화 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	// 시간
+	public const float IS_DELAY_NEXT_SCENE_LOAD = 2.0f;
+	#endregion			// 기본
+
+	#region 런타임 상수
+	// 경로
+	public static readonly string IS_OBJ_P_SCREEN_BLIND_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_INIT_SCENE}IS_ScreenBlindUIs";
+	public static readonly string IS_OBJ_P_SCREEN_BLIND_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_INIT_SCENE}IS_ScreenBlindImg";
+	#endregion			// 런타임 상수
+}
+
+/** 시작 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+	// 이름
+	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
+	#endregion			// 기본
+
+	#region 런타임 상수
+	// 경로
+	public static readonly string SS_OBJ_P_LOADING_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingText";
+	public static readonly string SS_OBJ_P_LOADING_GAUGE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingGauge";
+	#endregion			// 런타임 상수
+}
+
 /** 설정 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
@@ -1477,35 +1505,11 @@ public static partial class KCDefine {
 	#endregion			// 런타임 상수
 }
 
-/** 시작 씬 상수 */
-public static partial class KCDefine {
+/** 타이틀 씬 상수 */
+public static partial class KDefine {
 	#region 기본
-	// 이름
-	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
+
 	#endregion			// 기본
-
-	#region 런타임 상수
-	// 경로
-	public static readonly string SS_OBJ_P_LOADING_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingText";
-	public static readonly string SS_OBJ_P_LOADING_GAUGE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingGauge";
-	#endregion			// 런타임 상수
-}
-
-/** 스플래시 씬 상수 */
-public static partial class KCDefine {
-	#region 기본
-	// 시간
-	public const float SS_DELAY_NEXT_SCENE_LOAD = 2.0f;
-	#endregion			// 기본
-
-	#region 런타임 상수
-	// 색상
-	public static readonly Color SS_COLOR_BG_IMG = new Color(0x29 / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0x4c / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0x94 / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 1.0f);
-
-	// 경로
-	public static readonly string SS_OBJ_P_SCREEN_BLIND_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SPLASH_SCENE}SS_ScreenBlindUIs";
-	public static readonly string SS_OBJ_P_SCREEN_BLIND_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SPLASH_SCENE}SS_ScreenBlindImg";
-	#endregion			// 런타임 상수
 }
 
 /** 메인 씬 상수 */
@@ -1527,5 +1531,19 @@ public static partial class KCDefine {
 public static partial class KCDefine {
 	#region 기본
 	
+	#endregion			// 기본
+}
+
+/** 로딩 씬 상수 */
+public static partial class KDefine {
+	#region 기본
+
+	#endregion			// 기본
+}
+
+/** 중첩 씬 상수 */
+public static partial class KDefine {
+	#region 기본
+
 	#endregion			// 기본
 }

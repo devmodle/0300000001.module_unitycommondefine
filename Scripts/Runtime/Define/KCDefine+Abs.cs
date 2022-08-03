@@ -233,8 +233,8 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_STUDY_SAMPLE = "11.StudySampleScene";
 	public const string B_SCENE_N_EDITOR_SAMPLE = "01.EditorSampleScene";
 
-	public const string B_SCENE_N_SPLASH = "00.SplashScene";
-	public const string B_SCENE_N_START = "01.StartScene";
+	public const string B_SCENE_N_INIT = "00.InitScene";
+	public const string B_SCENE_N_START = "00.StartScene";
 	public const string B_SCENE_N_SETUP = "01.SetupScene";
 	public const string B_SCENE_N_AGREE = "01.AgreeScene";
 	public const string B_SCENE_N_LATE_SETUP = "01.LateSetupScene";
@@ -245,7 +245,7 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_LOADING = "91.LoadingScene";
 	public const string B_SCENE_N_OVERLAY = "92.OverlayScene";
 
-	public const string B_SCENE_N_MENU = "01.MenuScene";
+	public const string B_SCENE_N_MENU = "02.MenuScene";
 	public const string B_SCENE_N_TEST = "99.TestScene";
 	public const string B_SCENE_N_LEVEL_EDITOR = "91.LevelEditorScene";
 	// 씬 이름 }
@@ -269,8 +269,8 @@ public static partial class KCDefine {
 
 	public const string B_TOKEN_SPACE = " ";
 	public const string B_TOKEN_CROSS = "x";
-	public const string B_TOKEN_SPLASH = "/";
-	public const string B_TOKEN_REV_SPLASH = "\\";
+	public const string B_TOKEN_SLASH = "/";
+	public const string B_TOKEN_REV_SLASH = "\\";
 
 	public const string B_TOKEN_INCR = "+";
 	public const string B_TOKEN_DECR = "-";
@@ -328,12 +328,11 @@ public static partial class KCDefine {
 	public const string B_DIR_P_ENGINE = "Engine/";
 	public const string B_DIR_P_POPUP = "Popup/";
 
+	public const string B_DIR_P_INIT_SCENE = "InitScene/";
+	public const string B_DIR_P_START_SCENE = "StartScene/";
 	public const string B_DIR_P_SETUP_SCENE = "SetupScene/";
 	public const string B_DIR_P_AGREE_SCENE = "AgreeScene/";
 	public const string B_DIR_P_LATE_SETUP_SCENE = "LateSetupScene/";
-
-	public const string B_DIR_P_START_SCENE = "StartScene/";
-	public const string B_DIR_P_SPLASH_SCENE = "SplashScene/";
 
 	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
 	public const string B_DIR_P_MAIN_SCENE = "MainScene/";
@@ -538,7 +537,7 @@ public static partial class KCDefine {
 	#region 런타임 상수
 	// 씬 이름
 	public static readonly List<string> B_DEF_SCENE_NAME_LIST = new List<string>() {
-		KCDefine.B_SCENE_N_SPLASH, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY
+		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY
 	};
 
 	// 기타 {
