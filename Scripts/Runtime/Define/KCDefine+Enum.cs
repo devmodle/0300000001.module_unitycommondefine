@@ -92,6 +92,16 @@ public enum EEnumVal {
 	[HideInInspector] MAX_VAL,
 }
 
+/** 종류 그룹 타입 */
+public enum EKindsGroupType {
+	NONE = -1,
+	TYPE,
+	SUB_TYPE,
+	KINDS_TYPE,
+	SUB_KINDS_TYPE,
+	[HideInInspector] MAX_VAL
+}
+
 /** POT */
 public enum EPOT {
 	NONE = -1,
