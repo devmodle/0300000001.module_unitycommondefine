@@ -9,6 +9,15 @@ using DG.Tweening;
 using MessagePack;
 
 #region 기본
+/** 상태 갱신 인터페이스 */
+public partial interface IUpdater {
+	/** 상태를 갱신한다 */
+	public void OnUpdate(float a_fDeltaTime);
+	
+	/** 상태를 갱신한다 */
+	public void OnLateUpdate(float a_fDeltaTime);
+}
+
 /** 작업 정보 */
 public partial struct STTaskInfo {
 	public Task m_oTask;
