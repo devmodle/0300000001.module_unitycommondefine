@@ -71,7 +71,6 @@ public static partial class KCDefine {
 
 	// 시간 {
 	public const float U_DELAY_INIT = 0.15f;
-	public const float U_DELAY_NEXT_SCENE_LOAD = 0.5f;
 	public const float U_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
 	public const float U_MIN_DELAY_FX_SNDS = 0.15f;
 
