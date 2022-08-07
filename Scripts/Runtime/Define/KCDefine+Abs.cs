@@ -342,21 +342,6 @@ public static partial class KCDefine {
 
 	public const string B_DIR_P_MENU_SCENE = "MenuScene/";
 	public const string B_DIR_P_EDITOR_SCENE = "EditorScene/";
-
-	public const string B_DIR_P_TEXT_ROOT = "UI/Text/";
-	public const string B_DIR_P_IMAGE_ROOT = "UI/Image/";
-	public const string B_DIR_P_BUTTON_ROOT = "UI/Button/";
-	public const string B_DIR_P_INPUT_ROOT = "UI/Input/";
-	public const string B_DIR_P_SCROLL_VIEW_ROOT = "UI/ScrollView/";
-	public const string B_DIR_P_POPUP_ROOT = "UI/Popup/";
-	public const string B_DIR_P_RESPONDER_ROOT = "UI/Responder/";
-	public const string B_DIR_P_SOUND_ROOT = "Sound/";
-	public const string B_DIR_P_FX_ROOT = "FX/";
-	public const string B_DIR_P_2D_ROOT = "2D/";
-	public const string B_DIR_P_EXTERNAL_ROOT = "External/";
-	public const string B_DIR_P_LEVEL_INFO_ROOT = "LevelInfo/";
-	public const string B_DIR_P_VALUE_INFO_ROOT = "ValueInfo/";
-	public const string B_DIR_P_STRING_INFO_ROOT = "StringInfo/";
 	// 경로 }
 
 	// 형식 {
