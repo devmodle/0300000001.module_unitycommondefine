@@ -265,6 +265,7 @@ public static partial class KCDefine {
 	public const string U_KEY_TEXTURE = "Texture";
 	public const string U_KEY_PRODUCT_IDX = "ProductIdx";
 	public const string U_KEY_NUM_SUB_EPISODES = "NumSubEpisodes";
+	public const string U_KEY_MAX_NUM_ENEMY_OBJS = "MaxNumEnemyObjs";
 
 	public const string U_KEY_VAL_INFO = "ValInfo";
 	public const string U_KEY_DURATION_INFO = "DurationInfo";
