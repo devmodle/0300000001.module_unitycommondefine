@@ -754,23 +754,13 @@ public static partial class KCDefine {
 	// 디바이스 메세지 수신자 {
 	public const string U_KEY_DEVICE_MR_VER = KCDefine.U_KEY_UNITY_MS_VER;
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
-
 	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
+	
 	public const string U_FUNC_N_DEVICE_MR_MSG_HANDLER = "HandleDeviceMsg";
 	// 디바이스 메세지 수신자 }
 	#endregion			// 기본
 
 	#region 런타임 상수
-	// 기타 {
-	public static readonly STLocalizeInfo U_INVALID_LOCALIZE_INFO = new STLocalizeInfo() {
-		m_eSystemLanguage = SystemLanguage.Unknown
-	};
-
-	public static readonly STFontSetInfo U_INVALID_FONT_SET_INFO = new STFontSetInfo() {
-		m_eSet = EFontSet.NONE
-	};
-	// 기타 }
-
 	// 영역
 	public static readonly Rect U_RECT_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
 
@@ -1372,11 +1362,6 @@ public static partial class KCDefine {
 #endif			// #if UNITY_IOS
 
 #if ADS_MODULE_ENABLE
-	// 기타
-	public static readonly STAdsRewardInfo U_INVALID_ADS_REWARD_INFO = new STAdsRewardInfo() {
-		m_oID = string.Empty, m_oVal = string.Empty
-	};
-
 	// 크기
 	public static readonly Vector3 U_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
 
@@ -1507,7 +1492,7 @@ public static partial class KCDefine {
 }
 
 /** 타이틀 씬 상수 */
-public static partial class KDefine {
+public static partial class KCDefine {
 	#region 기본
 
 	#endregion			// 기본
@@ -1536,14 +1521,14 @@ public static partial class KCDefine {
 }
 
 /** 로딩 씬 상수 */
-public static partial class KDefine {
+public static partial class KCDefine {
 	#region 기본
 
 	#endregion			// 기본
 }
 
 /** 중첩 씬 상수 */
-public static partial class KDefine {
+public static partial class KCDefine {
 	#region 기본
 
 	#endregion			// 기본
