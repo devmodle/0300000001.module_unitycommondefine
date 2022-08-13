@@ -19,32 +19,32 @@ public partial interface IUpdater {
 }
 
 /** 작업 정보 */
-public partial struct STTaskInfo {
+public struct STTaskInfo {
 	public Task m_oTask;
 	public System.Action<Task> m_oCallback;
 }
 
 /** 기록 정보 */
-public partial struct STRecordInfo {
+public struct STRecordInfo {
 	public bool m_bIsSuccess;
 	public long m_nIntRecord;
 	public double m_dblRealRecord;
 }
 
 /** 콜백 정보 */
-public partial struct STCallbackInfo {
+public struct STCallbackInfo {
 	public string m_oKey;
 	public System.Action m_oCallback;
 }
 
 /** 컴포넌트 정보 */
-public partial struct STComponentInfo {
+public struct STComponentInfo {
 	public int m_nID;
 	public Component m_oComponent;
 }
 
 /** 정렬 순서 정보 */
-public partial struct STSortingOrderInfo {
+public struct STSortingOrderInfo {
 	public int m_nOrder;
 	public string m_oLayer;
 
@@ -56,16 +56,16 @@ public partial struct STSortingOrderInfo {
 }
 
 /** 비활성화 객체 정보 */
-public partial struct STDespawnObjInfo {
+public struct STDespawnObjInfo {
 	public bool m_bIsDestroy;
-	public string m_oKey;
+	public string m_oObjsPoolKey;
 	public System.DateTime m_stDespawnTime;
 
 	public GameObject m_oObj;
 }
 
 /** 터치 응답자 정보 */
-public partial struct STTouchResponderInfo {
+public struct STTouchResponderInfo {
 	public Sequence m_oAni;
 	public GameObject m_oTouchResponder;
 	public System.Action<GameObject> m_oCallback;
@@ -73,7 +73,7 @@ public partial struct STTouchResponderInfo {
 
 /** 식별자 정보 */
 [MessagePackObject][System.Serializable]
-public partial struct STIDInfo {
+public struct STIDInfo {
 	[Key(0)] public int m_nID01;
 	[Key(1)] public int m_nID02;
 	[Key(2)] public int m_nID03;
@@ -117,7 +117,7 @@ public partial struct STIDInfo {
 
 /** 인덱스 정보 */
 [MessagePackObject][System.Serializable]
-public partial struct STIdxInfo {
+public struct STIdxInfo {
 	[Key(0)] public int m_nX;
 	[Key(1)] public int m_nY;
 	[Key(2)] public int m_nZ;
@@ -131,21 +131,21 @@ public partial struct STIdxInfo {
 
 /** 빌드 버전 정보 */
 [System.Serializable]
-public partial struct STBuildVerInfo {
+public struct STBuildVerInfo {
 	public int m_nNum;
 	public string m_oVer;
 }
 
 /** 결제 정보 */
 [System.Serializable]
-public partial struct STPurchaseInfo {
+public struct STPurchaseInfo {
 	public string m_oID;
 	public string m_oReceipt;
 }
 
 /** 지역화 정보 */
 [System.Serializable]
-public partial struct STLocalizeInfo {
+public struct STLocalizeInfo {
 	public string m_oCountryCode;
 	public SystemLanguage m_eSystemLanguage;
 	public List<STFontSetInfo> m_oFontSetInfoList;
@@ -159,7 +159,7 @@ public partial struct STLocalizeInfo {
 
 /** 폰트 세트 정보 */
 [System.Serializable]
-public partial struct STFontSetInfo {
+public struct STFontSetInfo {
 	public string m_oPath;
 	public EFontSet m_eSet;
 
@@ -172,14 +172,14 @@ public partial struct STFontSetInfo {
 
 /** 디바이스 정보 */
 [System.Serializable]
-public partial struct STDeviceInfo {
+public struct STDeviceInfo {
 	public List<string> m_oiOSAdmobTestDeviceIDList;
 	public List<string> m_oAndroidAdmobTestDeviceIDList;
 }
 
 /** 값 정보 */
 [MessagePackObject][System.Serializable]
-public partial struct STValInfo : System.IEquatable<STValInfo> {
+public struct STValInfo : System.IEquatable<STValInfo> {
 	[Key(1)] public long m_nVal;
 	[Key(2)] public double m_dblVal;
 	[Key(11)] public EValType m_eValType;
@@ -223,7 +223,7 @@ public partial struct STValInfo : System.IEquatable<STValInfo> {
 
 /** 공용 정보 */
 [System.Serializable]
-public partial struct STCommonInfo {
+public struct STCommonInfo {
 	public bool m_bIsRepeat;
 
 	public string m_oName;
@@ -254,7 +254,7 @@ public partial struct STCommonInfo {
 
 /** 지속 시간 정보 */
 [System.Serializable]
-public partial struct STDurationInfo {
+public struct STDurationInfo {
 	public float m_fDelay;
 	public float m_fDuration;
 	public float m_fDeltaTime;
@@ -271,7 +271,7 @@ public partial struct STDurationInfo {
 
 /** 공용 타입 래퍼 */
 [MessagePackObject]
-public partial struct STCommonTypeWrapper {
+public struct STCommonTypeWrapper {
 	[Key(0)] public List<int> m_oIntList;
 	[Key(1)] public List<float> m_oRealList;
 	[Key(2)] public List<string> m_oStrList;
@@ -319,7 +319,7 @@ public partial class CDictWrapper<K, V> {
 #region 조건부 타입
 #if ADS_MODULE_ENABLE
 /** 광고 보상 정보 */
-public partial struct STAdsRewardInfo {
+public struct STAdsRewardInfo {
 	public string m_oID;
 	public string m_oVal;
 
@@ -333,7 +333,7 @@ public partial struct STAdsRewardInfo {
 
 #if NOTI_MODULE_ENABLE
 /** 알림 정보 */
-public partial struct STNotiInfo {
+public struct STNotiInfo {
 	public bool m_bIsRepeat;
 
 	public string m_oTitle;
@@ -355,7 +355,7 @@ public partial class CEditorLevelCreateInfo {
 
 #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
 /** 구글 시트 정보 */
-public partial struct STGoogleSheetInfo {
+public struct STGoogleSheetInfo {
 	public int m_nSrcIdx;
 	public int m_nNumCells;
 
