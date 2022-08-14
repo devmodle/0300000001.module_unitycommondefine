@@ -24,13 +24,6 @@ public struct STTaskInfo {
 	public System.Action<Task> m_oCallback;
 }
 
-/** 기록 정보 */
-public struct STRecordInfo {
-	public bool m_bIsSuccess;
-	public long m_nIntRecord;
-	public double m_dblRealRecord;
-}
-
 /** 콜백 정보 */
 public struct STCallbackInfo {
 	public string m_oKey;
@@ -127,6 +120,14 @@ public struct STIdxInfo {
 		m_nX = KCDefine.B_IDX_INVALID, m_nY = KCDefine.B_IDX_INVALID, m_nZ = KCDefine.B_IDX_INVALID
 	};
 	#endregion			// 상수
+}
+
+/** 기록 정보 */
+[MessagePackObject][System.Serializable]
+public struct STRecordInfo {
+	public bool m_bIsSuccess;
+	public long m_nIntRecord;
+	public double m_dblRealRecord;
 }
 
 /** 빌드 버전 정보 */
