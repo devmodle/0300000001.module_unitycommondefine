@@ -110,7 +110,7 @@ public struct STIDInfo {
 
 /** 인덱스 정보 */
 [MessagePackObject][System.Serializable]
-public struct STIdxInfo {
+public struct STIdxInfo : System.IEquatable<STIdxInfo> {
 	[Key(0)] public int m_nX;
 	[Key(1)] public int m_nY;
 	[Key(2)] public int m_nZ;
@@ -120,6 +120,13 @@ public struct STIdxInfo {
 		m_nX = KCDefine.B_IDX_INVALID, m_nY = KCDefine.B_IDX_INVALID, m_nZ = KCDefine.B_IDX_INVALID
 	};
 	#endregion			// 상수
+
+	#region IEquatable
+	/** 동일 여부를 검사한다 */
+	public bool Equals(STIdxInfo a_stIdxInfo) {
+		return m_nX == a_stIdxInfo.m_nX && m_nY == a_stIdxInfo.m_nY && m_nZ == a_stIdxInfo.m_nZ;
+	}
+	#endregion			// IEquatable
 }
 
 /** 기록 정보 */
