@@ -266,6 +266,7 @@ public struct STDurationInfo {
 	public float m_fDelay;
 	public float m_fDuration;
 	public float m_fDeltaTime;
+	public float m_fReuseTime;
 
 	#region 함수
 	/** 생성자 */
@@ -273,6 +274,7 @@ public struct STDurationInfo {
 		m_fDelay = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 		m_fDuration = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 		m_fDeltaTime = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fReuseTime = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_3_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_3_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 	}
 	#endregion			// 함수
 }
