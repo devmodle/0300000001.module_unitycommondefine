@@ -128,6 +128,7 @@ public static partial class KCDefine {
 	public const string U_KEY_NAME = "Name";
 	public const string U_KEY_DESC = "Desc";
 	public const string U_KEY_RATE = "Rate";
+	public const string U_KEY_DELAY = "Delay";
 	public const string U_KEY_REPLACE = "Replace";
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
@@ -268,7 +269,7 @@ public static partial class KCDefine {
 	public const string U_KEY_MAX_NUM_ENEMY_OBJS = "MaxNumEnemyObjs";
 
 	public const string U_KEY_VAL_INFO = "ValInfo";
-	public const string U_KEY_DURATION_INFO = "DurationInfo";
+	public const string U_KEY_TIME_INFO = "TimeInfo";
 
 	public const string U_KEY_DIFFICULTY = "Difficulty";
 	public const string U_KEY_PRODUCT_TYPE = "ProductType";
@@ -299,6 +300,7 @@ public static partial class KCDefine {
 	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
 	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
 	public const string U_KEY_SKILL_TARGET_KINDS = "SkillTargetKinds";
+	public const string U_KEY_ACTION_SKILL_KINDS = "ActionSkillKinds";
 
 	public const string U_KEY_ABILITY_KINDS = "AbilityKinds";
 	public const string U_KEY_PREV_ABILITY_KINDS = "PrevAbilityKinds";

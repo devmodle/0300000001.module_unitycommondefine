@@ -132,9 +132,9 @@ public struct STIdxInfo : System.IEquatable<STIdxInfo> {
 /** 기록 정보 */
 [MessagePackObject][System.Serializable]
 public struct STRecordInfo {
-	public bool m_bIsSuccess;
-	public long m_nIntRecord;
-	public double m_dblRealRecord;
+	[Key(0)] public bool m_bIsSuccess;
+	[Key(1)] public long m_nIntRecord;
+	[Key(2)] public double m_dblRealRecord;
 }
 
 /** 빌드 버전 정보 */
@@ -188,8 +188,7 @@ public struct STDeviceInfo {
 /** 값 정보 */
 [MessagePackObject][System.Serializable]
 public struct STValInfo : System.IEquatable<STValInfo> {
-	[Key(1)] public long m_nVal;
-	[Key(2)] public double m_dblVal;
+	[Key(1)] public decimal m_dmVal;
 	[Key(11)] public EValType m_eValType;
 
 	#region 상수
@@ -201,16 +200,14 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 	#region IEquatable
 	/** 동일 여부를 검사한다 */
 	public bool Equals(STValInfo a_stValInfo) {
-		double dblDelta = System.Math.Abs(m_dblVal) - System.Math.Abs(a_stValInfo.m_dblVal);
-		return m_nVal == a_stValInfo.m_nVal && m_eValType == a_stValInfo.m_eValType && (dblDelta >= -double.Epsilon && dblDelta <= double.Epsilon);
+		return m_dmVal == a_stValInfo.m_dmVal && m_eValType == a_stValInfo.m_eValType;
 	}
 	#endregion			// IEquatable
 
 	#region 함수
 	/** 생성자 */
 	public STValInfo(SimpleJSON.JSONNode a_oValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
-		m_nVal = long.TryParse(a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT], NumberStyles.Any, null, out long nVal) ? nVal : KCDefine.B_VAL_0_INT;
-		m_dblVal = double.TryParse(a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT], NumberStyles.Any, null, out double dblVal) ? dblVal : KCDefine.B_VAL_0_REAL;
+		m_dmVal = decimal.TryParse(a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT], NumberStyles.Any, null, out decimal dmVal) ? dmVal : KCDefine.B_VAL_0_INT;
 		m_eValType = a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].ExIsValid() ? (EValType)a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsInt : EValType.NONE;
 	}
 	#endregion			// 함수
@@ -221,7 +218,7 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 	public void MakeValInfo(string a_oKey, SimpleJSON.JSONClass a_oOutValInfo) {
 		var oJSONArray = new SimpleJSON.JSONArray();
 		oJSONArray.Add($"{(int)m_eValType}");
-		oJSONArray.Add((m_eValType == EValType.INT) ? $"{m_nVal}" : $"{m_dblVal}");
+		oJSONArray.Add($"{m_dmVal}");
 
 		a_oOutValInfo.Add(a_oKey, oJSONArray);
 	}
@@ -260,21 +257,19 @@ public struct STCommonInfo {
 	#endregion			// 조건부 함수
 }
 
-/** 지속 시간 정보 */
+/** 시간 정보 */
 [System.Serializable]
-public struct STDurationInfo {
+public struct STTimeInfo {
 	public float m_fDelay;
 	public float m_fDuration;
 	public float m_fDeltaTime;
-	public float m_fReuseTime;
 
 	#region 함수
 	/** 생성자 */
-	public STDurationInfo(SimpleJSON.JSONNode a_oDurationInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+	public STTimeInfo(SimpleJSON.JSONNode a_oDurationInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
 		m_fDelay = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 		m_fDuration = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 		m_fDeltaTime = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
-		m_fReuseTime = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_3_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_3_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 	}
 	#endregion			// 함수
 }
