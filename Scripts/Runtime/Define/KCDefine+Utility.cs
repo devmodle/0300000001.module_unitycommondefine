@@ -34,7 +34,7 @@ public static partial class KCDefine {
 	// 개수 }
 
 	// 크기 {
-	public const int U_SIZE_OBJS_POOL = 100;
+	public const int U_SIZE_OBJS_POOL = 25;
 	public const int U_SIZE_DOTWEEN_ANI = byte.MaxValue;
 	public const int U_SIZE_DOTWEEN_SEQUENCE_ANI = sbyte.MaxValue;
 
@@ -299,7 +299,7 @@ public static partial class KCDefine {
 	public const string U_KEY_SKILL_KINDS = "SkillKinds";
 	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
 	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
-	public const string U_KEY_SKILL_TARGET_KINDS = "SkillTargetKinds";
+	public const string U_KEY_SKILL_APPLY_KINDS = "SkillApplyKinds";
 	public const string U_KEY_ACTION_SKILL_KINDS = "ActionSkillKinds";
 
 	public const string U_KEY_ABILITY_KINDS = "AbilityKinds";

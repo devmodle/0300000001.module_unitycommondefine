@@ -92,6 +92,14 @@ public enum EEnumVal {
 	[HideInInspector] MAX_VAL,
 }
 
+/** 벡터 타입 */
+public enum EVecType {
+	NONE = -1,
+	POS,
+	DIRECTION,
+	[HideInInspector] MAX_VAL
+}
+
 /** 종류 그룹 타입 */
 public enum EKindsGroupType {
 	NONE = -1,
@@ -256,6 +264,16 @@ public enum ELightmapMode {
 	[HideInInspector] MAX_VAL
 }
 
+/** 안티 에일리어싱 수준 */
+public enum EAAQuality {
+	NONE = -1,
+	DISABLE,
+	_2x,
+	_4x,
+	_8x,
+	[HideInInspector] MAX_VAL
+}
+
 /** 광원 맵 엔코딩 퀄리티 */
 public enum ELightmapEncodingQuality {
 	NONE = -1,
@@ -268,7 +286,7 @@ public enum ELightmapEncodingQuality {
 /** 그림자 옵션 */
 public enum EShadowCascadesOpts {
 	NONE = -1,
-	NO_CASCADES,
+	NO_CASCADES = 1,
 	TWO_CASCADES = 2,
 	FOUR_CASCADES = 4,
 	[HideInInspector] MAX_VAL
@@ -384,16 +402,6 @@ public enum EVibrateStyle {
 
 #region 조건부 상수
 #if UNITY_EDITOR
-/** MSAA 수준 */
-public enum EMSAAQuality {
-	NONE = -1,
-	DISABLE,
-	_2x,
-	_4x,
-	_8x,
-	[HideInInspector] MAX_VAL
-}
-
 /** DSP 버퍼 크기 */
 public enum EDSPBufferSize {
 	NONE = -1,
