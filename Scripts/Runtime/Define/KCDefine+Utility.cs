@@ -150,6 +150,7 @@ public static partial class KCDefine {
 	public const string U_KEY_MAIN = "Main";
 	public const string U_KEY_FREE = "Free";
 	public const string U_KEY_REPEAT = "Repeat";
+	public const string U_KEY_UPDATE = "Update";
 
 	public const string U_KEY_DAILY = "Daily";
 	public const string U_KEY_EVENT = "Event";

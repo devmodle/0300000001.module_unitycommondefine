@@ -230,6 +230,7 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 [System.Serializable]
 public struct STCommonInfo {
 	public bool m_bIsRepeat;
+	public bool m_bIsUpdate;
 
 	public string m_oName;
 	public string m_oDesc;
@@ -238,6 +239,7 @@ public struct STCommonInfo {
 	/** 생성자 */
 	public STCommonInfo(SimpleJSON.JSONNode a_oCommonInfo) {
 		m_bIsRepeat = a_oCommonInfo[KCDefine.U_KEY_REPEAT].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_REPEAT].AsInt != KCDefine.B_VAL_0_INT : false;
+		m_bIsUpdate = a_oCommonInfo[KCDefine.U_KEY_UPDATE].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_UPDATE].AsInt != KCDefine.B_VAL_0_INT : false;
 
 		m_oName = a_oCommonInfo[KCDefine.U_KEY_NAME].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_NAME] : string.Empty;
 		m_oDesc = a_oCommonInfo[KCDefine.U_KEY_DESC].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_DESC] : string.Empty;
@@ -249,6 +251,7 @@ public struct STCommonInfo {
 	/** 공용 정보를 생성한다 */
 	public void MakeCommonInfo(SimpleJSON.JSONClass a_oOutCommonInfo) {
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_REPEAT, m_bIsRepeat ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
+		a_oOutCommonInfo.Add(KCDefine.U_KEY_UPDATE, m_bIsUpdate ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
