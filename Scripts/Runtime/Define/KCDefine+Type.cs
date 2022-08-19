@@ -311,16 +311,16 @@ public static partial class CDefineExtension {
 #region 제네릭 타입
 /** 리스트 래퍼 */
 public partial class CListWrapper<T> {
-	public List<T> m_oList = new List<T>();
-	public List<T> m_oAddList = new List<T>();
-	public List<T> m_oRemoveList = new List<T>();
+	public List<T> m_oList01 = new List<T>();
+	public List<T> m_oList02 = new List<T>();
+	public List<T> m_oList03 = new List<T>();
 }
 
 /** 딕셔너리 래퍼 */
 public partial class CDictWrapper<K, V> {
-	public Dictionary<K, V> m_oDict = new Dictionary<K, V>();
-	public Dictionary<K, V> m_oAddDict = new Dictionary<K, V>();
-	public Dictionary<K, V> m_oRemoveDict = new Dictionary<K, V>();
+	public Dictionary<K, V> m_oDict01 = new Dictionary<K, V>();
+	public Dictionary<K, V> m_oDict02 = new Dictionary<K, V>();
+	public Dictionary<K, V> m_oDict03 = new Dictionary<K, V>();
 }
 #endregion			// 제네릭 타입
 
