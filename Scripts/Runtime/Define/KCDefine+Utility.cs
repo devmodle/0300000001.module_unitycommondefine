@@ -277,6 +277,7 @@ public static partial class KCDefine {
 	public const string U_KEY_PRODUCT_TYPE = "ProductType";
 	public const string U_KEY_PURCHASE_TYPE = "PurchaseType";
 	public const string U_KEY_EPISODE_KINDS = "EpisodeKinds";
+	public const string U_KEY_ABILITY_VAL_TYPE = "AbilityValType";
 
 	public const string U_KEY_CALC_KINDS = "CalcKinds";
 	public const string U_KEY_PREV_CALC_KINDS = "PrevCalcKinds";
