@@ -229,9 +229,9 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 /** 공용 정보 */
 [System.Serializable]
 public struct STCommonInfo {
-	public bool m_bIsTrue_01;
-	public bool m_bIsTrue_02;
-	public bool m_bIsTrue_03;
+	public bool m_bIsTrue01;
+	public bool m_bIsTrue02;
+	public bool m_bIsTrue03;
 
 	public string m_oName;
 	public string m_oDesc;
@@ -243,9 +243,9 @@ public struct STCommonInfo {
 		string oIsTrue02Key = string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_2_INT);
 		string oIsTrue03Key = string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_3_INT);
 
-		m_bIsTrue_01 = a_oCommonInfo[oIsTrue01Key].ExIsValid() ? a_oCommonInfo[oIsTrue01Key].AsInt != KCDefine.B_VAL_0_INT : false;
-		m_bIsTrue_02 = a_oCommonInfo[oIsTrue02Key].ExIsValid() ? a_oCommonInfo[oIsTrue02Key].AsInt != KCDefine.B_VAL_0_INT : false;
-		m_bIsTrue_03 = a_oCommonInfo[oIsTrue03Key].ExIsValid() ? a_oCommonInfo[oIsTrue03Key].AsInt != KCDefine.B_VAL_0_INT : false;
+		m_bIsTrue01 = a_oCommonInfo[oIsTrue01Key].ExIsValid() ? a_oCommonInfo[oIsTrue01Key].AsInt != KCDefine.B_VAL_0_INT : false;
+		m_bIsTrue02 = a_oCommonInfo[oIsTrue02Key].ExIsValid() ? a_oCommonInfo[oIsTrue02Key].AsInt != KCDefine.B_VAL_0_INT : false;
+		m_bIsTrue03 = a_oCommonInfo[oIsTrue03Key].ExIsValid() ? a_oCommonInfo[oIsTrue03Key].AsInt != KCDefine.B_VAL_0_INT : false;
 
 		m_oName = a_oCommonInfo[KCDefine.U_KEY_NAME].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_NAME] : string.Empty;
 		m_oDesc = a_oCommonInfo[KCDefine.U_KEY_DESC].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_DESC] : string.Empty;
@@ -256,9 +256,9 @@ public struct STCommonInfo {
 #if UNITY_EDITOR || UNITY_STANDALONE
 	/** 공용 정보를 생성한다 */
 	public void MakeCommonInfo(SimpleJSON.JSONClass a_oOutCommonInfo) {
-		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_1_INT), m_bIsTrue_01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
-		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_2_INT), m_bIsTrue_02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
-		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_3_INT), m_bIsTrue_03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
+		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_1_INT), m_bIsTrue01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
+		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_2_INT), m_bIsTrue02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
+		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_3_INT), m_bIsTrue03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
