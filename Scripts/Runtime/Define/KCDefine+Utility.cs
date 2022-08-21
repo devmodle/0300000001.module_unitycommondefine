@@ -34,7 +34,10 @@ public static partial class KCDefine {
 	// 개수 }
 
 	// 크기 {
-	public const int U_SIZE_OBJS_POOL = 150;
+	public const int U_SIZE_OBJS_POOL_01 = 50;
+	public const int U_SIZE_OBJS_POOL_02 = 150;
+	public const int U_SIZE_OBJS_POOL_03 = 250;
+
 	public const int U_SIZE_DOTWEEN_ANI = byte.MaxValue;
 	public const int U_SIZE_DOTWEEN_SEQUENCE_ANI = sbyte.MaxValue;
 
@@ -129,7 +132,6 @@ public static partial class KCDefine {
 	public const string U_KEY_NAME = "Name";
 	public const string U_KEY_DESC = "Desc";
 	public const string U_KEY_RATE = "Rate";
-	public const string U_KEY_DELAY = "Delay";
 	public const string U_KEY_REPLACE = "Replace";
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
@@ -264,6 +266,7 @@ public static partial class KCDefine {
 	public const string U_KEY_SPRITE = "Sprite";
 	public const string U_KEY_TEXTURE = "Texture";
 	public const string U_KEY_PRODUCT_IDX = "ProductIdx";
+	public const string U_KEY_MAX_APPLY_TIMES = "MaxApplyTimes";
 	public const string U_KEY_NUM_SUB_EPISODES = "NumSubEpisodes";
 	public const string U_KEY_MAX_NUM_ENEMY_OBJS = "MaxNumEnemyObjs";
 
