@@ -751,7 +751,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_UNITY_MS_SEND_SHARE_MSG_CALLBACK = "UnityMSSendShareMsgCallback";
 	public const string U_CLS_N_UNITY_MS_UNITY_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
-	public const string U_FUNC_N_UNITY_MS_UNITY_MSG_HANDLER = "handleUnityMsg";
+	public const string U_FUNC_N_UNITY_MS_UNITY_MSG_HANDLER = "onReceiveUnityMsg";
 	// 유니티 메세지 전송자 }
 
 	// 디바이스 메세지 수신자 {
@@ -759,7 +759,7 @@ public static partial class KCDefine {
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
 	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
 	
-	public const string U_FUNC_N_DEVICE_MR_MSG_HANDLER = "HandleDeviceMsg";
+	public const string U_FUNC_N_DEVICE_MR_MSG_HANDLER = "OnReceiveDeviceMsg";
 	// 디바이스 메세지 수신자 }
 	#endregion			// 기본
 
