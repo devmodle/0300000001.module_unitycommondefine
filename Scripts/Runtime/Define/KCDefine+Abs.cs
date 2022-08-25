@@ -250,13 +250,24 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_LEVEL_EDITOR = "91.LevelEditorScene";
 	// 씬 이름 }
 
-	// 식별자
-	public const string B_KEY_JSON_ROOT_DATA = "Root";
-	public const string B_KEY_JSON_COMMON_DATA = "Common";
+	// 식별자 {
+	public const string B_KEY_DEF = "Def";
+	public const string B_KEY_ROOT = "Root";
+	public const string B_KEY_COMMON = "Common";
+	public const string B_KEY_ENHANCE = "Enhance";
+	public const string B_KEY_BUY_TRADE = "BuyTrade";
+	public const string B_KEY_SALE_TRADE = "SaleTrade";
+
+	public const string B_KEY_CALC = "Calc";
+	public const string B_KEY_LEVEL = "Level";
+	public const string B_KEY_STAGE = "Stage";
+	public const string B_KEY_CHAPTER = "Chapter";
+
 	public const string B_KEY_JSON_USER_INFO_DATA = "UserInfo";
 	public const string B_KEY_JSON_GAME_INFO_DATA = "GameInfo";
 	public const string B_KEY_JSON_COMMON_APP_INFO_DATA = "CommonAppInfo";
 	public const string B_KEY_JSON_COMMON_USER_INFO_DATA = "CommonUserInfo";
+	// 식별자 }
 
 	// 토큰 {
 	public const string B_TOKEN_USER_A = "A";

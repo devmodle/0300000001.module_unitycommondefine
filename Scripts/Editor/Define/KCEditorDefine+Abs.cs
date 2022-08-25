@@ -811,7 +811,7 @@ public static partial class KCEditorDefine {
 		// 테이블 {
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CLevelInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CLevelInfoTable.cs"),
 		
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CEtcInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CEtcInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CCalcInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CCalcInfoTable.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CMissionInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CMissionInfoTable.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CRewardInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CRewardInfoTable.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CEpisodeInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CEpisodeInfoTable.cs"),
@@ -1024,6 +1024,7 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ObjectInfo/G_ObjInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ObjInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/AbilityInfo/G_AbilityInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_AbilityInfoTable.xlsx"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/ProductInfo/G_ProductInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ProductInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Tables/VersionInfo/G_VerInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_VerInfoTable.xlsx"),
 #endif			// #if SAMPLE_PROJ || DEVELOPMENT_PROJ
 
 		// 03.UnityProject
