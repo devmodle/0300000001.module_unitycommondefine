@@ -368,7 +368,7 @@ public partial class CEditorLevelCreateInfo {
 }
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE
 
-#if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 /** 구글 시트 정보 */
 public struct STGoogleSheetInfo {
 	public int m_nSrcIdx;
@@ -377,5 +377,5 @@ public struct STGoogleSheetInfo {
 	public string m_oID;
 	public string m_oName;
 }
-#endif			// #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+#endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 #endregion			// 조건부 타입

@@ -129,6 +129,7 @@ public static partial class KCDefine {
 	public const string U_KEY_DEVICE_CMD = "Cmd";
 	public const string U_KEY_DEVICE_MSG = "Msg";
 
+	public const string U_KEY_VER = "Ver";
 	public const string U_KEY_NAME = "Name";
 	public const string U_KEY_DESC = "Desc";
 	public const string U_KEY_RATE = "Rate";
@@ -788,6 +789,7 @@ public static partial class KCDefine {
 	// 색상 }
 
 	// 버전
+	public static readonly System.Version U_VER_DEF = new System.Version(0, 0, 0);
 	public static readonly System.Version U_VER_COMMON_APP_INFO = new System.Version(1, 0, 0);
 	public static readonly System.Version U_VER_COMMON_GAME_INFO = new System.Version(1, 0, 0);
 	public static readonly System.Version U_VER_COMMON_USER_INFO = new System.Version(1, 0, 0);
@@ -1321,11 +1323,15 @@ public static partial class KCDefine {
 	// 식별자
 	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
 
-#if UNITY_ANDROID
+#if UNITY_IOS
+	// 옵션
+	public const PresentationOption B_OPTS_PRESENTATION = PresentationOption.Alert | PresentationOption.Sound;
+	public const AuthorizationOption B_OPTS_AUTHORIZATION = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
+#elif UNITY_ANDROID
 	// 그룹 정보
 	public const string U_GROUP_N_NOTI = "NotiMNotiGroup";
 	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_N_NOTI;
-#endif			// #if UNITY_ANDROID
+#endif			// #if UNITY_IOS
 #endif			// #if NOTI_ENABLE
 
 #if PLAYFAB_MODULE_ENABLE
@@ -1345,14 +1351,14 @@ public static partial class KCDefine {
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
-#if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	// 개수
 	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 250;
 
 	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "A";
 	public const string U_COL_N_GOOGLE_SHEET_DEST = "CZ";
-#endif			// #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+#endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
@@ -1414,11 +1420,11 @@ public static partial class KCDefine {
 	// 경로 }
 #endif			// #if PURCHASE_MODULE_ENABLE
 
-#if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_SRC = $"{KCDefine.U_COL_N_GOOGLE_SHEET_SRC}{"{0}"}";
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_DEST = $"{KCDefine.U_COL_N_GOOGLE_SHEET_DEST}{"{0}"}";
-#endif			// #if (UNITY_STANDALONE && GOOGLE_SHEET_ENABLE) && (DEBUG || DEVELOPMENT_BUILD)
+#endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 런타임 상수
 }
 

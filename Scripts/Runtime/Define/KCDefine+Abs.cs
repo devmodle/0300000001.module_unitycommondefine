@@ -251,7 +251,6 @@ public static partial class KCDefine {
 	// 씬 이름 }
 
 	// 식별자 {
-	public const string B_KEY_DEF = "Def";
 	public const string B_KEY_ROOT = "Root";
 	public const string B_KEY_COMMON = "Common";
 	public const string B_KEY_ENHANCE = "Enhance";

@@ -1277,6 +1277,15 @@ public static partial class KCEditorDefine {
 	};
 	// 알림 }
 
+	// 에셋 추가자
+	public static List<string> B_AUDIO_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
+		KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_IOS, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_ANDROID, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_STANDALONE
+	};
+
+	public static List<string> B_TEXTURE_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
+		KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_IOS, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_ANDROID, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_STANDALONE
+	};
+
 	// iOS {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
 	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/iOS";
