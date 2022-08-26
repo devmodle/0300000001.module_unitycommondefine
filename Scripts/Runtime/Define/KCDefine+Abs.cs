@@ -586,31 +586,36 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_POS_INVALID = new Vector3(float.MaxValue - (float.Epsilon * 2.0f), float.MaxValue - (float.Epsilon * 2.0f), float.MaxValue - (float.Epsilon * 2.0f));
 	// 위치 }
 
+	// 토큰 {
+	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_KOREAN = new Dictionary<string, decimal>() {
+		["만"] = 10000m, ["억"] = 100000000m, ["조"] = 1000000000000m, ["경"] = 10000000000000000m, ["해"] = 100000000000000000000m, ["자"] = 1000000000000000000000000m, ["양"] = 10000000000000000000000000000m
+	};
+
+	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_ENGLISH = new Dictionary<string, decimal>() {
+		["K"] = 1000m, ["M"] = 1000000m, ["B"] = 1000000000m, ["T"] = 1000000000000m, ["q"] = 1000000000000000m, ["Q"] = 1000000000000000000m, ["s"] = 1000000000000000000000m, ["S"] = 1000000000000000000000000m, ["O"] = 1000000000000000000000000000m
+	};
+	// 토큰 }
+
 	// 국가 코드
 	public static readonly List<string> B_EU_COUNTRY_CODE_LIST = new List<string>() {
 		"BE", "BG", "CZ", "DK", "DE", "EE", "IE", "GR", "ES", "FR", "HR", "IT", "CY", "LV", "LT", "LU", "HU", "MT", "NL", "AT", "PL", "PT", "RO", "SI", "SK", "FI", "SE"
 	};
 
-	// 토큰
-	public static readonly Dictionary<string, decimal> B_UNIT_NUM_TOKEN_INFO_DICT = new Dictionary<string, decimal>() {
-		["K"] = 1000m, ["M"] = 1000000m, ["B"] = 1000000000m, ["T"] = 1000000000000m, ["q"] = 1000000000000000m, ["Q"] = 1000000000000000000m, ["s"] = 1000000000000000000000m, ["S"] = 1000000000000000000000000m, ["O"] = 1000000000000000000000000000m
-	};
-
 	// 경로 {
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
 
-#if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
-	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
-#else
+#if UNITY_EDITOR || (UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD))
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
-	
+
 #if UNITY_STANDALONE_WIN
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 #else
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 #endif			// #if UNITY_STANDALONE_WIN
-#endif			// #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
+#else
+	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
+	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
+#endif			// #if UNITY_EDITOR || (UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD))
 	// 경로 }
 	#endregion			// 런타임 상수
 }
