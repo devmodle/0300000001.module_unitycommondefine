@@ -1017,10 +1017,6 @@ public static partial class KCDefine {
 	public static readonly string U_DATA_P_COMMON_APP_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
 	public static readonly string U_DATA_P_COMMON_USER_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonUserInfo.bytes";
 	public static readonly string U_DATA_P_COMMON_GAME_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonGameInfo.bytes";
-#elif NEWTON_SOFT_JSON_MODULE_ENABLE
-	public static readonly string U_DATA_P_COMMON_APP_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.json";
-	public static readonly string U_DATA_P_COMMON_USER_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonUserInfo.json";
-	public static readonly string U_DATA_P_COMMON_GAME_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonGameInfo.json";
 #endif			// #if MSG_PACK_ENABLE
 
 #if UNITY_EDITOR
@@ -1046,10 +1042,6 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.bytes";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A}.bytes";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B}.bytes";
-#elif NEWTON_SOFT_JSON_MODULE_ENABLE
-	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.json";
-	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A}.json";
-	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B}.json";
 #endif			// #if MSG_PACK_ENABLE
 #else
 	public static readonly string U_RUNTIME_TABLE_P_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_LEVEL_INFO}.json";
@@ -1074,10 +1066,6 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.bytes";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A}.bytes";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B}.bytes";
-#elif NEWTON_SOFT_JSON_MODULE_ENABLE
-	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.json";
-	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A}.json";
-	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B}.json";
 #endif			// #if MSG_PACK_ENABLE
 #endif			// #if UNITY_EDITOR
 
@@ -1411,13 +1399,8 @@ public static partial class KCDefine {
 		KCDefine.B_KEY_COMMON
 	};
 
-	// 경로 {
-#if MSG_PACK_ENABLE
+	// 경로
 	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
-#elif NEWTON_SOFT_JSON_MODULE_ENABLE
-	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.json";
-#endif			// #if MSG_PACK_ENABLE
-	// 경로 }
 #endif			// #if PURCHASE_MODULE_ENABLE
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
