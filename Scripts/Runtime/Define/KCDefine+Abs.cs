@@ -592,12 +592,17 @@ public static partial class KCDefine {
 	};
 
 	// 토큰
-	public static readonly Dictionary<string, long> B_UNIT_NUM_TOKEN_INFO_DICT = new Dictionary<string, long>() {
-		["K"] = 1000, ["M"] = 1000000, ["B"] = 3000000000, ["T"] = 1000000000000
+	public static readonly Dictionary<string, decimal> B_UNIT_NUM_TOKEN_INFO_DICT = new Dictionary<string, decimal>() {
+		["K"] = 1000m, ["M"] = 1000000m, ["B"] = 1000000000m, ["T"] = 1000000000000m, ["q"] = 1000000000000000m, ["Q"] = 1000000000000000000m, ["s"] = 1000000000000000000000m, ["S"] = 1000000000000000000000000m, ["O"] = 1000000000000000000000000000m
 	};
 
 	// 경로 {
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
+
+#if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
+	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
+	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
+#else
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 	
 #if UNITY_STANDALONE_WIN
@@ -605,6 +610,7 @@ public static partial class KCDefine {
 #else
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 #endif			// #if UNITY_STANDALONE_WIN
+#endif			// #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	// 경로 }
 	#endregion			// 런타임 상수
 }
