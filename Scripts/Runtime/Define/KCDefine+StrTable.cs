@@ -57,6 +57,9 @@ public static partial class KCDefine {
 	public const string ST_KEY_C_ON_RESTORE_MSG = "C_ON_RESTORE_MSG";
 	public const string ST_KEY_C_ON_RESTORE_FAIL_MSG = "C_ON_RESTORE_FAIL_MSG";
 
+	public const string ST_KEY_C_ON_TABLE_LOAD_MSG = "C_ON_TABLE_LOAD_MSG";
+	public const string ST_KEY_C_ON_TABLE_LOAD_FAIL_MSG = "C_ON_TABLE_LOAD_FAIL_MSG";
+
 	public const string ST_KEY_C_OK_TEXT = "C_OK_TEXT";
 	public const string ST_KEY_C_CANCEL_TEXT = "C_CANCEL_TEXT";
 	public const string ST_KEY_C_AGREE_TEXT = "C_AGREE_TEXT";
@@ -135,9 +138,5 @@ public static partial class KCDefine {
 
 	// 에디터 챕터 제거 팝업
 	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
-
-	// 에디터 구글 시트 로드 팝업
-	public const string ST_KEY_ON_EDITOR_GOOGLE_SHEET_LOAD_MSG = "ON_EDITOR_GOOGLE_SHEET_LOAD_MSG";
-	public const string ST_KEY_ON_EDITOR_GOOGLE_SHEET_LOAD_FAIL_MSG = "ON_EDITOR_GOOGLE_SHEET_LOAD_FAIL_MSG";
 	#endregion			// 기본
 }
