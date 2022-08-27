@@ -7,33 +7,6 @@ using UnityEngine.Events;
 /** 문자열 테이블 상수 */
 public static partial class KCDefine {
 	#region 기본
-	// 에디터 종료 팝업
-	public const string ST_KEY_EDITOR_QUIT_P_MSG = "EDITOR_QUIT_P_MSG";
-
-	// 에디터 리셋 팝업
-	public const string ST_KEY_EDITOR_RESET_P_MSG = "EDITOR_RESET_P_MSG";
-
-	// 에디터 A 세트 팝업
-	public const string ST_KEY_EDITOR_A_SET_P_MSG = "EDITOR_A_SET_P_MSG";
-
-	// 에디터 B 세트 팝업
-	public const string ST_KEY_EDITOR_B_SET_P_MSG = "EDITOR_B_SET_P_MSG";
-
-	// 에디터 테이블 로드 팝업
-	public const string ST_KEY_EDITOR_TABLE_LP_MSG = "EDITOR_TABLE_LP_MSG";
-
-	// 에디터 레벨 제거 팝업
-	public const string ST_KEY_EDITOR_REMOVE_LP_MSG = "EDITOR_REMOVE_LP_MSG";
-
-	// 에디터 스테이지 제거 팝업
-	public const string ST_KEY_EDITOR_REMOVE_SP_MSG = "EDITOR_REMOVE_SP_MSG";
-
-	// 에디터 챕터 제거 팝업
-	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
-
-	// 에디터 구글 시트 로드 팝업
-	public const string ST_KEY_EDITOR_GOOGLE_SLP_MSG = "EDITOR_GOOGLE_SLP_MSG";
-
 	// 종료 팝업
 	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
 
@@ -66,18 +39,24 @@ public static partial class KCDefine {
 	public const string ST_KEY_MAIN_SM_B_SET_TEXT = "MAIN_SM_B_SET_TEXT";
 
 	// 공용 {
-	public const string ST_KEY_C_LOGIN_SUCCESS_MSG = "C_LOGIN_SUCCESS_MSG";
-	public const string ST_KEY_C_LOGIN_FAIL_MSG = "C_LOGIN_FAIL_MSG";
-	public const string ST_KEY_C_LOGOUT_SUCCESS_MSG = "C_LOGOUT_SUCCESS_MSG";
-	public const string ST_KEY_C_LOGOUT_FAIL_MSG = "C_LOGOUT_FAIL_MSG";
-	public const string ST_KEY_C_LOAD_SUCCESS_MSG = "C_LOAD_SUCCESS_MSG";
-	public const string ST_KEY_C_LOAD_FAIL_MSG = "C_LOAD_FAIL_MSG";
-	public const string ST_KEY_C_SAVE_SUCCESS_MSG = "C_SAVE_SUCCESS_MSG";
-	public const string ST_KEY_C_SAVE_FAIL_MSG = "C_SAVE_FAIL_MSG";
-	public const string ST_KEY_C_PURCHASE_SUCCESS_MSG = "C_PURCHASE_SUCCESS_MSG";
-	public const string ST_KEY_C_PURCHASE_FAIL_MSG = "C_PURCHASE_FAIL_MSG";
-	public const string ST_KEY_C_RESTORE_SUCCESS_MSG = "C_RESTORE_SUCCESS_MSG";
-	public const string ST_KEY_C_RESTORE_FAIL_MSG = "C_RESTORE_FAIL_MSG";
+	public const string ST_KEY_C_ON_LOGIN_MSG = "C_ON_LOGIN_MSG";
+	public const string ST_KEY_C_ON_LOGIN_FAIL_MSG = "C_ON_LOGIN_FAIL_MSG";
+
+	public const string ST_KEY_C_ON_LOGOUT_MSG = "C_ON_LOGOUT_MSG";
+	public const string ST_KEY_C_ON_LOGOUT_FAIL_MSG = "C_ON_LOGOUT_FAIL_MSG";
+
+	public const string ST_KEY_C_ON_LOAD_MSG = "C_ON_LOAD_MSG";
+	public const string ST_KEY_C_ON_LOAD_FAIL_MSG = "C_ON_LOAD_FAIL_MSG";
+
+	public const string ST_KEY_C_ON_SAVE_MSG = "C_ON_SAVE_MSG";
+	public const string ST_KEY_C_ON_SAVE_FAIL_MSG = "C_ON_SAVE_FAIL_MSG";
+
+	public const string ST_KEY_C_ON_PURCHASE_MSG = "C_ON_PURCHASE_MSG";
+	public const string ST_KEY_C_ON_PURCHASE_FAIL_MSG = "C_ON_PURCHASE_FAIL_MSG";
+	
+	public const string ST_KEY_C_ON_RESTORE_MSG = "C_ON_RESTORE_MSG";
+	public const string ST_KEY_C_ON_RESTORE_FAIL_MSG = "C_ON_RESTORE_FAIL_MSG";
+
 	public const string ST_KEY_C_OK_TEXT = "C_OK_TEXT";
 	public const string ST_KEY_C_CANCEL_TEXT = "C_CANCEL_TEXT";
 	public const string ST_KEY_C_AGREE_TEXT = "C_AGREE_TEXT";
@@ -127,5 +106,38 @@ public static partial class KCDefine {
 	public const string ST_KEY_C_STAGE_PAGE_TEXT_FMT = "C_STAGE_PAGE_TEXT_FMT";
 	public const string ST_KEY_C_CHAPTER_PAGE_TEXT_FMT = "C_CHAPTER_PAGE_TEXT_FMT";
 	// 공용 }
+	#endregion			// 기본
+}
+
+/** 문자열 테이블 상수 - 에디터 */
+public static partial class KCDefine {
+	#region 기본
+	// 에디터 종료 팝업
+	public const string ST_KEY_EDITOR_QUIT_P_MSG = "EDITOR_QUIT_P_MSG";
+
+	// 에디터 리셋 팝업
+	public const string ST_KEY_EDITOR_RESET_P_MSG = "EDITOR_RESET_P_MSG";
+
+	// 에디터 A 세트 팝업
+	public const string ST_KEY_EDITOR_A_SET_P_MSG = "EDITOR_A_SET_P_MSG";
+
+	// 에디터 B 세트 팝업
+	public const string ST_KEY_EDITOR_B_SET_P_MSG = "EDITOR_B_SET_P_MSG";
+
+	// 에디터 테이블 로드 팝업
+	public const string ST_KEY_EDITOR_TABLE_LP_MSG = "EDITOR_TABLE_LP_MSG";
+
+	// 에디터 레벨 제거 팝업
+	public const string ST_KEY_EDITOR_REMOVE_LP_MSG = "EDITOR_REMOVE_LP_MSG";
+
+	// 에디터 스테이지 제거 팝업
+	public const string ST_KEY_EDITOR_REMOVE_SP_MSG = "EDITOR_REMOVE_SP_MSG";
+
+	// 에디터 챕터 제거 팝업
+	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
+
+	// 에디터 구글 시트 로드 팝업
+	public const string ST_KEY_ON_EDITOR_GOOGLE_SHEET_LOAD_MSG = "ON_EDITOR_GOOGLE_SHEET_LOAD_MSG";
+	public const string ST_KEY_ON_EDITOR_GOOGLE_SHEET_LOAD_FAIL_MSG = "ON_EDITOR_GOOGLE_SHEET_LOAD_FAIL_MSG";
 	#endregion			// 기본
 }
