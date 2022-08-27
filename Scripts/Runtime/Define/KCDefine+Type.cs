@@ -8,6 +8,10 @@ using UnityEngine.Events;
 using DG.Tweening;
 using MessagePack;
 
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+using GoogleSheetsToUnity;
+#endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+
 #region 기본
 /** 상태 갱신 인터페이스 */
 public partial interface IUpdater {
@@ -94,6 +98,13 @@ public struct STIDInfo {
 		m_nID02 = a_oIDInfo[oID02Key].ExIsValid() ? a_oIDInfo[oID02Key].AsInt : KCDefine.B_VAL_0_INT;
 		m_nID03 = a_oIDInfo[oID03Key].ExIsValid() ? a_oIDInfo[oID03Key].AsInt : KCDefine.B_VAL_0_INT;
 	}
+
+	/** 생성자 */
+	public STIDInfo(int a_nID01, int a_nID02 = KCDefine.B_VAL_0_INT, int a_nID03 = KCDefine.B_VAL_0_INT) : this() {
+		m_nID01 = a_nID01;
+		m_nID02 = a_nID02;
+		m_nID03 = a_nID03;
+	}
 	#endregion			// 함수
 
 	#region 조건부 함수
@@ -111,22 +122,31 @@ public struct STIDInfo {
 /** 인덱스 정보 */
 [MessagePackObject][System.Serializable]
 public struct STIdxInfo : System.IEquatable<STIdxInfo> {
-	[Key(0)] public int m_nX;
-	[Key(1)] public int m_nY;
-	[Key(2)] public int m_nZ;
+	[Key(0)] public int m_nIdx01;
+	[Key(1)] public int m_nIdx02;
+	[Key(2)] public int m_nIdx03;
 
 	#region 상수
 	public static readonly STIdxInfo INVALID = new STIdxInfo() {
-		m_nX = KCDefine.B_IDX_INVALID, m_nY = KCDefine.B_IDX_INVALID, m_nZ = KCDefine.B_IDX_INVALID
+		m_nIdx01 = KCDefine.B_IDX_INVALID, m_nIdx02 = KCDefine.B_IDX_INVALID, m_nIdx03 = KCDefine.B_IDX_INVALID
 	};
 	#endregion			// 상수
 
 	#region IEquatable
 	/** 동일 여부를 검사한다 */
 	public bool Equals(STIdxInfo a_stIdxInfo) {
-		return m_nX == a_stIdxInfo.m_nX && m_nY == a_stIdxInfo.m_nY && m_nZ == a_stIdxInfo.m_nZ;
+		return m_nIdx01 == a_stIdxInfo.m_nIdx01 && m_nIdx02 == a_stIdxInfo.m_nIdx02 && m_nIdx03 == a_stIdxInfo.m_nIdx03;
 	}
 	#endregion			// IEquatable
+
+	#region 함수
+	/** 생성자 */
+	public STIdxInfo(int a_nIdx01, int a_nIdx02, int a_nIdx03 = KCDefine.B_IDX_INVALID) : this() {
+		m_nIdx01 = a_nIdx01;
+		m_nIdx02 = a_nIdx02;
+		m_nIdx03 = a_nIdx03;
+	}
+	#endregion			// 함수
 }
 
 /** 기록 정보 */
@@ -209,6 +229,12 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 	public STValInfo(SimpleJSON.JSONNode a_oValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
 		m_dmVal = decimal.TryParse(a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT], NumberStyles.Any, null, out decimal dmVal) ? dmVal : KCDefine.B_VAL_0_INT;
 		m_eValType = a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].ExIsValid() ? (EValType)a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsInt : EValType.NONE;
+	}
+
+	/** 생성자 */
+	public STValInfo(decimal a_dmVal, EValType a_eValType) : this() {
+		m_dmVal = a_dmVal;
+		m_eValType = a_eValType;
 	}
 	#endregion			// 함수
 
@@ -369,13 +395,19 @@ public partial class CEditorLevelCreateInfo {
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
-/** 구글 시트 정보 */
-public struct STGoogleSheetInfo {
+/** 구글 시트 로드 정보 */
+public struct STGoogleSheetLoadInfo {
 	public int m_nSrcIdx;
 	public int m_nNumCells;
-
 	public string m_oID;
 	public string m_oName;
+	public GstuSpreadSheet m_oGoogleSheet;
+
+	#region 상수
+	public static readonly STGoogleSheetLoadInfo INVALID = new STGoogleSheetLoadInfo() {
+		m_nSrcIdx = KCDefine.B_IDX_INVALID
+	};
+	#endregion			// 상수
 }
 #endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 #endregion			// 조건부 타입
