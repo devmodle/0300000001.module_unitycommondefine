@@ -1337,14 +1337,14 @@ public static partial class KCDefine {
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
 #endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 개수
 	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 250;
 
 	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "B";
 	public const string U_COL_N_GOOGLE_SHEET_DEST = "BZ";
-#endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif			// #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 상수
 
 	#region 조건부 런타임 상수
@@ -1401,11 +1401,11 @@ public static partial class KCDefine {
 	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
 #endif			// #if PURCHASE_MODULE_ENABLE
 
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_SRC = $"{KCDefine.U_COL_N_GOOGLE_SHEET_SRC}{"{0}"}";
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_DEST = $"{KCDefine.U_COL_N_GOOGLE_SHEET_DEST}{"{0}"}";
-#endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif			// #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion			// 조건부 런타임 상수
 }
 

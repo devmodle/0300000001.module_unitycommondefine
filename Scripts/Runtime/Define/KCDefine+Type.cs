@@ -8,9 +8,9 @@ using UnityEngine.Events;
 using DG.Tweening;
 using MessagePack;
 
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 using GoogleSheetsToUnity;
-#endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif			// #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 
 #region 기본
 /** 상태 갱신 인터페이스 */
@@ -394,7 +394,7 @@ public partial class CEditorLevelCreateInfo {
 }
 #endif			// #if UNITY_EDITOR || UNITY_STANDALONE
 
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 /** 구글 시트 로드 정보 */
 public struct STGoogleSheetLoadInfo {
 	public int m_nSrcIdx;
@@ -409,5 +409,5 @@ public struct STGoogleSheetLoadInfo {
 	};
 	#endregion			// 상수
 }
-#endif			// #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif			// #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 #endregion			// 조건부 타입

@@ -604,7 +604,7 @@ public static partial class KCDefine {
 	// 경로 {
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
 
-#if UNITY_EDITOR || (UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD))
+#if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 
 #if UNITY_STANDALONE_WIN
@@ -615,7 +615,7 @@ public static partial class KCDefine {
 #else
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
-#endif			// #if UNITY_EDITOR || (UNITY_STANDALONE && (DEBUG || DEVELOPMENT_BUILD))
+#endif			// #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 경로 }
 	#endregion			// 런타임 상수
 }
