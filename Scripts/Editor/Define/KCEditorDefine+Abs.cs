@@ -1282,7 +1282,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ENTITLEMENTS_P_CAPABILITY_IOS = $"{Application.productName}.entitlements";
 
-	public static readonly List<GraphicsDeviceType> B_DEVICE_GRAPHICS_DEVICE_TYPE_LIST_IOS = new List<GraphicsDeviceType>() {
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_IOS = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Metal
 	};
 	// iOS }
@@ -1337,12 +1337,7 @@ public static partial class KCEditorDefine {
 	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_WNDS = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Direct3D12, GraphicsDeviceType.Direct3D11, GraphicsDeviceType.OpenGLCore
 	};
-
-	// 리눅스
-	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_LINUX = new List<GraphicsDeviceType>() {
-		GraphicsDeviceType.OpenGLCore
-	};
-	
+		
 	// 젠킨스 {
 	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", KCEditorDefine.B_VER_UNITY_MODULE);
 	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", KCEditorDefine.B_VER_UNITY_MODULE);
