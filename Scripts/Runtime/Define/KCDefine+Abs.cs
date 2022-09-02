@@ -135,23 +135,29 @@ public static partial class KCDefine {
 	// 디바이스 {
 	public const int B_PORTRAIT_SCREEN_WIDTH = 720;
 	public const int B_PORTRAIT_SCREEN_HEIGHT = 1280;
+	public const int B_PORTRAIT_DPI_SCREEN_HEIGHT = 1920;
 
 	public const int B_LANDSCAPE_SCREEN_WIDTH = 1280;
 	public const int B_LANDSCAPE_SCREEN_HEIGHT = 720;
+	public const int B_LANDSCAPE_DPI_SCREEN_HEIGHT = 1080;
 
 #if MODE_PORTRAIT_ENABLE
 	public const int B_SCREEN_WIDTH = KCDefine.B_PORTRAIT_SCREEN_WIDTH;
 	public const int B_SCREEN_HEIGHT = KCDefine.B_PORTRAIT_SCREEN_HEIGHT;
+	public const int B_DPI_SCREEN_HEIGHT = KCDefine.B_PORTRAIT_DPI_SCREEN_HEIGHT;
 #else
 	public const int B_SCREEN_WIDTH = KCDefine.B_LANDSCAPE_SCREEN_WIDTH;
 	public const int B_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_SCREEN_HEIGHT;
+	public const int B_DPI_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_DPI_SCREEN_HEIGHT;
 #endif			// #if MODE_PORTRAIT_ENABLE
 
 	public const int B_TARGET_FRAME_RATE = 60;
 
 	public const float B_DEF_SCREEN_DPI = 160.0f;
+	public const float B_PLATFORM_SCREEN_DPI = 480.0f;
+
 	public const float B_FIXED_DELTA_TIME = 0.02f;
-	public const float B_DESKTOP_SCREEN_RATE = 0.9f;
+	public const float B_DESKTOP_SCREEN_RATE = 0.95f;
 	public const float B_ADDITIONAL_LIGHT_INTENSITY = 0.99f;
 
 	public const string B_TEXT_NULL = "null";
