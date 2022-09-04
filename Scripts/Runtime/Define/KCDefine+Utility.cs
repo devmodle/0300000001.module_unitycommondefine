@@ -795,6 +795,7 @@ public static partial class KCDefine {
 	public static readonly System.Version U_VER_COMMON_USER_INFO = new System.Version(1, 0, 0);
 
 	// 크기
+	public static readonly Vector3 U_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
 	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
 	// 태그
@@ -1125,12 +1126,12 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: <color=orange>{0:0.0}</color> ms";
 	public const string U_TEXT_FMT_DEVICE_INFO = "Graphics Device: <color=orange>{0}</color> <color=green>[{1}]</color>";
 
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_01 = "Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_02 = "Root Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_03 = "Screen Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_04 = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_05 = "Quality Level: <color=orange>{0}</color>, Target Frame Rate: <color=orange>{1}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_06 = "Persistent Data Path: <color=orange>{0}</color>";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_01 = "Screen Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_02 = "Screen Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_03 = "SafeArea Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_04 = "Quality Level: <color=orange>{0}</color>, Target Frame Rate: <color=orange>{1}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_05 = "Persistent Data Path: <color=orange>{0}</color>";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_06 = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>\n";
 
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_01 = "Used Heap: <color=orange>{0:0.0}</color> MB, GPU Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_02 = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
@@ -1360,9 +1361,6 @@ public static partial class KCDefine {
 #endif			// #if UNITY_IOS
 
 #if ADS_MODULE_ENABLE
-	// 크기
-	public static readonly Vector3 U_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
-
 #if ADMOB_ADS_ENABLE
 	// 크기
 	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize((int)KCDefine.U_SIZE_BANNER_ADS.x, (int)KCDefine.U_SIZE_BANNER_ADS.y);
