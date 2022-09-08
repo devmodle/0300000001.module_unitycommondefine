@@ -369,6 +369,9 @@ public static partial class KCDefine {
 
 	public const string B_TEXT_FMT_VER = "Ver.{0}{1}";
 	public const string B_TEXT_FMT_DICT = "[{0}]{1}";
+	public const string B_TEXT_FMT_ENHANCE_01 = "{0} +{1}";
+	public const string B_TEXT_FMT_ENHANCE_02 = "{0} -> {1}";
+
 	public const string B_TEXT_FMT_SIZE = "<size={0}>{1}</size>";
 	public const string B_TEXT_FMT_COLOR = "<color=#{0}>{1}</color>";
 	
