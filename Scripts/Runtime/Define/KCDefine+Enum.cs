@@ -442,7 +442,7 @@ public enum EBuildMode {
 }
 
 /** 텍스처 압축 */
-public enum ETextureCompression {
+public enum ETexCompression {
 	NONE = -1,
 	LEGACY,
 	DEFAULT,

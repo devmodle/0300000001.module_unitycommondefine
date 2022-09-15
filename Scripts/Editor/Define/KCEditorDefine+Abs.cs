@@ -295,7 +295,7 @@ public static partial class KCEditorDefine {
 	public const string B_MSG_ALERT_P_EXPORT_IMG_SUCCESS = "이미지를 추출했습니다.";
 	public const string B_MSG_ALERT_P_PLATFORM_BUILD_FAIL = "해당 플랫폼으로 전환 후 빌드해주세요.";
 
-	public const string B_MSG_ALERT_P_EXPORT_TEXTURE_FAIL = "텍스처를 선택해주세요.";
+	public const string B_MSG_ALERT_P_EXPORT_TEX_FAIL = "텍스처를 선택해주세요.";
 	public const string B_MSG_ALERT_P_EXPORT_SPRITE_FAIL = "스프라이트를 선택해주세요.";
 
 	public const string B_MSG_FMT_ALERT_P_MISSING_PREFAB = "프리팹이 소실 된 {0} 객체를 제거하시겠습니까?";
@@ -438,8 +438,8 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_FMT_SCRIPTABLE_OBJ = $"{KCEditorDefine.B_DIR_P_ASSETS}{"{0}.asset"}";
 	public static readonly string B_ASSET_P_FMT_DEFINE_S_OUTPUT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/DefineSymbols/{"{0}DefineSymbols.txt"}";
 
+	public static readonly string B_IMG_P_FMT_TEX_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Textures/{0}.png"}";
 	public static readonly string B_IMG_P_FMT_SPRITE_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Sprites/{0}.png"}";
-	public static readonly string B_IMG_P_FMT_TEXTURE_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Textures/{0}.png"}";
 	
 	public static readonly string B_DATA_P_BUILD_METHOD = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/BuildMethod.txt";
 	public static readonly string B_ICON_P_STANDALONE_APP = $"{KCDefine.B_DIR_P_ICONS}Standalone/App/Icon";
@@ -489,27 +489,27 @@ public static partial class KCEditorDefine {
 		$"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}"
 	};
 
-	public static readonly List<TextureImporterType> B_ENABLE_SRGB_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+	public static readonly List<TextureImporterType> B_ENABLE_SRGB_TEX_TYPE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.Default, TextureImporterType.Sprite
 	};	
 
-	public static readonly List<TextureImporterType> B_ENABLE_ALPHA_TRANSPARENCY_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+	public static readonly List<TextureImporterType> B_ENABLE_ALPHA_TRANSPARENCY_TEX_TYPE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.Default, TextureImporterType.Sprite, TextureImporterType.GUI, TextureImporterType.Cursor, TextureImporterType.Cookie
 	};
 
-	public static readonly List<TextureImporterType> B_IGNORE_RGBA_32_FMT_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+	public static readonly List<TextureImporterType> B_IGNORE_RGBA_32_FMT_TEX_TYPE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.SingleChannel
 	};
 
-	public static readonly List<TextureImporterType> B_IGNORE_WRAP_MODE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+	public static readonly List<TextureImporterType> B_IGNORE_WRAP_MODE_TEX_TYPE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.NormalMap, TextureImporterType.Lightmap, TextureImporterType.DirectionalLightmap, TextureImporterType.Shadowmask
 	};
 
-	public static readonly List<TextureImporterType> B_IGNORE_FILTER_MODE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+	public static readonly List<TextureImporterType> B_IGNORE_FILTER_MODE_TEX_TYPE_LIST = new List<TextureImporterType>() {
 		// Do Something
 	};
 
-	public static readonly List<TextureImporterType> B_IGNORE_NON_POT_SCALE_TEXTURE_TYPE_LIST = new List<TextureImporterType>() {
+	public static readonly List<TextureImporterType> B_IGNORE_NON_POT_SCALE_TEX_TYPE_LIST = new List<TextureImporterType>() {
 		TextureImporterType.GUI, TextureImporterType.Sprite
 	};
 
@@ -1264,14 +1264,15 @@ public static partial class KCEditorDefine {
 	};
 	// 알림 }
 
-	// 에셋 추가자
+	// 에셋 추가자 {
 	public static List<string> B_AUDIO_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
 		KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_IOS, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_ANDROID, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_STANDALONE
 	};
 
-	public static List<string> B_TEXTURE_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
+	public static List<string> B_TEX_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
 		KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_IOS, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_ANDROID, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_STANDALONE
 	};
+	// 에셋 추가자 }
 
 	// iOS {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
