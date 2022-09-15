@@ -223,12 +223,12 @@ public static partial class KCDefine {
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
 	public const string B_EDITOR_SCENE_N_PATTERN_01 = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_02 = "EditorScene";
-	
-	public const string B_NAME_PATTERN_FIX_REPEAT_WRAP = "__FIX_RW__";
-	public const string B_NAME_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
-	public const string B_NAME_PATTERN_FIX_COMPRESS_IN_MEMORY = "__FIX_CIM__";
 
-	public const string B_NAME_PATTERN_ENABLE_READ_WRITE = "__ENABLE_RW__";
+	public const string B_NAME_PATTERN_TEX_FIX_REPEAT_WRAP = "__FIX_RW__";
+	public const string B_NAME_PATTERN_TEX_FIX_POINT_FILTER = "__FIX_PF__";
+	public const string B_NAME_PATTERN_AUDIO_FIX_COMPRESS_IN_MEMORY = "__FIX_CIM__";
+
+	public const string B_NAME_PATTERN_ENABLE_READABLE = "__ENABLE_RW__";
 	public const string B_NAME_PATTERN_IGNORE_LINEAR_PIPELINE = "__IGNORE_LP__";
 	public const string B_NAME_PATTERN_IGNORE_SETUP_CULLING_MASK = "__IGNORE_SCM__";
 	// 이름 }
@@ -328,11 +328,13 @@ public static partial class KCDefine {
 	public const string B_DIR_P_DATAS = "Datas/";
 	public const string B_DIR_P_IMAGES = "Images/";
 	public const string B_DIR_P_SOUNDS = "Sounds/";
+
 	public const string B_DIR_P_TABLES = "Tables/";
 	public const string B_DIR_P_SHADERS = "Shaders/";
 	public const string B_DIR_P_PREFABS = "Prefabs/";
 	public const string B_DIR_P_TEXTURES = "Textures/";
 	public const string B_DIR_P_MATERIALS = "Materials/";
+	
 	public const string B_DIR_P_PIPELINES = "Pipelines/";
 	public const string B_DIR_P_SCRIPTABLES = "Scriptables/";
 	public const string B_DIR_P_SPRITE_ATLASES = "SpriteAtlases/";
