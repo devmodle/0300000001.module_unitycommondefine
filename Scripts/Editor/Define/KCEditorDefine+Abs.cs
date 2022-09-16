@@ -1314,15 +1314,20 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DEST_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}gradleTemplate.properties";
 	public static readonly string B_ORIGIN_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Android/gradleTemplate.properties";
 
-	public static readonly string B_SRC_LOCAL_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Android/local.properties";
-	public static readonly string B_DEST_LOCAL_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/local.properties";
-
 	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
 	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/unityLibrary/libs/unity-classes.jar";
 
 	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_ANDROID = new List<GraphicsDeviceType>() {
 		GraphicsDeviceType.Vulkan, GraphicsDeviceType.OpenGLES3
 	};
+
+#if UNITY_EDITOR_WIN
+	public static readonly string B_SRC_LOCAL_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Android/localWindows.properties";
+	public static readonly string B_DEST_LOCAL_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/local.properties";
+#else
+	public static readonly string B_SRC_LOCAL_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Android/localMac.properties";
+	public static readonly string B_DEST_LOCAL_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Android/local.properties";
+#endif			// #if UNITY_EDITOR_WIN
 	// 안드로이드 }
 
 	// 독립 플랫폼
