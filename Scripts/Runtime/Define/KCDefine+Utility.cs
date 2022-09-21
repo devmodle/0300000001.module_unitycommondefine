@@ -455,9 +455,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TOP_MENU_UIS = "TOP_MENU_UIS";
 	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BOTTOM_MENU_UIS";
 	
-	public const string U_OBJ_N_TITLE_TEXT = "TITLE_TEXT";
 	public const string U_OBJ_N_MSG_TEXT = "MSG_TEXT";
+	public const string U_OBJ_N_VAL_TEXT = "VAL_TEXT";
 	public const string U_OBJ_N_PAGE_TEXT = "PAGE_TEXT";
+	public const string U_OBJ_N_TITLE_TEXT = "TITLE_TEXT";
 
 	public const string U_OBJ_N_NAME_TEXT = "NAME_TEXT";
 	public const string U_OBJ_N_DESC_TEXT = "DESC_TEXT";
