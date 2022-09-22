@@ -19,7 +19,7 @@ public static partial class KCDefine {
 	public const int B_VAL_7_INT = 7;
 	public const int B_VAL_8_INT = 8;
 	public const int B_VAL_9_INT = 9;
-	
+
 	public const float B_VAL_0_REAL = 0.0f;
 	public const float B_VAL_1_REAL = 1.0f;
 	public const float B_VAL_2_REAL = 2.0f;
@@ -84,7 +84,7 @@ public static partial class KCDefine {
 #else
 	public const float B_UNIT_SCALE = 1.0f;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 0.01f;
-#endif			// #if UNIT_SCALE_ENABLE
+#endif            // #if UNIT_SCALE_ENABLE                                  
 	// 단위 }
 
 	// 빌드 번호
@@ -94,7 +94,7 @@ public static partial class KCDefine {
 	public const int B_COMPARE_LESS = -1;
 	public const int B_COMPARE_EQUALS = 0;
 	public const int B_COMPARE_GREATE = 1;
-	
+
 	// 횟수 {
 	public const int B_TIMES_INT_ONCE = 1;
 	public const int B_TIMES_INT_INFINITE = -1;
@@ -106,7 +106,7 @@ public static partial class KCDefine {
 	// 시간 {
 	public const float B_DELTA_T_INFINITE = float.MaxValue;
 	public const float B_DELTA_T_INTERMEDIATE = float.Epsilon;
-	
+
 	public const float B_DELTA_T_ASYNC_OPERATION = 0.15f;
 	public const float B_MAX_DELTA_T_TRACKING_CONSENT_VIEW = 2.5f;
 
@@ -149,7 +149,7 @@ public static partial class KCDefine {
 	public const int B_SCREEN_WIDTH = KCDefine.B_LANDSCAPE_SCREEN_WIDTH;
 	public const int B_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_SCREEN_HEIGHT;
 	public const int B_DPI_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_DPI_SCREEN_HEIGHT;
-#endif			// #if MODE_PORTRAIT_ENABLE
+#endif            // #if MODE_PORTRAIT_ENABLE                                     
 
 	public const int B_TARGET_FRAME_RATE = 60;
 
@@ -216,7 +216,7 @@ public static partial class KCDefine {
 
 	public const string B_PLATFORM_N_ANDROID_GOOGLE = "AndroidGoogle";
 	public const string B_PLATFORM_N_ANDROID_AMAZON = "AndroidAmazon";
-	
+
 	public const string B_PLATFORM_N_STANDALONE_MAC_STEAM = "StandaloneMacSteam";
 	public const string B_PLATFORM_N_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
 
@@ -301,7 +301,7 @@ public static partial class KCDefine {
 
 	// 버전
 	public const string B_DEF_VER = "1.0.0";
-	
+
 	// 이벤트
 	public const string B_EVENT_START = "Start";
 	public const string B_EVENT_CANCEL = "Cancel";
@@ -312,7 +312,7 @@ public static partial class KCDefine {
 	public const string B_CMD_GET_STORE_VER = "GetStoreVer";
 
 	public const string B_CMD_SET_ENABLE_ADS_TRACKING = "SetEnableAdsTracking";
-	
+
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
 
@@ -334,7 +334,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_PREFABS = "Prefabs/";
 	public const string B_DIR_P_TEXTURES = "Textures/";
 	public const string B_DIR_P_MATERIALS = "Materials/";
-	
+
 	public const string B_DIR_P_PIPELINES = "Pipelines/";
 	public const string B_DIR_P_SCRIPTABLES = "Scriptables/";
 	public const string B_DIR_P_SPRITE_ATLASES = "SpriteAtlases/";
@@ -376,7 +376,7 @@ public static partial class KCDefine {
 
 	public const string B_TEXT_FMT_SIZE = "<size={0}>{1}</size>";
 	public const string B_TEXT_FMT_COLOR = "<color=#{0}>{1}</color>";
-	
+
 	public const string B_TEXT_FMT_NUM = "{0}.{1}{2}";
 	public const string B_TEXT_FMT_CURRENCY = "{0:N0}";
 	public const string B_TEXT_FMT_USD_PRICE = "USD {0}";
@@ -384,7 +384,7 @@ public static partial class KCDefine {
 
 	public const string B_TEXT_FMT_MM_SS = "{0:00}:{1:00}";
 	public const string B_TEXT_FMT_HH_MM_SS = "{0:00}:{1:00}:{2:00}";
-	
+
 	public const string B_TEXT_FMT_1_INT = "{0:0}";
 	public const string B_TEXT_FMT_2_INT = "{0:00}";
 	public const string B_TEXT_FMT_3_INT = "{0:000}";
@@ -394,7 +394,7 @@ public static partial class KCDefine {
 	public const string B_TEXT_FMT_7_INT = "{0:0000000}";
 	public const string B_TEXT_FMT_8_INT = "{0:00000000}";
 	public const string B_TEXT_FMT_9_INT = "{0:000000000}";
-	
+
 	public const string B_TEXT_FMT_1_REAL = "{0:0.0}";
 	public const string B_TEXT_FMT_2_REAL = "{0:0.00}";
 	public const string B_TEXT_FMT_3_REAL = "{0:0.000}";
@@ -538,7 +538,7 @@ public static partial class KCDefine {
 
 	// 메일
 	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: {1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nDeviceID: {7}\n\nPlease enter your inquiry:\n{8}";
-	#endregion			// 기본
+	#endregion         // 기본               
 
 	#region 런타임 상수
 	// 씬 이름
@@ -583,7 +583,7 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_POS_UP_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	public static readonly Vector3 B_POS_UP_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT, 0.0f);
 	public static readonly Vector3 B_POS_UP_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
-	
+
 	public static readonly Vector3 B_POS_DOWN_LEFT = Vector3.zero;
 	public static readonly Vector3 B_POS_DOWN_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
 	public static readonly Vector3 B_POS_DOWN_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, 0.0f, 0.0f);
@@ -591,7 +591,7 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_POS_MID_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
 	public static readonly Vector3 B_POS_MID_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
 	public static readonly Vector3 B_POS_MID_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
-	
+
 	public static readonly Vector3 B_POS_POPUP = Vector3.zero;
 	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;
 	public static readonly Vector3 B_POS_INVALID = new Vector3(float.MaxValue - (float.Epsilon * 2.0f), float.MaxValue - (float.Epsilon * 2.0f), float.MaxValue - (float.Epsilon * 2.0f));
@@ -613,7 +613,11 @@ public static partial class KCDefine {
 	};
 
 	// 경로 {
+#if UNITY_IOS || UNITY_ANDROID
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
+#else
+	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/PersistentDatas/";
+#endif            // #if UNITY_IOS || UNITY_ANDROID
 
 #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
@@ -622,11 +626,11 @@ public static partial class KCDefine {
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 #else
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
-#endif			// #if UNITY_STANDALONE_WIN
+#endif          // #if UNITY_STANDALONE_WIN
 #else
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
-#endif			// #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+#endif          // #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 경로 }
-	#endregion			// 런타임 상수
+	#endregion          // 런타임 상수                   
 }
