@@ -555,7 +555,11 @@ public static partial class KCEditorDefine {
 
 		// 04.UnityPackages {
 #if SAMPLE_PROJ || DEVELOPMENT_PROJ
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Analytics/Doxyfile", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Doxyfile")
+#if UNITY_EDITOR_WIN
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Analytics/DoxyfileWindows", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Doxyfile")
+#else
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Templates/Options/Analytics/DoxyfileWindows", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Doxyfile")
+#endif			// #if UNITY_EDITOR_WIN
 #endif			// #if SAMPLE_PROJ || DEVELOPMENT_PROJ
 		// 04.UnityPackages }
 	};
