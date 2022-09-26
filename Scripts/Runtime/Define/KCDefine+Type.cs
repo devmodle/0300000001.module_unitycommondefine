@@ -10,14 +10,14 @@ using MessagePack;
 
 #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 using GoogleSheetsToUnity;
-#endif			// #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+#endif            // #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 
 #region 기본
 /** 상태 갱신 인터페이스 */
 public partial interface IUpdater {
 	/** 상태를 갱신한다 */
 	public void OnUpdate(float a_fDeltaTime);
-	
+
 	/** 상태를 갱신한다 */
 	public void OnLateUpdate(float a_fDeltaTime);
 }
@@ -49,7 +49,7 @@ public struct STSortingOrderInfo {
 	public static readonly STSortingOrderInfo INVALID = new STSortingOrderInfo() {
 		m_nOrder = int.MinValue
 	};
-	#endregion			// 상수
+	#endregion            // 상수               
 }
 
 /** 비활성화 객체 정보 */
@@ -69,7 +69,8 @@ public struct STTouchResponderInfo {
 }
 
 /** 식별자 정보 */
-[MessagePackObject][System.Serializable]
+[MessagePackObject]
+[System.Serializable]
 public struct STIDInfo {
 	[Key(0)] public int m_nID01;
 	[Key(1)] public int m_nID02;
@@ -79,13 +80,13 @@ public struct STIDInfo {
 	public static readonly STIDInfo INVALID = new STIDInfo() {
 		m_nID01 = KCDefine.B_IDX_INVALID, m_nID02 = KCDefine.B_IDX_INVALID, m_nID03 = KCDefine.B_IDX_INVALID
 	};
-	#endregion			// 상수
+	#endregion            // 상수               
 
 	#region 프로퍼티
 	[IgnoreMember] public ulong UniqueID01 => this.UniqueID02 + ((ulong)m_nID01 * KCDefine.B_UNIT_IDS_PER_IDS_01);
 	[IgnoreMember] public ulong UniqueID02 => this.UniqueID03 + ((ulong)m_nID02 * KCDefine.B_UNIT_IDS_PER_IDS_02);
 	[IgnoreMember] public ulong UniqueID03 => (ulong)m_nID03 * KCDefine.B_UNIT_IDS_PER_IDS_03;
-	#endregion			// 프로퍼티
+	#endregion            // 프로퍼티                 
 
 	#region 함수
 	/** 생성자 */
@@ -105,7 +106,7 @@ public struct STIDInfo {
 		m_nID02 = a_nID02;
 		m_nID03 = a_nID03;
 	}
-	#endregion			// 함수
+	#endregion         // 함수               
 
 	#region 조건부 함수
 #if UNITY_EDITOR || UNITY_STANDALONE
@@ -115,12 +116,13 @@ public struct STIDInfo {
 		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT), $"{Mathf.Clamp(m_nID02, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_STAGE_INFOS)}");
 		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT), $"{Mathf.Clamp(m_nID03, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
 	}
-#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
-	#endregion			// 조건부 함수
+#endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
+	#endregion         // 조건부 함수                   
 }
 
 /** 인덱스 정보 */
-[MessagePackObject][System.Serializable]
+[MessagePackObject]
+[System.Serializable]
 public struct STIdxInfo : System.IEquatable<STIdxInfo> {
 	[Key(0)] public int m_nIdx01;
 	[Key(1)] public int m_nIdx02;
@@ -130,14 +132,14 @@ public struct STIdxInfo : System.IEquatable<STIdxInfo> {
 	public static readonly STIdxInfo INVALID = new STIdxInfo() {
 		m_nIdx01 = KCDefine.B_IDX_INVALID, m_nIdx02 = KCDefine.B_IDX_INVALID, m_nIdx03 = KCDefine.B_IDX_INVALID
 	};
-	#endregion			// 상수
+	#endregion            // 상수               
 
 	#region IEquatable
 	/** 동일 여부를 검사한다 */
 	public bool Equals(STIdxInfo a_stIdxInfo) {
 		return m_nIdx01 == a_stIdxInfo.m_nIdx01 && m_nIdx02 == a_stIdxInfo.m_nIdx02 && m_nIdx03 == a_stIdxInfo.m_nIdx03;
 	}
-	#endregion			// IEquatable
+	#endregion         // IEquatable                       
 
 	#region 함수
 	/** 생성자 */
@@ -146,11 +148,12 @@ public struct STIdxInfo : System.IEquatable<STIdxInfo> {
 		m_nIdx02 = a_nIdx02;
 		m_nIdx03 = a_nIdx03;
 	}
-	#endregion			// 함수
+	#endregion         // 함수               
 }
 
 /** 기록 정보 */
-[MessagePackObject][System.Serializable]
+[MessagePackObject]
+[System.Serializable]
 public struct STRecordInfo {
 	[Key(0)] public bool m_bIsSuccess;
 	[Key(1)] public long m_nIntRecord;
@@ -182,7 +185,7 @@ public struct STLocalizeInfo {
 	public static readonly STLocalizeInfo INVALID = new STLocalizeInfo() {
 		m_eSystemLanguage = SystemLanguage.Unknown
 	};
-	#endregion			// 상수
+	#endregion            // 상수               
 }
 
 /** 폰트 세트 정보 */
@@ -195,7 +198,7 @@ public struct STFontSetInfo {
 	public static readonly STFontSetInfo INVALID = new STFontSetInfo() {
 		m_eSet = EFontSet.NONE
 	};
-	#endregion			// 상수
+	#endregion            // 상수               
 }
 
 /** 디바이스 정보 */
@@ -206,7 +209,8 @@ public struct STDeviceInfo {
 }
 
 /** 값 정보 */
-[MessagePackObject][System.Serializable]
+[MessagePackObject]
+[System.Serializable]
 public struct STValInfo : System.IEquatable<STValInfo> {
 	[Key(1)] public decimal m_dmVal;
 	[Key(11)] public EValType m_eValType;
@@ -215,14 +219,14 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 	public static readonly STValInfo INVALID = new STValInfo() {
 		m_eValType = EValType.NONE
 	};
-	#endregion			// 상수
+	#endregion            // 상수               
 
 	#region IEquatable
 	/** 동일 여부를 검사한다 */
 	public bool Equals(STValInfo a_stValInfo) {
 		return m_dmVal == a_stValInfo.m_dmVal && m_eValType == a_stValInfo.m_eValType;
 	}
-	#endregion			// IEquatable
+	#endregion         // IEquatable                       
 
 	#region 함수
 	/** 생성자 */
@@ -236,7 +240,7 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 		m_dmVal = a_dmVal;
 		m_eValType = a_eValType;
 	}
-	#endregion			// 함수
+	#endregion         // 함수               
 
 	#region 조건부 함수
 #if UNITY_EDITOR || UNITY_STANDALONE
@@ -248,8 +252,8 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 
 		a_oOutValInfo.Add(a_oKey, oJSONArray);
 	}
-#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
-	#endregion			// 조건부 함수
+#endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
+	#endregion         // 조건부 함수                   
 }
 
 /** 공용 정보 */
@@ -276,7 +280,7 @@ public struct STCommonInfo {
 		m_oName = a_oCommonInfo[KCDefine.U_KEY_NAME].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_NAME] : string.Empty;
 		m_oDesc = a_oCommonInfo[KCDefine.U_KEY_DESC].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_DESC] : string.Empty;
 	}
-	#endregion			// 함수
+	#endregion         // 함수               
 
 	#region 조건부 함수
 #if UNITY_EDITOR || UNITY_STANDALONE
@@ -289,8 +293,8 @@ public struct STCommonInfo {
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
 	}
-#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
-	#endregion			// 조건부 함수
+#endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
+	#endregion         // 조건부 함수                   
 }
 
 /** 시간 정보 */
@@ -307,7 +311,7 @@ public struct STTimeInfo {
 		m_fDuration = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 		m_fDeltaTime = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 	}
-	#endregion			// 함수
+	#endregion         // 함수               
 }
 
 /** 공용 타입 래퍼 */
@@ -335,11 +339,11 @@ public static partial class CDefineExtension {
 
 	/** 유효 여부를 검사한다 */
 	internal static bool ExIsValid(this SimpleJSON.JSONNode a_oSender) {
-		return a_oSender != null && a_oSender.Value.ExIsValid() && !a_oSender.Value.Equals(KCDefine.B_TEXT_NULL);	
+		return a_oSender != null && a_oSender.Value.ExIsValid() && !a_oSender.Value.Equals(KCDefine.B_TEXT_NULL);
 	}
-	#endregion			// 클래스 함수
+	#endregion         // 클래스 함수                   
 }
-#endregion			// 기본
+#endregion         // 기본               
 
 #region 제네릭 타입
 /** 리스트 래퍼 */
@@ -355,7 +359,7 @@ public partial class CDictWrapper<K, V> {
 	public Dictionary<K, V> m_oDict02 = new Dictionary<K, V>();
 	public Dictionary<K, V> m_oDict03 = new Dictionary<K, V>();
 }
-#endregion			// 제네릭 타입
+#endregion         // 제네릭 타입                   
 
 #region 조건부 타입
 #if ADS_MODULE_ENABLE
@@ -364,13 +368,13 @@ public struct STAdsRewardInfo {
 	public string m_oID;
 	public string m_oVal;
 
-	#region 상수
+#region 상수
 	public static readonly STAdsRewardInfo INVALID = new STAdsRewardInfo() {
 		m_oID = string.Empty, m_oVal = string.Empty
 	};
-	#endregion			// 상수
+#endregion         // 상수               
 }
-#endif			// #if ADS_MODULE_ENABLE
+#endif         // #if ADS_MODULE_ENABLE                                  
 
 #if NOTI_MODULE_ENABLE
 /** 알림 정보 */
@@ -383,7 +387,7 @@ public struct STNotiInfo {
 
 	public System.DateTime m_stNotiTime;
 }
-#endif			// #if NOTI_MODULE_ENABLE
+#endif         // #if NOTI_MODULE_ENABLE                                   
 
 #if UNITY_EDITOR || UNITY_STANDALONE
 /** 에디터 레벨 생성 정보 */
@@ -392,7 +396,7 @@ public partial class CEditorLevelCreateInfo {
 	public Vector3Int m_stMinNumCells = Vector3Int.zero;
 	public Vector3Int m_stMaxNumCells = Vector3Int.zero;
 }
-#endif			// #if UNITY_EDITOR || UNITY_STANDALONE
+#endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
 
 #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 /** 구글 시트 로드 정보 */
@@ -407,7 +411,7 @@ public struct STGoogleSheetLoadInfo {
 	public static readonly STGoogleSheetLoadInfo INVALID = new STGoogleSheetLoadInfo() {
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
-	#endregion			// 상수
+	#endregion            // 상수               
 }
-#endif			// #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
-#endregion			// 조건부 타입
+#endif         // #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+#endregion         // 조건부 타입                   

@@ -183,12 +183,12 @@ public enum EFontSet {
 /** 방향 */
 public enum EDirection {
 	NONE = -1,
-	
+
 	UP,
 	DOWN,
 	LEFT,
 	RIGHT,
-	
+
 	UP_LEFT,
 	UP_RIGHT,
 	DOWN_LEFT,
@@ -198,11 +198,11 @@ public enum EDirection {
 	LEFT_DOWN,
 	RIGHT_UP,
 	RIGHT_DOWN,
-	
+
 	VERTICAL,
 	HORIZONTAL,
 	DIAGONAL,
-	
+
 	[HideInInspector] MAX_VAL
 }
 
@@ -398,7 +398,7 @@ public enum EVibrateStyle {
 	HEAVY,
 	[HideInInspector] MAX_VAL
 }
-#endregion			// 기본
+#endregion         // 기본               
 
 #region 조건부 상수
 #if UNITY_EDITOR
@@ -461,8 +461,8 @@ public enum EBurstCompilerOptimization {
 	BALANCED,
 	[HideInInspector] MAX_VAL
 }
-#endif			// #if BURST_COMPILER_MODULE_ENABLE
-#endif			// #if UNITY_EDITOR
+#endif         // #if BURST_COMPILER_MODULE_ENABLE                                             
+#endif         // #if UNITY_EDITOR                             
 
 #if ADS_MODULE_ENABLE
 /** 광고 플랫폼 */
@@ -480,7 +480,7 @@ public enum EBannerAdsPos {
 	DOWN,
 	[HideInInspector] MAX_VAL
 }
-#endif			// #if ADS_MODULE_ENABLE
+#endif         // #if ADS_MODULE_ENABLE                                  
 
 #if PURCHASE_MODULE_ENABLE
 /** 결제 플랫폼 */
@@ -490,5 +490,5 @@ public enum EPurchasePlatform {
 	AMAZON,
 	[HideInInspector] MAX_VAL
 }
-#endif			// #if PURCHASE_MODULE_ENABLE
-#endregion			// 조건부 상수
+#endif         // #if PURCHASE_MODULE_ENABLE                                       
+#endregion         // 조건부 상수                   
