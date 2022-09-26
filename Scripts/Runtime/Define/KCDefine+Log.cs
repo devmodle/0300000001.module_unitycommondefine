@@ -14,7 +14,7 @@ public static partial class KCDefine {
 	public const string L_LOG_KEY_PLATFORM = "Platform";
 	public const string L_LOG_KEY_DEVICE_ID = "DeviceID";
 	public const string L_LOG_KEY_USER_TYPE = "UserType";
-	
+
 	public const string L_LOG_KEY_LOG_TIME = "LogTime";
 	public const string L_LOG_KEY_INSTALL_TIME = "InstallTime";
 	public const string L_LOG_KEY_SHORT_LOG_TIME = "ShortLogTime";
@@ -29,5 +29,5 @@ public static partial class KCDefine {
 	public const string L_LOG_KEY_PARAMS_08 = "Params_08";
 	public const string L_LOG_KEY_PARAMS_09 = "Params_09";
 	// 식별자 }
-	#endregion			// 기본
+	#endregion            // 기본               
 }

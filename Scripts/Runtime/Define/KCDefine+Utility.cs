@@ -7,19 +7,19 @@ using DG.Tweening;
 
 #if UNITY_IOS
 using UnityEngine.iOS;
-#endif			// #if UNITY_IOS
+#endif            // #if UNITY_IOS                          
 
 #if ADS_MODULE_ENABLE && ADMOB_ADS_ENABLE
 using GoogleMobileAds.Api;
-#endif			// #if ADS_MODULE_ENABLE && ADMOB_ADS_ENABLE
+#endif            // #if ADS_MODULE_ENABLE && ADMOB_ADS_ENABLE                                                      
 
 #if NOTI_MODULE_ENABLE
 #if UNITY_IOS
 using Unity.Notifications.iOS;
 #elif UNITY_ANDROID
 using Unity.Notifications.Android;
-#endif			// #if UNITY_IOS
-#endif			// #if NOTI_MODULE_ENABLE
+#endif            // #if UNITY_IOS                          
+#endif            // #if NOTI_MODULE_ENABLE                                   
 
 /** 유틸리티 상수 */
 public static partial class KCDefine {
@@ -120,7 +120,7 @@ public static partial class KCDefine {
 #else
 	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
 	public const string U_FMT_MORE_APPS_URL = "https://play.google.com/store/apps/developer?id={0}";
-#endif			// #if UNITY_IOS
+#endif          // #if UNITY_IOS                          
 	// 형식 }
 
 	// 식별자 {
@@ -249,14 +249,14 @@ public static partial class KCDefine {
 
 	public const string U_KEY_BUFF = "Buff";
 	public const string U_KEY_BUFF_ENHANCE = "BuffEnhance";
-	
+
 	public const string U_KEY_DEBUFF = "Debuff";
 	public const string U_KEY_DEBUFF_ENHANCE = "DebuffEnhance";
 
 	public const string U_KEY_UPGRADE = "Upgrade";
 	public const string U_KEY_UPGRADE_ENHANCE = "UpgradeEnhance";
 
-	public const string U_KEY_ID = "ID";	
+	public const string U_KEY_ID = "ID";
 	public const string U_KEY_PREV_ID = "PrevID";
 	public const string U_KEY_NEXT_ID = "NextID";
 
@@ -266,7 +266,7 @@ public static partial class KCDefine {
 	public const string U_KEY_IMG = "Image";
 	public const string U_KEY_TEX = "Texture";
 	public const string U_KEY_SPRITE = "Sprite";
-	
+
 	public const string U_KEY_PRODUCT_IDX = "ProductIdx";
 	public const string U_KEY_MAX_APPLY_TIMES = "MaxApplyTimes";
 	public const string U_KEY_NUM_SUB_EPISODES = "NumSubEpisodes";
@@ -346,7 +346,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FMT_PAY_TARGET_INFO = "PayTargetInfo_{0:00}";
 	public const string U_KEY_FMT_ACQUIRE_TARGET_INFO = "AcquireTargetInfo_{0:00}";
-	
+
 	public const string U_KEY_FMT_CLEAR_TARGET_INFO = "ClearTargetInfo_{0:00}";
 	public const string U_KEY_FMT_UNLOCK_TARGET_INFO = "UnlockTargetInfo_{0:00}";
 
@@ -360,7 +360,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FMT_ABILITY_TARGET_INFO = "AbilityTargetInfo_{0:00}";
 	public const string U_KEY_FMT_EXTRA_ABILITY_TARGET_INFO = "ExtraAbilityTargetInfo_{0:00}";
-	
+
 	public const string U_KEY_SERVICES_M_UPDATE_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateAppleLoginStateCallback";
 	public const string U_KEY_SERVICES_M_UPDATE_FAIL_APPLE_LOGIN_STATE_CALLBACK = "ServicesMUpdateFailAppleLoginStateCallback";
 
@@ -454,7 +454,7 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_TOP_MENU_UIS = "TOP_MENU_UIS";
 	public const string U_OBJ_N_BOTTOM_MENU_UIS = "BOTTOM_MENU_UIS";
-	
+
 	public const string U_OBJ_N_MSG_TEXT = "MSG_TEXT";
 	public const string U_OBJ_N_VAL_TEXT = "VAL_TEXT";
 	public const string U_OBJ_N_PAGE_TEXT = "PAGE_TEXT";
@@ -467,7 +467,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_HP_TEXT = "HP_TEXT";
 	public const string U_OBJ_N_MP_TEXT = "MP_TEXT";
 	public const string U_OBJ_N_EXP_TEXT = "EXP_TEXT";
-	
+
 	public const string U_OBJ_N_LEVEL_TEXT = "LEVEL_TEXT";
 	public const string U_OBJ_N_STAGE_TEXT = "STAGE_TEXT";
 	public const string U_OBJ_N_CHAPTER_TEXT = "CHAPTER_TEXT";
@@ -616,7 +616,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_PARTICLE_FX = "PARTICLE_FX";
 	public const string U_OBJ_N_REFLECTION_PROBE = "REFLECTION_PROBE";
 	public const string U_OBJ_N_LIGHT_PROBE_GROUP = "LIGHT_PROBE_GROUP";
-	
+
 	public const string U_OBJ_N_DRAG_RESPONDER = "DRAG_RESPONDER";
 	public const string U_OBJ_N_TOUCH_RESPONDER = "TOUCH_RESPONDER";
 	public const string U_OBJ_N_BG_TOUCH_RESPONDER = "BG_TOUCH_RESPONDER";
@@ -645,7 +645,7 @@ public static partial class KCDefine {
 	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
 	public const string U_FUNC_N_RESET_DIFFICULTY = "ResetDifficulty";
 	public const string U_FUNC_N_UPDATE_UIS_STATE = "UpdateUIsState";
-	
+
 	public const string U_INPUT_N_VERTICAL = "Vertical";
 	public const string U_INPUT_N_HORIZONTAL = "Horizontal";
 
@@ -665,7 +665,7 @@ public static partial class KCDefine {
 	public const string U_TAG_PLAYER = "Player";
 	public const string U_TAG_FINISH = "Finish";
 	public const string U_TAG_RESPAWN = "Respawn";
-	public const string U_TAG_UNTAGGED = "Untagged";	
+	public const string U_TAG_UNTAGGED = "Untagged";
 	public const string U_TAG_EDITOR_ONLY = "EditorOnly";
 	public const string U_TAG_MAIN_CAMERA = "MainCamera";
 	public const string U_TAG_GAME_CONTROLLER = "GameController";
@@ -709,7 +709,7 @@ public static partial class KCDefine {
 
 	// 사운드 관리자
 	public const string U_OBJ_N_SND_M_FX_SNDS = "FXSnds";
-	
+
 	// 입력 모듈 {
 	public const int U_THRESHOLD_INPUT_M_MOVE = 10;
 
@@ -726,7 +726,7 @@ public static partial class KCDefine {
 	public const string U_KEY_VAL_T_ID = "ID";
 	public const string U_KEY_VAL_T_VAL = "Val";
 	public const string U_KEY_VAL_T_VAL_TYPE = "ValType";
-	
+
 	// 서비스 관리자 {
 	public const string U_KEY_SERVICES_M_RECEIPT = "json";
 	public const string U_KEY_SERVICES_M_PAYLOAD = "Payload";
@@ -740,7 +740,7 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_APP_ID = "AppID";
 	public const string U_KEY_UNITY_MS_VER = "Ver";
 	public const string U_KEY_UNITY_MS_TIMEOUT = "Timeout";
-	
+
 	public const string U_KEY_UNITY_MS_ALERT_TITLE = "Title";
 	public const string U_KEY_UNITY_MS_ALERT_MSG = "Msg";
 	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = "OKBtnText";
@@ -764,10 +764,10 @@ public static partial class KCDefine {
 	public const string U_KEY_DEVICE_MR_VER = KCDefine.U_KEY_UNITY_MS_VER;
 	public const string U_KEY_DEVICE_MR_RESULT = "Result";
 	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
-	
+
 	public const string U_FUNC_N_DEVICE_MR_MSG_HANDLER = "OnReceiveDeviceMsg";
 	// 디바이스 메세지 수신자 }
-	#endregion			// 기본
+	#endregion            // 기본               
 
 	#region 런타임 상수
 	// 영역
@@ -814,7 +814,7 @@ public static partial class KCDefine {
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = KCDefine.U_SORTING_O_UIS, m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
-	
+
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
 	public static readonly object U_LOCK_OBJ_TASK_M_UPDATE = new object();
@@ -942,7 +942,7 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_07";
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_08";
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_09";
-	
+
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_01";
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_02";
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_03";
@@ -980,7 +980,7 @@ public static partial class KCDefine {
 	public static readonly string U_TABLE_P_G_OBJ_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ObjInfoTable";
 	public static readonly string U_TABLE_P_G_ABILITY_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_AbilityInfoTable";
 	public static readonly string U_TABLE_P_G_PRODUCT_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
-	
+
 	public static readonly string U_TABLE_P_G_COMMON_VAL = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}ValueInfo/G_ValTable_Common";
 	public static readonly string U_TABLE_P_G_COMMON_STR = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}StringInfo/G_StrTable_Common";
 
@@ -1068,13 +1068,13 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO}.bytes";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A}.bytes";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B}.bytes";
-#endif			// #if UNITY_EDITOR
+#endif         // #if UNITY_EDITOR                             
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	public static readonly string U_IMG_P_SCREENSHOT = $"{Application.identifier}/Screenshot.png";
 #else
 	public static readonly string U_IMG_P_SCREENSHOT = $"{KCDefine.B_DIR_P_WRITABLE}Screenshot.png";
-#endif			// #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
+#endif          // #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)                                                              
 
 	public static readonly List<string> U_ASSET_P_SPRITE_ATLAS_LIST = new List<string>() {
 		KCDefine.U_ASSET_P_SPRITE_ATLAS_01, KCDefine.U_ASSET_P_SPRITE_ATLAS_02, KCDefine.U_ASSET_P_SPRITE_ATLAS_03, KCDefine.U_ASSET_P_SPRITE_ATLAS_04, KCDefine.U_ASSET_P_SPRITE_ATLAS_05, KCDefine.U_ASSET_P_SPRITE_ATLAS_06, KCDefine.U_ASSET_P_SPRITE_ATLAS_07, KCDefine.U_ASSET_P_SPRITE_ATLAS_08, KCDefine.U_ASSET_P_SPRITE_ATLAS_09,
@@ -1082,7 +1082,7 @@ public static partial class KCDefine {
 		KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_01, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_02, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_03, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_04, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_05, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_06, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_07, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_08, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_09
 	};
 	// 경로 }
-	#endregion			// 런타임 상수
+	#endregion            // 런타임 상수                   
 
 	#region 조건부 상수
 #if UNITY_EDITOR
@@ -1105,19 +1105,19 @@ public static partial class KCDefine {
 	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
 	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
 	// 스크립트 순서 }
-#endif			// #if UNITY_EDITOR
+#endif           // #if UNITY_EDITOR                             
 
 #if UNITY_IOS
 	// 이름
 	public const string U_MODEL_N_IPAD = "iPad";
 	public const string U_MODEL_N_IPHONE = "iPhone";
-#endif			// #if UNITY_IOS
+#endif           // #if UNITY_IOS                          
 
 #if UNITY_ANDROID
 	// 시간
 	public const float U_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
 	public const float U_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 1.0f;
-#endif			// #if UNITY_ANDROID
+#endif           // #if UNITY_ANDROID                              
 
 #if DEBUG || DEVELOPMENT_BUILD
 	// 형식 {
@@ -1159,7 +1159,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCREEN_TIME_SCALE_UP_BTN = "TimeScaleUpBtn";
 	public const string U_OBJ_N_SCREEN_TIME_SCALE_DOWN_BTN = "TimeScaleDownBtn";
 	// 이름 }
-#endif			// #if DEBUG || DEVELOPMENT_BUILD
+#endif          // #if DEBUG || DEVELOPMENT_BUILD                                           
 
 #if ADS_MODULE_ENABLE
 	// 시간
@@ -1197,7 +1197,7 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAdmobFullscreenAdsCloseCallback";
 	// 식별자 }
-#endif			// #if ADMOB_ADS_ENABLE
+#endif          // #if ADMOB_ADS_ENABLE                                 
 
 #if IRON_SRC_ADS_ENABLE
 	// 식별자 {
@@ -1214,8 +1214,8 @@ public static partial class KCDefine {
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcFullscreenAdsLoadFailCallback";
 	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSrcFullscreenAdsCloseCallback";
 	// 식별자 }
-#endif			// #if IRON_SRC_ADS_ENABLE
-#endif			// #if ADS_MODULE_ENABLE
+#endif          // #if IRON_SRC_ADS_ENABLE                                    
+#endif          // #if ADS_MODULE_ENABLE                                  
 
 #if FLURRY_MODULE_ENABLE
 	// 시간
@@ -1223,7 +1223,7 @@ public static partial class KCDefine {
 
 	// 식별자
 	public const string U_KEY_FLURRY_M_INIT_CALLBACK = "FlurryMInitCallback";
-#endif			// #if FLURRY_MODULE_ENABLE
+#endif          // #if FLURRY_MODULE_ENABLE                                     
 
 #if FACEBOOK_MODULE_ENABLE
 	// 식별자
@@ -1232,7 +1232,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FACEBOOK_M_LOGOUT_CALLBACK = "FacebookMLogoutCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_SHOW_CALLBACK = "FacebookMViewStateShowCallback";
 	public const string U_KEY_FACEBOOK_M_VIEW_STATE_CLOSE_CALLBACK = "FacebookMViewStateCloseCallback";
-#endif			// #if FACEBOOK_MODULE_ENABLE
+#endif          // #if FACEBOOK_MODULE_ENABLE                                       
 
 #if FIREBASE_MODULE_ENABLE
 	// 식별자
@@ -1251,15 +1251,15 @@ public static partial class KCDefine {
 #if UNITY_IOS
 	public const string U_PROVIDER_ID_FIREBASE_M_APPLE_LOGIN = "apple.com";
 	public const string U_KEY_FIREBASE_M_RECEIVE_GAME_CENTER_CREDENTIAL_CALLBACK = "FirebaseMReceiveGameCenterCredentialCallback";
-#endif			// #if UNITY_IOS
+#endif          // #if UNITY_IOS                          
 	// 식별자 }
-#endif			// #if FIREBASE_AUTH_ENABLE
+#endif          // #if FIREBASE_AUTH_ENABLE                                     
 
 #if FIREBASE_DB_ENABLE
 	// 식별자
 	public const string U_KEY_FIREBASE_M_LOAD_DATAS_CALLBACK = "FirebaseMLoadDatasCallback";
 	public const string U_KEY_FIREBASE_M_SAVE_DATAS_CALLBACK = "FirebaseMSaveDatasCallback";
-#endif			// #if FIREBASE_DB_ENABLE
+#endif          // #if FIREBASE_DB_ENABLE                                   
 
 #if FIREBASE_CLOUD_MSG_ENABLE
 	// 식별자 {
@@ -1268,8 +1268,8 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FIREBASE_M_LOAD_MSG_TOKEN_CALLBACK = "FirebaseMLoadMsgTokenCallback";
 	// 식별자 }
-#endif			// #if FIREBASE_CLOUD_MSG_ENABLE
-#endif			// #if FIREBASE_MODULE_ENABLE
+#endif          // #if FIREBASE_CLOUD_MSG_ENABLE                                          
+#endif          // #if FIREBASE_MODULE_ENABLE                                       
 
 #if APPS_FLYER_MODULE_ENABLE
 	// 시간
@@ -1277,7 +1277,7 @@ public static partial class KCDefine {
 
 	// 식별자
 	public const string U_KEY_APPS_FM_INIT_CALLBACK = "AppsFMInitCallback";
-#endif			// #if APPS_FLYER_MODULE_ENABLE
+#endif          // #if APPS_FLYER_MODULE_ENABLE                                         
 
 #if GAME_CENTER_MODULE_ENABLE
 	// 식별자
@@ -1287,7 +1287,7 @@ public static partial class KCDefine {
 	public const string U_KEY_GAME_CM_UPDATE_RECORD_CALLBACK = "GameCMUpdateRecordCallback";
 	public const string U_KEY_GAME_CM_UPDATE_ACHIEVEMENT_CALLBACK = "GameCMUpdateAchievementCallback";
 	public const string U_KEY_GAME_CM_RECEIVE_SERVER_SIDE_ACCESS_RESULT_CALLBACK = "GameCMReceiveServerSideAccessResultCallback";
-#endif			// #if GAME_CENTER_MODULE_ENABLE
+#endif          // #if GAME_CENTER_MODULE_ENABLE                                          
 
 #if PURCHASE_MODULE_ENABLE
 	// 기타
@@ -1302,7 +1302,7 @@ public static partial class KCDefine {
 	public const string U_KEY_PURCHASE_M_RESTORE_CALLBACK = "PurchaseMRestoreCallback";
 	public const string U_KEY_PURCHASE_M_HANDLE_PURCHASE_RESULT_CALLBACK = "PurchaseMHandlePurchaseResultCallback";
 	// 식별자 }
-#endif			// #if PURCHASE_MODULE_ENABLE
+#endif          // #if PURCHASE_MODULE_ENABLE                                       
 
 #if NOTI_MODULE_ENABLE
 	// 시간
@@ -1320,8 +1320,8 @@ public static partial class KCDefine {
 	// 그룹 정보
 	public const string U_GROUP_N_NOTI = "NotiMNotiGroup";
 	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_N_NOTI;
-#endif			// #if UNITY_IOS
-#endif			// #if NOTI_ENABLE
+#endif         // #if UNITY_IOS                          
+#endif         // #if NOTI_ENABLE                            
 
 #if PLAYFAB_MODULE_ENABLE
 	// 개수
@@ -1333,12 +1333,12 @@ public static partial class KCDefine {
 	public const string U_KEY_PLAYFAB_M_LOGIN_CALLBACK = "PlayfabMLoginCallback";
 	public const string U_KEY_PLAYFAB_M_LOGOUT_CALLBACK = "PlayfabMLogoutCallback";
 	public const string U_KEY_PLAYFAB_M_LOAD_SERVER_TIME_CALLBACK = "PlayfabMLoadServerTimeCallback";
-#endif			// #if PLAYFAB_MODULE_ENABLE
+#endif         // #if PLAYFAB_MODULE_ENABLE                                      
 
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	// 이름
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
-#endif			// #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
+#endif           // #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE                                                           
 
 #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 개수
@@ -1347,8 +1347,8 @@ public static partial class KCDefine {
 	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "B";
 	public const string U_COL_N_GOOGLE_SHEET_DEST = "BZ";
-#endif			// #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
-	#endregion			// 조건부 상수
+#endif         // #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+	#endregion         // 조건부 상수                   
 
 	#region 조건부 런타임 상수
 #if UNITY_IOS
@@ -1360,36 +1360,36 @@ public static partial class KCDefine {
 	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODEL_LIST = new List<DeviceGeneration>() {
 		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus, DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax, DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
 	};
-#endif			// #if UNITY_IOS
+#endif         // #if UNITY_IOS                          
 
 #if ADS_MODULE_ENABLE
 #if ADMOB_ADS_ENABLE
 	// 크기
 	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize((int)KCDefine.U_SIZE_BANNER_ADS.x, (int)KCDefine.U_SIZE_BANNER_ADS.y);
-#endif			// #if ADMOB_ADS_ENABLE
+#endif         // #if ADMOB_ADS_ENABLE                                 
 
 #if IRON_SRC_ADS_ENABLE
 	// 크기
 	public static readonly IronSourceBannerSize U_SIZE_IRON_SRC_BANNER_ADS = new IronSourceBannerSize((int)KCDefine.U_SIZE_BANNER_ADS.x, (int)KCDefine.U_SIZE_BANNER_ADS.y);
-#endif			// #if IRON_SRC_ADS_ENABLE
-#endif			// #if ADS_MODULE_ENABLE
+#endif         // #if IRON_SRC_ADS_ENABLE                                    
+#endif         // #if ADS_MODULE_ENABLE                                  
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 	// 경로
 	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_PluginInfoTable";
-#endif			// #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
+#endif         // #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE                                                                                      
 
 #if FACEBOOK_MODULE_ENABLE
 	// 식별자
 	public static readonly List<string> U_KEY_FACEBOOK_PERMISSION_LIST = new List<string>() {
 		"public_profile"
 	};
-#endif			// #if FACEBOOK_MODULE_ENABLE
+#endif         // #if FACEBOOK_MODULE_ENABLE                                       
 
 #if FIREBASE_MODULE_ENABLE
 	// 시간
 	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_SESSION = new System.TimeSpan(0, 0, 60);
-#endif			// #if FIREBASE_MODULE_ENABLE
+#endif         // #if FIREBASE_MODULE_ENABLE                                       
 
 #if PURCHASE_MODULE_ENABLE
 	// 식별자
@@ -1399,14 +1399,14 @@ public static partial class KCDefine {
 
 	// 경로
 	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
-#endif			// #if PURCHASE_MODULE_ENABLE
+#endif         // #if PURCHASE_MODULE_ENABLE                                       
 
 #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_SRC = $"{KCDefine.U_COL_N_GOOGLE_SHEET_SRC}{"{0}"}";
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_DEST = $"{KCDefine.U_COL_N_GOOGLE_SHEET_DEST}{"{0}"}";
-#endif			// #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
-	#endregion			// 조건부 런타임 상수
+#endif            // #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+	#endregion            // 조건부 런타임 상수                       
 }
 
 /** 초기화 씬 상수 */
@@ -1414,13 +1414,13 @@ public static partial class KCDefine {
 	#region 기본
 	// 시간
 	public const float IS_DELAY_NEXT_SCENE_LOAD = 2.0f;
-	#endregion			// 기본
+	#endregion           // 기본               
 
 	#region 런타임 상수
 	// 경로
 	public static readonly string IS_OBJ_P_SCREEN_BLIND_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_INIT_SCENE}IS_ScreenBlindUIs";
 	public static readonly string IS_OBJ_P_SCREEN_BLIND_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_INIT_SCENE}IS_ScreenBlindImg";
-	#endregion			// 런타임 상수
+	#endregion            // 런타임 상수                   
 }
 
 /** 시작 씬 상수 */
@@ -1428,13 +1428,13 @@ public static partial class KCDefine {
 	#region 기본
 	// 이름
 	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
-	#endregion			// 기본
+	#endregion         // 기본               
 
 	#region 런타임 상수
 	// 경로
 	public static readonly string SS_OBJ_P_LOADING_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingText";
 	public static readonly string SS_OBJ_P_LOADING_GAUGE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingGauge";
-	#endregion			// 런타임 상수
+	#endregion            // 런타임 상수                   
 }
 
 /** 설정 씬 상수 */
@@ -1442,7 +1442,7 @@ public static partial class KCDefine {
 	#region 기본
 	// 이름
 	public const string SS_OBJ_N_TIMER_MANAGER = "TimerManager";
-	#endregion			// 기본
+	#endregion          // 기본               
 
 	#region 런타임 상수
 	// 경로
@@ -1450,7 +1450,7 @@ public static partial class KCDefine {
 	public static readonly string SS_OBJ_P_SCREEN_POPUP_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenPopupUIs";
 	public static readonly string SS_OBJ_P_SCREEN_TOPMOST_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenTopmostUIs";
 	public static readonly string SS_OBJ_P_SCREEN_ABS_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenAbsUIs";
-	#endregion			// 런타임 상수
+	#endregion           // 런타임 상수                   
 }
 
 /** 약관 동의 씬 상수 */
@@ -1458,7 +1458,7 @@ public static partial class KCDefine {
 	#region 기본
 	// 약관 동의 팝업
 	public const string AS_OBJ_N_AGREE_POPUP = "AgreePopup";
-	#endregion			// 기본
+	#endregion          // 기본               
 
 	#region 런타임 상수
 	// 경로 {
@@ -1468,7 +1468,7 @@ public static partial class KCDefine {
 	public static readonly string AS_OBJ_P_PORTRAIT_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_PortraitAgreePopup";
 	public static readonly string AS_OBJ_P_LANDSCAPE_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_LandscapeAgreePopup";
 	// 경로 }
-	#endregion			// 런타임 상수
+	#endregion         // 런타임 상수                   
 }
 
 /** 지연 설정 씬 상수 */
@@ -1476,19 +1476,19 @@ public static partial class KCDefine {
 	#region 기본
 	// 추적 설명 팝업
 	public const string LSS_OBJ_N_TRACKING_DESC_POPUP = "TrackingDescPopup";
-	#endregion			// 기본
+	#endregion          // 기본               
 
 	#region 런타임 상수
 	// 경로
 	public static readonly string LSS_OBJ_P_TRACKING_DESC_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_LATE_SETUP_SCENE}LSS_TrackingDescPopup";
-	#endregion			// 런타임 상수
+	#endregion          // 런타임 상수                   
 }
 
 /** 타이틀 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 
-	#endregion			// 기본
+	#endregion            // 기본               
 }
 
 /** 메인 씬 상수 */
@@ -1496,33 +1496,33 @@ public static partial class KCDefine {
 	#region 기본
 	// AB 테스트 UI
 	public const string MS_OBJ_N_AB_T_UIS_SET_UIS = "SET_UIS";
-	#endregion			// 기본
+	#endregion            // 기본               
 
 	#region 런타임 상수
 	// 경로
 	public static readonly string MS_OBJ_P_LEVEL_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_MAIN_SCENE}MS_LevelScrollerCellView";
 	public static readonly string MS_OBJ_P_STAGE_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_MAIN_SCENE}MS_StageScrollerCellView";
 	public static readonly string MS_OBJ_P_CHAPTER_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_MAIN_SCENE}MS_ChapterScrollerCellView";
-	#endregion			// 런타임 상수
+	#endregion         // 런타임 상수                   
 }
 
 /** 게임 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
-	
-	#endregion			// 기본
+
+	#endregion            // 기본               
 }
 
 /** 로딩 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 
-	#endregion			// 기본
+	#endregion            // 기본               
 }
 
 /** 중첩 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 
-	#endregion			// 기본
+	#endregion            // 기본               
 }
