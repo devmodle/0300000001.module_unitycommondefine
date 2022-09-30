@@ -7,7 +7,7 @@ using UnityEngine.Events;
 /*
 =====> 모듈 버전 정보 <=====
 - 버전 : "2.8.1"
-- 관련 파일 개수 : 27
+- 관련 파일 개수 : 29
 
 =====> Experimental <=====
 - RenderingMode.Deferred
