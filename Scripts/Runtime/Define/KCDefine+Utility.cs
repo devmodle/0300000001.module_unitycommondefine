@@ -756,7 +756,7 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
 
 	public const string U_KEY_UNITY_MS_SEND_SHARE_MSG_CALLBACK = "UnityMSSendShareMsgCallback";
-	public const string U_CLS_N_UNITY_MS_UNITY_MSG_RECEIVER = "dante.distribution.android.CAndroidPlugin";
+	public const string U_CLS_N_UNITY_MS_UNITY_MSG_RECEIVER = "lkstudio.dante.android.CAndroidPlugin";
 	public const string U_FUNC_N_UNITY_MS_UNITY_MSG_HANDLER = "onReceiveUnityMsg";
 	// 유니티 메세지 전송자 }
 
