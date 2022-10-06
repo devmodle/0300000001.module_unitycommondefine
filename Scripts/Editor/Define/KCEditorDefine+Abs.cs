@@ -315,7 +315,7 @@ public static partial class KCEditorDefine {
 
 	// 알림
 	public const string B_TEXT_NOTI_PROJ_PROPERTIES = "android.library=true";
-	public const string B_TEXT_NOTI_ANDROID_MANIFEST = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"dante.distribution.android.notification\">\n</manifest>";
+	public const string B_TEXT_NOTI_ANDROID_MANIFEST = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"lkstudio.dante.android.notification\">\n</manifest>";
 	#endregion            // 기본               
 
 	#region 런타임 상수
