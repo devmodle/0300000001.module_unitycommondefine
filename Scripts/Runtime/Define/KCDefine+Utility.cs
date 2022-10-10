@@ -60,8 +60,7 @@ public static partial class KCDefine {
 	public const float U_DEPTH_MAIN_CAMERA = 0.0f;
 
 	// 거리
-	public const float U_DISTANCE_CAMERA_PLANE = 500.0f * KCDefine.B_UNIT_SCALE;
-	public const float U_DISTANCE_CAMERA_FAR_PLANE = 5000.0f * KCDefine.B_UNIT_SCALE;
+	public const float U_DISTANCE_CAMERA_FAR_PLANE = 25000.0f * KCDefine.B_UNIT_SCALE;
 	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 0.1f;
 
 	// 비율 {
