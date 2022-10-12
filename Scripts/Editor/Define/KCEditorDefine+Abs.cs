@@ -40,6 +40,7 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
 
 	// 토큰
+	public const string B_TOKEN_APPLE_M_SERIES = "APPLE M";
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
 
 	// 형식
@@ -72,7 +73,8 @@ public static partial class KCEditorDefine {
 	public const string B_CMD_LINE_PARAMS_FMT_SHELL = "-c \"{0}\"";
 	public const string B_CMD_LINE_PARAMS_FMT_CMD_PROMPT = "/c \"{0}\"";
 
-	public const string B_BUILD_CMD_EXPORT_PATH = "export PATH=\"${PATH}:/usr/local/bin\"";
+	public const string B_BUILD_CMD_INTEL_EXPORT_PATH = "export PATH=\"${PATH}:/usr/local/bin\"";
+	public const string B_BUILD_CMD_SILICON_EXPORT_PATH = "export PATH=\"${PATH}:/opt/homebrew/bin\"";
 	// 커맨드 라인 }
 
 	// 이름 {
