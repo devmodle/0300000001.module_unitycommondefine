@@ -427,11 +427,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_TAG_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}TagManager.asset";
 	public static readonly string B_ASSET_P_SND_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}AudioManager.asset";
 
-	public static readonly string B_ASSET_P_BURST_AOT_SETTINGS_IOS = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}BurstAotSettings_iOS.json";
-	public static readonly string B_ASSET_P_BURST_AOT_SETTINGS_ANDROID = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}BurstAotSettings_Android.json";
-	public static readonly string B_ASSET_P_BURST_AOT_SETTINGS_MAC = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneOSX.json";
-	public static readonly string B_ASSET_P_BURST_AOT_SETTINGS_WNDS = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneWindows.json";
-
 	public static readonly string B_ASSET_P_OPTS_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_OPTS_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_BUILD_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_PROJ_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE}.asset";
