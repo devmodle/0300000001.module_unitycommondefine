@@ -48,7 +48,7 @@ public static partial class KCEditorDefine {
 	public const string B_SCENE_N_DIGITS_PATTERN = @"[\d.]";
 
 	// 버전
-	public const string B_VER_UNITY_MODULE = "2.8.1";
+	public const string B_VER_UNITY_MODULE = "2.8.2";
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
