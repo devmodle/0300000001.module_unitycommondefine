@@ -216,8 +216,8 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_INPUT_SYSTEM_ENABLE = "INPUT_SYSTEM_ENABLE";
 	public const string DS_DEFINE_S_INPUT_SYSTEM_MODULE_ENABLE = "INPUT_SYSTEM_MODULE_ENABLE";
 
-	public const string DS_DEFINE_S_SPINE_ANI_ENABLE = "SPINE_ANI_ENABLE";
-	public const string DS_DEFINE_S_SPINE_ANI_MODULE_ENABLE = "SPINE_ANI_MODULE_ENABLE";
+	public const string DS_DEFINE_S_SKELETON_2D_ANI_ENABLE = "SKELETON_2D_ANI_ENABLE";
+	public const string DS_DEFINE_S_SKELETON_2D_ANI_MODULE_ENABLE = "SKELETON_2D_ANI_MODULE_ENABLE";
 	// 기타 }
 	#endregion          // 기본               
 
@@ -256,9 +256,9 @@ public static partial class KCEditorDefine {
 		[KCEditorDefine.DS_DEFINE_S_POST_PROCESSING_ENABLE] = KCEditorDefine.DS_DEFINE_S_POST_PROCESSING_MODULE_ENABLE,
 #endif           // #if POST_PROCESSING_ENABLE || POST_PROCESSING_MODULE_ENABLE                                                                        
 
-#if SPINE_ANI_ENABLE || SPINE_ANI_MODULE_ENABLE
-		[KCEditorDefine.DS_DEFINE_S_SPINE_ANI_ENABLE] = KCEditorDefine.DS_DEFINE_S_SPINE_ANI_MODULE_ENABLE,
-#endif           // #if SPINE_ANI_ENABLE || SPINE_ANI_MODULE_ENABLE                                                            
+#if SKELETON_2D_ANI_ENABLE || SKELETON_2D_ANI_MODULE_ENABLE
+		[KCEditorDefine.DS_DEFINE_S_SKELETON_2D_ANI_ENABLE] = KCEditorDefine.DS_DEFINE_S_SKELETON_2D_ANI_MODULE_ENABLE,
+#endif           // #if SKELETON_2D_ANI_ENABLE || SKELETON_2D_ANI_MODULE_ENABLE                                                            
 
 #if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 		[KCEditorDefine.DS_DEFINE_S_UNIVERSAL_RENDERING_PIPELINE_ENABLE] = KCEditorDefine.DS_DEFINE_S_UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE,
