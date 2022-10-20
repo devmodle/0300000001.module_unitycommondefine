@@ -228,7 +228,7 @@ public static partial class KCDefine {
 	public const string B_NAME_PATTERN_TEX_FIX_POINT_FILTER = "__FIX_PF__";
 	public const string B_NAME_PATTERN_AUDIO_FIX_COMPRESS_IN_MEMORY = "__FIX_CIM__";
 
-	public const string B_NAME_PATTERN_ENABLE_READABLE = "__ENABLE_RW__";
+	public const string B_NAME_PATTERN_ENABLE_READABLE = "__ENABLE_R__";
 	public const string B_NAME_PATTERN_IGNORE_LINEAR_PIPELINE = "__IGNORE_LP__";
 	public const string B_NAME_PATTERN_IGNORE_SETUP_CULLING_MASK = "__IGNORE_SCM__";
 	public const string B_NAME_PATTERN_IGNORE_TEX_COMPRESS = "__IGNORE_TC__";
