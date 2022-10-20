@@ -78,13 +78,13 @@ public static partial class KCDefine {
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
 	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
 
-#if UNIT_SCALE_ENABLE
+#if UNIT_SCALE_CORRECT_ENABLE
 	public const float B_UNIT_SCALE = 0.01f;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f;
 #else
 	public const float B_UNIT_SCALE = 1.0f;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 0.01f;
-#endif            // #if UNIT_SCALE_ENABLE                                  
+#endif            // #if UNIT_SCALE_CORRECT_ENABLE                                  
 	// 단위 }
 
 	// 빌드 번호
@@ -231,6 +231,7 @@ public static partial class KCDefine {
 	public const string B_NAME_PATTERN_ENABLE_READABLE = "__ENABLE_RW__";
 	public const string B_NAME_PATTERN_IGNORE_LINEAR_PIPELINE = "__IGNORE_LP__";
 	public const string B_NAME_PATTERN_IGNORE_SETUP_CULLING_MASK = "__IGNORE_SCM__";
+	public const string B_NAME_PATTERN_IGNORE_TEX_COMPRESS = "__IGNORE_TC__";
 	// 이름 }
 
 	// 씬 이름 {
