@@ -79,6 +79,9 @@ public static partial class KCEditorDefine {
 
 	// 이름 {
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
+
+	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SETTINGS = "com.unity.adaptiveperformance.loader_settings";
+	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_PROVIDER_SETTINGS = "com.unity.adaptiveperformance.simulator.provider_settings";
 	public const string B_MODULE_N_LOCALIZE_SETTINGS = "com.unity.localization.settings";
 	public const string B_MODULE_N_ML_AGENTS_SETTINGS = "com.unity.ml-agents.settings";
 	public const string B_MODULE_N_INPUT_SYSTEM_SETTINGS = "com.unity.input.settings";
