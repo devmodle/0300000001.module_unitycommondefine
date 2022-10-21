@@ -83,6 +83,8 @@ public static partial class KCEditorDefine {
 
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SETTINGS = "com.unity.adaptiveperformance.loader_settings";
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_PROVIDER_SETTINGS = "com.unity.adaptiveperformance.simulator.provider_settings";
+	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SAMSUNG_PROVIDER_SETTINGS = "com.unity.adaptiveperformance.samsung.android.provider_settings";
+
 	public const string B_MODULE_N_LOCALIZE_SETTINGS = "com.unity.localization.settings";
 	public const string B_MODULE_N_ML_AGENTS_SETTINGS = "com.unity.ml-agents.settings";
 	public const string B_MODULE_N_INPUT_SYSTEM_SETTINGS = "com.unity.input.settings";
@@ -91,6 +93,7 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_N_REQUIRE_AR_KIT_SUPPORTS = "requiresARKitSupport";
 	public const string B_PROPERTY_N_APPLE_ENABLE_PRO_MOTION = "appleEnableProMotion";
 	public const string B_PROPERTY_N_AUTO_ADD_CAPABILITIES = "automaticallyDetectAndAddCapabilities";
+
 	public const string B_PROPERTY_N_VALIDATE_APP_BUNDLE_SIZE = "validateAppBundleSize";
 	public const string B_PROPERTY_N_APP_BUNDLE_SIZE_TO_VALIDATE = "appBundleSizeToValidate";
 	public const string B_PROPERTY_N_SUPPORTED_ASPECT_RATIO_MODE = "supportedAspectRatioMode";
@@ -1475,9 +1478,14 @@ public static partial class KCEditorDefine {
 #endif         // #if LOCALIZE_MODULE_ENABLE                                       
 
 #if ML_AGENTS_MODULE_ENABLE
+	// 기타
+	public const int B_PORT_NUMBER_ML_AGENTS_EDITOR = 7080;
+
 	// 이름 {
 	public const string B_CLS_N_ML_AGENTS_SETTINGS = "Unity.MLAgents.MLAgentsSettings";
+
 	public const string B_PROPERTY_N_ML_AGENTS_CONNECT_TRAINER = "m_ConnectTrainer";
+	public const string B_PROPERTY_N_ML_AGENTS_EDITOR_PORT = "m_EditorPort";
 
 	public const string B_ASSEMBLY_N_ML_AGENTS = "Unity.ML-Agents";
 	public const string B_ASSEMBLY_N_ML_AGENTS_EDITOR = "Editor";
