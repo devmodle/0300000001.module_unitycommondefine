@@ -40,6 +40,7 @@ public static partial class KCEditorDefine {
 	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
 
 	// 토큰
+	public const string B_TOKEN_CLIENT = "Client";
 	public const string B_TOKEN_APPLE_M_SERIES = "APPLE M";
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
 
@@ -205,6 +206,7 @@ public static partial class KCEditorDefine {
 	// 독립 플랫폼 }
 
 	// 젠킨스 {
+	public const string B_KEY_JENKINS_PROJ_PART = "ProjPart";
 	public const string B_KEY_JENKINS_MODULE_VER = "ModuleVer";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
 	public const string B_KEY_JENKINS_SRC = "Src";
