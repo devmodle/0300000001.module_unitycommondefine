@@ -35,10 +35,6 @@ public static partial class KCEditorDefine {
 	public const int B_SORTING_O_CHANGE_PLATFORM_MENU = KCEditorDefine.B_SORTING_O_EDITOR_WND_MENU + 1;
 	// 정렬 순서 }
 
-	// 시간
-	public const float B_DELTA_T_SCENE_M_SCRIPT_UPDATE = 1.0f;
-	public const float B_DELTA_T_EDITOR_SM_SCENE_UPDATE = 1.0f;
-
 	// 토큰
 	public const string B_TOKEN_CLIENT = "Client";
 	public const string B_TOKEN_APPLE_M_SERIES = "APPLE M";
