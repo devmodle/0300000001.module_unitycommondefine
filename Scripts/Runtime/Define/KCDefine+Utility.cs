@@ -1411,8 +1411,7 @@ public static partial class KCDefine {
 /** 초기화 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
-	// 시간
-	public const float IS_DELAY_NEXT_SCENE_LOAD = 2.0f;
+
 	#endregion           // 기본               
 
 	#region 런타임 상수
