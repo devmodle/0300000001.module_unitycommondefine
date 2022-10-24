@@ -393,7 +393,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_ABS_UIS = "AbsUIs";
 
 	public const string U_OBJ_N_SCENE_BASE = "Base";
-	public const string U_OBJ_N_SCENE_OBJS_BASE = "ObjsRoot";
+	public const string U_OBJ_N_SCENE_OBJS_ROOT = "ObjsRoot";
 	public const string U_OBJ_N_SCENE_OBJS = "Objs";
 	public const string U_OBJ_N_SCENE_PIVOT_OBJS = "PivotObjs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
