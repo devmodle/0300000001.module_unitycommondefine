@@ -1403,9 +1403,9 @@ public static partial class KCEditorDefine {
 		}
 	};
 	// 젠킨스 }
-#endregion            // 런타임 상수                   
+	#endregion            // 런타임 상수                   
 
-#region 조건부 상수
+	#region 조건부 상수
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	// 이름 {
 	public const string U_FIELD_N_UNIVERSAL_RP_MSAA_QUALITY = "m_MSAA";
@@ -1462,9 +1462,9 @@ public static partial class KCEditorDefine {
 	// 이름
 	public const string B_ACTIVITY_N_NOTI = "com.unity3d.player.UnityPlayerActivity";
 #endif         // #if NOTI_MODULE_ENABLE                                   
-#endregion         // 조건부 상수                   
+	#endregion         // 조건부 상수                   
 
-#region 조건부 런타임 상수
+	#region 조건부 런타임 상수
 #if LOCALIZE_MODULE_ENABLE
 	// 이름
 	public const string B_PROPERTY_N_LOCALIZE_INITIALIZE_SYNCHRONOUSLY = "m_InitializeSynchronously";
@@ -1508,6 +1508,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DATA_P_MAC_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneOSX.json";
 	public static readonly string B_DATA_P_WNDS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneWindows.json";
 #endif            // #if BURST_COMPILER_MODULE_ENABLE                                             
-#endregion            // 조건부 런타임 상수                       
+	#endregion            // 조건부 런타임 상수                       
 }
 #endif         // #if UNITY_EDITOR                             
