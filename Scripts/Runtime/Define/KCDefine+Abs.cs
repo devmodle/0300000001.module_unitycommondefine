@@ -264,11 +264,6 @@ public static partial class KCDefine {
 	public const string B_KEY_BUY_TRADE = "BuyTrade";
 	public const string B_KEY_SALE_TRADE = "SaleTrade";
 
-	public const string B_KEY_CALC = "Calc";
-	public const string B_KEY_LEVEL = "Level";
-	public const string B_KEY_STAGE = "Stage";
-	public const string B_KEY_CHAPTER = "Chapter";
-
 	public const string B_KEY_JSON_USER_INFO_DATA = "UserInfo";
 	public const string B_KEY_JSON_GAME_INFO_DATA = "GameInfo";
 	public const string B_KEY_JSON_COMMON_APP_INFO_DATA = "CommonAppInfo";

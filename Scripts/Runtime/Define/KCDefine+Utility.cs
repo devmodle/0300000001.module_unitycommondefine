@@ -136,124 +136,16 @@ public static partial class KCDefine {
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
 
+	public const string U_KEY_FX = "FX";
 	public const string U_KEY_CALC = "Calc";
-	public const string U_KEY_ABILITY_CALC = "AbilityCalc";
+	public const string U_KEY_TUTORIAL = "Tutorial";
 
 	public const string U_KEY_LEVEL_EPISODE = "LevelEpisode";
 	public const string U_KEY_STAGE_EPISODE = "StageEpisode";
 	public const string U_KEY_CHAPTER_EPISODE = "ChapterEpisode";
 
-	public const string U_KEY_PLAY_TUTORIAL = "PlayTutorial";
-	public const string U_KEY_HELP_TUTORIAL = "HelpTutorial";
-
-	public const string U_KEY_HIT_FX = "HitFX";
-	public const string U_KEY_BUFF_FX = "BuffFX";
-	public const string U_KEY_DEBUFF_FX = "DebuffFX";
-
-	public const string U_KEY_MAIN = "Main";
-	public const string U_KEY_FREE = "Free";
-	public const string U_KEY_DAILY = "Daily";
-	public const string U_KEY_EVENT = "Event";
-	public const string U_KEY_CLEAR = "Clear";
-	public const string U_KEY_PRICE = "Price";
-
-	public const string U_KEY_MISSION = "Mission";
-	public const string U_KEY_TUTORIAL = "Tutorial";
-
-	public const string U_KEY_BG = "BG";
-	public const string U_KEY_BG_ENHANCE = "BGEnhance";
-	public const string U_KEY_BG_BUY_TRADE = "BGBuyTrade";
-	public const string U_KEY_BG_SALE_TRADE = "BGSaleTrade";
-
-	public const string U_KEY_NORM = "Norm";
-	public const string U_KEY_NORM_ENHANCE = "NormEnhance";
-	public const string U_KEY_NORM_BUY_TRADE = "NormBuyTrade";
-	public const string U_KEY_NORM_SALE_TRADE = "NormSaleTrade";
-
-	public const string U_KEY_OVERLAY = "Overlay";
-	public const string U_KEY_OVERLAY_ENHANCE = "OverlayEnhance";
-	public const string U_KEY_OVERLAY_BUY_TRADE = "OverlayBuyTrade";
-	public const string U_KEY_OVERLAY_SALE_TRADE = "OverlaySaleTrade";
-
-	public const string U_KEY_PLAYABLE = "Playable";
-	public const string U_KEY_PLAYABLE_ENHANCE = "PlayableEnhance";
-	public const string U_KEY_PLAYABLE_BUY_TRADE = "PlayableBuyTrade";
-	public const string U_KEY_PLAYABLE_SALE_TRADE = "PlayableSaleTrade";
-
-	public const string U_KEY_NON_PLAYABLE = "NonPlayable";
-	public const string U_KEY_NON_PLAYABLE_ENHANCE = "NonPlayableEnhance";
-	public const string U_KEY_NON_PLAYABLE_BUY_TRADE = "NonPlayableBuyTrade";
-	public const string U_KEY_NON_PLAYABLE_SALE_TRADE = "NonPlayableSaleTrade";
-
-	public const string U_KEY_ENEMY = "Enemy";
-	public const string U_KEY_ENEMY_ENHANCE = "EnemyEnhance";
-	public const string U_KEY_ENEMY_BUY_TRADE = "EnemyBuyTrade";
-	public const string U_KEY_ENEMY_SALE_TRADE = "EnemySaleTrade";
-
-	public const string U_KEY_GOODS = "Goods";
-	public const string U_KEY_GOODS_ENHANCE = "GoodsEnhance";
-	public const string U_KEY_GOODS_BUY_TRADE = "GoodsBuyTrade";
-	public const string U_KEY_GOODS_SALE_TRADE = "GoodsSaleTrade";
-
-	public const string U_KEY_CONSUMABLE = "Consumable";
-	public const string U_KEY_CONSUMABLE_ENHANCE = "ConsumableEnhance";
-	public const string U_KEY_CONSUMABLE_BUY_TRADE = "ConsumableBuyTrade";
-	public const string U_KEY_CONSUMABLE_SALE_TRADE = "ConsumableSaleTrade";
-
-	public const string U_KEY_NON_CONSUMABLE = "NonConsumable";
-	public const string U_KEY_NON_CONSUMABLE_ENHANCE = "NonConsumableEnhance";
-	public const string U_KEY_NON_CONSUMABLE_BUY_TRADE = "NonConsumableBuyTrade";
-	public const string U_KEY_NON_CONSUMABLE_SALE_TRADE = "NonConsumableSaleTrade";
-
-	public const string U_KEY_WEAPON = "Weapon";
-	public const string U_KEY_WEAPON_ENHANCE = "WeaponEnhance";
-	public const string U_KEY_WEAPON_BUY_TRADE = "WeaponBuyTrade";
-	public const string U_KEY_WEAPON_SALE_TRADE = "WeaponSaleTrade";
-
-	public const string U_KEY_ARMOR = "Armor";
-	public const string U_KEY_ARMOR_ENHANCE = "ArmorEnhance";
-	public const string U_KEY_ARMOR_BUY_TRADE = "ArmorBuyTrade";
-	public const string U_KEY_ARMOR_SALE_TRADE = "ArmorSaleTrade";
-
-	public const string U_KEY_ACCESSORY = "Accessory";
-	public const string U_KEY_ACCESSORY_ENHANCE = "AccessoryEnhance";
-	public const string U_KEY_ACCESSORY_BUY_TRADE = "AccessoryBuyTrade";
-	public const string U_KEY_ACCESSORY_SALE_TRADE = "AccessorySaleTrade";
-
-	public const string U_KEY_ATTACH = "Attach";
-	public const string U_KEY_ATTACH_ENHANCE = "AttachEnhance";
-	public const string U_KEY_ATTACH_BUY_TRADE = "AttachBuyTrade";
-	public const string U_KEY_ATTACH_SALE_TRADE = "AttachSaleTrade";
-
 	public const string U_KEY_PKGS_BUY_TRADE = "PkgsBuyTrade";
 	public const string U_KEY_SINGLE_BUY_TRADE = "SingleBuyTrade";
-
-	public const string U_KEY_ACTION = "Action";
-	public const string U_KEY_ACTION_ENHANCE = "ActionEnhance";
-	public const string U_KEY_ACTION_BUY_TRADE = "ActionBuyTrade";
-	public const string U_KEY_ACTION_SALE_TRADE = "ActionSaleTrade";
-
-	public const string U_KEY_ACTIVE = "Active";
-	public const string U_KEY_ACTIVE_ENHANCE = "ActiveEnhance";
-	public const string U_KEY_ACTIVE_BUY_TRADE = "ActiveBuyTrade";
-	public const string U_KEY_ACTIVE_SALE_TRADE = "ActiveSaleTrade";
-
-	public const string U_KEY_PASSIVE = "Passive";
-	public const string U_KEY_PASSIVE_ENHANCE = "PassiveEnhance";
-	public const string U_KEY_PASSIVE_BUY_TRADE = "PassiveBuyTrade";
-	public const string U_KEY_PASSIVE_SALE_TRADE = "PassiveSaleTrade";
-
-	public const string U_KEY_STAT = "Stat";
-	public const string U_KEY_STAT_ENHANCE = "StatEnhance";
-
-	public const string U_KEY_BUFF = "Buff";
-	public const string U_KEY_BUFF_ENHANCE = "BuffEnhance";
-
-	public const string U_KEY_DEBUFF = "Debuff";
-	public const string U_KEY_DEBUFF_ENHANCE = "DebuffEnhance";
-
-	public const string U_KEY_UPGRADE = "Upgrade";
-	public const string U_KEY_UPGRADE_ENHANCE = "UpgradeEnhance";
 
 	public const string U_KEY_ID = "ID";
 	public const string U_KEY_PREV_ID = "PrevID";
