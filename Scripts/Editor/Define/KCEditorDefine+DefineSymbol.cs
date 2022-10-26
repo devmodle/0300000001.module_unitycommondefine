@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,7 +26,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_APPLE_LOGIN_ENABLE = "APPLE_LOGIN_ENABLE";
 	public const string DS_DEFINE_S_GOOGLE_SHEET_ENABLE = "GOOGLE_SHEET_ENABLE";
 	public const string DS_DEFINE_S_REMOTE_TABLE_ENABLE = "REMOTE_TABLE_ENABLE";
-	public const string DS_DEFINE_S_REMOTE_CONFIG_ENABLE = "REMOTE_CONFIG_ENABLE";
 	public const string DS_DEFINE_S_GOOGLE_PLAY_UPDATE_ENABLE = "GOOGLE_PLAY_UPDATE_ENABLE";
 
 	// 광고 {
@@ -56,7 +55,9 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_FIREBASE_ANALYTICS_ENABLE = "FIREBASE_ANALYTICS_ENABLE";
 	public const string DS_DEFINE_S_FIREBASE_CRASHLYTICS_ENABLE = "FIREBASE_CRASHLYTICS_ENABLE";
 	public const string DS_DEFINE_S_FIREBASE_DB_ENABLE = "FIREBASE_DB_ENABLE";
-	public const string DS_DEFINE_S_FIREBASE_CLOUD_MSG_ENABLE = "FIREBASE_CLOUD_MSG_ENABLE";
+	public const string DS_DEFINE_S_FIREBASE_MSG_ENABLE = "FIREBASE_MSG_ENABLE";
+	public const string DS_DEFINE_S_FIREBASE_CONFIG_ENABLE = "FIREBASE_CONFIG_ENABLE";
+	public const string DS_DEFINE_S_FIREBASE_STORAGE_ENABLE = "FIREBASE_STORAGE_ENABLE";
 	// 파이어 베이스 }
 
 	// 앱스 플라이어 {

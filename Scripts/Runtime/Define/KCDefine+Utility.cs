@@ -1135,7 +1135,7 @@ public static partial class KCDefine {
 	public const string U_NODE_FIREBASE_USER_INFOS = "UserInfos";
 	public const string U_NODE_FIREBASE_TARGET_INFOS = "TargetInfos";
 	public const string U_NODE_FIREBASE_PURCHASE_INFOS = "PurchaseInfos";
-	
+
 #if FIREBASE_AUTH_ENABLE
 	// 식별자 {
 	public const string U_KEY_FIREBASE_M_LOGIN_CALLBACK = "FirebaseMLoginCallback";
@@ -1153,14 +1153,25 @@ public static partial class KCDefine {
 	public const string U_KEY_FIREBASE_M_SAVE_DATAS_CALLBACK = "FirebaseMSaveDatasCallback";
 #endif          // #if FIREBASE_DB_ENABLE                                   
 
-#if FIREBASE_CLOUD_MSG_ENABLE
+#if FIREBASE_MSG_ENABLE
 	// 식별자 {
 	public const string U_KEY_FIREBASE_M_TOKEN_CALLBACK = "FirebaseMTokenCallback";
 	public const string U_KEY_FIREBASE_M_NOTI_MSG_CALLBACK = "FirebaseMNotiMsgCallback";
 
 	public const string U_KEY_FIREBASE_M_LOAD_MSG_TOKEN_CALLBACK = "FirebaseMLoadMsgTokenCallback";
 	// 식별자 }
-#endif          // #if FIREBASE_CLOUD_MSG_ENABLE                                          
+#endif          // #if FIREBASE_MSG_ENABLE                                          
+
+#if FIREBASE_CONFIG_ENABLE
+	// 식별자
+	public const string U_KEY_FIREBASE_M_SETUP_DEF_CONFIGS_CALLBACK = "FirebaseMSetupDefConfigsCallback";
+	public const string U_KEY_FIREBASE_M_LOAD_CONFIGS_CALLBACK = "FirebaseMLoadConfigsCallback";
+#endif           // #if FIREBASE_CONFIG_ENABLE                                       
+
+#if FIREBASE_STORAGE_ENABLE
+	// 식별자
+	public const string U_KEY_FIREBASE_M_LOAD_FILES_CALLBACK = "FirebaseMLoadFilesCallback";
+#endif           // #if FIREBASE_STORAGE_ENABLE                                        
 #endif          // #if FIREBASE_MODULE_ENABLE                                       
 
 #if APPS_FLYER_MODULE_ENABLE
