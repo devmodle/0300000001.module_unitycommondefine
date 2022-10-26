@@ -407,11 +407,11 @@ public struct STGoogleSheetLoadInfo {
 	public string m_oName;
 	public GstuSpreadSheet m_oGoogleSheet;
 
-	#region 상수
+#region 상수
 	public static readonly STGoogleSheetLoadInfo INVALID = new STGoogleSheetLoadInfo() {
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
-	#endregion            // 상수               
+#endregion            // 상수               
 }
 #endif         // #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 #endregion         // 조건부 타입                   
