@@ -1245,7 +1245,7 @@ public static partial class KCDefine {
 
 #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 개수
-	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 250;
+	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS_AT_ONCE = 100;
 
 	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "B";
