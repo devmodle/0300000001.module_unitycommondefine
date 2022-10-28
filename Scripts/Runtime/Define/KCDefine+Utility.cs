@@ -1025,8 +1025,8 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_02 = "Canvas Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_03 = "SafeArea Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
 	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_04 = "Quality Level: <color=orange>{0}</color>, Target Frame Rate: <color=orange>{1}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_05 = "Persistent Data Path: <color=orange>{0}</color>";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_06 = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_05 = "Persistent Data Path: <color=orange>{0}</color>\n";
+	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_06 = "Screen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>";
 
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_01 = "Used Heap: <color=orange>{0:0.0}</color> MB, GPU Alloc: <color=orange>{1:0.0}</color> MB\n";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_02 = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
