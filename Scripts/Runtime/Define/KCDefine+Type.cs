@@ -111,7 +111,7 @@ public struct STIDInfo {
 	#region 조건부 함수
 #if UNITY_EDITOR || UNITY_STANDALONE
 	/** 식별자 정보를 생성한다 */
-	public void MakeIDInfo(SimpleJSON.JSONClass a_oOutIDInfo) {
+	public void MakeIDInfo(SimpleJSON.JSONNode a_oOutIDInfo) {
 		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT), $"{Mathf.Clamp(m_nID01, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_LEVEL_INFOS)}");
 		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT), $"{Mathf.Clamp(m_nID02, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_STAGE_INFOS)}");
 		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT), $"{Mathf.Clamp(m_nID03, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
@@ -245,7 +245,7 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 	#region 조건부 함수
 #if UNITY_EDITOR || UNITY_STANDALONE
 	/** 값 정보를 생성한다 */
-	public void MakeValInfo(string a_oKey, SimpleJSON.JSONClass a_oOutValInfo) {
+	public void MakeValInfo(string a_oKey, SimpleJSON.JSONNode a_oOutValInfo) {
 		var oJSONArray = new SimpleJSON.JSONArray();
 		oJSONArray.Add($"{(int)m_eValType}");
 		oJSONArray.Add($"{m_dmVal}");
@@ -285,7 +285,7 @@ public struct STCommonInfo {
 	#region 조건부 함수
 #if UNITY_EDITOR || UNITY_STANDALONE
 	/** 공용 정보를 생성한다 */
-	public void MakeCommonInfo(SimpleJSON.JSONClass a_oOutCommonInfo) {
+	public void MakeCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo) {
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_1_INT), m_bIsTrue01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_2_INT), m_bIsTrue02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_3_INT), m_bIsTrue03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
