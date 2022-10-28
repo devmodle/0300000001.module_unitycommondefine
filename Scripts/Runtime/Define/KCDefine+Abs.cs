@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
@@ -359,6 +359,8 @@ public static partial class KCDefine {
 	// 경로 }
 
 	// 형식 {
+	public const string B_PATTERN_SPACE = @"\s+";
+
 	public const string B_TEXT_FMT_INCR = "+{0}";
 	public const string B_TEXT_FMT_DECR = "-{0}";
 	public const string B_TEXT_FMT_CROSS = "x{0}";
