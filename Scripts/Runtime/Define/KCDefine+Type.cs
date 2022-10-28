@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
@@ -8,9 +8,9 @@ using UnityEngine.Events;
 using DG.Tweening;
 using MessagePack;
 
-#if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 using GoogleSheetsToUnity;
-#endif            // #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+#endif            // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 
 #region 기본
 /** 상태 갱신 인터페이스 */
@@ -368,11 +368,11 @@ public struct STAdsRewardInfo {
 	public string m_oID;
 	public string m_oVal;
 
-#region 상수
+	#region 상수
 	public static readonly STAdsRewardInfo INVALID = new STAdsRewardInfo() {
 		m_oID = string.Empty, m_oVal = string.Empty
 	};
-#endregion         // 상수               
+	#endregion         // 상수               
 }
 #endif         // #if ADS_MODULE_ENABLE                                  
 
@@ -398,7 +398,7 @@ public partial class CEditorLevelCreateInfo {
 }
 #endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
 
-#if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 /** 구글 시트 로드 정보 */
 public struct STGoogleSheetLoadInfo {
 	public int m_nSrcIdx;
@@ -407,11 +407,25 @@ public struct STGoogleSheetLoadInfo {
 	public string m_oName;
 	public GstuSpreadSheet m_oGoogleSheet;
 
-#region 상수
+	#region 상수
 	public static readonly STGoogleSheetLoadInfo INVALID = new STGoogleSheetLoadInfo() {
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
-#endregion            // 상수               
+	#endregion            // 상수               
 }
-#endif         // #if GOOGLE_SHEET_ENABLE && (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+
+/** 구글 시트 저장 정보 */
+public struct STGoogleSheetSaveInfo {
+	public int m_nSrcIdx;
+	public int m_nNumCells;
+	public string m_oID;
+	public string m_oName;
+
+	#region 상수
+	public static readonly STGoogleSheetSaveInfo INVALID = new STGoogleSheetSaveInfo() {
+		m_nSrcIdx = KCDefine.B_IDX_INVALID
+	};
+	#endregion            // 상수               
+}
+#endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 #endregion         // 조건부 타입                   

@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using UnityEngine.Rendering;
 
 #if UNITY_EDITOR
+using System.IO;
+using UnityEngine.Rendering;
 using UnityEditor;
 
 #if NOTI_MODULE_ENABLE
@@ -42,7 +42,6 @@ public static partial class KCEditorDefine {
 
 	// 형식
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
-	public const string B_SCENE_N_DIGITS_PATTERN = @"[\d.]";
 
 	// 버전
 	public const string B_VER_UNITY_MODULE = "2.8.2";
