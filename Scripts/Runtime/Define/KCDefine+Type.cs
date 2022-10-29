@@ -117,6 +117,15 @@ public struct STIDInfo {
 		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT), $"{Mathf.Clamp(m_nID03, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
 	}
 #endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
+
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+	/** 식별자 정보를 설정한다 */
+	public void SetupIDInfo(SimpleJSON.JSONNode a_oOutIDInfo) {
+		a_oOutIDInfo[string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT)] = $"{m_nID01}";
+		a_oOutIDInfo[string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT)] = $"{m_nID02}";
+		a_oOutIDInfo[string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT)] = $"{m_nID03}";
+	}
+#endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
 	#endregion         // 조건부 함수                   
 }
 
@@ -253,6 +262,14 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 		a_oOutValInfo.Add(a_oKey, oJSONArray);
 	}
 #endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
+
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+	/** 값 정보를 설정한다 */
+	public void SetupValInfo(SimpleJSON.JSONNode a_oOutValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{(int)m_eValType}";
+		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = (m_eValType == EValType.INT) ? $"{m_dmVal:0}" : $"{m_dmVal:0.0}";
+	}
+#endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
 	#endregion         // 조건부 함수                   
 }
 
@@ -294,6 +311,18 @@ public struct STCommonInfo {
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
 	}
 #endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
+
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+	/** 공용 정보를 설정한다 */
+	public void SetupCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo) {
+		a_oOutCommonInfo[string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_1_INT)] = m_bIsTrue01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT;
+		a_oOutCommonInfo[string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_2_INT)] = m_bIsTrue02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT;
+		a_oOutCommonInfo[string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_3_INT)] = m_bIsTrue03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT;
+
+		a_oOutCommonInfo[KCDefine.U_KEY_NAME] = m_oName;
+		a_oOutCommonInfo[KCDefine.U_KEY_DESC] = m_oDesc;
+	}
+#endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
 	#endregion         // 조건부 함수                   
 }
 
@@ -306,12 +335,23 @@ public struct STTimeInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STTimeInfo(SimpleJSON.JSONNode a_oDurationInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
-		m_fDelay = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsFloat : KCDefine.B_VAL_0_REAL;
-		m_fDuration = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
-		m_fDeltaTime = a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].ExIsValid() ? a_oDurationInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+	public STTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+		m_fDelay = a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].ExIsValid() ? a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDuration = a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].ExIsValid() ? a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
+		m_fDeltaTime = a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].ExIsValid() ? a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 	}
 	#endregion         // 함수               
+
+	#region 조건부 함수
+#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+	/** 시간 정보를 설정한다 */
+	public void SetupTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{m_fDelay:0.0}";
+		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = $"{m_fDuration:0.0}";
+		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT] = $"{m_fDeltaTime:0.0}";
+	}
+#endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
+	#endregion         // 조건부 함수                   
 }
 
 /** 공용 타입 래퍼 */
