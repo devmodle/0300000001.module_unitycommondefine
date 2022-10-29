@@ -222,7 +222,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_PREV_ID = "PrevID_{0:00}";
 	public const string U_KEY_FMT_NEXT_ID = "NextID_{0:00}";
 
-	public const string U_KEY_FMT_TRUE = "True_{0:00}";
+	public const string U_KEY_FMT_FLAGS = "Flags_{0:00}";
 	public const string U_KEY_FMT_PRICE = "Price_{0:00}";
 	public const string U_KEY_FMT_FX_KINDS = "FXKinds_{0:00}";
 	public const string U_KEY_FMT_OBJ_KINDS = "ObjKinds_{0:00}";

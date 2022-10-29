@@ -90,10 +90,10 @@ public struct STIDInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STIDInfo(SimpleJSON.JSONNode a_oIDInfo) {
-		string oID01Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT);
-		string oID02Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT);
-		string oID03Key = string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT);
+	public STIDInfo(SimpleJSON.JSONNode a_oIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID) {
+		string oID01Key = string.Format(a_oFmt, KCDefine.B_VAL_1_INT);
+		string oID02Key = string.Format(a_oFmt, KCDefine.B_VAL_2_INT);
+		string oID03Key = string.Format(a_oFmt, KCDefine.B_VAL_3_INT);
 
 		m_nID01 = a_oIDInfo[oID01Key].ExIsValid() ? a_oIDInfo[oID01Key].AsInt : KCDefine.B_VAL_0_INT;
 		m_nID02 = a_oIDInfo[oID02Key].ExIsValid() ? a_oIDInfo[oID02Key].AsInt : KCDefine.B_VAL_0_INT;
@@ -109,21 +109,12 @@ public struct STIDInfo {
 	#endregion         // 함수               
 
 	#region 조건부 함수
-#if UNITY_EDITOR || UNITY_STANDALONE
-	/** 식별자 정보를 생성한다 */
-	public void MakeIDInfo(SimpleJSON.JSONNode a_oOutIDInfo) {
-		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT), $"{Mathf.Clamp(m_nID01, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_LEVEL_INFOS)}");
-		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT), $"{Mathf.Clamp(m_nID02, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_STAGE_INFOS)}");
-		a_oOutIDInfo.Add(string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT), $"{Mathf.Clamp(m_nID03, KCDefine.B_VAL_0_INT, KCDefine.U_MAX_NUM_CHAPTER_INFOS)}");
-	}
-#endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
-
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	/** 식별자 정보를 설정한다 */
-	public void SetupIDInfo(SimpleJSON.JSONNode a_oOutIDInfo) {
-		a_oOutIDInfo[string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_1_INT)] = $"{m_nID01}";
-		a_oOutIDInfo[string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_2_INT)] = $"{m_nID02}";
-		a_oOutIDInfo[string.Format(KCDefine.U_KEY_FMT_ID, KCDefine.B_VAL_3_INT)] = $"{m_nID03}";
+	public void SetupIDInfo(SimpleJSON.JSONNode a_oOutIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID) {
+		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_1_INT)] = $"{m_nID01}";
+		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_2_INT)] = $"{m_nID02}";
+		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_3_INT)] = $"{m_nID03}";
 	}
 #endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
 	#endregion         // 조건부 함수                   
@@ -252,17 +243,6 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 	#endregion         // 함수               
 
 	#region 조건부 함수
-#if UNITY_EDITOR || UNITY_STANDALONE
-	/** 값 정보를 생성한다 */
-	public void MakeValInfo(string a_oKey, SimpleJSON.JSONNode a_oOutValInfo) {
-		var oJSONArray = new SimpleJSON.JSONArray();
-		oJSONArray.Add($"{(int)m_eValType}");
-		oJSONArray.Add($"{m_dmVal}");
-
-		a_oOutValInfo.Add(a_oKey, oJSONArray);
-	}
-#endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
-
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	/** 값 정보를 설정한다 */
 	public void SetupValInfo(SimpleJSON.JSONNode a_oOutValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
@@ -276,9 +256,9 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 /** 공용 정보 */
 [System.Serializable]
 public struct STCommonInfo {
-	public bool m_bIsTrue01;
-	public bool m_bIsTrue02;
-	public bool m_bIsTrue03;
+	public bool m_bIsFlags01;
+	public bool m_bIsFlags02;
+	public bool m_bIsFlags03;
 
 	public string m_oName;
 	public string m_oDesc;
@@ -286,13 +266,13 @@ public struct STCommonInfo {
 	#region 함수
 	/** 생성자 */
 	public STCommonInfo(SimpleJSON.JSONNode a_oCommonInfo) {
-		string oIsTrue01Key = string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_1_INT);
-		string oIsTrue02Key = string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_2_INT);
-		string oIsTrue03Key = string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_3_INT);
+		string oFlags01Key = string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_1_INT);
+		string oFlags02Key = string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_2_INT);
+		string oFlags03Key = string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_3_INT);
 
-		m_bIsTrue01 = a_oCommonInfo[oIsTrue01Key].ExIsValid() ? a_oCommonInfo[oIsTrue01Key].AsInt != KCDefine.B_VAL_0_INT : false;
-		m_bIsTrue02 = a_oCommonInfo[oIsTrue02Key].ExIsValid() ? a_oCommonInfo[oIsTrue02Key].AsInt != KCDefine.B_VAL_0_INT : false;
-		m_bIsTrue03 = a_oCommonInfo[oIsTrue03Key].ExIsValid() ? a_oCommonInfo[oIsTrue03Key].AsInt != KCDefine.B_VAL_0_INT : false;
+		m_bIsFlags01 = a_oCommonInfo[oFlags01Key].ExIsValid() ? a_oCommonInfo[oFlags01Key].AsInt != KCDefine.B_VAL_0_INT : false;
+		m_bIsFlags02 = a_oCommonInfo[oFlags02Key].ExIsValid() ? a_oCommonInfo[oFlags02Key].AsInt != KCDefine.B_VAL_0_INT : false;
+		m_bIsFlags03 = a_oCommonInfo[oFlags03Key].ExIsValid() ? a_oCommonInfo[oFlags03Key].AsInt != KCDefine.B_VAL_0_INT : false;
 
 		m_oName = a_oCommonInfo[KCDefine.U_KEY_NAME].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_NAME] : string.Empty;
 		m_oDesc = a_oCommonInfo[KCDefine.U_KEY_DESC].ExIsValid() ? a_oCommonInfo[KCDefine.U_KEY_DESC] : string.Empty;
@@ -300,27 +280,15 @@ public struct STCommonInfo {
 	#endregion         // 함수               
 
 	#region 조건부 함수
-#if UNITY_EDITOR || UNITY_STANDALONE
-	/** 공용 정보를 생성한다 */
-	public void MakeCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo) {
-		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_1_INT), m_bIsTrue01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
-		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_2_INT), m_bIsTrue02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
-		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_3_INT), m_bIsTrue03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
-
-		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
-		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
-	}
-#endif         // #if UNITY_EDITOR || UNITY_STANDALONE                                                 
-
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	/** 공용 정보를 설정한다 */
 	public void SetupCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo) {
-		a_oOutCommonInfo[string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_1_INT)] = m_bIsTrue01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT;
-		a_oOutCommonInfo[string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_2_INT)] = m_bIsTrue02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT;
-		a_oOutCommonInfo[string.Format(KCDefine.U_KEY_FMT_TRUE, KCDefine.B_VAL_3_INT)] = m_bIsTrue03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT;
+		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_1_INT), m_bIsFlags01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
+		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_2_INT), m_bIsFlags02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
+		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_3_INT), m_bIsFlags03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 
-		a_oOutCommonInfo[KCDefine.U_KEY_NAME] = m_oName;
-		a_oOutCommonInfo[KCDefine.U_KEY_DESC] = m_oDesc;
+		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
+		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
 	}
 #endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
 	#endregion         // 조건부 함수                   

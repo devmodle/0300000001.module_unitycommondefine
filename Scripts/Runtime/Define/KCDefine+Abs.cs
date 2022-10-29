@@ -261,9 +261,9 @@ public static partial class KCDefine {
 	// 식별자 {
 	public const string B_KEY_ROOT = "Root";
 	public const string B_KEY_COMMON = "Common";
-	public const string B_KEY_ENHANCE = "Enhance";
 	public const string B_KEY_BUY_TRADE = "BuyTrade";
 	public const string B_KEY_SALE_TRADE = "SaleTrade";
+	public const string B_KEY_ENHANCE_TRADE = "EnhanceTrade";
 
 	public const string B_KEY_JSON_USER_INFO_DATA = "UserInfo";
 	public const string B_KEY_JSON_GAME_INFO_DATA = "GameInfo";
