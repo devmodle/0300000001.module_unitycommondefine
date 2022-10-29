@@ -274,6 +274,9 @@ public static partial class KCEditorDefine {
 	public const float B_OFFSET_HIERARCHY_TEXT = 15.0f;
 
 	// 에디터 옵션 {
+	public const float B_EDITOR_OPTS_CASCADE_BORDER_PERCENT = 0.15f;
+	public const float B_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT = 0.35f;
+
 	public const string B_EDITOR_OPTS_REMOTE_COMPRESSION = "JPEG";
 	public const string B_EDITOR_OPTS_REMOTE_RESOLUTION = "Downsize";
 	public const string B_EDITOR_OPTS_VER_CONTROL = "Visible Meta Files";
@@ -329,8 +332,8 @@ public static partial class KCEditorDefine {
 	public static readonly Vector3 B_MIN_SIZE_EDITOR_WND = new Vector3(350.0f, 350.0f, 0.0f);
 
 	// 에디터 옵션
-	public static readonly Vector2 B_EDITOR_OPTS_CASCADE_3_SPLIT_PERCENT = new Vector2(0.1f, 0.3f);
-	public static readonly Vector3 B_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(0.075f, 0.2f, 0.45f);
+	public static readonly Vector2 B_EDITOR_OPTS_CASCADE_3_SPLIT_PERCENT = new Vector2(0.15f, 0.15f + (0.15f * 2.0f));
+	public static readonly Vector3 B_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(0.1f, 0.1f + (0.1f * 2.0f), 0.1f + (0.1f * 2.0f) + (0.1f * 3));
 
 	// 이름 {
 	public static readonly List<string> B_OBJ_N_ROOT_OBJ_LIST = new List<string>() {
