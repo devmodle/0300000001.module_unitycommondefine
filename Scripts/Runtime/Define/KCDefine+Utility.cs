@@ -27,6 +27,7 @@ public static partial class KCDefine {
 	// 개수 {
 	public const int U_MAX_NUM_LAYERS = 32;
 	public const int U_MAX_NUM_FX_SNDS = 15;
+	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 1000;
 
 	public const int U_MAX_NUM_LEVEL_INFOS = 9999;
 	public const int U_MAX_NUM_STAGE_INFOS = 999;
@@ -1242,13 +1243,9 @@ public static partial class KCDefine {
 #endif           // #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE                                                           
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
-	// 개수
-	public const int U_MAX_NUM_GOOGLE_SHEET_CELLS = 1000;
-
-	// 이름 {
+	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "B";
 	public const string U_COL_N_GOOGLE_SHEET_DEST = "BZ";
-	// 이름 }
 #endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 	#endregion         // 조건부 상수                   
 
