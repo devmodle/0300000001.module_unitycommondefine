@@ -110,8 +110,8 @@ public struct STIDInfo {
 
 	#region 조건부 함수
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
-	/** 식별자 정보를 설정한다 */
-	public void SetupIDInfo(SimpleJSON.JSONNode a_oOutIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID) {
+	/** 식별자 정보를 저장한다 */
+	public void SaveIDInfo(SimpleJSON.JSONNode a_oOutIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID) {
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_1_INT)] = $"{m_nID01}";
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_2_INT)] = $"{m_nID02}";
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_3_INT)] = $"{m_nID03}";
@@ -244,8 +244,8 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 
 	#region 조건부 함수
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
-	/** 값 정보를 설정한다 */
-	public void SetupValInfo(SimpleJSON.JSONNode a_oOutValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+	/** 값 정보를 저장한다 */
+	public void SaveValInfo(SimpleJSON.JSONNode a_oOutValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
 		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{(int)m_eValType}";
 		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = (m_eValType == EValType.INT) ? $"{m_dmVal:0}" : $"{m_dmVal:0.0}";
 	}
@@ -281,8 +281,8 @@ public struct STCommonInfo {
 
 	#region 조건부 함수
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
-	/** 공용 정보를 설정한다 */
-	public void SetupCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo) {
+	/** 공용 정보를 저장한다 */
+	public void SaveCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo) {
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_1_INT), m_bIsFlags01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_2_INT), m_bIsFlags02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_3_INT), m_bIsFlags03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
@@ -312,8 +312,8 @@ public struct STTimeInfo {
 
 	#region 조건부 함수
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
-	/** 시간 정보를 설정한다 */
-	public void SetupTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+	/** 시간 정보를 저장한다 */
+	public void SaveTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{m_fDelay:0.0}";
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = $"{m_fDuration:0.0}";
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT] = $"{m_fDeltaTime:0.0}";
