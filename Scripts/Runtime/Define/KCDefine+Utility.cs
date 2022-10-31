@@ -144,9 +144,6 @@ public static partial class KCDefine {
 	public const string U_KEY_STAGE_EPISODE = "StageEpisode";
 	public const string U_KEY_CHAPTER_EPISODE = "ChapterEpisode";
 
-	public const string U_KEY_PKGS_BUY_TRADE = "PkgsBuyTrade";
-	public const string U_KEY_SINGLE_BUY_TRADE = "SingleBuyTrade";
-
 	public const string U_KEY_ID = "ID";
 	public const string U_KEY_PREV_ID = "PrevID";
 	public const string U_KEY_NEXT_ID = "NextID";
