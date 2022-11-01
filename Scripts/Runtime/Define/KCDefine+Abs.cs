@@ -554,7 +554,8 @@ public static partial class KCDefine {
 	public static readonly List<Vector2Int> B_EMPTY_2D_INT_VEC_LIST = new List<Vector2Int>();
 	public static readonly List<Vector3Int> B_EMPTY_3D_INT_VEC_LIST = new List<Vector3Int>();
 
-	public static readonly List<STIdxInfo> B_EMPTY_IDX_INFO_LIST = new List<STIdxInfo>();
+	public static readonly SimpleJSON.JSONArray B_EMPTY_JSON_ARRAY = new SimpleJSON.JSONArray();
+	public static readonly SimpleJSON.JSONClass B_EMPTY_JSON_CLASS = new SimpleJSON.JSONClass();
 	// 기타 }
 
 	// 색상 {
