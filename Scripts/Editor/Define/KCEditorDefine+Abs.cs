@@ -114,6 +114,11 @@ public static partial class KCEditorDefine {
 	public const string B_PROPERTY_N_SND_M_AMBISONIC_DECODER_PLUGIN = "m_AmbisonicDecoderPlugin";
 	public const string B_PROPERTY_N_SND_M_ENABLE_OUTPUT_SUSPENSION = "m_EnableOutputSuspension";
 
+	public const string B_PROPERTY_N_QUALITY_S_NAME = "name";
+	public const string B_PROPERTY_N_QUALITY_S_SECOND = "second";
+	public const string B_PROPERTY_N_QUALITY_S_SETTINGS = "m_QualitySettings";
+	public const string B_PROPERTY_N_QUALITY_S_DEF_QUALITY = "m_PerPlatformDefaultQuality";
+
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
 	public const string B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE = "T_LightingSettings";
 	public const string B_ASSET_N_POST_PROCESSING_SETTINGS_TEMPLATE = "T_PostProcessingSettings";
@@ -223,7 +228,10 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_JENKINS_BUILD_FILE_EXTENSION = "BuildFileExtension";
 
 	public const string B_PROJ_PLATFORM_N_IOS = "iOS";
+	public const string B_PROJ_PLATFORM_N_SERVER = "Server";
+	public const string B_PROJ_PLATFORM_N_IPHONE = "iPhone";
 	public const string B_PROJ_PLATFORM_N_ANDROID = "Android";
+	public const string B_PROJ_PLATFORM_N_STANDALONE = "Standalone";
 	public const string B_PROJ_PLATFORM_N_STANDALONE_MAC = "OSXUniversal";
 	public const string B_PROJ_PLATFORM_N_STANDALONE_WNDS = "Win64";
 
@@ -432,6 +440,7 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}TagManager.asset";
 	public static readonly string B_ASSET_P_SND_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}AudioManager.asset";
+	public static readonly string B_ASSET_P_QUALITY_SETTINGS = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}QualitySettings.asset";
 
 	public static readonly string B_ASSET_P_OPTS_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_OPTS_INFO_TABLE}.asset";
 	public static readonly string B_ASSET_P_BUILD_INFO_TABLE = $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE}.asset";
