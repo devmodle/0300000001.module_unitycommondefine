@@ -621,7 +621,7 @@ public static partial class KCDefine {
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/PersistentDatas/";
 #endif            // #if UNITY_IOS || UNITY_ANDROID
 
-#if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+#if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 
 #if UNITY_STANDALONE_WIN
