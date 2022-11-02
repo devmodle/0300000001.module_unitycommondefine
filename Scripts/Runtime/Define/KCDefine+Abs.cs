@@ -326,7 +326,6 @@ public static partial class KCDefine {
 	public const string B_DIR_P_ICONS = "Icons/";
 	public const string B_DIR_P_FONTS = "Fonts/";
 	public const string B_DIR_P_DATAS = "Datas/";
-	public const string B_DIR_P_IMAGES = "Images/";
 	public const string B_DIR_P_SOUNDS = "Sounds/";
 
 	public const string B_DIR_P_TABLES = "Tables/";

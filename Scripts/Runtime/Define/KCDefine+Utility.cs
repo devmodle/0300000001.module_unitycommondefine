@@ -906,10 +906,10 @@ public static partial class KCDefine {
 	public static readonly string U_IMG_P_SPLASH = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Splash";
 	public static readonly string U_IMG_P_INDICATOR = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Indicator";
 
-	public static readonly string U_TEX_P_ARROW = $"{KCDefine.B_DIR_P_IMAGES}U_SpriteAtlas_01/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Arrow";
-	public static readonly string U_TEX_P_WHITE = $"{KCDefine.B_DIR_P_IMAGES}U_SpriteAtlas_01/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}White";
-	public static readonly string U_TEX_P_SPLASH = $"{KCDefine.B_DIR_P_IMAGES}U_SpriteAtlas_01/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Splash";
-	public static readonly string U_TEX_P_INDICATOR = $"{KCDefine.B_DIR_P_IMAGES}U_SpriteAtlas_01/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Indicator";
+	public static readonly string U_TEX_P_ARROW = $"{KCDefine.B_DIR_P_TEXTURES}U_SpriteAtlas_01/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Arrow";
+	public static readonly string U_TEX_P_WHITE = $"{KCDefine.B_DIR_P_TEXTURES}U_SpriteAtlas_01/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}White";
+	public static readonly string U_TEX_P_SPLASH = $"{KCDefine.B_DIR_P_TEXTURES}U_SpriteAtlas_01/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Splash";
+	public static readonly string U_TEX_P_INDICATOR = $"{KCDefine.B_DIR_P_TEXTURES}U_SpriteAtlas_01/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Indicator";
 
 	public static readonly string U_DATA_P_COMMON_APP_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
 	public static readonly string U_DATA_P_COMMON_USER_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonUserInfo.bytes";
