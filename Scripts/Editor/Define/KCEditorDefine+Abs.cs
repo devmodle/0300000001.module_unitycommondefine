@@ -149,7 +149,7 @@ public static partial class KCEditorDefine {
 	public const string B_DIR_P_PROJ_SETTINGS = "ProjectSettings/";
 	public const string B_DIR_P_EDITOR_DEF_RESOURCES = "Editor Default Resources/";
 
-	public const string B_DIR_P_EXPORT_IMG_BASE = "Export/Images/";
+	public const string B_DIR_P_EXPORT_BASE = "Export/";
 	// 경로 }
 
 	// iOS {
@@ -451,10 +451,10 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_FMT_SCRIPTABLE_OBJ = $"{KCEditorDefine.B_DIR_P_ASSETS}{"{0}.asset"}";
 	public static readonly string B_ASSET_P_FMT_DEFINE_S_OUTPUT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/DefineSymbols/{"{0}DefineSymbols.txt"}";
 
-	public static readonly string B_IMG_P_FMT_TEX_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Textures/{0}.png"}";
-	public static readonly string B_IMG_P_FMT_SPRITE_TO_IMG = $"{KCEditorDefine.B_DIR_P_EXPORT_IMG_BASE}{"Sprites/{0}.png"}";
-
+	public static readonly string B_IMG_P_FMT_EXPORT = $"{KCEditorDefine.B_DIR_P_EXPORT_BASE}{"Sprites/{0}.png"}";
+	public static readonly string B_TEX_P_FMT_EXPORT = $"{KCEditorDefine.B_DIR_P_EXPORT_BASE}{"Textures/{0}.png"}";
 	public static readonly string B_DATA_P_BUILD_METHOD = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/BuildMethod.txt";
+
 	public static readonly string B_ICON_P_STANDALONE_APP = $"{KCDefine.B_DIR_P_ICONS}Standalone/App/Icon";
 
 	public static readonly string B_ICON_P_IOS_APP_76x76 = $"{KCDefine.B_DIR_P_ICONS}iOS/App/Icon76x76";
