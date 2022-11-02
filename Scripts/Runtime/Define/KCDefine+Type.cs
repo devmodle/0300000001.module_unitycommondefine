@@ -420,6 +420,17 @@ public struct STGoogleSheetLoadInfo {
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
 	#endregion            // 상수               
+
+	#region 함수
+	/** 생성자 */
+	public STGoogleSheetLoadInfo(string a_oID, string a_oName, int a_nSrcIdx, int a_nNumCells, GstuSpreadSheet a_oGoogleSheet) : this() {
+		m_oID = a_oID;
+		m_oName = a_oName;
+		m_nSrcIdx = a_nSrcIdx;
+		m_nNumCells = a_nNumCells;
+		m_oGoogleSheet = a_oGoogleSheet;
+	}
+	#endregion            // 함수               
 }
 
 /** 구글 시트 저장 정보 */
@@ -434,6 +445,48 @@ public struct STGoogleSheetSaveInfo {
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
 	#endregion            // 상수               
+
+	#region 함수
+	/** 생성자 */
+	public STGoogleSheetSaveInfo(string a_oID, string a_oName, int a_nSrcIdx, int a_nNumCells) : this() {
+		m_oID = a_oID;
+		m_oName = a_oName;
+		m_nSrcIdx = a_nSrcIdx;
+		m_nNumCells = a_nNumCells;
+	}
+	#endregion            // 함수               
+}
+
+/** 로드 구글 시트 정보 */
+public struct STLoadGoogleSheetInfo {
+	public string m_oID;
+	public string m_oName;
+	public List<(string, int)> m_oSheetInfoList;
+
+	#region 함수
+	/** 생성자 */
+	public STLoadGoogleSheetInfo(string a_oID, string a_oName) : this() {
+		m_oID = a_oID;
+		m_oName = a_oName;
+		m_oSheetInfoList = new List<(string, int)>();
+	}
+	#endregion         // 함수               
+}
+
+/** 저장 구글 시트 정보 */
+public struct STSaveGoogleSheetInfo {
+	public string m_oID;
+	public string m_oName;
+	public List<(string, List<List<string>>)> m_oSheetInfoList;
+
+	#region 함수
+	/** 생성자 */
+	public STSaveGoogleSheetInfo(string a_oID, string a_oName) : this() {
+		m_oID = a_oID;
+		m_oName = a_oName;
+		m_oSheetInfoList = new List<(string, List<List<string>>)>();
+	}
+	#endregion           // 함수               
 }
 #endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 #endregion         // 조건부 타입                   
