@@ -410,7 +410,7 @@ public partial class CEditorLevelCreateInfo {
 /** 구글 시트 로드 정보 */
 public struct STGoogleSheetLoadInfo {
 	public int m_nSrcIdx;
-	public int m_nNumCells;
+	public int m_nNumRows;
 	public string m_oID;
 	public string m_oName;
 	public GstuSpreadSheet m_oGoogleSheet;
@@ -423,11 +423,11 @@ public struct STGoogleSheetLoadInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STGoogleSheetLoadInfo(string a_oID, string a_oName, int a_nSrcIdx, int a_nNumCells, GstuSpreadSheet a_oGoogleSheet) : this() {
+	public STGoogleSheetLoadInfo(string a_oID, string a_oName, int a_nSrcIdx, int a_nNumRows, GstuSpreadSheet a_oGoogleSheet) : this() {
 		m_oID = a_oID;
 		m_oName = a_oName;
 		m_nSrcIdx = a_nSrcIdx;
-		m_nNumCells = a_nNumCells;
+		m_nNumRows = a_nNumRows;
 		m_oGoogleSheet = a_oGoogleSheet;
 	}
 	#endregion            // 함수               
@@ -436,7 +436,7 @@ public struct STGoogleSheetLoadInfo {
 /** 구글 시트 저장 정보 */
 public struct STGoogleSheetSaveInfo {
 	public int m_nSrcIdx;
-	public int m_nNumCells;
+	public int m_nNumRows;
 	public string m_oID;
 	public string m_oName;
 
@@ -448,11 +448,11 @@ public struct STGoogleSheetSaveInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STGoogleSheetSaveInfo(string a_oID, string a_oName, int a_nSrcIdx, int a_nNumCells) : this() {
+	public STGoogleSheetSaveInfo(string a_oID, string a_oName, int a_nSrcIdx, int a_nNumRows) : this() {
 		m_oID = a_oID;
 		m_oName = a_oName;
 		m_nSrcIdx = a_nSrcIdx;
-		m_nNumCells = a_nNumCells;
+		m_nNumRows = a_nNumRows;
 	}
 	#endregion            // 함수               
 }
