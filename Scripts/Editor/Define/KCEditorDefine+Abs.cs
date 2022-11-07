@@ -348,7 +348,7 @@ public static partial class KCEditorDefine {
 		KCDefine.U_OBJ_N_SCENE_BASE, KCDefine.U_OBJ_N_SCENE_OBJS_ROOT
 	};
 
-	public static readonly List<string> B_OBJ_N_PREFAB_ROOT_OBJ_LIST = new List<string>() {
+	public static readonly List<string> B_OBJ_N_ROOT_PREFAB_OBJ_LIST = new List<string>() {
 		KCDefine.U_OBJ_N_SCENE_UIS_ROOT
 	};
 
