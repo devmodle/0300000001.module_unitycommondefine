@@ -101,7 +101,7 @@ public struct STIDInfo {
 	}
 
 	/** 생성자 */
-	public STIDInfo(int a_nID01, int a_nID02 = KCDefine.B_VAL_0_INT, int a_nID03 = KCDefine.B_VAL_0_INT) : this() {
+	public STIDInfo(int a_nID01, int a_nID02 = KCDefine.B_VAL_0_INT, int a_nID03 = KCDefine.B_VAL_0_INT) {
 		m_nID01 = a_nID01;
 		m_nID02 = a_nID02;
 		m_nID03 = a_nID03;
@@ -143,7 +143,7 @@ public struct STIdxInfo : System.IEquatable<STIdxInfo> {
 
 	#region 함수
 	/** 생성자 */
-	public STIdxInfo(int a_nIdx01, int a_nIdx02, int a_nIdx03 = KCDefine.B_IDX_INVALID) : this() {
+	public STIdxInfo(int a_nIdx01, int a_nIdx02, int a_nIdx03 = KCDefine.B_IDX_INVALID) {
 		m_nIdx01 = a_nIdx01;
 		m_nIdx02 = a_nIdx02;
 		m_nIdx03 = a_nIdx03;
@@ -236,7 +236,7 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 	}
 
 	/** 생성자 */
-	public STValInfo(decimal a_dmVal, EValType a_eValType) : this() {
+	public STValInfo(decimal a_dmVal, EValType a_eValType) {
 		m_dmVal = a_dmVal;
 		m_eValType = a_eValType;
 	}
@@ -412,7 +412,7 @@ public struct STGoogleSheetLoadInfo {
 	public int m_nSrcIdx;
 	public int m_nNumRows;
 	public string m_oID;
-	public string m_oName;
+	public string m_oSheetName;
 	public GstuSpreadSheet m_oGoogleSheet;
 
 	#region 상수
@@ -423,11 +423,11 @@ public struct STGoogleSheetLoadInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STGoogleSheetLoadInfo(string a_oID, string a_oName, int a_nSrcIdx, int a_nNumRows, GstuSpreadSheet a_oGoogleSheet) : this() {
+	public STGoogleSheetLoadInfo(string a_oID, string a_oSheetName, int a_nSrcIdx, int a_nNumRows, GstuSpreadSheet a_oGoogleSheet) {
 		m_oID = a_oID;
-		m_oName = a_oName;
 		m_nSrcIdx = a_nSrcIdx;
 		m_nNumRows = a_nNumRows;
+		m_oSheetName = a_oSheetName;
 		m_oGoogleSheet = a_oGoogleSheet;
 	}
 	#endregion            // 함수               
@@ -438,7 +438,7 @@ public struct STGoogleSheetSaveInfo {
 	public int m_nSrcIdx;
 	public int m_nNumRows;
 	public string m_oID;
-	public string m_oName;
+	public string m_oSheetName;
 
 	#region 상수
 	public static readonly STGoogleSheetSaveInfo INVALID = new STGoogleSheetSaveInfo() {
@@ -448,11 +448,11 @@ public struct STGoogleSheetSaveInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STGoogleSheetSaveInfo(string a_oID, string a_oName, int a_nSrcIdx, int a_nNumRows) : this() {
+	public STGoogleSheetSaveInfo(string a_oID, string a_oSheetName, int a_nSrcIdx, int a_nNumRows) {
 		m_oID = a_oID;
-		m_oName = a_oName;
 		m_nSrcIdx = a_nSrcIdx;
 		m_nNumRows = a_nNumRows;
+		m_oSheetName = a_oSheetName;
 	}
 	#endregion            // 함수               
 }
@@ -465,7 +465,7 @@ public struct STLoadGoogleSheetInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STLoadGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, int)> a_oSheetInfoList = null) : this() {
+	public STLoadGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, int)> a_oSheetInfoList = null) {
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
 		m_oSheetInfoList = a_oSheetInfoList ?? new List<(string, int)>();
@@ -481,7 +481,7 @@ public struct STSaveGoogleSheetInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STSaveGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, List<List<string>>)> a_oSheetInfoListContainer = null) : this() {
+	public STSaveGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, List<List<string>>)> a_oSheetInfoListContainer = null) {
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
 		m_oSheetInfoListContainer = a_oSheetInfoListContainer ?? new List<(string, List<List<string>>)>();
@@ -494,7 +494,7 @@ public struct STGoogleSheetTableInfo {
 	public string m_oID;
 	public string m_oTableName;
 	public Dictionary<System.Type, Dictionary<string, string>> m_oTableInfoDictContainer;
-	
+
 	#region 함수
 	/** 생성자 */
 	public STGoogleSheetTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oTableInfoDictContainer = null) {
@@ -502,7 +502,7 @@ public struct STGoogleSheetTableInfo {
 		m_oTableName = a_oTableName;
 		m_oTableInfoDictContainer = a_oTableInfoDictContainer ?? new Dictionary<System.Type, Dictionary<string, string>>();
 	}
-	#endregion			// 함수
+	#endregion         // 함수
 }
 #endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 #endregion         // 조건부 타입                   
