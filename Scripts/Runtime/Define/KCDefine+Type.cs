@@ -460,15 +460,15 @@ public struct STGoogleSheetSaveInfo {
 /** 로드 구글 시트 정보 */
 public struct STLoadGoogleSheetInfo {
 	public string m_oID;
-	public string m_oName;
+	public string m_oTableName;
 	public List<(string, int)> m_oSheetInfoList;
 
 	#region 함수
 	/** 생성자 */
-	public STLoadGoogleSheetInfo(string a_oID, string a_oName) : this() {
+	public STLoadGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, int)> a_oSheetInfoList = null) : this() {
 		m_oID = a_oID;
-		m_oName = a_oName;
-		m_oSheetInfoList = new List<(string, int)>();
+		m_oTableName = a_oTableName;
+		m_oSheetInfoList = a_oSheetInfoList ?? new List<(string, int)>();
 	}
 	#endregion         // 함수               
 }
@@ -476,17 +476,33 @@ public struct STLoadGoogleSheetInfo {
 /** 저장 구글 시트 정보 */
 public struct STSaveGoogleSheetInfo {
 	public string m_oID;
-	public string m_oName;
-	public List<(string, List<List<string>>)> m_oSheetInfoList;
+	public string m_oTableName;
+	public List<(string, List<List<string>>)> m_oSheetInfoListContainer;
 
 	#region 함수
 	/** 생성자 */
-	public STSaveGoogleSheetInfo(string a_oID, string a_oName) : this() {
+	public STSaveGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, List<List<string>>)> a_oSheetInfoListContainer = null) : this() {
 		m_oID = a_oID;
-		m_oName = a_oName;
-		m_oSheetInfoList = new List<(string, List<List<string>>)>();
+		m_oTableName = a_oTableName;
+		m_oSheetInfoListContainer = a_oSheetInfoListContainer ?? new List<(string, List<List<string>>)>();
 	}
 	#endregion           // 함수               
+}
+
+/** 구글 시트 테이블 정보 */
+public struct STGoogleSheetTableInfo {
+	public string m_oID;
+	public string m_oTableName;
+	public Dictionary<System.Type, Dictionary<string, string>> m_oTableInfoDictContainer;
+	
+	#region 함수
+	/** 생성자 */
+	public STGoogleSheetTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oTableInfoDictContainer = null) {
+		m_oID = a_oID;
+		m_oTableName = a_oTableName;
+		m_oTableInfoDictContainer = a_oTableInfoDictContainer ?? new Dictionary<System.Type, Dictionary<string, string>>();
+	}
+	#endregion			// 함수
 }
 #endif         // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 #endregion         // 조건부 타입                   
