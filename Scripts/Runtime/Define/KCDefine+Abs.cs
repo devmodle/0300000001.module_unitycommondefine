@@ -6,7 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 기본 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 값 {
 	public const int B_VAL_0_INT = 0;
@@ -600,12 +601,28 @@ public static partial class KCDefine {
 	// 위치 }
 
 	// 토큰 {
-	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_KOREAN = new Dictionary<string, decimal>() {
-		["만"] = 10000m, ["억"] = 100000000m, ["조"] = 1000000000000m, ["경"] = 10000000000000000m, ["해"] = 100000000000000000000m, ["자"] = 1000000000000000000000000m, ["양"] = 10000000000000000000000000000m
+	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_KOREAN = new Dictionary<string, decimal>()
+	{
+		["만"] = 10000m,
+		["억"] = 100000000m,
+		["조"] = 1000000000000m,
+		["경"] = 10000000000000000m,
+		["해"] = 100000000000000000000m,
+		["자"] = 1000000000000000000000000m,
+		["양"] = 10000000000000000000000000000m
 	};
 
-	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_ENGLISH = new Dictionary<string, decimal>() {
-		["K"] = 1000m, ["M"] = 1000000m, ["B"] = 1000000000m, ["T"] = 1000000000000m, ["q"] = 1000000000000000m, ["Q"] = 1000000000000000000m, ["s"] = 1000000000000000000000m, ["S"] = 1000000000000000000000000m, ["O"] = 1000000000000000000000000000m
+	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_ENGLISH = new Dictionary<string, decimal>()
+	{
+		["K"] = 1000m,
+		["M"] = 1000000m,
+		["B"] = 1000000000m,
+		["T"] = 1000000000000m,
+		["q"] = 1000000000000000m,
+		["Q"] = 1000000000000000000m,
+		["s"] = 1000000000000000000000m,
+		["S"] = 1000000000000000000000000m,
+		["O"] = 1000000000000000000000000000m
 	};
 	// 토큰 }
 
@@ -621,7 +638,7 @@ public static partial class KCDefine {
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/PersistentDatas/";
 #endif            // #if UNITY_IOS || UNITY_ANDROID
 
-#if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+#if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 
 #if UNITY_STANDALONE_WIN
