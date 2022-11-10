@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 문자열 테이블 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 종료 팝업
 	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
@@ -113,7 +114,8 @@ public static partial class KCDefine {
 }
 
 /** 문자열 테이블 상수 - 에디터 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 에디터 종료 팝업
 	public const string ST_KEY_EDITOR_QUIT_P_MSG = "EDITOR_QUIT_P_MSG";
