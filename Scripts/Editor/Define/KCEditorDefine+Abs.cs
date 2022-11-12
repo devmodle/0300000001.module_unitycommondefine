@@ -41,6 +41,7 @@ public static partial class KCEditorDefine {
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
 
 	// 형식
+	public const string B_DIR_N_FMT = "99.{0}/";
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
 
 	// 버전
