@@ -5,8 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 로그 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 	// 식별자 {
 	public const string L_LOG_KEY_USER_ID = "UserID";
