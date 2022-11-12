@@ -452,7 +452,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TMP_LOCALIZE_TEXT = "TMP_LOCALIZE_TEXT";
 
 	public const string U_OBJ_N_IMG = "IMG";
-	public const string U_OBJ_N_RAW_IMG = "RAW_IMG";
+	public const string U_OBJ_N_MASK_IMG = "MASK_IMG";
 	public const string U_OBJ_N_FOCUS_IMG = "FOCUS_IMG";
 	public const string U_OBJ_N_GAUGE_IMG = "GAUGE_IMG";
 
@@ -733,7 +733,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_TMP_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Button/TextMeshPro/U_TMPLocalizeTextScaleBtn";
 
 	public static readonly string U_OBJ_P_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Image/U_Img";
-	public static readonly string U_OBJ_P_RAW_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Image/U_RawImg";
+	public static readonly string U_OBJ_P_MASK_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Image/U_MaskImg";
 	public static readonly string U_OBJ_P_FOCUS_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Image/U_FocusImg";
 	public static readonly string U_OBJ_P_GAUGE_IMG = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Image/U_GaugeImg";
 
@@ -762,6 +762,11 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_SCROLL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/ScrollView/U_ScrollView";
 	public static readonly string U_OBJ_P_RECYCLE_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/ScrollView/U_RecycleView";
 
+	public static readonly string U_OBJ_P_DRAG_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_DragResponder";
+	public static readonly string U_OBJ_P_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_TouchResponder";
+	public static readonly string U_OBJ_P_INDICATOR_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_IndicatorTouchResponder";
+	public static readonly string U_OBJ_P_SCREEN_FADE_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_ScreenFadeTouchResponder";
+
 	public static readonly string U_OBJ_P_SPRITE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}2D/U_Sprite";
 	public static readonly string U_OBJ_P_LINE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_LineFX";
 	public static readonly string U_OBJ_P_PARTICLE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_ParticleFX";
@@ -769,11 +774,12 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_REFLECTION_PROBE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_ReflectionProbe";
 	public static readonly string U_OBJ_P_LIGHT_PROBE_GROUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_LightProbeGroup";
 
+	public static readonly string U_OBJ_P_BG_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}Sound/U_BGSnd";
+	public static readonly string U_OBJ_P_FX_SNDS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}Sound/U_FXSnds";
+
 	public static readonly string U_OBJ_P_G_INFO_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_InfoText";
 	public static readonly string U_OBJ_P_G_BACK_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_BackBtn";
 	public static readonly string U_OBJ_P_G_MESH = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_Mesh";
-	public static readonly string U_OBJ_P_G_BG_SND = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}Sound/G_BGSnd";
-	public static readonly string U_OBJ_P_G_FX_SNDS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}Sound/G_FXSnds";
 
 	public static readonly string U_OBJ_P_G_ALERT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_AlertPopup";
 	public static readonly string U_OBJ_P_G_STORE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_StorePopup";
@@ -792,11 +798,6 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_PRODUCT_BUY_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ProductBuyPopup";
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
-
-	public static readonly string U_OBJ_P_G_DRAG_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}UI/Responder/G_DragResponder";
-	public static readonly string U_OBJ_P_G_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}UI/Responder/G_TouchResponder";
-	public static readonly string U_OBJ_P_G_INDICATOR_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}UI/Responder/G_IndicatorTouchResponder";
-	public static readonly string U_OBJ_P_G_SCREEN_FADE_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}UI/Responder/G_ScreenFadeTouchResponder";
 
 	public static readonly string U_ASSET_P_G_NORM_QUALITY_UNIVERSAL_RP = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityUniversalRPAsset";
 	public static readonly string U_ASSET_P_G_HIGH_QUALITY_UNIVERSAL_RP = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityUniversalRPAsset";
