@@ -6,7 +6,8 @@ using UnityEngine.Events;
 
 #if UNITY_EDITOR || UNITY_STANDALONE
 /** 에디터 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 이름
 	public const string E_OBJ_N_EDITOR_INPUT_POPUP = "EDITOR_INPUT_POPUP";
@@ -19,7 +20,8 @@ public static partial class KCDefine {
 }
 
 /** 레벨 에디터 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 형식
 	public const string LES_TEXT_FMT_LEVEL = "레벨 {0:0000}";

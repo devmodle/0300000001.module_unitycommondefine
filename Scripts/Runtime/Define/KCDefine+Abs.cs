@@ -6,7 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 기본 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 값 {
 	public const int B_VAL_0_INT = 0;
@@ -600,7 +601,8 @@ public static partial class KCDefine {
 	// 위치 }
 
 	// 토큰 {
-	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_KOREAN = new Dictionary<string, decimal>() {
+	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_KOREAN = new Dictionary<string, decimal>()
+	{
 		["만"] = 10000m,
 		["억"] = 100000000m,
 		["조"] = 1000000000000m,
@@ -610,7 +612,8 @@ public static partial class KCDefine {
 		["양"] = 10000000000000000000000000000m
 	};
 
-	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_ENGLISH = new Dictionary<string, decimal>() {
+	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_ENGLISH = new Dictionary<string, decimal>()
+	{
 		["K"] = 1000m,
 		["M"] = 1000000m,
 		["B"] = 1000000000m,
