@@ -22,8 +22,7 @@ using Unity.Notifications.Android;
 #endif            // #if NOTI_MODULE_ENABLE                                   
 
 /** 유틸리티 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 	// 개수 {
 	public const int U_MAX_NUM_LAYERS = 32;
@@ -702,8 +701,7 @@ public static partial class KCDefine
 	};
 
 	// 정렬 순서
-	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo()
-	{
+	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = KCDefine.U_SORTING_O_UIS,
 		m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
@@ -1307,8 +1305,7 @@ public static partial class KCDefine
 }
 
 /** 초기화 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 
 	#endregion           // 기본               
@@ -1321,8 +1318,7 @@ public static partial class KCDefine
 }
 
 /** 시작 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 	// 이름
 	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
@@ -1336,8 +1332,7 @@ public static partial class KCDefine
 }
 
 /** 설정 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 	// 이름
 	public const string SS_OBJ_N_TIMER_MANAGER = "TimerManager";
@@ -1353,8 +1348,7 @@ public static partial class KCDefine
 }
 
 /** 약관 동의 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 	// 약관 동의 팝업
 	public const string AS_OBJ_N_AGREE_POPUP = "AgreePopup";
@@ -1372,8 +1366,7 @@ public static partial class KCDefine
 }
 
 /** 지연 설정 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 	// 추적 설명 팝업
 	public const string LSS_OBJ_N_TRACKING_DESC_POPUP = "TrackingDescPopup";
@@ -1386,16 +1379,14 @@ public static partial class KCDefine
 }
 
 /** 타이틀 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 
 	#endregion            // 기본               
 }
 
 /** 메인 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 	// AB 테스트 UI
 	public const string MS_OBJ_N_AB_T_UIS_SET_UIS = "SET_UIS";
@@ -1410,24 +1401,21 @@ public static partial class KCDefine
 }
 
 /** 게임 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 
 	#endregion            // 기본               
 }
 
 /** 로딩 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 
 	#endregion            // 기본               
 }
 
 /** 중첩 씬 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 
 	#endregion            // 기본               
