@@ -5,8 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 값 테이블 상수 */
-public static partial class KCDefine
-{
+public static partial class KCDefine {
 	#region 기본
 	// 광고
 	public const string VT_KEY_DELAY_ADS = "DELAY_ADS";
