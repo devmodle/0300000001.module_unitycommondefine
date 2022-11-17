@@ -78,9 +78,7 @@ public struct STIDInfo {
 
 	#region 상수
 	public static readonly STIDInfo INVALID = new STIDInfo() {
-		m_nID01 = KCDefine.B_IDX_INVALID,
-		m_nID02 = KCDefine.B_IDX_INVALID,
-		m_nID03 = KCDefine.B_IDX_INVALID
+		m_nID01 = KCDefine.B_IDX_INVALID, m_nID02 = KCDefine.B_IDX_INVALID, m_nID03 = KCDefine.B_IDX_INVALID
 	};
 	#endregion            // 상수               
 
@@ -132,9 +130,7 @@ public struct STIdxInfo : System.IEquatable<STIdxInfo> {
 
 	#region 상수
 	public static readonly STIdxInfo INVALID = new STIdxInfo() {
-		m_nIdx01 = KCDefine.B_IDX_INVALID,
-		m_nIdx02 = KCDefine.B_IDX_INVALID,
-		m_nIdx03 = KCDefine.B_IDX_INVALID
+		m_nIdx01 = KCDefine.B_IDX_INVALID, m_nIdx02 = KCDefine.B_IDX_INVALID, m_nIdx03 = KCDefine.B_IDX_INVALID
 	};
 	#endregion            // 상수               
 
