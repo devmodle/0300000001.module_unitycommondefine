@@ -109,7 +109,7 @@ public static partial class KCDefine {
 	public const string ST_KEY_C_STAGE_PAGE_TEXT_FMT = "C_STAGE_PAGE_TEXT_FMT";
 	public const string ST_KEY_C_CHAPTER_PAGE_TEXT_FMT = "C_CHAPTER_PAGE_TEXT_FMT";
 	// 공용 }
-	#endregion           // 기본               
+	#endregion // 기본               
 }
 
 /** 문자열 테이블 상수 - 에디터 */
@@ -138,5 +138,5 @@ public static partial class KCDefine {
 
 	// 에디터 챕터 제거 팝업
 	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
-	#endregion         // 기본               
+	#endregion // 기본               
 }
