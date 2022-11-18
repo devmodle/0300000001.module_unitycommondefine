@@ -84,7 +84,7 @@ public static partial class KCDefine {
 #else
 	public const float B_UNIT_SCALE = 1.0f;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 0.01f;
-#endif            // #if UNIT_SCALE_CORRECT_ENABLE                                  
+#endif // #if UNIT_SCALE_CORRECT_ENABLE                                  
 	// 단위 }
 
 	// 빌드 번호
@@ -152,7 +152,7 @@ public static partial class KCDefine {
 	public const int B_SCREEN_WIDTH = KCDefine.B_LANDSCAPE_SCREEN_WIDTH;
 	public const int B_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_SCREEN_HEIGHT;
 	public const int B_DPI_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_DPI_SCREEN_HEIGHT;
-#endif            // #if MODE_PORTRAIT_ENABLE                                     
+#endif // #if MODE_PORTRAIT_ENABLE                                     
 
 	public const float B_DEF_SCREEN_DPI = 160.0f;
 	public const float B_PLATFORM_SCREEN_DPI = 480.0f;
@@ -539,7 +539,7 @@ public static partial class KCDefine {
 
 	// 메일
 	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: {1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nDeviceID: {7}\n\nPlease enter your inquiry:\n{8}";
-	#endregion         // 기본               
+	#endregion // 기본               
 
 	#region 런타임 상수
 	// 씬 이름
@@ -633,7 +633,7 @@ public static partial class KCDefine {
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
 #else
 	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/PersistentDatas/";
-#endif            // #if UNITY_IOS || UNITY_ANDROID
+#endif // #if UNITY_IOS || UNITY_ANDROID
 
 #if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
@@ -642,11 +642,11 @@ public static partial class KCDefine {
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
 #else
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
-#endif          // #if UNITY_STANDALONE_WIN
+#endif // #if UNITY_STANDALONE_WIN
 #else
 	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
 	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
-#endif          // #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 경로 }
-	#endregion          // 런타임 상수                   
+	#endregion // 런타임 상수                   
 }
