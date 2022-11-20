@@ -70,6 +70,7 @@ public static partial class KCDefine {
 
 	public const float U_SCALE_TOUCH = 1.05f;
 	public const float U_SCALE_PAGE_SCROLL = 0.35f;
+	public const float U_SCALE_INDICATOR_IMG = 0.25f;
 	// 비율 }
 
 	// 시간 {
