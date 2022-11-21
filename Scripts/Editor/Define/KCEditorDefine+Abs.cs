@@ -329,7 +329,10 @@ public static partial class KCEditorDefine {
 	// 객체 이름 에디터 윈도우 }
 
 	// 패키지
-	public const string B_NAME_APPLE_AUTH_PKGS = "AppleAuth-1.4.2";
+	public const string B_NAME_DOTWEEN_PRO_PKGS = "DOTweenPro-v1.0.335";
+	public const string B_NAME_APPLE_SIGN_IN_PKGS = "AppleSignInUnity-v1.4.2";
+	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.9.6";
+	public const string B_NAME_ODIN_INSPECTOR_PKGS = "OdinInspectorAndSerializer-v3.1.7";
 
 	// 알림
 	public const string B_TEXT_NOTI_PROJ_PROPERTIES = "android.library=true";
@@ -427,7 +430,10 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_ANDROID_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}Android/";
 	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}UnityPackages/";
 
-	public static readonly string B_ABS_PKGS_P_APPLE_AUTH = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_AUTH_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_DOTWEEN_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_DOTWEEN_PRO_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_APPLE_SIGN_IN = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_SIGN_IN_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_BUILD_REPORT_TOOL_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_PKGS}.unitypackage";
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
 	public static readonly string B_ASSET_P_MENU_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Scenes/{KCDefine.B_SCENE_N_MENU_SAMPLE}.unity";
