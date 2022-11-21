@@ -394,8 +394,7 @@ public struct STAdsRewardInfo {
 
 	#region 상수
 	public static readonly STAdsRewardInfo INVALID = new STAdsRewardInfo() {
-		m_oID = string.Empty,
-		m_oVal = string.Empty
+		m_oID = string.Empty, m_oVal = string.Empty
 	};
 	#endregion // 상수               
 }
