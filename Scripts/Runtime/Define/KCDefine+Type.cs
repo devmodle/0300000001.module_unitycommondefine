@@ -322,6 +322,22 @@ public struct STTimeInfo {
 	#endregion // 조건부 함수                   
 }
 
+/** 구글 시트 테이블 정보 */
+public struct STGoogleSheetTableInfo {
+	public string m_oID;
+	public string m_oTableName;
+	public Dictionary<System.Type, Dictionary<string, string>> m_oTableInfoDictContainer;
+
+	#region 함수
+	/** 생성자 */
+	public STGoogleSheetTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oTableInfoDictContainer = null) {
+		m_oID = a_oID;
+		m_oTableName = a_oTableName;
+		m_oTableInfoDictContainer = a_oTableInfoDictContainer ?? new Dictionary<System.Type, Dictionary<string, string>>();
+	}
+	#endregion // 함수
+}
+
 /** 공용 타입 래퍼 */
 [MessagePackObject]
 public struct STCommonTypeWrapper {
@@ -488,22 +504,6 @@ public struct STSaveGoogleSheetInfo {
 		m_oSheetInfoListContainer = a_oSheetInfoListContainer ?? new List<(string, List<List<string>>)>();
 	}
 	#endregion // 함수               
-}
-
-/** 구글 시트 테이블 정보 */
-public struct STGoogleSheetTableInfo {
-	public string m_oID;
-	public string m_oTableName;
-	public Dictionary<System.Type, Dictionary<string, string>> m_oTableInfoDictContainer;
-
-	#region 함수
-	/** 생성자 */
-	public STGoogleSheetTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oTableInfoDictContainer = null) {
-		m_oID = a_oID;
-		m_oTableName = a_oTableName;
-		m_oTableInfoDictContainer = a_oTableInfoDictContainer ?? new Dictionary<System.Type, Dictionary<string, string>>();
-	}
-	#endregion // 함수
 }
 #endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
 #endregion // 조건부 타입                   
