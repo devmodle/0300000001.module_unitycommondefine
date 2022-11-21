@@ -637,9 +637,9 @@ public static partial class KCDefine {
 	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = "OKBtnText";
 	public const string U_KEY_UNITY_MS_ALERT_CANCEL_BTN_TEXT = "CancelBtnText";
 
-	public const string U_KEY_UNITY_MS_MAIL_RECIPIENT = "Recipient";
 	public const string U_KEY_UNITY_MS_MAIL_TITLE = "Title";
 	public const string U_KEY_UNITY_MS_MAIL_MSG = "Msg";
+	public const string U_KEY_UNITY_MS_MAIL_RECIPIENT = "Recipient";
 
 	public const string U_KEY_UNITY_MS_VIBRATE_TYPE = "Type";
 	public const string U_KEY_UNITY_MS_VIBRATE_STYLE = "Style";
