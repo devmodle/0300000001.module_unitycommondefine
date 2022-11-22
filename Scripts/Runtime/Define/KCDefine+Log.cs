@@ -29,5 +29,5 @@ public static partial class KCDefine {
 	public const string L_LOG_KEY_PARAMS_08 = "Params_08";
 	public const string L_LOG_KEY_PARAMS_09 = "Params_09";
 	// 식별자 }
-	#endregion // 기본               
+	#endregion // 기본
 }

@@ -20,5 +20,5 @@ public static partial class KCDefine {
 	public const string VT_KEY_MOBILE_TARGET_FRAME_RATE = "MOBILE_TARGET_FRAME_RATE";
 	public const string VT_KEY_DESKTOP_TARGET_FRAME_RATE = "DESKTOP_TARGET_FRAME_RATE";
 	// 디바이스 }
-	#endregion // 기본               
+	#endregion // 기본
 }
