@@ -10,7 +10,7 @@ using MessagePack;
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 using GoogleSheetsToUnity;
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 
 #region 기본
 /** 상태 갱신 인터페이스 */
@@ -116,7 +116,7 @@ public struct STIDInfo {
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_2_INT)] = $"{m_nID02}";
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_3_INT)] = $"{m_nID03}";
 	}
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
+#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 함수
 }
 
@@ -249,7 +249,7 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{(int)m_eValType}";
 		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = (m_eValType == EValType.INT) ? $"{m_dmVal:0}" : $"{m_dmVal:0.0}";
 	}
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
+#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 함수
 }
 
@@ -290,7 +290,7 @@ public struct STCommonInfo {
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
 	}
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
+#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 함수
 }
 
@@ -318,7 +318,7 @@ public struct STTimeInfo {
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = $"{m_fDuration:0.0}";
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT] = $"{m_fDeltaTime:0.0}";
 	}
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                    
+#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 함수
 }
 
@@ -518,5 +518,5 @@ public struct STSaveGoogleSheetInfo {
 	}
 	#endregion // 함수
 }
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 #endregion // 조건부 타입

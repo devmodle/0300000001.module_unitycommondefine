@@ -968,7 +968,7 @@ public static partial class KCDefine {
 	public static readonly string U_IMG_P_SCREENSHOT = $"{Application.identifier}/Screenshot.png";
 #else
 	public static readonly string U_IMG_P_SCREENSHOT = $"{KCDefine.B_DIR_P_WRITABLE}Screenshot.png";
-#endif // #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)                                                              
+#endif // #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 
 	public static readonly List<string> U_ASSET_P_SPRITE_ATLAS_LIST = new List<string>() {
 		KCDefine.U_ASSET_P_SPRITE_ATLAS_01, KCDefine.U_ASSET_P_SPRITE_ATLAS_02, KCDefine.U_ASSET_P_SPRITE_ATLAS_03, KCDefine.U_ASSET_P_SPRITE_ATLAS_04, KCDefine.U_ASSET_P_SPRITE_ATLAS_05, KCDefine.U_ASSET_P_SPRITE_ATLAS_06, KCDefine.U_ASSET_P_SPRITE_ATLAS_07, KCDefine.U_ASSET_P_SPRITE_ATLAS_08, KCDefine.U_ASSET_P_SPRITE_ATLAS_09,
@@ -1249,7 +1249,7 @@ public static partial class KCDefine {
 	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "B";
 	public const string U_COL_N_GOOGLE_SHEET_DEST = "BZ";
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 상수
 
 	#region 조건부 런타임 상수
@@ -1302,7 +1302,7 @@ public static partial class KCDefine {
 	// 이름
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_SRC = $"{KCDefine.U_COL_N_GOOGLE_SHEET_SRC}{"{0}"}";
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_DEST = $"{KCDefine.U_COL_N_GOOGLE_SHEET_DEST}{"{0}"}";
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)                                                                                                          
+#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 런타임 상수
 }
 
