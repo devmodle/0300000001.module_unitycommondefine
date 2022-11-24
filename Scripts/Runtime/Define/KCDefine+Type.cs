@@ -322,6 +322,20 @@ public struct STTimeInfo {
 	#endregion // 조건부 함수
 }
 
+/** 키 정보 */
+public struct STKeyInfo {
+	public string m_oKey;
+	public EKeyType m_eKeyType;
+
+	#region 함수
+	/** 생성자 */
+	public STKeyInfo(string a_oKey, EKeyType a_eKeyType) {
+		m_oKey = a_oKey;
+		m_eKeyType = a_eKeyType;
+	}
+	#endregion			// 함수
+}
+
 /** 구글 시트 테이블 정보 */
 public struct STGoogleSheetTableInfo {
 	public string m_oID;

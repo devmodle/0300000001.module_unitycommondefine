@@ -323,6 +323,14 @@ public enum EStartSceneEvent {
 	[HideInInspector] MAX_VAL
 }
 
+/** 키 타입 */
+public enum EKeyType {
+	NONE = -1,
+	MULTI,
+	SINGLE,
+	[HideInInspector] MAX_VAL
+}
+
 /** 값 타입 */
 public enum EValType {
 	NONE = -1,
