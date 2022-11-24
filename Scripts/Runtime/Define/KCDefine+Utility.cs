@@ -138,6 +138,12 @@ public static partial class KCDefine {
 	public const string U_KEY_RES_PATH = "ResPath";
 	public const string U_KEY_REWARD_QUALITY = "RewardQuality";
 
+	public const string U_KEY_NOEX_T = "NOEX_T";
+	public const string U_KEY_NOEX_ST = "NOEX_ST";
+	public const string U_KEY_NOEX_KT = "NOEX_KT";
+	public const string U_KEY_NOEX_SKT = "NOEX_SKT";
+	public const string U_KEY_NOEX_DSKT = "NOEX_DSKT";
+
 	public const string U_KEY_FX = "FX";
 	public const string U_KEY_CALC = "Calc";
 	public const string U_KEY_TUTORIAL = "Tutorial";
