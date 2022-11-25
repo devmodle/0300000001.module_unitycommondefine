@@ -333,21 +333,24 @@ public struct STKeyInfo {
 		m_oKey = a_oKey;
 		m_eKeyType = a_eKeyType;
 	}
-	#endregion			// 함수
+	#endregion // 함수
 }
-
 /** 구글 시트 테이블 정보 */
 public struct STGoogleSheetTableInfo {
 	public string m_oID;
 	public string m_oTableName;
-	public Dictionary<System.Type, Dictionary<string, string>> m_oTableInfoDictContainer;
+	public Dictionary<System.Type, Dictionary<string, string>> m_oSheetNameDictContainer;
+	public Dictionary<System.Type, Dictionary<string, List<string>>> m_oExtraSheetNameDictContainer;
+	public Dictionary<System.Type, Dictionary<string, List<STKeyInfo>>> m_oKeyInfoDictContainer;
 
 	#region 함수
 	/** 생성자 */
-	public STGoogleSheetTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oTableInfoDictContainer = null) {
+	public STGoogleSheetTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<string>>> a_oExtraSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<STKeyInfo>>> a_oKeyInfoDictContainer = null) {
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
-		m_oTableInfoDictContainer = a_oTableInfoDictContainer ?? new Dictionary<System.Type, Dictionary<string, string>>();
+		m_oSheetNameDictContainer = a_oSheetNameDictContainer ?? new Dictionary<System.Type, Dictionary<string, string>>();
+		m_oExtraSheetNameDictContainer = a_oExtraSheetNameDictContainer ?? new Dictionary<System.Type, Dictionary<string, List<string>>>();
+		m_oKeyInfoDictContainer = a_oKeyInfoDictContainer ?? new Dictionary<System.Type, Dictionary<string, List<STKeyInfo>>>();
 	}
 	#endregion // 함수
 }
