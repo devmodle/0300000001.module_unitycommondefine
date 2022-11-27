@@ -335,8 +335,9 @@ public struct STKeyInfo {
 	}
 	#endregion // 함수
 }
-/** 구글 시트 테이블 정보 */
-public struct STGoogleSheetTableInfo {
+
+/** 테이블 정보 */
+public struct STTableInfo {
 	public string m_oID;
 	public string m_oTableName;
 	public Dictionary<System.Type, Dictionary<string, string>> m_oSheetNameDictContainer;
@@ -345,7 +346,7 @@ public struct STGoogleSheetTableInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STGoogleSheetTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<string>>> a_oExtraSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<STKeyInfo>>> a_oKeyInfoDictContainer = null) {
+	public STTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<string>>> a_oExtraSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<STKeyInfo>>> a_oKeyInfoDictContainer = null) {
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
 		m_oSheetNameDictContainer = a_oSheetNameDictContainer ?? new Dictionary<System.Type, Dictionary<string, string>>();
