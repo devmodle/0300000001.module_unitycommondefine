@@ -285,7 +285,8 @@ public static partial class KCDefine {
 	public const string B_TOKEN_SPACE = " ";
 	public const string B_TOKEN_CROSS = "x";
 	public const string B_TOKEN_SLASH = "/";
-	public const string B_TOKEN_REV_SLASH = "\\";
+	public const string B_TOKEN_R_SLASH = "\\";
+	public const string B_TOKEN_D_QUOTES = "\"";
 	public const string B_TOKEN_O_BRACKETS = "[";
 	public const string B_TOKEN_C_BRACKETS = "]";
 
