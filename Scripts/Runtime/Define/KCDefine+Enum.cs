@@ -165,6 +165,7 @@ public enum EAnalytics {
 	FLURRY,
 	FIREBASE,
 	APPS_FLYER,
+	PLAYFAB,
 	[HideInInspector] MAX_VAL
 }
 
