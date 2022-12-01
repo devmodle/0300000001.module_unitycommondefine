@@ -209,7 +209,7 @@ public static partial class KCEditorDefine {
 	// 독립 플랫폼 }
 
 	// 젠킨스 {
-	public const string B_KEY_JENKINS_PROJ_PART = "ProjPart";
+	public const string B_KEY_JENKINS_PROJ_ROOT = "ProjRoot";
 	public const string B_KEY_JENKINS_MODULE_VER = "ModuleVer";
 	public const string B_KEY_JENKINS_BRANCH = "Branch";
 	public const string B_KEY_JENKINS_SRC = "Src";
