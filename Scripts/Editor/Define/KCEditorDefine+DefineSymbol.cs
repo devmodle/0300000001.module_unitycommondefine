@@ -128,7 +128,6 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_PLAY_TEST_ENABLE = "PLAY_TEST_ENABLE";
 	public const string DS_DEFINE_S_LOCALIZE_TEST_ENABLE = "LOCALIZE_TEST_ENABLE";
 	public const string DS_DEFINE_S_ANALYTICS_TEST_ENABLE = "ANALYTICS_TEST_ENABLE";
-	public const string DS_DEFINE_S_PERFORMANCE_TEST_ENABLE = "PERFORMANCE_TEST_ENABLE";
 
 	public const string DS_DEFINE_S_AB_TEST_A_ENABLE = "AB_TEST_A_ENABLE";
 	public const string DS_DEFINE_S_AB_TEST_B_ENABLE = "AB_TEST_B_ENABLE";
