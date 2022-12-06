@@ -210,6 +210,16 @@ public enum EDirection {
 	[HideInInspector] MAX_VAL
 }
 
+/** 반전 */
+public enum EReflection {
+	NONE = -1,
+	IGNORE,
+	VERTICAL,
+	HORIZONTAL,
+	VERTICAL_HORIZONTAL,
+	[HideInInspector] MAX_VAL
+}
+
 /** 투영 */
 public enum EProjection {
 	NONE = -1,
