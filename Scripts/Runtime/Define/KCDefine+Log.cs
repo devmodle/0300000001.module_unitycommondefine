@@ -15,6 +15,7 @@ public static partial class KCDefine {
 	public const string L_LOG_KEY_DEVICE_ID = "DeviceID";
 	public const string L_LOG_KEY_USER_TYPE = "UserType";
 
+	public const string L_LOG_KEY_LOG_NAME = "LogName";
 	public const string L_LOG_KEY_LOG_TIME = "LogTime";
 	public const string L_LOG_KEY_INSTALL_TIME = "InstallTime";
 	public const string L_LOG_KEY_SHORT_LOG_TIME = "ShortLogTime";
