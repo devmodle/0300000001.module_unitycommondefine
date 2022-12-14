@@ -238,26 +238,26 @@ public static partial class KCDefine {
 	// 이름 }
 
 	// 씬 이름 {
-	public const string B_SCENE_N_SAMPLE = "00.SampleScene";
-	public const string B_SCENE_N_MENU_SAMPLE = "10.MenuSampleScene";
-	public const string B_SCENE_N_STUDY_SAMPLE = "11.StudySampleScene";
-	public const string B_SCENE_N_EDITOR_SAMPLE = "01.EditorSampleScene";
+	public const string B_SCENE_N_SAMPLE = "00-SampleScene";
+	public const string B_SCENE_N_MENU_SAMPLE = "10-MenuSampleScene";
+	public const string B_SCENE_N_STUDY_SAMPLE = "11-StudySampleScene";
+	public const string B_SCENE_N_EDITOR_SAMPLE = "01-EditorSampleScene";
 
-	public const string B_SCENE_N_INIT = "00.InitScene";
-	public const string B_SCENE_N_START = "00.StartScene";
-	public const string B_SCENE_N_SETUP = "01.SetupScene";
-	public const string B_SCENE_N_AGREE = "01.AgreeScene";
-	public const string B_SCENE_N_LATE_SETUP = "01.LateSetupScene";
+	public const string B_SCENE_N_INIT = "00-InitScene";
+	public const string B_SCENE_N_START = "00-StartScene";
+	public const string B_SCENE_N_SETUP = "01-SetupScene";
+	public const string B_SCENE_N_AGREE = "01-AgreeScene";
+	public const string B_SCENE_N_LATE_SETUP = "01-LateSetupScene";
 
-	public const string B_SCENE_N_TITLE = "01.TitleScene";
-	public const string B_SCENE_N_MAIN = "02.MainScene";
-	public const string B_SCENE_N_GAME = "03.GameScene";
-	public const string B_SCENE_N_LOADING = "91.LoadingScene";
-	public const string B_SCENE_N_OVERLAY = "92.OverlayScene";
+	public const string B_SCENE_N_TITLE = "01-TitleScene";
+	public const string B_SCENE_N_MAIN = "02-MainScene";
+	public const string B_SCENE_N_GAME = "03-GameScene";
+	public const string B_SCENE_N_LOADING = "91-LoadingScene";
+	public const string B_SCENE_N_OVERLAY = "92-OverlayScene";
 
-	public const string B_SCENE_N_MENU = "02.MenuScene";
-	public const string B_SCENE_N_TEST = "99.TestScene";
-	public const string B_SCENE_N_LEVEL_EDITOR = "91.LevelEditorScene";
+	public const string B_SCENE_N_MENU = "02-MenuScene";
+	public const string B_SCENE_N_TEST = "99-TestScene";
+	public const string B_SCENE_N_LEVEL_EDITOR = "91-LevelEditorScene";
 	// 씬 이름 }
 
 	// 식별자 {
