@@ -449,6 +449,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SYNC_BTN = "SYNC_BTN";
 	public const string U_OBJ_N_LOCALIZE_BTN = "LOCALIZE_BTN";
 
+	public const string U_OBJ_N_POPUP = "POPUP";
 	public const string U_OBJ_N_GAME_OBJ = "GAME_OBJ";
 	public const string U_OBJ_N_ALERT_POPUP = "ALERT_POPUP";
 
@@ -788,6 +789,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_BACK_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_BackBtn";
 	public static readonly string U_OBJ_P_G_MESH = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}G_Mesh";
 
+	public static readonly string U_OBJ_P_G_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_Popup";
 	public static readonly string U_OBJ_P_G_ALERT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_AlertPopup";
 	public static readonly string U_OBJ_P_G_STORE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_StorePopup";
 	public static readonly string U_OBJ_P_G_SETTINGS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_SettingsPopup";

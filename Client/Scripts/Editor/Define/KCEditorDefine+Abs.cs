@@ -984,6 +984,7 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/UI/Popup/T_PortraitAgreePopup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.AS_OBJ_P_PORTRAIT_AGREE_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/UI/Popup/T_LandscapeAgreePopup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.AS_OBJ_P_LANDSCAPE_AGREE_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/UI/Popup/T_TrackingDescPopup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.LSS_OBJ_P_TRACKING_DESC_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_G_POPUP}.prefab"),
 
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/Sound/T_BGSnd.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_BG_SND}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/Sound/T_FXSnds.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_FX_SNDS}.prefab"),
