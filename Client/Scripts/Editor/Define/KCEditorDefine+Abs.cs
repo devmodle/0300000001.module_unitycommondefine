@@ -8,6 +8,7 @@ using UnityEngine.Events;
 using System.IO;
 using UnityEngine.Rendering;
 using UnityEditor;
+using UnityEditor.Build;
 
 #if NOTI_MODULE_ENABLE
 using Unity.Notifications.iOS;
@@ -232,13 +233,11 @@ public static partial class KCEditorDefine {
 	public const string B_PROJ_PLATFORM_N_IPHONE = "iPhone";
 	public const string B_PROJ_PLATFORM_N_ANDROID = "Android";
 	public const string B_PROJ_PLATFORM_N_STANDALONE = "Standalone";
+
 	public const string B_PROJ_PLATFORM_N_STANDALONE_MAC = "OSXUniversal";
 	public const string B_PROJ_PLATFORM_N_STANDALONE_WNDS = "Win64";
 
-	public const string B_ASSET_IMPORTER_PLATFORM_N_DEF = "DefaultTexturePlatform";
-	public const string B_ASSET_IMPORTER_PLATFORM_N_IOS = "iPhone";
-	public const string B_ASSET_IMPORTER_PLATFORM_N_ANDROID = "Android";
-	public const string B_ASSET_IMPORTER_PLATFORM_N_STANDALONE = "Standalone";
+	public const string B_TEX_IMPORTER_PLATFORM_N_DEF = "DefaultTexturePlatform";
 
 	public const string B_BUILD_CMD_FMT_JENKINS = "curl -X POST {0} --user {1}:{2} --data token={3}";
 	public const string B_BUILD_DATA_FMT_JENKINS = "--data {0}={1}";
@@ -365,6 +364,10 @@ public static partial class KCEditorDefine {
 
 	public static readonly List<string> B_OBJ_N_SCENE_EDITOR_CAMERA_LIST = new List<string>() {
 		"SceneCamera", "Main Camera", "Preview Camera", "Preview Scene Camera"
+	};
+
+	public static readonly List<string> B_NAMED_BUILD_TARGET_LIST = new List<string>() {
+		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
 	};
 
 	public static readonly Dictionary<string, string> B_DIR_N_SCENE_DICT = new Dictionary<string, string>() {
@@ -506,6 +509,18 @@ public static partial class KCEditorDefine {
 	public static readonly List<string> B_SEARCH_P_SPRITE_ATLAS_LIST = new List<string>() {
 		$"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}",
 		$"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}"
+	};
+
+	public static readonly List<LogType> B_LOG_TYPE_LIST = new List<LogType>() {
+		LogType.Log, LogType.Warning, LogType.Error, LogType.Assert, LogType.Exception
+	};
+
+	public static readonly List<BuildTarget> B_BUILD_TARGET_LIST = new List<BuildTarget>() {
+		BuildTarget.iOS, BuildTarget.Android, BuildTarget.StandaloneOSX, BuildTarget.StandaloneWindows, BuildTarget.StandaloneWindows64
+	};
+
+	public static readonly List<BuildTargetGroup> B_BUILD_TARGET_GROUP_LIST = new List<BuildTargetGroup>() {
+		BuildTargetGroup.iOS, BuildTargetGroup.Android, BuildTargetGroup.Standalone
 	};
 
 	public static readonly List<TextureImporterType> B_ENABLE_SRGB_TEX_TYPE_LIST = new List<TextureImporterType>() {
@@ -1303,11 +1318,11 @@ public static partial class KCEditorDefine {
 
 	// 에셋 추가자 {
 	public static List<string> B_AUDIO_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
-		KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_IOS, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_ANDROID, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_STANDALONE
+		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
 	};
 
 	public static List<string> B_TEX_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
-		KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_IOS, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_ANDROID, KCEditorDefine.B_ASSET_IMPORTER_PLATFORM_N_STANDALONE
+		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
 	};
 	// 에셋 추가자 }
 
