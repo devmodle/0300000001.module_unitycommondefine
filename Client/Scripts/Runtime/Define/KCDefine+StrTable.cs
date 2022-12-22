@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,10 +34,6 @@ public static partial class KCDefine {
 	// 시작 씬 관리자
 	public const string ST_KEY_START_SM_LOADING_TEXT = "START_SM_LOADING_TEXT";
 
-	// 메인 씬 관리자
-	public const string ST_KEY_MAIN_SM_A_SET_TEXT = "MAIN_SM_A_SET_TEXT";
-	public const string ST_KEY_MAIN_SM_B_SET_TEXT = "MAIN_SM_B_SET_TEXT";
-
 	// 공용 {
 	public const string ST_KEY_C_ON_LOGIN_MSG = "C_ON_LOGIN_MSG";
 	public const string ST_KEY_C_ON_LOGIN_FAIL_MSG = "C_ON_LOGIN_FAIL_MSG";
@@ -59,6 +55,9 @@ public static partial class KCDefine {
 
 	public const string ST_KEY_C_ON_TABLE_LOAD_MSG = "C_ON_TABLE_LOAD_MSG";
 	public const string ST_KEY_C_ON_TABLE_LOAD_FAIL_MSG = "C_ON_TABLE_LOAD_FAIL_MSG";
+
+	public const string ST_KEY_C_A_SET_TEXT = "C_A_SET_TEXT";
+	public const string ST_KEY_C_B_SET_TEXT = "C_B_SET_TEXT";
 
 	public const string ST_KEY_C_OK_TEXT = "C_OK_TEXT";
 	public const string ST_KEY_C_CANCEL_TEXT = "C_CANCEL_TEXT";
@@ -127,8 +126,11 @@ public static partial class KCDefine {
 	// 에디터 B 세트 팝업
 	public const string ST_KEY_EDITOR_B_SET_P_MSG = "EDITOR_B_SET_P_MSG";
 
-	// 에디터 테이블 로드 팝업
-	public const string ST_KEY_EDITOR_TABLE_LP_MSG = "EDITOR_TABLE_LP_MSG";
+	// 에디터 로컬 테이블 로드 팝업
+	public const string ST_KEY_EDITOR_LOCAL_TLP_MSG = "EDITOR_LOCAL_TLP_MSG";
+
+	// 에디터 원격 테이블 로드 팝업
+	public const string ST_KEY_EDITOR_REMOTE_TLP_MSG = "EDITOR_REMOTE_TLP_MSG";
 
 	// 에디터 레벨 제거 팝업
 	public const string ST_KEY_EDITOR_REMOVE_LP_MSG = "EDITOR_REMOVE_LP_MSG";

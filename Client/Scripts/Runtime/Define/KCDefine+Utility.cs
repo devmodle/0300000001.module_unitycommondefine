@@ -321,6 +321,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_VIEWPORT = "VIEWPORT";
 	public const string U_OBJ_N_CONTENTS = "CONTENTS";
 	public const string U_OBJ_N_CONTENTS_UIS = "CONTENTS_UIS";
+	public const string U_OBJ_N_AB_T_UIS_SET_UIS = "SET_UIS";
 
 	public const string U_OBJ_N_UP_BLIND_IMG = "UP_BLIND_IMG";
 	public const string U_OBJ_N_DOWN_BLIND_IMG = "DOWN_BLIND_IMG";
@@ -1399,8 +1400,7 @@ public static partial class KCDefine {
 /** 메인 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
-	// AB 테스트 UI
-	public const string MS_OBJ_N_AB_T_UIS_SET_UIS = "SET_UIS";
+
 	#endregion // 기본
 
 	#region 런타임 상수
