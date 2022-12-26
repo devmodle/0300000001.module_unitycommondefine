@@ -76,6 +76,11 @@ public static partial class KCEditorDefine {
 	// 커맨드 라인 }
 
 	// 이름 {
+	public const string B_DIR_N_SCENES = "Scenes";
+	public const string B_DIR_N_RESOURCES = "Resources";
+	public const string B_EDITOR_SCENE_N_PATTERN_01 = "EditorMenu";
+	public const string B_EDITOR_SCENE_N_PATTERN_02 = "EditorScene";
+
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
 
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SETTINGS = "com.unity.adaptiveperformance.loader_settings";
@@ -152,6 +157,8 @@ public static partial class KCEditorDefine {
 	public const string B_DIR_P_EDITOR_DEF_RESOURCES = "Editor Default Resources/";
 
 	public const string B_DIR_P_EXPORT_BASE = "Export/";
+	public const string B_DIR_P_EDITOR_SCRIPTS = "Scripts/Editor/";
+	public const string B_DIR_P_RUNTIME_SCRIPTS = "Scripts/Runtime/";
 	// 경로 }
 
 	// iOS {
