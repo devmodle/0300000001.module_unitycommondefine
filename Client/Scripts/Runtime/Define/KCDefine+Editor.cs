@@ -30,20 +30,23 @@ public static partial class KCDefine {
 	public const string LES_OBJ_N_EDITOR_LEVEL_CREATE_POPUP = "EDITOR_LEVEL_CREATE_POPUP";
 
 	// 중앙 에디터 UI
-	public const string LES_OBJ_N_ME_UIS_SAVE_BTN = "SAVE_BTN";
-	public const string LES_OBJ_N_ME_UIS_RESET_BTN = "RESET_BTN";
-	public const string LES_OBJ_N_ME_UIS_TEST_BTN = "TEST_BTN";
-	public const string LES_OBJ_N_ME_UIS_COPY_LEVEL_BTN = "COPY_LEVEL_BTN";
+	public const string LES_OBJ_N_ME_UIS_SAVE_BTN = "ME_UIS_SAVE_BTN";
+	public const string LES_OBJ_N_ME_UIS_RESET_BTN = "ME_UIS_RESET_BTN";
+	public const string LES_OBJ_N_ME_UIS_TEST_BTN = "ME_UIS_TEST_BTN";
+	public const string LES_OBJ_N_ME_UIS_COPY_LEVEL_BTN = "ME_UIS_COPY_LEVEL_BTN";
 
-	// 왼쪽 에디터 UI
-	public const string LES_OBJ_N_LE_UIS_ADD_LEVEL_BTN = "ADD_LEVEL_BTN";
-	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_01 = "STAGE_SCROLL_VIEW_01";
-	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_02 = "STAGE_SCROLL_VIEW_02";
+	// 왼쪽 에디터 UI {
+	public const string LES_OBJ_N_LE_UIS_ADD_LEVEL_BTN = "LE_UIS_ADD_LEVEL_BTN";
+
+	public const string LES_OBJ_N_LE_UIS_LEVEL_SCROLL_VIEW = "LE_UIS_LEVEL_SCROLL_VIEW";
+	public const string LES_OBJ_N_LE_UIS_CHAPTER_SCROLL_VIEW = "LE_UIS_CHAPTER_SCROLL_VIEW";
+
+	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_01 = "LE_UIS_STAGE_SCROLL_VIEW_01";
+	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_02 = "LE_UIS_STAGE_SCROLL_VIEW_02";
+	// 왼쪽 에디터 UI }
 
 	// 오른쪽 에디터 UI
-	public const string LES_OBJ_N_RE_UIS_APPLY_BTN = "APPLY_BTN";
-	public const string LES_OBJ_N_RE_UIS_LOAD_LEVEL_BTN = "LOAD_LEVEL_BTN";
-	public const string LES_OBJ_N_RE_UIS_LOAD_LOCAL_TABLE_BTN = "LOAD_LOCAL_TABLE_BTN";
+	public const string LES_OBJ_N_RE_UIS_PAGE_01_APPLY_BTN = "RE_UIS_PAGE_UIS_01_APPLY_BTN";
 	#endregion // 기본
 
 	#region 런타임 상수
