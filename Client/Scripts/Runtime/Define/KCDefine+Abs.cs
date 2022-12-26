@@ -222,13 +222,7 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_STANDALONE_MAC_STEAM = "StandaloneMacSteam";
 	public const string B_PLATFORM_N_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
 
-	public const string B_DIR_N_SCENES = "Scenes";
-	public const string B_DIR_N_EDITOR = "Editor";
-	public const string B_DIR_N_RUNTIME = "Runtime";
-	public const string B_DIR_N_SCRIPTS = "Scripts";
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
-	public const string B_EDITOR_SCENE_N_PATTERN_01 = "EditorMenu";
-	public const string B_EDITOR_SCENE_N_PATTERN_02 = "EditorScene";
 
 	public const string B_NAME_PATTERN_TEX_FIX_REPEAT_WRAP = "__FIX_RW__";
 	public const string B_NAME_PATTERN_TEX_FIX_POINT_FILTER = "__FIX_PF__";
