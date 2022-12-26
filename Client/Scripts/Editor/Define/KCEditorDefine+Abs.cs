@@ -21,6 +21,7 @@ public static partial class KCEditorDefine {
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
 	// 정렬 순서 {
+	public const int B_SORTING_O_GAME_OBJ_MENU = 0;
 	public const int B_SORTING_O_BUILD_MENU = 10000;
 
 	public const int B_SORTING_O_SETUP_MENU = 20000;
@@ -1316,7 +1317,7 @@ public static partial class KCEditorDefine {
 	};
 	// 알림 }
 
-	// 에셋 추가자 {
+	// 에셋 임포터 {
 	public static List<string> B_AUDIO_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
 		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
 	};
@@ -1324,7 +1325,7 @@ public static partial class KCEditorDefine {
 	public static List<string> B_TEX_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
 		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
 	};
-	// 에셋 추가자 }
+	// 에셋 임포터 }
 
 	// iOS {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
