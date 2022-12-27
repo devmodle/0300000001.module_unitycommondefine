@@ -310,7 +310,7 @@ public static partial class KCEditorDefine {
 	};
 	// 에디터 옵션 }
 
-	// 경고 팝업 {
+	// 알림 팝업 {
 	public const string B_TEXT_ALERT_P_TITLE = "알림";
 	public const string B_TEXT_ALERT_P_OK_BTN = "확인";
 	public const string B_TEXT_ALERT_P_CANCEL_BTN = "취소";
@@ -323,7 +323,7 @@ public static partial class KCEditorDefine {
 	public const string B_MSG_ALERT_P_EXPORT_SPRITE_FAIL = "스프라이트를 선택해주세요.";
 
 	public const string B_MSG_FMT_ALERT_P_MISSING_PREFAB = "프리팹이 소실 된 {0} 객체를 제거하시겠습니까?";
-	// 경고 팝업 }
+	// 알림 팝업 }
 
 	// 객체 이름 에디터 윈도우 {
 	public const string B_TEXT_APPLY = "적용";
