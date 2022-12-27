@@ -34,28 +34,7 @@ public static partial class KCDefine {
 	// 시작 씬 관리자
 	public const string ST_KEY_START_SM_LOADING_TEXT = "START_SM_LOADING_TEXT";
 
-	// 공용 {
-	public const string ST_KEY_C_ON_LOGIN_MSG = "C_ON_LOGIN_MSG";
-	public const string ST_KEY_C_ON_LOGIN_FAIL_MSG = "C_ON_LOGIN_FAIL_MSG";
-
-	public const string ST_KEY_C_ON_LOGOUT_MSG = "C_ON_LOGOUT_MSG";
-	public const string ST_KEY_C_ON_LOGOUT_FAIL_MSG = "C_ON_LOGOUT_FAIL_MSG";
-
-	public const string ST_KEY_C_ON_LOAD_MSG = "C_ON_LOAD_MSG";
-	public const string ST_KEY_C_ON_LOAD_FAIL_MSG = "C_ON_LOAD_FAIL_MSG";
-
-	public const string ST_KEY_C_ON_SAVE_MSG = "C_ON_SAVE_MSG";
-	public const string ST_KEY_C_ON_SAVE_FAIL_MSG = "C_ON_SAVE_FAIL_MSG";
-
-	public const string ST_KEY_C_ON_PURCHASE_MSG = "C_ON_PURCHASE_MSG";
-	public const string ST_KEY_C_ON_PURCHASE_FAIL_MSG = "C_ON_PURCHASE_FAIL_MSG";
-
-	public const string ST_KEY_C_ON_RESTORE_MSG = "C_ON_RESTORE_MSG";
-	public const string ST_KEY_C_ON_RESTORE_FAIL_MSG = "C_ON_RESTORE_FAIL_MSG";
-
-	public const string ST_KEY_C_ON_TABLE_LOAD_MSG = "C_ON_TABLE_LOAD_MSG";
-	public const string ST_KEY_C_ON_TABLE_LOAD_FAIL_MSG = "C_ON_TABLE_LOAD_FAIL_MSG";
-
+	// 공용 텍스트 {
 	public const string ST_KEY_C_A_SET_TEXT = "C_A_SET_TEXT";
 	public const string ST_KEY_C_B_SET_TEXT = "C_B_SET_TEXT";
 
@@ -107,38 +86,32 @@ public static partial class KCDefine {
 	public const string ST_KEY_C_LEVEL_PAGE_TEXT_FMT = "C_LEVEL_PAGE_TEXT_FMT";
 	public const string ST_KEY_C_STAGE_PAGE_TEXT_FMT = "C_STAGE_PAGE_TEXT_FMT";
 	public const string ST_KEY_C_CHAPTER_PAGE_TEXT_FMT = "C_CHAPTER_PAGE_TEXT_FMT";
-	// 공용 }
-	#endregion // 기본
-}
+	// 공용 텍스트 }
 
-/** 문자열 테이블 상수 - 에디터 */
-public static partial class KCDefine {
-	#region 기본
-	// 에디터 종료 팝업
-	public const string ST_KEY_EDITOR_QUIT_P_MSG = "EDITOR_QUIT_P_MSG";
+	// 공용 메세지 {
+	public const string ST_KEY_C_SETUP_A_SET_MSG = "C_SETUP_A_SET_MSG";
+	public const string ST_KEY_C_SETUP_B_SET_MSG = "C_SETUP_B_SET_MSG";
 
-	// 에디터 리셋 팝업
-	public const string ST_KEY_EDITOR_RESET_P_MSG = "EDITOR_RESET_P_MSG";
+	public const string ST_KEY_C_ON_LOGIN_MSG = "C_ON_LOGIN_MSG";
+	public const string ST_KEY_C_ON_LOGIN_FAIL_MSG = "C_ON_LOGIN_FAIL_MSG";
 
-	// 에디터 A 세트 팝업
-	public const string ST_KEY_EDITOR_A_SET_P_MSG = "EDITOR_A_SET_P_MSG";
+	public const string ST_KEY_C_ON_LOGOUT_MSG = "C_ON_LOGOUT_MSG";
+	public const string ST_KEY_C_ON_LOGOUT_FAIL_MSG = "C_ON_LOGOUT_FAIL_MSG";
 
-	// 에디터 B 세트 팝업
-	public const string ST_KEY_EDITOR_B_SET_P_MSG = "EDITOR_B_SET_P_MSG";
+	public const string ST_KEY_C_ON_LOAD_MSG = "C_ON_LOAD_MSG";
+	public const string ST_KEY_C_ON_LOAD_FAIL_MSG = "C_ON_LOAD_FAIL_MSG";
 
-	// 에디터 로컬 테이블 로드 팝업
-	public const string ST_KEY_EDITOR_LOCAL_TLP_MSG = "EDITOR_LOCAL_TLP_MSG";
+	public const string ST_KEY_C_ON_SAVE_MSG = "C_ON_SAVE_MSG";
+	public const string ST_KEY_C_ON_SAVE_FAIL_MSG = "C_ON_SAVE_FAIL_MSG";
 
-	// 에디터 원격 테이블 로드 팝업
-	public const string ST_KEY_EDITOR_REMOTE_TLP_MSG = "EDITOR_REMOTE_TLP_MSG";
+	public const string ST_KEY_C_ON_PURCHASE_MSG = "C_ON_PURCHASE_MSG";
+	public const string ST_KEY_C_ON_PURCHASE_FAIL_MSG = "C_ON_PURCHASE_FAIL_MSG";
 
-	// 에디터 레벨 제거 팝업
-	public const string ST_KEY_EDITOR_REMOVE_LP_MSG = "EDITOR_REMOVE_LP_MSG";
+	public const string ST_KEY_C_ON_RESTORE_MSG = "C_ON_RESTORE_MSG";
+	public const string ST_KEY_C_ON_RESTORE_FAIL_MSG = "C_ON_RESTORE_FAIL_MSG";
 
-	// 에디터 스테이지 제거 팝업
-	public const string ST_KEY_EDITOR_REMOVE_SP_MSG = "EDITOR_REMOVE_SP_MSG";
-
-	// 에디터 챕터 제거 팝업
-	public const string ST_KEY_EDITOR_REMOVE_CP_MSG = "EDITOR_REMOVE_CP_MSG";
+	public const string ST_KEY_C_ON_TABLE_LOAD_MSG = "C_ON_TABLE_LOAD_MSG";
+	public const string ST_KEY_C_ON_TABLE_LOAD_FAIL_MSG = "C_ON_TABLE_LOAD_FAIL_MSG";
+	// 공용 메세지 }
 	#endregion // 기본
 }
