@@ -519,6 +519,38 @@ public static partial class KCEditorDefine {
 		$"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}"
 	};
 
+	public static readonly List<string> B_ASSET_P_SPRITE_ATLAS_LIST = new List<string>() {
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_01,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_02,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_03,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_04,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_05,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_06,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_07,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_08,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_09,
+
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_01,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_02,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_03,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_04,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_05,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_06,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_07,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09,
+
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_01,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_02,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_03,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_04,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_05,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_06,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_07,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_08,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_09
+	};
+
 	public static readonly List<LogType> B_LOG_TYPE_LIST = new List<LogType>() {
 		LogType.Log, LogType.Warning, LogType.Error, LogType.Assert, LogType.Exception
 	};
@@ -926,7 +958,7 @@ public static partial class KCEditorDefine {
 #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 기본
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorInputPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Utility/Base/CSubEditorInputPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorLevelCreatePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Utility/Base/CSubEditorLevelCreatePopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorCreatePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Utility/Base/CSubEditorCreatePopup.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Utility/Base/CSubEditorScrollerCellView.cs"),
 
 		// 상수
@@ -1049,11 +1081,10 @@ public static partial class KCEditorDefine {
 
 		// 04-SubUnityProjectEditor {
 #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorInputPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.E_OBJ_P_EDITOR_INPUT_POPUP}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorLevelCreatePopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.LES_OBJ_P_EDITOR_LEVEL_CREATE_POPUP}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.LES_OBJ_P_LEVEL_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.LES_OBJ_P_STAGE_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.LES_OBJ_P_CHAPTER_EDITOR_SCROLLER_CELL_VIEW}.prefab")
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorInputPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.ES_OBJ_P_EDITOR_INPUT_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorCreatePopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.ES_OBJ_P_EDITOR_CREATE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_EDITOR_SCENE}T_EditorScrollerCellView.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.ES_OBJ_P_EDITOR_SCROLLER_CELL_VIEW}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Prefabs/{KCDefine.B_DIR_P_LEVEL_EDITOR_SCENE}T_REUIsPageUIs02ScrollCellView.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.LES_OBJ_P_RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW}.prefab")
 #endif // #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 04-SubUnityProjectEditor }
 	};
@@ -1194,15 +1225,15 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09}.spriteatlas"),
 
 		// 04-SubUnityProjectEditor
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_01}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_02}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_03}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_04}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_05}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_06}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_07}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_08}.spriteatlas"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_09}.spriteatlas")
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_01}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_02}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_03}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_04}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_05}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_06}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_07}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_08}.spriteatlas"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}SpriteAtlases/T_SpriteAtlas.spriteatlas", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_09}.spriteatlas")
 	};
 
 	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {

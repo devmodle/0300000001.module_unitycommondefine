@@ -856,15 +856,15 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_08";
 	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_09";
 
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_01";
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_02";
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_03";
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_04";
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_05";
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_06";
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_07";
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_08";
-	public static readonly string U_ASSET_P_EG_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}EG_SpriteAtlas_09";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_01";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_02";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_03";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_04";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_05";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_06";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_07";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_08";
+	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_09";
 
 	public static readonly string U_TABLE_P_G_LEVEL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}LevelInfo/G_LevelInfoTable";
 	public static readonly string U_TABLE_P_G_LEVEL_INFO_SET_A = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}A/LevelInfo/G_LevelInfoTable";
@@ -981,9 +981,37 @@ public static partial class KCDefine {
 #endif // #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 
 	public static readonly List<string> U_ASSET_P_SPRITE_ATLAS_LIST = new List<string>() {
-		KCDefine.U_ASSET_P_SPRITE_ATLAS_01, KCDefine.U_ASSET_P_SPRITE_ATLAS_02, KCDefine.U_ASSET_P_SPRITE_ATLAS_03, KCDefine.U_ASSET_P_SPRITE_ATLAS_04, KCDefine.U_ASSET_P_SPRITE_ATLAS_05, KCDefine.U_ASSET_P_SPRITE_ATLAS_06, KCDefine.U_ASSET_P_SPRITE_ATLAS_07, KCDefine.U_ASSET_P_SPRITE_ATLAS_08, KCDefine.U_ASSET_P_SPRITE_ATLAS_09,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_01, KCDefine.U_ASSET_P_G_SPRITE_ATLAS_02, KCDefine.U_ASSET_P_G_SPRITE_ATLAS_03, KCDefine.U_ASSET_P_G_SPRITE_ATLAS_04, KCDefine.U_ASSET_P_G_SPRITE_ATLAS_05, KCDefine.U_ASSET_P_G_SPRITE_ATLAS_06, KCDefine.U_ASSET_P_G_SPRITE_ATLAS_07, KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08, KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09,
-		KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_01, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_02, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_03, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_04, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_05, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_06, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_07, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_08, KCDefine.U_ASSET_P_EG_SPRITE_ATLAS_09
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_01,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_02,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_03,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_04,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_05,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_06,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_07,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_08,
+		KCDefine.U_ASSET_P_SPRITE_ATLAS_09,
+
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_01,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_02,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_03,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_04,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_05,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_06,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_07,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08,
+		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09
+	};
+
+	public static readonly List<string> U_ASSET_P_ES_SPRITE_ATLAS_LIST = new List<string>() {
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_01,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_02,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_03,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_04,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_05,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_06,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_07,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_08,
+		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_09
 	};
 	// 경로 }
 	#endregion // 런타임 상수

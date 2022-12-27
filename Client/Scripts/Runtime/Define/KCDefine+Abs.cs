@@ -358,6 +358,7 @@ public static partial class KCDefine {
 
 	public const string B_DIR_P_MENU_SCENE = "MenuScene/";
 	public const string B_DIR_P_EDITOR_SCENE = "EditorScene/";
+	public const string B_DIR_P_LEVEL_EDITOR_SCENE = "LevelEditorScene/";
 	// 경로 }
 
 	// 형식 {
@@ -525,15 +526,15 @@ public static partial class KCDefine {
 	public const string B_PREFIX_U_SPRITE_ATLAS_08 = "U_SA_08_";
 	public const string B_PREFIX_U_SPRITE_ATLAS_09 = "U_SA_09_";
 
-	public const string B_PREFIX_EG_SPRITE_ATLAS_01 = "EG_SA_01_";
-	public const string B_PREFIX_EG_SPRITE_ATLAS_02 = "EG_SA_02_";
-	public const string B_PREFIX_EG_SPRITE_ATLAS_03 = "EG_SA_03_";
-	public const string B_PREFIX_EG_SPRITE_ATLAS_04 = "EG_SA_04_";
-	public const string B_PREFIX_EG_SPRITE_ATLAS_05 = "EG_SA_05_";
-	public const string B_PREFIX_EG_SPRITE_ATLAS_06 = "EG_SA_06_";
-	public const string B_PREFIX_EG_SPRITE_ATLAS_07 = "EG_SA_07_";
-	public const string B_PREFIX_EG_SPRITE_ATLAS_08 = "EG_SA_08_";
-	public const string B_PREFIX_EG_SPRITE_ATLAS_09 = "EG_SA_09_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_01 = "ES_SA_01_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_02 = "ES_SA_02_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_03 = "ES_SA_03_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_04 = "ES_SA_04_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_05 = "ES_SA_05_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_06 = "ES_SA_06_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_07 = "ES_SA_07_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_08 = "ES_SA_08_";
+	public const string B_PREFIX_ES_SPRITE_ATLAS_09 = "ES_SA_09_";
 	// 접두어 }
 
 	// 메일
