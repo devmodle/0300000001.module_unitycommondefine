@@ -432,8 +432,8 @@ public struct STNotiInfo {
 #endif // #if NOTI_MODULE_ENABLE
 
 #if UNITY_EDITOR || UNITY_STANDALONE
-/** 에디터 레벨 생성 정보 */
-public partial class CEditorLevelCreateInfo {
+/** 에디터 생성 정보 */
+public partial class CEditorCreateInfo {
 	public int m_nNumLevels = 0;
 	public Vector3Int m_stMinNumCells = Vector3Int.zero;
 	public Vector3Int m_stMaxNumCells = Vector3Int.zero;

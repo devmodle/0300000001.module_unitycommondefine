@@ -5,16 +5,19 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 #if UNITY_EDITOR || UNITY_STANDALONE
-/** 에디터 상수 */
+/** 에디터 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 이름
-	public const string E_OBJ_N_EDITOR_INPUT_POPUP = "EDITOR_INPUT_POPUP";
+	public const string ES_OBJ_N_EDITOR_INPUT_POPUP = "EDITOR_INPUT_POPUP";
+	public const string ES_OBJ_N_EDITOR_CREATE_POPUP = "EDITOR_CREATE_POPUP";
 	#endregion // 기본
 
 	#region 런타임 상수
 	// 경로
-	public static readonly string E_OBJ_P_EDITOR_INPUT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_EditorInputPopup";
+	public static readonly string ES_OBJ_P_EDITOR_INPUT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_EditorInputPopup";
+	public static readonly string ES_OBJ_P_EDITOR_CREATE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_EditorCreatePopup";
+	public static readonly string ES_OBJ_P_EDITOR_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}UI/ScrollView/G_EditorScrollerCellView";
 	#endregion // 런타임 상수
 }
 
@@ -25,9 +28,6 @@ public static partial class KCDefine {
 	public const string LES_TEXT_FMT_LEVEL = "레벨 {0:0000}";
 	public const string LES_TEXT_FMT_STAGE = "스테이지 {0:000}";
 	public const string LES_TEXT_FMT_CHAPTER = "챕터 {0:00}";
-
-	// 이름
-	public const string LES_OBJ_N_EDITOR_LEVEL_CREATE_POPUP = "EDITOR_LEVEL_CREATE_POPUP";
 
 	// 중앙 에디터 UI
 	public const string LES_OBJ_N_ME_UIS_SAVE_BTN = "ME_UIS_SAVE_BTN";
@@ -50,13 +50,8 @@ public static partial class KCDefine {
 	#endregion // 기본
 
 	#region 런타임 상수
-	// 경로 {
-	public static readonly string LES_OBJ_P_EDITOR_LEVEL_CREATE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_EditorLevelCreatePopup";
-
-	public static readonly string LES_OBJ_P_LEVEL_EDITOR_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}UI/ScrollView/G_LevelEditorScrollerCellView";
-	public static readonly string LES_OBJ_P_STAGE_EDITOR_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}UI/ScrollView/G_StageEditorScrollerCellView";
-	public static readonly string LES_OBJ_P_CHAPTER_EDITOR_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}UI/ScrollView/G_ChapterEditorScrollerCellView";
-	// 경로 }
+	// 경로
+	public static readonly string LES_OBJ_P_RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_LEVEL_EDITOR_SCENE}UI/ScrollView/G_REUIsPageUIs02ScrollCellView";
 	#endregion // 런타임 상수
 }
 #endif // #if UNITY_EDITOR || UNITY_STANDALONE
