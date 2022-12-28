@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using DG.Tweening;
 using MessagePack;
+using EnhancedUI.EnhancedScroller;
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 using GoogleSheetsToUnity;
@@ -34,6 +35,12 @@ public struct STCallbackInfo {
 	public System.Action m_oCallback;
 }
 
+/** 스크롤러 정보 */
+public struct STScrollerInfo {
+	public EnhancedScroller m_oScroller;
+	public EnhancedScrollerCellView m_oScrollerCellView;
+}
+
 /** 컴포넌트 정보 */
 public struct STComponentInfo {
 	public int m_nID;
@@ -44,12 +51,6 @@ public struct STComponentInfo {
 public struct STSortingOrderInfo {
 	public int m_nOrder;
 	public string m_oLayer;
-
-	#region 상수
-	public static readonly STSortingOrderInfo INVALID = new STSortingOrderInfo() {
-		m_nOrder = int.MinValue
-	};
-	#endregion // 상수
 }
 
 /** 비활성화 객체 정보 */

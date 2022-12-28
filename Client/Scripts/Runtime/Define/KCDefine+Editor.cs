@@ -46,7 +46,8 @@ public static partial class KCDefine {
 	// 왼쪽 에디터 UI }
 
 	// 오른쪽 에디터 UI
-	public const string LES_OBJ_N_RE_UIS_PAGE_01_APPLY_BTN = "RE_UIS_PAGE_UIS_01_APPLY_BTN";
+	public const string LES_OBJ_N_RE_UIS_PAGE_UIS_01_APPLY_BTN = "RE_UIS_PAGE_UIS_01_APPLY_BTN";
+	public const string LES_OBJ_N_RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW = "RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW";
 	#endregion // 기본
 
 	#region 런타임 상수

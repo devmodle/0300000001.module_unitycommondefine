@@ -506,6 +506,9 @@ public static partial class KCDefine {
 	// 형식 }
 
 	// 접두어 {
+	public const string B_PREFIX_EDITOR_SCENE = "ES_";
+	public const string B_PREFIX_LEVEL_EDITOR_SCENE = "LES_";
+
 	public const string B_PREFIX_G_SPRITE_ATLAS_01 = "G_SA_01_";
 	public const string B_PREFIX_G_SPRITE_ATLAS_02 = "G_SA_02_";
 	public const string B_PREFIX_G_SPRITE_ATLAS_03 = "G_SA_03_";
