@@ -541,8 +541,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_FMT_PAGE_UIS = "PAGE_UIS_{0:00}";
 	public const string U_OBJ_N_FMT_POPUP_TOUCH_RESPONDER = "POPUP_TOUCH_RESPONDER_{0}";
 
-	public const string U_MESH_N_DEF = "DEF_MESH";
-	public const string U_IMG_N_DEF_SPRITE = "DEF_SPRITE";
+	public const string U_IMG_N_TEX = "Tex";
+	public const string U_IMG_N_SPRITE = "Sprite";
 	public const string U_IMG_N_CLONE_SPRITE = "(Clone)";
 
 	public const string U_FUNC_N_ON_DRAG = "OnDrag";
@@ -571,6 +571,10 @@ public static partial class KCDefine {
 	public const string U_ICON_N_ANDROID_NOTI_SMALL = "smallnotiicon";
 	public const string U_ICON_N_ANDROID_NOTI_LARGE = "largenotiicon";
 	// 이름 }
+
+	// 경로
+	public const string U_IMG_P_DEF = "DefImg";
+	public const string U_MESH_P_DEF = "DefMesh";
 
 	// 태그 {
 	public const string U_TAG_PLAYER = "Player";
@@ -723,8 +727,36 @@ public static partial class KCDefine {
 	};
 
 	// 정렬 순서 {
+	public static readonly STSortingOrderInfo U_SORTING_OI_ABS = new STSortingOrderInfo() {
+		m_nOrder = KCDefine.U_SORTING_O_ABS, m_oLayer = KCDefine.U_SORTING_L_ABS
+	};
+
 	public static readonly STSortingOrderInfo U_SORTING_OI_DEF = new STSortingOrderInfo() {
 		m_nOrder = KCDefine.U_SORTING_O_DEF, m_oLayer = KCDefine.U_SORTING_L_DEF
+	};
+
+	public static readonly STSortingOrderInfo U_SORTING_OI_TOP = new STSortingOrderInfo() {
+		m_nOrder = KCDefine.U_SORTING_O_TOP, m_oLayer = KCDefine.U_SORTING_L_TOP
+	};
+
+	public static readonly STSortingOrderInfo U_SORTING_OI_TOPMOST = new STSortingOrderInfo() {
+		m_nOrder = KCDefine.U_SORTING_O_TOPMOST, m_oLayer = KCDefine.U_SORTING_L_TOPMOST
+	};
+
+	public static readonly STSortingOrderInfo U_SORTING_OI_FOREGROUND = new STSortingOrderInfo() {
+		m_nOrder = KCDefine.U_SORTING_O_FOREGROUND, m_oLayer = KCDefine.U_SORTING_L_FOREGROUND
+	};
+
+	public static readonly STSortingOrderInfo U_SORTING_OI_OVERGROUND = new STSortingOrderInfo() {
+		m_nOrder = KCDefine.U_SORTING_O_OVERGROUND, m_oLayer = KCDefine.U_SORTING_L_OVERGROUND
+	};
+
+	public static readonly STSortingOrderInfo U_SORTING_OI_BACKGROUND = new STSortingOrderInfo() {
+		m_nOrder = KCDefine.U_SORTING_O_BACKGROUND, m_oLayer = KCDefine.U_SORTING_L_BACKGROUND
+	};
+
+	public static readonly STSortingOrderInfo U_SORTING_OI_UNDERGROUND = new STSortingOrderInfo() {
+		m_nOrder = KCDefine.U_SORTING_O_UNDERGROUND, m_oLayer = KCDefine.U_SORTING_L_UNDERGROUND
 	};
 
 	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
