@@ -315,7 +315,7 @@ public static partial class KCEditorDefine {
 	public const string B_TEXT_ALERT_P_OK_BTN = "확인";
 	public const string B_TEXT_ALERT_P_CANCEL_BTN = "취소";
 
-	public const string B_MSG_ALERT_P_RESET = "컴포넌트를 리셋하시겠습니까?";
+	public const string B_MSG_ALERT_P_RESET = "해당 속성을 리셋하시겠습니까?";
 	public const string B_MSG_ALERT_P_EXPORT_IMG_SUCCESS = "이미지를 추출했습니다.";
 	public const string B_MSG_ALERT_P_PLATFORM_BUILD_FAIL = "해당 플랫폼으로 전환 후 빌드해주세요.";
 

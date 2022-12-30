@@ -85,34 +85,6 @@ using UnityEngine.Events;
 - 161 ~ 169: 참조 (복합) 형식 데이터 (리스트 or 딕셔너리)
 */
 #region 기본
-/** 열거형 값 */
-public enum EEnumVal {
-	NONE = -1,
-	TYPE = KCDefine.B_UNIT_KINDS_PER_TYPE,
-	SUB_TYPE = KCDefine.B_UNIT_KINDS_PER_SUB_TYPE,
-	KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE,
-	SUB_KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE,
-	[HideInInspector] MAX_VAL,
-}
-
-/** 벡터 타입 */
-public enum EVecType {
-	NONE = -1,
-	POS,
-	DIRECTION,
-	[HideInInspector] MAX_VAL
-}
-
-/** 종류 그룹 타입 */
-public enum EKindsGroupType {
-	NONE = -1,
-	TYPE,
-	SUB_TYPE,
-	KINDS_TYPE,
-	SUB_KINDS_TYPE,
-	[HideInInspector] MAX_VAL
-}
-
 /** POT */
 public enum EPOT {
 	NONE = -1,
@@ -132,12 +104,48 @@ public enum EPOT {
 	[HideInInspector] MAX_VAL
 }
 
+/** 열거형 값 */
+public enum EEnumVal {
+	NONE = -1,
+	TYPE = KCDefine.B_UNIT_KINDS_PER_TYPE,
+	SUB_TYPE = KCDefine.B_UNIT_KINDS_PER_SUB_TYPE,
+	KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE,
+	SUB_KINDS_TYPE = KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE,
+	[HideInInspector] MAX_VAL,
+}
+
+/** 종류 그룹 타입 */
+public enum EKindsGroupType {
+	NONE = -1,
+	TYPE,
+	SUB_TYPE,
+	KINDS_TYPE,
+	SUB_KINDS_TYPE,
+	[HideInInspector] MAX_VAL
+}
+
+/** 벡터 타입 */
+public enum EVecType {
+	NONE = -1,
+	POS,
+	DIRECTION,
+	[HideInInspector] MAX_VAL
+}
+
 /** 수직 동기화 */
 public enum EVSync {
 	NONE = -1,
 	NEVER,
 	EVERY,
 	SECOND,
+	[HideInInspector] MAX_VAL
+}
+
+/** 그리드 기준점 */
+public enum EGridPivot {
+	NONE = -1,
+	MID,
+	DOWN,
 	[HideInInspector] MAX_VAL
 }
 
