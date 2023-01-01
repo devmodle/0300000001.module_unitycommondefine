@@ -545,10 +545,15 @@ public static partial class KCDefine {
 	#endregion // 기본
 
 	#region 런타임 상수
-	// 씬 이름
-	public static readonly List<string> B_DEF_SCENE_NAME_LIST = new List<string>() {
+	// 씬 이름 {
+	public static readonly List<string> B_DEF_SCENE_NAME_LIST_01 = new List<string>() {
 		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY
 	};
+
+	public static readonly List<string> B_DEF_SCENE_NAME_LIST_02 = new List<string>() {
+		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY, KCDefine.B_SCENE_N_TITLE, KCDefine.B_SCENE_N_MAIN, KCDefine.B_SCENE_N_GAME
+	};
+	// 씬 이름 }
 
 	// 기타 {
 	public static readonly List<Vector2> B_EMPTY_2D_VEC_LIST = new List<Vector2>();
