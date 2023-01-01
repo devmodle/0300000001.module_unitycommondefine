@@ -47,12 +47,6 @@ public struct STComponentInfo {
 	public Component m_oComponent;
 }
 
-/** 정렬 순서 정보 */
-public struct STSortingOrderInfo {
-	public int m_nOrder;
-	public string m_oLayer;
-}
-
 /** 비활성화 객체 정보 */
 public struct STDespawnObjInfo {
 	public bool m_bIsDestroy;
@@ -67,6 +61,18 @@ public struct STTouchResponderInfo {
 	public Sequence m_oAni;
 	public GameObject m_oTouchResponder;
 	public System.Action<GameObject> m_oCallback;
+}
+
+/** 정렬 순서 정보 */
+public struct STSortingOrderInfo {
+	public int m_nOrder;
+	public string m_oLayer;
+
+	#region 상수
+	public static readonly STSortingOrderInfo INVALID = new STSortingOrderInfo() {
+		m_nOrder = short.MinValue, m_oLayer = KCDefine.U_SORTING_L_UNDERGROUND
+	};
+	#endregion // 상수
 }
 
 /** 식별자 정보 */
