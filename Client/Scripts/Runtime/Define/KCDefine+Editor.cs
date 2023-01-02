@@ -45,9 +45,14 @@ public static partial class KCDefine {
 	public const string LES_OBJ_N_LE_UIS_STAGE_SCROLL_VIEW_02 = "LE_UIS_STAGE_SCROLL_VIEW_02";
 	// 왼쪽 에디터 UI }
 
-	// 오른쪽 에디터 UI
+	// 오른쪽 에디터 UI {
 	public const string LES_OBJ_N_RE_UIS_PAGE_UIS_01_APPLY_BTN = "RE_UIS_PAGE_UIS_01_APPLY_BTN";
+	public const string LES_OBJ_N_RE_UIS_PAGE_UIS_01_FILL_ALL_CELLS_BTN = "RE_UIS_PAGE_UIS_01_FILL_ALL_CELLS_BTN";
+	public const string LES_OBJ_N_RE_UIS_PAGE_UIS_01_CLEAR_ALL_CELLS_BTN = "RE_UIS_PAGE_UIS_01_CLEAR_ALL_CELLS_BTN";
+	public const string LES_OBJ_N_RE_UIS_PAGE_UIS_01_CLEAR_SEL_CELLS_BTN = "RE_UIS_PAGE_UIS_01_CLEAR_SEL_CELLS_BTN";
+
 	public const string LES_OBJ_N_RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW = "RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW";
+	// 오른쪽 에디터 UI }
 	#endregion // 기본
 
 	#region 런타임 상수

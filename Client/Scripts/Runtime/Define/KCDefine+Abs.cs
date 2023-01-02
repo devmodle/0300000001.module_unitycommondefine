@@ -122,16 +122,8 @@ public static partial class KCDefine {
 	public const BindingFlags B_BINDING_F_NON_PUBLIC_INSTANCE = BindingFlags.NonPublic | BindingFlags.Instance;
 	// 플래그 }
 
-	// 인덱스 {
+	// 인덱스
 	public const int B_IDX_INVALID = -1;
-
-	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
-	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
-
-	public static readonly List<(Vector2Int, Vector2Int)> B_IDX_OFFSET_INFO_LIST_2D = new List<(Vector2Int, Vector2Int)>() {
-		(Vector2Int.down, Vector2Int.up), (Vector2Int.up, Vector2Int.down), (Vector2Int.right, Vector2Int.left), (Vector2Int.left, Vector2Int.right), (Vector2Int.down, Vector2Int.left), (Vector2Int.down, Vector2Int.right), (Vector2Int.up, Vector2Int.left), (Vector2Int.up, Vector2Int.right), (Vector2Int.right, Vector2Int.up), (Vector2Int.right, Vector2Int.down), (Vector2Int.left, Vector2Int.up), (Vector2Int.left, Vector2Int.down)
-	};
-	// 인덱스 }
 
 	// 디바이스 {
 	public const int B_MIN_TARGET_FRAME_RATE = 30;
@@ -606,6 +598,15 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;
 	public static readonly Vector3 B_POS_INVALID = new Vector3(float.MaxValue - (float.Epsilon * 2.0f), float.MaxValue - (float.Epsilon * 2.0f), float.MaxValue - (float.Epsilon * 2.0f));
 	// 위치 }
+
+	// 인덱스 {
+	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
+	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
+
+	public static readonly List<(Vector2Int, Vector2Int)> B_IDX_OFFSET_INFO_LIST_2D = new List<(Vector2Int, Vector2Int)>() {
+		(Vector2Int.down, Vector2Int.up), (Vector2Int.up, Vector2Int.down), (Vector2Int.right, Vector2Int.left), (Vector2Int.left, Vector2Int.right), (Vector2Int.down, Vector2Int.left), (Vector2Int.down, Vector2Int.right), (Vector2Int.up, Vector2Int.left), (Vector2Int.up, Vector2Int.right), (Vector2Int.right, Vector2Int.up), (Vector2Int.right, Vector2Int.down), (Vector2Int.left, Vector2Int.up), (Vector2Int.left, Vector2Int.down)
+	};
+	// 인덱스 }
 
 	// 토큰 {
 	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_KOREAN = new Dictionary<string, decimal>() {
