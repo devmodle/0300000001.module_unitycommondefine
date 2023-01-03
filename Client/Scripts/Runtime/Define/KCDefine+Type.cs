@@ -417,11 +417,11 @@ public struct STAdsRewardInfo {
 	public string m_oID;
 	public string m_oVal;
 
-	#region 상수
+#region 상수
 	public static readonly STAdsRewardInfo INVALID = new STAdsRewardInfo() {
 		m_oID = string.Empty, m_oVal = string.Empty
 	};
-	#endregion // 상수
+#endregion // 상수
 }
 #endif // #if ADS_MODULE_ENABLE
 
