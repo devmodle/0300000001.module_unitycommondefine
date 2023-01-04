@@ -466,6 +466,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_POPUP = "POPUP";
 	public const string U_OBJ_N_GAME_OBJ = "GAME_OBJ";
 	public const string U_OBJ_N_ALERT_POPUP = "ALERT_POPUP";
+	public const string U_OBJ_N_FOCUS_POPUP = "FOCUS_POPUP";
 
 	public const string U_OBJ_N_TEXT = "TEXT";
 	public const string U_OBJ_N_LOCALIZE_TEXT = "LOCALIZE_TEXT";
