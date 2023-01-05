@@ -472,6 +472,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LOCALIZE_TEXT = "LOCALIZE_TEXT";
 
 	public const string U_OBJ_N_TMP_TEXT = "TMP_TEXT";
+	public const string U_OBJ_N_TMP_TEXT_MESH = "TMP_TEXT_MESH";
 	public const string U_OBJ_N_TMP_LOCALIZE_TEXT = "TMP_LOCALIZE_TEXT";
 
 	public const string U_OBJ_N_IMG = "IMG";
@@ -785,6 +786,7 @@ public static partial class KCDefine {
 
 	public static readonly string U_OBJ_P_TMP_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Text/U_TMPText";
 	public static readonly string U_OBJ_P_TMP_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Button/TextMeshPro/U_TMPTextBtn";
+	public static readonly string U_OBJ_P_TMP_TEXT_MESH = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Text/U_TMPTextMesh";
 	public static readonly string U_OBJ_P_TMP_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Button/TextMeshPro/U_TMPTextScaleBtn";
 
 	public static readonly string U_OBJ_P_LOCALIZE_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Text/U_LocalizeText";

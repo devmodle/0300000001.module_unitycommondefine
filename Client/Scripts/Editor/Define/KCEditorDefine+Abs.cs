@@ -64,6 +64,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_MENU_GAME_OBJECT_UI_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "UI/Utility/";
 	public const string B_MENU_GAME_OBJECT_2D_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "2D Object/Utility/";
+	public const string B_MENU_GAME_OBJECT_3D_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "3D Object/Utility/";
 	public const string B_MENU_GAME_OBJECT_FX_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "Effects/Utility/";
 	// 메뉴 }
 
@@ -994,6 +995,7 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/UI/Button/Text/T_TextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TEXT_SCALE_BTN}.prefab"),
 
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/UI/Text/T_TMPText.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/UI/Text/T_TMPTextMesh.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT_MESH}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/UI/Button/TextMeshPro/T_TMPTextBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT_BTN}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO_CREATE}Prefabs/UI/Button/TextMeshPro/T_TMPTextScaleBtn.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_CREATE_RESOURCES}{KCDefine.U_OBJ_P_TMP_TEXT_SCALE_BTN}.prefab"),
 
