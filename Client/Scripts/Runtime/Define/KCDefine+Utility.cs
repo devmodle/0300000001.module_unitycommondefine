@@ -524,6 +524,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_STAGE_SCROLL_VIEW = "STAGE_SCROLL_VIEW";
 	public const string U_OBJ_N_CHAPTER_SCROLL_VIEW = "CHAPTER_SCROLL_VIEW";
 
+	public const string U_OBJ_N_OBJ = "OBJ";
 	public const string U_OBJ_N_SPRITE = "SPRITE";
 	public const string U_OBJ_N_LINE_FX = "LINE_FX";
 	public const string U_OBJ_N_PARTICLE_FX = "PARTICLE_FX";
@@ -832,6 +833,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_INDICATOR_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_IndicatorTouchResponder";
 	public static readonly string U_OBJ_P_SCREEN_FADE_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_ScreenFadeTouchResponder";
 
+	public static readonly string U_OBJ_P_OBJ = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}2D/U_Obj";
 	public static readonly string U_OBJ_P_SPRITE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}2D/U_Sprite";
 	public static readonly string U_OBJ_P_LINE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_LineFX";
 	public static readonly string U_OBJ_P_PARTICLE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_ParticleFX";
