@@ -30,6 +30,16 @@ public static partial class KCDefine {
 	public const float B_VAL_7_REAL = 7.0f;
 	public const float B_VAL_8_REAL = 8.0f;
 	public const float B_VAL_9_REAL = 9.0f;
+
+	public const float B_VAL_0_1_REAL = 0.1f;
+	public const float B_VAL_0_2_REAL = 0.2f;
+	public const float B_VAL_0_3_REAL = 0.3f;
+	public const float B_VAL_0_4_REAL = 0.4f;
+	public const float B_VAL_0_5_REAL = 0.5f;
+	public const float B_VAL_0_6_REAL = 0.6f;
+	public const float B_VAL_0_7_REAL = 0.7f;
+	public const float B_VAL_0_8_REAL = 0.8f;
+	public const float B_VAL_0_9_REAL = 0.9f;
 	// 값 }
 
 	// 회전 {
