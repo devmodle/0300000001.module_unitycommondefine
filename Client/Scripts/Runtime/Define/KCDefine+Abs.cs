@@ -616,7 +616,6 @@ public static partial class KCDefine {
 
 	public static readonly Vector3 B_POS_POPUP = Vector3.zero;
 	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;
-	public static readonly Vector3 B_POS_INVALID = new Vector3(float.MaxValue - (float.Epsilon * 2.0f), float.MaxValue - (float.Epsilon * 2.0f), float.MaxValue - (float.Epsilon * 2.0f));
 	// 위치 }
 
 	// 인덱스 {
