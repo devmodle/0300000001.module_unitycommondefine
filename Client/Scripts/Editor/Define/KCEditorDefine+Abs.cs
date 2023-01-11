@@ -159,6 +159,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_DIR_P_EXPORT_BASE = "Export/";
 	public const string B_DIR_P_EDITOR_SCRIPTS = "Scripts/Editor/";
+	public const string B_DIR_P_ENGINE_SCRIPTS = "Scripts/Engine/";
 	public const string B_DIR_P_RUNTIME_SCRIPTS = "Scripts/Runtime/";
 	// 경로 }
 
