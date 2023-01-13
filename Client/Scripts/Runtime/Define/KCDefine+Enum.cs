@@ -278,6 +278,15 @@ public enum EQualityLevel {
 	[HideInInspector] MAX_VAL
 }
 
+/** 스프라이트 모드 */
+public enum ESpriteMode {
+	NONE = -1,
+	SINGLE,
+	MULTIPLE,
+	POLYGON,
+	[HideInInspector] MAX_VAL
+}
+
 /** 광원 맵 모드 */
 public enum ELightmapMode {
 	NONE = -1,
