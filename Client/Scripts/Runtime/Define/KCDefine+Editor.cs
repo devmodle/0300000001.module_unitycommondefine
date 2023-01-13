@@ -25,6 +25,7 @@ public static partial class KCDefine {
 public static partial class KCDefine {
 	#region 기본
 	// 형식
+	public const string LES_TEXT_FMT_SIZE = "크기 {0}x{1}";
 	public const string LES_TEXT_FMT_LEVEL = "레벨 {0:0000}";
 	public const string LES_TEXT_FMT_STAGE = "스테이지 {0:000}";
 	public const string LES_TEXT_FMT_CHAPTER = "챕터 {0:00}";
