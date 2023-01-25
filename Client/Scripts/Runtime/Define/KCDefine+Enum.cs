@@ -509,6 +509,7 @@ public enum EAdsPlatform {
 	NONE = -1,
 	ADMOB,
 	IRON_SRC,
+	APP_LOVIN,
 	[HideInInspector] MAX_VAL
 }
 

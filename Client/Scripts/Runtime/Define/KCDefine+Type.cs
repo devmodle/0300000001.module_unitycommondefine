@@ -417,11 +417,11 @@ public struct STAdsRewardInfo {
 	public string m_oID;
 	public string m_oVal;
 
-#region 상수
+	#region 상수
 	public static readonly STAdsRewardInfo INVALID = new STAdsRewardInfo() {
 		m_oID = string.Empty, m_oVal = string.Empty
 	};
-#endregion // 상수
+	#endregion // 상수
 }
 #endif // #if ADS_MODULE_ENABLE
 
@@ -456,13 +456,13 @@ public struct STGoogleSheetLoadInfo {
 	public string m_oSheetName;
 	public GstuSpreadSheet m_oGoogleSheet;
 
-	#region 상수
+#region 상수
 	public static readonly STGoogleSheetLoadInfo INVALID = new STGoogleSheetLoadInfo() {
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
-	#endregion // 상수
+#endregion // 상수
 
-	#region 함수
+#region 함수
 	/** 생성자 */
 	public STGoogleSheetLoadInfo(string a_oID, string a_oSheetName, int a_nSrcIdx, int a_nNumRows, GstuSpreadSheet a_oGoogleSheet) {
 		m_oID = a_oID;
@@ -471,7 +471,7 @@ public struct STGoogleSheetLoadInfo {
 		m_oSheetName = a_oSheetName;
 		m_oGoogleSheet = a_oGoogleSheet;
 	}
-	#endregion // 함수
+#endregion // 함수
 }
 
 /** 구글 시트 저장 정보 */
@@ -481,13 +481,13 @@ public struct STGoogleSheetSaveInfo {
 	public string m_oID;
 	public string m_oSheetName;
 
-	#region 상수
+#region 상수
 	public static readonly STGoogleSheetSaveInfo INVALID = new STGoogleSheetSaveInfo() {
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
-	#endregion // 상수
+#endregion // 상수
 
-	#region 함수
+#region 함수
 	/** 생성자 */
 	public STGoogleSheetSaveInfo(string a_oID, string a_oSheetName, int a_nSrcIdx, int a_nNumRows) {
 		m_oID = a_oID;
@@ -495,7 +495,7 @@ public struct STGoogleSheetSaveInfo {
 		m_nNumRows = a_nNumRows;
 		m_oSheetName = a_oSheetName;
 	}
-	#endregion // 함수
+#endregion // 함수
 }
 
 /** 로드 구글 시트 정보 */
@@ -504,14 +504,14 @@ public struct STLoadGoogleSheetInfo {
 	public string m_oTableName;
 	public List<(string, int)> m_oSheetInfoList;
 
-	#region 함수
+#region 함수
 	/** 생성자 */
 	public STLoadGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, int)> a_oSheetInfoList = null) {
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
 		m_oSheetInfoList = a_oSheetInfoList ?? new List<(string, int)>();
 	}
-	#endregion // 함수
+#endregion // 함수
 }
 
 /** 저장 구글 시트 정보 */
@@ -520,14 +520,14 @@ public struct STSaveGoogleSheetInfo {
 	public string m_oTableName;
 	public List<(string, List<List<string>>)> m_oSheetInfoListContainer;
 
-	#region 함수
+#region 함수
 	/** 생성자 */
 	public STSaveGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, List<List<string>>)> a_oSheetInfoListContainer = null) {
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
 		m_oSheetInfoListContainer = a_oSheetInfoListContainer ?? new List<(string, List<List<string>>)>();
 	}
-	#endregion // 함수
+#endregion // 함수
 }
 #endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 #endregion // 조건부 타입
