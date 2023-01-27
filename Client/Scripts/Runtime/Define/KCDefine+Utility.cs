@@ -766,8 +766,12 @@ public static partial class KCDefine {
 		m_nOrder = KCDefine.U_SORTING_O_UIS, m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 
-	public static readonly STSortingOrderInfo U_SORTING_OI_OVERLAY_UIS_CANVAS = new STSortingOrderInfo() {
+	public static readonly STSortingOrderInfo U_SORTING_OI_RESULT_UIS_CANVAS = new STSortingOrderInfo() {
 		m_nOrder = KCDefine.U_SORTING_O_OVERLAY_UIS, m_oLayer = KCDefine.U_SORTING_L_DEF
+	};
+
+	public static readonly STSortingOrderInfo U_SORTING_OI_OVERLAY_UIS_CANVAS = new STSortingOrderInfo() {
+		m_nOrder = KCDefine.U_SORTING_O_OVERLAY_UIS + 10, m_oLayer = KCDefine.U_SORTING_L_DEF
 	};
 	// 정렬 순서 }
 
@@ -1086,13 +1090,14 @@ public static partial class KCDefine {
 
 	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = sbyte.MaxValue / 2;
 	public const int U_SCRIPT_O_START_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
+	public const int U_SCRIPT_O_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
+	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 4;
 
-	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
-	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
-	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
+	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 10;
+	public const int U_SCRIPT_O_RESULT_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 11;
+	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 12;
+	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 20;
 	// 스크립트 순서 }
 #endif // #if UNITY_EDITOR
 

@@ -252,20 +252,21 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_STUDY_SAMPLE = "11-StudySampleScene";
 	public const string B_SCENE_N_EDITOR_SAMPLE = "01-EditorSampleScene";
 
-	public const string B_SCENE_N_INIT = "00-InitScene";
-	public const string B_SCENE_N_START = "00-StartScene";
-	public const string B_SCENE_N_SETUP = "01-SetupScene";
-	public const string B_SCENE_N_AGREE = "01-AgreeScene";
-	public const string B_SCENE_N_LATE_SETUP = "01-LateSetupScene";
+	public const string B_SCENE_N_INIT = "01-InitScene";
+	public const string B_SCENE_N_START = "02-StartScene";
+	public const string B_SCENE_N_SETUP = "03-SetupScene";
+	public const string B_SCENE_N_AGREE = "04-AgreeScene";
+	public const string B_SCENE_N_LATE_SETUP = "05-LateSetupScene";
 
 	public const string B_SCENE_N_TITLE = "01-TitleScene";
 	public const string B_SCENE_N_MAIN = "02-MainScene";
 	public const string B_SCENE_N_PLAY = "03-PlayScene";
-	public const string B_SCENE_N_RESULT = "04-ResultScene";
-	public const string B_SCENE_N_LOADING = "91-LoadingScene";
-	public const string B_SCENE_N_OVERLAY = "92-OverlayScene";
 
-	public const string B_SCENE_N_MENU = "02-MenuScene";
+	public const string B_SCENE_N_RESULT = "91-ResultScene";
+	public const string B_SCENE_N_LOADING = "92-LoadingScene";
+	public const string B_SCENE_N_OVERLAY = "93-OverlayScene";
+
+	public const string B_SCENE_N_MENU = "91-MenuScene";
 	public const string B_SCENE_N_TEST = "99-TestScene";
 	public const string B_SCENE_N_LEVEL_EDITOR = "91-LevelEditorScene";
 	// 씬 이름 }
@@ -562,11 +563,31 @@ public static partial class KCDefine {
 	#region 런타임 상수
 	// 씬 이름 {
 	public static readonly List<string> B_DEF_SCENE_NAME_LIST_01 = new List<string>() {
-		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY
+		KCDefine.B_SCENE_N_INIT,
+		KCDefine.B_SCENE_N_START,
+		KCDefine.B_SCENE_N_SETUP,
+		KCDefine.B_SCENE_N_AGREE,
+		KCDefine.B_SCENE_N_LATE_SETUP,
+
+		KCDefine.B_SCENE_N_RESULT,
+		KCDefine.B_SCENE_N_LOADING,
+		KCDefine.B_SCENE_N_OVERLAY
 	};
 
 	public static readonly List<string> B_DEF_SCENE_NAME_LIST_02 = new List<string>() {
-		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY, KCDefine.B_SCENE_N_TITLE, KCDefine.B_SCENE_N_MAIN, KCDefine.B_SCENE_N_PLAY
+		KCDefine.B_SCENE_N_INIT,
+		KCDefine.B_SCENE_N_START,
+		KCDefine.B_SCENE_N_SETUP,
+		KCDefine.B_SCENE_N_AGREE,
+		KCDefine.B_SCENE_N_LATE_SETUP,
+		
+		KCDefine.B_SCENE_N_TITLE,
+		KCDefine.B_SCENE_N_MAIN,
+		KCDefine.B_SCENE_N_PLAY,
+
+		KCDefine.B_SCENE_N_RESULT,
+		KCDefine.B_SCENE_N_LOADING,
+		KCDefine.B_SCENE_N_OVERLAY
 	};
 	// 씬 이름 }
 
