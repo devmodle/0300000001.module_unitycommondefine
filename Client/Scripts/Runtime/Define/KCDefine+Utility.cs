@@ -1511,7 +1511,14 @@ public static partial class KCDefine {
 	#endregion // 런타임 상수
 }
 
-/** 게임 씬 상수 */
+/** 플레이 씬 상수 */
+public static partial class KCDefine {
+	#region 기본
+
+	#endregion // 기본
+}
+
+/** 결과 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 
