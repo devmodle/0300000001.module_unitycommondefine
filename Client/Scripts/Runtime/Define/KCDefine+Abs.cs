@@ -260,7 +260,8 @@ public static partial class KCDefine {
 
 	public const string B_SCENE_N_TITLE = "01-TitleScene";
 	public const string B_SCENE_N_MAIN = "02-MainScene";
-	public const string B_SCENE_N_GAME = "03-GameScene";
+	public const string B_SCENE_N_PLAY = "03-PlayScene";
+	public const string B_SCENE_N_RESULT = "04-ResultScene";
 	public const string B_SCENE_N_LOADING = "91-LoadingScene";
 	public const string B_SCENE_N_OVERLAY = "92-OverlayScene";
 
@@ -365,7 +366,8 @@ public static partial class KCDefine {
 
 	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
 	public const string B_DIR_P_MAIN_SCENE = "MainScene/";
-	public const string B_DIR_P_GAME_SCENE = "GameScene/";
+	public const string B_DIR_P_PLAY_SCENE = "PlayScene/";
+	public const string B_DIR_P_RESULT_SCENE = "ResultScene/";
 	public const string B_DIR_P_LOADING_SCENE = "LoadingScene/";
 	public const string B_DIR_P_OVERLAY_SCENE = "OverlayScene/";
 
@@ -564,7 +566,7 @@ public static partial class KCDefine {
 	};
 
 	public static readonly List<string> B_DEF_SCENE_NAME_LIST_02 = new List<string>() {
-		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY, KCDefine.B_SCENE_N_TITLE, KCDefine.B_SCENE_N_MAIN, KCDefine.B_SCENE_N_GAME
+		KCDefine.B_SCENE_N_INIT, KCDefine.B_SCENE_N_START, KCDefine.B_SCENE_N_SETUP, KCDefine.B_SCENE_N_AGREE, KCDefine.B_SCENE_N_LATE_SETUP, KCDefine.B_SCENE_N_LOADING, KCDefine.B_SCENE_N_OVERLAY, KCDefine.B_SCENE_N_TITLE, KCDefine.B_SCENE_N_MAIN, KCDefine.B_SCENE_N_PLAY
 	};
 	// 씬 이름 }
 
