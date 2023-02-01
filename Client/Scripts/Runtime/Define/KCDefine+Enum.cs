@@ -132,20 +132,21 @@ public enum EVecType {
 	[HideInInspector] MAX_VAL
 }
 
+/** 그리드 타입 */
+public enum EGridType {
+	NONE = -1,
+	SCALE,
+	SCROLL_H,
+	SCROLL_V,
+	[HideInInspector] MAX_VAL
+}
+
 /** 수직 동기화 */
 public enum EVSync {
 	NONE = -1,
 	NEVER,
 	EVERY,
 	SECOND,
-	[HideInInspector] MAX_VAL
-}
-
-/** 그리드 기준점 */
-public enum EGridPivot {
-	NONE = -1,
-	MID,
-	DOWN,
 	[HideInInspector] MAX_VAL
 }
 
