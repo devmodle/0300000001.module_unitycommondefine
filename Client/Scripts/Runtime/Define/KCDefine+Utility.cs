@@ -1520,7 +1520,8 @@ public static partial class KCDefine {
 /** 플레이 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
-
+	// 이름
+	public const string PS_OBJ_N_FMT_CELL_OBJ_ROOT = "CELL_OBJ_ROOT_{0:00}";
 	#endregion // 기본
 }
 
