@@ -112,6 +112,9 @@ public static partial class KCDefine {
 
 	public const string ST_KEY_C_ON_TABLE_LOAD_MSG = "C_ON_TABLE_LOAD_MSG";
 	public const string ST_KEY_C_ON_TABLE_LOAD_FAIL_MSG = "C_ON_TABLE_LOAD_FAIL_MSG";
+
+	public const string ST_KEY_C_ON_TABLE_SAVE_MSG = "C_ON_TABLE_SAVE_MSG";
+	public const string ST_KEY_C_ON_TABLE_SAVE_FAIL_MSG = "C_ON_TABLE_SAVE_FAIL_MSG";
 	// 공용 메세지 }
 	#endregion // 기본
 }
