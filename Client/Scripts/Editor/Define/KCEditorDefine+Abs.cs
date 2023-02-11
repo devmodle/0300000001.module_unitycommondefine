@@ -336,11 +336,18 @@ public static partial class KCEditorDefine {
 	public const string B_TEXT_OBJ_NAME_REPLACE = "=====> 객체 이름 변경 <=====";
 	// 객체 이름 에디터 윈도우 }
 
-	// 패키지
+	// 패키지 {
 	public const string B_NAME_DOTWEEN_PRO_PKGS = "DOTweenPro-v1.0.335";
 	public const string B_NAME_APPLE_SIGN_IN_PKGS = "AppleSignInUnity-v1.4.2";
-	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.9.6";
+
+	public const string B_NAME_NGUI_PKGS = "NGUI-v2022.06.08";
+	public const string B_NAME_2D_TOOLKIT_PKGS = "2DToolkit-v2.5.8.16";
+	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
+	public const string B_NAME_SND_MANAGER_PRO_PKGS = "SoundManagerPro-v3.7.0";
+	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.10.0";
+	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
 	public const string B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS = "OdinInspectorAndSerializer-v3.1.10";
+	// 패키지 }
 
 	// 알림
 	public const string B_TEXT_NOTI_PROJ_PROPERTIES = "android.library=true";
@@ -446,7 +453,13 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ABS_PKGS_P_DOTWEEN_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_DOTWEEN_PRO_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_APPLE_SIGN_IN = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_SIGN_IN_PKGS}.unitypackage";
+
+	public static readonly string B_ABS_PKGS_P_NGUI = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_NGUI_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_2D_TOOLKIT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_2D_TOOLKIT_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPRITE_TRAIL_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_SND_MANAGER_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_SND_MANAGER_PRO_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_BUILD_REPORT_TOOL_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR_AND_SERIALIZER = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS}.unitypackage";
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
