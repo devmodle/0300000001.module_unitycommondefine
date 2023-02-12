@@ -232,7 +232,10 @@ public static partial class KCDefine {
 	public const string B_PLATFORM_N_ANDROID_AMAZON = "AndroidAmazon";
 
 	public const string B_PLATFORM_N_STANDALONE_MAC_STEAM = "StandaloneMacSteam";
+	public const string B_PLATFORM_N_STANDALONE_MAC_EDITOR = "StandaloneMacEditor";
+
 	public const string B_PLATFORM_N_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
+	public const string B_PLATFORM_N_STANDALONE_WNDS_EDITOR = "StandaloneWndsEditor";
 
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
 

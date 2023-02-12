@@ -417,7 +417,9 @@ public enum EAndroidType {
 public enum EStandaloneType {
 	NONE = -1,
 	MAC_STEAM,
+	MAC_EDITOR,
 	WNDS_STEAM,
+	WNDS_EDITOR,
 	[HideInInspector] MAX_VAL
 }
 
