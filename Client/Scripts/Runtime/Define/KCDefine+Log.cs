@@ -7,6 +7,9 @@ using UnityEngine.Events;
 /** 로그 상수 */
 public static partial class KCDefine {
 	#region 기본
+	// 이름
+	public const string L_LOG_N_AGREE = "Agree";
+
 	// 식별자 {
 	public const string L_LOG_KEY_USER_ID = "UserID";
 	public const string L_LOG_KEY_COUNTRY_CODE = "CountryCode";
