@@ -265,9 +265,9 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_MAIN = "02-MainScene";
 	public const string B_SCENE_N_PLAY = "03-PlayScene";
 
+	public const string B_SCENE_N_LOADING = "41-LoadingScene";
 	public const string B_SCENE_N_RESULT = "91-ResultScene";
-	public const string B_SCENE_N_LOADING = "92-LoadingScene";
-	public const string B_SCENE_N_OVERLAY = "93-OverlayScene";
+	public const string B_SCENE_N_OVERLAY = "92-OverlayScene";
 
 	public const string B_SCENE_N_MENU = "91-MenuScene";
 	public const string B_SCENE_N_TEST = "99-TestScene";
