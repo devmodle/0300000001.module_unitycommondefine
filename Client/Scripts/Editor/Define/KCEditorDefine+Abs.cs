@@ -363,6 +363,10 @@ public static partial class KCEditorDefine {
 	public static readonly Vector3 B_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(0.1f, 0.1f + (0.1f * 2.0f), 0.1f + (0.1f * 2.0f) + (0.1f * 3));
 
 	// 이름 {
+	public static readonly List<string> B_OBJ_N_ROOT_UIS_LIST = new List<string>() {
+		KCDefine.U_OBJ_N_SCENE_UIS_ROOT
+	};
+
 	public static readonly List<string> B_OBJ_N_ROOT_OBJ_LIST = new List<string>() {
 		KCDefine.U_OBJ_N_SCENE_BASE, KCDefine.U_OBJ_N_SCENE_OBJS_ROOT
 	};
