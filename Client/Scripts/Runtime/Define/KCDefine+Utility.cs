@@ -588,6 +588,7 @@ public static partial class KCDefine {
 	public const string U_TAG_MAIN_CAMERA = "MainCamera";
 	public const string U_TAG_GAME_CONTROLLER = "GameController";
 
+	public const string U_TAG_CELL = "Cell";
 	public const string U_TAG_ENEMY = "Enemy";
 	public const string U_TAG_OBSTACLE = "Obstacle";
 	public const string U_TAG_MAIN_LIGHT = "MainLight";
@@ -721,7 +722,7 @@ public static partial class KCDefine {
 
 	// 태그
 	public static readonly List<string> U_TAG_LIST = new List<string>() {
-		KCDefine.U_TAG_ENEMY, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_MAIN_LIGHT, KCDefine.U_TAG_ADDITIONAL_LIGHT, KCDefine.U_TAG_ADDITIONAL_CAMERA, KCDefine.U_TAG_SCENE_MANAGER
+		KCDefine.U_TAG_CELL, KCDefine.U_TAG_ENEMY, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_MAIN_LIGHT, KCDefine.U_TAG_ADDITIONAL_LIGHT, KCDefine.U_TAG_ADDITIONAL_CAMERA, KCDefine.U_TAG_SCENE_MANAGER
 	};
 
 	// 정렬 레이어
