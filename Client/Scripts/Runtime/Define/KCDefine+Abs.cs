@@ -252,6 +252,7 @@ public static partial class KCDefine {
 	// 이름 }
 
 	// 씬 이름 {
+	public const string B_SCENE_N_EXTRA = "00-ExtraScene";
 	public const string B_SCENE_N_SAMPLE = "00-SampleScene";
 	public const string B_SCENE_N_MENU_SAMPLE = "10-MenuSampleScene";
 	public const string B_SCENE_N_STUDY_SAMPLE = "11-StudySampleScene";
