@@ -158,6 +158,7 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FX = "FX";
 	public const string U_KEY_CALC = "Calc";
+	public const string U_KEY_ORDER = "Order";
 	public const string U_KEY_TUTORIAL = "Tutorial";
 
 	public const string U_KEY_LEVEL_EPISODE = "LevelEpisode";
