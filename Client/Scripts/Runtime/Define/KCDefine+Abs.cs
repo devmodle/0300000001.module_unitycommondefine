@@ -144,6 +144,7 @@ public static partial class KCDefine {
 
 	// 인덱스
 	public const int B_IDX_INVALID = -1;
+	public const string B_IDX_INVALID_STR = "-1";
 
 	// 디바이스 {
 	public const int B_MIN_TARGET_FRAME_RATE = 30;
