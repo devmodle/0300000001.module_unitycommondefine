@@ -198,31 +198,32 @@ public static partial class KCDefine {
 	public const string U_KEY_PREV_REWARD_KINDS = "PrevRewardKinds";
 	public const string U_KEY_NEXT_REWARD_KINDS = "NextRewardKinds";
 
+	public const string U_KEY_MISSION_KINDS = "MissionKinds";
+	public const string U_KEY_PREV_MISSION_KINDS = "PrevMissionKinds";
+	public const string U_KEY_NEXT_MISSION_KINDS = "NextMissionKinds";
+
 	public const string U_KEY_ITEM_KINDS = "ItemKinds";
 	public const string U_KEY_PREV_ITEM_KINDS = "PrevItemKinds";
 	public const string U_KEY_NEXT_ITEM_KINDS = "NextItemKinds";
 
-	public const string U_KEY_MISSION_KINDS = "MissionKinds";
-	public const string U_KEY_PREV_MISSION_KINDS = "PrevMissionKinds";
-	public const string U_KEY_NEXT_MISSION_KINDS = "NextMissionKinds";
+	public const string U_KEY_SKILL_KINDS = "SkillKinds";
+	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
+	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
+
+	public const string U_KEY_SKILL_APPLY_KINDS = "SkillApplyKinds";
+	public const string U_KEY_ACTION_SKILL_KINDS = "ActionSkillKinds";
+
+	public const string U_KEY_OBJ_KINDS = "ObjKinds";
+	public const string U_KEY_PREV_OBJ_KINDS = "PrevObjKinds";
+	public const string U_KEY_NEXT_OBJ_KINDS = "NextObjKinds";
 
 	public const string U_KEY_FX_KINDS = "FXKinds";
 	public const string U_KEY_PREV_FX_KINDS = "PrevFXKinds";
 	public const string U_KEY_NEXT_FX_KINDS = "NextFXKinds";
 
-	public const string U_KEY_SKILL_KINDS = "SkillKinds";
-	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
-	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
-	public const string U_KEY_SKILL_APPLY_KINDS = "SkillApplyKinds";
-	public const string U_KEY_ACTION_SKILL_KINDS = "ActionSkillKinds";
-
 	public const string U_KEY_ABILITY_KINDS = "AbilityKinds";
 	public const string U_KEY_PREV_ABILITY_KINDS = "PrevAbilityKinds";
 	public const string U_KEY_NEXT_ABILITY_KINDS = "NextAbilityKinds";
-
-	public const string U_KEY_OBJ_KINDS = "ObjKinds";
-	public const string U_KEY_PREV_OBJ_KINDS = "PrevObjKinds";
-	public const string U_KEY_NEXT_OBJ_KINDS = "NextObjKinds";
 
 	public const string U_KEY_TUTORIAL_KINDS = "TutorialKinds";
 	public const string U_KEY_PREV_TUTORIAL_KINDS = "PrevTutorialKinds";
@@ -242,8 +243,12 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FMT_FLAGS = "Flags_{0:00}";
 	public const string U_KEY_FMT_PRICE = "Price_{0:00}";
+
 	public const string U_KEY_FMT_RES_KINDS = "ResKinds_{0:00}";
 	public const string U_KEY_FMT_REWARD_KINDS = "RewardKinds_{0:00}";
+
+	public const string U_KEY_FMT_MISSION_KINDS = "MissionKinds_{0:00}";
+	public const string U_KEY_FMT_EXTRA_MISSION_KINDS = "ExtraMissionKinds_{0:00}";
 
 	public const string U_KEY_FMT_ITEM_KINDS = "ItemKinds_{0:00}";
 	public const string U_KEY_FMT_EXTRA_ITEM_KINDS = "ExtraItemKinds_{0:00}";
@@ -256,6 +261,9 @@ public static partial class KCDefine {
 
 	public const string U_KEY_FMT_FX_KINDS = "FXKinds_{0:00}";
 	public const string U_KEY_FMT_EXTRA_FX_KINDS = "ExtraFXKinds_{0:00}";
+
+	public const string U_KEY_FMT_ABILITY_KINDS = "AbilityKinds_{0:00}";
+	public const string U_KEY_FMT_EXTRA_ABILITY_KINDS = "ExtraAbilityKinds_{0:00}";
 
 	public const string U_KEY_FMT_STRS = "Str_{0:00}";
 	public const string U_KEY_FMT_TUTORIAL_MSG = "TUTORIAL_MSG_{0:00}_{1:00}";
