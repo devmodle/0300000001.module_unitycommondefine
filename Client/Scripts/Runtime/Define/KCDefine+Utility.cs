@@ -139,6 +139,11 @@ public static partial class KCDefine {
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";
 
+	public const string U_KEY_IS_RANDOM = "IsRandom";
+	public const string U_KEY_IS_OVERLAY = "IsOverlay";
+	public const string U_KEY_IS_PROJECTILE = "IsProjectile";
+	public const string U_KEY_IS_CLEAR_TARGET = "IsClearTarget";
+
 	public const string U_KEY_DEVICE_CMD = "Cmd";
 	public const string U_KEY_DEVICE_MSG = "Msg";
 
