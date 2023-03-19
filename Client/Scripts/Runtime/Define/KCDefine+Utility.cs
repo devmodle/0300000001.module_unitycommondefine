@@ -225,6 +225,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FX_KINDS = "FXKinds";
 	public const string U_KEY_PREV_FX_KINDS = "PrevFXKinds";
 	public const string U_KEY_NEXT_FX_KINDS = "NextFXKinds";
+	public const string U_KEY_FX_APPLY_TYPE = "FXApplyType";
 
 	public const string U_KEY_ABILITY_KINDS = "AbilityKinds";
 	public const string U_KEY_PREV_ABILITY_KINDS = "PrevAbilityKinds";
