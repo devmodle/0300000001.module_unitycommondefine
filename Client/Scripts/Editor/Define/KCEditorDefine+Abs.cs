@@ -1343,8 +1343,8 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Icons/Standalone/App/T_Icon.png", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_STANDALONE_APP}.png"),
 
 		// Editor Default Resources
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}99-Extra/Resources/Textures/T_BG_EMPTY_01.png", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}ES_SpriteAtlas_01/LES_BG_EMPTY_01.png"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}99-Extra/Resources/Textures/T_BG_PLACEHOLDER_01.png", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}ES_SpriteAtlas_01/LES_BG_PLACEHOLDER_01.png"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}99-Extra/Resources/Textures/T_BG_OBJ_EMPTY_01.png", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}ES_SpriteAtlas_01/LES_BG_OBJ_EMPTY_01.png"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}99-Extra/Resources/Textures/T_BG_OBJ_PLACEHOLDER_01.png", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}ES_SpriteAtlas_01/LES_BG_OBJ_PLACEHOLDER_01.png"),
 
 #if NOTI_MODULE_ENABLE
 		// iOS

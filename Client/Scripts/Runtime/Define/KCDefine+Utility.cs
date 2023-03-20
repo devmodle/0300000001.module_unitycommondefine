@@ -215,6 +215,7 @@ public static partial class KCDefine {
 	public const string U_KEY_PREV_SKILL_KINDS = "PrevSkillKinds";
 	public const string U_KEY_NEXT_SKILL_KINDS = "NextSkillKinds";
 
+	public const string U_KEY_FX_APPLY_KINDS = "FXApplyKinds";
 	public const string U_KEY_SKILL_APPLY_KINDS = "SkillApplyKinds";
 	public const string U_KEY_ACTION_SKILL_KINDS = "ActionSkillKinds";
 
@@ -225,7 +226,6 @@ public static partial class KCDefine {
 	public const string U_KEY_FX_KINDS = "FXKinds";
 	public const string U_KEY_PREV_FX_KINDS = "PrevFXKinds";
 	public const string U_KEY_NEXT_FX_KINDS = "NextFXKinds";
-	public const string U_KEY_FX_APPLY_TYPE = "FXApplyType";
 
 	public const string U_KEY_ABILITY_KINDS = "AbilityKinds";
 	public const string U_KEY_PREV_ABILITY_KINDS = "PrevAbilityKinds";
