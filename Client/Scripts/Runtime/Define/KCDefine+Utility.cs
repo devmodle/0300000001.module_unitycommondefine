@@ -77,7 +77,7 @@ public static partial class KCDefine {
 	public const float U_DELAY_DEF = 0.15f;
 	public const float U_DELAY_INIT = 0.15f;
 	public const float U_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
-	public const float U_MIN_DELAY_FX_SNDS = 0.15f;
+	public const float U_MIN_DELAY_FX_SNDS = 0.05f;
 
 	public const float U_DURATION_ANI = 0.15f;
 	public const float U_DURATION_POPUP_ANI = 0.25f;
