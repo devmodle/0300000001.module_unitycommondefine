@@ -1096,17 +1096,22 @@ public static partial class KCEditorDefine {
 #if(POPUP_PREFAB_TEMPLATES_ENABLE || POPUP_PREFAB_TEMPLATES_MODULE_ENABLE) && (UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE)
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_STORE_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SETTINGS_POPUP}.prefab"),
+
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_SYNC_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_DAILY_MISSION_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_FREE_REWARD_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_DAILY_REWARD_POPUP}.prefab"),
+
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_COINS_BOX_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_REWARD_ACQUIRE_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_COINS_BOX_ACQUIRE_POPUP}.prefab"),
+
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_CONTINUE_POPUP}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_READY_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_RESULT_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_RESUME_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_PAUSE_POPUP}.prefab"),
+		
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_Popup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_PRODUCT_BUY_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_FocusPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_FOCUS_POPUP}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Prefabs/UI/Popup/T_FocusPopup.prefab", $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_OBJ_P_G_TUTORIAL_POPUP}.prefab"),
