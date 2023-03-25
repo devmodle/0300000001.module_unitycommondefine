@@ -98,13 +98,13 @@ public static partial class KCDefine {
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
 	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
 
-#if UNIT_SCALE_CORRECT_ENABLE
+#if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
 	public const float B_UNIT_SCALE = 0.01f;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f;
 #else
 	public const float B_UNIT_SCALE = 1.0f;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 0.01f;
-#endif // #if UNIT_SCALE_CORRECT_ENABLE
+#endif // #if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
 	// 단위 }
 
 	// 빌드 번호
@@ -586,7 +586,7 @@ public static partial class KCDefine {
 		KCDefine.B_SCENE_N_SETUP,
 		KCDefine.B_SCENE_N_AGREE,
 		KCDefine.B_SCENE_N_LATE_SETUP,
-		
+
 		KCDefine.B_SCENE_N_TITLE,
 		KCDefine.B_SCENE_N_MAIN,
 		KCDefine.B_SCENE_N_PLAY,
