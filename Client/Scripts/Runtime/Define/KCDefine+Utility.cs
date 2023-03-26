@@ -76,17 +76,20 @@ public static partial class KCDefine {
 	// 시간 {
 	public const float U_DELAY_DEF = 0.15f;
 	public const float U_DELAY_INIT = 0.15f;
+
 	public const float U_DELAY_POPUP_SHOW_ANI = KCDefine.B_DELTA_T_INTERMEDIATE;
 	public const float U_MIN_DELAY_FX_SNDS = 0.05f;
 
 	public const float U_DURATION_ANI = 0.15f;
 	public const float U_DURATION_POPUP_ANI = 0.25f;
+
 	public const float U_DURATION_LIGHT_VIBRATE = 0.05f;
 	public const float U_DURATION_MEDIUM_VIBRATE = 0.1f;
 	public const float U_DURATION_HEAVY_VIBRATE = 0.15f;
 
 	public const float U_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_TIMEOUT_NETWORK_CONNECTION = 30.0f;
+
 	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
 	// 시간 }
 
