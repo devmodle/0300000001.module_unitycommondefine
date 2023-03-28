@@ -791,6 +791,10 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Function/T_Func+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Function/Func+Global.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Function/T_LogFunc+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Function/LogFunc+Global.cs"),
 
+		// 효과
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Etc/T_CStoreUIsHandler.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CStoreUIsHandler.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Etc/T_CDifficultyUIsHandler.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CDifficultyUIsHandler.cs"),
+
 		// 팝업
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CStorePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CStorePopup.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CSettingsPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CSettingsPopup.cs"),
@@ -909,8 +913,8 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CMissionPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CMissionPopup+Sub.cs"),
 
 		// 효과
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Etc/T_CStoreUIsHandler.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CStoreUIsHandler.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Etc/T_CDifficultyUIsHandler.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CDifficultyUIsHandler.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Etc/T_CStoreUIsHandler+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CStoreUIsHandler+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Etc/T_CDifficultyUIsHandler+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CDifficultyUIsHandler+Sub.cs"),
 
 		// 테이블 {
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CEtcInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CEtcInfoTable.cs"),
