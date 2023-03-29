@@ -360,6 +360,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_SPRITE_ATLASES = "SpriteAtlases/";
 	public const string B_DIR_P_SETTINGS = "Settings/";
 
+	public const string B_DIR_P_ETC = "Etc/";
 	public const string B_DIR_P_GLOBAL = "Global/";
 	public const string B_DIR_P_UTILITY = "Utility/";
 	public const string B_DIR_P_TUTORIAL = "Tutorial/";
