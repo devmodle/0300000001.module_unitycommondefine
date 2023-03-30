@@ -256,6 +256,9 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_RES_KINDS = "ResKinds_{0:00}";
 	public const string U_KEY_FMT_REWARD_KINDS = "RewardKinds_{0:00}";
 
+	public const string U_KEY_FMT_GAME_ITEM_KINDS = "GameItemKinds_{0:00}";
+	public const string U_KEY_FMT_BOOSTER_ITEM_KINDS = "BoosterItemKinds_{0:00}";
+
 	public const string U_KEY_FMT_MISSION_KINDS = "MissionKinds_{0:00}";
 	public const string U_KEY_FMT_EXTRA_MISSION_KINDS = "ExtraMissionKinds_{0:00}";
 
@@ -374,6 +377,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CLEAR_UIS = "CLEAR_UIS";
 	public const string U_OBJ_N_CLEAR_FAIL_UIS = "CLEAR_FAIL_UIS";
 
+	public const string U_OBJ_N_NORM_UIS = "NORM_UIS";
 	public const string U_OBJ_N_LOCK_UIS = "LOCK_UIS";
 	public const string U_OBJ_N_OPEN_UIS = "OPEN_UIS";
 
