@@ -377,9 +377,12 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_CLEAR_UIS = "CLEAR_UIS";
 	public const string U_OBJ_N_CLEAR_FAIL_UIS = "CLEAR_FAIL_UIS";
 
+	public const string U_OBJ_N_SEL_UIS = "SEL_UIS";
 	public const string U_OBJ_N_NORM_UIS = "NORM_UIS";
 	public const string U_OBJ_N_LOCK_UIS = "LOCK_UIS";
+
 	public const string U_OBJ_N_OPEN_UIS = "OPEN_UIS";
+	public const string U_OBJ_N_CLOSE_UIS = "CLOSE_UIS";
 
 	public const string U_OBJ_N_GAUGE_UIS = "GAUGE_UIS";
 	public const string U_OBJ_N_HP_GAUGE_UIS = "HP_GAUGE_UIS";
@@ -390,6 +393,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LOGOUT_UIS = "LOGOUT_UIS";
 
 	public const string U_OBJ_N_ADS_PRICE_UIS = "ADS_PRICE_UIS";
+	public const string U_OBJ_N_TARGET_PRICE_UIS = "TARGET_PRICE_UIS";
 	public const string U_OBJ_N_PURCHASE_PRICE_UIS = "PURCHASE_PRICE_UIS";
 
 	public const string U_OBJ_N_TOP_MENU_UIS = "TOP_MENU_UIS";
