@@ -492,11 +492,14 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_BG_SND_BTN = "BG_SND_BTN";
 	public const string U_OBJ_N_FX_SNDS_BTN = "FX_SNDS_BTN";
 	public const string U_OBJ_N_VIBRATE_BTN = "VIBRATE_BTN";
+
 	public const string U_OBJ_N_NOTI_BTN = "NOTI_BTN";
 	public const string U_OBJ_N_REVIEW_BTN = "REVIEW_BTN";
 	public const string U_OBJ_N_SUPPORTS_BTN = "SUPPORTS_BTN";
+
 	public const string U_OBJ_N_SYNC_BTN = "SYNC_BTN";
 	public const string U_OBJ_N_LOCALIZE_BTN = "LOCALIZE_BTN";
+	public const string U_OBJ_N_MORE_APPS_BTN = "MORE_APPS_BTN";
 
 	public const string U_OBJ_N_POPUP = "POPUP";
 	public const string U_OBJ_N_GAME_OBJ = "GAME_OBJ";
