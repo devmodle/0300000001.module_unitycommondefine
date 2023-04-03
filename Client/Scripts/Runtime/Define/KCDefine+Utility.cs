@@ -380,9 +380,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SEL_UIS = "SEL_UIS";
 	public const string U_OBJ_N_NORM_UIS = "NORM_UIS";
 	public const string U_OBJ_N_LOCK_UIS = "LOCK_UIS";
-
-	public const string U_OBJ_N_OPEN_UIS = "OPEN_UIS";
-	public const string U_OBJ_N_CLOSE_UIS = "CLOSE_UIS";
+	public const string U_OBJ_N_REWARD_UIS = "REWARD_UIS";
+	public const string U_OBJ_N_DIFFICULTY_UIS = "DIFFICULTY_UIS";
 
 	public const string U_OBJ_N_GAUGE_UIS = "GAUGE_UIS";
 	public const string U_OBJ_N_HP_GAUGE_UIS = "HP_GAUGE_UIS";
@@ -420,6 +419,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_NUM_TEXT = "NUM_TEXT";
 	public const string U_OBJ_N_TIME_TEXT = "TIME_TEXT";
 	public const string U_OBJ_N_TIMES_TEXT = "TIMES_TEXT";
+
 	public const string U_OBJ_N_PRICE_TEXT = "PRICE_TEXT";
 	public const string U_OBJ_N_STATE_TEXT = "STATE_TEXT";
 	public const string U_OBJ_N_LOADING_TEXT = "LOADING_TEXT";
@@ -561,6 +561,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_LEVEL_SCROLL_VIEW = "LEVEL_SCROLL_VIEW";
 	public const string U_OBJ_N_STAGE_SCROLL_VIEW = "STAGE_SCROLL_VIEW";
 	public const string U_OBJ_N_CHAPTER_SCROLL_VIEW = "CHAPTER_SCROLL_VIEW";
+
+	public const string U_OBJ_N_BG_SPRITE = "BG_SPRITE";
+	public const string U_OBJ_N_TARGET_SPRITE = "TARGET_SPRITE";
+	public const string U_OBJ_N_TARGET_PARTICLE_FX = "TARGET_PARTICLE_FX";
 
 	public const string U_OBJ_N_OBJ = "OBJ";
 	public const string U_OBJ_N_SPRITE = "SPRITE";
