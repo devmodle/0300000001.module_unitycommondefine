@@ -480,6 +480,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_NEXT_BTN = "NEXT_BTN";
 	public const string U_OBJ_N_RETRY_BTN = "RETRY_BTN";
 	public const string U_OBJ_N_LEAVE_BTN = "LEAVE_BTN";
+	public const string U_OBJ_N_FINISH_BTN = "FINISH_BTN";
 	public const string U_OBJ_N_CONTINUE_BTN = "CONTINUE_BTN";
 
 	public const string U_OBJ_N_ADS_BTN = "ADS_BTN";
