@@ -240,11 +240,13 @@ public static partial class KCDefine {
 
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
 
-	public const string B_NAME_PATTERN_TEX_FIX_REPEAT_WRAP = "__FIX_RW__";
-	public const string B_NAME_PATTERN_TEX_FIX_POINT_FILTER = "__FIX_PF__";
-	public const string B_NAME_PATTERN_AUDIO_FIX_COMPRESS_IN_MEMORY = "__FIX_CIM__";
+	public const string B_NAME_PATTERN_FIX_REPEAT_WRAP = "__FIX_RW__";
+	public const string B_NAME_PATTERN_FIX_POINT_FILTER = "__FIX_PF__";
+	public const string B_NAME_PATTERN_FIX_COMPRESS_IN_MEMORY = "__FIX_CIM__";
 
+	public const string B_NAME_PATTERN_ENABLE_MIPMAPS = "__ENABLE_MM__";
 	public const string B_NAME_PATTERN_ENABLE_READABLE = "__ENABLE_R__";
+
 	public const string B_NAME_PATTERN_IGNORE_SETUP_LAYER = "__IGNORE_SL__";
 	public const string B_NAME_PATTERN_IGNORE_LINEAR_PIPELINE = "__IGNORE_LP__";
 	public const string B_NAME_PATTERN_IGNORE_SETUP_CULLING_MASK = "__IGNORE_SCM__";
