@@ -380,6 +380,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SEL_UIS = "SEL_UIS";
 	public const string U_OBJ_N_NORM_UIS = "NORM_UIS";
 	public const string U_OBJ_N_LOCK_UIS = "LOCK_UIS";
+	public const string U_OBJ_N_PRICE_UIS = "PRICE_UIS";
 	public const string U_OBJ_N_REWARD_UIS = "REWARD_UIS";
 	public const string U_OBJ_N_DIFFICULTY_UIS = "DIFFICULTY_UIS";
 
