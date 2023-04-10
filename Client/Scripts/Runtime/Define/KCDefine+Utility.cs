@@ -1370,6 +1370,7 @@ public static partial class KCDefine {
 
 #if PURCHASE_MODULE_ENABLE
 	// 기타
+	public const string U_ENVIRONMENT_N_DEV = "development";
 	public const string U_ENVIRONMENT_N_PRODUCTION = "production";
 	public const string U_PAYLOAD_PURCHASE_M_PURCHASE = "PurchaseMPurchase";
 
