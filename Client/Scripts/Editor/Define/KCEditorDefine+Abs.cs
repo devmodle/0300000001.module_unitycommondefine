@@ -390,8 +390,8 @@ public static partial class KCEditorDefine {
 		"SceneCamera", "Main Camera", "Preview Camera", "Preview Scene Camera"
 	};
 
-	public static readonly List<string> B_NAMED_BUILD_TARGET_LIST = new List<string>() {
-		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
+	public static readonly List<NamedBuildTarget> B_NAMED_BUILD_TARGET_LIST = new List<NamedBuildTarget>() {
+		NamedBuildTarget.iOS, NamedBuildTarget.Android, NamedBuildTarget.Standalone
 	};
 
 	public static readonly Dictionary<string, string> B_DIR_N_SCENE_DICT = new Dictionary<string, string>() {
