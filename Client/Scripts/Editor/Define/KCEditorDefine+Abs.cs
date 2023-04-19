@@ -46,7 +46,7 @@ public static partial class KCEditorDefine {
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
 
 	// 버전
-	public const string B_VER_UNITY_MODULE = "3.0.4";
+	public const string B_VER_UNITY_MODULE = "3.1.0";
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
@@ -347,7 +347,7 @@ public static partial class KCEditorDefine {
 	public const string B_NAME_2D_TOOLKIT_PKGS = "2DToolkit-v2.5.8.16";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
 	public const string B_NAME_SND_MANAGER_PRO_PKGS = "SoundManagerPro-v3.7.0";
-	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.10.0";
+	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.10.1";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
 	public const string B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS = "OdinInspectorAndSerializer-v3.1.10";
 	// 패키지 }
