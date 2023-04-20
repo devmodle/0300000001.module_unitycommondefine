@@ -66,7 +66,7 @@ public static partial class KCDefine {
 
 	// 비율 {
 	public const float U_SCALE_POPUP = 1.0f;
-	public const float U_MIN_SCALE_POPUP = 0.01f;
+	public const float U_MIN_SCALE_POPUP = 0.001f;
 
 	public const float U_SCALE_TOUCH = 1.05f;
 	public const float U_SCALE_PAGE_SCROLL = 0.35f;

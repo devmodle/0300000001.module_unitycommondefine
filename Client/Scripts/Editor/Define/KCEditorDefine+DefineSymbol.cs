@@ -137,7 +137,6 @@ public static partial class KCEditorDefine {
 
 	// 테스트 {
 	public const string DS_DEFINE_S_AB_TEST_ENABLE = "AB_TEST_ENABLE";
-	public const string DS_DEFINE_S_ADS_TEST_ENABLE = "ADS_TEST_ENABLE";
 	public const string DS_DEFINE_S_ROBO_TEST_ENABLE = "ROBO_TEST_ENABLE";
 	public const string DS_DEFINE_S_PLAY_TEST_ENABLE = "PLAY_TEST_ENABLE";
 	public const string DS_DEFINE_S_LOCALIZE_TEST_ENABLE = "LOCALIZE_TEST_ENABLE";
