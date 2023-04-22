@@ -1396,12 +1396,12 @@ public static partial class KCEditorDefine {
 	public static readonly Color B_COLOR_HIERARCHY_OUTLINE = Color.black;
 
 	// 알림 {
-	public static readonly string B_DATA_P_NOTI_PROJ_PROPERTIES = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/AndroidNativePlugin.androidlib/project.properties";
-	public static readonly string B_DATA_P_NOTI_ANDROID_MANIFEST = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/AndroidNativePlugin.androidlib/AndroidManifest.xml";
+	public static readonly string B_DATA_P_NOTI_PROJ_PROPERTIES = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidLibrary.androidlib/project.properties";
+	public static readonly string B_DATA_P_NOTI_ANDROID_MANIFEST = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidLibrary.androidlib/AndroidManifest.xml";
 
 	public static readonly List<(string, string)> B_NOTI_ICON_P_INFO_LIST = new List<(string, string)>() {
-		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/AndroidNativePlugin.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_SMALL}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_192x192}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/AndroidNativePlugin.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_LARGE}.png")
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidLibrary.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_SMALL}.png"),
+		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_192x192}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidLibrary.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_LARGE}.png")
 	};
 	// 알림 }
 
@@ -1420,7 +1420,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/iOS";
 
 	public static readonly string B_SRC_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/iOS/Classes/Plugin/";
-	public static readonly string B_DEST_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_IOS_PLUGINS}iOSNativePlugin/";
+	public static readonly string B_DEST_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_IOS_PLUGINS}CustomiOSNativePlugin/";
 
 	public static readonly string B_ENTITLEMENTS_P_CAPABILITY_IOS = $"{Application.identifier}.entitlements";
 
@@ -1433,7 +1433,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_BUILD_P_FMT_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Android/{"{0}"}";
 
 	public static readonly string B_SRC_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/Android/app/build/outputs/aar/app-release.aar";
-	public static readonly string B_DEST_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}AndroidNativePlugin.aar";
+	public static readonly string B_DEST_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}CustomAndroidNativePlugin.aar";
 
 	public static readonly string B_SRC_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/AndroidManifest.xml";
 	public static readonly string B_DEST_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}AndroidManifest.xml";
@@ -1450,6 +1450,10 @@ public static partial class KCEditorDefine {
 	public static readonly string B_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/baseProjectTemplate.gradle";
 	public static readonly string B_DEST_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}baseProjectTemplate.gradle";
 	public static readonly string B_ORIGIN_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/baseProjectTemplate.gradle";
+
+	public static readonly string B_SRC_SETTINGS_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/settingsTemplate.gradle";
+	public static readonly string B_DEST_SETTINGS_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}settingsTemplate.gradle";
+	public static readonly string B_ORIGIN_SRC_SETTINGS_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/settingsTemplate.gradle";
 
 	public static readonly string B_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/gradleTemplate.properties";
 	public static readonly string B_DEST_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}gradleTemplate.properties";
