@@ -292,6 +292,15 @@ public enum EAAQuality {
 	[HideInInspector] MAX_VAL
 }
 
+/** 쉐이더 로그 수준 */
+public enum EShaderVariantLogLevel {
+	NONE = -1,
+	DISABLE,
+	ONLY_UNIVERSAL_RP_SHADERS,
+	ALL_SHADERS,
+	[HideInInspector] MAX_VAL
+}
+
 /** 광원 맵 엔코딩 퀄리티 */
 public enum ELightmapEncodingQuality {
 	NONE = -1,
