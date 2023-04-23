@@ -204,6 +204,9 @@ public static partial class KCEditorDefine {
 	// 안드로이드 {
 	public const int B_UNIT_VALIDATE_APP_BUNDLE_SIZE = 150;
 
+	public const string B_TOKEN_LOCAL_NDK_PATH_ANDROID = "#ndk.dir=";
+	public const string B_TOKEN_GRADLE_NDK_PATH_ANDROID = "ndkPath \"";
+
 	public const string B_BUILD_FILE_EXTENSION_ANDROID_APK = "apk";
 	public const string B_BUILD_FILE_EXTENSION_ANDROID_AAB = "aab";
 
@@ -1466,6 +1469,7 @@ public static partial class KCEditorDefine {
 #endif // #if UNITY_EDITOR_WIN
 
 	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/Android/unityLibrary/libs/unity-classes.jar";
+	public static readonly string B_ORIGIN_SRC_BUILD_GRADLE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/Android/unityLibrary/build.gradle";
 
 #if UNITY_EDITOR_WIN
 	public static readonly string B_SRC_LOCAL_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/localWindows.properties";
@@ -1576,6 +1580,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_DEBUG_VARIANTS = "m_StripDebugVariants";
 	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
+	public const string B_PROPERTY_N_UNIVERSAL_RP_SHADER_VARIANT_LOG_LEVEL = "m_ShaderVariantLogLevel";
 	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_UNUSED_POST_PROCESSING_VARIANTS = "m_StripUnusedPostProcessingVariants";
 	// 이름 }
 #endif // #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE

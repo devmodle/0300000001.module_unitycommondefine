@@ -302,10 +302,12 @@ public static partial class KCDefine {
 	public const string B_TOKEN_DOT = ".";
 	public const string B_TOKEN_COMMA = ",";
 
+	public const string B_TOKEN_TAB = "\t";
 	public const string B_TOKEN_SPACE = " ";
 	public const string B_TOKEN_CROSS = "x";
 	public const string B_TOKEN_SLASH = "/";
 	public const string B_TOKEN_R_SLASH = "\\";
+	public const string B_TOKEN_S_QUOTES = "\'";
 	public const string B_TOKEN_D_QUOTES = "\"";
 	public const string B_TOKEN_O_BRACKETS = "[";
 	public const string B_TOKEN_C_BRACKETS = "]";
