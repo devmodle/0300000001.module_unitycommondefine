@@ -204,7 +204,7 @@ public static partial class KCEditorDefine {
 	// 안드로이드 {
 	public const int B_UNIT_VALIDATE_APP_BUNDLE_SIZE = 150;
 
-	public const string B_TOKEN_LOCAL_NDK_PATH_ANDROID = "#ndk.dir=";
+	public const string B_TOKEN_LOCAL_NDK_PATH_ANDROID = "# ndk.dir=";
 	public const string B_TOKEN_GRADLE_NDK_PATH_ANDROID = "ndkPath \"";
 
 	public const string B_BUILD_FILE_EXTENSION_ANDROID_APK = "apk";
