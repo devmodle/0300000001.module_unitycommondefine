@@ -756,9 +756,14 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_SCREEN_FADE_IN = Color.black;
 	public static readonly Color U_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
 
-	public static readonly Color U_COLOR_CLEAR = Color.black;
 	public static readonly Color U_COLOR_POPUP_BLIND = new Color(0.0f, 0.0f, 0.0f, 0.95f);
 	public static readonly Color U_COLOR_INDICATOR_BLIND = new Color(0.0f, 0.0f, 0.0f, 0.75f);
+
+#if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+	public static readonly Color U_COLOR_CLEAR = Color.gray;
+#else
+	public static readonly Color U_COLOR_CLEAR = Color.black;
+#endif // #if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 색상 }
 
 	// 버전
