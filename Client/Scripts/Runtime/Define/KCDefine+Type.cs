@@ -23,28 +23,46 @@ public partial interface IUpdater {
 	public void OnLateUpdate(float a_fDeltaTime);
 }
 
-/** 작업 정보 */
-public struct STTaskInfo {
-	public Task m_oTask;
-	public System.Action<Task> m_oCallback;
-}
-
 /** 콜백 정보 */
 public struct STCallbackInfo {
 	public string m_oKey;
 	public System.Action m_oCallback;
+
+	#region 함수
+	/** 생성자 */
+	public STCallbackInfo(string a_oKey, System.Action a_oCallback) {
+		m_oKey = a_oKey;
+		m_oCallback = a_oCallback;
+	}
+	#endregion // 함수
 }
 
 /** 스크롤러 정보 */
 public struct STScrollerInfo {
 	public EnhancedScroller m_oScroller;
 	public EnhancedScrollerCellView m_oScrollerCellView;
+
+	#region 함수
+	/** 생성자 */
+	public STScrollerInfo(EnhancedScroller a_oScroller, EnhancedScrollerCellView a_oScrollerCellView) {
+		m_oScroller = a_oScroller;
+		m_oScrollerCellView = a_oScrollerCellView;
+	}
+	#endregion // 함수
 }
 
 /** 컴포넌트 정보 */
 public struct STComponentInfo {
 	public int m_nID;
 	public Component m_oComponent;
+
+	#region 함수
+	/** 생성자 */
+	public STComponentInfo(int a_nID, Component a_oComponent) {
+		m_nID = a_nID;
+		m_oComponent = a_oComponent;
+	}
+	#endregion // 함수
 }
 
 /** 비활성화 객체 정보 */
@@ -54,6 +72,21 @@ public struct STDespawnObjInfo {
 	public System.DateTime m_stDespawnTime;
 
 	public GameObject m_oObj;
+
+	#region 함수
+	/** 생성자 */
+	public STDespawnObjInfo(string a_oObjsPoolKey, GameObject a_oObj, bool a_bIsDestroy = false) : this(a_oObjsPoolKey, a_oObj, System.DateTime.Now, a_bIsDestroy) {
+		// Do Something
+	}
+
+	/** 생성자 */
+	public STDespawnObjInfo(string a_oObjsPoolKey, GameObject a_oObj, System.DateTime a_stDespawnTime, bool a_bIsDestroy = false) {
+		m_oObj = a_oObj;
+		m_bIsDestroy = a_bIsDestroy;
+		m_oObjsPoolKey = a_oObjsPoolKey;
+		m_stDespawnTime = a_stDespawnTime;
+	}
+	#endregion // 함수
 }
 
 /** 터치 응답자 정보 */
@@ -61,6 +94,15 @@ public struct STTouchResponderInfo {
 	public Sequence m_oAni;
 	public GameObject m_oTouchResponder;
 	public System.Action<GameObject> m_oCallback;
+
+	#region 함수
+	/** 생성자 */
+	public STTouchResponderInfo(Sequence a_oAni, GameObject a_oTouchResponder, System.Action<GameObject> a_oCallback) {
+		m_oAni = a_oAni;
+		m_oCallback = a_oCallback;
+		m_oTouchResponder = a_oTouchResponder;
+	}
+	#endregion // 함수
 }
 
 /** 정렬 순서 정보 */
@@ -73,6 +115,14 @@ public struct STSortingOrderInfo {
 		m_nOrder = short.MinValue, m_oLayer = KCDefine.U_SORTING_L_UNDERGROUND
 	};
 	#endregion // 상수
+
+	#region 함수
+	/** 생성자 */
+	public STSortingOrderInfo(int a_nOrder, string a_oLayer) {
+		m_nOrder = a_nOrder;
+		m_oLayer = a_oLayer;
+	}
+	#endregion // 함수
 }
 
 /** 식별자 정보 */
@@ -165,6 +215,15 @@ public struct STRecordInfo {
 	[Key(0)] public bool m_bIsSuccess;
 	[Key(1)] public long m_nIntRecord;
 	[Key(2)] public double m_dblRealRecord;
+
+	#region 함수
+	/** 생성자 */
+	public STRecordInfo(long a_nIntRecord, double a_dblRealRecord, bool a_bIsSuccess) {
+		m_bIsSuccess = a_bIsSuccess;
+		m_nIntRecord = a_nIntRecord;
+		m_dblRealRecord = a_dblRealRecord;
+	}
+	#endregion // 함수
 }
 
 /** 빌드 버전 정보 */
