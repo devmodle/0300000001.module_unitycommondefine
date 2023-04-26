@@ -149,22 +149,22 @@ public static partial class KCDefine {
 	// 디바이스 {
 	public const int B_MIN_TARGET_FRAME_RATE = 30;
 
-	public const int B_PORTRAIT_SCREEN_WIDTH = 720;
-	public const int B_PORTRAIT_SCREEN_HEIGHT = 1280;
-	public const int B_PORTRAIT_DPI_SCREEN_HEIGHT = 1920;
+	public const int B_DESIGN_P_SCREEN_WIDTH = 720;
+	public const int B_DESIGN_P_SCREEN_HEIGHT = 1280;
+	public const int B_DESIGN_P_DPI_SCREEN_HEIGHT = 1920;
 
-	public const int B_LANDSCAPE_SCREEN_WIDTH = 1280;
-	public const int B_LANDSCAPE_SCREEN_HEIGHT = 720;
-	public const int B_LANDSCAPE_DPI_SCREEN_HEIGHT = 1080;
+	public const int B_DESIGN_L_SCREEN_WIDTH = 1280;
+	public const int B_DESIGN_L_SCREEN_HEIGHT = 720;
+	public const int B_DESIGN_L_DPI_SCREEN_HEIGHT = 1080;
 
 #if MODE_PORTRAIT_ENABLE
-	public const int B_SCREEN_WIDTH = KCDefine.B_PORTRAIT_SCREEN_WIDTH;
-	public const int B_SCREEN_HEIGHT = KCDefine.B_PORTRAIT_SCREEN_HEIGHT;
-	public const int B_DPI_SCREEN_HEIGHT = KCDefine.B_PORTRAIT_DPI_SCREEN_HEIGHT;
+	public const int B_DESIGN_SCREEN_WIDTH = KCDefine.B_DESIGN_P_SCREEN_WIDTH;
+	public const int B_DESIGN_SCREEN_HEIGHT = KCDefine.B_DESIGN_P_SCREEN_HEIGHT;
+	public const int B_DESIGN_DPI_SCREEN_HEIGHT = KCDefine.B_DESIGN_P_DPI_SCREEN_HEIGHT;
 #else
-	public const int B_SCREEN_WIDTH = KCDefine.B_LANDSCAPE_SCREEN_WIDTH;
-	public const int B_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_SCREEN_HEIGHT;
-	public const int B_DPI_SCREEN_HEIGHT = KCDefine.B_LANDSCAPE_DPI_SCREEN_HEIGHT;
+	public const int B_DESIGN_SCREEN_WIDTH = KCDefine.B_DESIGN_L_SCREEN_WIDTH;
+	public const int B_DESIGN_SCREEN_HEIGHT = KCDefine.B_DESIGN_L_SCREEN_HEIGHT;
+	public const int B_DESIGN_DPI_SCREEN_HEIGHT = KCDefine.B_DESIGN_L_DPI_SCREEN_HEIGHT;
 #endif // #if MODE_PORTRAIT_ENABLE
 
 	public const float B_DEF_SCREEN_DPI = 160.0f;
@@ -219,7 +219,7 @@ public static partial class KCDefine {
 	public const string B_FILE_EXTENSION_TMP_FONT_ASSET = KCDefine.B_FILE_EXTENSION_ASSET;
 
 	public const SystemLanguage B_DEF_LANGUAGE = SystemLanguage.English;
-	public static readonly Vector3 B_SCREEN_SIZE = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
+	public static readonly Vector3 B_DESIGN_SCREEN_SIZE = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH, KCDefine.B_DESIGN_SCREEN_HEIGHT, 0.0f);
 	// 디바이스 }
 
 	// 국가 코드
@@ -637,17 +637,17 @@ public static partial class KCDefine {
 	// 앵커 }
 
 	// 위치 {
-	public static readonly Vector3 B_POS_UP_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT, 0.0f);
-	public static readonly Vector3 B_POS_UP_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT, 0.0f);
-	public static readonly Vector3 B_POS_UP_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT, 0.0f);
+	public static readonly Vector3 B_POS_UP_LEFT = new Vector3(0.0f, KCDefine.B_DESIGN_SCREEN_HEIGHT, 0.0f);
+	public static readonly Vector3 B_POS_UP_CENTER = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH / 2.0f, KCDefine.B_DESIGN_SCREEN_HEIGHT, 0.0f);
+	public static readonly Vector3 B_POS_UP_RIGHT = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH, KCDefine.B_DESIGN_SCREEN_HEIGHT, 0.0f);
 
 	public static readonly Vector3 B_POS_DOWN_LEFT = Vector3.zero;
-	public static readonly Vector3 B_POS_DOWN_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
-	public static readonly Vector3 B_POS_DOWN_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, 0.0f, 0.0f);
+	public static readonly Vector3 B_POS_DOWN_CENTER = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
+	public static readonly Vector3 B_POS_DOWN_RIGHT = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH, 0.0f, 0.0f);
 
-	public static readonly Vector3 B_POS_MID_LEFT = new Vector3(0.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_POS_MID_CENTER = new Vector3(KCDefine.B_SCREEN_WIDTH / 2.0f, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_POS_MID_RIGHT = new Vector3(KCDefine.B_SCREEN_WIDTH, KCDefine.B_SCREEN_HEIGHT / 2.0f, 0.0f);
+	public static readonly Vector3 B_POS_MID_LEFT = new Vector3(0.0f, KCDefine.B_DESIGN_SCREEN_HEIGHT / 2.0f, 0.0f);
+	public static readonly Vector3 B_POS_MID_CENTER = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH / 2.0f, KCDefine.B_DESIGN_SCREEN_HEIGHT / 2.0f, 0.0f);
+	public static readonly Vector3 B_POS_MID_RIGHT = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH, KCDefine.B_DESIGN_SCREEN_HEIGHT / 2.0f, 0.0f);
 
 	public static readonly Vector3 B_POS_POPUP = Vector3.zero;
 	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;

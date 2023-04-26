@@ -782,50 +782,17 @@ public static partial class KCDefine {
 	};
 
 	// 정렬 순서 {
-	public static readonly STSortingOrderInfo U_SORTING_OI_ABS = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_ABS, m_oLayer = KCDefine.U_SORTING_L_ABS
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_DEF = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_DEF, m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_TOP = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_TOP, m_oLayer = KCDefine.U_SORTING_L_TOP
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_TOPMOST = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_TOPMOST, m_oLayer = KCDefine.U_SORTING_L_TOPMOST
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_FOREGROUND = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_FOREGROUND, m_oLayer = KCDefine.U_SORTING_L_FOREGROUND
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_OVERGROUND = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_OVERGROUND, m_oLayer = KCDefine.U_SORTING_L_OVERGROUND
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_BACKGROUND = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_BACKGROUND, m_oLayer = KCDefine.U_SORTING_L_BACKGROUND
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_UNDERGROUND = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_UNDERGROUND, m_oLayer = KCDefine.U_SORTING_L_UNDERGROUND
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_UIS, m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_RESULT_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_OVERLAY_UIS, m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-
-	public static readonly STSortingOrderInfo U_SORTING_OI_OVERLAY_UIS_CANVAS = new STSortingOrderInfo() {
-		m_nOrder = KCDefine.U_SORTING_O_OVERLAY_UIS + 10, m_oLayer = KCDefine.U_SORTING_L_DEF
-	};
-	// 정렬 순서 }
+	public static readonly STSortingOrderInfo U_SORTING_OI_ABS = new STSortingOrderInfo(KCDefine.U_SORTING_O_ABS, KCDefine.U_SORTING_L_ABS);
+	public static readonly STSortingOrderInfo U_SORTING_OI_DEF = new STSortingOrderInfo(KCDefine.U_SORTING_O_DEF, KCDefine.U_SORTING_L_DEF);
+	public static readonly STSortingOrderInfo U_SORTING_OI_TOP = new STSortingOrderInfo(KCDefine.U_SORTING_O_TOP, KCDefine.U_SORTING_L_TOP);
+	public static readonly STSortingOrderInfo U_SORTING_OI_TOPMOST = new STSortingOrderInfo(KCDefine.U_SORTING_O_TOPMOST, KCDefine.U_SORTING_L_TOPMOST);
+	public static readonly STSortingOrderInfo U_SORTING_OI_FOREGROUND = new STSortingOrderInfo(KCDefine.U_SORTING_O_FOREGROUND, KCDefine.U_SORTING_L_FOREGROUND);
+	public static readonly STSortingOrderInfo U_SORTING_OI_OVERGROUND = new STSortingOrderInfo(KCDefine.U_SORTING_O_OVERGROUND, KCDefine.U_SORTING_L_OVERGROUND);
+	public static readonly STSortingOrderInfo U_SORTING_OI_BACKGROUND = new STSortingOrderInfo(KCDefine.U_SORTING_O_BACKGROUND, KCDefine.U_SORTING_L_BACKGROUND);
+	public static readonly STSortingOrderInfo U_SORTING_OI_UNDERGROUND = new STSortingOrderInfo(KCDefine.U_SORTING_O_UNDERGROUND, KCDefine.U_SORTING_L_UNDERGROUND);
+	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo(KCDefine.U_SORTING_O_UIS, KCDefine.U_SORTING_L_DEF);
+	public static readonly STSortingOrderInfo U_SORTING_OI_RESULT_UIS_CANVAS = new STSortingOrderInfo(KCDefine.U_SORTING_O_OVERLAY_UIS, KCDefine.U_SORTING_L_DEF);
+	public static readonly STSortingOrderInfo U_SORTING_OI_OVERLAY_UIS_CANVAS = new STSortingOrderInfo(KCDefine.U_SORTING_O_OVERLAY_UIS + 10, KCDefine.U_SORTING_L_DEF);
 
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
