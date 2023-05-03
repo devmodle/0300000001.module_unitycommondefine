@@ -47,23 +47,6 @@ public static partial class KCDefine {
 	public const int U_DEF_MAX_SIZE_FONT = 18;
 	// 크기 }
 
-	// 길이
-	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
-
-	// 단위
-	public const float U_UNIT_TABLET_INCHES = 6.5f;
-	public const float U_UNIT_SCROLL_SENSITIVITY = 250.0f;
-
-	// 세기
-	public const float U_INTENSITY_VIBRATE = 1.0f;
-
-	// 깊이
-	public const float U_DEPTH_MAIN_CAMERA = 0.0f;
-
-	// 거리
-	public const float U_DISTANCE_CAMERA_FAR_PLANE = 25000.0f * KCDefine.B_UNIT_SCALE;
-	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 0.1f;
-
 	// 비율 {
 	public const float U_SCALE_POPUP = 1.0f;
 	public const float U_MIN_SCALE_POPUP = 0.001f;
@@ -92,6 +75,18 @@ public static partial class KCDefine {
 
 	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
 	// 시간 }
+
+	// 단위 {
+	public const float U_INTENSITY_VIBRATE = 1.0f;
+	public const float U_DEPTH_MAIN_CAMERA = 0.0f;
+	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
+
+	public const float U_DISTANCE_CAMERA_FAR_PLANE = 25000.0f * KCDefine.B_UNIT_SCALE;
+	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 0.1f;
+	
+	public const float U_UNIT_TABLET_INCHES = 6.5f;
+	public const float U_UNIT_SCROLL_SENSITIVITY = 250.0f;
+	// 단위 }
 
 	// 레이어
 	public const int U_LAYER_DEF = 0;
