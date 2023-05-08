@@ -548,9 +548,11 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_DROP = "DROP";
 	public const string U_OBJ_N_INPUT = "INPUT";
 
+	public const string U_OBJ_N_TOGGLE = "TOGGLE";
 	public const string U_OBJ_N_DROPDOWN = "DROPDOWN";
 	public const string U_OBJ_N_INPUT_FIELD = "INPUT_FIELD";
 
+	public const string U_OBJ_N_TMP_TOGGLE = "TMP_TOGGLE";
 	public const string U_OBJ_N_TMP_DROPDOWN = "TMP_DROPDOWN";
 	public const string U_OBJ_N_TMP_INPUT_FIELD = "TMP_INPUT_FIELD";
 
@@ -566,9 +568,9 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_TARGET_SPRITE = "TARGET_SPRITE";
 	public const string U_OBJ_N_TARGET_PARTICLE_FX = "TARGET_PARTICLE_FX";
 
-	public const string U_OBJ_N_OBJ = "OBJ";
 	public const string U_OBJ_N_SPRITE = "SPRITE";
 	public const string U_OBJ_N_LINE_FX = "LINE_FX";
+	public const string U_OBJ_N_TARGET_OBJ = "TARGET_OBJ";
 	public const string U_OBJ_N_PARTICLE_FX = "PARTICLE_FX";
 	public const string U_OBJ_N_REFLECTION_PROBE = "REFLECTION_PROBE";
 	public const string U_OBJ_N_LIGHT_PROBE_GROUP = "LIGHT_PROBE_GROUP";
@@ -841,9 +843,11 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Button/TextMeshPro/U_TMPImgLocalizeTextBtn";
 	public static readonly string U_OBJ_P_TMP_IMG_LOCALIZE_TEXT_SCALE_BTN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Button/TextMeshPro/U_TMPImgLocalizeTextScaleBtn";
 
+	public static readonly string U_OBJ_P_TOGGLE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Input/U_Toggle";
 	public static readonly string U_OBJ_P_DROPDOWN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Input/U_Dropdown";
 	public static readonly string U_OBJ_P_INPUT_FIELD = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Input/U_InputField";
 
+	public static readonly string U_OBJ_P_TMP_TOGGLE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Input/U_TMPToggle";
 	public static readonly string U_OBJ_P_TMP_DROPDOWN = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Input/U_TMPDropdown";
 	public static readonly string U_OBJ_P_TMP_INPUT_FIELD = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Input/U_TMPInputField";
 
@@ -856,9 +860,9 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_INDICATOR_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_IndicatorTouchResponder";
 	public static readonly string U_OBJ_P_SCREEN_FADE_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_ScreenFadeTouchResponder";
 
-	public static readonly string U_OBJ_P_OBJ = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}2D/U_Obj";
 	public static readonly string U_OBJ_P_SPRITE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}2D/U_Sprite";
 	public static readonly string U_OBJ_P_LINE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_LineFX";
+	public static readonly string U_OBJ_P_TARGET_OBJ = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}2D/U_TargetObj";
 	public static readonly string U_OBJ_P_PARTICLE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_ParticleFX";
 	public static readonly string U_OBJ_P_TIMER_MANAGER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External/U_TimerManager";
 	public static readonly string U_OBJ_P_REFLECTION_PROBE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_ReflectionProbe";
@@ -1142,7 +1146,7 @@ public static partial class KCDefine {
 	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
 	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
 
-	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color> <color=green>[{1}]</color>";
+	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color> <color=green>[{1:0.0}]</color>";
 	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: <color=orange>{0:0.0}</color> ms";
 	public const string U_TEXT_FMT_DEVICE_INFO = "Graphics Device: <color=orange>{0}</color> <color=green>[{1}]</color>";
 
