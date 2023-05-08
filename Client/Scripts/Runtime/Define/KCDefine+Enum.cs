@@ -315,6 +315,7 @@ public enum EShadowCascadesOpts {
 	NONE = -1,
 	NO_CASCADES = 1,
 	TWO_CASCADES = 2,
+	THREE_CASCADES = 3,
 	FOUR_CASCADES = 4,
 	[HideInInspector] MAX_VAL
 }
