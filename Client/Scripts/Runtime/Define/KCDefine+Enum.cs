@@ -256,11 +256,11 @@ public enum EFillOrigin {
 /** 퀄리티 수준 */
 public enum EQualityLevel {
 	NONE = -1,
-	[HideInInspector] VERY_LOW,
-	[HideInInspector] LOW,
+	[HideInInspector][System.Obsolete] VERY_LOW,
+	[HideInInspector][System.Obsolete] LOW,
 	NORM,
 	HIGH,
-	[HideInInspector] VERY_HIGH,
+	[HideInInspector][System.Obsolete] VERY_HIGH,
 	ULTRA,
 	[HideInInspector] MAX_VAL
 }
@@ -304,7 +304,7 @@ public enum EShaderVariantLogLevel {
 /** 광원 맵 엔코딩 퀄리티 */
 public enum ELightmapEncodingQuality {
 	NONE = -1,
-	LOW,
+	[HideInInspector][System.Obsolete] LOW,
 	NORM,
 	HIGH,
 	[HideInInspector] MAX_VAL
