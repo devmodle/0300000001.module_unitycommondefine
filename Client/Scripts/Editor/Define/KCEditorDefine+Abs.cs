@@ -424,6 +424,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
 	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
 
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_PREFABS = $"{KCEditorDefine.B_DIR_P_ASSETS}Resources/Prefabs/";
 	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
 	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
 
@@ -432,9 +433,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_DIR_P_SUB_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Resources/";
 	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
 	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
-
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_PREFABS = $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}Prefabs/";
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_PREFABS = $"{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}Prefabs/";
 
 	public static readonly string B_DIR_P_TEMPLATES = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Templates/";
 	public static readonly string B_ABS_DIR_P_ASSETS = $"{Application.dataPath}/";

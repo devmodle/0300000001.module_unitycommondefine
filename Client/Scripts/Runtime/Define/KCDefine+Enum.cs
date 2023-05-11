@@ -310,6 +310,16 @@ public enum ELightmapEncodingQuality {
 	[HideInInspector] MAX_VAL
 }
 
+/** 소프트 그림자 퀄리티 */
+public enum ESoftShadowQuality {
+	NONE = -1,
+	USE_PIPELINE_SETTINGS,
+	LOW,
+	MEDIUM,
+	HIGH,
+	[HideInInspector] MAX_VAL
+}
+
 /** 그림자 옵션 */
 public enum EShadowCascadesOpts {
 	NONE = -1,
