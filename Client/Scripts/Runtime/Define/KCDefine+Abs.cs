@@ -319,6 +319,7 @@ public static partial class KCDefine {
 	public const string B_TOKEN_COLON = ":";
 	public const string B_TOKEN_SEMI_COLON = ";";
 
+	public const string B_TOKEN_SHARP = "#";
 	public const string B_TOKEN_AMPERSAND = "&";
 	public const string B_TOKEN_UNDER_SCORE = "_";
 	// 토큰 }
