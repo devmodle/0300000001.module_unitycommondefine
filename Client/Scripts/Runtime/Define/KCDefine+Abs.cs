@@ -67,6 +67,11 @@ public static partial class KCDefine {
 	// 회전 }
 
 	// 단위 {
+	public const int B_UNIT_2_NUMBERS = 2;
+	public const int B_UNIT_8_NUMBERS = 8;
+	public const int B_UNIT_10_NUMBERS = 10;
+	public const int B_UNIT_16_NUMBERS = 16;
+
 	public const int B_UNIT_KINDS_PER_TYPE = 100000000;
 	public const int B_UNIT_KINDS_PER_SUB_TYPE = 10000000;
 	public const int B_UNIT_KINDS_PER_KINDS_TYPE = 100000;
