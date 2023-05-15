@@ -604,8 +604,8 @@ public static partial class KCDefine {
 	public const string U_FUNC_N_RESET_DIFFICULTY = "ResetDifficulty";
 	public const string U_FUNC_N_UPDATE_UIS_STATE = "UpdateUIsState";
 
-	public const string U_INPUT_N_HORIZONTAL = "Horizontal";
 	public const string U_INPUT_N_VERTICAL = "Vertical";
+	public const string U_INPUT_N_HORIZONTAL = "Horizontal";
 
 	public const string U_PROPERTY_N_TEXT = "text";
 	public const string U_PROPERTY_N_FONT = "font";
