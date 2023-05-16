@@ -61,7 +61,7 @@ public static partial class KCDefine {
 
 	#region 런타임 상수
 	// 경로
-	public static readonly string LES_OBJ_P_RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_LEVEL_EDITOR_SCENE}UI/ScrollView/G_REUIsPageUIs02ScrollCellView";
+	public static readonly string LES_OBJ_P_RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_LEVEL_EDITOR_SCENE}LES_REUIsPageUIs02ScrollCellView";
 	#endregion // 런타임 상수
 }
 #endif // #if UNITY_EDITOR || UNITY_STANDALONE
