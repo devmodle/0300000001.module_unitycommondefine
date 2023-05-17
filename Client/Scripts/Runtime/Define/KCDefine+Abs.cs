@@ -153,6 +153,7 @@ public static partial class KCDefine {
 
 	// 디바이스 {
 	public const int B_MIN_TARGET_FRAME_RATE = 30;
+	public const int B_EDITOR_TARGET_FRAME_RATE = 60;
 
 	public const int B_DESIGN_P_SCREEN_WIDTH = 720;
 	public const int B_DESIGN_P_SCREEN_HEIGHT = 1280;
@@ -267,10 +268,8 @@ public static partial class KCDefine {
 	public const string B_SCENE_N_EDITOR_SAMPLE = "01-EditorSampleScene";
 
 	public const string B_SCENE_N_INIT = "01-InitScene";
-	public const string B_SCENE_N_START = "02-StartScene";
-	public const string B_SCENE_N_SETUP = "03-SetupScene";
-	public const string B_SCENE_N_AGREE = "04-AgreeScene";
-	public const string B_SCENE_N_LATE_SETUP = "05-LateSetupScene";
+	public const string B_SCENE_N_SETUP = "02-SetupScene";
+	public const string B_SCENE_N_LATE_SETUP = "03-LateSetupScene";
 
 	public const string B_SCENE_N_TITLE = "01-TitleScene";
 	public const string B_SCENE_N_MAIN = "02-MainScene";
@@ -377,9 +376,7 @@ public static partial class KCDefine {
 	public const string B_DIR_P_POPUP = "Popup/";
 
 	public const string B_DIR_P_INIT_SCENE = "InitScene/";
-	public const string B_DIR_P_START_SCENE = "StartScene/";
 	public const string B_DIR_P_SETUP_SCENE = "SetupScene/";
-	public const string B_DIR_P_AGREE_SCENE = "AgreeScene/";
 	public const string B_DIR_P_LATE_SETUP_SCENE = "LateSetupScene/";
 
 	public const string B_DIR_P_TITLE_SCENE = "TitleScene/";
@@ -581,9 +578,7 @@ public static partial class KCDefine {
 	// 씬 이름 {
 	public static readonly List<string> B_DEF_SCENE_NAME_LIST_01 = new List<string>() {
 		KCDefine.B_SCENE_N_INIT,
-		KCDefine.B_SCENE_N_START,
 		KCDefine.B_SCENE_N_SETUP,
-		KCDefine.B_SCENE_N_AGREE,
 		KCDefine.B_SCENE_N_LATE_SETUP,
 
 		KCDefine.B_SCENE_N_RESULT,
@@ -593,9 +588,7 @@ public static partial class KCDefine {
 
 	public static readonly List<string> B_DEF_SCENE_NAME_LIST_02 = new List<string>() {
 		KCDefine.B_SCENE_N_INIT,
-		KCDefine.B_SCENE_N_START,
 		KCDefine.B_SCENE_N_SETUP,
-		KCDefine.B_SCENE_N_AGREE,
 		KCDefine.B_SCENE_N_LATE_SETUP,
 
 		KCDefine.B_SCENE_N_TITLE,
