@@ -68,9 +68,13 @@ public static partial class KCDefine {
 
 	// 단위 {
 	public const int B_UNIT_2_NUMBERS = 2;
+	public const int B_UNIT_4_NUMBERS = 4;
 	public const int B_UNIT_8_NUMBERS = 8;
-	public const int B_UNIT_10_NUMBERS = 10;
 	public const int B_UNIT_16_NUMBERS = 16;
+	public const int B_UNIT_32_NUMBERS = 32;
+	public const int B_UNIT_64_NUMBERS = 64;
+	public const int B_UNIT_128_NUMBERS = 128;
+	public const int B_UNIT_256_NUMBERS = 256;
 
 	public const int B_UNIT_KINDS_PER_TYPE = 100000000;
 	public const int B_UNIT_KINDS_PER_SUB_TYPE = 10000000;
