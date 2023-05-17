@@ -31,8 +31,8 @@ public static partial class KCDefine {
 	public const string ST_KEY_TRACKING_DP_DESC_MSG_03 = "TRACKING_DP_DESC_MSG_03";
 	// 추적 설명 팝업 }
 
-	// 시작 씬 관리자
-	public const string ST_KEY_START_SM_LOADING_TEXT = "START_SM_LOADING_TEXT";
+	// 설정 씬 관리자
+	public const string ST_KEY_SETUP_SM_LOADING_TEXT = "SETUP_SM_LOADING_TEXT";
 
 	// 공용 텍스트 {
 	public const string ST_KEY_C_A_SET_TEXT = "C_A_SET_TEXT";

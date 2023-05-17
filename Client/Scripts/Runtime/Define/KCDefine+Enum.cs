@@ -347,12 +347,10 @@ public enum ENavStackEvent {
 	[HideInInspector] MAX_VAL
 }
 
-/** 시작 씬 이벤트 */
-public enum EStartSceneEvent {
+/** 설정 씬 이벤트 */
+public enum ESetupSceneEvent {
 	NONE = -1,
-	LOAD_START_SCENE,
 	LOAD_SETUP_SCENE,
-	LOAD_AGREE_SCENE,
 	LOAD_LATE_SETUP_SCENE,
 	LOAD_NEXT_SCENE,
 	[HideInInspector] MAX_VAL

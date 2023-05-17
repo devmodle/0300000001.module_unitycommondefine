@@ -1117,15 +1117,13 @@ public static partial class KCDefine {
 	public const int U_SCRIPT_O_ADS_INTERACTABLE = byte.MaxValue;
 
 	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = sbyte.MaxValue / 2;
-	public const int U_SCRIPT_O_START_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
-	public const int U_SCRIPT_O_AGREE_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 3;
-	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 4;
+	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
+	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
 
 	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 10;
 	public const int U_SCRIPT_O_RESULT_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 11;
-	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 12;
-	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 20;
+	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 20;
+	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 30;
 	// 스크립트 순서 }
 #endif // #if UNITY_EDITOR
 
@@ -1467,50 +1465,23 @@ public static partial class KCDefine {
 	#endregion // 런타임 상수
 }
 
-/** 시작 씬 상수 */
-public static partial class KCDefine {
-	#region 기본
-	// 이름
-	public const string SS_FUNC_N_START_SCENE_EVENT = "OnReceiveStartSceneEvent";
-	#endregion // 기본
-
-	#region 런타임 상수
-	// 경로
-	public static readonly string SS_OBJ_P_LOADING_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingText";
-	public static readonly string SS_OBJ_P_LOADING_GAUGE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_START_SCENE}SS_LoadingGauge";
-	#endregion // 런타임 상수
-}
-
 /** 설정 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
 	// 이름
 	public const string SS_OBJ_N_TIMER_MANAGER = "TimerManager";
-	#endregion // 기본
-
-	#region 런타임 상수
-	// 경로
-	public static readonly string SS_OBJ_P_SCREEN_DEBUG_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenDebugUIs";
-	public static readonly string SS_OBJ_P_SCREEN_POPUP_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenPopupUIs";
-	public static readonly string SS_OBJ_P_SCREEN_TOPMOST_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenTopmostUIs";
-	public static readonly string SS_OBJ_P_SCREEN_ABS_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenAbsUIs";
-	#endregion // 런타임 상수
-}
-
-/** 약관 동의 씬 상수 */
-public static partial class KCDefine {
-	#region 기본
-	// 약관 동의 팝업
-	public const string AS_OBJ_N_AGREE_POPUP = "AgreePopup";
+	public const string SS_FUNC_N_SETUP_SCENE_EVENT = "OnReceiveSetupSceneEvent";
 	#endregion // 기본
 
 	#region 런타임 상수
 	// 경로 {
-	public static readonly string AS_DATA_P_PRIVACY = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_Privacy_{SystemLanguage.Korean}";
-	public static readonly string AS_DATA_P_SERVICES = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_Services_{SystemLanguage.Korean}";
+	public static readonly string SS_OBJ_P_LOADING_TEXT = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_LoadingText";
+	public static readonly string SS_OBJ_P_LOADING_GAUGE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_LoadingGauge";
 
-	public static readonly string AS_OBJ_P_PORTRAIT_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_PortraitAgreePopup";
-	public static readonly string AS_OBJ_P_LANDSCAPE_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_AGREE_SCENE}AS_LandscapeAgreePopup";
+	public static readonly string SS_OBJ_P_SCREEN_DEBUG_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenDebugUIs";
+	public static readonly string SS_OBJ_P_SCREEN_POPUP_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenPopupUIs";
+	public static readonly string SS_OBJ_P_SCREEN_TOPMOST_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenTopmostUIs";
+	public static readonly string SS_OBJ_P_SCREEN_ABS_UIS = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_SETUP_SCENE}SS_ScreenAbsUIs";
 	// 경로 }
 	#endregion // 런타임 상수
 }
@@ -1518,13 +1489,22 @@ public static partial class KCDefine {
 /** 지연 설정 씬 상수 */
 public static partial class KCDefine {
 	#region 기본
+	// 약관 동의 팝업
+	public const string AS_OBJ_N_AGREE_POPUP = "AgreePopup";
+
 	// 추적 설명 팝업
 	public const string LSS_OBJ_N_TRACKING_DESC_POPUP = "TrackingDescPopup";
 	#endregion // 기본
 
 	#region 런타임 상수
-	// 경로
+	// 경로 {
+	public static readonly string LSS_DATA_P_PRIVACY = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_LATE_SETUP_SCENE}LSS_Privacy_{SystemLanguage.Korean}";
+	public static readonly string LSS_DATA_P_SERVICES = $"{KCDefine.B_DIR_P_DATAS}{KCDefine.B_DIR_P_LATE_SETUP_SCENE}LSS_Services_{SystemLanguage.Korean}";
+
 	public static readonly string LSS_OBJ_P_TRACKING_DESC_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_LATE_SETUP_SCENE}LSS_TrackingDescPopup";
+	public static readonly string LSS_OBJ_P_PORTRAIT_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_LATE_SETUP_SCENE}LSS_PortraitAgreePopup";
+	public static readonly string LSS_OBJ_P_LANDSCAPE_AGREE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_LATE_SETUP_SCENE}LSS_LandscapeAgreePopup";
+	// 경로 }
 	#endregion // 런타임 상수
 }
 
