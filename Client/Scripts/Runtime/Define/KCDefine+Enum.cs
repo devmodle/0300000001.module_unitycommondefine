@@ -198,10 +198,9 @@ public enum EDirection {
 	RIGHT_UP,
 	RIGHT_DOWN,
 
+	DIAGONAL,
 	VERTICAL,
 	HORIZONTAL,
-	DIAGONAL,
-
 	[HideInInspector] MAX_VAL
 }
 
