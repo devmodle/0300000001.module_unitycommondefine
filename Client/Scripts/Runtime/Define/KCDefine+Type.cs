@@ -459,6 +459,15 @@ public partial class CListWrapper<T> {
 	public List<T> m_oList01 = new List<T>();
 	public List<T> m_oList02 = new List<T>();
 	public List<T> m_oList03 = new List<T>();
+
+	#region 함수
+	/** 리스트를 클리어한다 */
+	public void Clear() {
+		m_oList01?.Clear();
+		m_oList02?.Clear();
+		m_oList03?.Clear();
+	}
+	#endregion // 함수
 }
 
 /** 딕셔너리 래퍼 */
@@ -466,6 +475,15 @@ public partial class CDictWrapper<K, V> {
 	public Dictionary<K, V> m_oDict01 = new Dictionary<K, V>();
 	public Dictionary<K, V> m_oDict02 = new Dictionary<K, V>();
 	public Dictionary<K, V> m_oDict03 = new Dictionary<K, V>();
+
+	#region 함수
+	/** 딕셔너리를 클리어한다 */
+	public void Clear() {
+		m_oDict01?.Clear();
+		m_oDict02?.Clear();
+		m_oDict03?.Clear();
+	}
+	#endregion // 함수
 }
 #endregion // 제네릭 타입
 
