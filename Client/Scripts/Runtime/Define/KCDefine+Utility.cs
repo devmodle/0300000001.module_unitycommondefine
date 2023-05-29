@@ -675,6 +675,7 @@ public static partial class KCDefine {
 	public const string U_KEY_FMT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 
 	// 사운드 관리자
+	public const string U_OBJ_N_SND_M_BG_SND = "BGSnd";
 	public const string U_OBJ_N_SND_M_FX_SNDS = "FXSnds";
 
 	// 입력 모듈 {
