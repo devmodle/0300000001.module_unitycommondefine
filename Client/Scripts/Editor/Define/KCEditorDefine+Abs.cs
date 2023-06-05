@@ -21,8 +21,8 @@ public static partial class KCEditorDefine {
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
 	// 정렬 순서 {
-	public const int B_SORTING_O_UI_MENU = 0;
-	public const int B_SORTING_O_OBJ_MENU = 0;
+	public const int B_SORTING_O_UIS_MENU = 0;
+	public const int B_SORTING_O_OBJS_MENU = 0;
 	public const int B_SORTING_O_BUILD_MENU = 10000;
 
 	public const int B_SORTING_O_SETUP_MENU = 20000;
@@ -51,22 +51,24 @@ public static partial class KCEditorDefine {
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
-	public const string B_MENU_GAME_OBJECT_BASE = "GameObject/";
+	public const string B_MENU_GAME_OBJECTS_BASE = "GameObject/";
 
 	public const string B_MENU_TOOLS_BUILD_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Build/";
 	public const string B_MENU_TOOLS_SETUP_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Setup/";
 	public const string B_MENU_TOOLS_RESET_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Reset/";
+
 	public const string B_MENU_TOOLS_IMPORT_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Import/";
 	public const string B_MENU_TOOLS_EXPORT_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Export/";
 	public const string B_MENU_TOOLS_CREATE_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Create/";
 	public const string B_MENU_TOOLS_SUB_CREATE_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "SubCreate/";
+
 	public const string B_MENU_TOOLS_EDITOR_WND_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "EditorWindow/";
 	public const string B_MENU_TOOLS_CHANGE_PLATFORM_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "ChangePlatform/";
 
-	public const string B_MENU_GAME_OBJECT_UI_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "UI/Utility/";
-	public const string B_MENU_GAME_OBJECT_2D_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "2D Object/Utility/";
-	public const string B_MENU_GAME_OBJECT_3D_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "3D Object/Utility/";
-	public const string B_MENU_GAME_OBJECT_FX_BASE = KCEditorDefine.B_MENU_GAME_OBJECT_BASE + "Effects/Utility/";
+	public const string B_MENU_GAME_OBJECT_UI_BASE = KCEditorDefine.B_MENU_GAME_OBJECTS_BASE + "UI/Utility/";
+	public const string B_MENU_GAME_OBJECT_2D_BASE = KCEditorDefine.B_MENU_GAME_OBJECTS_BASE + "2D Object/Utility/";
+	public const string B_MENU_GAME_OBJECT_3D_BASE = KCEditorDefine.B_MENU_GAME_OBJECTS_BASE + "3D Object/Utility/";
+	public const string B_MENU_GAME_OBJECT_FX_BASE = KCEditorDefine.B_MENU_GAME_OBJECTS_BASE + "Effects/Utility/";
 	// 메뉴 }
 
 	// 커맨드 라인 {
@@ -424,28 +426,28 @@ public static partial class KCEditorDefine {
 	// 이름 }
 
 	// 경로 {
-	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scenes/";
-	public static readonly string B_DIR_P_AUTO_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/";
-	public static readonly string B_DIR_P_AUTO_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Resources/";
+	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_AUTO}Scenes/";
+	public static readonly string B_DIR_P_AUTO_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_AUTO}Scripts/";
+	public static readonly string B_DIR_P_AUTO_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_AUTO}Resources/";
 
-	public static readonly string B_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
-	public static readonly string B_DIR_P_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
-	public static readonly string B_DIR_P_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
+	public static readonly string B_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
+	public static readonly string B_DIR_P_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
+	public static readonly string B_DIR_P_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
 
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Resources/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Resources/";
 
-	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
-	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/";
-	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
+	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/";
+	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
 
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/";	
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/";	
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
 
-	public static readonly string B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
-	public static readonly string B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
+	public static readonly string B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
+	public static readonly string B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
 
 	public static readonly string B_DIR_P_TEMPLATES = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Templates/";
 	public static readonly string B_DIR_P_RES_PREFABS = $"{KCEditorDefine.B_DIR_P_ASSETS}Resources/Prefabs/";
@@ -459,28 +461,28 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_EXTERNAL_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Packages/";
 	public static readonly string B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../ProjectSettings/";
 
-	public static readonly string B_ABS_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scenes/";
-	public static readonly string B_ABS_DIR_P_AUTO_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/";
-	public static readonly string B_ABS_DIR_P_AUTO_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Resources/";
+	public static readonly string B_ABS_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_AUTO}Scenes/";
+	public static readonly string B_ABS_DIR_P_AUTO_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_AUTO}Scripts/";
+	public static readonly string B_ABS_DIR_P_AUTO_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_AUTO}Resources/";
 
-	public static readonly string B_ABS_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
-	public static readonly string B_ABS_DIR_P_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
-	public static readonly string B_ABS_DIR_P_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
 
-	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
-	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
-	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Resources/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Resources/";
 
-	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
-	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/";
-	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
 
-	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
-	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/";
-	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
 
-	public static readonly string B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
-	public static readonly string B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
+	public static readonly string B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
+	public static readonly string B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
 
 #if SAMPLE_PROJ
 	public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}.module.unitycommon/Client/Templates/";
@@ -502,6 +504,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKGS_P_2D_TOOLKIT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_2D_TOOLKIT_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPRITE_TRAIL_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SND_MANAGER_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_SND_MANAGER_PRO_PKGS}.unitypackage";
+
 	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_BUILD_REPORT_TOOL_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR_AND_SERIALIZER = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS}.unitypackage";
@@ -676,11 +679,11 @@ public static partial class KCEditorDefine {
 	};
 
 	public static readonly List<(string, string)> B_DATA_P_INFO_LIST = new List<(string, string)>() {
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}README.md"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}README.md"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}README.md"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}README.md"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}README.md"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_AUTO}README.md"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ}README.md"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}README.md"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}README.md"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_PROJ}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}README.md"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Datas/T_README.md", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_EDITOR_DEF_RESOURCES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}README.md"),
 
@@ -1330,12 +1333,12 @@ public static partial class KCEditorDefine {
 	public static readonly List<(string, string)> B_SCENE_P_INFO_LIST = new List<(string, string)>() {
 		// 01-Auto {
 #if SCENE_TEMPLATES_ENABLE || SCENE_TEMPLATES_MODULE_ENABLE
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scenes/{KCDefine.B_SCENE_N_INIT}.unity"),
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scenes/{KCDefine.B_SCENE_N_SETUP}.unity"),
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scenes/{KCDefine.B_SCENE_N_LATE_SETUP}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_INIT}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_SETUP}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_LATE_SETUP}.unity"),
 
 #if STUDY_ENABLE || STUDY_MODULE_ENABLE
-		(KCEditorDefine.B_ASSET_P_MENU_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scenes/{KCDefine.B_SCENE_N_MENU}.unity"),
+		(KCEditorDefine.B_ASSET_P_MENU_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_MENU}.unity"),
 #endif // #if STUDY_ENABLE || STUDY_MODULE_ENABLE
 #endif // #if SCENE_TEMPLATES_ENABLE || SCENE_TEMPLATES_MODULE_ENABLE
 		// 01-Auto }
