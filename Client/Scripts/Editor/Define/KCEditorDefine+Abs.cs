@@ -150,7 +150,8 @@ public static partial class KCEditorDefine {
 
 	public const string B_DIR_P_AUTO = "01-Auto/";
 	public const string B_DIR_P_ENGINE = "02-Engine/";
-	
+
+	public const string B_DIR_P_PROJ = "00-Project/";
 	public const string B_DIR_P_UNITY_PROJ = "41-UnityProject/";
 	public const string B_DIR_P_SUB_UNITY_PROJ = "42-SubUnityProject/";
 
@@ -424,44 +425,75 @@ public static partial class KCEditorDefine {
 
 	// 경로 {
 	public static readonly string B_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scenes/";
-	public static readonly string B_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
-
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_PREFABS = $"{KCEditorDefine.B_DIR_P_ASSETS}Resources/Prefabs/";
-	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
-	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
-
+	public static readonly string B_DIR_P_AUTO_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/";
 	public static readonly string B_DIR_P_AUTO_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Resources/";
+
+	public static readonly string B_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
+	public static readonly string B_DIR_P_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
 	public static readonly string B_DIR_P_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
+
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
 	public static readonly string B_DIR_P_SUB_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Resources/";
+
+	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/";
 	public static readonly string B_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
+
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/";	
 	public static readonly string B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
 
-	public static readonly string B_DIR_P_TEMPLATES = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Templates/";
-	public static readonly string B_ABS_DIR_P_ASSETS = $"{Application.dataPath}/";
-	public static readonly string B_ABS_DIR_P_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Packages/";
-	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../ExternalDatas/";
-	public static readonly string B_ABS_DIR_P_PROJ_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../ProjectSettings/";
-	public static readonly string B_ABS_DIR_P_TABLES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Tables/";
-	public static readonly string B_ABS_DIR_P_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Scripts/";
-	public static readonly string B_ABS_DIR_P_UNITY_ENGINE = $"{EditorApplication.applicationPath}/";
+	public static readonly string B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
+	public static readonly string B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
 
+	public static readonly string B_DIR_P_TEMPLATES = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Templates/";
+	public static readonly string B_DIR_P_RES_PREFABS = $"{KCEditorDefine.B_DIR_P_ASSETS}Resources/Prefabs/";
+
+	public static readonly string B_ABS_DIR_P_ASSETS = $"{Application.dataPath}/";
+	public static readonly string B_ABS_DIR_P_EXTERNAL_UNITY_ENGINE = $"{EditorApplication.applicationPath}/";
+
+	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../ExternalDatas/";
+	public static readonly string B_ABS_DIR_P_EXTERNAL_TABLES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Tables/";
+	public static readonly string B_ABS_DIR_P_EXTERNAL_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../../Scripts/";
+	public static readonly string B_ABS_DIR_P_EXTERNAL_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Packages/";
+	public static readonly string B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../ProjectSettings/";
+
+	public static readonly string B_ABS_DIR_P_AUTO_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scenes/";
+	public static readonly string B_ABS_DIR_P_AUTO_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/";
 	public static readonly string B_ABS_DIR_P_AUTO_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Resources/";
+
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
 	public static readonly string B_ABS_DIR_P_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Resources/";
+
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scenes/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
 	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Resources/";
 
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/";
+	public static readonly string B_ABS_DIR_P_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Resources/";
+
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCENES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scenes/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/";
+	public static readonly string B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Resources/";
+
+	public static readonly string B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/";
+	public static readonly string B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/";
+
 #if SAMPLE_PROJ
-	public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommon/Client/Templates/";
-	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitystudy/Client/Templates/";
+	public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}.module.unitycommon/Client/Templates/";
+	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}.module.unitystudy/Client/Templates/";
 #else
-	public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitycommon@{KCEditorDefine.B_VER_UNITY_MODULE}/Client/Templates/";
-	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}.module.unitystudy@{KCEditorDefine.B_VER_UNITY_MODULE}/Client/Templates/";
+	public static readonly string B_ABS_DIR_P_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}.module.unitycommon@{KCEditorDefine.B_VER_UNITY_MODULE}/Client/Templates/";
+	public static readonly string B_ABS_DIR_P_STUDY_TEMPLATES = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}.module.unitystudy@{KCEditorDefine.B_VER_UNITY_MODULE}/Client/Templates/";
 #endif // #if SAMPLE_PROJ
 
 	public static readonly string B_ABS_DIR_P_PLUGINS = $"{Application.dataPath}/Plugins/";
 	public static readonly string B_ABS_DIR_P_IOS_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}iOS/";
 	public static readonly string B_ABS_DIR_P_ANDROID_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}Android/";
-	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}UnityPackages/";
+	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}UnityPackages/";
 
 	public static readonly string B_ABS_PKGS_P_DOTWEEN_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_DOTWEEN_PRO_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_APPLE_SIGN_IN = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_SIGN_IN_PKGS}.unitypackage";
@@ -669,350 +701,350 @@ public static partial class KCEditorDefine {
 
 	public static readonly List<(string, string)> B_SCRIPT_P_INFO_LIST = new List<(string, string)>() {
 #if SAMPLE_PROJ || DEVELOPMENT_PROJ
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/DSYMUploader.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/DSYMUploader.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleBranchEraser.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleBranchEraser.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleBranchMerger.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleBranchMerger.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleBranchSwitcher.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleBranchSwitcher.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleCmdExecuter.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleCmdExecuter.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleCommonImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleCommonImporter.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleEraser.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleEraser.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleGC.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleGC.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleImporter.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModulePluginImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModulePluginImporter.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleRemoteURLUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleRemoteURLUpdater.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleStudyImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleStudyImporter.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleTagUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleTagUpdater.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleUpdater.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleUploader.py", $"{KCEditorDefine.B_ABS_DIR_P_SCRIPTS}Python/UnityModuleUploader.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/DSYMUploader.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/DSYMUploader.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleBranchEraser.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleBranchEraser.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleBranchMerger.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleBranchMerger.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleBranchSwitcher.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleBranchSwitcher.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleCmdExecuter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleCmdExecuter.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleCommonImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleCommonImporter.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleEraser.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleEraser.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleGC.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleGC.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleImporter.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModulePluginImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModulePluginImporter.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleRemoteURLUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleRemoteURLUpdater.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleStudyImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleStudyImporter.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleTagUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleTagUpdater.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleUpdater.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleUploader.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleUploader.py"),
 #endif // #if SAMPLE_PROJ || DEVELOPMENT_PROJ
 
 		// 01-Auto {
 		// 에디터 상수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/Define/T_KEditorDefine+Abs.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/Global/Define/KEditorDefine+Abs.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/Define/T_KEditorDefine+Abs.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Editor/Global/Define/KEditorDefine+Abs.cs"),
 
 		// 에디터 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/Factory/T_EditorFactory.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/Global/Factory/EditorFactory.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/Factory/T_EditorFactory.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Editor/Global/Factory/EditorFactory.cs"),
 
 		// 에디터 씬 관리자
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/Scene/T_CEditorSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/EditorScene/CEditorSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Editor/Scene/T_CEditorSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Editor/EditorScene/CEditorSceneManager.cs"),
 
 		// 유틸리티
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Cloud/T_CloudScript.js", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}Scripts/Cloud/CloudScript.js"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/External/T_CMsgPackRegister.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Global/Utility/External/CMsgPackRegister.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/External/T_CMsgPackRegister.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/Global/Utility/External/CMsgPackRegister.cs"),
 
 #if SCENE_TEMPLATES_ENABLE || SCENE_TEMPLATES_MODULE_ENABLE
 		// 씬 관리자 {
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSubInitSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/SubInitScene/CSubInitSceneManager.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSubSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/SubSetupScene/CSubSetupSceneManager.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSubLateSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/SubLateSetupScene/CSubLateSetupSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSubInitSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/SubInitScene/CSubInitSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSubSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/SubSetupScene/CSubSetupSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSubLateSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/SubLateSetupScene/CSubLateSetupSceneManager.cs"),
 
 #if STUDY_ENABLE || STUDY_MODULE_ENABLE
-		($"{KCEditorDefine.B_ABS_DIR_P_STUDY_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSSubMenuSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/SubMenuScene/CSSubMenuSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_STUDY_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSSubMenuSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/SubMenuScene/CSSubMenuSceneManager.cs"),
 #endif // #if STUDY_ENABLE || STUDY_MODULE_ENABLE
 		// 씬 관리자 }
 #endif // #if SCENE_TEMPLATES_ENABLE || SCENE_TEMPLATES_MODULE_ENABLE
 
 #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
 		// 접근자
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Access/T_Access.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Global/Access/Access.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Access/T_AccessExtension.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Global/Access/AccessExtension.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Access/T_Access.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/Global/Access/Access.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Access/T_AccessExtension.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/Global/Access/AccessExtension.cs"),
 
 		// 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Factory/T_Factory.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Global/Factory/Factory.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Factory/T_Factory.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/Global/Factory/Factory.cs"),
 
 		// 확장 클래스
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Extension/T_Extension.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Global/Extension/Extension.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Extension/T_Extension.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/Global/Extension/Extension.cs"),
 
 		// 함수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Function/T_Func.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Global/Function/Func.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Function/T_LogFunc.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Global/Function/LogFunc.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Function/T_Func.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/Global/Function/Func.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Function/T_LogFunc.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/Global/Function/LogFunc.cs"),
 #endif // #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
 		// 01-Auto }
 
 		// 41-UnityProject {
 		// 에디터 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Editor/Factory/T_EditorFactory+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Editor/Global/Factory/EditorFactory+Global.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Editor/Factory/T_EditorFactory+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Editor/Global/Factory/EditorFactory+Global.cs"),
 
 		// 에디터 유틸리티
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Editor/Build/T_CBuildProcessor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Editor/Global/Utility/Build/CBuildProcessor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Editor/Build/T_CBuildProcessor.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Editor/Global/Utility/Build/CBuildProcessor.cs"),
 
 #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
 		// 엔진 {
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/T_CEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/CEngine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/T_CEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/CEngine.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CEComponent.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEComponent.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CEObjComponent.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEObjComponent.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CEController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEController.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CEComponent.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEComponent.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CEObjComponent.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEObjComponent.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CEController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEController.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+Engine.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+EngineType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+EngineType.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+EngineEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+EngineEnum.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+Engine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+EngineType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+EngineType.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+EngineEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+EngineEnum.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Access/T_Access+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Access/Access+Engine.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Access/T_AccessExtension+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Access/AccessExtension+Engine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Access/T_Access+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Access/Access+Engine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Access/T_AccessExtension+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Access/AccessExtension+Engine.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Factory/T_Factory+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Factory/Factory+Engine.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Extension/T_Extension+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Extension/Extension+Engine.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Function/T_Func+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Function/Func+Engine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Factory/T_Factory+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Factory/Factory+Engine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Extension/T_Extension+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Extension/Extension+Engine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Function/T_Func+Engine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Function/Func+Engine.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Object/T_CEItem.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEItem.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Object/T_CESkill.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CESkill.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Object/T_CEObj.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEObj.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Object/T_CEFX.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEFX.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Object/T_CEItem.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEItem.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Object/T_CESkill.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CESkill.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Object/T_CEObj.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEObj.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Object/T_CEFX.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEFX.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEItemController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEItemController.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CESkillController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CESkillController.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEObjController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEObjController.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEFXController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEFXController.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CECellObjController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CECellObjController.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEPlayerObjController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEPlayerObjController.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEEnemyObjController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEEnemyObjController.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEItemController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEItemController.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CESkillController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CESkillController.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEObjController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEObjController.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEFXController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEFXController.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CECellObjController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CECellObjController.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEPlayerObjController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEPlayerObjController.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Controller/T_CEEnemyObjController.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEEnemyObjController.cs"),
 		// 엔진 }
 
 		// 기본
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CBaseInfo.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CBaseInfo.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CPSComponent.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CPSComponent.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CMissionPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CMissionPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CBaseInfo.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CBaseInfo.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CPSComponent.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CPSComponent.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Base/T_CMissionPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CMissionPopup.cs"),
 
 		// 상수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Type.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+Type.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Enum.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+Enum.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+Global.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Log.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+Log.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Type.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+Type.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Enum.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+Enum.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+Global.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+Log.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+Log.cs"),
 
 		// 접근자
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Access/T_Access+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Access/Access+Global.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Access/T_AccessExtension+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Access/AccessExtension+Global.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Access/T_Access+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Access/Access+Global.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Access/T_AccessExtension+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Access/AccessExtension+Global.cs"),
 
 		// 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Factory/T_Factory+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Factory/Factory+Global.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Factory/T_Factory+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Factory/Factory+Global.cs"),
 
 		// 확장 클래스
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Extension/T_Extension+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Extension/Extension+Global.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Extension/T_Extension+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Extension/Extension+Global.cs"),
 
 		// 함수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Function/T_Func+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Function/Func+Global.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Function/T_LogFunc+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Function/LogFunc+Global.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Function/T_Func+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Function/Func+Global.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Function/T_LogFunc+Global.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Function/LogFunc+Global.cs"),
 
 		// 효과
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Etc/T_CStoreUIsHandler.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CStoreUIsHandler.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Etc/T_CDifficultyUIsHandler.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CDifficultyUIsHandler.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Etc/T_CStoreUIsHandler.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Etc/CStoreUIsHandler.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Etc/T_CDifficultyUIsHandler.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Etc/CDifficultyUIsHandler.cs"),
 
 		// 팝업
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CStorePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CStorePopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CSettingsPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CSettingsPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CSyncPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CSyncPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CDailyMissionPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CDailyMissionPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CFreeRewardPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CFreeRewardPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CDailyRewardPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CDailyRewardPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CCoinsBoxBuyPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CCoinsBoxBuyPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CRewardAcquirePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CRewardAcquirePopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CCoinsBoxAcquirePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CCoinsBoxAcquirePopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CContinuePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CContinuePopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CReadyPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CReadyPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CResultPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CResultPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CResumePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CResumePopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CPausePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CPausePopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CProductBuyPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CProductBuyPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CFocusPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CFocusPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CTutorialPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CTutorialPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CStorePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CStorePopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CSettingsPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CSettingsPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CSyncPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CSyncPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CDailyMissionPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CDailyMissionPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CFreeRewardPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CFreeRewardPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CDailyRewardPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CDailyRewardPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CCoinsBoxBuyPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CCoinsBoxBuyPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CRewardAcquirePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CRewardAcquirePopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CCoinsBoxAcquirePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CCoinsBoxAcquirePopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CContinuePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CContinuePopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CReadyPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CReadyPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CResultPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CResultPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CResumePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CResumePopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CPausePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CPausePopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CProductBuyPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CProductBuyPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CFocusPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CFocusPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Popup/T_CTutorialPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CTutorialPopup.cs"),
 
 		// 씬 관리자
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubTitleSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/SubTitleScene/CSubTitleSceneManager.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubMainSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/SubMainScene/CSubMainSceneManager.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubPlaySceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/SubPlayScene/CSubPlaySceneManager.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubResultSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/SubResultScene/CSubResultSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubTitleSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/SubTitleScene/CSubTitleSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubMainSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/SubMainScene/CSubMainSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubPlaySceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/SubPlayScene/CSubPlaySceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubResultSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/SubResultScene/CSubResultSceneManager.cs"),
 		
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubLoadingSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/SubLoadingScene/CSubLoadingSceneManager.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubOverlaySceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/SubOverlayScene/CSubOverlaySceneManager.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubTestSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/SubTestScene/CSubTestSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubLoadingSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/SubLoadingScene/CSubLoadingSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubOverlaySceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/SubOverlayScene/CSubOverlaySceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubTestSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Runtime/SubTestScene/CSubTestSceneManager.cs"),
 #endif // #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
 		// 41-UnityProject }
 		
 		// 42-SubUnityProject {
 #if EXTRA_SCRIPT_ENABLE || EXTRA_SCRIPT_MODULE_ENABLE
 		// 에디터 상수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Define/T_KEditorDefine+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Global/Define/KEditorDefine+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Define/T_KEditorDefine+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Editor/Global/Define/KEditorDefine+SubGlobal.cs"),
 
 		// 에디터 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Factory/T_EditorFactory+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Global/Factory/EditorFactory+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Factory/T_EditorFactory+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Editor/Global/Factory/EditorFactory+SubGlobal.cs"),
 
 		// 임포터
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Importer/T_CSubAssetImporter.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Global/Importer/CSubAssetImporter.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Importer/T_CSubAssetImporter.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Editor/Global/Importer/CSubAssetImporter.cs"),
 
 		// 상수 {
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubType.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubEnum.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubType.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubType.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubEnum.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubGlobal.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubValTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubValTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubGameCenter.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubGameCenter.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubValTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubValTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubGameCenter.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubGameCenter.cs"),
 		// 상수 }
 
 		// 접근자
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Access/T_Access+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Access/Access+SubGlobal.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Access/T_AccessExtension+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Access/AccessExtension+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Access/T_Access+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Access/Access+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Access/T_AccessExtension+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Access/AccessExtension+SubGlobal.cs"),
 
 		// 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Factory/T_Factory+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Factory/Factory+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Factory/T_Factory+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Factory/Factory+SubGlobal.cs"),
 
 		// 확장 클래스
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Extension/T_Extension+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Extension/Extension+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Extension/T_Extension+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Extension/Extension+SubGlobal.cs"),
 
 		// 함수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Function/T_Func+Popup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Function/Func+Popup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Function/T_Func+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Function/Func+SubGlobal.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Function/T_LogFunc+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Function/LogFunc+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Function/T_Func+Popup.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Function/Func+Popup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Function/T_Func+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Function/Func+SubGlobal.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Function/T_LogFunc+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Function/LogFunc+SubGlobal.cs"),
 
 		// 씬 관리자 {
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubTitleSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/SubTitleScene/CSubTitleSceneManager+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubMainSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/SubMainScene/CSubMainSceneManager+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubPlaySceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/SubPlayScene/CSubPlaySceneManager+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubResultSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/SubResultScene/CSubResultSceneManager+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubTitleSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/SubTitleScene/CSubTitleSceneManager+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubMainSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/SubMainScene/CSubMainSceneManager+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubPlaySceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/SubPlayScene/CSubPlaySceneManager+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubResultSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/SubResultScene/CSubResultSceneManager+Sub.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubLoadingSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/SubLoadingScene/CSubLoadingSceneManager+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubOverlaySceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/SubOverlayScene/CSubOverlaySceneManager+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubTestSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/SubTestScene/CSubTestSceneManager+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubLoadingSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/SubLoadingScene/CSubLoadingSceneManager+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubOverlaySceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/SubOverlayScene/CSubOverlaySceneManager+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Scene/T_CSubTestSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/SubTestScene/CSubTestSceneManager+Sub.cs"),
 		// 씬 관리자 }
 #endif // #if EXTRA_SCRIPT_ENABLE || EXTRA_SCRIPT_MODULE_ENABLE
 
 #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
 		// 엔진 {
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/T_CEngine+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/CEngine+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/T_CEngine+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/CEngine+Sub.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CEComponent+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEComponent+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CEObjComponent+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEObjComponent+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CEController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEController+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CEComponent+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEComponent+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CEObjComponent+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEObjComponent+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CEController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEController+Sub.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubEngine.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubEngineType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubEngineType.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubEngineEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Define/KDefine+SubEngineEnum.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubEngine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubEngineType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubEngineType.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubEngineEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubEngineEnum.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Access/T_Access+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Access/Access+SubEngine.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Access/T_AccessExtension+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Access/AccessExtension+SubEngine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Access/T_Access+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Access/Access+SubEngine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Access/T_AccessExtension+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Access/AccessExtension+SubEngine.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Factory/T_Factory+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Factory/Factory+SubEngine.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Extension/T_Extension+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Extension/Extension+SubEngine.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Function/T_Func+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Function/Func+SubEngine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Factory/T_Factory+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Factory/Factory+SubEngine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Extension/T_Extension+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Extension/Extension+SubEngine.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Function/T_Func+SubEngine.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Function/Func+SubEngine.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Object/T_CEItem+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEItem+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Object/T_CESkill+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CESkill+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Object/T_CEObj+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEObj+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Object/T_CEFX+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEFX+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Object/T_CEItem+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEItem+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Object/T_CESkill+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CESkill+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Object/T_CEObj+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEObj+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Object/T_CEFX+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEFX+Sub.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEItemController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEItemController+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CESkillController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CESkillController+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEObjController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEObjController+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEFXController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEFXController+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CECellObjController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CECellObjController+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEPlayerObjController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEPlayerObjController+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEEnemyObjController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Controller/CEEnemyObjController+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEItemController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEItemController+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CESkillController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CESkillController+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEObjController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEObjController+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEFXController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEFXController+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CECellObjController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CECellObjController+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEPlayerObjController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEPlayerObjController+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Controller/T_CEEnemyObjController+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Controller/CEEnemyObjController+Sub.cs"),
 		// 엔진 }
 
 		// 기본
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CSubPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CSubPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CSubAlertPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CSubAlertPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CPSComponent+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CPSComponent+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CMissionPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CMissionPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CSubPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CSubPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CSubAlertPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CSubAlertPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CPSComponent+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CPSComponent+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Base/T_CMissionPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CMissionPopup+Sub.cs"),
 
 		// 효과
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Etc/T_CStoreUIsHandler+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CStoreUIsHandler+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Etc/T_CDifficultyUIsHandler+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Etc/CDifficultyUIsHandler+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Etc/T_CStoreUIsHandler+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Etc/CStoreUIsHandler+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Etc/T_CDifficultyUIsHandler+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Etc/CDifficultyUIsHandler+Sub.cs"),
 
 		// 테이블 {
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CEtcInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CEtcInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CLevelInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CLevelInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CEtcInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CEtcInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CLevelInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CLevelInfoTable.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CCalcInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CCalcInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CMissionInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CMissionInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CRewardInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CRewardInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CEpisodeInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CEpisodeInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CTutorialInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CTutorialInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CResInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CResInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CCalcInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CCalcInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CMissionInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CMissionInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CRewardInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CRewardInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CEpisodeInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CEpisodeInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CTutorialInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CTutorialInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CResInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CResInfoTable.cs"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CItemInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CItemInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CSkillInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CSkillInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CObjInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CObjInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CFXInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CFXInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CAbilityInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CAbilityInfoTable.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CProductTradeInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Table/CProductTradeInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CItemInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CItemInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CSkillInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CSkillInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CObjInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CObjInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CFXInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CFXInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CAbilityInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CAbilityInfoTable.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Table/T_CProductTradeInfoTable.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Table/CProductTradeInfoTable.cs"),
 		// 테이블 }
 
 		// 저장소
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Storage/T_CAppInfoStorage.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Storage/CAppInfoStorage.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Storage/T_CUserInfoStorage.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Storage/CUserInfoStorage.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Storage/T_CGameInfoStorage.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Storage/CGameInfoStorage.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Storage/T_CAppInfoStorage.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Storage/CAppInfoStorage.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Storage/T_CUserInfoStorage.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Storage/CUserInfoStorage.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Storage/T_CGameInfoStorage.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Storage/CGameInfoStorage.cs"),
 
 		// 팝업
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CStorePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CStorePopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CSettingsPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CSettingsPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CSyncPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CSyncPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CDailyMissionPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CDailyMissionPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CFreeRewardPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CFreeRewardPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CDailyRewardPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CDailyRewardPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CCoinsBoxBuyPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CCoinsBoxBuyPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CRewardAcquirePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CRewardAcquirePopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CCoinsBoxAcquirePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CCoinsBoxAcquirePopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CContinuePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CContinuePopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CReadyPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CReadyPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CResultPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CResultPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CResumePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CResumePopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CPausePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CPausePopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CProductBuyPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CProductBuyPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CFocusPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CFocusPopup+Sub.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CTutorialPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Popup/CTutorialPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CStorePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CStorePopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CSettingsPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CSettingsPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CSyncPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CSyncPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CDailyMissionPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CDailyMissionPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CFreeRewardPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CFreeRewardPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CDailyRewardPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CDailyRewardPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CCoinsBoxBuyPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CCoinsBoxBuyPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CRewardAcquirePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CRewardAcquirePopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CCoinsBoxAcquirePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CCoinsBoxAcquirePopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CContinuePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CContinuePopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CReadyPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CReadyPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CResultPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CResultPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CResumePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CResumePopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CPausePopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CPausePopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CProductBuyPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CProductBuyPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CFocusPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CFocusPopup+Sub.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Popup/T_CTutorialPopup+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Popup/CTutorialPopup+Sub.cs"),
 
 		// 스크롤러 셀 뷰
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/ScrollView/T_CLevelScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/ScrollView/CLevelScrollerCellView.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/ScrollView/T_CStageScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/ScrollView/CStageScrollerCellView.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/ScrollView/T_CChapterScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/ScrollView/CChapterScrollerCellView.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/ScrollView/T_CLevelScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/ScrollView/CLevelScrollerCellView.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/ScrollView/T_CStageScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/ScrollView/CStageScrollerCellView.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/ScrollView/T_CChapterScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/ScrollView/CChapterScrollerCellView.cs"),
 #endif // #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
 		// 42-SubUnityProject }
 
 		// 91-UnityProjectEditor {
 #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 상수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+Editor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Define/KDefine+Editor.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+EditorType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Define/KDefine+EditorType.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+EditorEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Define/KDefine+EditorEnum.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+Editor.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Define/KDefine+Editor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+EditorType.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Define/KDefine+EditorType.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+EditorEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Define/KDefine+EditorEnum.cs"),
 
 		// 접근자
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Access/T_Access+Editor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Access/Access+Editor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Access/T_Access+Editor.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Access/Access+Editor.cs"),
 
 		// 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Factory/T_Factory+Editor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Factory/Factory+Editor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Factory/T_Factory+Editor.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Factory/Factory+Editor.cs"),
 
 		// 함수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Function/T_Func+Editor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Function/Func+Editor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Function/T_Func+Editor.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Function/Func+Editor.cs"),
 
 		// 씬 관리자
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Scene/T_CSubLevelEditorSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/SubLevelEditorScene/CSubLevelEditorSceneManager.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scripts/Runtime/Scene/T_CSubLevelEditorSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/SubLevelEditorScene/CSubLevelEditorSceneManager.cs"),
 #endif // #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 91-UnityProjectEditor }
 
 		// 92-SubUnityProjectEditor {
 #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 기본
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorInputPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Utility/Base/CSubEditorInputPopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorCreatePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Utility/Base/CSubEditorCreatePopup.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Utility/Base/CSubEditorScrollerCellView.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorInputPopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Utility/Base/CSubEditorInputPopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorCreatePopup.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Utility/Base/CSubEditorCreatePopup.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Base/T_CSubEditorScrollerCellView.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Utility/Base/CSubEditorScrollerCellView.cs"),
 
 		// 상수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+SubEditor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Define/KDefine+SubEditor.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+SubEditorType.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Define/KDefine+SubEditorType.cs"),
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+SubEditorEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Define/KDefine+SubEditorEnum.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+SubEditor.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Define/KDefine+SubEditor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+SubEditorType.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Define/KDefine+SubEditorType.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Define/T_KDefine+SubEditorEnum.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Define/KDefine+SubEditorEnum.cs"),
 
 		// 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Access/T_Access+SubEditor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Access/Access+SubEditor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Access/T_Access+SubEditor.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Access/Access+SubEditor.cs"),
 
 		// 팩토리
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Factory/T_Factory+SubEditor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Factory/Factory+SubEditor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Factory/T_Factory+SubEditor.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Factory/Factory+SubEditor.cs"),
 
 		// 함수
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Function/T_Func+SubEditor.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Global/Function/Func+SubEditor.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Function/T_Func+SubEditor.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/Global/Function/Func+SubEditor.cs"),
 
 		// 씬 관리자
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Scene/T_CSubLevelEditorSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/SubLevelEditorScene/CSubLevelEditorSceneManager+Sub.cs")
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ_EDITOR}Scripts/Runtime/Scene/T_CSubLevelEditorSceneManager+Sub.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_EDITOR_SCRIPTS}Runtime/SubLevelEditorScene/CSubLevelEditorSceneManager+Sub.cs")
 #endif // #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 92-SubUnityProjectEditor }
 	};
@@ -1140,20 +1172,20 @@ public static partial class KCEditorDefine {
 
 	public static readonly List<(string, string)> B_TABLE_P_INFO_LIST = new List<(string, string)>() {
 #if SAMPLE_PROJ || DEVELOPMENT_PROJ
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/EtcInfo/G_EtcInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_EtcInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/EtcInfo/G_EtcInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}A/G_EtcInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/EtcInfo/G_EtcInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}B/G_EtcInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/EtcInfo/G_EtcInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_EtcInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/EtcInfo/G_EtcInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}A/G_EtcInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/EtcInfo/G_EtcInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}B/G_EtcInfoTable.xlsx"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/MissionInfo/G_MissionInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_MissionInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/RewardInfo/G_RewardInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_RewardInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/ResourceInfo/G_ResInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ResInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/MissionInfo/G_MissionInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_MissionInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/RewardInfo/G_RewardInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_RewardInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/ResourceInfo/G_ResInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_ResInfoTable.xlsx"),
 
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/ItemInfo/G_ItemInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ItemInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/SkillInfo/G_SkillInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_SkillInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/ObjectInfo/G_ObjInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ObjInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/AbilityInfo/G_AbilityInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_AbilityInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/ProductInfo/G_ProductInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_ProductInfoTable.xlsx"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/VersionInfo/G_VerInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_TABLES}G_VerInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/ItemInfo/G_ItemInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_ItemInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/SkillInfo/G_SkillInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_SkillInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/ObjectInfo/G_ObjInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_ObjInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/AbilityInfo/G_AbilityInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_AbilityInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/ProductInfo/G_ProductInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_ProductInfoTable.xlsx"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Tables/VersionInfo/G_VerInfoTable.xlsx", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_TABLES}G_VerInfoTable.xlsx"),
 #endif // #if SAMPLE_PROJ || DEVELOPMENT_PROJ
 
 		// 03.UnityProject
@@ -1310,20 +1342,21 @@ public static partial class KCEditorDefine {
 		
 		// 41-UnityProject {
 #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_TITLE}.unity"),
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_MAIN}.unity"),
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_PLAY}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES}{KCDefine.B_SCENE_N_TITLE}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES}{KCDefine.B_SCENE_N_MAIN}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES}{KCDefine.B_SCENE_N_PLAY}.unity"),
 
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_RESULT}.unity"),
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_LOADING}.unity"),
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_OVERLAY}.unity"),
-		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scenes/{KCDefine.B_SCENE_N_TEST}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES}{KCDefine.B_SCENE_N_LOADING}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES}{KCDefine.B_SCENE_N_RESULT}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES}{KCDefine.B_SCENE_N_OVERLAY}.unity"),
+
+		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_SCENES}{KCDefine.B_SCENE_N_TEST}.unity"),
 #endif // #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
 		// 41-UnityProject }
 
 		// 91-UnityProjectEditor {
 #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
-		(KCEditorDefine.B_ASSET_P_EDITOR_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR}Scenes/{KCDefine.B_SCENE_N_LEVEL_EDITOR}.unity")
+		(KCEditorDefine.B_ASSET_P_EDITOR_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_SCENES}{KCDefine.B_SCENE_N_LEVEL_EDITOR}.unity")
 #endif // #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 91-UnityProjectEditor }
 	};
@@ -1381,15 +1414,15 @@ public static partial class KCEditorDefine {
 
 	public static readonly List<(string, string)> B_ASSET_P_MOVE_INFO_LIST = new List<(string, string)>() {
 #if MODULE_VER_2_7_0_OR_NEWER
-		($"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEItem.cs", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEItem.cs"),
-		($"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CESkill.cs", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CESkill.cs"),
-		($"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEObj.cs", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEObj.cs"),
-		($"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEFX.cs", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEFX.cs"),
+		($"{KCEditorDefine.B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEItem.cs", $"{KCEditorDefine.B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEItem.cs"),
+		($"{KCEditorDefine.B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CESkill.cs", $"{KCEditorDefine.B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CESkill.cs"),
+		($"{KCEditorDefine.B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEObj.cs", $"{KCEditorDefine.B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEObj.cs"),
+		($"{KCEditorDefine.B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEFX.cs", $"{KCEditorDefine.B_DIR_P_ENGINE_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEFX.cs"),
 
-		($"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEItem+Sub.cs", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEItem+Sub.cs"),
-		($"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CESkill+Sub.cs", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CESkill+Sub.cs"),
-		($"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEObj+Sub.cs", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEObj+Sub.cs"),
-		($"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Base/CEFX+Sub.cs", $"{KCEditorDefine.B_DIR_P_ASSETS}{KCEditorDefine.B_DIR_P_ENGINE}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Global/Utility/Object/CEFX+Sub.cs")
+		($"{KCEditorDefine.B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEItem+Sub.cs", $"{KCEditorDefine.B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEItem+Sub.cs"),
+		($"{KCEditorDefine.B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CESkill+Sub.cs", $"{KCEditorDefine.B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CESkill+Sub.cs"),
+		($"{KCEditorDefine.B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEObj+Sub.cs", $"{KCEditorDefine.B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEObj+Sub.cs"),
+		($"{KCEditorDefine.B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Base/CEFX+Sub.cs", $"{KCEditorDefine.B_DIR_P_ENGINE_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Utility/Object/CEFX+Sub.cs")
 #endif // #if MODULE_VER_2_7_0_OR_NEWER
 	};
 	// 경로 }
@@ -1438,34 +1471,34 @@ public static partial class KCEditorDefine {
 	public static readonly string B_SRC_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/Android/app/build/outputs/aar/app-release.aar";
 	public static readonly string B_DEST_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}CustomAndroidNativePlugin.aar";
 
-	public static readonly string B_SRC_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/AndroidManifest.xml";
+	public static readonly string B_SRC_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}Options/Android/AndroidManifest.xml";
 	public static readonly string B_DEST_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}AndroidManifest.xml";
 	public static readonly string B_ORIGIN_SRC_MANIFEST_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/AndroidManifest.xml";
 
-	public static readonly string B_SRC_MAIN_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/mainTemplate.gradle";
+	public static readonly string B_SRC_MAIN_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}Options/Android/mainTemplate.gradle";
 	public static readonly string B_DEST_MAIN_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}mainTemplate.gradle";
 	public static readonly string B_ORIGIN_SRC_MAIN_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/mainTemplate.gradle";
 
-	public static readonly string B_SRC_LAUNCHER_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/launcherTemplate.gradle";
+	public static readonly string B_SRC_LAUNCHER_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}Options/Android/launcherTemplate.gradle";
 	public static readonly string B_DEST_LAUNCHER_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}launcherTemplate.gradle";
 	public static readonly string B_ORIGIN_SRC_LAUNCHER_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/launcherTemplate.gradle";
 
-	public static readonly string B_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/baseProjectTemplate.gradle";
+	public static readonly string B_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}Options/Android/baseProjectTemplate.gradle";
 	public static readonly string B_DEST_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}baseProjectTemplate.gradle";
 	public static readonly string B_ORIGIN_SRC_BASE_PROJ_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/baseProjectTemplate.gradle";
 
-	public static readonly string B_SRC_SETTINGS_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/settingsTemplate.gradle";
+	public static readonly string B_SRC_SETTINGS_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}Options/Android/settingsTemplate.gradle";
 	public static readonly string B_DEST_SETTINGS_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}settingsTemplate.gradle";
 	public static readonly string B_ORIGIN_SRC_SETTINGS_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/settingsTemplate.gradle";
 
-	public static readonly string B_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_PACKAGES}Options/Android/gradleTemplate.properties";
+	public static readonly string B_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}Options/Android/gradleTemplate.properties";
 	public static readonly string B_DEST_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}gradleTemplate.properties";
 	public static readonly string B_ORIGIN_SRC_GRADLE_TEMPLATE_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Options/Android/gradleTemplate.properties";
 
 #if UNITY_EDITOR_WIN
-	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
+	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_UNITY_ENGINE}../Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
 #else
-	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
+	public static readonly string B_SRC_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_UNITY_ENGINE}../PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar";
 #endif // #if UNITY_EDITOR_WIN
 
 	public static readonly string B_DEST_UNITY_PLUGIN_P_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/Android/unityLibrary/libs/unity-classes.jar";
@@ -1648,10 +1681,10 @@ public static partial class KCEditorDefine {
 
 #if BURST_COMPILER_MODULE_ENABLE
 	// 경로
-	public static readonly string B_DATA_P_IOS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_iOS.json";
-	public static readonly string B_DATA_P_ANDROID_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_Android.json";
-	public static readonly string B_DATA_P_MAC_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneOSX.json";
-	public static readonly string B_DATA_P_WNDS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_PROJ_SETTINGS}BurstAotSettings_StandaloneWindows.json";
+	public static readonly string B_DATA_P_IOS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_iOS.json";
+	public static readonly string B_DATA_P_ANDROID_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_Android.json";
+	public static readonly string B_DATA_P_MAC_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_StandaloneOSX.json";
+	public static readonly string B_DATA_P_WNDS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_StandaloneWindows.json";
 #endif // #if BURST_COMPILER_MODULE_ENABLE
 	#endregion // 조건부 런타임 상수
 }
