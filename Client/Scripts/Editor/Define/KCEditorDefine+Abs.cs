@@ -355,13 +355,13 @@ public static partial class KCEditorDefine {
 	public const string B_NAME_DOTWEEN_PRO_PKGS = "DOTweenPro-v1.0.335";
 	public const string B_NAME_APPLE_SIGN_IN_PKGS = "AppleSignInUnity-v1.4.2";
 
-	public const string B_NAME_NGUI_PKGS = "NGUI-v2022.06.08";
+	public const string B_NAME_NGUI_PKGS = "NGUI-v2023.05.29";
 	public const string B_NAME_2D_TOOLKIT_PKGS = "2DToolkit-v2.5.8.16";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
 	public const string B_NAME_SND_MANAGER_PRO_PKGS = "SoundManagerPro-v3.7.0";
 	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.10.1";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
-	public const string B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS = "OdinInspectorAndSerializer-v3.1.10";
+	public const string B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS = "OdinInspectorAndSerializer-v3.1.12";
 	// 패키지 }
 
 	// 알림
