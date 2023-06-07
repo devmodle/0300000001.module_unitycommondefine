@@ -577,7 +577,6 @@ public static partial class KCDefine {
 
 	public const string U_OBJ_N_DRAG_RESPONDER = "DRAG_RESPONDER";
 	public const string U_OBJ_N_TOUCH_RESPONDER = "TOUCH_RESPONDER";
-	public const string U_OBJ_N_BG_TOUCH_RESPONDER = "BG_TOUCH_RESPONDER";
 
 	public const string U_OBJ_N_INDICATOR_TOUCH_RESPONDER = "INDICATOR_TOUCH_RESPONDER";
 	public const string U_OBJ_N_SCREEN_FADE_TOUCH_RESPONDER = "SCREEN_FADE_TOUCH_RESPONDER";
