@@ -302,9 +302,9 @@ public static partial class KCDefine {
 	// 식별자 }
 
 	// 이름 {
-	public const string U_OBJ_N_SCENE_UIS_ROOT = "UIsRoot";
-	public const string U_OBJ_N_SCENE_UIS_BASE = "Canvas";
 	public const string U_OBJ_N_SCENE_UIS = "UIs";
+	public const string U_OBJ_N_SCENE_UIS_BASE = "Canvas";
+	public const string U_OBJ_N_SCENE_UIS_ROOT = "UIsRoot";
 	public const string U_OBJ_N_SCENE_TEST_UIS = "TestUIs";
 	public const string U_OBJ_N_SCENE_PIVOT_UIS = "PivotUIs";
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
@@ -327,8 +327,8 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_ABS_UIS = "AbsUIs";
 
 	public const string U_OBJ_N_SCENE_BASE = "Base";
-	public const string U_OBJ_N_SCENE_OBJS_ROOT = "ObjsRoot";
 	public const string U_OBJ_N_SCENE_OBJS = "Objs";
+	public const string U_OBJ_N_SCENE_OBJS_ROOT = "ObjsRoot";
 	public const string U_OBJ_N_SCENE_PIVOT_OBJS = "PivotObjs";
 	public const string U_OBJ_N_SCENE_ANCHOR_OBJS = "AnchorObjs";
 	public const string U_OBJ_N_SCENE_STATIC_OBJS = "StaticObjs";
@@ -784,7 +784,7 @@ public static partial class KCDefine {
 		KCDefine.U_SORTING_L_UNDERGROUND, KCDefine.U_SORTING_L_BACKGROUND, KCDefine.U_SORTING_L_DEF, KCDefine.U_SORTING_L_FOREGROUND, KCDefine.U_SORTING_L_OVERGROUND, KCDefine.U_SORTING_L_TOP, KCDefine.U_SORTING_L_TOPMOST, KCDefine.U_SORTING_L_ABS, KCDefine.U_SORTING_L_OVERLAY_UNDERGROUND, KCDefine.U_SORTING_L_OVERLAY_BACKGROUND, KCDefine.U_SORTING_L_OVERLAY_DEF, KCDefine.U_SORTING_L_OVERLAY_FOREGROUND, KCDefine.U_SORTING_L_OVERLAY_OVERGROUND, KCDefine.U_SORTING_L_OVERLAY_TOP, KCDefine.U_SORTING_L_OVERLAY_TOPMOST, KCDefine.U_SORTING_L_OVERLAY_ABS
 	};
 
-	// 정렬 순서 {
+	// 정렬 순서
 	public static readonly STSortingOrderInfo U_SORTING_OI_ABS = new STSortingOrderInfo(KCDefine.U_SORTING_O_ABS, KCDefine.U_SORTING_L_ABS);
 	public static readonly STSortingOrderInfo U_SORTING_OI_DEF = new STSortingOrderInfo(KCDefine.U_SORTING_O_DEF, KCDefine.U_SORTING_L_DEF);
 	public static readonly STSortingOrderInfo U_SORTING_OI_TOP = new STSortingOrderInfo(KCDefine.U_SORTING_O_TOP, KCDefine.U_SORTING_L_TOP);
@@ -797,10 +797,15 @@ public static partial class KCDefine {
 	public static readonly STSortingOrderInfo U_SORTING_OI_RESULT_UIS_CANVAS = new STSortingOrderInfo(KCDefine.U_SORTING_O_OVERLAY_UIS, KCDefine.U_SORTING_L_DEF);
 	public static readonly STSortingOrderInfo U_SORTING_OI_OVERLAY_UIS_CANVAS = new STSortingOrderInfo(KCDefine.U_SORTING_O_OVERLAY_UIS + 10, KCDefine.U_SORTING_L_DEF);
 
+	// 씬 관리자
+	public static readonly List<string> U_ROOT_OBJ_NAME_LIST = new List<string>() {
+		KCDefine.U_OBJ_N_SCENE_BASE, KCDefine.U_OBJ_N_SCENE_UIS_ROOT, KCDefine.U_OBJ_N_SCENE_OBJS_ROOT, KCDefine.U_OBJ_N_SCENE_MANAGER
+	};
+
 	// 동기화 객체
 	public static readonly object U_LOCK_OBJ_COMMON = new object();
-	public static readonly object U_LOCK_OBJ_TASK_M_UPDATE = new object();
-	public static readonly object U_LOCK_OBJ_SCHEDULE_M_UPDATE = new object();
+	public static readonly object U_LOCK_OBJ_NETWORK_MANAGER = new object();
+	public static readonly object U_LOCK_OBJ_SCHEDULE_MANAGER = new object();
 
 	// 경로 {
 	public static readonly string U_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}LevelInfo/G_LevelInfo_{"{0:000000000}"}";
