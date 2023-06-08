@@ -175,6 +175,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_EXTRA_SCRIPT_ENABLE = "EXTRA_SCRIPT_ENABLE";
 	public const string DS_DEFINE_S_EXTRA_SCRIPT_MODULE_ENABLE = "EXTRA_SCRIPT_MODULE_ENABLE";
 
+	public const string DS_DEFINE_S_DISABLE_THIS = "DISABLE_THIS";
 	public const string DS_DEFINE_S_NEVER_USE_THIS = "NEVER_USE_THIS";
 	public const string DS_DEFINE_S_ENABLE_INPUT_SYSTEM = "ENABLE_INPUT_SYSTEM";
 	public const string DS_DEFINE_S_SCRIPT_TEMPLATE_ONLY = "SCRIPT_TEMPLATE_ONLY";
