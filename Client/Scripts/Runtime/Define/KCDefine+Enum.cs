@@ -527,14 +527,4 @@ public enum EBannerAdsPos {
 	[HideInInspector] MAX_VAL
 }
 #endif // #if ADS_MODULE_ENABLE
-
-#if PURCHASE_MODULE_ENABLE
-/** 결제 플랫폼 */
-public enum EPurchasePlatform {
-	NONE = -1,
-	GOOGLE,
-	AMAZON,
-	[HideInInspector] MAX_VAL
-}
-#endif // #if PURCHASE_MODULE_ENABLE
 #endregion // 조건부 상수
