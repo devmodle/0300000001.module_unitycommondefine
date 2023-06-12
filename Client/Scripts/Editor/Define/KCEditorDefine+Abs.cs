@@ -47,7 +47,7 @@ public static partial class KCEditorDefine {
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
 
 	// 버전
-	public const string B_VER_UNITY_MODULE = "3.1.0";
+	public const string B_VER_UNITY_MODULE = "3.1.1";
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
