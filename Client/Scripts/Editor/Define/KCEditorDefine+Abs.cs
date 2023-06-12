@@ -48,6 +48,7 @@ public static partial class KCEditorDefine {
 
 	// 버전
 	public const string B_VER_UNITY_MODULE = "3.1.1";
+	public const string B_VER_JENKINS_UNITY_MODULE = "3.1.0";
 
 	// 메뉴 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
