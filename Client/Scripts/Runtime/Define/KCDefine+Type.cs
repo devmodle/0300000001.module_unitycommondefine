@@ -23,6 +23,18 @@ public partial interface IUpdater {
 	public void OnLateUpdate(float a_fDeltaTime);
 }
 
+/** 상태 인터페이스 */
+public partial interface IState<T> where T : class {
+	/** 상태가 시작 되었을 경우 */
+	public void OnStateEnter(T a_tOwner);
+
+	/** 상태가 진행 중 일 경우 */
+	public void OnStateStay(T a_tOwner);
+
+	/** 상태가 종료 되었을 경우 */
+	public void OnStateExit(T a_tOwner);
+}
+
 /** 콜백 정보 */
 public struct STCallbackInfo {
 	public string m_oKey;
