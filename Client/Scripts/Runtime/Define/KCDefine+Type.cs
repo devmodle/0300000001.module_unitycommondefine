@@ -28,11 +28,14 @@ public partial interface IState<T> where T : class {
 	/** 상태가 시작 되었을 경우 */
 	public void OnStateEnter(T a_tOwner);
 
-	/** 상태가 진행 중 일 경우 */
-	public void OnStateStay(T a_tOwner);
-
 	/** 상태가 종료 되었을 경우 */
 	public void OnStateExit(T a_tOwner);
+
+	/** 상태를 갱신한다 */
+	public void OnStateUpdate(T a_tOwner, float a_fDeltaTime);
+
+	/** 상태를 갱신한다 */
+	public void OnStateLateUpdate(T a_tOwner, float a_fDeltaTime);
 }
 
 /** 콜백 정보 */
