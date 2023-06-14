@@ -353,6 +353,7 @@ public static partial class KCEditorDefine {
 	// 객체 이름 에디터 윈도우 }
 
 	// 패키지 {
+	public const string B_NAME_UNI_TASK_PKGS = "UniTask-v2.3.3";
 	public const string B_NAME_DOTWEEN_PRO_PKGS = "DOTweenPro-v1.0.335";
 	public const string B_NAME_APPLE_SIGN_IN_PKGS = "AppleSignInUnity-v1.4.2";
 
@@ -360,8 +361,9 @@ public static partial class KCEditorDefine {
 	public const string B_NAME_2D_TOOLKIT_PKGS = "2DToolkit-v2.5.8.16";
 	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
 	public const string B_NAME_SND_MANAGER_PRO_PKGS = "SoundManagerPro-v3.7.0";
-	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.10.1";
 	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
+
+	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.10.1";
 	public const string B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS = "OdinInspectorAndSerializer-v3.1.12";
 	// 패키지 }
 
@@ -498,6 +500,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_ANDROID_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}Android/";
 	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}UnityPackages/";
 
+	public static readonly string B_ABS_PKGS_P_UNI_TASK = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_UNI_TASK_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_DOTWEEN_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_DOTWEEN_PRO_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_APPLE_SIGN_IN = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_SIGN_IN_PKGS}.unitypackage";
 
@@ -505,9 +508,9 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_PKGS_P_2D_TOOLKIT = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_2D_TOOLKIT_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SPRITE_TRAIL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_SPRITE_TRAIL_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_SND_MANAGER_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_SND_MANAGER_PRO_PKGS}.unitypackage";
+	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
 
 	public static readonly string B_ABS_PKGS_P_BUILD_REPORT_TOOL = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_BUILD_REPORT_TOOL_PKGS}.unitypackage";
-	public static readonly string B_ABS_PKGS_P_ULTIMATE_STATUS_BAR = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_ULTIMATE_STATUS_BAR_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR_AND_SERIALIZER = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS}.unitypackage";
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
@@ -1324,9 +1327,9 @@ public static partial class KCEditorDefine {
 	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {
 		// 41-UnityProject {
 #if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_NORM_QUALITY_UNIVERSAL_RP}.asset"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_HIGH_QUALITY_UNIVERSAL_RP}.asset"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_UniversalRPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_UNIVERSAL_RP}.asset")
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_NORM_QUALITY_URP}.asset"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_HIGH_QUALITY_URP}.asset"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_URP}.asset")
 #endif // #if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 		// 41-UnityProject }
 	};
@@ -1588,42 +1591,42 @@ public static partial class KCEditorDefine {
 	#region 조건부 상수
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	// 이름 {
-	public const string B_FIELD_N_UNIVERSAL_RP_MSAA_QUALITY = "m_MSAA";
-	public const string B_FIELD_N_UNIVERSAL_RP_CASCADE_BORDER = "m_CascadeBorder";
-	public const string B_FIELD_N_UNIVERSAL_RP_OPAQUE_DOWN_SAMPLING = "m_OpaqueDownsampling";
+	public const string B_FIELD_N_URP_MSAA_QUALITY = "m_MSAA";
+	public const string B_FIELD_N_URP_CASCADE_BORDER = "m_CascadeBorder";
+	public const string B_FIELD_N_URP_OPAQUE_DOWN_SAMPLING = "m_OpaqueDownsampling";
 
-	public const string B_FIELD_N_UNIVERSAL_RP_CASCADE_2_SPLIT = "m_Cascade2Split";
-	public const string B_FIELD_N_UNIVERSAL_RP_CASCADE_3_SPLIT = "m_Cascade3Split";
-	public const string B_FIELD_N_UNIVERSAL_RP_CASCADE_4_SPLIT = "m_Cascade4Split";
+	public const string B_FIELD_N_URP_CASCADE_2_SPLIT = "m_Cascade2Split";
+	public const string B_FIELD_N_URP_CASCADE_3_SPLIT = "m_Cascade3Split";
+	public const string B_FIELD_N_URP_CASCADE_4_SPLIT = "m_Cascade4Split";
 
-	public const string B_FIELD_N_UNIVERSAL_RP_RENDERER_DATAS = "m_RendererDataList";
-	public const string B_FIELD_N_UNIVERSAL_RP_SOFT_SHADOW_QUALITY = "m_SoftShadowQuality";
-	public const string B_FIELD_N_UNIVERSAL_RP_SUPPORTS_SOFT_SHADOW = "m_SoftShadowsSupported";
-	public const string B_FIELD_N_UNIVERSAL_RP_SUPPORTS_TERRAIN_HOLES = "m_SupportsTerrainHoles";
-	public const string B_FIELD_N_UNIVERSAL_RP_VOLUME_FRAMEWORK_UPDATE_MODE = "m_VolumeFrameworkUpdateMode";
+	public const string B_FIELD_N_URP_RENDERER_DATAS = "m_RendererDataList";
+	public const string B_FIELD_N_URP_SOFT_SHADOW_QUALITY = "m_SoftShadowQuality";
+	public const string B_FIELD_N_URP_SUPPORTS_SOFT_SHADOW = "m_SoftShadowsSupported";
+	public const string B_FIELD_N_URP_SUPPORTS_TERRAIN_HOLES = "m_SupportsTerrainHoles";
+	public const string B_FIELD_N_URP_VOLUME_FRAMEWORK_UPDATE_MODE = "m_VolumeFrameworkUpdateMode";
 
-	public const string B_FIELD_N_UNIVERSAL_RP_ENABLE_LOD_CROSS_FADE = "m_EnableLODCrossFade";
-	public const string B_FIELD_N_UNIVERSAL_RP_LOD_CROSS_FADE_DITHERING_TYPE = "m_LODCrossFadeDitheringType";
+	public const string B_FIELD_N_URP_ENABLE_LOD_CROSS_FADE = "m_EnableLODCrossFade";
+	public const string B_FIELD_N_URP_LOD_CROSS_FADE_DITHERING_TYPE = "m_LODCrossFadeDitheringType";
 
-	public const string B_FIELD_N_UNIVERSAL_RP_REFLECTION_PROBE_BLENDING = "m_ReflectionProbeBlending";
-	public const string B_FIELD_N_UNIVERSAL_RP_USE_FAST_SRGB_LINEAR_CONVERSION = "m_UseFastSRGBLinearConversion";
-	public const string B_FIELD_N_UNIVERSAL_RP_REFLECTION_PROBE_BOX_PROJECTION = "m_ReflectionProbeBoxProjection";
+	public const string B_FIELD_N_URP_REFLECTION_PROBE_BLENDING = "m_ReflectionProbeBlending";
+	public const string B_FIELD_N_URP_USE_FAST_SRGB_LINEAR_CONVERSION = "m_UseFastSRGBLinearConversion";
+	public const string B_FIELD_N_URP_REFLECTION_PROBE_BOX_PROJECTION = "m_ReflectionProbeBoxProjection";
 
-	public const string B_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
-	public const string B_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
-	public const string B_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
+	public const string B_FIELD_N_URP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
+	public const string B_FIELD_N_URP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
+	public const string B_FIELD_N_URP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
 
-	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_COOKIE_FMT = "m_AdditionalLightsCookieFormat";
-	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
-	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
-	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_SUPPORTS_SHADOW = "m_AdditionalLightShadowsSupported";
-	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_COOKIE_RESOLUTION = "m_AdditionalLightsCookieResolution";
-	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_SHADOW_MAP_RESOLUTION = "m_AdditionalLightsShadowmapResolution";
+	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_COOKIE_FMT = "m_AdditionalLightsCookieFormat";
+	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
+	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
+	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_SUPPORTS_SHADOW = "m_AdditionalLightShadowsSupported";
+	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_COOKIE_RESOLUTION = "m_AdditionalLightsCookieResolution";
+	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_SHADOW_MAP_RESOLUTION = "m_AdditionalLightsShadowmapResolution";
 
-	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_DEBUG_VARIANTS = "m_StripDebugVariants";
-	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
-	public const string B_PROPERTY_N_UNIVERSAL_RP_SHADER_VARIANT_LOG_LEVEL = "m_ShaderVariantLogLevel";
-	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_UNUSED_POST_PROCESSING_VARIANTS = "m_StripUnusedPostProcessingVariants";
+	public const string B_PROPERTY_N_URP_STRIP_DEBUG_VARIANTS = "m_StripDebugVariants";
+	public const string B_PROPERTY_N_URP_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
+	public const string B_PROPERTY_N_URP_SHADER_VARIANT_LOG_LEVEL = "m_ShaderVariantLogLevel";
+	public const string B_PROPERTY_N_URP_STRIP_UNUSED_POST_PROCESSING_VARIANTS = "m_StripUnusedPostProcessingVariants";
 	// 이름 }
 #endif // #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
@@ -1684,7 +1687,7 @@ public static partial class KCEditorDefine {
 
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	// 경로
-	public static readonly string B_ASSET_P_UNIVERSAL_RP_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}UniversalRenderPipelineGlobalSettings.asset";
+	public static readonly string B_ASSET_P_URP_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}UniversalRenderPipelineGlobalSettings.asset";
 #endif // #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
 #if BURST_COMPILER_MODULE_ENABLE

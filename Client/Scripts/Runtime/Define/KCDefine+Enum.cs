@@ -295,7 +295,7 @@ public enum EAAQuality {
 public enum EShaderVariantLogLevel {
 	NONE = -1,
 	DISABLE,
-	ONLY_UNIVERSAL_RP_SHADERS,
+	ONLY_URP_SHADERS,
 	ALL_SHADERS,
 	[HideInInspector] MAX_VAL
 }
