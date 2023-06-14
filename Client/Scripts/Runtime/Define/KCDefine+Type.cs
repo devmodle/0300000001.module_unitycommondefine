@@ -14,8 +14,8 @@ using GoogleSheetsToUnity;
 #endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 
 #region 기본
-/** 상태 갱신 인터페이스 */
-public partial interface IUpdater {
+/** 갱신 인터페이스 */
+public partial interface IUpdatable {
 	/** 상태를 갱신한다 */
 	public void OnUpdate(float a_fDeltaTime);
 
