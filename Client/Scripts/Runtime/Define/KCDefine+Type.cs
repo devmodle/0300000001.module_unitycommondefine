@@ -21,6 +21,9 @@ public partial interface IUpdater {
 
 	/** 상태를 갱신한다 */
 	public void OnLateUpdate(float a_fDeltaTime);
+
+	/** 상태를 갱신한다 */
+	public void OnFixedUpdate(float a_fDeltaTime);
 }
 
 /** 콜백 정보 */
