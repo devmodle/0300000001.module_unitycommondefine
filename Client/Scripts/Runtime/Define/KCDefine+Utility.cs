@@ -35,9 +35,9 @@ public static partial class KCDefine {
 	// 개수 }
 
 	// 크기 {
-	public const int U_SIZE_OBJS_POOL_01 = 50;
-	public const int U_SIZE_OBJS_POOL_02 = 150;
-	public const int U_SIZE_OBJS_POOL_03 = 250;
+	public const int U_SIZE_GAME_OBJS_POOL_01 = 50;
+	public const int U_SIZE_GAME_OBJS_POOL_02 = 150;
+	public const int U_SIZE_GAME_OBJS_POOL_03 = 250;
 
 	public const int U_SIZE_DOTWEEN_ANI = byte.MaxValue;
 	public const int U_SIZE_DOTWEEN_SEQUENCE_ANI = sbyte.MaxValue;
@@ -738,8 +738,12 @@ public static partial class KCDefine {
 	#endregion // 기본
 
 	#region 런타임 상수
-	// 영역
-	public static readonly Rect U_RECT_CAMERA = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
+	// 단위 {
+	public static readonly Rect U_RECT_CAMERA_VIEWPORT = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
+
+	public static readonly Vector3 U_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
+	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
+	// 단위 }
 
 	// 색상 {
 	public static readonly Color U_COLOR_NORM = Color.white;
@@ -768,10 +772,6 @@ public static partial class KCDefine {
 	public static readonly System.Version U_VER_COMMON_APP_INFO = new System.Version(1, 0, 0);
 	public static readonly System.Version U_VER_COMMON_GAME_INFO = new System.Version(1, 0, 0);
 	public static readonly System.Version U_VER_COMMON_USER_INFO = new System.Version(1, 0, 0);
-
-	// 크기
-	public static readonly Vector3 U_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
-	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
 	// 태그
 	public static readonly List<string> U_TAG_LIST = new List<string>() {
@@ -1408,11 +1408,6 @@ public static partial class KCDefine {
 	// 버전
 	public static readonly System.Version U_MIN_VER_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
 	public static readonly System.Version U_MIN_VER_TRACKING_CONSENT_VIEW = new System.Version(14, 0, 0);
-
-	// 햅틱 피드백 지원 모델
-	public static readonly List<DeviceGeneration> U_HAPTIC_FEEDBACK_SUPPORTS_MODEL_LIST = new List<DeviceGeneration>() {
-		DeviceGeneration.iPhone7, DeviceGeneration.iPhone7Plus, DeviceGeneration.iPhone8, DeviceGeneration.iPhone8Plus, DeviceGeneration.iPhoneX, DeviceGeneration.iPhoneXR, DeviceGeneration.iPhoneXS, DeviceGeneration.iPhoneXSMax, DeviceGeneration.iPhone11, DeviceGeneration.iPhone11Pro, DeviceGeneration.iPhone11ProMax, DeviceGeneration.iPhoneUnknown
-	};
 #endif // #if UNITY_IOS
 
 #if ADS_MODULE_ENABLE

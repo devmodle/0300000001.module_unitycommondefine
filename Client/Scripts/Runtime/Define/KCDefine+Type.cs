@@ -23,21 +23,6 @@ public partial interface IUpdater {
 	public void OnLateUpdate(float a_fDeltaTime);
 }
 
-/** 상태 인터페이스 */
-public partial interface IState<T> where T : class {
-	/** 상태가 시작 되었을 경우 */
-	public void OnStateEnter(T a_tOwner);
-
-	/** 상태가 종료 되었을 경우 */
-	public void OnStateExit(T a_tOwner);
-
-	/** 상태를 갱신한다 */
-	public void OnStateUpdate(T a_tOwner, float a_fDeltaTime);
-
-	/** 상태를 갱신한다 */
-	public void OnStateLateUpdate(T a_tOwner, float a_fDeltaTime);
-}
-
 /** 콜백 정보 */
 public struct STCallbackInfo {
 	public string m_oKey;
@@ -80,25 +65,25 @@ public struct STComponentInfo {
 	#endregion // 함수
 }
 
-/** 비활성화 객체 정보 */
-public struct STDespawnObjInfo {
+/** 비활성화 게임 객체 정보 */
+public struct STDespawnGameObjInfo {
 	public bool m_bIsDestroy;
-	public string m_oObjsPoolKey;
+	public string m_oGameObjsPoolKey;
 	public System.DateTime m_stDespawnTime;
 
 	public GameObject m_oObj;
 
 	#region 함수
 	/** 생성자 */
-	public STDespawnObjInfo(string a_oObjsPoolKey, GameObject a_oObj, bool a_bIsDestroy = false) : this(a_oObjsPoolKey, a_oObj, System.DateTime.Now, a_bIsDestroy) {
+	public STDespawnGameObjInfo(string a_oGameObjsPoolKey, GameObject a_oObj, bool a_bIsDestroy = false) : this(a_oGameObjsPoolKey, a_oObj, System.DateTime.Now, a_bIsDestroy) {
 		// Do Something
 	}
 
 	/** 생성자 */
-	public STDespawnObjInfo(string a_oObjsPoolKey, GameObject a_oObj, System.DateTime a_stDespawnTime, bool a_bIsDestroy = false) {
+	public STDespawnGameObjInfo(string a_oGameObjsPoolKey, GameObject a_oObj, System.DateTime a_stDespawnTime, bool a_bIsDestroy = false) {
 		m_oObj = a_oObj;
 		m_bIsDestroy = a_bIsDestroy;
-		m_oObjsPoolKey = a_oObjsPoolKey;
+		m_oGameObjsPoolKey = a_oGameObjsPoolKey;
 		m_stDespawnTime = a_stDespawnTime;
 	}
 	#endregion // 함수
