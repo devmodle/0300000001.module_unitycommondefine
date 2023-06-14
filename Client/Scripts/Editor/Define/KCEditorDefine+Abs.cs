@@ -1588,33 +1588,37 @@ public static partial class KCEditorDefine {
 	#region 조건부 상수
 #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 	// 이름 {
-	public const string U_FIELD_N_UNIVERSAL_RP_MSAA_QUALITY = "m_MSAA";
-	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_BORDER = "m_CascadeBorder";
-	public const string U_FIELD_N_UNIVERSAL_RP_OPAQUE_DOWN_SAMPLING = "m_OpaqueDownsampling";
+	public const string B_FIELD_N_UNIVERSAL_RP_MSAA_QUALITY = "m_MSAA";
+	public const string B_FIELD_N_UNIVERSAL_RP_CASCADE_BORDER = "m_CascadeBorder";
+	public const string B_FIELD_N_UNIVERSAL_RP_OPAQUE_DOWN_SAMPLING = "m_OpaqueDownsampling";
 
-	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_2_SPLIT = "m_Cascade2Split";
-	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_3_SPLIT = "m_Cascade3Split";
-	public const string U_FIELD_N_UNIVERSAL_RP_CASCADE_4_SPLIT = "m_Cascade4Split";
+	public const string B_FIELD_N_UNIVERSAL_RP_CASCADE_2_SPLIT = "m_Cascade2Split";
+	public const string B_FIELD_N_UNIVERSAL_RP_CASCADE_3_SPLIT = "m_Cascade3Split";
+	public const string B_FIELD_N_UNIVERSAL_RP_CASCADE_4_SPLIT = "m_Cascade4Split";
 
-	public const string U_FIELD_N_UNIVERSAL_RP_RENDERER_DATAS = "m_RendererDataList";
-	public const string U_FIELD_N_UNIVERSAL_RP_SOFT_SHADOW_QUALITY = "m_SoftShadowQuality";
-	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_SOFT_SHADOW = "m_SoftShadowsSupported";
-	public const string U_FIELD_N_UNIVERSAL_RP_SUPPORTS_TERRAIN_HOLES = "m_SupportsTerrainHoles";
+	public const string B_FIELD_N_UNIVERSAL_RP_RENDERER_DATAS = "m_RendererDataList";
+	public const string B_FIELD_N_UNIVERSAL_RP_SOFT_SHADOW_QUALITY = "m_SoftShadowQuality";
+	public const string B_FIELD_N_UNIVERSAL_RP_SUPPORTS_SOFT_SHADOW = "m_SoftShadowsSupported";
+	public const string B_FIELD_N_UNIVERSAL_RP_SUPPORTS_TERRAIN_HOLES = "m_SupportsTerrainHoles";
+	public const string B_FIELD_N_UNIVERSAL_RP_VOLUME_FRAMEWORK_UPDATE_MODE = "m_VolumeFrameworkUpdateMode";
 
-	public const string U_FIELD_N_UNIVERSAL_RP_REFLECTION_PROBE_BLENDING = "m_ReflectionProbeBlending";
-	public const string U_FIELD_N_UNIVERSAL_RP_USE_FAST_SRGB_LINEAR_CONVERSION = "m_UseFastSRGBLinearConversion";
-	public const string U_FIELD_N_UNIVERSAL_RP_REFLECTION_PROBE_BOX_PROJECTION = "m_ReflectionProbeBoxProjection";
+	public const string B_FIELD_N_UNIVERSAL_RP_ENABLE_LOD_CROSS_FADE = "m_EnableLODCrossFade";
+	public const string B_FIELD_N_UNIVERSAL_RP_LOD_CROSS_FADE_DITHERING_TYPE = "m_LODCrossFadeDitheringType";
 
-	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
-	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
-	public const string U_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
+	public const string B_FIELD_N_UNIVERSAL_RP_REFLECTION_PROBE_BLENDING = "m_ReflectionProbeBlending";
+	public const string B_FIELD_N_UNIVERSAL_RP_USE_FAST_SRGB_LINEAR_CONVERSION = "m_UseFastSRGBLinearConversion";
+	public const string B_FIELD_N_UNIVERSAL_RP_REFLECTION_PROBE_BOX_PROJECTION = "m_ReflectionProbeBoxProjection";
 
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_COOKIE_FMT = "m_AdditionalLightsCookieFormat";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_SUPPORTS_SHADOW = "m_AdditionalLightShadowsSupported";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_COOKIE_RESOLUTION = "m_AdditionalLightsCookieResolution";
-	public const string U_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_SHADOW_MAP_RESOLUTION = "m_AdditionalLightsShadowmapResolution";
+	public const string B_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
+	public const string B_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
+	public const string B_FIELD_N_UNIVERSAL_RP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
+
+	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_COOKIE_FMT = "m_AdditionalLightsCookieFormat";
+	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
+	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
+	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_SUPPORTS_SHADOW = "m_AdditionalLightShadowsSupported";
+	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_COOKIE_RESOLUTION = "m_AdditionalLightsCookieResolution";
+	public const string B_FIELD_N_UNIVERSAL_RP_ADDITIONAL_LIGHTS_SHADOW_MAP_RESOLUTION = "m_AdditionalLightsShadowmapResolution";
 
 	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_DEBUG_VARIANTS = "m_StripDebugVariants";
 	public const string B_PROPERTY_N_UNIVERSAL_RP_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
