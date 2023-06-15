@@ -7,6 +7,27 @@ using UnityEngine.Events;
 
 /** 기본 상수 */
 public static partial class KCDefine {
+	#region 프로퍼티
+#if UNITY_IOS || UNITY_ANDROID
+	public static string B_DIR_P_WRITABLE => $"{Application.persistentDataPath}/{Application.identifier}/";
+#else
+	public static string B_DIR_P_WRITABLE => $"{Application.persistentDataPath}/PersistentDatas/";
+#endif // #if UNITY_IOS || UNITY_ANDROID
+
+#if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+	public static string B_ABS_DIR_P_EXTERNAL_DATAS => $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
+
+#if UNITY_STANDALONE_WIN
+	public static string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS => $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
+#else
+	public static string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS => $"{Application.dataPath}/../../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
+#endif // #if UNITY_STANDALONE_WIN
+#else
+	public static string B_ABS_DIR_P_EXTERNAL_DATAS => KCDefine.B_DIR_P_WRITABLE;
+	public static string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS => KCDefine.B_DIR_P_WRITABLE;
+#endif // #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+	#endregion // 프로퍼티
+
 	#region 기본
 	// 값 {
 	public const int B_VAL_0_INT = 0;
@@ -693,26 +714,5 @@ public static partial class KCDefine {
 	public static readonly List<string> B_EU_COUNTRY_CODE_LIST = new List<string>() {
 		"BE", "BG", "CZ", "DK", "DE", "EE", "IE", "GR", "ES", "FR", "HR", "IT", "CY", "LV", "LT", "LU", "HU", "MT", "NL", "AT", "PL", "PT", "RO", "SI", "SK", "FI", "SE"
 	};
-
-	// 경로 {
-#if UNITY_IOS || UNITY_ANDROID
-	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/{Application.identifier}/";
-#else
-	public static readonly string B_DIR_P_WRITABLE = $"{Application.persistentDataPath}/PersistentDatas/";
-#endif // #if UNITY_IOS || UNITY_ANDROID
-
-#if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
-	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
-
-#if UNITY_STANDALONE_WIN
-	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
-#else
-	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = $"{Application.dataPath}/../../{KCDefine.B_DIR_N_EXTERNAL_DATAS}/";
-#endif // #if UNITY_STANDALONE_WIN
-#else
-	public static readonly string B_ABS_DIR_P_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
-	public static readonly string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS = KCDefine.B_DIR_P_WRITABLE;
-#endif // #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
-	// 경로 }
 	#endregion // 런타임 상수
 }
