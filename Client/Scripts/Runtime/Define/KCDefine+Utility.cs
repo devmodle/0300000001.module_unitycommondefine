@@ -23,6 +23,22 @@ using Unity.Notifications.Android;
 
 /** 유틸리티 상수 */
 public static partial class KCDefine {
+	#region 프로퍼티
+	public static string U_DATA_P_COMMON_APP_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
+	public static string U_DATA_P_COMMON_USER_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonUserInfo.bytes";
+	public static string U_DATA_P_COMMON_GAME_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonGameInfo.bytes";
+
+#if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
+	public static string U_IMG_P_SCREENSHOT => $"{Application.identifier}/Screenshot.png";
+#else
+	public static string U_IMG_P_SCREENSHOT => $"{KCDefine.B_DIR_P_WRITABLE}Screenshot.png";
+#endif // #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
+
+#if PURCHASE_MODULE_ENABLE
+	public static string U_DATA_P_PURCHASE_PRODUCT_IDS => $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
+#endif // #if PURCHASE_MODULE_ENABLE
+	#endregion // 프로퍼티
+
 	#region 기본
 	// 개수 {
 	public const int U_MAX_NUM_LAYERS = 32;
@@ -757,14 +773,9 @@ public static partial class KCDefine {
 	public static readonly Color U_COLOR_SCREEN_FADE_IN = Color.black;
 	public static readonly Color U_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
 
+	public static readonly Color U_COLOR_CLEAR = Color.black;
 	public static readonly Color U_COLOR_POPUP_BLIND = new Color(0.0f, 0.0f, 0.0f, 0.95f);
 	public static readonly Color U_COLOR_INDICATOR_BLIND = new Color(0.0f, 0.0f, 0.0f, 0.75f);
-
-#if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
-	public static readonly Color U_COLOR_CLEAR = Color.gray;
-#else
-	public static readonly Color U_COLOR_CLEAR = Color.black;
-#endif // #if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	// 색상 }
 
 	// 버전
@@ -1021,10 +1032,6 @@ public static partial class KCDefine {
 	public static readonly string U_TEX_P_SPLASH = $"{KCDefine.B_DIR_P_TEXTURES}U_SpriteAtlas_01__IGNORE_TC__/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Splash";
 	public static readonly string U_TEX_P_INDICATOR = $"{KCDefine.B_DIR_P_TEXTURES}U_SpriteAtlas_01__IGNORE_TC__/{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Indicator";
 
-	public static readonly string U_DATA_P_COMMON_APP_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
-	public static readonly string U_DATA_P_COMMON_USER_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonUserInfo.bytes";
-	public static readonly string U_DATA_P_COMMON_GAME_INFO = $"{KCDefine.B_DIR_P_WRITABLE}CommonGameInfo.bytes";
-
 #if UNITY_EDITOR
 	public static readonly string U_RUNTIME_TABLE_P_G_LEVEL_INFO = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_LEVEL_INFO}.json";
 	public static readonly string U_RUNTIME_TABLE_P_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_EXTERNAL_DATAS}{KCDefine.U_TABLE_P_G_LEVEL_INFO_SET_A}.json";
@@ -1070,12 +1077,6 @@ public static partial class KCDefine {
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_A}.bytes";
 	public static readonly string U_RUNTIME_DATA_P_FMT_G_LEVEL_INFO_SET_B = $"{KCDefine.B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS}{KCDefine.U_DATA_P_FMT_G_LEVEL_INFO_SET_B}.bytes";
 #endif // #if UNITY_EDITOR
-
-#if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-	public static readonly string U_IMG_P_SCREENSHOT = $"{Application.identifier}/Screenshot.png";
-#else
-	public static readonly string U_IMG_P_SCREENSHOT = $"{KCDefine.B_DIR_P_WRITABLE}Screenshot.png";
-#endif // #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 
 	public static readonly List<string> U_ASSET_P_SPRITE_ATLAS_LIST = new List<string>() {
 		KCDefine.U_ASSET_P_SPRITE_ATLAS_01,
@@ -1441,11 +1442,6 @@ public static partial class KCDefine {
 	// 시간
 	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_SESSION = new System.TimeSpan(0, 0, 60);
 #endif // #if FIREBASE_MODULE_ENABLE
-
-#if PURCHASE_MODULE_ENABLE
-	// 경로
-	public static readonly string U_DATA_P_PURCHASE_PRODUCT_IDS = $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
-#endif // #if PURCHASE_MODULE_ENABLE
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
