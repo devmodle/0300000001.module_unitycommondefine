@@ -325,7 +325,7 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_PIVOT_UIS = "PivotUIs";
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
 	public const string U_OBJ_N_SCENE_MID_EDITOR_UIS = "MID_EDITOR_UIS";
-	public const string U_OBJ_N_SCENE_CORNER_ANCHOR_UIS = "CornerAnchorUIs";
+	public const string U_OBJ_N_SCENE_STRETCH_ANCHOR_UIS = "StretchAnchorUIs";
 	public const string U_OBJ_N_SCENE_DESIGN_RESOLUTION_GUIDE_UIS = "DesignResolutionGuideUIs";
 
 	public const string U_OBJ_N_SCENE_UP_UIS = "UpUIs";
@@ -333,10 +333,10 @@ public static partial class KCDefine {
 	public const string U_OBJ_N_SCENE_LEFT_UIS = "LeftUIs";
 	public const string U_OBJ_N_SCENE_RIGHT_UIS = "RightUIs";
 
-	public const string U_OBJ_N_SCENE_UP_LEFT_UIS = "UpLeftUIs";
-	public const string U_OBJ_N_SCENE_UP_RIGHT_UIS = "UpRightUIs";
-	public const string U_OBJ_N_SCENE_DOWN_LEFT_UIS = "DownLeftUIs";
-	public const string U_OBJ_N_SCENE_DOWN_RIGHT_UIS = "DownRightUIs";
+	public const string U_OBJ_N_SCENE_STRETCH_UP_UIS = "StretchUpUIs";
+	public const string U_OBJ_N_SCENE_STRETCH_DOWN_UIS = "StretchDownUIs";
+	public const string U_OBJ_N_SCENE_STRETCH_LEFT_UIS = "StretchLeftUIs";
+	public const string U_OBJ_N_SCENE_STRETCH_RIGHT_UIS = "StretchRightUIs";
 
 	public const string U_OBJ_N_SCENE_POPUP_UIS = "PopupUIs";
 	public const string U_OBJ_N_SCENE_TOPMOST_UIS = "TopmostUIs";
