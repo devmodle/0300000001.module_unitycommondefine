@@ -9,6 +9,10 @@ using DG.Tweening;
 using MessagePack;
 using EnhancedUI.EnhancedScroller;
 
+#if NEWTON_SOFT_JSON_SERIALIZE_DESERIALIZE_ENABLE
+using Newtonsoft.Json;
+#endif // #if NEWTON_SOFT_JSON_SERIALIZE_DESERIALIZE_ENABLE
+
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 using GoogleSheetsToUnity;
 #endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
@@ -24,6 +28,9 @@ public partial interface IUpdatable {
 
 	/** 상태를 갱신한다 */
 	public void OnFixedUpdate(float a_fDeltaTime);
+
+	/** 상태를 갱신한다 */
+	public void OnCustomUpdate(float a_fDeltaTime);
 }
 
 /** 콜백 정보 */

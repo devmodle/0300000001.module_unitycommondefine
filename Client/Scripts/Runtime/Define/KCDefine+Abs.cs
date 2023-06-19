@@ -257,18 +257,20 @@ public static partial class KCDefine {
 	public const string B_KOREA_COUNTRY_CODE = "KR";
 	public const string B_AMERICA_COUNTRY_CODE = "US";
 
+	// 플랫폼 {
+	public const string B_PLATFORM_IOS_APPLE = "iOSApple";
+
+	public const string B_PLATFORM_ANDROID_GOOGLE = "AndroidGoogle";
+	public const string B_PLATFORM_ANDROID_AMAZON = "AndroidAmazon";
+
+	public const string B_PLATFORM_STANDALONE_MAC_STEAM = "StandaloneMacSteam";
+	public const string B_PLATFORM_STANDALONE_MAC_EDITOR = "StandaloneMacEditor";
+
+	public const string B_PLATFORM_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
+	public const string B_PLATFORM_STANDALONE_WNDS_EDITOR = "StandaloneWndsEditor";
+	// 플랫폼 }
+
 	// 이름 {
-	public const string B_PLATFORM_N_IOS_APPLE = "iOSApple";
-
-	public const string B_PLATFORM_N_ANDROID_GOOGLE = "AndroidGoogle";
-	public const string B_PLATFORM_N_ANDROID_AMAZON = "AndroidAmazon";
-
-	public const string B_PLATFORM_N_STANDALONE_MAC_STEAM = "StandaloneMacSteam";
-	public const string B_PLATFORM_N_STANDALONE_MAC_EDITOR = "StandaloneMacEditor";
-
-	public const string B_PLATFORM_N_STANDALONE_WNDS_STEAM = "StandaloneWndsSteam";
-	public const string B_PLATFORM_N_STANDALONE_WNDS_EDITOR = "StandaloneWndsEditor";
-
 	public const string B_DIR_N_EXTERNAL_DATAS = "ExternalDatas";
 
 	public const string B_NAME_PATTERN_FIX_REPEAT_WRAP = "__FIX_RW__";
