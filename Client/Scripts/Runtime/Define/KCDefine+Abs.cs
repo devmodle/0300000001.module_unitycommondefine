@@ -368,7 +368,7 @@ public static partial class KCDefine {
 	public const string B_CMD_GET_COUNTRY_CODE = "GetCountryCode";
 	public const string B_CMD_GET_STORE_VER = "GetStoreVer";
 
-	public const string B_CMD_SET_ENABLE_ADS_TRACKING = "SetEnableAdsTracking";
+	public const string B_CMD_SET_IS_ENABLE_ADS_TRACKING = "SetIsEnableAdsTracking";
 
 	public const string B_CMD_SHOW_ALERT = "ShowAlert";
 	public const string B_CMD_SHOW_TOAST = "ShowToast";
