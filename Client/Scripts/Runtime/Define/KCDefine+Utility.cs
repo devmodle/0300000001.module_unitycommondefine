@@ -784,9 +784,6 @@ public static partial class KCDefine {
 	public static readonly System.Version U_VER_COMMON_GAME_INFO = new System.Version(1, 0, 0);
 	public static readonly System.Version U_VER_COMMON_USER_INFO = new System.Version(1, 0, 0);
 
-	// 코루틴
-	public static readonly WaitForEndOfFrame U_WAIT_FOR_END_OF_FRAME = new WaitForEndOfFrame();
-
 	// 태그
 	public static readonly List<string> U_TAG_LIST = new List<string>() {
 		KCDefine.U_TAG_MAIN_LIGHT, KCDefine.U_TAG_ADDITIONAL_LIGHT, KCDefine.U_TAG_ADDITIONAL_CAMERA, KCDefine.U_TAG_SCENE_MANAGER, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_ITEM, KCDefine.U_TAG_SKILL, KCDefine.U_TAG_OBJ, KCDefine.U_TAG_FX, KCDefine.U_TAG_CELL, KCDefine.U_TAG_ENEMY
