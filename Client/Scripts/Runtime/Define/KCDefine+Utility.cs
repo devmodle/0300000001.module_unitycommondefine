@@ -1190,7 +1190,6 @@ public static partial class KCDefine {
 #if ADS_MODULE_ENABLE
 	// 시간
 	public const float U_DELTA_T_ADS_M_ADS_LOAD = 5.0f;
-	public const float U_DELTA_T_REWARD_ATI_UPDATE = 0.5f;
 
 	// 식별자 {
 	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
