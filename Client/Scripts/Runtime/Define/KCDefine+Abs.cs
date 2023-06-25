@@ -142,8 +142,8 @@ public static partial class KCDefine {
 
 	// 비교
 	public const int B_COMPARE_LESS = -1;
+	public const int B_COMPARE_GREAT = 1;
 	public const int B_COMPARE_EQUALS = 0;
-	public const int B_COMPARE_GREATE = 1;
 
 	// 횟수 {
 	public const int B_TIMES_INT_ONCE = 1;

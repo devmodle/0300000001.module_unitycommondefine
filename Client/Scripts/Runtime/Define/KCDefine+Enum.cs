@@ -110,6 +110,15 @@ public enum EKindsGroupType {
 	[HideInInspector] MAX_VAL
 }
 
+/** 교환 타입 */
+public enum ESwapType {
+	NONE = -1,
+	LESS,
+	GREAT,
+	ALWAYS,
+	[HideInInspector] MAX_VAL
+}
+
 /** 벡터 타입 */
 public enum EVecType {
 	NONE = -1,
