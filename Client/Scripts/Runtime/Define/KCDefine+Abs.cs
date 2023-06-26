@@ -88,15 +88,6 @@ public static partial class KCDefine {
 	// 회전 }
 
 	// 단위 {
-	public const int B_UNIT_2_NUMBERS = 2;
-	public const int B_UNIT_4_NUMBERS = 4;
-	public const int B_UNIT_8_NUMBERS = 8;
-	public const int B_UNIT_16_NUMBERS = 16;
-	public const int B_UNIT_32_NUMBERS = 32;
-	public const int B_UNIT_64_NUMBERS = 64;
-	public const int B_UNIT_128_NUMBERS = 128;
-	public const int B_UNIT_256_NUMBERS = 256;
-
 	public const int B_UNIT_KINDS_PER_TYPE = 100000000;
 	public const int B_UNIT_KINDS_PER_SUB_TYPE = 10000000;
 	public const int B_UNIT_KINDS_PER_KINDS_TYPE = 100000;
@@ -106,18 +97,19 @@ public static partial class KCDefine {
 	public const int B_UNIT_IDS_PER_IDS_02 = 10000;
 	public const int B_UNIT_IDS_PER_IDS_03 = 10000000;
 
-	public const int B_UNIT_NORM_VAL_TO_BYTE = 255;
-	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;
-
 	public const int B_UNIT_BITS_PER_BYTE = 8;
 	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
 	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
 
 	public const int B_UNIT_SECS_PER_HOUR = 360;
 	public const int B_UNIT_SECS_PER_MINUTE = 60;
+	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;
 
 	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
 	public const int B_UNIT_MICRO_SECS_PER_SEC = 1000000;
+
+	public const int B_UNIT_CENTI_METER_PER_METER = 100;
+	public const int B_UNIT_MILLI_METER_PER_METER = 1000;
 
 	public const int B_UNIT_DIGITS_TEN = 10;
 	public const int B_UNIT_DIGITS_HUNDRED = 100;
@@ -129,11 +121,11 @@ public static partial class KCDefine {
 	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
 
 #if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
-	public const float B_UNIT_SCALE = 0.01f;
+	public const float B_UNIT_SCALE = 1.0f / (float)KCDefine.B_UNIT_CENTI_METER_PER_METER;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f;
 #else
 	public const float B_UNIT_SCALE = 1.0f;
-	public const float B_UNIT_LIGHTMAP_RESOLUTION = 0.01f;
+	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f / (float)KCDefine.B_UNIT_CENTI_METER_PER_METER;
 #endif // #if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
 	// 단위 }
 
@@ -641,8 +633,8 @@ public static partial class KCDefine {
 
 	// 색상 {
 	public static readonly Color B_LOG_COLOR_INFO = Color.cyan;
-	public static readonly Color B_LOG_COLOR_WARNING = new Color(0xff / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0xa5 / (float)KCDefine.B_UNIT_NORM_VAL_TO_BYTE, 0.0f, 1.0f);
 	public static readonly Color B_LOG_COLOR_ERROR = Color.red;
+	public static readonly Color B_LOG_COLOR_WARNING = new Color(1.0f, 0.65f, 0.0f, 1.0f);
 
 	public static readonly Color B_LOG_COLOR_PLUGIN = Color.yellow;
 	public static readonly Color B_LOG_COLOR_PLATFORM_INFO = Color.magenta;
