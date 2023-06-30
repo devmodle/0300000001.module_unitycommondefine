@@ -169,6 +169,7 @@ public static partial class KCDefine {
 	public const string B_IDX_INVALID_STR = "-1";
 
 	// 디바이스 {
+	public const int B_DEF_TARGET_FRAME_RATE = 30;
 	public const int B_MIN_TARGET_FRAME_RATE = 30;
 	public const int B_EDITOR_TARGET_FRAME_RATE = 60;
 
