@@ -167,6 +167,7 @@ public static partial class KCEditorDefine {
 	public const string B_DIR_P_EXPORT_BASE = "Export/";
 	public const string B_DIR_P_EDITOR_SCRIPTS = "Scripts/Editor/";
 	public const string B_DIR_P_RUNTIME_SCRIPTS = "Scripts/Runtime/";
+	public const string B_DIR_P_EDITOR_SCENE_SCRIPTS = "Scripts/Editor/EditorScene";
 
 	public const string B_DIR_P_ENGINE_RESOURCES = "02-Engine/Resources/";
 	public const string B_DIR_P_ENGINE_EDITOR_SCRIPTS = "02-Engine/Scripts/Editor/";
