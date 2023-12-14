@@ -746,9 +746,9 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSubSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/SubSetupScene/CSubSetupSceneManager.cs"),
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSubLateSetupSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/SubLateSetupScene/CSubLateSetupSceneManager.cs"),
 
-#if STUDY_ENABLE || STUDY_MODULE_ENABLE
+#if RESEARCH_ENABLE || RESEARCH_MODULE_ENABLE
 		($"{KCEditorDefine.B_ABS_DIR_P_STUDY_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Scripts/Runtime/Scene/T_CSSubMenuSceneManager.cs", $"{KCEditorDefine.B_ABS_DIR_P_AUTO_SCRIPTS}Runtime/SubMenuScene/CSSubMenuSceneManager.cs"),
-#endif // #if STUDY_ENABLE || STUDY_MODULE_ENABLE
+#endif // #if RESEARCH_ENABLE || RESEARCH_MODULE_ENABLE
 		// 씬 관리자 }
 #endif // #if SCENE_TEMPLATES_ENABLE || SCENE_TEMPLATES_MODULE_ENABLE
 
@@ -1342,9 +1342,9 @@ public static partial class KCEditorDefine {
 		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_SETUP}.unity"),
 		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_LATE_SETUP}.unity"),
 
-#if STUDY_ENABLE || STUDY_MODULE_ENABLE
+#if RESEARCH_ENABLE || RESEARCH_MODULE_ENABLE
 		(KCEditorDefine.B_ASSET_P_MENU_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_MENU}.unity"),
-#endif // #if STUDY_ENABLE || STUDY_MODULE_ENABLE
+#endif // #if RESEARCH_ENABLE || RESEARCH_MODULE_ENABLE
 #endif // #if SCENE_TEMPLATES_ENABLE || SCENE_TEMPLATES_MODULE_ENABLE
 		// 01-Auto }
 		
