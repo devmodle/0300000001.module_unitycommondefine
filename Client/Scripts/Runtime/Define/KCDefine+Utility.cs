@@ -1118,11 +1118,11 @@ public static partial class KCDefine {
 	public const int U_QUALITY_ASYNC_UPLOAD_BUFFER_SIZE = 16;
 
 	// 스크립트 순서 {
-	public const int U_SCRIPT_O_LATE = sbyte.MaxValue;
-	public const int U_SCRIPT_O_LATEST = byte.MaxValue;
+	public const int U_SCRIPT_O_LATE = sbyte.MinValue * 20;
+	public const int U_SCRIPT_O_LATEST = sbyte.MinValue * 10;
 	public const int U_SCRIPT_O_INVALID = int.MinValue;
 
-	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = sbyte.MaxValue / 2;
+	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = sbyte.MinValue * 30;
 	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
 
