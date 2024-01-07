@@ -720,7 +720,7 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleImporter.py"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModulePluginImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModulePluginImporter.py"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleRemoteURLUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleRemoteURLUpdater.py"),
-		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleStudyImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleStudyImporter.py"),
+		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleResearchImporter.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleResearchImporter.py"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleTagUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleTagUpdater.py"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleUpdater.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleUpdater.py"),
 		($"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Templates/Scripts/Python/UnityModuleUploader.py", $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_SCRIPTS}Python/UnityModuleUploader.py"),
