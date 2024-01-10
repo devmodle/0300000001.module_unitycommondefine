@@ -177,41 +177,6 @@ public static partial class KCEditorDefine {
 	public const string B_TOOL_P_CMD_PROMPT = "cmd.exe";
 	// 경로 }
 
-	// iOS {
-	public const string B_TEXT_IOS_TRUE = "YES";
-	public const string B_TEXT_IOS_FALSE = "NO";
-
-	public const string B_TEXT_IOS_METAL = "metal";
-	public const string B_TEXT_IOS_ARM_64 = "arm64";
-
-	public const string B_IPA_EXPORT_METHOD_IOS_DEV = "development";
-	public const string B_IPA_EXPORT_METHOD_IOS_STORE = "app-store";
-
-	public const string B_SEARCH_P_IOS_PODS = "$(SRCROOT)/**";
-	public const string B_BUILD_FILE_EXTENSION_IOS_IPA = "ipa";
-
-	public const string B_BUILD_P_FMT_IOS = "Builds/iOS/{0}";
-	public const string B_PLIST_P_FMT_IOS = "{0}/Info.plist";
-	public const string B_BUILD_OUTPUT_P_FMT_IOS = "Builds/iOS/{0}/BuildOutput/Export/{0}BuildOutput.{1}";
-
-	public const string B_DATA_P_FMT_COCOA_PODS = "{0}/Podfile";
-	public const string B_PROJ_P_FMT_COCOA_PODS = "{0}/Pods/Pods.xcodeproj/project.pbxproj";
-	public const string B_BUILD_CMD_FMT_IOS_COCOA_PODS = "pod update --clean-install --project-directory={0}";
-
-	public const string B_KEY_IOS_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
-	public const string B_KEY_IOS_DEVICE_CAPABILITIES = "UIRequiredDeviceCapabilities";
-	public const string B_KEY_IOS_USER_TRACKING_USAGE_DESC = "NSUserTrackingUsageDescription";
-	public const string B_KEY_IOS_FIREBASE_APP_STORE_RECEIPT_URL_CHECK_ENABLE = "FirebaseAppStoreReceiptURLCheckEnabled";
-
-	public const string B_KEY_IOS_ADS_NETWORK_ID = "SKAdNetworkIdentifier";
-	public const string B_KEY_IOS_ADS_NETWORK_ITEMS = "SKAdNetworkItems";
-
-	public const string B_PROPERTY_N_IOS_ENABLE_BITCODE = "ENABLE_BITCODE";
-	public const string B_PROPERTY_N_IOS_USER_HEADER_SEARCH_PATHS = "USER_HEADER_SEARCH_PATHS";
-	public const string B_PROPERTY_N_IOS_PREPROCESSOR_DEFINITIONS = "GCC_PREPROCESSOR_DEFINITIONS";
-	public const string B_PROPERTY_N_IOS_ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES";
-	// iOS }
-
 	// 안드로이드 {
 	public const int B_UNIT_VALIDATE_APP_BUNDLE_SIZE = 150;
 
@@ -343,15 +308,6 @@ public static partial class KCEditorDefine {
 
 	public const string B_MSG_FMT_ALERT_P_MISSING_PREFAB = "프리팹이 소실 된 {0} 객체를 제거하시겠습니까?";
 	// 알림 팝업 }
-
-	// 객체 이름 에디터 윈도우 {
-	public const string B_TEXT_APPLY = "적용";
-	public const string B_TEXT_SEARCH = "검색";
-	public const string B_TEXT_REPLACE = "변경";
-
-	public const string B_TEXT_FONT_REPLACE = "=====> 폰트 변경 <=====";
-	public const string B_TEXT_OBJ_NAME_REPLACE = "=====> 객체 이름 변경 <=====";
-	// 객체 이름 에디터 윈도우 }
 
 	// 패키지 {
 	public const string B_NAME_UNI_TASK_PKGS = "UniTask-v2.3.3";
@@ -1458,21 +1414,7 @@ public static partial class KCEditorDefine {
 		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
 	};
 	// 에셋 임포터 }
-
-	// iOS {
-	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
-	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/iOS";
-
-	public static readonly string B_SRC_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/iOS/Classes/Plugin/";
-	public static readonly string B_DEST_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_IOS_PLUGINS}CustomiOSNativePlugin/";
-
-	public static readonly string B_ENTITLEMENTS_P_CAPABILITY_IOS = $"{Application.identifier}.entitlements";
-
-	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_IOS = new List<GraphicsDeviceType>() {
-		GraphicsDeviceType.Metal
-	};
-	// iOS }
-
+	
 	// 안드로이드 {
 	public static readonly string B_ABS_BUILD_P_FMT_ANDROID = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/Android/{"{0}"}";
 
