@@ -283,9 +283,10 @@ public static partial class KCDefine {
 	// 씬 이름 {
 	public const string B_SCENE_N_EXTRA = "00-ExtraScene";
 	public const string B_SCENE_N_SAMPLE = "00-SampleScene";
-	public const string B_SCENE_N_MENU_SAMPLE = "10-MenuSampleScene";
-	public const string B_SCENE_N_STUDY_SAMPLE = "11-StudySampleScene";
 	public const string B_SCENE_N_EDITOR_SAMPLE = "01-EditorSampleScene";
+
+	public const string B_SCENE_N_MENU_SAMPLE = "10-MenuSampleScene";
+	public const string B_SCENE_N_RESEARCH_SAMPLE = "11-ResearchSampleScene";
 
 	public const string B_SCENE_N_INIT = "01-InitScene";
 	public const string B_SCENE_N_SETUP = "02-SetupScene";

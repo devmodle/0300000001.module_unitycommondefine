@@ -380,12 +380,12 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
 	public static readonly string B_ASSET_P_MENU_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_MENU_SAMPLE}.unity";
-	public static readonly string B_ASSET_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_STUDY_SAMPLE}.unity";
+	public static readonly string B_ASSET_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_RESEARCH_SAMPLE}.unity";
 	public static readonly string B_ASSET_P_EDITOR_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_EDITOR_SAMPLE}.unity";
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.scenetemplate";
 	public static readonly string B_ASSET_P_MENU_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_MENU_SAMPLE}.scenetemplate";
-	public static readonly string B_ASSET_P_STUDY_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_STUDY_SAMPLE}.scenetemplate";
+	public static readonly string B_ASSET_P_STUDY_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_RESEARCH_SAMPLE}.scenetemplate";
 	public static readonly string B_ASSET_P_EDITOR_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_EDITOR_SAMPLE}.scenetemplate";
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}TagManager.asset";
