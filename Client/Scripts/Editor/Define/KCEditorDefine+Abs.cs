@@ -1447,24 +1447,6 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_LOCALIZE_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}LocalizationSettings.asset";
 #endif // #if LOCALIZE_MODULE_ENABLE
 
-#if ML_AGENTS_MODULE_ENABLE
-	// 기타
-	public const int B_PORT_NUMBER_ML_AGENTS_EDITOR = 7080;
-
-	// 이름 {
-	public const string B_CLS_N_ML_AGENTS_SETTINGS = "Unity.MLAgents.MLAgentsSettings";
-
-	public const string B_PROPERTY_N_ML_AGENTS_CONNECT_TRAINER = "m_ConnectTrainer";
-	public const string B_PROPERTY_N_ML_AGENTS_EDITOR_PORT = "m_EditorPort";
-
-	public const string B_ASSEMBLY_N_ML_AGENTS = "Unity.ML-Agents";
-	public const string B_ASSEMBLY_N_ML_AGENTS_EDITOR = "Editor";
-	// 이름 }
-
-	// 경로
-	public static readonly string B_ASSET_P_ML_AGENTS_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}MLAgentsSettings.mlagents.asset";
-#endif // #if ML_AGENTS_MODULE_ENABLE
-
 #if INPUT_SYSTEM_MODULE_ENABLE
 	// 경로
 	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
