@@ -14,7 +14,6 @@ public static partial class KCEditorDefine {
 	public const string B_IPA_EXPORT_METHOD_IOS_DEV = "development";
 	public const string B_IPA_EXPORT_METHOD_IOS_STORE = "app-store";
 
-	public const string B_BUILD_FILE_EXTENSION_IOS_IPA = "ipa";
 	public const string B_BUILD_CMD_FMT_IOS_COCOA_PODS = "pod update --clean-install --project-directory={0}";
 	// 기타 }
 
@@ -26,11 +25,14 @@ public static partial class KCEditorDefine {
 	public const string B_TEXT_IOS_ARM_64 = "arm64";
 	// 텍스트 }
 
-	// 이름
+	// 이름 {
+	public const string B_BUILD_FILE_EXTENSION_IOS_IPA = "ipa";
+
 	public const string B_PROPERTY_N_IOS_ENABLE_BITCODE = "ENABLE_BITCODE";
 	public const string B_PROPERTY_N_IOS_USER_HEADER_SEARCH_PATHS = "USER_HEADER_SEARCH_PATHS";
 	public const string B_PROPERTY_N_IOS_PREPROCESSOR_DEFINITIONS = "GCC_PREPROCESSOR_DEFINITIONS";
 	public const string B_PROPERTY_N_IOS_ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES";
+	// 이름 }
 
 	// 경로 {
 	public const string B_BUILD_P_FMT_IOS = "Builds/iOS/{0}";
@@ -54,6 +56,11 @@ public static partial class KCEditorDefine {
 	#endregion // 상수
 
 	#region 런타임 상수
+	// 기타
+	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_IOS = new List<GraphicsDeviceType>() {
+		GraphicsDeviceType.Metal
+	};
+
 	// 경로 {
 	public static readonly string B_ABS_BUILD_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../Builds/iOS";
 	public static readonly string B_PLUGIN_PROJ_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/iOS";
@@ -61,10 +68,6 @@ public static partial class KCEditorDefine {
 
 	public static readonly string B_SRC_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../NativePlugins/Client/iOS/Classes/Plugin/";
 	public static readonly string B_DEST_PLUGIN_P_IOS = $"{KCEditorDefine.B_ABS_DIR_P_IOS_PLUGINS}CustomiOSNativePlugin/";
-
-	public static readonly List<GraphicsDeviceType> B_GRAPHICS_DEVICE_TYPE_LIST_IOS = new List<GraphicsDeviceType>() {
-		GraphicsDeviceType.Metal
-	};
 	// 경로 }
 	#endregion // 런타임 상수
 }
