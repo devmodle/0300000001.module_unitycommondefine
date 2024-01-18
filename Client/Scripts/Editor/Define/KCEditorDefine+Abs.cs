@@ -742,7 +742,7 @@ public static partial class KCEditorDefine {
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Factory/T_EditorFactory+SubGlobal.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Editor/Global/Factory/EditorFactory+SubGlobal.cs"),
 
 		// 임포터
-		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Importer/T_CSubAssetImporter.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Editor/Global/Importer/CSubAssetImporter.cs"),
+		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Editor/Importer/T_CSubAssetProcessor.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Editor/Global/Importer/CSubAssetProcessor.cs"),
 
 		// 상수 {
 		($"{KCEditorDefine.B_ABS_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_SUB_UNITY_PROJ}Scripts/Runtime/Define/T_KDefine+SubType.cs", $"{KCEditorDefine.B_ABS_DIR_P_SUB_UNITY_PROJ_SCRIPTS}Runtime/Global/Define/KDefine+SubType.cs"),
