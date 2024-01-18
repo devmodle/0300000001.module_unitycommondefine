@@ -48,8 +48,12 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_IOS_ADS_NETWORK_ID = "SKAdNetworkIdentifier";
 	public const string B_KEY_IOS_ADS_NETWORK_ITEMS = "SKAdNetworkItems";
 
-	public const string B_KEY_IOS_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
-	public const string B_KEY_IOS_DEVICE_CAPABILITIES = "UIRequiredDeviceCapabilities";
+	public const string B_KEY_IOS_APP_TRANSPORT_SECURITY = "NSAppTransportSecurity";
+	public const string B_KEY_IOS_ALLOWS_ARBITRARY_LOADS_IN_WEB_CONTENT = "NSAllowsArbitraryLoadsInWebContent";
+	
+	public const string B_KEY_IOS_REQUIRED_DEVICE_CAPABILITIES = "UIRequiredDeviceCapabilities";
+	public const string B_KEY_IOS_APP_USES_NON_EXEMPT_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
+
 	public const string B_KEY_IOS_USER_TRACKING_USAGE_DESC = "NSUserTrackingUsageDescription";
 	public const string B_KEY_IOS_FIREBASE_APP_STORE_RECEIPT_URL_CHECK_ENABLE = "FirebaseAppStoreReceiptURLCheckEnabled";
 	// 식별자 }
