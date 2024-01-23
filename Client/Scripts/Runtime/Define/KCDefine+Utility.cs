@@ -1392,10 +1392,10 @@ public static partial class KCDefine {
 	public const string U_KEY_PLAYFAB_M_LOAD_SERVER_TIME_CALLBACK = "PlayfabMLoadServerTimeCallback";
 #endif // #if PLAYFAB_MODULE_ENABLE
 
-#if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
+#if URP_MODULE_ENABLE
 	// 이름
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
-#endif // #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
+#endif // #if URP_MODULE_ENABLE
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
