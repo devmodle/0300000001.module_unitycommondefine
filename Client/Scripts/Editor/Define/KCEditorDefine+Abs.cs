@@ -10,10 +10,6 @@ using UnityEngine.Rendering;
 using UnityEditor;
 using UnityEditor.Build;
 
-#if NOTI_MODULE_ENABLE
-using Unity.Notifications.iOS;
-#endif // #if NOTI_MODULE_ENABLE
-
 /** 에디터 기본 상수 */
 public static partial class KCEditorDefine {
 	#region 기본
@@ -83,10 +79,12 @@ public static partial class KCEditorDefine {
 	// 이름 {
 	public const string B_DIR_N_SCENES = "Scenes";
 	public const string B_DIR_N_RESOURCES = "Resources";
+
 	public const string B_EDITOR_SCENE_N_PATTERN_01 = "EditorMenu";
 	public const string B_EDITOR_SCENE_N_PATTERN_02 = "EditorScene";
 
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
+	public const string B_CLS_N_UNITY_PLAYER_ACTIVITY = "com.unity3d.player.UnityPlayerActivity";
 
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SETTINGS = "com.unity.adaptiveperformance.loader_settings";
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_PROVIDER_SETTINGS = "com.unity.adaptiveperformance.simulator.provider_settings";
@@ -201,40 +199,6 @@ public static partial class KCEditorDefine {
 		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
 	};
 	// 에디터 옵션 }
-
-	// 알림 팝업 {
-	public const string B_TEXT_ALERT_P_TITLE = "알림";
-	public const string B_TEXT_ALERT_P_OK_BTN = "확인";
-	public const string B_TEXT_ALERT_P_CANCEL_BTN = "취소";
-
-	public const string B_MSG_ALERT_P_RESET = "해당 속성을 리셋하시겠습니까?";
-	public const string B_MSG_ALERT_P_EXPORT_IMG_SUCCESS = "이미지를 추출했습니다.";
-	public const string B_MSG_ALERT_P_PLATFORM_BUILD_FAIL = "해당 플랫폼으로 전환 후 빌드해주세요.";
-
-	public const string B_MSG_ALERT_P_EXPORT_TEX_FAIL = "텍스처를 선택해주세요.";
-	public const string B_MSG_ALERT_P_EXPORT_SPRITE_FAIL = "스프라이트를 선택해주세요.";
-
-	public const string B_MSG_FMT_ALERT_P_MISSING_PREFAB = "프리팹이 소실 된 {0} 객체를 제거하시겠습니까?";
-	// 알림 팝업 }
-
-	// 패키지 {
-	public const string B_NAME_UNI_TASK_PKGS = "UniTask-v2.3.3";
-	public const string B_NAME_DOTWEEN_PRO_PKGS = "DOTweenPro-v1.0.335";
-	public const string B_NAME_APPLE_SIGN_IN_PKGS = "AppleSignInUnity-v1.4.2";
-
-	public const string B_NAME_NGUI_PKGS = "NGUI-v2023.05.29";
-	public const string B_NAME_2D_TOOLKIT_PKGS = "2DToolkit-v2.5.8.16";
-	public const string B_NAME_SPRITE_TRAIL_PKGS = "SpriteTrail-v1.4.0";
-	public const string B_NAME_SND_MANAGER_PRO_PKGS = "SoundManagerPro-v3.7.0";
-	public const string B_NAME_ULTIMATE_STATUS_BAR_PKGS = "UltimateStatusBar-v2.6.0";
-
-	public const string B_NAME_BUILD_REPORT_TOOL_PKGS = "BuildReportTool-v3.10.1";
-	public const string B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS = "OdinInspectorAndSerializer-v4.0.02";
-	// 패키지 }
-
-	// 알림
-	public const string B_TEXT_NOTI_PROJ_PROPERTIES = "android.library=true";
-	public const string B_TEXT_NOTI_ANDROID_MANIFEST = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"lkstudio.dante.android.notification\">\n</manifest>";
 	#endregion // 기본
 
 	#region 런타임 상수
@@ -364,8 +328,7 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ABS_DIR_P_IOS_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}iOS/";
 	public static readonly string B_ABS_DIR_P_ANDROID_PLUGINS = $"{KCEditorDefine.B_ABS_DIR_P_PLUGINS}Android/";
 	public static readonly string B_ABS_DIR_P_UNITY_PACKAGES = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PACKAGES}UnityPackages/";
-
-	public static readonly string B_ABS_PKGS_P_UNI_TASK = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_UNI_TASK_PKGS}.unitypackage";
+	
 	public static readonly string B_ABS_PKGS_P_DOTWEEN_PRO = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_DOTWEEN_PRO_PKGS}.unitypackage";
 	public static readonly string B_ABS_PKGS_P_APPLE_SIGN_IN = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_APPLE_SIGN_IN_PKGS}.unitypackage";
 
@@ -1191,11 +1154,11 @@ public static partial class KCEditorDefine {
 
 	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {
 		// 41-UnityProject {
-#if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
+#if URP_ENABLE || URP_MODULE_ENABLE
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_NORM_QUALITY_URP}.asset"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_HIGH_QUALITY_URP}.asset"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_URP}.asset")
-#endif // #if UNIVERSAL_RENDERING_PIPELINE_ENABLE || UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
+#endif // #if URP_ENABLE || URP_MODULE_ENABLE
 		// 41-UnityProject }
 	};
 
@@ -1374,47 +1337,6 @@ public static partial class KCEditorDefine {
 	#endregion // 런타임 상수
 
 	#region 조건부 상수
-#if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-	// 이름 {
-	public const string B_FIELD_N_URP_MSAA_QUALITY = "m_MSAA";
-	public const string B_FIELD_N_URP_CASCADE_BORDER = "m_CascadeBorder";
-	public const string B_FIELD_N_URP_OPAQUE_DOWN_SAMPLING = "m_OpaqueDownsampling";
-
-	public const string B_FIELD_N_URP_CASCADE_2_SPLIT = "m_Cascade2Split";
-	public const string B_FIELD_N_URP_CASCADE_3_SPLIT = "m_Cascade3Split";
-	public const string B_FIELD_N_URP_CASCADE_4_SPLIT = "m_Cascade4Split";
-
-	public const string B_FIELD_N_URP_RENDERER_DATAS = "m_RendererDataList";
-	public const string B_FIELD_N_URP_SOFT_SHADOW_QUALITY = "m_SoftShadowQuality";
-	public const string B_FIELD_N_URP_SUPPORTS_SOFT_SHADOW = "m_SoftShadowsSupported";
-	public const string B_FIELD_N_URP_SUPPORTS_TERRAIN_HOLES = "m_SupportsTerrainHoles";
-	public const string B_FIELD_N_URP_VOLUME_FRAMEWORK_UPDATE_MODE = "m_VolumeFrameworkUpdateMode";
-
-	public const string B_FIELD_N_URP_ENABLE_LOD_CROSS_FADE = "m_EnableLODCrossFade";
-	public const string B_FIELD_N_URP_LOD_CROSS_FADE_DITHERING_TYPE = "m_LODCrossFadeDitheringType";
-
-	public const string B_FIELD_N_URP_REFLECTION_PROBE_BLENDING = "m_ReflectionProbeBlending";
-	public const string B_FIELD_N_URP_USE_FAST_SRGB_LINEAR_CONVERSION = "m_UseFastSRGBLinearConversion";
-	public const string B_FIELD_N_URP_REFLECTION_PROBE_BOX_PROJECTION = "m_ReflectionProbeBoxProjection";
-
-	public const string B_FIELD_N_URP_MAIN_LIGHT_RENDERING_MODE = "m_MainLightRenderingMode";
-	public const string B_FIELD_N_URP_MAIN_LIGHT_SUPPORTS_SHADOW = "m_MainLightShadowsSupported";
-	public const string B_FIELD_N_URP_MAIN_LIGHT_SHADOW_MAP_RESOLUTION = "m_MainLightShadowmapResolution";
-
-	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_COOKIE_FMT = "m_AdditionalLightsCookieFormat";
-	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_PER_OBJ_LIMIT = "m_AdditionalLightsPerObjectLimit";
-	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_RENDERING_MODE = "m_AdditionalLightsRenderingMode";
-	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_SUPPORTS_SHADOW = "m_AdditionalLightShadowsSupported";
-	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_COOKIE_RESOLUTION = "m_AdditionalLightsCookieResolution";
-	public const string B_FIELD_N_URP_ADDITIONAL_LIGHTS_SHADOW_MAP_RESOLUTION = "m_AdditionalLightsShadowmapResolution";
-
-	public const string B_PROPERTY_N_URP_STRIP_DEBUG_VARIANTS = "m_StripDebugVariants";
-	public const string B_PROPERTY_N_URP_STRIP_UNUSED_VARIANTS = "m_StripUnusedVariants";
-	public const string B_PROPERTY_N_URP_SHADER_VARIANT_LOG_LEVEL = "m_ShaderVariantLogLevel";
-	public const string B_PROPERTY_N_URP_STRIP_UNUSED_POST_PROCESSING_VARIANTS = "m_StripUnusedPostProcessingVariants";
-	// 이름 }
-#endif // #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-
 #if BURST_COMPILER_MODULE_ENABLE
 	// 식별자 {
 	public const string B_KEY_BURST_AS_OPTIMIZE_FOR = "OptimizeFor";
@@ -1427,35 +1349,13 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_BURST_AS_ENABLE_DEBUG_IN_ALL_BUILDS = "EnableDebugInAllBuilds";
 	// 식별자 }
 #endif // #if BURST_COMPILER_MODULE_ENABLE
-
-#if NOTI_MODULE_ENABLE
-	// 옵션
-	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;
-	public const AuthorizationOption B_PRESENT_OPTS_AUTHORIZATION_NOTI = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
-
-	// 이름
-	public const string B_ACTIVITY_N_NOTI = "com.unity3d.player.UnityPlayerActivity";
-#endif // #if NOTI_MODULE_ENABLE
 	#endregion // 조건부 상수
 
 	#region 조건부 런타임 상수
-#if LOCALIZE_MODULE_ENABLE
-	// 이름
-	public const string B_PROPERTY_N_LOCALIZE_INITIALIZE_SYNCHRONOUSLY = "m_InitializeSynchronously";
-
-	// 경로
-	public static readonly string B_ASSET_P_LOCALIZE_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}LocalizationSettings.asset";
-#endif // #if LOCALIZE_MODULE_ENABLE
-
 #if INPUT_SYSTEM_MODULE_ENABLE
 	// 경로
 	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
 #endif // #if INPUT_SYSTEM_MODULE_ENABLE
-
-#if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
-	// 경로
-	public static readonly string B_ASSET_P_URP_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}UniversalRenderPipelineGlobalSettings.asset";
-#endif // #if UNIVERSAL_RENDERING_PIPELINE_MODULE_ENABLE
 
 #if BURST_COMPILER_MODULE_ENABLE
 	// 경로

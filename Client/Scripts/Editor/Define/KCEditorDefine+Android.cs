@@ -13,9 +13,13 @@ public static partial class KCEditorDefine {
 	// 단위
 	public const int B_UNIT_VALIDATE_APP_BUNDLE_SIZE = 150;
 
-	// 토큰
+	// 토큰 {
 	public const string B_TOKEN_LOCAL_NDK_PATH_ANDROID = "# ndk.dir=";
 	public const string B_TOKEN_GRADLE_NDK_PATH_ANDROID = "ndkPath \"";
+
+	public const string B_TOKEN_LIBRARY_MANIFEST_ANDROID = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"lkstudio.dante.android.custom\">\n</manifest>";
+	public const string B_TOKEN_LIBRARY_PROPERTIES_ANDROID = "android.library=true";
+	// 토큰 }
 
 	// 이름 {
 	public const string B_BUILD_FILE_N_FMT_ANDROID = "{0}BuildOutput.{1}";
