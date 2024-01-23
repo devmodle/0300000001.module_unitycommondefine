@@ -1337,7 +1337,7 @@ public static partial class KCEditorDefine {
 	#endregion // 런타임 상수
 
 	#region 조건부 상수
-#if BURST_COMPILER_MODULE_ENABLE
+#if BURST_MODULE_ENABLE
 	// 식별자 {
 	public const string B_KEY_BURST_AS_OPTIMIZE_FOR = "OptimizeFor";
 	public const string B_KEY_BURST_AS_MONO_BEHAVIOUR = "MonoBehaviour";
@@ -1348,7 +1348,7 @@ public static partial class KCEditorDefine {
 	public const string B_KEY_BURST_AS_ENABLE_SAFETY_CHECKS = "EnableSafetyChecks";
 	public const string B_KEY_BURST_AS_ENABLE_DEBUG_IN_ALL_BUILDS = "EnableDebugInAllBuilds";
 	// 식별자 }
-#endif // #if BURST_COMPILER_MODULE_ENABLE
+#endif // #if BURST_MODULE_ENABLE
 	#endregion // 조건부 상수
 
 	#region 조건부 런타임 상수
@@ -1357,13 +1357,13 @@ public static partial class KCEditorDefine {
 	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
 #endif // #if INPUT_SYSTEM_MODULE_ENABLE
 
-#if BURST_COMPILER_MODULE_ENABLE
+#if BURST_MODULE_ENABLE
 	// 경로
 	public static readonly string B_DATA_P_IOS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_iOS.json";
 	public static readonly string B_DATA_P_ANDROID_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_Android.json";
 	public static readonly string B_DATA_P_MAC_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_StandaloneOSX.json";
 	public static readonly string B_DATA_P_WNDS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_StandaloneWindows.json";
-#endif // #if BURST_COMPILER_MODULE_ENABLE
+#endif // #if BURST_MODULE_ENABLE
 	#endregion // 조건부 런타임 상수
 }
 #endif // #if UNITY_EDITOR
