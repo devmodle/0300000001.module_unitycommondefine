@@ -504,7 +504,7 @@ public enum ETexCompression {
 	[HideInInspector] MAX_VAL
 }
 
-#if BURST_COMPILER_MODULE_ENABLE
+#if BURST_MODULE_ENABLE
 /** 버스트 컴파일러 최적화 */
 public enum EBurstCompilerOptimization {
 	NONE = -1,
@@ -515,7 +515,7 @@ public enum EBurstCompilerOptimization {
 	BALANCED,
 	[HideInInspector] MAX_VAL
 }
-#endif // #if BURST_COMPILER_MODULE_ENABLE
+#endif // #if BURST_MODULE_ENABLE
 #endif // #if UNITY_EDITOR
 
 #if ADS_MODULE_ENABLE
