@@ -9,7 +9,7 @@ using UnityEditor;
 
 /** 에디터 전처리기 심볼 상수 */
 public static partial class KCEditorDefine {
-	#region 기본
+	#region 컴파일 상수
 	public const string DS_DEFINE_S_IL2CPP_ENABLE = "ENABLE_IL2CPP";
 	public const string DS_DEFINE_S_MODE_2D_ENABLE = "MODE_2D_ENABLE";
 	public const string DS_DEFINE_S_MODE_PORTRAIT_ENABLE = "MODE_PORTRAIT_ENABLE";
@@ -247,7 +247,7 @@ public static partial class KCEditorDefine {
 	public const string DS_DEFINE_S_SKELETON_2D_ANI_ENABLE = "SKELETON_2D_ANI_ENABLE";
 	public const string DS_DEFINE_S_SKELETON_2D_ANI_MODULE_ENABLE = "SKELETON_2D_ANI_MODULE_ENABLE";
 	// 기타 }
-	#endregion // 기본
+	#endregion // 컴파일 상수
 
 	#region 런타임 상수
 	// 전처리기 심볼

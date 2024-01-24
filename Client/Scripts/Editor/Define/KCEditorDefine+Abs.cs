@@ -13,16 +13,13 @@ using UnityEditor.Build;
 /** 에디터 기본 상수 */
 public static partial class KCEditorDefine {
 	#region 기본
-	// 단위
-	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
-
-	// 토큰
+	// 기타 {
 	public const string B_TOKEN_CLIENT = "Client";
 	public const string B_TOKEN_APPLE_M_SERIES = "APPLE M";
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
 
-	// 형식
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
+	// 기타 }
 
 	// 이름 {
 	public const string B_DIR_N_SCENES = "Scenes";
@@ -34,11 +31,10 @@ public static partial class KCEditorDefine {
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
 	public const string B_CLS_N_UNITY_PLAYER_ACTIVITY = "com.unity3d.player.UnityPlayerActivity";
 
+	public const string B_MODULE_N_LOCALIZE_SETTINGS = "com.unity.localization.settings";
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SETTINGS = "com.unity.adaptiveperformance.loader_settings";
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_PROVIDER_SETTINGS = "com.unity.adaptiveperformance.simulator.provider_settings";
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SAMSUNG_PROVIDER_SETTINGS = "com.unity.adaptiveperformance.samsung.android.provider_settings";
-
-	public const string B_MODULE_N_LOCALIZE_SETTINGS = "com.unity.localization.settings";
 
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
 	public const string B_PROPERTY_N_REQUIRE_AR_KIT_SUPPORTS = "requiresARKitSupport";
@@ -123,9 +119,6 @@ public static partial class KCEditorDefine {
 	#endregion // 기본
 
 	#region 런타임 상수
-	// 단위
-	public static readonly Vector3 B_MIN_SIZE_EDITOR_WND = new Vector3(350.0f, 350.0f, 0.0f);
-	
 	// 이름 {
 	public static readonly List<string> B_OBJ_N_ROOT_UIS_LIST = new List<string>() {
 		KCDefine.U_OBJ_N_SCENE_UIS_ROOT
