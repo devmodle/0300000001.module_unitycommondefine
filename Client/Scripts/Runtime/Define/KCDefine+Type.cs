@@ -85,32 +85,20 @@ public struct STDespawnGameObjInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STDespawnGameObjInfo(string a_oGameObjsPoolKey, GameObject a_oObj, bool a_bIsDestroy = false) : this(a_oGameObjsPoolKey, a_oObj, System.DateTime.Now, a_bIsDestroy) {
+	public STDespawnGameObjInfo(string a_oGameObjsPoolKey, 
+		GameObject a_oObj, bool a_bIsDestroy = false) : this(a_oGameObjsPoolKey, a_oObj, System.DateTime.Now, a_bIsDestroy) {
+
 		// Do Something
 	}
 
 	/** 생성자 */
-	public STDespawnGameObjInfo(string a_oGameObjsPoolKey, GameObject a_oObj, System.DateTime a_stDespawnTime, bool a_bIsDestroy = false) {
+	public STDespawnGameObjInfo(string a_oGameObjsPoolKey, 
+		GameObject a_oObj, System.DateTime a_stDespawnTime, bool a_bIsDestroy = false) {
+			
 		m_oObj = a_oObj;
 		m_bIsDestroy = a_bIsDestroy;
 		m_oGameObjsPoolKey = a_oGameObjsPoolKey;
 		m_stDespawnTime = a_stDespawnTime;
-	}
-	#endregion // 함수
-}
-
-/** 터치 응답자 정보 */
-public struct STTouchResponderInfo {
-	public Sequence m_oAni;
-	public GameObject m_oTouchResponder;
-	public System.Action<GameObject> m_oCallback;
-
-	#region 함수
-	/** 생성자 */
-	public STTouchResponderInfo(Sequence a_oAni, GameObject a_oTouchResponder, System.Action<GameObject> a_oCallback) {
-		m_oAni = a_oAni;
-		m_oCallback = a_oCallback;
-		m_oTouchResponder = a_oTouchResponder;
 	}
 	#endregion // 함수
 }
