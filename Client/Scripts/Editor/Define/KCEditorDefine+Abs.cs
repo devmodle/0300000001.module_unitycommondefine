@@ -91,7 +91,6 @@ public static partial class KCEditorDefine {
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SAMSUNG_PROVIDER_SETTINGS = "com.unity.adaptiveperformance.samsung.android.provider_settings";
 
 	public const string B_MODULE_N_LOCALIZE_SETTINGS = "com.unity.localization.settings";
-	public const string B_MODULE_N_ML_AGENTS_SETTINGS = "com.unity.ml-agents.settings";
 	public const string B_MODULE_N_INPUT_SYSTEM_SETTINGS = "com.unity.input.settings";
 
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
