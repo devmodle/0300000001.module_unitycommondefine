@@ -5,7 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 #if UNITY_EDITOR
-/** 에디터 텍스트 상수 */
+using UnityEditor;
+
+/** 에디터 상수 - 텍스트 */
 public static partial class KCEditorDefine {
 	#region 상수
 	// 기타 {
