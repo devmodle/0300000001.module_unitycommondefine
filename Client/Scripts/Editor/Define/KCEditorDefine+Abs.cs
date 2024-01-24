@@ -16,24 +16,6 @@ public static partial class KCEditorDefine {
 	// 단위
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
 
-	// 정렬 순서 {
-	public const int B_SORTING_O_UIS_MENU = 0;
-	public const int B_SORTING_O_OBJS_MENU = 0;
-	public const int B_SORTING_O_BUILD_MENU = 10000;
-
-	public const int B_SORTING_O_SETUP_MENU = 20000;
-	public const int B_SORTING_O_RESET_MENU = KCEditorDefine.B_SORTING_O_SETUP_MENU + 1;
-
-	public const int B_SORTING_O_IMPORT_MENU = 30000;
-	public const int B_SORTING_O_EXPORT_MENU = KCEditorDefine.B_SORTING_O_IMPORT_MENU + 1;
-
-	public const int B_SORTING_O_CREATE_MENU = 40000;
-	public const int B_SORTING_O_SUB_CREATE_MENU = KCEditorDefine.B_SORTING_O_CREATE_MENU + 1;
-
-	public const int B_SORTING_O_EDITOR_WND_MENU = 50000;
-	public const int B_SORTING_O_CHANGE_PLATFORM_MENU = KCEditorDefine.B_SORTING_O_EDITOR_WND_MENU + 1;
-	// 정렬 순서 }
-
 	// 토큰
 	public const string B_TOKEN_CLIENT = "Client";
 	public const string B_TOKEN_APPLE_M_SERIES = "APPLE M";
@@ -41,40 +23,6 @@ public static partial class KCEditorDefine {
 
 	// 형식
 	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
-
-	// 버전
-	public const string B_VER_UNITY_MODULE = "4.0.0";
-	public const string B_VER_JENKINS_UNITY_MODULE = "3.1.0";
-
-	// 메뉴 {
-	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";
-	public const string B_MENU_GAME_OBJECTS_BASE = "GameObject/";
-
-	public const string B_MENU_TOOLS_BUILD_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Build/";
-	public const string B_MENU_TOOLS_SETUP_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Setup/";
-	public const string B_MENU_TOOLS_RESET_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Reset/";
-
-	public const string B_MENU_TOOLS_IMPORT_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Import/";
-	public const string B_MENU_TOOLS_EXPORT_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Export/";
-	public const string B_MENU_TOOLS_CREATE_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "Create/";
-	public const string B_MENU_TOOLS_SUB_CREATE_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "SubCreate/";
-
-	public const string B_MENU_TOOLS_EDITOR_WND_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "EditorWindow/";
-	public const string B_MENU_TOOLS_CHANGE_PLATFORM_BASE = KCEditorDefine.B_MENU_TOOLS_BASE + "ChangePlatform/";
-
-	public const string B_MENU_GAME_OBJECT_UI_BASE = KCEditorDefine.B_MENU_GAME_OBJECTS_BASE + "UI/Utility/";
-	public const string B_MENU_GAME_OBJECT_2D_BASE = KCEditorDefine.B_MENU_GAME_OBJECTS_BASE + "2D Object/Utility/";
-	public const string B_MENU_GAME_OBJECT_3D_BASE = KCEditorDefine.B_MENU_GAME_OBJECTS_BASE + "3D Object/Utility/";
-	public const string B_MENU_GAME_OBJECT_FX_BASE = KCEditorDefine.B_MENU_GAME_OBJECTS_BASE + "Effects/Utility/";
-	// 메뉴 }
-
-	// 커맨드 라인 {
-	public const string B_CMD_LINE_PARAMS_FMT_SHELL = "-c \"{0}\"";
-	public const string B_CMD_LINE_PARAMS_FMT_CMD_PROMPT = "/c \"{0}\"";
-
-	public const string B_BUILD_CMD_INTEL_EXPORT_PATH = "export PATH=\"${PATH}:/usr/local/bin\"";
-	public const string B_BUILD_CMD_SILICON_EXPORT_PATH = "export PATH=\"${PATH}:/opt/homebrew/bin\"";
-	// 커맨드 라인 }
 
 	// 이름 {
 	public const string B_DIR_N_SCENES = "Scenes";
@@ -91,7 +39,6 @@ public static partial class KCEditorDefine {
 	public const string B_MODULE_N_ADAPTIVE_PERFORMANCE_SAMSUNG_PROVIDER_SETTINGS = "com.unity.adaptiveperformance.samsung.android.provider_settings";
 
 	public const string B_MODULE_N_LOCALIZE_SETTINGS = "com.unity.localization.settings";
-	public const string B_MODULE_N_INPUT_SYSTEM_SETTINGS = "com.unity.input.settings";
 
 	public const string B_PROPERTY_N_CATEGORY = "applicationCategoryType";
 	public const string B_PROPERTY_N_REQUIRE_AR_KIT_SUPPORTS = "requiresARKitSupport";
@@ -173,41 +120,12 @@ public static partial class KCEditorDefine {
 	public const string B_TOOL_P_SHELL = "/bin/zsh";
 	public const string B_TOOL_P_CMD_PROMPT = "cmd.exe";
 	// 경로 }
-	
-	// 계층 뷰
-	public const float B_OFFSET_HIERARCHY_TEXT = 15.0f;
-
-	// 에디터 옵션 {
-	public const float B_EDITOR_OPTS_CASCADE_BORDER_PERCENT = 0.15f;
-	public const float B_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT = 0.15f;
-
-	public const string B_EDITOR_OPTS_REMOTE_COMPRESSION = "JPEG";
-	public const string B_EDITOR_OPTS_REMOTE_RESOLUTION = "Downsize";
-	public const string B_EDITOR_OPTS_VER_CONTROL = "Visible Meta Files";
-	public const string B_EDITOR_OPTS_JOYSTIC_SRC = "Remote";
-
-#if UNITY_IOS
-	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "Any iOS Device";
-#elif UNITY_ANDROID
-	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "Any Android Device";
-#else
-	public const string B_EDITOR_OPTS_REMOTE_DEVICE = "None";
-#endif // #if UNITY_IOS
-
-	public static readonly List<string> B_EDITOR_OPTS_EXTENSION_LIST = new List<string>() {
-		"txt", "xml", "fnt", "cd", "asmdef", "rsp", "asmref"
-	};
-	// 에디터 옵션 }
 	#endregion // 기본
 
 	#region 런타임 상수
-	// 크기
+	// 단위
 	public static readonly Vector3 B_MIN_SIZE_EDITOR_WND = new Vector3(350.0f, 350.0f, 0.0f);
-
-	// 에디터 옵션
-	public static readonly Vector2 B_EDITOR_OPTS_CASCADE_3_SPLIT_PERCENT = new Vector2(0.15f, 0.15f + (0.1f * 2.0f));
-	public static readonly Vector3 B_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(0.15f, 0.15f + (0.1f * 2.0f), 0.15f + (0.1f * 2.0f) + (0.1f * 3));
-
+	
 	// 이름 {
 	public static readonly List<string> B_OBJ_N_ROOT_UIS_LIST = new List<string>() {
 		KCDefine.U_OBJ_N_SCENE_UIS_ROOT
@@ -1260,109 +1178,6 @@ public static partial class KCEditorDefine {
 #endif // #if MODULE_VER_2_7_0_OR_NEWER
 	};
 	// 경로 }
-
-	// 계층 뷰
-	public static readonly Color B_COLOR_HIERARCHY_TEXT = new Color(1.0f, 0.27f, 0.0f, 1.0f);
-	public static readonly Color B_COLOR_HIERARCHY_OUTLINE = Color.black;
-
-	// 알림 {
-	public static readonly string B_DATA_P_NOTI_PROJ_PROPERTIES = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidLibrary.androidlib/project.properties";
-	public static readonly string B_DATA_P_NOTI_ANDROID_MANIFEST = $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidLibrary.androidlib/AndroidManifest.xml";
-
-	public static readonly List<(string, string)> B_NOTI_ICON_P_INFO_LIST = new List<(string, string)>() {
-		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_NOTI_96x96}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidLibrary.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_SMALL}.png"),
-		($"{KCEditorDefine.B_ABS_DIR_P_UNITY_PROJ_RESOURCES}{KCEditorDefine.B_ICON_P_ANDROID_APP_192x192}.png", $"{KCEditorDefine.B_ABS_DIR_P_ANDROID_PLUGINS}/CustomAndroidLibrary.androidlib/res/drawable/{KCDefine.U_ICON_N_ANDROID_NOTI_LARGE}.png")
-	};
-	// 알림 }
-
-	// 에셋 임포터 {
-	public static List<string> B_AUDIO_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
-		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
-	};
-
-	public static List<string> B_TEX_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {
-		NamedBuildTarget.iOS.TargetName, NamedBuildTarget.Android.TargetName, NamedBuildTarget.Standalone.TargetName
-	};
-	// 에셋 임포터 }
-
-	// 젠킨스 {
-	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", KCEditorDefine.B_VER_UNITY_MODULE);
-	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", KCEditorDefine.B_VER_UNITY_MODULE);
-	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone", KCEditorDefine.B_VER_UNITY_MODULE);
-
-	public static readonly Dictionary<EiOSType, Dictionary<string, string>> B_JENKINS_IOS_SOURCES = new Dictionary<EiOSType, Dictionary<string, string>>() {
-		[EiOSType.APPLE] = new Dictionary<string, string>() {
-			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.iOSAppleDebug",
-			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.iOSAppleRelease",
-			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.iOSAppleStoreA",
-			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.iOSAppleStoreDist"
-		}
-	};
-
-	public static readonly Dictionary<EAndroidType, Dictionary<string, string>> B_JENKINS_ANDROID_SOURCES = new Dictionary<EAndroidType, Dictionary<string, string>>() {
-		[EAndroidType.GOOGLE] = new Dictionary<string, string>() {
-			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.AndroidGoogleDebug",
-			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.AndroidGoogleRelease",
-			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidGoogleStoreA",
-			[KCEditorDefine.B_STORE_B_BUILD_FUNC_JENKINS] = "22.AndroidGoogleStoreB",
-			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.AndroidGoogleStoreDist"
-		},
-
-		[EAndroidType.AMAZON] = new Dictionary<string, string>() {
-			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.AndroidAmazonDebug",
-			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.AndroidAmazonRelease",
-			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidAmazonStoreA",
-			[KCEditorDefine.B_STORE_B_BUILD_FUNC_JENKINS] = "22.AndroidAmazonStoreB",
-			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.AndroidAmazonStoreDist"
-		}
-	};
-
-	public static readonly Dictionary<EStandaloneType, Dictionary<string, string>> B_JENKINS_STANDALONE_SOURCES = new Dictionary<EStandaloneType, Dictionary<string, string>>() {
-		[EStandaloneType.MAC_STEAM] = new Dictionary<string, string>() {
-			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneMacSteamDebug",
-			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneMacSteamRelease",
-			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.StandaloneMacSteamStoreA",
-			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.StandaloneMacSteamStoreDist"
-		},
-
-		[EStandaloneType.WNDS_STEAM] = new Dictionary<string, string>() {
-			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneWndsSteamDebug",
-			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneWndsSteamRelease",
-			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.StandaloneWndsSteamStoreA",
-			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.StandaloneWndsSteamStoreDist"
-		}
-	};
-	// 젠킨스 }
 	#endregion // 런타임 상수
-
-	#region 조건부 상수
-#if BURST_MODULE_ENABLE
-	// 식별자 {
-	public const string B_KEY_BURST_AS_OPTIMIZE_FOR = "OptimizeFor";
-	public const string B_KEY_BURST_AS_MONO_BEHAVIOUR = "MonoBehaviour";
-	public const string B_KEY_BURST_AS_USE_PLATFORM_SDK_LINKER = "UsePlatformSDKLinker";
-
-	public const string B_KEY_BURST_AS_ENABLE_OPTIMISATIONS = "EnableOptimisations";
-	public const string B_KEY_BURST_AS_ENABLE_BURST_COMPILATION = "EnableBurstCompilation";
-	public const string B_KEY_BURST_AS_ENABLE_SAFETY_CHECKS = "EnableSafetyChecks";
-	public const string B_KEY_BURST_AS_ENABLE_DEBUG_IN_ALL_BUILDS = "EnableDebugInAllBuilds";
-	// 식별자 }
-#endif // #if BURST_MODULE_ENABLE
-	#endregion // 조건부 상수
-
-	#region 조건부 런타임 상수
-#if INPUT_SYSTEM_MODULE_ENABLE
-	// 경로
-	public static readonly string B_ASSET_P_INPUT_SETTINGS = $"{KCEditorDefine.B_DIR_P_ASSETS}InputSystem.inputsettings.asset";
-#endif // #if INPUT_SYSTEM_MODULE_ENABLE
-
-#if BURST_MODULE_ENABLE
-	// 경로
-	public static readonly string B_DATA_P_IOS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_iOS.json";
-	public static readonly string B_DATA_P_ANDROID_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_Android.json";
-	public static readonly string B_DATA_P_MAC_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_StandaloneOSX.json";
-	public static readonly string B_DATA_P_WNDS_BURST_AOT_SETTINGS = $"{KCEditorDefine.B_ABS_DIR_P_EXTERNAL_PROJ_SETTINGS}BurstAotSettings_StandaloneWindows.json";
-#endif // #if BURST_MODULE_ENABLE
-	#endregion // 조건부 런타임 상수
 }
 #endif // #if UNITY_EDITOR

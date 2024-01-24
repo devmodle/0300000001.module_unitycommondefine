@@ -6,8 +6,9 @@ using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEngine.Rendering;
+using UnityEditor;
 
-/** 에디터 iOS 상수 */
+/** 에디터 상수 - iOS */
 public static partial class KCEditorDefine {
 	#region 상수
 	// 기타 {

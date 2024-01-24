@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEngine.Rendering;
+using UnityEditor;
 
 /** 에디터 독립 플랫폼 상수 */
 public static partial class KCEditorDefine {

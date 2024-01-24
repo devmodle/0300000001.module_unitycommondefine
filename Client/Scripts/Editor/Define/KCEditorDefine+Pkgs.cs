@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 #if UNITY_EDITOR
+using UnityEditor;
+
 /** 에디터 상수 - 패키지 */
 public static partial class KCEditorDefine {
 	#region 컴파일 상수
