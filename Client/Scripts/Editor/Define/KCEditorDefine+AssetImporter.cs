@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEditor.Build;
 
 /** 에디터 상수 - 입력 시스템 */
 public static partial class KCEditorDefine {
