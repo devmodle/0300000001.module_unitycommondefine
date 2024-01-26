@@ -273,11 +273,11 @@ public static partial class KCDefine {
 	public const string B_NAME_PATTERN_ENABLE_MIPMAPS = "__ENABLE_MM__";
 	public const string B_NAME_PATTERN_ENABLE_READABLE = "__ENABLE_R__";
 
-	public const string B_NAME_PATTERN_IGNORE_SETUP_LAYER = "__IGNORE_SL__";
-	public const string B_NAME_PATTERN_IGNORE_LINEAR_PIPELINE = "__IGNORE_LP__";
-	public const string B_NAME_PATTERN_IGNORE_SETUP_CULLING_MASK = "__IGNORE_SCM__";
-	public const string B_NAME_PATTERN_IGNORE_SETUP_STATIC_FLAGS = "__IGNORE_SSF__";
-	public const string B_NAME_PATTERN_IGNORE_TEX_COMPRESS = "__IGNORE_TC__";
+	public const string B_NAME_PATTERN_FILTER_SETUP_LAYER = "__FILTER_SL__";
+	public const string B_NAME_PATTERN_FILTER_LINEAR_PIPELINE = "__FILTER_LP__";
+	public const string B_NAME_PATTERN_FILTER_SETUP_CULLING_MASK = "__FILTER_SCM__";
+	public const string B_NAME_PATTERN_FILTER_SETUP_STATIC_FLAGS = "__FILTER_SSF__";
+	public const string B_NAME_PATTERN_FILTER_SETUP_TEX_COMPRESS = "__FILTER_STC__";
 	// 이름 }
 
 	// 씬 이름 {
