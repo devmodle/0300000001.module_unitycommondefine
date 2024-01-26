@@ -51,9 +51,9 @@ public static partial class KCDefine {
 	// 개수 }
 
 	// 크기 {
-	public const int U_SIZE_GAME_OBJS_POOL_01 = 50;
-	public const int U_SIZE_GAME_OBJS_POOL_02 = 150;
-	public const int U_SIZE_GAME_OBJS_POOL_03 = 250;
+	public const int U_SIZE_GAME_OBJS_POOL_50 = 50;
+	public const int U_SIZE_GAME_OBJS_POOL_150 = 150;
+	public const int U_SIZE_GAME_OBJS_POOL_250 = 250;
 
 	public const int U_SIZE_DOTWEEN_ANI = byte.MaxValue;
 	public const int U_SIZE_DOTWEEN_SEQUENCE_ANI = sbyte.MaxValue;
