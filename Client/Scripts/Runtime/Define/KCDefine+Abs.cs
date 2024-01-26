@@ -129,33 +129,6 @@ public static partial class KCDefine {
 #endif // #if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
 	// 단위 }
 
-	// 빌드 번호
-	public const int B_MIN_BUILD_NUM = 1;
-
-	// 비교
-	public const int B_COMPARE_LESS = -1;
-	public const int B_COMPARE_GREAT = 1;
-	public const int B_COMPARE_EQUALS = 0;
-
-	// 횟수 {
-	public const int B_TIMES_INT_ONCE = 1;
-	public const int B_TIMES_INT_INFINITE = -1;
-
-	public const uint B_TIMES_UINT_ONCE = 1;
-	public const uint B_TIMES_UINT_INFINITE = uint.MaxValue;
-	// 횟수 }
-
-	// 시간 {
-	public const float B_DELTA_T_INFINITE = float.MaxValue;
-	public const float B_DELTA_T_INTERMEDIATE = float.Epsilon;
-
-	public const float B_DELTA_T_ASYNC_TASK = 0.15f;
-	public const float B_DELTA_T_ASYNC_OPERATION = 0.15f;
-	public const float B_MAX_DELTA_T_TRACKING_CONSENT_VIEW = 2.5f;
-
-	public const double B_DELTA_T_UTC_TO_PST = -8.0;
-	// 시간 }
-
 	// 플래그 {
 	public const BindingFlags B_BINDING_F_PUBLIC_STATIC = BindingFlags.Public | BindingFlags.Static;
 	public const BindingFlags B_BINDING_F_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
@@ -166,7 +139,7 @@ public static partial class KCDefine {
 
 	// 인덱스
 	public const int B_IDX_INVALID = -1;
-	public const string B_IDX_INVALID_STR = "-1";
+	public static readonly string B_IDX_INVALID_STR = $"{KCDefine.B_IDX_INVALID}";
 
 	// 디바이스 {
 	public const int B_DEF_TARGET_FRAME_RATE = 30;
