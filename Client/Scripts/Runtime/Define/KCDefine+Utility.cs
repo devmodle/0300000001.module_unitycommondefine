@@ -626,8 +626,6 @@ public static partial class KCDefine {
 	public const string U_PROPERTY_N_FONT = "font";
 	public const string U_PROPERTY_N_COLOR = "color";
 	public const string U_PROPERTY_N_SPRITE = "sprite";
-	public const string U_PROPERTY_N_TMP_TEXT = "text";
-	public const string U_PROPERTY_N_TMP_FONT = "font";
 
 	public const string U_MAT_N_DEF_SKYBOX = "Default-Skybox";
 	public const string U_ICON_N_ANDROID_NOTI_SMALL = "smallnotiicon";
@@ -1118,11 +1116,11 @@ public static partial class KCDefine {
 	public const int U_QUALITY_ASYNC_UPLOAD_BUFFER_SIZE = 16;
 
 	// 스크립트 순서 {
-	public const int U_SCRIPT_O_LATE = sbyte.MinValue * 20;
-	public const int U_SCRIPT_O_LATEST = sbyte.MinValue * 10;
-	public const int U_SCRIPT_O_INVALID = int.MinValue;
+	public const int U_SCRIPT_O_LATE = byte.MaxValue * 20;
+	public const int U_SCRIPT_O_LATEST = byte.MaxValue * 30;
+	public const int U_SCRIPT_O_INVALID = int.MaxValue;
 
-	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = sbyte.MinValue * 30;
+	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = byte.MaxValue * 10;
 	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
 	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
 
