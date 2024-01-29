@@ -7,7 +7,7 @@ using UnityEngine.Events;
 #if UNITY_EDITOR
 using UnityEditor;
 
-/** 에디터 전처리기 심볼 상수 */
+/** 에디터 상수 - 전처리기 심볼 */
 public static partial class KCEditorDefine {
 	#region 컴파일 상수
 	public const string DS_DEFINE_S_IL2CPP_ENABLE = "ENABLE_IL2CPP";
