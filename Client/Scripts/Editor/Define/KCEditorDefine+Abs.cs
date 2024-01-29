@@ -25,8 +25,8 @@ public static partial class KCEditorDefine {
 	public const string B_DIR_N_SCENES = "Scenes";
 	public const string B_DIR_N_RESOURCES = "Resources";
 
-	public const string B_EDITOR_SCENE_N_PATTERN_01 = "EditorMenu";
-	public const string B_EDITOR_SCENE_N_PATTERN_02 = "EditorScene";
+	public const string B_EDITOR_SCENE_N_PATTERN_A = "EditorMenu";
+	public const string B_EDITOR_SCENE_N_PATTERN_B = "EditorScene";
 
 	public const string B_OBJ_N_SCENE_EDITOR_POPUP = "SceneEditorPopup";
 	public const string B_CLS_N_UNITY_PLAYER_ACTIVITY = "com.unity3d.player.UnityPlayerActivity";
