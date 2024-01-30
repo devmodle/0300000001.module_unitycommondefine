@@ -1352,10 +1352,11 @@ public static partial class KCDefine {
 	public const string U_KEY_PURCHASE_M_INIT_CALLBACK = "PurchaseMInitCallback";
 	public const string U_KEY_PURCHASE_M_INIT_FAIL_CALLBACK = "PurchaseMInitFailCallback";
 	public const string U_KEY_PURCHASE_M_PURCHASE_FAIL_CALLBACK = "PurchaseMPurchaseFailCallback";
-
-	public const string U_KEY_PURCHASE_M_CONFIRM_CALLBACK = "PurchaseMConfirmCallback";
-	public const string U_KEY_PURCHASE_M_RESTORE_CALLBACK = "PurchaseMRestoreCallback";
 	public const string U_KEY_PURCHASE_M_HANDLE_PURCHASE_RESULT_CALLBACK = "PurchaseMHandlePurchaseResultCallback";
+
+	public const string U_KEY_PURCHASE_M_RESTORE_PRODUCTS_CALLBACK = "PurchaseMRestoreProductsCallback";
+	public const string U_KEY_PURCHASE_M_CONFIRM_PURCHASE_CALLBACK = "PurchaseMConfirmPurchaseCallback";
+	public const string U_KEY_PURCHASE_M_REJECT_PURCHASE_CALLBACK = "PurchaseMRejectPurchaseCallback";
 	// 식별자 }
 #endif // #if PURCHASE_MODULE_ENABLE
 
