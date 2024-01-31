@@ -371,16 +371,6 @@ public enum EValType {
 	[HideInInspector] MAX_VAL
 }
 
-/** 애니메이션 타입 */
-public enum EAniType {
-	NONE = -1,
-	SCALE,
-	DROPDOWN,
-	SLIDE_LEFT,
-	SLIDE_RIGHT,
-	[HideInInspector] MAX_VAL
-};
-
 /** 유저 타입 */
 public enum EUserType {
 	NONE = -1,
