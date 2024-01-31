@@ -25,7 +25,7 @@ public static partial class KCDefine {
 #else
 	public static string B_ABS_DIR_P_EXTERNAL_DATAS => KCDefine.B_DIR_P_WRITABLE;
 	public static string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS => KCDefine.B_DIR_P_WRITABLE;
-#endif // #if (UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 프로퍼티
 
 	#region 기본
