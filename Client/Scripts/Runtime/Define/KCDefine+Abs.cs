@@ -146,22 +146,18 @@ public static partial class KCDefine {
 	public const int B_MIN_TARGET_FRAME_RATE = 30;
 	public const int B_EDITOR_TARGET_FRAME_RATE = 60;
 
-	public const int B_DESIGN_P_SCREEN_WIDTH = 720;
-	public const int B_DESIGN_P_SCREEN_HEIGHT = 1280;
-	public const int B_DESIGN_P_DPI_SCREEN_HEIGHT = 1920;
+	public const int B_DESIGN_P_SCREEN_WIDTH = 1080;
+	public const int B_DESIGN_P_SCREEN_HEIGHT = 1920;
 
-	public const int B_DESIGN_L_SCREEN_WIDTH = 1280;
-	public const int B_DESIGN_L_SCREEN_HEIGHT = 720;
-	public const int B_DESIGN_L_DPI_SCREEN_HEIGHT = 1080;
+	public const int B_DESIGN_L_SCREEN_WIDTH = 1920;
+	public const int B_DESIGN_L_SCREEN_HEIGHT = 1080;
 
 #if MODE_PORTRAIT_ENABLE
 	public const int B_DESIGN_SCREEN_WIDTH = KCDefine.B_DESIGN_P_SCREEN_WIDTH;
 	public const int B_DESIGN_SCREEN_HEIGHT = KCDefine.B_DESIGN_P_SCREEN_HEIGHT;
-	public const int B_DESIGN_DPI_SCREEN_HEIGHT = KCDefine.B_DESIGN_P_DPI_SCREEN_HEIGHT;
 #else
 	public const int B_DESIGN_SCREEN_WIDTH = KCDefine.B_DESIGN_L_SCREEN_WIDTH;
 	public const int B_DESIGN_SCREEN_HEIGHT = KCDefine.B_DESIGN_L_SCREEN_HEIGHT;
-	public const int B_DESIGN_DPI_SCREEN_HEIGHT = KCDefine.B_DESIGN_L_DPI_SCREEN_HEIGHT;
 #endif // #if MODE_PORTRAIT_ENABLE
 
 	public const float B_DEF_SCREEN_DPI = 160.0f;

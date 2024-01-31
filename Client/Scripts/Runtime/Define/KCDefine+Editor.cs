@@ -9,7 +9,7 @@ using UnityEngine.Events;
 public static partial class KCDefine {
 	#region 기본
 	// 비율
-	public const float ES_SCALE_DESIGN_SCREEN_HEIGHT = 2.0f;
+	public const float ES_SCALE_DESIGN_SCREEN_HEIGHT = 1.5f;
 
 	// 이름
 	public const string ES_OBJ_N_EDITOR_INPUT_POPUP = "EDITOR_INPUT_POPUP";
