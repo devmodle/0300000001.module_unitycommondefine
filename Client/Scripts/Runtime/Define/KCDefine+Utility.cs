@@ -926,10 +926,10 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityPostProcessingSettings";
 
 	public static readonly string U_ASSET_P_G_URP_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRendererData";
-	public static readonly string U_ASSET_P_G_URP_SSAO_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPSSAORendererData";
+	public static readonly string U_ASSET_P_G_URP_RENDERER_DATA_SSAO = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRendererDataSSAO";
 
-	public static readonly string U_ASSET_P_G_URP_RENDERER_2D_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRender2DData";
-	public static readonly string U_ASSET_P_G_URP_RENDERER_2D_SSAO_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRender2DSSAOData";
+	public static readonly string U_ASSET_P_G_URP_RENDERER_DATA_2D = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRenderData2D";
+	public static readonly string U_ASSET_P_G_URP_RENDERER_DATA_2D_SSAO = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRenderData2DSSAO";
 
 	public static readonly string U_ASSET_P_G_OPTS_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_OptsInfoTable";
 	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
