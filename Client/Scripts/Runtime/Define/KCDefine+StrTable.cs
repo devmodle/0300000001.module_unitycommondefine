@@ -66,7 +66,7 @@ public static partial class KCDefine {
 	public const string ST_KEY_C_FX_SNDS_TEXT = "C_FX_SNDS_TEXT";
 	public const string ST_KEY_C_WATCH_ADS_TEXT = "C_WATCH_ADS_TEXT";
 	public const string ST_KEY_C_REMOVE_ADS_TEXT = "C_REMOVE_ADS_TEXT";
-	public const string ST_KEY_C_RESTORE_PAYMENT_TEXT = "C_RESTORE_PAYMENT_TEXT";
+	public const string ST_KEY_C_RESTORE_PRODUCTS_TEXT = "C_RESTORE_PRODUCTS_TEXT";
 	public const string ST_KEY_C_LEVEL_TEXT = "C_LEVEL_TEXT";
 	public const string ST_KEY_C_STAGE_TEXT = "C_STAGE_TEXT";
 	public const string ST_KEY_C_CHAPTER_TEXT = "C_CHAPTER_TEXT";
