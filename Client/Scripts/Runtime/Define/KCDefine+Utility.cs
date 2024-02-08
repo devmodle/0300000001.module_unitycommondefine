@@ -1343,10 +1343,12 @@ public static partial class KCDefine {
 #endif // #if GAME_CENTER_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
-	// 기타
+	// 기타 {
 	public const string U_ENVIRONMENT_N_DEV = "development";
 	public const string U_ENVIRONMENT_N_PRODUCTION = "production";
-	public const string U_PAYLOAD_PURCHASE_M_PURCHASE = "PurchaseMPurchase";
+	
+	public const string U_PAYLOAD_PURCHASE_M_PURCHASE_PRODUCT = "PurchaseMPurchaseProduct";
+	// 기타 }
 
 	// 식별자 {
 	public const string U_KEY_PURCHASE_M_INIT_CALLBACK = "PurchaseMInitCallback";
