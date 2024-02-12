@@ -1013,7 +1013,7 @@ public static partial class KCDefine {
 	public static readonly string U_SND_P_G_SFX_POPUP_SHOW = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupShow";
 	public static readonly string U_SND_P_G_SFX_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupClose";
 
-	public static readonly string U_MAT_P_G_SKYBOX = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_Skybox";
+	public static readonly string U_MAT_P_G_SKYBOX = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_SkyBox";
 	public static readonly string U_MAT_P_G_URP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_URPLit";
 	public static readonly string U_MAT_P_G_URP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_URPUnlit";
 
