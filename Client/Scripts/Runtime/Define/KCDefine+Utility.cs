@@ -5,22 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using DG.Tweening;
 
-#if UNITY_IOS
-using UnityEngine.iOS;
-#endif // #if UNITY_IOS
-
-#if ADS_MODULE_ENABLE && ADMOB_ADS_ENABLE
-using GoogleMobileAds.Api;
-#endif // #if ADS_MODULE_ENABLE && ADMOB_ADS_ENABLE
-
-#if NOTI_MODULE_ENABLE
-#if UNITY_IOS
-using Unity.Notifications.iOS;
-#elif UNITY_ANDROID
-using Unity.Notifications.Android;
-#endif // #if UNITY_IOS
-#endif // #if NOTI_MODULE_ENABLE
-
 /** 유틸리티 상수 */
 public static partial class KCDefine {
 	#region 프로퍼티
@@ -33,10 +17,6 @@ public static partial class KCDefine {
 #else
 	public static string U_IMG_P_SCREENSHOT => $"{KCDefine.B_DIR_P_WRITABLE}Screenshot.png";
 #endif // #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-
-#if PURCHASE_MODULE_ENABLE
-	public static string U_DATA_P_PURCHASE_PRODUCT_IDS => $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
-#endif // #if PURCHASE_MODULE_ENABLE
 	#endregion // 프로퍼티
 
 	#region 기본
@@ -111,29 +91,6 @@ public static partial class KCDefine {
 	public const int U_LAYER_WATER = 4;
 	public const int U_LAYER_UIS = 5;
 	public const int U_LAYER_CUSTOM = 11;
-
-	// 정렬 순서 {
-	public const int U_SORTING_O_ABS = sbyte.MaxValue * 50;
-	public const int U_SORTING_O_DEF = sbyte.MaxValue * 0;
-
-	public const int U_SORTING_O_TOP = sbyte.MaxValue * 30;
-	public const int U_SORTING_O_TOPMOST = sbyte.MaxValue * 40;
-
-	public const int U_SORTING_O_FOREGROUND = sbyte.MaxValue * 10;
-	public const int U_SORTING_O_OVERGROUND = sbyte.MaxValue * 20;
-
-	public const int U_SORTING_O_BACKGROUND = sbyte.MaxValue * -10;
-	public const int U_SORTING_O_UNDERGROUND = sbyte.MaxValue * -20;
-
-	public const int U_SORTING_O_UIS = sbyte.MaxValue * 0;
-	public const int U_SORTING_O_OVERLAY_UIS = sbyte.MaxValue * 1;
-
-	public const int U_SORTING_O_SCREEN_POPUP_UIS = sbyte.MaxValue * 20;
-	public const int U_SORTING_O_SCREEN_TOPMOST_UIS = sbyte.MaxValue * 30;
-	public const int U_SORTING_O_SCREEN_ABS_UIS = sbyte.MaxValue * 40;
-	public const int U_SORTING_O_SCREEN_BLIND_UIS = sbyte.MaxValue * 50;
-	public const int U_SORTING_O_SCREEN_DEBUG_UIS = sbyte.MaxValue * 60;
-	// 정렬 순서 }
 
 	// 애니메이션
 	public const Ease U_EASE_DEF = Ease.OutQuad;
@@ -636,54 +593,6 @@ public static partial class KCDefine {
 	public const string U_IMG_P_DEF = "DefImg";
 	public const string U_MESH_P_DEF = "DefMesh";
 
-	// 태그 {
-	public const string U_TAG_PLAYER = "Player";
-	public const string U_TAG_FINISH = "Finish";
-	public const string U_TAG_RESPAWN = "Respawn";
-	public const string U_TAG_UNTAGGED = "Untagged";
-	public const string U_TAG_EDITOR_ONLY = "EditorOnly";
-	public const string U_TAG_MAIN_CAMERA = "MainCamera";
-	public const string U_TAG_GAME_CONTROLLER = "GameController";
-
-	public const string U_TAG_ITEM = "Item";
-	public const string U_TAG_SKILL = "Skill";
-	public const string U_TAG_OBJ = "Object";
-	public const string U_TAG_FX = "FX";
-	public const string U_TAG_CELL = "Cell";
-	public const string U_TAG_ENEMY = "Enemy";
-	public const string U_TAG_OBSTACLE = "Obstacle";
-	public const string U_TAG_MAIN_LIGHT = "MainLight";
-	public const string U_TAG_ADDITIONAL_LIGHT = "AdditionalLight";
-	public const string U_TAG_ADDITIONAL_CAMERA = "AdditionalCamera";
-	public const string U_TAG_SCENE_MANAGER = "SceneManager";
-	// 태그 }
-
-	// 정렬 레이어 {
-	public const string U_SORTING_L_ABS = "Abs";
-	public const string U_SORTING_L_DEF = "Default";
-
-	public const string U_SORTING_L_TOP = "Top";
-	public const string U_SORTING_L_TOPMOST = "Topmost";
-
-	public const string U_SORTING_L_FOREGROUND = "Foreground";
-	public const string U_SORTING_L_OVERGROUND = "Overground";
-
-	public const string U_SORTING_L_BACKGROUND = "Background";
-	public const string U_SORTING_L_UNDERGROUND = "Underground";
-
-	public const string U_SORTING_L_OVERLAY_ABS = "OverlayAbs";
-	public const string U_SORTING_L_OVERLAY_DEF = "OverlayDefault";
-
-	public const string U_SORTING_L_OVERLAY_TOP = "OverlayTop";
-	public const string U_SORTING_L_OVERLAY_TOPMOST = "OverlayTopmost";
-
-	public const string U_SORTING_L_OVERLAY_FOREGROUND = "OverlayForeground";
-	public const string U_SORTING_L_OVERLAY_OVERGROUND = "OverlayOverground";
-
-	public const string U_SORTING_L_OVERLAY_BACKGROUND = "OverlayBackground";
-	public const string U_SORTING_L_OVERLAY_UNDERGROUND = "OverlayUnderground";
-	// 정렬 레이어 }
-
 	// 씬 관리자
 	public const string U_KEY_FMT_SCENE_M_TOUCH_RESPONDER = "SceneMTouchResponder_{0}";
 
@@ -717,103 +626,13 @@ public static partial class KCDefine {
 	public const string U_KEY_SERVICES_M_LOAD_GOOGLE_SHEET_CALLBACK = "ServicesMLoadGoogleSheetCallback";
 	public const string U_KEY_SERVICES_M_SAVE_GOOGLE_SHEET_CALLBACK = "ServicesMSaveGoogleSheetCallback";
 	// 서비스 관리자 }
-
-	// 유니티 메세지 전송자 {
-	public const string U_KEY_UNITY_MS_APP_ID = "AppID";
-	public const string U_KEY_UNITY_MS_VER = "Ver";
-	public const string U_KEY_UNITY_MS_TIMEOUT = "Timeout";
-
-	public const string U_KEY_UNITY_MS_ALERT_TITLE = "Title";
-	public const string U_KEY_UNITY_MS_ALERT_MSG = "Msg";
-	public const string U_KEY_UNITY_MS_ALERT_OK_BTN_TEXT = "OKBtnText";
-	public const string U_KEY_UNITY_MS_ALERT_CANCEL_BTN_TEXT = "CancelBtnText";
-
-	public const string U_KEY_UNITY_MS_MAIL_TITLE = "Title";
-	public const string U_KEY_UNITY_MS_MAIL_MSG = "Msg";
-	public const string U_KEY_UNITY_MS_MAIL_RECIPIENT = "Recipient";
-
-	public const string U_KEY_UNITY_MS_VIBRATE_TYPE = "Type";
-	public const string U_KEY_UNITY_MS_VIBRATE_STYLE = "Style";
-	public const string U_KEY_UNITY_MS_VIBRATE_DURATION = "Duration";
-	public const string U_KEY_UNITY_MS_VIBRATE_INTENSITY = "Intensity";
-
-	public const string U_KEY_UNITY_MS_SEND_SHARE_MSG_CALLBACK = "UnityMSSendShareMsgCallback";
-	public const string U_CLS_N_UNITY_MS_UNITY_MSG_RECEIVER = "lkstudio.dante.android.CAndroidPlugin";
-	public const string U_FUNC_N_UNITY_MS_UNITY_MSG_HANDLER = "onReceiveUnityMsg";
-	// 유니티 메세지 전송자 }
-
-	// 디바이스 메세지 수신자 {
-	public const string U_KEY_DEVICE_MR_VER = KCDefine.U_KEY_UNITY_MS_VER;
-	public const string U_KEY_DEVICE_MR_RESULT = "Result";
-	public const string U_KEY_FMT_DEVICE_MR_HANDLE_MSG_CALLBACK = "DeviceMRHandleMsgCallback_{0}";
-
-	public const string U_FUNC_N_DEVICE_MR_MSG_HANDLER = "OnReceiveDeviceMsg";
-	// 디바이스 메세지 수신자 }
 	#endregion // 기본
 
 	#region 런타임 상수
-	// 단위 {
-	public static readonly Rect U_RECT_CAMERA_VIEWPORT = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
-
-	public static readonly Vector3 U_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
-	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
-	// 단위 }
-
-	// 색상 {
-	public static readonly Color U_COLOR_NORM = Color.white;
-	public static readonly Color U_COLOR_PRESS = new Color(0.75f, 0.75f, 0.75f, 1.0f);
-	public static readonly Color U_COLOR_SEL = Color.white;
-	public static readonly Color U_COLOR_HIGHLIGHT = Color.white;
-	public static readonly Color U_COLOR_DISABLE = new Color(0.35f, 0.35f, 0.35f, 1.0f);
-	public static readonly Color U_COLOR_TRANSPARENT = Color.clear;
-
-	public static readonly Color U_COLOR_BLIND_UIS = Color.black;
-	public static readonly Color U_COLOR_SCREEN_FADE_IN = Color.black;
-	public static readonly Color U_COLOR_SCREEN_FADE_OUT = KCDefine.U_COLOR_TRANSPARENT;
-
-	public static readonly Color U_COLOR_CLEAR = Color.black;
-	public static readonly Color U_COLOR_POPUP_BLIND = new Color(0.0f, 0.0f, 0.0f, 0.95f);
-	public static readonly Color U_COLOR_INDICATOR_BLIND = new Color(0.0f, 0.0f, 0.0f, 0.75f);
-	// 색상 }
-
-	// 버전
-	public static readonly System.Version U_VER_DEF = new System.Version(0, 0, 0);
-	public static readonly System.Version U_VER_COMMON_APP_INFO = new System.Version(1, 0, 0);
-	public static readonly System.Version U_VER_COMMON_GAME_INFO = new System.Version(1, 0, 0);
-	public static readonly System.Version U_VER_COMMON_USER_INFO = new System.Version(1, 0, 0);
-
-	// 태그
-	public static readonly List<string> U_TAG_LIST = new List<string>() {
-		KCDefine.U_TAG_MAIN_LIGHT, KCDefine.U_TAG_ADDITIONAL_LIGHT, KCDefine.U_TAG_ADDITIONAL_CAMERA, KCDefine.U_TAG_SCENE_MANAGER, KCDefine.U_TAG_OBSTACLE, KCDefine.U_TAG_ITEM, KCDefine.U_TAG_SKILL, KCDefine.U_TAG_OBJ, KCDefine.U_TAG_FX, KCDefine.U_TAG_CELL, KCDefine.U_TAG_ENEMY
-	};
-
-	// 정렬 레이어
-	public static readonly List<string> U_SORTING_LAYER_LIST = new List<string>() {
-		KCDefine.U_SORTING_L_UNDERGROUND, KCDefine.U_SORTING_L_BACKGROUND, KCDefine.U_SORTING_L_DEF, KCDefine.U_SORTING_L_FOREGROUND, KCDefine.U_SORTING_L_OVERGROUND, KCDefine.U_SORTING_L_TOP, KCDefine.U_SORTING_L_TOPMOST, KCDefine.U_SORTING_L_ABS, KCDefine.U_SORTING_L_OVERLAY_UNDERGROUND, KCDefine.U_SORTING_L_OVERLAY_BACKGROUND, KCDefine.U_SORTING_L_OVERLAY_DEF, KCDefine.U_SORTING_L_OVERLAY_FOREGROUND, KCDefine.U_SORTING_L_OVERLAY_OVERGROUND, KCDefine.U_SORTING_L_OVERLAY_TOP, KCDefine.U_SORTING_L_OVERLAY_TOPMOST, KCDefine.U_SORTING_L_OVERLAY_ABS
-	};
-
-	// 정렬 순서
-	public static readonly STSortingOrderInfo U_SORTING_OI_ABS = new STSortingOrderInfo(KCDefine.U_SORTING_O_ABS, KCDefine.U_SORTING_L_ABS);
-	public static readonly STSortingOrderInfo U_SORTING_OI_DEF = new STSortingOrderInfo(KCDefine.U_SORTING_O_DEF, KCDefine.U_SORTING_L_DEF);
-	public static readonly STSortingOrderInfo U_SORTING_OI_TOP = new STSortingOrderInfo(KCDefine.U_SORTING_O_TOP, KCDefine.U_SORTING_L_TOP);
-	public static readonly STSortingOrderInfo U_SORTING_OI_TOPMOST = new STSortingOrderInfo(KCDefine.U_SORTING_O_TOPMOST, KCDefine.U_SORTING_L_TOPMOST);
-	public static readonly STSortingOrderInfo U_SORTING_OI_FOREGROUND = new STSortingOrderInfo(KCDefine.U_SORTING_O_FOREGROUND, KCDefine.U_SORTING_L_FOREGROUND);
-	public static readonly STSortingOrderInfo U_SORTING_OI_OVERGROUND = new STSortingOrderInfo(KCDefine.U_SORTING_O_OVERGROUND, KCDefine.U_SORTING_L_OVERGROUND);
-	public static readonly STSortingOrderInfo U_SORTING_OI_BACKGROUND = new STSortingOrderInfo(KCDefine.U_SORTING_O_BACKGROUND, KCDefine.U_SORTING_L_BACKGROUND);
-	public static readonly STSortingOrderInfo U_SORTING_OI_UNDERGROUND = new STSortingOrderInfo(KCDefine.U_SORTING_O_UNDERGROUND, KCDefine.U_SORTING_L_UNDERGROUND);
-	public static readonly STSortingOrderInfo U_SORTING_OI_UIS_CANVAS = new STSortingOrderInfo(KCDefine.U_SORTING_O_UIS, KCDefine.U_SORTING_L_DEF);
-	public static readonly STSortingOrderInfo U_SORTING_OI_RESULT_UIS_CANVAS = new STSortingOrderInfo(KCDefine.U_SORTING_O_OVERLAY_UIS, KCDefine.U_SORTING_L_DEF);
-	public static readonly STSortingOrderInfo U_SORTING_OI_OVERLAY_UIS_CANVAS = new STSortingOrderInfo(KCDefine.U_SORTING_O_OVERLAY_UIS + 10, KCDefine.U_SORTING_L_DEF);
-
 	// 씬 관리자
 	public static readonly List<string> U_ROOT_OBJ_NAME_LIST = new List<string>() {
 		KCDefine.U_OBJ_N_SCENE_BASE, KCDefine.U_OBJ_N_SCENE_UIS_ROOT, KCDefine.U_OBJ_N_SCENE_OBJS_ROOT, KCDefine.U_OBJ_N_SCENE_MANAGER
 	};
-
-	// 동기화 객체
-	public static readonly object U_LOCK_OBJ_COMMON = new object();
-	public static readonly object U_LOCK_OBJ_NETWORK_MANAGER = new object();
-	public static readonly object U_LOCK_OBJ_SCHEDULE_MANAGER = new object();
 
 	// 경로 {
 	public static readonly string U_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}LevelInfo/G_LevelInfo_{"{0:000000000}"}";
@@ -1013,7 +832,7 @@ public static partial class KCDefine {
 	public static readonly string U_SND_P_G_SFX_POPUP_SHOW = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupShow";
 	public static readonly string U_SND_P_G_SFX_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupClose";
 
-	public static readonly string U_MAT_P_G_SKYBOX = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_SkyBox";
+	public static readonly string U_MAT_P_G_SKYBOX = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_Skybox";
 	public static readonly string U_MAT_P_G_URP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_URPLit";
 	public static readonly string U_MAT_P_G_URP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_URPUnlit";
 
@@ -1114,35 +933,7 @@ public static partial class KCDefine {
 	// 퀄리티
 	public const int U_QUALITY_ASYNC_UPLOAD_TIME_SLICE = 2;
 	public const int U_QUALITY_ASYNC_UPLOAD_BUFFER_SIZE = 16;
-
-	// 스크립트 순서 {
-	public const int U_SCRIPT_O_LATE = byte.MaxValue * 20;
-	public const int U_SCRIPT_O_LATEST = byte.MaxValue * 30;
-	public const int U_SCRIPT_O_INVALID = int.MaxValue;
-
-	public const int U_SCRIPT_O_INIT_SCENE_MANAGER = byte.MaxValue * 10;
-	public const int U_SCRIPT_O_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 1;
-	public const int U_SCRIPT_O_LATE_SETUP_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 2;
-
-	public const int U_SCRIPT_O_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 10;
-	public const int U_SCRIPT_O_LOADING_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 20;
-
-	public const int U_SCRIPT_O_RESULT_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 100;
-	public const int U_SCRIPT_O_OVERLAY_SCENE_MANAGER = KCDefine.U_SCRIPT_O_INIT_SCENE_MANAGER + 110;
-	// 스크립트 순서 }
 #endif // #if UNITY_EDITOR
-
-#if UNITY_IOS
-	// 이름
-	public const string U_MODEL_N_IPAD = "iPad";
-	public const string U_MODEL_N_IPHONE = "iPhone";
-#endif // #if UNITY_IOS
-
-#if UNITY_ANDROID
-	// 시간
-	public const float U_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
-	public const float U_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 1.0f;
-#endif // #if UNITY_ANDROID
 
 #if DEBUG || DEVELOPMENT_BUILD
 	// 형식 {
@@ -1186,152 +977,6 @@ public static partial class KCDefine {
 	// 이름 }
 #endif // #if DEBUG || DEVELOPMENT_BUILD
 
-#if ADS_MODULE_ENABLE
-	// 시간
-	public const float U_DELTA_T_ADS_M_ADS_LOAD = 5.0f;
-
-	// 식별자 {
-	public const string U_KEY_ADS_M_BANNER_ADS_ID = "AdsMBannerAdsID";
-	public const string U_KEY_ADS_M_REWARD_ADS_ID = "AdsMRewardAdsID";
-	public const string U_KEY_ADS_M_FULLSCREEN_ADS_ID = "AdsMFullscreenAdsID";
-
-	public const string U_KEY_FMT_ADS_M_LOAD_FAIL_BANNER_ADS_INFO = "AdsMLoadFailBannerAdsInfo_{0}";
-	public const string U_KEY_FMT_ADS_M_LOAD_FAIL_REWARD_ADS_INFO = "AdsMLoadFailRewardAdsInfo_{0}";
-	public const string U_KEY_FMT_ADS_M_LOAD_FAIL_FULLSCREEN_ADS_INFO = "AdsMLoadFailFullscreenAdsInfo_{0}";
-	// 식별자 }
-
-#if ADMOB_ADS_ENABLE
-	// 식별자 {
-	public const string U_ADS_ID_ADMOB_TEST_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111";
-	public const string U_ADS_ID_ADMOB_TEST_REWARD_ADS = "ca-app-pub-3940256099942544/5224354917";
-	public const string U_ADS_ID_ADMOB_TEST_FULLSCREEN_ADS = "ca-app-pub-3940256099942544/1033173712";
-
-	public const string U_KEY_ADS_M_ADMOB_INIT_CALLBACK = "AdsMAdmobInitCallback";
-	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_LOAD_CALLBACK = "AdsMAdmobBannerAdsLoadCallback";
-	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobBannerAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_ADMOB_BANNER_ADS_CLOSE_CALLBACK = "AdsMAdmobBannerAdsCloseCallback";
-
-	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_LOAD_CALLBACK = "AdsMAdmobRewardAdsLoadCallback";
-	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobRewardAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_CLOSE_CALLBACK = "AdsMAdmobRewardAdsCloseCallback";
-	public const string U_KEY_ADS_M_ADMOB_REWARD_ADS_RECEIVE_ADS_REWARD_CALLBACK = "AdsMAdmobRewardAdsReceiveAdsRewardCallback";
-
-	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMAdmobFullscreenAdsLoadCallback";
-	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAdmobFullscreenAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_ADMOB_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAdmobFullscreenAdsCloseCallback";
-	// 식별자 }
-#endif // #if ADMOB_ADS_ENABLE
-
-#if IRON_SRC_ADS_ENABLE
-	// 식별자 {
-	public const string U_KEY_ADS_M_IRON_SRC_INIT_CALLBACK = "AdsMIronSrcInitCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_BANNER_ADS_LOAD_CALLBACK = "AdsMIronSrcBannerAdsLoadCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcBannerAdsLoadFailCallback";
-
-	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_LOAD_CALLBACK = "AdsMIronSrcRewardAdsLoadCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcRewardAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_CLOSE_CALLBACK = "AdsMIronSrcRewardAdsCloseCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_REWARD_ADS_RECEIVE_ADS_REWARD_CALLBACK = "AdsMIronSrcRewardAdsReceiveAdsRewardCallback";
-
-	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMIronSrcFullscreenAdsLoadCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMIronSrcFullscreenAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_IRON_SRC_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMIronSrcFullscreenAdsCloseCallback";
-	// 식별자 }
-#endif // #if IRON_SRC_ADS_ENABLE
-
-#if APP_LOVIN_ADS_ENABLE
-	// 식별자 {
-	public const string U_KEY_ADS_M_APP_LOVIN_IS_ADAPTIVE_BANNER = "adaptive_banner";
-
-	public const string U_KEY_ADS_M_APP_LOVIN_INIT_CALLBACK = "AdsMAppLovinInitCallback";
-	public const string U_KEY_ADS_M_APP_LOVIN_BANNER_ADS_LOAD_CALLBACK = "AdsMAppLovinBannerAdsLoadCallback";
-	public const string U_KEY_ADS_M_APP_LOVIN_BANNER_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinBannerAdsLoadFailCallback";
-
-	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_LOAD_CALLBACK = "AdsMAppLovinRewardAdsLoadCallback";
-	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinRewardAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_CLOSE_CALLBACK = "AdsMAppLovinRewardAdsCloseCallback";
-	public const string U_KEY_ADS_M_APP_LOVIN_REWARD_ADS_RECEIVE_ADS_REWARD_CALLBACK = "AdsMAppLovinRewardAdsReceiveAdsRewardCallback";
-
-	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_LOAD_CALLBACK = "AdsMAppLovinFullscreenAdsLoadCallback";
-	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_LOAD_FAIL_CALLBACK = "AdsMAppLovinFullscreenAdsLoadFailCallback";
-	public const string U_KEY_ADS_M_APP_LOVIN_FULLSCREEN_ADS_CLOSE_CALLBACK = "AdsMAppLovinFullscreenAdsCloseCallback";
-	// 식별자 }
-#endif // #if APP_LOVIN_ADS_ENABLE
-#endif // #if ADS_MODULE_ENABLE
-
-#if FLURRY_MODULE_ENABLE
-	// 시간
-	public const long U_TIMEOUT_FLURRY_M_NETWORK_CONNECTION = 60 * KCDefine.B_UNIT_MILLI_SECS_PER_SEC;
-
-	// 식별자
-	public const string U_KEY_FLURRY_M_INIT_CALLBACK = "FlurryMInitCallback";
-#endif // #if FLURRY_MODULE_ENABLE
-
-#if FACEBOOK_MODULE_ENABLE
-	// 식별자
-	public const string U_KEY_FACEBOOK_M_INIT_CALLBACK = "FacebookMInitCallback";
-	public const string U_KEY_FACEBOOK_M_LOGIN_CALLBACK = "FacebookMLoginCallback";
-	public const string U_KEY_FACEBOOK_M_LOGOUT_CALLBACK = "FacebookMLogoutCallback";
-	public const string U_KEY_FACEBOOK_M_VIEW_STATE_SHOW_CALLBACK = "FacebookMViewStateShowCallback";
-	public const string U_KEY_FACEBOOK_M_VIEW_STATE_CLOSE_CALLBACK = "FacebookMViewStateCloseCallback";
-#endif // #if FACEBOOK_MODULE_ENABLE
-
-#if FIREBASE_MODULE_ENABLE
-	// 식별자
-	public const string U_KEY_FIREBASE_M_INIT_CALLBACK = "FirebaseMInitCallback";
-	public const string U_KEY_FIREBASE_M_LOGOUT_CALLBACK = "FirebaseMLogoutCallback";
-
-	// 노드
-	public const string U_NODE_FIREBASE_USER_INFOS = "UserInfos";
-	public const string U_NODE_FIREBASE_TARGET_INFOS = "TargetInfos";
-	public const string U_NODE_FIREBASE_PURCHASE_INFOS = "PurchaseInfos";
-
-#if FIREBASE_AUTH_ENABLE
-	// 식별자 {
-	public const string U_KEY_FIREBASE_M_LOGIN_CALLBACK = "FirebaseMLoginCallback";
-
-#if UNITY_IOS
-	public const string U_PROVIDER_ID_FIREBASE_M_APPLE_LOGIN = "apple.com";
-	public const string U_KEY_FIREBASE_M_RECEIVE_GAME_CENTER_CREDENTIAL_CALLBACK = "FirebaseMReceiveGameCenterCredentialCallback";
-#endif // #if UNITY_IOS
-	// 식별자 }
-#endif // #if FIREBASE_AUTH_ENABLE
-
-#if FIREBASE_DB_ENABLE
-	// 식별자
-	public const string U_KEY_FIREBASE_M_LOAD_DATAS_CALLBACK = "FirebaseMLoadDatasCallback";
-	public const string U_KEY_FIREBASE_M_SAVE_DATAS_CALLBACK = "FirebaseMSaveDatasCallback";
-#endif // #if FIREBASE_DB_ENABLE
-
-#if FIREBASE_MSG_ENABLE
-	// 식별자 {
-	public const string U_KEY_FIREBASE_M_TOKEN_CALLBACK = "FirebaseMTokenCallback";
-	public const string U_KEY_FIREBASE_M_NOTI_MSG_CALLBACK = "FirebaseMNotiMsgCallback";
-
-	public const string U_KEY_FIREBASE_M_LOAD_MSG_TOKEN_CALLBACK = "FirebaseMLoadMsgTokenCallback";
-	// 식별자 }
-#endif // #if FIREBASE_MSG_ENABLE
-
-#if FIREBASE_CONFIG_ENABLE
-	// 식별자
-	public const string U_KEY_FIREBASE_M_SETUP_DEF_CONFIGS_CALLBACK = "FirebaseMSetupDefConfigsCallback";
-	public const string U_KEY_FIREBASE_M_LOAD_CONFIGS_CALLBACK = "FirebaseMLoadConfigsCallback";
-#endif // #if FIREBASE_CONFIG_ENABLE
-
-#if FIREBASE_STORAGE_ENABLE
-	// 식별자
-	public const string U_KEY_FIREBASE_M_LOAD_FILES_CALLBACK = "FirebaseMLoadFilesCallback";
-#endif // #if FIREBASE_STORAGE_ENABLE
-#endif // #if FIREBASE_MODULE_ENABLE
-
-#if APPS_FLYER_MODULE_ENABLE
-	// 시간
-	public const int U_TIMEOUT_APPS_FM_AGREE_TRACKING = 60;
-
-	// 식별자
-	public const string U_KEY_APPS_FM_INIT_CALLBACK = "AppsFMInitCallback";
-#endif // #if APPS_FLYER_MODULE_ENABLE
-
 #if GAME_CENTER_MODULE_ENABLE
 	// 식별자
 	public const string U_KEY_GAME_CM_INIT_CALLBACK = "GameCMInitCallback";
@@ -1341,44 +986,6 @@ public static partial class KCDefine {
 	public const string U_KEY_GAME_CM_UPDATE_ACHIEVEMENT_CALLBACK = "GameCMUpdateAchievementCallback";
 	public const string U_KEY_GAME_CM_RECEIVE_SERVER_SIDE_ACCESS_RESULT_CALLBACK = "GameCMReceiveServerSideAccessResultCallback";
 #endif // #if GAME_CENTER_MODULE_ENABLE
-
-#if PURCHASE_MODULE_ENABLE
-	// 기타 {
-	public const string U_ENVIRONMENT_N_DEV = "development";
-	public const string U_ENVIRONMENT_N_PRODUCTION = "production";
-	
-	public const string U_PAYLOAD_PURCHASE_M_PURCHASE_PRODUCT = "PurchaseMPurchaseProduct";
-	// 기타 }
-
-	// 식별자 {
-	public const string U_KEY_PURCHASE_M_INIT_CALLBACK = "PurchaseMInitCallback";
-	public const string U_KEY_PURCHASE_M_INIT_FAIL_CALLBACK = "PurchaseMInitFailCallback";
-	public const string U_KEY_PURCHASE_M_PURCHASE_FAIL_CALLBACK = "PurchaseMPurchaseFailCallback";
-
-	public const string U_KEY_PURCHASE_M_RESTORE_PRODUCTS_CALLBACK = "PurchaseMRestoreProductsCallback";
-	public const string U_KEY_PURCHASE_M_CONFIRM_PURCHASE_CALLBACK = "PurchaseMConfirmPurchaseCallback";
-	public const string U_KEY_PURCHASE_M_HANDLE_PURCHASE_RESULT_CALLBACK = "PurchaseMHandlePurchaseResultCallback";
-	// 식별자 }
-#endif // #if PURCHASE_MODULE_ENABLE
-
-#if NOTI_MODULE_ENABLE
-	// 시간
-	public const float U_DELTA_T_NOTI_M_REQUEST_CHECK = 0.15f;
-	public const float U_MAX_DELTA_T_NOTI_M_REQUEST_CHECK = 0.5f;
-
-	// 식별자
-	public const string U_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
-
-#if UNITY_IOS
-	// 옵션
-	public const PresentationOption B_OPTS_PRESENTATION = PresentationOption.Alert | PresentationOption.Sound;
-	public const AuthorizationOption B_OPTS_AUTHORIZATION = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
-#elif UNITY_ANDROID
-	// 그룹 정보
-	public const string U_GROUP_N_NOTI = "NotiMNotiGroup";
-	public const string U_GROUP_DESC_NOTI = KCDefine.U_GROUP_N_NOTI;
-#endif // #if UNITY_IOS
-#endif // #if NOTI_ENABLE
 
 #if PLAYFAB_MODULE_ENABLE
 	// 개수
@@ -1405,40 +1012,10 @@ public static partial class KCDefine {
 	#endregion // 조건부 상수
 
 	#region 조건부 런타임 상수
-#if UNITY_IOS
-	// 버전
-	public static readonly System.Version U_MIN_VER_HAPTIC_FEEDBACK = new System.Version(10, 0, 0);
-	public static readonly System.Version U_MIN_VER_TRACKING_CONSENT_VIEW = new System.Version(14, 0, 0);
-#endif // #if UNITY_IOS
-
-#if ADS_MODULE_ENABLE
-#if ADMOB_ADS_ENABLE
-	// 크기
-	public static readonly AdSize U_SIZE_ADMOB_BANNER_ADS = new AdSize((int)KCDefine.U_SIZE_BANNER_ADS.x, (int)KCDefine.U_SIZE_BANNER_ADS.y);
-#endif // #if ADMOB_ADS_ENABLE
-
-#if IRON_SRC_ADS_ENABLE
-	// 크기
-	public static readonly IronSourceBannerSize U_SIZE_IRON_SRC_BANNER_ADS = new IronSourceBannerSize((int)KCDefine.U_SIZE_BANNER_ADS.x, (int)KCDefine.U_SIZE_BANNER_ADS.y);
-#endif // #if IRON_SRC_ADS_ENABLE
-#endif // #if ADS_MODULE_ENABLE
-
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 	// 경로
 	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_PluginInfoTable";
 #endif // #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
-
-#if FACEBOOK_MODULE_ENABLE
-	// 식별자
-	public static readonly List<string> U_KEY_FACEBOOK_PERMISSION_LIST = new List<string>() {
-		"public_profile"
-	};
-#endif // #if FACEBOOK_MODULE_ENABLE
-
-#if FIREBASE_MODULE_ENABLE
-	// 시간
-	public static readonly System.TimeSpan U_TIMEOUT_FIREBASE_SESSION = new System.TimeSpan(0, 0, 60);
-#endif // #if FIREBASE_MODULE_ENABLE
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름

@@ -31,4 +31,13 @@ public static partial class KCDefine {
 	public const double B_DELTA_T_UTC_TO_PST = -8.0;
 	// 시간 }
 	#endregion // 컴파일 상수
+
+	#region 런타임 상수
+	// 기타 {
+	public static readonly Vector3 U_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
+	public static readonly Vector3 U_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
+	
+	public static readonly Rect U_RECT_CAMERA_VIEWPORT = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
+	// 기타 }
+	#endregion // 런타임 상수
 }

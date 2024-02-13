@@ -94,7 +94,7 @@ public static partial class KCEditorDefine {
 	public const string B_DIR_P_AUTO = "01-Auto/";
 	public const string B_DIR_P_ENGINE = "02-Engine/";
 
-	public const string B_DIR_P_PROJ = "00-Project/";
+	public const string B_DIR_P_PROJ = "00-Projects/";
 	public const string B_DIR_P_UNITY_PROJ = "41-UnityProject/";
 	public const string B_DIR_P_SUB_UNITY_PROJ = "42-SubUnityProject/";
 

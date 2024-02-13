@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-/** 기본 상수 */
+using System.Reflection;
+
+/** 상수 - 기본 */
 public static partial class KCDefine {
-	#region 프로퍼티
+	#region 클래스 프로퍼티
 #if UNITY_IOS || UNITY_ANDROID
 	public static string B_DIR_P_WRITABLE => $"{Application.persistentDataPath}/{Application.identifier}/";
 #else
@@ -26,7 +27,7 @@ public static partial class KCDefine {
 	public static string B_ABS_DIR_P_EXTERNAL_DATAS => KCDefine.B_DIR_P_WRITABLE;
 	public static string B_ABS_DIR_P_RUNTIME_EXTERNAL_DATAS => KCDefine.B_DIR_P_WRITABLE;
 #endif // #if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
-	#endregion // 프로퍼티
+	#endregion // 클래스 프로퍼티
 
 	#region 기본
 	// 값 {
@@ -131,9 +132,9 @@ public static partial class KCDefine {
 
 	// 플래그 {
 	public const BindingFlags B_BINDING_F_PUBLIC_STATIC = BindingFlags.Public | BindingFlags.Static;
-	public const BindingFlags B_BINDING_F_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
-
 	public const BindingFlags B_BINDING_F_PUBLIC_INSTANCE = BindingFlags.Public | BindingFlags.Instance;
+
+	public const BindingFlags B_BINDING_F_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
 	public const BindingFlags B_BINDING_F_NON_PUBLIC_INSTANCE = BindingFlags.NonPublic | BindingFlags.Instance;
 	// 플래그 }
 
