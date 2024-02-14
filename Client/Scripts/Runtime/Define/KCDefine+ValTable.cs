@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 /** 상수 - 값 테이블 */
 public static partial class KCDefine {
-	#region 기본
+	#region 컴파일 상수
 	// 광고
 	public const string VT_KEY_DELAY_ADS = "DELAY_ADS";
 	public const string VT_KEY_DELTA_T_ADS = "DELTA_T_ADS";
@@ -24,5 +24,5 @@ public static partial class KCDefine {
 	public const string VT_KEY_CONSOLE_TARGET_FRAME_RATE = "CONSOLE_TARGET_FRAME_RATE";
 	public const string VT_KEY_HANDHELD_CONSOLE_TARGET_FRAME_RATE = "HANDHELD_CONSOLE_TARGET_FRAME_RATE";
 	// 디바이스 }
-	#endregion // 기본
+	#endregion // 컴파일 상수
 }

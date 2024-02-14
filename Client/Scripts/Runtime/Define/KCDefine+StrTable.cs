@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 /** 상수 - 문자열 테이블 */
 public static partial class KCDefine {
-	#region 기본
+	#region 컴파일 상수
 	// 종료 팝업
 	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
 
@@ -116,5 +116,5 @@ public static partial class KCDefine {
 	public const string ST_KEY_C_ON_TABLE_SAVE_MSG = "C_ON_TABLE_SAVE_MSG";
 	public const string ST_KEY_C_ON_TABLE_SAVE_FAIL_MSG = "C_ON_TABLE_SAVE_FAIL_MSG";
 	// 공용 메세지 }
-	#endregion // 기본
+	#endregion // 컴파일 상수
 }
