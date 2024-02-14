@@ -9,8 +9,8 @@ using UnityEngine.Events;
 public static partial class KCDefine {
 	#region 컴파일 상수
 	// 기타
-	public const float U_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
-	public const float U_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 1.0f;
+	public const float B_DELTA_T_PERMISSION_M_REQUEST_CHECK = 0.25f;
+	public const float B_MAX_DELTA_T_PERMISSION_M_REQUEST_CHECK = 1.0f;
 	#endregion // 컴파일 상수
 }
 #endif // #if UNITY_ANDROID

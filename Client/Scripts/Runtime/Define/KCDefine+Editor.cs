@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 #if UNITY_EDITOR || UNITY_STANDALONE
-/** 에디터 씬 상수 */
+/** 상수 - 에디터 씬 */
 public static partial class KCDefine {
 	#region 기본
 	// 비율
@@ -24,7 +24,7 @@ public static partial class KCDefine {
 	#endregion // 런타임 상수
 }
 
-/** 레벨 에디터 씬 상수 */
+/** 상수 - 레벨 에디터 씬 */
 public static partial class KCDefine {
 	#region 기본
 	// 형식

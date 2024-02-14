@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using DG.Tweening;
 
-/** 유틸리티 상수 */
+/** 상수 - 유틸리티 */
 public static partial class KCDefine {
 	#region 프로퍼티
 	public static string U_DATA_P_COMMON_APP_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
@@ -69,7 +69,7 @@ public static partial class KCDefine {
 	public const float U_TIMEOUT_ASYNC_TASK = 30.0f;
 	public const float U_TIMEOUT_NETWORK_CONNECTION = 30.0f;
 
-	public const float U_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
+	public const float B_DELTA_T_SCHEDULE_M_CALLBACK = 0.15f;
 	// 시간 }
 
 	// 단위 {
@@ -96,16 +96,6 @@ public static partial class KCDefine {
 	public const Ease U_EASE_DEF = Ease.OutQuad;
 	public const Ease U_EASE_UNSET = Ease.Unset;
 	public const Ease U_EASE_LINEAR = Ease.Linear;
-
-	// 형식 {
-#if UNITY_IOS
-	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
-	public const string U_FMT_MORE_APPS_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
-#else
-	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
-	public const string U_FMT_MORE_APPS_URL = "https://play.google.com/store/apps/developer?id={0}";
-#endif // #if UNITY_IOS
-	// 형식 }
 
 	// 식별자 {
 	public const string U_ADS_ID_TEST_DEVICE = "TestDevice";

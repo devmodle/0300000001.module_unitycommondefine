@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-/** 로그 상수 */
+/** 상수 - 로그 */
 public static partial class KCDefine {
 	#region 기본
 	// 이름

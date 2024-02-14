@@ -110,7 +110,7 @@ public struct STSortingOrderInfo {
 
 	#region 상수
 	public static readonly STSortingOrderInfo INVALID = new STSortingOrderInfo() {
-		m_nOrder = short.MinValue, m_oLayer = KCDefine.U_SORTING_L_UNDERGROUND
+		m_nOrder = short.MinValue, m_oLayer = KCDefine.B_SORTING_L_UNDERGROUND
 	};
 	#endregion // 상수
 

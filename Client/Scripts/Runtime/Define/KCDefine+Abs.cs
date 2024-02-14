@@ -29,7 +29,7 @@ public static partial class KCDefine {
 #endif // #if(UNITY_EDITOR || UNITY_STANDALONE) && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 클래스 프로퍼티
 
-	#region 기본
+	#region 컴파일 상수
 	// 값 {
 	public const int B_VAL_0_INT = 0;
 	public const int B_VAL_1_INT = 1;
@@ -88,48 +88,6 @@ public static partial class KCDefine {
 	public const float B_ANGLE_360_RAD = KCDefine.B_ANGLE_360_DEG * Mathf.Deg2Rad;
 	// 회전 }
 
-	// 단위 {
-	public const int B_UNIT_KINDS_PER_TYPE = 100000000;
-	public const int B_UNIT_KINDS_PER_SUB_TYPE = 10000000;
-	public const int B_UNIT_KINDS_PER_KINDS_TYPE = 100000;
-	public const int B_UNIT_KINDS_PER_SUB_KINDS_TYPE = 100;
-
-	public const int B_UNIT_IDS_PER_IDS_01 = 1;
-	public const int B_UNIT_IDS_PER_IDS_02 = 10000;
-	public const int B_UNIT_IDS_PER_IDS_03 = 10000000;
-
-	public const int B_UNIT_BITS_PER_BYTE = 8;
-	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
-	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
-
-	public const int B_UNIT_SECS_PER_HOUR = 360;
-	public const int B_UNIT_SECS_PER_MINUTE = 60;
-	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;
-
-	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
-	public const int B_UNIT_MICRO_SECS_PER_SEC = 1000000;
-
-	public const int B_UNIT_CENTI_METER_PER_METER = 100;
-	public const int B_UNIT_MILLI_METER_PER_METER = 1000;
-
-	public const int B_UNIT_DIGITS_TEN = 10;
-	public const int B_UNIT_DIGITS_HUNDRED = 100;
-	public const int B_UNIT_DIGITS_THOUSAND = 1000;
-	public const int B_UNIT_DIGITS_TEN_THOUSAND = 10000;
-	public const int B_UNIT_DIGITS_HUNDRED_THOUSAND = 100000;
-
-	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
-	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
-
-#if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
-	public const float B_UNIT_SCALE = 1.0f / (float)KCDefine.B_UNIT_CENTI_METER_PER_METER;
-	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f;
-#else
-	public const float B_UNIT_SCALE = 1.0f;
-	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f / (float)KCDefine.B_UNIT_CENTI_METER_PER_METER;
-#endif // #if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
-	// 단위 }
-
 	// 플래그 {
 	public const BindingFlags B_BINDING_F_PUBLIC_STATIC = BindingFlags.Public | BindingFlags.Static;
 	public const BindingFlags B_BINDING_F_PUBLIC_INSTANCE = BindingFlags.Public | BindingFlags.Instance;
@@ -137,10 +95,6 @@ public static partial class KCDefine {
 	public const BindingFlags B_BINDING_F_NON_PUBLIC_STATIC = BindingFlags.NonPublic | BindingFlags.Static;
 	public const BindingFlags B_BINDING_F_NON_PUBLIC_INSTANCE = BindingFlags.NonPublic | BindingFlags.Instance;
 	// 플래그 }
-
-	// 인덱스
-	public const int B_IDX_INVALID = -1;
-	public static readonly string B_IDX_INVALID_STR = $"{KCDefine.B_IDX_INVALID}";
 
 	// 디바이스 {
 	public const int B_DEF_TARGET_FRAME_RATE = 30;
@@ -318,10 +272,7 @@ public static partial class KCDefine {
 	public const string B_TOKEN_AMPERSAND = "&";
 	public const string B_TOKEN_UNDER_SCORE = "_";
 	// 토큰 }
-
-	// 버전
-	public const string B_DEF_VER = "1.0.0";
-
+	
 	// 이벤트
 	public const string B_EVENT_START = "Start";
 	public const string B_EVENT_CANCEL = "Cancel";
@@ -561,9 +512,19 @@ public static partial class KCDefine {
 	public const string B_PREFIX_ES_SPRITE_ATLAS_09 = "ES_SA_09_";
 	// 접두어 }
 
+	// 형식 {
+#if UNITY_IOS
+	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
+	public const string U_FMT_MORE_APPS_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
+#else
+	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
+	public const string U_FMT_MORE_APPS_URL = "https://play.google.com/store/apps/developer?id={0}";
+#endif // #if UNITY_IOS
+	// 형식 }
+
 	// 메일
 	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: {1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUUID: {7}\n\nPlease enter your inquiry:\n{8}";
-	#endregion // 기본
+	#endregion // 컴파일 상수
 
 	#region 런타임 상수
 	// 씬 이름 {
