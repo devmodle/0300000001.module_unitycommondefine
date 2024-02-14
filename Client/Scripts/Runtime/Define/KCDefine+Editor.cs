@@ -7,14 +7,14 @@ using UnityEngine.Events;
 #if UNITY_EDITOR || UNITY_STANDALONE
 /** 상수 - 에디터 씬 */
 public static partial class KCDefine {
-	#region 기본
+	#region 컴파일 상수
 	// 비율
 	public const float ES_SCALE_DESIGN_SCREEN_HEIGHT = 1.5f;
 
 	// 이름
 	public const string ES_OBJ_N_EDITOR_INPUT_POPUP = "EDITOR_INPUT_POPUP";
 	public const string ES_OBJ_N_EDITOR_CREATE_POPUP = "EDITOR_CREATE_POPUP";
-	#endregion // 기본
+	#endregion // 컴파일 상수
 
 	#region 런타임 상수
 	// 경로
@@ -26,7 +26,7 @@ public static partial class KCDefine {
 
 /** 상수 - 레벨 에디터 씬 */
 public static partial class KCDefine {
-	#region 기본
+	#region 컴파일 상수
 	// 형식
 	public const string LES_TEXT_FMT_SIZE = "크기 {0}x{1}";
 	public const string LES_TEXT_FMT_LEVEL = "레벨 {0:0000}";
@@ -57,7 +57,7 @@ public static partial class KCDefine {
 
 	public const string LES_OBJ_N_RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW = "RE_UIS_PAGE_UIS_02_SCROLLER_CELL_VIEW";
 	// 오른쪽 에디터 UI }
-	#endregion // 기본
+	#endregion // 컴파일 상수
 
 	#region 런타임 상수
 	// 경로

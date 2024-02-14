@@ -272,7 +272,7 @@ public static partial class KCDefine {
 	public const string B_TOKEN_AMPERSAND = "&";
 	public const string B_TOKEN_UNDER_SCORE = "_";
 	// 토큰 }
-	
+
 	// 이벤트
 	public const string B_EVENT_START = "Start";
 	public const string B_EVENT_CANCEL = "Cancel";
@@ -513,17 +513,16 @@ public static partial class KCDefine {
 	// 접두어 }
 
 	// 형식 {
+	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: {1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUUID: {7}\n\nPlease enter your inquiry:\n{8}";
+
 #if UNITY_IOS
-	public const string U_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
-	public const string U_FMT_MORE_APPS_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
+	public const string B_FMT_STORE_URL = "https://itunes.apple.com/app/id{0}";
+	public const string B_FMT_MORE_APPS_URL = "https://apps.apple.com/us/developer/ninetap/id{0}#see-all/i-phonei-pad-apps";
 #else
-	public const string U_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
-	public const string U_FMT_MORE_APPS_URL = "https://play.google.com/store/apps/developer?id={0}";
+	public const string B_FMT_STORE_URL = "https://play.google.com/store/apps/details?id={0}";
+	public const string B_FMT_MORE_APPS_URL = "https://play.google.com/store/apps/developer?id={0}";
 #endif // #if UNITY_IOS
 	// 형식 }
-
-	// 메일
-	public const string B_MAIL_MSG_FMT = "App: {0}\nVersion: {1}\nPlatform: {2}\nProcessor: {3}\nGraphics: {4} [{5}]\nOS: {6}\nUUID: {7}\n\nPlease enter your inquiry:\n{8}";
 	#endregion // 컴파일 상수
 
 	#region 런타임 상수

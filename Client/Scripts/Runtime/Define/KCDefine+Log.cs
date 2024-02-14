@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 /** 상수 - 로그 */
 public static partial class KCDefine {
-	#region 기본
+	#region 컴파일 상수
 	// 이름
 	public const string L_LOG_N_AGREE = "Agree";
 
@@ -33,5 +33,5 @@ public static partial class KCDefine {
 	public const string L_LOG_KEY_PARAMS_H = "ParamsH";
 	public const string L_LOG_KEY_PARAMS_I = "ParamsI";
 	// 식별자 }
-	#endregion // 기본
+	#endregion // 컴파일 상수
 }
