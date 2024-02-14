@@ -9,10 +9,10 @@ using UnityEngine.Events;
 public static partial class KCDefine {
 	#region 컴파일 상수
 	// 단위
-	public const int U_TIMEOUT_APPS_FM_AGREE_TRACKING = 60;
+	public const int B_TIMEOUT_APPS_FM_AGREE_TRACKING = 60;
 
 	// 식별자
-	public const string U_KEY_APPS_FM_INIT_CALLBACK = "AppsFMInitCallback";
+	public const string B_KEY_APPS_FM_INIT_CALLBACK = "AppsFMInitCallback";
 	#endregion // 컴파일 상수
 }
 #endif // #if APPS_FLYER_MODULE_ENABLE

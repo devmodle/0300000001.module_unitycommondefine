@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-/** 값 테이블 상수 */
+/** 상수 - 값 테이블 */
 public static partial class KCDefine {
 	#region 기본
 	// 광고
