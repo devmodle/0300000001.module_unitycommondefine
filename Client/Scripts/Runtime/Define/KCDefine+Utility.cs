@@ -619,11 +619,6 @@ public static partial class KCDefine {
 	#endregion // 기본
 
 	#region 런타임 상수
-	// 씬 관리자
-	public static readonly List<string> U_ROOT_OBJ_NAME_LIST = new List<string>() {
-		KCDefine.U_OBJ_N_SCENE_BASE, KCDefine.U_OBJ_N_SCENE_UIS_ROOT, KCDefine.U_OBJ_N_SCENE_OBJS_ROOT, KCDefine.U_OBJ_N_SCENE_MANAGER
-	};
-
 	// 경로 {
 	public static readonly string U_DATA_P_FMT_G_LEVEL_INFO = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}LevelInfo/G_LevelInfo_{"{0:000000000}"}";
 	public static readonly string U_DATA_P_FMT_G_LEVEL_INFO_SET_A = $"{KCDefine.B_DIR_P_TABLES}{KCDefine.B_DIR_P_GLOBAL}A/LevelInfo/G_LevelInfo_{"{0:000000000}"}";
