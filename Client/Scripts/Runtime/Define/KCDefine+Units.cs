@@ -58,13 +58,13 @@ public static partial class KCDefine {
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
 	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
 
-#if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
+#if !MODE_2D_ENABLE || UNIT_SCALE_ADJUST_ENABLE
 	public const float B_UNIT_SCALE = 1.0f / (float)KCDefine.B_UNIT_MILLI_METER_PER_METER;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f;
 #else
 	public const float B_UNIT_SCALE = 1.0f;
 	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f / (float)KCDefine.B_UNIT_MILLI_METER_PER_METER;
-#endif // #if !MODE_2D_ENABLE || UNIT_SCALE_CORRECT_ENABLE
+#endif // #if !MODE_2D_ENABLE || UNIT_SCALE_ADJUST_ENABLE
 	// 해상도 }
 
 	// 식별자 {
