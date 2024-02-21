@@ -47,6 +47,20 @@ public struct STCallbackInfo {
 	#endregion // 함수
 }
 
+/** 컴포넌트 정보 */
+public struct STComponentInfo {
+	public int m_nID;
+	public Component m_oComponent;
+
+	#region 함수
+	/** 생성자 */
+	public STComponentInfo(int a_nID, Component a_oComponent) {
+		m_nID = a_nID;
+		m_oComponent = a_oComponent;
+	}
+	#endregion // 함수
+}
+
 /** 스크롤러 정보 */
 public struct STScrollerInfo {
 	public EnhancedScroller m_oScroller;
@@ -57,20 +71,6 @@ public struct STScrollerInfo {
 	public STScrollerInfo(EnhancedScroller a_oScroller, EnhancedScrollerCellView a_oScrollerCellView) {
 		m_oScroller = a_oScroller;
 		m_oScrollerCellView = a_oScrollerCellView;
-	}
-	#endregion // 함수
-}
-
-/** 컴포넌트 정보 */
-public struct STComponentInfo {
-	public int m_nID;
-	public CComponent m_oComponent;
-
-	#region 함수
-	/** 생성자 */
-	public STComponentInfo(int a_nID, CComponent a_oComponent) {
-		m_nID = a_nID;
-		m_oComponent = a_oComponent;
 	}
 	#endregion // 함수
 }
@@ -433,21 +433,6 @@ public partial class CPathInfo {
 	public int m_nCost = 0;
 	public Vector3Int m_stIdx = Vector3Int.zero;
 	public CPathInfo m_oPrevPathInfo = null;
-}
-
-/** 상수 확장 클래스 */
-public static partial class CDefineExtension {
-	#region 클래스 함수
-	/** 유효 여부를 검사한다 */
-	internal static bool ExIsValid(this string a_oSender) {
-		return a_oSender != null && a_oSender.Length > KCDefine.B_VAL_0_INT;
-	}
-
-	/** 유효 여부를 검사한다 */
-	internal static bool ExIsValid(this SimpleJSON.JSONNode a_oSender) {
-		return a_oSender != null && a_oSender.Value.ExIsValid() && !a_oSender.Value.Equals(KCDefine.B_TEXT_NULL);
-	}
-	#endregion // 클래스 함수
 }
 #endregion // 기본
 
