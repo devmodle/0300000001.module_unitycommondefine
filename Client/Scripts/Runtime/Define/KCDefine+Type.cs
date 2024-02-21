@@ -64,11 +64,11 @@ public struct STScrollerInfo {
 /** 컴포넌트 정보 */
 public struct STComponentInfo {
 	public int m_nID;
-	public Component m_oComponent;
+	public CComponent m_oComponent;
 
 	#region 함수
 	/** 생성자 */
-	public STComponentInfo(int a_nID, Component a_oComponent) {
+	public STComponentInfo(int a_nID, CComponent a_oComponent) {
 		m_nID = a_nID;
 		m_oComponent = a_oComponent;
 	}
@@ -454,32 +454,32 @@ public static partial class CDefineExtension {
 #region 제네릭 타입
 /** 리스트 래퍼 */
 public partial class CListWrapper<T> {
-	public List<T> m_oList01 = new List<T>();
-	public List<T> m_oList02 = new List<T>();
-	public List<T> m_oList03 = new List<T>();
+	public List<T> m_oListA = new List<T>();
+	public List<T> m_oListB = new List<T>();
+	public List<T> m_oListC = new List<T>();
 
 	#region 함수
 	/** 클리어한다 */
 	public void Clear() {
-		m_oList01?.Clear();
-		m_oList02?.Clear();
-		m_oList03?.Clear();
+		m_oListA?.Clear();
+		m_oListB?.Clear();
+		m_oListC?.Clear();
 	}
 	#endregion // 함수
 }
 
 /** 딕셔너리 래퍼 */
 public partial class CDictWrapper<K, V> {
-	public Dictionary<K, V> m_oDict01 = new Dictionary<K, V>();
-	public Dictionary<K, V> m_oDict02 = new Dictionary<K, V>();
-	public Dictionary<K, V> m_oDict03 = new Dictionary<K, V>();
+	public Dictionary<K, V> m_oDictA = new Dictionary<K, V>();
+	public Dictionary<K, V> m_oDictB = new Dictionary<K, V>();
+	public Dictionary<K, V> m_oDictC = new Dictionary<K, V>();
 
 	#region 함수
 	/** 클리어한다 */
 	public void Clear() {
-		m_oDict01?.Clear();
-		m_oDict02?.Clear();
-		m_oDict03?.Clear();
+		m_oDictA?.Clear();
+		m_oDictB?.Clear();
+		m_oDictC?.Clear();
 	}
 	#endregion // 함수
 }
