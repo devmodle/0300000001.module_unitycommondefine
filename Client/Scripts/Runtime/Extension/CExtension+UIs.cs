@@ -216,7 +216,7 @@ public static partial class CExtension {
 			return;
 		}
 
-		a_oSender.pixelsPerUnitMultiplier = KCDefine.B_VAL_1_REAL;
+		a_oSender.uvRect = KCDefine.B_RECT_DEF;
 	}
 	#endregion // 클래스 함수
 }

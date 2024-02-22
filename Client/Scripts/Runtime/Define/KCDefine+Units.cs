@@ -86,7 +86,8 @@ public static partial class KCDefine {
 	public static readonly Vector3 B_SIZE_BANNER_ADS = new Vector3(320.0f, 50.0f, 0.0f);
 	public static readonly Vector3 B_MIN_SIZE_ALERT_POPUP = new Vector3(400.0f, 300.0f, 0.0f);
 
-	public static readonly Rect B_RECT_CAMERA_VIEWPORT = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
+	public static readonly Rect B_RECT_DEF = new Rect(0.0f, 0.0f, 1.0f, 1.0f);
+	public static readonly Rect B_RECT_CAMERA_VIEWPORT = KCDefine.B_RECT_DEF;
 	// 기타 }
 	#endregion // 런타임 상수
 }
