@@ -80,5 +80,50 @@ public static partial class CExtension {
 			a_oSender[j + KCDefine.B_VAL_1_INT] = tVal;
 		}
 	}
+
+	/** 타입 => 지정 타입으로 변환한다 */
+	public static TDest[] ExToTypes<TSrc, TDest>(this TSrc[] a_oSender) {
+		CFunc.Assert(a_oSender != null);
+		var oTypes = new TDest[a_oSender.Length];
+
+		for(int i = 0; i < a_oSender.Length; ++i) {
+			CFunc.Assert(a_oSender[i] is TDest);
+			oTypes.ExSetVal(i, (TDest)a_oSender[i]);
+		}
+
+		return oTypes;
+	}
+
+	/** 타입 => 지정 타입으로 변환한다 */
+	public static TDest[,] ExToTypes<TSrc, TDest>(this TSrc[,] a_oSender) {
+		CFunc.Assert(a_oSender != null);
+		var oTypes = new TDest[a_oSender.GetLength(KCDefine.B_VAL_0_INT), a_oSender.GetLength(KCDefine.B_VAL_1_INT)];
+
+		for(int i = 0; i < a_oSender.GetLength(KCDefine.B_VAL_0_INT); ++i) {
+			for(int j = 0; j < a_oSender.GetLength(KCDefine.B_VAL_1_INT); ++j) {
+				CFunc.Assert(a_oSender[i, j] is TDest);
+				oTypes.ExSetVal(new Vector3Int(j, i, KCDefine.B_VAL_0_INT), (TDest)a_oSender[i]);
+			}
+		}
+
+		return oTypes;
+	}
+
+	/** 타입 => 지정 타입으로 변환한다 */
+	public static TDest[,,] ExToTypes<TSrc, TDest>(this TSrc[,,] a_oSender) {
+		CFunc.Assert(a_oSender != null);
+		var oTypes = new TDest[a_oSender.GetLength(KCDefine.B_VAL_0_INT), a_oSender.GetLength(KCDefine.B_VAL_1_INT), a_oSender.GetLength(KCDefine.B_VAL_2_INT)];
+
+		for(int i = 0; i < a_oSender.GetLength(KCDefine.B_VAL_0_INT); ++i) {
+			for(int j = 0; j < a_oSender.GetLength(KCDefine.B_VAL_1_INT); ++j) {
+				for(int k = 0; k < a_oSender.GetLength(KCDefine.B_VAL_2_INT); ++k) {
+					CFunc.Assert(a_oSender[i, j] is TDest);
+					oTypes.ExSetVal(new Vector3Int(k, j, i), (TDest)a_oSender[i]);
+				}
+			}
+		}
+
+		return oTypes;
+	}
 	#endregion // 제네릭 클래스 함수
 }

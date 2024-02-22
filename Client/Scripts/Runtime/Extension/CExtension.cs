@@ -268,51 +268,6 @@ public static partial class CExtension {
 		return oStrBuilder.ToString();
 	}
 
-	/** 객체 => 특정 타입으로 변환한다 */
-	public static List<T> ExToTypes<T>(this object[] a_oSender) where T : class {
-		CFunc.Assert(a_oSender != null);
-		var oTypeList = new List<T>();
-
-		for(int i = 0; i < a_oSender.Length; ++i) {
-			// 타입 추가가 가능 할 경우
-			if(a_oSender[i] as T != null) {
-				oTypeList.Add(a_oSender[i] as T);
-			}
-		}
-
-		return oTypeList;
-	}
-
-	/** 객체 => 특정 타입으로 변환한다 */
-	public static List<TDest> ExToTypes<TSrc, TDest>(this List<TSrc> a_oSender) where TSrc : class where TDest : class {
-		CFunc.Assert(a_oSender != null);
-		var oTypeList = new List<TDest>();
-
-		for(int i = 0; i < a_oSender.Count; ++i) {
-			// 타입 추가가 가능 할 경우
-			if(a_oSender[i] as TDest != null) {
-				oTypeList.Add(a_oSender[i] as TDest);
-			}
-		}
-
-		return oTypeList;
-	}
-
-	/** 객체 => 특정 타입으로 변환한다 */
-	public static Dictionary<KDest, VDest> ExToTypes<KSrc, VSrc, KDest, VDest>(this Dictionary<KSrc, VSrc> a_oSender) where KSrc : class where VSrc : class where KDest : class where VDest : class {
-		CFunc.Assert(a_oSender != null);
-		var oTypeDict = new Dictionary<KDest, VDest>();
-
-		foreach(var stKeyVal in a_oSender) {
-			// 타입 추가가 가능 할 경우
-			if(stKeyVal.Key as KDest != null && stKeyVal.Value as VDest != null) {
-				oTypeDict.Add(stKeyVal.Key as KDest, stKeyVal.Value as VDest);
-			}
-		}
-
-		return oTypeDict;
-	}
-
 	/** 객체 => 특정 리스트 타입으로 변환한다 */
 	public static List<TDest> ExToListTypes<KSrc, VSrc, TDest>(this Dictionary<KSrc, VSrc> a_oSender) where KSrc : class where VSrc : class where TDest : class {
 		CFunc.Assert(a_oSender != null);
