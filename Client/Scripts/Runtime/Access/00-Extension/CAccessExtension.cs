@@ -1140,19 +1140,19 @@ public static partial class CAccessExtension {
 
 	/** 스택을 복사한다 */
 	public static void ExCopyTo<TSrc, TDest>(this Stack<TSrc> a_oSender, 
-		Stack<TDest> a_oDestValStack, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
+		Stack<TDest> a_oDestStack, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
 
 		CFunc.Assert(!a_bIsAssert ||
-			(a_oSender != null && a_oDestValStack != null && a_oCallback != null));
+			(a_oSender != null && a_oDestStack != null && a_oCallback != null));
 
 		// 스택 복사가 불가능 할 경우
-		if(a_oSender == null || a_oDestValStack == null || a_oCallback == null) {
+		if(a_oSender == null || a_oDestStack == null || a_oCallback == null) {
 			return;
 		}
 
 		// 클리어 모드 일 경우
 		if(a_bIsClear) {
-			a_oDestValStack.Clear();
+			a_oDestStack.Clear();
 		}
 
 		var oValStack = new Stack<TSrc>();
@@ -1162,28 +1162,28 @@ public static partial class CAccessExtension {
 		}
 
 		while(oValStack.ExIsValid()) {
-			a_oDestValStack.Push(a_oCallback(oValStack.Pop()));
+			a_oDestStack.Push(a_oCallback(oValStack.Pop()));
 		}
 	}
 
 	/** 큐를 복사한다 */
 	public static void ExCopyTo<TSrc, TDest>(this Queue<TSrc> a_oSender, 
-		Queue<TDest> a_oDestValQueue, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
+		Queue<TDest> a_oDestQueue, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
 
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oDestValQueue != null && a_oCallback != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oDestQueue != null && a_oCallback != null));
 
 		// 큐 복사가 불가능 할 경우
-		if(a_oSender == null || a_oDestValQueue == null || a_oCallback == null) {
+		if(a_oSender == null || a_oDestQueue == null || a_oCallback == null) {
 			return;
 		}
 
 		// 클리어 모드 일 경우
 		if(a_bIsClear) {
-			a_oDestValQueue.Clear();
+			a_oDestQueue.Clear();
 		}
 
 		while(a_oSender.ExIsValid()) {
-			a_oDestValQueue.Enqueue(a_oCallback(a_oSender.Dequeue()));
+			a_oDestQueue.Enqueue(a_oCallback(a_oSender.Dequeue()));
 		}
 	}
 	#endregion // 제네릭 클래스 함수 (CExtension)

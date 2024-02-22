@@ -262,22 +262,22 @@ public static partial class CExtension {
 
 	/** 리스트를 이동한다 */
 	public static void ExCopyTo<TSrc, TDest>(this List<TSrc> a_oSender,
-		List<TDest> a_oDestValList, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
+		List<TDest> a_oDestList, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
 
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oDestValList != null && a_oCallback != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oDestList != null && a_oCallback != null));
 
 		// 리스트 복사가 불가능 할 경우
-		if(a_oSender == null || a_oDestValList == null || a_oCallback == null) {
+		if(a_oSender == null || a_oDestList == null || a_oCallback == null) {
 			return;
 		}
 
 		// 클리어 모드 일 경우
 		if(a_bIsClear) {
-			a_oDestValList.Clear();
+			a_oDestList.Clear();
 		}
 
 		for(int i = 0; i < a_oSender.Count; ++i) {
-			a_oDestValList.Add(a_oCallback(a_oSender[i]));
+			a_oDestList.Add(a_oCallback(a_oSender[i]));
 		}
 	}
 
@@ -352,6 +352,23 @@ public static partial class CExtension {
 		}
 
 		return oIdxInfoList;
+	}
+
+	/** 타입 => 지정 타입으로 변환한다 */
+	public static List<TDest> ExToTypes<TSrc, TDest>(this List<TSrc> a_oSender) {
+		CFunc.Assert(a_oSender != null);
+		var oTypeList = new List<TDest>();
+
+		for(int i = 0; i < a_oSender.Count; ++i) {
+			// 타입 변환이 불가능 할 경우
+			if(!(a_oSender[i] is TDest)) {
+				continue;
+			}
+
+			oTypeList.Add((TDest)a_oSender[i]);
+		}
+
+		return oTypeList;
 	}
 	#endregion // 제네릭 클래스 함수
 }
