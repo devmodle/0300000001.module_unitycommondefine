@@ -453,43 +453,6 @@ public static partial class CExtension {
 			}
 		}
 	}
-
-	/** 함수를 지연 호출한다 */
-	private static IEnumerator ExCoLateCallFunc(this MonoBehaviour a_oSender, System.Action<MonoBehaviour> a_oCallback) {
-		CFunc.Assert(a_oSender != null);
-
-		try {
-			yield return CAccess.CoGetWaitForEndOfFrame();
-		} finally {
-			a_oCallback?.Invoke(a_oSender);
-		}
-	}
-
-	/** 함수를 지연 호출한다 */
-	private static IEnumerator ExCoLateCallFunc(this MonoBehaviour a_oSender, System.Action<MonoBehaviour> a_oCallback, float a_fDelay, bool a_bIsRealtime) {
-		CFunc.Assert(a_oSender != null && a_fDelay.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
-
-		try {
-			yield return CAccess.CoGetWaitForSecs(a_fDelay, a_bIsRealtime);
-		} finally {
-			a_oCallback?.Invoke(a_oSender);
-		}
-	}
-
-	/** 함수를 반복 호출한다 */
-	private static IEnumerator ExCoRepeatCallFunc(this MonoBehaviour a_oSender, System.Func<MonoBehaviour, bool, bool> a_oCallback, float a_fDeltaTime, double a_dblMaxDeltaTime, bool a_bIsRealtime) {
-		CFunc.Assert(a_oSender != null && a_oCallback != null && a_fDeltaTime.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
-
-		var stStartTime = System.DateTime.Now;
-		double dblDeltaTime = KCDefine.B_VAL_0_REAL;
-
-		do {
-			yield return CAccess.CoGetWaitForSecs(a_fDeltaTime, a_bIsRealtime);
-			dblDeltaTime = System.DateTime.Now.ExGetDeltaTime(stStartTime);
-		} while(a_oCallback(a_oSender, false) && dblDeltaTime.ExIsLess(a_dblMaxDeltaTime));
-
-		a_oCallback(a_oSender, true);
-	}
 	#endregion // 클래스 함수
 
 	#region 제네릭 클래스 함수
