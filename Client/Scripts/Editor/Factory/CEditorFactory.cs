@@ -14,7 +14,7 @@ public static class CEditorFactory {
 	#region 클래스 함수
 	/** 디렉토리를 생성한다 */
 	public static void MakeDirectories(string a_oDirPath, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oDirPath.ExIsValid() && a_oDirPath.Contains(KCEditorDefine.B_DIR_P_ASSETS)));
+		CFunc.Assert(!a_bIsAssert || (a_oDirPath.ExIsValid() && a_oDirPath.Contains(KCEditorDefine.B_DIR_P_ASSETS)));
 
 		// 경로가 유효 할 경우
 		if(a_oDirPath.ExIsValid() && a_oDirPath.Contains(KCEditorDefine.B_DIR_P_ASSETS)) {
@@ -52,19 +52,19 @@ public static class CEditorFactory {
 
 	/** 직렬화 객체를 생성한다 */
 	public static SerializedObject CreateSerializeObj(string a_oAssetPath) {
-		CAccess.Assert(a_oAssetPath.ExIsValid() && CEditorAccess.IsExistsAsset(a_oAssetPath));
+		CFunc.Assert(a_oAssetPath.ExIsValid() && CEditorAccess.IsExistsAsset(a_oAssetPath));
 		return new SerializedObject(AssetDatabase.LoadAllAssetsAtPath(a_oAssetPath)[KCDefine.B_VAL_0_INT]);
 	}
 
 	/** 프리팹 인스턴스를 생성한다 */
 	public static GameObject CreatePrefabInstance(string a_oName, string a_oObjPath, GameObject a_oParent) {
-		CAccess.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 		return CEditorFactory.CreatePrefabInstance(a_oName, Resources.Load<GameObject>(a_oObjPath), a_oParent);
 	}
 
 	/** 프리팹 인스턴스를 생성한다 */
 	public static GameObject CreatePrefabInstance(string a_oName, GameObject a_oOrigin, GameObject a_oParent) {
-		CAccess.Assert(a_oOrigin != null && a_oName.ExIsValid());
+		CFunc.Assert(a_oOrigin != null && a_oName.ExIsValid());
 
 		var oObj = PrefabUtility.InstantiatePrefab(a_oOrigin, a_oParent?.transform) as GameObject;
 		oObj.name = a_oName;
@@ -78,7 +78,7 @@ public static class CEditorFactory {
 
 	/** 에셋을 제거한다 */
 	public static void RemoveAsset(string a_oFilePath, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
 
 		AssetDatabase.DeleteAsset(a_oFilePath);
 		AssetDatabase.SaveAssets();
@@ -89,13 +89,13 @@ public static class CEditorFactory {
 	#region 제네릭 클래스 함수
 	/** 에디터 윈도우를 생성한다 */
 	public static T CreateEditorWnd<T>(string a_oName) where T : EditorWindow {
-		CAccess.Assert(a_oName.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid());
 		return EditorWindow.GetWindow<T>() ?? EditorWindow.CreateWindow<T>(a_oName);
 	}
 
 	/** 에셋을 생성한다 */
 	public static T CreateAsset<T>(T a_tAsset, string a_oFilePath, bool a_bIsFocus = true) where T : Object {
-		CAccess.Assert(a_tAsset != null && a_oFilePath.ExIsValid());
+		CFunc.Assert(a_tAsset != null && a_oFilePath.ExIsValid());
 
 		// 에셋 생성이 가능 할 경우
 		if(AssetDatabase.LoadAssetAtPath<T>(a_oFilePath) == null) {

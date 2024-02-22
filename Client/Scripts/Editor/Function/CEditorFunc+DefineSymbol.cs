@@ -14,7 +14,7 @@ public static partial class CEditorFunc {
 	public static void SetupDefineSymbols(Dictionary<BuildTargetGroup, List<string>> a_oDefineSymbolDictContainer, 
 		bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || a_oDefineSymbolDictContainer.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oDefineSymbolDictContainer.ExIsValid());
 
 		// 설정이 불가능 할 경우
 		if(!a_oDefineSymbolDictContainer.ExIsValid()) {

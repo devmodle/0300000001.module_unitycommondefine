@@ -19,12 +19,6 @@ public static partial class CAccess {
 	#endregion // 클래스 프로퍼티
 
 	#region 클래스 함수
-	/** 조건을 검사한다 */
-	[Conditional("DEBUG"), Conditional("DEVELOPMENT_BUILD")]
-	public static void Assert(bool a_bIsTrue) {
-		UnityEngine.Assertions.Assert.IsTrue(a_bIsTrue);
-	}
-
 	/** 유저 문자열을 반환한다 */
 	public static string GetUserStr(EUserType a_eUserType) {
 		// 유저 타입이 유효하지 않을 경우
@@ -43,7 +37,7 @@ public static partial class CAccess {
 
 	/** 랜덤 확률을 반환한다 */
 	public static (int, float) GetRandPercent(List<float> a_oPercentList) {
-		CAccess.Assert(a_oPercentList.ExIsValid());
+		CFunc.Assert(a_oPercentList.ExIsValid());
 
 		float fPercent = Random.Range(KCDefine.B_VAL_0_REAL, a_oPercentList.Sum((a_fPercent) => a_fPercent));
 		float fComparePercent = KCDefine.B_VAL_0_REAL;
@@ -124,7 +118,7 @@ public static partial class CAccess {
 	#region 제네릭 클래스 함수 (CExtension)
 	/** 값을 교환한다 */
 	public static void ExSwap<T>(this T[] a_oSender, int a_nIdx01, int a_nIdx02, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender.ExIsValid() && a_oSender.ExIsValidIdx(a_nIdx01) && a_oSender.ExIsValidIdx(a_nIdx02)));
+		CFunc.Assert(!a_bIsAssert || (a_oSender.ExIsValid() && a_oSender.ExIsValidIdx(a_nIdx01) && a_oSender.ExIsValidIdx(a_nIdx02)));
 
 		// 인덱스가 유효 할 경우
 		if(a_oSender.ExIsValid() && (a_oSender.ExIsValidIdx(a_nIdx01) && a_oSender.ExIsValidIdx(a_nIdx02))) {
@@ -134,7 +128,7 @@ public static partial class CAccess {
 
 	/** 값을 교환한다 */
 	public static void ExSwap<T>(this T[,] a_oSender, Vector3Int a_stIdx01, Vector3Int a_stIdx02, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender.ExIsValid() && a_oSender.ExIsValidIdx(a_stIdx01) && a_oSender.ExIsValidIdx(a_stIdx02)));
+		CFunc.Assert(!a_bIsAssert || (a_oSender.ExIsValid() && a_oSender.ExIsValidIdx(a_stIdx01) && a_oSender.ExIsValidIdx(a_stIdx02)));
 
 		// 인덱스가 유효 할 경우
 		if(a_oSender.ExIsValid() && (a_oSender.ExIsValidIdx(a_stIdx01) && a_oSender.ExIsValidIdx(a_stIdx02))) {
@@ -144,7 +138,7 @@ public static partial class CAccess {
 
 	/** 값을 교환한다 */
 	public static void ExSwap<T>(this List<T> a_oSender, int a_nIdx01, int a_nIdx02, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender.ExIsValid() && a_oSender.ExIsValidIdx(a_nIdx01) && a_oSender.ExIsValidIdx(a_nIdx02)));
+		CFunc.Assert(!a_bIsAssert || (a_oSender.ExIsValid() && a_oSender.ExIsValidIdx(a_nIdx01) && a_oSender.ExIsValidIdx(a_nIdx02)));
 
 		// 인덱스가 유효 할 경우
 		if(a_oSender.ExIsValid() && (a_oSender.ExIsValidIdx(a_nIdx01) && a_oSender.ExIsValidIdx(a_nIdx02))) {
@@ -154,7 +148,7 @@ public static partial class CAccess {
 
 	/** 값을 교환한다 */
 	public static void ExSwap<K, V>(this Dictionary<K, V> a_oSender, K a_tKey01, K a_tKey02, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender.ExIsValid() && a_oSender.ContainsKey(a_tKey01) && a_oSender.ContainsKey(a_tKey02)));
+		CFunc.Assert(!a_bIsAssert || (a_oSender.ExIsValid() && a_oSender.ContainsKey(a_tKey01) && a_oSender.ContainsKey(a_tKey02)));
 
 		// 키가 유효 할 경우
 		if(a_oSender.ExIsValid() && (a_oSender.ContainsKey(a_tKey01) && a_oSender.ContainsKey(a_tKey02))) {
@@ -164,7 +158,7 @@ public static partial class CAccess {
 
 	/** 값을 재배치한다 */
 	public static void ExShuffle<T>(this T[] a_oSender, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 재베치가 가능 할 경우
 		if(a_oSender != null) {
@@ -176,7 +170,7 @@ public static partial class CAccess {
 
 	/** 값을 재배치한다 */
 	public static void ExShuffle<T>(this List<T> a_oSender, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 재배치가 가능 할 경우
 		if(a_oSender != null) {
@@ -188,7 +182,7 @@ public static partial class CAccess {
 
 	/** 값을 재배치한다 */
 	public static void ExShuffle<K, V>(this Dictionary<K, V> a_oSender, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 재배치가 가능 할 경우
 		if(a_oSender != null) {

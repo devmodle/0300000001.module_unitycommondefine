@@ -16,7 +16,7 @@ public static partial class CFunc {
 	#region 클래스 함수
 	/** 객체를 탐색한다 */
 	public static GameObject FindObj(string a_oName) {
-		CAccess.Assert(a_oName.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid());
 		GameObject oObj = null;
 
 		CAccess.EnumerateScenes((a_stScene) => {
@@ -29,7 +29,7 @@ public static partial class CFunc {
 
 	/** 객체를 탐색한다 */
 	public static List<GameObject> FindObjs(string a_oName) {
-		CAccess.Assert(a_oName.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid());
 		var oObjList = new List<GameObject>();
 
 		CAccess.EnumerateScenes((a_stScene) => {
@@ -44,7 +44,7 @@ public static partial class CFunc {
 
 	/** 경로를 탐색한다 */
 	public static List<Vector3Int> FindPath(Vector3Int a_stSrcIdx, List<Vector3Int> a_oOffsetList, System.Func<CPathInfo, bool> a_oFindCallback, System.Func<CPathInfo, Vector3Int, bool> a_oMoveCallback, System.Func<CPathInfo, Vector3Int, int> a_oCostCallback) {
-		CAccess.Assert(a_oFindCallback != null && a_oMoveCallback != null && a_oCostCallback != null);
+		CFunc.Assert(a_oFindCallback != null && a_oMoveCallback != null && a_oCostCallback != null);
 
 		var oVisitIdxList = new List<Vector3Int>();
 		var oOpenPathInfoList = new List<CPathInfo>();
@@ -106,7 +106,7 @@ public static partial class CFunc {
 	public static void SendMsg(string a_oName, 
 		string a_oFuncName, object a_oParams = null, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oName.ExIsValid() && a_oFuncName.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oName.ExIsValid() && a_oFuncName.ExIsValid()));
 
 		// 메세지 전송이 불가능 할 경우
 		if(!a_oName.ExIsValid() || !a_oFuncName.ExIsValid()) {
@@ -118,7 +118,7 @@ public static partial class CFunc {
 
 	/** 메세지를 전송한다 */
 	public static void BroadcastMsg(string a_oFuncName, object a_oParams = null, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oFuncName.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oFuncName.ExIsValid());
 
 		// 메세지 전송이 불가능 할 경우
 		if(!a_oFuncName.ExIsValid()) {
@@ -135,7 +135,7 @@ public static partial class CFunc {
 	#region 제네릭 클래스 함수
 	/** 컴포넌트를 탐색한다 */
 	public static T FindComponent<T>(string a_oName) where T : Component {
-		CAccess.Assert(a_oName.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid());
 		return CFunc.FindObj(a_oName)?.GetComponentInChildren<T>();
 	}
 
@@ -157,7 +157,7 @@ public static partial class CFunc {
 
 	/** 컴포넌트를 탐색한다 */
 	public static List<T> FindComponents<T>(string a_oName) where T : Component {
-		CAccess.Assert(a_oName.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid());
 		return CFunc.FindObj(a_oName)?.GetComponentsInChildren<T>().ToList();
 	}
 

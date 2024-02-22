@@ -14,7 +14,7 @@ public static partial class CFunc {
 	public static void CopyFile(string a_oSrcPath,
 		string a_oDestPath, bool a_bIsOverwrite = true, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
 
 		// 파일 복사가 불가능 할 경우
 		if(!CFunc.IsEnableCopy(a_oSrcPath, a_oDestPath, a_bIsOverwrite)) {
@@ -29,7 +29,7 @@ public static partial class CFunc {
 	public static void CopyFile(string a_oSrcPath,
 		string a_oDestPath, string a_oIgnoreToken, System.Text.Encoding a_oEncoding = null, bool a_bIsOverwrite = true, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
 
 		// 파일 복사가 불가능 할 경우
 		if(!CFunc.IsEnableCopy(a_oSrcPath, a_oDestPath, a_bIsOverwrite)) {
@@ -56,7 +56,7 @@ public static partial class CFunc {
 	public static void CopyFile(string a_oSrcPath,
 		string a_oDestPath, string a_oTarget, string a_oReplace, System.Text.Encoding a_oEncoding = null, bool a_bIsOverwrite = true, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
 
 		// 파일 복사가 불가능 할 경우
 		if(!CFunc.IsEnableCopy(a_oSrcPath, a_oDestPath, a_bIsOverwrite)) {
@@ -81,7 +81,7 @@ public static partial class CFunc {
 	public static void CopyDir(string a_oSrcPath,
 		string a_oDestPath, bool a_bIsOverwrite = true, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
 
 		// 파일 복사가 불가능 할 경우
 		if(!CFunc.IsEnableCopy(a_oSrcPath, a_oDestPath, a_bIsOverwrite)) {
@@ -102,7 +102,7 @@ public static partial class CFunc {
 
 	/** 파일을 제거한다 */
 	public static void RemoveFile(string a_oFilePath, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
 
 		// 파일 제거가 불가능 할 경우
 		if(!a_oFilePath.ExIsValid() || !File.Exists(a_oFilePath)) {
@@ -114,7 +114,7 @@ public static partial class CFunc {
 
 	/** 디렉토리를 제거한다 */
 	public static void RemoveDir(string a_oDirPath, bool a_bIsRecursive = true, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oDirPath.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oDirPath.ExIsValid());
 
 		// 디렉토리 제거가 불가능 할 경우
 		if(!a_oDirPath.ExIsValid() || !Directory.Exists(a_oDirPath)) {
@@ -126,7 +126,7 @@ public static partial class CFunc {
 
 	/** 디렉토리를 순회한다 */
 	public static void EnumerateDirectories(string a_oDirPath, System.Func<List<string>, List<string>, bool> a_oCallback, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oCallback != null && a_oDirPath.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oCallback != null && a_oDirPath.ExIsValid()));
 
 		// 디렉토리 순회가 불가능 할 경우
 		if(a_oCallback == null || !a_oDirPath.ExIsValid() || !Directory.Exists(a_oDirPath)) {

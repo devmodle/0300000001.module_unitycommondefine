@@ -11,7 +11,7 @@ public static partial class CExtension {
 	public static void ExLateCallFunc(this MonoBehaviour a_oSender, 
 		System.Action<MonoBehaviour> a_oCallback, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 함수 호출이 불가능 할 경우
 		if(a_oSender == null) {
@@ -25,7 +25,7 @@ public static partial class CExtension {
 	public static void ExLateCallFunc(this MonoBehaviour a_oSender, 
 		System.Action<MonoBehaviour> a_oCallback, float a_fDelay, bool a_bIsRealtime = false, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 함수 호출이 불가능 할 경우
 		if(a_oSender == null) {
@@ -39,7 +39,7 @@ public static partial class CExtension {
 	public static void ExRepeatCallFunc(this MonoBehaviour a_oSender, 
 		System.Func<MonoBehaviour, bool, bool> a_oCallback, float a_fDeltaTime, float a_fMaxDeltaTime, bool a_bIsRealtime = false, bool a_bIsAssert = true) {
 			
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 함수 호출이 불가능 할 경우
 		if(a_oSender == null) {

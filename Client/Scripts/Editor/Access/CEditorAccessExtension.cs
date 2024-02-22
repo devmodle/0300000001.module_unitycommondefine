@@ -32,7 +32,7 @@ public static partial class CEditorAccessExtension {
 
 	/** 성공 완료 여부를 검사한다 */
 	public static bool ExIsCompleteSuccess(this Request a_oSender) {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 		return a_oSender.IsCompleted && a_oSender.Status == StatusCode.Success;
 	}
 
@@ -40,7 +40,7 @@ public static partial class CEditorAccessExtension {
 	public static void ExSetStaticEditorFlags(this GameObject a_oSender, 
 		StaticEditorFlags a_eFlags, bool a_bIsCascade = true, bool a_bIsAssert = true) {
 			
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 플래그 변경이 불가능 할 경우
 		if(a_oSender == null) {
@@ -67,7 +67,7 @@ public static partial class CEditorAccessExtension {
 
 	/** 포함 여부를 검사한다 */
 	public static bool ExIsContains(this PlistElementArray a_oSender, string a_oStr) {
-		CAccess.Assert(a_oSender != null && a_oStr.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oStr.ExIsValid());
 		int nResult = a_oSender.values.FindIndex((a_oElement) => a_oElement.AsString().Equals(a_oStr));
 
 		return a_oSender.values.ExIsValidIdx(nResult);
@@ -75,13 +75,13 @@ public static partial class CEditorAccessExtension {
 
 	/** 포함 여부를 검사한다 */
 	public static bool ExIsContains(this PlistElementDict a_oSender, string a_oStr) {
-		CAccess.Assert(a_oSender != null && a_oStr.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oStr.ExIsValid());
 		return a_oSender.values.ContainsKey(a_oStr);
 	}
 
 	/** 포함 여부를 검사한다 */
 	public static bool ExIsContainsAdsNetworkID(this PlistElementArray a_oSender, string a_oNetworkID) {
-		CAccess.Assert(a_oSender != null && a_oNetworkID.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oNetworkID.ExIsValid());
 
 		for(int i = 0; i < a_oSender.values.Count; ++i) {
 			var oValDict = a_oSender.values[i].AsDict();
@@ -98,7 +98,7 @@ public static partial class CEditorAccessExtension {
 
 	/** 배열을 반환한다 */
 	public static PlistElementArray ExGetArray(this PlistDocument a_oSender, string a_oKey) {
-		CAccess.Assert(a_oSender.ExIsValid());
+		CFunc.Assert(a_oSender.ExIsValid());
 
 		try {
 			return a_oSender.root[a_oKey].AsArray();
@@ -109,7 +109,7 @@ public static partial class CEditorAccessExtension {
 
 	/** 딕셔너리를 반환한다 */
 	public static PlistElementDict ExGetDict(this PlistDocument a_oSender, string a_oKey) {
-		CAccess.Assert(a_oSender.ExIsValid());
+		CFunc.Assert(a_oSender.ExIsValid());
 
 		try {
 			return a_oSender.root[a_oKey].AsDict();

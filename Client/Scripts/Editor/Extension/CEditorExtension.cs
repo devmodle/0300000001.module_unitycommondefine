@@ -16,7 +16,7 @@ public static partial class CEditorExtension {
 	#region 클래스 함수
 	/** 상태를 리셋한다 */
 	public static void ExReset(this LightProbeGroup a_oSender, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 라인 효과가 존재 할 경우
 		if(a_oSender != null) {
@@ -38,7 +38,7 @@ public static partial class CEditorExtension {
 	public static void ExSetPropertyVal(this SerializedObject a_oSender, 
 		string a_oName, System.Action<SerializedProperty> a_oCallback, bool a_bIsAssert = true) {
 			
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oName.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oName.ExIsValid()));
 
 		// 객체가 존재 할 경우
 		if(a_oSender != null && a_oName.ExIsValid()) {
@@ -54,7 +54,7 @@ public static partial class CEditorExtension {
 #if UNITY_IOS
 	/** 값을 추가한다 */
 	public static void ExAddVal(this PlistElementArray a_oSender, string a_oStr) {
-		CAccess.Assert(a_oSender != null && a_oStr.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oStr.ExIsValid());
 
 		// 값 추가가 가능 할 경우
 		if(a_oSender != null && !a_oSender.ExIsContains(a_oStr)) {
@@ -64,7 +64,7 @@ public static partial class CEditorExtension {
 
 	/** 값을 추가한다 */
 	public static void ExAddVal(this PlistElementDict a_oSender, string a_oKey, bool a_bIsTrue) {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 
 		// 값 추가가 가능 할 경우
 		if(a_oSender != null && !a_oSender.ExIsContainsKey(a_oKey)) {
@@ -74,7 +74,7 @@ public static partial class CEditorExtension {
 
 	/** 값을 추가한다 */
 	public static void ExAddVal(this PlistElementDict a_oSender, string a_oKey, string a_oStr) {
-		CAccess.Assert(a_oSender != null && a_oStr.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oStr.ExIsValid());
 
 		// 값 추가가 가능 할 경우
 		if(a_oSender != null && !a_oSender.ExIsContainsKey(a_oKey)) {
@@ -84,7 +84,7 @@ public static partial class CEditorExtension {
 
 	/** 값을 제거한다 */
 	public static void ExRemoveVal(this PlistElementDict a_oSender, string a_oKey) {
-		CAccess.Assert(a_oSender != null && a_oKey.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oKey.ExIsValid());
 
 		// 값 제거가 가능 할 경우
 		if(a_oSender != null && !a_oSender.values.ContainsKey(a_oKey)) {
