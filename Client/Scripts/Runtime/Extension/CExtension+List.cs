@@ -9,7 +9,7 @@ public static partial class CExtension {
 	#region 제네릭 클래스 함수
 	/** 값을 추가한다 */
 	public static void ExAddVal<T>(this List<T> a_oSender, T a_tVal, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 추가가 불가능 할 경우
 		if(a_oSender == null || a_oSender.Contains(a_tVal)) {
@@ -23,7 +23,7 @@ public static partial class CExtension {
 	public static void ExAddVal<T>(this List<T> a_oSender,
 		T a_tVal, System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 추가가 불가능 할 경우
 		if(a_oSender == null || a_oCompare == null || a_oSender.ExFindVal(a_oCompare).ExIsValidIdx()) {
@@ -35,7 +35,7 @@ public static partial class CExtension {
 
 	/** 값을 추가한다 */
 	public static void ExAddVals<T>(this List<T> a_oSender, List<T> a_oValList, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oValList != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oValList != null));
 
 		// 값 추가가 불가능 할 경우
 		if(a_oSender == null || a_oValList == null) {
@@ -51,7 +51,7 @@ public static partial class CExtension {
 	public static void ExAddVals<T>(this List<T> a_oSender,
 		List<T> a_oValList, System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oValList != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oValList != null && a_oCompare != null));
 
 		// 값 추가가 불가능 할 경우
 		if(a_oSender == null || a_oValList == null || a_oCompare == null) {
@@ -67,7 +67,7 @@ public static partial class CExtension {
 	public static void ExInsertVal<T>(this List<T> a_oSender,
 		int a_nIdx, T a_tVal, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 추가가 불가능 할 경우
 		if(a_oSender == null || a_nIdx <= KCDefine.B_IDX_INVALID || a_nIdx > a_oSender.Count) {
@@ -81,7 +81,7 @@ public static partial class CExtension {
 	public static void ExInsertVal<T>(this List<T> a_oSender,
 		System.Predicate<T> a_oCompare, T a_tVal, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 추가가 불가능 할 경우
 		if(a_oSender == null || a_oCompare == null) {
@@ -95,7 +95,7 @@ public static partial class CExtension {
 	public static void ExInsertVals<T>(this List<T> a_oSender,
 		System.Predicate<T> a_oCompare, List<T> a_oValList, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null && a_oValList != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null && a_oValList != null));
 
 		// 값 추가가 불가능 할 경우
 		if(a_oSender == null || a_oCompare == null || a_oValList == null) {
@@ -111,7 +111,7 @@ public static partial class CExtension {
 	public static void ExReplaceVal<T>(this List<T> a_oSender, 
 		T a_tVal, T a_tReplaceVal, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 대체가 불가능 할 경우
 		if(a_oSender == null) {
@@ -125,7 +125,7 @@ public static partial class CExtension {
 	public static void ExReplaceVal<T>(this List<T> a_oSender,
 		T a_tReplaceVal, System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 대체가 불가능 할 경우
 		if(a_oSender == null || a_oCompare == null) {
@@ -146,7 +146,7 @@ public static partial class CExtension {
 	public static void ExReplaceVals<T>(this List<T> a_oSender, 
 		List<(T, T)> a_oValInfoList, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oValInfoList != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oValInfoList != null));
 
 		// 값 대체가 불가능 할 경우
 		if(a_oSender == null || a_oValInfoList == null) {
@@ -160,7 +160,7 @@ public static partial class CExtension {
 
 	/** 값을 제거한다 */
 	public static void ExRemoveVal<T>(this List<T> a_oSender, T a_tVal, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 제거가 불가능 할 경우
 		if(a_oSender == null) {
@@ -174,7 +174,7 @@ public static partial class CExtension {
 	public static void ExRemoveVal<T>(this List<T> a_oSender,
 		System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 제거가 불가능 할 경우
 		if(a_oSender == null || a_oCompare == null) {
@@ -186,7 +186,7 @@ public static partial class CExtension {
 
 	/** 값을 제거한다 */
 	public static void ExRemoveVals<T>(this List<T> a_oSender, List<T> a_oValList, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oValList != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oValList != null));
 
 		// 값 제거가 불가능 할 경우
 		if(a_oSender == null || a_oValList == null) {
@@ -202,7 +202,7 @@ public static partial class CExtension {
 	public static void ExRemoveVals<T>(this List<T> a_oSender,
 		System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 제거가 불가능 할 경우
 		if(a_oSender == null || a_oCompare == null) {
@@ -218,7 +218,7 @@ public static partial class CExtension {
 
 	/** 값을 제거한다 */
 	public static void ExRemoveValAt<T>(this List<T> a_oSender, int a_nIdx, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 제거가 불가능 할 경우
 		if(a_oSender == null || !a_oSender.ExIsValidIdx(a_nIdx)) {
@@ -230,7 +230,7 @@ public static partial class CExtension {
 
 	/** 값을 탐색한다 */
 	public static int ExFindVal<T>(this List<T> a_oSender, System.Predicate<T> a_oCompare) {
-		CAccess.Assert(a_oSender != null && a_oCompare != null);
+		CFunc.Assert(a_oSender != null && a_oCompare != null);
 		return a_oSender.FindIndex(a_oCompare);
 	}
 
@@ -238,7 +238,7 @@ public static partial class CExtension {
 	public static void ExCopyTo<TSrc, TDest>(this List<TSrc> a_oSender,
 		List<TDest> a_oDestValList, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oDestValList != null && a_oCallback != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oDestValList != null && a_oCallback != null));
 
 		// 리스트 복사가 불가능 할 경우
 		if(a_oSender == null || a_oDestValList == null || a_oCallback == null) {

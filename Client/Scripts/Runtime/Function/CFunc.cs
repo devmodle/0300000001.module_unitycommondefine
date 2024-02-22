@@ -12,7 +12,7 @@ public static partial class CFunc {
 	#region 클래스 함수
 	/** 바이트를 읽어들인다 */
 	public static byte[] ReadBytes(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 
 		// 파일이 존재 할 경우
 		if(File.Exists(a_oFilePath)) {
@@ -25,7 +25,7 @@ public static partial class CFunc {
 
 	/** 바이트를 읽어들인다 */
 	public static byte[] ReadBytes(Stream a_oStream, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oStream != null);
+		CFunc.Assert(a_oStream != null);
 		var oBytes = new byte[a_oStream.Length];
 
 		a_oStream.Read(oBytes);
@@ -34,7 +34,7 @@ public static partial class CFunc {
 
 	/** 바이트를 읽어들인다 */
 	public static byte[] ReadBytesFromRes(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		var oTextAsset = Resources.Load<TextAsset>(a_oFilePath);
 
 		// 텍스트 에셋이 존재 할 경우
@@ -47,7 +47,7 @@ public static partial class CFunc {
 
 	/** 문자열을 읽어들인다 */
 	public static string ReadStr(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 
 		// 파일이 존재 할 경우
 		if(File.Exists(a_oFilePath)) {
@@ -60,7 +60,7 @@ public static partial class CFunc {
 
 	/** 문자열을 읽어들인다 */
 	public static string ReadStr(Stream a_oStream, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oStream != null);
+		CFunc.Assert(a_oStream != null);
 		var oBytes = CFunc.ReadBytes(a_oStream, a_bIsBase64, a_oEncoding ?? System.Text.Encoding.Default);
 
 		return (a_oEncoding ?? System.Text.Encoding.Default).GetString(oBytes);
@@ -68,7 +68,7 @@ public static partial class CFunc {
 
 	/** 문자열을 읽어들인다 */
 	public static string ReadStrFromRes(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		var oTextAsset = Resources.Load<TextAsset>(a_oFilePath);
 
 		// 텍스트 에셋이 존재 할 경우
@@ -82,13 +82,13 @@ public static partial class CFunc {
 
 	/** 문자열 라인을 읽어들인다 */
 	public static string[] ReadStrLines(string a_oFilePath, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		return File.Exists(a_oFilePath) ? File.ReadAllLines(a_oFilePath, a_oEncoding ?? System.Text.Encoding.Default) : null;
 	}
 
 	/** 바이트를 기록한다 */
 	public static void WriteBytes(string a_oFilePath, byte[] a_oBytes, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oBytes != null && a_oFilePath.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oBytes != null && a_oFilePath.ExIsValid()));
 
 		// 기록이 가능 할 경우
 		if(a_oBytes != null && a_oFilePath.ExIsValid()) {
@@ -100,7 +100,7 @@ public static partial class CFunc {
 
 	/** 바이트를 기록한다 */
 	public static void WriteBytes(FileStream a_oWStream, byte[] a_oBytes, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oWStream != null && a_oBytes != null));
+		CFunc.Assert(!a_bIsAssert || (a_oWStream != null && a_oBytes != null));
 
 		// 스트림이 존재 할 경우
 		if(a_oWStream != null && a_oBytes != null) {
@@ -115,7 +115,7 @@ public static partial class CFunc {
 	public static void WriteStr(string a_oFilePath, 
 		string a_oStr, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oStr != null && a_oFilePath.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oStr != null && a_oFilePath.ExIsValid()));
 
 		// 기록이 가능 할 경우
 		if(a_oStr != null && a_oFilePath.ExIsValid()) {
@@ -129,7 +129,7 @@ public static partial class CFunc {
 	public static void WriteStr(FileStream a_oWStream, 
 		string a_oStr, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oWStream != null && a_oStr != null));
+		CFunc.Assert(!a_bIsAssert || (a_oWStream != null && a_oStr != null));
 
 		// 스트림이 존재 할 경우
 		if(a_oWStream != null && a_oStr != null) {
@@ -252,7 +252,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<Result>(ref System.Func<Result> a_oFunc) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -266,7 +266,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, Result>(ref System.Func<TA, Result> a_oFunc, TA a_tParamsA) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -280,7 +280,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, TB, Result>(ref System.Func<TA, TB, Result> a_oFunc, TA a_tParamsA, TB a_tParamsB) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -294,7 +294,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, TB, TC, Result>(ref System.Func<TA, TB, TC, Result> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -308,7 +308,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, TB, TC, TD, Result>(ref System.Func<TA, TB, TC, TD, Result> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -322,7 +322,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, TB, TC, TD, TE, Result>(ref System.Func<TA, TB, TC, TD, TE, Result> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -336,7 +336,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, TB, TC, TD, TE, TF, Result>(ref System.Func<TA, TB, TC, TD, TE, TF, Result> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -350,7 +350,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, TB, TC, TD, TE, TF, TG, Result>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, Result> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -364,7 +364,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, TB, TC, TD, TE, TF, TG, TH, Result>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, TH, Result> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -378,7 +378,7 @@ public static partial class CFunc {
 
 	/** 함수를 호출한다 */
 	public static Result Invoke<TA, TB, TC, TD, TE, TF, TG, TH, TI, Result>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, TH, TI, Result> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH, TI a_tParamsI) {
-		CAccess.Assert(a_oFunc != null);
+		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
 		try {
@@ -392,31 +392,31 @@ public static partial class CFunc {
 
 	/** 메세지 팩 객체를 읽어들인다 */
 	public static T ReadMsgPackObj<T>(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		return MessagePackSerializer.Deserialize<T>(CFunc.ReadBytes(a_oFilePath, a_bIsBase64, a_oEncoding ?? System.Text.Encoding.Default));
 	}
 
 	/** 메세지 팩 객체를 읽어들인다 */
 	public static T ReadMsgPackObjFromRes<T>(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		return MessagePackSerializer.Deserialize<T>(CFunc.ReadBytesFromRes(a_oFilePath, a_bIsBase64, a_oEncoding ?? System.Text.Encoding.Default));
 	}
 
 	/** 메세지 팩 JSON 객체를 읽어들인다 */
 	public static T ReadMsgPackJSONObj<T>(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		return CFunc.ReadStr(a_oFilePath, a_bIsBase64, a_oEncoding ?? System.Text.Encoding.Default).ExMsgPackJSONStrToObj<T>();
 	}
 
 	/** 메세지 팩 JSON 객체를 읽어들인다 */
 	public static T ReadMsgPackJSONObjFromRes<T>(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		return CFunc.ReadStrFromRes(a_oFilePath, a_bIsBase64, a_oEncoding ?? System.Text.Encoding.Default).ExMsgPackJSONStrToObj<T>();
 	}
 
 	/** 메세지 팩 객체를 기록한다 */
 	public static void WriteMsgPackObj<T>(string a_oFilePath, T a_oObj, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
 
 		// 경로가 유효 할 경우
 		if(a_oFilePath.ExIsValid()) {
@@ -426,7 +426,7 @@ public static partial class CFunc {
 
 	/** 메세지 팩 JSON 객체를 기록한다 */
 	public static void WriteMsgPackJSONObj<T>(string a_oFilePath, T a_oObj, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
 
 		// 경로가 유효 할 경우
 		if(a_oFilePath.ExIsValid()) {
@@ -439,19 +439,19 @@ public static partial class CFunc {
 #if NEWTON_SOFT_JSON_SERIALIZE_DESERIALIZE_ENABLE
 	/** JSON 객체를 읽어들인다 */
 	public static T ReadJSONObj<T>(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		return CFunc.ReadStr(a_oFilePath, a_bIsBase64, a_oEncoding ?? System.Text.Encoding.Default).ExJSONStrToObj<T>();
 	}
 
 	/** JSON 객체를 읽어들인다 */
 	public static T ReadJSONObjFromRes<T>(string a_oFilePath, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null) {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		return CFunc.ReadStrFromRes(a_oFilePath, a_bIsBase64, a_oEncoding ?? System.Text.Encoding.Default).ExJSONStrToObj<T>();
 	}
 
 	/** JSON 객체를 기록한다 */
 	public static void WriteJSONObj<T>(string a_oFilePath, T a_oObj, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsNeedsRoot = false, bool a_bIsPretty = false, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
 
 		// 경로가 유효 할 경우
 		if(a_oFilePath.ExIsValid()) {

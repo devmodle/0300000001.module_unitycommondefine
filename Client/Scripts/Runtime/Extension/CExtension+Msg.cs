@@ -13,7 +13,7 @@ public static partial class CExtension {
 	public static void ExSendMsg(this Scene a_stSender, 
 		string a_oName, string a_oFuncName, object a_oParams = null, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oName.ExIsValid() && a_oFuncName.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oName.ExIsValid() && a_oFuncName.ExIsValid()));
 
 		// 메세지 전송이 불가능 할 경우
 		if(!a_oName.ExIsValid() || !a_oFuncName.ExIsValid()) {
@@ -28,7 +28,7 @@ public static partial class CExtension {
 	public static void ExSendMsg(this GameObject a_oSender, 
 		string a_oName, string a_oFuncName, object a_oParams = null, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oFuncName.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oFuncName.ExIsValid()));
 
 		// 메세지 전송이 불가능 할 경우
 		if(a_oSender == null || !a_oFuncName.ExIsValid()) {
@@ -48,7 +48,7 @@ public static partial class CExtension {
 	public static void ExBroadcastMsg(this Scene a_stSender, 
 		string a_oFuncName, object a_oParams = null, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || a_oFuncName.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oFuncName.ExIsValid());
 
 		// 메세지 전파가 불가능 할 경우
 		if(!a_oFuncName.ExIsValid()) {
@@ -66,7 +66,7 @@ public static partial class CExtension {
 	public static void ExBroadcastMsg(this GameObject a_oSender, 
 		string a_oFuncName, object a_oParams = null, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oFuncName.ExIsValid()));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oFuncName.ExIsValid()));
 
 		// 메세지 전파가 불가능 할 경우
 		if(a_oSender == null || !a_oFuncName.ExIsValid()) {

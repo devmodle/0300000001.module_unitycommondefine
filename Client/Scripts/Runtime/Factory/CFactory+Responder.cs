@@ -11,7 +11,7 @@ public static partial class CFactory {
 	public static GameObject CreateTouchResponder(string a_oName, 
 		GameObject a_oOrigin, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) {
 
-		CAccess.Assert(a_oOrigin != null && a_oName.ExIsValid());
+		CFunc.Assert(a_oOrigin != null && a_oName.ExIsValid());
 
 		var oGameObj = CFactory.CreateCloneGameObj(a_oName, a_oOrigin, a_oParent);
 		oGameObj.GetComponentInChildren<Image>().color = a_stColor;
@@ -33,7 +33,7 @@ public static partial class CFactory {
 	public static GameObject CreateTouchResponder(string a_oName, 
 		string a_oObjPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) {
 
-		CAccess.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateTouchResponder(a_oName, 
 			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stSize, a_stPos, a_stColor);
@@ -43,7 +43,7 @@ public static partial class CFactory {
 	public static GameObject CreateDragResponder(string a_oName, 
 		GameObject a_oOrigin, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) {
 
-		CAccess.Assert(a_oOrigin != null && a_oName.ExIsValid());
+		CFunc.Assert(a_oOrigin != null && a_oName.ExIsValid());
 		return CFactory.CreateTouchResponder(a_oName, a_oOrigin, a_oParent, a_stSize, a_stPos, a_stColor);
 	}	
 
@@ -51,7 +51,7 @@ public static partial class CFactory {
 	public static GameObject CreateDragResponder(string a_oName, 
 		string a_oObjPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) {
 
-		CAccess.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateDragResponder(a_oName, 
 			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stSize, a_stPos, a_stColor);
@@ -63,7 +63,7 @@ public static partial class CFactory {
 	public static T CreateTouchResponder<T>(string a_oName, 
 		GameObject a_oOrigin, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) where T : Component {
 
-		CAccess.Assert(a_oOrigin != null && a_oName.ExIsValid());
+		CFunc.Assert(a_oOrigin != null && a_oName.ExIsValid());
 		var oGameObj = CFactory.CreateTouchResponder(a_oName, a_oOrigin, a_oParent, a_stSize, a_stPos, a_stColor);
 
 		return oGameObj?.GetComponentInChildren<T>();
@@ -73,7 +73,7 @@ public static partial class CFactory {
 	public static T CreateTouchResponder<T>(string a_oName, 
 		string a_oObjPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) where T : Component {
 
-		CAccess.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateTouchResponder<T>(a_oName, 
 			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stSize, a_stPos, a_stColor);
@@ -83,7 +83,7 @@ public static partial class CFactory {
 	public static T CreateDragResponder<T>(string a_oName, 
 		GameObject a_oOrigin, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) where T : Component {
 
-		CAccess.Assert(a_oOrigin != null && a_oName.ExIsValid());
+		CFunc.Assert(a_oOrigin != null && a_oName.ExIsValid());
 		var oGameObj = CFactory.CreateDragResponder(a_oName, a_oOrigin, a_oParent, a_stSize, a_stPos, a_stColor);
 		
 		return oGameObj?.GetComponentInChildren<T>();
@@ -93,7 +93,7 @@ public static partial class CFactory {
 	public static T CreateDragResponder<T>(string a_oName, 
 		string a_oObjPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) where T : Component {
 
-		CAccess.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateDragResponder<T>(a_oName, 
 			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stSize, a_stPos, a_stColor);

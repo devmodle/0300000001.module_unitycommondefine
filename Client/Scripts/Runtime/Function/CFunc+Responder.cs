@@ -11,7 +11,7 @@ public static partial class CFunc {
 	public static void SetupTouchResponders<K>(List<(K, string, GameObject, GameObject)> a_oKeyInfoList, 
 		Vector3 a_stSize, Dictionary<K, GameObject> a_oOutObjDict, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutObjDict != null));
+		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutObjDict != null));
 
 		// 키 정보가 존재 할 경우
 		if(a_oKeyInfoList.ExIsValid() && a_oOutObjDict != null) {
@@ -34,7 +34,7 @@ public static partial class CFunc {
 	public static void SetupDragResponders<K>(List<(K, string, GameObject, GameObject)> a_oKeyInfoList, 
 		Vector3 a_stSize, Dictionary<K, GameObject> a_oOutObjDict, bool a_bIsAssert = true) {
 
-		CAccess.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutObjDict != null));
+		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutObjDict != null));
 
 		// 키 정보가 존재 할 경우
 		if(a_oKeyInfoList.ExIsValid() && a_oOutObjDict != null) {

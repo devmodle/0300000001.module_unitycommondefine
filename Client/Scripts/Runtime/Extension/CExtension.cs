@@ -12,13 +12,13 @@ public static partial class CExtension {
 	#region 클래스 함수
 	/** 값 => 왼쪽 쉬프트 비트로 변환한다 */
 	public static int ExToLShiftBits(this int a_nSender, int a_nOffset) {
-		CAccess.Assert(a_nOffset >= KCDefine.B_VAL_0_INT);
+		CFunc.Assert(a_nOffset >= KCDefine.B_VAL_0_INT);
 		return a_nSender << a_nOffset;
 	}
 
 	/** 값 => 오른쪽 쉬프트 비트로 변환한다 */
 	public static int ExToRShiftBits(this int a_nSender, int a_nOffset) {
-		CAccess.Assert(a_nOffset >= KCDefine.B_VAL_0_INT);
+		CFunc.Assert(a_nOffset >= KCDefine.B_VAL_0_INT);
 		return a_nSender >> a_nOffset;
 	}
 
@@ -35,7 +35,7 @@ public static partial class CExtension {
 
 	/** 리스트 => 비트로 변환한다 */
 	public static int ExToBits(this List<int> a_oSender) {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 		int nVal = KCDefine.B_VAL_0_INT;
 
 		for(int i = 0; i < a_oSender.Count; ++i) {
@@ -85,7 +85,7 @@ public static partial class CExtension {
 
 	/** 중위 => 후위 수식으로 변환한다 */
 	public static string ExInfixToPostfixCalc(this string a_oSender) {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 
 		// TODO 후위 수식 변환 로직 구현 필요
 
@@ -94,49 +94,49 @@ public static partial class CExtension {
 
 	/** 문자열 => 시간으로 변환한다 */
 	public static System.DateTime ExToTime(this string a_oSender, string a_oFmt) {
-		CAccess.Assert(a_oSender.ExIsValid() && a_oFmt.ExIsValid());
+		CFunc.Assert(a_oSender.ExIsValid() && a_oFmt.ExIsValid());
 		return System.DateTime.ParseExact(a_oSender, a_oFmt, CultureInfo.InvariantCulture);
 	}
 
 	/** 시간 => 문자열로 변환한다 */
 	public static string ExToStr(this System.DateTime a_stSender, string a_oFmt) {
-		CAccess.Assert(a_stSender.ExIsValid());
+		CFunc.Assert(a_stSender.ExIsValid());
 		return a_stSender.ToString(a_oFmt, CultureInfo.InvariantCulture);
 	}
 
 	/** 시간 => 긴 문자열로 변환한다 */
 	public static string ExToLongStr(this System.DateTime a_stSender, bool a_bIsEnableSlash = true) {
-		CAccess.Assert(a_stSender.ExIsValid());
+		CFunc.Assert(a_stSender.ExIsValid());
 		return a_stSender.ExToStr(a_bIsEnableSlash ? KCDefine.B_DATE_T_FMT_SLASH_YYYY_MM_DD_HH_MM_SS : KCDefine.B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS);
 	}
 
 	/** 시간 => 짧은 문자열로 변환한다 */
 	public static string ExToShortStr(this System.DateTime a_stSender, bool a_bIsEnableSlash = true) {
-		CAccess.Assert(a_stSender.ExIsValid());
+		CFunc.Assert(a_stSender.ExIsValid());
 		return a_stSender.ExToStr(a_bIsEnableSlash ? KCDefine.B_DATE_T_FMT_SLASH_YYYY_MM_DD : KCDefine.B_DATE_T_FMT_YYYY_MM_DD);
 	}
 
 	/** 지역 시간 => PST 시간으로 변환한다 */
 	public static System.DateTime ExToPSTTime(this System.DateTime a_stSender) {
-		CAccess.Assert(a_stSender.ExIsValid());
+		CFunc.Assert(a_stSender.ExIsValid());
 		return a_stSender.ToUniversalTime().AddHours(KCDefine.B_DELTA_T_UTC_TO_PST);
 	}
 
 	/** 지역 시간 => 특정 지역 시간으로 변환한다 */
 	public static System.DateTime ExToZoneTime(this System.DateTime a_stSender, string a_oTimeZoneID) {
-		CAccess.Assert(a_stSender.ExIsValid() && a_oTimeZoneID.ExIsValid());
+		CFunc.Assert(a_stSender.ExIsValid() && a_oTimeZoneID.ExIsValid());
 		return System.TimeZoneInfo.ConvertTime(a_stSender, System.TimeZoneInfo.Local, System.TimeZoneInfo.FindSystemTimeZoneById(a_oTimeZoneID));
 	}
 
 	/** PST 시간 => 지역 시간으로 변환한다 */
 	public static System.DateTime ExPSTToLocalTime(this System.DateTime a_stSender) {
-		CAccess.Assert(a_stSender.ExIsValid());
+		CFunc.Assert(a_stSender.ExIsValid());
 		return a_stSender.AddHours(-KCDefine.B_DELTA_T_UTC_TO_PST).ToLocalTime();
 	}
 
 	/** 특정 지역 시간 => 지역 시간으로 변환한다 */
 	public static System.DateTime ExZoneToLocalTime(this System.DateTime a_stSender, string a_oTimeZoneID) {
-		CAccess.Assert(a_stSender.ExIsValid() && a_oTimeZoneID.ExIsValid());
+		CFunc.Assert(a_stSender.ExIsValid() && a_oTimeZoneID.ExIsValid());
 		return System.TimeZoneInfo.ConvertTime(a_stSender, System.TimeZoneInfo.FindSystemTimeZoneById(a_oTimeZoneID), System.TimeZoneInfo.Local);
 	}
 
@@ -162,7 +162,7 @@ public static partial class CExtension {
 
 	/** JSON 배열 => 정보 값으로 변환한다 */
 	public static List<List<string>> ExToInfoVals(this SimpleJSON.JSONArray a_oSender, List<STKeyInfo> a_oKeyInfoList) {
-		CAccess.Assert(a_oSender != null && a_oKeyInfoList != null);
+		CFunc.Assert(a_oSender != null && a_oKeyInfoList != null);
 		var oInfoValListContainer = new List<List<string>>();
 
 		// 배열이 유효 할 경우
@@ -185,7 +185,7 @@ public static partial class CExtension {
 
 	/** 정보 값을 반환한다 */
 	private static string ExGetInfoVal(this SimpleJSON.JSONNode a_oSender, string a_oKey) {
-		CAccess.Assert(a_oSender != null && a_oKey.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oKey.ExIsValid());
 		return a_oSender[a_oKey].ToString().Replace(KCDefine.B_TOKEN_D_QUOTES, string.Empty).Replace(KCDefine.B_TOKEN_O_BRACKETS, string.Empty).Replace(KCDefine.B_TOKEN_C_BRACKETS, string.Empty);
 	}
 
@@ -223,7 +223,7 @@ public static partial class CExtension {
 	#region 제네릭 클래스 함수
 	/** 상태를 리셋한다 */
 	public static void ExReset<T>(this T[] a_oSender, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 배열이 존재 할 경우
 		if(a_oSender != null) {
@@ -235,7 +235,7 @@ public static partial class CExtension {
 
 	/** 상태를 리셋한다 */
 	public static void ExReset<T>(this T[,] a_oSender, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oSender != null);
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 배열이 존재 할 경우
 		if(a_oSender != null) {
@@ -249,7 +249,7 @@ public static partial class CExtension {
 
 	/** 값을 안전 정렬한다 */
 	public static void ExStableSort<T>(this T[] a_oSender, System.Comparison<T> a_oCompare, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 배열이 존재 할 경우
 		if(a_oSender != null && a_oCompare != null) {
@@ -268,7 +268,7 @@ public static partial class CExtension {
 
 	/** 값을 안전 정렬한다 */
 	public static void ExStableSort<T>(this List<T> a_oSender, System.Comparison<T> a_oCompare, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 리스트가 존재 할 경우
 		if(a_oSender != null && a_oCompare != null) {
@@ -287,7 +287,7 @@ public static partial class CExtension {
 
 	/** 값을 안전 정렬한다 */
 	public static void ExStableSort<V>(this Dictionary<int, V> a_oSender, System.Comparison<V> a_oCompare, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 리스트가 존재 할 경우
 		if(a_oSender != null && a_oCompare != null) {
@@ -316,7 +316,7 @@ public static partial class CExtension {
 
 	/** 배열 => 문자열로 변환한다 */
 	public static string ExToStr<T>(this T[] a_oSender, string a_oToken) {
-		CAccess.Assert(a_oSender != null && a_oToken.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oToken.ExIsValid());
 		var oStrBuilder = new System.Text.StringBuilder();
 
 		for(int i = 0; i < a_oSender.Length; ++i) {
@@ -329,7 +329,7 @@ public static partial class CExtension {
 
 	/** 리스트 => 문자열로 변환한다 */
 	public static string ExToStr<T>(this List<T> a_oSender, string a_oToken) {
-		CAccess.Assert(a_oSender != null && a_oToken.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oToken.ExIsValid());
 		var oStrBuilder = new System.Text.StringBuilder();
 
 		for(int i = 0; i < a_oSender.Count; ++i) {
@@ -342,7 +342,7 @@ public static partial class CExtension {
 
 	/** 사전 => 문자열로 변환한다 */
 	public static string ExToStr<K, V>(this Dictionary<K, V> a_oSender, string a_oToken) {
-		CAccess.Assert(a_oSender != null && a_oToken.ExIsValid());
+		CFunc.Assert(a_oSender != null && a_oToken.ExIsValid());
 
 		int i = KCDefine.B_VAL_0_INT;
 		var oStrBuilder = new System.Text.StringBuilder();
@@ -359,7 +359,7 @@ public static partial class CExtension {
 
 	/** 객체 => 특정 타입으로 변환한다 */
 	public static List<T> ExToTypes<T>(this object[] a_oSender) where T : class {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 		var oTypeList = new List<T>();
 
 		for(int i = 0; i < a_oSender.Length; ++i) {
@@ -374,7 +374,7 @@ public static partial class CExtension {
 
 	/** 객체 => 특정 타입으로 변환한다 */
 	public static List<TDest> ExToTypes<TSrc, TDest>(this List<TSrc> a_oSender) where TSrc : class where TDest : class {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 		var oTypeList = new List<TDest>();
 
 		for(int i = 0; i < a_oSender.Count; ++i) {
@@ -389,7 +389,7 @@ public static partial class CExtension {
 
 	/** 객체 => 특정 타입으로 변환한다 */
 	public static Dictionary<KDest, VDest> ExToTypes<KSrc, VSrc, KDest, VDest>(this Dictionary<KSrc, VSrc> a_oSender) where KSrc : class where VSrc : class where KDest : class where VDest : class {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 		var oTypeDict = new Dictionary<KDest, VDest>();
 
 		foreach(var stKeyVal in a_oSender) {
@@ -404,7 +404,7 @@ public static partial class CExtension {
 
 	/** 객체 => 특정 리스트 타입으로 변환한다 */
 	public static List<TDest> ExToListTypes<KSrc, VSrc, TDest>(this Dictionary<KSrc, VSrc> a_oSender) where KSrc : class where VSrc : class where TDest : class {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 		var oTypeList = new List<TDest>();
 
 		foreach(var stKeyVal in a_oSender) {
@@ -419,7 +419,7 @@ public static partial class CExtension {
 
 	/** 리스트 => 딕셔너리로 변환한다 */
 	public static Dictionary<K, V> ExToDict<T, K, V>(this List<T> a_oSender, System.Func<int, (K, V)> a_oCallback) {
-		CAccess.Assert(a_oSender != null);
+		CFunc.Assert(a_oSender != null);
 		var oDict = new Dictionary<K, V>();
 
 		for(int i = 0; i < a_oSender.Count; ++i) {
@@ -434,13 +434,13 @@ public static partial class CExtension {
 	public static object ExCallFunc<T>(this object a_oSender, 
 		string a_oName, List<object> a_oParamsList, BindingFlags a_eBindingFlags = KCDefine.B_BINDING_F_PUBLIC_INSTANCE) {
 
-		CAccess.Assert(a_oName.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid());
 		return typeof(T).GetMethod(a_oName, a_eBindingFlags).Invoke(a_oSender, a_oParamsList.ToArray());
 	}
 
 	/** 런타임 함수를 호출한다 */
 	public static object ExRuntimeCallFunc<T>(this object a_oSender, string a_oName, List<object> a_oParamsList) {
-		CAccess.Assert(a_oName.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid());
 		var oMethodInfos = typeof(T).GetRuntimeMethods();
 
 		foreach(var oMethodInfo in oMethodInfos) {

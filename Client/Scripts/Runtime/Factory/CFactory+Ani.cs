@@ -14,7 +14,7 @@ public static partial class CFactory {
 	public static DG.Tweening.Tween MakeAni(DOGetter<float> a_oGetter, 
 		DOSetter<float> a_oSetter, System.Action a_oInitCallback, System.Action<float> a_oSetterCallback, float a_fVal, float a_fDuration, Ease a_eEase = KCDefine.U_EASE_DEF, bool a_bIsRealtime = false) {
 
-		CAccess.Assert(a_oGetter != null && a_oSetter != null);
+		CFunc.Assert(a_oGetter != null && a_oSetter != null);
 		a_oInitCallback?.Invoke();
 
 		return DOTween.To(a_oGetter, (a_fAniVal) => {
@@ -27,7 +27,7 @@ public static partial class CFactory {
 	public static Sequence MakeSequence(DG.Tweening.Tween a_oAni, 
 		System.Action<Sequence> a_oCallback, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsJoin = false, bool a_bIsRealtime = false) {
 
-		CAccess.Assert(a_oAni != null);
+		CFunc.Assert(a_oAni != null);
 
 		return CFactory.MakeSequence(new List<DG.Tweening.Tween>() {
 			a_oAni
@@ -38,7 +38,7 @@ public static partial class CFactory {
 	public static Sequence MakeSequence(List<DG.Tweening.Tween> a_oAniList, 
 		System.Action<Sequence> a_oCallback, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsJoin = false, bool a_bIsRealtime = false) {
 
-		CAccess.Assert(a_oAniList != null);
+		CFunc.Assert(a_oAniList != null);
 		var oAni = DOTween.Sequence().SetAutoKill().SetUpdate(a_bIsRealtime);
 
 		for(int i = 0; i < a_oAniList.Count; ++i) {

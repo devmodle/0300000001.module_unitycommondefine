@@ -157,7 +157,7 @@ public static partial class CAccess {
 	#region 클래스 함수
 	/** 유저 권한 유효 여부를 검사한다 */
 	public static bool IsEnableUserPermission(string a_oPermission) {
-		CAccess.Assert(a_oPermission.ExIsValid());
+		CFunc.Assert(a_oPermission.ExIsValid());
 
 #if UNITY_ANDROID
 		return Permission.HasUserAuthorizedPermission(a_oPermission);
@@ -168,7 +168,7 @@ public static partial class CAccess {
 
 	/** 배너 광고 높이를 반환한다 */
 	public static float GetBannerAdsHeight(float a_fHeight) {
-		CAccess.Assert(a_fHeight.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
+		CFunc.Assert(a_fHeight.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
 		return (a_fHeight.ExDPIPixelsToPixels() * (KCDefine.B_DESIGN_SCREEN_HEIGHT / CAccess.DeviceScreenSize.y)) / CAccess.ResolutionScale;
 	}
 
@@ -240,7 +240,7 @@ public static partial class CAccess {
 
 	/** 씬을 순회한다 */
 	public static void EnumerateScenes(System.Func<Scene, bool> a_oCallback, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oCallback != null);
+		CFunc.Assert(!a_bIsAssert || a_oCallback != null);
 
 		// 씬 순회가 불가능 할 경우
 		if(a_oCallback == null) {
@@ -257,7 +257,7 @@ public static partial class CAccess {
 
 	/** 객체를 순회한다 */
 	public static void EnumerateRootObjs(System.Func<GameObject, bool> a_oCallback, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oCallback != null);
+		CFunc.Assert(!a_bIsAssert || a_oCallback != null);
 
 		// 객체 순회가 불가능 할 경우
 		if(a_oCallback == null) {
@@ -297,7 +297,7 @@ public static partial class CAccess {
 	#region 제네릭 클래스 함수
 	/** 리소스 존재 여부를 검사한다 */
 	public static bool IsExistsRes<T>(string a_oFilePath, bool a_bIsAutoUnload = false) where T : Object {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		var oRes = Resources.Load<T>(a_oFilePath);
 
 		bool bIsExistsRes = typeof(T).Equals(typeof(TextAsset)) ? 
@@ -315,7 +315,7 @@ public static partial class CAccess {
 	public static void EnumerateComponents<T>(System.Func<T, bool> a_oCallback, 
 		bool a_bIsIncludeInactive = false, bool a_bIsAssert = true) where T : Component {
 
-		CAccess.Assert(!a_bIsAssert || a_oCallback != null);
+		CFunc.Assert(!a_bIsAssert || a_oCallback != null);
 
 		// 컴포넌트 순회가 불가능 할 경우
 		if(a_oCallback == null) {
@@ -338,7 +338,7 @@ public static partial class CAccess {
 #if UNITY_EDITOR
 	/** 스크립트 순서를 변경한다 */
 	public static void SetScriptOrder(MonoScript a_oScript, int a_nOrder, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oScript != null);
+		CFunc.Assert(!a_bIsAssert || a_oScript != null);
 
 		// 스크립트가 존재 할 경우
 		if(a_oScript != null && MonoImporter.GetExecutionOrder(a_oScript) != a_nOrder) {
@@ -370,7 +370,7 @@ public static partial class CAccess {
 #if PURCHASE_MODULE_ENABLE
 	/** 가격 문자열을 반환한다 */
 	public static string GetPriceStr(Product a_oProduct) {
-		CAccess.Assert(a_oProduct != null);
+		CFunc.Assert(a_oProduct != null);
 		
 		return string.Format(KCDefine.B_TEXT_FMT_2_SPACE_COMBINE, 
 			a_oProduct.metadata.isoCurrencyCode, a_oProduct.metadata.localizedPrice);
@@ -414,7 +414,7 @@ public static partial class CAccess {
 
 	/** 대기 객체를 반환한다 */
 	public static IEnumerator CoGetWaitForSecs(float a_fDeltaTime, bool a_bIsRealtime = false) {
-		CAccess.Assert(a_fDeltaTime.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
+		CFunc.Assert(a_fDeltaTime.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
 
 		yield return a_bIsRealtime ? 
 			CAccess.GetWaitForSecondsRealtime(a_fDeltaTime) : CAccess.GetWaitForSeconds(a_fDeltaTime);

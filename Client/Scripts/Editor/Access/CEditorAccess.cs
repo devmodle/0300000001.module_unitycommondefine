@@ -111,7 +111,7 @@ public static partial class CEditorAccess {
 
 	/** 그래픽 API 를 변경한다 */
 	public static void SetGraphicAPI(BuildTarget a_eTarget, List<GraphicsDeviceType> a_oDeviceTypeList, bool a_bIsEnableAuto = true, bool a_bIsAssert = true) {
-		CAccess.Assert(!a_bIsAssert || a_oDeviceTypeList.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oDeviceTypeList.ExIsValid());
 
 		// 디바이스 타입이 존재할 경우
 		if(a_oDeviceTypeList.ExIsValid()) {
@@ -144,7 +144,7 @@ public static partial class CEditorAccess {
 	#region 제네릭 클래스 함수
 	/** 에셋을 탐색한다 */
 	public static T FindAsset<T>(string a_oFilePath) where T : Object {
-		CAccess.Assert(a_oFilePath.ExIsValid());
+		CFunc.Assert(a_oFilePath.ExIsValid());
 		return AssetDatabase.LoadAssetAtPath<T>(a_oFilePath);
 	}
 
