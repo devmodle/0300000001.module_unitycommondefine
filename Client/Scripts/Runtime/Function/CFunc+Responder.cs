@@ -25,7 +25,7 @@ public static partial class CFunc {
 					a_oOutObjDict.ExReplaceVal(a_oKeyInfoList[i].Item1, CFactory.CreateTouchResponder(a_oKeyInfoList[i].Item2, a_oKeyInfoList[i].Item4, a_oKeyInfoList[i].Item3, a_stSize, Vector3.zero, KCDefine.B_COLOR_TRANSPARENT));
 				}
 
-				a_oOutObjDict.GetValueOrDefault(a_oKeyInfoList[i].Item1)?.ExSetRaycastTarget<Image>(true, a_bIsAssert);
+				a_oOutObjDict.ExGetVal(a_oKeyInfoList[i].Item1)?.ExSetRaycastTarget<Image>(true, a_bIsAssert);
 			}
 		}
 	}
@@ -48,7 +48,7 @@ public static partial class CFunc {
 					a_oOutObjDict.ExReplaceVal(a_oKeyInfoList[i].Item1, CFactory.CreateDragResponder(a_oKeyInfoList[i].Item2, a_oKeyInfoList[i].Item4, a_oKeyInfoList[i].Item3, a_stSize, Vector3.zero, KCDefine.B_COLOR_TRANSPARENT));
 				}
 
-				a_oOutObjDict.GetValueOrDefault(a_oKeyInfoList[i].Item1)?.ExSetRaycastTarget<Image>(true, a_bIsAssert);
+				a_oOutObjDict.ExGetVal(a_oKeyInfoList[i].Item1)?.ExSetRaycastTarget<Image>(true, a_bIsAssert);
 			}
 		}
 	}

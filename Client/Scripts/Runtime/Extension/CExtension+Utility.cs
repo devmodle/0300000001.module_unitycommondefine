@@ -15,7 +15,6 @@ using TMPro;
 using MessagePack;
 using DG.Tweening;
 using Coffee.UIExtensions;
-using DanielLochner.Assets.SimpleScrollSnap;
 
 #if UNITY_ANDROID
 using UnityEngine.Android;
@@ -328,11 +327,6 @@ public static partial class CExtension {
 		return (stDelta.x.ExIsGreatEquals(KCDefine.B_VAL_0_REAL) && stDelta.y.ExIsLessEquals(KCDefine.B_VAL_0_REAL) && stDelta.z.ExIsLessEquals(KCDefine.B_VAL_0_REAL)) ? new Vector3Int((int)(stDelta.x / a_stSize.x), (int)(stDelta.y / -a_stSize.y), a_stSize.z.ExIsLessEquals(KCDefine.B_VAL_0_REAL) ? KCDefine.B_VAL_0_INT : (int)(stDelta.z / -a_stSize.z)) : KCDefine.B_IDX_INVALID_3D;
 	}
 
-	/** 인덱스 정보 => 인덱스로 변환한다 */
-	public static Vector3Int ExToIdx(this STIdxInfo a_stSender) {
-		return new Vector3Int(a_stSender.m_nIdx01, a_stSender.m_nIdx02, a_stSender.m_nIdx03);
-	}
-
 	/** 인덱스 => 위치로 변환한다 */
 	public static Vector3 ExToPos(this Vector2Int a_stSender, Vector3 a_stOffset, Vector3 a_stSize, int a_nZ = KCDefine.B_VAL_0_INT) {
 		return a_stSender.ExTo3D(a_nZ).ExToPos(a_stOffset, a_stSize);
@@ -343,16 +337,6 @@ public static partial class CExtension {
 		return new Vector3((a_stSender.x * a_stSize.x) + a_stOffset.x, (a_stSender.y * -a_stSize.y) + a_stOffset.y, (a_stSender.z * -a_stSize.z) + a_stOffset.z);
 	}
 
-	/** 인덱스 => 인덱스 정보로 변환한다 */
-	public static STIdxInfo ExToIdxInfo(this Vector2Int a_stSender, int a_nZ = KCDefine.B_VAL_0_INT) {
-		return a_stSender.ExTo3D(a_nZ).ExToIdxInfo();
-	}
-
-	/** 인덱스 => 인덱스 정보로 변환한다 */
-	public static STIdxInfo ExToIdxInfo(this Vector3Int a_stSender) {
-		return new STIdxInfo(a_stSender.x, a_stSender.y, a_stSender.z);
-	}
-	
 	/** 문자열 => Base64 문자열로 변환한다 */
 	public static string ExToBase64Str(this string a_oSender, System.Text.Encoding a_oEncoding = null) {
 		CFunc.Assert(a_oSender.ExIsValid());

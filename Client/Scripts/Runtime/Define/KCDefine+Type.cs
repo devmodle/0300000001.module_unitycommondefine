@@ -185,29 +185,54 @@ public struct STIDInfo {
 [MessagePackObject]
 [System.Serializable]
 public struct STIdxInfo : System.IEquatable<STIdxInfo> {
-	[Key(0)] public int m_nIdx01;
-	[Key(1)] public int m_nIdx02;
-	[Key(2)] public int m_nIdx03;
+	[Key(0)] public int m_nIdxA;
+	[Key(1)] public int m_nIdxB;
+	[Key(2)] public int m_nIdxC;
 
 	#region 상수
 	public static readonly STIdxInfo INVALID = new STIdxInfo() {
-		m_nIdx01 = KCDefine.B_IDX_INVALID, m_nIdx02 = KCDefine.B_IDX_INVALID, m_nIdx03 = KCDefine.B_IDX_INVALID
+		m_nIdxA = KCDefine.B_IDX_INVALID, 
+		m_nIdxB = KCDefine.B_IDX_INVALID, 
+		m_nIdxC = KCDefine.B_IDX_INVALID
 	};
 	#endregion // 상수
 
 	#region IEquatable
 	/** 동일 여부를 검사한다 */
 	public bool Equals(STIdxInfo a_stIdxInfo) {
-		return m_nIdx01 == a_stIdxInfo.m_nIdx01 && m_nIdx02 == a_stIdxInfo.m_nIdx02 && m_nIdx03 == a_stIdxInfo.m_nIdx03;
+		return m_nIdxA == a_stIdxInfo.m_nIdxA && 
+			m_nIdxB == a_stIdxInfo.m_nIdxB && m_nIdxC == a_stIdxInfo.m_nIdxC;
 	}
 	#endregion // IEquatable
 
+	#region operator
+	/** 인덱스 정보 => 인덱스로 변환한다 */
+	public static implicit operator Vector2Int(STIdxInfo a_stSender) {
+		return new Vector2Int(a_stSender.m_nIdxA, a_stSender.m_nIdxB);
+	}
+
+	/** 인덱스 정보 => 인덱스로 변환한다 */
+	public static implicit operator Vector3Int(STIdxInfo a_stSender) {
+		return new Vector3Int(a_stSender.m_nIdxA, a_stSender.m_nIdxB, a_stSender.m_nIdxC);
+	}
+
+	/** 인덱스 => 인덱스 정보로 변환한다 */
+	public static implicit operator STIdxInfo(Vector2Int a_stSender) {
+		return new STIdxInfo(a_stSender.x, a_stSender.y, KCDefine.B_VAL_0_INT);
+	}
+
+	/** 인덱스 => 인덱스 정보로 변환한다 */
+	public static implicit operator STIdxInfo(Vector3Int a_stSender) {
+		return new STIdxInfo(a_stSender.x, a_stSender.y, a_stSender.z);
+	}
+	#endregion // operator
+
 	#region 함수
 	/** 생성자 */
-	public STIdxInfo(int a_nIdx01, int a_nIdx02, int a_nIdx03 = KCDefine.B_IDX_INVALID) {
-		m_nIdx01 = a_nIdx01;
-		m_nIdx02 = a_nIdx02;
-		m_nIdx03 = a_nIdx03;
+	public STIdxInfo(int a_nIdx01, int a_nIdx02, int a_nIdx03 = KCDefine.B_VAL_0_INT) {
+		m_nIdxA = a_nIdx01;
+		m_nIdxB = a_nIdx02;
+		m_nIdxC = a_nIdx03;
 	}
 	#endregion // 함수
 }

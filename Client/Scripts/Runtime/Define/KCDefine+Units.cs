@@ -44,8 +44,8 @@ public static partial class KCDefine {
 	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
 	public const int B_UNIT_MICRO_SECS_PER_SEC = 1000000;
 
+	public const int B_UNIT_CENTI_METER = 100;
 	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;
-	public const int B_UNIT_MILLI_METER_PER_METER = 1000;
 
 	public const int B_UNIT_DIGITS_TEN = 10;
 	public const int B_UNIT_DIGITS_HUNDRED = 100;
@@ -55,16 +55,11 @@ public static partial class KCDefine {
 	// 변환 }
 
 	// 해상도 {
+	public const float B_UNIT_SCALE = 1.0f / (float)KCDefine.B_UNIT_CENTI_METER;
+	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f;
+
 	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
 	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
-
-#if !MODE_2D_ENABLE || UNIT_SCALE_ADJUST_ENABLE
-	public const float B_UNIT_SCALE = 1.0f / (float)KCDefine.B_UNIT_MILLI_METER_PER_METER;
-	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f;
-#else
-	public const float B_UNIT_SCALE = 1.0f;
-	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f / (float)KCDefine.B_UNIT_MILLI_METER_PER_METER;
-#endif // #if !MODE_2D_ENABLE || UNIT_SCALE_ADJUST_ENABLE
 	// 해상도 }
 
 	// 식별자 {

@@ -95,8 +95,8 @@ public enum EVecType {
 public enum EGridType {
 	NONE = -1,
 	SCALE,
-	SCROLL_H,
 	SCROLL_V,
+	SCROLL_H,
 	[HideInInspector] MAX_VAL
 }
 

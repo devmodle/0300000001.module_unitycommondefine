@@ -30,17 +30,20 @@ public static partial class CExtension {
 	}
 
 	/** 타입 => 지정 타입으로 변환한다 */
-	public static Dictionary<KDest, VDest> ExToTypes<KSrc, VSrc, KDest, VDest>(this Dictionary<KSrc, VSrc> a_oSender) {
+	public static Dictionary<KDest, VDest> ExToTypes<KSrc, VSrc, KDest, VDest>(this Dictionary<KSrc, VSrc> a_oSender) where KSrc : class where VSrc : class where KDest : class where VDest : class {
 		CFunc.Assert(a_oSender != null);
 		var oTypeDict = new Dictionary<KDest, VDest>();
 
 		foreach(var stKeyVal in a_oSender) {
+			var tDestKey = stKeyVal.Key as KDest;
+			var tDestVal = stKeyVal.Value as VDest;
+
 			// 타입 변환이 불가능 할 경우
-			if(!(stKeyVal.Key is KDest) && !(stKeyVal.Value is VDest)) {
+			if(tDestKey == null || tDestVal == null) {
 				continue;
 			}
 
-			oTypeDict.Add((KDest)stKeyVal.Key, (VDest)stKeyVal.Value);
+			oTypeDict.Add(tDestKey, tDestVal);
 		}
 
 		return oTypeDict;

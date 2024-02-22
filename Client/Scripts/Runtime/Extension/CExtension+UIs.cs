@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 using TMPro;
+using DanielLochner.Assets.SimpleScrollSnap;
 
 /** 확장 클래스 - UI */
 public static partial class CExtension {
@@ -232,7 +233,7 @@ public static partial class CExtension {
 
 		// 리스너 추가가 불가능 할 경우
 		if(a_oSender == null || a_oCallback == null) {
-			reutrn;
+			return;
 		}
 
 		// 리셋 모드 일 경우
@@ -251,7 +252,7 @@ public static partial class CExtension {
 
 		// 리스너 추가가 불가능 할 경우
 		if(a_oSender == null || a_oCallback == null) {
-			reutrn;
+			return;
 		}
 
 		// 리셋 모드 일 경우
@@ -394,7 +395,7 @@ public static partial class CExtension {
 
 		// 리스너 추가가 불가능 할 경우
 		if(a_oSender == null || a_oCallback == null) {
-			reutrn;
+			return;
 		}
 
 		// 리셋 모드 일 경우
