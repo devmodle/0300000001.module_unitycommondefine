@@ -234,7 +234,33 @@ public static partial class CExtension {
 		return a_oSender.FindIndex(a_oCompare);
 	}
 
-	/** 리스트를 복사한다 */
+	/** 값을 안정 정렬한다 */
+	public static void ExStableSort<T>(this List<T> a_oSender, System.Comparison<T> a_oCompare, bool a_bIsAssert = true) {
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
+
+		// 안정 정렬이 불가능 할 경우
+		if(a_oSender == null || a_oCompare == null) {
+			return;
+		}
+
+		for(int i = 1; i < a_oSender.Count; ++i) {
+			int j = 0;
+			var tVal = a_oSender[i];
+
+			for(j = i - 1; j >= KCDefine.B_VAL_0_INT; --j) {
+				// 정렬 진행이 필요 없을 경우
+				if(a_oCompare(a_oSender[j], tVal) <= KCDefine.B_COMPARE_EQUALS) {
+					break;
+				}
+
+				a_oSender[j + KCDefine.B_VAL_1_INT] = a_oSender[j];
+			}
+
+			a_oSender[j + KCDefine.B_VAL_1_INT] = tVal;
+		}
+	}
+
+	/** 리스트를 이동한다 */
 	public static void ExCopyTo<TSrc, TDest>(this List<TSrc> a_oSender,
 		List<TDest> a_oDestValList, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
 
@@ -253,6 +279,79 @@ public static partial class CExtension {
 		for(int i = 0; i < a_oSender.Count; ++i) {
 			a_oDestValList.Add(a_oCallback(a_oSender[i]));
 		}
+	}
+
+	/** 리스트 => 비트 마스크로 변환한다 */
+	public static int ExToBitmask(this List<int> a_oSender) {
+		CFunc.Assert(a_oSender != null);
+		int nVal = KCDefine.B_VAL_0_INT;
+
+		for(int i = 0; i < a_oSender.Count; ++i) {
+			nVal |= KCDefine.B_VAL_1_INT.ExToLShiftBits(a_oSender[i]);
+		}
+
+		return nVal;
+	}
+
+	/** 리스트 => 문자열로 변환한다 */
+	public static string ExToStr<T>(this List<T> a_oSender, string a_oToken = KCDefine.B_TEXT_EMPTY) {
+		CFunc.Assert(a_oSender != null && a_oToken != null);
+		var oStrBuilder = new System.Text.StringBuilder();
+
+		for(int i = 0; i < a_oSender.Count; ++i) {
+			oStrBuilder.Append(a_oSender[i]);
+			oStrBuilder.Append((i < a_oSender.Count - KCDefine.B_VAL_1_INT) ? a_oToken : string.Empty);
+		}
+
+		return oStrBuilder.ToString();
+	}
+
+	/** 인덱스 정보 => 인덱스로 변환한다 */
+	public static List<Vector3Int> ExToIndices(this List<STIdxInfo> a_oSender) {
+		CFunc.Assert(a_oSender != null);
+		var oIdxList = new List<Vector3Int>();
+
+		for(int i = 0; i < a_oSender.Count; ++i) {
+			oIdxList.Add(a_oSender[i].ExToIdx());
+		}
+
+		return oIdxList;
+	}
+
+	/** 인덱스 => 위치로 변환한다 */
+	public static List<Vector3> ExToPositions(this List<Vector2Int> a_oSender, Vector3 a_stOffset, Vector3 a_stSize) {
+		CFunc.Assert(a_oSender != null);
+		var oPosList = new List<Vector3>();
+
+		for(int i = 0; i < a_oSender.Count; ++i) {
+			oPosList.Add(a_oSender[i].ExToPos(a_stOffset, a_stSize));
+		}
+
+		return oPosList;
+	}
+
+	/** 인덱스 => 위치로 변환한다 */
+	public static List<Vector3> ExToPositions(this List<Vector3Int> a_oSender, Vector3 a_stOffset, Vector3 a_stSize) {
+		CFunc.Assert(a_oSender != null);
+		var oPosList = new List<Vector3>();
+
+		for(int i = 0; i < a_oSender.Count; ++i) {
+			oPosList.Add(a_oSender[i].ExToPos(a_stOffset, a_stSize));
+		}
+
+		return oPosList;
+	}
+
+	/** 인덱스 => 인덱스 정보로 변환한다 */
+	public static List<STIdxInfo> ExToIdxInfos(this List<Vector3Int> a_oSender) {
+		CFunc.Assert(a_oSender != null);
+		var oIdxInfoList = new List<STIdxInfo>();
+
+		for(int i = 0; i < a_oSender.Count; ++i) {
+			oIdxInfoList.Add(a_oSender[i].ExToIdxInfo());
+		}
+
+		return oIdxInfoList;
 	}
 	#endregion // 제네릭 클래스 함수
 }

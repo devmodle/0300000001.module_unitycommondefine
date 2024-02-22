@@ -206,6 +206,18 @@ public static partial class CExtension {
 
 		a_oSender.pixelsPerUnitMultiplier = KCDefine.B_VAL_1_REAL;
 	}
+
+	/** 상태를 리셋한다 */
+	public static void ExReset(this RawImage a_oSender, bool a_bIsAssert = true) {
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
+
+		// 상태 리셋이 불가능 할 경우
+		if(a_oSender == null) {
+			return;
+		}
+
+		a_oSender.pixelsPerUnitMultiplier = KCDefine.B_VAL_1_REAL;
+	}
 	#endregion // 클래스 함수
 }
 
@@ -216,11 +228,10 @@ public static partial class CExtension {
 	public static void ExAddListener(this Button a_oSender, 
 		UnityAction a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
 
-		bool bIsValid = a_oSender != null && a_oCallback != null;
-		CFunc.Assert(!a_bIsAssert || bIsValid);
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(!bIsValid) {
+		if(a_oSender == null || a_oCallback == null) {
 			reutrn;
 		}
 
@@ -236,11 +247,10 @@ public static partial class CExtension {
 	public static void ExAddListener(this Slider a_oSender, 
 		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
 
-		bool bIsValid = a_oSender != null && a_oCallback != null;
-		CFunc.Assert(!a_bIsAssert || bIsValid);
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(!bIsValid) {
+		if(a_oSender == null || a_oCallback == null) {
 			reutrn;
 		}
 
@@ -380,11 +390,10 @@ public static partial class CExtension {
 	public static void ExAddListener(this Scrollbar a_oSender, 
 		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
 
-		bool bIsValid = a_oSender != null && a_oCallback != null;
-		CFunc.Assert(!a_bIsAssert || bIsValid);
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(!bIsValid) {
+		if(a_oSender == null || a_oCallback == null) {
 			reutrn;
 		}
 
@@ -400,11 +409,10 @@ public static partial class CExtension {
 	public static void ExAddListener(this SimpleScrollSnap a_oSender, 
 		UnityAction<int, int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
 
-		bool bIsValid = a_oSender != null && a_oCallback != null;
-		CFunc.Assert(!a_bIsAssert || bIsValid);
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(!bIsValid) {
+		if(a_oSender == null || a_oCallback == null) {
 			return;
 		}
 

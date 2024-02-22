@@ -83,18 +83,6 @@ public static partial class CExtension {
 		oMainModule.scalingMode = ParticleSystemScalingMode.Hierarchy;
 	}
 
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
 	/** 효과를 실행한다 */
 	public static void ExPlay(this AudioSource a_oSender, AudioClip a_oClip, bool a_bIsLoop, bool a_bIs3DSnd, bool a_bIsAssert = true) {
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oClip != null));
@@ -364,55 +352,7 @@ public static partial class CExtension {
 	public static STIdxInfo ExToIdxInfo(this Vector3Int a_stSender) {
 		return new STIdxInfo(a_stSender.x, a_stSender.y, a_stSender.z);
 	}
-
-	/** 인덱스 정보 => 인덱스로 변환한다 */
-	public static List<Vector3Int> ExToIndices(this List<STIdxInfo> a_oSender) {
-		CFunc.Assert(a_oSender != null);
-		var oIdxList = new List<Vector3Int>();
-
-		for(int i = 0; i < a_oSender.Count; ++i) {
-			oIdxList.Add(a_oSender[i].ExToIdx());
-		}
-
-		return oIdxList;
-	}
-
-	/** 인덱스 => 위치로 변환한다 */
-	public static List<Vector3> ExToPositions(this List<Vector2Int> a_oSender, Vector3 a_stOffset, Vector3 a_stSize) {
-		CFunc.Assert(a_oSender != null);
-		var oPosList = new List<Vector3>();
-
-		for(int i = 0; i < a_oSender.Count; ++i) {
-			oPosList.Add(a_oSender[i].ExToPos(a_stOffset, a_stSize));
-		}
-
-		return oPosList;
-	}
-
-	/** 인덱스 => 위치로 변환한다 */
-	public static List<Vector3> ExToPositions(this List<Vector3Int> a_oSender, Vector3 a_stOffset, Vector3 a_stSize) {
-		CFunc.Assert(a_oSender != null);
-		var oPosList = new List<Vector3>();
-
-		for(int i = 0; i < a_oSender.Count; ++i) {
-			oPosList.Add(a_oSender[i].ExToPos(a_stOffset, a_stSize));
-		}
-
-		return oPosList;
-	}
-
-	/** 인덱스 => 인덱스 정보로 변환한다 */
-	public static List<STIdxInfo> ExToIdxInfos(this List<Vector3Int> a_oSender) {
-		CFunc.Assert(a_oSender != null);
-		var oIdxInfoList = new List<STIdxInfo>();
-
-		for(int i = 0; i < a_oSender.Count; ++i) {
-			oIdxInfoList.Add(a_oSender[i].ExToIdxInfo());
-		}
-
-		return oIdxInfoList;
-	}
-
+	
 	/** 문자열 => Base64 문자열로 변환한다 */
 	public static string ExToBase64Str(this string a_oSender, System.Text.Encoding a_oEncoding = null) {
 		CFunc.Assert(a_oSender.ExIsValid());

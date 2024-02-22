@@ -33,11 +33,10 @@ public static partial class CExtension {
 
 	/** 2 차원 카메라를 설정한다 */
 	public static void ExSetup2D(this Camera a_oSender, float a_fPlaneHeight, bool a_bIsAssert = true) {
-		bool bIsValid = a_oSender != null && a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL);
-		CFunc.Assert(!a_bIsAssert || bIsValid);
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL)));
 
 		// 카메라 설정이 불가능 할 경우
-		if(!bIsValid) {
+		if(a_oSender == null || a_fPlaneHeight.ExIsLessEquals(KCDefine.B_VAL_0_REAL)) {
 			return;
 		}
 
@@ -46,14 +45,19 @@ public static partial class CExtension {
 	}
 
 	/** 3 차원 카메라를 설정한다 */
-	public static void ExSetup3D(this Camera a_oSender, float a_fPlaneHeight, float a_fPlaneDistance, bool a_bIsAssert = true) {
-		bool bIsValid = a_oSender != null && 
-			a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL) && a_fPlaneDistance.ExIsGreat(KCDefine.B_VAL_0_REAL);
+	public static void ExSetup3D(this Camera a_oSender, 
+		float a_fPlaneHeight, float a_fPlaneDistance, bool a_bIsAssert = true) {
 
-		CFunc.Assert(!a_bIsAssert || bIsValid);
+		CFunc.Assert(!a_bIsAssert || 
+			(a_oSender != null && a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL) && a_fPlaneDistance.ExIsGreat(KCDefine.B_VAL_0_REAL)));
+
+		bool bIsValidA = a_oSender != null;
+
+		bool bIsValidB = a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL) && 
+			a_fPlaneDistance.ExIsGreat(KCDefine.B_VAL_0_REAL);
 
 		// 카메라 설정이 불가능 할 경우
-		if(!bIsValid) {
+		if(!bIsValidA || !bIsValidB) {
 			return;
 		}
 

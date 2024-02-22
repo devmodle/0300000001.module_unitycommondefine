@@ -33,18 +33,6 @@ public static partial class CExtension {
 		return oBitList;
 	}
 
-	/** 리스트 => 비트로 변환한다 */
-	public static int ExToBits(this List<int> a_oSender) {
-		CFunc.Assert(a_oSender != null);
-		int nVal = KCDefine.B_VAL_0_INT;
-
-		for(int i = 0; i < a_oSender.Count; ++i) {
-			nVal |= KCDefine.B_VAL_1_INT.ExToLShiftBits(a_oSender[i]);
-		}
-
-		return nVal;
-	}
-
 	/** 숫자 => 개수 문자열로 변환한다 */
 	public static string ExToNumStr(this decimal a_dmSender, bool a_bIsExtraNumStr = true, SystemLanguage a_eSystemLanguage = SystemLanguage.English) {
 		var oNumTokenDict = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.B_NUM_TOKEN_DICT_KOREAN : KCDefine.B_NUM_TOKEN_DICT_ENGLISH;
@@ -221,71 +209,7 @@ public static partial class CExtension {
 	#endregion // 클래스 함수
 
 	#region 제네릭 클래스 함수
-	/** 상태를 리셋한다 */
-	public static void ExReset<T>(this T[] a_oSender, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 배열이 존재 할 경우
-		if(a_oSender != null) {
-			for(int i = 0; i < a_oSender.Length; ++i) {
-				a_oSender[i] = default;
-			}
-		}
-	}
-
-	/** 상태를 리셋한다 */
-	public static void ExReset<T>(this T[,] a_oSender, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 배열이 존재 할 경우
-		if(a_oSender != null) {
-			for(int i = 0; i < a_oSender.GetLength(KCDefine.B_VAL_0_INT); ++i) {
-				for(int j = 0; j < a_oSender.GetLength(KCDefine.B_VAL_1_INT); ++j) {
-					a_oSender[i, j] = default;
-				}
-			}
-		}
-	}
-
-	/** 값을 안전 정렬한다 */
-	public static void ExStableSort<T>(this T[] a_oSender, System.Comparison<T> a_oCompare, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
-
-		// 배열이 존재 할 경우
-		if(a_oSender != null && a_oCompare != null) {
-			for(int i = 1; i < a_oSender.Length; ++i) {
-				int j = 0;
-				var tVal = a_oSender[i];
-
-				for(j = i - 1; j >= KCDefine.B_VAL_0_INT && a_oCompare(a_oSender[j], tVal) > KCDefine.B_COMPARE_EQUALS; --j) {
-					a_oSender[j + KCDefine.B_VAL_1_INT] = a_oSender[j];
-				}
-
-				a_oSender[j + KCDefine.B_VAL_1_INT] = tVal;
-			}
-		}
-	}
-
-	/** 값을 안전 정렬한다 */
-	public static void ExStableSort<T>(this List<T> a_oSender, System.Comparison<T> a_oCompare, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
-
-		// 리스트가 존재 할 경우
-		if(a_oSender != null && a_oCompare != null) {
-			for(int i = 1; i < a_oSender.Count; ++i) {
-				int j = 0;
-				var tVal = a_oSender[i];
-
-				for(j = i - 1; j >= KCDefine.B_VAL_0_INT && a_oCompare(a_oSender[j], tVal) > KCDefine.B_COMPARE_EQUALS; --j) {
-					a_oSender[j + KCDefine.B_VAL_1_INT] = a_oSender[j];
-				}
-
-				a_oSender[j + KCDefine.B_VAL_1_INT] = tVal;
-			}
-		}
-	}
-
-	/** 값을 안전 정렬한다 */
+	/** 값을 안정 정렬한다 */
 	public static void ExStableSort<V>(this Dictionary<int, V> a_oSender, System.Comparison<V> a_oCompare, bool a_bIsAssert = true) {
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
@@ -322,19 +246,6 @@ public static partial class CExtension {
 		for(int i = 0; i < a_oSender.Length; ++i) {
 			oStrBuilder.Append(a_oSender[i]);
 			oStrBuilder.Append((i < a_oSender.Length - KCDefine.B_VAL_1_INT) ? a_oToken : string.Empty);
-		}
-
-		return oStrBuilder.ToString();
-	}
-
-	/** 리스트 => 문자열로 변환한다 */
-	public static string ExToStr<T>(this List<T> a_oSender, string a_oToken) {
-		CFunc.Assert(a_oSender != null && a_oToken.ExIsValid());
-		var oStrBuilder = new System.Text.StringBuilder();
-
-		for(int i = 0; i < a_oSender.Count; ++i) {
-			oStrBuilder.Append(a_oSender[i]);
-			oStrBuilder.Append((i < a_oSender.Count - KCDefine.B_VAL_1_INT) ? a_oToken : string.Empty);
 		}
 
 		return oStrBuilder.ToString();
