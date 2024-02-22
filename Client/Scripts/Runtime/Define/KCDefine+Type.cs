@@ -33,6 +33,12 @@ public partial interface IUpdatable {
 	public void OnCustomUpdate(float a_fDeltaTime);
 }
 
+/** 풀링 인터페이스 */
+public partial interface IPoolable {
+	/** 풀링 여부를 변경한다 */
+	public void SetIsPooling(bool a_bIsPooling);
+}
+
 /** 콜백 정보 */
 public struct STCallbackInfo {
 	public string m_oKey;
