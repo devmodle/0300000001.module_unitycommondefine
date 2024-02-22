@@ -312,14 +312,16 @@ public static partial class CExtension {
 		var oIdxList = new List<Vector3Int>();
 
 		for(int i = 0; i < a_oSender.Count; ++i) {
-			oIdxList.Add(a_oSender[i].ExToIdx());
+			oIdxList.Add((Vector3Int)a_oSender[i]);
 		}
 
 		return oIdxList;
 	}
 
 	/** 인덱스 => 위치로 변환한다 */
-	public static List<Vector3> ExToPositions(this List<Vector2Int> a_oSender, Vector3 a_stOffset, Vector3 a_stSize) {
+	public static List<Vector3> ExToPositions(this List<Vector2Int> a_oSender, 
+		Vector3 a_stOffset, Vector3 a_stSize) {
+
 		CFunc.Assert(a_oSender != null);
 		var oPosList = new List<Vector3>();
 
@@ -331,7 +333,9 @@ public static partial class CExtension {
 	}
 
 	/** 인덱스 => 위치로 변환한다 */
-	public static List<Vector3> ExToPositions(this List<Vector3Int> a_oSender, Vector3 a_stOffset, Vector3 a_stSize) {
+	public static List<Vector3> ExToPositions(this List<Vector3Int> a_oSender, 
+		Vector3 a_stOffset, Vector3 a_stSize) {
+
 		CFunc.Assert(a_oSender != null);
 		var oPosList = new List<Vector3>();
 
@@ -348,24 +352,26 @@ public static partial class CExtension {
 		var oIdxInfoList = new List<STIdxInfo>();
 
 		for(int i = 0; i < a_oSender.Count; ++i) {
-			oIdxInfoList.Add(a_oSender[i].ExToIdxInfo());
+			oIdxInfoList.Add((STIdxInfo)a_oSender[i]);
 		}
 
 		return oIdxInfoList;
 	}
 
 	/** 타입 => 지정 타입으로 변환한다 */
-	public static List<TDest> ExToTypes<TSrc, TDest>(this List<TSrc> a_oSender) {
+	public static List<TDest> ExToTypes<TSrc, TDest>(this List<TSrc> a_oSender) where TSrc : class where TDest : class {
 		CFunc.Assert(a_oSender != null);
 		var oTypeList = new List<TDest>();
 
 		for(int i = 0; i < a_oSender.Count; ++i) {
+			var tDest = a_oSender[i] as TDest;
+
 			// 타입 변환이 불가능 할 경우
-			if(!(a_oSender[i] is TDest)) {
+			if(tDest == null) {
 				continue;
 			}
 
-			oTypeList.Add((TDest)a_oSender[i]);
+			oTypeList.Add(tDest);
 		}
 
 		return oTypeList;

@@ -102,7 +102,7 @@ public static partial class CAccess {
 #if UNITY_IOS || UNITY_ANDROID
 			return EDeviceType.PHONE;
 #else
-			return CAccess.m_oDeviceTypeDict.GetValueOrDefault(Application.platform, EDeviceType.UNKNOWN);
+			return CAccess.m_oDeviceTypeDict.ExGetVal(Application.platform, EDeviceType.UNKNOWN);
 #endif // #if UNITY_IOS
 		}
 	}
@@ -277,7 +277,7 @@ public static partial class CAccess {
 
 	/** 대기 객체를 반환한다 */
 	private static WaitForSeconds GetWaitForSeconds(float a_fDelay) {
-		var oWaitForSecs = CAccess.m_oWaitForSecsDict.GetValueOrDefault(a_fDelay) ?? 
+		var oWaitForSecs = CAccess.m_oWaitForSecsDict.ExGetVal(a_fDelay) ?? 
 			new WaitForSeconds(a_fDelay);
 
 		CAccess.m_oWaitForSecsDict.TryAdd(a_fDelay, oWaitForSecs);
@@ -286,7 +286,7 @@ public static partial class CAccess {
 
 	/** 대기 객체를 반환한다 */
 	private static WaitForSecondsRealtime GetWaitForSecondsRealtime(float a_fDelay) {
-		var oWaitForSecs = CAccess.m_oWaitForSecsRealtimeDict.GetValueOrDefault(a_fDelay) ?? 
+		var oWaitForSecs = CAccess.m_oWaitForSecsRealtimeDict.ExGetVal(a_fDelay) ?? 
 			new WaitForSecondsRealtime(a_fDelay);
 
 		CAccess.m_oWaitForSecsRealtimeDict.TryAdd(a_fDelay, oWaitForSecs);

@@ -62,7 +62,7 @@ public static partial class CExtension {
 		}
 
 		float fHeight = a_fPlaneHeight / KCDefine.B_VAL_2_REAL;
-		float fFieldOfView = Mathf.Atan(fHalfHeight / a_fPlaneDistance);
+		float fFieldOfView = Mathf.Atan(fHeight / a_fPlaneDistance);
 
 		a_oSender.orthographic = false;
 		a_oSender.fieldOfView = (fFieldOfView * KCDefine.B_VAL_2_REAL) * Mathf.Rad2Deg;
