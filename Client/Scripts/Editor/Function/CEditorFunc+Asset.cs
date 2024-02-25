@@ -27,6 +27,7 @@ public static partial class CEditorFunc {
 
 	/** 에셋을 저장한다 */
 	public static void SaveAsset(Object a_oObj) {
+		EditorUtility.SetDirty(a_oObj);
 		AssetDatabase.SaveAssetIfDirty(a_oObj);
 	}
 
