@@ -26,7 +26,7 @@ public static partial class KCEditorDefine {
 	// 기타 }
 
 	// 단위
-	public const float B_EDITOR_OPTS_CASCADE_BORDER_PERCENT = 0.15f;
+	public const float B_EDITOR_OPTS_CASCADE_BORDER_PERCENT = 0.35f;
 	public const float B_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT = 0.15f;
 	#endregion // 컴파일 상수
 
@@ -37,8 +37,8 @@ public static partial class KCEditorDefine {
 	};
 
 	// 단위
-	public static readonly Vector2 B_EDITOR_OPTS_CASCADE_3_SPLIT_PERCENT = new Vector2(0.15f, 0.15f + (0.1f * 2.0f));
-	public static readonly Vector3 B_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(0.15f, 0.15f + (0.1f * 2.0f), 0.15f + (0.1f * 2.0f) + (0.1f * 3));
+	public static readonly Vector2 B_EDITOR_OPTS_CASCADE_3_SPLIT_PERCENT = new Vector2(KCEditorDefine.B_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT, KCEditorDefine.B_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT + (0.1f * 2.0f));
+	public static readonly Vector3 B_EDITOR_OPTS_CASCADE_4_SPLIT_PERCENT = new Vector3(KCEditorDefine.B_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT, KCEditorDefine.B_EDITOR_OPTS_CASCADE_2_SPLIT_PERCENT + (0.1f * 2.0f), 0.15f + (0.1f * 2.0f) + (0.1f * 3.0f));
 	#endregion // 런타임 상수
 }
 #endif // #if UNITY_EDITOR
