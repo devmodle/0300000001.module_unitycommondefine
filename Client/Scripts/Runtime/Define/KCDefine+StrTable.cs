@@ -7,6 +7,10 @@ using UnityEngine.Events;
 /** 상수 - 문자열 테이블 */
 public static partial class KCDefine {
 	#region 컴파일 상수
+	// 기타
+	public const string ST_KEY_STR_T_ID = "ID";
+	public const string ST_KEY_STR_T_STR = "Str";
+
 	// 종료 팝업
 	public const string ST_KEY_QUIT_P_MSG = "QUIT_P_MSG";
 

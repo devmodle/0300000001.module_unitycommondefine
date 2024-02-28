@@ -110,7 +110,10 @@ public static partial class CAccess {
 	public static Rect SafeArea {
 		get {
 #if UNITY_EDITOR
-			return UnityEngine.Device.Application.isEditor ? new Rect(KCDefine.B_VAL_0_REAL, KCDefine.B_VAL_0_REAL, Camera.main.pixelWidth, Camera.main.pixelHeight) : Screen.safeArea;
+			var stSafeArea = new Rect(KCDefine.B_VAL_0_REAL, 
+				KCDefine.B_VAL_0_REAL, Camera.main.pixelWidth, Camera.main.pixelHeight);
+
+			return UnityEngine.Device.Application.isEditor ? stSafeArea : Screen.safeArea;
 #else
 			return Screen.safeArea;
 #endif // #if UNITY_EDITOR
