@@ -598,15 +598,6 @@ public static partial class KCDefine {
 	public const float U_UNIT_INPUT_M_INPUT_ACTIONS_PER_SEC = 10.0f;
 	// 입력 모듈 }
 
-	// 문자열 테이블
-	public const string U_KEY_STR_T_ID = "ID";
-	public const string U_KEY_STR_T_STR = "Str";
-
-	// 값 테이블
-	public const string U_KEY_VAL_T_ID = "ID";
-	public const string U_KEY_VAL_T_VAL = "Val";
-	public const string U_KEY_VAL_T_VAL_TYPE = "ValType";
-
 	// 서비스 관리자 {
 	public const string U_KEY_SERVICES_M_RECEIPT = "json";
 	public const string U_KEY_SERVICES_M_PAYLOAD = "Payload";
@@ -717,10 +708,6 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
 
-	public static readonly string U_ASSET_P_G_NORM_QUALITY_URP = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityURPAsset";
-	public static readonly string U_ASSET_P_G_HIGH_QUALITY_URP = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityURPAsset";
-	public static readonly string U_ASSET_P_G_ULTRA_QUALITY_URP = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityURPAsset";
-
 	public static readonly string U_ASSET_P_G_NORM_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityLightingSettings";
 	public static readonly string U_ASSET_P_G_HIGH_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityLightingSettings";
 	public static readonly string U_ASSET_P_G_ULTRA_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityLightingSettings";
@@ -728,12 +715,6 @@ public static partial class KCDefine {
 	public static readonly string U_ASSET_P_G_NORM_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityPostProcessingSettings";
 	public static readonly string U_ASSET_P_G_HIGH_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityPostProcessingSettings";
 	public static readonly string U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityPostProcessingSettings";
-
-	public static readonly string U_ASSET_P_G_URP_RENDERER_DATA = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRendererData";
-	public static readonly string U_ASSET_P_G_URP_RENDERER_DATA_SSAO = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRendererDataSSAO";
-
-	public static readonly string U_ASSET_P_G_URP_RENDERER_DATA_2D = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRenderData2D";
-	public static readonly string U_ASSET_P_G_URP_RENDERER_DATA_2D_SSAO = $"{KCDefine.B_DIR_P_PIPELINES}{KCDefine.B_DIR_P_GLOBAL}G_URPRenderData2DSSAO";
 
 	public static readonly string U_ASSET_P_G_OPTS_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_OptsInfoTable";
 	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
@@ -818,8 +799,6 @@ public static partial class KCDefine {
 	public static readonly string U_SND_P_G_SFX_POPUP_CLOSE = $"{KCDefine.B_DIR_P_SOUNDS}{KCDefine.B_DIR_P_GLOBAL}G_SFX_PopupClose";
 
 	public static readonly string U_MAT_P_G_SKYBOX = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_Skybox";
-	public static readonly string U_MAT_P_G_URP_LIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_URPLit";
-	public static readonly string U_MAT_P_G_URP_UNLIT = $"{KCDefine.B_DIR_P_MATERIALS}{KCDefine.B_DIR_P_GLOBAL}G_URPUnlit";
 
 	public static readonly string U_IMG_P_ARROW = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}Arrow";
 	public static readonly string U_IMG_P_WHITE = $"{KCDefine.B_PREFIX_U_SPRITE_ATLAS_01}White";
@@ -920,58 +899,6 @@ public static partial class KCDefine {
 	public const int U_QUALITY_ASYNC_UPLOAD_BUFFER_SIZE = 16;
 #endif // #if UNITY_EDITOR
 
-#if DEBUG || DEVELOPMENT_BUILD
-	// 형식 {
-	public const string U_TEXT_FMT_STATIC_DEBUG_MSG = "{0}\n\n{1}";
-	public const string U_TEXT_FMT_DYNAMIC_DEBUG_MSG = "{0}\n\n{1}";
-
-	public const string U_TEXT_FMT_FPS = "FPS: <color=orange>{0:0.0}</color> <color=green>[{1:0.0}]</color>";
-	public const string U_TEXT_FMT_FRAME_TIME = "Frame Time: <color=orange>{0:0.0}</color> ms";
-	public const string U_TEXT_FMT_DEVICE_INFO = "Graphics Device: <color=orange>{0}</color> <color=green>[{1}]</color>";
-
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_01 = "Screen Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_02 = "Canvas Size: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_03 = "SafeArea Offset: <color=orange>{0:0.0}</color>, <color=orange>{1:0.0}</color>, <color=orange>{2:0.0}</color>, <color=orange>{3:0.0}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_04 = "Quality Level: <color=orange>{0}</color>, Target Frame Rate: <color=orange>{1}</color>\n";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_05 = "Persistent Data Path: <color=orange>{0}</color>";
-	public const string U_TEXT_FMT_STATIC_DEBUG_INFO_06 = "\nScreen DPI: <color=orange>{0:0.0}</color>, Banner Ads Height: <color=orange>{1:0.0}</color>";
-
-	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_01 = "Used Heap: <color=orange>{0:0.0}</color> MB, GPU Alloc: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_02 = "Mono Heap: <color=orange>{0:0.0}</color> MB, Mono Used: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_03 = "Temp Alloc: <color=orange>{0:0.0}</color> MB, Total Alloc: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_04 = "Reserved: <color=orange>{0:0.0}</color> MB, Unused Reserved: <color=orange>{1:0.0}</color> MB\n";
-	public const string U_TEXT_FMT_DYNAMIC_DEBUG_INFO_05 = "Time Scale: <color=orange>{0:0.00}</color>";
-	// 형식 }
-
-	// 이름 {
-	public const string U_OBJ_N_SCREEN_FPS_INFO_UIS = "FPSInfoUIs";
-	public const string U_OBJ_N_SCREEN_DEBUG_INFO_UIS = "DebugInfoUIs";
-
-	public const string U_OBJ_N_SCREEN_FPS_TEXT = "FPSText";
-	public const string U_OBJ_N_SCREEN_FRAME_TIME_TEXT = "FrameTimeText";
-	public const string U_OBJ_N_SCREEN_DEVICE_INFO_TEXT = "DeviceInfoText";
-
-	public const string U_OBJ_N_SCREEN_STATIC_DEBUG_TEXT = "StaticDebugText";
-	public const string U_OBJ_N_SCREEN_DYNAMIC_DEBUG_TEXT = "DynamicDebugText";
-
-	public const string U_OBJ_N_SCREEN_FPS_INFO_BTN = "FPSInfoBtn";
-	public const string U_OBJ_N_SCREEN_DEBUG_INFO_BTN = "DebugInfoBtn";
-
-	public const string U_OBJ_N_SCREEN_TIME_SCALE_UP_BTN = "TimeScaleUpBtn";
-	public const string U_OBJ_N_SCREEN_TIME_SCALE_DOWN_BTN = "TimeScaleDownBtn";
-	// 이름 }
-#endif // #if DEBUG || DEVELOPMENT_BUILD
-
-#if GAME_CENTER_MODULE_ENABLE
-	// 식별자
-	public const string U_KEY_GAME_CM_INIT_CALLBACK = "GameCMInitCallback";
-	public const string U_KEY_GAME_CM_LOGIN_CALLBACK = "GameCMLoginCallback";
-	public const string U_KEY_GAME_CM_LOGOUT_CALLBACK = "GameCMLogoutCallback";
-	public const string U_KEY_GAME_CM_UPDATE_RECORD_CALLBACK = "GameCMUpdateRecordCallback";
-	public const string U_KEY_GAME_CM_UPDATE_ACHIEVEMENT_CALLBACK = "GameCMUpdateAchievementCallback";
-	public const string U_KEY_GAME_CM_RECEIVE_SERVER_SIDE_ACCESS_RESULT_CALLBACK = "GameCMReceiveServerSideAccessResultCallback";
-#endif // #if GAME_CENTER_MODULE_ENABLE
-
 #if PLAYFAB_MODULE_ENABLE
 	// 개수
 	public const int U_MAX_NUM_PLAYFAB_M_NOTICES = 10;
@@ -983,11 +910,6 @@ public static partial class KCDefine {
 	public const string U_KEY_PLAYFAB_M_LOGOUT_CALLBACK = "PlayfabMLogoutCallback";
 	public const string U_KEY_PLAYFAB_M_LOAD_SERVER_TIME_CALLBACK = "PlayfabMLoadServerTimeCallback";
 #endif // #if PLAYFAB_MODULE_ENABLE
-
-#if URP_MODULE_ENABLE
-	// 이름
-	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";
-#endif // #if URP_MODULE_ENABLE
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름

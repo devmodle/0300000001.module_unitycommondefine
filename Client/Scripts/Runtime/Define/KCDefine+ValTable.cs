@@ -7,6 +7,11 @@ using UnityEngine.Events;
 /** 상수 - 값 테이블 */
 public static partial class KCDefine {
 	#region 컴파일 상수
+	// 기타
+	public const string VT_KEY_VAL_T_ID = "ID";
+	public const string VT_KEY_VAL_T_VAL = "Val";
+	public const string VT_KEY_VAL_T_VAL_TYPE = "ValType";
+
 	// 광고
 	public const string VT_KEY_DELAY_ADS = "DELAY_ADS";
 	public const string VT_KEY_DELTA_T_ADS = "DELTA_T_ADS";

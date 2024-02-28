@@ -13,7 +13,7 @@ public static partial class CExtension {
 
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
-		// 함수 지연 호출이 불가능 할 경우
+		// 지연 호출이 불가능 할 경우
 		if(a_oSender == null) {
 			return;
 		}
@@ -27,7 +27,7 @@ public static partial class CExtension {
 
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
-		// 함수 지연 호출이 불가능 할 경우
+		// 지연 호출이 불가능 할 경우
 		if(a_oSender == null) {
 			return;
 		}
@@ -41,12 +41,15 @@ public static partial class CExtension {
 			
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
-		// 함수 지연 호출이 불가능 할 경우
+		// 지연 호출이 불가능 할 경우
 		if(a_oSender == null) {
 			return;
 		}
 
-		a_oSender.StartCoroutine(a_oSender.ExCoRepeatCallFunc(a_oCallback, a_fDeltaTime, a_fMaxDeltaTime, a_bIsRealtime));
+		var oEnumerator = a_oSender.ExCoRepeatCallFunc(a_oCallback, 
+			a_fDeltaTime, a_fMaxDeltaTime, a_bIsRealtime);
+
+		a_oSender.StartCoroutine(oEnumerator);
 	}
 	#endregion // 클래스 함수
 }
@@ -55,7 +58,9 @@ public static partial class CExtension {
 public static partial class CExtension {
 	#region 클래스 함수
 	/** 함수를 지연 호출한다 */
-	private static IEnumerator ExCoLateCallFunc(this MonoBehaviour a_oSender, System.Action<MonoBehaviour> a_oCallback) {
+	private static IEnumerator ExCoLateCallFunc(this MonoBehaviour a_oSender, 
+		System.Action<MonoBehaviour> a_oCallback) {
+
 		CFunc.Assert(a_oSender != null);
 
 		try {
@@ -90,7 +95,7 @@ public static partial class CExtension {
 		do {
 			yield return CAccess.CoGetWaitForSecs(a_fDeltaTime, a_bIsRealtime);
 
-			// 함수 반복 호출이 필요 없을 경우
+			// 반복 호출이 필요 없을 경우
 			if(a_oCallback(a_oSender, false)) {
 				break;
 			}
