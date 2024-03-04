@@ -125,43 +125,43 @@ public static partial class CExtension {
 	/** 애니메이션을 시작한다 */
 	public static Sequence ExStartAni(this CFXBase a_oSender, float a_fStartVal, float a_fEndVal, float a_fDuration, System.Action<CFXBase, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false) {
 		CFunc.Assert(a_oSender != null);
-		return CFactory.MakeSequence(CFactory.MakeAni(() => a_oSender.effectFactor, (a_fVal) => a_oSender.effectFactor = a_fVal, () => a_oSender.effectFactor = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime), (a_oAniSender) => a_oCallback?.Invoke(a_oSender, a_oAniSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(CFactory.MakeAni(() => a_oSender.effectFactor, (a_fVal) => a_oSender.effectFactor = a_fVal, () => a_oSender.effectFactor = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 게이지 애니메이션을 시작한다 */
 	public static Sequence ExStartGaugeAni(this Image a_oSender, float a_fStartVal, float a_fEndVal, float a_fDuration, System.Action<Image, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false) {
 		CFunc.Assert(a_oSender != null);
-		return CFactory.MakeSequence(CFactory.MakeAni(() => a_oSender.fillAmount, (a_fVal) => a_oSender.fillAmount = a_fVal, () => a_oSender.fillAmount = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime), (a_oAniSender) => a_oCallback?.Invoke(a_oSender, a_oAniSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(CFactory.MakeAni(() => a_oSender.fillAmount, (a_fVal) => a_oSender.fillAmount = a_fVal, () => a_oSender.fillAmount = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 비율 애니메이션을 시작한다 */
 	public static Sequence ExStartScaleAni(this GameObject a_oSender, Vector3 a_stScale, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false) {
 		CFunc.Assert(a_oSender != null);
-		return CFactory.MakeSequence(a_oSender.transform.DOScale(a_stScale, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAniSender) => a_oCallback?.Invoke(a_oSender, a_oAniSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(a_oSender.transform.DOScale(a_stScale, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 월드 이동 애니메이션을 시작한다 */
 	public static Sequence ExStartWorldMoveAni(this GameObject a_oSender, Vector3 a_stPos, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false) {
 		CFunc.Assert(a_oSender != null);
-		return CFactory.MakeSequence(a_oSender.transform.DOMove(a_stPos, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAniSender) => a_oCallback?.Invoke(a_oSender, a_oAniSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(a_oSender.transform.DOMove(a_stPos, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 로컬 이동 애니메이션을 시작한다 */
 	public static Sequence ExStartLocalMoveAni(this GameObject a_oSender, Vector3 a_stPos, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false) {
 		CFunc.Assert(a_oSender != null);
-		return CFactory.MakeSequence(a_oSender.transform.DOLocalMove(a_stPos, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAniSender) => a_oCallback?.Invoke(a_oSender, a_oAniSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(a_oSender.transform.DOLocalMove(a_stPos, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 월드 경로 애니메이션을 시작한다 */
 	public static Tween ExStartWorldPathAni(this GameObject a_oSender, List<Vector3> a_oPosList, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, bool a_bIsRealtime = false, bool a_bIsLinearPath = false, float a_fDelay = KCDefine.B_VAL_0_REAL) {
 		CFunc.Assert(a_oSender != null && a_oPosList != null);
-		return CFactory.MakeSequence(a_oSender.transform.DOPath(a_oPosList.ToArray(), a_fDuration, a_bIsLinearPath ? PathType.Linear : PathType.CatmullRom).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAniSender) => a_oCallback?.Invoke(a_oSender, a_oAniSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(a_oSender.transform.DOPath(a_oPosList.ToArray(), a_fDuration, a_bIsLinearPath ? PathType.Linear : PathType.CatmullRom).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 로컬 경로 애니메이션을 시작한다 */
 	public static Tween ExStartLocalPathAni(this GameObject a_oSender, List<Vector3> a_oPosList, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, bool a_bIsRealtime = false, bool a_bIsLinearPath = false, float a_fDelay = KCDefine.B_VAL_0_REAL) {
 		CFunc.Assert(a_oSender != null && a_oPosList != null);
-		return CFactory.MakeSequence(a_oSender.transform.DOLocalPath(a_oPosList.ToArray(), a_fDuration, a_bIsLinearPath ? PathType.Linear : PathType.CatmullRom).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAniSender) => a_oCallback?.Invoke(a_oSender, a_oAniSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(a_oSender.transform.DOLocalPath(a_oPosList.ToArray(), a_fDuration, a_bIsLinearPath ? PathType.Linear : PathType.CatmullRom).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 종류 => 타입으로 변환한다 */

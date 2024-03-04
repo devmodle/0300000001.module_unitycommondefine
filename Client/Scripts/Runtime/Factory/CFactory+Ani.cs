@@ -24,29 +24,29 @@ public static partial class CFactory {
 	}
 
 	/** 시퀀스를 생성한다 */
-	public static Sequence MakeSequence(DG.Tweening.Tween a_oAni, 
+	public static Sequence MakeSequence(DG.Tweening.Tween a_oAnim, 
 		System.Action<Sequence> a_oCallback, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsJoin = false, bool a_bIsRealtime = false) {
 
-		CFunc.Assert(a_oAni != null);
+		CFunc.Assert(a_oAnim != null);
 
 		return CFactory.MakeSequence(new List<DG.Tweening.Tween>() {
-			a_oAni
+			a_oAnim
 		}, a_oCallback, a_fDelay, a_bIsJoin, a_bIsRealtime);
 	}
 
 	/** 시퀀스를 생성한다 */
-	public static Sequence MakeSequence(List<DG.Tweening.Tween> a_oAniList, 
+	public static Sequence MakeSequence(List<DG.Tweening.Tween> a_oAnimList, 
 		System.Action<Sequence> a_oCallback, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsJoin = false, bool a_bIsRealtime = false) {
 
-		CFunc.Assert(a_oAniList != null);
+		CFunc.Assert(a_oAnimList != null);
 		var oAni = DOTween.Sequence().SetAutoKill().SetUpdate(a_bIsRealtime);
 
-		for(int i = 0; i < a_oAniList.Count; ++i) {
+		for(int i = 0; i < a_oAnimList.Count; ++i) {
 			// 조인 모드 일 경우
 			if(a_bIsJoin) {
-				oAni.Join(a_oAniList[i]);
+				oAni.Join(a_oAnimList[i]);
 			} else {
-				oAni.Append(a_oAniList[i]);
+				oAni.Append(a_oAnimList[i]);
 			}
 		}
 
