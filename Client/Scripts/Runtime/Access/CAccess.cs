@@ -12,6 +12,12 @@ using System.Diagnostics;
 public static partial class CAccess {
 	#region 클래스 프로퍼티
 	public static bool IsSupportsMSAA => SystemInfo.supportsMultisampledTextures > KCDefine.B_VAL_0_INT;
+	public static bool IsSupportsGPUInstancing => SystemInfo.supportsInstancing;
+
+	public static float LODBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNIT_SCALE;
+	public static float ShadowDepthBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNIT_SCALE;
+	public static float ShadowNormalBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNIT_SCALE;
+
 	public static string MidnightDeltaTimeStr => new System.DateTime(CAccess.MidnightDeltaTime.Ticks).ToString(KCDefine.B_DATE_T_FMT_HH_MM_SS);
 
 	public static System.DateTime MidnightTime => System.DateTime.Today.AddDays(KCDefine.B_VAL_1_REAL);
