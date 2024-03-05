@@ -23,7 +23,7 @@ using Unity.Notifications.iOS;
 #endif // #if NOTI_MODULE_ENABLE
 #endif // #if UNITY_IOS
 
-/** 유틸리티 접근자 확장 클래스 */
+/** 접근자 확장 클래스 */
 public static partial class CAccessExtension {
 	#region 클래스 함수
 	/** 유효 여부를 검사한다 */
@@ -114,11 +114,6 @@ public static partial class CAccessExtension {
 	}
 
 	/** 동일 여부를 검사한다 */
-	public static bool ExIsEquals(this Color a_stSender, Color a_stRhs) {
-		return a_stSender.r.ExIsEquals(a_stRhs.r) && a_stSender.g.ExIsEquals(a_stRhs.g) && a_stSender.b.ExIsEquals(a_stRhs.b) && a_stSender.a.ExIsEquals(a_stRhs.a);
-	}
-
-	/** 동일 여부를 검사한다 */
 	public static bool ExIsEquals(this Bounds a_stSender, Bounds a_stRhs) {
 		return a_stSender.min.ExIsEquals(a_stRhs.min) && a_stSender.max.ExIsEquals(a_stRhs.max);
 	}
@@ -186,43 +181,7 @@ public static partial class CAccessExtension {
 	public static int ExGetMaxVal(this Vector3Int a_stSender) {
 		return Mathf.Max(a_stSender.ExTo2D().ExGetMaxVal(), a_stSender.z);
 	}
-
-	/** 색상을 반환한다 */
-	public static Color ExGetAlphaColor(this Color a_stSender, float a_fAlpha) {
-		a_stSender.a = a_fAlpha;
-		return a_stSender;
-	}
-
-	/** 일반 색상 블럭을 반환한다 */
-	public static ColorBlock ExGetNormColorBlock(this ColorBlock a_stSender, Color a_stColor) {
-		a_stSender.normalColor = a_stColor;
-		return a_stSender;
-	}
-
-	/** 프레스 색상 블럭을 반환한다 */
-	public static ColorBlock ExGetPressColorBlock(this ColorBlock a_stSender, Color a_stColor) {
-		a_stSender.pressedColor = a_stColor;
-		return a_stSender;
-	}
-
-	/** 선택 색상 블럭을 반환한다 */
-	public static ColorBlock ExGetSelColorBlock(this ColorBlock a_stSender, Color a_stColor) {
-		a_stSender.selectedColor = a_stColor;
-		return a_stSender;
-	}
-
-	/** 하이라이트 색상 블럭을 반환한다 */
-	public static ColorBlock ExGetHighlightColorBlock(this ColorBlock a_stSender, Color a_stColor) {
-		a_stSender.highlightedColor = a_stColor;
-		return a_stSender;
-	}
-
-	/** 비활성 색상 블럭을 반환한다 */
-	public static ColorBlock ExGetDisableColorBlock(this ColorBlock a_stSender, Color a_stColor) {
-		a_stSender.disabledColor = a_stColor;
-		return a_stSender;
-	}
-
+	
 	/** 기록 정보를 반환한다 */
 	public static STRecordInfo ExGetRecordInfo(this STRecordInfo a_stSender, long a_nIntRecord, double a_dblRealRecord) {
 		a_stSender.m_nIntRecord = a_nIntRecord;
@@ -297,84 +256,6 @@ public static partial class CAccessExtension {
 	/** UI 기준점 보정 위치를 반환한다 */
 	public static Vector3 ExGetUIsPivotPos(this Vector3 a_stSender, Vector3 a_stSrcPivot, Vector3 a_stDestPivot, Vector3 a_stSize) {
 		return a_stSender.ExGetPivotPos(a_stDestPivot, a_stSrcPivot, a_stSize);
-	}
-
-	/** 월드 위치를 반환한다 */
-	public static Vector3 ExGetWorldPos(this PointerEventData a_oSender) {
-		CFunc.Assert(a_oSender != null);
-		return a_oSender.ExGetWorldPos(KCDefine.B_DESIGN_SCREEN_SIZE);
-	}
-
-	/** 월드 위치를 반환한다 */
-	public static Vector3 ExGetWorldPos(this PointerEventData a_oSender, Vector3 a_stScreenSize) {
-		CFunc.Assert(a_oSender != null);
-		return a_oSender.position.ExTo3D().ExGetWorldPos(a_stScreenSize);
-	}
-
-	/** 로컬 위치를 반환한다 */
-	public static Vector3 ExGetLocalPos(this PointerEventData a_oSender, GameObject a_oParent) {
-		CFunc.Assert(a_oSender != null && a_oParent != null);
-		return a_oSender.ExGetLocalPos(a_oParent, KCDefine.B_DESIGN_SCREEN_SIZE);
-	}
-
-	/** 로컬 위치를 반환한다 */
-	public static Vector3 ExGetLocalPos(this PointerEventData a_oSender, GameObject a_oParent, Vector3 a_stScreenSize) {
-		CFunc.Assert(a_oSender != null && a_oParent != null);
-		return a_oSender.ExGetWorldPos(a_stScreenSize).ExToLocal(a_oParent);
-	}
-
-	/** 앵커 위치를 반환한다 */
-	public static Vector3 ExGetAnchorPos(this PointerEventData a_oSender, GameObject a_oParent) {
-		CFunc.Assert(a_oSender != null && a_oParent != null);
-		return a_oSender.position.ExTo3D().ExToLocal(a_oParent);
-	}
-
-	/** 월드 간격을 반환한다 */
-	public static Vector3 ExGetWorldPosDelta(this PointerEventData a_oSender) {
-		CFunc.Assert(a_oSender != null);
-		return a_oSender.ExGetWorldPosDelta(KCDefine.B_DESIGN_SCREEN_SIZE);
-	}
-
-	/** 월드 간격을 반환한다 */
-	public static Vector3 ExGetWorldPosDelta(this PointerEventData a_oSender, Vector3 a_stScreenSize) {
-		CFunc.Assert(a_oSender != null);
-		return a_oSender.pointerPressRaycast.screenPosition.ExTo3D().ExGetWorldPos(a_stScreenSize) - a_oSender.pointerCurrentRaycast.screenPosition.ExTo3D().ExGetWorldPos(a_stScreenSize);
-	}
-
-	/** 로컬 간격을 반환한다 */
-	public static Vector3 ExGetLocalPosDelta(this PointerEventData a_oSender, GameObject a_oParent) {
-		CFunc.Assert(a_oSender != null);
-		return a_oSender.ExGetLocalPosDelta(a_oParent, KCDefine.B_DESIGN_SCREEN_SIZE);
-	}
-
-	/** 로컬 간격을 반환한다 */
-	public static Vector3 ExGetLocalPosDelta(this PointerEventData a_oSender, GameObject a_oParent, Vector3 a_stScreenSize) {
-		CFunc.Assert(a_oSender != null);
-		return a_oSender.pointerPressRaycast.screenPosition.ExTo3D().ExGetWorldPos(a_stScreenSize).ExToLocal(a_oParent) - a_oSender.pointerCurrentRaycast.screenPosition.ExTo3D().ExGetWorldPos(a_stScreenSize).ExToLocal(a_oParent);
-	}
-
-	/** 앵커 간격을 반환한다 */
-	public static Vector3 ExGetAnchorPosDelta(this PointerEventData a_oSender, GameObject a_oParent) {
-		CFunc.Assert(a_oSender != null);
-		return a_oSender.pointerPressRaycast.screenPosition.ExTo3D().ExToLocal(a_oParent) - a_oSender.pointerCurrentRaycast.screenPosition.ExTo3D().ExToLocal(a_oParent);
-	}
-
-	/** 스크롤 뷰 정규 위치를 반환한다 */
-	public static Vector3 ExGetNormPos(this ScrollRect a_oSender, GameObject a_oViewport, GameObject a_oContents, Vector3 a_stPos) {
-		CFunc.Assert(a_oSender != null && a_oViewport != null && a_oContents != null);
-		return new Vector3(a_oSender.ExGetNormPosH(a_oViewport, a_oContents, a_stPos), a_oSender.ExGetNormPosV(a_oViewport, a_oContents, a_stPos), KCDefine.B_VAL_0_REAL);
-	}
-
-	/** 스크롤 뷰 수직 정규 위치를 반환한다 */
-	public static float ExGetNormPosV(this ScrollRect a_oSender, GameObject a_oViewport, GameObject a_oContents, Vector3 a_stPos) {
-		CFunc.Assert(a_oSender != null && a_oViewport != null && a_oContents != null);
-		return Mathf.Clamp01((a_stPos.y - (a_oViewport.transform as RectTransform).rect.height) / ((a_oContents.transform as RectTransform).rect.height - (a_oViewport.transform as RectTransform).rect.height));
-	}
-
-	/** 스크롤 뷰 수평 정규 위치를 반환한다 */
-	public static float ExGetNormPosH(this ScrollRect a_oSender, GameObject a_oViewport, GameObject a_oContents, Vector3 a_stPos) {
-		CFunc.Assert(a_oSender != null && a_oViewport != null && a_oContents != null);
-		return Mathf.Clamp01((a_stPos.x - (a_oViewport.transform as RectTransform).rect.width) / ((a_oContents.transform as RectTransform).rect.width - (a_oViewport.transform as RectTransform).rect.width));
 	}
 
 	/** 기준점을 반환한다 */
@@ -508,26 +389,6 @@ public static partial class CAccessExtension {
 		}
 	}
 
-	/** 상호 작용 여부를 변경한다 */
-	public static void ExSetInteractable(this Selectable a_oSender, bool a_bIsEnable, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 선택자가 존재 할 경우
-		if(a_oSender != null) {
-			a_oSender.interactable = a_bIsEnable;
-		}
-	}
-
-	/** 상호 작용 여부를 변경한다 */
-	public static void ExSetRaycastTarget(this Graphic a_oSender, bool a_bIsEnable, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 그래픽스가 존재 할 경우
-		if(a_oSender != null) {
-			a_oSender.raycastTarget = a_bIsEnable;
-		}
-	}
-
 	/** 너비를 변경한다 */
 	public static void ExSetWidth(this LineRenderer a_oSender, 
 		float a_fSrcWidth, float a_fDestWidth, bool a_bIsAssert = true) {
@@ -564,60 +425,6 @@ public static partial class CAccessExtension {
 		}
 	}
 
-	/** 텍스트를 변경한다 */
-	public static void ExSetText(this Text a_oSender, string a_oStr, STFontSetInfo a_stFontSetInfo, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()));
-
-		// 텍스트가 존재 할 경우
-		if(a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()) {
-			a_oSender.text = a_oStr;
-			a_oSender.font = Resources.Load<Font>(a_stFontSetInfo.m_oPath);
-		}
-	}
-
-	/** 텍스트를 변경한다 */
-	public static void ExSetText(this TMP_Text a_oSender, string a_oStr, STFontSetInfo a_stFontSetInfo, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()));
-
-		// 텍스트가 존재 할 경우
-		if(a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()) {
-			a_oSender.text = a_oStr;
-			a_oSender.font = Resources.Load<TMP_FontAsset>(a_stFontSetInfo.m_oPath);
-		}
-	}
-
-	/** 텍스트를 변경한다 */
-	public static void ExSetText(this InputField a_oSender, string a_oStr, STFontSetInfo a_stFontSetInfo, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()));
-
-		// 입력 필드가 존재 할 경우
-		if(a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()) {
-			a_oSender.text = a_oStr;
-			var oTexts = a_oSender.GetComponentsInChildren<Text>();
-
-			for(int i = 0; i < oTexts.Length; ++i) {
-				oTexts[i].font = Resources.Load<Font>(a_stFontSetInfo.m_oPath);
-			}
-		}
-	}
-
-	/** 텍스트를 변경한다 */
-	public static void ExSetText(this TMP_InputField a_oSender, string a_oStr, STFontSetInfo a_stFontSetInfo, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()));
-
-		// 입력 필드가 존재 할 경우
-		if(a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()) {
-			a_oSender.text = a_oStr;
-			a_oSender.fontAsset = Resources.Load<TMP_FontAsset>(a_stFontSetInfo.m_oPath);
-
-			var oTexts = a_oSender.GetComponentsInChildren<TMP_Text>();
-
-			for(int i = 0; i < oTexts.Length; ++i) {
-				oTexts[i].font = Resources.Load<TMP_FontAsset>(a_stFontSetInfo.m_oPath);
-			}
-		}
-	}
-
 	/** 위치를 설정한다 */
 	public static void ExSetPositions(this LineRenderer a_oSender, List<Vector3> a_oPosList, bool a_bIsAssert = true) {
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oPosList != null));
@@ -626,36 +433,6 @@ public static partial class CAccessExtension {
 		if(a_oSender != null && a_oPosList != null) {
 			a_oSender.positionCount = a_oPosList.Count;
 			a_oSender.SetPositions(a_oPosList.ToArray());
-		}
-	}
-
-	/** 일반 색상을 변경한다 */
-	public static void ExSetNormColor(this Button a_oSender, Color a_stColor, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 버튼이 존재 할 경우
-		if(a_oSender != null) {
-			a_oSender.colors = a_oSender.colors.ExGetNormColorBlock(a_stColor);
-		}
-	}
-
-	/** 선택 색상을 변경한다 */
-	public static void ExSetSelColor(this Button a_oSender, Color a_stColor, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 버튼이 존재 할 경우
-		if(a_oSender != null) {
-			a_oSender.colors = a_oSender.colors.ExGetSelColorBlock(a_stColor);
-		}
-	}
-
-	/** 비활성 색상을 변경한다 */
-	public static void ExSetDisableColor(this Button a_oSender, Color a_stColor, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 버튼이 존재 할 경우
-		if(a_oSender != null) {
-			a_oSender.colors = a_oSender.colors.ExGetDisableColorBlock(a_stColor);
 		}
 	}
 
@@ -988,23 +765,6 @@ public static partial class CAccessExtension {
 	}
 
 	/** 자식 객체를 탐색한다 */
-	public static GameObject ExFindChild(this Scene a_stSender, string a_oName, bool a_bIsEnableSubName = false) {
-		CFunc.Assert(a_oName.ExIsValid());
-		var oObjs = a_stSender.GetRootGameObjects();
-
-		for(int i = 0; i < oObjs.Length; ++i) {
-			var oObj = oObjs[i].ExFindChild(a_oName, true, a_bIsEnableSubName);
-
-			// 자식 객체가 존재 할 경우
-			if(oObj != null) {
-				return oObj;
-			}
-		}
-
-		return null;
-	}
-
-	/** 자식 객체를 탐색한다 */
 	public static GameObject ExFindChild(this GameObject a_oSender, string a_oName, bool a_bIsIncludeSelf = true, bool a_bIsEnableSubName = false) {
 		CFunc.Assert(a_oSender != null && a_oName.ExIsValid());
 		var oEnumerator = a_bIsIncludeSelf ? a_oSender.DescendantsAndSelf() : a_oSender.Descendants();
@@ -1019,22 +779,6 @@ public static partial class CAccessExtension {
 		}
 
 		return null;
-	}
-
-	/** 자식 객체를 탐색한다 */
-	public static List<GameObject> ExFindChildren(this Scene a_stSender, string a_oName, bool a_bIsEnableSubName = false) {
-		var oObjs = a_stSender.GetRootGameObjects();
-		var oObjList = new List<GameObject>();
-
-		// 객체가 존재 할 경우
-		if(oObjs.ExIsValid()) {
-			for(int i = 0; i < oObjs.Length; ++i) {
-				var oChildObjList = oObjs[i].ExFindChildren(a_oName, true, a_bIsEnableSubName);
-				oObjList.AddRange(oChildObjList);
-			}
-		}
-
-		return oObjList;
 	}
 
 	/** 자식 객체를 탐색한다 */
@@ -1102,15 +846,6 @@ public static partial class CAccessExtension {
 				}
 			}
 		}
-	}
-
-	/** 월드 위치를 반환한다 */
-	private static Vector3 ExGetWorldPos(this Vector3 a_stSender, Vector3 a_stScreenSize) {
-		float fNormPosX = ((a_stSender.x * KCDefine.B_VAL_2_REAL) / CAccess.DeviceScreenSize.x) - KCDefine.B_VAL_1_REAL;
-		float fNormPosY = ((a_stSender.y * KCDefine.B_VAL_2_REAL) / CAccess.DeviceScreenSize.y) - KCDefine.B_VAL_1_REAL;
-
-		float fScreenWidth = a_stScreenSize.y * (CAccess.DeviceScreenSize.x / CAccess.DeviceScreenSize.y);
-		return new Vector3(fNormPosX * (fScreenWidth / KCDefine.B_VAL_2_REAL), fNormPosY * (a_stScreenSize.y / KCDefine.B_VAL_2_REAL), a_stSender.z) * KCDefine.B_UNIT_SCALE;
 	}
 	#endregion // 클래스 함수
 
@@ -1435,46 +1170,9 @@ EX_ENUMERATE_EXIT_ENUMERATE:
 	#endregion // 조건부 클래스 함수
 }
 
-/** 유틸리티 접근자 확장 클래스 - 추가 */
+/** 접근자 확장 클래스 - 추가 */
 public static partial class CAccessExtension {
 	#region 클래스 함수 (CExtension)
-	/** 색상 => 값으로 변환한다 */
-	public static long ExToColorVal(this Color a_stColor, bool a_bIsEnableAlpha = true) {
-		long nRVal = (long)(a_stColor.r * byte.MaxValue) << (KCDefine.B_VAL_8_INT * KCDefine.B_VAL_2_INT);
-		long nGVal = (long)(a_stColor.g * byte.MaxValue) << (KCDefine.B_VAL_8_INT * KCDefine.B_VAL_1_INT);
-		long nBVal = (long)(a_stColor.b * byte.MaxValue) << (KCDefine.B_VAL_8_INT * KCDefine.B_VAL_0_INT);
-		long nAVal = KCDefine.B_VAL_0_INT;
-
-		// 알파 채널 모드 일 경우
-		if(a_bIsEnableAlpha) {
-			nRVal = (long)(a_stColor.r * byte.MaxValue) << (KCDefine.B_VAL_8_INT * KCDefine.B_VAL_3_INT);
-			nGVal = (long)(a_stColor.g * byte.MaxValue) << (KCDefine.B_VAL_8_INT * KCDefine.B_VAL_2_INT);
-			nBVal = (long)(a_stColor.b * byte.MaxValue) << (KCDefine.B_VAL_8_INT * KCDefine.B_VAL_1_INT);
-			nAVal = (long)(a_stColor.a * byte.MaxValue) << (KCDefine.B_VAL_8_INT * KCDefine.B_VAL_0_INT);
-		}
-
-		return nRVal | nGVal | nBVal | nAVal;
-	}
-
-	/** 색상 => 누적 값으로 변환한다 */
-	public static float ExToColorSumVal(this Color a_stColor, bool a_bIsEnableAlpha = true) {
-		float fSumVal = a_stColor.r + a_stColor.g + a_stColor.b;
-		return a_bIsEnableAlpha ? fSumVal + a_stColor.a : fSumVal;
-	}
-
-	/** 색상 => 문자열로 변환한다 */
-	public static string ExToColorStr(this Color a_stSender, bool a_bIsEnableAlpha = true) {
-		return a_bIsEnableAlpha ? ColorUtility.ToHtmlStringRGBA(a_stSender) : ColorUtility.ToHtmlStringRGB(a_stSender);
-	}
-
-	/** 문자열 => 색상으로 변환한다 */
-	public static Color ExColorStrToColor(this string a_oSender) {
-		CFunc.Assert(a_oSender.ExIsValid());
-		string oColorStr = a_oSender.Replace(KCDefine.B_TOKEN_SHARP, string.Empty).PadLeft(KCDefine.B_VAL_6_INT, char.Parse(KCDefine.B_STR_0_INT));
-
-		return ColorUtility.TryParseHtmlString(string.Format(KCDefine.B_TEXT_FMT_2_COMBINE, KCDefine.B_TOKEN_SHARP, oColorStr), out Color stColor) ? stColor : Color.white;
-	}
-
 	/** 월드 => 로컬로 변환한다 */
 	public static Vector3 ExToLocal(this Vector2 a_stSender, GameObject a_oParent, bool a_bIsCoord = true, float a_fZ = KCDefine.B_VAL_0_REAL) {
 		CFunc.Assert(a_oParent != null);

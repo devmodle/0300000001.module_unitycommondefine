@@ -9,12 +9,12 @@ public static partial class CFactory {
 	#region 클래스 함수
 	/** 터치 응답자를 생성한다 */
 	public static GameObject CreateTouchResponder(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) {
+		string a_oObjPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateTouchResponder(a_oName, 
-			Resources.Load<GameObject>(a_oObjsPath), a_oParent, a_stSize, a_stPos, a_stColor);
+			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stSize, a_stPos, a_stColor);
 	}
 
 	/** 터치 응답자를 생성한다 */
@@ -27,12 +27,12 @@ public static partial class CFactory {
 
 	/** 드래그 응답자를 생성한다 */
 	public static GameObject CreateDragResponder(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) {
+		string a_oObjPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateDragResponder(a_oName, 
-			Resources.Load<GameObject>(a_oObjsPath), a_oParent, a_stSize, a_stPos, a_stColor);
+			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stSize, a_stPos, a_stColor);
 	}
 
 	/** 드래그 응답자를 생성한다 */
@@ -70,12 +70,12 @@ public static partial class CFactory {
 	#region 제네릭 클래스 함수
 	/** 터치 응답자를 생성한다 */
 	public static T CreateTouchResponder<T>(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) where T : Component {
+		string a_oObjPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) where T : Component {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateTouchResponder<T>(a_oName, 
-			Resources.Load<GameObject>(a_oObjsPath), a_oParent, a_stSize, a_stPos, a_stColor);
+			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stSize, a_stPos, a_stColor);
 	}
 
 	/** 터치 응답자를 생성한다 */
@@ -90,12 +90,12 @@ public static partial class CFactory {
 
 	/** 드래그 응답자를 생성한다 */
 	public static T CreateDragResponder<T>(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) where T : Component {
+		string a_oObjPath, GameObject a_oParent, Vector3 a_stSize, Vector3 a_stPos, Color a_stColor) where T : Component {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateDragResponder<T>(a_oName, 
-			Resources.Load<GameObject>(a_oObjsPath), a_oParent, a_stSize, a_stPos, a_stColor);
+			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stSize, a_stPos, a_stColor);
 	}
 
 	/** 드래그 응답자를 생성한다 */

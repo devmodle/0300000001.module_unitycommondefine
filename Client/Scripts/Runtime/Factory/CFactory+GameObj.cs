@@ -80,30 +80,30 @@ public static partial class CFactory {
 	#region 클래스 팩토리 함수
 	/** 사본 게임 객체를 생성한다 */
 	public static GameObject CreateCloneGameObj(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, bool a_bIsSetupWorldState = false) {
+		string a_oObjPath, GameObject a_oParent, bool a_bIsSetupWorldState = false) {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
-		return CFactory.CreateCloneGameObj(a_oName, a_oObjsPath, a_oParent, Vector3.zero, a_bIsSetupWorldState);
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
+		return CFactory.CreateCloneGameObj(a_oName, a_oObjPath, a_oParent, Vector3.zero, a_bIsSetupWorldState);
 	}
 
 	/** 사본 게임 객체를 생성한다 */
 	public static GameObject CreateCloneGameObj(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, Vector3 a_stPos, bool a_bIsSetupWorldState = false) {
+		string a_oObjPath, GameObject a_oParent, Vector3 a_stPos, bool a_bIsSetupWorldState = false) {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateCloneGameObj(a_oName, 
-			a_oObjsPath, a_oParent, Vector3.one, Vector3.zero, a_stPos, a_bIsSetupWorldState);
+			a_oObjPath, a_oParent, Vector3.one, Vector3.zero, a_stPos, a_bIsSetupWorldState);
 	}
 
 	/** 사본 게임 객체를 생성한다 */
 	public static GameObject CreateCloneGameObj(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, Vector3 a_stScale, Vector3 a_stAngle, Vector3 a_stPos, bool a_bIsSetupWorldState = false) {
+		string a_oObjPath, GameObject a_oParent, Vector3 a_stScale, Vector3 a_stAngle, Vector3 a_stPos, bool a_bIsSetupWorldState = false) {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateCloneGameObj(a_oName, 
-			Resources.Load<GameObject>(a_oObjsPath), a_oParent, a_stScale, a_stAngle, a_stPos, a_bIsSetupWorldState);
+			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stScale, a_stAngle, a_stPos, a_bIsSetupWorldState);
 	}
 
 	/** 사본 게임 객체를 생성한다 */
@@ -150,30 +150,30 @@ public static partial class CFactory {
 	#region 제네릭 클래스 팩토리 함수
 	/** 사본 게임 객체를 생성한다 */
 	public static T CreateCloneGameObj<T>(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, bool a_bIsSetupWorldState = false) where T : Component {
+		string a_oObjPath, GameObject a_oParent, bool a_bIsSetupWorldState = false) where T : Component {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
-		return CFactory.CreateCloneGameObj<T>(a_oName, a_oObjsPath, a_oParent, Vector3.zero, a_bIsSetupWorldState);
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
+		return CFactory.CreateCloneGameObj<T>(a_oName, a_oObjPath, a_oParent, Vector3.zero, a_bIsSetupWorldState);
 	}
 
 	/** 사본 게임 객체를 생성한다 */
 	public static T CreateCloneGameObj<T>(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, Vector3 a_stPos, bool a_bIsSetupWorldState = false) where T : Component {
+		string a_oObjPath, GameObject a_oParent, Vector3 a_stPos, bool a_bIsSetupWorldState = false) where T : Component {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateCloneGameObj<T>(a_oName, 
-			a_oObjsPath, a_oParent, Vector3.one, Vector3.zero, a_stPos, a_bIsSetupWorldState);
+			a_oObjPath, a_oParent, Vector3.one, Vector3.zero, a_stPos, a_bIsSetupWorldState);
 	}
 
 	/** 사본 게임 객체를 생성한다 */
 	public static T CreateCloneGameObj<T>(string a_oName, 
-		string a_oObjsPath, GameObject a_oParent, Vector3 a_stScale, Vector3 a_stAngle, Vector3 a_stPos, bool a_bIsSetupWorldState = false) where T : Component {
+		string a_oObjPath, GameObject a_oParent, Vector3 a_stScale, Vector3 a_stAngle, Vector3 a_stPos, bool a_bIsSetupWorldState = false) where T : Component {
 
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
 
 		return CFactory.CreateCloneGameObj<T>(a_oName, 
-			Resources.Load<GameObject>(a_oObjsPath), a_oParent, a_stScale, a_stAngle, a_stPos, a_bIsSetupWorldState);
+			Resources.Load<GameObject>(a_oObjPath), a_oParent, a_stScale, a_stAngle, a_stPos, a_bIsSetupWorldState);
 	}
 
 	/** 사본 게임 객체를 생성한다 */
