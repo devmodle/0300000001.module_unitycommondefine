@@ -53,6 +53,12 @@ public static partial class CAccess {
 
 		return (a_oPercentList.Count - KCDefine.B_VAL_1_INT, a_oPercentList.LastOrDefault());
 	}
+
+	/** 타겟 프레임 빈도를 변경한다 */
+	public static void SetTargetFrameRate(int a_nFrameRate) {
+		Application.targetFrameRate = Mathf.Max(a_nFrameRate, KCDefine.B_MIN_TARGET_FRAME_RATE);
+		Time.fixedDeltaTime = KCDefine.B_VAL_1_INT / (float)Application.targetFrameRate;
+	}
 	#endregion // 클래스 함수
 
 	#region 제네릭 클래스 함수
