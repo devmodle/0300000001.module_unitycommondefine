@@ -18,11 +18,11 @@ public static partial class CFactory {
 	}
 
 	/** 게임 객체 풀을 생성한다 */
-	public static ObjectPool CreateGameObjsPool(string a_oObjPath, 
+	public static ObjectPool CreateGameObjsPool(string a_oObjsPath, 
 		GameObject a_oParent, int a_nNumObjs = KCDefine.U_SIZE_GAME_OBJS_POOL_50) {
 			
-		CFunc.Assert(a_oObjPath.ExIsValid());
-		return CFactory.CreateGameObjsPool(Resources.Load<GameObject>(a_oObjPath), a_oParent, a_nNumObjs);
+		CFunc.Assert(a_oObjsPath.ExIsValid());
+		return CFactory.CreateGameObjsPool(Resources.Load<GameObject>(a_oObjsPath), a_oParent, a_nNumObjs);
 	}
 	#endregion // 클래스 함수
 }
