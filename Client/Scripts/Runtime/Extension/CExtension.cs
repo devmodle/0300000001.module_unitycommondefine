@@ -7,7 +7,7 @@ using UnityEngine.Events;
 using System.Reflection;
 using System.Globalization;
 
-/** 기본 확장 클래스 */
+/** 확장 클래스 */
 public static partial class CExtension {
 	#region 클래스 함수
 	/** 값 => 왼쪽 쉬프트 비트로 변환한다 */
@@ -78,6 +78,17 @@ public static partial class CExtension {
 		// TODO 후위 수식 변환 로직 구현 필요
 
 		return a_oSender;
+	}
+
+	/** 문자열 => 색상으로 변환한다 */
+	public static Color ExColorStrToColor(this string a_oSender) {
+		CFunc.Assert(a_oSender.ExIsValid());
+
+		string oColorStr = a_oSender.Replace(KCDefine.B_TOKEN_SHARP, string.Empty);
+		oColorStr = oColorStr.PadLeft(KCDefine.B_VAL_6_INT, char.Parse(KCDefine.B_STR_0_INT));
+		oColorStr = string.Format(KCDefine.B_TEXT_FMT_2_COMBINE, KCDefine.B_TOKEN_SHARP, oColorStr);
+
+		return ColorUtility.TryParseHtmlString(oColorStr, out Color stColor) ? stColor : Color.white;
 	}
 
 	/** 문자열 => 시간으로 변환한다 */

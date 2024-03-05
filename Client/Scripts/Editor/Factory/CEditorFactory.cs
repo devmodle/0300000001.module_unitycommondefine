@@ -57,9 +57,9 @@ public static class CEditorFactory {
 	}
 
 	/** 프리팹 인스턴스를 생성한다 */
-	public static GameObject CreatePrefabInstance(string a_oName, string a_oObjsPath, GameObject a_oParent) {
-		CFunc.Assert(a_oName.ExIsValid() && a_oObjsPath.ExIsValid());
-		return CEditorFactory.CreatePrefabInstance(a_oName, Resources.Load<GameObject>(a_oObjsPath), a_oParent);
+	public static GameObject CreatePrefabInstance(string a_oName, string a_oObjPath, GameObject a_oParent) {
+		CFunc.Assert(a_oName.ExIsValid() && a_oObjPath.ExIsValid());
+		return CEditorFactory.CreatePrefabInstance(a_oName, Resources.Load<GameObject>(a_oObjPath), a_oParent);
 	}
 
 	/** 프리팹 인스턴스를 생성한다 */
