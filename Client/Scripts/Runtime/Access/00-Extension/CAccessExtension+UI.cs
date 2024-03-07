@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 using TMPro;
+using UnityEngine.EventSystems;
 
 /** 접근자 확장 클래스 - UI */
 public static partial class CAccessExtension {

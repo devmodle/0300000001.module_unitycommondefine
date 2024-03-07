@@ -27,9 +27,9 @@ public static partial class CExtension {
 	}
 
 	/** 자식 객체를 탐색한다 */
-	public static List<GameObject> ExFindChildren(this Scene a_stSender, string a_oName, List<GameObject> a_oOutObjList, bool a_bIsEnableSubName = false) {
+	public static List<GameObject> ExFindChildren(this Scene a_stSender, string a_oName, List<GameObject> a_oOutObjList = null, bool a_bIsEnableSubName = false) {
 		var oObjs = a_stSender.GetRootGameObjects();
-		var oObjList = new List<GameObject>();
+		var oObjList = a_oOutObjList ?? new List<GameObject>();
 
 		// 객체 탐색이 불가능 할 경우
 		if(!oObjs.ExIsValid()) {

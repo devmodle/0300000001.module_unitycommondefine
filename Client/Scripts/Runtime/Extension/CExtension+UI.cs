@@ -69,7 +69,7 @@ public static partial class CExtension {
 		a_oSender.childAlignment = TextAnchor.UpperLeft;
 		a_oSender.gameObject.ExSetSizeDelta(stSizeDelta, a_bIsAssert);
 
-		// 크기 조정자 설정이 불가능 할 경우
+		// 크기 보정자 설정이 불가능 할 경우
 		if(!a_oSender.TryGetComponent(out ContentSizeFitter oContentsSizeFitter)) {
 			return;
 		}
@@ -265,128 +265,9 @@ public static partial class CExtension {
 	#endregion // 클래스 함수
 }
 
-/** 확장 클래스 - UI (입력) */
+/** 확장 클래스 - UI (스크롤 바) */
 public static partial class CExtension {
 	#region 클래스 함수
-	/** 리스너를 추가한다 */
-	public static void ExAddListener(this Dropdown a_oSender, 
-		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
-
-		// 드롭이 존재 할 경우
-		if(a_oSender != null && a_oCallback != null) {
-			// 리셋 모드 일 경우
-			if(a_bIsReset) {
-				a_oSender.onValueChanged.RemoveAllListeners();
-			}
-
-			a_oSender.onValueChanged.AddListener(a_oCallback);
-		}
-	}
-
-	/** 리스너를 추가한다 */
-	public static void ExAddListener(this TMP_Dropdown a_oSender, 
-		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
-
-		// 드롭이 존재 할 경우
-		if(a_oSender != null && a_oCallback != null) {
-			// 리셋 모드 일 경우
-			if(a_bIsReset) {
-				a_oSender.onValueChanged.RemoveAllListeners();
-			}
-
-			a_oSender.onValueChanged.AddListener(a_oCallback);
-		}
-	}
-
-	/** 리스너를 추가한다 */
-	public static void ExAddListener(this InputField a_oSender, 
-		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
-
-		// 입력 필드가 존재 할 경우
-		if(a_oSender != null && a_oCallback != null) {
-			// 리셋 모드 일 경우
-			if(a_bIsReset) {
-				a_oSender.onValueChanged.RemoveAllListeners();
-			}
-
-			a_oSender.onValueChanged.AddListener(a_oCallback);
-		}
-	}
-
-	/** 리스너를 추가한다 */
-	public static void ExAddListener(this TMP_InputField a_oSender, 
-		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
-
-		// 입력 필드가 존재 할 경우
-		if(a_oSender != null && a_oCallback != null) {
-			// 리셋 모드 일 경우
-			if(a_bIsReset) {
-				a_oSender.onValueChanged.RemoveAllListeners();
-			}
-
-			a_oSender.onValueChanged.AddListener(a_oCallback);
-		}
-	}
-
-	/** 편집 종료 리스너를 추가한다 */
-	public static void ExAddEndEditListener(this InputField a_oSender, 
-		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
-
-		// 입력 필드가 존재 할 경우
-		if(a_oSender != null && a_oCallback != null) {
-			// 리셋 모드 일 경우
-			if(a_bIsReset) {
-				a_oSender.onEndEdit.RemoveAllListeners();
-			}
-
-			a_oSender.onEndEdit.AddListener(a_oCallback);
-		}
-	}
-
-	/** 편집 종료 리스너를 추가한다 */
-	public static void ExAddEndEditListener(this TMP_InputField a_oSender, 
-		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-			
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
-
-		// 입력 필드가 존재 할 경우
-		if(a_oSender != null && a_oCallback != null) {
-			// 리셋 모드 일 경우
-			if(a_bIsReset) {
-				a_oSender.onEndEdit.RemoveAllListeners();
-			}
-
-			a_oSender.onEndEdit.AddListener(a_oCallback);
-		}
-	}
-	#endregion // 클래스 함수
-}
-
-/** 확장 클래스 - UI (스크롤 뷰) */
-public static partial class CExtension {
-	#region 클래스 함수
-	/** 상태를 리셋한다 */
-	public static void ExReset(this ScrollRect a_oSender, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
-			return;
-		}
-
-		a_oSender.scrollSensitivity = KCDefine.U_UNIT_SCROLL_SENSITIVITY;
-	}
-
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this Scrollbar a_oSender, 
 		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
@@ -404,6 +285,147 @@ public static partial class CExtension {
 		}
 
 		a_oSender.onValueChanged.AddListener(a_oCallback);
+	}
+	#endregion // 클래스 함수
+}
+
+/** 확장 클래스 - UI (드롭 다운) */
+public static partial class CExtension {
+	#region 클래스 함수
+	/** 리스너를 추가한다 */
+	public static void ExAddListener(this Dropdown a_oSender, 
+		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
+
+		// 리스너 추가가 불가능 할 경우
+		if(a_oSender == null || a_oCallback == null) {
+			return;
+		}
+
+		// 리셋 모드 일 경우
+		if(a_bIsReset) {
+			a_oSender.onValueChanged.RemoveAllListeners();
+		}
+
+		a_oSender.onValueChanged.AddListener(a_oCallback);
+	}
+
+	/** 리스너를 추가한다 */
+	public static void ExAddListener(this TMP_Dropdown a_oSender, 
+		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
+
+		// 리스너 추가가 불가능 할 경우
+		if(a_oSender == null || a_oCallback == null) {
+			return;
+		}
+
+		// 리셋 모드 일 경우
+		if(a_bIsReset) {
+			a_oSender.onValueChanged.RemoveAllListeners();
+		}
+
+		a_oSender.onValueChanged.AddListener(a_oCallback);
+	}
+	#endregion // 클래스 함수
+}
+
+/** 확장 클래스 - UI (입력 필드) */
+public static partial class CExtension {
+	#region 클래스 함수
+	/** 리스너를 추가한다 */
+	public static void ExAddListener(this InputField a_oSender, 
+		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
+
+		// 리스너 추가가 불가능 할 경우
+		if(a_oSender == null || a_oCallback == null) {
+			return;
+		}
+
+		// 리셋 모드 일 경우
+		if(a_bIsReset) {
+			a_oSender.onValueChanged.RemoveAllListeners();
+		}
+
+		a_oSender.onValueChanged.AddListener(a_oCallback);
+	}
+
+	/** 리스너를 추가한다 */
+	public static void ExAddListener(this TMP_InputField a_oSender, 
+		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
+
+		// 리스너 추가가 불가능 할 경우
+		if(a_oSender == null || a_oCallback == null) {
+			return;
+		}
+
+		// 리셋 모드 일 경우
+		if(a_bIsReset) {
+			a_oSender.onValueChanged.RemoveAllListeners();
+		}
+
+		a_oSender.onValueChanged.AddListener(a_oCallback);
+	}
+
+	/** 편집 종료 리스너를 추가한다 */
+	public static void ExAddEndEditListener(this InputField a_oSender, 
+		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
+
+		// 리스너 추가가 불가능 할 경우
+		if(a_oSender == null || a_oCallback == null) {
+			return;
+		}
+
+		// 리셋 모드 일 경우
+		if(a_bIsReset) {
+			a_oSender.onEndEdit.RemoveAllListeners();
+		}
+
+		a_oSender.onEndEdit.AddListener(a_oCallback);
+	}
+
+	/** 편집 종료 리스너를 추가한다 */
+	public static void ExAddEndEditListener(this TMP_InputField a_oSender, 
+		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+			
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
+
+		// 리스너 추가가 불가능 할 경우
+		if(a_oSender == null || a_oCallback == null) {
+			return;
+		}
+		
+		// 리셋 모드 일 경우
+		if(a_bIsReset) {
+			a_oSender.onEndEdit.RemoveAllListeners();
+		}
+
+		a_oSender.onEndEdit.AddListener(a_oCallback);
+	}
+	#endregion // 클래스 함수
+}
+
+/** 확장 클래스 - UI (스크롤 뷰) */
+public static partial class CExtension {
+	#region 클래스 함수
+	/** 상태를 리셋한다 */
+	public static void ExReset(this ScrollRect a_oSender, bool a_bIsAssert = true) {
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
+
+		// 상태 리셋이 불가능 할 경우
+		if(a_oSender == null) {
+			return;
+		}
+
+		a_oSender.scrollSensitivity = KCDefine.U_UNIT_SCROLL_SENSITIVITY;
 	}
 
 	/** 리스너를 추가한다 */

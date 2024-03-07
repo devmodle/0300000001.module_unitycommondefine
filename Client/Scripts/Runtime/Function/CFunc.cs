@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
+using System.Linq;
+using UnityEngine.SceneManagement;
+
 /** 함수 */
 public static partial class CFunc {
 	#region 클래스 함수
@@ -24,256 +27,137 @@ public static partial class CFunc {
 		}
 	}
 
-	/** 함수를 호출한다 */
-	public static void Invoke(ref System.Action a_oAction) {
-		var oAction = a_oAction;
+	/** 객체를 탐색한다 */
+	public static GameObject FindObj(string a_oName) {
+		CFunc.Assert(a_oName.ExIsValid());
+		GameObject oObj = null;
 
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke();
+		CAccess.EnumerateScenes((a_stScene) => {
+			oObj = a_stScene.ExFindChild(a_oName);
+			return oObj == null;
+		});
+
+		return oObj;
+	}
+
+	/** 객체를 탐색한다 */
+	public static List<GameObject> FindObjs(string a_oName) {
+		CFunc.Assert(a_oName.ExIsValid());
+		var oObjList = new List<GameObject>();
+
+		CAccess.EnumerateScenes((a_stScene) => {
+			var oChildObjList = a_stScene.ExFindChildren(a_oName);
+			oObjList.AddRange(oChildObjList);
+
+			return true;
+		});
+
+		return oObjList;
+	}
+
+	/** 경로를 탐색한다 */
+	public static List<Vector3Int> FindPath(Vector3Int a_stSrcIdx, 
+		List<Vector3Int> a_oOffsetList, System.Func<CPathInfo, bool> a_oFindCallback, System.Func<CPathInfo, Vector3Int, bool> a_oMoveCallback, System.Func<CPathInfo, Vector3Int, int> a_oCostCallback) {
+			
+		CFunc.Assert(a_oFindCallback != null && a_oMoveCallback != null && a_oCostCallback != null);
+
+		var oVisitIdxList = new List<Vector3Int>();
+		var oOpenPathInfoList = new List<CPathInfo>();
+		var oClosePathInfoList = new List<CPathInfo>();
+
+		oOpenPathInfoList.Add(CFactory.MakePathInfo(a_stSrcIdx));
+
+		while(oOpenPathInfoList.ExIsValid()) {
+			var oPathInfo = oOpenPathInfoList[KCDefine.B_VAL_0_INT];
+
+			oClosePathInfoList.Add(oPathInfo);
+			oOpenPathInfoList.ExRemoveValAt(KCDefine.B_VAL_0_INT);
+
+			// 경로를 탐색했을 경우
+			if(a_oFindCallback(oPathInfo)) {
+				var oIdxList = new List<Vector3Int>();
+
+				while(oPathInfo != null) {
+					oIdxList.Insert(KCDefine.B_VAL_0_INT, oPathInfo.m_stIdx);
+					oPathInfo = oPathInfo.m_oPrevPathInfo;
+				}
+
+				return oIdxList;
+			}
+
+			for(int i = 0; i < a_oOffsetList.Count; ++i) {
+				var stNextIdx = oPathInfo.m_stIdx + a_oOffsetList[i];
+
+				// 이동이 불가능 할 경우
+				if(!a_oMoveCallback(oPathInfo, stNextIdx)) {
+					continue;
+				}
+
+				int nIdx = oClosePathInfoList.FindIndex((a_oPathInfo) => stNextIdx.Equals(a_oPathInfo.m_stIdx));
+				int nCost = a_oCostCallback(oPathInfo, stNextIdx);
+
+				// 탐색이 가능 할 경우
+				if(!oVisitIdxList.Contains(stNextIdx)) {
+					var oNextPathInfo = CFactory.MakePathInfo(stNextIdx, nCost);
+					oNextPathInfo.m_oPrevPathInfo = oPathInfo;
+
+					oVisitIdxList.Add(stNextIdx);
+					oOpenPathInfoList.Add(oNextPathInfo);
+				}
+				// 경로 정보 설정이 가능 할 경우
+				else if(oClosePathInfoList.ExIsValidIdx(nIdx) && nCost < oClosePathInfoList[nIdx].m_nCost) {
+					oClosePathInfoList[nIdx].m_nCost = nCost;
+					oClosePathInfoList[nIdx].m_oPrevPathInfo = oPathInfo;
+				}
+			}
+
+			oOpenPathInfoList.ExStableSort((a_oLhs, a_oRhs) => a_oLhs.m_nCost.CompareTo(a_oRhs.m_nCost));
 		}
+
+		return KCDefine.B_EMPTY_3D_INT_VEC_LIST;
 	}
 	#endregion // 클래스 함수
 
 	#region 제네릭 클래스 함수
-	/** 함수를 호출한다 */
-	public static void Invoke<TA>(ref System.Action<TA> a_oAction, TA a_tParamsA) {
-		var oAction = a_oAction;
-
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA);
-		}
+	/** 컴포넌트를 탐색한다 */
+	public static T FindComponent<T>(string a_oName) where T : Component {
+		CFunc.Assert(a_oName.ExIsValid());
+		return CFunc.FindObj(a_oName)?.GetComponentInChildren<T>();
 	}
 
-	/** 함수를 호출한다 */
-	public static void Invoke<TA, TB>(ref System.Action<TA, TB> a_oAction, TA a_tParamsA, TB a_tParamsB) {
-		var oAction = a_oAction;
+	/** 컴포넌트를 탐색한다 */
+	public static T FindComponent<T>(Scene a_stScene) where T : Component {
+		var oObjs = a_stScene.GetRootGameObjects();
 
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA, a_tParamsB);
+		for(int i = 0; i < oObjs.Length; ++i) {
+			var oComponent = oObjs[i].GetComponentInChildren<T>();
+
+			// 컴포넌트가 존재 할 경우
+			if(oComponent != null) {
+				return oComponent;
+			}
 		}
+
+		return null;
 	}
 
-	/** 함수를 호출한다 */
-	public static void Invoke<TA, TB, TC>(ref System.Action<TA, TB, TC> a_oAction, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC) {
-		var oAction = a_oAction;
-
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA, a_tParamsB, a_tParamsC);
-		}
+	/** 컴포넌트를 탐색한다 */
+	public static List<T> FindComponents<T>(string a_oName) where T : Component {
+		CFunc.Assert(a_oName.ExIsValid());
+		return CFunc.FindObj(a_oName)?.GetComponentsInChildren<T>().ToList();
 	}
 
-	/** 함수를 호출한다 */
-	public static void Invoke<TA, TB, TC, TD>(ref System.Action<TA, TB, TC, TD> a_oAction, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD) {
-		var oAction = a_oAction;
+	/** 컴포넌트를 탐색한다 */
+	public static List<T> FindComponents<T>(Scene a_stScene) where T : Component {
+		var oObjs = a_stScene.GetRootGameObjects();
+		var oComponentList = new List<T>();
 
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD);
-		}
-	}
-
-	/** 함수를 호출한다 */
-	public static void Invoke<TA, TB, TC, TD, TE>(ref System.Action<TA, TB, TC, TD, TE> a_oAction, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE) {
-		var oAction = a_oAction;
-
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE);
-		}
-	}
-
-	/** 함수를 호출한다 */
-	public static void Invoke<TA, TB, TC, TD, TE, TF>(ref System.Action<TA, TB, TC, TD, TE, TF> a_oAction, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF) {
-		var oAction = a_oAction;
-
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE, a_tParamsF);
-		}
-	}
-
-	/** 함수를 호출한다 */
-	public static void Invoke<TA, TB, TC, TD, TE, TF, TG>(ref System.Action<TA, TB, TC, TD, TE, TF, TG> a_oAction, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG) {
-		var oAction = a_oAction;
-
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE, a_tParamsF, a_tParamsG);
-		}
-	}
-
-	/** 함수를 호출한다 */
-	public static void Invoke<TA, TB, TC, TD, TE, TF, TG, TH>(ref System.Action<TA, TB, TC, TD, TE, TF, TG, TH> a_oAction, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH) {
-		var oAction = a_oAction;
-
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE, a_tParamsF, a_tParamsG, a_tParamsH);
-		}
-	}
-
-	/** 함수를 호출한다 */
-	public static void Invoke<TA, TB, TC, TD, TE, TF, TG, TH, TI>(ref System.Action<TA, TB, TC, TD, TE, TF, TG, TH, TI> a_oAction, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH, TI a_tParamsI) {
-		var oAction = a_oAction;
-
-		try {
-			a_oAction = null;
-		} finally {
-			oAction?.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE, a_tParamsF, a_tParamsG, a_tParamsH, a_tParamsI);
-		}
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TResult>(ref System.Func<TResult> a_oFunc) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
+		for(int i = 0; i < oObjs.Length; ++i) {
+			var oComponents = oObjs[i].GetComponentsInChildren<T>();
+			oComponentList.ExAddVals(oComponents.ToList());
 		}
 
-		return oFunc.Invoke();
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TResult>(ref System.Func<TA, TResult> a_oFunc, TA a_tParamsA) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA);
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TB, TResult>(ref System.Func<TA, TB, TResult> a_oFunc, TA a_tParamsA, TB a_tParamsB) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA, a_tParamsB);
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TB, TC, TResult>(ref System.Func<TA, TB, TC, TResult> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA, a_tParamsB, a_tParamsC);
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TB, TC, TD, TResult>(ref System.Func<TA, TB, TC, TD, TResult> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD);
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TB, TC, TD, TE, TResult>(ref System.Func<TA, TB, TC, TD, TE, TResult> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE);
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TB, TC, TD, TE, TF, TResult>(ref System.Func<TA, TB, TC, TD, TE, TF, TResult> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE, a_tParamsF);
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TB, TC, TD, TE, TF, TG, TResult>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, TResult> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE, a_tParamsF, a_tParamsG);
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TB, TC, TD, TE, TF, TG, TH, TResult>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, TH, TResult> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE, a_tParamsF, a_tParamsG, a_tParamsH);
-	}
-
-	/** 함수를 호출한다 */
-	public static TResult Invoke<TA, TB, TC, TD, TE, TF, TG, TH, TI, TResult>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, TH, TI, TResult> a_oFunc, TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH, TI a_tParamsI) {
-		CFunc.Assert(a_oFunc != null);
-		var oFunc = a_oFunc;
-
-		try {
-			a_oFunc = null;
-		} finally {
-			// Do Something
-		}
-
-		return oFunc.Invoke(a_tParamsA, a_tParamsB, a_tParamsC, a_tParamsD, a_tParamsE, a_tParamsF, a_tParamsG, a_tParamsH, a_tParamsI);
+		return oComponentList;
 	}
 	#endregion // 제네릭 클래스 함수
 }
