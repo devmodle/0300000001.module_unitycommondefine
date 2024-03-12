@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 입력 시스템 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	// 이름
 	public const string B_MODULE_N_INPUT_SYSTEM_SETTINGS = "com.unity.input.settings";

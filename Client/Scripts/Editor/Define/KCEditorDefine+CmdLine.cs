@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 커맨드 라인 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	// 기타 {
 	public const string B_CMD_LINE_PARAMS_FMT_SHELL = "-c \"{0}\"";

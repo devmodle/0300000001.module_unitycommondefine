@@ -8,14 +8,17 @@ using TMPro;
 using DanielLochner.Assets.SimpleScrollSnap;
 
 /** 확장 클래스 - UI */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 상태를 리셋한다 */
-	public static void ExReset(this Mask a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this Mask a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -23,11 +26,13 @@ public static partial class CExtension {
 	}
 
 	/** 상태를 리셋한다 */
-	public static void ExReset(this Selectable a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this Selectable a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -44,11 +49,13 @@ public static partial class CExtension {
 	}
 
 	/** 상태를 리셋한다 */
-	public static void ExReset(this HorizontalOrVerticalLayoutGroup a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this HorizontalOrVerticalLayoutGroup a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -70,7 +77,8 @@ public static partial class CExtension {
 		a_oSender.gameObject.ExSetSizeDelta(stSizeDelta, a_bIsAssert);
 
 		// 크기 보정자 설정이 불가능 할 경우
-		if(!a_oSender.TryGetComponent(out ContentSizeFitter oContentsSizeFitter)) {
+		if(!a_oSender.TryGetComponent(out ContentSizeFitter oContentsSizeFitter))
+		{
 			return;
 		}
 
@@ -79,11 +87,13 @@ public static partial class CExtension {
 	}
 
 	/** 상태를 리셋한다 */
-	public static void ExReset(this Canvas a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this Canvas a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -93,11 +103,13 @@ public static partial class CExtension {
 	}
 
 	/** 상태를 리셋한다 */
-	public static void ExReset(this CanvasScaler a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this CanvasScaler a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -106,11 +118,13 @@ public static partial class CExtension {
 	}
 
 	/** 상태를 리셋한다 */
-	public static void ExReset(this CanvasRenderer a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this CanvasRenderer a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -120,21 +134,24 @@ public static partial class CExtension {
 }
 
 /** 확장 클래스 - UI (텍스트) */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 상태를 리셋한다 */
-	public static void ExReset(this Text a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this Text a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
-		a_oSender.fontSize = (a_oSender.fontSize <= KCDefine.U_DEF_MIN_SIZE_FONT) ? 
+		a_oSender.fontSize = (a_oSender.fontSize <= KCDefine.U_DEF_MIN_SIZE_FONT) ?
 			KCDefine.U_DEF_MIN_SIZE_FONT : a_oSender.fontSize;
 
-		a_oSender.resizeTextMaxSize = (a_oSender.fontSize <= KCDefine.U_DEF_MAX_SIZE_FONT) ? 
+		a_oSender.resizeTextMaxSize = (a_oSender.fontSize <= KCDefine.U_DEF_MAX_SIZE_FONT) ?
 			KCDefine.U_DEF_MAX_SIZE_FONT : a_oSender.fontSize;
 
 		a_oSender.alignment = TextAnchor.MiddleLeft;
@@ -148,27 +165,29 @@ public static partial class CExtension {
 		var stAnchorMax = a_oSender.rectTransform.anchorMax;
 		var oContentsSizeFitter = a_oSender.gameObject.ExAddComponent<ContentSizeFitter>();
 
-		oContentsSizeFitter.verticalFit = stAnchorMin.y.ExIsEquals(stAnchorMax.y) ? 
+		oContentsSizeFitter.verticalFit = stAnchorMin.y.ExIsEquals(stAnchorMax.y) ?
 			ContentSizeFitter.FitMode.PreferredSize : ContentSizeFitter.FitMode.Unconstrained;
 
-		oContentsSizeFitter.horizontalFit = stAnchorMin.x.ExIsEquals(stAnchorMax.x) ? 
+		oContentsSizeFitter.horizontalFit = stAnchorMin.x.ExIsEquals(stAnchorMax.x) ?
 			ContentSizeFitter.FitMode.PreferredSize : ContentSizeFitter.FitMode.Unconstrained;
 		// 크기 보정자를 설정한다 }
 	}
 
 	/** 상태를 리셋한다 */
-	public static void ExReset(this TMP_Text a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this TMP_Text a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
-		a_oSender.fontSize = (a_oSender.fontSize <= KCDefine.U_DEF_MIN_SIZE_FONT) ? 
+		a_oSender.fontSize = (a_oSender.fontSize <= KCDefine.U_DEF_MIN_SIZE_FONT) ?
 			KCDefine.U_DEF_MIN_SIZE_FONT : a_oSender.fontSize;
 
-		a_oSender.fontSizeMax = (a_oSender.fontSize <= KCDefine.U_DEF_MAX_SIZE_FONT) ? 
+		a_oSender.fontSizeMax = (a_oSender.fontSize <= KCDefine.U_DEF_MAX_SIZE_FONT) ?
 			KCDefine.U_DEF_MAX_SIZE_FONT : a_oSender.fontSize;
 
 		a_oSender.fontSizeMin = KCDefine.U_DEF_MIN_SIZE_FONT;
@@ -183,10 +202,10 @@ public static partial class CExtension {
 		var stAnchorMax = a_oSender.rectTransform.anchorMax;
 		var oContentsSizeFitter = a_oSender.gameObject.ExAddComponent<ContentSizeFitter>();
 
-		oContentsSizeFitter.verticalFit = stAnchorMin.y.ExIsEquals(stAnchorMax.y) ? 
+		oContentsSizeFitter.verticalFit = stAnchorMin.y.ExIsEquals(stAnchorMax.y) ?
 			ContentSizeFitter.FitMode.PreferredSize : ContentSizeFitter.FitMode.Unconstrained;
 
-		oContentsSizeFitter.horizontalFit = stAnchorMin.x.ExIsEquals(stAnchorMax.x) ? 
+		oContentsSizeFitter.horizontalFit = stAnchorMin.x.ExIsEquals(stAnchorMax.x) ?
 			ContentSizeFitter.FitMode.PreferredSize : ContentSizeFitter.FitMode.Unconstrained;
 		// 크기 보정자를 설정한다 }
 	}
@@ -194,14 +213,17 @@ public static partial class CExtension {
 }
 
 /** 확장 클래스 - UI (이미지) */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 상태를 리셋한다 */
-	public static void ExReset(this Image a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this Image a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -209,11 +231,13 @@ public static partial class CExtension {
 	}
 
 	/** 상태를 리셋한다 */
-	public static void ExReset(this RawImage a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this RawImage a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -223,20 +247,24 @@ public static partial class CExtension {
 }
 
 /** 확장 클래스 - UI (버튼) */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 리스너를 추가한다 */
-	public static void ExAddListener(this Button a_oSender, 
-		UnityAction a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddListener(this Button a_oSender,
+		UnityAction a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onClick.RemoveAllListeners();
 		}
 
@@ -244,17 +272,20 @@ public static partial class CExtension {
 	}
 
 	/** 리스너를 추가한다 */
-	public static void ExAddListener(this Slider a_oSender, 
-		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddListener(this Slider a_oSender,
+		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onValueChanged.RemoveAllListeners();
 		}
 
@@ -264,20 +295,24 @@ public static partial class CExtension {
 }
 
 /** 확장 클래스 - UI (스크롤 바) */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 리스너를 추가한다 */
-	public static void ExAddListener(this Scrollbar a_oSender, 
-		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddListener(this Scrollbar a_oSender,
+		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onValueChanged.RemoveAllListeners();
 		}
 
@@ -287,20 +322,24 @@ public static partial class CExtension {
 }
 
 /** 확장 클래스 - UI (드롭 다운) */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 리스너를 추가한다 */
-	public static void ExAddListener(this Dropdown a_oSender, 
-		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddListener(this Dropdown a_oSender,
+		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onValueChanged.RemoveAllListeners();
 		}
 
@@ -308,17 +347,20 @@ public static partial class CExtension {
 	}
 
 	/** 리스너를 추가한다 */
-	public static void ExAddListener(this TMP_Dropdown a_oSender, 
-		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddListener(this TMP_Dropdown a_oSender,
+		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onValueChanged.RemoveAllListeners();
 		}
 
@@ -328,20 +370,24 @@ public static partial class CExtension {
 }
 
 /** 확장 클래스 - UI (입력 필드) */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 리스너를 추가한다 */
-	public static void ExAddListener(this InputField a_oSender, 
-		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddListener(this InputField a_oSender,
+		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onValueChanged.RemoveAllListeners();
 		}
 
@@ -349,17 +395,20 @@ public static partial class CExtension {
 	}
 
 	/** 리스너를 추가한다 */
-	public static void ExAddListener(this TMP_InputField a_oSender, 
-		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddListener(this TMP_InputField a_oSender,
+		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onValueChanged.RemoveAllListeners();
 		}
 
@@ -367,17 +416,20 @@ public static partial class CExtension {
 	}
 
 	/** 편집 종료 리스너를 추가한다 */
-	public static void ExAddEndEditListener(this InputField a_oSender, 
-		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddEndEditListener(this InputField a_oSender,
+		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onEndEdit.RemoveAllListeners();
 		}
 
@@ -385,17 +437,20 @@ public static partial class CExtension {
 	}
 
 	/** 편집 종료 리스너를 추가한다 */
-	public static void ExAddEndEditListener(this TMP_InputField a_oSender, 
-		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddEndEditListener(this TMP_InputField a_oSender,
+		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
-		
+
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.onEndEdit.RemoveAllListeners();
 		}
 
@@ -405,14 +460,17 @@ public static partial class CExtension {
 }
 
 /** 확장 클래스 - UI (스크롤 뷰) */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 상태를 리셋한다 */
-	public static void ExReset(this ScrollRect a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this ScrollRect a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -420,17 +478,20 @@ public static partial class CExtension {
 	}
 
 	/** 리스너를 추가한다 */
-	public static void ExAddListener(this SimpleScrollSnap a_oSender, 
-		UnityAction<int, int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
+	public static void ExAddListener(this SimpleScrollSnap a_oSender,
+		UnityAction<int, int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
-		if(a_oSender == null || a_oCallback == null) {
+		if(a_oSender == null || a_oCallback == null)
+		{
 			return;
 		}
 
 		// 리셋 모드 일 경우
-		if(a_bIsReset) {
+		if(a_bIsReset)
+		{
 			a_oSender.OnPanelCentered.RemoveAllListeners();
 		}
 

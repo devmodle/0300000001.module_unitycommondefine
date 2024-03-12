@@ -12,7 +12,8 @@ using Unity.Notifications.Android;
 #endif // #if UNITY_IOS
 
 /** 상수 - 알림 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 단위
 	public const float B_DELTA_T_NOTI_M_REQUEST_CHECK = 0.15f;

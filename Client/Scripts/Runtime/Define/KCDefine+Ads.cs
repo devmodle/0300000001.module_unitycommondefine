@@ -84,7 +84,7 @@ public static partial class KCDefine {
 	public const string B_KEY_ADS_M_APP_LOVIN_REWARD_ADS_RECEIVE_ADS_REWARD_CALLBACK = "AdsMAppLovinRewardAdsReceiveAdsRewardCallback";
 	// 식별자 }
 #endif // #if APP_LOVIN_ADS_ENABLE
-	#endregion // 컴파일 상수
+#endregion // 컴파일 상수
 
 	#region 런타임 상수
 #if ADMOB_ADS_ENABLE
@@ -96,6 +96,6 @@ public static partial class KCDefine {
 	// 단위
 	public static readonly IronSourceBannerSize B_SIZE_IRON_SRC_BANNER_ADS = new IronSourceBannerSize((int)KCDefine.B_SIZE_BANNER_ADS.x, (int)KCDefine.B_SIZE_BANNER_ADS.y);
 #endif // #if IRON_SRC_ADS_ENABLE
-	#endregion // 런타임 상수
+#endregion // 런타임 상수
 }
 #endif // #if ADS_MODULE_ENABLE

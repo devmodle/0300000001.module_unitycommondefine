@@ -6,7 +6,8 @@ using UnityEngine.Events;
 
 #if PURCHASE_MODULE_ENABLE
 /** 상수 - 결제 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 클래스 프로퍼티
 	public static string B_DATA_P_PURCHASE_PRODUCT_IDS => $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
 	#endregion // 클래스 프로퍼티
@@ -15,7 +16,7 @@ public static partial class KCDefine {
 	// 기타 {
 	public const string B_ENVIRONMENT_N_DEV = "development";
 	public const string B_ENVIRONMENT_N_PRODUCTION = "production";
-	
+
 	public const string B_PAYLOAD_PURCHASE_M_PURCHASE_PRODUCT = "PurchaseMPurchaseProduct";
 	// 기타 }
 

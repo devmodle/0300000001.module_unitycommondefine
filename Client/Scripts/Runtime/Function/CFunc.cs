@@ -17,13 +17,13 @@ public static partial class CFunc
 		CFunc.Assert(!a_bIsAssert || a_oObj != null);
 
 		// 객체 제거가 불가능 할 경우
-		if (a_oObj == null)
+		if(a_oObj == null)
 		{
 			return;
 		}
 
 		// 앱이 실행 중 일 경우
-		if (Application.isPlaying)
+		if(Application.isPlaying)
 		{
 			GameObject.Destroy(a_oObj);
 		}
@@ -77,7 +77,7 @@ public static partial class CFunc
 
 		oOpenPathInfoList.Add(CFactory.MakePathInfo(a_stSrcIdx));
 
-		while (oOpenPathInfoList.ExIsValid())
+		while(oOpenPathInfoList.ExIsValid())
 		{
 			var oPathInfo = oOpenPathInfoList[KCDefine.B_VAL_0_INT];
 
@@ -85,11 +85,11 @@ public static partial class CFunc
 			oOpenPathInfoList.ExRemoveValAt(KCDefine.B_VAL_0_INT);
 
 			// 경로를 탐색했을 경우
-			if (a_oFindCallback(oPathInfo))
+			if(a_oFindCallback(oPathInfo))
 			{
 				var oIdxList = new List<Vector3Int>();
 
-				while (oPathInfo != null)
+				while(oPathInfo != null)
 				{
 					oIdxList.Insert(KCDefine.B_VAL_0_INT, oPathInfo.m_stIdx);
 					oPathInfo = oPathInfo.m_oPrevPathInfo;
@@ -98,12 +98,12 @@ public static partial class CFunc
 				return oIdxList;
 			}
 
-			for (int i = 0; i < a_oOffsetList.Count; ++i)
+			for(int i = 0; i < a_oOffsetList.Count; ++i)
 			{
 				var stNextIdx = oPathInfo.m_stIdx + a_oOffsetList[i];
 
 				// 이동이 불가능 할 경우
-				if (!a_oMoveCallback(oPathInfo, stNextIdx))
+				if(!a_oMoveCallback(oPathInfo, stNextIdx))
 				{
 					continue;
 				}
@@ -112,7 +112,7 @@ public static partial class CFunc
 				int nCost = a_oCostCallback(oPathInfo, stNextIdx);
 
 				// 탐색이 가능 할 경우
-				if (!oVisitIdxList.Contains(stNextIdx))
+				if(!oVisitIdxList.Contains(stNextIdx))
 				{
 					var oNextPathInfo = CFactory.MakePathInfo(stNextIdx, nCost);
 					oNextPathInfo.m_oPrevPathInfo = oPathInfo;
@@ -121,7 +121,7 @@ public static partial class CFunc
 					oOpenPathInfoList.Add(oNextPathInfo);
 				}
 				// 경로 정보 설정이 가능 할 경우
-				else if (oClosePathInfoList.ExIsValidIdx(nIdx) && nCost < oClosePathInfoList[nIdx].m_nCost)
+				else if(oClosePathInfoList.ExIsValidIdx(nIdx) && nCost < oClosePathInfoList[nIdx].m_nCost)
 				{
 					oClosePathInfoList[nIdx].m_nCost = nCost;
 					oClosePathInfoList[nIdx].m_oPrevPathInfo = oPathInfo;
@@ -148,12 +148,12 @@ public static partial class CFunc
 	{
 		var oObjs = a_stScene.GetRootGameObjects();
 
-		for (int i = 0; i < oObjs.Length; ++i)
+		for(int i = 0; i < oObjs.Length; ++i)
 		{
 			var oComponent = oObjs[i].GetComponentInChildren<T>();
 
 			// 컴포넌트가 존재 할 경우
-			if (oComponent != null)
+			if(oComponent != null)
 			{
 				return oComponent;
 			}
@@ -175,7 +175,7 @@ public static partial class CFunc
 		var oObjs = a_stScene.GetRootGameObjects();
 		var oComponentList = new List<T>();
 
-		for (int i = 0; i < oObjs.Length; ++i)
+		for(int i = 0; i < oObjs.Length; ++i)
 		{
 			var oComponents = oObjs[i].GetComponentsInChildren<T>();
 			oComponentList.ExAddVals(oComponents.ToList());

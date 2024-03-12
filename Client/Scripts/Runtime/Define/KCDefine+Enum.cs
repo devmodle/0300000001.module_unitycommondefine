@@ -36,7 +36,8 @@ using UnityEngine.Events;
 */
 #region 기본
 /** POT */
-public enum EPOT {
+public enum EPOT
+{
 	NONE = -1,
 	[HideInInspector] _2 = 2,
 	[HideInInspector] _4 = 4,
@@ -55,7 +56,8 @@ public enum EPOT {
 }
 
 /** 열거형 값 */
-public enum EEnumVal {
+public enum EEnumVal
+{
 	NONE = -1,
 	T = KCDefine.B_UNIT_KINDS_PER_TYPE,
 	ST = KCDefine.B_UNIT_KINDS_PER_SUB_TYPE,
@@ -65,7 +67,8 @@ public enum EEnumVal {
 }
 
 /** 종류 그룹 타입 */
-public enum EKindsGroupType {
+public enum EKindsGroupType
+{
 	NONE = -1,
 	TYPE,
 	SUB_TYPE,
@@ -75,7 +78,8 @@ public enum EKindsGroupType {
 }
 
 /** 교환 타입 */
-public enum ESwapType {
+public enum ESwapType
+{
 	NONE = -1,
 	LESS,
 	GREAT,
@@ -84,7 +88,8 @@ public enum ESwapType {
 }
 
 /** 벡터 타입 */
-public enum EVecType {
+public enum EVecType
+{
 	NONE = -1,
 	POS,
 	DIRECTION,
@@ -92,7 +97,8 @@ public enum EVecType {
 }
 
 /** 그리드 타입 */
-public enum EGridType {
+public enum EGridType
+{
 	NONE = -1,
 	SCALE,
 	SCROLL_V,
@@ -101,7 +107,8 @@ public enum EGridType {
 }
 
 /** 수직 동기화 */
-public enum EVSync {
+public enum EVSync
+{
 	NONE = -1,
 	NEVER,
 	EVERY,
@@ -110,7 +117,8 @@ public enum EVSync {
 }
 
 /** 터치 이벤트 */
-public enum ETouchEvent {
+public enum ETouchEvent
+{
 	NONE = -1,
 	BEGIN,
 	MOVE,
@@ -119,7 +127,8 @@ public enum ETouchEvent {
 }
 
 /** 마우스 버튼 */
-public enum EMouseBtn {
+public enum EMouseBtn
+{
 	NONE = -1,
 	LEFT,
 	RIGHT,
@@ -128,7 +137,8 @@ public enum EMouseBtn {
 }
 
 /** 분석 */
-public enum EAnalytics {
+public enum EAnalytics
+{
 	NONE = -1,
 	FLURRY,
 	FIREBASE,
@@ -138,7 +148,8 @@ public enum EAnalytics {
 }
 
 /** 폰트 세트 */
-public enum EFontSet {
+public enum EFontSet
+{
 	NONE = -1,
 	_1,
 	_2,
@@ -153,7 +164,8 @@ public enum EFontSet {
 }
 
 /** 방향 */
-public enum EDirection {
+public enum EDirection
+{
 	NONE = -1,
 
 	UP,
@@ -178,7 +190,8 @@ public enum EDirection {
 }
 
 /** 반전 */
-public enum EReflection {
+public enum EReflection
+{
 	NONE = -1,
 	IGNORE,
 	VERTICAL,
@@ -188,7 +201,8 @@ public enum EReflection {
 }
 
 /** 투영 */
-public enum EProjection {
+public enum EProjection
+{
 	NONE = -1,
 	_2D,
 	_3D,
@@ -196,7 +210,8 @@ public enum EProjection {
 }
 
 /** 직교 */
-public enum EOrthogonal {
+public enum EOrthogonal
+{
 	NONE = -1,
 	CW,
 	CCW,
@@ -204,7 +219,8 @@ public enum EOrthogonal {
 }
 
 /** 난이도 */
-public enum EDifficulty {
+public enum EDifficulty
+{
 	NONE = -1,
 	EASY,
 	NORM,
@@ -216,7 +232,8 @@ public enum EDifficulty {
 }
 
 /** 채우기 기준 */
-public enum EFillOrigin {
+public enum EFillOrigin
+{
 	NONE = -1,
 	_1,
 	_2,
@@ -226,19 +243,21 @@ public enum EFillOrigin {
 }
 
 /** 퀄리티 수준 */
-public enum EQualityLevel {
+public enum EQualityLevel
+{
 	NONE = -1,
-	[HideInInspector] [System.Obsolete] VERY_LOW,
-	[HideInInspector] [System.Obsolete] LOW,
+	[HideInInspector][System.Obsolete] VERY_LOW,
+	[HideInInspector][System.Obsolete] LOW,
 	NORM,
 	HIGH,
-	[HideInInspector] [System.Obsolete] VERY_HIGH,
+	[HideInInspector][System.Obsolete] VERY_HIGH,
 	ULTRA,
 	[HideInInspector] MAX_VAL
 }
 
 /** 스프라이트 모드 */
-public enum ESpriteMode {
+public enum ESpriteMode
+{
 	NONE = -1,
 	SINGLE,
 	MULTIPLE,
@@ -247,7 +266,8 @@ public enum ESpriteMode {
 }
 
 /** 광원 맵 모드 */
-public enum ELightmapMode {
+public enum ELightmapMode
+{
 	NONE = -1,
 	NON_DIRECTIONAL,
 	COMBINE_DIRECTIONAL,
@@ -255,7 +275,8 @@ public enum ELightmapMode {
 }
 
 /** 안티 에일리어싱 수준 */
-public enum EAAQuality {
+public enum EAAQuality
+{
 	NONE = -1,
 	DISABLE,
 	_2x,
@@ -265,7 +286,8 @@ public enum EAAQuality {
 }
 
 /** 쉐이더 로그 수준 */
-public enum EShaderVariantLogLevel {
+public enum EShaderVariantLogLevel
+{
 	NONE = -1,
 	DISABLE,
 	ONLY_URP_SHADERS,
@@ -274,16 +296,18 @@ public enum EShaderVariantLogLevel {
 }
 
 /** 광원 맵 엔코딩 퀄리티 */
-public enum ELightmapEncodingQuality {
+public enum ELightmapEncodingQuality
+{
 	NONE = -1,
-	[HideInInspector] [System.Obsolete] LOW,
+	[HideInInspector][System.Obsolete] LOW,
 	NORM,
 	HIGH,
 	[HideInInspector] MAX_VAL
 }
 
 /** 소프트 그림자 퀄리티 */
-public enum ESoftShadowQuality {
+public enum ESoftShadowQuality
+{
 	NONE = -1,
 	USE_PIPELINE_SETTINGS,
 	LOW,
@@ -293,7 +317,8 @@ public enum ESoftShadowQuality {
 }
 
 /** 그림자 옵션 */
-public enum EShadowCascadesOpts {
+public enum EShadowCascadesOpts
+{
 	NONE = -1,
 	NO_CASCADES = 1,
 	TWO_CASCADES = 2,
@@ -303,7 +328,8 @@ public enum EShadowCascadesOpts {
 }
 
 /** 약관 동의 팝업 */
-public enum EAgreePopup {
+public enum EAgreePopup
+{
 	NONE = -1,
 	KR,
 	EU,
@@ -311,7 +337,8 @@ public enum EAgreePopup {
 }
 
 /** 내비게이션 스택 이벤트 */
-public enum ENavStackEvent {
+public enum ENavStackEvent
+{
 	NONE = -1,
 	TOP,
 	REMOVE,
@@ -320,7 +347,8 @@ public enum ENavStackEvent {
 }
 
 /** 키 타입 */
-public enum EKeyType {
+public enum EKeyType
+{
 	NONE = -1,
 	MULTI,
 	SINGLE,
@@ -328,7 +356,8 @@ public enum EKeyType {
 }
 
 /** 값 타입 */
-public enum EValType {
+public enum EValType
+{
 	NONE = -1,
 	INT,
 	REAL,
@@ -336,7 +365,8 @@ public enum EValType {
 }
 
 /** 유저 타입 */
-public enum EUserType {
+public enum EUserType
+{
 	NONE = -1,
 	A,
 	B,
@@ -344,7 +374,8 @@ public enum EUserType {
 }
 
 /** 디바이스 타입 */
-public enum EDeviceType {
+public enum EDeviceType
+{
 	NONE = -1,
 	PHONE,
 	TABLET,
@@ -356,14 +387,16 @@ public enum EDeviceType {
 }
 
 /** iOS 타입 */
-public enum EiOSType {
+public enum EiOSType
+{
 	NONE = -1,
 	APPLE,
 	[HideInInspector] MAX_VAL
 }
 
 /** 안드로이드 타입 */
-public enum EAndroidType {
+public enum EAndroidType
+{
 	NONE = -1,
 	GOOGLE,
 	AMAZON,
@@ -371,7 +404,8 @@ public enum EAndroidType {
 }
 
 /** 독립 플랫폼 타입 */
-public enum EStandaloneType {
+public enum EStandaloneType
+{
 	NONE = -1,
 	MAC_STEAM,
 	MAC_EDITOR,
@@ -381,7 +415,8 @@ public enum EStandaloneType {
 }
 
 /** 진동 타입 */
-public enum EVibrateType {
+public enum EVibrateType
+{
 	NONE = -1,
 	SELECTION,
 	NOTIFICATION,
@@ -390,7 +425,8 @@ public enum EVibrateType {
 }
 
 /** 진동 스타일 */
-public enum EVibrateStyle {
+public enum EVibrateStyle
+{
 	NONE = -1,
 	LIGHT,
 	MEDIUM,
@@ -402,7 +438,8 @@ public enum EVibrateStyle {
 #region 조건부 상수
 #if UNITY_EDITOR
 /** DSP 버퍼 크기 */
-public enum EDSPBufferSize {
+public enum EDSPBufferSize
+{
 	NONE = -1,
 	DEFAULT,
 	BEST_LATENCY = 256,
@@ -412,7 +449,8 @@ public enum EDSPBufferSize {
 }
 
 /** 종횡비 모드 */
-public enum EAspectRatioMode {
+public enum EAspectRatioMode
+{
 	NONE = -1,
 	LEGACY_WIDE_SCREEN,
 	NATIVE_ASPECT_RATIO,
@@ -421,7 +459,8 @@ public enum EAspectRatioMode {
 }
 
 /** 가속도 갱신 주기 */
-public enum EAccelerometerFrequency {
+public enum EAccelerometerFrequency
+{
 	NONE = -1,
 	DISABLE,
 	FREQUENCY_15_HZ = 15,
@@ -432,7 +471,8 @@ public enum EAccelerometerFrequency {
 }
 
 /** 빌드 모드 */
-public enum EBuildMode {
+public enum EBuildMode
+{
 	NONE = -1,
 	DEBUG,
 	RELEASE,
@@ -441,7 +481,8 @@ public enum EBuildMode {
 }
 
 /** 텍스처 압축 */
-public enum ETexCompression {
+public enum ETexCompression
+{
 	NONE = -1,
 	LEGACY,
 	DEFAULT,

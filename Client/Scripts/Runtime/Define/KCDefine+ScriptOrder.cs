@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 상수 - 스크립트 순서 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 스크립트 순서 {
 	public const int B_SCRIPT_O_LATE = byte.MaxValue * 20;

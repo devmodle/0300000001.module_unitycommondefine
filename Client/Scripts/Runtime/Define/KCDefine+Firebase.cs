@@ -49,7 +49,7 @@ public static partial class KCDefine {
 	// 식별자
 	public const string B_KEY_FIREBASE_M_LOAD_FILES_CALLBACK = "FirebaseMLoadFilesCallback";
 #endif // #if FIREBASE_STORAGE_ENABLE
-	#endregion // 컴파일 상수
+#endregion // 컴파일 상수
 
 	#region 런타임 상수
 	// 단위
