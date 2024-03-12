@@ -228,7 +228,6 @@ public static partial class CExtension {
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this Button a_oSender, 
 		UnityAction a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -247,7 +246,6 @@ public static partial class CExtension {
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this Slider a_oSender, 
 		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -271,7 +269,6 @@ public static partial class CExtension {
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this Scrollbar a_oSender, 
 		UnityAction<float> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -295,7 +292,6 @@ public static partial class CExtension {
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this Dropdown a_oSender, 
 		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -314,7 +310,6 @@ public static partial class CExtension {
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this TMP_Dropdown a_oSender, 
 		UnityAction<int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -338,7 +333,6 @@ public static partial class CExtension {
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this InputField a_oSender, 
 		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -357,7 +351,6 @@ public static partial class CExtension {
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this TMP_InputField a_oSender, 
 		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -376,7 +369,6 @@ public static partial class CExtension {
 	/** 편집 종료 리스너를 추가한다 */
 	public static void ExAddEndEditListener(this InputField a_oSender, 
 		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -395,7 +387,6 @@ public static partial class CExtension {
 	/** 편집 종료 리스너를 추가한다 */
 	public static void ExAddEndEditListener(this TMP_InputField a_oSender, 
 		UnityAction<string> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-			
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우
@@ -431,7 +422,6 @@ public static partial class CExtension {
 	/** 리스너를 추가한다 */
 	public static void ExAddListener(this SimpleScrollSnap a_oSender, 
 		UnityAction<int, int> a_oCallback, bool a_bIsReset = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCallback != null));
 
 		// 리스너 추가가 불가능 할 경우

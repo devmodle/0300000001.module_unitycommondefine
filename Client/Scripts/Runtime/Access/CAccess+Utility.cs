@@ -317,7 +317,6 @@ public static partial class CAccess {
 	/** 컴포넌트를 순회한다 */
 	public static void EnumerateComponents<T>(System.Func<T, bool> a_oCallback, 
 		bool a_bIsIncludeInactive = false, bool a_bIsAssert = true) where T : Component {
-
 		CFunc.Assert(!a_bIsAssert || a_oCallback != null);
 
 		// 컴포넌트 순회가 불가능 할 경우

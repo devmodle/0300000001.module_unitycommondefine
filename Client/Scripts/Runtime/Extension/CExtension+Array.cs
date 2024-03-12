@@ -58,7 +58,6 @@ public static partial class CExtension {
 	/** 값을 안정 정렬한다 */
 	public static void ExStableSort<T>(this T[] a_oSender, 
 		System.Comparison<T> a_oCompare, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 안정 정렬이 불가능 할 경우

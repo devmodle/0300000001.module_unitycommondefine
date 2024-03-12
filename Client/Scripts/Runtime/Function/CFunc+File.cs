@@ -126,7 +126,6 @@ public static partial class CFunc {
 	/** 문자열을 기록한다 */
 	public static void WriteStr(string a_oFilePath,
 		string a_oStr, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oStr != null && a_oFilePath.ExIsValid()));
 
 		// 문자열 기록이 불가능 할 경우
@@ -142,7 +141,6 @@ public static partial class CFunc {
 	/** 문자열을 기록한다 */
 	public static void WriteStr(FileStream a_oWStream,
 		string a_oStr, bool a_bIsBase64, System.Text.Encoding a_oEncoding = null, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oWStream != null && a_oStr != null));
 
 		// 문자열 기록이 불가능 할 경우
@@ -157,7 +155,6 @@ public static partial class CFunc {
 	/** 파일을 복사한다 */
 	public static void CopyFile(string a_oSrcPath,
 		string a_oDestPath, bool a_bIsOverwrite = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
 
 		// 파일 복사가 불가능 할 경우
@@ -172,7 +169,6 @@ public static partial class CFunc {
 	/** 파일을 복사한다 */
 	public static void CopyFile(string a_oSrcPath,
 		string a_oDestPath, string a_oIgnoreToken, System.Text.Encoding a_oEncoding = null, bool a_bIsOverwrite = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
 
 		// 파일 복사가 불가능 할 경우
@@ -199,7 +195,6 @@ public static partial class CFunc {
 	/** 파일을 복사한다 */
 	public static void CopyFile(string a_oSrcPath,
 		string a_oDestPath, string a_oTarget, string a_oReplace, System.Text.Encoding a_oEncoding = null, bool a_bIsOverwrite = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
 
 		// 파일 복사가 불가능 할 경우
@@ -224,7 +219,6 @@ public static partial class CFunc {
 	/** 디렉토리를 복사한다 */
 	public static void CopyDir(string a_oSrcPath,
 		string a_oDestPath, bool a_bIsReplace = true, bool a_bIsOverwrite = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSrcPath.ExIsValid() && a_oDestPath.ExIsValid()));
 
 		// 디렉토리 복사가 불가능 할 경우

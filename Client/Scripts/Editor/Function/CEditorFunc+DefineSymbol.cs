@@ -13,7 +13,6 @@ public static partial class CEditorFunc {
 	/** 전처리기 심볼을 설정한다 */
 	public static void SetupDefineSymbols(Dictionary<BuildTargetGroup, List<string>> a_oDefineSymbolDictContainer, 
 		bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || a_oDefineSymbolDictContainer.ExIsValid());
 
 		// 설정이 불가능 할 경우
