@@ -9,7 +9,8 @@ using UnityEngine.Rendering;
 using UnityEditor;
 
 /** 에디터 독립 플랫폼 상수 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 상수
 	// 이름
 	public const string B_BUILD_FILE_EXTENSION_STANDALONE_APP = "app";

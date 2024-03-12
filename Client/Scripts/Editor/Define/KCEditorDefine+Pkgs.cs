@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 패키지 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	// 식별자
 	public const string B_UNITY_PKGS_ID_FMT = "{0}@{1}";

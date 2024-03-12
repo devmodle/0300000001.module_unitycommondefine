@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 상수 - URP */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 이름
 	public const string U_FIELD_N_CLEAR_DEPTH = "m_ClearDepth";

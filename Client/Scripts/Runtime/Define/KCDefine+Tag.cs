@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 상수 - 태그 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 태그 {
 	public const string B_TAG_PLAYER = "Player";
@@ -33,16 +34,16 @@ public static partial class KCDefine {
 	#region 런타임 상수
 	// 태그
 	public static readonly List<string> B_TAG_LIST = new List<string>() {
-		KCDefine.B_TAG_MAIN_LIGHT, 
-		KCDefine.B_TAG_ADDITIONAL_LIGHT, 
-		KCDefine.B_TAG_ADDITIONAL_CAMERA, 
-		KCDefine.B_TAG_SCENE_MANAGER, 
-		KCDefine.B_TAG_OBSTACLE, 
-		KCDefine.B_TAG_ITEM, 
-		KCDefine.B_TAG_SKILL, 
-		KCDefine.B_TAG_OBJ, 
-		KCDefine.B_TAG_FX, 
-		KCDefine.B_TAG_CELL, 
+		KCDefine.B_TAG_MAIN_LIGHT,
+		KCDefine.B_TAG_ADDITIONAL_LIGHT,
+		KCDefine.B_TAG_ADDITIONAL_CAMERA,
+		KCDefine.B_TAG_SCENE_MANAGER,
+		KCDefine.B_TAG_OBSTACLE,
+		KCDefine.B_TAG_ITEM,
+		KCDefine.B_TAG_SKILL,
+		KCDefine.B_TAG_OBJ,
+		KCDefine.B_TAG_FX,
+		KCDefine.B_TAG_CELL,
 		KCDefine.B_TAG_NON_PLAYER
 	};
 	#endregion // 런타임 상수

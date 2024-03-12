@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 상수 - 버전 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 버전
 	public const string B_DEF_VER_STR = "1.0.0";

@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 젠킨스 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	// 기타 {
 	public const string B_BRANCH_FMT_JENKINS = "origin/{0}";
@@ -95,17 +96,19 @@ public static partial class KCEditorDefine {
 
 	#region 런타임 상수
 	// 기타 {
-	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS", 
+	public static readonly string B_JENKINS_IOS_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/01.iOS",
 		KCEditorDefine.B_VER_UNITY_MODULE);
 
-	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android", 
+	public static readonly string B_JENKINS_ANDROID_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/11.Android",
 		KCEditorDefine.B_VER_UNITY_MODULE);
 
-	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone", 
+	public static readonly string B_JENKINS_STANDALONE_PIPELINE = string.Format($"{KCEditorDefine.B_PIPELINE_GROUP_NAME_FMT_JENKINS}/41.Standalone",
 		KCEditorDefine.B_VER_UNITY_MODULE);
 
-	public static readonly Dictionary<EiOSType, Dictionary<string, string>> B_JENKINS_IOS_SOURCES = new Dictionary<EiOSType, Dictionary<string, string>>() {
-		[EiOSType.APPLE] = new Dictionary<string, string>() {
+	public static readonly Dictionary<EiOSType, Dictionary<string, string>> B_JENKINS_IOS_SOURCES = new Dictionary<EiOSType, Dictionary<string, string>>()
+	{
+		[EiOSType.APPLE] = new Dictionary<string, string>()
+		{
 			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.iOSAppleDebug",
 			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.iOSAppleRelease",
 			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.iOSAppleStoreA",
@@ -113,8 +116,10 @@ public static partial class KCEditorDefine {
 		}
 	};
 
-	public static readonly Dictionary<EAndroidType, Dictionary<string, string>> B_JENKINS_ANDROID_SOURCES = new Dictionary<EAndroidType, Dictionary<string, string>>() {
-		[EAndroidType.GOOGLE] = new Dictionary<string, string>() {
+	public static readonly Dictionary<EAndroidType, Dictionary<string, string>> B_JENKINS_ANDROID_SOURCES = new Dictionary<EAndroidType, Dictionary<string, string>>()
+	{
+		[EAndroidType.GOOGLE] = new Dictionary<string, string>()
+		{
 			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.AndroidGoogleDebug",
 			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.AndroidGoogleRelease",
 			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidGoogleStoreA",
@@ -122,7 +127,8 @@ public static partial class KCEditorDefine {
 			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.AndroidGoogleStoreDist"
 		},
 
-		[EAndroidType.AMAZON] = new Dictionary<string, string>() {
+		[EAndroidType.AMAZON] = new Dictionary<string, string>()
+		{
 			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.AndroidAmazonDebug",
 			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.AndroidAmazonRelease",
 			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.AndroidAmazonStoreA",
@@ -131,15 +137,18 @@ public static partial class KCEditorDefine {
 		}
 	};
 
-	public static readonly Dictionary<EStandaloneType, Dictionary<string, string>> B_JENKINS_STANDALONE_SOURCES = new Dictionary<EStandaloneType, Dictionary<string, string>>() {
-		[EStandaloneType.MAC_STEAM] = new Dictionary<string, string>() {
+	public static readonly Dictionary<EStandaloneType, Dictionary<string, string>> B_JENKINS_STANDALONE_SOURCES = new Dictionary<EStandaloneType, Dictionary<string, string>>()
+	{
+		[EStandaloneType.MAC_STEAM] = new Dictionary<string, string>()
+		{
 			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneMacSteamDebug",
 			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneMacSteamRelease",
 			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.StandaloneMacSteamStoreA",
 			[KCEditorDefine.B_STORE_DIST_BUILD_FUNC_JENKINS] = "31.StandaloneMacSteamStoreDist"
 		},
 
-		[EStandaloneType.WNDS_STEAM] = new Dictionary<string, string>() {
+		[EStandaloneType.WNDS_STEAM] = new Dictionary<string, string>()
+		{
 			[KCEditorDefine.B_DEBUG_BUILD_FUNC_JENKINS] = "01.StandaloneWndsSteamDebug",
 			[KCEditorDefine.B_RELEASE_BUILD_FUNC_JENKINS] = "11.StandaloneWndsSteamRelease",
 			[KCEditorDefine.B_STORE_A_BUILD_FUNC_JENKINS] = "21.StandaloneWndsSteamStoreA",

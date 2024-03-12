@@ -9,7 +9,8 @@ using UnityEngine.Rendering;
 using UnityEditor;
 
 /** 에디터 안드로이드 상수 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 상수
 	// 단위
 	public const int B_UNIT_VALIDATE_APP_BUNDLE_SIZE = 150;

@@ -9,7 +9,8 @@ using UnityEditor;
 using UnityEditor.Build;
 
 /** 에디터 상수 - 입력 시스템 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 런타임 상수
 	// 기타 {
 	public static List<string> B_AUDIO_IMPORTER_PLATFORM_NAME_LIST = new List<string>() {

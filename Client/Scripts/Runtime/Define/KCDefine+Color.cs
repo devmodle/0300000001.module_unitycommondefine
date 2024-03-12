@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 상수 - 색상 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 런타임 상수
 	// 색상 {
 	public static readonly Color B_COLOR_NORM = Color.white;

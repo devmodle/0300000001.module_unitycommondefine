@@ -7,7 +7,8 @@ using UnityEngine.Events;
 using System.Reflection;
 
 /** 상수 - 기본 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 클래스 프로퍼티
 #if UNITY_IOS || UNITY_ANDROID
 	public static string B_DIR_P_WRITABLE => $"{Application.persistentDataPath}/{Application.identifier}/";
@@ -608,23 +609,24 @@ public static partial class KCDefine {
 	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
 
 	public static readonly List<(Vector2Int, Vector2Int)> B_IDX_OFFSET_INFO_LIST_2D = new List<(Vector2Int, Vector2Int)>() {
-		(Vector2Int.down, Vector2Int.up), 
-		(Vector2Int.up, Vector2Int.down), 
-		(Vector2Int.right, Vector2Int.left), 
-		(Vector2Int.left, Vector2Int.right), 
-		(Vector2Int.down, Vector2Int.left), 
-		(Vector2Int.down, Vector2Int.right), 
-		(Vector2Int.up, Vector2Int.left), 
-		(Vector2Int.up, Vector2Int.right), 
-		(Vector2Int.right, Vector2Int.up), 
-		(Vector2Int.right, Vector2Int.down), 
-		(Vector2Int.left, Vector2Int.up), 
+		(Vector2Int.down, Vector2Int.up),
+		(Vector2Int.up, Vector2Int.down),
+		(Vector2Int.right, Vector2Int.left),
+		(Vector2Int.left, Vector2Int.right),
+		(Vector2Int.down, Vector2Int.left),
+		(Vector2Int.down, Vector2Int.right),
+		(Vector2Int.up, Vector2Int.left),
+		(Vector2Int.up, Vector2Int.right),
+		(Vector2Int.right, Vector2Int.up),
+		(Vector2Int.right, Vector2Int.down),
+		(Vector2Int.left, Vector2Int.up),
 		(Vector2Int.left, Vector2Int.down)
 	};
 	// 인덱스 }
 
 	// 토큰 {
-	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_KOREAN = new Dictionary<string, decimal>() {
+	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_KOREAN = new Dictionary<string, decimal>()
+	{
 		["만"] = 10000m,
 		["억"] = 100000000m,
 		["조"] = 1000000000000m,
@@ -634,7 +636,8 @@ public static partial class KCDefine {
 		["양"] = 10000000000000000000000000000m
 	};
 
-	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_ENGLISH = new Dictionary<string, decimal>() {
+	public static readonly Dictionary<string, decimal> B_NUM_TOKEN_DICT_ENGLISH = new Dictionary<string, decimal>()
+	{
 		["K"] = 1000m,
 		["M"] = 1000000m,
 		["B"] = 1000000000m,
@@ -649,32 +652,32 @@ public static partial class KCDefine {
 
 	// 국가 코드
 	public static readonly List<string> B_EU_COUNTRY_CODE_LIST = new List<string>() {
-		"BE", 
-		"BG", 
-		"CZ", 
-		"DK", 
-		"DE", 
-		"EE", 
-		"IE", 
-		"GR", 
-		"ES", 
-		"FR", 
-		"HR", 
-		"IT", 
-		"CY", 
-		"LV", 
-		"LT", 
-		"LU", 
-		"HU", 
-		"MT", 
-		"NL", 
-		"AT", 
-		"PL", 
-		"PT", 
-		"RO", 
-		"SI", 
-		"SK", 
-		"FI", 
+		"BE",
+		"BG",
+		"CZ",
+		"DK",
+		"DE",
+		"EE",
+		"IE",
+		"GR",
+		"ES",
+		"FR",
+		"HR",
+		"IT",
+		"CY",
+		"LV",
+		"LT",
+		"LU",
+		"HU",
+		"MT",
+		"NL",
+		"AT",
+		"PL",
+		"PT",
+		"RO",
+		"SI",
+		"SK",
+		"FI",
 		"SE"
 	};
 	#endregion // 런타임 상수

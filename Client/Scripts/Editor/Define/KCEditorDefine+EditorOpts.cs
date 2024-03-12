@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 에디터 옵션 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	// 기타 {
 	public const string B_EDITOR_OPTS_REMOTE_COMPRESSION = "JPEG";

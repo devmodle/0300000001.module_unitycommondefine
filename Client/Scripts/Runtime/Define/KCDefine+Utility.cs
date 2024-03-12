@@ -6,7 +6,8 @@ using UnityEngine.Events;
 using DG.Tweening;
 
 /** 상수 - 유틸리티 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 프로퍼티
 	public static string U_DATA_P_COMMON_APP_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
 	public static string U_DATA_P_COMMON_USER_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonUserInfo.bytes";
@@ -79,7 +80,7 @@ public static partial class KCDefine {
 
 	public const float U_DISTANCE_CAMERA_FAR_PLANE = 100000.0f * KCDefine.B_UNIT_SCALE;
 	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 1.0f * KCDefine.B_UNIT_SCALE;
-	
+
 	public const float U_UNIT_TABLET_INCHES = 6.5f;
 	public const float U_UNIT_SCROLL_SENSITIVITY = 250.0f;
 	// 단위 }
@@ -703,7 +704,7 @@ public static partial class KCDefine {
 	public static readonly string U_OBJ_P_G_RESULT_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResultPopup";
 	public static readonly string U_OBJ_P_G_RESUME_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ResumePopup";
 	public static readonly string U_OBJ_P_G_PAUSE_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_PausePopup";
-	
+
 	public static readonly string U_OBJ_P_G_PRODUCT_BUY_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_ProductBuyPopup";
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
@@ -933,7 +934,8 @@ public static partial class KCDefine {
 }
 
 /** 초기화 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 
 	#endregion // 기본
@@ -946,7 +948,8 @@ public static partial class KCDefine {
 }
 
 /** 설정 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 이름
 	public const string SS_OBJ_N_TIMER_MANAGER = "TimerManager";
@@ -967,7 +970,8 @@ public static partial class KCDefine {
 }
 
 /** 지연 설정 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 약관 동의 팝업
 	public const string AS_OBJ_N_AGREE_POPUP = "AgreePopup";
@@ -989,14 +993,16 @@ public static partial class KCDefine {
 }
 
 /** 타이틀 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 
 	#endregion // 기본
 }
 
 /** 메인 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 
 	#endregion // 기본
@@ -1010,7 +1016,8 @@ public static partial class KCDefine {
 }
 
 /** 플레이 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 	// 이름
 	public const string PS_OBJ_N_FMT_CELL_OBJ_ROOT = "CELL_OBJ_ROOT_{0:00}";
@@ -1018,21 +1025,24 @@ public static partial class KCDefine {
 }
 
 /** 결과 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 
 	#endregion // 기본
 }
 
 /** 로딩 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 
 	#endregion // 기본
 }
 
 /** 중첩 씬 상수 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 기본
 
 	#endregion // 기본
