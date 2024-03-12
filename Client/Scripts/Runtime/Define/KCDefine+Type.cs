@@ -19,7 +19,8 @@ using GoogleSheetsToUnity;
 
 #region 기본
 /** 갱신 인터페이스 */
-public partial interface IUpdatable {
+public partial interface IUpdatable
+{
 	/** 상태를 갱신한다 */
 	public void OnUpdate(float a_fDeltaTime);
 
@@ -34,19 +35,22 @@ public partial interface IUpdatable {
 }
 
 /** 풀링 인터페이스 */
-public partial interface IPoolable {
+public partial interface IPoolable
+{
 	/** 풀링 여부를 변경한다 */
 	public void SetIsPooling(bool a_bIsPooling);
 }
 
 /** 콜백 정보 */
-public struct STCallbackInfo {
+public struct STCallbackInfo
+{
 	public string m_oKey;
 	public System.Action m_oCallback;
 
 	#region 함수
 	/** 생성자 */
-	public STCallbackInfo(string a_oKey, System.Action a_oCallback) {
+	public STCallbackInfo(string a_oKey, System.Action a_oCallback)
+	{
 		m_oKey = a_oKey;
 		m_oCallback = a_oCallback;
 	}
@@ -54,13 +58,15 @@ public struct STCallbackInfo {
 }
 
 /** 컴포넌트 정보 */
-public struct STComponentInfo {
+public struct STComponentInfo
+{
 	public int m_nID;
 	public Component m_oComponent;
 
 	#region 함수
 	/** 생성자 */
-	public STComponentInfo(int a_nID, Component a_oComponent) {
+	public STComponentInfo(int a_nID, Component a_oComponent)
+	{
 		m_nID = a_nID;
 		m_oComponent = a_oComponent;
 	}
@@ -68,13 +74,15 @@ public struct STComponentInfo {
 }
 
 /** 스크롤러 정보 */
-public struct STScrollerInfo {
+public struct STScrollerInfo
+{
 	public EnhancedScroller m_oScroller;
 	public EnhancedScrollerCellView m_oScrollerCellView;
 
 	#region 함수
 	/** 생성자 */
-	public STScrollerInfo(EnhancedScroller a_oScroller, EnhancedScrollerCellView a_oScrollerCellView) {
+	public STScrollerInfo(EnhancedScroller a_oScroller, EnhancedScrollerCellView a_oScrollerCellView)
+	{
 		m_oScroller = a_oScroller;
 		m_oScrollerCellView = a_oScrollerCellView;
 	}
@@ -82,7 +90,8 @@ public struct STScrollerInfo {
 }
 
 /** 비활성화 게임 객체 정보 */
-public struct STDespawnGameObjInfo {
+public struct STDespawnGameObjInfo
+{
 	public bool m_bIsDestroy;
 	public string m_oGameObjsPoolKey;
 	public System.DateTime m_stDespawnTime;
@@ -91,16 +100,16 @@ public struct STDespawnGameObjInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STDespawnGameObjInfo(string a_oGameObjsPoolKey, 
-		GameObject a_oObj, bool a_bIsDestroy = false) : this(a_oGameObjsPoolKey, a_oObj, System.DateTime.Now, a_bIsDestroy) {
-
+	public STDespawnGameObjInfo(string a_oGameObjsPoolKey,
+		GameObject a_oObj, bool a_bIsDestroy = false) : this(a_oGameObjsPoolKey, a_oObj, System.DateTime.Now, a_bIsDestroy)
+	{
 		// Do Something
 	}
 
 	/** 생성자 */
-	public STDespawnGameObjInfo(string a_oGameObjsPoolKey, 
-		GameObject a_oObj, System.DateTime a_stDespawnTime, bool a_bIsDestroy = false) {
-			
+	public STDespawnGameObjInfo(string a_oGameObjsPoolKey,
+		GameObject a_oObj, System.DateTime a_stDespawnTime, bool a_bIsDestroy = false)
+	{
 		m_oObj = a_oObj;
 		m_bIsDestroy = a_bIsDestroy;
 		m_oGameObjsPoolKey = a_oGameObjsPoolKey;
@@ -110,19 +119,23 @@ public struct STDespawnGameObjInfo {
 }
 
 /** 정렬 순서 정보 */
-public struct STSortingOrderInfo {
+public struct STSortingOrderInfo
+{
 	public int m_nOrder;
 	public string m_oLayer;
 
 	#region 상수
-	public static readonly STSortingOrderInfo INVALID = new STSortingOrderInfo() {
-		m_nOrder = short.MinValue, m_oLayer = KCDefine.B_SORTING_L_UNDERGROUND
+	public static readonly STSortingOrderInfo INVALID = new STSortingOrderInfo()
+	{
+		m_nOrder = short.MinValue,
+		m_oLayer = KCDefine.B_SORTING_L_UNDERGROUND
 	};
 	#endregion // 상수
 
 	#region 함수
 	/** 생성자 */
-	public STSortingOrderInfo(int a_nOrder, string a_oLayer) {
+	public STSortingOrderInfo(int a_nOrder, string a_oLayer)
+	{
 		m_nOrder = a_nOrder;
 		m_oLayer = a_oLayer;
 	}
@@ -132,14 +145,18 @@ public struct STSortingOrderInfo {
 /** 식별자 정보 */
 [MessagePackObject]
 [System.Serializable]
-public struct STIDInfo {
+public struct STIDInfo
+{
 	[Key(0)] public int m_nID01;
 	[Key(1)] public int m_nID02;
 	[Key(2)] public int m_nID03;
 
 	#region 상수
-	public static readonly STIDInfo INVALID = new STIDInfo() {
-		m_nID01 = KCDefine.B_IDX_INVALID, m_nID02 = KCDefine.B_IDX_INVALID, m_nID03 = KCDefine.B_IDX_INVALID
+	public static readonly STIDInfo INVALID = new STIDInfo()
+	{
+		m_nID01 = KCDefine.B_IDX_INVALID,
+		m_nID02 = KCDefine.B_IDX_INVALID,
+		m_nID03 = KCDefine.B_IDX_INVALID
 	};
 	#endregion // 상수
 
@@ -151,7 +168,8 @@ public struct STIDInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STIDInfo(SimpleJSON.JSONNode a_oIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID) {
+	public STIDInfo(SimpleJSON.JSONNode a_oIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID)
+	{
 		string oID01Key = string.Format(a_oFmt, KCDefine.B_VAL_1_INT);
 		string oID02Key = string.Format(a_oFmt, KCDefine.B_VAL_2_INT);
 		string oID03Key = string.Format(a_oFmt, KCDefine.B_VAL_3_INT);
@@ -162,7 +180,8 @@ public struct STIDInfo {
 	}
 
 	/** 생성자 */
-	public STIDInfo(int a_nID01, int a_nID02 = KCDefine.B_VAL_0_INT, int a_nID03 = KCDefine.B_VAL_0_INT) {
+	public STIDInfo(int a_nID01, int a_nID02 = KCDefine.B_VAL_0_INT, int a_nID03 = KCDefine.B_VAL_0_INT)
+	{
 		m_nID01 = a_nID01;
 		m_nID02 = a_nID02;
 		m_nID03 = a_nID03;
@@ -172,7 +191,8 @@ public struct STIDInfo {
 	#region 조건부 함수
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	/** 식별자 정보를 저장한다 */
-	public void SaveIDInfo(SimpleJSON.JSONNode a_oOutIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID) {
+	public void SaveIDInfo(SimpleJSON.JSONNode a_oOutIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID)
+	{
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_1_INT)] = $"{m_nID01}";
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_2_INT)] = $"{m_nID02}";
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_3_INT)] = $"{m_nID03}";
@@ -184,52 +204,60 @@ public struct STIDInfo {
 /** 인덱스 정보 */
 [MessagePackObject]
 [System.Serializable]
-public struct STIdxInfo : System.IEquatable<STIdxInfo> {
+public struct STIdxInfo : System.IEquatable<STIdxInfo>
+{
 	[Key(0)] public int m_nIdxA;
 	[Key(1)] public int m_nIdxB;
 	[Key(2)] public int m_nIdxC;
 
 	#region 상수
-	public static readonly STIdxInfo INVALID = new STIdxInfo() {
-		m_nIdxA = KCDefine.B_IDX_INVALID, 
-		m_nIdxB = KCDefine.B_IDX_INVALID, 
+	public static readonly STIdxInfo INVALID = new STIdxInfo()
+	{
+		m_nIdxA = KCDefine.B_IDX_INVALID,
+		m_nIdxB = KCDefine.B_IDX_INVALID,
 		m_nIdxC = KCDefine.B_IDX_INVALID
 	};
 	#endregion // 상수
 
 	#region IEquatable
 	/** 동일 여부를 검사한다 */
-	public bool Equals(STIdxInfo a_stIdxInfo) {
-		return m_nIdxA == a_stIdxInfo.m_nIdxA && 
+	public bool Equals(STIdxInfo a_stIdxInfo)
+	{
+		return m_nIdxA == a_stIdxInfo.m_nIdxA &&
 			m_nIdxB == a_stIdxInfo.m_nIdxB && m_nIdxC == a_stIdxInfo.m_nIdxC;
 	}
 	#endregion // IEquatable
 
 	#region operator
 	/** 인덱스 정보 => 인덱스로 변환한다 */
-	public static implicit operator Vector2Int(STIdxInfo a_stSender) {
+	public static implicit operator Vector2Int(STIdxInfo a_stSender)
+	{
 		return new Vector2Int(a_stSender.m_nIdxA, a_stSender.m_nIdxB);
 	}
 
 	/** 인덱스 정보 => 인덱스로 변환한다 */
-	public static implicit operator Vector3Int(STIdxInfo a_stSender) {
+	public static implicit operator Vector3Int(STIdxInfo a_stSender)
+	{
 		return new Vector3Int(a_stSender.m_nIdxA, a_stSender.m_nIdxB, a_stSender.m_nIdxC);
 	}
 
 	/** 인덱스 => 인덱스 정보로 변환한다 */
-	public static implicit operator STIdxInfo(Vector2Int a_stSender) {
+	public static implicit operator STIdxInfo(Vector2Int a_stSender)
+	{
 		return new STIdxInfo(a_stSender.x, a_stSender.y, KCDefine.B_VAL_0_INT);
 	}
 
 	/** 인덱스 => 인덱스 정보로 변환한다 */
-	public static implicit operator STIdxInfo(Vector3Int a_stSender) {
+	public static implicit operator STIdxInfo(Vector3Int a_stSender)
+	{
 		return new STIdxInfo(a_stSender.x, a_stSender.y, a_stSender.z);
 	}
 	#endregion // operator
 
 	#region 함수
 	/** 생성자 */
-	public STIdxInfo(int a_nIdx01, int a_nIdx02, int a_nIdx03 = KCDefine.B_VAL_0_INT) {
+	public STIdxInfo(int a_nIdx01, int a_nIdx02, int a_nIdx03 = KCDefine.B_VAL_0_INT)
+	{
 		m_nIdxA = a_nIdx01;
 		m_nIdxB = a_nIdx02;
 		m_nIdxC = a_nIdx03;
@@ -240,14 +268,16 @@ public struct STIdxInfo : System.IEquatable<STIdxInfo> {
 /** 기록 정보 */
 [MessagePackObject]
 [System.Serializable]
-public struct STRecordInfo {
+public struct STRecordInfo
+{
 	[Key(0)] public bool m_bIsSuccess;
 	[Key(1)] public long m_nIntRecord;
 	[Key(2)] public double m_dblRealRecord;
 
 	#region 함수
 	/** 생성자 */
-	public STRecordInfo(long a_nIntRecord, double a_dblRealRecord, bool a_bIsSuccess) {
+	public STRecordInfo(long a_nIntRecord, double a_dblRealRecord, bool a_bIsSuccess)
+	{
 		m_bIsSuccess = a_bIsSuccess;
 		m_nIntRecord = a_nIntRecord;
 		m_dblRealRecord = a_dblRealRecord;
@@ -257,27 +287,31 @@ public struct STRecordInfo {
 
 /** 빌드 버전 정보 */
 [System.Serializable]
-public struct STBuildVerInfo {
+public struct STBuildVerInfo
+{
 	public int m_nNum;
 	public string m_oVer;
 }
 
 /** 결제 정보 */
 [System.Serializable]
-public struct STPurchaseInfo {
+public struct STPurchaseInfo
+{
 	public string m_oID;
 	public string m_oReceipt;
 }
 
 /** 지역화 정보 */
 [System.Serializable]
-public struct STLocalizeInfo {
+public struct STLocalizeInfo
+{
 	public string m_oCountryCode;
 	public SystemLanguage m_eSystemLanguage;
 	public List<STFontSetInfo> m_oFontSetInfoList;
 
 	#region 상수
-	public static readonly STLocalizeInfo INVALID = new STLocalizeInfo() {
+	public static readonly STLocalizeInfo INVALID = new STLocalizeInfo()
+	{
 		m_eSystemLanguage = SystemLanguage.Unknown
 	};
 	#endregion // 상수
@@ -285,12 +319,14 @@ public struct STLocalizeInfo {
 
 /** 폰트 세트 정보 */
 [System.Serializable]
-public struct STFontSetInfo {
+public struct STFontSetInfo
+{
 	public string m_oPath;
 	public EFontSet m_eSet;
 
 	#region 상수
-	public static readonly STFontSetInfo INVALID = new STFontSetInfo() {
+	public static readonly STFontSetInfo INVALID = new STFontSetInfo()
+	{
 		m_eSet = EFontSet.NONE
 	};
 	#endregion // 상수
@@ -298,7 +334,8 @@ public struct STFontSetInfo {
 
 /** 디바이스 정보 */
 [System.Serializable]
-public struct STDeviceInfo {
+public struct STDeviceInfo
+{
 	public List<string> m_oiOSAdmobTestDeviceIDList;
 	public List<string> m_oAndroidAdmobTestDeviceIDList;
 }
@@ -306,32 +343,37 @@ public struct STDeviceInfo {
 /** 값 정보 */
 [MessagePackObject]
 [System.Serializable]
-public struct STValInfo : System.IEquatable<STValInfo> {
+public struct STValInfo : System.IEquatable<STValInfo>
+{
 	[Key(1)] public decimal m_dmVal;
 	[Key(11)] public EValType m_eValType;
 
 	#region 상수
-	public static readonly STValInfo INVALID = new STValInfo() {
+	public static readonly STValInfo INVALID = new STValInfo()
+	{
 		m_eValType = EValType.NONE
 	};
 	#endregion // 상수
 
 	#region IEquatable
 	/** 동일 여부를 검사한다 */
-	public bool Equals(STValInfo a_stValInfo) {
+	public bool Equals(STValInfo a_stValInfo)
+	{
 		return m_dmVal == a_stValInfo.m_dmVal && m_eValType == a_stValInfo.m_eValType;
 	}
 	#endregion // IEquatable
 
 	#region 함수
 	/** 생성자 */
-	public STValInfo(SimpleJSON.JSONNode a_oValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+	public STValInfo(SimpleJSON.JSONNode a_oValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT)
+	{
 		m_dmVal = decimal.TryParse(a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT], NumberStyles.Any, null, out decimal dmVal) ? dmVal : KCDefine.B_VAL_0_INT;
 		m_eValType = a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].ExIsValid() ? (EValType)a_oValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsInt : EValType.NONE;
 	}
 
 	/** 생성자 */
-	public STValInfo(EValType a_eValType, decimal a_dmVal) {
+	public STValInfo(EValType a_eValType, decimal a_dmVal)
+	{
 		m_dmVal = a_dmVal;
 		m_eValType = a_eValType;
 	}
@@ -340,7 +382,8 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 	#region 조건부 함수
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	/** 값 정보를 저장한다 */
-	public void SaveValInfo(SimpleJSON.JSONNode a_oOutValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+	public void SaveValInfo(SimpleJSON.JSONNode a_oOutValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT)
+	{
 		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{(int)m_eValType}";
 		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = (m_eValType == EValType.INT) ? $"{m_dmVal:0}" : $"{m_dmVal:0.0}";
 	}
@@ -350,7 +393,8 @@ public struct STValInfo : System.IEquatable<STValInfo> {
 
 /** 공용 정보 */
 [System.Serializable]
-public struct STCommonInfo {
+public struct STCommonInfo
+{
 	public bool m_bIsFlags01;
 	public bool m_bIsFlags02;
 	public bool m_bIsFlags03;
@@ -360,7 +404,8 @@ public struct STCommonInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STCommonInfo(SimpleJSON.JSONNode a_oCommonInfo) {
+	public STCommonInfo(SimpleJSON.JSONNode a_oCommonInfo)
+	{
 		string oFlags01Key = string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_1_INT);
 		string oFlags02Key = string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_2_INT);
 		string oFlags03Key = string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_3_INT);
@@ -377,7 +422,8 @@ public struct STCommonInfo {
 	#region 조건부 함수
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	/** 공용 정보를 저장한다 */
-	public void SaveCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo) {
+	public void SaveCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo)
+	{
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_1_INT), m_bIsFlags01 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_2_INT), m_bIsFlags02 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
 		a_oOutCommonInfo.Add(string.Format(KCDefine.U_KEY_FMT_FLAGS, KCDefine.B_VAL_3_INT), m_bIsFlags03 ? KCDefine.B_STR_1_INT : KCDefine.B_STR_0_INT);
@@ -391,14 +437,16 @@ public struct STCommonInfo {
 
 /** 시간 정보 */
 [System.Serializable]
-public struct STTimeInfo {
+public struct STTimeInfo
+{
 	public float m_fDelay;
 	public float m_fDuration;
 	public float m_fDeltaTime;
 
 	#region 함수
 	/** 생성자 */
-	public STTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+	public STTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT)
+	{
 		m_fDelay = a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].ExIsValid() ? a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 		m_fDuration = a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].ExIsValid() ? a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT].AsFloat : KCDefine.B_VAL_0_REAL;
 		m_fDeltaTime = a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].ExIsValid() ? a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT].AsFloat : KCDefine.B_VAL_0_REAL;
@@ -408,7 +456,8 @@ public struct STTimeInfo {
 	#region 조건부 함수
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 	/** 시간 정보를 저장한다 */
-	public void SaveTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT) {
+	public void SaveTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT)
+	{
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{m_fDelay:0.0}";
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = $"{m_fDuration:0.0}";
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT] = $"{m_fDeltaTime:0.0}";
@@ -418,13 +467,15 @@ public struct STTimeInfo {
 }
 
 /** 키 정보 */
-public struct STKeyInfo {
+public struct STKeyInfo
+{
 	public string m_oKey;
 	public EKeyType m_eKeyType;
 
 	#region 함수
 	/** 생성자 */
-	public STKeyInfo(string a_oKey, EKeyType a_eKeyType) {
+	public STKeyInfo(string a_oKey, EKeyType a_eKeyType)
+	{
 		m_oKey = a_oKey;
 		m_eKeyType = a_eKeyType;
 	}
@@ -432,7 +483,8 @@ public struct STKeyInfo {
 }
 
 /** 테이블 정보 */
-public struct STTableInfo {
+public struct STTableInfo
+{
 	public string m_oID;
 	public string m_oTableName;
 	public Dictionary<System.Type, Dictionary<string, string>> m_oSheetNameDictContainer;
@@ -441,7 +493,8 @@ public struct STTableInfo {
 
 	#region 함수
 	/** 생성자 */
-	public STTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<string>>> a_oExtraSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<STKeyInfo>>> a_oKeyInfoDictContainer = null) {
+	public STTableInfo(string a_oID, string a_oTableName, Dictionary<System.Type, Dictionary<string, string>> a_oSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<string>>> a_oExtraSheetNameDictContainer = null, Dictionary<System.Type, Dictionary<string, List<STKeyInfo>>> a_oKeyInfoDictContainer = null)
+	{
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
 		m_oSheetNameDictContainer = a_oSheetNameDictContainer ?? new Dictionary<System.Type, Dictionary<string, string>>();
@@ -453,14 +506,16 @@ public struct STTableInfo {
 
 /** 공용 타입 래퍼 */
 [MessagePackObject]
-public struct STCommonTypeWrapper {
+public struct STCommonTypeWrapper
+{
 	[Key(0)] public List<int> m_oIntList;
 	[Key(1)] public List<float> m_oRealList;
 	[Key(2)] public List<string> m_oStrList;
 }
 
 /** 경로 정보 */
-public partial class CPathInfo {
+public partial class CPathInfo
+{
 	public int m_nCost = 0;
 	public Vector3Int m_stIdx = Vector3Int.zero;
 	public CPathInfo m_oPrevPathInfo = null;
@@ -469,14 +524,16 @@ public partial class CPathInfo {
 
 #region 제네릭 타입
 /** 리스트 래퍼 */
-public partial class CListWrapper<T> {
+public partial class CListWrapper<T>
+{
 	public List<T> m_oListA = new List<T>();
 	public List<T> m_oListB = new List<T>();
 	public List<T> m_oListC = new List<T>();
 
 	#region 함수
 	/** 클리어한다 */
-	public void Clear() {
+	public void Clear()
+	{
 		m_oListA?.Clear();
 		m_oListB?.Clear();
 		m_oListC?.Clear();
@@ -485,14 +542,16 @@ public partial class CListWrapper<T> {
 }
 
 /** 딕셔너리 래퍼 */
-public partial class CDictWrapper<K, V> {
+public partial class CDictWrapper<K, V>
+{
 	public Dictionary<K, V> m_oDictA = new Dictionary<K, V>();
 	public Dictionary<K, V> m_oDictB = new Dictionary<K, V>();
 	public Dictionary<K, V> m_oDictC = new Dictionary<K, V>();
 
 	#region 함수
 	/** 클리어한다 */
-	public void Clear() {
+	public void Clear()
+	{
 		m_oDictA?.Clear();
 		m_oDictB?.Clear();
 		m_oDictC?.Clear();
@@ -501,13 +560,15 @@ public partial class CDictWrapper<K, V> {
 }
 
 /** 풀 리스트 래퍼 */
-public partial class CPoolListWrapper<T> {
+public partial class CPoolListWrapper<T>
+{
 	public List<T> m_oList = new List<T>();
 	public Queue<T> m_oQueue = new Queue<T>();
 
 	#region 함수
 	/** 클리어한다 */
-	public void Clear() {
+	public void Clear()
+	{
 		m_oList?.Clear();
 		m_oQueue?.Clear();
 	}
@@ -532,7 +593,8 @@ public struct STAdsRewardInfo {
 
 #if NOTI_MODULE_ENABLE
 /** 알림 정보 */
-public struct STNotiInfo {
+public struct STNotiInfo
+{
 	public string m_oMsg;
 	public string m_oTitle;
 	public string m_oSubTitle;
@@ -544,7 +606,8 @@ public struct STNotiInfo {
 
 #if UNITY_EDITOR || UNITY_STANDALONE
 /** 에디터 생성 정보 */
-public partial class CEditorCreateInfo {
+public partial class CEditorCreateInfo
+{
 	public int m_nNumLevels = 0;
 	public Vector3Int m_stMinNumCells = Vector3Int.zero;
 	public Vector3Int m_stMaxNumCells = Vector3Int.zero;
@@ -553,7 +616,8 @@ public partial class CEditorCreateInfo {
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 /** 구글 시트 로드 정보 */
-public struct STGoogleSheetLoadInfo {
+public struct STGoogleSheetLoadInfo
+{
 	public int m_nSrcIdx;
 	public int m_nNumRows;
 	public string m_oID;
@@ -561,14 +625,16 @@ public struct STGoogleSheetLoadInfo {
 	public GstuSpreadSheet m_oGoogleSheet;
 
 	#region 상수
-	public static readonly STGoogleSheetLoadInfo INVALID = new STGoogleSheetLoadInfo() {
+	public static readonly STGoogleSheetLoadInfo INVALID = new STGoogleSheetLoadInfo()
+	{
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
 	#endregion // 상수
 
 	#region 함수
 	/** 생성자 */
-	public STGoogleSheetLoadInfo(string a_oID, string a_oSheetName, int a_nSrcIdx, int a_nNumRows, GstuSpreadSheet a_oGoogleSheet) {
+	public STGoogleSheetLoadInfo(string a_oID, string a_oSheetName, int a_nSrcIdx, int a_nNumRows, GstuSpreadSheet a_oGoogleSheet)
+	{
 		m_oID = a_oID;
 		m_nSrcIdx = a_nSrcIdx;
 		m_nNumRows = a_nNumRows;
@@ -579,21 +645,24 @@ public struct STGoogleSheetLoadInfo {
 }
 
 /** 구글 시트 저장 정보 */
-public struct STGoogleSheetSaveInfo {
+public struct STGoogleSheetSaveInfo
+{
 	public int m_nSrcIdx;
 	public int m_nNumRows;
 	public string m_oID;
 	public string m_oSheetName;
 
 	#region 상수
-	public static readonly STGoogleSheetSaveInfo INVALID = new STGoogleSheetSaveInfo() {
+	public static readonly STGoogleSheetSaveInfo INVALID = new STGoogleSheetSaveInfo()
+	{
 		m_nSrcIdx = KCDefine.B_IDX_INVALID
 	};
 	#endregion // 상수
 
 	#region 함수
 	/** 생성자 */
-	public STGoogleSheetSaveInfo(string a_oID, string a_oSheetName, int a_nSrcIdx, int a_nNumRows) {
+	public STGoogleSheetSaveInfo(string a_oID, string a_oSheetName, int a_nSrcIdx, int a_nNumRows)
+	{
 		m_oID = a_oID;
 		m_nSrcIdx = a_nSrcIdx;
 		m_nNumRows = a_nNumRows;
@@ -603,14 +672,16 @@ public struct STGoogleSheetSaveInfo {
 }
 
 /** 로드 구글 시트 정보 */
-public struct STLoadGoogleSheetInfo {
+public struct STLoadGoogleSheetInfo
+{
 	public string m_oID;
 	public string m_oTableName;
 	public List<(string, int)> m_oSheetInfoList;
 
 	#region 함수
 	/** 생성자 */
-	public STLoadGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, int)> a_oSheetInfoList = null) {
+	public STLoadGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, int)> a_oSheetInfoList = null)
+	{
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
 		m_oSheetInfoList = a_oSheetInfoList ?? new List<(string, int)>();
@@ -619,14 +690,16 @@ public struct STLoadGoogleSheetInfo {
 }
 
 /** 저장 구글 시트 정보 */
-public struct STSaveGoogleSheetInfo {
+public struct STSaveGoogleSheetInfo
+{
 	public string m_oID;
 	public string m_oTableName;
 	public List<(string, List<List<string>>)> m_oSheetInfoListContainer;
 
 	#region 함수
 	/** 생성자 */
-	public STSaveGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, List<List<string>>)> a_oSheetInfoListContainer = null) {
+	public STSaveGoogleSheetInfo(string a_oID, string a_oTableName, List<(string, List<List<string>>)> a_oSheetInfoListContainer = null)
+	{
 		m_oID = a_oID;
 		m_oTableName = a_oTableName;
 		m_oSheetInfoListContainer = a_oSheetInfoListContainer ?? new List<(string, List<List<string>>)>();

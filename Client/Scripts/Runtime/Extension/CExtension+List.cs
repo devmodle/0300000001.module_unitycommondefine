@@ -22,7 +22,6 @@ public static partial class CExtension {
 	/** 값을 추가한다 */
 	public static void ExAddVal<T>(this List<T> a_oSender,
 		T a_tVal, System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 추가가 불가능 할 경우
@@ -50,7 +49,6 @@ public static partial class CExtension {
 	/** 값을 추가한다 */
 	public static void ExAddVals<T>(this List<T> a_oSender,
 		List<T> a_oValList, System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oValList != null && a_oCompare != null));
 
 		// 값 추가가 불가능 할 경우
@@ -66,7 +64,6 @@ public static partial class CExtension {
 	/** 값을 추가한다 */
 	public static void ExInsertVal<T>(this List<T> a_oSender,
 		int a_nIdx, T a_tVal, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 추가가 불가능 할 경우
@@ -80,7 +77,6 @@ public static partial class CExtension {
 	/** 값을 추가한다 */
 	public static void ExInsertVal<T>(this List<T> a_oSender,
 		System.Predicate<T> a_oCompare, T a_tVal, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 추가가 불가능 할 경우
@@ -94,7 +90,6 @@ public static partial class CExtension {
 	/** 값을 추가한다 */
 	public static void ExInsertVals<T>(this List<T> a_oSender,
 		System.Predicate<T> a_oCompare, List<T> a_oValList, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null && a_oValList != null));
 
 		// 값 추가가 불가능 할 경우
@@ -110,7 +105,6 @@ public static partial class CExtension {
 	/** 값을 대체한다 */
 	public static void ExReplaceVal<T>(this List<T> a_oSender, 
 		T a_tVal, T a_tReplaceVal, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 대체가 불가능 할 경우
@@ -124,7 +118,6 @@ public static partial class CExtension {
 	/** 값을 대체한다 */
 	public static void ExReplaceVal<T>(this List<T> a_oSender,
 		T a_tReplaceVal, System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 대체가 불가능 할 경우
@@ -145,7 +138,6 @@ public static partial class CExtension {
 	/** 값을 대체한다 */
 	public static void ExReplaceVals<T>(this List<T> a_oSender, 
 		List<(T, T)> a_oValInfoList, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oValInfoList != null));
 
 		// 값 대체가 불가능 할 경우
@@ -173,7 +165,6 @@ public static partial class CExtension {
 	/** 값을 제거한다 */
 	public static void ExRemoveVal<T>(this List<T> a_oSender,
 		System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 제거가 불가능 할 경우
@@ -201,7 +192,6 @@ public static partial class CExtension {
 	/** 값을 제거한다 */
 	public static void ExRemoveVals<T>(this List<T> a_oSender,
 		System.Predicate<T> a_oCompare, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oCompare != null));
 
 		// 값 제거가 불가능 할 경우
@@ -263,7 +253,6 @@ public static partial class CExtension {
 	/** 리스트를 이동한다 */
 	public static void ExCopyTo<TSrc, TDest>(this List<TSrc> a_oSender,
 		List<TDest> a_oDestList, System.Func<TSrc, TDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oDestList != null && a_oCallback != null));
 
 		// 리스트 복사가 불가능 할 경우
@@ -321,7 +310,6 @@ public static partial class CExtension {
 	/** 인덱스 => 위치로 변환한다 */
 	public static List<Vector3> ExToPositions(this List<Vector2Int> a_oSender, 
 		Vector3 a_stOffset, Vector3 a_stSize) {
-
 		CFunc.Assert(a_oSender != null);
 		var oPosList = new List<Vector3>();
 
@@ -335,7 +323,6 @@ public static partial class CExtension {
 	/** 인덱스 => 위치로 변환한다 */
 	public static List<Vector3> ExToPositions(this List<Vector3Int> a_oSender, 
 		Vector3 a_stOffset, Vector3 a_stSize) {
-
 		CFunc.Assert(a_oSender != null);
 		var oPosList = new List<Vector3>();
 

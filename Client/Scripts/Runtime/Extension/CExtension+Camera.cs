@@ -47,7 +47,6 @@ public static partial class CExtension {
 	/** 3 차원 카메라를 설정한다 */
 	public static void ExSetup3D(this Camera a_oSender, 
 		float a_fPlaneHeight, float a_fPlaneDistance, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || 
 			(a_oSender != null && a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL) && a_fPlaneDistance.ExIsGreat(KCDefine.B_VAL_0_REAL)));
 

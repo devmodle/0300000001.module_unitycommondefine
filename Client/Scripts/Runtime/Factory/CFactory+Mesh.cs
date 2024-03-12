@@ -10,7 +10,6 @@ public static partial class CFactory {
 	/** 메쉬를 생성한다 */
 	public static Mesh MakeMesh(string a_oName, 
 		List<Vector3> a_oVertexList, List<int> a_oIdxList, List<Vector3> a_oNormalList, List<Vector2> a_oUVList, MeshTopology a_eTopology = MeshTopology.Triangles) {
-
 		var oMesh = new Mesh();
 		oMesh.name = a_oName;
 

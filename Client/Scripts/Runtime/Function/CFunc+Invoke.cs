@@ -36,7 +36,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static void Invoke<TA, TB, TC>(ref System.Action<TA, TB, TC> a_oAction, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC) {
-
 		var oAction = a_oAction;
 		a_oAction = null;
 
@@ -46,7 +45,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static void Invoke<TA, TB, TC, TD>(ref System.Action<TA, TB, TC, TD> a_oAction, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD) {
-
 		var oAction = a_oAction;
 		a_oAction = null;
 
@@ -56,7 +54,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static void Invoke<TA, TB, TC, TD, TE>(ref System.Action<TA, TB, TC, TD, TE> a_oAction, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE) {
-
 		var oAction = a_oAction;
 		a_oAction = null;
 
@@ -66,7 +63,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static void Invoke<TA, TB, TC, TD, TE, TF>(ref System.Action<TA, TB, TC, TD, TE, TF> a_oAction, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF) {
-
 		var oAction = a_oAction;
 		a_oAction = null;
 
@@ -76,7 +72,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static void Invoke<TA, TB, TC, TD, TE, TF, TG>(ref System.Action<TA, TB, TC, TD, TE, TF, TG> a_oAction, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG) {
-
 		var oAction = a_oAction;
 		a_oAction = null;
 
@@ -86,7 +81,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static void Invoke<TA, TB, TC, TD, TE, TF, TG, TH>(ref System.Action<TA, TB, TC, TD, TE, TF, TG, TH> a_oAction, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH) {
-
 		var oAction = a_oAction;
 		a_oAction = null;
 
@@ -96,7 +90,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static void Invoke<TA, TB, TC, TD, TE, TF, TG, TH, TI>(ref System.Action<TA, TB, TC, TD, TE, TF, TG, TH, TI> a_oAction, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH, TI a_tParamsI) {
-
 		var oAction = a_oAction;
 		a_oAction = null;
 
@@ -139,7 +132,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static TResult Invoke<TA, TB, TC, TResult>(ref System.Func<TA, TB, TC, TResult> a_oFunc, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC) {
-
 		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
@@ -150,7 +142,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static TResult Invoke<TA, TB, TC, TD, TResult>(ref System.Func<TA, TB, TC, TD, TResult> a_oFunc, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD) {
-
 		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
@@ -161,7 +152,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static TResult Invoke<TA, TB, TC, TD, TE, TResult>(ref System.Func<TA, TB, TC, TD, TE, TResult> a_oFunc, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE) {
-
 		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
@@ -172,7 +162,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static TResult Invoke<TA, TB, TC, TD, TE, TF, TResult>(ref System.Func<TA, TB, TC, TD, TE, TF, TResult> a_oFunc, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF) {
-
 		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
@@ -183,7 +172,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static TResult Invoke<TA, TB, TC, TD, TE, TF, TG, TResult>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, TResult> a_oFunc, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG) {
-
 		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
@@ -194,7 +182,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static TResult Invoke<TA, TB, TC, TD, TE, TF, TG, TH, TResult>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, TH, TResult> a_oFunc, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH) {
-
 		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 
@@ -205,7 +192,6 @@ public static partial class CFunc {
 	/** 함수를 호출한다 */
 	public static TResult Invoke<TA, TB, TC, TD, TE, TF, TG, TH, TI, TResult>(ref System.Func<TA, TB, TC, TD, TE, TF, TG, TH, TI, TResult> a_oFunc, 
 		TA a_tParamsA, TB a_tParamsB, TC a_tParamsC, TD a_tParamsD, TE a_tParamsE, TF a_tParamsF, TG a_tParamsG, TH a_tParamsH, TI a_tParamsI) {
-
 		CFunc.Assert(a_oFunc != null);
 		var oFunc = a_oFunc;
 

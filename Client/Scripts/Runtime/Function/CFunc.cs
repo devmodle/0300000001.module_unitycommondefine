@@ -8,31 +8,39 @@ using System.Linq;
 using UnityEngine.SceneManagement;
 
 /** 함수 */
-public static partial class CFunc {
+public static partial class CFunc
+{
 	#region 클래스 함수
 	/** 객체를 제거한다 */
-	public static void RemoveObj(Object a_oObj, bool a_bIsRemoveAsset = false, bool a_bIsAssert = true) {
+	public static void RemoveObj(Object a_oObj, bool a_bIsRemoveAsset = false, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oObj != null);
 
 		// 객체 제거가 불가능 할 경우
-		if(a_oObj == null) {
+		if (a_oObj == null)
+		{
 			return;
 		}
 
 		// 앱이 실행 중 일 경우
-		if(Application.isPlaying) {
+		if (Application.isPlaying)
+		{
 			GameObject.Destroy(a_oObj);
-		} else {
+		}
+		else
+		{
 			GameObject.DestroyImmediate(a_oObj, a_bIsRemoveAsset);
 		}
 	}
 
 	/** 객체를 탐색한다 */
-	public static GameObject FindObj(string a_oName) {
+	public static GameObject FindObj(string a_oName)
+	{
 		CFunc.Assert(a_oName.ExIsValid());
 		GameObject oObj = null;
 
-		CAccess.EnumerateScenes((a_stScene) => {
+		CAccess.EnumerateScenes((a_stScene) =>
+		{
 			oObj = a_stScene.ExFindChild(a_oName);
 			return oObj == null;
 		});
@@ -41,24 +49,26 @@ public static partial class CFunc {
 	}
 
 	/** 객체를 탐색한다 */
-	public static List<GameObject> FindObjs(string a_oName) {
+	public static List<GameObject> FindObjs(string a_oName, List<GameObject> a_oOutObjsList = null)
+	{
 		CFunc.Assert(a_oName.ExIsValid());
-		var oObjList = new List<GameObject>();
+		a_oOutObjsList = a_oOutObjsList ?? new List<GameObject>();
 
-		CAccess.EnumerateScenes((a_stScene) => {
-			var oChildObjList = a_stScene.ExFindChildren(a_oName);
-			oObjList.AddRange(oChildObjList);
+		CAccess.EnumerateScenes((a_stScene) =>
+		{
+			var oChildObjsList = a_stScene.ExFindChildren(a_oName);
+			a_oOutObjsList.AddRange(oChildObjsList);
 
 			return true;
 		});
 
-		return oObjList;
+		return a_oOutObjsList;
 	}
 
 	/** 경로를 탐색한다 */
-	public static List<Vector3Int> FindPath(Vector3Int a_stSrcIdx, 
-		List<Vector3Int> a_oOffsetList, System.Func<CPathInfo, bool> a_oFindCallback, System.Func<CPathInfo, Vector3Int, bool> a_oMoveCallback, System.Func<CPathInfo, Vector3Int, int> a_oCostCallback) {
-			
+	public static List<Vector3Int> FindPath(Vector3Int a_stSrcIdx,
+		List<Vector3Int> a_oOffsetList, System.Func<CPathInfo, bool> a_oFindCallback, System.Func<CPathInfo, Vector3Int, bool> a_oMoveCallback, System.Func<CPathInfo, Vector3Int, int> a_oCostCallback)
+	{
 		CFunc.Assert(a_oFindCallback != null && a_oMoveCallback != null && a_oCostCallback != null);
 
 		var oVisitIdxList = new List<Vector3Int>();
@@ -67,17 +77,20 @@ public static partial class CFunc {
 
 		oOpenPathInfoList.Add(CFactory.MakePathInfo(a_stSrcIdx));
 
-		while(oOpenPathInfoList.ExIsValid()) {
+		while (oOpenPathInfoList.ExIsValid())
+		{
 			var oPathInfo = oOpenPathInfoList[KCDefine.B_VAL_0_INT];
 
 			oClosePathInfoList.Add(oPathInfo);
 			oOpenPathInfoList.ExRemoveValAt(KCDefine.B_VAL_0_INT);
 
 			// 경로를 탐색했을 경우
-			if(a_oFindCallback(oPathInfo)) {
+			if (a_oFindCallback(oPathInfo))
+			{
 				var oIdxList = new List<Vector3Int>();
 
-				while(oPathInfo != null) {
+				while (oPathInfo != null)
+				{
 					oIdxList.Insert(KCDefine.B_VAL_0_INT, oPathInfo.m_stIdx);
 					oPathInfo = oPathInfo.m_oPrevPathInfo;
 				}
@@ -85,11 +98,13 @@ public static partial class CFunc {
 				return oIdxList;
 			}
 
-			for(int i = 0; i < a_oOffsetList.Count; ++i) {
+			for (int i = 0; i < a_oOffsetList.Count; ++i)
+			{
 				var stNextIdx = oPathInfo.m_stIdx + a_oOffsetList[i];
 
 				// 이동이 불가능 할 경우
-				if(!a_oMoveCallback(oPathInfo, stNextIdx)) {
+				if (!a_oMoveCallback(oPathInfo, stNextIdx))
+				{
 					continue;
 				}
 
@@ -97,7 +112,8 @@ public static partial class CFunc {
 				int nCost = a_oCostCallback(oPathInfo, stNextIdx);
 
 				// 탐색이 가능 할 경우
-				if(!oVisitIdxList.Contains(stNextIdx)) {
+				if (!oVisitIdxList.Contains(stNextIdx))
+				{
 					var oNextPathInfo = CFactory.MakePathInfo(stNextIdx, nCost);
 					oNextPathInfo.m_oPrevPathInfo = oPathInfo;
 
@@ -105,7 +121,8 @@ public static partial class CFunc {
 					oOpenPathInfoList.Add(oNextPathInfo);
 				}
 				// 경로 정보 설정이 가능 할 경우
-				else if(oClosePathInfoList.ExIsValidIdx(nIdx) && nCost < oClosePathInfoList[nIdx].m_nCost) {
+				else if (oClosePathInfoList.ExIsValidIdx(nIdx) && nCost < oClosePathInfoList[nIdx].m_nCost)
+				{
 					oClosePathInfoList[nIdx].m_nCost = nCost;
 					oClosePathInfoList[nIdx].m_oPrevPathInfo = oPathInfo;
 				}
@@ -120,20 +137,24 @@ public static partial class CFunc {
 
 	#region 제네릭 클래스 함수
 	/** 컴포넌트를 탐색한다 */
-	public static T FindComponent<T>(string a_oName) where T : Component {
+	public static T FindComponent<T>(string a_oName) where T : Component
+	{
 		CFunc.Assert(a_oName.ExIsValid());
 		return CFunc.FindObj(a_oName)?.GetComponentInChildren<T>();
 	}
 
 	/** 컴포넌트를 탐색한다 */
-	public static T FindComponent<T>(Scene a_stScene) where T : Component {
+	public static T FindComponent<T>(Scene a_stScene) where T : Component
+	{
 		var oObjs = a_stScene.GetRootGameObjects();
 
-		for(int i = 0; i < oObjs.Length; ++i) {
+		for (int i = 0; i < oObjs.Length; ++i)
+		{
 			var oComponent = oObjs[i].GetComponentInChildren<T>();
 
 			// 컴포넌트가 존재 할 경우
-			if(oComponent != null) {
+			if (oComponent != null)
+			{
 				return oComponent;
 			}
 		}
@@ -142,17 +163,20 @@ public static partial class CFunc {
 	}
 
 	/** 컴포넌트를 탐색한다 */
-	public static List<T> FindComponents<T>(string a_oName) where T : Component {
+	public static List<T> FindComponents<T>(string a_oName) where T : Component
+	{
 		CFunc.Assert(a_oName.ExIsValid());
 		return CFunc.FindObj(a_oName)?.GetComponentsInChildren<T>().ToList();
 	}
 
 	/** 컴포넌트를 탐색한다 */
-	public static List<T> FindComponents<T>(Scene a_stScene) where T : Component {
+	public static List<T> FindComponents<T>(Scene a_stScene) where T : Component
+	{
 		var oObjs = a_stScene.GetRootGameObjects();
 		var oComponentList = new List<T>();
 
-		for(int i = 0; i < oObjs.Length; ++i) {
+		for (int i = 0; i < oObjs.Length; ++i)
+		{
 			var oComponents = oObjs[i].GetComponentsInChildren<T>();
 			oComponentList.ExAddVals(oComponents.ToList());
 		}

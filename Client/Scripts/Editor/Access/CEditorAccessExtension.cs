@@ -39,7 +39,6 @@ public static partial class CEditorAccessExtension {
 	/** 정적 플래그를 변경한다 */
 	public static void ExSetStaticEditorFlags(this GameObject a_oSender, 
 		StaticEditorFlags a_eFlags, bool a_bIsCascade = true, bool a_bIsAssert = true) {
-			
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 플래그 변경이 불가능 할 경우

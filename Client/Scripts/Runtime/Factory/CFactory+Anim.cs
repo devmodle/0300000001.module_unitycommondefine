@@ -13,7 +13,6 @@ public static partial class CFactory {
 	/** 애니메이션을 생성한다 */
 	public static DG.Tweening.Tween MakeAni(DOGetter<float> a_oGetter, 
 		DOSetter<float> a_oSetter, System.Action a_oInitCallback, System.Action<float> a_oSetterCallback, float a_fVal, float a_fDuration, Ease a_eEase = KCDefine.U_EASE_DEF, bool a_bIsRealtime = false) {
-
 		CFunc.Assert(a_oGetter != null && a_oSetter != null);
 		a_oInitCallback?.Invoke();
 
@@ -26,7 +25,6 @@ public static partial class CFactory {
 	/** 시퀀스를 생성한다 */
 	public static Sequence MakeSequence(DG.Tweening.Tween a_oAnim, 
 		System.Action<Sequence> a_oCallback, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsJoin = false, bool a_bIsRealtime = false) {
-
 		CFunc.Assert(a_oAnim != null);
 
 		return CFactory.MakeSequence(new List<DG.Tweening.Tween>() {
@@ -37,7 +35,6 @@ public static partial class CFactory {
 	/** 시퀀스를 생성한다 */
 	public static Sequence MakeSequence(List<DG.Tweening.Tween> a_oAnimList, 
 		System.Action<Sequence> a_oCallback, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsJoin = false, bool a_bIsRealtime = false) {
-
 		CFunc.Assert(a_oAnimList != null);
 		var oAni = DOTween.Sequence().SetAutoKill().SetUpdate(a_bIsRealtime);
 

@@ -73,7 +73,6 @@ public static partial class CAccessExtension {
 	/** 스크롤 뷰 정규 위치를 반환한다 */
 	public static Vector3 ExGetNormPos(this ScrollRect a_oSender, 
 		GameObject a_oViewport, GameObject a_oContents, Vector3 a_stPos) {
-
 		CFunc.Assert(a_oSender != null && a_oViewport != null && a_oContents != null);
 		return new Vector3(a_oSender.ExGetNormPosH(a_oViewport, a_oContents, a_stPos), a_oSender.ExGetNormPosV(a_oViewport, a_oContents, a_stPos), KCDefine.B_VAL_0_REAL);
 	}
@@ -81,7 +80,6 @@ public static partial class CAccessExtension {
 	/** 스크롤 뷰 수직 정규 위치를 반환한다 */
 	public static float ExGetNormPosV(this ScrollRect a_oSender, 
 		GameObject a_oViewport, GameObject a_oContents, Vector3 a_stPos) {
-
 		CFunc.Assert(a_oSender != null && a_oViewport != null && a_oContents != null);
 		return Mathf.Clamp01((a_stPos.y - (a_oViewport.transform as RectTransform).rect.height) / ((a_oContents.transform as RectTransform).rect.height - (a_oViewport.transform as RectTransform).rect.height));
 	}
@@ -89,7 +87,6 @@ public static partial class CAccessExtension {
 	/** 스크롤 뷰 수평 정규 위치를 반환한다 */
 	public static float ExGetNormPosH(this ScrollRect a_oSender, 
 		GameObject a_oViewport, GameObject a_oContents, Vector3 a_stPos) {
-
 		CFunc.Assert(a_oSender != null && a_oViewport != null && a_oContents != null);
 		return Mathf.Clamp01((a_stPos.x - (a_oViewport.transform as RectTransform).rect.width) / ((a_oContents.transform as RectTransform).rect.width - (a_oViewport.transform as RectTransform).rect.width));
 	}
@@ -137,7 +134,6 @@ public static partial class CAccessExtension {
 	/** 텍스트를 변경한다 */
 	public static void ExSetText(this Text a_oSender, 
 		string a_oStr, STFontSetInfo a_stFontSetInfo, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()));
 
 		// 텍스트 변경이 불가능 할 경우
@@ -152,7 +148,6 @@ public static partial class CAccessExtension {
 	/** 텍스트를 변경한다 */
 	public static void ExSetText(this TMP_Text a_oSender, 
 		string a_oStr, STFontSetInfo a_stFontSetInfo, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()));
 
 		// 텍스트 변경이 불가능 할 경우
@@ -213,7 +208,6 @@ public static partial class CAccessExtension {
 	/** 텍스트를 변경한다 */
 	public static void ExSetText(this InputField a_oSender, 
 		string a_oStr, STFontSetInfo a_stFontSetInfo, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()));
 
 		// 텍스트 변경이 불가능 할 경우
@@ -232,7 +226,6 @@ public static partial class CAccessExtension {
 	/** 텍스트를 변경한다 */
 	public static void ExSetText(this TMP_InputField a_oSender, 
 		string a_oStr, STFontSetInfo a_stFontSetInfo, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_stFontSetInfo.m_oPath.ExIsValid()));
 
 		// 텍스트 변경이 불가능 할 경우

@@ -37,7 +37,6 @@ public static partial class CEditorExtension {
 	/** 직렬화 프로퍼티 값을 변경한다 */
 	public static void ExSetPropertyVal(this SerializedObject a_oSender, 
 		string a_oName, System.Action<SerializedProperty> a_oCallback, bool a_bIsAssert = true) {
-			
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oName.ExIsValid()));
 
 		// 객체가 존재 할 경우

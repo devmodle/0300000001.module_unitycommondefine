@@ -10,7 +10,6 @@ public static partial class CExtension {
 	/** 함수를 지연 호출한다 */
 	public static void ExLateCallFunc(this MonoBehaviour a_oSender, 
 		System.Action<MonoBehaviour> a_oCallback, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 지연 호출이 불가능 할 경우
@@ -24,7 +23,6 @@ public static partial class CExtension {
 	/** 함수를 지연 호출한다 */
 	public static void ExLateCallFunc(this MonoBehaviour a_oSender, 
 		System.Action<MonoBehaviour> a_oCallback, float a_fDelay, bool a_bIsRealtime = false, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 지연 호출이 불가능 할 경우
@@ -38,7 +36,6 @@ public static partial class CExtension {
 	/** 함수를 반복 호출한다 */
 	public static void ExRepeatCallFunc(this MonoBehaviour a_oSender, 
 		System.Func<MonoBehaviour, bool, bool> a_oCallback, float a_fDeltaTime, float a_fMaxDeltaTime, bool a_bIsRealtime = false, bool a_bIsAssert = true) {
-			
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 지연 호출이 불가능 할 경우
@@ -60,7 +57,6 @@ public static partial class CExtension {
 	/** 함수를 지연 호출한다 */
 	private static IEnumerator ExCoLateCallFunc(this MonoBehaviour a_oSender, 
 		System.Action<MonoBehaviour> a_oCallback) {
-
 		CFunc.Assert(a_oSender != null);
 
 		try {
@@ -73,7 +69,6 @@ public static partial class CExtension {
 	/** 함수를 지연 호출한다 */
 	private static IEnumerator ExCoLateCallFunc(this MonoBehaviour a_oSender, 
 		System.Action<MonoBehaviour> a_oCallback, float a_fDelay, bool a_bIsRealtime) {
-
 		CFunc.Assert(a_oSender != null && a_fDelay.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
 
 		try {
@@ -86,7 +81,6 @@ public static partial class CExtension {
 	/** 함수를 반복 호출한다 */
 	private static IEnumerator ExCoRepeatCallFunc(this MonoBehaviour a_oSender, 
 		System.Func<MonoBehaviour, bool, bool> a_oCallback, float a_fDeltaTime, double a_dblMaxDeltaTime, bool a_bIsRealtime) {
-
 		CFunc.Assert(a_oSender != null && 
 			a_oCallback != null && a_fDeltaTime.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
 			

@@ -10,7 +10,6 @@ public static partial class CExtension {
 	/** 딕셔너리를 복사한다 */
 	public static void ExCopyTo<KSrc, VSrc, VDest>(this Dictionary<KSrc, VSrc> a_oSender,
 		Dictionary<KSrc, VDest> a_oDestDict, System.Func<KSrc, VSrc, VDest> a_oCallback, bool a_bIsClear = true, bool a_bIsAssert = true) {
-
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oDestDict != null && a_oCallback != null));
 
 		// 딕셔너리 복사가 불가능 할 경우
