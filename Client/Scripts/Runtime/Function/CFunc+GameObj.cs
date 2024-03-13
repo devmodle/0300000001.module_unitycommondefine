@@ -18,23 +18,20 @@ public static partial class CFunc
 	{
 		Selection.activeGameObject = a_oObj;
 
-		// 핑 모드 일 경우
-		if(a_bIsPing && a_oObj != null)
+		// 강조 모드가 아닐 경우
+		if(!a_bIsPing || a_oObj == null)
 		{
-			EditorGUIUtility.PingObject(a_oObj);
+			return;
 		}
+
+		EditorGUIUtility.PingObject(a_oObj);
 	}
 
 	/** 객체를 선택한다 */
-	public static void SelObjs(List<GameObject> a_oObjsList, bool a_bIsPing = false)
+	public static void SelObjs(List<GameObject> a_oObjList, bool a_bIsPing = false)
 	{
-		Selection.objects = (a_oObjsList != null) ? a_oObjsList.ToArray() : null;
-
-		// 핑 모드 일 경우
-		if(a_bIsPing && a_oObjsList.ExIsValid())
-		{
-			EditorGUIUtility.PingObject(a_oObjsList[KCDefine.B_VAL_0_INT]);
-		}
+		Selection.objects = a_oObjList?.ToArray();
+		CFunc.SelObj(a_oObjList?.ExGetVal(KCDefine.B_VAL_0_INT), a_bIsPing);
 	}
 #endif // #if UNITY_EDITOR
 	#endregion // 클래스 함수
@@ -42,31 +39,31 @@ public static partial class CFunc
 	#region 제네릭 클래스 함수
 	/** 게임 객체를 설정한다 */
 	public static void SetupGameObjs<K>(List<(K, string, GameObject)> a_oKeyInfoList,
-		Dictionary<K, GameObject> a_oOutObjsDict, bool a_bIsAssert = true)
+		Dictionary<K, GameObject> a_oOutObjDict, bool a_bIsAssert = true)
 	{
-		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutObjsDict != null));
+		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutObjDict != null));
 
 		// 객체 설정이 불가능 할 경우
-		if(!a_oKeyInfoList.ExIsValid() || a_oOutObjsDict == null)
+		if(!a_oKeyInfoList.ExIsValid() || a_oOutObjDict == null)
 		{
 			return;
 		}
 
 		for(int i = 0; i < a_oKeyInfoList.Count; ++i)
 		{
-			a_oOutObjsDict.ExReplaceVal(a_oKeyInfoList[i].Item1,
+			a_oOutObjDict.ExReplaceVal(a_oKeyInfoList[i].Item1,
 				a_oKeyInfoList[i].Item3?.ExFindChild(a_oKeyInfoList[i].Item2));
 		}
 	}
 
 	/** 게임 객체를 설정한다 */
 	public static void SetupGameObjs<K>(List<(K, string, GameObject, GameObject)> a_oKeyInfoList,
-		Dictionary<K, GameObject> a_oOutObjsDict, bool a_bIsAssert = true)
+		Dictionary<K, GameObject> a_oOutObjDict, bool a_bIsAssert = true)
 	{
-		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutObjsDict != null));
+		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutObjDict != null));
 
 		// 객체 설정이 불가능 할 경우
-		if(!a_oKeyInfoList.ExIsValid() || a_oOutObjsDict == null)
+		if(!a_oKeyInfoList.ExIsValid() || a_oOutObjDict == null)
 		{
 			return;
 		}
@@ -76,20 +73,15 @@ public static partial class CFunc
 			var oObj = a_oKeyInfoList[i].Item3?.ExFindChild(a_oKeyInfoList[i].Item2) ??
 				CFunc.CreateGameObj(a_oKeyInfoList[i].Item2, a_oKeyInfoList[i].Item4, a_oKeyInfoList[i].Item3);
 
-			a_oOutObjsDict.ExReplaceVal(a_oKeyInfoList[i].Item1, oObj);
+			a_oOutObjDict.ExReplaceVal(a_oKeyInfoList[i].Item1, oObj);
 		}
 	}
 
 	/** 게임 객체를 생성한다 */
 	private static GameObject CreateGameObj(string a_oName, GameObject a_oOrigin, GameObject a_oParent)
 	{
-		// 원본 게임 객체가 존재 할 경우
-		if(a_oOrigin != null)
-		{
-			CFactory.CreateCloneGameObj(a_oName, a_oOrigin, a_oParent);
-		}
-
-		return CFactory.CreateGameObj(a_oName, a_oParent);
+		return (a_oOrigin != null) ?
+			CFactory.CreateCloneGameObj(a_oName, a_oOrigin, a_oParent) : CFactory.CreateGameObj(a_oName, a_oParent);
 	}
 	#endregion // 제네릭 클래스 함수
 }

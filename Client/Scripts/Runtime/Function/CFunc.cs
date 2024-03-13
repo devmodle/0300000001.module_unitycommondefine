@@ -49,20 +49,20 @@ public static partial class CFunc
 	}
 
 	/** 객체를 탐색한다 */
-	public static List<GameObject> FindObjs(string a_oName, List<GameObject> a_oOutObjsList = null)
+	public static List<GameObject> FindObjs(string a_oName, List<GameObject> a_oOutObjList = null)
 	{
 		CFunc.Assert(a_oName.ExIsValid());
-		a_oOutObjsList = a_oOutObjsList ?? new List<GameObject>();
+		a_oOutObjList = a_oOutObjList ?? new List<GameObject>();
 
 		CAccess.EnumerateScenes((a_stScene) =>
 		{
-			var oChildObjsList = a_stScene.ExFindChildren(a_oName);
-			a_oOutObjsList.AddRange(oChildObjsList);
+			var oChildObjList = a_stScene.ExFindChildren(a_oName);
+			a_oOutObjList.AddRange(oChildObjList);
 
 			return true;
 		});
 
-		return a_oOutObjsList;
+		return a_oOutObjList;
 	}
 
 	/** 경로를 탐색한다 */

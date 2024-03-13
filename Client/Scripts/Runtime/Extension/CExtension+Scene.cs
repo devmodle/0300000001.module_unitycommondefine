@@ -32,17 +32,17 @@ public static partial class CExtension
 
 	/** 자식 객체를 탐색한다 */
 	public static List<GameObject> ExFindChildren(this Scene a_stSender,
-		string a_oName, List<GameObject> a_oOutObjsList = null, bool a_bIsEnableSubName = false)
+		string a_oName, List<GameObject> a_oOutObjList = null, bool a_bIsEnableSubName = false)
 	{
 		var oObjs = a_stSender.GetRootGameObjects();
-		a_oOutObjsList = a_oOutObjsList ?? new List<GameObject>();
+		a_oOutObjList = a_oOutObjList ?? new List<GameObject>();
 
 		for(int i = 0; i < oObjs.Length; ++i)
 		{
-			a_oOutObjsList.AddRange(oObjs[i].ExFindChildren(a_oName, true, a_bIsEnableSubName));
+			a_oOutObjList.AddRange(oObjs[i].ExFindChildren(a_oName, true, a_bIsEnableSubName));
 		}
 
-		return a_oOutObjsList;
+		return a_oOutObjList;
 	}
 	#endregion // 클래스 함수
 }
