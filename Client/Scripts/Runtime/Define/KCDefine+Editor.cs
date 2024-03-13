@@ -6,7 +6,8 @@ using UnityEngine.Events;
 
 #if UNITY_EDITOR || UNITY_STANDALONE
 /** 상수 - 에디터 씬 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 비율
 	public const float ES_SCALE_DESIGN_SCREEN_HEIGHT = 1.5f;
@@ -25,7 +26,8 @@ public static partial class KCDefine {
 }
 
 /** 상수 - 레벨 에디터 씬 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 형식
 	public const string LES_TEXT_FMT_SIZE = "크기 {0}x{1}";

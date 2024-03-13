@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 전처리기 심볼 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	public const string DS_DEFINE_S_IL2CPP_ENABLE = "ENABLE_IL2CPP";
 	public const string DS_DEFINE_S_MODE_2D_ENABLE = "MODE_2D_ENABLE";
@@ -230,7 +231,7 @@ public static partial class KCEditorDefine {
 
 	public const string DS_DEFINE_S_BURST_ENABLE = "BURST_ENABLE";
 	public const string DS_DEFINE_S_BURST_MODULE_ENABLE = "BURST_MODULE_ENABLE";
-	
+
 	public const string DS_DEFINE_S_CINEMACHINE_ENABLE = "CINEMACHINE_ENABLE";
 	public const string DS_DEFINE_S_CINEMACHINE_MODULE_ENABLE = "CINEMACHINE_MODULE_ENABLE";
 
@@ -247,7 +248,8 @@ public static partial class KCEditorDefine {
 
 	#region 런타임 상수
 	// 전처리기 심볼
-	public static readonly Dictionary<string, string> DS_DEFINE_S_REPLACE_MODULE_DICT = new Dictionary<string, string>() {
+	public static readonly Dictionary<string, string> DS_DEFINE_S_REPLACE_MODULE_DICT = new Dictionary<string, string>()
+	{
 #if EXTRA_SCRIPT_ENABLE || EXTRA_SCRIPT_MODULE_ENABLE
 		[KCEditorDefine.DS_DEFINE_S_EXTRA_SCRIPT_ENABLE] = KCEditorDefine.DS_DEFINE_S_EXTRA_SCRIPT_MODULE_ENABLE,
 #endif // #if EXTRA_SCRIPT_ENABLE || EXTRA_SCRIPT_MODULE_ENABLE

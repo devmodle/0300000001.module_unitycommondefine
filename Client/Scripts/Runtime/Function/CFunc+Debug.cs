@@ -7,9 +7,11 @@ using UnityEngine.Events;
 using System.Diagnostics;
 
 /** 함수 - 디버그 */
-public static partial class CFunc {
+public static partial class CFunc
+{
 	#region 클래스 변수
-	private static Dictionary<LogType, System.Action<string>> m_oLogFuncDict = new Dictionary<LogType, System.Action<string>>() {
+	private static Dictionary<LogType, System.Action<string>> m_oLogFuncDict = new Dictionary<LogType, System.Action<string>>()
+	{
 		[LogType.Log] = UnityEngine.Debug.Log,
 		[LogType.Warning] = UnityEngine.Debug.LogWarning,
 		[LogType.Error] = UnityEngine.Debug.LogError
@@ -19,54 +21,62 @@ public static partial class CFunc {
 	#region 클래스 함수
 	/** 조건을 검사한다 */
 	[Conditional("DEBUG"), Conditional("DEVELOPMENT_BUILD")]
-	public static void Assert(bool a_bIsTrue) {
+	public static void Assert(bool a_bIsTrue)
+	{
 		UnityEngine.Assertions.Assert.IsTrue(a_bIsTrue);
 	}
-	
+
 	/** 로그를 출력한다 */
 	[Conditional("DEBUG"), Conditional("DEVELOPMENT_BUILD")]
-	public static void ShowLog(string a_oLog) {
+	public static void ShowLog(string a_oLog)
+	{
 		CFunc.Assert(a_oLog != null);
 		CFunc.DoShowLog(LogType.Log, a_oLog);
 	}
 
 	/** 로그를 출력한다 */
 	[Conditional("DEBUG"), Conditional("DEVELOPMENT_BUILD")]
-	public static void ShowLog(string a_oLog, Color a_stColor) {
+	public static void ShowLog(string a_oLog, Color a_stColor)
+	{
 		CFunc.Assert(a_oLog != null);
 		CFunc.DoShowLog(LogType.Log, a_oLog.ExGetColorFmtStr(a_stColor));
 	}
 
 	/** 경고 로그를 출력한다 */
 	[Conditional("DEBUG"), Conditional("DEVELOPMENT_BUILD")]
-	public static void ShowLogWarning(string a_oLog) {
+	public static void ShowLogWarning(string a_oLog)
+	{
 		CFunc.Assert(a_oLog != null);
 		CFunc.DoShowLog(LogType.Warning, a_oLog);
 	}
 
 	/** 경고 로그를 출력한다 */
 	[Conditional("DEBUG"), Conditional("DEVELOPMENT_BUILD")]
-	public static void ShowLogWarning(string a_oLog, Color a_stColor) {
+	public static void ShowLogWarning(string a_oLog, Color a_stColor)
+	{
 		CFunc.Assert(a_oLog != null);
 		CFunc.DoShowLog(LogType.Warning, a_oLog.ExGetColorFmtStr(a_stColor));
 	}
 
 	/** 에러 로그를 출력한다 */
 	[Conditional("DEBUG"), Conditional("DEVELOPMENT_BUILD")]
-	public static void ShowLogError(string a_oLog) {
+	public static void ShowLogError(string a_oLog)
+	{
 		CFunc.Assert(a_oLog != null);
 		CFunc.DoShowLog(LogType.Error, a_oLog);
 	}
 
 	/** 에러 로그를 출력한다 */
 	[Conditional("DEBUG"), Conditional("DEVELOPMENT_BUILD")]
-	public static void ShowLogError(string a_oLog, Color a_stColor) {
+	public static void ShowLogError(string a_oLog, Color a_stColor)
+	{
 		CFunc.Assert(a_oLog != null);
 		CFunc.DoShowLog(LogType.Error, a_oLog.ExGetColorFmtStr(a_stColor));
 	}
 
 	/** 로그를 출력한다 */
-	private static void DoShowLog(LogType a_eLogType, string a_oLog) {
+	private static void DoShowLog(LogType a_eLogType, string a_oLog)
+	{
 		bool bIsValid = CFunc.m_oLogFuncDict.TryGetValue(a_eLogType, out System.Action<string> oLogFunc);
 		CFunc.Assert(bIsValid);
 

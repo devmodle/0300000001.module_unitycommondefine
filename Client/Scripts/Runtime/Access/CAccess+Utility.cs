@@ -30,9 +30,11 @@ using UnityEngine.Purchasing;
 #endif // #if PURCHASE_MODULE_ENABLE
 
 /** 유틸리티 접근자 */
-public static partial class CAccess {
+public static partial class CAccess
+{
 	#region 클래스 변수
-	private static Dictionary<RuntimePlatform, EDeviceType> m_oDeviceTypeDict = new Dictionary<RuntimePlatform, EDeviceType>() {
+	private static Dictionary<RuntimePlatform, EDeviceType> m_oDeviceTypeDict = new Dictionary<RuntimePlatform, EDeviceType>()
+	{
 		// 데스크 탑 {
 		[RuntimePlatform.OSXEditor] = EDeviceType.DESKTOP,
 		[RuntimePlatform.OSXPlayer] = EDeviceType.DESKTOP,
@@ -52,8 +54,10 @@ public static partial class CAccess {
 	#endregion // 클래스 변수
 
 	#region 클래스 프로퍼티
-	public static bool IsNeedsTrackingConsent {
-		get {
+	public static bool IsNeedsTrackingConsent
+	{
+		get
+		{
 #if !UNITY_EDITOR && UNITY_IOS
 			var oVer = new System.Version(Device.systemVersion);
 			return oVer.CompareTo(KCDefine.B_MIN_VER_TRACKING_CONSENT_VIEW) >= KCDefine.B_COMPARE_EQUALS;
@@ -65,8 +69,10 @@ public static partial class CAccess {
 		}
 	}
 
-	public static bool IsSupportsHapticFeedback {
-		get {
+	public static bool IsSupportsHapticFeedback
+	{
+		get
+		{
 #if !UNITY_EDITOR && UNITY_IOS
 			var oVer = new System.Version(Device.systemVersion);
 
@@ -85,8 +91,10 @@ public static partial class CAccess {
 		}
 	}
 
-	public static KeyCode SubCmdKeyCode {
-		get {
+	public static KeyCode SubCmdKeyCode
+	{
+		get
+		{
 #if UNITY_EDITOR_WIN
 			return KeyCode.LeftAlt;
 #elif UNITY_EDITOR_OSX
@@ -97,8 +105,10 @@ public static partial class CAccess {
 		}
 	}
 
-	public static EDeviceType DeviceType {
-		get {
+	public static EDeviceType DeviceType
+	{
+		get
+		{
 #if UNITY_IOS || UNITY_ANDROID
 			return EDeviceType.PHONE;
 #else
@@ -107,10 +117,12 @@ public static partial class CAccess {
 		}
 	}
 
-	public static Rect SafeArea {
-		get {
+	public static Rect SafeArea
+	{
+		get
+		{
 #if UNITY_EDITOR
-			var stSafeArea = new Rect(KCDefine.B_VAL_0_REAL, 
+			var stSafeArea = new Rect(KCDefine.B_VAL_0_REAL,
 				KCDefine.B_VAL_0_REAL, Camera.main.pixelWidth, Camera.main.pixelHeight);
 
 			return UnityEngine.Device.Application.isEditor ? stSafeArea : Screen.safeArea;
@@ -120,8 +132,10 @@ public static partial class CAccess {
 		}
 	}
 
-	public static Vector3 DeviceScreenSize {
-		get {
+	public static Vector3 DeviceScreenSize
+	{
+		get
+		{
 #if UNITY_EDITOR
 			return new Vector3(Camera.main.pixelWidth, Camera.main.pixelHeight, KCDefine.B_VAL_0_REAL);
 #else
@@ -159,7 +173,8 @@ public static partial class CAccess {
 
 	#region 클래스 함수
 	/** 유저 권한 유효 여부를 검사한다 */
-	public static bool IsEnableUserPermission(string a_oPermission) {
+	public static bool IsEnableUserPermission(string a_oPermission)
+	{
 		CFunc.Assert(a_oPermission.ExIsValid());
 
 #if UNITY_ANDROID
@@ -170,14 +185,17 @@ public static partial class CAccess {
 	}
 
 	/** 배너 광고 높이를 반환한다 */
-	public static float GetBannerAdsHeight(float a_fHeight) {
+	public static float GetBannerAdsHeight(float a_fHeight)
+	{
 		CFunc.Assert(a_fHeight.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
 		return (a_fHeight.ExDPIPixelsToPixels() * (KCDefine.B_DESIGN_SCREEN_HEIGHT / CAccess.DeviceScreenSize.y)) / CAccess.ResolutionScale;
 	}
 
 	/** iOS 플랫폼을 반환한다 */
-	public static string GetiOSPlatform(EiOSType a_eType) {
-		switch(a_eType) {
+	public static string GetiOSPlatform(EiOSType a_eType)
+	{
+		switch(a_eType)
+		{
 			// Do Something
 		}
 
@@ -185,92 +203,119 @@ public static partial class CAccess {
 	}
 
 	/** 안드로이드 이름을 반환한다 */
-	public static string GetAndroidPlatform(EAndroidType a_eType) {
-		switch(a_eType) {
-			case EAndroidType.AMAZON: return KCDefine.B_PLATFORM_ANDROID_AMAZON;
+	public static string GetAndroidPlatform(EAndroidType a_eType)
+	{
+		switch(a_eType)
+		{
+			case EAndroidType.AMAZON:
+				return KCDefine.B_PLATFORM_ANDROID_AMAZON;
 		}
 
 		return KCDefine.B_PLATFORM_ANDROID_GOOGLE;
 	}
 
 	/** 독립 플랫폼을 반환한다 */
-	public static string GetStandalonePlatform(EStandaloneType a_eType) {
-		switch(a_eType) {
-			case EStandaloneType.MAC_EDITOR: return KCDefine.B_PLATFORM_STANDALONE_MAC_EDITOR;
-			case EStandaloneType.WNDS_STEAM: return KCDefine.B_PLATFORM_STANDALONE_WNDS_STEAM;
-			case EStandaloneType.WNDS_EDITOR: return KCDefine.B_PLATFORM_STANDALONE_WNDS_EDITOR;
+	public static string GetStandalonePlatform(EStandaloneType a_eType)
+	{
+		switch(a_eType)
+		{
+			case EStandaloneType.MAC_EDITOR:
+				return KCDefine.B_PLATFORM_STANDALONE_MAC_EDITOR;
+			case EStandaloneType.WNDS_STEAM:
+				return KCDefine.B_PLATFORM_STANDALONE_WNDS_STEAM;
+			case EStandaloneType.WNDS_EDITOR:
+				return KCDefine.B_PLATFORM_STANDALONE_WNDS_EDITOR;
 		}
 
 		return KCDefine.B_PLATFORM_STANDALONE_MAC_STEAM;
 	}
 
 	/** URP 에셋 경로를 반환한다 */
-	public static string GetURPAssetPath(EQualityLevel a_eQualityLevel) {
-		switch(a_eQualityLevel) {
-			case EQualityLevel.HIGH: return KCDefine.U_ASSET_P_G_HIGH_QUALITY_URP;
-			case EQualityLevel.ULTRA: return KCDefine.U_ASSET_P_G_ULTRA_QUALITY_URP;
+	public static string GetURPAssetPath(EQualityLevel a_eQualityLevel)
+	{
+		switch(a_eQualityLevel)
+		{
+			case EQualityLevel.HIGH:
+				return KCDefine.U_ASSET_P_G_HIGH_QUALITY_URP;
+			case EQualityLevel.ULTRA:
+				return KCDefine.U_ASSET_P_G_ULTRA_QUALITY_URP;
 		}
 
 		return KCDefine.U_ASSET_P_G_NORM_QUALITY_URP;
 	}
 
 	/** 포스트 프로세스 설정 경로를 반환한다 */
-	public static string GetPostProcessingSettingsPath(EQualityLevel a_eQualityLevel) {
-		switch(a_eQualityLevel) {
-			case EQualityLevel.HIGH: return KCDefine.U_ASSET_P_G_HIGH_QUALITY_POST_PROCESSING_SETTINGS;
-			case EQualityLevel.ULTRA: return KCDefine.U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS;
+	public static string GetPostProcessingSettingsPath(EQualityLevel a_eQualityLevel)
+	{
+		switch(a_eQualityLevel)
+		{
+			case EQualityLevel.HIGH:
+				return KCDefine.U_ASSET_P_G_HIGH_QUALITY_POST_PROCESSING_SETTINGS;
+			case EQualityLevel.ULTRA:
+				return KCDefine.U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS;
 		}
 
 		return KCDefine.U_ASSET_P_G_NORM_QUALITY_POST_PROCESSING_SETTINGS;
 	}
 
 	/** 시간 비율을 변경한다 */
-	public static void SetTimeScale(float a_fScale) {
+	public static void SetTimeScale(float a_fScale)
+	{
 		Time.timeScale = a_fScale.ExGetClampVal(KCDefine.B_VAL_0_REAL, KCDefine.B_VAL_9_REAL);
 	}
 
 	/** 값을 할당한다 */
-	public static void AssignVal(ref DG.Tweening.Tween a_rLhs, DG.Tweening.Tween a_oRhs, DG.Tweening.Tween a_oDefVal = null) {
+	public static void AssignVal(ref DG.Tweening.Tween a_rLhs, DG.Tweening.Tween a_oRhs, DG.Tweening.Tween a_oDefVal = null)
+	{
 		a_rLhs?.Kill();
 		a_rLhs = a_oRhs ?? a_oDefVal;
 	}
 
 	/** 값을 할당한다 */
-	public static void AssignVal(ref Sequence a_rLhs, DG.Tweening.Tween a_oRhs, DG.Tweening.Tween a_oDefVal = null) {
+	public static void AssignVal(ref Sequence a_rLhs, DG.Tweening.Tween a_oRhs, DG.Tweening.Tween a_oDefVal = null)
+	{
 		a_rLhs?.Kill();
 		a_rLhs = (a_oRhs ?? a_oDefVal) as Sequence;
 	}
 
 	/** 씬을 순회한다 */
-	public static void EnumerateScenes(System.Func<Scene, bool> a_oCallback, bool a_bIsAssert = true) {
+	public static void EnumerateScenes(System.Func<Scene, bool> a_oCallback, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oCallback != null);
 
 		// 씬 순회가 불가능 할 경우
-		if(a_oCallback == null) {
+		if(a_oCallback == null)
+		{
 			return;
 		}
 
-		for(int i = 0; i < SceneManager.sceneCount; ++i) {
+		for(int i = 0; i < SceneManager.sceneCount; ++i)
+		{
 			// 씬 순회가 불가능 할 경우
-			if(!a_oCallback(SceneManager.GetSceneAt(i))) {
+			if(!a_oCallback(SceneManager.GetSceneAt(i)))
+			{
 				break;
 			}
 		}
 	}
 
 	/** 객체를 순회한다 */
-	public static void EnumerateRootObjs(System.Func<GameObject, bool> a_oCallback, bool a_bIsAssert = true) {
+	public static void EnumerateRootObjs(System.Func<GameObject, bool> a_oCallback, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oCallback != null);
 
 		// 객체 순회가 불가능 할 경우
-		if(a_oCallback == null) {
+		if(a_oCallback == null)
+		{
 			return;
 		}
 
-		CAccess.EnumerateScenes((a_stScene) => {
+		CAccess.EnumerateScenes((a_stScene) =>
+		{
 			bool bIsTrue = true;
 
-			a_stScene.ExEnumerateRootObjs((a_oObj) => {
+			a_stScene.ExEnumerateRootObjs((a_oObj) =>
+			{
 				return bIsTrue = a_oCallback(a_oObj);
 			}, a_bIsAssert);
 
@@ -279,8 +324,9 @@ public static partial class CAccess {
 	}
 
 	/** 대기 객체를 반환한다 */
-	private static WaitForSeconds GetWaitForSeconds(float a_fDelay) {
-		var oWaitForSecs = CAccess.m_oWaitForSecsDict.ExGetVal(a_fDelay) ?? 
+	private static WaitForSeconds GetWaitForSeconds(float a_fDelay)
+	{
+		var oWaitForSecs = CAccess.m_oWaitForSecsDict.ExGetVal(a_fDelay) ??
 			new WaitForSeconds(a_fDelay);
 
 		CAccess.m_oWaitForSecsDict.TryAdd(a_fDelay, oWaitForSecs);
@@ -288,8 +334,9 @@ public static partial class CAccess {
 	}
 
 	/** 대기 객체를 반환한다 */
-	private static WaitForSecondsRealtime GetWaitForSecondsRealtime(float a_fDelay) {
-		var oWaitForSecs = CAccess.m_oWaitForSecsRealtimeDict.ExGetVal(a_fDelay) ?? 
+	private static WaitForSecondsRealtime GetWaitForSecondsRealtime(float a_fDelay)
+	{
+		var oWaitForSecs = CAccess.m_oWaitForSecsRealtimeDict.ExGetVal(a_fDelay) ??
 			new WaitForSecondsRealtime(a_fDelay);
 
 		CAccess.m_oWaitForSecsRealtimeDict.TryAdd(a_fDelay, oWaitForSecs);
@@ -299,15 +346,17 @@ public static partial class CAccess {
 
 	#region 제네릭 클래스 함수
 	/** 리소스 존재 여부를 검사한다 */
-	public static bool IsExistsRes<T>(string a_oFilePath, bool a_bIsAutoUnload = false) where T : Object {
+	public static bool IsExistsRes<T>(string a_oFilePath, bool a_bIsAutoUnload = false) where T : Object
+	{
 		CFunc.Assert(a_oFilePath.ExIsValid());
 		var oRes = Resources.Load<T>(a_oFilePath);
 
-		bool bIsExistsRes = typeof(T).Equals(typeof(TextAsset)) ? 
+		bool bIsExistsRes = typeof(T).Equals(typeof(TextAsset)) ?
 			(oRes as TextAsset).ExIsValid() : oRes != null;
 
 		// 자동 제거 모드 일 경우
-		if(bIsExistsRes && a_bIsAutoUnload) {
+		if(bIsExistsRes && a_bIsAutoUnload)
+		{
 			Resources.UnloadAsset(oRes);
 		}
 
@@ -315,19 +364,23 @@ public static partial class CAccess {
 	}
 
 	/** 컴포넌트를 순회한다 */
-	public static void EnumerateComponents<T>(System.Func<T, bool> a_oCallback, 
-		bool a_bIsIncludeInactive = false, bool a_bIsAssert = true) where T : Component {
+	public static void EnumerateComponents<T>(System.Func<T, bool> a_oCallback,
+		bool a_bIsIncludeInactive = false, bool a_bIsAssert = true) where T : Component
+	{
 		CFunc.Assert(!a_bIsAssert || a_oCallback != null);
 
 		// 컴포넌트 순회가 불가능 할 경우
-		if(a_oCallback == null) {
+		if(a_oCallback == null)
+		{
 			return;
 		}
 
-		CAccess.EnumerateScenes((a_stScene) => {
+		CAccess.EnumerateScenes((a_stScene) =>
+		{
 			bool bIsTrue = true;
 
-			a_stScene.ExEnumerateComponents<T>((a_oComponent) => {
+			a_stScene.ExEnumerateComponents<T>((a_oComponent) =>
+			{
 				return bIsTrue = a_oCallback(a_oComponent);
 			}, a_bIsIncludeInactive, a_bIsAssert);
 
@@ -339,11 +392,13 @@ public static partial class CAccess {
 	#region 조건부 클래스 함수
 #if UNITY_EDITOR
 	/** 스크립트 순서를 변경한다 */
-	public static void SetScriptOrder(MonoScript a_oScript, int a_nOrder, bool a_bIsAssert = true) {
+	public static void SetScriptOrder(MonoScript a_oScript, int a_nOrder, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oScript != null);
 
 		// 스크립트가 존재 할 경우
-		if(a_oScript != null && MonoImporter.GetExecutionOrder(a_oScript) != a_nOrder) {
+		if(a_oScript != null && MonoImporter.GetExecutionOrder(a_oScript) != a_nOrder)
+		{
 			MonoImporter.SetExecutionOrder(a_oScript, a_nOrder);
 		}
 	}
@@ -371,10 +426,11 @@ public static partial class CAccess {
 
 #if PURCHASE_MODULE_ENABLE
 	/** 가격 문자열을 반환한다 */
-	public static string GetPriceStr(Product a_oProduct) {
+	public static string GetPriceStr(Product a_oProduct)
+	{
 		CFunc.Assert(a_oProduct != null);
-		
-		return string.Format(KCDefine.B_TEXT_FMT_2_SPACE_COMBINE, 
+
+		return string.Format(KCDefine.B_TEXT_FMT_2_SPACE_COMBINE,
 			a_oProduct.metadata.isoCurrencyCode, a_oProduct.metadata.localizedPrice);
 	}
 #endif // #if PURCHASE_MODULE_ENABLE
@@ -382,17 +438,21 @@ public static partial class CAccess {
 }
 
 /** 유틸리티 접근자 - 코루틴 */
-public static partial class CAccess {
+public static partial class CAccess
+{
 	/** 실수 비교자 */
-	private class CRealComparer : IEqualityComparer<float> {
+	private class CRealComparer : IEqualityComparer<float>
+	{
 		#region 함수
 		/** 동일 여부를 검사한다 */
-		public bool Equals(float a_fLhs, float a_fRhs) {
+		public bool Equals(float a_fLhs, float a_fRhs)
+		{
 			return a_fLhs.ExIsEquals(a_fRhs);
 		}
 
 		/** 해시 코드를 반환한다 */
-		public int GetHashCode(float a_fVal) {
+		public int GetHashCode(float a_fVal)
+		{
 			return a_fVal.GetHashCode();
 		}
 		#endregion // 함수
@@ -409,26 +469,30 @@ public static partial class CAccess {
 
 	#region 클래스 함수
 	/** 대기 객체를 리셋한다 */
-	public static void ResetWaitForSecs() {
+	public static void ResetWaitForSecs()
+	{
 		CAccess.m_oWaitForSecsDict.Clear();
 		CAccess.m_oWaitForSecsRealtimeDict.Clear();
 	}
 
 	/** 대기 객체를 반환한다 */
-	public static IEnumerator CoGetWaitForSecs(float a_fDeltaTime, bool a_bIsRealtime = false) {
+	public static IEnumerator CoGetWaitForSecs(float a_fDeltaTime, bool a_bIsRealtime = false)
+	{
 		CFunc.Assert(a_fDeltaTime.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
 
-		yield return a_bIsRealtime ? 
+		yield return a_bIsRealtime ?
 			CAccess.GetWaitForSecondsRealtime(a_fDeltaTime) : CAccess.GetWaitForSeconds(a_fDeltaTime);
 	}
 
 	/** 대기 객체를 반환한다 */
-	public static IEnumerator CoGetWaitForFixedUpdate() {
+	public static IEnumerator CoGetWaitForFixedUpdate()
+	{
 		yield return CAccess.m_oWaitForFixedUpdate;
 	}
 
 	/** 대기 객체를 반환한다 */
-	public static IEnumerator CoGetWaitForEndOfFrame() {
+	public static IEnumerator CoGetWaitForEndOfFrame()
+	{
 		yield return CAccess.m_oWaitForEndOfFrame;
 	}
 	#endregion // 클래스 함수

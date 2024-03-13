@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 상수 - 비동기 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 런타임 상수
 	// 기타
 	public static readonly object B_LOCK_OBJ_COMMON = new object();

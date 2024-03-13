@@ -6,7 +6,8 @@ using UnityEngine.Events;
 
 #if DEBUG || DEVELOPMENT_BUILD
 /** 상수 - 디버그 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 이름 {
 	public const string U_OBJ_N_SCREEN_FPS_INFO_UIS = "FPSInfoUIs";

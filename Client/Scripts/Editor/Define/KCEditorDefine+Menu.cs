@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 메뉴 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	// 기타 {
 	public const string B_MENU_TOOLS_BASE = "Tools/Utility/";

@@ -9,7 +9,8 @@ using UnityEditor;
 using Unity.Notifications.iOS;
 
 /** 에디터 상수 - 알림 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	// 기타
 	public const PresentationOption B_PRESENT_OPTS_REMOTE_NOTI = PresentationOption.Alert | PresentationOption.Badge | PresentationOption.Sound;

@@ -12,14 +12,17 @@ using UnityEditor.iOS.Xcode;
 #endif // #if UNITY_IOS
 
 /** 에디터 기본 접근 확장 */
-public static partial class CEditorExtension {
+public static partial class CEditorExtension
+{
 	#region 클래스 함수
 	/** 상태를 리셋한다 */
-	public static void ExReset(this LightProbeGroup a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this LightProbeGroup a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 라인 효과가 존재 할 경우
-		if(a_oSender != null) {
+		if(a_oSender != null)
+		{
 			a_oSender.probePositions = new Vector3[] {
 				new Vector3(-KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
 				new Vector3(-KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
@@ -35,15 +38,20 @@ public static partial class CEditorExtension {
 	}
 
 	/** 직렬화 프로퍼티 값을 변경한다 */
-	public static void ExSetPropertyVal(this SerializedObject a_oSender, 
-		string a_oName, System.Action<SerializedProperty> a_oCallback, bool a_bIsAssert = true) {
+	public static void ExSetPropertyVal(this SerializedObject a_oSender,
+		string a_oName, System.Action<SerializedProperty> a_oCallback, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oName.ExIsValid()));
 
 		// 객체가 존재 할 경우
-		if(a_oSender != null && a_oName.ExIsValid()) {
-			try {
+		if(a_oSender != null && a_oName.ExIsValid())
+		{
+			try
+			{
 				a_oCallback?.Invoke(a_oSender.FindProperty(a_oName));
-			} finally {
+			}
+			finally
+			{
 				a_oSender.ApplyModifiedProperties();
 				a_oSender.Update();
 			}

@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 단위 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 컴파일 상수
 	// 태그
 	public const int B_UNIT_CUSTOM_TAG_START_ID = 10;
