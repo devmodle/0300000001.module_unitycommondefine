@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 상수 - 플랫폼 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 유니티 메세지 전송자 {
 	public const string B_KEY_UNITY_MS_APP_ID = "AppID";

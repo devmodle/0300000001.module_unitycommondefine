@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 상수 - 정렬 순서 */
-public static partial class KCDefine {
+public static partial class KCDefine
+{
 	#region 컴파일 상수
 	// 정렬 순서 {
 	public const int B_SORTING_O_ABS = sbyte.MaxValue * 50;
@@ -79,22 +80,22 @@ public static partial class KCDefine {
 
 	// 정렬 레이어
 	public static readonly List<string> B_SORTING_LAYER_LIST = new List<string>() {
-		KCDefine.B_SORTING_L_UNDERGROUND, 
-		KCDefine.B_SORTING_L_BACKGROUND, 
-		KCDefine.B_SORTING_L_DEF, 
-		KCDefine.B_SORTING_L_FOREGROUND, 
-		KCDefine.B_SORTING_L_OVERGROUND, 
-		KCDefine.B_SORTING_L_TOP, 
-		KCDefine.B_SORTING_L_TOPMOST, 
-		KCDefine.B_SORTING_L_ABS, 
-		
-		KCDefine.B_SORTING_L_OVERLAY_UNDERGROUND, 
-		KCDefine.B_SORTING_L_OVERLAY_BACKGROUND, 
-		KCDefine.B_SORTING_L_OVERLAY_DEF, 
-		KCDefine.B_SORTING_L_OVERLAY_FOREGROUND, 
-		KCDefine.B_SORTING_L_OVERLAY_OVERGROUND, 
-		KCDefine.B_SORTING_L_OVERLAY_TOP, 
-		KCDefine.B_SORTING_L_OVERLAY_TOPMOST, 
+		KCDefine.B_SORTING_L_UNDERGROUND,
+		KCDefine.B_SORTING_L_BACKGROUND,
+		KCDefine.B_SORTING_L_DEF,
+		KCDefine.B_SORTING_L_FOREGROUND,
+		KCDefine.B_SORTING_L_OVERGROUND,
+		KCDefine.B_SORTING_L_TOP,
+		KCDefine.B_SORTING_L_TOPMOST,
+		KCDefine.B_SORTING_L_ABS,
+
+		KCDefine.B_SORTING_L_OVERLAY_UNDERGROUND,
+		KCDefine.B_SORTING_L_OVERLAY_BACKGROUND,
+		KCDefine.B_SORTING_L_OVERLAY_DEF,
+		KCDefine.B_SORTING_L_OVERLAY_FOREGROUND,
+		KCDefine.B_SORTING_L_OVERLAY_OVERGROUND,
+		KCDefine.B_SORTING_L_OVERLAY_TOP,
+		KCDefine.B_SORTING_L_OVERLAY_TOPMOST,
 		KCDefine.B_SORTING_L_OVERLAY_ABS
 	};
 	#endregion // 런타임 상수

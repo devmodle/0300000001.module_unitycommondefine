@@ -5,14 +5,17 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 /** 확장 클래스 - 카메라 */
-public static partial class CExtension {
+public static partial class CExtension
+{
 	#region 클래스 함수
 	/** 상태를 리셋한다 */
-	public static void ExReset(this Camera a_oSender, bool a_bIsAssert = true) {
+	public static void ExReset(this Camera a_oSender, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 상태 리셋이 불가능 할 경우
-		if(a_oSender == null) {
+		if(a_oSender == null)
+		{
 			return;
 		}
 
@@ -32,11 +35,13 @@ public static partial class CExtension {
 	}
 
 	/** 2 차원 카메라를 설정한다 */
-	public static void ExSetup2D(this Camera a_oSender, float a_fPlaneHeight, bool a_bIsAssert = true) {
+	public static void ExSetup2D(this Camera a_oSender, float a_fPlaneHeight, bool a_bIsAssert = true)
+	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL)));
 
 		// 카메라 설정이 불가능 할 경우
-		if(a_oSender == null || a_fPlaneHeight.ExIsLessEquals(KCDefine.B_VAL_0_REAL)) {
+		if(a_oSender == null || a_fPlaneHeight.ExIsLessEquals(KCDefine.B_VAL_0_REAL))
+		{
 			return;
 		}
 
@@ -45,18 +50,20 @@ public static partial class CExtension {
 	}
 
 	/** 3 차원 카메라를 설정한다 */
-	public static void ExSetup3D(this Camera a_oSender, 
-		float a_fPlaneHeight, float a_fPlaneDistance, bool a_bIsAssert = true) {
-		CFunc.Assert(!a_bIsAssert || 
+	public static void ExSetup3D(this Camera a_oSender,
+		float a_fPlaneHeight, float a_fPlaneDistance, bool a_bIsAssert = true)
+	{
+		CFunc.Assert(!a_bIsAssert ||
 			(a_oSender != null && a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL) && a_fPlaneDistance.ExIsGreat(KCDefine.B_VAL_0_REAL)));
 
 		bool bIsValidA = a_oSender != null;
 
-		bool bIsValidB = a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL) && 
+		bool bIsValidB = a_fPlaneHeight.ExIsGreat(KCDefine.B_VAL_0_REAL) &&
 			a_fPlaneDistance.ExIsGreat(KCDefine.B_VAL_0_REAL);
 
 		// 카메라 설정이 불가능 할 경우
-		if(!bIsValidA || !bIsValidB) {
+		if(!bIsValidA || !bIsValidB)
+		{
 			return;
 		}
 

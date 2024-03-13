@@ -8,7 +8,8 @@ using UnityEngine.Events;
 using UnityEditor;
 
 /** 에디터 상수 - 텍스트 */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 상수
 	// 기타 {
 	public const string B_TEXT_OK = "확인";

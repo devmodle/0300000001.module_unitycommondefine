@@ -9,7 +9,8 @@ using UnityEngine.Rendering;
 using UnityEditor;
 
 /** 에디터 상수 - iOS */
-public static partial class KCEditorDefine {
+public static partial class KCEditorDefine
+{
 	#region 상수
 	// 기타 {
 	public const string B_IPA_EXPORT_METHOD_IOS_DEV = "development";
@@ -51,7 +52,7 @@ public static partial class KCEditorDefine {
 
 	public const string B_KEY_IOS_ALLOWS_ARBITRARY_LOADS = "NSAllowsArbitraryLoads";
 	public const string B_KEY_IOS_APP_TRANSPORT_SECURITY = "NSAppTransportSecurity";
-	
+
 	public const string B_KEY_IOS_REQUIRED_DEVICE_CAPABILITIES = "UIRequiredDeviceCapabilities";
 	public const string B_KEY_IOS_APP_USES_NON_EXEMPT_ENCRYPTION_ENABLE = "ITSAppUsesNonExemptEncryption";
 
