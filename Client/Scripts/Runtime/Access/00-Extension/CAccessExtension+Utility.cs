@@ -355,17 +355,17 @@ public static partial class CAccessExtension
 	}
 
 	/** 자식을 반환한다 */
-	public static List<GameObject> ExGetChildren(this Scene a_stSender, List<GameObject> a_oOutObjsList = null)
+	public static List<GameObject> ExGetChildren(this Scene a_stSender, List<GameObject> a_oOutObjList = null)
 	{
 		var oObjs = a_stSender.GetRootGameObjects();
-		a_oOutObjsList = a_oOutObjsList ?? new List<GameObject>();
+		a_oOutObjList = a_oOutObjList ?? new List<GameObject>();
 
 		for(int i = 0; i < oObjs.Length; ++i)
 		{
-			a_oOutObjsList.AddRange(oObjs[i].ExGetChildren());
+			a_oOutObjList.AddRange(oObjs[i].ExGetChildren());
 		}
 
-		return a_oOutObjsList;
+		return a_oOutObjList;
 	}
 
 	/** 자식을 반환한다 */
@@ -918,7 +918,7 @@ public static partial class CAccessExtension
 	/** 자식 객체를 탐색한다 */
 	public static List<GameObject> ExFindChildren(this GameObject a_oSender, string a_oName, bool a_bIsIncludeSelf = true, bool a_bIsEnableSubName = false)
 	{
-		var oObjsList = new List<GameObject>();
+		var oObjList = new List<GameObject>();
 		var oEnumerator = a_bIsIncludeSelf ? a_oSender.DescendantsAndSelf() : a_oSender.Descendants();
 
 		foreach(var oObj in oEnumerator)
@@ -928,11 +928,11 @@ public static partial class CAccessExtension
 			// 이름이 동일 할 경우
 			if(bIsEquals || (a_bIsEnableSubName && oObj.name.Contains(a_oName)))
 			{
-				oObjsList.ExAddVal(oObj);
+				oObjList.ExAddVal(oObj);
 			}
 		}
 
-		return oObjsList;
+		return oObjList;
 	}
 
 	/** 부모 객체를 탐색한다 */
@@ -957,7 +957,7 @@ public static partial class CAccessExtension
 	/** 부모 객체를 탐색한다 */
 	public static List<GameObject> ExFindParents(this GameObject a_oSender, string a_oName, bool a_bIsIncludeSelf = true, bool a_bIsEnableSubName = false)
 	{
-		var oObjsList = new List<GameObject>();
+		var oObjList = new List<GameObject>();
 		var oEnumerator = a_bIsIncludeSelf ? a_oSender.AncestorsAndSelf() : a_oSender.Ancestors();
 
 		foreach(var oObj in oEnumerator)
@@ -967,11 +967,11 @@ public static partial class CAccessExtension
 			// 이름이 동일 할 경우
 			if(bIsEquals || (a_bIsEnableSubName && oObj.name.Contains(a_oName)))
 			{
-				oObjsList.ExAddVal(oObj);
+				oObjList.ExAddVal(oObj);
 			}
 		}
 
-		return oObjsList;
+		return oObjList;
 	}
 
 	/** 객체를 순회한다 */
