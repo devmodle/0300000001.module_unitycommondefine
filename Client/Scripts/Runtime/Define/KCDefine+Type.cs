@@ -17,30 +17,7 @@ using Newtonsoft.Json;
 using GoogleSheetsToUnity;
 #endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 
-#region 기본
-/** 갱신 인터페이스 */
-public partial interface IUpdatable
-{
-	/** 상태를 갱신한다 */
-	public void OnUpdate(float a_fDeltaTime);
-
-	/** 상태를 갱신한다 */
-	public void OnLateUpdate(float a_fDeltaTime);
-
-	/** 상태를 갱신한다 */
-	public void OnFixedUpdate(float a_fDeltaTime);
-
-	/** 상태를 갱신한다 */
-	public void OnCustomUpdate(float a_fDeltaTime);
-}
-
-/** 풀링 인터페이스 */
-public partial interface IPoolable
-{
-	/** 풀링 여부를 변경한다 */
-	public void SetIsPooling(bool a_bIsPooling);
-}
-
+#region 타입
 /** 콜백 정보 */
 public struct STCallbackInfo
 {
@@ -513,70 +490,6 @@ public struct STCommonTypeWrapper
 	[Key(2)] public List<string> m_oStrList;
 }
 
-/** 경로 정보 */
-public partial class CPathInfo
-{
-	public int m_nCost = 0;
-	public Vector3Int m_stIdx = Vector3Int.zero;
-	public CPathInfo m_oPrevPathInfo = null;
-}
-#endregion // 기본
-
-#region 제네릭 타입
-/** 리스트 래퍼 */
-public partial class CListWrapper<T>
-{
-	public List<T> m_oListA = new List<T>();
-	public List<T> m_oListB = new List<T>();
-	public List<T> m_oListC = new List<T>();
-
-	#region 함수
-	/** 클리어한다 */
-	public void Clear()
-	{
-		m_oListA?.Clear();
-		m_oListB?.Clear();
-		m_oListC?.Clear();
-	}
-	#endregion // 함수
-}
-
-/** 딕셔너리 래퍼 */
-public partial class CDictWrapper<K, V>
-{
-	public Dictionary<K, V> m_oDictA = new Dictionary<K, V>();
-	public Dictionary<K, V> m_oDictB = new Dictionary<K, V>();
-	public Dictionary<K, V> m_oDictC = new Dictionary<K, V>();
-
-	#region 함수
-	/** 클리어한다 */
-	public void Clear()
-	{
-		m_oDictA?.Clear();
-		m_oDictB?.Clear();
-		m_oDictC?.Clear();
-	}
-	#endregion // 함수
-}
-
-/** 풀 리스트 래퍼 */
-public partial class CPoolListWrapper<T>
-{
-	public List<T> m_oList = new List<T>();
-	public Queue<T> m_oQueue = new Queue<T>();
-
-	#region 함수
-	/** 클리어한다 */
-	public void Clear()
-	{
-		m_oList?.Clear();
-		m_oQueue?.Clear();
-	}
-	#endregion // 함수
-}
-#endregion // 제네릭 타입
-
-#region 조건부 타입
 #if ADS_MODULE_ENABLE
 /** 광고 보상 정보 */
 public struct STAdsRewardInfo {
@@ -603,16 +516,6 @@ public struct STNotiInfo
 	public System.DateTime m_stNotiTime;
 }
 #endif // #if NOTI_MODULE_ENABLE
-
-#if UNITY_EDITOR || UNITY_STANDALONE
-/** 에디터 생성 정보 */
-public partial class CEditorCreateInfo
-{
-	public int m_nNumLevels = 0;
-	public Vector3Int m_stMinNumCells = Vector3Int.zero;
-	public Vector3Int m_stMaxNumCells = Vector3Int.zero;
-}
-#endif // #if UNITY_EDITOR || UNITY_STANDALONE
 
 #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
 /** 구글 시트 로드 정보 */
@@ -707,4 +610,4 @@ public struct STSaveGoogleSheetInfo
 	#endregion // 함수
 }
 #endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
-#endregion // 조건부 타입
+#endregion // 타입

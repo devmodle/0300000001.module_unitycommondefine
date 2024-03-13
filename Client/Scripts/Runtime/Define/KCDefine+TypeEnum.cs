@@ -34,7 +34,7 @@ using UnityEngine.Events;
 - Sub Kinds Type 별로 100 단위로 값 지정
 - Detail Sub Kinds Type 별로 1 단위로 값 지정
 */
-#region 기본
+#region 열거형
 /** POT */
 public enum EPOT {
 	NONE = -1,
@@ -397,9 +397,9 @@ public enum EVibrateStyle {
 	HEAVY,
 	[HideInInspector] MAX_VAL
 }
-#endregion // 기본
+#endregion // 열거형
 
-#region 조건부 상수
+#region 조건부 열거형
 #if UNITY_EDITOR
 /** DSP 버퍼 크기 */
 public enum EDSPBufferSize {
@@ -481,4 +481,4 @@ public enum EBannerAdsPos {
 	[HideInInspector] MAX_VAL
 }
 #endif // #if ADS_MODULE_ENABLE
-#endregion // 조건부 상수
+#endregion // 조건부 열거형
