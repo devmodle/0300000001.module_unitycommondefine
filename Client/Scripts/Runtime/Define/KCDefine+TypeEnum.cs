@@ -327,15 +327,6 @@ public enum EShadowCascadesOpts
 	[HideInInspector] MAX_VAL
 }
 
-/** 약관 동의 팝업 */
-public enum EAgreePopup
-{
-	NONE = -1,
-	KR,
-	EU,
-	[HideInInspector] MAX_VAL
-}
-
 /** 내비게이션 스택 이벤트 */
 public enum ENavStackEvent
 {

@@ -4,69 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR && UNITY_IOS
 using UnityEditor;
-using UnityEditor.PackageManager;
-using UnityEditor.PackageManager.Requests;
-using Unity.Linq;
-
-#if UNITY_IOS
 using UnityEditor.iOS.Xcode;
-#endif // #if UNITY_IOS
 
-/** 에디터 접근자 확장 클래스 */
+/** 에디터 접근자 확장 클래스 - iOS */
 public static partial class CEditorAccessExtension
 {
-	#region 클래스 함수
-	/** 유효 여부를 검사한다 */
-	public static bool ExIsValid(this EBuildMode a_eSender)
-	{
-		return a_eSender > EBuildMode.NONE && a_eSender < EBuildMode.MAX_VAL;
-	}
-
-	/** 유효 여부를 검사한다 */
-	public static bool ExIsValid(this BuildTarget a_eSender)
-	{
-		bool bIsMobile = a_eSender == BuildTarget.iOS || a_eSender == BuildTarget.Android;
-		bool bIsDesktop = a_eSender == BuildTarget.StandaloneOSX || a_eSender == BuildTarget.StandaloneWindows || a_eSender == BuildTarget.StandaloneWindows64;
-
-		return bIsMobile || bIsDesktop;
-	}
-
-	/** 성공 완료 여부를 검사한다 */
-	public static bool ExIsCompleteSuccess(this Request a_oSender)
-	{
-		CFunc.Assert(a_oSender != null);
-		return a_oSender.IsCompleted && a_oSender.Status == StatusCode.Success;
-	}
-
-	/** 정적 플래그를 변경한다 */
-	public static void ExSetStaticEditorFlags(this GameObject a_oSender,
-		StaticEditorFlags a_eFlags, bool a_bIsCascade = true, bool a_bIsAssert = true)
-	{
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 플래그 변경이 불가능 할 경우
-		if(a_oSender == null)
-		{
-			return;
-		}
-
-		GameObjectUtility.SetStaticEditorFlags(a_oSender, a_eFlags);
-
-		// 계층 적용 모드가 아닐 경우
-		if(!a_bIsCascade)
-		{
-			return;
-		}
-
-		foreach(var oObj in a_oSender.Descendants())
-		{
-			GameObjectUtility.SetStaticEditorFlags(oObj, a_eFlags);
-		}
-	}
-
-#if UNITY_IOS
+	#region 클래스 접근 함수
 	/** 유효 여부를 검사한다 */
 	public static bool ExIsValid(this PlistDocument a_oSender) {
 		return a_oSender != null && a_oSender.root != null;
@@ -124,7 +69,6 @@ public static partial class CEditorAccessExtension
 			return a_oSender.root.CreateDict(a_oKey);
 		}
 	}
-#endif // #if UNITY_IOS
-	#endregion // 클래스 함수
+	#endregion // 클래스 접근 함수
 }
-#endif // #if UNITY_EDITOR
+#endif // #if UNITY_EDITOR && UNITY_IOS
