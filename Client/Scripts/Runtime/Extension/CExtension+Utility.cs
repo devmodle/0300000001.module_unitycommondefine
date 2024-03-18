@@ -110,19 +110,6 @@ public static partial class CExtension
 	}
 
 	/** 효과를 실행한다 */
-	public static void ExPlay(this Animation a_oSender, PlayMode a_ePlayMode = PlayMode.StopAll, bool a_bIsAssert = true)
-	{
-		CFunc.Assert(!a_bIsAssert || a_oSender != null);
-
-		// 애니메이션이 존재 할 경우
-		if(a_oSender != null)
-		{
-			a_oSender.Stop();
-			a_oSender.Play(a_ePlayMode);
-		}
-	}
-
-	/** 효과를 실행한다 */
 	public static void ExPlay(this ParticleSystem a_oSender, bool a_bIsPlayChildren = true, bool a_bIsStopChildren = true, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
@@ -136,21 +123,21 @@ public static partial class CExtension
 	}
 
 	/** 애니메이션을 시작한다 */
-	public static Sequence ExStartAni(this CFXBase a_oSender, float a_fStartVal, float a_fEndVal, float a_fDuration, System.Action<CFXBase, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
+	public static Sequence ExStartAnim(this CFXBase a_oSender, float a_fStartVal, float a_fEndVal, float a_fDuration, System.Action<CFXBase, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
 	{
 		CFunc.Assert(a_oSender != null);
-		return CFactory.MakeSequence(CFactory.MakeAni(() => a_oSender.effectFactor, (a_fVal) => a_oSender.effectFactor = a_fVal, () => a_oSender.effectFactor = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(CFactory.MakeAnim(() => a_oSender.effectFactor, (a_fVal) => a_oSender.effectFactor = a_fVal, () => a_oSender.effectFactor = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 게이지 애니메이션을 시작한다 */
-	public static Sequence ExStartGaugeAni(this Image a_oSender, float a_fStartVal, float a_fEndVal, float a_fDuration, System.Action<Image, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
+	public static Sequence ExStartGaugeAnim(this Image a_oSender, float a_fStartVal, float a_fEndVal, float a_fDuration, System.Action<Image, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
 	{
 		CFunc.Assert(a_oSender != null);
-		return CFactory.MakeSequence(CFactory.MakeAni(() => a_oSender.fillAmount, (a_fVal) => a_oSender.fillAmount = a_fVal, () => a_oSender.fillAmount = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+		return CFactory.MakeSequence(CFactory.MakeAnim(() => a_oSender.fillAmount, (a_fVal) => a_oSender.fillAmount = a_fVal, () => a_oSender.fillAmount = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 
 	/** 비율 애니메이션을 시작한다 */
-	public static Sequence ExStartScaleAni(this GameObject a_oSender, Vector3 a_stScale, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
+	public static Sequence ExStartScaleAnim(this GameObject a_oSender, Vector3 a_stScale, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
 	{
 		CFunc.Assert(a_oSender != null);
 		return CFactory.MakeSequence(a_oSender.transform.DOScale(a_stScale, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
@@ -614,7 +601,7 @@ public static partial class CExtension
 
 	#region 조건부 클래스 함수
 	/** 애니메이션을 실행한다 */
-	public static void ExStartAni(this DOTweenAnimation a_oSender, UnityAction a_oCallback, UnityAction a_oStepCallback = null, bool a_bIsAssert = true)
+	public static void ExStartAnim(this DOTweenAnimation a_oSender, UnityAction a_oCallback, UnityAction a_oStepCallback = null, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 

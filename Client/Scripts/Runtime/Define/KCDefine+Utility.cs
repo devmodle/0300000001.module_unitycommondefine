@@ -562,7 +562,7 @@ public static partial class KCDefine
 	public const string U_FUNC_N_ON_POINTER_EXIT = "OnPointerExit";
 
 	public const string U_FUNC_N_INIT = "Init";
-	public const string U_FUNC_N_RESET_ANI = "ResetAni";
+	public const string U_FUNC_N_RESET_ANIM = "ResetAnim";
 	public const string U_FUNC_N_RESET_LOCALIZE = "ResetLocalize";
 	public const string U_FUNC_N_RESET_DIFFICULTY = "ResetDifficulty";
 	public const string U_FUNC_N_UPDATE_UIS_STATE = "UpdateUIsState";
