@@ -575,34 +575,21 @@ public static partial class KCDefine
 
 	// 앵커 {
 	public static readonly Vector3 B_ANCHOR_UP_LEFT = new Vector3(0.0f, 1.0f, 0.0f);
-	public static readonly Vector3 B_ANCHOR_UP_CENTER = new Vector3(0.5f, 1.0f, 0.0f);
 	public static readonly Vector3 B_ANCHOR_UP_RIGHT = new Vector3(1.0f, 1.0f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_UP_CENTER = new Vector3(0.5f, 1.0f, 0.0f);
 
 	public static readonly Vector3 B_ANCHOR_DOWN_LEFT = new Vector3(0.0f, 0.0f, 0.0f);
-	public static readonly Vector3 B_ANCHOR_DOWN_CENTER = new Vector3(0.5f, 0.0f, 0.0f);
 	public static readonly Vector3 B_ANCHOR_DOWN_RIGHT = new Vector3(1.0f, 0.0f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_DOWN_CENTER = new Vector3(0.5f, 0.0f, 0.0f);
 
-	public static readonly Vector3 B_ANCHOR_MID_LEFT = new Vector3(0.0f, 0.5f, 0.0f);
-	public static readonly Vector3 B_ANCHOR_MID_CENTER = new Vector3(0.5f, 0.5f, 0.0f);
-	public static readonly Vector3 B_ANCHOR_MID_RIGHT = new Vector3(1.0f, 0.5f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_MIDDLE_LEFT = new Vector3(0.0f, 0.5f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_MIDDLE_RIGHT = new Vector3(1.0f, 0.5f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_MIDDLE_CENTER = new Vector3(0.5f, 0.5f, 0.0f);
 	// 앵커 }
 
-	// 위치 {
-	public static readonly Vector3 B_POS_UP_LEFT = new Vector3(0.0f, KCDefine.B_DESIGN_SCREEN_HEIGHT, 0.0f);
-	public static readonly Vector3 B_POS_UP_CENTER = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH / 2.0f, KCDefine.B_DESIGN_SCREEN_HEIGHT, 0.0f);
-	public static readonly Vector3 B_POS_UP_RIGHT = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH, KCDefine.B_DESIGN_SCREEN_HEIGHT, 0.0f);
-
-	public static readonly Vector3 B_POS_DOWN_LEFT = Vector3.zero;
-	public static readonly Vector3 B_POS_DOWN_CENTER = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH / 2.0f, 0.0f, 0.0f);
-	public static readonly Vector3 B_POS_DOWN_RIGHT = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH, 0.0f, 0.0f);
-
-	public static readonly Vector3 B_POS_MID_LEFT = new Vector3(0.0f, KCDefine.B_DESIGN_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_POS_MID_CENTER = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH / 2.0f, KCDefine.B_DESIGN_SCREEN_HEIGHT / 2.0f, 0.0f);
-	public static readonly Vector3 B_POS_MID_RIGHT = new Vector3(KCDefine.B_DESIGN_SCREEN_WIDTH, KCDefine.B_DESIGN_SCREEN_HEIGHT / 2.0f, 0.0f);
-
+	// 위치
 	public static readonly Vector3 B_POS_POPUP = Vector3.zero;
 	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;
-	// 위치 }
 
 	// 인덱스 {
 	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);

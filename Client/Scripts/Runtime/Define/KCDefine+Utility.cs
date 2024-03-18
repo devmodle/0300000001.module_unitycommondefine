@@ -272,7 +272,7 @@ public static partial class KCDefine
 	public const string U_OBJ_N_SCENE_TEST_UIS = "TestUIs";
 	public const string U_OBJ_N_SCENE_PIVOT_UIS = "PivotUIs";
 	public const string U_OBJ_N_SCENE_ANCHOR_UIS = "AnchorUIs";
-	public const string U_OBJ_N_SCENE_MID_EDITOR_UIS = "MID_EDITOR_UIS";
+	public const string U_OBJ_N_SCENE_MIDDLE_EDITOR_UIS = "MIDDLE_EDITOR_UIS";
 	public const string U_OBJ_N_SCENE_STRETCH_ANCHOR_UIS = "StretchAnchorUIs";
 	public const string U_OBJ_N_SCENE_DESIGN_RESOLUTION_GUIDE_UIS = "DesignResolutionGuideUIs";
 
