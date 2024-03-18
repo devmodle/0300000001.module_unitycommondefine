@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
+using DG.Tweening;
+
 /** 확장 클래스 - 게임 객체 */
 public static partial class CExtension
 {
@@ -41,7 +43,7 @@ public static partial class CExtension
 	/** 크기 간격을 추가한다 */
 	public static void ExAddSizeDelta(this GameObject a_oSender, Vector3 a_stSize, bool a_bIsAssert = true)
 	{
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oSender.transform as RectTransform != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && (a_oSender.transform as RectTransform) != null));
 
 		// 크기 간격 추가가 불가능 할 경우
 		if(a_oSender == null || (a_oSender.transform as RectTransform) == null)
@@ -69,7 +71,7 @@ public static partial class CExtension
 	/** 앵커 위치를 추가한다 */
 	public static void ExAddAnchorPos(this GameObject a_oSender, Vector3 a_stPos, bool a_bIsAssert = true)
 	{
-		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oSender.transform as RectTransform != null));
+		CFunc.Assert(!a_bIsAssert || (a_oSender != null && (a_oSender.transform as RectTransform) != null));
 
 		// 앵커 위치 추가가 불가능 할 경우
 		if(a_oSender == null || (a_oSender.transform as RectTransform) == null)
@@ -79,7 +81,133 @@ public static partial class CExtension
 
 		(a_oSender.transform as RectTransform).anchoredPosition += a_stPos.ExTo2D();
 	}
+
+	/** 비율 애니메이션을 시작한다 */
+	public static Sequence ExStartScaleAnim(this GameObject a_oSender, Vector3 a_stScale, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
+	{
+		CFunc.Assert(a_oSender != null);
+		return CFactory.MakeSequence(a_oSender.transform.DOScale(a_stScale, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+	}
+
+	/** 월드 이동 애니메이션을 시작한다 */
+	public static Sequence ExStartWorldMoveAnim(this GameObject a_oSender, Vector3 a_stPos, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
+	{
+		CFunc.Assert(a_oSender != null);
+		return CFactory.MakeSequence(a_oSender.transform.DOMove(a_stPos, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+	}
+
+	/** 로컬 이동 애니메이션을 시작한다 */
+	public static Sequence ExStartLocalMoveAnim(this GameObject a_oSender, Vector3 a_stPos, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
+	{
+		CFunc.Assert(a_oSender != null);
+		return CFactory.MakeSequence(a_oSender.transform.DOLocalMove(a_stPos, a_fDuration).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+	}
+
+	/** 월드 경로 애니메이션을 시작한다 */
+	public static Tween ExStartWorldPathAnim(this GameObject a_oSender, List<Vector3> a_oPosList, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, bool a_bIsRealtime = false, bool a_bIsLinearPath = false, float a_fDelay = KCDefine.B_VAL_0_REAL)
+	{
+		CFunc.Assert(a_oSender != null && a_oPosList != null);
+		return CFactory.MakeSequence(a_oSender.transform.DOPath(a_oPosList.ToArray(), a_fDuration, a_bIsLinearPath ? PathType.Linear : PathType.CatmullRom).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+	}
+
+	/** 로컬 경로 애니메이션을 시작한다 */
+	public static Tween ExStartLocalPathAnim(this GameObject a_oSender, List<Vector3> a_oPosList, float a_fDuration, System.Action<GameObject, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, bool a_bIsRealtime = false, bool a_bIsLinearPath = false, float a_fDelay = KCDefine.B_VAL_0_REAL)
+	{
+		CFunc.Assert(a_oSender != null && a_oPosList != null);
+		return CFactory.MakeSequence(a_oSender.transform.DOLocalPath(a_oPosList.ToArray(), a_fDuration, a_bIsLinearPath ? PathType.Linear : PathType.CatmullRom).SetAutoKill().SetEase(a_eEase).SetUpdate(a_bIsRealtime), (a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
+	}
 	#endregion // 클래스 함수
+
+	#region 제네릭 클래스 함수
+	/** 컴포넌트를 추가한다 */
+	public static T ExAddComponent<T>(this GameObject a_oSender, bool a_bIsAssert = true) where T : Component
+	{
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
+
+		// 컴포넌트 추가가 불가능 할 경우
+		if(a_oSender == null)
+		{
+			return null;
+		}
+
+		return a_oSender.TryGetComponent(out T oComponent) ? oComponent : a_oSender.AddComponent<T>();
+	}
+
+	/** 컴포넌트를 제거한다 */
+	public static void ExRemoveComponent<T>(this GameObject a_oSender, bool a_bIsAssert = true) where T : Component
+	{
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
+
+		// 컴포넌트 제거가 불가능 할 경우
+		if(a_oSender == null)
+		{
+			return;
+		}
+
+		CExtension.RemoveObj(a_oSender.GetComponentInChildren<T>(), false, a_bIsAssert);
+	}
+
+	/** 컴포넌트를 제거한다 */
+	public static void ExRemoveComponents<T>(this GameObject a_oSender, 
+		bool a_bIsIncludeSelf = true, bool a_bIsAssert = true) where T : Component
+	{
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
+
+		// 컴포넌트 제거가 불가능 할 경우
+		if(a_oSender == null)
+		{
+			return;
+		}
+
+		a_oSender.ExEnumerateComponents<T>((a_oComponent) =>
+		{
+			// 컴포넌트 제거가 가능 할 경우
+			if(a_bIsIncludeSelf || a_oSender != a_oComponent.gameObject)
+			{
+				CExtension.RemoveObj(a_oComponent, false, a_bIsAssert);
+			}
+
+			return true;
+		});
+	}
+
+	/** 컴포넌트를 제거한다 */
+	public static void ExRemoveComponentInParent<T>(this GameObject a_oSender, bool a_bIsAssert = true) where T : Component
+	{
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
+
+		// 컴포넌트 제거가 불가능 할 경우
+		if(a_oSender == null)
+		{
+			return;
+		}
+
+		CExtension.RemoveObj(a_oSender.GetComponentInParent<T>(), false, a_bIsAssert);
+	}
+
+	/** 컴포넌트를 제거한다 */
+	public static void ExRemoveComponentsInParent<T>(this GameObject a_oSender, bool a_bIsIncludeSelf = true, bool a_bIsAssert = true) where T : Component
+	{
+		CFunc.Assert(!a_bIsAssert || a_oSender != null);
+
+		// 컴포넌트 제거가 불가능 할 경우
+		if(a_oSender == null)
+		{
+			return;
+		}
+
+		a_oSender.ExEnumerateComponentsInParent<T>((a_oComponent) =>
+		{
+			// 컴포넌트 제거가 가능 할 경우
+			if(a_bIsIncludeSelf || a_oSender != a_oComponent.gameObject)
+			{
+				CExtension.RemoveObj(a_oComponent, false, a_bIsAssert);
+			}
+
+			return true;
+		});
+	}
+	#endregion // 제네릭 클래스 함수
 }
 
 /** 확장 클래스 - 게임 객체 (월드) */
