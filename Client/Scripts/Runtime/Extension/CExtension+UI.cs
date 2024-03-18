@@ -76,7 +76,7 @@ public static partial class CExtension
 		a_oSender.childAlignment = TextAnchor.UpperLeft;
 		a_oSender.gameObject.ExSetSizeDelta(stSizeDelta, a_bIsAssert);
 
-		// 크기 보정자 설정이 불가능 할 경우
+		// 크기 조정자 설정이 불가능 할 경우
 		if(!a_oSender.TryGetComponent(out ContentSizeFitter oContentsSizeFitter))
 		{
 			return;
@@ -160,7 +160,7 @@ public static partial class CExtension
 		a_oSender.verticalOverflow = VerticalWrapMode.Truncate;
 		a_oSender.horizontalOverflow = HorizontalWrapMode.Wrap;
 
-		// 크기 보정자를 설정한다 {
+		// 크기 조정자를 설정한다 {
 		var stAnchorMin = a_oSender.rectTransform.anchorMin;
 		var stAnchorMax = a_oSender.rectTransform.anchorMax;
 		var oContentsSizeFitter = a_oSender.gameObject.ExAddComponent<ContentSizeFitter>();
@@ -170,7 +170,7 @@ public static partial class CExtension
 
 		oContentsSizeFitter.horizontalFit = stAnchorMin.x.ExIsEquals(stAnchorMax.x) ?
 			ContentSizeFitter.FitMode.PreferredSize : ContentSizeFitter.FitMode.Unconstrained;
-		// 크기 보정자를 설정한다 }
+		// 크기 조정자를 설정한다 }
 	}
 
 	/** 상태를 리셋한다 */
@@ -197,7 +197,7 @@ public static partial class CExtension
 		a_oSender.verticalAlignment = VerticalAlignmentOptions.Middle;
 		a_oSender.horizontalAlignment = HorizontalAlignmentOptions.Left;
 
-		// 크기 보정자를 설정한다 {
+		// 크기 조정자를 설정한다 {
 		var stAnchorMin = a_oSender.rectTransform.anchorMin;
 		var stAnchorMax = a_oSender.rectTransform.anchorMax;
 		var oContentsSizeFitter = a_oSender.gameObject.ExAddComponent<ContentSizeFitter>();
@@ -207,7 +207,7 @@ public static partial class CExtension
 
 		oContentsSizeFitter.horizontalFit = stAnchorMin.x.ExIsEquals(stAnchorMax.x) ?
 			ContentSizeFitter.FitMode.PreferredSize : ContentSizeFitter.FitMode.Unconstrained;
-		// 크기 보정자를 설정한다 }
+		// 크기 조정자를 설정한다 }
 	}
 	#endregion // 클래스 함수
 }
