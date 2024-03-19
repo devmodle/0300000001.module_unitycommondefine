@@ -66,35 +66,6 @@ public struct STScrollerInfo
 	#endregion // 함수
 }
 
-/** 비활성화 게임 객체 정보 */
-public struct STDespawnGameObjInfo
-{
-	public bool m_bIsDestroy;
-	public string m_oGameObjsPoolKey;
-	public System.DateTime m_stDespawnTime;
-
-	public GameObject m_oObj;
-
-	#region 함수
-	/** 생성자 */
-	public STDespawnGameObjInfo(string a_oGameObjsPoolKey,
-		GameObject a_oObj, bool a_bIsDestroy = false) : this(a_oGameObjsPoolKey, a_oObj, System.DateTime.Now, a_bIsDestroy)
-	{
-		// Do Something
-	}
-
-	/** 생성자 */
-	public STDespawnGameObjInfo(string a_oGameObjsPoolKey,
-		GameObject a_oObj, System.DateTime a_stDespawnTime, bool a_bIsDestroy = false)
-	{
-		m_oObj = a_oObj;
-		m_bIsDestroy = a_bIsDestroy;
-		m_oGameObjsPoolKey = a_oGameObjsPoolKey;
-		m_stDespawnTime = a_stDespawnTime;
-	}
-	#endregion // 함수
-}
-
 /** 정렬 순서 정보 */
 public struct STSortingOrderInfo
 {
