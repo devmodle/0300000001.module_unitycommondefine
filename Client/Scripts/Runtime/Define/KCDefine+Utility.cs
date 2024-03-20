@@ -530,12 +530,12 @@ public static partial class KCDefine
 
 	public const string U_OBJ_N_BG_SPRITE = "BG_SPRITE";
 	public const string U_OBJ_N_TARGET_SPRITE = "TARGET_SPRITE";
-	public const string U_OBJ_N_TARGET_PARTICLE_FX = "TARGET_PARTICLE_FX";
+	public const string U_OBJ_N_TARGET_PARTICLE = "TARGET_PARTICLE";
 
 	public const string U_OBJ_N_SPRITE = "SPRITE";
-	public const string U_OBJ_N_LINE_FX = "LINE_FX";
+	public const string U_OBJ_N_LINE = "LINE";
 	public const string U_OBJ_N_TARGET_OBJ = "TARGET_OBJ";
-	public const string U_OBJ_N_PARTICLE_FX = "PARTICLE_FX";
+	public const string U_OBJ_N_PARTICLE = "PARTICLE";
 	public const string U_OBJ_N_REFLECTION_PROBE = "REFLECTION_PROBE";
 	public const string U_OBJ_N_LIGHT_PROBE_GROUP = "LIGHT_PROBE_GROUP";
 
@@ -671,9 +671,9 @@ public static partial class KCDefine
 	public static readonly string U_OBJ_P_SCREEN_FADE_TOUCH_RESPONDER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}UI/Responder/U_ScreenFadeTouchResponder";
 
 	public static readonly string U_OBJ_P_SPRITE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}2D/U_Sprite";
-	public static readonly string U_OBJ_P_LINE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_LineFX";
+	public static readonly string U_OBJ_P_LINE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_Line";
 	public static readonly string U_OBJ_P_TARGET_OBJ = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}2D/U_TargetObj";
-	public static readonly string U_OBJ_P_PARTICLE_FX = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_ParticleFX";
+	public static readonly string U_OBJ_P_PARTICLE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_Particle";
 	public static readonly string U_OBJ_P_TIMER_MANAGER = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}External/U_TimerManager";
 	public static readonly string U_OBJ_P_REFLECTION_PROBE = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_ReflectionProbe";
 	public static readonly string U_OBJ_P_LIGHT_PROBE_GROUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_UTILITY}FX/U_LightProbeGroup";

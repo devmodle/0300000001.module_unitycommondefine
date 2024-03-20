@@ -57,7 +57,7 @@ public static partial class CExtension
 
 	/** 파티클을 실행한다 */
 	public static void ExPlay(this ParticleSystem a_oSender, 
-		ParticleSystemStopBehavior a_eStopBehavior = ParticleSystemStopBehavior.StopEmittingAndClear, bool a_bIsAssert = true)
+		bool a_bIsPlayChildren = true, bool a_bIsStopChildren = true, ParticleSystemStopBehavior a_eStopBehavior = ParticleSystemStopBehavior.StopEmittingAndClear, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
@@ -67,8 +67,8 @@ public static partial class CExtension
 			return;
 		}
 
-		a_oSender.Stop(true, a_eStopBehavior);
-		a_oSender.Play(true);
+		a_oSender.Stop(a_bIsStopChildren, a_eStopBehavior);
+		a_oSender.Play(a_bIsPlayChildren);
 	}
 	#endregion // 클래스 함수
 }

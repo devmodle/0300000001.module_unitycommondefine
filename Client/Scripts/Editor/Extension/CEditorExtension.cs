@@ -20,21 +20,24 @@ public static partial class CEditorExtension
 	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
-		// 라인 효과가 존재 할 경우
-		if(a_oSender != null)
+		// 상태 리셋이 불가능 할 경우
+		if(a_oSender == null)
 		{
-			a_oSender.probePositions = new Vector3[] {
-				new Vector3(-KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
-				new Vector3(-KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
-				new Vector3(KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
-				new Vector3(KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
-
-				new Vector3(-KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL),
-				new Vector3(-KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL),
-				new Vector3(KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL),
-				new Vector3(KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL)
-			};
+			return;
 		}
+
+		a_oSender.probePositions = new Vector3[]
+		{
+			new Vector3(-KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
+			new Vector3(-KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
+			new Vector3(KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
+			new Vector3(KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL),
+
+			new Vector3(-KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL),
+			new Vector3(-KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL),
+			new Vector3(KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL),
+			new Vector3(KCDefine.B_VAL_1_REAL, -KCDefine.B_VAL_1_REAL, KCDefine.B_VAL_1_REAL)
+		};
 	}
 
 	/** 직렬화 프로퍼티 값을 변경한다 */
@@ -43,18 +46,20 @@ public static partial class CEditorExtension
 	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oName.ExIsValid()));
 
-		// 객체가 존재 할 경우
-		if(a_oSender != null && a_oName.ExIsValid())
+		// 값 변경이 불가능 할 경우
+		if(a_oSender == null || !a_oName.ExIsValid())
 		{
-			try
-			{
-				a_oCallback?.Invoke(a_oSender.FindProperty(a_oName));
-			}
-			finally
-			{
-				a_oSender.ApplyModifiedProperties();
-				a_oSender.Update();
-			}
+			return;
+		}
+
+		try
+		{
+			a_oCallback?.Invoke(a_oSender.FindProperty(a_oName));
+			a_oSender.ApplyModifiedProperties();
+		}
+		finally
+		{
+			a_oSender.Update();
 		}
 	}
 

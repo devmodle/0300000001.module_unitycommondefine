@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using Unity.Linq;
 
 /** 에디터 접근자 확장 클래스 - 게임 객체 */
 public static partial class CEditorAccessExtension
