@@ -10,12 +10,12 @@ using UnityEngine.Video;
 public static partial class CExtension
 {
 	#region 클래스 함수
-	/** 비디오를 재생한다 */
+	/** 비디오를 실행한다 */
 	public static void ExPlay(this VideoPlayer a_oSender, VideoClip a_oClip, bool a_bIsLoop, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oClip != null));
 
-		// 비디오 재생이 불가능 할 경우
+		// 비디오 실행이 불가능 할 경우
 		if(a_oSender == null || a_oClip == null)
 		{
 			return;

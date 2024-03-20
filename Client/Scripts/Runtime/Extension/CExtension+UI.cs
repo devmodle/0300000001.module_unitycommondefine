@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 using TMPro;
+using DG.Tweening;
 using DanielLochner.Assets.SimpleScrollSnap;
 
 /** 확장 클래스 - UI */
@@ -242,6 +243,19 @@ public static partial class CExtension
 		}
 
 		a_oSender.uvRect = KCDefine.B_RECT_DEF;
+	}
+
+	/** 게이지 애니메이션을 시작한다 */
+	public static Sequence ExStartGaugeAnim(this Image a_oSender, 
+		float a_fStartVal, float a_fEndVal, float a_fDuration, System.Action<Image, Sequence> a_oCallback, Ease a_eEase = KCDefine.U_EASE_DEF, float a_fDelay = KCDefine.B_VAL_0_REAL, bool a_bIsRealtime = false)
+	{
+		CFunc.Assert(a_oSender != null);
+
+		var oGaugeAnim = CFactory.MakeAnim(() => a_oSender.fillAmount, 
+			(a_fVal) => a_oSender.fillAmount = a_fVal, () => a_oSender.fillAmount = a_fStartVal, null, a_fEndVal, a_fDuration, a_eEase, a_bIsRealtime);
+
+		return CFactory.MakeSequence(oGaugeAnim, 
+			(a_oAnimSender) => a_oCallback?.Invoke(a_oSender, a_oAnimSender), a_fDelay, a_bIsRealtime: a_bIsRealtime);
 	}
 	#endregion // 클래스 함수
 }
