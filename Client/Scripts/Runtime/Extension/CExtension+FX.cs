@@ -55,13 +55,13 @@ public static partial class CExtension
 			ParticleSystemStopAction.None : ParticleSystemStopAction.Callback;
 	}
 
-	/** 파티클을 재생한다 */
+	/** 파티클을 실행한다 */
 	public static void ExPlay(this ParticleSystem a_oSender, 
 		ParticleSystemStopBehavior a_eStopBehavior = ParticleSystemStopBehavior.StopEmittingAndClear, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
-		// 파티클 재생이 불가능 할 경우
+		// 파티클 실행이 불가능 할 경우
 		if(a_oSender == null)
 		{
 			return;

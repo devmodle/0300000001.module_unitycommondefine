@@ -8,12 +8,12 @@ using UnityEngine.Events;
 public static partial class CExtension
 {
 	#region 클래스 함수
-	/** 사운드를 재생한다 */
+	/** 사운드를 실행한다 */
 	public static void ExPlay(this AudioSource a_oSender, AudioClip a_oClip, bool a_bIsLoop, bool a_bIs3DSnd, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || (a_oSender != null && a_oClip != null));
 
-		// 사운드 재생이 불가능 할 경우
+		// 사운드 실행이 불가능 할 경우
 		if(a_oSender == null || a_oClip == null)
 		{
 			return;
