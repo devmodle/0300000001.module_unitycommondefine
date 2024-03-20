@@ -851,8 +851,8 @@ public static partial class KCEditorDefine
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Prefabs/UI/ScrollView/T_RecycleView.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_RESOURCES}{KCDefine.U_OBJ_P_RECYCLE_VIEW}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Prefabs/UI/ScrollView/T_PageView.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_RESOURCES}{KCDefine.U_OBJ_P_PAGE_VIEW}.prefab"),
 
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Prefabs/FX/T_LineFX.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_RESOURCES}{KCDefine.U_OBJ_P_LINE_FX}.prefab"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Prefabs/FX/T_ParticleFX.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_RESOURCES}{KCDefine.U_OBJ_P_PARTICLE_FX}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Prefabs/FX/T_Line.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_RESOURCES}{KCDefine.U_OBJ_P_LINE}.prefab"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Prefabs/FX/T_Particle.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_RESOURCES}{KCDefine.U_OBJ_P_PARTICLE}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Prefabs/FX/T_ReflectionProbe.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_RESOURCES}{KCDefine.U_OBJ_P_REFLECTION_PROBE}.prefab"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_AUTO}Prefabs/FX/T_LightProbeGroup.prefab", $"{KCEditorDefine.B_DIR_P_AUTO_RESOURCES}{KCDefine.U_OBJ_P_LIGHT_PROBE_GROUP}.prefab"),
 

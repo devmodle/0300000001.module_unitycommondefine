@@ -22,7 +22,7 @@ public static partial class CExtension
 		}
 
 		a_oSender.clip = a_oClip;
-		a_oSender.loop = a_bIsLoop;
+		a_oSender.isLooping = a_bIsLoop;
 
 		a_oSender.Play();
 	}

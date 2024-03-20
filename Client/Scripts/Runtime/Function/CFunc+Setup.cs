@@ -252,8 +252,8 @@ public static partial class CFunc
 		}
 	}
 
-	/** 파티클 효과를 설정한다 */
-	public static void SetupParticleFXs(List<GameObject> a_oKeyList, bool a_bIsAssert = true)
+	/** 파티클을 설정한다 */
+	public static void SetupParticles(List<GameObject> a_oKeyList, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || a_oKeyList.ExIsValid());
 
@@ -267,8 +267,8 @@ public static partial class CFunc
 		}
 	}
 
-	/** 파티클 효과를 설정한다 */
-	public static void SetupParticleFXs(List<(string, GameObject)> a_oKeyInfoList, bool a_bIsAssert = true)
+	/** 파티클을 설정한다 */
+	public static void SetupParticles(List<(string, GameObject)> a_oKeyInfoList, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || a_oKeyInfoList.ExIsValid());
 
@@ -913,8 +913,8 @@ public static partial class CFunc
 		}
 	}
 
-	/** 파티클 효과를 설정한다 */
-	public static void SetupParticleFXs<K>(List<(K, GameObject)> a_oKeyInfoList, Dictionary<K, ParticleSystem> a_oOutParticleDict, bool a_bIsAssert = true)
+	/** 파티클을 설정한다 */
+	public static void SetupParticles<K>(List<(K, GameObject)> a_oKeyInfoList, Dictionary<K, ParticleSystem> a_oOutParticleDict, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutParticleDict != null));
 
@@ -930,8 +930,8 @@ public static partial class CFunc
 		}
 	}
 
-	/** 파티클 효과를 설정한다 */
-	public static void SetupParticleFXs<K>(List<(K, string, GameObject)> a_oKeyInfoList, Dictionary<K, ParticleSystem> a_oOutParticleDict, bool a_bIsAssert = true)
+	/** 파티클을 설정한다 */
+	public static void SetupParticles<K>(List<(K, string, GameObject)> a_oKeyInfoList, Dictionary<K, ParticleSystem> a_oOutParticleDict, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutParticleDict != null));
 
@@ -947,8 +947,8 @@ public static partial class CFunc
 		}
 	}
 
-	/** 파티클 효과를 설정한다 */
-	public static void SetupParticleFXs<K>(List<(K, string, GameObject, GameObject)> a_oKeyInfoList, Dictionary<K, ParticleSystem> a_oOutParticleDict, bool a_bIsAssert = true)
+	/** 파티클을 설정한다 */
+	public static void SetupParticles<K>(List<(K, string, GameObject, GameObject)> a_oKeyInfoList, Dictionary<K, ParticleSystem> a_oOutParticleDict, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || (a_oKeyInfoList.ExIsValid() && a_oOutParticleDict != null));
 

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 using System.Linq;
+using Unity.Linq;
 
 /** 접근자 확장 클래스 - 게임 객체 */
 public static partial class CAccessExtension
