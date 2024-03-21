@@ -4,10 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
+using System.Globalization;
+
 /** 확장 클래스 - 시간 */
 public static partial class CExtension
 {
 	#region 클래스 함수
+	/** 문자열 => 시간으로 변환한다 */
+	public static System.DateTime ExTimeStrToTime(this string a_oSender, string a_oFmt)
+	{
+		CFunc.Assert(a_oSender.ExIsValid() && a_oFmt.ExIsValid());
+		return System.DateTime.ParseExact(a_oSender, a_oFmt, CultureInfo.InvariantCulture);
+	}
+
 	/** 시간 => 문자열로 변환한다 */
 	public static string ExToStr(this System.DateTime a_stSender, string a_oFmt)
 	{
