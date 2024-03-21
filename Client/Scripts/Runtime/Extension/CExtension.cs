@@ -11,35 +11,9 @@ using System.Globalization;
 public static partial class CExtension
 {
 	#region 클래스 함수
-	/** 값 => 왼쪽 쉬프트 비트로 변환한다 */
-	public static int ExToLShiftBits(this int a_nSender, int a_nOffset)
-	{
-		CFunc.Assert(a_nOffset >= KCDefine.B_VAL_0_INT);
-		return a_nSender << a_nOffset;
-	}
-
-	/** 값 => 오른쪽 쉬프트 비트로 변환한다 */
-	public static int ExToRShiftBits(this int a_nSender, int a_nOffset)
-	{
-		CFunc.Assert(a_nOffset >= KCDefine.B_VAL_0_INT);
-		return a_nSender >> a_nOffset;
-	}
-
-	/** 비트 => 리스트로 변환한다 */
-	public static List<int> ExToBits(this int a_nSender)
-	{
-		var oBitList = new List<int>();
-
-		for(int i = 0; i < sizeof(int) * KCDefine.B_UNIT_BITS_PER_BYTE; ++i)
-		{
-			oBitList.Add(((a_nSender & KCDefine.B_VAL_1_INT.ExToLShiftBits(i)) != KCDefine.B_VAL_0_INT) ? KCDefine.B_VAL_1_INT : KCDefine.B_VAL_0_INT);
-		}
-
-		return oBitList;
-	}
-
 	/** 숫자 => 개수 문자열로 변환한다 */
-	public static string ExToNumStr(this decimal a_dmSender, bool a_bIsExtraNumStr = true, SystemLanguage a_eSystemLanguage = SystemLanguage.English)
+	public static string ExToNumStr(this decimal a_dmSender, 
+		bool a_bIsExtraNumStr = true, SystemLanguage a_eSystemLanguage = SystemLanguage.English)
 	{
 		var oNumTokenDict = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.B_NUM_TOKEN_DICT_KOREAN : KCDefine.B_NUM_TOKEN_DICT_ENGLISH;
 		decimal dmDigitsUnit = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.B_UNIT_DIGITS_TEN_THOUSAND : KCDefine.B_UNIT_DIGITS_THOUSAND;
@@ -58,31 +32,7 @@ public static partial class CExtension
 
 		return $"{a_dmSender:0}";
 	}
-
-	/** 픽셀 => DPI 픽셀로 변환한다 */
-	public static float ExPixelsToDPIPixels(this int a_nSender)
-	{
-		return a_nSender * (KCDefine.B_DEF_SCREEN_DPI / CAccess.ScreenDPI);
-	}
-
-	/** 픽셀 => DPI 픽셀로 변환한다 */
-	public static float ExPixelsToDPIPixels(this float a_fSender)
-	{
-		return a_fSender * (KCDefine.B_DEF_SCREEN_DPI / CAccess.ScreenDPI);
-	}
-
-	/** 바이트 => 메가 바이트로 변환한다 */
-	public static double ExByteToMegaByte(this uint a_oSender)
-	{
-		return a_oSender / (double)KCDefine.B_UNIT_BYTES_PER_MEGA_BYTE;
-	}
-
-	/** 바이트 => 메가 바이트로 변환한다 */
-	public static double ExByteToMegaByte(this long a_oSender)
-	{
-		return a_oSender / (double)KCDefine.B_UNIT_BYTES_PER_MEGA_BYTE;
-	}
-
+	
 	/** 중위 => 후위 수식으로 변환한다 */
 	public static string ExInfixToPostfixCalc(this string a_oSender)
 	{
@@ -91,74 +41,6 @@ public static partial class CExtension
 		// TODO 후위 수식 변환 로직 구현 필요
 
 		return a_oSender;
-	}
-
-	/** 문자열 => 색상으로 변환한다 */
-	public static Color ExColorStrToColor(this string a_oSender)
-	{
-		CFunc.Assert(a_oSender.ExIsValid());
-
-		string oColorStr = a_oSender.Replace(KCDefine.B_TOKEN_SHARP, string.Empty);
-		oColorStr = oColorStr.PadLeft(KCDefine.B_VAL_6_INT, char.Parse(KCDefine.B_STR_0_INT));
-		oColorStr = string.Format(KCDefine.B_TEXT_FMT_2_COMBINE, KCDefine.B_TOKEN_SHARP, oColorStr);
-
-		return ColorUtility.TryParseHtmlString(oColorStr, out Color stColor) ? stColor : Color.white;
-	}
-
-	/** 문자열 => 시간으로 변환한다 */
-	public static System.DateTime ExToTime(this string a_oSender, string a_oFmt)
-	{
-		CFunc.Assert(a_oSender.ExIsValid() && a_oFmt.ExIsValid());
-		return System.DateTime.ParseExact(a_oSender, a_oFmt, CultureInfo.InvariantCulture);
-	}
-
-	/** 시간 => 문자열로 변환한다 */
-	public static string ExToStr(this System.DateTime a_stSender, string a_oFmt)
-	{
-		CFunc.Assert(a_stSender.ExIsValid());
-		return a_stSender.ToString(a_oFmt, CultureInfo.InvariantCulture);
-	}
-
-	/** 시간 => 긴 문자열로 변환한다 */
-	public static string ExToLongStr(this System.DateTime a_stSender, bool a_bIsEnableSlash = true)
-	{
-		CFunc.Assert(a_stSender.ExIsValid());
-		return a_stSender.ExToStr(a_bIsEnableSlash ? KCDefine.B_DATE_T_FMT_SLASH_YYYY_MM_DD_HH_MM_SS : KCDefine.B_DATE_T_FMT_YYYY_MM_DD_HH_MM_SS);
-	}
-
-	/** 시간 => 짧은 문자열로 변환한다 */
-	public static string ExToShortStr(this System.DateTime a_stSender, bool a_bIsEnableSlash = true)
-	{
-		CFunc.Assert(a_stSender.ExIsValid());
-		return a_stSender.ExToStr(a_bIsEnableSlash ? KCDefine.B_DATE_T_FMT_SLASH_YYYY_MM_DD : KCDefine.B_DATE_T_FMT_YYYY_MM_DD);
-	}
-
-	/** 지역 시간 => PST 시간으로 변환한다 */
-	public static System.DateTime ExToPSTTime(this System.DateTime a_stSender)
-	{
-		CFunc.Assert(a_stSender.ExIsValid());
-		return a_stSender.ToUniversalTime().AddHours(KCDefine.B_DELTA_T_UTC_TO_PST);
-	}
-
-	/** 지역 시간 => 특정 지역 시간으로 변환한다 */
-	public static System.DateTime ExToZoneTime(this System.DateTime a_stSender, string a_oTimeZoneID)
-	{
-		CFunc.Assert(a_stSender.ExIsValid() && a_oTimeZoneID.ExIsValid());
-		return System.TimeZoneInfo.ConvertTime(a_stSender, System.TimeZoneInfo.Local, System.TimeZoneInfo.FindSystemTimeZoneById(a_oTimeZoneID));
-	}
-
-	/** PST 시간 => 지역 시간으로 변환한다 */
-	public static System.DateTime ExPSTToLocalTime(this System.DateTime a_stSender)
-	{
-		CFunc.Assert(a_stSender.ExIsValid());
-		return a_stSender.AddHours(-KCDefine.B_DELTA_T_UTC_TO_PST).ToLocalTime();
-	}
-
-	/** 특정 지역 시간 => 지역 시간으로 변환한다 */
-	public static System.DateTime ExZoneToLocalTime(this System.DateTime a_stSender, string a_oTimeZoneID)
-	{
-		CFunc.Assert(a_stSender.ExIsValid() && a_oTimeZoneID.ExIsValid());
-		return System.TimeZoneInfo.ConvertTime(a_stSender, System.TimeZoneInfo.FindSystemTimeZoneById(a_oTimeZoneID), System.TimeZoneInfo.Local);
 	}
 
 	/** 위치 => 기준 위치로 변환한다 */
