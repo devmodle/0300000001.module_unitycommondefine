@@ -74,7 +74,7 @@ public static partial class KCEditorDefine
 
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
 	public const string B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE = "T_LightingSettings";
-	public const string B_ASSET_N_POST_PROCESSING_SETTINGS_TEMPLATE = "T_PostProcessingSettings";
+	public const string B_ASSET_N_URP_GLOBAL_VOLUME_PROFILE_TEMPLATE = "T_URP_GlobalVolumeProfile";
 
 	public const string B_FUNC_N_GET_LIGHTMAP_ENCODING_QUALITY = "GetLightmapEncodingQualityForPlatformGroup";
 	public const string B_FUNC_N_GET_LIGHTMAP_STREAMING_ENABLE = "GetLightmapStreamingEnabledForPlatformGroup";
@@ -1023,15 +1023,15 @@ public static partial class KCEditorDefine
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scriptables/T_DeviceInfoTable.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_DEVICE_INFO_TABLE}.asset"),
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scriptables/T_LocalizeInfoTable.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LOCALIZE_INFO_TABLE}.asset"),
 
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_NORM_QUALITY_LIGHTING_SETTINGS}.lighting"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_HIGH_QUALITY_LIGHTING_SETTINGS}.lighting"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/T_LightingSettings.lighting", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_LIGHTING_SETTINGS}.lighting"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/{KCEditorDefine.B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE}.lighting", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS_NORM_QUALITY}.lighting"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/{KCEditorDefine.B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE}.lighting", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS_HIGH_QUALITY}.lighting"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/{KCEditorDefine.B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE}.lighting", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS_ULTRA_QUALITY}.lighting"),
 
-#if POST_PROCESSING_MODULE_ENABLE
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/T_PostProcessingSettings.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_NORM_QUALITY_POST_PROCESSING_SETTINGS}.asset"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/T_PostProcessingSettings.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_HIGH_QUALITY_POST_PROCESSING_SETTINGS}.asset"),
-		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/T_PostProcessingSettings.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS}.asset"),
-#endif // #if POST_PROCESSING_MODULE_ENABLE
+#if URP_MODULE_ENABLE && URP_POST_PROCESSING_ENABLE
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/{KCEditorDefine.B_ASSET_N_URP_GLOBAL_VOLUME_PROFILE_TEMPLATE}.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_NORM_QUALITY}.asset"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/{KCEditorDefine.B_ASSET_N_URP_GLOBAL_VOLUME_PROFILE_TEMPLATE}.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_HIGH_QUALITY}.asset"),
+		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Settings/{KCEditorDefine.B_ASSET_N_URP_GLOBAL_VOLUME_PROFILE_TEMPLATE}.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_ULTRA_QUALITY}.asset"),
+#endif // #if URP_MODULE_ENABLE && URP_POST_PROCESSING_ENABLE
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 		($"{KCEditorDefine.B_DIR_P_TEMPLATES}{KCEditorDefine.B_DIR_P_UNITY_PROJ}Scriptables/T_PluginInfoTable.asset", $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_PLUGIN_INFO_TABLE}.asset"),

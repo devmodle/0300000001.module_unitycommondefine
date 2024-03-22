@@ -709,13 +709,13 @@ public static partial class KCDefine
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
 
-	public static readonly string U_ASSET_P_G_NORM_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityLightingSettings";
-	public static readonly string U_ASSET_P_G_HIGH_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityLightingSettings";
-	public static readonly string U_ASSET_P_G_ULTRA_QUALITY_LIGHTING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityLightingSettings";
+	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS_NORM_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings_NormQuality";
+	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS_HIGH_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings_HighQuality";
+	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS_ULTRA_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings_UltraQuality";
 
-	public static readonly string U_ASSET_P_G_NORM_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_NormQualityPostProcessingSettings";
-	public static readonly string U_ASSET_P_G_HIGH_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_HighQualityPostProcessingSettings";
-	public static readonly string U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_UltraQualityPostProcessingSettings";
+	public static readonly string U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_NORM_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_GlobalVolumeProfile_NormQuality";
+	public static readonly string U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_HIGH_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_GlobalVolumeProfile_HighQuality";
+	public static readonly string U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_ULTRA_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_GlobalVolumeProfile_UltraQuality";
 
 	public static readonly string U_ASSET_P_G_OPTS_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_OptsInfoTable";
 	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
