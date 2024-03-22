@@ -185,14 +185,14 @@ public static partial class CAccess
 	}
 
 	/** 배너 광고 높이를 반환한다 */
-	public static float GetBannerAdsHeight(float a_fHeight)
+	public static float GetHeightBannerAds(float a_fHeight)
 	{
 		CFunc.Assert(a_fHeight.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
 		return (a_fHeight.ExDPIPixelsToPixels() * (KCDefine.B_DESIGN_SCREEN_HEIGHT / CAccess.DeviceScreenSize.y)) / CAccess.ResolutionScale;
 	}
 
 	/** iOS 플랫폼을 반환한다 */
-	public static string GetiOSPlatform(EiOSType a_eType)
+	public static string GetPlatformiOS(EiOSType a_eType)
 	{
 		switch(a_eType)
 		{
@@ -203,7 +203,7 @@ public static partial class CAccess
 	}
 
 	/** 안드로이드 이름을 반환한다 */
-	public static string GetAndroidPlatform(EAndroidType a_eType)
+	public static string GetPlatformAndroid(EAndroidType a_eType)
 	{
 		switch(a_eType)
 		{
@@ -215,14 +215,16 @@ public static partial class CAccess
 	}
 
 	/** 독립 플랫폼을 반환한다 */
-	public static string GetStandalonePlatform(EStandaloneType a_eType)
+	public static string GetPlatformStandalone(EStandaloneType a_eType)
 	{
 		switch(a_eType)
 		{
 			case EStandaloneType.MAC_EDITOR:
 				return KCDefine.B_PLATFORM_STANDALONE_MAC_EDITOR;
+
 			case EStandaloneType.WNDS_STEAM:
 				return KCDefine.B_PLATFORM_STANDALONE_WNDS_STEAM;
+
 			case EStandaloneType.WNDS_EDITOR:
 				return KCDefine.B_PLATFORM_STANDALONE_WNDS_EDITOR;
 		}
@@ -231,12 +233,13 @@ public static partial class CAccess
 	}
 
 	/** URP 에셋 경로를 반환한다 */
-	public static string GetURPAssetPath(EQualityLevel a_eQualityLevel)
+	public static string GetPathURPAsset(EQualityLevel a_eQualityLevel)
 	{
 		switch(a_eQualityLevel)
 		{
 			case EQualityLevel.HIGH:
 				return KCDefine.U_ASSET_P_G_HIGH_QUALITY_URP;
+
 			case EQualityLevel.ULTRA:
 				return KCDefine.U_ASSET_P_G_ULTRA_QUALITY_URP;
 		}
@@ -244,18 +247,19 @@ public static partial class CAccess
 		return KCDefine.U_ASSET_P_G_NORM_QUALITY_URP;
 	}
 
-	/** 포스트 프로세스 설정 경로를 반환한다 */
-	public static string GetPostProcessingSettingsPath(EQualityLevel a_eQualityLevel)
+	/** URP 전역 볼륨 프로필 경로를 반환한다 */
+	public static string GetPathURPGlobalVolumeProfile(EQualityLevel a_eQualityLevel)
 	{
 		switch(a_eQualityLevel)
 		{
 			case EQualityLevel.HIGH:
-				return KCDefine.U_ASSET_P_G_HIGH_QUALITY_POST_PROCESSING_SETTINGS;
+				return KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_HIGH_QUALITY;
+
 			case EQualityLevel.ULTRA:
-				return KCDefine.U_ASSET_P_G_ULTRA_QUALITY_POST_PROCESSING_SETTINGS;
+				return KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_ULTRA_QUALITY;
 		}
 
-		return KCDefine.U_ASSET_P_G_NORM_QUALITY_POST_PROCESSING_SETTINGS;
+		return KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_NORM_QUALITY;
 	}
 
 	/** 시간 비율을 변경한다 */
