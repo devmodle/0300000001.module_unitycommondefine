@@ -208,10 +208,8 @@ public static partial class KCDefine
 	// 씬 이름 {
 	public const string B_SCENE_N_EXTRA = "00-ExtraScene";
 	public const string B_SCENE_N_SAMPLE = "00-SampleScene";
-	public const string B_SCENE_N_EDITOR_SAMPLE = "01-EditorSampleScene";
-
-	public const string B_SCENE_N_MENU_SAMPLE = "10-MenuSampleScene";
-	public const string B_SCENE_N_RESEARCH_SAMPLE = "11-ResearchSampleScene";
+	public const string B_SCENE_N_SAMPLE_MENU = "10-SampleSceneMenu";
+	public const string B_SCENE_N_SAMPLE_RESEARCH = "11-SampleSceneResearch";
 
 	public const string B_SCENE_N_INIT = "01-InitScene";
 	public const string B_SCENE_N_SETUP = "02-SetupScene";
@@ -227,7 +225,9 @@ public static partial class KCDefine
 
 	public const string B_SCENE_N_MENU = "99-MenuScene";
 	public const string B_SCENE_N_TEST = "99-TestScene";
-	public const string B_SCENE_N_LEVEL_EDITOR = "91-LevelEditorScene";
+
+	public const string B_EDITOR_SCENE_N_LEVEL = "91-EditorSceneLevel";
+	public const string B_EDITOR_SCENE_N_SAMPLE = "01-EditorSampleScene";
 	// 씬 이름 }
 
 	// 식별자 {

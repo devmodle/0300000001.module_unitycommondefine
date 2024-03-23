@@ -165,7 +165,7 @@ public static partial class KCEditorDefine
 		[KCDefine.B_SCENE_N_TEST] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ).Replace(KCDefine.B_TOKEN_R_SLASH, KCDefine.B_TOKEN_SLASH),
 
 		[KCDefine.B_SCENE_N_MENU] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_AUTO).Replace(KCDefine.B_TOKEN_R_SLASH, KCDefine.B_TOKEN_SLASH),
-		[KCDefine.B_SCENE_N_LEVEL_EDITOR] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR).Replace(KCDefine.B_TOKEN_R_SLASH, KCDefine.B_TOKEN_SLASH)
+		[KCDefine.B_EDITOR_SCENE_N_LEVEL] = Path.GetDirectoryName(KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR).Replace(KCDefine.B_TOKEN_R_SLASH, KCDefine.B_TOKEN_SLASH)
 	};
 	// 이름 }
 
@@ -254,14 +254,14 @@ public static partial class KCEditorDefine
 	public static readonly string B_ABS_PKGS_P_ODIN_INSPECTOR_AND_SERIALIZER = $"{KCEditorDefine.B_ABS_DIR_P_ASSETS}../UnityPackages/Client/Packages/UnityPackages/{KCEditorDefine.B_NAME_ODIN_INSPECTOR_AND_SERIALIZER_PKGS}.unitypackage";
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.unity";
-	public static readonly string B_ASSET_P_MENU_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_MENU_SAMPLE}.unity";
-	public static readonly string B_ASSET_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_RESEARCH_SAMPLE}.unity";
-	public static readonly string B_ASSET_P_EDITOR_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_EDITOR_SAMPLE}.unity";
+	public static readonly string B_ASSET_P_SAMPLE_MENU_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE_MENU}.unity";
+	public static readonly string B_ASSET_P_STUDY_SAMPLE_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE_RESEARCH}.unity";
+	public static readonly string B_ASSET_P_SAMPLE_EDITOR_SCENE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_EDITOR_SCENE_N_SAMPLE}.unity";
 
 	public static readonly string B_ASSET_P_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE}.scenetemplate";
-	public static readonly string B_ASSET_P_MENU_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_MENU_SAMPLE}.scenetemplate";
-	public static readonly string B_ASSET_P_STUDY_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_RESEARCH_SAMPLE}.scenetemplate";
-	public static readonly string B_ASSET_P_EDITOR_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_SCENE_N_EDITOR_SAMPLE}.scenetemplate";
+	public static readonly string B_ASSET_P_SAMPLE_MENU_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE_MENU}.scenetemplate";
+	public static readonly string B_ASSET_P_STUDY_SAMPLE_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityStudy/Client/Scenes/{KCDefine.B_SCENE_N_SAMPLE_RESEARCH}.scenetemplate";
+	public static readonly string B_ASSET_P_SAMPLE_EDITOR_SCENE_TEMPLATE = $"{KCEditorDefine.B_DIR_P_PACKAGES}Module.UnityCommon/Client/Scenes/{KCDefine.B_EDITOR_SCENE_N_SAMPLE}.scenetemplate";
 
 	public static readonly string B_ASSET_P_TAG_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}TagManager.asset";
 	public static readonly string B_ASSET_P_SND_MANAGER = $"{KCEditorDefine.B_DIR_P_PROJ_SETTINGS}AudioManager.asset";
@@ -1083,7 +1083,7 @@ public static partial class KCEditorDefine
 		(KCEditorDefine.B_ASSET_P_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_LATE_SETUP}.unity"),
 
 #if RESEARCH_ENABLE || RESEARCH_MODULE_ENABLE
-		(KCEditorDefine.B_ASSET_P_MENU_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_MENU}.unity"),
+		(KCEditorDefine.B_ASSET_P_SAMPLE_MENU_SCENE, $"{KCEditorDefine.B_DIR_P_AUTO_SCENES}{KCDefine.B_SCENE_N_MENU}.unity"),
 #endif // #if RESEARCH_ENABLE || RESEARCH_MODULE_ENABLE
 #endif // #if SCENE_TEMPLATES_ENABLE || SCENE_TEMPLATES_MODULE_ENABLE
 		// 01-Auto }
@@ -1104,7 +1104,7 @@ public static partial class KCEditorDefine
 
 		// 91-UnityProjectEditor {
 #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
-		(KCEditorDefine.B_ASSET_P_EDITOR_SAMPLE_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_SCENES}{KCDefine.B_SCENE_N_LEVEL_EDITOR}.unity")
+		(KCEditorDefine.B_ASSET_P_SAMPLE_EDITOR_SCENE, $"{KCEditorDefine.B_DIR_P_UNITY_PROJ_EDITOR_SCENES}{KCDefine.B_EDITOR_SCENE_N_LEVEL}.unity")
 #endif // #if EDITOR_SCENE_TEMPLATES_ENABLE || EDITOR_SCENE_TEMPLATES_MODULE_ENABLE
 		// 91-UnityProjectEditor }
 	};
