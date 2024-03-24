@@ -206,28 +206,28 @@ public static partial class KCDefine
 	// 이름 }
 
 	// 씬 이름 {
-	public const string B_SCENE_N_EXTRA = "00-ExtraScene";
-	public const string B_SCENE_N_SAMPLE = "00-SampleScene";
-	public const string B_SCENE_N_SAMPLE_MENU = "10-SampleSceneMenu";
-	public const string B_SCENE_N_SAMPLE_RESEARCH = "11-SampleSceneResearch";
+	public const string B_SCENE_N_SAMPLE = "00-SceneSample";
+	public const string B_SCENE_N_SAMPLE_EDITOR = "01-SceneSampleEditor";
 
-	public const string B_SCENE_N_INIT = "01-InitScene";
-	public const string B_SCENE_N_SETUP = "02-SetupScene";
-	public const string B_SCENE_N_LATE_SETUP = "03-LateSetupScene";
+	public const string B_SCENE_N_SAMPLE_MENU = "10-SceneSampleMenu";
+	public const string B_SCENE_N_SAMPLE_RESEARCH = "11-SceneSampleResearch";
 
-	public const string B_SCENE_N_TITLE = "01-TitleScene";
-	public const string B_SCENE_N_MAIN = "02-MainScene";
-	public const string B_SCENE_N_PLAY = "03-PlayScene";
+	public const string B_SCENE_N_INIT = "01-SceneInit";
+	public const string B_SCENE_N_SETUP = "02-SceneSetup";
+	public const string B_SCENE_N_LATE_SETUP = "03-SceneSetupLate";
 
-	public const string B_SCENE_N_LOADING = "41-LoadingScene";
-	public const string B_SCENE_N_RESULT = "91-ResultScene";
-	public const string B_SCENE_N_OVERLAY = "92-OverlayScene";
+	public const string B_SCENE_N_TITLE = "01-SceneTitle";
+	public const string B_SCENE_N_MAIN = "02-SceneMain";
+	public const string B_SCENE_N_PLAY = "03-ScenePlay";
 
-	public const string B_SCENE_N_MENU = "99-MenuScene";
-	public const string B_SCENE_N_TEST = "99-TestScene";
+	public const string B_SCENE_N_LOADING = "41-SceneLoading";
+	public const string B_SCENE_N_RESULT = "91-SceneResult";
+	public const string B_SCENE_N_OVERLAY = "92-SceneOverlay";
 
-	public const string B_EDITOR_SCENE_N_LEVEL = "91-EditorSceneLevel";
-	public const string B_EDITOR_SCENE_N_SAMPLE = "01-EditorSampleScene";
+	public const string B_SCENE_N_MENU = "99-SceneMenu";
+	public const string B_SCENE_N_TEST = "99-SceneTest";
+
+	public const string B_SCENE_N_EDITOR_LEVEL = "91-SceneEditorLevel";
 	// 씬 이름 }
 
 	// 식별자 {

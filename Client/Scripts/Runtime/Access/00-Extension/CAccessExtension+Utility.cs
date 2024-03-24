@@ -962,7 +962,7 @@ EX_ENUMERATE_EXIT_ENUMERATE:
 	#region 조건부 클래스 함수
 #if UNITY_EDITOR
 	/** 스크립트 순서를 변경한다 */
-	public static void ExSetScriptOrder(this MonoBehaviour a_oSender, int a_nOrder, bool a_bIsAssert = true)
+	public static void ExSetOrderScript(this MonoBehaviour a_oSender, int a_nOrder, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
@@ -975,7 +975,7 @@ EX_ENUMERATE_EXIT_ENUMERATE:
 			return;
 		}
 
-		CAccess.SetScriptOrder(MonoScript.FromMonoBehaviour(a_oSender), a_nOrder, a_bIsAssert);
+		CAccess.SetOrderScript(MonoScript.FromMonoBehaviour(a_oSender), a_nOrder, a_bIsAssert);
 	}
 #endif // #if UNITY_EDITOR
 
