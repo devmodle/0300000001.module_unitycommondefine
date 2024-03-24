@@ -396,7 +396,7 @@ public static partial class CAccess
 	#region 조건부 클래스 함수
 #if UNITY_EDITOR
 	/** 스크립트 순서를 변경한다 */
-	public static void SetScriptOrder(MonoScript a_oScript, int a_nOrder, bool a_bIsAssert = true)
+	public static void SetOrderScript(MonoScript a_oScript, int a_nOrder, bool a_bIsAssert = true)
 	{
 		CFunc.Assert(!a_bIsAssert || a_oScript != null);
 
