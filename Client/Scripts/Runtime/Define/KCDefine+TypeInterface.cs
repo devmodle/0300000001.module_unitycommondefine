@@ -19,12 +19,12 @@ public partial interface IUpdatable
 	public void OnUpdate(float a_fDeltaTime);
 
 	/** 상태를 갱신한다 */
-	public void OnUpdateLate(float a_fDeltaTime);
+	public void OnLateUpdate(float a_fDeltaTime);
 
 	/** 상태를 갱신한다 */
-	public void OnUpdateFixed(float a_fDeltaTime);
+	public void OnFixedUpdate(float a_fDeltaTime);
 
 	/** 상태를 갱신한다 */
-	public void OnUpdateCustom(float a_fDeltaTime);
+	public void OnCustomUpdate(float a_fDeltaTime);
 }
 #endregion // 인터페이스
