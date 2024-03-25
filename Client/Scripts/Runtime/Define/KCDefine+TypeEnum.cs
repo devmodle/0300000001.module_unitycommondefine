@@ -243,7 +243,7 @@ public enum EFillOrigin
 }
 
 /** 퀄리티 수준 */
-public enum EQualityLevel
+public enum ELevelQuality
 {
 	NONE = -1,
 	[HideInInspector][System.Obsolete] VERY_LOW,
@@ -285,8 +285,8 @@ public enum EAAQuality
 	[HideInInspector] MAX_VAL
 }
 
-/** 쉐이더 로그 수준 */
-public enum EShaderVariantLogLevel
+/** 쉐이더 베리에이션 로그 수준 */
+public enum ELevelLogVariantShader
 {
 	NONE = -1,
 	DISABLE,
@@ -296,7 +296,7 @@ public enum EShaderVariantLogLevel
 }
 
 /** 광원 맵 엔코딩 퀄리티 */
-public enum ELightmapEncodingQuality
+public enum EQualityEncodingLightmap
 {
 	NONE = -1,
 	[HideInInspector][System.Obsolete] LOW,

@@ -13,9 +13,9 @@ using EnhancedUI.EnhancedScroller;
 using Newtonsoft.Json;
 #endif // #if NEWTON_SOFT_JSON_SERIALIZE_DESERIALIZE_ENABLE
 
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 using GoogleSheetsToUnity;
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 
 #region 타입
 /** 콜백 정보 */
@@ -137,7 +137,7 @@ public struct STIDInfo
 	#endregion // 함수
 
 	#region 조건부 함수
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	/** 식별자 정보를 저장한다 */
 	public void SaveIDInfo(SimpleJSON.JSONNode a_oOutIDInfo, string a_oFmt = KCDefine.U_KEY_FMT_ID)
 	{
@@ -145,7 +145,7 @@ public struct STIDInfo
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_2_INT)] = $"{m_nID02}";
 		a_oOutIDInfo[string.Format(a_oFmt, KCDefine.B_VAL_3_INT)] = $"{m_nID03}";
 	}
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 함수
 }
 
@@ -328,14 +328,14 @@ public struct STValInfo : System.IEquatable<STValInfo>
 	#endregion // 함수
 
 	#region 조건부 함수
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	/** 값 정보를 저장한다 */
 	public void SaveValInfo(SimpleJSON.JSONNode a_oOutValInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT)
 	{
 		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{(int)m_eValType}";
 		a_oOutValInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = (m_eValType == EValType.INT) ? $"{m_dmVal:0}" : $"{m_dmVal:0.0}";
 	}
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 함수
 }
 
@@ -368,7 +368,7 @@ public struct STCommonInfo
 	#endregion // 함수
 
 	#region 조건부 함수
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	/** 공용 정보를 저장한다 */
 	public void SaveCommonInfo(SimpleJSON.JSONNode a_oOutCommonInfo)
 	{
@@ -379,7 +379,7 @@ public struct STCommonInfo
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_NAME, m_oName ?? string.Empty);
 		a_oOutCommonInfo.Add(KCDefine.U_KEY_DESC, m_oDesc ?? string.Empty);
 	}
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 함수
 }
 
@@ -402,7 +402,7 @@ public struct STTimeInfo
 	#endregion // 함수
 
 	#region 조건부 함수
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	/** 시간 정보를 저장한다 */
 	public void SaveTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT)
 	{
@@ -410,7 +410,7 @@ public struct STTimeInfo
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = $"{m_fDuration:0.0}";
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_2_INT] = $"{m_fDeltaTime:0.0}";
 	}
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 함수
 }
 
@@ -488,7 +488,7 @@ public struct STNotiInfo
 }
 #endif // #if NOTI_MODULE_ENABLE
 
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 /** 구글 시트 로드 정보 */
 public struct STGoogleSheetLoadInfo
 {
@@ -580,5 +580,5 @@ public struct STSaveGoogleSheetInfo
 	}
 	#endregion // 함수
 }
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 #endregion // 타입

@@ -78,8 +78,8 @@ public static partial class KCDefine
 	public const float U_DEPTH_MAIN_CAMERA = 0.0f;
 	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
 
-	public const float U_DISTANCE_CAMERA_FAR_PLANE = 100000.0f * KCDefine.B_UNIT_SCALE;
-	public const float U_DISTANCE_CAMERA_NEAR_PLANE = 1.0f * KCDefine.B_UNIT_SCALE;
+	public const float U_DISTANCE_PLANE_FAR_CAMERA = 100000.0f * KCDefine.B_UNIT_SCALE;
+	public const float U_DISTANCE_PLANE_NEAR_CAMERA = 1.0f * KCDefine.B_UNIT_SCALE;
 
 	public const float U_UNIT_TABLET_INCHES = 6.5f;
 	public const float U_UNIT_SCROLL_SENSITIVITY = 250.0f;
@@ -912,11 +912,11 @@ public static partial class KCDefine
 	public const string U_KEY_PLAYFAB_M_LOAD_SERVER_TIME_CALLBACK = "PlayfabMLoadServerTimeCallback";
 #endif // #if PLAYFAB_MODULE_ENABLE
 
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
 	public const string U_COL_N_GOOGLE_SHEET_SRC = "B";
 	public const string U_COL_N_GOOGLE_SHEET_DEST = "BZ";
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 상수
 
 	#region 조건부 런타임 상수
@@ -925,11 +925,11 @@ public static partial class KCDefine
 	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_PluginInfoTable";
 #endif // #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 
-#if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	// 이름
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_SRC = $"{KCDefine.U_COL_N_GOOGLE_SHEET_SRC}{"{0}"}";
 	public static readonly string U_CELL_N_FMT_GOOGLE_SHEET_DEST = $"{KCDefine.U_COL_N_GOOGLE_SHEET_DEST}{"{0}"}";
-#endif // #if GOOGLE_SHEET_ENABLE && (DEBUG || DEVELOPMENT_BUILD)
+#endif // #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	#endregion // 조건부 런타임 상수
 }
 

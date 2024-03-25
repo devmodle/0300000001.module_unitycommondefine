@@ -108,13 +108,13 @@ public static partial class KCDefine
 	public const int B_DESIGN_L_SCREEN_WIDTH = 1920;
 	public const int B_DESIGN_L_SCREEN_HEIGHT = 1080;
 
-#if MODE_PORTRAIT_ENABLE
+#if ENABLE_MODE_PORTRAIT
 	public const int B_DESIGN_SCREEN_WIDTH = KCDefine.B_DESIGN_P_SCREEN_WIDTH;
 	public const int B_DESIGN_SCREEN_HEIGHT = KCDefine.B_DESIGN_P_SCREEN_HEIGHT;
 #else
 	public const int B_DESIGN_SCREEN_WIDTH = KCDefine.B_DESIGN_L_SCREEN_WIDTH;
 	public const int B_DESIGN_SCREEN_HEIGHT = KCDefine.B_DESIGN_L_SCREEN_HEIGHT;
-#endif // #if MODE_PORTRAIT_ENABLE
+#endif // #if ENABLE_MODE_PORTRAIT
 
 	public const float B_DEF_SCREEN_DPI = 160.0f;
 	public const float B_PLATFORM_SCREEN_DPI = 480.0f;
