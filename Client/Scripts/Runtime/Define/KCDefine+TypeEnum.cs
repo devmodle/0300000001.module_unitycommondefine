@@ -266,7 +266,7 @@ public enum ESpriteMode
 }
 
 /** 광원 맵 모드 */
-public enum ELightmapMode
+public enum EModeLightmap
 {
 	NONE = -1,
 	NON_DIRECTIONAL,
@@ -275,7 +275,7 @@ public enum ELightmapMode
 }
 
 /** 안티 에일리어싱 수준 */
-public enum EAAQuality
+public enum EQualityAA
 {
 	NONE = -1,
 	DISABLE,
