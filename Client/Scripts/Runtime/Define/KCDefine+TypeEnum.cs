@@ -306,7 +306,7 @@ public enum ELightmapEncodingQuality
 }
 
 /** 소프트 그림자 퀄리티 */
-public enum ESoftShadowQuality
+public enum EQualityShadowSoft
 {
 	NONE = -1,
 	USE_PIPELINE_SETTINGS,
@@ -317,7 +317,7 @@ public enum ESoftShadowQuality
 }
 
 /** 그림자 옵션 */
-public enum EShadowCascadesOpts
+public enum EOptsCascadesShadow
 {
 	NONE = -1,
 	NO_CASCADES = 1,
@@ -328,7 +328,7 @@ public enum EShadowCascadesOpts
 }
 
 /** 내비게이션 스택 이벤트 */
-public enum ENavStackEvent
+public enum EEventNavStack
 {
 	NONE = -1,
 	TOP,
