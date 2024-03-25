@@ -233,14 +233,14 @@ public static partial class CAccess
 	}
 
 	/** URP 에셋 경로를 반환한다 */
-	public static string GetPathURPAsset(EQualityLevel a_eQualityLevel)
+	public static string GetPathURPAsset(ELevelQuality a_eLevelQuality)
 	{
-		switch(a_eQualityLevel)
+		switch(a_eLevelQuality)
 		{
-			case EQualityLevel.HIGH:
+			case ELevelQuality.HIGH:
 				return KCDefine.U_ASSET_P_G_HIGH_QUALITY_URP;
 
-			case EQualityLevel.ULTRA:
+			case ELevelQuality.ULTRA:
 				return KCDefine.U_ASSET_P_G_ULTRA_QUALITY_URP;
 		}
 
@@ -248,14 +248,14 @@ public static partial class CAccess
 	}
 
 	/** URP 전역 볼륨 프로필 경로를 반환한다 */
-	public static string GetPathURPGlobalVolumeProfile(EQualityLevel a_eQualityLevel)
+	public static string GetPathURPGlobalVolumeProfile(ELevelQuality a_eLevelQuality)
 	{
-		switch(a_eQualityLevel)
+		switch(a_eLevelQuality)
 		{
-			case EQualityLevel.HIGH:
+			case ELevelQuality.HIGH:
 				return KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_HIGH_QUALITY;
 
-			case EQualityLevel.ULTRA:
+			case ELevelQuality.ULTRA:
 				return KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_ULTRA_QUALITY;
 		}
 
@@ -480,12 +480,12 @@ public static partial class CAccess
 	}
 
 	/** 대기 객체를 반환한다 */
-	public static IEnumerator CoGetWaitForSecs(float a_fDeltaTime, bool a_bIsRealtime = false)
+	public static IEnumerator CoGetWaitForSecs(float a_fTimeDelta, bool a_bIsRealtime = false)
 	{
-		CFunc.Assert(a_fDeltaTime.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
+		CFunc.Assert(a_fTimeDelta.ExIsGreatEquals(KCDefine.B_VAL_0_REAL));
 
 		yield return a_bIsRealtime ?
-			CAccess.GetWaitForSecondsRealtime(a_fDeltaTime) : CAccess.GetWaitForSeconds(a_fDeltaTime);
+			CAccess.GetWaitForSecondsRealtime(a_fTimeDelta) : CAccess.GetWaitForSeconds(a_fTimeDelta);
 	}
 
 	/** 대기 객체를 반환한다 */

@@ -30,8 +30,8 @@ public static partial class CExtension
 		a_oSender.stereoTargetEye = StereoTargetEyeMask.Both;
 
 		a_oSender.rect = KCDefine.B_RECT_CAMERA_VIEWPORT;
-		a_oSender.farClipPlane = KCDefine.U_DISTANCE_CAMERA_FAR_PLANE;
-		a_oSender.nearClipPlane = KCDefine.U_DISTANCE_CAMERA_NEAR_PLANE;
+		a_oSender.farClipPlane = KCDefine.U_DISTANCE_PLANE_FAR_CAMERA;
+		a_oSender.nearClipPlane = KCDefine.U_DISTANCE_PLANE_NEAR_CAMERA;
 	}
 
 	/** 2 차원 카메라를 설정한다 */

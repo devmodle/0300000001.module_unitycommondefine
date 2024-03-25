@@ -16,15 +16,15 @@ public partial interface IPoolable
 public partial interface IUpdatable
 {
 	/** 상태를 갱신한다 */
-	public void OnUpdate(float a_fDeltaTime);
+	public void OnUpdate(float a_fTimeDelta);
 
 	/** 상태를 갱신한다 */
-	public void OnLateUpdate(float a_fDeltaTime);
+	public void OnLateUpdate(float a_fTimeDelta);
 
 	/** 상태를 갱신한다 */
-	public void OnFixedUpdate(float a_fDeltaTime);
+	public void OnFixedUpdate(float a_fTimeDelta);
 
 	/** 상태를 갱신한다 */
-	public void OnCustomUpdate(float a_fDeltaTime);
+	public void OnCustomUpdate(float a_fTimeDelta);
 }
 #endregion // 인터페이스
