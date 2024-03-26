@@ -16,20 +16,20 @@ public static partial class KCDefine
 {
 	#region 컴파일 상수
 	// 단위
-	public const float B_DELTA_T_NOTI_M_REQUEST_CHECK = 0.15f;
-	public const float B_MAX_DELTA_T_NOTI_M_REQUEST_CHECK = 0.5f;
+	public const float G_NOTI_M_INTERVAL_CHECK_REQUEST = 0.15f;
+	public const float G_NOTI_M_INTERVAL_CHECK_REQUEST_MAX = 0.5f;
 
 	// 식별자
-	public const string B_KEY_NOTI_M_INIT_CALLBACK = "NotiMInitCallback";
+	public const string G_NOTI_M_KEY_CALLBACK_INIT = "NotiMCallbackInit";
 
 #if UNITY_IOS
 	// 기타
-	public const PresentationOption B_OPTS_PRESENTATION = PresentationOption.Alert | PresentationOption.Sound;
-	public const AuthorizationOption B_OPTS_AUTHORIZATION = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
+	public const PresentationOption G_NOTI_M_OPTS_PRESENTATION = PresentationOption.Alert | PresentationOption.Sound;
+	public const AuthorizationOption G_NOTI_M_OPTS_AUTHORIZATION = AuthorizationOption.Alert | AuthorizationOption.Badge | AuthorizationOption.Sound;
 #elif UNITY_ANDROID
 	// 기타
-	public const string B_GROUP_N_NOTI = "NotiMNotiGroup";
-	public const string B_GROUP_DESC_NOTI = KCDefine.B_GROUP_N_NOTI;
+	public const string G_NOTI_M_NAME_GROUP_NOTI = "NotiMGroupNoti";
+	public const string G_NOTI_M_DESC_GROUP_NOTI = KCDefine.G_NOTI_M_NAME_GROUP_NOTI;
 #endif // #if UNITY_IOS
 	#endregion // 컴파일 상수
 }

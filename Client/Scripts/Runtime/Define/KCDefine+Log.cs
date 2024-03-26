@@ -9,30 +9,30 @@ public static partial class KCDefine
 {
 	#region 컴파일 상수
 	// 이름
-	public const string L_LOG_N_AGREE = "Agree";
+	public const string G_LOG_N_AGREE = "Agree";
 
 	// 식별자 {
-	public const string L_LOG_KEY_USER_ID = "UserID";
-	public const string L_LOG_KEY_COUNTRY_CODE = "CountryCode";
+	public const string G_LOG_KEY_USER_ID = "UserID";
+	public const string G_LOG_KEY_COUNTRY_CODE = "CountryCode";
 
-	public const string L_LOG_KEY_PLATFORM = "Platform";
-	public const string L_LOG_KEY_DEVICE_ID = "DeviceID";
-	public const string L_LOG_KEY_USER_TYPE = "UserType";
+	public const string G_LOG_KEY_PLATFORM = "Platform";
+	public const string G_LOG_KEY_DEVICE_ID = "DeviceID";
+	public const string G_LOG_KEY_USER_TYPE = "UserType";
 
-	public const string L_LOG_KEY_LOG_NAME = "LogName";
-	public const string L_LOG_KEY_LOG_TIME = "LogTime";
-	public const string L_LOG_KEY_INSTALL_TIME = "InstallTime";
-	public const string L_LOG_KEY_SHORT_LOG_TIME = "ShortLogTime";
+	public const string G_LOG_KEY_LOG_NAME = "LogName";
+	public const string G_LOG_KEY_LOG_TIME = "LogTime";
+	public const string G_LOG_KEY_INSTALL_TIME = "InstallTime";
+	public const string G_LOG_KEY_SHORT_LOG_TIME = "ShortLogTime";
 
-	public const string L_LOG_KEY_PARAMS_A = "ParamsA";
-	public const string L_LOG_KEY_PARAMS_B = "ParamsB";
-	public const string L_LOG_KEY_PARAMS_C = "ParamsC";
-	public const string L_LOG_KEY_PARAMS_D = "ParamsD";
-	public const string L_LOG_KEY_PARAMS_E = "ParamsE";
-	public const string L_LOG_KEY_PARAMS_F = "ParamsF";
-	public const string L_LOG_KEY_PARAMS_G = "ParamsG";
-	public const string L_LOG_KEY_PARAMS_H = "ParamsH";
-	public const string L_LOG_KEY_PARAMS_I = "ParamsI";
+	public const string G_LOG_KEY_PARAMS_A = "ParamsA";
+	public const string G_LOG_KEY_PARAMS_B = "ParamsB";
+	public const string G_LOG_KEY_PARAMS_C = "ParamsC";
+	public const string G_LOG_KEY_PARAMS_D = "ParamsD";
+	public const string G_LOG_KEY_PARAMS_E = "ParamsE";
+	public const string G_LOG_KEY_PARAMS_F = "ParamsF";
+	public const string G_LOG_KEY_PARAMS_G = "ParamsG";
+	public const string G_LOG_KEY_PARAMS_H = "ParamsH";
+	public const string G_LOG_KEY_PARAMS_I = "ParamsI";
 	// 식별자 }
 	#endregion // 컴파일 상수
 }
