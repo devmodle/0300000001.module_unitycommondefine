@@ -9,25 +9,25 @@ using UnityEngine.Events;
 public static partial class KCDefine
 {
 	#region 클래스 프로퍼티
-	public static string B_DATA_P_PURCHASE_PRODUCT_IDS => $"{KCDefine.B_DIR_P_WRITABLE}PurchaseProductIDs.bytes";
+	public static string G_PURCHASE_M_DATA_P_IDS_PRODUCT_PURCHASE => $"{KCDefine.B_DIR_P_WRITABLE}IDsProductPurchase.bytes";
 	#endregion // 클래스 프로퍼티
 
 	#region 컴파일 상수
 	// 기타 {
-	public const string B_ENVIRONMENT_N_DEV = "development";
-	public const string B_ENVIRONMENT_N_PRODUCTION = "production";
+	public const string G_PURCHASE_M_ENVIRONMENT_N_DEV = "development";
+	public const string G_PURCHASE_M_ENVIRONMENT_N_PRODUCTION = "production";
 
-	public const string B_PAYLOAD_PURCHASE_M_PURCHASE_PRODUCT = "PurchaseMPurchaseProduct";
+	public const string G_PURCHASE_M_PAYLOAD_PRODUCT_PURCHASE = "PurchaseMPayloadProductPurchase";
 	// 기타 }
 
 	// 식별자 {
-	public const string B_KEY_PURCHASE_M_INIT_CALLBACK = "PurchaseMInitCallback";
-	public const string B_KEY_PURCHASE_M_INIT_FAIL_CALLBACK = "PurchaseMInitFailCallback";
-	public const string B_KEY_PURCHASE_M_PURCHASE_FAIL_CALLBACK = "PurchaseMPurchaseFailCallback";
+	public const string G_PURCHASE_M_KEY_CALLBACK_INIT = "PurchaseMCallbackInit";
+	public const string G_PURCHASE_M_KEY_CALLBACK_FAIL_INIT = "PurchaseMCallbackFailInit";
+	public const string G_PURCHASE_M_KEY_CALLBACK_FAIL_PURCHASE = "PurchaseMCallbackFailPurchase";
 
-	public const string B_KEY_PURCHASE_M_RESTORE_PRODUCTS_CALLBACK = "PurchaseMRestoreProductsCallback";
-	public const string B_KEY_PURCHASE_M_CONFIRM_PURCHASE_CALLBACK = "PurchaseMConfirmPurchaseCallback";
-	public const string B_KEY_PURCHASE_M_HANDLE_PURCHASE_RESULT_CALLBACK = "PurchaseMHandlePurchaseResultCallback";
+	public const string G_PURCHASE_M_KEY_CALLBACK_PRODUCTS_RESTORE = "PurchaseMCallbackProductsRestore";
+	public const string G_PURCHASE_M_KEY_CALLBACK_PURCHASE_CONFIRM = "PurchaseMCallbackPurchaseConfirm";
+	public const string G_PURCHASE_M_KEY_CALLBACK_RESULT_PURCHASE_HANDLE = "PurchaseMCallbackResultPurchaseHandle";
 	// 식별자 }
 	#endregion // 컴파일 상수
 }

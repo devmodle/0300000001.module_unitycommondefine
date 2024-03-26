@@ -42,18 +42,18 @@ public static partial class CFuncEditor
 {
 	#region 클래스 함수
 	/** 커맨드 라인을 실행한다 */
-	private static void ExecuteCmdLine(string a_oFilePath, string a_oParams, bool a_bIsAsync = true, bool a_bIsAssert = true)
+	private static void ExecuteCmdLine(string a_oPathFile, string a_oParams, bool a_bIsAsync = true, bool a_bIsAssert = true)
 	{
-		CFunc.ShowLog($"CFuncEditor.ExecuteCmdLine: {a_oFilePath}, {a_oParams}");
-		CFunc.Assert(!a_bIsAssert || (a_oFilePath.ExIsValid() && a_oParams.ExIsValid()));
+		CFunc.ShowLog($"CFuncEditor.ExecuteCmdLine: {a_oPathFile}, {a_oParams}");
+		CFunc.Assert(!a_bIsAssert || (a_oPathFile.ExIsValid() && a_oParams.ExIsValid()));
 
 		// 실행이 불가능 할 경우
-		if(!a_oFilePath.ExIsValid() || !a_oParams.ExIsValid())
+		if(!a_oPathFile.ExIsValid() || !a_oParams.ExIsValid())
 		{
 			return;
 		}
 
-		var oProcess = Process.Start(CFactoryEditor.MakeProcessStartInfo(a_oFilePath, a_oParams));
+		var oProcess = Process.Start(CFactoryEditor.MakeProcessStartInfo(a_oPathFile, a_oParams));
 
 		// 동기 모드 일 경우
 		if(!a_bIsAsync)
