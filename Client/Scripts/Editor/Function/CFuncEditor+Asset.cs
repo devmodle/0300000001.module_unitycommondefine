@@ -20,10 +20,10 @@ public static partial class CFuncEditor
 	}
 
 	/** 에셋을 로드한다 */
-	public static Object LoadAsset(string a_oFilePath)
+	public static Object LoadAsset(string a_oPathFile)
 	{
-		CFunc.Assert(a_oFilePath.ExIsValid());
-		var oAssets = AssetDatabase.LoadAllAssetsAtPath(a_oFilePath);
+		CFunc.Assert(a_oPathFile.ExIsValid());
+		var oAssets = AssetDatabase.LoadAllAssetsAtPath(a_oPathFile);
 
 		return oAssets.ExIsValid() ? oAssets[KCDefine.B_VAL_0_INT] : null;
 	}

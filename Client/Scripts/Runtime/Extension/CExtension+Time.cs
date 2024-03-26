@@ -11,7 +11,7 @@ public static partial class CExtension
 {
 	#region 클래스 함수
 	/** 문자열 => 시간으로 변환한다 */
-	public static System.DateTime ExTimeStrToTime(this string a_oSender, string a_oFmt)
+	public static System.DateTime ExStrTimeToTime(this string a_oSender, string a_oFmt)
 	{
 		CFunc.Assert(a_oSender.ExIsValid() && a_oFmt.ExIsValid());
 		return System.DateTime.ParseExact(a_oSender, a_oFmt, CultureInfo.InvariantCulture);
@@ -25,7 +25,7 @@ public static partial class CExtension
 	}
 
 	/** 시간 => 긴 문자열로 변환한다 */
-	public static string ExToLongStr(this System.DateTime a_stSender, bool a_bIsEnableSlash = true)
+	public static string ExToStrLong(this System.DateTime a_stSender, bool a_bIsEnableSlash = true)
 	{
 		CFunc.Assert(a_stSender.ExIsValid());
 
@@ -34,7 +34,7 @@ public static partial class CExtension
 	}
 
 	/** 시간 => 짧은 문자열로 변환한다 */
-	public static string ExToShortStr(this System.DateTime a_stSender, bool a_bIsEnableSlash = true)
+	public static string ExToStrShort(this System.DateTime a_stSender, bool a_bIsEnableSlash = true)
 	{
 		CFunc.Assert(a_stSender.ExIsValid());
 
@@ -43,35 +43,35 @@ public static partial class CExtension
 	}
 
 	/** 지역 시간 => PST 시간으로 변환한다 */
-	public static System.DateTime ExToPSTTime(this System.DateTime a_stSender)
+	public static System.DateTime ExToTimePST(this System.DateTime a_stSender)
 	{
 		CFunc.Assert(a_stSender.ExIsValid());
 		return a_stSender.ToUniversalTime().AddHours(KCDefine.B_DELTA_T_UTC_TO_PST);
 	}
 
 	/** 지역 시간 => 특정 지역 시간으로 변환한다 */
-	public static System.DateTime ExToZoneTime(this System.DateTime a_stSender, string a_oTimeZoneID)
+	public static System.DateTime ExToTimeZone(this System.DateTime a_stSender, string a_oIDZoneTime)
 	{
-		CFunc.Assert(a_stSender.ExIsValid() && a_oTimeZoneID.ExIsValid());
-		var stTimeZoneInfo = System.TimeZoneInfo.FindSystemTimeZoneById(a_oTimeZoneID);
+		CFunc.Assert(a_stSender.ExIsValid() && a_oIDZoneTime.ExIsValid());
+		var stInfoZoneTime = System.TimeZoneInfo.FindSystemTimeZoneById(a_oIDZoneTime);
 
-		return System.TimeZoneInfo.ConvertTime(a_stSender, System.TimeZoneInfo.Local, stTimeZoneInfo);
+		return System.TimeZoneInfo.ConvertTime(a_stSender, System.TimeZoneInfo.Local, stInfoZoneTime);
 	}
 
 	/** PST 시간 => 지역 시간으로 변환한다 */
-	public static System.DateTime ExPSTToLocalTime(this System.DateTime a_stSender)
+	public static System.DateTime ExPSTToTimeLocal(this System.DateTime a_stSender)
 	{
 		CFunc.Assert(a_stSender.ExIsValid());
 		return a_stSender.AddHours(-KCDefine.B_DELTA_T_UTC_TO_PST).ToLocalTime();
 	}
 
 	/** 특정 지역 시간 => 지역 시간으로 변환한다 */
-	public static System.DateTime ExZoneToLocalTime(this System.DateTime a_stSender, string a_oTimeZoneID)
+	public static System.DateTime ExZoneToTimeLocal(this System.DateTime a_stSender, string a_oIDZoneTime)
 	{
-		CFunc.Assert(a_stSender.ExIsValid() && a_oTimeZoneID.ExIsValid());
-		var stTimeZoneInfo = System.TimeZoneInfo.FindSystemTimeZoneById(a_oTimeZoneID);
+		CFunc.Assert(a_stSender.ExIsValid() && a_oIDZoneTime.ExIsValid());
+		var stInfoZoneTime = System.TimeZoneInfo.FindSystemTimeZoneById(a_oIDZoneTime);
 
-		return System.TimeZoneInfo.ConvertTime(a_stSender, stTimeZoneInfo, System.TimeZoneInfo.Local);
+		return System.TimeZoneInfo.ConvertTime(a_stSender, stInfoZoneTime, System.TimeZoneInfo.Local);
 	}
 	#endregion // 클래스 함수
 }

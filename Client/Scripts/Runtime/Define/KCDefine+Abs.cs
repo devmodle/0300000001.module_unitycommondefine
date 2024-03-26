@@ -239,8 +239,8 @@ public static partial class KCDefine
 
 	public const string B_KEY_JSON_USER_INFO_DATA = "UserInfo";
 	public const string B_KEY_JSON_GAME_INFO_DATA = "GameInfo";
-	public const string B_KEY_JSON_COMMON_APP_INFO_DATA = "CommonAppInfo";
-	public const string B_KEY_JSON_COMMON_USER_INFO_DATA = "CommonUserInfo";
+	public const string B_KEY_JSON_COMMON_APP_INFO_DATA = "InfoAppCommon";
+	public const string B_KEY_JSON_COMMON_USER_INFO_DATA = "InfoUserCommon";
 	// 식별자 }
 
 	// 토큰 {

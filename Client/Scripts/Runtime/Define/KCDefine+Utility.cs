@@ -9,9 +9,9 @@ using DG.Tweening;
 public static partial class KCDefine
 {
 	#region 프로퍼티
-	public static string U_DATA_P_COMMON_APP_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonAppInfo.bytes";
-	public static string U_DATA_P_COMMON_USER_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonUserInfo.bytes";
-	public static string U_DATA_P_COMMON_GAME_INFO => $"{KCDefine.B_DIR_P_WRITABLE}CommonGameInfo.bytes";
+	public static string U_DATA_P_COMMON_APP_INFO => $"{KCDefine.B_DIR_P_WRITABLE}InfoAppCommon.bytes";
+	public static string U_DATA_P_COMMON_USER_INFO => $"{KCDefine.B_DIR_P_WRITABLE}InfoUserCommon.bytes";
+	public static string U_DATA_P_COMMON_GAME_INFO => $"{KCDefine.B_DIR_P_WRITABLE}InfoGameCommon.bytes";
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
 	public static string U_IMG_P_SCREENSHOT => $"{Application.identifier}/Screenshot.png";

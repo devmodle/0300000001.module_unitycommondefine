@@ -12,21 +12,21 @@ public static partial class KCDefineEditor
 {
 	#region 컴파일 상수
 	// 순서 {
-	public const int B_SORTING_O_UIS_MENU = 0;
-	public const int B_SORTING_O_OBJS_MENU = 0;
-	public const int B_SORTING_O_BUILD_MENU = 10000;
+	public const int G_SORTING_O_UIS_MENU = 0;
+	public const int G_SORTING_O_OBJS_MENU = 0;
+	public const int G_SORTING_O_BUILD_MENU = 10000;
 
-	public const int B_SORTING_O_SETUP_MENU = 20000;
-	public const int B_SORTING_O_RESET_MENU = KCDefineEditor.B_SORTING_O_SETUP_MENU + 1;
+	public const int G_SORTING_O_SETUP_MENU = 20000;
+	public const int G_SORTING_O_RESET_MENU = KCDefineEditor.G_SORTING_O_SETUP_MENU + 1;
 
-	public const int B_SORTING_O_IMPORT_MENU = 30000;
-	public const int B_SORTING_O_EXPORT_MENU = KCDefineEditor.B_SORTING_O_IMPORT_MENU + 1;
+	public const int G_SORTING_O_IMPORT_MENU = 30000;
+	public const int G_SORTING_O_EXPORT_MENU = KCDefineEditor.G_SORTING_O_IMPORT_MENU + 1;
 
-	public const int B_SORTING_O_CREATE_MENU = 40000;
-	public const int B_SORTING_O_SUB_CREATE_MENU = KCDefineEditor.B_SORTING_O_CREATE_MENU + 1;
+	public const int G_SORTING_O_CREATE_MENU = 40000;
+	public const int G_SORTING_O_SUB_CREATE_MENU = KCDefineEditor.G_SORTING_O_CREATE_MENU + 1;
 
-	public const int B_SORTING_O_EDITOR_WND_MENU = 50000;
-	public const int B_SORTING_O_CHANGE_PLATFORM_MENU = KCDefineEditor.B_SORTING_O_EDITOR_WND_MENU + 1;
+	public const int G_SORTING_O_EDITOR_WND_MENU = 50000;
+	public const int G_SORTING_O_CHANGE_PLATFORM_MENU = KCDefineEditor.G_SORTING_O_EDITOR_WND_MENU + 1;
 	// 순서 }
 	#endregion // 컴파일 상수
 }

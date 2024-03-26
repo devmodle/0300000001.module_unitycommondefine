@@ -76,7 +76,7 @@ public struct STSortingOrderInfo
 	public static readonly STSortingOrderInfo INVALID = new STSortingOrderInfo()
 	{
 		m_nOrder = short.MinValue,
-		m_oLayer = KCDefine.B_SORTING_L_UNDERGROUND
+		m_oLayer = KCDefine.G_SORTING_L_UNDERGROUND
 	};
 	#endregion // 상수
 
@@ -404,7 +404,7 @@ public struct STTimeInfo
 	#region 조건부 함수
 #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
 	/** 시간 정보를 저장한다 */
-	public void SaveTimeInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT)
+	public void TimeSaveInfo(SimpleJSON.JSONNode a_oTimeInfo, int a_nSrcIdx = KCDefine.B_VAL_0_INT)
 	{
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_0_INT] = $"{m_fDelay:0.0}";
 		a_oTimeInfo[a_nSrcIdx + KCDefine.B_VAL_1_INT] = $"{m_fDuration:0.0}";

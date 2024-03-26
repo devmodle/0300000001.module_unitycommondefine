@@ -19,7 +19,7 @@ public static partial class KCDefineEditor
 	public const string B_TOKEN_APPLE_M_SERIES = "APPLE M";
 	public const string B_TOKEN_REPLACE_UNITY_VERSION = "/*** UnityVersion */";
 
-	public const string B_SORTING_OI_FMT = "[{0}:{1}]";
+	public const string G_SORTING_OI_FMT = "[{0}:{1}]";
 	// 기타 }
 
 	// 이름 {

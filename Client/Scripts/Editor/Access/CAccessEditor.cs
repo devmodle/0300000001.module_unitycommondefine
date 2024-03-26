@@ -42,9 +42,9 @@ public static partial class CAccessEditor
 	}
 
 	/** 에셋 존재 여부를 검사한다 */
-	public static bool IsExistsAsset(string a_oFilePath)
+	public static bool IsExistsAsset(string a_oPathFile)
 	{
-		return AssetDatabase.GetMainAssetTypeAtPath(a_oFilePath) != null;
+		return AssetDatabase.GetMainAssetTypeAtPath(a_oPathFile) != null;
 	}
 
 	/** 전처리기 심볼 포함 여부를 검사한다 */
@@ -166,10 +166,10 @@ public static partial class CAccessEditor
 
 	#region 제네릭 클래스 함수
 	/** 에셋을 탐색한다 */
-	public static T FindAsset<T>(string a_oFilePath) where T : Object
+	public static T FindAsset<T>(string a_oPathFile) where T : Object
 	{
-		CFunc.Assert(a_oFilePath.ExIsValid());
-		return AssetDatabase.LoadAssetAtPath<T>(a_oFilePath);
+		CFunc.Assert(a_oPathFile.ExIsValid());
+		return AssetDatabase.LoadAssetAtPath<T>(a_oPathFile);
 	}
 
 	/** 에셋을 탐색한다 */

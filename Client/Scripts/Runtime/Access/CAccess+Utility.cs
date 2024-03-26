@@ -350,10 +350,10 @@ public static partial class CAccess
 
 	#region 제네릭 클래스 함수
 	/** 리소스 존재 여부를 검사한다 */
-	public static bool IsExistsRes<T>(string a_oFilePath, bool a_bIsAutoUnload = false) where T : Object
+	public static bool IsExistsRes<T>(string a_oPathFile, bool a_bIsAutoUnload = false) where T : Object
 	{
-		CFunc.Assert(a_oFilePath.ExIsValid());
-		var oRes = Resources.Load<T>(a_oFilePath);
+		CFunc.Assert(a_oPathFile.ExIsValid());
+		var oRes = Resources.Load<T>(a_oPathFile);
 
 		bool bIsExistsRes = typeof(T).Equals(typeof(TextAsset)) ?
 			(oRes as TextAsset).ExIsValid() : oRes != null;

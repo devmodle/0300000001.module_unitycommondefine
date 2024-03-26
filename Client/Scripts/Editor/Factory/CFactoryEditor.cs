@@ -39,9 +39,9 @@ public static class CFactoryEditor
 	}
 
 	/** 프로세스 시작 정보를 생성한다 */
-	public static ProcessStartInfo MakeProcessStartInfo(string a_oFilePath, string a_oParams)
+	public static ProcessStartInfo MakeProcessStartInfo(string a_oPathFile, string a_oParams)
 	{
-		var oStartInfo = new ProcessStartInfo(a_oFilePath, a_oParams);
+		var oStartInfo = new ProcessStartInfo(a_oPathFile, a_oParams);
 		oStartInfo.CreateNoWindow = true;
 		oStartInfo.UseShellExecute = false;
 
@@ -49,9 +49,9 @@ public static class CFactoryEditor
 	}
 
 	/** 스크립트 객체를 생성한다 */
-	public static ScriptableObject CreateScriptableObj(System.Type a_oType, string a_oFilePath = KCDefine.B_TEXT_EMPTY)
+	public static ScriptableObject CreateScriptableObj(System.Type a_oType, string a_oPathFile = KCDefine.B_TEXT_EMPTY)
 	{
-		string oFilePath = a_oFilePath.ExIsValid() ? a_oFilePath : string.Format(KCDefineEditor.B_ASSET_P_FMT_SCRIPTABLE_OBJ, a_oType.ToString());
+		string oFilePath = a_oPathFile.ExIsValid() ? a_oPathFile : string.Format(KCDefineEditor.B_ASSET_P_FMT_SCRIPTABLE_OBJ, a_oType.ToString());
 		CFactoryEditor.MakeDirectories(Path.GetDirectoryName(oFilePath).Replace(KCDefine.B_TOKEN_R_SLASH, KCDefine.B_TOKEN_SLASH), false);
 
 		return CFactoryEditor.CreateAsset<ScriptableObject>(ScriptableObject.CreateInstance(a_oType), oFilePath);
@@ -87,11 +87,11 @@ public static class CFactoryEditor
 	}
 
 	/** 에셋을 제거한다 */
-	public static void RemoveAsset(string a_oFilePath, bool a_bIsAssert = true)
+	public static void RemoveAsset(string a_oPathFile, bool a_bIsAssert = true)
 	{
-		CFunc.Assert(!a_bIsAssert || a_oFilePath.ExIsValid());
+		CFunc.Assert(!a_bIsAssert || a_oPathFile.ExIsValid());
 
-		AssetDatabase.DeleteAsset(a_oFilePath);
+		AssetDatabase.DeleteAsset(a_oPathFile);
 		AssetDatabase.SaveAssets();
 		AssetDatabase.Refresh();
 	}
@@ -106,14 +106,14 @@ public static class CFactoryEditor
 	}
 
 	/** 에셋을 생성한다 */
-	public static T CreateAsset<T>(T a_tAsset, string a_oFilePath, bool a_bIsFocus = true) where T : Object
+	public static T CreateAsset<T>(T a_tAsset, string a_oPathFile, bool a_bIsFocus = true) where T : Object
 	{
-		CFunc.Assert(a_tAsset != null && a_oFilePath.ExIsValid());
+		CFunc.Assert(a_tAsset != null && a_oPathFile.ExIsValid());
 
 		// 에셋 생성이 가능 할 경우
-		if(AssetDatabase.LoadAssetAtPath<T>(a_oFilePath) == null)
+		if(AssetDatabase.LoadAssetAtPath<T>(a_oPathFile) == null)
 		{
-			AssetDatabase.CreateAsset(a_tAsset, a_oFilePath);
+			AssetDatabase.CreateAsset(a_tAsset, a_oPathFile);
 			AssetDatabase.SaveAssets();
 			AssetDatabase.Refresh();
 
@@ -129,9 +129,9 @@ public static class CFactoryEditor
 	}
 
 	/** 스크립트 객체를 생성한다 */
-	public static T CreateScriptableObj<T>(string a_oFilePath = KCDefine.B_TEXT_EMPTY) where T : ScriptableObject
+	public static T CreateScriptableObj<T>(string a_oPathFile = KCDefine.B_TEXT_EMPTY) where T : ScriptableObject
 	{
-		return CFactoryEditor.CreateScriptableObj(typeof(T), a_oFilePath) as T;
+		return CFactoryEditor.CreateScriptableObj(typeof(T), a_oPathFile) as T;
 	}
 	#endregion // 제네릭 클래스 함수
 }
