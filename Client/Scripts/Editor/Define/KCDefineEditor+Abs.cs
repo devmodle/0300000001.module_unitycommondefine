@@ -517,7 +517,7 @@ public static partial class KCDefineEditor
 		($"{KCDefineEditor.B_ABS_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scripts/Editor/Factory/T_EditorFactory+Global.cs", $"{KCDefineEditor.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Editor/Global/Factory/EditorFactory+Global.cs"),
 
 		// 에디터 유틸리티
-		($"{KCDefineEditor.B_ABS_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scripts/Editor/Build/T_CBuildProcessor.cs", $"{KCDefineEditor.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Editor/Global/Utility/Build/CBuildProcessor.cs"),
+		($"{KCDefineEditor.B_ABS_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scripts/Editor/Build/T_CProcessorBuild.cs", $"{KCDefineEditor.B_ABS_DIR_P_UNITY_PROJ_SCRIPTS}Editor/Global/Utility/Build/CProcessorBuild.cs"),
 
 #if UTILITY_SCRIPT_TEMPLATES_ENABLE || UTILITY_SCRIPT_TEMPLATES_MODULE_ENABLE
 		// 엔진 {
