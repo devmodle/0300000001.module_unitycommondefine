@@ -57,65 +57,65 @@ public static partial class CExtension
 	/** 종류 => 타입으로 변환한다 */
 	public static int ExKindsToType(this int a_nSender)
 	{
-		return a_nSender.ExIsValidIdx() ? a_nSender / KCDefine.B_UNIT_KINDS_PER_TYPE : KCDefine.B_IDX_INVALID;
+		return a_nSender.ExIsValidIdx() ? a_nSender / KCDefine.B_UNITS_KINDS_PER_TYPE : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 타입 종류로 변환한다 */
 	public static int ExKindsToTypeKinds(this int a_nSender)
 	{
-		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToType() * KCDefine.B_UNIT_KINDS_PER_TYPE : KCDefine.B_IDX_INVALID;
+		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToType() * KCDefine.B_UNITS_KINDS_PER_TYPE : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 서브 타입으로 변환한다 */
 	public static int ExKindsToSubType(this int a_nSender)
 	{
-		int nSubType = a_nSender % KCDefine.B_UNIT_KINDS_PER_TYPE;
-		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToTypeKinds() + ((nSubType / KCDefine.B_UNIT_KINDS_PER_SUB_TYPE) * KCDefine.B_UNIT_KINDS_PER_SUB_TYPE) : KCDefine.B_IDX_INVALID;
+		int nSubType = a_nSender % KCDefine.B_UNITS_KINDS_PER_TYPE;
+		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToTypeKinds() + ((nSubType / KCDefine.B_UNITS_KINDS_PER_SUB_TYPE) * KCDefine.B_UNITS_KINDS_PER_SUB_TYPE) : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 서브 타입 값으로 변환한다 */
 	public static int ExKindsToSubTypeVal(this int a_nSender)
 	{
-		return a_nSender.ExIsValidIdx() ? (a_nSender % KCDefine.B_UNIT_KINDS_PER_TYPE) / KCDefine.B_UNIT_KINDS_PER_SUB_TYPE : KCDefine.B_IDX_INVALID;
+		return a_nSender.ExIsValidIdx() ? (a_nSender % KCDefine.B_UNITS_KINDS_PER_TYPE) / KCDefine.B_UNITS_KINDS_PER_SUB_TYPE : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 종류 타입으로 변환한다 */
 	public static int ExKindsToKindsType(this int a_nSender)
 	{
-		int nKindsType = a_nSender % KCDefine.B_UNIT_KINDS_PER_SUB_TYPE;
-		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToSubType() + ((nKindsType / KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE) * KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE) : KCDefine.B_IDX_INVALID;
+		int nKindsType = a_nSender % KCDefine.B_UNITS_KINDS_PER_SUB_TYPE;
+		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToSubType() + ((nKindsType / KCDefine.B_UNITS_KINDS_PER_KINDS_TYPE) * KCDefine.B_UNITS_KINDS_PER_KINDS_TYPE) : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 종류 타입 값으로 변환한다 */
 	public static int ExKindsToKindsTypeVal(this int a_nSender)
 	{
-		return a_nSender.ExIsValidIdx() ? (a_nSender % KCDefine.B_UNIT_KINDS_PER_TYPE) / KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE : KCDefine.B_IDX_INVALID;
+		return a_nSender.ExIsValidIdx() ? (a_nSender % KCDefine.B_UNITS_KINDS_PER_TYPE) / KCDefine.B_UNITS_KINDS_PER_KINDS_TYPE : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 서브 종류 타입으로 변환한다 */
 	public static int ExKindsToSubKindsType(this int a_nSender)
 	{
-		int nSubKindsType = a_nSender % KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE;
-		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToKindsType() + ((nSubKindsType / KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE) * KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE) : KCDefine.B_IDX_INVALID;
+		int nSubKindsType = a_nSender % KCDefine.B_UNITS_KINDS_PER_KINDS_TYPE;
+		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToKindsType() + ((nSubKindsType / KCDefine.B_UNITS_KINDS_PER_SUB_KINDS_TYPE) * KCDefine.B_UNITS_KINDS_PER_SUB_KINDS_TYPE) : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 서브 종류 타입 값으로 변환한다 */
 	public static int ExKindsToSubKindsTypeVal(this int a_nSender)
 	{
-		return a_nSender.ExIsValidIdx() ? (a_nSender % KCDefine.B_UNIT_KINDS_PER_KINDS_TYPE) / KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE : KCDefine.B_IDX_INVALID;
+		return a_nSender.ExIsValidIdx() ? (a_nSender % KCDefine.B_UNITS_KINDS_PER_KINDS_TYPE) / KCDefine.B_UNITS_KINDS_PER_SUB_KINDS_TYPE : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 세부 서브 종류 타입으로 변환한다 */
 	public static int ExKindsToDetailSubKindsType(this int a_nSender)
 	{
-		int nDetailSubKindsType = a_nSender % KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE;
+		int nDetailSubKindsType = a_nSender % KCDefine.B_UNITS_KINDS_PER_SUB_KINDS_TYPE;
 		return a_nSender.ExIsValidIdx() ? a_nSender.ExKindsToSubKindsType() + nDetailSubKindsType : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 세부 서브 종류 타입 값으로 변환한다 */
 	public static int ExKindsToDetailSubKindsTypeVal(this int a_nSender)
 	{
-		return a_nSender.ExIsValidIdx() ? a_nSender % KCDefine.B_UNIT_KINDS_PER_SUB_KINDS_TYPE : KCDefine.B_IDX_INVALID;
+		return a_nSender.ExIsValidIdx() ? a_nSender % KCDefine.B_UNITS_KINDS_PER_SUB_KINDS_TYPE : KCDefine.B_IDX_INVALID;
 	}
 
 	/** 종류 => 보정 된 종류로 변환한다 */
@@ -142,19 +142,19 @@ public static partial class CExtension
 	/** 고유 레벨 식별자 => 식별자로 변환한다 */
 	public static int ExULevelIDToLevelID(this ulong a_nSender)
 	{
-		return (int)(a_nSender % KCDefine.B_UNIT_IDS_PER_IDS_02);
+		return (int)(a_nSender % KCDefine.B_UNITS_IDS_PER_IDS_02);
 	}
 
 	/** 고유 레벨 식별자 => 스테이지 식별자로 변환한다 */
 	public static int ExULevelIDToStageID(this ulong a_nSender)
 	{
-		return (int)((a_nSender % KCDefine.B_UNIT_IDS_PER_IDS_03) / KCDefine.B_UNIT_IDS_PER_IDS_02);
+		return (int)((a_nSender % KCDefine.B_UNITS_IDS_PER_IDS_03) / KCDefine.B_UNITS_IDS_PER_IDS_02);
 	}
 
 	/** 고유 레벨 식별자 => 챕터 식별자로 변환한다 */
 	public static int ExULevelIDToChapterID(this ulong a_nSender)
 	{
-		return (int)(a_nSender / KCDefine.B_UNIT_IDS_PER_IDS_03);
+		return (int)(a_nSender / KCDefine.B_UNITS_IDS_PER_IDS_03);
 	}
 
 	/** 교유 레벨 식별자 => 식별자 정보로 변환한다 */
@@ -197,7 +197,7 @@ public static partial class CExtension
 		CFunc.Assert(a_oCanvas != null);
 		a_stSender.z = KCDefine.B_VAL_0_REAL;
 
-		return ((a_stSender.ExGetScaleVec(a_oCanvas.transform.localScale / KCDefine.B_UNIT_SCALE) + a_oCanvas.transform.position)).ExToLocal(a_oParent);
+		return ((a_stSender.ExGetScaleVec(a_oCanvas.transform.localScale / KCDefine.B_UNITS_SCALE) + a_oCanvas.transform.position)).ExToLocal(a_oParent);
 	}
 
 	/** 월드 => 캔버스로 변환한다 */

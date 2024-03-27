@@ -582,9 +582,9 @@ public static partial class KCDefine
 	public static readonly Vector3 B_ANCHOR_DOWN_RIGHT = new Vector3(1.0f, 0.0f, 0.0f);
 	public static readonly Vector3 B_ANCHOR_DOWN_CENTER = new Vector3(0.5f, 0.0f, 0.0f);
 
-	public static readonly Vector3 B_ANCHOR_MIDDLE_LEFT = new Vector3(0.0f, 0.5f, 0.0f);
-	public static readonly Vector3 B_ANCHOR_MIDDLE_RIGHT = new Vector3(1.0f, 0.5f, 0.0f);
-	public static readonly Vector3 B_ANCHOR_MIDDLE_CENTER = new Vector3(0.5f, 0.5f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_MID_LEFT = new Vector3(0.0f, 0.5f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_MID_RIGHT = new Vector3(1.0f, 0.5f, 0.0f);
+	public static readonly Vector3 B_ANCHOR_MID_CENTER = new Vector3(0.5f, 0.5f, 0.0f);
 	// 앵커 }
 
 	// 위치

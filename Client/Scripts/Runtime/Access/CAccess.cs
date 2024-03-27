@@ -15,9 +15,9 @@ public static partial class CAccess
 	public static bool IsSupportsMSAA => SystemInfo.supportsMultisampledTextures > KCDefine.B_VAL_0_INT;
 	public static bool IsSupportsGPUInstancing => SystemInfo.supportsInstancing;
 
-	public static float LODBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNIT_SCALE;
-	public static float ShadowDepthBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNIT_SCALE;
-	public static float ShadowNormalBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNIT_SCALE;
+	public static float LODBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNITS_SCALE;
+	public static float ShadowDepthBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNITS_SCALE;
+	public static float ShadowNormalBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNITS_SCALE;
 
 	public static string MidnightDeltaTimeStr => new System.DateTime(CAccess.MidnightDeltaTime.Ticks).ToString(KCDefine.B_DATE_T_FMT_HH_MM_SS);
 

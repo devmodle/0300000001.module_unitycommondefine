@@ -16,7 +16,7 @@ public static partial class CExtension
 		bool a_bIsExtraNumStr = true, SystemLanguage a_eSystemLanguage = SystemLanguage.English)
 	{
 		var oNumTokenDict = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.B_NUM_TOKEN_DICT_KOREAN : KCDefine.B_NUM_TOKEN_DICT_ENGLISH;
-		decimal dmDigitsUnit = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.B_UNIT_DIGITS_TEN_THOUSAND : KCDefine.B_UNIT_DIGITS_THOUSAND;
+		decimal dmDigitsUnit = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.B_UNITS_DIGITS_TEN_THOUSAND : KCDefine.B_UNITS_DIGITS_THOUSAND;
 
 		foreach(var stKeyVal in oNumTokenDict)
 		{

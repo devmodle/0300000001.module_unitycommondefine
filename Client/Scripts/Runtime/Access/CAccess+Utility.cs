@@ -150,7 +150,7 @@ public static partial class CAccess
 	public static float RightSafeAreaScale => (CAccess.DeviceScreenSize.x - (CAccess.SafeArea.x + CAccess.SafeArea.width)) / CAccess.DeviceScreenSize.x;
 
 	public static float ResolutionScale => CAccess.DeviceScreenSize.x.ExIsLess(CAccess.ResolutionScreenSize.x) ? CAccess.DeviceScreenSize.x / CAccess.ResolutionScreenSize.x : KCDefine.B_VAL_1_REAL;
-	public static float ResolutionUnitScale => KCDefine.B_UNIT_SCALE * CAccess.ResolutionScale;
+	public static float ResolutionUnitScale => KCDefine.B_UNITS_SCALE * CAccess.ResolutionScale;
 	public static float DesktopResolutionScale => CAccess.DesktopScreenSize.x.ExIsLess(CAccess.ResolutionDesktopScreenSize.x) ? CAccess.DesktopScreenSize.x / CAccess.ResolutionDesktopScreenSize.x : KCDefine.B_VAL_1_REAL;
 
 	public static string ProductInfoTableLoadPath => File.Exists(KCDefine.U_RUNTIME_TABLE_P_G_PRODUCT_INFO) ? KCDefine.U_RUNTIME_TABLE_P_G_PRODUCT_INFO : KCDefine.U_TABLE_P_G_PRODUCT_INFO;

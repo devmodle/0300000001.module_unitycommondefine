@@ -109,9 +109,9 @@ public struct STIDInfo
 	#endregion // 상수
 
 	#region 프로퍼티
-	[IgnoreMember] public ulong UniqueID01 => this.UniqueID02 + ((ulong)m_nID01 * KCDefine.B_UNIT_IDS_PER_IDS_01);
-	[IgnoreMember] public ulong UniqueID02 => this.UniqueID03 + ((ulong)m_nID02 * KCDefine.B_UNIT_IDS_PER_IDS_02);
-	[IgnoreMember] public ulong UniqueID03 => (ulong)m_nID03 * KCDefine.B_UNIT_IDS_PER_IDS_03;
+	[IgnoreMember] public ulong UniqueID01 => this.UniqueID02 + ((ulong)m_nID01 * KCDefine.B_UNITS_IDS_PER_IDS_01);
+	[IgnoreMember] public ulong UniqueID02 => this.UniqueID03 + ((ulong)m_nID02 * KCDefine.B_UNITS_IDS_PER_IDS_02);
+	[IgnoreMember] public ulong UniqueID03 => (ulong)m_nID03 * KCDefine.B_UNITS_IDS_PER_IDS_03;
 	#endregion // 프로퍼티
 
 	#region 함수

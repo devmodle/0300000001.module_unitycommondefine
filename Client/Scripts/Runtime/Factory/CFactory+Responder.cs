@@ -57,9 +57,9 @@ public static partial class CFactory
 		if((oGameObj.transform as RectTransform) != null)
 		{
 			var oRectTrans = oGameObj.transform as RectTransform;
-			oRectTrans.pivot = KCDefine.B_ANCHOR_MIDDLE_CENTER;
-			oRectTrans.anchorMin = KCDefine.B_ANCHOR_MIDDLE_CENTER;
-			oRectTrans.anchorMax = KCDefine.B_ANCHOR_MIDDLE_CENTER;
+			oRectTrans.pivot = KCDefine.B_ANCHOR_MID_CENTER;
+			oRectTrans.anchorMin = KCDefine.B_ANCHOR_MID_CENTER;
+			oRectTrans.anchorMax = KCDefine.B_ANCHOR_MID_CENTER;
 
 			oRectTrans.sizeDelta = a_stSize;
 			oRectTrans.anchoredPosition = a_stPos;
