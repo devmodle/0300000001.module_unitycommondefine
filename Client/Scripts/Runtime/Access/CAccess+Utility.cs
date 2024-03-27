@@ -238,34 +238,35 @@ public static partial class CAccess
 		switch(a_eLevelQuality)
 		{
 			case ELevelQuality.HIGH:
-				return KCDefine.U_ASSET_P_G_HIGH_QUALITY_URP;
+				return KCDefine.G_ASSET_P_URP_QUALITY_HIGH;
 
 			case ELevelQuality.ULTRA:
-				return KCDefine.U_ASSET_P_G_ULTRA_QUALITY_URP;
+				return KCDefine.G_ASSET_P_URP_QUALITY_ULTRA;
 		}
 
-		return KCDefine.U_ASSET_P_G_NORM_QUALITY_URP;
+		return KCDefine.G_ASSET_P_URP_QUALITY_NORM;
 	}
 
 	/** URP 전역 볼륨 프로필 경로를 반환한다 */
-	public static string GetPathURPGlobalVolumeProfile(ELevelQuality a_eLevelQuality)
+	public static string GetPathURPProfileVolumeGlobal(ELevelQuality a_eLevelQuality)
 	{
 		switch(a_eLevelQuality)
 		{
 			case ELevelQuality.HIGH:
-				return KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_HIGH_QUALITY;
+				return KCDefine.G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_HIGH;
 
 			case ELevelQuality.ULTRA:
-				return KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_ULTRA_QUALITY;
+				return KCDefine.G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_ULTRA;
 		}
 
-		return KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_NORM_QUALITY;
+		return KCDefine.G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_NORM;
 	}
 
 	/** 시간 비율을 변경한다 */
-	public static void SetTimeScale(float a_fScale)
+	public static void SetScaleTime(float a_fScale)
 	{
 		Time.timeScale = a_fScale.ExGetClampVal(KCDefine.B_VAL_0_REAL, KCDefine.B_VAL_9_REAL);
+		Time.fixedDeltaTime = (KCDefine.B_VAL_1_INT / (float)Application.targetFrameRate) / a_fScale;
 	}
 
 	/** 값을 할당한다 */

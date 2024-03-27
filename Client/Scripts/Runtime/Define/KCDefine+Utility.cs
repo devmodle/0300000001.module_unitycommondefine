@@ -8,18 +8,6 @@ using DG.Tweening;
 /** 상수 - 유틸리티 */
 public static partial class KCDefine
 {
-	#region 프로퍼티
-	public static string U_DATA_P_COMMON_APP_INFO => $"{KCDefine.B_DIR_P_WRITABLE}InfoAppCommon.bytes";
-	public static string U_DATA_P_COMMON_USER_INFO => $"{KCDefine.B_DIR_P_WRITABLE}InfoUserCommon.bytes";
-	public static string U_DATA_P_COMMON_GAME_INFO => $"{KCDefine.B_DIR_P_WRITABLE}InfoGameCommon.bytes";
-
-#if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-	public static string U_IMG_P_SCREENSHOT => $"{Application.identifier}/Screenshot.png";
-#else
-	public static string U_IMG_P_SCREENSHOT => $"{KCDefine.B_DIR_P_WRITABLE}Screenshot.png";
-#endif // #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
-	#endregion // 프로퍼티
-
 	#region 기본
 	// 개수 {
 	public const int U_MAX_NUM_LAYERS = 32;
@@ -709,21 +697,21 @@ public static partial class KCDefine
 	public static readonly string U_OBJ_P_G_FOCUS_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_FocusPopup";
 	public static readonly string U_OBJ_P_G_TUTORIAL_POPUP = $"{KCDefine.B_DIR_P_PREFABS}{KCDefine.B_DIR_P_GLOBAL}{KCDefine.B_DIR_P_POPUP}G_TutorialPopup";
 
-	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS_NORM_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings_NormQuality";
-	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS_HIGH_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings_HighQuality";
-	public static readonly string U_ASSET_P_G_LIGHTING_SETTINGS_ULTRA_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_LightingSettings_UltraQuality";
+	public static readonly string G_ASSET_P_SETTINGS_LIGHTING_QUALITY_NORM = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_SettingsLighting_QualityNorm";
+	public static readonly string G_ASSET_P_SETTINGS_LIGHTING_QUALITY_HIGH = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_SettingsLighting_QualityHigh";
+	public static readonly string G_ASSET_P_SETTINGS_LIGHTING_QUALITY_ULTRA = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_SettingsLighting_QualityUltra";
 
-	public static readonly string U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_NORM_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_GlobalVolumeProfile_NormQuality";
-	public static readonly string U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_HIGH_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_GlobalVolumeProfile_HighQuality";
-	public static readonly string U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_ULTRA_QUALITY = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_GlobalVolumeProfile_UltraQuality";
+	public static readonly string G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_NORM = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_ProfileVolumeGlobal_QualityNorm";
+	public static readonly string G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_HIGH = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_ProfileVolumeGlobal_QualityHigh";
+	public static readonly string G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_ULTRA = $"{KCDefine.B_DIR_P_SETTINGS}{KCDefine.B_DIR_P_GLOBAL}G_URP_ProfileVolumeGlobal_QualityUltra";
 
-	public static readonly string U_ASSET_P_G_OPTS_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_OptsInfoTable";
-	public static readonly string U_ASSET_P_G_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
-	public static readonly string U_ASSET_P_G_PROJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProjInfoTable";
-	public static readonly string U_ASSET_P_G_LOCALIZE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_LocalizeInfoTable";
-	public static readonly string U_ASSET_P_G_DEFINE_SYMBOL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DefineSymbolInfoTable";
-	public static readonly string U_ASSET_P_G_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
-	public static readonly string U_ASSET_P_G_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
+	public static readonly string G_ASSET_P_OPTS_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_OptsInfoTable";
+	public static readonly string G_ASSET_P_BUILD_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_BuildInfoTable";
+	public static readonly string G_ASSET_P_PROJ_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProjInfoTable";
+	public static readonly string G_ASSET_P_LOCALIZE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_LocalizeInfoTable";
+	public static readonly string G_ASSET_P_DEFINE_SYMBOL_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DefineSymbolInfoTable";
+	public static readonly string G_ASSET_P_DEVICE_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_DeviceInfoTable";
+	public static readonly string G_ASSET_P_PRODUCT_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_ProductInfoTable";
 
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_01";
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_02";
@@ -735,15 +723,15 @@ public static partial class KCDefine
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_08";
 	public static readonly string U_ASSET_P_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_UTILITY}U_SpriteAtlas_09";
 
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_01";
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_02";
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_03";
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_04";
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_05";
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_06";
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_07";
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_08";
-	public static readonly string U_ASSET_P_G_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_09";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_01";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_02";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_03 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_03";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_04 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_04";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_05 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_05";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_06 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_06";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_07 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_07";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_08 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_08";
+	public static readonly string G_ASSET_P_SPRITE_ATLAS_09 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}G_SpriteAtlas_09";
 
 	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_01 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_01";
 	public static readonly string U_ASSET_P_ES_SPRITE_ATLAS_02 = $"{KCDefine.B_DIR_P_SPRITE_ATLASES}{KCDefine.B_DIR_P_GLOBAL}ES_SpriteAtlas_02";
@@ -868,15 +856,15 @@ public static partial class KCDefine
 		KCDefine.U_ASSET_P_SPRITE_ATLAS_08,
 		KCDefine.U_ASSET_P_SPRITE_ATLAS_09,
 
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_01,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_02,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_03,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_04,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_05,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_06,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_07,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_01,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_02,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_03,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_04,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_05,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_06,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_07,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_08,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_09
 	};
 
 	public static readonly List<string> U_ASSET_P_ES_SPRITE_ATLAS_LIST = new List<string>() {
@@ -922,7 +910,7 @@ public static partial class KCDefine
 	#region 조건부 런타임 상수
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 	// 경로
-	public static readonly string U_ASSET_P_G_PLUGIN_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_PluginInfoTable";
+	public static readonly string G_ASSET_P_PLUGIN_INFO_TABLE = $"{KCDefine.B_DIR_P_SCRIPTABLES}{KCDefine.B_DIR_P_GLOBAL}G_PluginInfoTable";
 #endif // #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 
 #if ENABLE_GOOGLESHEET && (DEBUG || DEVELOPMENT_BUILD)
