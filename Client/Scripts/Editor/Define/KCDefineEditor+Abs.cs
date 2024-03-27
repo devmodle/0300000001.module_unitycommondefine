@@ -73,8 +73,8 @@ public static partial class KCDefineEditor
 	public const string B_PROPERTY_N_QUALITY_S_DEF_QUALITY = "m_PerPlatformDefaultQuality";
 
 	public const string B_SCENE_N_PATTERN = "t:Example t:Scene";
-	public const string B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE = "T_LightingSettings";
-	public const string B_ASSET_N_URP_GLOBAL_VOLUME_PROFILE_TEMPLATE = "T_URP_GlobalVolumeProfile";
+	public const string B_ASSET_N_SETTINGS_LIGHTING_TEMPLATE = "T_LightingSettings";
+	public const string B_ASSET_N_URP_PROFILE_VOLUME_GLOBAL_TEMPLATE = "T_URP_GlobalVolumeProfile";
 
 	public const string B_FUNC_N_GET_LIGHTMAP_ENCODING_QUALITY = "GetLightmapEncodingQualityForPlatformGroup";
 	public const string B_FUNC_N_GET_LIGHTMAP_STREAMING_ENABLE = "GetLightmapStreamingEnabledForPlatformGroup";
@@ -270,11 +270,11 @@ public static partial class KCDefineEditor
 	public static readonly string B_ASSET_P_SND_MANAGER = $"{KCDefineEditor.B_DIR_P_PROJ_SETTINGS}AudioManager.asset";
 	public static readonly string B_ASSET_P_QUALITY_SETTINGS = $"{KCDefineEditor.B_DIR_P_PROJ_SETTINGS}QualitySettings.asset";
 
-	public static readonly string B_ASSET_P_OPTS_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_OPTS_INFO_TABLE}.asset";
-	public static readonly string B_ASSET_P_BUILD_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE}.asset";
-	public static readonly string B_ASSET_P_PROJ_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE}.asset";
-	public static readonly string B_ASSET_P_LOCALIZE_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LOCALIZE_INFO_TABLE}.asset";
-	public static readonly string B_ASSET_P_DEFINE_SYMBOL_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_INFO_TABLE}.asset";
+	public static readonly string B_ASSET_P_OPTS_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_OPTS_INFO_TABLE}.asset";
+	public static readonly string B_ASSET_P_BUILD_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_BUILD_INFO_TABLE}.asset";
+	public static readonly string B_ASSET_P_PROJ_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_PROJ_INFO_TABLE}.asset";
+	public static readonly string B_ASSET_P_LOCALIZE_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_LOCALIZE_INFO_TABLE}.asset";
+	public static readonly string B_ASSET_P_DEFINE_SYMBOL_INFO_TABLE = $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_DEFINE_SYMBOL_INFO_TABLE}.asset";
 
 	public static readonly string B_ASSET_P_FMT_SCRIPTABLE_OBJ = $"{KCDefineEditor.B_DIR_P_ASSETS}{"{0}.asset"}";
 	public static readonly string B_ASSET_P_FMT_DEFINE_S_OUTPUT = $"{KCDefineEditor.B_ABS_DIR_P_ASSETS}../Builds/DefineSymbols/{"{0}DefineSymbols.txt"}";
@@ -341,15 +341,15 @@ public static partial class KCDefineEditor
 		KCDefine.U_ASSET_P_SPRITE_ATLAS_08,
 		KCDefine.U_ASSET_P_SPRITE_ATLAS_09,
 
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_01,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_02,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_03,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_04,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_05,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_06,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_07,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08,
-		KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_01,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_02,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_03,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_04,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_05,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_06,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_07,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_08,
+		KCDefine.G_ASSET_P_SPRITE_ATLAS_09,
 
 		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_01,
 		KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_02,
@@ -1019,42 +1019,42 @@ public static partial class KCDefineEditor
 
 	public static readonly List<(string, string)> B_ASSET_P_INFO_LIST = new List<(string, string)>() {
 		// 41-UnityProject {
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_OptsInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_OPTS_INFO_TABLE}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_BuildInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_BUILD_INFO_TABLE}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_DefineSymbolInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_DEFINE_SYMBOL_INFO_TABLE}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_ProjInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_PROJ_INFO_TABLE}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_DeviceInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_DEVICE_INFO_TABLE}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_LocalizeInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LOCALIZE_INFO_TABLE}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_OptsInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_OPTS_INFO_TABLE}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_BuildInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_BUILD_INFO_TABLE}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_DefineSymbolInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_DEFINE_SYMBOL_INFO_TABLE}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_ProjInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_PROJ_INFO_TABLE}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_DeviceInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_DEVICE_INFO_TABLE}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_LocalizeInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_LOCALIZE_INFO_TABLE}.asset"),
 
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE}.lighting", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS_NORM_QUALITY}.lighting"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE}.lighting", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS_HIGH_QUALITY}.lighting"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_LIGHTING_SETTINGS_TEMPLATE}.lighting", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_LIGHTING_SETTINGS_ULTRA_QUALITY}.lighting"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_SETTINGS_LIGHTING_TEMPLATE}.lighting", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SETTINGS_LIGHTING_QUALITY_NORM}.lighting"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_SETTINGS_LIGHTING_TEMPLATE}.lighting", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SETTINGS_LIGHTING_QUALITY_HIGH}.lighting"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_SETTINGS_LIGHTING_TEMPLATE}.lighting", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SETTINGS_LIGHTING_QUALITY_ULTRA}.lighting"),
 
 #if URP_MODULE_ENABLE && URP_POST_PROCESSING_ENABLE
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_URP_GLOBAL_VOLUME_PROFILE_TEMPLATE}.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_NORM_QUALITY}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_URP_GLOBAL_VOLUME_PROFILE_TEMPLATE}.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_HIGH_QUALITY}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_URP_GLOBAL_VOLUME_PROFILE_TEMPLATE}.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_URP_GLOBAL_VOLUME_PROFILE_ULTRA_QUALITY}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_URP_PROFILE_VOLUME_GLOBAL_TEMPLATE}.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_NORM}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_URP_PROFILE_VOLUME_GLOBAL_TEMPLATE}.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_HIGH}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Settings/{KCDefineEditor.B_ASSET_N_URP_PROFILE_VOLUME_GLOBAL_TEMPLATE}.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_URP_PROFILE_VOLUME_GLOBAL_QUALITY_ULTRA}.asset"),
 #endif // #if URP_MODULE_ENABLE && URP_POST_PROCESSING_ENABLE
 
 #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_PluginInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_PLUGIN_INFO_TABLE}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_PluginInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_PLUGIN_INFO_TABLE}.asset"),
 #endif // #if ADS_MODULE_ENABLE || FLURRY_MODULE_ENABLE || APPS_FLYER_MODULE_ENABLE
 
 #if PURCHASE_MODULE_ENABLE
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_ProductInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_PRODUCT_INFO_TABLE}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Scriptables/T_ProductInfoTable.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_PRODUCT_INFO_TABLE}.asset"),
 #endif // #if PURCHASE_MODULE_ENABLE
 		// 41-UnityProject }
 
 		// 42-SubUnityProject
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_01}.spriteatlasv2"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_02}.spriteatlasv2"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_03}.spriteatlasv2"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_04}.spriteatlasv2"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_05}.spriteatlasv2"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_06}.spriteatlasv2"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_07}.spriteatlasv2"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_08}.spriteatlasv2"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_SPRITE_ATLAS_09}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_01}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_02}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_03}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_04}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_05}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_06}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_07}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_08}.spriteatlasv2"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_SPRITE_ATLAS_09}.spriteatlasv2"),
 
 		// 92-SubUnityProjectEditor
 		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_AUTO}SpriteAtlases/T_SpriteAtlas.spriteatlasv2", $"{KCDefineEditor.B_DIR_P_SUB_UNITY_PROJ_EDITOR_RESOURCES}{KCDefine.U_ASSET_P_ES_SPRITE_ATLAS_01}.spriteatlasv2"),
@@ -1071,9 +1071,9 @@ public static partial class KCDefineEditor
 	public static readonly List<(string, string)> B_PIPELINE_P_INFO_LIST = new List<(string, string)>() {
 		// 41-UnityProject {
 #if URP_ENABLE || URP_MODULE_ENABLE
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_NORM_QUALITY_URP}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_HIGH_QUALITY_URP}.asset"),
-		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Pipelines/T_URPAsset.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.U_ASSET_P_G_ULTRA_QUALITY_URP}.asset")
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Pipelines/T_URP_Asset.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_URP_QUALITY_NORM}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Pipelines/T_URP_Asset.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_URP_QUALITY_HIGH}.asset"),
+		($"{KCDefineEditor.B_DIR_P_TEMPLATES}{KCDefineEditor.B_DIR_P_UNITY_PROJ}Pipelines/T_URP_Asset.asset", $"{KCDefineEditor.B_DIR_P_UNITY_PROJ_RESOURCES}{KCDefine.G_ASSET_P_URP_QUALITY_ULTRA}.asset")
 #endif // #if URP_ENABLE || URP_MODULE_ENABLE
 		// 41-UnityProject }
 	};
