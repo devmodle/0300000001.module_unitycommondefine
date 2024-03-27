@@ -36,42 +36,42 @@ public static partial class KCDefine
 	// 시간 }
 
 	// 변환 {
-	public const int B_UNIT_BITS_PER_BYTE = 8;
-	public const int B_UNIT_BYTES_PER_KILO_BYTE = 1024;
-	public const int B_UNIT_BYTES_PER_MEGA_BYTE = 1024 * 1024;
+	public const int B_UNITS_BITS_PER_BYTE = 8;
+	public const int B_UNITS_BYTES_PER_KILO_BYTE = 1024;
+	public const int B_UNITS_BYTES_PER_MEGA_BYTE = 1024 * 1024;
 
-	public const int B_UNIT_SECS_PER_HOUR = 360;
-	public const int B_UNIT_SECS_PER_MINUTE = 60;
-	public const int B_UNIT_MILLI_SECS_PER_SEC = 1000;
-	public const int B_UNIT_MICRO_SECS_PER_SEC = 1000000;
+	public const int B_UNITS_SECS_PER_HOUR = 360;
+	public const int B_UNITS_SECS_PER_MINUTE = 60;
+	public const int B_UNITS_MILLI_SECS_PER_SEC = 1000;
+	public const int B_UNITS_MICRO_SECS_PER_SEC = 1000000;
 
-	public const int B_UNIT_CENTI_METER = 100;
-	public const int B_UNIT_NORM_VAL_TO_PERCENT = 100;
+	public const int B_UNITS_METER_CENTI = 100;
+	public const int B_UNITS_VAL_NORM_TO_PERCENT = 100;
 
-	public const int B_UNIT_DIGITS_TEN = 10;
-	public const int B_UNIT_DIGITS_HUNDRED = 100;
-	public const int B_UNIT_DIGITS_THOUSAND = 1000;
-	public const int B_UNIT_DIGITS_TEN_THOUSAND = 10000;
-	public const int B_UNIT_DIGITS_HUNDRED_THOUSAND = 100000;
+	public const int B_UNITS_DIGITS_TEN = 10;
+	public const int B_UNITS_DIGITS_HUNDRED = 100;
+	public const int B_UNITS_DIGITS_THOUSAND = 1000;
+	public const int B_UNITS_DIGITS_TEN_THOUSAND = 10000;
+	public const int B_UNITS_DIGITS_HUNDRED_THOUSAND = 100000;
 	// 변환 }
 
 	// 해상도 {
-	public const float B_UNIT_SCALE = 1.0f / (float)KCDefine.B_UNIT_CENTI_METER;
-	public const float B_UNIT_LIGHTMAP_RESOLUTION = 1.0f;
+	public const float B_UNITS_SCALE = 1.0f / (float)KCDefine.B_UNITS_METER_CENTI;
+	public const float B_UNITS_RESOLUTION_LIGHTMAP = 1.0f;
 
-	public const float B_UNIT_PIXELS_PER_UNIT = 1.0f;
-	public const float B_UNIT_REF_PIXELS_PER_UNIT = KCDefine.B_UNIT_PIXELS_PER_UNIT;
+	public const float B_UNITS_PER_PIXELS = 1.0f;
+	public const float B_UNITS_PER_PIXELS_REF = KCDefine.B_UNITS_PER_PIXELS;
 	// 해상도 }
 
 	// 식별자 {
-	public const int B_UNIT_IDS_PER_IDS_01 = 1;
-	public const int B_UNIT_IDS_PER_IDS_02 = 10000;
-	public const int B_UNIT_IDS_PER_IDS_03 = 10000000;
+	public const int B_UNITS_IDS_PER_IDS_01 = 1;
+	public const int B_UNITS_IDS_PER_IDS_02 = 10000;
+	public const int B_UNITS_IDS_PER_IDS_03 = 10000000;
 
-	public const int B_UNIT_KINDS_PER_TYPE = 100000000;
-	public const int B_UNIT_KINDS_PER_SUB_TYPE = 10000000;
-	public const int B_UNIT_KINDS_PER_KINDS_TYPE = 100000;
-	public const int B_UNIT_KINDS_PER_SUB_KINDS_TYPE = 100;
+	public const int B_UNITS_KINDS_PER_TYPE = 100000000;
+	public const int B_UNITS_KINDS_PER_SUB_TYPE = 10000000;
+	public const int B_UNITS_KINDS_PER_KINDS_TYPE = 100000;
+	public const int B_UNITS_KINDS_PER_SUB_KINDS_TYPE = 100;
 	// 식별자 }
 	#endregion // 컴파일 상수
 

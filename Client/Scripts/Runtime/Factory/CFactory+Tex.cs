@@ -10,7 +10,7 @@ public static partial class CFactory
 	#region 클래스 함수
 	/** 스프라이트를 생성한다 */
 	public static Sprite MakeSprite(string a_oName,
-		Texture2D a_oTex2D, Rect a_stRect, Vector3 a_stPivot, float a_fPixelsPerUnit = KCDefine.B_UNIT_PIXELS_PER_UNIT)
+		Texture2D a_oTex2D, Rect a_stRect, Vector3 a_stPivot, float a_fPixelsPerUnit = KCDefine.B_UNITS_PER_PIXELS)
 	{
 		var oSprite = Sprite.Create(a_oTex2D, a_stRect, a_stPivot, a_fPixelsPerUnit);
 		oSprite.name = a_oName;

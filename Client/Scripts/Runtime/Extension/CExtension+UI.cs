@@ -115,7 +115,7 @@ public static partial class CExtension
 		}
 
 		a_oSender.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
-		a_oSender.referencePixelsPerUnit = KCDefine.B_UNIT_REF_PIXELS_PER_UNIT;
+		a_oSender.referencePixelsPerUnit = KCDefine.B_UNITS_PER_PIXELS_REF;
 	}
 
 	/** 상태를 리셋한다 */
