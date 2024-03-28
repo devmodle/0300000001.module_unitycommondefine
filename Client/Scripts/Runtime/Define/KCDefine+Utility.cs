@@ -66,8 +66,8 @@ public static partial class KCDefine
 	public const float U_DEPTH_MAIN_CAMERA = 0.0f;
 	public const float U_MAX_PERCENT_ASYNC_OPERATION = 0.9f;
 
-	public const float U_DISTANCE_PLANE_FAR_CAMERA = 100000.0f * KCDefine.B_UNITS_SCALE;
-	public const float U_DISTANCE_PLANE_NEAR_CAMERA = 1.0f * KCDefine.B_UNITS_SCALE;
+	public const float U_DISTANCE_PLANE_FAR_CAMERA = 100000.0f * KCDefine.G_UNIT_SCALE;
+	public const float U_DISTANCE_PLANE_NEAR_CAMERA = 1.0f * KCDefine.G_UNIT_SCALE;
 
 	public const float U_UNIT_TABLET_INCHES = 6.5f;
 	public const float U_UNIT_SCROLL_SENSITIVITY = 250.0f;

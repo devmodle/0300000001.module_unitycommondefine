@@ -21,7 +21,7 @@ public static partial class CExtensionAccess
 	public static bool ExIsValidIdx<T>(this List<T> a_oSender, int a_nIdx)
 	{
 		CFunc.Assert(a_oSender != null);
-		return a_nIdx > KCDefine.B_IDX_INVALID && a_nIdx < a_oSender.Count;
+		return a_nIdx > KCDefine.G_IDX_INVALID && a_nIdx < a_oSender.Count;
 	}
 
 	/** 인덱스 유효 여부를 검사한다 */

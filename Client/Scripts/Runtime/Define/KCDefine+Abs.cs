@@ -592,8 +592,8 @@ public static partial class KCDefine
 	public static readonly Vector3 B_POS_TOUCH_RESPONDER = Vector3.zero;
 
 	// 인덱스 {
-	public static readonly Vector2Int B_IDX_INVALID_2D = new Vector2Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
-	public static readonly Vector3Int B_IDX_INVALID_3D = new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
+	public static readonly Vector2Int G_IDX_INVALID_2D = new Vector2Int(KCDefine.G_IDX_INVALID, KCDefine.G_IDX_INVALID);
+	public static readonly Vector3Int G_IDX_INVALID_3D = new Vector3Int(KCDefine.G_IDX_INVALID, KCDefine.G_IDX_INVALID, KCDefine.G_IDX_INVALID);
 
 	public static readonly List<(Vector2Int, Vector2Int)> B_IDX_OFFSET_INFO_LIST_2D = new List<(Vector2Int, Vector2Int)>() {
 		(Vector2Int.down, Vector2Int.up),

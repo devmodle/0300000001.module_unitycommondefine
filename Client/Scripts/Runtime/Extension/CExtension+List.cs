@@ -79,7 +79,7 @@ public static partial class CExtension
 		CFunc.Assert(!a_bIsAssert || a_oSender != null);
 
 		// 값 추가가 불가능 할 경우
-		if(a_oSender == null || a_nIdx <= KCDefine.B_IDX_INVALID || a_nIdx > a_oSender.Count)
+		if(a_oSender == null || a_nIdx <= KCDefine.G_IDX_INVALID || a_nIdx > a_oSender.Count)
 		{
 			return;
 		}
@@ -284,7 +284,7 @@ public static partial class CExtension
 			for(j = i - 1; j >= KCDefine.B_VAL_0_INT; --j)
 			{
 				// 정렬 진행이 필요 없을 경우
-				if(a_oCompare(a_oSender[j], tVal) <= KCDefine.B_COMPARE_EQUALS)
+				if(a_oCompare(a_oSender[j], tVal) <= KCDefine.G_COMPARE_EQUALS)
 				{
 					break;
 				}
@@ -328,7 +328,7 @@ public static partial class CExtension
 
 		for(int i = 0; i < a_oSender.Count; ++i)
 		{
-			nVal |= KCDefine.B_VAL_1_INT.ExToLShiftBits(a_oSender[i]);
+			nVal |= KCDefine.B_VAL_1_INT.ExToBitsLShift(a_oSender[i]);
 		}
 
 		return nVal;

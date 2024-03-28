@@ -102,16 +102,16 @@ public struct STIDInfo
 	#region 상수
 	public static readonly STIDInfo INVALID = new STIDInfo()
 	{
-		m_nID01 = KCDefine.B_IDX_INVALID,
-		m_nID02 = KCDefine.B_IDX_INVALID,
-		m_nID03 = KCDefine.B_IDX_INVALID
+		m_nID01 = KCDefine.G_IDX_INVALID,
+		m_nID02 = KCDefine.G_IDX_INVALID,
+		m_nID03 = KCDefine.G_IDX_INVALID
 	};
 	#endregion // 상수
 
 	#region 프로퍼티
-	[IgnoreMember] public ulong UniqueID01 => this.UniqueID02 + ((ulong)m_nID01 * KCDefine.B_UNITS_IDS_PER_IDS_01);
-	[IgnoreMember] public ulong UniqueID02 => this.UniqueID03 + ((ulong)m_nID02 * KCDefine.B_UNITS_IDS_PER_IDS_02);
-	[IgnoreMember] public ulong UniqueID03 => (ulong)m_nID03 * KCDefine.B_UNITS_IDS_PER_IDS_03;
+	[IgnoreMember] public ulong UniqueID01 => this.UniqueID02 + ((ulong)m_nID01 * KCDefine.G_UNIT_IDS_PER_IDS_01);
+	[IgnoreMember] public ulong UniqueID02 => this.UniqueID03 + ((ulong)m_nID02 * KCDefine.G_UNIT_IDS_PER_IDS_02);
+	[IgnoreMember] public ulong UniqueID03 => (ulong)m_nID03 * KCDefine.G_UNIT_IDS_PER_IDS_03;
 	#endregion // 프로퍼티
 
 	#region 함수
@@ -161,9 +161,9 @@ public struct STIdxInfo : System.IEquatable<STIdxInfo>
 	#region 상수
 	public static readonly STIdxInfo INVALID = new STIdxInfo()
 	{
-		m_nIdxA = KCDefine.B_IDX_INVALID,
-		m_nIdxB = KCDefine.B_IDX_INVALID,
-		m_nIdxC = KCDefine.B_IDX_INVALID
+		m_nIdxA = KCDefine.G_IDX_INVALID,
+		m_nIdxB = KCDefine.G_IDX_INVALID,
+		m_nIdxC = KCDefine.G_IDX_INVALID
 	};
 	#endregion // 상수
 
@@ -501,7 +501,7 @@ public struct STGoogleSheetLoadInfo
 	#region 상수
 	public static readonly STGoogleSheetLoadInfo INVALID = new STGoogleSheetLoadInfo()
 	{
-		m_nSrcIdx = KCDefine.B_IDX_INVALID
+		m_nSrcIdx = KCDefine.G_IDX_INVALID
 	};
 	#endregion // 상수
 
@@ -529,7 +529,7 @@ public struct STGoogleSheetSaveInfo
 	#region 상수
 	public static readonly STGoogleSheetSaveInfo INVALID = new STGoogleSheetSaveInfo()
 	{
-		m_nSrcIdx = KCDefine.B_IDX_INVALID
+		m_nSrcIdx = KCDefine.G_IDX_INVALID
 	};
 	#endregion // 상수
 

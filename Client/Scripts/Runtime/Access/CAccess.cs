@@ -15,9 +15,9 @@ public static partial class CAccess
 	public static bool IsSupportsMSAA => SystemInfo.supportsMultisampledTextures > KCDefine.B_VAL_0_INT;
 	public static bool IsSupportsGPUInstancing => SystemInfo.supportsInstancing;
 
-	public static float LODBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNITS_SCALE;
-	public static float ShadowDepthBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNITS_SCALE;
-	public static float ShadowNormalBias => KCDefine.B_VAL_1_INT * KCDefine.B_UNITS_SCALE;
+	public static float LODBias => KCDefine.B_VAL_1_INT * KCDefine.G_UNIT_SCALE;
+	public static float ShadowDepthBias => KCDefine.B_VAL_1_INT * KCDefine.G_UNIT_SCALE;
+	public static float ShadowNormalBias => KCDefine.B_VAL_1_INT * KCDefine.G_UNIT_SCALE;
 
 	public static string MidnightDeltaTimeStr => new System.DateTime(CAccess.MidnightDeltaTime.Ticks).ToString(KCDefine.B_DATE_T_FMT_HH_MM_SS);
 
@@ -109,10 +109,10 @@ public static partial class CAccess
 		// 값이 동일 할 경우
 		if(a_fSender.ExIsEquals(a_fRhs))
 		{
-			return KCDefine.B_COMPARE_EQUALS;
+			return KCDefine.G_COMPARE_EQUALS;
 		}
 
-		return a_fSender.ExIsLess(a_fRhs) ? KCDefine.B_COMPARE_LESS : KCDefine.B_COMPARE_GREAT;
+		return a_fSender.ExIsLess(a_fRhs) ? KCDefine.G_COMPARE_LESS : KCDefine.G_COMPARE_GREAT;
 	}
 
 	/** 값을 비교한다 */
@@ -121,10 +121,10 @@ public static partial class CAccess
 		// 값이 동일 할 경우
 		if(a_dblSender.ExIsEquals(a_dblRhs))
 		{
-			return KCDefine.B_COMPARE_EQUALS;
+			return KCDefine.G_COMPARE_EQUALS;
 		}
 
-		return a_dblSender.ExIsLess(a_dblRhs) ? KCDefine.B_COMPARE_LESS : KCDefine.B_COMPARE_GREAT;
+		return a_dblSender.ExIsLess(a_dblRhs) ? KCDefine.G_COMPARE_LESS : KCDefine.G_COMPARE_GREAT;
 	}
 
 	/** 시간을 비교한다 */
@@ -340,7 +340,7 @@ public static partial class CAccess
 			case ESwapType.LESS:
 			{
 				// 보정이 필요 할 경우
-				if(a_tOutLhs.CompareTo(a_tOutRhs) > KCDefine.B_COMPARE_EQUALS)
+				if(a_tOutLhs.CompareTo(a_tOutRhs) > KCDefine.G_COMPARE_EQUALS)
 				{
 					CAccess.Swap(ref a_tOutLhs, ref a_tOutRhs);
 				}
@@ -350,7 +350,7 @@ public static partial class CAccess
 			case ESwapType.GREAT:
 			{
 				// 보정이 필요 할 경우
-				if(a_tOutLhs.CompareTo(a_tOutRhs) < KCDefine.B_COMPARE_EQUALS)
+				if(a_tOutLhs.CompareTo(a_tOutRhs) < KCDefine.G_COMPARE_EQUALS)
 				{
 					CAccess.Swap(ref a_tOutLhs, ref a_tOutRhs);
 				}

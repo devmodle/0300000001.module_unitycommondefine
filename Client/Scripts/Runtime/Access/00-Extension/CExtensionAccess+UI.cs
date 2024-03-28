@@ -142,7 +142,7 @@ public static partial class CExtensionAccess
 		float fScreenWidth = a_stScreenSize.y * (CAccess.DeviceScreenSize.x / CAccess.DeviceScreenSize.y);
 
 		return new Vector3(fNormPosX * (fScreenWidth / KCDefine.B_VAL_2_REAL),
-			fNormPosY * (a_stScreenSize.y / KCDefine.B_VAL_2_REAL), a_stSender.z) * KCDefine.B_UNITS_SCALE;
+			fNormPosY * (a_stScreenSize.y / KCDefine.B_VAL_2_REAL), a_stSender.z) * KCDefine.G_UNIT_SCALE;
 	}
 	#endregion // 클래스 접근 함수
 }

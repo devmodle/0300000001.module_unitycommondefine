@@ -13,7 +13,7 @@ public static partial class KCDefineEditor
 {
 	#region 상수
 	// 단위
-	public const int B_UNITS_VALIDATE_APP_BUNDLE_SIZE = 150;
+	public const int G_UNIT_VALIDATE_APP_BUNDLE_SIZE = 150;
 
 	// 토큰 {
 	public const string B_TOKEN_LOCAL_NDK_PATH_ANDROID = "# ndk.dir=";

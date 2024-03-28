@@ -88,7 +88,7 @@ public static partial class CExtension
 			for(j = i - 1; j >= KCDefine.B_VAL_0_INT; --j)
 			{
 				// 정렬 진행이 필요 없을 경우
-				if(a_oCompare(a_oSender[j], tVal) <= KCDefine.B_COMPARE_EQUALS)
+				if(a_oCompare(a_oSender[j], tVal) <= KCDefine.G_COMPARE_EQUALS)
 				{
 					break;
 				}

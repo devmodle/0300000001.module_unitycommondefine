@@ -70,7 +70,7 @@ public static partial class CExtensionAccess
 	/** 인덱스 유효 여부를 검사한다 */
 	public static bool ExIsValidIdx(this int a_nSender)
 	{
-		return a_nSender > KCDefine.B_IDX_INVALID;
+		return a_nSender > KCDefine.G_IDX_INVALID;
 	}
 
 	/** 인덱스 유효 여부를 검사한다 */
@@ -82,7 +82,7 @@ public static partial class CExtensionAccess
 	/** 인덱스 유효 여부를 검사한다 */
 	public static bool ExIsValidIdx(this Vector3Int a_stSender)
 	{
-		return a_stSender.x > KCDefine.B_IDX_INVALID && a_stSender.y > KCDefine.B_IDX_INVALID && a_stSender.z > KCDefine.B_IDX_INVALID;
+		return a_stSender.x > KCDefine.G_IDX_INVALID && a_stSender.y > KCDefine.G_IDX_INVALID && a_stSender.z > KCDefine.G_IDX_INVALID;
 	}
 
 	/** 빌드 번호 유효 여부를 검사한다 */
@@ -289,7 +289,7 @@ public static partial class CExtensionAccess
 	/** 이전 인덱스를 반환한다 */
 	public static Vector3Int ExGetPrevIdx(this Vector3Int a_stSender, EDirection a_eDirection)
 	{
-		CFunc.Assert(!a_stSender.Equals(KCDefine.B_IDX_INVALID_3D));
+		CFunc.Assert(!a_stSender.Equals(KCDefine.G_IDX_INVALID_3D));
 		CFunc.Assert(a_eDirection >= EDirection.UP && a_eDirection <= EDirection.RIGHT_DOWN);
 
 		var stIdxOffset = KCDefine.B_IDX_OFFSET_INFO_LIST_2D[(int)a_eDirection].Item1;
@@ -305,7 +305,7 @@ public static partial class CExtensionAccess
 	/** 다음 인덱스를 반환한다 */
 	public static Vector3Int ExGetNextIdx(this Vector3Int a_stSender, EDirection a_eDirection)
 	{
-		CFunc.Assert(!a_stSender.Equals(KCDefine.B_IDX_INVALID_3D));
+		CFunc.Assert(!a_stSender.Equals(KCDefine.G_IDX_INVALID_3D));
 		CFunc.Assert(a_eDirection >= EDirection.UP && a_eDirection <= EDirection.RIGHT_DOWN);
 
 		var stIdxOffset = KCDefine.B_IDX_OFFSET_INFO_LIST_2D[(int)a_eDirection].Item2;
@@ -340,7 +340,7 @@ public static partial class CExtensionAccess
 			}
 		}
 
-		return KCDefine.B_IDX_INVALID;
+		return KCDefine.G_IDX_INVALID;
 	}
 	#endregion // 클래스 함수
 
@@ -381,7 +381,7 @@ public static partial class CExtensionAccess
 	public static bool ExIsValidIdx<T>(this T[] a_oSender, int a_nIdx)
 	{
 		CFunc.Assert(a_oSender != null);
-		return a_nIdx > KCDefine.B_IDX_INVALID && a_nIdx < a_oSender.Length;
+		return a_nIdx > KCDefine.G_IDX_INVALID && a_nIdx < a_oSender.Length;
 	}
 
 	/** 인덱스 유효 여부를 검사한다 */
@@ -389,8 +389,8 @@ public static partial class CExtensionAccess
 	{
 		CFunc.Assert(a_oSender != null);
 
-		bool bIsValid01 = a_stIdx.y > KCDefine.B_IDX_INVALID && a_stIdx.y < a_oSender.GetLength(KCDefine.B_VAL_0_INT);
-		bool bIsValid02 = a_stIdx.x > KCDefine.B_IDX_INVALID && a_stIdx.x < a_oSender.GetLength(KCDefine.B_VAL_1_INT);
+		bool bIsValid01 = a_stIdx.y > KCDefine.G_IDX_INVALID && a_stIdx.y < a_oSender.GetLength(KCDefine.B_VAL_0_INT);
+		bool bIsValid02 = a_stIdx.x > KCDefine.G_IDX_INVALID && a_stIdx.x < a_oSender.GetLength(KCDefine.B_VAL_1_INT);
 
 		return bIsValid01 && bIsValid02;
 	}
@@ -400,9 +400,9 @@ public static partial class CExtensionAccess
 	{
 		CFunc.Assert(a_oSender != null);
 
-		bool bIsValid01 = a_stIdx.z > KCDefine.B_IDX_INVALID && a_stIdx.z < a_oSender.GetLength(KCDefine.B_VAL_0_INT);
-		bool bIsValid02 = a_stIdx.y > KCDefine.B_IDX_INVALID && a_stIdx.y < a_oSender.GetLength(KCDefine.B_VAL_1_INT);
-		bool bIsValid03 = a_stIdx.x > KCDefine.B_IDX_INVALID && a_stIdx.x < a_oSender.GetLength(KCDefine.B_VAL_2_INT);
+		bool bIsValid01 = a_stIdx.z > KCDefine.G_IDX_INVALID && a_stIdx.z < a_oSender.GetLength(KCDefine.B_VAL_0_INT);
+		bool bIsValid02 = a_stIdx.y > KCDefine.G_IDX_INVALID && a_stIdx.y < a_oSender.GetLength(KCDefine.B_VAL_1_INT);
+		bool bIsValid03 = a_stIdx.x > KCDefine.G_IDX_INVALID && a_stIdx.x < a_oSender.GetLength(KCDefine.B_VAL_2_INT);
 
 		return bIsValid01 && bIsValid02 && bIsValid03;
 	}
@@ -411,7 +411,7 @@ public static partial class CExtensionAccess
 	public static bool ExIsContains<T>(this T[] a_oSender, T a_tVal)
 	{
 		CFunc.Assert(a_oSender != null);
-		return System.Array.FindIndex(a_oSender, (a_tCompareVal) => a_tVal.Equals(a_tCompareVal)) > KCDefine.B_IDX_INVALID;
+		return System.Array.FindIndex(a_oSender, (a_tCompareVal) => a_tVal.Equals(a_tCompareVal)) > KCDefine.G_IDX_INVALID;
 	}
 
 	/** 포함 여부를 검사한다 */
@@ -1128,7 +1128,7 @@ public static partial class CExtensionAccess
 			}
 		}
 
-		return KCDefine.B_IDX_INVALID;
+		return KCDefine.G_IDX_INVALID;
 	}
 
 	/** 값을 탐색한다 */
@@ -1148,7 +1148,7 @@ public static partial class CExtensionAccess
 			}
 		}
 
-		return new Vector3Int(KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID, KCDefine.B_IDX_INVALID);
+		return new Vector3Int(KCDefine.G_IDX_INVALID, KCDefine.G_IDX_INVALID, KCDefine.G_IDX_INVALID);
 	}
 
 	/** 값을 탐색한다 */

@@ -389,7 +389,7 @@ public static partial class CFunc
 			oCanvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
 			oCanvasScaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
 			oCanvasScaler.referenceResolution = KCDefine.B_DESIGN_SCREEN_SIZE;
-			oCanvasScaler.referencePixelsPerUnit = KCDefine.B_UNITS_PER_PIXELS_REF;
+			oCanvasScaler.referencePixelsPerUnit = KCDefine.G_UNIT_PER_PIXELS_REF;
 		}
 	}
 	#endregion // 클래스 함수

@@ -29,7 +29,7 @@ public static partial class CExtension
 		a_oSender.targetDisplay = KCDefine.B_VAL_0_INT;
 		a_oSender.stereoTargetEye = StereoTargetEyeMask.Both;
 
-		a_oSender.rect = KCDefine.B_RECT_CAMERA_VIEWPORT;
+		a_oSender.rect = KCDefine.G_RECT_VIEWPORT_CAMERA;
 		a_oSender.farClipPlane = KCDefine.U_DISTANCE_PLANE_FAR_CAMERA;
 		a_oSender.nearClipPlane = KCDefine.U_DISTANCE_PLANE_NEAR_CAMERA;
 	}
