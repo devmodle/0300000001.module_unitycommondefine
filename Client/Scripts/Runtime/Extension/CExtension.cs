@@ -16,7 +16,7 @@ public static partial class CExtension
 		bool a_bIsExtraNumStr = true, SystemLanguage a_eSystemLanguage = SystemLanguage.English)
 	{
 		var oNumTokenDict = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.B_NUM_TOKEN_DICT_KOREAN : KCDefine.B_NUM_TOKEN_DICT_ENGLISH;
-		decimal dmDigitsUnit = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.B_UNITS_DIGITS_TEN_THOUSAND : KCDefine.B_UNITS_DIGITS_THOUSAND;
+		decimal dmDigitsUnit = (a_eSystemLanguage == SystemLanguage.Korean) ? KCDefine.G_UNIT_DIGITS_TEN_THOUSAND : KCDefine.G_UNIT_DIGITS_THOUSAND;
 
 		foreach(var stKeyVal in oNumTokenDict)
 		{
@@ -153,7 +153,7 @@ public static partial class CExtension
 				int j = 0;
 				var tVal = a_oSender[i];
 
-				for(j = i - 1; j >= KCDefine.B_VAL_0_INT && a_oCompare(a_oSender[j], tVal) > KCDefine.B_COMPARE_EQUALS; --j)
+				for(j = i - 1; j >= KCDefine.B_VAL_0_INT && a_oCompare(a_oSender[j], tVal) > KCDefine.G_COMPARE_EQUALS; --j)
 				{
 					a_oSender[j + KCDefine.B_VAL_1_INT] = a_oSender[j];
 				}

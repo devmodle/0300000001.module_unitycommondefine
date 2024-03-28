@@ -115,7 +115,7 @@ public static partial class CExtension
 		}
 
 		a_oSender.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
-		a_oSender.referencePixelsPerUnit = KCDefine.B_UNITS_PER_PIXELS_REF;
+		a_oSender.referencePixelsPerUnit = KCDefine.G_UNIT_PER_PIXELS_REF;
 	}
 
 	/** 상태를 리셋한다 */
@@ -242,7 +242,7 @@ public static partial class CExtension
 			return;
 		}
 
-		a_oSender.uvRect = KCDefine.B_RECT_DEF;
+		a_oSender.uvRect = KCDefine.G_RECT_DEF;
 	}
 
 	/** 게이지 애니메이션을 시작한다 */

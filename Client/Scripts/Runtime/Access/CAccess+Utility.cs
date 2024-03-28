@@ -60,7 +60,7 @@ public static partial class CAccess
 		{
 #if !UNITY_EDITOR && UNITY_IOS
 			var oVer = new System.Version(Device.systemVersion);
-			return oVer.CompareTo(KCDefine.B_MIN_VER_TRACKING_CONSENT_VIEW) >= KCDefine.B_COMPARE_EQUALS;
+			return oVer.CompareTo(KCDefine.B_MIN_VER_TRACKING_CONSENT_VIEW) >= KCDefine.G_COMPARE_EQUALS;
 #elif !UNITY_EDITOR && UNITY_ANDROID
 			return false;
 #else
@@ -77,7 +77,7 @@ public static partial class CAccess
 			var oVer = new System.Version(Device.systemVersion);
 
 			// 햅틱 피드백 지원 버전 일 경우
-			if(oVer.CompareTo(KCDefine.B_MIN_VER_HAPTIC_FEEDBACK) >= KCDefine.B_COMPARE_EQUALS) {
+			if(oVer.CompareTo(KCDefine.B_MIN_VER_HAPTIC_FEEDBACK) >= KCDefine.G_COMPARE_EQUALS) {
 				string oModel = Device.generation.ToString().ToUpper();
 				return Device.generation >= iPhone7 && oModel.Contains(KCDefine.B_MODEL_N_IPHONE.ToUpper());
 			}
@@ -150,7 +150,7 @@ public static partial class CAccess
 	public static float RightSafeAreaScale => (CAccess.DeviceScreenSize.x - (CAccess.SafeArea.x + CAccess.SafeArea.width)) / CAccess.DeviceScreenSize.x;
 
 	public static float ResolutionScale => CAccess.DeviceScreenSize.x.ExIsLess(CAccess.ResolutionScreenSize.x) ? CAccess.DeviceScreenSize.x / CAccess.ResolutionScreenSize.x : KCDefine.B_VAL_1_REAL;
-	public static float ResolutionUnitScale => KCDefine.B_UNITS_SCALE * CAccess.ResolutionScale;
+	public static float ScaleUnitResolution => KCDefine.G_UNIT_SCALE * CAccess.ResolutionScale;
 	public static float DesktopResolutionScale => CAccess.DesktopScreenSize.x.ExIsLess(CAccess.ResolutionDesktopScreenSize.x) ? CAccess.DesktopScreenSize.x / CAccess.ResolutionDesktopScreenSize.x : KCDefine.B_VAL_1_REAL;
 
 	public static string ProductInfoTableLoadPath => File.Exists(KCDefine.U_RUNTIME_TABLE_P_G_PRODUCT_INFO) ? KCDefine.U_RUNTIME_TABLE_P_G_PRODUCT_INFO : KCDefine.U_TABLE_P_G_PRODUCT_INFO;
